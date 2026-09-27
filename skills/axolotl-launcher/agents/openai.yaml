@@ -1,0 +1,6 @@
+interface:
+  display_name: "AXO / Axolotl Launcher"
+  short_description: "Discover and launch local AXO Minecraft instances"
+  default_prompt: "Use $axolotl-launcher to find my AXO Minecraft instances and open the instance I specify."
+policy:
+  allow_implicit_invocation: true
