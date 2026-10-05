@@ -1,0 +1,275 @@
+{
+  "vertex": "blackholelab:item",
+  "fragment": "blackholelab:item",
+  "attributes": [
+    "Position",
+    "Color",
+    "UV0",
+    "UV1",
+    "UV2",
+    "Normal"
+  ],
+  "samplers": [
+    {
+      "name": "Sampler0"
+    },
+    {
+      "name": "Sampler1"
+    },
+    {
+      "name": "Sampler2"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "ModelViewMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "ProjMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "uTime",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uCore",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.58
+      ]
+    },
+    {
+      "name": "uInner",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.94
+      ]
+    },
+    {
+      "name": "uOuter",
+      "type": "float",
+      "count": 1,
+      "values": [
+        2.9
+      ]
+    },
+    {
+      "name": "uThickness",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.105
+      ]
+    },
+    {
+      "name": "uTilt",
+      "type": "float",
+      "count": 1,
+      "values": [
+        -12
+      ]
+    },
+    {
+      "name": "uBend",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.1
+      ]
+    },
+    {
+      "name": "uDensity",
+      "type": "float",
+      "count": 1,
+      "values": [
+        6
+      ]
+    },
+    {
+      "name": "uSpeed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.55
+      ]
+    },
+    {
+      "name": "uInfall",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.22
+      ]
+    },
+    {
+      "name": "uSeed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        17
+      ]
+    },
+    {
+      "name": "uExposure",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.1
+      ]
+    },
+    {
+      "name": "uSteps",
+      "type": "int",
+      "count": 1,
+      "values": [
+        160
+      ]
+    },
+    {
+      "name": "uHot",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "uCool",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1,
+        0.1,
+        0
+      ]
+    },
+    {
+      "name": "uCoreColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ColorModulator",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "uRect",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "uMask",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "FogStart",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "FogEnd",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1
+      ]
+    },
+    {
+      "name": "FogColor",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "FogShape",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    }
+  ],
+  "blend": {
+    "func": "add",
+    "srcrgb": "srcalpha",
+    "dstrgb": "1-srcalpha"
+  }
+}

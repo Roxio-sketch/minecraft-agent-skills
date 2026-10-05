@@ -1,0 +1,4 @@
+interface:
+  display_name: "黑洞与吸积盘材质"
+  short_description: "制作旋转吸积盘、吸入粒子与渐变光晕，含工作台和 Forge 1.20.1 参考源码"
+  default_prompt: "使用 $minecraft-black-hole 制作一个带倾斜金色吸积盘的物品内部黑洞，保留握柄并提供可调预览。"

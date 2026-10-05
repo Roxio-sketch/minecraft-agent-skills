@@ -1,0 +1,6 @@
+interface:
+  display_name: "Minecraft 雷电特效"
+  short_description: "为 Forge 1.20.1 制作可调的附着电弧、固定种子闪电和多道落雷"
+  default_prompt: "使用 $minecraft-lightning 制作 Forge 1.20.1 雷电特效，并提供 HTML 调参与验证记录。"
+policy:
+  allow_implicit_invocation: true

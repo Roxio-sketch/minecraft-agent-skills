@@ -1,0 +1,82 @@
+[
+  {
+    "package": "blackhole-main",
+    "license": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "archive": "blackhole-main-source-snapshot.zip",
+    "sha256": "CFD73F5CDB27D56BDA91F05F604503C3C6959D9C717BF9634F87ED933281495A",
+    "files": 24,
+    "kind": "reconstructed source-only snapshot; not original archive",
+    "original_archive_sha256": "DE3A4CAEB5E5D45A005B7338F9E63A2E52AF86CF62298B092E4B2884709664C1"
+  },
+  {
+    "package": "unity-blackhole-shader-master",
+    "license": "MIT",
+    "license_files": [
+      "LICENSE.txt"
+    ],
+    "archive": "unity-blackhole-shader-master-source-snapshot.zip",
+    "sha256": "311843F8234DEF81B5A7540BE7E15A55D3749F06619610A421374AE4D91F80AB",
+    "files": 11,
+    "kind": "reconstructed source-only snapshot; not original archive",
+    "original_archive_sha256": "3EC3FA04B3AF7F95D19F8A3B529315474A686EEB45BC39609D2593C382F1F622"
+  },
+  {
+    "package": "unity-black-hole-shader-main",
+    "license": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "archive": "unity-black-hole-shader-main-source-snapshot.zip",
+    "sha256": "0CC444689918BD618DB44D2AA695F2DF000B2EF3E85AA78E89442F8FBC2D438C",
+    "files": 8,
+    "kind": "reconstructed source-only snapshot; not original archive",
+    "original_archive_sha256": "4455AF9278F543FF950CBDB32580FB9E316769C02DC08BC700A6496FA0EC0D7B"
+  },
+  {
+    "package": "SpektrLightning-master",
+    "license": "MIT",
+    "license_files": [
+      "README.md"
+    ],
+    "archive": "SpektrLightning-master-source-snapshot.zip",
+    "sha256": "6A2D2B6146035DA97383C11F1853EB09DEC315A143A34AF777CCE0B8F1A90E58",
+    "files": 20,
+    "kind": "reconstructed source-only snapshot; not original archive"
+  },
+  {
+    "package": "thunderhead-main",
+    "license": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "archive": "thunderhead-main-source-snapshot.zip",
+    "sha256": "5C8E4FE2881909D0E889177906DA206A2AA4DD023140F8EE08A852E230377571",
+    "files": 272,
+    "kind": "reconstructed source-only snapshot; not original archive"
+  },
+  {
+    "package": "unity-lightning-system-main",
+    "license": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "archive": "unity-lightning-system-main-source-snapshot.zip",
+    "sha256": "4EC033BB48500F72078EC23598940BC24EE90CF532C504EDB522454E70ADD2FB",
+    "files": 12,
+    "kind": "reconstructed source-only snapshot; not original archive"
+  },
+  {
+    "package": "UnityLightning-master",
+    "license": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "archive": "UnityLightning-master-source-snapshot.zip",
+    "sha256": "C074DD6B94208CF677C140AF9E8453CB36DC1AC9E79BF65600225CBADC3893B9",
+    "files": 13,
+    "kind": "reconstructed source-only snapshot; not original archive"
+  }
+]

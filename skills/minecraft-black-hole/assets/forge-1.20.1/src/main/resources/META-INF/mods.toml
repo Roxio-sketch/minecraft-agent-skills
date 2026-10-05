@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="blackholelab"
+version="0.1.0"
+displayName="Black Hole Material Lab"
+description="Original ray-marched black holes, selectable cores, native baked items and a client-local world demonstration."
+[[dependencies.blackholelab]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,48)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.blackholelab]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"
