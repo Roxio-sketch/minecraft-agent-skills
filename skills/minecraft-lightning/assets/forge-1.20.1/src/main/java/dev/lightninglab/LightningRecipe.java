@@ -33,6 +33,7 @@ public final class LightningRecipe {
     public int impactRays = 9, impactSparks = 14;
     public boolean gradientEnabled = false;
     public double gradientRatio = 50;
+    public String gradientTarget = "both", gradientCoreMode = "vivid";
     public String coreColor = "#ffffff", glowColor = "#87cfff", gradientStart = "#ffffff", gradientEnd = "#ffffff";
 
     public LightningRecipe validate() {
@@ -55,12 +56,14 @@ public final class LightningRecipe {
         range("orbitExtendSpeed", orbitExtendSpeed, .1, 120);
         range("coreGain", coreGain, .1, 16); range("glowGain", glowGain, 0, 12);
         range("gradientRatio", gradientRatio, 0, 100);
-        range("strikeHeight", strikeHeight, 2, 128); range("strikeWidth", strikeWidth, .004, .4); range("strikeDisplacement", strikeDisplacement, .05, 12);
+        if (!java.util.Set.of("both", "core", "glow").contains(gradientTarget)) throw new IllegalArgumentException("gradientTarget: both/core/glow");
+        if (!java.util.Set.of("vivid", "additive").contains(gradientCoreMode)) throw new IllegalArgumentException("gradientCoreMode: vivid/additive");
+        range("strikeHeight", strikeHeight, 2, 1024); range("strikeWidth", strikeWidth, .004, .4); range("strikeDisplacement", strikeDisplacement, .05, 12);
         range("strikeRoughness", strikeRoughness, .35, .85); range("branchProbability", branchProbability, 0, 1);
         range("branchDecay", branchDecay, .1, .95); range("branchLength", branchLength, .05, 1); range("branchAngle", branchAngle, .1, 1.5);
         range("branchJitter", branchJitter, 0, 2); range("progressionTicks", progressionTicks, .1, 8);
         range("durationTicks", durationTicks, 1, 40); range("restrikeCount", restrikeCount, 0, 4); range("flicker", flicker, 0, 1);
-        if (restrikeCount != Math.rint(restrikeCount)) throw new IllegalArgumentException("restrikeCount: integer 0..4");
+        if (restrikeCount != Math.rint(restrikeCount)) throw new IllegalArgumentException("restrikeCount: integer");
         if (rainCount < 1 || rainCount > 24 || rainMaxBranchDepth < 0 || rainMaxBranchDepth > 1 || rainMaxBranches < 0 || rainMaxBranches > 2 || branchLimit < 0 || branchLimit > 128) throw new IllegalArgumentException("rain count/depth/branch limit out of range");
         if (durationTicks < progressionTicks + 2) throw new IllegalArgumentException("durationTicks must exceed progressionTicks by 2");
         range("rainSpread", rainSpread, 1, 64); range("rainDepthSpread", rainDepthSpread, 0, 32); range("rainStagger", rainStagger, 0, 12); range("rainBranchProbability", rainBranchProbability, 0, .12);

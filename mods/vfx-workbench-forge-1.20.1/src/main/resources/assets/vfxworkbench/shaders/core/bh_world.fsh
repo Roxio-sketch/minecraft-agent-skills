@@ -5,6 +5,15 @@ uniform float EnvironmentReady;
 uniform mat4 InvViewProjection,ViewProjection;
 uniform vec3 CenterRelative,CameraOriginRelative;
 uniform float WorldScale,LensStrength,LensRadius,uExposure;
+uniform float uCoreEmission;
+uniform float uCoreGlow,uCoreGlowRadius;
+// External white-hole transport clocks are local-space distance, not brightness.
+uniform float uJetClock,uShellClock,uShellStrength,uShellRadius,uShellWidth;
+uniform vec3 uShellColor;
+#define BH_CORE_GAIN uCoreEmission
+// The source pass records only the actual captured core, not disk/sky light.
+vec3 bhCoreRadiance=vec3(0.0);
+#define BH_CORE_CAPTURE(c) bhCoreRadiance+=(c)
 // Only explicit development probes enable this source-coverage diagnostic.
 uniform float LensProbeMode;
 uniform vec3 ProbeBoundsMin,ProbeBoundsMax;
@@ -26,7 +35,10 @@ bool sceneBlocked(vec3 local){
     return dot(p-CameraOriginRelative,sceneRay)>sceneLimit+.02;
 }
 #define BH_SCENE_BLOCKED(p) sceneBlocked(p)
+uniform float uObjectMode;
 uniform int uGranular;
+uniform sampler2D RibbonNoise;
+#define BH_REFERENCE_RIBBONS (uGranular==2 && uObjectMode<.5)
 uniform float uBandDetail,uDustScale,uDustFill,uFilament,uSpiral;
 uniform float uOrbitPhase,uRadialPhase,uClassicRadialPhase,uShearLocal,uShearParity,uDustDriftA,uDustDriftB;
 #define BH_SHEAR_CLOCK (uShearLocal+8.0*uShearParity)
@@ -49,11 +61,11 @@ vec2 previewDiskPattern(float r,float a){
 #define BH_CINEMATIC_DISK (uGranular==4)
 #define BH_DUST_STYLE (uGranular==3)
 #define BH_CAPTURED_FOREGROUND_SCALE (uGranular==1?.22:1.0)
-#define BH_SURFACE_CRITICAL_MIN_RADIUS (uGranular==2?2.08*uCore:0.0)
+#define BH_SURFACE_CRITICAL_MIN_RADIUS 0.0
 uniform float HaloStrength,HaloRing,HaloDisk,HaloAura;
 uniform float JetStrength,JetLength,JetWidth;
 uniform vec3 uJetBaseColor,uJetTipColor;
-#define BH_TRACE_BOUND max(uOuter*1.5,JetStrength>0.0001?JetLength+uCore+.5:0.0)
+#define BH_TRACE_BOUND max(uOuter*1.5,(uObjectMode<.5&&JetStrength>0.0001)?JetLength+uCore+.5:0.0)
 uniform float uHaloRadius,uHaloWidth,uHaloSharpness,uHaloGradientMix;
 uniform float uHaloDiskGradientMix,uHaloAuraGradientMix;
 uniform vec3 uHaloGradientStart,uHaloGradientEnd;
@@ -62,6 +74,12 @@ vec3 haloEmission(vec3 q);
 vec3 jetEmission(vec3 q);
 #define BH_VOLUME_SAMPLE(q0,q1,ds,result) { if(HaloStrength>0.0001||JetStrength>0.0001){ vec3 bhHaloA=(q0),bhHaloB=(q1),bhHaloM=.5*(bhHaloA+bhHaloB); vec3 bhHaloIntegral=(haloEmission(bhHaloA)+jetEmission(bhHaloA)+4.0*(haloEmission(bhHaloM)+jetEmission(bhHaloM))+haloEmission(bhHaloB)+jetEmission(bhHaloB))*(ds/6.0); result.light+=result.transmission*bhHaloIntegral; } }
 #define BH_DISK_EMISSION(pattern) (uGranular==4?(.2+.6*pattern.y):(uGranular==1?((.25+.75*pow(pattern.x,1.3))*(.65+.35*pattern.y)):1.0))
+#ifndef BH_CORE_GAIN
+#define BH_CORE_GAIN 1.0
+#endif
+#ifndef BH_CORE_CAPTURE
+#define BH_CORE_CAPTURE(c)
+#endif
 // Original artistic black-hole field. Not a relativistic geodesic solver.
 // Host supplies a ray in one orthonormal material space, seconds and linear colors.
 uniform float uTime, uCore, uInner, uOuter, uThickness, uTilt;
@@ -312,7 +330,7 @@ vec3 bhCoreEmission(vec3 surfacePoint,vec3 rayDirection) {
     // rather than painting a screen-space circle across foreground light.
     float facing=abs(dot(normalize(surfacePoint),-rayDirection));
     float edge=1.0-smoothstep(0.08,0.9,facing);
-    return mix(uCoreColor,uCoreEdgeColor,edge*uCoreGradientStrength);
+    return mix(uCoreColor,uCoreEdgeColor,edge*uCoreGradientStrength)*BH_CORE_GAIN;
 }
 void bhDiskSample(vec3 q,vec3 rayDirection,float ds,inout BHResult result) {
     float radius=length(q.xz);
@@ -336,14 +354,18 @@ void bhDiskSample(vec3 q,vec3 rayDirection,float ds,inout BHResult result) {
         // crossings otherwise collapse into a stack of bright wire rings at
         // the preview pixel scale.  A wider Gaussian preserves the depth of
         // the cloud without turning it into a flat texture sheet.
-        radial=smoothstep(uInner+1.12,uInner+1.72,radius)
-            *(1.0-smoothstep(uOuter-.8,uOuter,radius));
+        // Scale the exclusion and edge fades to the actual annular width.
+        // Absolute offsets previously erased most of a narrow dust disk.
+        float span=max(uOuter-uInner,.01);
+        float innerFade=min(.06*span,max(.018,.08*uCore));
+        radial=smoothstep(uInner,uInner+innerFade,radius)
+            *(1.0-smoothstep(uOuter-.20*span,uOuter,radius));
     }
     float dustThickness=max(uThickness*(BH_DUST_STYLE?1.65:1.0),.012);
     float vertical=exp(-0.5*q.y*q.y/(dustThickness*dustThickness));
     vec2 pattern=BH_PATTERN(radius,atan(q.z,q.x));
     float sigma=uDensity*radial*vertical*BH_DISK_DENSITY(pattern);
-    if(BH_DUST_STYLE)sigma*=.25;
+    if(BH_DUST_STYLE)sigma*=.85;
     if(BH_SURFACE_DISK && !BH_CINEMATIC_DISK)sigma*=.43;
     // The cinematic layer is a finite plasma volume, not a uniformly painted
     // sheet. Couple optical thickness to both the lane and filament fields so
@@ -371,6 +393,11 @@ void bhDiskSample(vec3 q,vec3 rayDirection,float ds,inout BHResult result) {
         (BH_SURFACE_DISK?.38+1.45*hot:1.2+3.6*hot);
     vec3 source=bhDiskColor(hot)*sourceStrength*BH_DISK_EMISSION(pattern);
     source*=mix(.84,relativistic,BH_CINEMATIC_DISK?.86:.38);
+    if(BH_SURFACE_DISK && !BH_CINEMATIC_DISK){
+        // Continuous approaching/receding brightness, independent of lane phase.
+        float side=clamp(1.0+.65*uBeaming*approach,.25,2.2);
+        source*=side*side;
+    }
     if(BH_CINEMATIC_DISK){
         float beam=pow(clamp(1.0+.7*uBeaming*approach,.45,1.7),2.0);
         float heated=clamp(.68*hot+.32*max(approach,0.0)*uBeaming,0.0,1.0);
@@ -422,6 +449,7 @@ BHResult bhTraceClassic(vec3 ro,vec3 rd) {
             // that foreground contribution so the horizon stays clean.
             result.light*=BH_CAPTURED_FOREGROUND_SCALE;
             result.light+=result.transmission*bhCoreEmission(p,result.direction);
+            BH_CORE_CAPTURE(result.transmission*bhCoreEmission(p,result.direction));
             result.captured=1.0; result.transmission=0.0; ended=true; break;
         }
         // Adaptive integration resolves the rapidly changing field close to
@@ -439,6 +467,7 @@ BHResult bhTraceClassic(vec3 ro,vec3 rd) {
             vec3 corePoint=p+midDir*clamp(coreCrossing.x,0.0,localDs);
             result.light*=BH_CAPTURED_FOREGROUND_SCALE;
             result.light+=result.transmission*bhCoreEmission(corePoint,midDir);
+            BH_CORE_CAPTURE(result.transmission*bhCoreEmission(corePoint,midDir));
             result.captured=1.0; result.transmission=0.0; ended=true; break;
         }
         vec3 q0=bhRotateX(p,a),q1=bhRotateX(p+midDir*localDs,a);
@@ -573,6 +602,7 @@ BHResult bhTraceVerlet(vec3 ro,vec3 rd) {
         if(r<uCore) {
             result.light*=BH_CAPTURED_FOREGROUND_SCALE;
             result.light+=result.transmission*bhCoreEmission(p,result.direction);
+            BH_CORE_CAPTURE(result.transmission*bhCoreEmission(p,result.direction));
             result.captured=1.0; result.transmission=0.0; ended=true; break;
         }
         float radialSpeed=abs(dot(normalize(p),normalize(vel)));
@@ -608,6 +638,7 @@ BHResult bhTraceVerlet(vec3 ro,vec3 rd) {
             vec3 corePoint=p+segDir*clamp(coreCrossing.x,0.0,segLen);
             result.light*=BH_CAPTURED_FOREGROUND_SCALE;
             result.light+=result.transmission*bhCoreEmission(corePoint,normalize(vel));
+            BH_CORE_CAPTURE(result.transmission*bhCoreEmission(corePoint,normalize(vel)));
             result.captured=1.0; result.transmission=0.0; ended=true; break;
         }
         vec3 q0=bhRotateX(p,a),q1=bhRotateX(nextP,a);
@@ -687,7 +718,77 @@ BHResult bhTraceVerlet(vec3 ro,vec3 rd) {
     result.closestRadius=closestRadius;
     return result;
 }
+
+#ifdef BH_REFERENCE_RIBBONS
+// Polar noise lookup, disk alpha accumulation and inverse-square bending adapted
+// from WittyScrap/unity-black-hole-shader (Francesco Litrico, MIT, see notice).
+// World-scale controls, finite core, positive plane hits and scene clipping are
+// explicit host adaptations. A hit never advances the ray behind the camera.
+BHResult bhTraceRibbon(vec3 ro,vec3 rd){
+    BHResult result;
+    result.light=vec3(0);result.transmission=1.0;result.direction=normalize(rd);
+    result.position=ro;result.captured=0.0;result.exhausted=0.0;result.blocked=0.0;result.closestRadius=1e6;
+    float bound=max(uOuter*3.0,uCore*8.0);
+    vec2 interval=bhSphere(ro,result.direction,bound);
+    if(interval.y<=0.0)return result;
+    float begin=max(0.0,interval.x),ds=(interval.y-begin)/float(uSteps);
+    vec3 p=ro+result.direction*begin,dir=result.direction;
+    float a=radians(-uTilt),alpha=0.0;
+    vec3 disk=vec3(0);
+    bool ended=false;
+    for(int i=0;i<512;i++){
+        if(i>=uSteps)break;
+        if(BH_SCENE_BLOCKED(p)){result.blocked=1.0;ended=true;break;}
+        vec3 q=bhRotateX(p,a),dq=bhRotateX(dir,a);
+        float advance=ds;
+        float crossing=abs(dq.y)>.00001?-q.y/dq.y:-1.0;
+        // Require a forward intersection and do not count the same plane hit twice.
+        if(crossing>=0.0&&crossing<ds&&abs(q.y)>.000001){
+            vec3 point=q+dq*crossing;
+            float radius=length(point.xz);
+            if(radius>uInner&&radius<uOuter&&uDensity>0.0){
+                float outFade=1.0-smoothstep(uInner,uOuter,radius);
+                // Keep the outer disk translucent instead of a broad luminous skirt.
+                float fade=(1.0-pow(outFade,100.0))*pow(outFade,1.45)*2.0;
+                float angle=atan(point.z,point.x)/6.28318530718+.5-uOrbitPhase/6.28318530718;
+                float noise=textureLod(RibbonNoise,vec2(angle,(1.0-outFade)*uBandDetail*.21+uRadialPhase*.016),0.0).r;
+                // The reference texture is imported as sRGB by Unity.
+                noise=noise<=.04045?noise/12.92:pow((noise+.055)/1.055,2.4);
+                vec3 tangent=normalize(vec3(point.z,0,-point.x));
+                vec3 directRay=normalize(point-bhRotateX(ro,a));
+                float doppler=clamp(max((dot(directRay,tangent)+1.0)*.5,.25)*2.0*max(abs(uSpeed),.72),0.0,1.0);
+                // Nonlinear directional gain preserves receding-side dark lanes under display compression.
+                float side=mix(1.0,pow(doppler,2.2)*1.8,clamp(uBeaming,0.0,1.0));
+                float heat=pow(outFade,2.35);
+                vec3 source=bhDiskColor(heat)*noise*fade*fade*(uDensity/5.0)*2.0*side;
+                disk=clamp(disk+source,vec3(0),vec3(1));
+                alpha=clamp(alpha+fade,0.0,1.0);
+            }
+            p+=dir*crossing;advance-=crossing;
+        }
+        vec3 next=p+dir*advance;
+        float along=clamp(-dot(p,dir),0.0,advance);
+        result.closestRadius=min(result.closestRadius,length(p+dir*along));
+        if(length(p+dir*along)<uCore){result.captured=1.0;alpha=1.0;ended=true;p=next;break;}
+        p=next;
+        float radius=max(length(p),.001);
+        // Same radial inverse-square force as the reference, normalized to core units.
+        dir=normalize(dir-p/radius*(.70*uBend*uCore/(radius*radius))*ds);
+        if(length(p)>bound&&dot(p,dir)>0.0){ended=true;break;}
+    }
+    result.light=disk*2.0*alpha;
+    result.transmission=1.0-alpha;
+    result.position=p;result.direction=dir;
+    // Budget exhaustion is transparent unless an actual disk/core was hit.
+    result.exhausted=!ended&&dot(p,dir)<0.0?1.0:0.0;
+    return result;
+}
+#endif
+
 BHResult bhTrace(vec3 ro,vec3 rd) {
+#ifdef BH_REFERENCE_RIBBONS
+    if(BH_REFERENCE_RIBBONS)return bhTraceRibbon(ro,rd);
+#endif
 #if BH_USE_GEODESIC_VERLET
     return bhTraceVerlet(ro,rd);
 #else
@@ -697,6 +798,7 @@ BHResult bhTrace(vec3 ro,vec3 rd) {
 vec3 bhCompositeInternal(BHResult result) {
     return result.light+result.transmission*bhBackground(result.direction);
 }
+
 // Original periodic cell noise. The user-selected blackhole-main reference
 // motivates differential rotation and multiscale granular bands, not a code copy.
 float fieldCell(ivec2 p){
@@ -729,21 +831,21 @@ vec2 worldDiskPattern(float radius,float angle){
 // Original lensed emission fields. Every feature is sampled along the bent ray,
 // including the upper/lower disk images; no screen-space sprite overlay.
 float volumeNoise(vec3 p,vec3 period);
-vec2 cinematicPattern(float radius,float angle){
+vec2 cinematicField(float radius,float angle,float transport,float flowSeed){
     // All features share a seamless cylindrical coordinate and bounded orbital
     // phase. The three frequency bands describe plasma, filaments and sparks.
     float phase=angle-uOrbitPhase;
     float radial=(radius-uInner)/max(.01,uOuter-uInner);
-    float flow=mod(uRadialPhase,64.0)/max(.01,uOuter-uInner);
+    float flow=transport/max(.01,uOuter-uInner);
     float rho=radial+flow;
     vec2 orbit=vec2(cos(phase),sin(phase));
-    float cloud=volumeNoise(vec3(rho*3.7,orbit*2.6)+vec3(uSeed*.13,11.0,7.0),vec3(128.0));
-    float structure=volumeNoise(vec3(rho*8.2,orbit*5.1)+vec3(29.0,uSeed*.17,4.0),vec3(128.0));
-    float speck=volumeNoise(vec3(rho*23.0,orbit*12.0)+vec3(17.0,41.0,uSeed*.21),vec3(128.0));
+    float cloud=volumeNoise(vec3(rho*3.7,orbit*2.6)+vec3(flowSeed*.13,11.0,7.0),vec3(128.0));
+    float structure=volumeNoise(vec3(rho*8.2,orbit*5.1)+vec3(29.0,flowSeed*.17,4.0),vec3(128.0));
+    float speck=volumeNoise(vec3(rho*23.0,orbit*12.0)+vec3(17.0,41.0,flowSeed*.21),vec3(128.0));
     // A second, finer field breaks the broad lanes into finite plasma wisps.
     // It is deliberately bounded and cylindrical so it cannot accumulate the
     // long-time radial shear that produced the old moiré rings.
-    float micro=volumeNoise(vec3(rho*41.0,orbit*22.0)+vec3(53.0,uSeed*.31,19.0),vec3(128.0));
+    float micro=volumeNoise(vec3(rho*41.0,orbit*22.0)+vec3(53.0,flowSeed*.31,19.0),vec3(128.0));
     // A few wide plasma lanes carry the image. Fine filaments sit inside them;
     // they must not turn the entire lensed disk into evenly spaced wire lines.
     float radialPhase=rho*uBandDetail*.62;
@@ -769,19 +871,47 @@ vec2 cinematicPattern(float radius,float angle){
         *(.42+.58*broad)*(.7+.6*structure)*dustLane*arm;
     return vec2(max(0.0,plasma),clamp(.18+.37*broad+.22*ridge+.15*knots+.10*microKnots,0.0,1.0));
 }
-vec2 ribbonPattern(float radius,float angle){
-    // Uniform angular advection follows the Unity reference. A radius-dependent
-    // time phase produces ever finer shear and aliases after minutes of playback.
+float volumeCell(ivec3 p);
+float ribbonRadialNoise(float coordinate,float seed){
+    float cell=floor(coordinate),f=fract(coordinate);
+    f=f*f*(3.0-2.0*f);
+    return mix(volumeCell(ivec3(int(mod(cell,128.0)),int(seed),19)),
+        volumeCell(ivec3(int(mod(cell+1.0,128.0)),int(seed),19)),f);
+}
+vec2 ribbonField(float radius,float angle,float transport,float flowSeed){
+    // Radially stretched stochastic lanes, inspired by the reference's polar
+    // noise lookup. Angular variation changes brightness only: it cannot warp
+    // two independent periodic carriers into a braided lattice.
     float phase=angle-uOrbitPhase;
-    float radial=(radius-uInner)/max(uOuter-uInner,.01);
-    float rho=radial*uBandDetail*1.2+uRadialPhase*.16;
+    float radial=clamp((radius-uInner)/max(uOuter-uInner,.01),0.0,1.0);
+    float rho=radial*uBandDetail*1.6+transport*.16;
     vec2 orbit=vec2(cos(phase),sin(phase));
-    float warp=volumeNoise(vec3(rho*1.7,orbit*3.0)+vec3(uSeed*.13,9.0,13.0),vec3(128.0));
-    float grain=volumeNoise(vec3(rho*5.2,orbit*8.0)+vec3(3.0,uSeed*.29,17.0),vec3(128.0));
-    float lane=.5+.5*cos(6.28318530718*(rho+.11*(warp-.5)));
-    float filament=pow(.5+.5*cos(6.28318530718*(rho*2.3+.16*(grain-.5))),7.0);
-    float shade=(.16+.64*pow(lane,2.0)+.20*filament)*(.46+.54*warp);
-    return vec2(shade,clamp(.18+.58*lane+.24*grain,0.0,1.0));
+    vec3 offset=vec3(flowSeed*.13,9.0,13.0);
+    float broad=ribbonRadialNoise(rho,flowSeed);
+    float detail=ribbonRadialNoise(rho*3.1,flowSeed+17.0);
+    float fine=ribbonRadialNoise(rho*7.3,flowSeed+41.0);
+    float lanes=smoothstep(.18,.78,.64*broad+.26*detail+.10*fine);
+    float wisps=volumeNoise(vec3(radial*2.0,orbit*.7)+offset,vec3(128.0));
+    float angular=mix(1.0,.86+.28*wisps,clamp(uFilament/3.0,0.0,1.0));
+    float shade=(.035+1.1*pow(lanes,2.2))*angular;
+    return vec2(shade,clamp(.35+.65*lanes,0.0,1.0));
+}
+
+// Both source fields advect outward. Crossfading their material lifetimes
+// exchanges old/new seeds continuously at 64 and 128 world-local flow units.
+vec2 cinematicPattern(float radius,float angle){
+    if(uObjectMode<.5)return cinematicField(radius,angle,mod(uRadialPhase,64.0),uSeed);
+    float clock=abs(uRadialPhase),local=mod(clock,64.0),parity=mod(floor(clock/64.0),2.0);
+    vec2 older=cinematicField(radius,angle,-local,uSeed+37.0*parity);
+    vec2 younger=cinematicField(radius,angle,64.0-local,uSeed+37.0*(1.0-parity));
+    return mix(older,younger,smoothstep(0.0,1.0,local/64.0));
+}
+vec2 ribbonPattern(float radius,float angle){
+    if(uObjectMode<.5)return ribbonField(radius,angle,uRadialPhase,uSeed);
+    float clock=abs(uRadialPhase),local=mod(clock,64.0),parity=mod(floor(clock/64.0),2.0);
+    vec2 older=ribbonField(radius,angle,-local,uSeed+37.0*parity);
+    vec2 younger=ribbonField(radius,angle,64.0-local,uSeed+37.0*(1.0-parity));
+    return mix(older,younger,smoothstep(0.0,1.0,local/64.0));
 }
 vec2 lensedDustPattern(float radius,float angle){
     return vec2(1.0);
@@ -816,7 +946,10 @@ float lensedDustVolume(vec3 q){
         float n=volumeNoise(p*scale+drift+vec3(uSeed,float(i)*13.0,17.0),period*scale);
         field*=.12+.88*n;
     }
-    float porous=pow(smoothstep(.11,.34,field),2.2);
+    // Normalize the four-octave product before thresholding. This preserves
+    // sparse dusty clumps and dark gaps without suppressing a narrow disk.
+    float clustered=pow(max(field,1e-8),.25);
+    float porous=pow(smoothstep(.43,.70,clustered),1.8);
     return porous*uDustFill;
 }
 vec3 haloEmission(vec3 q){
@@ -880,7 +1013,7 @@ vec3 haloEmission(vec3 q){
 // Its strength defaults to zero for every existing recipe.  This is original
 // procedural geometry: no billboard or borrowed texture is involved.
 vec3 jetEmission(vec3 q){
-    if(JetStrength<=0.0001)return vec3(0.0);
+    if(uObjectMode>.5||JetStrength<=0.0001)return vec3(0.0);
     float height=abs(q.y),radial=length(q.xz);
     float start=uCore*.82;
     float length=max(JetLength,start+.35);
@@ -897,6 +1030,179 @@ vec3 jetEmission(vec3 q){
     float crossSection=.62*spine+.24*sheath*(.55+.45*filaments);
     vec3 tint=mix(uJetBaseColor,uJetTipColor,smoothstep(.06,.9,progress));
     return JetStrength*rise*fall*crossSection*tint;
+}
+
+
+// External white-hole material follows straight camera rays. It must NOT use
+// the mass compositor's artistic terrain remapping or its bent-ray depth policy.
+// Parameters to these fields are already in the tilted disk's orthonormal space.
+float whiteJetStart(){return uCore*.90;}
+float whiteJetEnd(){return max(JetLength,whiteJetStart()+.35);}
+float whiteShellStart(){return uCore*1.08;}
+float whiteShellSpan(){return max(uShellRadius-whiteShellStart(),.35);}
+float whiteShellLife(int layer){
+    return mod(uShellClock+float(layer)*whiteShellSpan()*.5,whiteShellSpan())/whiteShellSpan();
+}
+float whiteShellRadius(int layer){return whiteShellStart()+whiteShellLife(layer)*whiteShellSpan();}
+
+vec3 whiteJetField(vec3 q,float footprint){
+    if(uObjectMode<.5||JetStrength<=.0001)return vec3(0.0);
+    float height=abs(q.y),start=whiteJetStart(),end=whiteJetEnd();
+    if(height<start||height>end)return vec3(0.0);
+    float progress=clamp((height-start)/(end-start),0.0,1.0);
+    float actual=max(JetWidth*(.48+.70*pow(progress,.72)),.005);
+    float effective=sqrt(actual*actual+.35*footprint*footprint);
+    float radial=length(q.xz);
+    float sheath=exp(-pow(radial/effective,2.0));
+    float spine=exp(-pow(radial/max(effective*.34,.002),2.0));
+    // Both poles use |height|: a material knot moves away from the source on
+    // each side. Translating phase by one local length translates the knot by
+    // one length; a stationary point never substitutes global flashing.
+    float transported=height-start-uJetClock;
+    float knots=pow(.5+.5*cos(6.28318530718*transported/.90),4.0);
+    float angle=radial>.00001?atan(q.z,q.x):0.0;
+    float strands=pow(.5+.5*cos(3.0*angle-3.8*transported),4.0);
+    float envelope=smoothstep(0.0,.055,progress)*(1.0-smoothstep(.78,1.0,progress));
+    float material=.18+.82*knots;
+    vec3 tint=mix(uJetBaseColor,uJetTipColor,smoothstep(.02,.92,progress));
+    return 3.2*JetStrength*tint*envelope*(actual/effective)
+        *(spine*material+.26*sheath*(.30+.70*strands)*(.40+.60*material));
+}
+vec3 whiteJetEmission(vec3 q){return whiteJetField(q,0.0);}
+
+vec3 whiteShellLayer(vec3 q,int layer,float footprint){
+    if(uObjectMode<.5||uShellStrength<=.0001)return vec3(0.0);
+    float radius=length(q),life=whiteShellLife(layer),center=whiteShellRadius(layer);
+    float actual=max(uShellWidth,.002),effective=sqrt(actual*actual+.35*footprint*footprint);
+    float profile=exp(-pow((radius-center)/effective,2.0))*(actual/effective);
+    float envelope=smoothstep(0.0,.075,life)*(1.0-smoothstep(.80,1.0,life));
+    // Angular structure belongs to the moving spherical layer. The birth and
+    // death are both dark, so wrapping never teleports a visible bright shell.
+    vec3 normal=q/max(radius,.0001);
+    float grain=.72+.28*pow(.5+.5*sin(13.0*normal.y+7.0*normal.x-5.0*normal.z),2.0);
+    return uShellColor*(4.6*uShellStrength*envelope*profile*grain);
+}
+vec3 whiteShellEmission(vec3 q){
+    return whiteShellLayer(q,0,0.0)+whiteShellLayer(q,1,0.0);
+}
+
+float whiteCoreGlowBound(){return uCore*max(uCoreGlowRadius,1.05);}
+vec3 whiteCoreGlowField(vec3 q,float footprint){
+    // This is the core's own stationary corona, independent of disk halos,
+    // jets and shell color. A dark source cannot radiate a colored corona.
+    float source=max(max(uCoreColor.r,uCoreColor.g),uCoreColor.b);
+    if(uObjectMode<.5||uCoreGlow<=.0001||uCoreEmission<=.0001||source<=.000001)return vec3(0.0);
+    float radius=length(q),bound=whiteCoreGlowBound();
+    if(radius<uCore||radius>=bound)return vec3(0.0);
+    float actual=max(bound-uCore,.001),effective=sqrt(actual*actual+.35*footprint*footprint);
+    float offset=max(radius-uCore,0.0);
+    float profile=exp(-4.5*pow(offset/effective,2.0))*(actual/effective);
+    // The configured radius is a strict support bound, with a smooth zero at
+    // its edge. Footprint reconstruction cannot extend it into another ring.
+    float fade=1.0-smoothstep(max(uCore,bound-max(.25*actual,footprint)),bound,radius);
+    vec3 tint=mix(uCoreColor,uCoreEdgeColor,clamp(uCoreGradientStrength,0.0,1.0)*.30);
+    return tint*(.62*uCoreGlow*uCoreEmission*profile*fade);
+}
+vec3 whiteCoreGlowEmission(vec3 q){return whiteCoreGlowField(q,0.0);}
+vec3 whiteIntegrateCoreGlow(vec3 ro,vec3 rd,float limit,float footprint){
+    if(uCoreGlow<=.0001||uCoreEmission<=.0001||max(max(uCoreColor.r,uCoreColor.g),uCoreColor.b)<=.000001)return vec3(0.0);
+    vec2 interval=bhSphere(ro,rd,whiteCoreGlowBound());
+    float begin=max(0.0,interval.x),end=min(limit,interval.y);
+    if(end<=begin)return vec3(0.0);
+    // Intersect the finite soft corona before quadrature; a thin radius
+    // multiplier must not vanish between steps of the larger external field.
+    float ds=(end-begin)/16.0;vec3 sum=vec3(0.0);
+    vec3 previous=whiteCoreGlowField(ro+rd*begin,footprint);
+    for(int i=0;i<16;i++){
+        float t=begin+float(i)*ds;
+        vec3 mid=whiteCoreGlowField(ro+rd*(t+.5*ds),footprint);
+        vec3 next=whiteCoreGlowField(ro+rd*(t+ds),footprint);
+        sum+=(previous+4.0*mid+next)*(ds/6.0);previous=next;
+    }
+    return sum;
+}
+
+// Analytic finite cylinder support means a narrow jet cannot fall between
+// samples of a much larger mass/shell bounding sphere, even at grazing angles.
+vec2 whiteJetInterval(vec3 ro,vec3 rd,float footprint){
+    float bound=max(JetWidth,.005)*3.60+2.0*footprint;
+    float a=dot(rd.xz,rd.xz),b=dot(ro.xz,rd.xz),c=dot(ro.xz,ro.xz)-bound*bound;
+    vec2 radial=vec2(-1e8,1e8);
+    if(a<.0000001){if(c>0.0)return vec2(-1.0);}
+    else{
+        float discriminant=b*b-a*c;
+        if(discriminant<0.0)return vec2(-1.0);
+        float h=sqrt(max(discriminant,0.0));radial=vec2((-b-h)/a,(-b+h)/a);
+    }
+    float end=whiteJetEnd();vec2 axial=vec2(-1e8,1e8);
+    if(abs(rd.y)<.0000001){if(abs(ro.y)>end)return vec2(-1.0);}
+    else{axial=vec2((-end-ro.y)/rd.y,(end-ro.y)/rd.y);axial=vec2(min(axial.x,axial.y),max(axial.x,axial.y));}
+    return vec2(max(radial.x,axial.x),min(radial.y,axial.y));
+}
+vec3 whiteIntegrateJet(vec3 ro,vec3 rd,float limit,float footprint){
+    if(JetStrength<=.0001)return vec3(0.0);
+    vec2 interval=whiteJetInterval(ro,rd,footprint);
+    float begin=max(0.0,interval.x),end=min(limit,interval.y);
+    if(end<=begin)return vec3(0.0);
+    // Segment length follows the thin cross-section OR the axial .90 knot
+    // wavelength. This resolves travel at side view and down either pole.
+    float wanted=min(.11,max(.012,(max(JetWidth,.005)+footprint)*.44));
+    int count=int(clamp(ceil((end-begin)/wanted),8.0,160.0));
+    float ds=(end-begin)/float(count);vec3 sum=vec3(0.0);
+    vec3 previous=whiteJetField(ro+rd*begin,footprint);
+    for(int i=0;i<160;i++){
+        if(i>=count)break;
+        float t=begin+float(i)*ds;
+        vec3 mid=whiteJetField(ro+rd*(t+.5*ds),footprint);
+        vec3 next=whiteJetField(ro+rd*(t+ds),footprint);
+        sum+=(previous+4.0*mid+next)*(ds/6.0);previous=next;
+    }
+    return sum;
+}
+vec3 whiteIntegrateShellSegment(vec3 ro,vec3 rd,float begin,float end,int layer,float footprint){
+    if(end<=begin)return vec3(0.0);
+    float ds=(end-begin)/12.0;vec3 sum=vec3(0.0);
+    vec3 previous=whiteShellLayer(ro+rd*begin,layer,footprint);
+    for(int i=0;i<12;i++){
+        float t=begin+float(i)*ds;
+        vec3 mid=whiteShellLayer(ro+rd*(t+.5*ds),layer,footprint);
+        vec3 next=whiteShellLayer(ro+rd*(t+ds),layer,footprint);
+        sum+=(previous+4.0*mid+next)*(ds/6.0);previous=next;
+    }
+    return sum;
+}
+vec3 whiteIntegrateShell(vec3 ro,vec3 rd,float limit,int layer,float footprint){
+    float center=whiteShellRadius(layer);
+    float width=sqrt(max(uShellWidth,.002)*max(uShellWidth,.002)+.35*footprint*footprint);
+    // Intersect each thin shell separately and integrate BOTH front and back
+    // bands. No giant uniform march can skip an expanding thin layer here.
+    vec2 outer=bhSphere(ro,rd,center+3.0*width);
+    float begin=max(0.0,outer.x),end=min(limit,outer.y);
+    if(end<=begin)return vec3(0.0);
+    vec2 inner=bhSphere(ro,rd,max(0.0,center-3.0*width));
+    if(inner.y<inner.x||inner.y<0.0||inner.x==inner.y)
+        return whiteIntegrateShellSegment(ro,rd,begin,end,layer,footprint);
+    return whiteIntegrateShellSegment(ro,rd,begin,min(end,inner.x),layer,footprint)
+        +whiteIntegrateShellSegment(ro,rd,max(begin,inner.y),end,layer,footprint);
+}
+
+vec3 whiteOutflowTrace(vec3 ro,vec3 rd,float limit,float pixelAngle){
+    if(uObjectMode<.5||(JetStrength<=.0001&&uShellStrength<=.0001&&uCoreGlow<=.0001)||limit<=0.0)return vec3(0.0);
+    // Emission behind the luminous solid core does not leak through it.
+    if(length(ro)<uCore*.999)return vec3(0.0);
+    vec2 core=bhSphere(ro,rd,uCore);
+    if(core.x>=0.0)limit=min(limit,core.x);
+    if(limit<=0.0)return vec3(0.0);
+    float angle=radians(-uTilt);
+    vec3 origin=bhRotateX(ro,angle),direction=bhRotateX(rd,angle);
+    float extent=max(max(whiteJetEnd(),uShellRadius+3.0*uShellWidth),whiteCoreGlowBound());
+    // Screen footprint widens reconstruction only, with conserved radiance.
+    float footprint=max(.001,min(.40,pixelAngle*max(length(ro)+extent,1.0)));
+    vec3 light=whiteIntegrateJet(origin,direction,limit,footprint);
+    if(uShellStrength>.0001)for(int layer=0;layer<2;layer++)
+        light+=whiteIntegrateShell(origin,direction,limit,layer,footprint);
+    if(uCoreGlow>.0001)light+=whiteIntegrateCoreGlow(origin,direction,limit,footprint);
+    return light;
 }
 vec3 sceneLinear(vec3 c){return mix(c/12.92,pow((c+.055)/1.055,vec3(2.4)),step(vec3(.04045),c));}
 vec3 sceneDisplay(vec3 c){return mix(c*12.92,1.055*pow(max(c,vec3(0)),vec3(1.0/2.4))-.055,step(vec3(.0031308),c));}
@@ -988,6 +1294,9 @@ void main(){
     ivec2 pixel=clamp(ivec2(texCoord*vec2(size)),ivec2(0),size-1);
     vec3 original=texelFetch(Sampler0,pixel,0).rgb;
     vec3 rd=normalize(scenePosition(texCoord,1.0)-CameraOriginRelative);
+    // Evaluate derivatives uniformly before visibility branches. A thin-layer
+    // field can then reconstruct its screen footprint without undefined reads.
+    float outflowPixelAngle=max(length(dFdx(rd)),length(dFdy(rd)));
     float depth=texelFetch(Sampler1,pixel,0).r;
     bool foreground=foregroundEntity(texCoord,depth);
     resolveLensSource(rd,foreground);
@@ -998,12 +1307,23 @@ void main(){
     vec3 ro=(CameraOriginRelative-CenterRelative)/WorldScale;
     vec2 support=bhSphere(ro,rd,max(BH_TRACE_BOUND,LensRadius));
     BHResult hit;hit.light=vec3(0);hit.transmission=1.0;
+    bhCoreRadiance=vec3(0.0);
     if(!foreground&&support.y>0.0){
         // Environment geometry has been remapped by the lens. Its ORIGINAL
         // depth cannot clip the mass/disk into a horizontal half-silhouette.
         // Actual foreground entities were already separated above.
         sceneRay=rd;sceneLimit=1e8;
         hit=bhTrace(ro,rd);
+    }
+    if(LensProbeMode>3.5){
+        fragColor=vec4(max(hit.light,vec3(0)),hit.captured>.5&&max(max(hit.light.r,hit.light.g),hit.light.b)<.001?0.0:1.0);return;
+    }
+    if(LensProbeMode>2.5){
+        // HDR source selection follows the SAME visible core and foreground
+        // policy as the artistic mass compositor. No bright-pixel threshold.
+        bool source=uObjectMode>.5&&uCoreEmission>.0001&&uCoreGlow>.0001
+            &&max(max(uCoreColor.r,uCoreColor.g),uCoreColor.b)>.000001;
+        fragColor=vec4(source?max(bhCoreRadiance,vec3(0.0)):vec3(0.0),1.0);return;
     }
     if(LensProbeMode>.5){
         if(LensProbeMode>1.5){fragColor=vec4(lensAvailability,0,0,1);return;}
@@ -1016,7 +1336,19 @@ void main(){
         bool moved=length((lensSourceUv-texCoord)*vec2(size))>2.0;
         fragColor=vec4(coverage,moved?coverage:0.0,0,1);return;
     }
-    if(foreground){fragColor=vec4(original,1.0);return;}
+    // External ejecta uses the ORIGINAL visible surface depth. It stops at
+    // terrain and actors alike and can appear in front of a foreground actor.
+    float outflowLimit=1e8;
+    if(depth<.999999){
+        vec3 surface=scenePosition(texCoord,depth);
+        outflowLimit=max(0.0,dot(surface-CameraOriginRelative,rd)/WorldScale-.002);
+    }
+    vec3 outflow=whiteOutflowTrace(ro,rd,outflowLimit,outflowPixelAngle);
+    if(foreground){
+        if(all(equal(outflow,vec3(0.0)))){fragColor=vec4(original,1.0);return;}
+        vec3 emitted=1.0-exp(-max(outflow,vec3(0))*uExposure);
+        fragColor=vec4(sceneDisplay(emitted+sceneLinear(original)),1.0);return;
+    }
     vec3 background=original;
     if(lensAvailability>.00001){
         // Four subpixel taps reduce aliasing in compressed terrain. Each tap
@@ -1028,6 +1360,7 @@ void main(){
         }
         if(weight>0.0)background=mix(original,sum/weight,lensAvailability);
     }
+    hit.light+=outflow;
     if(all(equal(hit.light,vec3(0.0)))&&hit.transmission==1.0){fragColor=vec4(background,1.0);return;}
     vec3 emitted=1.0-exp(-max(hit.light,vec3(0))*uExposure);
     fragColor=vec4(sceneDisplay(emitted+hit.transmission*sceneLinear(background)),1.0);

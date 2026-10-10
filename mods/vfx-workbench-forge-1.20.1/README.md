@@ -9,3 +9,5 @@ Minecraft Forge 1.20.1，Java 17；开发构建使用 Forge 47.4.10。客户端�
 构建：设置 JAVA_HOME 到 Java 17 后运行 `./gradlew build`（Windows：`./gradlew.bat build`）。需要访问 Forge Maven。公开源码副本移除了本机临时目录和禁用证书检查的设置；不包含开发存档、日志及历史机器专用审计脚本。
 
 随附 JAR 是原项目已构建的制品，本审查未从整理后的源码重新构建。保留 `LIGHTNING_THIRD_PARTY_NOTICES.md` 及 JAR 内第三方声明。独立 skill 模板的审计入口仍限制专用测试世界 ASTRA_VFX_TEST，不能直接在重要存档运行。
+
+2026-10-10：同为内部版本 0.1.0 的更新制品，以 Release 日期区分；最新变更见 ../../docs/update-20261010.md。

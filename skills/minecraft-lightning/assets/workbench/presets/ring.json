@@ -24,6 +24,9 @@
   "glowWidth": 0.07,
   "coreGain": 3.8,
   "glowGain": 2.4,
+  "gradientRatio": 50,
+  "gradientTarget": "both",
+  "gradientCoreMode": "vivid",
   "strikeHeight": 18,
   "strikeWidth": 0.055,
   "strikeDisplacement": 1.5,
@@ -58,6 +61,5 @@
   "coreColor": "#ffffff",
   "glowColor": "#87cfff",
   "gradientStart": "#ffffff",
-  "gradientEnd": "#6ec8ff",
-  "gradientRatio": 50
+  "gradientEnd": "#6ec8ff"
 }

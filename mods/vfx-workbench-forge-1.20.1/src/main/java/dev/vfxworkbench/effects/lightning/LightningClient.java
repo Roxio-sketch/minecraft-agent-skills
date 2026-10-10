@@ -59,26 +59,64 @@ public final class LightningClient {
             .then(Commands.literal("mode").then(Commands.argument("value", StringArgumentType.word()).executes(c -> { String v=StringArgumentType.getString(c,"value"); if(!v.equals("orbit")&&!v.equals("strike")&&!v.equals("rain"))return 0; mode=v; dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).set("mode",v); return 1; }))));
     }
     private static java.util.Map<String,String> applied;
-    private static boolean reload() { recipe=LightningSkillSchema.recipe(); mode=recipe.mode; applied=dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).snapshot(); return true; }
+    private static long appliedRevision=Long.MIN_VALUE;
+    private static void captureApplied(){var state=dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID);applied=state.snapshot();appliedRevision=state.revision();}
+    private static final java.util.Set<String> APPEARANCE_FIELDS = java.util.Set.of(
+        "coreColor", "glowColor", "coreGain", "glowGain", "gradientEnabled", "gradientStart", "gradientEnd",
+        "gradientRatio", "gradientTarget", "gradientCoreMode");
+    private static void copyAppearance(LightningRecipe source, LightningRecipe target) {
+        target.coreColor=source.coreColor; target.glowColor=source.glowColor;
+        target.coreGain=source.coreGain; target.glowGain=source.glowGain;
+        target.gradientEnabled=source.gradientEnabled; target.gradientStart=source.gradientStart; target.gradientEnd=source.gradientEnd;
+        target.gradientRatio=source.gradientRatio; target.gradientTarget=source.gradientTarget; target.gradientCoreMode=source.gradientCoreMode;
+    }
+    private static boolean reload() { recipe=LightningSkillSchema.recipe(); mode=recipe.mode; captureApplied(); return true; }
     private static void refresh() {
-        var now=dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).snapshot();
-        if(now.equals(applied))return;
-        boolean visualOnly=applied!=null; for(var key:now.keySet())if(!java.util.Set.of("coreColor","glowColor","coreGain","glowGain","gradientEnabled","gradientStart","gradientEnd").contains(key)&&!java.util.Objects.equals(now.get(key),applied==null?null:applied.get(key)))visualOnly=false; boolean active=orbit!=null||bolt!=null||rain!=null;
-        boolean modeChanged=applied!=null&&(!java.util.Objects.equals(now.get("mode"),applied.get("mode"))||!java.util.Objects.equals(now.get("preset"),applied.get("preset"))); reload(); if(anchor==null||!active)return; if(modeChanged){preview();return;} if(visualOnly){if(rain!=null)for(var b:rain){b.recipe().coreColor=recipe.coreColor;b.recipe().glowColor=recipe.glowColor;b.recipe().coreGain=recipe.coreGain;b.recipe().glowGain=recipe.glowGain;b.recipe().gradientEnabled=recipe.gradientEnabled;b.recipe().gradientStart=recipe.gradientStart;b.recipe().gradientEnd=recipe.gradientEnd;}return;}
+        var state=dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID);
+        if(state.revision()==appliedRevision)return;
+        var now=state.snapshot();
+        if(now.equals(applied)){appliedRevision=state.revision();return;}
+        boolean visualOnly=applied!=null;
+        for(var key:now.keySet())if(!APPEARANCE_FIELDS.contains(key)&&!java.util.Objects.equals(now.get(key),applied==null?null:applied.get(key)))visualOnly=false;
+        boolean active=orbit!=null||bolt!=null||rain!=null;
+        boolean modeChanged=applied!=null&&(!java.util.Objects.equals(now.get("mode"),applied.get("mode"))||!java.util.Objects.equals(now.get("preset"),applied.get("preset"))||!java.util.Objects.equals(now.get("triggerPlacement"),applied.get("triggerPlacement"))||!java.util.Objects.equals(now.get("triggerDistance"),applied.get("triggerDistance"))||!java.util.Objects.equals(now.get("triggerHeightMode"),applied.get("triggerHeightMode"))||!java.util.Objects.equals(now.get("triggerStartY"),applied.get("triggerStartY")));
+        reload();
+        if(anchor==null||!active)return;
+        if(modeChanged){preview();return;}
+        if(visualOnly){if(rain!=null)for(var b:rain)copyAppearance(recipe,b.recipe());return;}
         if(mode.equals("orbit")){orbit=new OrbitField(recipe);bolt=null;rain=null;}
-        else if(mode.equals("strike")){bolt=BoltGeometry.generate(anchor.add(0,recipe.strikeHeight,0),anchor,recipe);orbit=null;rain=null;}
+        else if(mode.equals("strike")){bolt=startY()>=anchor.y+2?BoltGeometry.generate(new Vec3(anchor.x,startY(),anchor.z),anchor,recipe):null;orbit=null;rain=null;}
         else {rain=RainGeometry.generate(recipe,anchor,(start,end)->{
           var mc=Minecraft.getInstance();var hit=mc.level.clip(new ClipContext(start,new Vec3(end.x,mc.level.getMinBuildHeight(),end.z),ClipContext.Block.COLLIDER,ClipContext.Fluid.NONE,mc.player));return hit.getType()==HitResult.Type.BLOCK?hit.getLocation():end;
-        });orbit=null;bolt=null;}
+        },startY());orbit=null;bolt=null;}
     }
-    private static void startOrbit() { var mc=Minecraft.getInstance(); if(mc.player==null)return; if(!reload())return; fixedTime=-1; mode="orbit"; recipe.mode=mode; dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).set("mode",mode); applied=dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).snapshot(); anchor=mc.player.position().add(0,1.0,0); orbit=new OrbitField(recipe); bolt=null; rain=null; time=0; level=mc.level; }
-    private static void startStrike(Long seed) { var mc=Minecraft.getInstance(); if(mc.player==null)return; if(!reload())return; fixedTime=-1; mode="strike"; recipe.mode=mode; dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).set("mode",mode); applied=dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).snapshot(); if(seed!=null){recipe.seed=seed;dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).set("seed",seed.toString());applied=dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).snapshot();} anchor=mc.player.position(); Vec3 end=anchor; Vec3 start=end.add(0,recipe.strikeHeight,0); bolt=BoltGeometry.generate(start,end,recipe); orbit=null; rain=null; time=0; level=mc.level; mc.player.displayClientMessage(Component.literal("lightninglab seed="+recipe.seed), true); }
-    private static void startRain(Long seed) { var mc=Minecraft.getInstance(); if(mc.player==null)return; if(!reload())return; fixedTime=-1; mode="rain"; recipe.mode=mode; dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).set("mode",mode); applied=dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).snapshot(); if(seed!=null){recipe.seed=seed;dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).set("seed",seed.toString());applied=dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).snapshot();} anchor=mc.player.position(); rain=RainGeometry.generate(recipe, anchor,(start,end)->{
+    private static double startY() {
+        var state=dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID);
+        return state.get("triggerHeightMode").equals("absoluteWorld")
+            ?state.getDouble("triggerStartY"):anchor.y+recipe.strikeHeight;
+    }
+    private static Vec3 triggerAnchor() {
+        var mc=Minecraft.getInstance();
+        var state=dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID);
+        Vec3 feet=mc.player.position();
+        if(!state.get("triggerPlacement").equals("forward"))return feet;
+        Vec3 target=LightningPlacement.forward(feet,mc.player.getYRot(),state.getDouble("triggerDistance"));
+        // The yaw remains defined while looking straight up/down. Only sample loaded terrain.
+        if(!mc.level.hasChunkAt(net.minecraft.core.BlockPos.containing(target)))return target;
+        var hit=mc.level.clip(new ClipContext(target.add(0,8,0),
+            new Vec3(target.x,mc.level.getMinBuildHeight(),target.z),
+            ClipContext.Block.COLLIDER,ClipContext.Fluid.NONE,mc.player));
+        return hit.getType()==HitResult.Type.BLOCK?hit.getLocation():target;
+    }
+    private static void startOrbit() { var mc=Minecraft.getInstance(); if(mc.player==null)return; if(!reload())return; fixedTime=-1; mode="orbit"; recipe.mode=mode; dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).set("mode",mode); captureApplied(); anchor=mc.player.position().add(0,1.0,0); orbit=new OrbitField(recipe); bolt=null; rain=null; time=0; level=mc.level; }
+    private static void startStrike(Long seed) { var mc=Minecraft.getInstance(); if(mc.player==null)return; if(!reload())return; fixedTime=-1; mode="strike"; recipe.mode=mode; dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).set("mode",mode); captureApplied(); if(seed!=null){recipe.seed=seed;dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).set("seed",seed.toString());captureApplied();} anchor=triggerAnchor(); Vec3 end=anchor; Vec3 start=new Vec3(end.x,startY(),end.z); if(start.y<end.y+2){clear();mc.player.displayClientMessage(Component.literal("落雷起点必须高于落点至少 2 格，请提高起点 Y"),true);return;} bolt=BoltGeometry.generate(start,end,recipe); orbit=null; rain=null; time=0; level=mc.level; mc.player.displayClientMessage(Component.literal("lightninglab seed="+recipe.seed), true); }
+    private static void startRain(Long seed) { var mc=Minecraft.getInstance(); if(mc.player==null)return; if(!reload())return; fixedTime=-1; mode="rain"; recipe.mode=mode; dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).set("mode",mode); captureApplied(); if(seed!=null){recipe.seed=seed;dev.vfxworkbench.core.ParamRegistry.state(LightningSkillSchema.ID).set("seed",seed.toString());captureApplied();} anchor=triggerAnchor(); rain=RainGeometry.generate(recipe, anchor,(start,end)->{
             var hit=mc.level.clip(new ClipContext(start,new Vec3(end.x,Math.min(end.y-64,mc.level.getMinBuildHeight()),end.z),ClipContext.Block.COLLIDER,ClipContext.Fluid.NONE,mc.player));
             return hit.getType()==HitResult.Type.BLOCK?hit.getLocation():end;
-        }); orbit=null; bolt=null; time=0; level=mc.level; mc.player.displayClientMessage(Component.literal("lightninglab rain seed="+recipe.seed), true); }
+        },startY()); orbit=null; bolt=null; time=0; level=mc.level; mc.player.displayClientMessage(Component.literal("lightninglab rain seed="+recipe.seed), true); }
     private static void clear() { orbit=null; bolt=null; rain=null; anchor=null; time=0; fixedTime=-1; LightningHalo.release(); }
     /** Development verifier entry point; ordinary commands keep their normal tick clock. */
+    static void freezeForProbe(double elapsedTicks) { fixedTime=elapsedTicks; }
     static void previewAt(Vec3 position, double elapsedTicks) {
         var mc=Minecraft.getInstance();if(mc.player==null||mc.level==null)return;
         reload();anchor=position;time=0;fixedTime=elapsedTicks;level=mc.level;
@@ -118,16 +156,26 @@ public final class LightningClient {
     }
     @SubscribeEvent public static void render(RenderLevelStageEvent e) {
         if(e.getStage()!=RenderLevelStageEvent.Stage.AFTER_TRANSLUCENT_BLOCKS||anchor==null)return;
-        LightningHalo.beginFrame();
         Vec3 camera=e.getCamera().getPosition();
         double elapsed=fixedTime>=0?fixedTime:time+e.getPartialTick();
-        if(orbit!=null) LightningRender.drawOrbit(orbit.sample(anchor,elapsed),recipe,e.getPoseStack(),camera);
-        if(bolt!=null) LightningRender.drawBolt(bolt,recipe,elapsed,e.getPoseStack(),camera);
+        if(LightningShaderBridge.active()){
+            var pose=new com.mojang.blaze3d.vertex.PoseStack();pose.last().pose().set(e.getPoseStack().last().pose());
+            LightningShaderBridge.prepare(()->drawFrame(pose,camera,elapsed));
+        }else drawFrame(e.getPoseStack(),camera,elapsed);
+
+    }
+    private static void drawFrame(com.mojang.blaze3d.vertex.PoseStack pose,Vec3 camera,double elapsed){
+        LightningHalo.beginFrame();
+
+
+        if(orbit!=null) LightningRender.drawOrbit(orbit.sample(anchor,elapsed),recipe,pose,camera);
+        if(bolt!=null) LightningRender.drawBolt(bolt,recipe,elapsed,pose,camera);
         if(rain!=null) for(RainGeometry.Bolt b:rain) {
             double localTime=elapsed-b.delay();
-            LightningRender.drawBolt(b.geometry(),b.recipe(),localTime,e.getPoseStack(),camera);
-            LightningRender.drawOrbit(b.impact().sample(localTime),b.recipe(),e.getPoseStack(),camera);
+            LightningRender.drawBolt(b.geometry(),b.recipe(),localTime,pose,camera);
+            LightningRender.drawOrbit(b.impact().sample(localTime),b.recipe(),pose,camera);
         }
         LightningHalo.endFrame();
     }
+
 }

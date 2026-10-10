@@ -61,13 +61,19 @@ public final class LightningClient {
     }
     @SubscribeEvent public static void render(RenderLevelStageEvent e) {
         if(e.getStage()!=RenderLevelStageEvent.Stage.AFTER_TRANSLUCENT_BLOCKS||anchor==null)return;
-        Vec3 camera=e.getCamera().getPosition();
-        if(orbit!=null) LightningRender.drawOrbit(orbit.sample(anchor,time+e.getPartialTick()),recipe,e.getPoseStack(),camera);
-        if(bolt!=null) LightningRender.drawBolt(bolt,recipe,time+e.getPartialTick(),e.getPoseStack(),camera);
+        Vec3 camera=e.getCamera().getPosition();double elapsed=time+e.getPartialTick();
+        if(LightningShaderBridge.active()){
+            var pose=new com.mojang.blaze3d.vertex.PoseStack();pose.last().pose().set(e.getPoseStack().last().pose());
+            LightningShaderBridge.prepare(()->drawFrame(pose,camera,elapsed));
+        }else drawFrame(e.getPoseStack(),camera,elapsed);
+    }
+    private static void drawFrame(com.mojang.blaze3d.vertex.PoseStack pose,Vec3 camera,double elapsed){
+        if(orbit!=null) LightningRender.drawOrbit(orbit.sample(anchor,elapsed),recipe,pose,camera);
+        if(bolt!=null) LightningRender.drawBolt(bolt,recipe,elapsed,pose,camera);
         if(rain!=null) for(RainGeometry.Bolt b:rain) {
-            double localTime=time+e.getPartialTick()-b.delay();
-            LightningRender.drawBolt(b.geometry(),b.recipe(),localTime,e.getPoseStack(),camera);
-            LightningRender.drawOrbit(b.impact().sample(localTime),b.recipe(),e.getPoseStack(),camera);
+            double localTime=elapsed-b.delay();
+            LightningRender.drawBolt(b.geometry(),b.recipe(),localTime,pose,camera);
+            LightningRender.drawOrbit(b.impact().sample(localTime),b.recipe(),pose,camera);
         }
     }
 }

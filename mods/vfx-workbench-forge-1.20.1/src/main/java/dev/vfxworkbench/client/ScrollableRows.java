@@ -1,6 +1,8 @@
 package dev.vfxworkbench.client;
 
 import dev.vfxworkbench.core.*;
+import dev.vfxworkbench.effects.lightning.LightningSkillSchema;
+import dev.vfxworkbench.effects.blackhole.BlackHoleSkillSchema;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
@@ -13,21 +15,33 @@ import java.util.*;
 
 /** Schema-driven controls in one clipped, keyboard-accessible viewport. */
 final class ScrollableRows extends AbstractWidget {
-    private static final int ROW_H=46, GROUP_H=25;
+    // At the minimum 240px GUI height the lightning parameter viewport is
+    // 56px tall. Keep all three samples, including their HEX labels, inside
+    // one viewport rather than adding padding that no scroll can reveal.
+    private static final int ROW_H=46, GROUP_H=25, COLOR_PREVIEW_H=56, GRADIENT_NOTE_H=48;
     private final ParamState state;
     private final List<ParamSpec> specs;
     private final Map<String,WorkbenchUi.Entry> entries=new HashMap<>();
+    private record NumericText(String raw,String formatted) {}
+    private final Map<String,NumericText> numericTexts=new HashMap<>();
+    private String numericText(ParamSpec spec,String value){
+        var cached=numericTexts.get(spec.key);
+        if(cached==null||!cached.raw().equals(value)){cached=new NumericText(value,numericText(value));numericTexts.put(spec.key,cached);}
+        return cached.formatted();
+    }
     private final Set<String> collapsed=new HashSet<>();
     private List<String> visibleKeys=List.of();
     private List<Visual> visuals=List.of();
+    private long visibilityRevision=Long.MIN_VALUE;
     private double scroll, scrollbarGrab;
     private int contentHeight, enumIndex, enumOffset;
     private String focusKey, draggingKey, editingKey, editStart, enumKey, tooltip;
     private boolean draggingScrollbar;
     record ViewState(double scroll, Set<String> collapsed) {}
     private record Visual(String key, ParamSpec spec, String group, int offset, int count) {
-        boolean header(){return spec==null;}
-        int height(){return header()?GROUP_H:ROW_H;}
+        boolean info(){return key.startsWith("@lightning/");}
+        boolean header(){return spec==null&&!info();}
+        int height(){return info()?(key.endsWith("gradient-note")?GRADIENT_NOTE_H:COLOR_PREVIEW_H):header()?GROUP_H:ROW_H;}
     }
     private record Popup(int x,int y,int width,int height,int count) {}
 
@@ -52,9 +66,11 @@ final class ScrollableRows extends AbstractWidget {
     private double clamp(double value){return Math.max(0,Math.min(maxScroll(),value));}
     private Visual visual(String key){return visuals.stream().filter(v->v.key().equals(key)).findFirst().orElse(null);}
     private void clearHiddenFocus(){var v=visual(focusKey);if(v!=null&&(v.offset()+v.height()<=scroll||v.offset()>=scroll+height))focusKey=null;}
-    private void focusViewport(){for(var v:visuals)if(v.offset()>=scroll&&v.offset()+v.height()<=scroll+height){focusKey=v.key();return;}focusKey=null;}
+    private void focusViewport(){for(var v:visuals)if(!v.info()&&v.offset()>=scroll&&v.offset()+v.height()<=scroll+height){focusKey=v.key();return;}focusKey=null;}
 
     private void refreshVisibility(){
+        if(visibilityRevision==state.revision()){scroll=clamp(scroll);return;}
+        visibilityRevision=state.revision();
         List<String> now=specs.stream().filter(p->p.isVisible(state)).map(p->p.key).toList();
         if(!now.equals(visibleKeys)){
             visibleKeys=now;
@@ -70,7 +86,14 @@ final class ScrollableRows extends AbstractWidget {
         for(var group:groups.entrySet()){
             next.add(new Visual("@"+group.getKey(),null,group.getKey(),offset,group.getValue().size()));offset+=GROUP_H;
             if(collapsed.contains(group.getKey()))continue;
+            boolean lightning=LightningSkillSchema.ID.equals(state.schema.id);
+            if(lightning&&group.getValue().stream().anyMatch(p->p.key.equals("gradientEnabled"))){
+                next.add(new Visual("@lightning/gradient-note",null,group.getKey(),offset,0));offset+=GRADIENT_NOTE_H;
+            }
             for(var p:group.getValue()){next.add(new Visual(p.key,p,group.getKey(),offset,0));offset+=ROW_H;}
+            if(lightning)for(String layer:List.of("core","glow"))if(group.getValue().stream().anyMatch(p->p.key.equals(layer+"Color"))){
+                next.add(new Visual("@lightning/"+layer+"-preview",null,group.getKey(),offset,0));offset+=COLOR_PREVIEW_H;
+            }
         }
         visuals=next;contentHeight=offset;
         if(focusKey!=null&&visual(focusKey)==null)focusKey=null;
@@ -84,6 +107,11 @@ final class ScrollableRows extends AbstractWidget {
             int yy=rowY(v);if(yy+v.height()<=getY()||yy>=getY()+height)continue;
             boolean hovered=WorkbenchUi.inside(mx,my,getX(),Math.max(getY(),yy),contentWidth(),Math.min(yy+v.height(),getY()+height)-Math.max(getY(),yy));
             boolean focused=isFocused()&&v.key().equals(focusKey);
+            if(v.info()){
+                if(v.key().endsWith("gradient-note"))renderGradientNote(g,yy);
+                else renderColorPreview(g,yy,v.key().contains("/glow-"));
+                continue;
+            }
             if(v.header()){
                 WorkbenchUi.round(g,getX(),yy+2,contentWidth(),GROUP_H-5,focused||hovered?WorkbenchUi.HOVER:0xFF131D2B);
                 WorkbenchUi.chevron(g,getX()+7,yy+9,!collapsed.contains(v.group()),WorkbenchUi.MUTED);
@@ -102,14 +130,14 @@ final class ScrollableRows extends AbstractWidget {
                 case FLOAT,INT->{
                     double n=number(value,p.min),span=p.max-p.min;
                     WorkbenchUi.slider(g,cx(),cy,sliderWidth(),20,span<=0?0:(n-p.min)/span,WorkbenchUi.ACCENT,focused);
-                    var e=entry(p);e.place(valueX(),cy,valueWidth(),20);if(!p.key.equals(editingKey))sync(e,numericText(value));e.render(g,mx,my,partial);
+                    var e=entry(p);e.place(valueX(),cy,valueWidth(),20);if(!p.key.equals(editingKey))sync(e,numericText(p,value));e.render(g,mx,my,partial);
                 }
                 case BOOL->{
                     boolean on=state.getBool(p.key);WorkbenchUi.frame(g,cx(),cy+2,34,16,on?WorkbenchUi.ACCENT_BG:WorkbenchUi.SURFACE,focused?WorkbenchUi.ACCENT:WorkbenchUi.BORDER);
                     WorkbenchUi.round(g,cx()+(on?19:3),cy+5,11,10,on?WorkbenchUi.ACCENT:WorkbenchUi.MUTED);
                     WorkbenchUi.text(g,font(),on?"已启用":"已关闭",cx()+42,cy+6,cw()-42,on?WorkbenchUi.ACCENT:WorkbenchUi.MUTED);
                 }
-                case ENUM->{WorkbenchUi.control(g,font(),enumLabel(value),cx(),cy,cw(),20,hovered,focused||p.key.equals(enumKey));WorkbenchUi.chevron(g,cx()+cw()-13,cy+8,true,WorkbenchUi.MUTED);}
+                case ENUM->{WorkbenchUi.control(g,font(),enumLabel(p,value),cx(),cy,cw(),20,hovered,focused||p.key.equals(enumKey));WorkbenchUi.chevron(g,cx()+cw()-13,cy+8,true,WorkbenchUi.MUTED);}
                 case COLOR->{
                     WorkbenchUi.frame(g,cx(),cy,cw(),20,WorkbenchUi.SURFACE,focused?WorkbenchUi.ACCENT:WorkbenchUi.BORDER);
                     WorkbenchUi.round(g,cx()+5,cy+4,12,12,0xFF000000|state.getColor(p.key));
@@ -119,7 +147,41 @@ final class ScrollableRows extends AbstractWidget {
             }
             if(hovered&&my<cy&&enumKey==null)tooltip=p.label+(p.help==null||p.help.isBlank()?"":"\n"+p.help)+switch(p.reload){case HOT->"\n调整后即时更新";case RESOURCE->"\n调整后需重建效果";case RESTART->"\n调整后需重启客户端";};
         }
-        renderScrollbar(g,mx,my);if(enumKey!=null)renderPopup(g,mx,my);g.disableScissor();
+        renderScrollbar(g,mx,my);
+        if(enumKey!=null){
+            // EditBox text renders at an elevated GUI depth. Merely drawing
+            // the popup last does not cover it: place the entire popup above
+            // the controls, including its opaque background.
+            g.flush();g.pose().pushPose();g.pose().translate(0,0,400);
+            try{renderPopup(g,mx,my);g.flush();}finally{g.pose().popPose();}
+        }
+        g.disableScissor();
+    }
+    private boolean gradientApplies(boolean halo){
+        String target=state.get("gradientTarget");
+        return state.getBool("gradientEnabled")&&(target.equals("both")||target.equals(halo?"glow":"core"));
+    }
+    private void renderColorPreview(GuiGraphics g,int y,boolean halo){
+        WorkbenchUi.frame(g,getX(),y+1,contentWidth(),COLOR_PREVIEW_H-3,0xFF111C29,WorkbenchUi.BORDER);
+        String layer=halo?"光晕":"核心",source=gradientApplies(halo)?"已叠渐变":"基础色";
+        WorkbenchUi.text(g,font(),layer+" · 实际材质色",cx(),y+6,cw()-font().width(source)-8,WorkbenchUi.TEXT);
+        WorkbenchUi.text(g,font(),source,cx()+cw()-font().width(source),y+6,font().width(source),gradientApplies(halo)?WorkbenchUi.ACCENT:WorkbenchUi.MUTED);
+        String[] labels={state.get("mode").equals("orbit")?"起始端":"起始云端","中点",state.get("mode").equals("orbit")?"终止端":"终止地面"};
+        int gap=6;
+        for(int i=0;i<3;i++){
+            int x=cx()+i*(cw()+gap)/3,w=(i+1)*(cw()+gap)/3-i*(cw()+gap)/3-gap;
+            int rgb=LightningSkillSchema.previewColor(state,halo,i*.5);
+            WorkbenchUi.text(g,font(),labels[i],x,y+19,w,WorkbenchUi.MUTED);
+            WorkbenchUi.round(g,x,y+30,w,9,0xFF000000|rgb);
+            WorkbenchUi.text(g,font(),String.format(Locale.ROOT,"#%06X",rgb),x,y+43,w,WorkbenchUi.TEXT);
+        }
+    }
+    private void renderGradientNote(GuiGraphics g,int y){
+        WorkbenchUi.round(g,getX(),y+1,contentWidth(),GRADIENT_NOTE_H-3,0xFF111C29);
+        String target=state.getBool("gradientEnabled")?enumLabel(state.get("gradientTarget")):"已关闭";
+        WorkbenchUi.text(g,font(),"当前渐变："+target,cx(),y+6,cw(),WorkbenchUi.ACCENT);
+        WorkbenchUi.text(g,font(),"选中层：渐变色 × 本层基础色",cx(),y+19,cw(),WorkbenchUi.MUTED);
+        WorkbenchUi.text(g,font(),"主干与分叉共用同一组渐变",cx(),y+32,cw(),WorkbenchUi.MUTED);
     }
     void renderTooltip(GuiGraphics g,int mx,int my){if(tooltip!=null)g.renderComponentTooltip(font(),Arrays.stream(tooltip.split("\n")).<Component>map(Component::literal).toList(),mx,my);}
     private int thumbHeight(){return Math.min(height,Math.max(22,(int)(height*(double)height/Math.max(height,contentHeight))));}
@@ -164,6 +226,7 @@ final class ScrollableRows extends AbstractWidget {
         if(maxScroll()>0&&mx>=getX()+width-8){finishEdit(true);draggingScrollbar=true;scrollbarGrab=my>=thumbY()&&my<thumbY()+thumbHeight()?my-thumbY():thumbHeight()/2.0;dragScrollbar(my);return true;}
         for(Visual v:visuals){
             int yy=rowY(v);if(!WorkbenchUi.inside(mx,my,getX(),yy,contentWidth(),v.height()))continue;
+            if(v.info()){finishEdit(true);focusKey=null;return true;}
             focusKey=v.key();setMessage(Component.literal(v.header()?v.group():v.spec().label));
             if(v.header()){finishEdit(true);toggleGroup(v.group());return true;}
             ParamSpec p=v.spec();int cy=yy+22;
@@ -185,17 +248,17 @@ final class ScrollableRows extends AbstractWidget {
     @Override public boolean mouseScrolled(double mx,double my,double delta){
         refreshVisibility();if(!WorkbenchUi.inside(mx,my,getX(),getY(),width,height))return false;
         if(enumKey!=null){var p=state.schema.get(enumKey);Popup popup=popup();
-            if(p!=null&&popup!=null&&WorkbenchUi.inside(mx,my,popup.x(),popup.y(),popup.width(),popup.height())){enumOffset=Math.max(0,Math.min(Math.max(0,p.enumValues.size()-popup.count()),enumOffset-(int)Math.signum(delta)));return true;}enumKey=null;
+            if(p!=null&&popup!=null&&WorkbenchUi.inside(mx,my,popup.x(),popup.y(),popup.width(),popup.height())){enumOffset=Math.max(0,Math.min(Math.max(0,enumChoices(p).size()-popup.count()),enumOffset-(int)Math.signum(delta)));return true;}enumKey=null;
         }
         finishEdit(true);scroll=clamp(scroll-delta*30);clearHiddenFocus();return true;
     }
-    @Override public void setFocused(boolean value){super.setFocused(value);if(!value){finishEdit(true);enumKey=null;}else if(focusKey==null&&!visuals.isEmpty())focusKey=visuals.get(0).key();}
+    @Override public void setFocused(boolean value){super.setFocused(value);if(!value){finishEdit(true);enumKey=null;}else if(focusKey==null)focusViewport();}
     @Override public boolean keyPressed(int key,int scan,int mods){
         if(!isFocused())return false;refreshVisibility();
         if(enumKey!=null){var p=state.schema.get(enumKey);
             if(key==GLFW.GLFW_KEY_ESCAPE){enumKey=null;return true;}
-            if(key==GLFW.GLFW_KEY_UP||key==GLFW.GLFW_KEY_DOWN){enumIndex=Math.max(0,Math.min(p.enumValues.size()-1,enumIndex+(key==GLFW.GLFW_KEY_UP?-1:1)));keepEnumVisible();return true;}
-            if(key==GLFW.GLFW_KEY_ENTER||key==GLFW.GLFW_KEY_SPACE){state.set(p.key,p.enumValues.get(enumIndex));enumKey=null;return true;}
+            if(key==GLFW.GLFW_KEY_UP||key==GLFW.GLFW_KEY_DOWN){enumIndex=Math.max(0,Math.min(enumChoices(p).size()-1,enumIndex+(key==GLFW.GLFW_KEY_UP?-1:1)));keepEnumVisible();return true;}
+            if(key==GLFW.GLFW_KEY_ENTER||key==GLFW.GLFW_KEY_SPACE){state.set(p.key,enumChoices(p).get(enumIndex));enumKey=null;return true;}
         }
         if(editingKey!=null){
             if(key==GLFW.GLFW_KEY_ESCAPE){finishEdit(false);return true;}
@@ -218,33 +281,55 @@ final class ScrollableRows extends AbstractWidget {
     @Override public boolean charTyped(char character,int mods){return editingKey!=null&&entries.get(editingKey).charTyped(character,mods);}
     private boolean stepFocus(int direction){
         int current=-1;for(int i=0;i<visuals.size();i++)if(visuals.get(i).key().equals(focusKey))current=i;
-        int next=current+direction;if(next<0||next>=visuals.size())return false;
+        int next=current+direction;
+        if(current<0){
+            next=direction>0?0:visuals.size()-1;
+            while(next>=0&&next<visuals.size()){
+                var candidate=visuals.get(next);
+                if(!candidate.info()&&(direction>0?candidate.offset()>=scroll:candidate.offset()+candidate.height()<=scroll+height))break;
+                next+=direction;
+            }
+        }else while(next>=0&&next<visuals.size()&&visuals.get(next).info())next+=direction;
+        if(next<0||next>=visuals.size())return false;
         var v=visuals.get(next);focusKey=v.key();setMessage(Component.literal(v.header()?v.group():v.spec().label));
         if(v.offset()<scroll)scroll=v.offset();else if(v.offset()+v.height()>scroll+height)scroll=clamp(v.offset()+v.height()-height);return true;
     }
-    private void openEnum(ParamSpec p){if(p.enumValues.isEmpty())return;enumKey=p.key;enumIndex=Math.max(0,p.enumValues.indexOf(state.get(p.key)));enumOffset=0;keepEnumVisible();}
+    private List<String> enumChoices(ParamSpec p){
+        return state.schema.id.equals(BlackHoleSkillSchema.ID)&&p.key.equals("form")
+            ?BlackHoleSkillSchema.PRESET_FORMS:state.schema.id.equals("lightning")&&p.key.equals("preset")
+            ?dev.vfxworkbench.effects.lightning.LightningSkillSchema.PRESET_CHOICES:p.enumValues;
+    }
+    private void openEnum(ParamSpec p){if(enumChoices(p).isEmpty())return;enumKey=p.key;enumIndex=Math.max(0,enumChoices(p).indexOf(state.get(p.key)));enumOffset=0;keepEnumVisible();}
     private Popup popup(){
-        var v=visual(enumKey);if(v==null||v.spec().enumValues.isEmpty())return null;
-        int count=Math.min(v.spec().enumValues.size(),Math.max(1,Math.min(7,(height-8)/20))),h=count*20+4,below=rowY(v)+44;
+        var v=visual(enumKey);if(v==null||enumChoices(v.spec()).isEmpty())return null;
+        int count=Math.min(enumChoices(v.spec()).size(),Math.max(1,Math.min(7,(height-8)/20))),h=count*20+4,below=rowY(v)+44;
         int yy=below+h<=getY()+height?below:rowY(v)+19-h;yy=Math.max(getY()+2,Math.min(getY()+height-h-2,yy));return new Popup(cx(),yy,cw(),h,count);
     }
     private void keepEnumVisible(){var p=popup();if(p==null)return;if(enumIndex<enumOffset)enumOffset=enumIndex;if(enumIndex>=enumOffset+p.count())enumOffset=enumIndex-p.count()+1;}
     private void renderPopup(GuiGraphics g,int mx,int my){
         var popup=popup();if(popup==null)return;var p=state.schema.get(enumKey);WorkbenchUi.frame(g,popup.x(),popup.y(),popup.width(),popup.height(),0xFF0F1825,WorkbenchUi.ACCENT);
-        for(int i=0;i<popup.count();i++){int index=enumOffset+i;if(index>=p.enumValues.size())break;int yy=popup.y()+2+i*20;
+        for(int i=0;i<popup.count();i++){int index=enumOffset+i;if(index>=enumChoices(p).size())break;int yy=popup.y()+2+i*20;
             boolean hover=WorkbenchUi.inside(mx,my,popup.x()+2,yy,popup.width()-4,20);if(hover||index==enumIndex)g.fill(popup.x()+2,yy,popup.x()+popup.width()-2,yy+20,WorkbenchUi.ACCENT_BG);
-            WorkbenchUi.text(g,font(),enumLabel(p.enumValues.get(index)),popup.x()+8,yy+6,popup.width()-16,index==enumIndex?WorkbenchUi.ACCENT:WorkbenchUi.TEXT);
+            WorkbenchUi.text(g,font(),enumLabel(p,enumChoices(p).get(index)),popup.x()+8,yy+6,popup.width()-16,index==enumIndex?WorkbenchUi.ACCENT:WorkbenchUi.TEXT);
         }
     }
     private boolean clickPopup(double mx,double my,int button){
         var popup=popup();if(popup==null||!WorkbenchUi.inside(mx,my,popup.x(),popup.y(),popup.width(),popup.height()))return false;
-        if(button==0){var p=state.schema.get(enumKey);int index=enumOffset+(int)(my-popup.y()-2)/20;if(index>=0&&index<p.enumValues.size())state.set(p.key,p.enumValues.get(index));enumKey=null;}return true;
+        if(button==0){var p=state.schema.get(enumKey);int index=enumOffset+(int)(my-popup.y()-2)/20;if(index>=0&&index<enumChoices(p).size())state.set(p.key,enumChoices(p).get(index));enumKey=null;}return true;
     }
     @Override protected void updateWidgetNarration(NarrationElementOutput output){defaultButtonNarrationText(output);}
+    private String enumLabel(ParamSpec p,String v){
+        return state.schema.id.equals(BlackHoleSkillSchema.ID)&&p.key.equals("form")&&v.equals("classic")
+            ?"程序光带 · 基础结构":enumLabel(v);
+    }
     private static String enumLabel(String v){return switch(v){
-        case "classic"->"基础薄盘";case "granular"->"颗粒吸积";case "ribbons"->"层叠光带";case "dust"->"透镜尘埃";case "cinematic"->"电影盘";
-        case "custom"->"自定义";case "source"->"原版长脉冲";case "shortSource"->"原版短脉冲";case "dense"->"稠密电流";case "tribulation"->"雷劫";case "1"->"正向";case "-1"->"反向";case "recipe"->"导入配方";
-        case "gold"->"金色薄盘";case "ice"->"冰蓝正面盘";case "violet"->"紫色厚盘";case "lens"->"暗核透镜";case "crimson"->"赤红漩涡";
+            case "white-ring"->"白洞 · 蓝白光团";case "black"->"黑洞（内流）";case "white"->"白洞（外流）";
+        case "classic"->"基础薄盘";case "granular"->"颗粒吸积";case "ribbons"->"层叠光带";case "dust"->"体积尘埃";case "cinematic"->"电影光带";
+        case "self"->"玩家自身";case "forward"->"前方落点";
+        case "relativeGround"->"距落点高度";case "absoluteWorld"->"固定世界高度";
+        case "custom"->"自定义";case "source"->"原版长脉冲";case "shortSource"->"原版短脉冲";case "dense"->"稠密电流";case "tribulation"->"雷劫";case "1"->"正向";case "-1"->"反向";case "recipe"->"自定义 / 导入配方";
+        case "gold"->"金色薄盘";case "ice"->"冰蓝正面盘";case "violet"->"紫色厚盘";case "lens"->"无盘透镜";case "crimson"->"赤红漩涡";
         case "orbit"->"环绕电流";case "strike"->"单道落雷";case "rain"->"多道落雷";case "grow"->"延伸";case "ring"->"圆环";case "spektr"->"短段脉冲";
+        case "both"->"核心和光晕";case "core"->"仅核心";case "glow"->"仅光晕";case "vivid"->"保留色相（推荐）";case "additive"->"叠加高亮（易趋白）";
         case "spread"->"散布";case "cluster"->"集束";case "velocity"->"高度与速度";case "history"->"双高度历史";case "absorb"->"吸收";case "reflect"->"反射";default->v;};}
 }

@@ -41,19 +41,30 @@ vec2 cinematicPattern(float radius,float angle){
         *(.42+.58*broad)*(.7+.6*structure)*dustLane*arm;
     return vec2(max(0.0,plasma),clamp(.18+.37*broad+.22*ridge+.15*knots+.10*microKnots,0.0,1.0));
 }
+float volumeCell(ivec3 p);
+float ribbonRadialNoise(float coordinate,float seed){
+    float cell=floor(coordinate),f=fract(coordinate);
+    f=f*f*(3.0-2.0*f);
+    return mix(volumeCell(ivec3(int(mod(cell,128.0)),int(seed),19)),
+        volumeCell(ivec3(int(mod(cell+1.0,128.0)),int(seed),19)),f);
+}
 vec2 ribbonPattern(float radius,float angle){
-    // Uniform angular advection follows the Unity reference. A radius-dependent
-    // time phase produces ever finer shear and aliases after minutes of playback.
+    // Radially stretched stochastic lanes, inspired by the reference's polar
+    // noise lookup. Angular variation changes brightness only: it cannot warp
+    // two independent periodic carriers into a braided lattice.
     float phase=angle-uOrbitPhase;
-    float radial=(radius-uInner)/max(uOuter-uInner,.01);
-    float rho=radial*uBandDetail*1.2+uRadialPhase*.16;
+    float radial=clamp((radius-uInner)/max(uOuter-uInner,.01),0.0,1.0);
+    float rho=radial*uBandDetail*1.6+uRadialPhase*.16;
     vec2 orbit=vec2(cos(phase),sin(phase));
-    float warp=volumeNoise(vec3(rho*1.7,orbit*3.0)+vec3(uSeed*.13,9.0,13.0),vec3(128.0));
-    float grain=volumeNoise(vec3(rho*5.2,orbit*8.0)+vec3(3.0,uSeed*.29,17.0),vec3(128.0));
-    float lane=.5+.5*cos(6.28318530718*(rho+.11*(warp-.5)));
-    float filament=pow(.5+.5*cos(6.28318530718*(rho*2.3+.16*(grain-.5))),7.0);
-    float shade=(.16+.64*pow(lane,2.0)+.20*filament)*(.46+.54*warp);
-    return vec2(shade,clamp(.18+.58*lane+.24*grain,0.0,1.0));
+    vec3 offset=vec3(uSeed*.13,9.0,13.0);
+    float broad=ribbonRadialNoise(rho,uSeed);
+    float detail=ribbonRadialNoise(rho*3.1,uSeed+17.0);
+    float fine=ribbonRadialNoise(rho*7.3,uSeed+41.0);
+    float lanes=smoothstep(.18,.78,.64*broad+.26*detail+.10*fine);
+    float wisps=volumeNoise(vec3(radial*2.0,orbit*.7)+offset,vec3(128.0));
+    float angular=mix(1.0,.86+.28*wisps,clamp(uFilament/3.0,0.0,1.0));
+    float shade=(.035+1.1*pow(lanes,2.2))*angular;
+    return vec2(shade,clamp(.35+.65*lanes,0.0,1.0));
 }
 vec2 lensedDustPattern(float radius,float angle){
     return vec2(1.0);
@@ -88,6 +99,9 @@ float lensedDustVolume(vec3 q){
         float n=volumeNoise(p*scale+drift+vec3(uSeed,float(i)*13.0,17.0),period*scale);
         field*=.12+.88*n;
     }
-    float porous=pow(smoothstep(.11,.34,field),2.2);
+    // Normalize the four-octave product before thresholding. This preserves
+    // sparse dusty clumps and dark gaps without suppressing a narrow disk.
+    float clustered=pow(max(field,1e-8),.25);
+    float porous=pow(smoothstep(.43,.70,clustered),1.8);
     return porous*uDustFill;
 }

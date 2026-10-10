@@ -5,6 +5,8 @@ window.blackHoleLayers=(async()=>{
     ['disk_structure.glsl','halo.glsl','particles.vsh','particles_header.glsl','particles_main.glsl','styles.glsl'].map(read));
   const styleIndex=s=>({classic:0,granular:1,ribbons:2,dust:3,cinematic:4}[s.diskStyle]);
   const patternHeader=`uniform int uGranular;
+uniform sampler2D RibbonNoise;
+#define BH_REFERENCE_RIBBONS (uGranular==2)
 uniform float uBandDetail,uDustScale,uDustFill,uFilament,uSpiral;
 uniform float uOrbitPhase,uRadialPhase,uClassicRadialPhase,uShearLocal,uShearParity,uDustDriftA,uDustDriftB;
 #define BH_SHEAR_CLOCK (uShearLocal+8.0*uShearParity)
@@ -27,7 +29,7 @@ vec2 previewDiskPattern(float r,float a){
 #define BH_CINEMATIC_DISK (uGranular==4)
 #define BH_DUST_STYLE (uGranular==3)
 #define BH_CAPTURED_FOREGROUND_SCALE (uGranular==1?.22:1.0)
-#define BH_SURFACE_CRITICAL_MIN_RADIUS (uGranular==2?2.08*uCore:0.0)
+#define BH_SURFACE_CRITICAL_MIN_RADIUS 0.0
 `;
   const header=patternHeader+`uniform float HaloStrength,HaloRing,HaloDisk,HaloAura;
 uniform float JetStrength,JetLength,JetWidth;

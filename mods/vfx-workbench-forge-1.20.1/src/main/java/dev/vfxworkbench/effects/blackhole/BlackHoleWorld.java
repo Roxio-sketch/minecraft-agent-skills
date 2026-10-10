@@ -35,11 +35,14 @@ final class BlackHoleWorld {
     private static int foregroundTexture;
     private static final int MAX_FOREGROUND=64;
     private static final java.util.List<net.minecraft.world.phys.AABB> foregroundBounds=new java.util.ArrayList<>();
+    private static final java.util.List<net.minecraft.world.entity.Entity> foregroundEntities=new java.util.ArrayList<>();
+    private static final java.nio.FloatBuffer foregroundData=BufferUtils.createFloatBuffer(MAX_FOREGROUND*8);
     private static Matrix4f frameView,frameProjection;
     private static Vec3 frameCameraPosition;
     private static float framePartialTick;
     private static boolean localPlayerWhollyBehind,localPlayerProtected;
     static void captureCamera(RenderLevelStageEvent e){
+        if(BlackHoleClient.center==null||BlackHoleRender.world==null||!BlackHoleClient.failure.isEmpty())return;
         frameView=new Matrix4f(e.getPoseStack().last().pose());
         frameProjection=new Matrix4f(e.getProjectionMatrix());
         frameCameraPosition=e.getCamera().getPosition();
@@ -70,13 +73,14 @@ final class BlackHoleWorld {
         if(foregroundTexture!=0){GlStateManager._deleteTexture(foregroundTexture);foregroundTexture=0;}foregroundBounds.clear();
         frameView=null;frameProjection=null;frameCameraPosition=null;
         BlackHoleParticles.release();
+        BlackHoleCoreBloom.release();
     }
     private static void prepareForeground(Minecraft mc,Vec3 camera,Vec3 origin,float partialTick){
         boolean lensAffectsPlayer=lens>.00001f&&dev.vfxworkbench.core.ParamRegistry.state(BlackHoleSkillSchema.ID).getBool("lensAffectsPlayer");
         localPlayerWhollyBehind=false;localPlayerProtected=false;
         Vec3 eye=camera.add(origin),axis=BlackHoleClient.center.subtract(eye).normalize();
         double massDistance=BlackHoleClient.center.distanceTo(eye);
-        var entities=new java.util.ArrayList<net.minecraft.world.entity.Entity>();
+        var entities=foregroundEntities;entities.clear();
         for(var entity:mc.level.entitiesForRendering())if(entity!=mc.player)entities.add(entity);
         entities.sort(java.util.Comparator.comparingDouble(entity->entity.position().distanceToSqr(camera)));
         entities.add(0,mc.player);foregroundBounds.clear();
@@ -109,10 +113,12 @@ final class BlackHoleWorld {
             if(playerParticipates||(!alwaysProtectSubject&&whollyBehind))continue;
             foregroundBounds.add(box);
         }
-        var data=BufferUtils.createFloatBuffer(MAX_FOREGROUND*8);
+        entities.clear();
+        var data=foregroundData;data.clear();
         for(var box:foregroundBounds){data.put((float)box.minX).put((float)box.minY).put((float)box.minZ).put(1f);data.put((float)box.maxX).put((float)box.maxY).put((float)box.maxZ).put(1f);}
         while(data.hasRemaining())data.put(0f);data.flip();
         GlStateManager._activeTexture(GL13.GL_TEXTURE2);
+        try(UnpackState unpack=new UnpackState()){
         if(foregroundTexture==0){
             foregroundTexture=GlStateManager._genTexture();GlStateManager._bindTexture(foregroundTexture);
             GL11.glTexParameteri(GL11.GL_TEXTURE_2D,GL11.GL_TEXTURE_MIN_FILTER,GL11.GL_NEAREST);GL11.glTexParameteri(GL11.GL_TEXTURE_2D,GL11.GL_TEXTURE_MAG_FILTER,GL11.GL_NEAREST);
@@ -121,6 +127,7 @@ final class BlackHoleWorld {
         }else{
             GlStateManager._bindTexture(foregroundTexture);
             GL11.glTexSubImage2D(GL11.GL_TEXTURE_2D,0,0,0,MAX_FOREGROUND*2,1,GL11.GL_RGBA,GL11.GL_FLOAT,data);
+        }
         }
     }
     static void render(RenderLevelStageEvent e){
@@ -178,7 +185,7 @@ final class BlackHoleWorld {
             RenderSystem.disableDepthTest();RenderSystem.depthMask(false);RenderSystem.disableBlend();RenderSystem.disableCull();RenderSystem.colorMask(true,true,true,true);
             java.nio.ByteBuffer noLensColor=null,sourceCoverage=null;
             if(probe!=null){
-                s.safeGetUniform("LensStrength").set(0f);drawField();
+                s.safeGetUniform("LensStrength").set(0f);drawField();BlackHoleCoreBloom.render(s,main,snapshot,vp,relative,origin,null);
                 noLensColor=BufferUtils.createByteBuffer(main.width*main.height*4);
                 GL30.glBindFramebuffer(GL30.GL_READ_FRAMEBUFFER,main.frameBufferId);
                 GL11.glReadPixels(0,0,main.width,main.height,GL11.GL_RGBA,GL11.GL_UNSIGNED_BYTE,noLensColor);
@@ -197,7 +204,7 @@ final class BlackHoleWorld {
                 try(NativeImage im=Screenshot.takeScreenshot(main)){im.writeToFile(folder.resolve(probe+"-source-coverage.png"));}
                 s.safeGetUniform("LensProbeMode").set(0f);
             }
-            drawField();BlackHoleClient.worldDraws++;
+            drawField();BlackHoleCoreBloom.render(s,main,snapshot,vp,relative,origin,probe);BlackHoleClient.worldDraws++;
             java.nio.ByteBuffer fieldColor=null;
             if(probe!=null){
                 fieldColor=BufferUtils.createByteBuffer(main.width*main.height*4);
@@ -245,7 +252,16 @@ final class BlackHoleWorld {
         Vec3 massRelative=relative.subtract(origin);
         double massDistance=massRelative.length();Vec3 massAxis=massRelative.normalize();
         var params=dev.vfxworkbench.core.ParamRegistry.state(BlackHoleSkillSchema.ID);
-        double radius=Math.max(Math.max(BlackHoleSkillSchema.outer(params)*1.5,params.getFloat("lensRadius")),BlackHoleParticles.enabled?BlackHoleParticles.outer*1.02+BlackHoleParticles.size*6:0)*scale;
+        double radius=Math.max(Math.max(BlackHoleSkillSchema.outer(params)*1.5,params.getFloat("lensRadius")),BlackHoleParticles.enabled?BlackHoleParticles.outer*1.02+BlackHoleParticles.size*6:0);
+        if(params.get("objectMode").equals("white")){
+            if(params.getFloat("coreGlow")>0&&params.getFloat("coreEmission")>0)radius=Math.max(radius,params.getFloat("core")*params.getFloat("coreGlowRadius"));
+            // The new optical diffusion extends beyond the finite world-space
+            // corona; probe support must contain its screen-space tails.
+            if(params.getFloat("coreGlow")>0&&params.getFloat("coreEmission")>0)radius=Math.max(radius,params.getFloat("core")*params.getFloat("coreGlowRadius")*5);
+            if(params.getFloat("jetStrength")>0)radius=Math.max(radius,Math.hypot(params.getFloat("jetLength")+params.getFloat("core")*1.1,params.getFloat("jetWidth")*3));
+            if(params.getBool("shellEnabled")&&params.getFloat("shellStrength")>0)radius=Math.max(radius,params.getFloat("shellRadius")+params.getFloat("shellWidth")*3);
+        }
+        radius*=scale;
         for(int i=0;i<n;i++){
             if((sourceCoverage.get(i*4)&255)>16)lensedPlayerPixels++;
             if((sourceCoverage.get(i*4+1)&255)>16)movedLensedPlayerPixels++;
@@ -301,6 +317,7 @@ final class BlackHoleWorld {
         r.addProperty("playerLensActive",lensAffectsPlayer&&lens>.00001f);
         r.addProperty("localPlayerWhollyBehind",localPlayerWhollyBehind);r.addProperty("localPlayerProtected",localPlayerProtected);
         r.add("parameters",new Gson().toJsonTree(params.snapshot()));
+        r.add("coreBloom",BlackHoleCoreBloom.metadata());
         if(player!=null){r.add("probeActorPosition",vector(player.getPosition(partialTick)));r.addProperty("probeActorPose",player.getPose().name());r.addProperty("probeActorYaw",player.getYRot());r.addProperty("probeActorPitch",player.getXRot());}
         r.addProperty("playerProtectionScope","all player entities; localPlayer metrics describe the local camera subject");
         r.addProperty("foregroundPolicy",lensAffectsPlayer&&lens>.00001f?"players explicitly participate regardless of mass-plane classification; non-player observer subject protected":"whole-entity; all players and non-player observer subject protected");
@@ -334,20 +351,37 @@ final class BlackHoleWorld {
         Files.writeString(out.resolve(name+".json"),new GsonBuilder().setPrettyPrinting().create().toJson(r));
     }
     private static JsonArray vector(Vec3 value){var out=new JsonArray();out.add(value.x);out.add(value.y);out.add(value.z);return out;}
+    /** Atlas uploads during reload leave sub-rectangle pixel-unpack offsets.
+     * Our tightly packed float buffer must never inherit those offsets or a PBO.
+     */
+    private static final class UnpackState implements AutoCloseable{
+        private static final int[] KEYS={GL11.GL_UNPACK_ROW_LENGTH,GL11.GL_UNPACK_SKIP_ROWS,GL11.GL_UNPACK_SKIP_PIXELS,GL11.GL_UNPACK_ALIGNMENT,GL11.GL_UNPACK_SWAP_BYTES,GL12.GL_UNPACK_IMAGE_HEIGHT,GL12.GL_UNPACK_SKIP_IMAGES};
+        private final int[] previous=new int[KEYS.length];
+        private final int buffer=GL11.glGetInteger(GL21.GL_PIXEL_UNPACK_BUFFER_BINDING);
+        UnpackState(){
+            for(int i=0;i<KEYS.length;i++)previous[i]=GL11.glGetInteger(KEYS[i]);
+            GL15.glBindBuffer(GL21.GL_PIXEL_UNPACK_BUFFER,0);
+            for(int key:KEYS)GL11.glPixelStorei(key,key==GL11.GL_UNPACK_ALIGNMENT?4:0);
+        }
+        public void close(){
+            for(int i=0;i<KEYS.length;i++)GL11.glPixelStorei(KEYS[i],previous[i]);
+            GL15.glBindBuffer(GL21.GL_PIXEL_UNPACK_BUFFER,buffer);
+        }
+    }
     private static final class State implements AutoCloseable{
         private static final Field BLEND_CACHE=ObfuscationReflectionHelper.findField(BlendMode.class,"f_85499_");
         final BlendMode previousBlend=readBlendCache();
         final int draw=GL11.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING),read=GL11.glGetInteger(GL30.GL_READ_FRAMEBUFFER_BINDING),active=GL11.glGetInteger(GL13.GL_ACTIVE_TEXTURE);
         final int program=GL11.glGetInteger(GL20.GL_CURRENT_PROGRAM),func=GL11.glGetInteger(GL11.GL_DEPTH_FUNC);
         final int sr=GL11.glGetInteger(GL14.GL_BLEND_SRC_RGB),dr=GL11.glGetInteger(GL14.GL_BLEND_DST_RGB),sa=GL11.glGetInteger(GL14.GL_BLEND_SRC_ALPHA),da=GL11.glGetInteger(GL14.GL_BLEND_DST_ALPHA),eqr=GL11.glGetInteger(GL20.GL_BLEND_EQUATION_RGB),eqa=GL11.glGetInteger(GL20.GL_BLEND_EQUATION_ALPHA);
-        final int[] vp=new int[4],textures=new int[5],shaderTextures=new int[5];final float[] mask=new float[4],clear=new float[4];
+        final int[] vp=new int[4],textures=new int[6],shaderTextures=new int[6];final float[] mask=new float[4],clear=new float[4];
         final boolean depth=GL11.glIsEnabled(GL11.GL_DEPTH_TEST),write=GL11.glGetBoolean(GL11.GL_DEPTH_WRITEMASK),blend=GL11.glIsEnabled(GL11.GL_BLEND),cull=GL11.glIsEnabled(GL11.GL_CULL_FACE),scissor=GL11.glIsEnabled(GL11.GL_SCISSOR_TEST);
         final ShaderInstance previous=RenderSystem.getShader();
         final double clearDepth=GL11.glGetDouble(GL11.GL_DEPTH_CLEAR_VALUE);
-        State(){GL11.glGetIntegerv(GL11.GL_VIEWPORT,vp);GL11.glGetFloatv(GL11.GL_COLOR_WRITEMASK,mask);GL11.glGetFloatv(GL11.GL_COLOR_CLEAR_VALUE,clear);for(int i=0;i<5;i++){shaderTextures[i]=RenderSystem.getShaderTexture(i);GlStateManager._activeTexture(GL13.GL_TEXTURE0+i);textures[i]=GL11.glGetInteger(GL11.GL_TEXTURE_BINDING_2D);}GlStateManager._activeTexture(active);}
+        State(){GL11.glGetIntegerv(GL11.GL_VIEWPORT,vp);GL11.glGetFloatv(GL11.GL_COLOR_WRITEMASK,mask);GL11.glGetFloatv(GL11.GL_COLOR_CLEAR_VALUE,clear);for(int i=0;i<6;i++){shaderTextures[i]=RenderSystem.getShaderTexture(i);GlStateManager._activeTexture(GL13.GL_TEXTURE0+i);textures[i]=GL11.glGetInteger(GL11.GL_TEXTURE_BINDING_2D);}GlStateManager._activeTexture(active);}
         public void close(){
             GL30.glBindFramebuffer(GL30.GL_DRAW_FRAMEBUFFER,draw);GL30.glBindFramebuffer(GL30.GL_READ_FRAMEBUFFER,read);RenderSystem.viewport(vp[0],vp[1],vp[2],vp[3]);
-            for(int i=0;i<5;i++){RenderSystem.setShaderTexture(i,shaderTextures[i]);GlStateManager._activeTexture(GL13.GL_TEXTURE0+i);GlStateManager._bindTexture(textures[i]);}GlStateManager._activeTexture(active);
+            for(int i=0;i<6;i++){RenderSystem.setShaderTexture(i,shaderTextures[i]);GlStateManager._activeTexture(GL13.GL_TEXTURE0+i);GlStateManager._bindTexture(textures[i]);}GlStateManager._activeTexture(active);
             RenderSystem.setShader(()->previous);GlStateManager._glUseProgram(program);
             if(depth)RenderSystem.enableDepthTest();else RenderSystem.disableDepthTest();RenderSystem.depthMask(write);RenderSystem.depthFunc(func);
             if(blend)RenderSystem.enableBlend();else RenderSystem.disableBlend();RenderSystem.blendFuncSeparate(sr,dr,sa,da);GL20.glBlendEquationSeparate(eqr,eqa);

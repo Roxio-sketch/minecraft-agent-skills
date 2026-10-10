@@ -250,6 +250,8 @@ public final class BlackHoleAudit {
             record.addProperty("generationAfter",BlackHoleRender.generation);
             record.addProperty("glError",GL11.glGetError());
             record.addProperty("time",BlackHoleRender.frozenTime);
+            record.addProperty("objectMode",BlackHoleRecipe.state().get("objectMode"));
+            record.addProperty("coreEmission",BlackHoleRecipe.state().getFloat("coreEmission"));
             record.addProperty("playerUsingItem",mc.player.isUsingItem());
             record.addProperty("ticksUsingItem",mc.player.getTicksUsingItem());
             record.addProperty("selectedSlot",mc.player.getInventory().selected);
@@ -354,6 +356,7 @@ public final class BlackHoleAudit {
             data.addProperty("minecraft","1.20.1");data.addProperty("gpu",GL11.glGetString(GL11.GL_RENDERER));
             data.addProperty("glVersion",GL11.glGetString(GL11.GL_VERSION));
             data.addProperty("world","ASTRA_VFX_TEST");data.addProperty("shaderGeneration",BlackHoleRender.generation);
+            data.addProperty("objectMode",BlackHoleRecipe.state().get("objectMode"));data.addProperty("coreEmission",BlackHoleRecipe.state().getFloat("coreEmission"));
             data.addProperty("wrappedItemRoots",BlackHoleModels.wrappedCount);
             data.addProperty("selectedCase",index<CASES.length&&index>=0?CASES[index]:"done");
             data.addProperty("nativeEntityTestCount",spawned.size());

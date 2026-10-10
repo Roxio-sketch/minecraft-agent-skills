@@ -17,11 +17,22 @@ import java.util.List;
 
 public final class LightningCheck {
     public static void main(String[] args) {
+        for(String preset:List.of("source","shortSource","orbit","dense","ring","strike","rain","cluster","tribulation")) {
+            try(var stream=LightningCheck.class.getResourceAsStream("/assets/vfxworkbench/lightning/presets/"+preset+".json")) {
+                if(stream==null)throw new AssertionError("Missing preset "+preset);
+                LightningRecipe.parse(JsonParser.parseReader(new InputStreamReader(stream,StandardCharsets.UTF_8)));
+            }catch(java.io.IOException failure){throw new AssertionError(preset,failure);}
+        }
+        System.out.println("PASS: all curated and legacy lightning presets pass actual typed importer");
         ImpactColorCheck.run();
         checkContract();
         checkRasterCoverage();
         HaloGeometryCheck.run();
         GradientRatioCheck.run();
+        GradientLayerCheck.run();
+        PlacementCheck.run();
+        PerformanceCheck.run();
+        BranchDistributionCheck.run();
         double[][] vectors={{0,0,0},{.1,.2,.8285183685716719},{1.25,-3.75,.7282445621599388},{289.2,7.1,-.6433033650825536},{-500,120,-.2022023529315641}};
         for(double[] v:vectors)if(Math.abs(SimplexNoise.sample(v[0],v[1])-v[2])>1e-12)throw new AssertionError("simplex Java/JS vector mismatch");
         for(String mode:List.of("grow","ring"))for(int direction:new int[]{1,-1}){
@@ -211,7 +222,8 @@ public final class LightningCheck {
         if(legacy.size()!=60||legacy.has("gradientRatio"))throw new AssertionError("original 60-field recipe resource was rewritten");
         var legacyParsed=LightningRecipe.parse(legacy);
         if(legacyParsed.gradientRatio!=50||new LightningRecipe().gradientRatio!=50)throw new AssertionError("legacy recipe omitted ratio must default to 50 percent");
-        var originalFields=GSON.toJsonTree(legacyParsed).getAsJsonObject();originalFields.remove("gradientRatio");
+        var originalFields=GSON.toJsonTree(legacyParsed).getAsJsonObject();
+        for(String key:List.of("gradientRatio","gradientTarget","gradientCoreMode"))originalFields.remove(key);
         if(!originalFields.equals(legacy))throw new AssertionError("gradient extension changed an original legacy field");
         JsonObject oldWrapper=new JsonObject(),oldStrings=new JsonObject();
         for(var entry:legacy.entrySet())oldStrings.addProperty(entry.getKey(),entry.getValue().getAsString());
@@ -232,7 +244,7 @@ public final class LightningCheck {
         if(hotChanges[0]!=1||live.getDouble("gradientRatio")!=75.5||!live.get("preset").equals(presetBefore))throw new AssertionError("ratio edit did not update immediately or changed the selected preset");
         var expected=LightningRecipe.parse(legacy);expected.gradientRatio=75.5;
         var typed=JsonParser.parseString(LightningSkillSchema.exportRecipe()).getAsJsonObject();
-        if(typed.size()!=61||!typed.get("gradientRatio").getAsJsonPrimitive().isNumber()||typed.get("gradientRatio").getAsDouble()!=75.5)throw new AssertionError("extended export must retain all 60 original fields plus a typed ratio");
+        if(typed.size()!=63||!typed.get("gradientRatio").getAsJsonPrimitive().isNumber()||typed.get("gradientRatio").getAsDouble()!=75.5)throw new AssertionError("extended export must retain all 60 original fields plus gradient controls");
         sameRecipe(expected,LightningRecipe.parse(typed),"new ratio typed export round trip");
         LightningSkillSchema.importRecipe(typed);
         sameRecipe(expected,LightningSkillSchema.recipe(),"new ratio atomic import round trip");
@@ -259,7 +271,7 @@ public final class LightningCheck {
         }catch(java.io.IOException failure){throw new AssertionError("gradient ratio save/import integration",failure);}
         LightningSkillSchema.importRecipe(GSON.toJson(supplied));
         sameRecipe(supplied,LightningSkillSchema.recipe(),"gradient ratio checks restore the supplied baseline");
-        System.out.println("PASS: original 60-field recipes default to 50 percent; hot percent slider, strict atomic ratio validation and extended 61-field save/export round trips");
+        System.out.println("PASS: original 60-field recipes default to 50 percent; hot percent slider, strict atomic ratio validation and extended 63-field save/export round trips");
     }
     private static void checkContract() {
         LightningSkillSchema.register();
@@ -272,10 +284,10 @@ public final class LightningCheck {
             if(!live.schema.contains(field.getName()))throw new AssertionError("missing skill field: "+field.getName());
         }
         if(!live.schema.get("coreColor").isVisible(live)||!live.schema.get("glowColor").isVisible(live))throw new AssertionError("gradient base tints must stay editable");
-        if(live.schema.get("glowWidth").min!=.01||live.schema.get("strikeHeight").max!=128||live.schema.get("strikeDisplacement").max!=12)throw new AssertionError("skill ranges changed");
+        if(live.schema.get("glowWidth").min!=.01||live.schema.get("strikeHeight").max!=1024||live.schema.get("strikeDisplacement").max!=12)throw new AssertionError("skill ranges changed");
         var exported=JsonParser.parseString(LightningSkillSchema.exportRecipe()).getAsJsonObject();
         if(exported.has("values")||exported.has("preset")||!exported.get("schema").getAsJsonPrimitive().isNumber()||!exported.get("gradientEnabled").getAsJsonPrimitive().isBoolean())throw new AssertionError("export must be typed raw skill JSON");
-        if(exported.size()!=61||!exported.get("gradientRatio").getAsJsonPrimitive().isNumber()||exported.get("gradientRatio").getAsDouble()!=50)throw new AssertionError("default export must add only a typed 50 percent gradient ratio");
+        if(exported.size()!=63||!exported.get("gradientRatio").getAsJsonPrimitive().isNumber()||exported.get("gradientRatio").getAsDouble()!=50)throw new AssertionError("default export must retain all old fields plus typed gradient controls");
         sameRecipe(supplied,LightningRecipe.parse(exported),"typed round trip");
         for(String preset:live.schema.get("preset").enumValues){
             if(preset.equals("custom"))continue;
@@ -295,7 +307,7 @@ public final class LightningCheck {
         strings.addProperty("preset","cluster");wrapper.addProperty("preset","last");wrapper.add("values",strings);
         LightningSkillSchema.importRecipe(wrapper);
         sameRecipe(cluster,LightningSkillSchema.recipe(),"old MOD string wrapper compatibility");
-        for(String bad:List.of("[]","null","{\"unknown\":1}","{\"strikeHeight\":129}","{\"strikeDisplacement\":12.1}","{\"strands\":1.5}","{\"seed\":2147483648}","{\"seed\":1.000000000000000001}","{\"durationTicks\":1}","{\"schema\":2}","{\"gradientEnabled\":1}","{\"glowGain\":true}","{\"coreColor\":1}","{\"branchDecay\":\"NaN\"}","{\"strikeHeight\":{}}","{\"values\":[]}\n")){
+        for(String bad:List.of("[]","null","{\"unknown\":1}","{\"strikeHeight\":1025}","{\"strikeDisplacement\":12.1}","{\"strands\":1.5}","{\"seed\":2147483648}","{\"seed\":1.000000000000000001}","{\"durationTicks\":1}","{\"schema\":2}","{\"gradientEnabled\":1}","{\"glowGain\":true}","{\"coreColor\":1}","{\"branchDecay\":\"NaN\"}","{\"strikeHeight\":{}}","{\"values\":[]}\n")){
             var before=live.snapshot();boolean rejected=false;
             try{LightningSkillSchema.importRecipe(bad);}catch(RuntimeException expected){rejected=true;}
             if(!rejected||!before.equals(live.snapshot()))throw new AssertionError("invalid import mutated/clamped: "+bad);
@@ -307,7 +319,7 @@ public final class LightningCheck {
                 Files.writeString(file,GSON.toJson(cluster));
                 LightningSkillSchema.importRecipe(file);
                 sameRecipe(cluster,LightningSkillSchema.recipe(),"skill config file import");
-                var before=live.snapshot();Files.writeString(file,"{\"strikeHeight\":129}");
+                var before=live.snapshot();Files.writeString(file,"{\"strikeHeight\":1025}");
                 boolean rejected=false;try{LightningSkillSchema.importRecipe(file);}catch(IllegalArgumentException expected){rejected=true;}
                 if(!rejected||!before.equals(live.snapshot()))throw new AssertionError("invalid file changed current GUI state");
                 Files.delete(file);rejected=false;
@@ -317,6 +329,15 @@ public final class LightningCheck {
                 Files.deleteIfExists(file);Files.deleteIfExists(file.getParent());Files.deleteIfExists(file.getParent().getParent());Files.deleteIfExists(directory);
             }
         }catch(java.io.IOException ex){throw new AssertionError("recipe file integration",ex);}
+        LightningSkillSchema.importRecipe("{\"strikeHeight\":1024,\"triggerStartY\":8192}");
+        if(live.getDouble("strikeHeight")!=1024||live.getDouble("triggerStartY")!=8192)throw new AssertionError("raised height bounds rejected");
+        var highRecipe=LightningSkillSchema.recipe();
+        var highBolt=BoltGeometry.generate(new Vec3(0,1024,0),Vec3.ZERO,highRecipe);
+        if(highBolt.segments().isEmpty()||highBolt.segments().size()>highRecipe.maxSegments||highBolt.segments().stream().noneMatch(v->v.depth()==0&&v.b().equals(Vec3.ZERO)))throw new AssertionError("1024-block endpoint/budget");
+        var highBefore=live.snapshot();
+        boolean highRejected=false;
+        try{LightningSkillSchema.importRecipe("{\"triggerStartY\":8193}");}catch(IllegalArgumentException expected){highRejected=true;}
+        if(!highRejected||!highBefore.equals(live.snapshot()))throw new AssertionError("invalid world Y mutated state");
         LightningRecipe baseline=new LightningRecipe();baseline.mode="strike";baseline.strikeHeight=51;
         LightningSkillSchema.importRecipe("{\"mode\":\"strike\",\"strikeHeight\":51}");
         sameRecipe(baseline,LightningSkillSchema.recipe(),"partial skill recipes merge original skill baseline");

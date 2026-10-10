@@ -50,12 +50,14 @@ public final class WaveField {
 
     private void step(float speed, float damping, float maxHeight) {
         boolean history = solver.equals("history");
+        boolean absorb=boundary.equals("absorb");
+        float accelerationScale=2.0f*speed*speed;
         for (int j = 1; j < size - 1; j++) for (int i = 1; i < size - 1; i++) {
             int k = j * size + i;
             float average = (height[k - 1] + height[k + 1] + height[k - size] + height[k + size]) * 0.25f;
             int edge = Math.min(Math.min(i, j), Math.min(size - 1 - i, size - 1 - j));
-            float local = boundary.equals("absorb") && edge < 8 ? 0.90f + (damping - 0.90f) * edge / 8.0f : damping;
-            float acceleration = (average - height[k]) * (2.0f * speed * speed);
+            float local = absorb && edge < 8 ? 0.90f + (damping - 0.90f) * edge / 8.0f : damping;
+            float acceleration = (average - height[k]) * accelerationScale;
             if (history) {
                 nextHeight[k] = clamp((2.0f * height[k] - velocity[k] + acceleration) * local, maxHeight);
                 nextVelocity[k] = height[k];

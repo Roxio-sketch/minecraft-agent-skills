@@ -14,16 +14,34 @@ import java.util.*;
 /** The full lightning skill contract, with a separate MOD default recipe. */
 public final class LightningSkillSchema {
     public static final String ID = "lightning";
+    public static final List<String> PRESET_CHOICES=List.of("custom","orbit","source","shortSource","ring","strike","cluster","rain","tribulation");
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
     private static boolean applying;
     private static String previousPreset, previousRainStyle;
+    private static final Set<String> HOST_FIELDS = Set.of("triggerPlacement", "triggerDistance", "triggerHeightMode", "triggerStartY");
 
     public static void register() {
         if (ParamRegistry.has(ID)) return;
         LightningRecipe defaults = loadResource("recipe.json");
         var p = new ArrayList<ParamSpec>();
         enumeration(p, defaults, "mode", "效果模式", List.of("orbit", "strike", "rain"));
-        p.add(ParamSpec.builder("preset", "效果预设", ParamType.ENUM)
+        p.add(ParamSpec.builder("triggerHeightMode", "高度基准", ParamType.ENUM).group("落雷形状")
+            .enumValues(List.of("relativeGround", "absoluteWorld")).defaultValue("relativeGround")
+            .visibleWhen(s -> !s.get("mode").equals("orbit"))
+            .help("固定世界高度直接指定起点 Y；与玩家高度无关").build());
+        p.add(ParamSpec.builder("triggerStartY", "落雷起点 Y（世界坐标）", ParamType.FLOAT).group("落雷形状")
+            .min(-2048).max(8192).step(1).defaultValue("296")
+            .visibleWhen(s -> !s.get("mode").equals("orbit") && s.get("triggerHeightMode").equals("absoluteWorld"))
+            .help("起点必须高于落点至少 2 格；不会自动随玩家升降").build());
+        p.add(ParamSpec.builder("triggerPlacement", "触发落点", ParamType.ENUM).group("模式与预设")
+            .enumValues(List.of("self", "forward")).defaultValue("self")
+            .visibleWhen(s -> !s.get("mode").equals("orbit"))
+            .help("前方落点按玩家水平朝向放置；触发后固定在世界中").build());
+        p.add(ParamSpec.builder("triggerDistance", "触发距离（格）", ParamType.FLOAT).group("模式与预设")
+            .min(1).max(128).step(1).defaultValue("90")
+            .visibleWhen(s -> !s.get("mode").equals("orbit") && s.get("triggerPlacement").equals("forward"))
+            .help("水平距离；优先落到前方地面，找不到地面时使用玩家脚下高度").build());
+        p.add(ParamSpec.builder("preset", "效果预设", ParamType.ENUM).group("模式与预设")
             .enumValues(List.of("custom", "source", "shortSource", "ring", "cluster", "orbit", "dense", "strike", "tribulation", "rain"))
             .defaultValue("custom").build());
         enumeration(p, defaults, "rainStyle", "落雷布局", List.of("spread", "cluster"));
@@ -50,7 +68,7 @@ public final class LightningSkillSchema {
         number(p, defaults, "glowWidth", "光晕宽度（格）", .01, 2, false);
         number(p, defaults, "coreGain", "核心亮度", .1, 16, false);
         number(p, defaults, "glowGain", "光晕亮度", 0, 12, false);
-        number(p, defaults, "strikeHeight", "落雷高度（格）", 2, 128, false);
+        number(p, defaults, "strikeHeight", "落雷高度（格）", 2, 1024, false);
         number(p, defaults, "strikeWidth", "雷柱核心宽度（格）", .004, .4, false);
         number(p, defaults, "strikeDisplacement", "横向扰动（格）", .05, 12, false);
         number(p, defaults, "strikeRoughness", "分形粗糙度", .35, .85, false);
@@ -80,22 +98,33 @@ public final class LightningSkillSchema {
         number(p, defaults, "impactSparks", "火花数量", 0, 32, true);
         toggle(p, defaults, "impactEnabled", "启用击地放电");
         toggle(p, defaults, "gradientEnabled", "启用沿程渐变");
+        p.add(ParamSpec.builder("gradientTarget", "渐变作用层", ParamType.ENUM).group("颜色与亮度")
+            .enumValues(List.of("both", "core", "glow")).visibleWhen(s -> s.getBool("gradientEnabled"))
+            .help("主雷与分叉共用；分别选择核心、光晕或两层").defaultValue(defaults.gradientTarget).build());
+        p.add(ParamSpec.builder("gradientCoreMode", "核心显色方式", ParamType.ENUM).group("颜色与亮度")
+            .enumValues(List.of("vivid", "additive")).visibleWhen(s -> s.getBool("gradientEnabled") && !s.get("gradientTarget").equals("glow"))
+            .help("保留色相：亮度增加覆盖，避免主雷冲白；传统叠加：高亮会冲白").defaultValue(defaults.gradientCoreMode).build());
         for (String key : List.of("coreColor", "glowColor", "gradientStart", "gradientEnd")) {
             String label = switch (key) {
                 case "coreColor" -> "核心基础色";
                 case "glowColor" -> "光晕基础色";
-                case "gradientStart" -> "渐变起点";
-                default -> "渐变终点";
+                case "gradientStart" -> "起始色（云端 / 起点）";
+                default -> "终止色（地面 / 终点）";
             };
-            p.add(ParamSpec.builder(key, label, ParamType.COLOR).group("颜色与亮度")
+            p.add(ParamSpec.builder(key, label, ParamType.COLOR).group(group(key))
                 .visibleWhen(s -> !key.startsWith("gradient") || s.getBool("gradientEnabled"))
                 .help(key.endsWith("Color") ? "沿程渐变与此基础色相乘" : "沿每道电弧从起点到终点插值")
                 .defaultValue(value(defaults, key)).build());
         }
-        p.add(ParamSpec.builder("gradientRatio", "渐变比例（%）", ParamType.FLOAT).group("颜色与亮度")
+        p.add(ParamSpec.builder("gradientRatio", "起始色占比（%）", ParamType.FLOAT).group("颜色与亮度")
             .visibleWhen(s -> s.getBool("gradientEnabled")).min(0).max(100).step(1).reload(ReloadMode.HOT)
             .help("比例越高，起始色覆盖越多；50% 保持原渐变")
             .defaultValue(value(defaults, "gradientRatio")).build());
+        // Group order is deliberate; retain field order inside each group.
+        var groups=List.of("模式与预设","粗细","颜色与亮度","分叉","环绕电流","落雷形状","多道落雷","时序","击地放电","质量与随机");
+        var appearanceOrder=List.of("currentWidth","strikeWidth","glowWidth","coreColor","glowColor","coreGain","glowGain","gradientEnabled","gradientTarget","gradientStart","gradientEnd","gradientRatio","gradientCoreMode");
+        p.sort(Comparator.<ParamSpec>comparingInt(spec -> groups.indexOf(spec.group))
+            .thenComparingInt(spec -> appearanceOrder.contains(spec.key)?appearanceOrder.indexOf(spec.key):100));
         ParamRegistry.register(new SkillSchema(ID, "闪电与电流", p));
         installPresetListener();
     }
@@ -146,24 +175,27 @@ public final class LightningSkillSchema {
     }
 
     private static String group(String key) {
-        if (key.startsWith("rain")) return "多道落雷";
-        if (key.startsWith("impact")) return "击地放电";
-        if (key.startsWith("orbit") || Set.of("strands", "samples", "rodLength", "rodRadius", "emitterSpread", "arcLength", "lengthRandomness", "pulseInterval", "throttle", "currentWidth").contains(key)) return "环绕电流";
-        if (key.startsWith("strike") || key.startsWith("branch") || Set.of("maxBranchDepth", "maxSegments", "progressionTicks", "durationTicks", "restrikeCount", "flicker").contains(key)) return "落雷参数";
-        if (key.equals("objectRadius")) return "工作台参考";
-        if (Set.of("glowWidth", "coreGain", "glowGain", "gradientEnabled").contains(key)) return "颜色与亮度";
-        return "通用参数";
+        if(Set.of("mode","preset").contains(key))return "模式与预设";
+        if(Set.of("currentWidth","strikeWidth","glowWidth").contains(key))return "粗细";
+        if(key.startsWith("gradient")||Set.of("coreColor","glowColor","coreGain","glowGain").contains(key))return "颜色与亮度";
+        if(key.startsWith("branch")||key.startsWith("rainMaxBranch")||key.equals("rainBranchProbability")||Set.of("maxBranchDepth").contains(key))return "分叉";
+        if(key.startsWith("rain"))return "多道落雷";
+        if(key.startsWith("impact"))return "击地放电";
+        if(Set.of("progressionTicks","durationTicks","restrikeCount","flicker","pulseInterval","throttle").contains(key))return "时序";
+        if(Set.of("seed","samples","strikeGenerations","maxSegments","objectRadius").contains(key))return "质量与随机";
+        if(key.startsWith("strike"))return "落雷形状";
+        return "环绕电流";
     }
 
     private static boolean visible(String key, ParamState s) {
-        String mode = s.get("mode");
-        return switch (group(key)) {
-            case "环绕电流" -> mode.equals("orbit") && orbitVisible(key, s.get("orbitAnimation"));
-            case "落雷参数" -> mode.equals("strike") || mode.equals("rain");
-            case "多道落雷" -> mode.equals("rain");
-            case "击地放电" -> mode.equals("rain") && (key.equals("impactEnabled") || s.getBool("impactEnabled"));
-            default -> true;
-        };
+        String mode=s.get("mode");boolean orbit=mode.equals("orbit"),rain=mode.equals("rain");
+        if(key.equals("strikeHeight"))return !orbit && !s.get("triggerHeightMode").equals("absoluteWorld");
+        if(key.startsWith("rain"))return rain;
+        if(key.startsWith("impact"))return rain&&(key.equals("impactEnabled")||s.getBool("impactEnabled"));
+        if(key.equals("maxBranchDepth")||key.equals("branchLimit"))return mode.equals("strike");
+        if(key.startsWith("branch")||key.startsWith("strike")||Set.of("maxSegments","progressionTicks","durationTicks","restrikeCount","flicker").contains(key))return !orbit;
+        if(key.startsWith("orbit")||Set.of("strands","samples","objectRadius","rodLength","rodRadius","emitterSpread","arcLength","lengthRandomness","pulseInterval","throttle","currentWidth").contains(key))return orbit&&orbitVisible(key,s.get("orbitAnimation"));
+        return true;
     }
 
     private static boolean orbitVisible(String key, String animation) {
@@ -186,6 +218,10 @@ public final class LightningSkillSchema {
             try {
                 if (!s.get("preset").equals(previousPreset) && !s.get("preset").equals("custom")) {
                     putRecipe(s, loadResource("presets/" + s.get("preset") + ".json"));
+                    if(s.get("preset").equals("tribulation")) {
+                        s.set("triggerPlacement", "forward");
+                        s.set("triggerDistance", "90");
+                    }
                 } else {
                     if (!s.get("rainStyle").equals(previousRainStyle) && s.get("rainStyle").equals("cluster")) {
                         for (String item : List.of("rainCount=9", "rainSpread=3", "rainDepthSpread=2.4", "rainStagger=0.22", "rainMaxBranchDepth=0", "rainMaxBranches=0", "rainBranchProbability=0")) {
@@ -207,7 +243,7 @@ public final class LightningSkillSchema {
         // Prepare the complete map before mutating the live state.
         var values = new LinkedHashMap<String, String>();
         for (var spec : state.schema.params)
-            if (!spec.key.equals("preset")) values.put(spec.key, value(recipe, spec.key));
+            if (!spec.key.equals("preset") && !HOST_FIELDS.contains(spec.key)) values.put(spec.key, value(recipe, spec.key));
         state.load(values);
     }
 
@@ -219,12 +255,36 @@ public final class LightningSkillSchema {
     }
 
     public static LightningRecipe importRecipe(JsonObject root) {
-        LightningRecipe parsed = LightningRecipe.parse(root);
+        JsonObject clean = root.deepCopy();
+        JsonObject input = clean.has("values") ? clean.getAsJsonObject("values") : clean;
+        var host = new LinkedHashMap<String,String>();
+        if(input.has("triggerPlacement")) {
+            String placement=input.remove("triggerPlacement").getAsString();
+            if(!Set.of("self","forward").contains(placement))throw new IllegalArgumentException("无效触发落点");
+            host.put("triggerPlacement",placement);
+        }
+        if(input.has("triggerDistance")) {
+            double distance=input.remove("triggerDistance").getAsDouble();
+            LightningPlacement.validateDistance(distance);
+            host.put("triggerDistance",Double.toString(distance));
+        }
+        if(input.has("triggerHeightMode")) {
+            String heightMode=input.remove("triggerHeightMode").getAsString();
+            if(!Set.of("relativeGround","absoluteWorld").contains(heightMode))throw new IllegalArgumentException("无效高度基准");
+            host.put("triggerHeightMode",heightMode);
+        }
+        if(input.has("triggerStartY")) {
+            double y=input.remove("triggerStartY").getAsDouble();
+            if(!Double.isFinite(y)||y < -2048||y > 8192)throw new IllegalArgumentException("起点 Y 必须在 -2048–8192 之间");
+            host.put("triggerStartY",Double.toString(y));
+        }
+        LightningRecipe parsed = LightningRecipe.parse(clean);
         var s = ParamRegistry.state(ID);
         if (s == null) throw new IllegalStateException("Lightning schema is not registered");
         applying = true;
         try {
             putRecipe(s, parsed);
+            s.loadAtomic(host);
             s.set("preset", "custom");
             syncSelection(s);
         } finally { applying = false; }
@@ -239,12 +299,20 @@ public final class LightningSkillSchema {
         return importRecipe(Files.readString(jsonFile));
     }
 
-    /** Typed raw skill JSON plus the MOD gradient-ratio extension; legacy imports default to 50%. */
+    /** Actual layer tint, before brightness and scene compositing, shared with the renderer. */
+    public static int previewColor(ParamState state, boolean halo, double along) {
+        return LightningAppearance.materialColor(state.get(halo ? "glowColor" : "coreColor"),
+            LightningAppearance.usesGradient(state.getBool("gradientEnabled"), state.get("gradientTarget"), halo),
+            state.get("gradientStart"), state.get("gradientEnd"), state.getDouble("gradientRatio"), along);
+    }
+
+    /** Typed raw skill JSON; legacy imports receive the defaults for new gradient fields. */
     public static String exportRecipe() { return GSON.toJson(recipe()); }
 
     public static LightningRecipe recipe() {
         var values = new JsonObject();
-        for (var entry : ParamRegistry.state(ID).snapshot().entrySet()) values.addProperty(entry.getKey(), entry.getValue());
+        for (var entry : ParamRegistry.state(ID).snapshot().entrySet())
+            if(!HOST_FIELDS.contains(entry.getKey()))values.addProperty(entry.getKey(), entry.getValue());
         return LightningRecipe.parse(values);
     }
 }

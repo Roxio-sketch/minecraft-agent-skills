@@ -18,6 +18,9 @@ public final class ColorPickerScreen extends Screen {
     private final WorkbenchUi.Entry[] channelEntries=new WorkbenchUi.Entry[3];
     private WorkbenchUi.Entry hex;
     private int cardX,cardY,cardWidth,cardHeight;
+    private static final String[] LABELS={"红","绿","蓝"};
+    private int formattedRgb=-1;
+    private String formattedHex;
 
     ColorPickerScreen(ParamSpec spec,ParamState state){
         super(Component.literal("颜色 - "+spec.label));this.spec=spec;this.state=state;
@@ -25,7 +28,7 @@ public final class ColorPickerScreen extends Screen {
     }
     private void setRgb(int rgb){channels[0]=(rgb>>16)&255;channels[1]=(rgb>>8)&255;channels[2]=rgb&255;}
     private int rgb(){return (channels[0]<<16)|(channels[1]<<8)|channels[2];}
-    private String hexValue(){return String.format(Locale.ROOT,"#%06X",rgb());}
+    private String hexValue(){int value=rgb();if(value!=formattedRgb){formattedHex=String.format(Locale.ROOT,"#%06X",value);formattedRgb=value;}return formattedHex;}
     private void apply(){state.set(spec.key,hexValue());syncFields();}
     private void syncFields(){
         if(hex!=null&&!hex.isFocused()){hex.invalid(false);if(!hex.getValue().equals(hexValue()))hex.setValue(hexValue());}
@@ -44,7 +47,7 @@ public final class ColorPickerScreen extends Screen {
             boolean valid=normalized.matches("[0-9a-fA-F]{6}");hex.invalid(!valid);
             if(valid){setRgb(Integer.parseInt(normalized,16));apply();}
         });
-        String[] labels={"红","绿","蓝"};int[] colors={0xFFEC9B9F,0xFF85D6AA,0xFF8EBBF0};
+        String[] labels=LABELS;int[] colors={0xFFEC9B9F,0xFF85D6AA,0xFF8EBBF0};
         for(int i=0;i<3;i++){
             final int channel=i;int yy=cardY+98+i*26;
             addRenderableWidget(new WorkbenchUi.ValueSlider(cardX+40,yy,cardWidth-115,20,labels[i]+"色通道",colors[i],1.0/255,()->channels[channel]/255.0,value->{channels[channel]=(int)Math.round(value*255);apply();}));
@@ -69,7 +72,7 @@ public final class ColorPickerScreen extends Screen {
         int luminance=channels[0]*299+channels[1]*587+channels[2]*114;
         WorkbenchUi.text(g,font,"当前颜色",cardX+25,cardY+45,cardWidth-50,luminance>145000?0xFF15202B:0xFFF4F7FC);
         g.drawString(font,"HEX",cardX+16,cardY+75,WorkbenchUi.MUTED,false);
-        String[] labels={"红","绿","蓝"};for(int i=0;i<3;i++)g.drawString(font,labels[i],cardX+16,cardY+104+i*26,WorkbenchUi.MUTED,false);
+        for(int i=0;i<3;i++)g.drawString(font,LABELS[i],cardX+16,cardY+104+i*26,WorkbenchUi.MUTED,false);
         syncFields();super.render(g,mx,my,partial);
     }
     @Override public boolean mouseClicked(double mx,double my,int button){

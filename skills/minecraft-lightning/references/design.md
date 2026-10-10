@@ -16,7 +16,7 @@
 
 ## 渐变
 
-启用 `gradientEnabled` 后，用 `gradientStart` 和 `gradientEnd` 沿段的 `along` 坐标按 `gradientRatio` 插值，核心/光晕分别乘以各自基础色。比例范围 0–100、默认 50；0 全终止色、100 全起始色、50 保留旧线性渐变，越高起始色占比越大。击地的所有材质坐标统一为主落雷末端 `along=1`，不会沿地面电弧重新渐变。渐变只改变颜色，不改变几何、seed 或时间包络。
+启用 `gradientEnabled` 后，用 `gradientStart` 和 `gradientEnd` 沿段的 `along` 坐标按 `gradientRatio` 插值，由 `gradientTarget=both/core/glow` 选择作用层，所选核心/光晕分别乘以各自基础色。主雷与分叉共用渐变。比例范围 0–100、默认 50；0 全终止色、100 全起始色、50 保留旧线性渐变，越高起始色占比越大。击地的所有材质坐标统一为主落雷末端 `along=1`，不会沿地面电弧重新渐变。渐变只改变颜色，不改变几何、seed 或时间包络。`gradientCoreMode=vivid` 默认以保色透明度混合显示渐变核心，防止高增益主雷中段截白；additive 提供传统加法。关闭渐变或仅光晕时该选择不改变核心。工作台分别显示两层起点/中点/终点实际材质色，色卡不含增益或场景混合。
 
 ## 预算起点
 

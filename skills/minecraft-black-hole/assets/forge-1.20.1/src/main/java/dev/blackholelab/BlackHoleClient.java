@@ -33,6 +33,8 @@ public final class BlackHoleClient {
         e.getDispatcher().register(literal("blackhole")
             .then(literal("showcase").executes(c->{Minecraft.getInstance().setScreen(new BlackHoleShowcase());return 1;}))
             .then(literal("world").executes(c->{place();return 1;}))
+            .then(literal("white").executes(c->{BlackHoleRecipe.state().useWhiteRing();place();return 1;}))
+            .then(literal("black").executes(c->{BlackHoleRecipe.state().resetToDefaults();place();return 1;}))
             .then(literal("off").executes(c->{stop();return 1;}))
             .then(literal("import").executes(c->{BlackHoleRecipe.load();return 1;}))
             .then(literal("export").executes(c->{BlackHoleRecipe.save();return 1;}))
@@ -72,6 +74,8 @@ public final class BlackHoleClient {
             switch(action){
                 case "showcase"->mc.setScreen(new BlackHoleShowcase());
                 case "world"->{if(r.has("color"))coreColor=parseColor(r.get("color").getAsString());mc.setScreen(null);place();}
+                case "white"->{BlackHoleRecipe.state().useWhiteRing();mc.setScreen(null);place();}
+                case "black"->{BlackHoleRecipe.state().resetToDefaults();mc.setScreen(null);place();}
                 case "color"->coreColor=parseColor(r.get("color").getAsString());
                 case "settings"->settings(r);
                 case "import"->BlackHoleRecipe.load();
@@ -100,12 +104,28 @@ public final class BlackHoleClient {
             result.addProperty("halo",BlackHoleWorld.halo);result.addProperty("lensAffectsPlayer",BlackHoleRecipe.state().getBool("lensAffectsPlayer"));
             if(center!=null)result.addProperty("center",center.toString());
             result.addProperty("coreColor",String.format("#%06X",coreColor));result.addProperty("failure",failure);
+            result.addProperty("objectMode",BlackHoleRecipe.state().get("objectMode"));result.addProperty("coreEmission",BlackHoleRecipe.state().getFloat("coreEmission"));
+            result.addProperty("coreGlow",BlackHoleRecipe.state().getFloat("coreGlow"));result.addProperty("coreGlowRadius",BlackHoleRecipe.state().getFloat("coreGlowRadius"));
             result.addProperty("glError",GL11.glGetError());
             Files.writeString(dir.resolve("command-result.json"),new GsonBuilder().setPrettyPrinting().create().toJson(result));
         }catch(Exception ex){failure=ex.toString();System.err.println("[BLACK-HOLE] Control: "+failure);}
     }
     private static float bounded(JsonObject r,String key,float min,float max){float v=r.get(key).getAsFloat();if(!Float.isFinite(v)||v<min||v>max)throw new IllegalArgumentException(key+" outside "+min+".."+max);return v;}
     private static void settings(JsonObject r){
+        if(r.has("objectMode")){
+            String mode=r.get("objectMode").getAsString();if(!java.util.Set.of("black","white").contains(mode))throw new IllegalArgumentException("Invalid objectMode");
+            BlackHoleRecipe.state().set("objectMode",mode);
+        }
+        if(r.has("coreEmission"))BlackHoleRecipe.state().set("coreEmission",Float.toString(bounded(r,"coreEmission",0,4)));
+        // External field settings leave existing command-backed fields intact.
+        String[] external={"jetStrength","jetLength","jetWidth","jetSpeed","shellStrength","shellSpeed","shellRadius","shellWidth","coreGlow","coreGlowRadius"};
+        float[] minimum={0,.5f,.01f,0,0,0,1,.02f,0,1.05f},maximum={5,16,2,4,3,4,8,1,3,4};
+        for(int i=0;i<external.length;i++)if(r.has(external[i]))BlackHoleRecipe.state().setMaterialValue(external[i],Float.toString(bounded(r,external[i],minimum[i],maximum[i])));
+        if(r.has("shellEnabled")){
+            if(!r.get("shellEnabled").isJsonPrimitive()||!r.get("shellEnabled").getAsJsonPrimitive().isBoolean())throw new IllegalArgumentException("Expected boolean shellEnabled");
+            BlackHoleRecipe.state().setMaterialValue("shellEnabled",r.get("shellEnabled").getAsString());
+        }
+        if(r.has("shellColor"))BlackHoleRecipe.state().setMaterialValue("shellColor",String.format("#%06X",parseColor(r.get("shellColor").getAsString())));
         if(r.has("scale"))BlackHoleWorld.scale=bounded(r,"scale",.2f,8);
         if(r.has("distance"))BlackHoleWorld.distance=bounded(r,"distance",2,128);
         if(r.has("lens"))BlackHoleWorld.lens=bounded(r,"lens",0,1);

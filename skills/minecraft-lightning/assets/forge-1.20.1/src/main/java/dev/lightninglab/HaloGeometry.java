@@ -31,16 +31,29 @@ final class HaloGeometry {
     }
     private record Screen(double x, double y, double depth) {}
     private record Segment(Point a, Point b) {}
+    record Projection(Matrix4d clip, Matrix4d inverse, int width, int height) {}
+    static Projection prepare(Matrix4f actualClip, int width, int height) {
+        if(actualClip==null||width<=0||height<=0)return null;
+        Matrix4d clip=new Matrix4d(actualClip);
+        double determinant=clip.determinant();
+        if(!Double.isFinite(determinant)||determinant==0)return null;
+        return new Projection(clip,new Matrix4d(clip).invert(),width,height);
+    }
 
     private HaloGeometry() {}
 
     static Mesh build(List<Point> points, Matrix4f actualClip, int width, int height, LightningRecipe recipe) {
-        if (points == null || points.size() < 2 || actualClip == null || width <= 0 || height <= 0)
-            return emptyMesh();
-        Matrix4d clip = new Matrix4d(actualClip);
-        double determinant = clip.determinant();
-        if (!Double.isFinite(determinant) || determinant == 0) return emptyMesh();
-        Matrix4d inverse = new Matrix4d(clip).invert();
+        return build(points, actualClip, width, height, recipe, true);
+    }
+
+    static Mesh build(List<Point> points, Matrix4f actualClip, int width, int height, LightningRecipe recipe, boolean halo) {
+        return build(points,prepare(actualClip,width,height),recipe,halo);
+    }
+    static Mesh build(List<Point> points, Projection projection, LightningRecipe recipe, boolean halo) {
+        if(points==null||points.size()<2||projection==null)return emptyMesh();
+        Matrix4d clip=projection.clip(),inverse=projection.inverse();
+        int width=projection.width(),height=projection.height();
+        var palette=LightningAppearance.palette(recipe,halo);
         var body = new ArrayList<Vertex>((points.size() - 1) * 4);
         var round = new ArrayList<Vertex>(Math.max(0, points.size() - 2) * 4);
         boolean[] visibleSegments = new boolean[points.size() - 1];
@@ -73,8 +86,8 @@ final class HaloGeometry {
             };
             Vec3[] positions = unproject(corners, inverse, width, height);
             if (positions == null || !convexAfterFloatTransport(positions, clip, width, height)) continue;
-            float[] ca = LightningAppearance.colorAt(recipe, true, a.along());
-            float[] cb = LightningAppearance.colorAt(recipe, true, b.along());
+            float[] ca = palette.colorAt(a.along());
+            float[] cb = palette.colorAt(b.along());
             body.add(vertex(positions[0], a.alpha(), coverageA, 0, ca));
             body.add(vertex(positions[1], a.alpha(), coverageA, 1, ca));
             body.add(vertex(positions[2], b.alpha(), coverageB, 1, cb));
@@ -113,7 +126,7 @@ final class HaloGeometry {
             };
             Vec3[] positions = unproject(corners, inverse, width, height);
             if (positions == null || !convexAfterFloatTransport(positions, clip, width, height)) continue;
-            float[] rgb = LightningAppearance.colorAt(recipe, true, point.along());
+            float[] rgb = palette.colorAt(point.along());
             round.add(vertex(positions[0], point.alpha(), -coverage, -1, rgb));
             round.add(vertex(positions[1], point.alpha(), coverage, -1, rgb));
             round.add(vertex(positions[2], point.alpha(), coverage, 1, rgb));

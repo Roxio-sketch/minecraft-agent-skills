@@ -17,12 +17,28 @@ final class HaloGeometryCheck {
     static void run() {
         assertions = 0;
         checkThickCorners();
+        checkCoreProjection();
         checkWidthsAndDiskEnergy();
         checkClippingAndAttributes();
         checkCameraAndBounds();
         checkSubdivision();
         checkInvalidInputs();
         System.out.println("PASS: halo convex short/thick/acute strips, actual view projection, near/far interpolation, butt caps, viewport bounds and subdivision-stable maximum coverage (" + assertions + " assertions)");
+    }
+
+    private static void checkCoreProjection() {
+        LightningRecipe r=new LightningRecipe();r.gradientEnabled=false;
+        r.coreColor="#ffff00";r.glowColor="#0044ff";
+        Matrix4f clip=perspective(70,818,1358);
+        // Nearly axial short segments and acute corners: the former shared
+        // miter/subpixel correction was not bounded in projected normal width.
+        for(double z:new double[]{-.06,-.2,-2,-20})for(double radius:new double[]{.0001,.076,.4}) {
+            var points=List.of(point(0,0,z,radius),point(.00001,.00001,z-.1,radius),point(-.00001,.00002,z-.2,radius));
+            var core=HaloGeometry.build(points,clip,818,1358,r,false);
+            checkMesh(core,clip,818,1358);
+            for(var v:core.body())require(v.rgb()[0]==1&&v.rgb()[1]==1&&v.rgb()[2]==0,"core used halo tint");
+            for(var v:core.round())require(v.rgb()[0]==1&&v.rgb()[1]==1&&v.rgb()[2]==0,"core join used halo tint");
+        }
     }
 
     private static HaloGeometry.Point point(double x, double y, double z, double radius) {

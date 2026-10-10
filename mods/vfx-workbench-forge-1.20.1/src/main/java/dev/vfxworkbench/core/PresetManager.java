@@ -49,11 +49,19 @@ public final class PresetManager {
         JsonElement parsed = GSON.fromJson(Files.readString(file), JsonElement.class);
         if (!parsed.isJsonObject()) throw new IOException("预设文件必须是 JSON 对象");
         JsonObject root = parsed.getAsJsonObject();
+        if(skillId.equals(dev.vfxworkbench.effects.lightning.LightningSkillSchema.ID)) {
+            // Reuse the staged recipe importer. Applying the saved selector
+            // field piecemeal would invoke preset listeners mid-load, and
+            // invalid later fields could leave an already-mutated live state.
+            dev.vfxworkbench.effects.lightning.LightningSkillSchema.importRecipe(root);
+            return root.has("preset") ? root.get("preset").getAsString() : presetName;
+        }
         JsonObject values = root.has("values") && root.get("values").isJsonObject() ? root.getAsJsonObject("values") : root;
         Map<String, String> map = new LinkedHashMap<>();
         values.entrySet().forEach(e -> map.put(e.getKey(), e.getValue().getAsString()));
-        state.load(skillId.equals(dev.vfxworkbench.effects.blackhole.BlackHoleSkillSchema.ID)
-            ?dev.vfxworkbench.effects.blackhole.BlackHoleSkillSchema.recipeParameters(map):map);
+        if(skillId.equals(dev.vfxworkbench.effects.blackhole.BlackHoleSkillSchema.ID))
+            dev.vfxworkbench.effects.blackhole.BlackHoleSkillSchema.loadRecipe(state,map);
+        else state.load(map);
         return root.has("preset") ? root.get("preset").getAsString() : presetName;
     }
 

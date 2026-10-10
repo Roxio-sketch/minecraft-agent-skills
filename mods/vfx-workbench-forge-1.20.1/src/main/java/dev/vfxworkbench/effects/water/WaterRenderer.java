@@ -28,6 +28,7 @@ public final class WaterRenderer extends RenderType {
     private WaterRenderer() { super("unused", DefaultVertexFormat.POSITION_COLOR_TEX, VertexFormat.Mode.QUADS, 256, false, false, () -> {}, () -> {}); }
 
     private static ShaderInstance shader;
+    public static long draws;
     private static final MultiBufferSource.BufferSource BUFFER = MultiBufferSource.immediate(new BufferBuilder(1048576));
     private static final String NS = "vfxworkbench";
     private static float[] heights=new float[0], normalX=new float[0], normalY=new float[0], normalZ=new float[0];
@@ -60,15 +61,7 @@ public final class WaterRenderer extends RenderType {
         Matrix4f matrix = pose.last().pose();
         int size = field.size;
         if(heights.length!=size*size){heights=new float[size*size];normalX=new float[size*size];normalY=new float[size*size];normalZ=new float[size*size];}
-        double cell=width/(size-1);
-        for(int z=0;z<size;z++)for(int x=0;x<size;x++){
-            int i=z*size+x;
-            heights[i]=field.sample(x,z,partial);
-            double dx=(field.sample(x+1,z,partial)-field.sample(x-1,z,partial))/(2*cell)*normalStrength;
-            double dz=(field.sample(x,z+1,partial)-field.sample(x,z-1,partial))/(2*cell)*normalStrength;
-            double norm=Math.sqrt(1+dx*dx+dz*dz);
-            normalX[i]=(float)(.5-dx/norm*.5);normalY[i]=(float)(.5+.5/norm);normalZ[i]=(float)(.5-dz/norm*.5);
-        }
+        WaterSurface.sample(field,width,normalStrength,partial,heights,normalX,normalY,normalZ);
         for (int z = 0; z < size - 1; z++) for (int x = 0; x < size - 1; x++) {
             emit(out, matrix, field, origin, camera, x, z, width, normalStrength, partial, size);
             emit(out, matrix, field, origin, camera, x, z + 1, width, normalStrength, partial, size);
@@ -76,6 +69,7 @@ public final class WaterRenderer extends RenderType {
             emit(out, matrix, field, origin, camera, x + 1, z, width, normalStrength, partial, size);
         }
         BUFFER.endBatch(TYPE);
+        draws++;
     }
 
     private static void emit(VertexConsumer out, Matrix4f m, WaveField f, Vec3 o, Vec3 c, int x, int z, float width, float normalStrength, float t, int size) {

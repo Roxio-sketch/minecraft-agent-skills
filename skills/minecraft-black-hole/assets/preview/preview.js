@@ -5,7 +5,7 @@
     const load = async name => {const r=await fetch(name);if(!r.ok)throw Error(`${name}: ${r.status}`);return r;};
     const [kernel, catalog,layers] = await Promise.all([(await load('black-hole.glsl')).text(),(await load('recipes.json')).json(),window.blackHoleLayers]);
     const bounds = {
-      core:[0.2,0.95,0.01,'暗核半径'],inner:[0.55,3,0.01,'盘内半径'],outer:[2,8,0.05,'盘外半径'],viewDistance:[5,24,.01,'观察距离'],
+      core:[0.2,0.95,0.01,'暗核半径'],inner:[0.22,3,0.01,'盘内半径'],outer:[2,32,0.05,'盘外半径'],viewDistance:[5,24,.01,'观察距离'],
       thickness:[0.045,0.35,0.005,'盘厚度'],tilt:[-90,90,1,'盘倾角'],bend:[0,2,0.005,'偏折强度'],lensRadius:[.2,16,.05,'背景透镜范围'],
       density:[0,10,0.1,'盘密度'],speed:[0,3,0.005,'旋转速度'],infallSpeed:[0,2,0.01,'向内流速'],seed:[0,65535,1,'固定种子'],exposure:[0.01,2.5,0.01,'曝光'],
       particleCount:[0,4096,1,'粒子数量'],particleSpeed:[0,4,.05,'粒子速度'],particleSize:[.005,.15,.001,'粒子尺寸'],particleOuter:[3.2,8,.1,'补给半径'],particleBrightness:[0,5,.01,'粒子亮度'],
@@ -50,7 +50,7 @@
       if(!['classic','granular','ribbons','dust','cinematic'].includes(s.diskStyle))throw Error('未知盘面结构');
       if(!['stars','nebula','black'].includes(s.backgroundStyle))throw Error('未知背景结构');
       if(!Number.isInteger(s.bandDetail))throw Error('光带层数必须是整数');
-      if(s.inner<s.core+0.12)throw Error('盘内半径必须至少比暗核大 0.12');
+      if(s.inner+1e-9<s.core+0.02)throw Error('盘内半径必须至少比暗核大 0.02');
       if(s.outer<s.inner+0.5)throw Error('盘外半径必须至少比内半径大 0.5');
       if(![96,160,256].includes(s.steps))throw Error('质量必须是 96、160 或 256');
       for(const k of colorKeys)if(typeof s[k]!=='string'||!/^#[0-9a-f]{6}$/i.test(s[k]))throw Error(`${k} 颜色必须是 #RRGGBB`);
@@ -194,6 +194,7 @@ void main(){
  color=vec4((uDebug==3?vec3(0):hit.light)+skyTransmission*background,1);
 }`;
     const linear = hex => [1,3,5].map(i=>{const s=parseInt(hex.slice(i,i+2),16)/255;return s<=0.04045?s/12.92:Math.pow((s+0.055)/1.055,2.4);});
+    const ribbonImage=new Image();ribbonImage.src='ribbon-noise.png';await ribbonImage.decode();
     function makeRenderer(canvas) {
       const gl=canvas.getContext('webgl2',{alpha:false,antialias:false,preserveDrawingBuffer:true});
       if(!gl)throw Error('此浏览器不支持 WebGL 2');
@@ -205,6 +206,10 @@ void main(){
       gl.deleteShader(vs);gl.deleteShader(fs);gl.useProgram(p);
       const post=window.createBlackHolePost(gl);
       const loc={};const L=n=>loc[n]??(loc[n]=gl.getUniformLocation(p,n));
+      const ribbonTexture=gl.createTexture();gl.activeTexture(gl.TEXTURE5);gl.bindTexture(gl.TEXTURE_2D,ribbonTexture);
+      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.REPEAT);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.REPEAT);
+      gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,ribbonImage);gl.activeTexture(gl.TEXTURE0);
       const drawParticles=layers.particles(gl,kernel,linear);
       // Own the render attachment instead of depending on the composited default buffer.
       const target=gl.createFramebuffer(),colorBuffer=gl.createRenderbuffer();
@@ -243,7 +248,7 @@ void main(){
         const hdr=debug!==1;
         bindTarget(hdr&&['ribbons','dust','cinematic'].includes(s.diskStyle)?2:1);
         gl.bindFramebuffer(gl.FRAMEBUFFER,hdr?sampleTarget:target);
-        gl.useProgram(p);gl.viewport(0,0,hdr?sampleWidth:canvas.width,hdr?sampleHeight:canvas.height);
+        gl.useProgram(p);gl.activeTexture(gl.TEXTURE5);gl.bindTexture(gl.TEXTURE_2D,ribbonTexture);gl.uniform1i(L("RibbonNoise"),5);gl.activeTexture(gl.TEXTURE0);gl.viewport(0,0,hdr?sampleWidth:canvas.width,hdr?sampleHeight:canvas.height);
         for(const k of Object.keys(bounds)) {
           if(k==='exposure'||k==='infallSpeed')continue;
           gl.uniform1f(L('u'+k[0].toUpperCase()+k.slice(1)),k==='skyStrength'&&debug===2?0:s[k]);
@@ -274,7 +279,7 @@ void main(){
     const renderers=['scene','small16','small32'].map(id=>makeRenderer($(id)));
     let diagnostic=0;
     function draw(){renderers.forEach((r,i)=>r.render(state,time,i===0?diagnostic:0));$('status').textContent=uiError||`${state.name} · ${state.steps} 步 · 时间 ${time.toFixed(2)} s · WebGL 2 预览${solver==='verlet'?' · Verlet 研究求解器':''}${time===MAX_TIME?' · 已到时间上限，请调低时间后继续播放':''}`;}
-    function ui(){for(const k of Object.keys(bounds)){$(k).value=state[k];$(`${k}Value`).textContent=state[k];}for(const k of [...colorKeys,'steps','mode','diskStyle','backgroundStyle'])$(k).value=state[k];$('particles').checked=state.particles;$('lensEnabled').checked=state.lensEnabled;$('time').value=time.toFixed(2);}
+    function ui(){$('inner').min=Math.max(bounds.inner[0],Number((state.core+.02).toFixed(2)));for(const k of Object.keys(bounds)){$(k).value=state[k];$(`${k}Value`).textContent=state[k];}for(const k of [...colorKeys,'steps','mode','diskStyle','backgroundStyle'])$(k).value=state[k];$('particles').checked=state.particles;$('lensEnabled').checked=state.lensEnabled;$('time').value=time.toFixed(2);}
     function change(patch){try{state=validate({...state,...patch});uiError='';ui();draw();}catch(e){uiError=e.message;$('status').textContent=uiError;ui();}}
     const compositionKeys=new Set(['core','inner','outer','viewDistance','thickness','tilt','bend','lensRadius','lensBackground','coreGradientStrength']);
     const motionKeys=new Set(['speed','infallSpeed','backgroundSpin','orbitSpeed']);
@@ -292,12 +297,20 @@ void main(){
     // color/compatibility variants remain in recipes.json so saved URLs and
     // imported recipes continue to resolve, but they are intentionally hidden
     // from the main selector.
-    const mainRecipeNames=new Set(['体积尘埃 · BlackHole 研究','层叠光带 · Unity 研究','程序光带 · 基础结构','颗粒吸积 · 完整组合']);
+    const mainRecipeNames=new Set(['体积尘埃 · BlackHole 研究','层叠光带 · Unity 研究','颗粒吸积 · 完整组合']);
     catalog.recipes.forEach((r,i)=>{if(!mainRecipeNames.has(r.name))return;const o=document.createElement('option');o.value=i;o.textContent=r.name;$('recipe').append(o);});
     const customOption=document.createElement('option');customOption.value='custom';customOption.disabled=true;customOption.hidden=true;$('recipe').append(customOption);
     const stateIndex=catalog.recipes.findIndex(r=>r.name===state.name);
     if(mainRecipeNames.has(state.name))$('recipe').value=String(stateIndex);
     else {customOption.textContent=`兼容变体：${state.name}`;customOption.hidden=false;$('recipe').value='custom';}
+    function randomScheme(){
+      const palettes=[['#f1faff','#64cfff','#2356b8'],['#fff6df','#ffad56','#aa3828'],['#faf0ff','#bf84ff','#5531a0'],['#eafff4','#65e1af','#136e82']];
+      const palette=palettes[Math.floor(Math.random()*palettes.length)],roll=(a,b)=>Number((a+Math.random()*(b-a)).toFixed(4));
+      const core=roll(.3,.8),inner=Number((core+roll(.03,.55)).toFixed(4));
+      change({name:'随机方案',diskStyle:['dust','cinematic','ribbons','granular'][Math.floor(Math.random()*4)],core,inner,outer:roll(3.6,7.5),thickness:roll(.055,.22),bend:roll(.45,1.4),density:roll(2,6),exposure:roll(.35,1.1),speed:roll(.2,1.3),infallSpeed:roll(.08,.8),seed:Math.floor(Math.random()*65536),hot:palette[0],diskMid:palette[1],cool:palette[2],dustScale:roll(1.5,5),dustFill:roll(.45,.9),filament:roll(.2,1.5),spiral:roll(.1,1.1),diskGradientPosition:roll(.35,.7),halo:roll(0,.65),haloGradientStart:palette[1],haloGradientEnd:palette[2]});
+      customOption.textContent='随机方案';customOption.hidden=false;$('recipe').value='custom';
+    }
+    $('random').onclick=randomScheme;
     $('recipe').onchange=()=>{if($('recipe').value==='custom')return;state=validate(catalog.recipes[Number($('recipe').value)]);if(state.name===granularName){time=presetPreviewTime(state.name);setPlaying(false);}resetView={yaw:state.yaw,pitch:state.pitch};customOption.hidden=true;uiError='';ui();draw();};
     for(const key of [...colorKeys,'mode','diskStyle','backgroundStyle'])$(key).oninput=()=>change({[key]:$(key).value});
     $('particles').onchange=()=>change({particles:$('particles').checked});

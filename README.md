@@ -5,8 +5,8 @@
 - **axolotl-launcher**：发现并启动 AXO / Axolotl Launcher 实例；可按明确指定的存档尝试 Forge quick-play。
 - **minecraft-vfx-automation**：通过 MCP-HELPER 与兼容 Photon 的构建创建、检查和验证 VFX。
 
-- **minecraft-black-hole**：黑洞、吸积盘、吸入粒子及世界透镜，附 WebGL 工作台和 Forge 1.20.1 模板。
-- **minecraft-lightning**：环绕电流、分形落雷与击地放电，附 61 字段配方、工作台及 Forge 1.20.1 模板。
+- **minecraft-black-hole**：黑洞、白洞、盘面、粒子及世界透镜，附 WebGL 工作台和 Forge 1.20.1 模板。
+- **minecraft-lightning**：环绕电流、分形落雷与击地放电，附 63 字段配方、工作台及 Forge 1.20.1 模板。
 
 [黑洞与闪电发布说明、来源及验证边界](docs/black-hole-lightning-summary.md)；[调试 mod 源码与操作](mods/vfx-workbench-forge-1.20.1/README.md)。
 
@@ -48,3 +48,5 @@ docs/
 ## License
 
 MIT
+
+[2026-10-10 更新内容](docs/update-20261010.md)。

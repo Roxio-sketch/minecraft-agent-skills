@@ -6,7 +6,11 @@
     "Color",
     "UV0"
   ],
-  "samplers": [],
+  "samplers": [
+    {
+      "name": "DepthSnapshot"
+    }
+  ],
   "uniforms": [
     {
       "name": "ModelViewMat",
@@ -68,6 +72,69 @@
       "count": 1,
       "values": [
         0
+      ]
+    },
+    {
+      "name": "LateDepthEnabled",
+      "count": 1,
+      "type": "float",
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "OutputSize",
+      "count": 2,
+      "type": "float",
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "WorldProjection",
+      "count": 16,
+      "type": "matrix4x4",
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "WorldModelView",
+      "count": 16,
+      "type": "matrix4x4",
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
       ]
     }
   ]

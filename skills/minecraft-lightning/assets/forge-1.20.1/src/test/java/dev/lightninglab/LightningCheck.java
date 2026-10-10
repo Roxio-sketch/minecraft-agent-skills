@@ -7,6 +7,7 @@ import java.util.List;
 
 public final class LightningCheck {
     public static void main(String[] args) {
+        BranchDistributionCheck.run();
         RecipeContractCheck.run();
         GradientRatioCheck.run();
         HaloGeometryCheck.run();

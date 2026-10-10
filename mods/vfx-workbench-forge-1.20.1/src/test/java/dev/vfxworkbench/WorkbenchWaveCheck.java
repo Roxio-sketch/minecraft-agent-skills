@@ -10,6 +10,9 @@ import dev.vfxworkbench.effects.water.WaveField;
 public final class WorkbenchWaveCheck {
     public static void main(String[] args) {
         WaterSkillSchema.register();
+        ParamCacheCheck.run();
+        RandomSchemesCheck.run();
+        dev.vfxworkbench.effects.water.WaterSurfaceCheck.run();
         ParamState state = ParamRegistry.state(WaterSkillSchema.ID);
 
         // 1. propagation + symmetry under defaults.

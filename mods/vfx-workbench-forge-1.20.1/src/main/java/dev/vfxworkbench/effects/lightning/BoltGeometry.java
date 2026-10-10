@@ -4,6 +4,8 @@ import net.minecraft.world.phys.Vec3;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.SplittableRandom;
+import java.util.ArrayDeque;
+import java.util.Comparator;
 
 /** Deterministic midpoint-displacement channel tree. Endpoints are never displaced. */
 final class BoltGeometry {
@@ -12,15 +14,31 @@ final class BoltGeometry {
     private final List<Segment> segments = new ArrayList<>();
     private int budget, branches;
     private long nextPath;
+    private record Pending(Vec3 start,Vec3 end,long seed,int depth,double alongStart,double alongEnd,double intensity) {}
+    private final ArrayDeque<Pending> pending=new ArrayDeque<>();
     private BoltGeometry(LightningRecipe recipe) { this.recipe = recipe; this.budget = recipe.maxSegments; }
     static BoltGeometry generate(Vec3 start, Vec3 end, LightningRecipe recipe) {
-        BoltGeometry g = new BoltGeometry(recipe); g.branch(start, end, recipe.seed, 0, 0, 1, 1); return g;
+        BoltGeometry g = new BoltGeometry(recipe);
+        g.branch(start,end,recipe.seed,0,0,1,1);
+        // Breadth-first: complete the primary branches before spending budget
+        // on their descendants. Pending siblings share the remaining budget.
+        while(!g.pending.isEmpty()&&g.budget>=8&&g.branches<recipe.branchLimit){
+            Pending next=g.pending.removeFirst();g.branches++;
+            g.branch(next.start,next.end,next.seed,next.depth,next.alongStart,next.alongEnd,next.intensity);
+        }
+        return g;
     }
     List<Segment> segments() { return segments; }
     private void branch(Vec3 start, Vec3 end, long seed, int depth, double alongStart, double alongEnd, double intensity) {
         if (budget < 8 && depth > 0) return;
         int generations = Math.max(depth > 0 ? 3 : 1, recipe.strikeGenerations - depth);
-        while ((1 << generations) > budget && generations > 1) generations--;
+        int allowance=budget;
+        if(depth>0){
+            long siblings=pending.stream().filter(p->p.depth==depth).count()+1;
+            siblings=Math.min(siblings,Math.max(1,recipe.branchLimit-branches+1));
+            allowance=Math.max(8,budget/(int)siblings);
+        }
+        while ((1 << generations) > allowance && generations > 1) generations--;
         Vec3[] p = new Vec3[(1 << recipe.strikeGenerations) + 1]; p[0] = start; p[1] = end; int used = 2;
         SplittableRandom random = new SplittableRandom(seed);
         double branchSpan = start.distanceTo(end);
@@ -37,7 +55,8 @@ final class BoltGeometry {
             segments.add(new Segment(p[i], p[i + 1], (float)Math.max(.004, wa), (float)Math.max(.002, wb), (float)(intensity * widthScale), (float)(alongStart + (alongEnd-alongStart)*a), (float)(alongStart + (alongEnd-alongStart)*b), depth, path)); budget--;
         }
         if (depth >= recipe.maxBranchDepth || budget <= 0) return;
-        for (int i = 3; i < used - 2 && budget >= 8 && branches < recipe.branchLimit; i += 6) {
+        var candidates=new ArrayList<Pending>();
+        for (int i = 3; i < used - 2; i += 6) {
             double t = i / (double)(used - 1); double weight = (.3 + .95 * Math.sin(Math.PI * t)) * (.6 + .6 * t);
             if (random.nextDouble() > recipe.branchProbability * weight) continue;
             Vec3 origin = p[i]; Vec3 tangent = p[i + 1].subtract(p[i - 1]).normalize();
@@ -50,8 +69,17 @@ final class BoltGeometry {
             Vec3 tip = origin.add(direction.scale(length)).add(curve)
                 .add(jitter == 0 ? 0 : random.nextDouble(-jitter, jitter), 0,
                     jitter == 0 ? 0 : random.nextDouble(-jitter, jitter));
-            branches++;
-            branch(origin, tip, random.nextLong(), depth + 1, Math.min(.999, alongStart + (alongEnd-alongStart)*t), Math.min(1, alongStart + (alongEnd-alongStart)*(t + (1-t)*.6)), intensity);
+            candidates.add(new Pending(origin,tip,random.nextLong(),depth+1,
+                Math.min(.999,alongStart+(alongEnd-alongStart)*t),
+                Math.min(1,alongStart+(alongEnd-alongStart)*(t+(1-t)*.6)),intensity));
+        }
+        // Spread early choices over the full parent, including when the hard
+        // branch cap or tiny segment budget permits only a few candidates.
+        candidates.sort(Comparator.comparingDouble(Pending::alongStart));
+        int n=candidates.size();if(n==0)return;int bits=32-Integer.numberOfLeadingZeros(Math.max(1,n-1));
+        for(int k=0;k<(1<<bits);k++){
+            int index=bits==0?0:Integer.reverse(k) >>> (32-bits);
+            if(index<n)pending.addLast(candidates.get(index));
         }
     }
     private static int subdivide(Vec3[] p, int count, double amplitude, SplittableRandom r) {

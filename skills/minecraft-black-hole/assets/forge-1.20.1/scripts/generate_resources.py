@@ -1,6 +1,7 @@
 """Package the installed original kernel in Forge GLSL 150 host shaders."""
 from pathlib import Path
 import argparse, json, hashlib
+import white_hole_adapter
 
 root=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser(description=__doc__)
@@ -112,12 +113,22 @@ print('Packaged kernel SHA-256:',hashlib.sha256(kernel.encode()).hexdigest())
 # kernel above unchanged: these paths have a different camera and mask contract.
 layers=(root/'scripts/world-layers.js').read_text(encoding='utf-8')
 pattern=layers.split('const patternHeader=`',1)[1].split('`;',1)[0]
+pattern='uniform float uObjectMode;\n'+pattern
+pattern=pattern.replace('#define BH_REFERENCE_RIBBONS (uGranular==2)','#define BH_REFERENCE_RIBBONS (uGranular==2 && uObjectMode<.5)')
 halo=layers.split('const header=patternHeader+`',1)[1].split('`;',1)[0]
+halo=halo.replace('JetStrength>0.0001?JetLength+uCore+.5:0.0','(uObjectMode<.5&&JetStrength>0.0001)?JetLength+uCore+.5:0.0')
 world_kernel=(root/'scripts/world-kernel.glsl').read_text(encoding='utf-8')
+world_kernel=white_hole_adapter.kernel(world_kernel)
 functions=''.join((root/'scripts'/('world-'+n)).read_text(encoding='utf-8') for n in ['disk_structure.glsl','styles.glsl','halo.glsl'])
-(out/'world.fsh').write_text((root/'scripts/world_header.glsl').read_text(encoding='utf-8')+pattern+halo+world_kernel+functions+(root/'scripts/world_main.glsl').read_text(encoding='utf-8'),encoding='utf-8')
+functions=white_hole_adapter.functions(functions)
+(out/'world.fsh').write_text((root/'scripts/world_header.glsl').read_text(encoding='utf-8')+pattern+halo+world_kernel+functions+white_hole_adapter.world_functions()+(root/'scripts/world_main.glsl').read_text(encoding='utf-8'),encoding='utf-8')
 (out/'particles.fsh').write_text((root/'scripts/particles_header.glsl').read_text(encoding='utf-8')+pattern+world_kernel+functions.split('vec3 haloEmission(',1)[0]+(root/'scripts/particles_main.glsl').read_text(encoding='utf-8'),encoding='utf-8')
 for host in ['world','particles']:
  for ext in ['vsh','json']:
   (out/(host+'.'+ext)).write_text((root/'scripts'/('mature-'+host+'.'+ext)).read_text(encoding='utf-8'),encoding='utf-8')
 print('World field SHA-256:',hashlib.sha256(world_kernel.encode()).hexdigest())
+
+# The core-only optical post pipeline has independent source inputs.
+for host in ['core_blur','core_composite']:
+ for ext in ['vsh','fsh','json']:
+  (out/(host+'.'+ext)).write_bytes((root/'scripts'/('mature-'+host+'.'+ext)).read_bytes())

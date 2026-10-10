@@ -13,6 +13,7 @@ minecraft {
         property "forge.logging.markers", "REGISTRIES"
         property "forge.logging.console.level", "info"
         property "vfxworkbench.blackHoleDemo", project.findProperty("blackHoleDemo") ?: "false"
+        property "vfxworkbench.whiteHoleRegression", project.findProperty("whiteHoleRegression") ?: "false"
         property "vfxworkbench.blackHoleRegression", project.findProperty("blackHoleRegression") ?: "false"
         property "vfxworkbench.blackHoleVerticalRegression", project.findProperty("blackHoleVerticalRegression") ?: "false"
         property "vfxworkbench.blackHoleThirdPersonRegression", project.findProperty("blackHoleThirdPersonRegression") ?: "false"
@@ -23,10 +24,12 @@ minecraft {
         property "vfxworkbench.stencilRegression", project.findProperty("stencilRegression") ?: "false"
         property "vfxworkbench.workbenchUiRegression", project.findProperty("workbenchUiRegression") ?: "false"
         property "vfxworkbench.workbenchFeatureRegression", project.findProperty("workbenchFeatureRegression") ?: "false"
+        property "vfxworkbench.workbenchNavigationRegression", project.findProperty("workbenchNavigationRegression") ?: "false"
         property "vfxworkbench.lightningDemo", project.findProperty("lightningDemo") ?: "false"
         property "vfxworkbench.lightningDemoExit", project.findProperty("lightningDemoExit") ?: "false"
         property "vfxworkbench.lightningGlowRegression", project.findProperty("lightningGlowRegression") ?: "false"
         property "vfxworkbench.lightningGradientRegression", project.findProperty("lightningGradientRegression") ?: "false"
+        property "vfxworkbench.lightningGradientClarityRegression", project.findProperty("lightningGradientClarityRegression") ?: "false"
         property "vfxworkbench.lightningImpactColorRegression", project.findProperty("lightningImpactColorRegression") ?: "false"
         mods { vfxworkbench { source sourceSets.main } }
     } }
@@ -50,6 +53,11 @@ tasks.register("blackHoleCheck", JavaExec) {
     dependsOn testClasses
     classpath = sourceSets.test.runtimeClasspath
     mainClass = "dev.vfxworkbench.BlackHoleSchemaCheck"
+}
+tasks.register("blackHoleFlowCheck", JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.vfxworkbench.effects.blackhole.BlackHoleFlowClockCheck"
 }
 
 // Guard the client entry point against a partial/stale jar: rain preview must

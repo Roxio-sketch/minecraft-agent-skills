@@ -10,6 +10,10 @@ void main(){
     if(alpha<.005)discard;
     float heat=1.0-clamp((ParticleRadius-uCore)/(ParticleOuter-uCore),0.0,1.0);
     vec3 source=mix(ParticleCold,ParticleHot,heat*heat)*ParticleBrightness*(.4+1.6*heat);
+    if(uObjectMode>.5){
+        float outwardProgress=clamp((ParticleRadius-max(uInner,uCore*1.12))/max(ParticleOuter-max(uInner,uCore*1.12),.5),0.0,1.0);
+        source=mix(ParticleHot,ParticleCold,smoothstep(.05,.90,outwardProgress))*ParticleBrightness*(1.30-.35*outwardProgress);
+    }
     vec3 light=1.0-exp(-source);
     light=mix(light*12.92,1.055*pow(light,vec3(1.0/2.4))-.055,step(vec3(.0031308),light));
     fragColor=vec4(light*alpha,0.0);

@@ -7,8 +7,10 @@ const LightningMaterial=(()=>{
   return x*(1-r)/(x*(1-r)+(1-x)*r);
  }
  const channels=hex=>[16,8,0].map(shift=>(parseInt(hex.slice(1),16)>>shift)&255);
+ const usesGradient=(r,halo)=>r.gradientEnabled&&(r.gradientTarget==='both'||r.gradientTarget===(halo?'glow':'core'));
+ const vividCore=r=>usesGradient(r,false)&&r.gradientCoreMode==='vivid';
  function color(r,halo,along){
-  const base=channels(halo?r.glowColor:r.coreColor);if(!r.gradientEnabled)return base.map(v=>v/255);
+  const base=channels(halo?r.glowColor:r.coreColor);if(!usesGradient(r,halo))return base.map(v=>v/255);
   const a=channels(r.gradientStart),b=channels(r.gradientEnd),t=gradientMix(along,r.gradientRatio);
   return base.map((v,i)=>Math.floor(v*Math.round(a[i]+(b[i]-a[i])*t)/255)/255);
  }
@@ -68,7 +70,7 @@ const LightningMaterial=(()=>{
    }
   }return {vertices,extent};
  }
- return {gradientMix,color,paths,mesh};
+ return {gradientMix,usesGradient,vividCore,color,paths,mesh};
 })();
 
 /* RGBA8 scratch matches TextureTarget: MAX within each path, ADD between paths. */
@@ -85,15 +87,15 @@ class LightningGpuPreview {
    'uniform vec2 Size;out vec4 color;out vec2 uv;out float coverage;flat out float roundJoint;',
    'void main(){gl_Position=vec4(Position.x/Size.x*2.-1.,1.-Position.y/Size.y*2.,0,1);color=Color;uv=UV;coverage=Coverage;roundJoint=Round;}']),
   lines(['#version 300 es',
-   'precision highp float;in vec4 color;in vec2 uv;in float coverage;flat in float roundJoint;uniform float Gain;uniform float Halo;out vec4 outColor;',
-   'void main(){float d=roundJoint>.5?length(uv):abs(uv.y*2.-1.);if(d>=1.)discard;float profile=Halo>.5?max(0.,exp(-5.*d*d)-exp(-5.)):1.-smoothstep(.30,.95,d);vec3 e=clamp(color.rgb*Gain,0.,1.)*color.a*coverage*profile;outColor=vec4(e,0);}']));
+   'precision highp float;in vec4 color;in vec2 uv;in float coverage;flat in float roundJoint;uniform float Gain;uniform float Halo;uniform float VividCore;out vec4 outColor;',
+   'void main(){float d=roundJoint>.5?length(uv):abs(uv.y*2.-1.);if(d>=1.)discard;float profile=Halo>.5?max(0.,exp(-5.*d*d)-exp(-5.)):1.-smoothstep(.30,.95,d);float a=color.a*coverage*profile;if(Halo<.5&&VividCore>.5){float top=max(color.r,max(color.g,color.b));outColor=vec4(top>0.?color.rgb/top:vec3(0.),clamp(a*Gain*top,0.,1.));}else{vec3 e=(Halo>.5?clamp(color.rgb*Gain,0.,1.):color.rgb*Gain)*a;outColor=vec4(e,0);}}']));
   this.copy=program(lines(['#version 300 es',
    'out vec2 uv;void main(){vec2 p=vec2(gl_VertexID==1?3.:-1.,gl_VertexID==2?3.:-1.);gl_Position=vec4(p,0,1);uv=p*.5+.5;}']),
   lines(['#version 300 es',
-   'precision highp float;in vec2 uv;uniform sampler2D Image;out vec4 outColor;void main(){outColor=vec4(texture(Image,uv).rgb,0);}']));
+   'precision highp float;in vec2 uv;uniform sampler2D Image;uniform float Scene;out vec4 outColor;void main(){outColor=vec4(texture(Image,uv).rgb,Scene);}']));
   this.buffer=gl.createBuffer();this.vao=gl.createVertexArray();gl.bindVertexArray(this.vao);gl.bindBuffer(gl.ARRAY_BUFFER,this.buffer);
   for(const [location,count,offset] of [[0,2,0],[1,4,2],[2,2,6],[3,1,8],[4,1,9]]){gl.enableVertexAttribArray(location);gl.vertexAttribPointer(location,count,gl.FLOAT,false,40,offset*4);}
-  this.texture=gl.createTexture();this.fbo=gl.createFramebuffer();
+  this.texture=gl.createTexture();this.sceneTexture=gl.createTexture();this.fbo=gl.createFramebuffer();
  }
  begin(width,height){
   const gl=this.gl;
@@ -107,7 +109,16 @@ class LightningGpuPreview {
    this.allocated=true;
   }
   gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.viewport(0,0,width,height);gl.disable(gl.SCISSOR_TEST);gl.disable(gl.DEPTH_TEST);gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT);
-  this.stats={paths:0,vertices:0,glError:0};
+  this.stats={paths:0,vertices:0,glError:0};this.sceneLoaded=false;
+ }
+ seedScene(ctx){
+  if(this.sceneLoaded)return;
+  const gl=this.gl;gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.disable(gl.BLEND);gl.useProgram(this.copy);
+  gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,this.sceneTexture);
+  gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,ctx.canvas);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.NEAREST);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+  gl.uniform1i(gl.getUniformLocation(this.copy,'Image'),0);gl.uniform1f(gl.getUniformLocation(this.copy,'Scene'),1);gl.drawArrays(gl.TRIANGLES,0,3);this.sceneLoaded=true;
  }
  upload(mesh,r,halo){
   const gl=this.gl;gl.useProgram(this.stroke);gl.bindVertexArray(this.vao);gl.bindBuffer(gl.ARRAY_BUFFER,this.buffer);
@@ -115,6 +126,7 @@ class LightningGpuPreview {
   gl.uniform2f(gl.getUniformLocation(this.stroke,'Size'),this.canvas.width,this.canvas.height);
   gl.uniform1f(gl.getUniformLocation(this.stroke,'Gain'),halo?r.glowGain:r.coreGain);
   gl.uniform1f(gl.getUniformLocation(this.stroke,'Halo'),halo?1:0);
+  gl.uniform1f(gl.getUniformLocation(this.stroke,'VividCore'),!halo&&LightningMaterial.vividCore(r)?1:0);
   gl.drawArrays(gl.TRIANGLES,0,mesh.vertices.length/10);this.stats.vertices+=mesh.vertices.length/10;
  }
  draw(segments,r,project){
@@ -128,17 +140,20 @@ class LightningGpuPreview {
      gl.bindFramebuffer(gl.FRAMEBUFFER,this.fbo);gl.enable(gl.SCISSOR_TEST);gl.scissor(x,y,right-x,top-y);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);
      gl.blendEquation(gl.MAX);this.upload(mesh,r,true);
      gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.blendEquation(gl.FUNC_ADD);gl.useProgram(this.copy);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,this.texture);
-     gl.uniform1i(gl.getUniformLocation(this.copy,'Image'),0);gl.drawArrays(gl.TRIANGLES,0,3);gl.disable(gl.SCISSOR_TEST);
+     gl.blendFunc(gl.ONE,gl.ONE);gl.uniform1i(gl.getUniformLocation(this.copy,'Image'),0);gl.uniform1f(gl.getUniformLocation(this.copy,'Scene'),0);gl.drawArrays(gl.TRIANGLES,0,3);gl.disable(gl.SCISSOR_TEST);
     }
    }
-   gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.blendEquation(gl.FUNC_ADD);
+  }
+  gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.blendEquation(gl.FUNC_ADD);
+  gl.blendFuncSeparate(LightningMaterial.vividCore(r)?gl.SRC_ALPHA:gl.ONE,LightningMaterial.vividCore(r)?gl.ONE_MINUS_SRC_ALPHA:gl.ONE,gl.ZERO,gl.ONE);
+  for(const runs of groups){
    this.upload(LightningMaterial.mesh(runs,r,false),r,false);this.stats.paths++;
   }
  }
  finish(ctx){
   const gl=this.gl;gl.disable(gl.SCISSOR_TEST);this.stats.glError=gl.getError();
   if(this.stats.glError)throw Error('WebGL 错误 '+this.stats.glError);
-  ctx.globalCompositeOperation='lighter';ctx.drawImage(this.canvas,0,0);ctx.globalCompositeOperation='source-over';
+  ctx.globalCompositeOperation=this.sceneLoaded?'source-over':'lighter';ctx.drawImage(this.canvas,0,0);ctx.globalCompositeOperation='source-over';
  }
 }
 if(typeof module!=='undefined')module.exports={LightningMaterial};

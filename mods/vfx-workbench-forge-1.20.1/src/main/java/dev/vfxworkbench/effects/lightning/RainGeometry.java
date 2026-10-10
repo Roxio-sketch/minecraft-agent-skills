@@ -24,6 +24,9 @@ final class RainGeometry {
         return generate(recipe,anchor,(start,end)->end);
     }
     static List<Bolt> generate(LightningRecipe recipe, Vec3 anchor,BiFunction<Vec3,Vec3,Vec3> ground) {
+        return generate(recipe,anchor,ground,anchor.y+recipe.strikeHeight);
+    }
+    static List<Bolt> generate(LightningRecipe recipe, Vec3 anchor,BiFunction<Vec3,Vec3,Vec3> ground,double startY) {
         List<Bolt> out = new ArrayList<>(recipe.rainCount);
         Gson gson = new Gson();
         for (int i = 0; i < recipe.rainCount; i++) {
@@ -34,8 +37,9 @@ final class RainGeometry {
             double x=cluster?Math.cos(angle)*radius*recipe.rainSpread*.5:u*recipe.rainSpread+LightningMath.signed(seed,1)*recipe.rainSpread/recipe.rainCount*.35;
             double z=cluster?Math.sin(angle)*radius*recipe.rainDepthSpread*.5:LightningMath.signed(seed,2)*recipe.rainDepthSpread;
             Vec3 end=anchor.add(x+(cluster?0:LightningMath.signed(seed,3)*.35),0,z+(cluster?0:LightningMath.signed(seed,4)*.35));
-            Vec3 start = anchor.add(x, recipe.strikeHeight, z);
+            Vec3 start = new Vec3(anchor.x+x,startY,anchor.z+z);
             end=ground.apply(start,end);
+            if(start.y<end.y+2)continue;
             LightningRecipe child = gson.fromJson(gson.toJson(recipe), LightningRecipe.class);
             child.mode = "strike";
             child.seed = seed;

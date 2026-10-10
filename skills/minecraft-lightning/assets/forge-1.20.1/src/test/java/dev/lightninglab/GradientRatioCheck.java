@@ -13,6 +13,7 @@ final class GradientRatioCheck {
         checkProportions();
         checkFiniteMonotonicAndSymmetric();
         checkDisabled();
+        checkLayerSelection();
         System.out.println("PASS: gradient start/end proportions, exact 50% legacy colors, extremes, base tints, midpoint, symmetry, monotonicity and disabled isolation (" + assertions + " assertions)");
     }
 
@@ -103,6 +104,22 @@ final class GradientRatioCheck {
                 exact(LightningAppearance.colorAt(r, false, x), new float[]{128 / 255f, 64 / 255f, 192 / 255f}, "disabled gradient changed core tint");
                 exact(LightningAppearance.colorAt(r, true, x), new float[]{32 / 255f, 96 / 255f, 128 / 255f}, "disabled gradient changed halo tint");
             }
+        }
+    }
+
+    private static void checkLayerSelection() {
+        LightningRecipe r=new LightningRecipe();r.coreColor="#8040c0";r.glowColor="#206080";
+        r.gradientStart="#ff0000";r.gradientEnd="#00ffff";
+        require(r.gradientTarget.equals("both")&&r.gradientCoreMode.equals("vivid"),"new gradient defaults");
+        for(String target:new String[]{"both","core","glow"})for(boolean enabled:new boolean[]{false,true})for(String mode:new String[]{"vivid","additive"}) {
+            r.gradientTarget=target;r.gradientEnabled=enabled;r.gradientCoreMode=mode;
+            for(boolean halo:new boolean[]{false,true}) {
+                boolean active=enabled&&(target.equals("both")||target.equals(halo?"glow":"core"));
+                float[] expected=active?(halo?new float[]{16/255f,48/255f,64/255f}:new float[]{64/255f,32/255f,96/255f})
+                    :(halo?new float[]{32/255f,96/255f,128/255f}:new float[]{128/255f,64/255f,192/255f});
+                exact(LightningAppearance.colorAt(r,halo,.5),expected,"layer selection changed material tint");
+            }
+            require(LightningAppearance.vividCore(r)==(enabled&&!target.equals("glow")&&mode.equals("vivid")),"vivid isolation failed");
         }
     }
 

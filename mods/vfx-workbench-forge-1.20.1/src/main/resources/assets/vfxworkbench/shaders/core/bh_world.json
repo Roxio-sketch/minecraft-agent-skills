@@ -20,6 +20,9 @@
     },
     {
       "name": "Sampler4"
+    },
+    {
+      "name": "RibbonNoise"
     }
   ],
   "uniforms": [
@@ -209,7 +212,11 @@
       "name": "CameraOriginRelative",
       "type": "float",
       "count": 3,
-      "values": [0, 0, 0]
+      "values": [
+        0,
+        0,
+        0
+      ]
     },
     {
       "name": "WorldScale",
@@ -609,6 +616,88 @@
       "count": 1,
       "values": [
         0
+      ]
+    },
+    {
+      "name": "uCoreEmission",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1
+      ]
+    },
+    {
+      "name": "uObjectMode",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uJetClock",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uShellClock",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uShellStrength",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uShellRadius",
+      "type": "float",
+      "count": 1,
+      "values": [
+        5
+      ]
+    },
+    {
+      "name": "uShellWidth",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.12
+      ]
+    },
+    {
+      "name": "uShellColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.1682694,
+        0.7379104,
+        1.0
+      ]
+    },
+    {
+      "name": "uCoreGlow",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uCoreGlowRadius",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.8
       ]
     }
   ]

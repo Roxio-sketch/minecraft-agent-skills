@@ -22,7 +22,7 @@ fs.mkdirSync(out,{recursive:true});
  await page.goto(url);
  await page.waitForFunction(()=>window.LightningWorkbench);
  await page.locator('#pause').click();
- const initial=await page.evaluate(()=>LightningWorkbench.getRecipe());assert.equal(Object.keys(initial).length,61);
+ const initial=await page.evaluate(()=>LightningWorkbench.getRecipe());assert.equal(Object.keys(initial).length,63);
  if(arg('--recipe')){
   await page.locator('#file').setInputFiles(path.resolve(arg('--recipe')));
   await page.waitForFunction(()=>document.getElementById('status').textContent.startsWith('已导入'));
@@ -35,12 +35,44 @@ fs.mkdirSync(out,{recursive:true});
  assert.equal(await page.evaluate(()=>LightningWorkbench.getRecipe().gradientRatio),75);
  assert.equal(await page.locator('#gradientRatioOut').textContent(),'75%');
  const downloadPromise=page.waitForEvent('download');await page.locator('#export').click();
- const download=await downloadPromise;await download.saveAs(path.join(out,'exported-61.json'));
- const exported=JSON.parse(fs.readFileSync(path.join(out,'exported-61.json'),'utf8'));assert.equal(Object.keys(exported).length,61);assert.equal(exported.gradientRatio,75);
+ const download=await downloadPromise;await download.saveAs(path.join(out,'exported-63.json'));
+ const exported=JSON.parse(fs.readFileSync(path.join(out,'exported-63.json'),'utf8'));assert.equal(Object.keys(exported).length,63);assert.equal(exported.gradientRatio,75);
  const beforeInvalid=await page.evaluate(()=>LightningWorkbench.getRecipe());
  await page.locator('#file').setInputFiles({name:'invalid.json',mimeType:'application/json',buffer:Buffer.from('{"gradientRatio":101,"coreColor":"#123456"}')});
  await page.waitForFunction(()=>document.getElementById('status').textContent.startsWith('导入失败'));
  assert.deepEqual(await page.evaluate(()=>LightningWorkbench.getRecipe()),beforeInvalid);
+ await page.evaluate(()=>{LightningWorkbench.setRecipe({...presets.strike,gradientEnabled:true,gradientTarget:'both',gradientCoreMode:'vivid',coreColor:'#ffffff',glowColor:'#895a75',gradientStart:'#e700f2',gradientEnd:'#e3b026',gradientRatio:31});LightningWorkbench.setTime(3.2);});
+ const colors=await page.evaluate(()=>({core:[...document.querySelectorAll('#corePreview code')].map(n=>n.textContent),glow:[...document.querySelectorAll('#glowPreview code')].map(n=>n.textContent)}));
+ assert.deepEqual(colors,{core:['#E700F2','#E47965','#E3B026'],glow:['#7C006F','#7A2A2E','#793E11']});
+ await page.screenshot({path:path.join(out,'highgain-user-vivid-ui.png'),fullPage:true});
+ const unchanged=await page.evaluate(()=>({segments:LightningWorkbench.segments(),time:document.getElementById('statTime').textContent}));
+ await page.locator('#gradientTarget').selectOption('glow');
+ assert.deepEqual(await page.evaluate(()=>LightningWorkbench.segments()),unchanged.segments,'appearance change rebuilt visible geometry');
+ assert.equal(await page.locator('#statTime').textContent(),unchanged.time,'layer selection restarted event time');
+ assert.deepEqual(await page.locator('#corePreview code').allTextContents(),['#FFFFFF','#FFFFFF','#FFFFFF']);
+ assert.deepEqual(await page.locator('#glowPreview code').allTextContents(),colors.glow);
+ assert(await page.locator('#gradientCoreModeRow').isHidden());
+ await page.locator('#gradientTarget').selectOption('both');
+ await page.locator('#gradientCoreMode').selectOption('additive');
+ await page.screenshot({path:path.join(out,'highgain-user-additive-ui.png'),fullPage:true});
+ const vividOracle=await page.evaluate(()=>{
+  const r={...defaultRecipe,mode:'strike',strikeWidth:.055,glowWidth:.23,coreGain:3.8,glowGain:2.4,gradientEnabled:true,gradientTarget:'both',coreColor:'#ffffff',glowColor:'#895a75',gradientStart:'#e700f2',gradientEnd:'#e3b026',gradientRatio:31};
+  const segments=[];
+  for(const [path,y,width,alpha] of [[0,0,.055,1],[1,1,.03,.35]])for(let i=0;i<4;i++)segments.push({a:[i/4,y,0],b:[(i+1)/4,y,0],w:width,alpha,path,along:i/4,alongB:(i+1)/4});
+  const project=p=>[32+p[0]*448,64+p[1]*128,0,100];
+  const draw=mode=>{
+   const renderer=new LightningGpuPreview(),scene=document.createElement('canvas');scene.width=512;scene.height=256;const ctx=scene.getContext('2d');ctx.fillStyle='#24364c';ctx.fillRect(0,0,512,256);
+   renderer.begin(512,256);renderer.seedScene(ctx);renderer.draw(segments,{...r,gradientCoreMode:mode},project);renderer.finish(ctx);
+   const rgb=(x,y)=>[...ctx.getImageData(x,y,1,1).data].slice(0,3);
+   return {main:[64,144,256,368,448].map(x=>rgb(x,64)),branch:[64,144,256,368,448].map(x=>rgb(x,192)),stats:renderer.stats,png:scene.toDataURL('image/png').split(',')[1]};
+  };
+  return {fixture:'highgain-main-branch-gradient/v1',recipe:r,vivid:draw('vivid'),additive:draw('additive')};
+ });
+ assert.deepEqual(vividOracle.additive.main[2],[255,255,255],'traditional main core no longer reproduces reported clipping');
+ for(let i=0;i<3;i++)assert(Math.abs(vividOracle.vivid.main[2][i]-[255,135,113][i])<=2,'vivid high-gain core does not preserve expected purple/gold material hue');
+ assert(vividOracle.vivid.main[0][2]>vividOracle.vivid.main[4][2]+100,'main trunk lost along-path purple-to-gold change');
+ assert(vividOracle.vivid.branch[0][2]>vividOracle.vivid.branch[4][2]+40,'branches lost along-path gradient');
+ for(const mode of ['vivid','additive']){assert.equal(vividOracle[mode].stats.glError,0);fs.writeFileSync(path.join(out,'highgain-main-branch-'+mode+'.png'),Buffer.from(vividOracle[mode].png,'base64'));delete vividOracle[mode].png;}
  const cases=[];
  for(const [name,ratio,enabled,hue] of [['impact-tip-cyan',50,true,'cyan'],['impact-ratio100-red',100,true,'red'],['impact-gradient-off-white',50,false,'white']]){
   await page.evaluate(({ratio,enabled})=>{
@@ -95,7 +127,7 @@ fs.mkdirSync(out,{recursive:true});
  await page.evaluate(()=>LightningWorkbench.setRecipe({...presets.cluster,impactEnabled:false}));
  await page.evaluate(()=>LightningWorkbench.setTime(80));const ended=await page.evaluate(()=>LightningWorkbench.stats());assert.equal(ended.segments,0);
  assert.equal(errors.length,0,errors.join('\n'));
- const report={fixture:'lightning-workbench-webgl/v1',legacyRecipeImport:!!arg('--recipe'),typedExportFields:61,invalidImportAtomic:true,actualRatioControl:75,cases,haloOracle,ended,errors};
+ const report={fixture:'lightning-workbench-webgl/v2',legacyRecipeImport:!!arg('--recipe'),typedExportFields:63,invalidImportAtomic:true,actualRatioControl:75,actualLayerControls:true,actualSixMaterialSwatches:colors,vividOracle,cases,haloOracle,ended,errors};
  fs.writeFileSync(path.join(out,'report.json'),JSON.stringify(report,null,2));await browser.close();if(server)server.close();
- console.log('PASS: actual WebGL2 shaders/MAX-ADD, 61-field export and legacy import, live ratio slider, atomic invalid input, ground-only cyan/red/white raster differences and all existing channels');
+ console.log('PASS: actual WebGL2 shaders/MAX-ADD/alpha core, 63-field export and legacy import, live ratio/layer controls, six material swatches, high-gain main+branch vivid/additive pixel oracle, atomic invalid input, ground-only cyan/red/white raster differences and all existing channels');
 })().catch(e=>{console.error(e);process.exit(1);});

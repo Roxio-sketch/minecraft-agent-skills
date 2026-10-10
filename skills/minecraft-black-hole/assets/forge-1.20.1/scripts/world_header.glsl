@@ -5,6 +5,15 @@ uniform float EnvironmentReady;
 uniform mat4 InvViewProjection,ViewProjection;
 uniform vec3 CenterRelative,CameraOriginRelative;
 uniform float WorldScale,LensStrength,LensRadius,uExposure;
+uniform float uCoreEmission;
+uniform float uCoreGlow,uCoreGlowRadius;
+// External white-hole transport clocks are local-space distance, not brightness.
+uniform float uJetClock,uShellClock,uShellStrength,uShellRadius,uShellWidth;
+uniform vec3 uShellColor;
+#define BH_CORE_GAIN uCoreEmission
+// The source pass records only the actual captured core, not disk/sky light.
+vec3 bhCoreRadiance=vec3(0.0);
+#define BH_CORE_CAPTURE(c) bhCoreRadiance+=(c)
 // Only explicit development probes enable this source-coverage diagnostic.
 uniform float LensProbeMode;
 uniform vec3 ProbeBoundsMin,ProbeBoundsMax;

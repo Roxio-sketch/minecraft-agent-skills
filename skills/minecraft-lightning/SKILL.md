@@ -1,6 +1,6 @@
 ---
 name: minecraft-lightning
-description: 为 Minecraft Forge 1.20.1 / Java 17 制作可调环绕电流、分形闪电、集束落雷和击地放电，附 WebGL2 参数工作台、固定 tick 几何、渐变比例、稳定光晕、61字段配方与独立游戏验收入口。用于雷劫、物体充能和局部放电；不替代完整电磁或大气求解器。
+description: 为 Minecraft Forge 1.20.1 / Java 17 制作可调环绕电流、分形闪电、集束落雷和击地放电，附 WebGL2 参数工作台、固定 tick 几何、渐变比例、稳定光晕、63字段配方与独立游戏验收入口。用于雷劫、物体充能和局部放电；不替代完整电磁或大气求解器。
 ---
 
 # 雷电特效制作
@@ -22,9 +22,11 @@ description: 为 Minecraft Forge 1.20.1 / Java 17 制作可调环绕电流、分
 - 闪电使用固定端点的 midpoint displacement。每层粗糙度按 `strikeRoughness` 衰减，分叉按主干中段权重采样并递归到 `maxBranchDepth`；`maxSegments` 是总预算。先行、回击、重击和闪烁由同一 `LightningEnvelope` 驱动，不为每次闪烁重建树。
 - 几何由 `seed` 决定：相同配方、端点和 seed 会得到相同主干/分叉拓扑；改变 seed 才改变形状。固定触发用于复现，`random-strike` 用随机 seed 探索变体。
 - `rain` 将多道垂直闪电放在 `rainSpread` 水平范围内，用 `rainStagger` 错开触发；每道最多 `rainMaxBranchDepth` 层且分叉概率取 `rainBranchProbability` 与普通概率的较小值。
-- `gradientEnabled` 打开后，`gradientStart` 到 `gradientEnd` 沿每道闪电的起止方向插值，再分别乘以 `coreColor`/`glowColor`。`gradientRatio` 是起始色占比（0–100，默认 50），50%逐字节保留旧颜色；0%全终止色、100%全起始色。关闭渐变时比例不影响外观。
+- `gradientEnabled` 打开后，`gradientTarget=both/core/glow` 选择核心+光晕、仅核心或仅光晕，默认 both。主雷与分叉共用沿程渐变，所选层的渐变色乘以自己的基础色。`gradientRatio` 是起始色占比（0–100，默认 50），50%逐字节保留旧材质颜色数学；0%全终止色、100%全起始色。关闭渐变时比例与作用层不影响外观。
+- `gradientCoreMode=vivid/additive` 默认 vivid：渐变作用核心时使用保色透明度混合，归一化 RGB 保留色相，增益增加透明度，光晕先于核心绘制。additive 保留传统加法显示，高增益可把主雷中段截成白色；不要将“分叉有色、主雷白”误判为主雷漏用渐变。关闭渐变或仅光晕时核心走原加法路径。色卡显示相乘后的材质色，不含增益与场景混合。
+- 核心采用实际相机投影的独立凸段与圆形接点，保持配方物理宽度和核心底色，禁止回退到近轴会自交的三维共享 miter；同步 `RoundJoint` 与 `roundCoverage` shader 接口。
 - 光晕使用独立凸段与内接点圆盘，单路径先在 RGBA8 缓冲取 `MAX` 再以 `ADD` 合成场景；禁止将短而宽的光晕改回共享 miter 四边形，或靠压小宽度/增益掩盖尖片。亚像素扩宽只改变覆盖，按比例补偿能量，coverage 经浮点 UV 传输。
-- 配方是完整 61 字段 typed JSON；旧 60 字段缺失 `gradientRatio` 时补 50。Java/JS 都接受旧 `values` 字符串包装，严格检查未知字段、有限数、范围与整数；先解析完整临时对象，再替换现有配置，不能静默裁剪或重新套预设覆盖用户值。
+- 配方是完整 63 字段 typed JSON；旧 60/61 字段缺失比例/作用层/显色方式时分别补 50/both/vivid。新默认改变渐变核心的显示方式，选 additive 可恢复传统发光。Java/JS 都接受旧 `values` 字符串包装，严格检查未知字段、有限数、范围与整数；先解析完整临时对象，再替换现有配置，不能静默裁剪或重新套预设覆盖用户值。
 
 ## 当前工程
 
@@ -43,3 +45,7 @@ Simplex 噪声移植来源及许可见 [第三方声明](THIRD_PARTY_NOTICES.md)
 `rainStyle=cluster` 把落点确定性地分布在直径为 `rainSpread` × `rainDepthSpread` 的椭圆内；集束预设为 9 道、3 × 2.4 格、错开 .22 tick，分叉概率、层数和总数均为零。每道雷命中后生成径向短电弧、扩散断环、闪光和抛物线火花。用 `impactEnabled`、`impactRadius`、`impactDuration`、`impactRays`、`impactSparks` 调节；击地持续时间从 `progressionTicks` 开始，事件清理必须覆盖最后一道雷的主干和击地尾段。
 
 模板在触发时按 seed 缓存，渲染仅根据 tick/partialTick 采样；禁止每帧重新随机路径。击地电弧、断环、火花和闪光都采样主落雷末端实际材质色（`along=1`），不重启局部渐变；100%比例时它们实际继承起始色，核心/光晕仍各乘自己的底色。Forge 演示按方块碰撞射线确定落点，地面电弧使用落点附近的水平局部平面，尚未实现贴合台阶/斜面或火花碰撞。
+
+落雷高度范围与宿主坐标边界见 [performance-height-limits.md](references/performance-height-limits.md)。
+
+本轮修复边界见 [盘面与光影兼容说明](references/disk-compat-20261009.md)。

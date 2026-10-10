@@ -272,14 +272,18 @@ void bhDiskSample(vec3 q,vec3 rayDirection,float ds,inout BHResult result) {
         // crossings otherwise collapse into a stack of bright wire rings at
         // the preview pixel scale.  A wider Gaussian preserves the depth of
         // the cloud without turning it into a flat texture sheet.
-        radial=smoothstep(uInner+1.12,uInner+1.72,radius)
-            *(1.0-smoothstep(uOuter-.8,uOuter,radius));
+        // Scale the exclusion and edge fades to the actual annular width.
+        // Absolute offsets previously erased most of a narrow dust disk.
+        float span=max(uOuter-uInner,.01);
+        float innerFade=min(.06*span,max(.018,.08*uCore));
+        radial=smoothstep(uInner,uInner+innerFade,radius)
+            *(1.0-smoothstep(uOuter-.20*span,uOuter,radius));
     }
     float dustThickness=max(uThickness*(BH_DUST_STYLE?1.65:1.0),.012);
     float vertical=exp(-0.5*q.y*q.y/(dustThickness*dustThickness));
     vec2 pattern=BH_PATTERN(radius,atan(q.z,q.x));
     float sigma=uDensity*radial*vertical*BH_DISK_DENSITY(pattern);
-    if(BH_DUST_STYLE)sigma*=.25;
+    if(BH_DUST_STYLE)sigma*=.85;
     if(BH_SURFACE_DISK && !BH_CINEMATIC_DISK)sigma*=.43;
     // The cinematic layer is a finite plasma volume, not a uniformly painted
     // sheet. Couple optical thickness to both the lane and filament fields so
@@ -307,6 +311,11 @@ void bhDiskSample(vec3 q,vec3 rayDirection,float ds,inout BHResult result) {
         (BH_SURFACE_DISK?.38+1.45*hot:1.2+3.6*hot);
     vec3 source=bhDiskColor(hot)*sourceStrength*BH_DISK_EMISSION(pattern);
     source*=mix(.84,relativistic,BH_CINEMATIC_DISK?.86:.38);
+    if(BH_SURFACE_DISK && !BH_CINEMATIC_DISK){
+        // Continuous approaching/receding brightness, independent of lane phase.
+        float side=clamp(1.0+.65*uBeaming*approach,.25,2.2);
+        source*=side*side;
+    }
     if(BH_CINEMATIC_DISK){
         float beam=pow(clamp(1.0+.7*uBeaming*approach,.45,1.7),2.0);
         float heated=clamp(.68*hot+.32*max(approach,0.0)*uBeaming,0.0,1.0);
@@ -623,7 +632,77 @@ BHResult bhTraceVerlet(vec3 ro,vec3 rd) {
     result.closestRadius=closestRadius;
     return result;
 }
+
+#ifdef BH_REFERENCE_RIBBONS
+// Polar noise lookup, disk alpha accumulation and inverse-square bending adapted
+// from WittyScrap/unity-black-hole-shader (Francesco Litrico, MIT, see notice).
+// World-scale controls, finite core, positive plane hits and scene clipping are
+// explicit host adaptations. A hit never advances the ray behind the camera.
+BHResult bhTraceRibbon(vec3 ro,vec3 rd){
+    BHResult result;
+    result.light=vec3(0);result.transmission=1.0;result.direction=normalize(rd);
+    result.position=ro;result.captured=0.0;result.exhausted=0.0;result.blocked=0.0;result.closestRadius=1e6;
+    float bound=max(uOuter*3.0,uCore*8.0);
+    vec2 interval=bhSphere(ro,result.direction,bound);
+    if(interval.y<=0.0)return result;
+    float begin=max(0.0,interval.x),ds=(interval.y-begin)/float(uSteps);
+    vec3 p=ro+result.direction*begin,dir=result.direction;
+    float a=radians(-uTilt),alpha=0.0;
+    vec3 disk=vec3(0);
+    bool ended=false;
+    for(int i=0;i<512;i++){
+        if(i>=uSteps)break;
+        if(BH_SCENE_BLOCKED(p)){result.blocked=1.0;ended=true;break;}
+        vec3 q=bhRotateX(p,a),dq=bhRotateX(dir,a);
+        float advance=ds;
+        float crossing=abs(dq.y)>.00001?-q.y/dq.y:-1.0;
+        // Require a forward intersection and do not count the same plane hit twice.
+        if(crossing>=0.0&&crossing<ds&&abs(q.y)>.000001){
+            vec3 point=q+dq*crossing;
+            float radius=length(point.xz);
+            if(radius>uInner&&radius<uOuter&&uDensity>0.0){
+                float outFade=1.0-smoothstep(uInner,uOuter,radius);
+                // Keep the outer disk translucent instead of a broad luminous skirt.
+                float fade=(1.0-pow(outFade,100.0))*pow(outFade,1.45)*2.0;
+                float angle=atan(point.z,point.x)/6.28318530718+.5-uOrbitPhase/6.28318530718;
+                float noise=textureLod(RibbonNoise,vec2(angle,(1.0-outFade)*uBandDetail*.21+uRadialPhase*.016),0.0).r;
+                // The reference texture is imported as sRGB by Unity.
+                noise=noise<=.04045?noise/12.92:pow((noise+.055)/1.055,2.4);
+                vec3 tangent=normalize(vec3(point.z,0,-point.x));
+                vec3 directRay=normalize(point-bhRotateX(ro,a));
+                float doppler=clamp(max((dot(directRay,tangent)+1.0)*.5,.25)*2.0*max(abs(uSpeed),.72),0.0,1.0);
+                // Nonlinear directional gain preserves receding-side dark lanes under display compression.
+                float side=mix(1.0,pow(doppler,2.2)*1.8,clamp(uBeaming,0.0,1.0));
+                float heat=pow(outFade,2.35);
+                vec3 source=bhDiskColor(heat)*noise*fade*fade*(uDensity/5.0)*2.0*side;
+                disk=clamp(disk+source,vec3(0),vec3(1));
+                alpha=clamp(alpha+fade,0.0,1.0);
+            }
+            p+=dir*crossing;advance-=crossing;
+        }
+        vec3 next=p+dir*advance;
+        float along=clamp(-dot(p,dir),0.0,advance);
+        result.closestRadius=min(result.closestRadius,length(p+dir*along));
+        if(length(p+dir*along)<uCore){result.captured=1.0;alpha=1.0;ended=true;p=next;break;}
+        p=next;
+        float radius=max(length(p),.001);
+        // Same radial inverse-square force as the reference, normalized to core units.
+        dir=normalize(dir-p/radius*(.70*uBend*uCore/(radius*radius))*ds);
+        if(length(p)>bound&&dot(p,dir)>0.0){ended=true;break;}
+    }
+    result.light=disk*2.0*alpha;
+    result.transmission=1.0-alpha;
+    result.position=p;result.direction=dir;
+    // Budget exhaustion is transparent unless an actual disk/core was hit.
+    result.exhausted=!ended&&dot(p,dir)<0.0?1.0:0.0;
+    return result;
+}
+#endif
+
 BHResult bhTrace(vec3 ro,vec3 rd) {
+#ifdef BH_REFERENCE_RIBBONS
+    if(BH_REFERENCE_RIBBONS)return bhTraceRibbon(ro,rd);
+#endif
 #if BH_USE_GEODESIC_VERLET
     return bhTraceVerlet(ro,rd);
 #else
@@ -633,3 +712,4 @@ BHResult bhTrace(vec3 ro,vec3 rd) {
 vec3 bhCompositeInternal(BHResult result) {
     return result.light+result.transmission*bhBackground(result.direction);
 }
+

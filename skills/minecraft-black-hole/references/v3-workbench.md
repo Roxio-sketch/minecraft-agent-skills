@@ -1,6 +1,6 @@
 # v3.2 黑洞材质工作台
 
-这是浏览器中的原创美术化黑洞，不是通用相对论精确求解器，世界/粒子场已迁移至独立 Forge 模板；已有 JAR 需重建和显式导入。先以 `python scripts/serve_preview.py --port 8771` 启动，再打开脚本打印的 loopback 地址。工作台主配方只保留四个算法族：“体积尘埃 · 原创结构”“层叠光带 · Unity 研究”“程序光带 · 基础结构”“颗粒吸积 · 完整组合”，无参数地址默认是透镜尘埃。颗粒吸积的预设已采用用户提供的 `black-hole-recipe.json` 主体配色/结构/时间等参数，内置预设倾角统一改为水平 0°；导入旧配方时保留明确角度。选择该配方或使用 `?preset=granular` 会以 1071.978 秒暂停画面开始，恢复其保存的视角。`?preset=gradient`、`?preset=unity`、`?preset=dust`、`?preset=ribbons` 等旧地址仍能打开对应兼容变体；`?play=1` 播放。颜色、光圈、渐变和粒子强度通过控件调整，不再为同一盘面结构重复列出多个配方。追加 `?solver=verlet` 可在浏览器中观察可选速度 Verlet 研究求解器；它默认关闭、未替换稳定的艺术积分，也不作为 Forge 认证。
+这是浏览器中的原创美术化黑洞，不是通用相对论精确求解器，世界/粒子场已迁移至独立 Forge 模板；已有 JAR 需重建和显式导入。先以 `python scripts/serve_preview.py --port 8771` 启动，再打开脚本打印的 loopback 地址。工作台主配方只保留三个算法族：“体积尘埃 · BlackHole 研究” “层叠光带 · Unity 研究” “颗粒吸积 · 完整组合”，无参数地址默认是透镜尘埃。颗粒吸积的预设已采用用户提供的 `black-hole-recipe.json` 主体配色/结构/时间等参数，内置预设倾角统一改为水平 0°；导入旧配方时保留明确角度。选择该配方或使用 `?preset=granular` 会以 1071.978 秒暂停画面开始，恢复其保存的视角。`?preset=gradient`、`?preset=unity`、`?preset=dust`、`?preset=ribbons` 等旧地址仍能打开对应兼容变体；`?play=1` 播放。颜色、光圈、渐变和粒子强度通过控件调整，不再为同一盘面结构重复列出多个配方。追加 `?solver=verlet` 可在浏览器中观察可选速度 Verlet 研究求解器；它默认关闭、未替换稳定的艺术积分，也不作为 Forge 认证。
 
 
 ## 画面与调参
@@ -20,9 +20,13 @@
 
 ## 来源与边界
 
-- 用户提供的 `unity-black-hole-shader-main` 对应 [WittyScrap 原项目](https://github.com/WittyScrap/unity-black-hole-shader)：薄盘穿越、内外缘渐隐和统一角向平流是形态参考。原图包含强亮带与暗间隔；没有复制项目的噪声图或原 shader。MIT 许可见该仓库。
+- 用户提供的 `unity-black-hole-shader-main` 对应 [WittyScrap 原项目](https://github.com/WittyScrap/unity-black-hole-shader)：薄盘穿越、内外缘渐隐和统一角向平流是形态参考。原图包含强亮带与暗间隔；2026-10-09 的参考复刻分支已使用该仓库 MIT 噪声贴图，并移植其盘面采样、交点累加、侧向 Doppler 与逆平方径向偏折；版权和 MIT 文本随资源交付。
 - [tantaneity/urp-black-hole](https://github.com/tantaneity/urp-black-hole) 的分层盘纹启发宽带、细丝、热结点和暗尘沟分开调节；[Eric Bruneton 的 WebGL2 实现](https://github.com/ebruneton/black_hole_shader) 启发背景足迹过滤与 HDR 柔光阶段。分别为 MIT 和 BSD-3-Clause；这里是独立实现，不分发其代码和纹理。
 
 本预览的默认弯曲射线是有限步美术积分。`captured` 表示射线进入核心，`exhausted` 表示计算预算耗尽，两者不可混淆。2026-10-04 在四个主配方、1.7/277.85 秒和视距 5/20 的 16 张图中记录 `glError=0`；Unity 的细线来自盘面多重像而不是背景或 halo。另检查暖色近景两帧、热结 2048 秒跨界及渐变/风格回归；这证明本机浏览器环境可出图，不等于物理精确或跨 GPU 一致。网页配方不会自动改变旧 JAR；独立模板可以显式导入其支持字段。世界背景、HDR bloom和粒子中间色仍有宿主差异，见 [Forge 接入](forge-integration.md)。新模板实机覆盖单独记录，旧证据不认证迁移后的所有路径。
 
 ## 验收
+
+在可用的 Node.js、Playwright 与浏览器路径下运行 `scripts/validate_workbench.cjs`、`validate_styles.cjs`、`validate_long_playback.cjs`、`validate_regressions.cjs` 和 `validate_gradients.cjs`。至少看 `t=1.7`、`277.85`、`100000` 的大图、16/32 px 小图、背景/盘面分离图，隔离内缘光圈，并对比 96/160/256 步。渐变脚本检查每层启用与关闭、几何控制、旧配方缺省和 WebGL 错误；“像素有变化”不等于风格与参考一致。详见 [预览与验收](preview-validation.md)。本轮 16 张画面与捕获信息在工作区 `research/black-hole/user-index-validation/final-four-1100/`；其中 `capture.json` 记录四主配方、两种时间、两种视距和 `glError=0`。暖色近景及跨界检查见同级 `warm/`、`renewal/`。
+
+层叠光带已于 2026-10-09 调整；程序光带主入口移除，旧配方可导入。见 [调整说明](ribbons-rework-20261009.md)。

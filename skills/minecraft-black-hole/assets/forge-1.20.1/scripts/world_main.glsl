@@ -88,6 +88,9 @@ void main(){
     ivec2 pixel=clamp(ivec2(texCoord*vec2(size)),ivec2(0),size-1);
     vec3 original=texelFetch(Sampler0,pixel,0).rgb;
     vec3 rd=normalize(scenePosition(texCoord,1.0)-CameraOriginRelative);
+    // Evaluate derivatives uniformly before visibility branches. A thin-layer
+    // field can then reconstruct its screen footprint without undefined reads.
+    float outflowPixelAngle=max(length(dFdx(rd)),length(dFdy(rd)));
     float depth=texelFetch(Sampler1,pixel,0).r;
     bool foreground=foregroundEntity(texCoord,depth);
     resolveLensSource(rd,foreground);
@@ -98,12 +101,23 @@ void main(){
     vec3 ro=(CameraOriginRelative-CenterRelative)/WorldScale;
     vec2 support=bhSphere(ro,rd,max(BH_TRACE_BOUND,LensRadius));
     BHResult hit;hit.light=vec3(0);hit.transmission=1.0;
+    bhCoreRadiance=vec3(0.0);
     if(!foreground&&support.y>0.0){
         // Environment geometry has been remapped by the lens. Its ORIGINAL
         // depth cannot clip the mass/disk into a horizontal half-silhouette.
         // Actual foreground entities were already separated above.
         sceneRay=rd;sceneLimit=1e8;
         hit=bhTrace(ro,rd);
+    }
+    if(LensProbeMode>3.5){
+        fragColor=vec4(max(hit.light,vec3(0)),hit.captured>.5&&max(max(hit.light.r,hit.light.g),hit.light.b)<.001?0.0:1.0);return;
+    }
+    if(LensProbeMode>2.5){
+        // HDR source selection follows the SAME visible core and foreground
+        // policy as the artistic mass compositor. No bright-pixel threshold.
+        bool source=uObjectMode>.5&&uCoreEmission>.0001&&uCoreGlow>.0001
+            &&max(max(uCoreColor.r,uCoreColor.g),uCoreColor.b)>.000001;
+        fragColor=vec4(source?max(bhCoreRadiance,vec3(0.0)):vec3(0.0),1.0);return;
     }
     if(LensProbeMode>.5){
         if(LensProbeMode>1.5){fragColor=vec4(lensAvailability,0,0,1);return;}
@@ -116,7 +130,19 @@ void main(){
         bool moved=length((lensSourceUv-texCoord)*vec2(size))>2.0;
         fragColor=vec4(coverage,moved?coverage:0.0,0,1);return;
     }
-    if(foreground){fragColor=vec4(original,1.0);return;}
+    // External ejecta uses the ORIGINAL visible surface depth. It stops at
+    // terrain and actors alike and can appear in front of a foreground actor.
+    float outflowLimit=1e8;
+    if(depth<.999999){
+        vec3 surface=scenePosition(texCoord,depth);
+        outflowLimit=max(0.0,dot(surface-CameraOriginRelative,rd)/WorldScale-.002);
+    }
+    vec3 outflow=whiteOutflowTrace(ro,rd,outflowLimit,outflowPixelAngle);
+    if(foreground){
+        if(all(equal(outflow,vec3(0.0)))){fragColor=vec4(original,1.0);return;}
+        vec3 emitted=1.0-exp(-max(outflow,vec3(0))*uExposure);
+        fragColor=vec4(sceneDisplay(emitted+sceneLinear(original)),1.0);return;
+    }
     vec3 background=original;
     if(lensAvailability>.00001){
         // Four subpixel taps reduce aliasing in compressed terrain. Each tap
@@ -128,6 +154,7 @@ void main(){
         }
         if(weight>0.0)background=mix(original,sum/weight,lensAvailability);
     }
+    hit.light+=outflow;
     if(all(equal(hit.light,vec3(0.0)))&&hit.transmission==1.0){fragColor=vec4(background,1.0);return;}
     vec3 emitted=1.0-exp(-max(hit.light,vec3(0))*uExposure);
     fragColor=vec4(sceneDisplay(emitted+hit.transmission*sceneLinear(background)),1.0);

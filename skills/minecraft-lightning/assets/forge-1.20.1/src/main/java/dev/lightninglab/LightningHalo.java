@@ -25,18 +25,25 @@ final class LightningHalo {
     private static ShaderInstance profile,composite;
     private static TextureTarget scratch;
     private static final BufferBuilder BUFFER=new BufferBuilder(262144);
+    private static final boolean PROBES=Boolean.getBoolean("lightninglab.Demo")||Boolean.getBoolean("lightninglab.GradientRegression")||Boolean.getBoolean("lightninglab.GradientClarityRegression")||Boolean.getBoolean("lightninglab.ImpactColorRegression");
+    static int framePaths,frameBodyQuads,frameRoundQuads,frameGlError;
+    static double frameCpuMillis;
+    static void beginFrame(){framePaths=frameBodyQuads=frameRoundQuads=frameGlError=0;frameCpuMillis=0;}
+    static void endFrame(){if(PROBES)frameGlError|=GL11.glGetError();}
+
     @SubscribeEvent public static void shaders(RegisterShadersEvent event)throws IOException {
         release();
-        event.registerShader(new ShaderInstance(event.getResourceProvider(),new ResourceLocation(LightningLab.MOD_ID,"bolt_halo"),DefaultVertexFormat.POSITION_COLOR_TEX),shader->profile=shader);
-        event.registerShader(new ShaderInstance(event.getResourceProvider(),new ResourceLocation(LightningLab.MOD_ID,"bolt_halo_composite"),DefaultVertexFormat.POSITION_TEX),shader->composite=shader);
+        event.registerShader(new ShaderInstance(event.getResourceProvider(),new ResourceLocation("lightninglab","bolt_halo"),DefaultVertexFormat.POSITION_COLOR_TEX),shader->profile=shader);
+        event.registerShader(new ShaderInstance(event.getResourceProvider(),new ResourceLocation("lightninglab","bolt_halo_composite"),DefaultVertexFormat.POSITION_TEX),shader->composite=shader);
     }
     static void release(){if(scratch!=null)try(State state=new State()){GlStateManager._activeTexture(GL13.GL_TEXTURE0);scratch.destroyBuffers();scratch=null;}}
 
-    static void draw(List<List<HaloGeometry.Point>> paths,LightningRecipe recipe,Matrix4f clip,Matrix4f pose,int width,int height){
+    static void draw(List<List<HaloGeometry.Point>> paths,LightningRecipe recipe,HaloGeometry.Projection projection,Matrix4f pose,int width,int height){
         if(profile==null||composite==null||paths.isEmpty()||recipe.glowGain<=0)return;
         var main=Minecraft.getInstance().getMainRenderTarget();
         // Leave alternate framebuffer owners to an explicit integration adapter.
         if(GL11.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING)!=main.frameBufferId||main.getDepthTextureId()<0)return;
+        long started=PROBES?System.nanoTime():0;
         try(State state=new State()){
             if(state.vp[0]!=0||state.vp[1]!=0||width!=main.width||height!=main.height)return;
             GlStateManager._activeTexture(GL13.GL_TEXTURE0);
@@ -47,18 +54,22 @@ final class LightningHalo {
             }
             RenderSystem.colorMask(true,true,true,true);RenderSystem.depthMask(false);RenderSystem.disableCull();
             GL11.glDisable(GL11.GL_SCISSOR_TEST);
+            if(!LightningShaderBridge.late){
             GL30.glBindFramebuffer(GL30.GL_READ_FRAMEBUFFER,main.frameBufferId);
             GL30.glBindFramebuffer(GL30.GL_DRAW_FRAMEBUFFER,scratch.frameBufferId);
             GL30.glBlitFramebuffer(0,0,main.width,main.height,0,0,scratch.width,scratch.height,GL11.GL_DEPTH_BUFFER_BIT,GL11.GL_NEAREST);
+            }
             for(var path:paths){
-                var mesh=HaloGeometry.build(path,clip,width,height,recipe);
+                var mesh=HaloGeometry.build(path,projection,recipe,true);
                 var bounds=mesh.bounds();
                 if(bounds.width()<=0||bounds.height()<=0)continue;
+                if(PROBES){framePaths++;frameBodyQuads+=mesh.body().size()/4;frameRoundQuads+=mesh.round().size()/4;}
                 scratch.bindWrite(true);
                 GL11.glEnable(GL11.GL_SCISSOR_TEST);GL11.glScissor(bounds.x(),bounds.y(),bounds.width(),bounds.height());
                 // Clear only the bounds to be sampled in this path's composite.
                 GL11.glClearColor(0,0,0,0);GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
-                RenderSystem.enableDepthTest();RenderSystem.depthFunc(GL11.GL_LEQUAL);RenderSystem.depthMask(false);
+                if(LightningShaderBridge.late)RenderSystem.disableDepthTest();else RenderSystem.enableDepthTest();RenderSystem.depthFunc(GL11.GL_LEQUAL);RenderSystem.depthMask(false);
+                LightningShaderBridge.uniforms(profile);
                 profile.safeGetUniform("Gain").set((float)recipe.glowGain);
                 RenderSystem.setShader(()->profile);
                 profile.apply();
@@ -77,6 +88,7 @@ final class LightningHalo {
                 BufferUploader.drawWithShader(BUFFER.end());
             }
         }
+        if(PROBES)frameCpuMillis+=(System.nanoTime()-started)/1e6;
     }
     private static void vertices(List<HaloGeometry.Vertex> vertices,Matrix4f pose){
         if(vertices.isEmpty())return;
@@ -85,7 +97,7 @@ final class LightningHalo {
             .color(rgb[0],rgb[1],rgb[2],v.alpha()).uv(v.u(),v.v()).endVertex();}
         BufferUploader.drawWithShader(BUFFER.end());
     }
-    private static final class State implements AutoCloseable {
+    static final class State implements AutoCloseable {
         // Forge maps this SRG field to lastApplied in dev and retains it in reobfuscated clients.
         private static final Field BLEND_CACHE=ObfuscationReflectionHelper.findField(BlendMode.class,"f_85499_");
         final BlendMode previousBlend=readBlendCache();

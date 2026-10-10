@@ -4,8 +4,12 @@ in vec2 uv;
 flat in float roundCoverage;
 uniform float Gain;
 uniform float RoundJoint;
+uniform sampler2D DepthSnapshot;
+uniform float LateDepthEnabled;
+uniform vec2 OutputSize;
 out vec4 fragColor;
 void main(){
+ if(LateDepthEnabled>.5 && gl_FragCoord.z>texture(DepthSnapshot,gl_FragCoord.xy/OutputSize).r+0.000002)discard;
  float coverage=RoundJoint>0.5?roundCoverage:uv.x;
  float d=RoundJoint>0.5?length(vec2(uv.x/max(roundCoverage,1e-20),uv.y)):abs(uv.y*2.0-1.0);
  if(d>=1.0)discard;

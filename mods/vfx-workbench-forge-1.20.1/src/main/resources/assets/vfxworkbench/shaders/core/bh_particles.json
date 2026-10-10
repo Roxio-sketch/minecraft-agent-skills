@@ -5,7 +5,11 @@
     "Position",
     "UV0"
   ],
-  "samplers": [],
+  "samplers": [
+    {
+      "name": "RibbonNoise"
+    }
+  ],
   "uniforms": [
     {
       "name": "uTime",
@@ -132,7 +136,11 @@
       "name": "CameraOriginRelative",
       "type": "float",
       "count": 3,
-      "values": [0, 0, 0]
+      "values": [
+        0,
+        0,
+        0
+      ]
     },
     {
       "name": "WorldScale",
@@ -520,6 +528,22 @@
         0.6307571363461468,
         0.5775804404296506,
         0.9911020971138298
+      ]
+    },
+    {
+      "name": "uObjectMode",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uParticleClock",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
       ]
     }
   ]

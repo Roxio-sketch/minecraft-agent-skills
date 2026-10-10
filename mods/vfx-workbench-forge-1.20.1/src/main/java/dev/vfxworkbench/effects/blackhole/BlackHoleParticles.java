@@ -17,6 +17,7 @@ final class BlackHoleParticles {
     static long draws;
     private static VertexBuffer buffer;
     private static int allocated;
+    private static final int[][] CORNERS={{-1,-1},{1,-1},{1,1},{-1,1}};
     static void release(){if(buffer!=null){buffer.close();buffer=null;}allocated=0;}
     static void render(Matrix4f vp,Matrix4f view,Vec3 relative,Vec3 origin){
         if(!enabled||count==0||shader==null)return;
@@ -24,7 +25,7 @@ final class BlackHoleParticles {
         if(buffer==null||allocated!=active){
             release();buffer=new VertexBuffer(VertexBuffer.Usage.STATIC);
             BufferBuilder b=new BufferBuilder(active*4*20);b.begin(VertexFormat.Mode.QUADS,DefaultVertexFormat.POSITION_TEX);
-            for(int i=0;i<active;i++)for(int[] c:new int[][]{{-1,-1},{1,-1},{1,1},{-1,1}})
+            for(int i=0;i<active;i++)for(int[] c:CORNERS)
                 b.vertex(i,c[0],c[1]).uv((c[0]+1)*.5f,(c[1]+1)*.5f).endVertex();
             buffer.bind();buffer.upload(b.end());VertexBuffer.unbind();allocated=active;
         }
