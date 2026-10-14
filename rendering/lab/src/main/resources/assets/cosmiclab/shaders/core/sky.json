@@ -1,0 +1,13 @@
+{
+  "vertex":"cosmiclab:sky",
+  "fragment":"cosmiclab:sky",
+  "attributes":["Position"],
+  "samplers":[],
+  "uniforms":[
+    {"name":"InverseProjection","type":"matrix4x4","count":16,"values":[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]},
+    {"name":"InverseViewRotation","type":"matrix3x3","count":9,"values":[1,0,0,0,1,0,0,0,1]},
+    {"name":"Mode","type":"int","count":1,"values":[0]},
+    {"name":"Quality","type":"int","count":1,"values":[2]},
+    {"name":"Time","type":"float","count":1,"values":[0]}
+  ]
+}

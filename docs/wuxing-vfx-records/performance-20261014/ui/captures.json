@@ -1,0 +1,83 @@
+{
+  "test": "real-domain-ui-selection-hover",
+  "input": "Test pointer supplied to real Screen.renderWithTooltip, no OS cursor injection",
+  "captures": [
+    {
+      "name": "settings-mana-loss",
+      "detail": "[{Amount:7158.0f,At:1791956322978L,Source:\"业火领域\"}]",
+      "glError": 0
+    },
+    {
+      "name": "root-fire-details",
+      "detail": "火灵根\n已拥有 · 极品\n火灵根：免疫普通火焰伤害。\n火 / 异火灵根切换\n点击灵根图标切换形态\n领域未激活\n当前领域效果\n半径7格；最多12个敌对目标\n单目标伤害 81.3；1秒一次\n单目标灵力：9412 / 秒\n点燃2秒，最多12个敌对目标\n空场免费，多目标额外收费；灵力不足不释放\n各品质完整效果可在领域选择列表中查看",
+      "glError": 0
+    },
+    {
+      "name": "mana-hover",
+      "detail": "mana\u003d1042518.25, regeneration\u003d8712.001",
+      "glError": 0
+    },
+    {
+      "name": "meditation-rates",
+      "detail": "meditationCultivation\u003d28000, manaRegeneration\u003d17424.002",
+      "glError": 0
+    },
+    {
+      "name": "inventory-mana",
+      "detail": "灵力：110.8万 / 121万\n当前恢复：9075 / 秒",
+      "glError": 0
+    },
+    {
+      "name": "mutated-roots",
+      "detail": "both mutated roots",
+      "glError": 0
+    },
+    {
+      "name": "tracking-disabled",
+      "detail": "recorder disabled on actual server/client",
+      "glError": 0
+    },
+    {
+      "name": "alchemy-preview-grey",
+      "glError": 0,
+      "hasResult": false,
+      "capacity": 180,
+      "injectionPerSecond": 20
+    },
+    {
+      "name": "alchemy-complete",
+      "glError": 0,
+      "hasResult": true,
+      "capacity": 180,
+      "injectionPerSecond": 20
+    },
+    {
+      "name": "alchemy-collected",
+      "glError": 0,
+      "hasResult": false,
+      "capacity": 180,
+      "injectionPerSecond": 20
+    },
+    {
+      "name": "inventory-physique",
+      "detail": "inventory-physique",
+      "glError": 0
+    },
+    {
+      "name": "inventory-heart",
+      "detail": "inventory-heart",
+      "glError": 0
+    },
+    {
+      "name": "inventory-domain",
+      "detail": "inventory-domain",
+      "glError": 0
+    },
+    {
+      "name": "inventory-fire",
+      "detail": "inventory-fire",
+      "glError": 0
+    }
+  ],
+  "failures": []
+}

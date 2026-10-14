@@ -1,0 +1,3 @@
+interface:
+  display_name: "Minecraft Halo 与装饰层"
+  short_description: "制作物品光晕、旋转环与脉动装饰，处理分层、混合及 Forge 接入"

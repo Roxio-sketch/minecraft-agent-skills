@@ -1,0 +1,53 @@
+{
+  "reviewer": "ui_capture",
+  "reviewed": true,
+  "sha256": "9fc3ec4d5a4f246d8ab07408deead6e9d57b5ac8131b3579ff4b9f349cd6579c",
+  "result": "PASS",
+  "actualImagesReviewed": [
+    "dixian-settings-top.png",
+    "dixian-settings-bottom.png",
+    "dixian-selected-huashen.png",
+    "dixian-flight-huashen-selected.png",
+    "dixian-selected-dixian.png",
+    "dixian-flight-dixian-selected.png",
+    "dixian-auto-selected.png",
+    "huashen-settings-top.png",
+    "huashen-settings-bottom.png",
+    "huashen-selected-yuanying.png",
+    "huashen-auto-after-untrusted.png",
+    "huashen-reopened-auto.png"
+  ],
+  "imageSha256": {
+    "dixian-settings-top.png": "d881d730ac8fed441d2b5dc72345add2d624d13ae28f8cb4e0d0a3574e4d6efa",
+    "dixian-settings-bottom.png": "5acefff00e68be6ce5d0ae0f987822180b0ddc1a44e6408d66118e0357fb8a9c",
+    "dixian-selected-huashen.png": "a9ad8b6bf2f76344c10998586947b71b9eb2d9d22071e8fce38b1b9cf680ce5a",
+    "dixian-flight-huashen-selected.png": "d77d0c72ebc5984a695893e010cb7b06ef13b98b0a7a89b8512d4492df90f8e5",
+    "dixian-selected-dixian.png": "4a5813344f4ae7b05e56aa5e046b2001af29e1a7ce8f25c3a0eafd053a2be1a5",
+    "dixian-flight-dixian-selected.png": "f71ef2f4e1fffc2f0ec1d89b277faa762287212f61edacd5b44ff0bee7ecc749",
+    "dixian-auto-selected.png": "66ed2fdd359ded9e8d91b4ab77d74de7e09e595c2cfa08c709cbeffefe157d07",
+    "huashen-settings-top.png": "661e779c15db91d0989218b927f158173108113ff3a597ef388ae4bfb3bf757c",
+    "huashen-settings-bottom.png": "0d2a54ee111ee29c6250ed705c02bb0daff511d2fb206b255e32f22d31b4ce40",
+    "huashen-selected-yuanying.png": "5a2b95939231fd76e082f2370a4c78d8d4c3cf72ce2d4c996fbd467ebd95e399",
+    "huashen-auto-after-untrusted.png": "b50d853dc6920877039fd3260526e47be97bdea3a5ebf4d81910a39e0b2ac3bb",
+    "huashen-reopened-auto.png": "ab43cd44cf3343c72e2ce3b10cba39b5d3245d81613c21f3a0f5aa655e2e00d2"
+  },
+  "runtimeChecks": 41,
+  "actualMouseAndPacketInputs": 24,
+  "observations": [
+    "Independently inspected all 12 fresh final original PNGs, including 10 inventory settings images and 2 actual local-player survival flight images.",
+    "Inventory settings retains existing mode, pose, camera and slider rows. New unlocked-effect header and buttons are below them; no control overlap in the inspected 1280x720 GUI scale 2 layout.",
+    "地仙 menu shows 随当前境界 plus 元婴 Lv1 through 地仙 Lv6. Scrolling exposes every row and bottom explanation without covering the outer navigation or right scroll track.",
+    "化神 menu shows 随当前境界, 元婴 Lv1 and 化神 Lv2 only. Higher realm entries are absent, rather than clickable disabled placeholders.",
+    "Gold selected-state highlight changes to 化神 Lv2, 地仙 Lv6, 元婴 Lv1 and then 随当前境界 after actual production screen mouse clicks. The separate ordinary hover highlight can be visible on another row.",
+    "Selecting 化神 and 地仙 while actual cultivation remains 地仙 changes the rendered flight appearance immediately; the local model, world and visible wake remain in both actual flight screenshots. Renderer resolver and server snapshot separately confirm visual realms 4 and 8 with actual realm 8.",
+    "Saved TOML reads confirm real production preference persistence. Reopening the page preserves automatic selection. The fixture restores original DEV animation, pose and appearance preference values.",
+    "A real C2S packet requesting 地仙 appearance at actual 化神 is clamped by the production server to 化神. Automatic preference remains encoded as 0 and resolves to current actual realm."
+  ],
+  "limits": [
+    "Isolated DEV local save, native renderer, 1280x720 at GUI scale 2. No remote multiplayer client, shader-pack, FPS or arbitrary display-size claim.",
+    "Reflection only reads widget coordinates, production packet snapshots and the renderer resolver; all preference selections in the evidence use actual production screen mouseClicked/mouseScrolled.",
+    "No actual world-unload/cache-reset PASS claim. An optional clearLevel step in the earlier candidate blocked during server terrain generation; that candidate and its thread dump remain preserved separately. The final fixture ends with normal Minecraft.stop after completing requested UI verification.",
+    "Images are actual Minecraft outputs. Preview only resizes and labels originals; it does not paint or synthesize gameplay effects."
+  ],
+  "reviewTime": "2026-10-10T13:03:38.536694+08:00"
+}

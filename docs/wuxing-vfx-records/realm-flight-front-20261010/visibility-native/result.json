@@ -1,0 +1,1201 @@
+{
+  "fixture": "flightVisibilityCapture",
+  "result": "PASS",
+  "expectedImages": 12,
+  "actualImages": 12,
+  "packName": "none",
+  "actualShaderPackActive": false,
+  "scope": "Fresh isolated survival world, real local double-space and W input, production END history/pose/shader renderer; no RemotePlayer, no sword, no multiplayer/FPS claim. Side pictures use DEV camera position only; front pictures use vanilla third-person front. Actual source/shader/JAR binding must be supplied by the external delivery verifier. Pixel metrics do not establish aesthetic approval.",
+  "actualMovementClientTicks": 405,
+  "captures": [
+    {
+      "screenshot": "realm-4-huashen-local-day-side.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 80,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          14.475999999999994,
+          136.4380337789653,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "THIRD_PERSON_BACK",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "cameraPosition": [
+        8.983200984001154,
+        139.53803377896529,
+        12.0
+      ],
+      "position": [
+        14.475999999999994,
+        136.4380337789653,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 102,
+      "renderedVertices": 9796,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 179.10381944444444,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 27.88496582748147,
+        "glow": 0.9999251481701122,
+        "speedWeight": 0.6762292556457566,
+        "flowPhase": 1.4037460256029033,
+        "historySamples": 57,
+        "historySpeed": 0.6158885824261011
+      }
+    },
+    {
+      "screenshot": "realm-4-huashen-local-day-front.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 115,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          36.03599999999999,
+          136.4380337789653,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "THIRD_PERSON_FRONT",
+      "cameraScope": "Vanilla third-person front camera",
+      "cameraPosition": [
+        39.42000139522551,
+        138.05803366452437,
+        0.0
+      ],
+      "position": [
+        36.03599999999999,
+        136.4380337789653,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 112,
+      "renderedVertices": 10760,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 204.9009027777778,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 27.999895102412655,
+        "glow": 0.9999997808114095,
+        "speedWeight": 0.6802729374854657,
+        "flowPhase": 4.378613491846014,
+        "historySamples": 64,
+        "historySpeed": 0.6159999999684554
+      }
+    },
+    {
+      "screenshot": "realm-4-huashen-local-night-side.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 150,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          57.595999999999975,
+          136.4380337789653,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "THIRD_PERSON_BACK",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "cameraPosition": [
+        52.12784154796598,
+        139.53803377896529,
+        12.0
+      ],
+      "position": [
+        57.595999999999975,
+        136.4380337789653,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 112,
+      "renderedVertices": 10760,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 143.04520833333333,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 27.99999990434578,
+        "glow": 0.9999999993581501,
+        "speedWeight": 0.6802729770209582,
+        "flowPhase": 7.354807753808418,
+        "historySamples": 64,
+        "historySpeed": 0.6159999999999995
+      }
+    },
+    {
+      "screenshot": "realm-4-huashen-local-night-front.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 180,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          76.07599999999996,
+          136.4380337789653,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "THIRD_PERSON_FRONT",
+      "cameraScope": "Vanilla third-person front camera",
+      "cameraPosition": [
+        79.4600020561218,
+        138.05803366452437,
+        0.0
+      ],
+      "position": [
+        76.07599999999996,
+        136.4380337789653,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 112,
+      "renderedVertices": 10756,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 170.46479166666666,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 27.9999999997629,
+        "glow": 0.9999999999956753,
+        "speedWeight": 0.6802729770212984,
+        "flowPhase": 9.905831417638186,
+        "historySamples": 64,
+        "historySpeed": 0.6159999999999995
+      }
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-day-side.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 80,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          18.424000000000003,
+          137.25003377896545,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "THIRD_PERSON_BACK",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "cameraPosition": [
+        12.875203514099123,
+        140.35003377896544,
+        12.0
+      ],
+      "position": [
+        18.424000000000003,
+        137.25003377896545,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 121,
+      "renderedVertices": 11624,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 178.92090277777777,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 31.90321773490117,
+        "glow": 0.9999269725220907,
+        "speedWeight": 0.6440671801733555,
+        "flowPhase": 11.921880695026143,
+        "historySamples": 57,
+        "historySpeed": 0.7838581749287192
+      }
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-day-front.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 115,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          45.86399999999997,
+          137.25003377896545,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "THIRD_PERSON_FRONT",
+      "cameraScope": "Vanilla third-person front camera",
+      "cameraPosition": [
+        49.283844104766814,
+        138.87003366452453,
+        0.0
+      ],
+      "position": [
+        45.86399999999997,
+        137.25003377896545,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 144,
+      "renderedVertices": 13832,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 205.6486111111111,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 31.99991174599787,
+        "glow": 0.9999997861536588,
+        "speedWeight": 0.6479999614907154,
+        "flowPhase": 14.755589691811588,
+        "historySamples": 64,
+        "historySpeed": 0.7839999999598457
+      }
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-night-side.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 150,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          73.30400000000002,
+          137.25003377896545,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "THIRD_PERSON_BACK",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "cameraPosition": [
+        67.58272423934937,
+        140.35003377896544,
+        12.0
+      ],
+      "position": [
+        73.30400000000002,
+        137.25003377896545,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 144,
+      "renderedVertices": 13828,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 145.24673611111112,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 31.999999919522768,
+        "glow": 0.9999999993737939,
+        "speedWeight": 0.6479999999996765,
+        "flowPhase": 17.59058967963038,
+        "historySamples": 64,
+        "historySpeed": 0.7840000000000059
+      }
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-night-front.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 180,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          96.8240000000002,
+          137.25003377896545,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "THIRD_PERSON_FRONT",
+      "cameraScope": "Vanilla third-person front camera",
+      "cameraPosition": [
+        100.13408402252216,
+        138.87003366452453,
+        0.0
+      ],
+      "position": [
+        96.8240000000002,
+        137.25003377896545,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 144,
+      "renderedVertices": 13828,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 170.19395833333334,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 31.99999999980052,
+        "glow": 0.9999999999957807,
+        "speedWeight": 0.6480000000000083,
+        "flowPhase": 20.020589679630277,
+        "historySamples": 64,
+        "historySpeed": 0.7840000000000059
+      }
+    },
+    {
+      "screenshot": "realm-8-dixian-local-day-side.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 80,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          36.848000000000006,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "THIRD_PERSON_BACK",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "cameraPosition": [
+        30.43680994415284,
+        145.11718708470514,
+        12.0
+      ],
+      "position": [
+        36.848000000000006,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 175,
+      "renderedVertices": 16812,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 184.300625,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 43.89416820580428,
+        "glow": 0.9999269725220907,
+        "speedWeight": 0.6440671799052454,
+        "flowPhase": 22.002744485572574,
+        "historySamples": 57,
+        "historySpeed": 1.5677163498532145
+      }
+    },
+    {
+      "screenshot": "realm-8-dixian-local-day-front.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 115,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          91.72799999999994,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "THIRD_PERSON_FRONT",
+      "cameraScope": "Vanilla third-person front camera",
+      "cameraPosition": [
+        94.31681069183344,
+        143.63718697026422,
+        0.0
+      ],
+      "position": [
+        91.72799999999994,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 161,
+      "renderedVertices": 15472,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 207.19958333333332,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 43.99990349389549,
+        "glow": 0.9999997861536588,
+        "speedWeight": 0.647999961490713,
+        "flowPhase": 24.836453482272585,
+        "historySamples": 64,
+        "historySpeed": 1.5679999999196914
+      }
+    },
+    {
+      "screenshot": "realm-8-dixian-local-night-side.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 150,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          146.60800000000003,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "THIRD_PERSON_BACK",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "cameraPosition": [
+        140.04001158905032,
+        145.11718708470514,
+        12.0
+      ],
+      "position": [
+        146.60800000000003,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 162,
+      "renderedVertices": 15568,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 159.99027777777778,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 43.99999991199782,
+        "glow": 0.9999999993737939,
+        "speedWeight": 0.6479999999996765,
+        "flowPhase": 27.67145347009138,
+        "historySamples": 64,
+        "historySpeed": 1.5680000000000118
+      }
+    },
+    {
+      "screenshot": "realm-8-dixian-local-night-front.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 180,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          193.6480000000004,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "THIRD_PERSON_FRONT",
+      "cameraScope": "Vanilla third-person front camera",
+      "cameraPosition": [
+        196.1427322769169,
+        143.63718697026422,
+        0.0
+      ],
+      "position": [
+        193.6480000000004,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": true,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 1,
+      "renderedTrailSegments": 162,
+      "renderedVertices": 15568,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 172.09048611111112,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 43.99999999978186,
+        "glow": 0.9999999999957807,
+        "speedWeight": 0.6480000000000083,
+        "flowPhase": 30.101453470091275,
+        "historySamples": 64,
+        "historySpeed": 1.5680000000000118
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "actual_shader_pack",
+      "passed": true,
+      "details": "Expected\u003dfalse, actual\u003dfalse, pack\u003dnone"
+    },
+    {
+      "name": "production_survival_permission_realm_4",
+      "passed": true,
+      "details": "Landed survival player; actual production mayfly\u003dtrue; no fixture mayfly grant"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[14.475999999999994, 136.4380337789653, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d102 / 9796"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d179.10381944444444, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[36.03599999999999, 136.4380337789653, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d112 / 10760"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d204.9009027777778, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[57.595999999999975, 136.4380337789653, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d112 / 10760"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d143.04520833333333, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[76.07599999999996, 136.4380337789653, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d112 / 10756"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d170.46479166666666, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "local_actual_W_displacement_realm_4",
+      "passed": true,
+      "details": "Actual W displacement\u003d78.53999999999996"
+    },
+    {
+      "name": "production_survival_permission_realm_5",
+      "passed": true,
+      "details": "Landed survival player; actual production mayfly\u003dtrue; no fixture mayfly grant"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[18.424000000000003, 137.25003377896545, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d121 / 11624"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d178.92090277777777, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[45.86399999999997, 137.25003377896545, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d144 / 13832"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d205.6486111111111, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[73.30400000000002, 137.25003377896545, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d144 / 13828"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d145.24673611111112, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[96.8240000000002, 137.25003377896545, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d144 / 13828"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d170.19395833333334, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "local_actual_W_displacement_realm_5",
+      "passed": true,
+      "details": "Actual W displacement\u003d99.96000000000022"
+    },
+    {
+      "name": "production_survival_permission_realm_8",
+      "passed": true,
+      "details": "Landed survival player; actual production mayfly\u003dtrue; no fixture mayfly grant"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[36.848000000000006, 142.01718708470514, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d175 / 16812"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d184.300625, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[91.72799999999994, 142.01718708470514, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d161 / 15472"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d207.19958333333332, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[146.60800000000003, 142.01718708470514, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d162 / 15568"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d159.99027777777778, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[193.6480000000004, 142.01718708470514, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "RenderPlayer.Post local draw\u003dtrue, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "actual_production_trail_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Production shader ready; segments/vertices\u003d162 / 15568"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d172.09048611111112, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "local_actual_W_displacement_realm_8",
+      "passed": true,
+      "details": "Actual W displacement\u003d199.92000000000044"
+    },
+    {
+      "name": "complete_actual_images",
+      "passed": true,
+      "details": "Actual PNGs\u003d12, expected\u003d12"
+    },
+    {
+      "name": "no_GL_errors",
+      "passed": true,
+      "details": "[]"
+    }
+  ],
+  "failures": [],
+  "glErrors": []
+}

@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "installed": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "sha256": "5cd588004cfbb5c4bdb2bdacaeb55365a1ea508bd4dba9fa7380a2f6d0ddc86b",
+  "bytes": 45118849,
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-ui-and-performance-20261010-132027.jar",
+  "backupSha256": "9fc3ec4d5a4f246d8ab07408deead6e9d57b5ac8131b3579ff4b9f349cd6579c",
+  "installedAt": "2026-10-10T13:20:28.1402392+08:00",
+  "restartRequired": true
+}

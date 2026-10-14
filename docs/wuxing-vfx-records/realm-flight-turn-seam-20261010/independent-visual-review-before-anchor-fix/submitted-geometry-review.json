@@ -1,0 +1,51 @@
+{
+  "result": "SPATIAL_JOIN_PASS_TEMPORAL_PHASE_REVIEW_REQUIRED",
+  "scope": "Final actual native frames, read-only submitted TubeFrame telemetry; not a shader-pack or multiplayer claim",
+  "realms": {
+    "4": {
+      "images": 60,
+      "early": 30,
+      "late": 30,
+      "minBodyWidth": 1.207500000000654,
+      "minNearWidth": 1.115584535507983,
+      "minAdjacentSideDot": 0.9993767678114932,
+      "minAdjacentHeadingDot": 0.9986453371125636,
+      "maxHeadingError": 1.6756050258086615e-09,
+      "maxBodyCapBasisError": 0,
+      "maxBodyCapWidthJump": 0.003747048446786083,
+      "minNearOpacity": 0.75190645,
+      "minTimeSideDot": -2.8612245011695247e-11
+    },
+    "8": {
+      "images": 60,
+      "early": 31,
+      "late": 29,
+      "minBodyWidth": 1.2075000000007325,
+      "minNearWidth": 1.1155845355080574,
+      "minAdjacentSideDot": 0.9999135621681564,
+      "minAdjacentHeadingDot": 0.9998265086858258,
+      "maxHeadingError": 1.4608907900575886e-09,
+      "maxBodyCapBasisError": 0,
+      "maxBodyCapWidthJump": 0.0037476764680122177,
+      "minNearOpacity": 0.7564219,
+      "minTimeSideDot": -6.038664257380487e-09
+    }
+  },
+  "failed_requested_band_images": [
+    "realm-8-dixian-turn-35-left-descend-rear-side-late.png"
+  ],
+  "fixture_checks": 971,
+  "gl_errors": [],
+  "visualReviewedImages": 120,
+  "observations": [
+    "No diagonal slab, needle-width neck, detached seam, or blackscreen in all 120 actual crops reviewed.",
+    "Visible flowing energy retains continuous front/body/wake envelope through left/right yaw and ascent/descent.",
+    "Temporal submitted body side flips about 90 degrees and back in realm4 images02/03/04 and realm8 images01/02/03; actualHeadFrame already contains this radial phase jump.",
+    "Spatial neighbor rings remain continuous; this is a remaining possible temporal material roll and must not be reported as a temporal basis pass."
+  ],
+  "limits": [
+    "Native renderer only; no shader-pack/multiplayer/FPS claim.",
+    "Frames are actual sampled screenshot renderframes, not every renderframe of the entire run.",
+    "First late request miss is disclosed: realm8 image35 actual partial=.019997478, but aggregate real early/late31/29 passes minimum15."
+  ]
+}

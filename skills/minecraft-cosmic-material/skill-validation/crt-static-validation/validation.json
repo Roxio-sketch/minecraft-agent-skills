@@ -1,0 +1,18 @@
+{
+  "assetDigest": "459e043f3bc62b39956fb050e605c7f5a74817b3dffd7dd2b4bbc1be19b89048",
+  "url": "http://127.0.0.1:52015",
+  "freezeTolerance": 0,
+  "checkedAt": "2026-09-30T19:57:43.748Z",
+  "status": "failed",
+  "scope": "Standalone WebGL 2 fantasy material study. No Minecraft runtime validation or performance certification. Original Cosmic freeze issue remains separate and unresolved.",
+  "checks": [
+    {
+      "name": "execution_exception",
+      "passed": false,
+      "detail": {
+        "message": "Playwright is required. Use an existing Node environment or NODE_PATH containing playwright. Cannot find module 'playwright'\nRequire stack:\n- E:\\着色器渲染\\skill\\minecraft-cosmic-material\\scripts\\validate_fantasy.cjs",
+        "stack": "Error: Playwright is required. Use an existing Node environment or NODE_PATH containing playwright. Cannot find module 'playwright'\nRequire stack:\n- E:\\着色器渲染\\skill\\minecraft-cosmic-material\\scripts\\validate_fantasy.cjs\n    at E:\\着色器渲染\\skill\\minecraft-cosmic-material\\scripts\\validate_fantasy.cjs:125:27\n    at Object.<anonymous> (E:\\着色器渲染\\skill\\minecraft-cosmic-material\\scripts\\validate_fantasy.cjs:266:3)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47"
+      }
+    }
+  ]
+}

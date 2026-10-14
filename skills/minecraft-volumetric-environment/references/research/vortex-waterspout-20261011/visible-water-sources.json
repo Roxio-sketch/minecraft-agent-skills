@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-11",
+  "purpose": "Visible fantasy water masses, irregular sheets, advected surface flow and spray",
+  "scope": "Primary-source reading and implementation advice; no original renderer execution",
+  "sources": [
+    {
+      "title": "GPU Gems 3, Chapter 30: Real-Time Simulation and Rendering of 3D Fluids",
+      "authors": [
+        "Keenan Crane",
+        "Ignacio Llamas",
+        "Sarah Tariq"
+      ],
+      "url": "https://developer.nvidia.com/gpugems/gpugems3/part-v-physics-simulation/chapter-30-real-time-simulation-and-rendering-3d-fluids",
+      "readSections": [
+        "30.3.2 Rendering Liquids",
+        "Refraction"
+      ],
+      "usedFor": "Liquid surface intersection, normals and background-based approximate refraction"
+    },
+    {
+      "title": "Water Flow in Portal 2 / Left 4 Dead 2",
+      "author": "Alex Vlachos, Valve",
+      "date": "2010-07-28",
+      "url": "https://cdn.fastly.steamstatic.com/apps/valve/2010/siggraph2010_vlachos_waterflow.pdf",
+      "readPhysicalPages": [
+        9,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        53
+      ],
+      "usedFor": "Short-phase directional normal animation, phase offsets and pulse/repetition reduction",
+      "notRead": "Embedded demonstration videos"
+    },
+    {
+      "title": "Particle Fluid Surface",
+      "url": "https://www.sidefx.com/docs/houdini/nodes/sop/particlefluidsurface.html",
+      "readSections": [
+        "Surfacing",
+        "Filtering"
+      ],
+      "usedFor": "Connected bulk surface versus retained thin details; independently authored implicit fields, no Houdini execution"
+    },
+    {
+      "title": "Whitewater Source",
+      "url": "https://www.sidefx.com/docs/houdini/nodes/sop/whitewatersource.html",
+      "readSections": [
+        "Curvature",
+        "Acceleration",
+        "Splash",
+        "Surface Deformation"
+      ],
+      "usedFor": "Separate foam and spray sources; current field uses artistic orientation/noise proxy"
+    },
+    {
+      "title": "The OpenGL ES Shading Language 3.00",
+      "url": "https://registry.khronos.org/OpenGL/specs/es/3.0/GLSL_ES_Specification_3.00.pdf",
+      "readSections": [
+        "8.2",
+        "8.8"
+      ],
+      "usedFor": "Defined power inputs and explicit level-zero sampling in divergent ray loops"
+    }
+  ],
+  "reuse": "Reference links and independent research only; no third-party shader code or texture redistribution"
+}

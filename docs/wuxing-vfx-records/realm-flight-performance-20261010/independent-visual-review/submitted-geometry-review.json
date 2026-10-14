@@ -1,0 +1,37 @@
+{
+  "result": "PASS",
+  "scope": "Final actual native frames, read-only submitted TubeFrame telemetry; not a shader-pack or multiplayer claim",
+  "realms": {
+    "4": {
+      "images": 60,
+      "early": 30,
+      "late": 30,
+      "minBodyWidth": 1.207500000000644,
+      "minNearWidth": 1.115584535507974,
+      "minAdjacentSideDot": 0.9994741243867874,
+      "minAdjacentHeadingDot": 0.9987417324119807,
+      "maxHeadingError": 1.7190146444699912e-09,
+      "maxBodyCapBasisError": 0,
+      "maxBodyCapWidthJump": 0.0037470488437412186,
+      "minNearOpacity": 0.75207007,
+      "minTimeSideDot": 0.9799332315219801
+    },
+    "8": {
+      "images": 60,
+      "early": 30,
+      "late": 30,
+      "minBodyWidth": 1.2075000000007214,
+      "minNearWidth": 1.1155845355080445,
+      "minAdjacentSideDot": 0.9999060802306531,
+      "minAdjacentHeadingDot": 0.9998016238633222,
+      "maxHeadingError": 1.8489337580100145e-09,
+      "maxBodyCapBasisError": 0,
+      "maxBodyCapWidthJump": 0.003747676501362207,
+      "minNearOpacity": 0.7568586,
+      "minTimeSideDot": 0.9756520846396118
+    }
+  },
+  "failed_requested_band_images": [],
+  "fixture_checks": 1091,
+  "gl_errors": []
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Minecraft 天空与宇宙渲染"
+  short_description: "制作程序天空、体积云雨、双虹冰晕与动态天体黑洞，提供可调工作台"
+  default_prompt: "使用 $minecraft-cosmic-rendering，按当前工程与视觉目标制作程序天空、世界云雾天气或动态天体黑洞，提供配方与工作台，并验证实际渲染。"

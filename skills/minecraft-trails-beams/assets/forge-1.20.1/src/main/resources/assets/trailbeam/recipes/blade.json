@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "name": "Tidal crescent",
+  "section": "blade",
+  "sides": 10,
+  "sampling": {
+    "lifetime": 0.85,
+    "minDistance": 0.015,
+    "maxStep": 0.1,
+    "breakDistance": 4,
+    "maxPoints": 256
+  },
+  "layers": [
+    {
+      "width": 1.0,
+      "blend": "alpha",
+      "profile": "soft",
+      "texture": "trailbeam:textures/white.png",
+      "repeat": 2.0,
+      "scroll": 0.65,
+      "gain": 1.0,
+      "fadePower": 1.4,
+      "taper": [
+        {
+          "at": 0,
+          "value": 0.05
+        },
+        {
+          "at": 0.18,
+          "value": 1
+        },
+        {
+          "at": 0.8,
+          "value": 1
+        },
+        {
+          "at": 1,
+          "value": 0.1
+        }
+      ],
+      "colors": [
+        {
+          "at": 0.0,
+          "color": "#134B96",
+          "alpha": 0.8
+        },
+        {
+          "at": 0.5,
+          "color": "#19DCD4",
+          "alpha": 0.8
+        },
+        {
+          "at": 1.0,
+          "color": "#F6FFCE",
+          "alpha": 0.8
+        }
+      ]
+    },
+    {
+      "width": 0.25,
+      "blend": "additive",
+      "profile": "soft",
+      "texture": "trailbeam:textures/white.png",
+      "repeat": 2.0,
+      "scroll": 0.65,
+      "gain": 1.0,
+      "fadePower": 1.4,
+      "taper": [
+        {
+          "at": 0,
+          "value": 0.05
+        },
+        {
+          "at": 0.18,
+          "value": 1
+        },
+        {
+          "at": 0.8,
+          "value": 1
+        },
+        {
+          "at": 1,
+          "value": 0.1
+        }
+      ],
+      "colors": [
+        {
+          "at": 0.0,
+          "color": "#1CBBAE",
+          "alpha": 0.8
+        },
+        {
+          "at": 1.0,
+          "color": "#E3FFFF",
+          "alpha": 0.8
+        }
+      ]
+    }
+  ]
+}

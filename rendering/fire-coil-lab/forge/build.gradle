@@ -1,0 +1,55 @@
+plugins { id 'java'; id 'net.minecraftforge.gradle' version '6.0.54' }
+group = 'dev.firecoil'
+version = '0.2.0'
+base { archivesName = 'firecoil' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+minecraft {
+ mappings channel: 'official', version: '1.20.1'
+ runs { client {
+  workingDirectory project.file('run')
+  property 'forge.logging.console.level', 'info'
+  property 'firecoil.qa', project.findProperty('qa') ?: 'false'
+  property 'firecoil.qa.weaponOnly', project.findProperty('qaWeaponOnly') ?: 'false'
+  property 'firecoil.qa.output', project.file(project.findProperty('qaOutput') ?: 'evidence/game').absolutePath
+  args '--width', (project.findProperty('qaWidth') ?: '960'), '--height', (project.findProperty('qaHeight') ?: '540'), '--username', 'FireCoilQA'
+  if(project.hasProperty('nativeDir')) { property 'org.lwjgl.librarypath', project.property('nativeDir') }
+  mods { firecoil { source sourceSets.main } }
+ } }
+}
+dependencies { minecraft 'net.minecraftforge:forge:1.20.1-47.4.10' }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar', Jar).configure { from('LICENSE') { into 'META-INF' }; exclude 'dev/firecoil/AutoQa*'; finalizedBy 'reobfJar' }
+tasks.register('coreCheck', JavaExec) {
+ dependsOn testClasses
+ classpath = sourceSets.test.runtimeClasspath
+ mainClass = 'dev.firecoil.CoreCheck'
+}
+tasks.named('check').configure { dependsOn 'coreCheck' }
+tasks.register('syncFireShader') {
+ inputs.file('../fire.frag.core.glsl')
+ outputs.file('src/main/resources/assets/firecoil/shaders/core/fire.fsh')
+ outputs.file('src/main/resources/assets/firecoil/shaders/core/shared-core.sha256')
+ doLast {
+  def shared = file('../fire.frag.core.glsl').getText('UTF-8')
+  def wrapper = '#version 150\nin vec4 metadata;\nin vec2 uv;\nout vec4 fragColor;\n// SHARED_CORE_BEGIN\n' + shared + '\n// SHARED_CORE_END\nvoid main(){fragColor=shadeFire(uv,metadata.r*2.0,metadata.g,metadata.b,metadata.a);if(fragColor.a<0.005)discard;}\n'
+  file('src/main/resources/assets/firecoil/shaders/core/fire.fsh').setText(wrapper,'UTF-8')
+  def sha = java.security.MessageDigest.getInstance('SHA-256').digest(shared.getBytes('UTF-8')).encodeHex().toString()
+  file('src/main/resources/assets/firecoil/shaders/core/shared-core.sha256').setText(sha + '\n','UTF-8')
+ }
+}
+tasks.register('syncRecipe') {
+ inputs.file('../current-recipe.json')
+ outputs.file('src/main/resources/assets/firecoil/recipe.json')
+ doLast { file('src/main/resources/assets/firecoil/recipe.json').bytes = file('../current-recipe.json').bytes }
+}
+tasks.register('syncVolumeShader') {
+ inputs.files('../fire.volume.core.glsl','src/main/resources/assets/firecoil/shaders/volume.wrapper.glsl')
+ outputs.files('src/main/resources/assets/firecoil/shaders/volume.fsh','src/main/resources/assets/firecoil/shaders/shared-volume-core.sha256')
+ doLast {
+  def shared = file('../fire.volume.core.glsl').getText('UTF-8')
+  def wrapper = file('src/main/resources/assets/firecoil/shaders/volume.wrapper.glsl').getText('UTF-8')
+  file('src/main/resources/assets/firecoil/shaders/volume.fsh').setText(wrapper.replace('__SHARED_FIRE_VOLUME_CORE__',shared),'UTF-8')
+  file('src/main/resources/assets/firecoil/shaders/shared-volume-core.sha256').setText(java.security.MessageDigest.getInstance('SHA-256').digest(shared.getBytes('UTF-8')).encodeHex().toString()+'\n','UTF-8')
+ }
+}
+tasks.named('processResources').configure { dependsOn 'syncFireShader', 'syncRecipe', 'syncVolumeShader' }

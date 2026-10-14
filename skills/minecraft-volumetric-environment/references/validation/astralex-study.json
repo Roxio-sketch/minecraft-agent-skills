@@ -1,0 +1,627 @@
+{
+  "date": "2026-10-06",
+  "timezone": "Asia/Shanghai",
+  "evidenceKind": "Independent static archive, call-chain and formula audit",
+  "referenceRuntimeVerified": false,
+  "screenshotSettingsKnown": false,
+  "archive": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\shaderpacks\\§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV93.0§r§l.zip",
+  "archiveSha256": "70b6d8127a6733f0a19bd1d351b92709d6ee7496967ff49c4793d2c28c7a6c58",
+  "archiveBytes": 3184524,
+  "archiveEntries": 382,
+  "archiveCrcFailure": null,
+  "versionDeclaration": "#Version 93.0",
+  "matchesHistoricalManifest": true,
+  "historicalManifest": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\manifest.json",
+  "historicalManifestSha256": "719858b455949dce444f5e293acd8546af0f6a042eec61472ea7a8e94fa9afb8",
+  "rangeHashConvention": "UTF-8 text lines joined with LF, without an added final LF; BOM stripped by utf-8-sig",
+  "selectedFiles": {
+    "Changelog.txt": {
+      "archiveEntry": "Changelog.txt",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\Changelog.txt",
+      "sha256": "7af9c48462ca55047acb4a3f615c2dca673c0397f569f83751b0e7109a2b9e07",
+      "bytes": 93415,
+      "extractedMatchesArchive": true,
+      "lineCount": 2563,
+      "reviewedRanges": [
+        {
+          "startLine": 1,
+          "endLine": 5,
+          "description": "Archive's internal version declaration",
+          "firstLineSha256Utf8": "e79a6e165e6c9882d0f0c8eb5f12313ced390e7ab31d5a1aff4daa7f0c4d2c79",
+          "rangeSha256Utf8Lf": "0642371403994a40a82837b4aab42849b7f4e8fd98efb122c038a10c7675bccc"
+        }
+      ]
+    },
+    "Credits.txt": {
+      "archiveEntry": "Credits.txt",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\Credits.txt",
+      "sha256": "6565f4f3a8e906cde16dc5b852e09e7d3d21aa19c6e43ce41b65f8a01886fa4b",
+      "bytes": 880,
+      "extractedMatchesArchive": true,
+      "lineCount": 35,
+      "reviewedRanges": [
+        {
+          "startLine": 1,
+          "endLine": 9,
+          "description": "BSL base and LightShaft contributor credits; no license grant inferred",
+          "firstLineSha256Utf8": "5c8a56497c3aad048c3555ec68ac6cf9a7ff728d12834921f534e056f8d2b3e0",
+          "rangeSha256Utf8Lf": "12a94c3b6dac19b69c39f201fc6ccb221d6d7d6abbe4424eb2f5b51d882d6469"
+        }
+      ]
+    },
+    "shaders/world1/deferred.fsh": {
+      "archiveEntry": "shaders/world1/deferred.fsh",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\world1\\deferred.fsh",
+      "sha256": "88bd7311546d1f2f23621b62322d75e930d51ff20cffb4885b1fe37c082bcb9e",
+      "bytes": 102,
+      "extractedMatchesArchive": true,
+      "lineCount": 7,
+      "reviewedRanges": [
+        {
+          "startLine": 1,
+          "endLine": 7,
+          "description": "End fragment entry includes shared deferred",
+          "firstLineSha256Utf8": "efd7472b81fba4de0a8d2578dd8454988d90f55e835d757825496fc4de56e858",
+          "rangeSha256Utf8Lf": "74917ab37efc641947dac6808af63e64b4cc4a71f39dc5aa9049165aef00b9fc"
+        }
+      ]
+    },
+    "shaders/world1/composite.fsh": {
+      "archiveEntry": "shaders/world1/composite.fsh",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\world1\\composite.fsh",
+      "sha256": "5bccad1bb7ba87f5a522d3f4410e6c66062024d33b876b77dc9dd8a7440185c1",
+      "bytes": 85,
+      "extractedMatchesArchive": true,
+      "lineCount": 6,
+      "reviewedRanges": [
+        {
+          "startLine": 1,
+          "endLine": 6,
+          "description": "End fragment entry includes volumetric producer",
+          "firstLineSha256Utf8": "efd7472b81fba4de0a8d2578dd8454988d90f55e835d757825496fc4de56e858",
+          "rangeSha256Utf8Lf": "b055002b47f0ea71f1a951bec2031ebeccaebe0f7dffbcdf3888f30209cbc904"
+        }
+      ]
+    },
+    "shaders/world1/composite1.fsh": {
+      "archiveEntry": "shaders/world1/composite1.fsh",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\world1\\composite1.fsh",
+      "sha256": "90ae9dfbb7d54f6c8cce613556fc3ce2ecb11a997414de9301d992ab395e10ce",
+      "bytes": 86,
+      "extractedMatchesArchive": true,
+      "lineCount": 6,
+      "reviewedRanges": [
+        {
+          "startLine": 1,
+          "endLine": 6,
+          "description": "End fragment entry includes volumetric composition",
+          "firstLineSha256Utf8": "efd7472b81fba4de0a8d2578dd8454988d90f55e835d757825496fc4de56e858",
+          "rangeSha256Utf8Lf": "982a252a647e2c0582b800f283f9d0939225cf8b2b5132d48182d586278fcead"
+        }
+      ]
+    },
+    "shaders/world1/gbuffers_clouds.fsh": {
+      "archiveEntry": "shaders/world1/gbuffers_clouds.fsh",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\world1\\gbuffers_clouds.fsh",
+      "sha256": "27219798f4ebe9929edbcc519a73e8a15f4d4f9fba3b5bd331db1e90a07b8889",
+      "bytes": 116,
+      "extractedMatchesArchive": true,
+      "lineCount": 7,
+      "reviewedRanges": [
+        {
+          "startLine": 1,
+          "endLine": 7,
+          "description": "End clouds entry does not make shared Overworld branch active",
+          "firstLineSha256Utf8": "efd7472b81fba4de0a8d2578dd8454988d90f55e835d757825496fc4de56e858",
+          "rangeSha256Utf8Lf": "4468f71f48a4f212386e6dd690602f97c863f1c64e58e0d9c2eefd47435857a0"
+        }
+      ]
+    },
+    "shaders/program/deferred.glsl": {
+      "archiveEntry": "shaders/program/deferred.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\program\\deferred.glsl",
+      "sha256": "846c3fdf2cc66dd02d0f9bd87acf847118ae9f485490351af26d281c556c2ee4",
+      "bytes": 17097,
+      "extractedMatchesArchive": true,
+      "lineCount": 593,
+      "reviewedRanges": [
+        {
+          "startLine": 114,
+          "endLine": 116,
+          "description": "GetNoise for EndStars is procedural sine hash, not noisetex",
+          "firstLineSha256Utf8": "bffabe69a5c926933a42eb2c415d9074ef06b0514c409f23cf873af5403f6b70",
+          "rangeSha256Utf8Lf": "cb48af5154fe365497c50a929240a7fde0d3f4d4faebf88448fe811f1ae1369d"
+        },
+        {
+          "startLine": 228,
+          "endLine": 262,
+          "description": "End atmosphere includes; DrawCloud include guarded by OVERWORLD",
+          "firstLineSha256Utf8": "77aab049f170395b3351930eaf029bbaefe1aba426ab0f1282d92303e3c8bd93",
+          "rangeSha256Utf8Lf": "e76ce2fe60f8cca2ea3bd97f312b32df8f316849beb23fba4ad84b1bee0064ee"
+        },
+        {
+          "startLine": 266,
+          "endLine": 296,
+          "description": "Scene depth reconstructs view position; z<1 selects geometry",
+          "firstLineSha256Utf8": "3e89fcb0b68ec5401131b101366ea11b07d394d966daeba80b33c9b3158e62fa",
+          "rangeSha256Utf8Lf": "f8e43a2952a63ae0e300d22e4ae7055c817fc71b6b011606f8b60b05ba0e9e73"
+        },
+        {
+          "startLine": 480,
+          "endLine": 550,
+          "description": "Geometry Fog versus sky-only End color/Aurora/Stars/FBM order",
+          "firstLineSha256Utf8": "01deda0a0b962c8a1d63c2ffe3e6072ae5e33960e97496a18bcbf44ae908b084",
+          "rangeSha256Utf8Lf": "c8ee92024805f9953c106eaa7946bc02047ac23c7351a07c04084aecbf1be0bf"
+        }
+      ]
+    },
+    "shaders/program/composite.glsl": {
+      "archiveEntry": "shaders/program/composite.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\program\\composite.glsl",
+      "sha256": "5e327bf6dc5fd7145c2e4e424e24effc61301ced189c0d20a75b78665cd97ecb",
+      "bytes": 7812,
+      "extractedMatchesArchive": true,
+      "lineCount": 258,
+      "reviewedRanges": [
+        {
+          "startLine": 118,
+          "endLine": 125,
+          "description": "View-depth linearization and inverse depth mapping",
+          "firstLineSha256Utf8": "e61fa002d245802223078376b5aaa70574b062f7ee8f621ea9edf4795e274a70",
+          "rangeSha256Utf8Lf": "2673a138a28e9bc5e9443aee39e5c8fb65737101f550e8f85affbe75517bce7d"
+        },
+        {
+          "startLine": 228,
+          "endLine": 254,
+          "description": "Depth producer calls volumetric rays and writes colortex1",
+          "firstLineSha256Utf8": "4e6b91eb376bbe214948b0c5aad15bff719abef4547a81d09e309e228bc1af67",
+          "rangeSha256Utf8Lf": "c133cf6458dec32c2ea7d307241f0b464cb3d5704af6896d874ae9b081ed6ef8"
+        }
+      ]
+    },
+    "shaders/program/composite1.glsl": {
+      "archiveEntry": "shaders/program/composite1.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\program\\composite1.glsl",
+      "sha256": "32cc43e7514c8f3bcc3f253b29066afd8676acd2c3152b23bb272f14c5a9a79e",
+      "bytes": 7408,
+      "extractedMatchesArchive": true,
+      "lineCount": 216,
+      "reviewedRanges": [
+        {
+          "startLine": 69,
+          "endLine": 76,
+          "description": "Time, light direction and brightness gate",
+          "firstLineSha256Utf8": "39bed5ca6a43799864a681d311762163f2d63f6dfdf476e6f7ceda797183ffe6",
+          "rangeSha256Utf8Lf": "8d2be31bcabe255a5fa80b838acd9b60ece977cb2d4478adca4d7b2f4f87441c"
+        },
+        {
+          "startLine": 93,
+          "endLine": 117,
+          "description": "Four-neighbor volumetric read and square",
+          "firstLineSha256Utf8": "4e6b91eb376bbe214948b0c5aad15bff719abef4547a81d09e309e228bc1af67",
+          "rangeSha256Utf8Lf": "f8c9ad929e479963033a5afb336f128e2353002a9e6738a31fd77104dccaf47e"
+        },
+        {
+          "startLine": 188,
+          "endLine": 210,
+          "description": "End-specific violet color/gain and final additive/mix composition",
+          "firstLineSha256Utf8": "7341a25aff9a8189b3e513e254097c9864eeaf6cdf8fa13c9724deebb2f89f70",
+          "rangeSha256Utf8Lf": "32a7efdbb2327c1cfee308eef0b4aa1d391403f2d3b5d8bdf7f14f655c2a062b"
+        }
+      ]
+    },
+    "shaders/program/gbuffers_clouds.glsl": {
+      "archiveEntry": "shaders/program/gbuffers_clouds.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\program\\gbuffers_clouds.glsl",
+      "sha256": "0fc7fba9ffe6e7058cc25cdcae5a822d662fb936be9dd22ffd58d193f8a1e6bc",
+      "bytes": 7364,
+      "extractedMatchesArchive": true,
+      "lineCount": 235,
+      "reviewedRanges": [
+        {
+          "startLine": 119,
+          "endLine": 136,
+          "description": "Cloud rendering guarded by REALISTIC_CLOUDS==0 and OVERWORLD",
+          "firstLineSha256Utf8": "29140fcb0763fc04e87a735360d148ac98626efe41d7d887eb7d1fec32b662e4",
+          "rangeSha256Utf8Lf": "418389de1ede186ba75b0ffebfce452f82859163f3d5e9b3b6ca4fe4143a387c"
+        },
+        {
+          "startLine": 215,
+          "endLine": 231,
+          "description": "All other dimensions discard cloud geometry here",
+          "firstLineSha256Utf8": "366933b7066525ac5a21312125d3e78ad4d08fa111273f28e1b62aeeb22d4d7c",
+          "rangeSha256Utf8Lf": "1699bace9e29766bc7317c8c51844c23cd6474324d0260ec864548ba71d6292e"
+        }
+      ]
+    },
+    "shaders/lib/atmospherics/volumetricLight.glsl": {
+      "archiveEntry": "shaders/lib/atmospherics/volumetricLight.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lib\\atmospherics\\volumetricLight.glsl",
+      "sha256": "a65e8166c1d86e75c5a4968584c68cb4c13a52bacc7611b4bbb7df77fbfead3c",
+      "bytes": 7548,
+      "extractedMatchesArchive": true,
+      "lineCount": 242,
+      "reviewedRanges": [
+        {
+          "startLine": 9,
+          "endLine": 25,
+          "description": "Inverse matrices reconstruct world-relative position and shadow coordinates",
+          "firstLineSha256Utf8": "b395eeb9bbdf0804134d415e5ce5b21415e9d96999a086583110b5f12ee2df7a",
+          "rangeSha256Utf8Lf": "238927ae22cf133b2f6fabfe4530d1f23d58f807f2d5fb8186a18d754c6e8511"
+        },
+        {
+          "startLine": 47,
+          "endLine": 58,
+          "description": "End visibility is constant and limited by shadow distance",
+          "firstLineSha256Utf8": "9208841fa79871b9ec7edcec896c1e5f20fb70114200806aa2ba3a7d795072e6",
+          "rangeSha256Utf8Lf": "e0ae5c4f197572c8b3e629fbe4da30053c2b5c472bf8783eaa22799ba75b894f"
+        },
+        {
+          "startLine": 81,
+          "endLine": 110,
+          "description": "Ten nonuniform depth samples with scene-depth early exit",
+          "firstLineSha256Utf8": "aefacc5053286828b085a5ee618ff8ad5c9f5a0348da143b8162376e7fc36a7a",
+          "rangeSha256Utf8Lf": "1682a6dc9932acebd1047c5dac3a67355eb973fc4447fdd75b554de6b0909708"
+        },
+        {
+          "startLine": 112,
+          "endLine": 151,
+          "description": "Shadow maps and interpolated noisetex slice smoker field",
+          "firstLineSha256Utf8": "40a3b9d6f528678256f4bd08ae2826f46b72cf3f934bb8f4b7f0ac7847a9e24b",
+          "rangeSha256Utf8Lf": "507dcc8b786b5fbb8948df0a1ebfdda89265aefa8daea58aab50e890ab64df8e"
+        },
+        {
+          "startLine": 196,
+          "endLine": 241,
+          "description": "Artistic weighted sum and nonlinear output; no transmittance integration",
+          "firstLineSha256Utf8": "e1132a19b6c88f2940a93631095e7f5c28a004b22efe33dfea034fad88a689ac",
+          "rangeSha256Utf8Lf": "7d8778886ee80640c153187a5a959d87dbdf0a9554bdb8e79e16a77fc1d519e8"
+        }
+      ]
+    },
+    "shaders/lib/atmospherics/aurora.glsl": {
+      "archiveEntry": "shaders/lib/atmospherics/aurora.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lib\\atmospherics\\aurora.glsl",
+      "sha256": "7a30d69a0bba76db8767bb1c5c1b4324cf076e1e8e364ba26caeee96e4c2d78a",
+      "bytes": 3474,
+      "extractedMatchesArchive": true,
+      "lineCount": 96,
+      "reviewedRanges": [
+        {
+          "startLine": 14,
+          "endLine": 27,
+          "description": "End speed, distance, size, visibility and unused auroraGradient variable",
+          "firstLineSha256Utf8": "7218e0973fabf9abe878d0dfdd05426991615ed7daddd92a7b914c5885ca4b1b",
+          "rangeSha256Utf8Lf": "20b87dc7405309496ca5cedae0df8a3ba5b9740e0ed1256cb148157e897896e8"
+        },
+        {
+          "startLine": 38,
+          "endLine": 63,
+          "description": "Upward direction projection and noise masks on repeated plane samples",
+          "firstLineSha256Utf8": "4e4e99a286b10a8ca4c6b8991fd35d1452a147c2956568b550431836d1af826a",
+          "rangeSha256Utf8Lf": "d11c5c614477d9999178c735f6e6084e06f954638ce473664e3de0e5d65978f5"
+        },
+        {
+          "startLine": 84,
+          "endLine": 95,
+          "description": "Two End colors and background radiance sum",
+          "firstLineSha256Utf8": "c7ab1ab00ce3271927d21cdee9f2533d8a82be439457877ab9f739615699ea12",
+          "rangeSha256Utf8Lf": "82669cd1e0aa519e4666768aee5ddc1ed959a220e829de858b6e2a7938cf95c6"
+        }
+      ]
+    },
+    "shaders/lib/atmospherics/fbm.glsl": {
+      "archiveEntry": "shaders/lib/atmospherics/fbm.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lib\\atmospherics\\fbm.glsl",
+      "sha256": "caec210e0235e78af9e26b663cdd095d93dda2a438db7764b46136a3ffd648c8",
+      "bytes": 2392,
+      "extractedMatchesArchive": true,
+      "lineCount": 86,
+      "reviewedRanges": [
+        {
+          "startLine": 1,
+          "endLine": 24,
+          "description": "Procedural 2D noise and octave accumulation",
+          "firstLineSha256Utf8": "0fbd383a6ab2570c068aac2a0b023e77fbbd25cad75719f2329632504de66bfa",
+          "rangeSha256Utf8Lf": "a2ced0a5b3d0ef3aefad2d9506db7d2f3212a855b7256f6878b7ba0f19ff1f46"
+        },
+        {
+          "startLine": 35,
+          "endLine": 47,
+          "description": "Domain warp and inverse-distance violet streak",
+          "firstLineSha256Utf8": "b0994f1d151da10e632a2ee548601ce0f56b0c83b70a99d03502fe9f174fec04",
+          "rangeSha256Utf8Lf": "907716429279537bd3613255c1e1099af463b15e5393dcec778797226d91ec54"
+        },
+        {
+          "startLine": 54,
+          "endLine": 86,
+          "description": "Six rotated direction sectors gated by dragon battle",
+          "firstLineSha256Utf8": "6027805c96c0124961b7bbca13d8c4b7158fccfeefb0abb0076ab6249fc37498",
+          "rangeSha256Utf8Lf": "14bbabe5eabf234caa025bbb2a3a5f44035961b9ff67a596c9e794b6e8785775"
+        }
+      ]
+    },
+    "shaders/lib/atmospherics/endstars.glsl": {
+      "archiveEntry": "shaders/lib/atmospherics/endstars.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lib\\atmospherics\\endstars.glsl",
+      "sha256": "118e2799828191e9861f7d1072e257cbdaad26cfdd61d7509253d42aa90d7d55",
+      "bytes": 1864,
+      "extractedMatchesArchive": true,
+      "lineCount": 51,
+      "reviewedRanges": [
+        {
+          "startLine": 1,
+          "endLine": 23,
+          "description": "Direction projection, sky jitter and quantized coordinate",
+          "firstLineSha256Utf8": "7753ed5469f3da716b14302318614b9932f469f0a52de241723e803504991e50",
+          "rangeSha256Utf8Lf": "b7e31cffd804e9ffcec52ddf611f287135b99af00ec88a9164a27cf8590e568b"
+        },
+        {
+          "startLine": 25,
+          "endLine": 50,
+          "description": "Sparse procedural-hash products, threshold and colored stars",
+          "firstLineSha256Utf8": "487f574c90a3f9a8c98a98f73fdd77fd63734698eaa648db87e86a95dfa8a357",
+          "rangeSha256Utf8Lf": "cc3c1913abb05ff36c02a371e1c6d2ee72b0b8f8d50df0257473023957e5ccd5"
+        }
+      ]
+    },
+    "shaders/lib/atmospherics/fog.glsl": {
+      "archiveEntry": "shaders/lib/atmospherics/fog.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lib\\atmospherics\\fog.glsl",
+      "sha256": "679ab77cf8c7ab59208744768c5f003dc1ce97fcf67b6079b1749fc312032732",
+      "bytes": 7278,
+      "extractedMatchesArchive": true,
+      "lineCount": 231,
+      "reviewedRanges": [
+        {
+          "startLine": 54,
+          "endLine": 67,
+          "description": "Distance only; alternate distant fade distance",
+          "firstLineSha256Utf8": "6a6512fa875e8ed3e1643bf8aa5d19613ea2ed73d759299172eea85a020051f0",
+          "rangeSha256Utf8Lf": "1bbc792236e6a5d0ef5abd24fd028c9f9ff01fa09c5b6374b617c8df2a267a4e"
+        },
+        {
+          "startLine": 145,
+          "endLine": 173,
+          "description": "End distance fog and color mix",
+          "firstLineSha256Utf8": "ed5f1316f68e4aa36fbef0c0bd773f18dccd6e6113837dd68230f99b40b554d4",
+          "rangeSha256Utf8Lf": "21e4f74def9129e513ed2c7268a2e1d6cdfdec3c80e7185b6f79bc8c79398c33"
+        }
+      ]
+    },
+    "shaders/lib/atmospherics/ovclouds.glsl": {
+      "archiveEntry": "shaders/lib/atmospherics/ovclouds.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lib\\atmospherics\\ovclouds.glsl",
+      "sha256": "8eff4b274180555b2d5005f25b8fb318341389cbd4440dff3b245e7a2c5f4f3c",
+      "bytes": 6391,
+      "extractedMatchesArchive": true,
+      "lineCount": 160,
+      "reviewedRanges": [
+        {
+          "startLine": 38,
+          "endLine": 94,
+          "description": "Actual Overworld cloud projection/layer loop; not called by End",
+          "firstLineSha256Utf8": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rangeSha256Utf8Lf": "dc26ec6462542c4d7d296502069975f74e4600c08d2056b3e6152458bd6c0c34"
+        }
+      ]
+    },
+    "shaders/lib/color/endColor.glsl": {
+      "archiveEntry": "shaders/lib/color/endColor.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lib\\color\\endColor.glsl",
+      "sha256": "208700975be5a33001f484ad3873747dcbd9c1edbb8224b6ba94d3c4b5ccb8a2",
+      "bytes": 749,
+      "extractedMatchesArchive": true,
+      "lineCount": 28,
+      "reviewedRanges": [
+        {
+          "startLine": 1,
+          "endLine": 28,
+          "description": "Independent scene, shaft, custom sky and vortex colors",
+          "firstLineSha256Utf8": "51fd7da58b98cf431646f2793fd8bd21996048e0402f65b6600d9f4ca98d1688",
+          "rangeSha256Utf8Lf": "da0ef4dce7376d613d24357af88b218106062347c4e71a3d6b0216374e92144d"
+        }
+      ]
+    },
+    "shaders/lib/color/auroraEndColor.glsl": {
+      "archiveEntry": "shaders/lib/color/auroraEndColor.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lib\\color\\auroraEndColor.glsl",
+      "sha256": "7c937d49034fc98c2471a08575e78e7a3c639c2df31b4ab4599459c35d0dec33",
+      "bytes": 394,
+      "extractedMatchesArchive": true,
+      "lineCount": 6,
+      "reviewedRanges": [
+        {
+          "startLine": 1,
+          "endLine": 6,
+          "description": "Independent low/high aurora colors squared",
+          "firstLineSha256Utf8": "96dc2f3b6481d6844f02a89ce198225e885219506b37562b5bc800c02f2b243b",
+          "rangeSha256Utf8Lf": "b27da64886e55a30905ff5dbf85687d8b73f92c2c3649dd6005b74560c786690"
+        }
+      ]
+    },
+    "shaders/lib/lighting/forwardLighting.glsl": {
+      "archiveEntry": "shaders/lib/lighting/forwardLighting.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lib\\lighting\\forwardLighting.glsl",
+      "sha256": "3dff3a17537a4c247d71f54b600d2dcd602db0d201bacce5320c068749183367",
+      "bytes": 13713,
+      "extractedMatchesArchive": true,
+      "lineCount": 352,
+      "reviewedRanges": [
+        {
+          "startLine": 179,
+          "endLine": 186,
+          "description": "End island surfaces receive independent shaded scene lighting",
+          "firstLineSha256Utf8": "37b958fe61f1c260b83e338121f0043342f7dc1640566e3eb16cda390b862c2d",
+          "rangeSha256Utf8Lf": "ef7a1fb9e88769410650ce16e765b4a5a7164ce7b83ee69b911b7ead73c04032"
+        }
+      ]
+    },
+    "shaders/lib/util/functions.glsl": {
+      "archiveEntry": "shaders/lib/util/functions.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lib\\util\\functions.glsl",
+      "sha256": "61c2b5a883762836e80493a2db164b87e564c9b7e293d5438b8dc957fd0b617b",
+      "bytes": 9222,
+      "extractedMatchesArchive": true,
+      "lineCount": 347,
+      "reviewedRanges": [
+        {
+          "startLine": 321,
+          "endLine": 338,
+          "description": "Procedural hashes used by boss background noise",
+          "firstLineSha256Utf8": "238939a670ff641946f012c83d641df1f1d8ee96ed7f572ca8c01de8796579fd",
+          "rangeSha256Utf8Lf": "f1ed84f1b3c4bee1c64fde83128cd2e2ecaa55a7647fc9ba1f3b843b00ec19e4"
+        }
+      ]
+    },
+    "shaders/settings/globalSettings.glsl": {
+      "archiveEntry": "shaders/settings/globalSettings.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\settings\\globalSettings.glsl",
+      "sha256": "e01d79612ede70f6a5ec5ef400aced64fbdf217d208974e2c98252b97e6298b5",
+      "bytes": 58851,
+      "extractedMatchesArchive": true,
+      "lineCount": 837,
+      "reviewedRanges": [
+        {
+          "startLine": 44,
+          "endLine": 49,
+          "description": "End shaft/smoker toggles, speed and strength defaults",
+          "firstLineSha256Utf8": "5b9d88b9a70c9e4746873f97af15f302a56ec0d92bfa195f61aa1a5e81b7a2eb",
+          "rangeSha256Utf8Lf": "f4b6c2ad92d5eec3163ab335e7d758886c68794bfcf6c9a5eb00d3b1be70cd9d"
+        },
+        {
+          "startLine": 320,
+          "endLine": 345,
+          "description": "Custom End sky, boss FBM and End stars defaults",
+          "firstLineSha256Utf8": "3733e1072dd8b3d558e795f3c83dd429e427875ed513e390c324fa19f082b9de",
+          "rangeSha256Utf8Lf": "f753336a4f149e066f748874cacfd3e5eb694c5740c8bd4c4658620fe78e3a1a"
+        },
+        {
+          "startLine": 408,
+          "endLine": 415,
+          "description": "End aurora defaults",
+          "firstLineSha256Utf8": "14b7a28242f15ef61064addf203d565612bf29b71b671f8489775d663cc0eb88",
+          "rangeSha256Utf8Lf": "7ce8e9af279e24ad9777c987be93fab0638ec32fa6a29bc004d73e743a35c894"
+        },
+        {
+          "startLine": 514,
+          "endLine": 520,
+          "description": "Fog toggles and End density",
+          "firstLineSha256Utf8": "6ff011d88a76c3c3663b393e1fbe4fa204fae047ac0481cad80ae20f7a0e1b24",
+          "rangeSha256Utf8Lf": "c9e06bb57af17e8a55a573101878842d6cc6ee82668930272b69c24eba4a3730"
+        },
+        {
+          "startLine": 779,
+          "endLine": 790,
+          "description": "End's fixed light direction",
+          "firstLineSha256Utf8": "0b1089711347f2846fe1380ac30ff2ce7434b02b4bfbc14530f48fce9b881510",
+          "rangeSha256Utf8Lf": "f6af924fc5b360e7887061cd379b1180417c6302cbfb9aedddf2c1dbf54e4e02"
+        }
+      ]
+    },
+    "shaders/settings/color/endColorSettings.glsl": {
+      "archiveEntry": "shaders/settings/color/endColorSettings.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\settings\\color\\endColorSettings.glsl",
+      "sha256": "f2dce6f5b422356ff2b55f5a3ebbaa63eb4742c0b1e0b4c6175a9b2ed09b4b21",
+      "bytes": 14912,
+      "extractedMatchesArchive": true,
+      "lineCount": 38,
+      "reviewedRanges": [
+        {
+          "startLine": 4,
+          "endLine": 15,
+          "description": "Scene and custom sky color defaults",
+          "firstLineSha256Utf8": "32902505e2724af7d0261436c72295f07d59f8ea6a5f077d9cff3baffa74258f",
+          "rangeSha256Utf8Lf": "b4b696d0cc927938bb71b997cee471c123b89998f55e4847b70a7d06ce86f444"
+        },
+        {
+          "startLine": 28,
+          "endLine": 31,
+          "description": "Violet shaft color/intensity defaults",
+          "firstLineSha256Utf8": "24de9e726ce0905f0614ef44a352666e7756ec7a3abd8e2d610674127ad8f761",
+          "rangeSha256Utf8Lf": "bb629f0b21bd9bf7c96a34c1c4ee5e9620c0f4481c742a9d887d1790db85d28c"
+        }
+      ]
+    },
+    "shaders/settings/color/auroraEndColorSettings.glsl": {
+      "archiveEntry": "shaders/settings/color/auroraEndColorSettings.glsl",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\settings\\color\\auroraEndColorSettings.glsl",
+      "sha256": "c9b0cc481ca250630560d519fb5279fc859677dcbbcea79114556e77ff36548f",
+      "bytes": 2430,
+      "extractedMatchesArchive": true,
+      "lineCount": 9,
+      "reviewedRanges": [
+        {
+          "startLine": 1,
+          "endLine": 9,
+          "description": "Cyan low and violet high defaults",
+          "firstLineSha256Utf8": "d3b2c4418c4311fd4cc72064d701860f79cb558c1610d30e02448aac7833a84b",
+          "rangeSha256Utf8Lf": "fc9f29cc51a5a10943f660e0d4eefdab8b62b9fa2c2646fbfd59e36dc17a9d3a"
+        }
+      ]
+    },
+    "shaders/shaders.properties": {
+      "archiveEntry": "shaders/shaders.properties",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\shaders.properties",
+      "sha256": "f41738863446205bd189b4071858caa407990bc238023004e687d2cb7b92c59d",
+      "bytes": 75707,
+      "extractedMatchesArchive": true,
+      "lineCount": 652,
+      "reviewedRanges": [
+        {
+          "startLine": 128,
+          "endLine": 147,
+          "description": "Independent End sky, boss FBM, stars and aurora menus",
+          "firstLineSha256Utf8": "afe69f0e2100300213f4a3ffd3c9da7098c814740290c6855a04bcd12aef4679",
+          "rangeSha256Utf8Lf": "81071544a58dc01fef1c5e3a1c7e4e891d506673029cba15a30773031252c800"
+        },
+        {
+          "startLine": 317,
+          "endLine": 317,
+          "description": "End lightshaft menu contains separate smoker toggle and speed",
+          "firstLineSha256Utf8": "ace334aa6d5205530c8c5ddf9bce7ca033c582f02205e0f67b2cc0b202a51220",
+          "rangeSha256Utf8Lf": "ace334aa6d5205530c8c5ddf9bce7ca033c582f02205e0f67b2cc0b202a51220"
+        },
+        {
+          "startLine": 525,
+          "endLine": 525,
+          "description": "Actual noisetex binding",
+          "firstLineSha256Utf8": "ec202d8ef963b55ff697cb3afd625178ec3d5c46fd13520d5e5872e2a9305d46",
+          "rangeSha256Utf8Lf": "ec202d8ef963b55ff697cb3afd625178ec3d5c46fd13520d5e5872e2a9305d46"
+        }
+      ]
+    },
+    "shaders/lang/en_US.lang": {
+      "archiveEntry": "shaders/lang/en_US.lang",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lang\\en_US.lang",
+      "sha256": "dbb5a3946bad2fdccbe11de94c641c292f1c9641ac35ca4deb1c9942de7e512e",
+      "bytes": 108214,
+      "extractedMatchesArchive": true,
+      "lineCount": 2562,
+      "reviewedRanges": [
+        {
+          "startLine": 1188,
+          "endLine": 1191,
+          "description": "FBM UI calls it a boss-battle lightning effect",
+          "firstLineSha256Utf8": "670643edb56c48f7ac1126a8cce84a33699c5330c0bc4156ae35cd595d247dda",
+          "rangeSha256Utf8Lf": "12e8acd0ef747b9d78439eebad07bd8063e3bfc69a6e1a925c83ba164fa9ee2a"
+        }
+      ]
+    },
+    "shaders/lib/tex/noise.png": {
+      "archiveEntry": "shaders/lib/tex/noise.png",
+      "sourcePath": "E:\\着色器渲染\\research\\shaderpack-atmosphere\\sources\\astralex\\shaders\\lib\\tex\\noise.png",
+      "sha256": "088069cccc98e24be9e76f4414cbadc76263a96889abe64bdf5ae97d3c2ecf72",
+      "bytes": 48815,
+      "extractedMatchesArchive": true,
+      "image": {
+        "width": 128,
+        "height": 128,
+        "bitDepth": 8,
+        "pngColorType": 2
+      }
+    }
+  },
+  "sourceOrTexturesCopied": false,
+  "auditPassed": true
+}

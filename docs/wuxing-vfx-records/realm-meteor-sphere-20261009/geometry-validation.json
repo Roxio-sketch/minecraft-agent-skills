@@ -1,0 +1,22 @@
+{
+  "rayCases": 5400,
+  "maxUnitSphereResidual": 4.569677969357144e-13,
+  "legacyDensityUnchanged": true,
+  "shaderSha256": "25c8a1592e0ec71940c89b33d430aaeae98723173a266b568a9ca69fae4a3223",
+  "unoccludedCentralAlphaWithoutFrontOrArcs": 0.07759600000000011,
+  "grazingRimAlphaWithoutArcs": 0.44753600000000004,
+  "foregroundDepthRejectsBothSurfaces": true,
+  "centralBodyDepthRejectsRearSurface": true,
+  "cameraInsideSphereFinite": true,
+  "uniformRadiusRange": [
+    1.38,
+    1.58
+  ],
+  "rimPower": 1.6,
+  "surfaceArcCount": 3,
+  "surfaceArcContinuityFloor": 0.6,
+  "nearSurfaceArcAlpha": 0.18,
+  "farSurfaceArcAlpha": 0.07,
+  "arcEmissionGain": 3.2,
+  "scope": "Independent CPU sphere intersection, bounded proxy, finite values and opacity/depth checks; runtime visual QA remains separate"
+}

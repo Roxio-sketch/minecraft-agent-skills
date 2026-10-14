@@ -1,0 +1,610 @@
+{
+  "scope": "All bundle files except this hash manifest itself",
+  "files": [
+    {
+      "path": "audit-notes.md",
+      "bytes": 7162,
+      "sha256": "b57fd5d934e55181e769c17d599483a15c336d6b7aebba92af8688fc69e35d82"
+    },
+    {
+      "path": "build_index.py",
+      "bytes": 12790,
+      "sha256": "6b3b6151e20988593f76f302e329972ce9943aed876c0fb0c03a1677f4cdfb0b"
+    },
+    {
+      "path": "catalog.json",
+      "bytes": 123330,
+      "sha256": "82e241324483e5610825617984d3d7df2122f0d4d790eb29db56a85c6a7eec9b"
+    },
+    {
+      "path": "cloud/findings.md",
+      "bytes": 7115,
+      "sha256": "dda9975c5b2ed1f444cdbf46490480425596b718c6cc92580b6975544bd2ebc7"
+    },
+    {
+      "path": "cloud/manifest.json",
+      "bytes": 30186,
+      "sha256": "fe28907ce81c3bbd249c2e87b05926e489c43ed15364015deded70d871f5d60a"
+    },
+    {
+      "path": "cloud/seblague-clouds/Assets/Scripts/Clouds/CloudMaster.cs",
+      "bytes": 6000,
+      "sha256": "c7ee76194fad405675d5c10f16f1f1147cc8f8bb3a2714c0731e54f816760b43"
+    },
+    {
+      "path": "cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+      "bytes": 4047,
+      "sha256": "97e7977062871eb28f63e26b835f46d979d5378299318dbdb621f1d41e7eb189"
+    },
+    {
+      "path": "cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+      "bytes": 9054,
+      "sha256": "f1f113e9908407de68fe38e04675f6aa10cec999042de5a54fd3a03c6336ff71"
+    },
+    {
+      "path": "cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+      "bytes": 55,
+      "sha256": "bbb38aeebb4402fd4d8504aa09565a1c03ccad3d58fc281a0843fc6200593212"
+    },
+    {
+      "path": "cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+      "bytes": 14147,
+      "sha256": "932543d8297e92b812ffaa602957eb167279642939664802ea30c9ab25621402"
+    },
+    {
+      "path": "cloud/seblague-clouds/LICENSE",
+      "bytes": 1072,
+      "sha256": "24f060a992cf2dd33a9b2045645ea70a67380b439a99f121841e84915370d4d7"
+    },
+    {
+      "path": "cloud/seblague-clouds/README.md",
+      "bytes": 173,
+      "sha256": "01327ec8653078226852dec49fe5ffe7a76da2d1aea9b563df91122414d9df3a"
+    },
+    {
+      "path": "cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+      "bytes": 16796,
+      "sha256": "095e9511d60596300584eee10dd02d808a52d2614b46076eaf86ca72c8b87bb6"
+    },
+    {
+      "path": "cloud/unity-tornado-simulator/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+      "bytes": 1514,
+      "sha256": "1084d166bd7cc49d5647cf9abd6f3e767cc365ae99d0efa2259577d2de9b1e33"
+    },
+    {
+      "path": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+      "bytes": 11670,
+      "sha256": "87a05cab03e1e0a9da4a9e4a57b9291f90cdb0200dcb40b05fd3520ec557f43b"
+    },
+    {
+      "path": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+      "bytes": 8620,
+      "sha256": "34899b4ef4669a561a67c259be29484669d346b37e935db3843d10782a1da99b"
+    },
+    {
+      "path": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDustTop.cs",
+      "bytes": 5215,
+      "sha256": "10b23ee1a01b65a4b683afbb3b3a4c2cdad12d60dabcf44b6f8a11799ac322e2"
+    },
+    {
+      "path": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+      "bytes": 4128,
+      "sha256": "fd79ce74ebd4a0eca03cba4748957605de70fb406153b97c2ae13a61e3fa22a5"
+    },
+    {
+      "path": "cloud/unity-tornado-simulator/LICENSE",
+      "bytes": 1069,
+      "sha256": "e384020ec265ff356df283774702fd05b54586d799477ba1f40dbb839089689f"
+    },
+    {
+      "path": "cloud/unity-tornado-simulator/README.md",
+      "bytes": 471,
+      "sha256": "d40a1177c4b478e5db0f7b90f6b860c26e415fba9f993bb947698726e2ac6f88"
+    },
+    {
+      "path": "flow/acquisition-verification.json",
+      "bytes": 11107,
+      "sha256": "d0d1f0dedd07f261d973539079a18668e4c909a098d916c7938b7be02af2e9d1"
+    },
+    {
+      "path": "flow/build_manifest.py",
+      "bytes": 7527,
+      "sha256": "b35b15c9185a7166d2935119715fef240af4c34799c8203438b8df2095a4c5d9"
+    },
+    {
+      "path": "flow/findings.md",
+      "bytes": 6861,
+      "sha256": "65781a1342bb16a03525f1e60eaef6d25c7373d5bcbc55e392490bd9bcaf9a7e"
+    },
+    {
+      "path": "flow/manifest.json",
+      "bytes": 40639,
+      "sha256": "07081924d72e5f80e0a1c6220e82d2cc00a7f27814b6be1f2e1944210fd73a1a"
+    },
+    {
+      "path": "flow/three.js/examples/jsm/objects/Reflector.js",
+      "bytes": 10943,
+      "sha256": "57836df976f02a474b2dcfbb6609bca8bde0ccc6e77159ad8e418fa11c065d3b"
+    },
+    {
+      "path": "flow/three.js/examples/jsm/objects/Refractor.js",
+      "bytes": 10176,
+      "sha256": "512c4ec056b8af3c7aa24f80a74d606dfd10c06697686b2b73df8dbe7f2f9d78"
+    },
+    {
+      "path": "flow/three.js/examples/jsm/objects/Water2.js",
+      "bytes": 10459,
+      "sha256": "80180ce0b031169883e14a79374e2c4d899b7726a1af4897dd7a9efc9d9240f7"
+    },
+    {
+      "path": "flow/three.js/examples/jsm/shaders/WaterRefractionShader.js",
+      "bytes": 2046,
+      "sha256": "cad67ed479d112d787281b1ab37561659a50d5fad6ad951a2d9f89a45f229cf5"
+    },
+    {
+      "path": "flow/three.js/LICENSE",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "flow/three.js/README.md",
+      "bytes": 2969,
+      "sha256": "d553d824625a07d7690de93af6f8daf13d6aaed42700929d7ce4e725fa5ef10d"
+    },
+    {
+      "path": "flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+      "bytes": 10952,
+      "sha256": "72612d7597ef0e7a151bb0530c7f1bada51eb3084db42366fa1ab0ce1ae9debc"
+    },
+    {
+      "path": "flow/Tiled-Directional-Flow/LICENSE",
+      "bytes": 1620,
+      "sha256": "ed471ce09ebcba676424c710e333080cb130c160049f2ec5f8935a2f54d883aa"
+    },
+    {
+      "path": "flow/Tiled-Directional-Flow/README.md",
+      "bytes": 1535,
+      "sha256": "0966442aa391267f43c446001f2a83b2a66e7d1705516483c688c7c6795381bc"
+    },
+    {
+      "path": "flow/Tiled-Directional-Flow-inventory.json",
+      "bytes": 3375,
+      "sha256": "55c714eaabe22e7184a437bdefd6518690dba0641c7614af726f53d01c32e17f"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/buoyant_manager.gd",
+      "bytes": 2329,
+      "sha256": "26163a141a0338d4d1457615bc354226597adcd3f01da3355bb779a6254d77f1"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/editor_property.gd",
+      "bytes": 778,
+      "sha256": "ac4c148f6d07279342b82e1ec3f77cb169f6b3a5c4be64105aaa552367d585cb"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/filter_renderer.gd",
+      "bytes": 10035,
+      "sha256": "fdbe09def51b0d075029c47271699929056f3889eb7a35a588ae6ccb680b6f37"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/gui/gradient_inspector.gd",
+      "bytes": 679,
+      "sha256": "7d36da73c7d98a64a72ca878c84b52ca2d4e5233552c968cc49f0d171609c580"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/gui/river_controls.gd",
+      "bytes": 2884,
+      "sha256": "61bf71772974efd53333ea4d4f69a8e7803045d79bfba7df50bc01c7ea3097ba"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/gui/river_menu.gd",
+      "bytes": 2369,
+      "sha256": "a6410658afcbf4599ea103e14bd22a180676edf08bfaf4708049ae5d40d27a87"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/gui/water_system_controls.gd",
+      "bytes": 217,
+      "sha256": "e38f6f9b8717283caf55be95cc1abdbbf786a3c0715906ea9fcba15e5f6fbe88"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/gui/water_system_menu.gd",
+      "bytes": 616,
+      "sha256": "4303aab63e2c2f192ade3580b0d7f6958cac0f793ab77f9509f44fb87c0e671d"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/inspector_plugin.gd",
+      "bytes": 640,
+      "sha256": "45737b142cb7fd2eed04ed4a0a2c4854f7c06aaa85d9bc039ee66b62900b932c"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/plugin.gd",
+      "bytes": 13371,
+      "sha256": "8d9759a0f119698f6d80707ed0fd7fad1d80e41c3b28f7315339773cac6b2296"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/progress_window.gd",
+      "bytes": 314,
+      "sha256": "c7db40db0fa9ecf205e05f9d1477988137d5083a72b5519c66aa77c4a5782d01"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/river_gizmo.gd",
+      "bytes": 17175,
+      "sha256": "8eb83808ee38fb5e006e448133910321bce781b183e60e3313ba837824c926cd"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/river_manager.gd",
+      "bytes": 22238,
+      "sha256": "44fd9e68b90dddabc21a30f1b6bc53f6aeb37962e40405190ea451d7da4f4dcc"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/filters/blur_pass1.shader",
+      "bytes": 460,
+      "sha256": "900a283454d0e6e2876c05052dbbc920db121b3bc56df00fad420959ab59d9b3"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/filters/blur_pass2.shader",
+      "bytes": 460,
+      "sha256": "506dcd1bdd7ece3d3a7b1d26159f7f00d7243c741532dccac6338cb93240b291"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/filters/combine_pass.shader",
+      "bytes": 361,
+      "sha256": "f70ff229f82a540828430801a635d15d35365284fef13f21be6c814bb02b4c06"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+      "bytes": 740,
+      "sha256": "1589c334d845ab0869f2ee133850fdf94f7c20533184f108ee57b0b3422e807f"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+      "bytes": 766,
+      "sha256": "d2c150a41613ad23f8d2d4459ebff59b587f57d230161aa49608aab301d194ce"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+      "bytes": 412,
+      "sha256": "c1a44890a2b92fbf3add7823ccd8c183140cf5b7f28004c04f8fe2e51e3a04fb"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/filters/dotproduct.shader",
+      "bytes": 232,
+      "sha256": "748337aa9a87676cd29c2f5ccde68a0348e9241fa2f8413d2227c1ae05f6a9a6"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+      "bytes": 463,
+      "sha256": "e3644e59f9ef0270c2454466b5536a4144f2dc69dd8ebe63b1de77602cec0e15"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/filters/foam_pass.shader",
+      "bytes": 731,
+      "sha256": "1b9d7aa1b21f9c53b3713a27e6485e9bcffcd3453befa32ab3a6e2d9cf7a9bfe"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/filters/normal_map_pass.shader",
+      "bytes": 930,
+      "sha256": "09d3eb6e4aa770fb0e105c666e3ef0425be9f57598e21b469b3c251aa4c53875"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+      "bytes": 385,
+      "sha256": "2a2131c1f703a1f317de39b1be56b8ac867cf6930faef3ed195318c9e28e0bb9"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/gui/gradient.shader",
+      "bytes": 217,
+      "sha256": "c152ac7604112bfc9de1846e34e77914fd3a607edc6460257dd6a3c17bdc264f"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/lava.shader",
+      "bytes": 6260,
+      "sha256": "f7308f3569467f5f37f6661e30998923eb481d3cba6b81d70d1af5e262d135a6"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/river.shader",
+      "bytes": 9052,
+      "sha256": "7a9ac760c7b9a80090b37bd5da5d59011f23a3a07e05e8be7ab7f04e3d89d087"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/river_debug.shader",
+      "bytes": 6248,
+      "sha256": "f05b16fc4b98c0172eeb5fdcf536db57ca0c975ffb7095c4f9a9c3e4bcc3ea25"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/system_renders/alpha.shader",
+      "bytes": 84,
+      "sha256": "4c2bde79249c8fe3c36f50c4145666384f785faadb3880ed308ac383141c5d47"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/system_renders/system_flow.shader",
+      "bytes": 1704,
+      "sha256": "b19f225851b8aba8a3fa7bb2c2ed3ffd0131e44280b00773fc76cb1dc2b6899d"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/shaders/system_renders/system_height.shader",
+      "bytes": 355,
+      "sha256": "a316bf116a2fedc0c7e1182fc6afa0d266e96a2e81c03add627c321c7dbcc61e"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/system_map_renderer.gd",
+      "bytes": 5804,
+      "sha256": "4342795ce0309f1a123abe689dbe0b5a7c5f22eab19df394dfb259ce45f2f854"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/water_helper_methods.gd",
+      "bytes": 10728,
+      "sha256": "47855530b45f7400ad728167c4ea8a9f86bbc8a6575aa1a56254c7d4f802e3bb"
+    },
+    {
+      "path": "flow/Waterways/addons/waterways/water_system_manager.gd",
+      "bytes": 6484,
+      "sha256": "f6c4cb4ad9cfeb72748f81b056be5de801dd2087e78397be4f206dc5d764b2b0"
+    },
+    {
+      "path": "flow/Waterways/LICENSE",
+      "bytes": 1080,
+      "sha256": "8da0249fe2a334230e8c7bb633f4558e40ddafc95d30c1cfcffbf302a3f83c34"
+    },
+    {
+      "path": "flow/Waterways-inventory.json",
+      "bytes": 3703,
+      "sha256": "bd90d95dd22cb5e381f530b1f29a8bf31130f18c3291b1072746f35b361a8f09"
+    },
+    {
+      "path": "index-verification.json",
+      "bytes": 1725,
+      "sha256": "ab72654c2d78c268b54b122fd02e3fb94c329211dac82573e84e66ab443ebf5d"
+    },
+    {
+      "path": "index.html",
+      "bytes": 759917,
+      "sha256": "6c1e1721bc8ee3b776f3d9db24879a77d50b3c910e2a504ea08030d8854c0ed5"
+    },
+    {
+      "path": "liquid/dli-fluid/LICENSE",
+      "bytes": 1093,
+      "sha256": "ea23c60d44803af81c7d05fb4fe035afd9d3d6988041b7248ab72acc9b9c6ed7"
+    },
+    {
+      "path": "liquid/dli-fluid/README.md",
+      "bytes": 389,
+      "sha256": "64c004cb54f326e800edbcb3308fb1c2f6667f47c553a50e9d94083aa77a6eec"
+    },
+    {
+      "path": "liquid/dli-fluid/renderer.js",
+      "bytes": 19217,
+      "sha256": "34fcaada9420e1c693ea77bab0d1d642e0a7fd9c4521823f905e5a955c579b65"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/addforce.frag",
+      "bytes": 1396,
+      "sha256": "69033b4014026112a9b9ff6bc61fe9e0fb8f10de204d1e0190c70310206babb6"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/advect.frag",
+      "bytes": 1982,
+      "sha256": "d03f08414a324e02f05e4e08b9eab0fcd79171de612a25a1034567e94c4f737f"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/common.frag",
+      "bytes": 2559,
+      "sha256": "e3b4f347fe42c0c61782526c8cafbaf41fd71247e5a68533599129ff32ac23fa"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/composite.frag",
+      "bytes": 2600,
+      "sha256": "b5d5d5c601f9c051dfb88be762ea6a549abbec1eff0f4446e1c81a6d88a059de"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/divergence.frag",
+      "bytes": 1672,
+      "sha256": "8e8ad27568ed2905b21dd8360ed5e167e78c2d9012fe22187e9851a70955264d"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/enforceboundaries.frag",
+      "bytes": 815,
+      "sha256": "32cc45686c57a70ec23f435315560e0e64e0c959e387f8118b8191b15e78eb3e"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/extendvelocity.frag",
+      "bytes": 1527,
+      "sha256": "0643b159ec7fdc602137fc0d9efe5f88bb0268eec66591b127da29f9b3275284"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/jacobi.frag",
+      "bytes": 1463,
+      "sha256": "a7c02b26b1508e7efd7bb4d4b265ef4c9d9559ed2eeaaa73fa54afced3845cba"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/normalizegrid.frag",
+      "bytes": 760,
+      "sha256": "511d1ac8b0d0f0078e00c18927ead58e7d13e7533f09f21f51783eb090319416"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/sphere.frag",
+      "bytes": 230,
+      "sha256": "d04ba92d3f8516a2b6035790dfc9bb45baab8535d8c9b78957b3f8c4a0b1c0b0"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/sphere.vert",
+      "bytes": 950,
+      "sha256": "74fb67b1cd4edb81d300e83bb58a454186de8ad66ec0b6b4c533d0ae130487b5"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/sphereao.frag",
+      "bytes": 1437,
+      "sha256": "4b4bb4b4b80e76aeddfbc697b6cc792a2823baf165fa8e46000eb8e109e353e7"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/spheredepth.frag",
+      "bytes": 71,
+      "sha256": "357319ce2d8cdc528b58c8025a91e1ee41ae40515b9e9900e7a5644d00d59d02"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/subtract.frag",
+      "bytes": 1311,
+      "sha256": "944608d1e4eb50d0af20ad611331ca8e38b42d3ee3cab6f1c260c1ba1e4add65"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/transfertogrid.frag",
+      "bytes": 1940,
+      "sha256": "e54a3ad1f3d097758e43bb0ac57e93e553ef17f038a65bd6f9dd6dc8d8c3909f"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/transfertogrid.vert",
+      "bytes": 1235,
+      "sha256": "8eefb38efd6b786ad4b98d6b114911cfc23460236a110e0f192e6860e0ca9de1"
+    },
+    {
+      "path": "liquid/dli-fluid/shaders/transfertoparticles.frag",
+      "bytes": 1999,
+      "sha256": "c3a7215d2472772c0153b5bd3e9095a1d9047b7673880a893dcf1d1fdee043a9"
+    },
+    {
+      "path": "liquid/dli-fluid/simulator.js",
+      "bytes": 28250,
+      "sha256": "3ed92041ec4a2130dcfb36a49d54ced3936b10d960e1aba89b1b1fd70259ef5b"
+    },
+    {
+      "path": "liquid/fetch_selected.py",
+      "bytes": 3936,
+      "sha256": "edb2d285190a9ef01fcd5778cf8378b46bbb27a3bcb879d6829263db8f9ad705"
+    },
+    {
+      "path": "liquid/finalize_manifest.py",
+      "bytes": 6067,
+      "sha256": "976e10172a758de39ec79744b7d6c85335a613195f06a90e4439f77de4627e26"
+    },
+    {
+      "path": "liquid/findings.md",
+      "bytes": 12758,
+      "sha256": "6166ffa010022444f4c16b93c6aa3c314cd1a7198ac82a1846db6cfec91ced19"
+    },
+    {
+      "path": "liquid/manifest.json",
+      "bytes": 44363,
+      "sha256": "44eb7a69b82479b0651d82b117fd2b7b0992f46656200215ea7149c37bee774b"
+    },
+    {
+      "path": "liquid/particles4all/LICENSE",
+      "bytes": 1069,
+      "sha256": "0034e724545817127357c12071ef141d8774371ea78062bf6545b73e9a1c0816"
+    },
+    {
+      "path": "liquid/particles4all/README.md",
+      "bytes": 2562,
+      "sha256": "29c0a88a48dfbcdfdc79faad153b10b62dfb4a3ca958052c29ee60a144a08183"
+    },
+    {
+      "path": "liquid/particles4all/src/aniso_wgsl.js",
+      "bytes": 4843,
+      "sha256": "bf8f9be3bf692fad7788231192d60718281a7db496114fbcbf9dca8bac268bdb"
+    },
+    {
+      "path": "liquid/particles4all/src/render.js",
+      "bytes": 11836,
+      "sha256": "8db5a2e4bf83e3da0da82b64ae14d200c2cbffbf2a1470cbb83b81a512c3c1a1"
+    },
+    {
+      "path": "liquid/particles4all/src/sim.js",
+      "bytes": 31582,
+      "sha256": "ef44d11b90ac638299ed94042b1bc9c4d0c46c50a990ecd40e514cb3ec82cbb1"
+    },
+    {
+      "path": "liquid/particles4all/src/ssfr.js",
+      "bytes": 13942,
+      "sha256": "fd8d414d8afa684c6bd906ce24598cc6ca7bd13369bdf9fbf96c9c1fc2316ac9"
+    },
+    {
+      "path": "liquid/particles4all/src/ssfr_composite_wgsl.js",
+      "bytes": 10411,
+      "sha256": "add7a05f4628884f1999d1f63dc798cf6f67b2026142f7e3f5b44d8e3fb78314"
+    },
+    {
+      "path": "liquid/particles4all/src/ssfr_wgsl.js",
+      "bytes": 10779,
+      "sha256": "8d509a5c323c1c263eda90db3564b1da237ce406d7822724374434bc1df62718"
+    },
+    {
+      "path": "liquid/particles4all/src/wgsl.js",
+      "bytes": 30201,
+      "sha256": "cd9c884e1cfa4a6138ed98ccf24d613cf5117c7b0ae85afc85b345254f87d180"
+    },
+    {
+      "path": "liquid/splashsurf/LICENSE",
+      "bytes": 1073,
+      "sha256": "f9ce649ea11b2215b32ca9149b03c5f7e5e60b06e3bc49fb6e72a0270a485771"
+    },
+    {
+      "path": "liquid/splashsurf/README.md",
+      "bytes": 37660,
+      "sha256": "4f4ea40bc2bda54d36a4f546a69922a3ee746270771385ae51f89ddbbbfdb3b6"
+    },
+    {
+      "path": "liquid/splashsurf/splashsurf_lib/examples/minimal_sph_levelset.rs",
+      "bytes": 18238,
+      "sha256": "6c721f1ea3e72b4d6ad746c0852d9113af9fd38e94fe2875e6a1395a12c8d845"
+    },
+    {
+      "path": "liquid/splashsurf/splashsurf_lib/README.md",
+      "bytes": 6094,
+      "sha256": "ad21cfbd54d4e0a9f2c200ad89e837e76283bb554a73de256bbc9c5163805a2b"
+    },
+    {
+      "path": "liquid/splashsurf/splashsurf_lib/src/density_map.rs",
+      "bytes": 31707,
+      "sha256": "b411b57587e2bd7225913d8bd51f65b3244a433279ffc5595f833750b3504510"
+    },
+    {
+      "path": "liquid/splashsurf/splashsurf_lib/src/kernel.rs",
+      "bytes": 21382,
+      "sha256": "575cf002cccee265a2f1c9880f4eeee76493d312b61aa48d41bdc6fc271c80d1"
+    },
+    {
+      "path": "liquid/splashsurf/splashsurf_lib/src/marching_cubes/triangulation.rs",
+      "bytes": 3339,
+      "sha256": "f62b1d9bd273b703f0ae756264459dbb1cccd74c7393fab740c7d1835c49fc69"
+    },
+    {
+      "path": "liquid/splashsurf/splashsurf_lib/src/marching_cubes.rs",
+      "bytes": 14017,
+      "sha256": "7f7b830c9e18e9088219111d4cc68e6b6fe7f404f243046b392e28ae6f517355"
+    },
+    {
+      "path": "liquid/splashsurf/splashsurf_lib/src/postprocessing.rs",
+      "bytes": 33000,
+      "sha256": "d4f4d443240eda577d1507e79634be2d70e3a549ee3939c20fc0116bf14e3b5a"
+    },
+    {
+      "path": "liquid/splashsurf/splashsurf_lib/src/reconstruction.rs",
+      "bytes": 7108,
+      "sha256": "e216e853c5b805fced8f9dc09690631012aa7926c2ec64a449d8ea38eb14e6d2"
+    },
+    {
+      "path": "package_research.py",
+      "bytes": 6284,
+      "sha256": "0d150b325d52291a2d3fdb5a0c8df1db41b1677113bb3890910ee9ec2172ba8b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5103,
+      "sha256": "a08c41cf9cc54c28ab649a290f9471c5a5acb425dff3ce1bf332b387cd29e143"
+    },
+    {
+      "path": "SEARCH_LOG.md",
+      "bytes": 2547,
+      "sha256": "84744b4e85df9fc9a28b0f23ff9aac64037e065fe0271f7665298a2aec18c69c"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 78663,
+      "sha256": "c1e68bb7c88faab626285246b24f8ff90ec16d1efb02f40d652265e9a5362371"
+    },
+    {
+      "path": "verify_index.cjs",
+      "bytes": 3102,
+      "sha256": "3160cdf9a94ba392169e3e7e29a6798f0238d4f75dfa67fd7e25001237f12cc2"
+    }
+  ]
+}

@@ -6,8 +6,8 @@
 
 | 文件 | SHA-256 | 可迁移机制 |
 |---|---|---|
-| `C:/Users/Nostzephert/Downloads/gizmo-crt.glsl` | `37A9D7F7D8362485D219D6CDFC7BAD68B306EEEA11867BB7DA9B9361259DE673` | 亮度相关扫描线、水平/垂直模糊、RGB/BGR 子像素偏移、水平收缩、SNR 噪声、逐帧金色噪声、隔行结构 |
-| `C:/Users/Nostzephert/Downloads/vhs.glsl` | `A24D4A65DEF5A77D8E397A6724D467934CFD6CF8379589DB818EC397478C58EB` | 帧时间抖动、跳帧/滚动同步带、YIQ 色度拖影、水平模糊和录像带式色差漂移 |
+| `C:/Users/MAINTAINER/Downloads/gizmo-crt.glsl` | `37A9D7F7D8362485D219D6CDFC7BAD68B306EEEA11867BB7DA9B9361259DE673` | 亮度相关扫描线、水平/垂直模糊、RGB/BGR 子像素偏移、水平收缩、SNR 噪声、逐帧金色噪声、隔行结构 |
+| `C:/Users/MAINTAINER/Downloads/vhs.glsl` | `A24D4A65DEF5A77D8E397A6724D467934CFD6CF8379589DB818EC397478C58EB` | 帧时间抖动、跳帧/滚动同步带、YIQ 色度拖影、水平模糊和录像带式色差漂移 |
 
 ## 视觉机制归纳
 

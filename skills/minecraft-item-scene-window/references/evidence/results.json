@@ -1,0 +1,357 @@
+{
+  "status": "completed",
+  "minecraft": "1.20.1",
+  "forge": "47.4.10",
+  "gpu": "NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2",
+  "world": "ASTRA_VFX_TEST",
+  "initialShaderGeneration": 1,
+  "results": [
+    {
+      "case": "front",
+      "geometryDepthPixels": 60696,
+      "depthBins": 265,
+      "resolution": 384,
+      "fboStatus": 36053,
+      "glError": 0,
+      "stateMismatches": 0,
+      "shaderGeneration": 1,
+      "sceneGeneration": 1,
+      "time": 0.0,
+      "eye": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "contexts": {
+        "GUI": 820
+      },
+      "sceneError": "",
+      "contextEyes": {
+        "GUI": [
+          0.0,
+          0.0,
+          2.5
+        ]
+      },
+      "framebufferWidth": 1280,
+      "framebufferHeight": 720
+    },
+    {
+      "case": "eye-left",
+      "geometryDepthPixels": 70444,
+      "depthBins": 423,
+      "resolution": 384,
+      "fboStatus": 36053,
+      "glError": 0,
+      "stateMismatches": 0,
+      "shaderGeneration": 1,
+      "sceneGeneration": 1,
+      "time": 0.0,
+      "eye": [
+        -0.6,
+        0.0,
+        2.5
+      ],
+      "contexts": {
+        "GUI": 1644
+      },
+      "sceneError": "",
+      "contextEyes": {
+        "GUI": [
+          -0.6,
+          0.0,
+          2.5
+        ]
+      },
+      "framebufferWidth": 1280,
+      "framebufferHeight": 720
+    },
+    {
+      "case": "eye-right",
+      "geometryDepthPixels": 70444,
+      "depthBins": 423,
+      "resolution": 384,
+      "fboStatus": 36053,
+      "glError": 0,
+      "stateMismatches": 0,
+      "shaderGeneration": 1,
+      "sceneGeneration": 1,
+      "time": 0.0,
+      "eye": [
+        0.6,
+        0.0,
+        2.5
+      ],
+      "contexts": {
+        "GUI": 2460
+      },
+      "sceneError": "",
+      "contextEyes": {
+        "GUI": [
+          0.6,
+          0.0,
+          2.5
+        ]
+      },
+      "framebufferWidth": 1280,
+      "framebufferHeight": 720
+    },
+    {
+      "case": "time-4",
+      "geometryDepthPixels": 68409,
+      "depthBins": 358,
+      "resolution": 384,
+      "fboStatus": 36053,
+      "glError": 0,
+      "stateMismatches": 0,
+      "shaderGeneration": 1,
+      "sceneGeneration": 1,
+      "time": 4.0,
+      "eye": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "contexts": {
+        "GUI": 3284
+      },
+      "sceneError": "",
+      "contextEyes": {
+        "GUI": [
+          0.0,
+          0.0,
+          2.5
+        ]
+      },
+      "framebufferWidth": 1280,
+      "framebufferHeight": 720
+    },
+    {
+      "case": "resolution-64",
+      "geometryDepthPixels": 1668,
+      "depthBins": 47,
+      "resolution": 64,
+      "fboStatus": 36053,
+      "glError": 0,
+      "stateMismatches": 0,
+      "shaderGeneration": 1,
+      "sceneGeneration": 1,
+      "time": 0.0,
+      "eye": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "contexts": {
+        "GUI": 4108
+      },
+      "sceneError": "",
+      "contextEyes": {
+        "GUI": [
+          0.0,
+          0.0,
+          2.5
+        ]
+      },
+      "framebufferWidth": 1280,
+      "framebufferHeight": 720
+    },
+    {
+      "case": "resolution-512",
+      "geometryDepthPixels": 107903,
+      "depthBins": 339,
+      "resolution": 512,
+      "fboStatus": 36053,
+      "glError": 0,
+      "stateMismatches": 0,
+      "shaderGeneration": 1,
+      "sceneGeneration": 1,
+      "time": 0.0,
+      "eye": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "contexts": {
+        "GUI": 4936
+      },
+      "sceneError": "",
+      "contextEyes": {
+        "GUI": [
+          0.0,
+          0.0,
+          2.5
+        ]
+      },
+      "framebufferWidth": 1280,
+      "framebufferHeight": 720
+    },
+    {
+      "case": "reloaded",
+      "geometryDepthPixels": 60696,
+      "depthBins": 265,
+      "resolution": 384,
+      "fboStatus": 36053,
+      "glError": 0,
+      "stateMismatches": 0,
+      "shaderGeneration": 2,
+      "sceneGeneration": 2,
+      "time": 0.0,
+      "eye": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "contexts": {
+        "GUI": 5620
+      },
+      "sceneError": "",
+      "contextEyes": {
+        "GUI": [
+          0.0,
+          0.0,
+          2.5
+        ]
+      },
+      "framebufferWidth": 1280,
+      "framebufferHeight": 720
+    },
+    {
+      "case": "hand-right",
+      "geometryDepthPixels": 60696,
+      "depthBins": 265,
+      "resolution": 384,
+      "fboStatus": 36053,
+      "glError": 0,
+      "stateMismatches": 0,
+      "shaderGeneration": 2,
+      "sceneGeneration": 2,
+      "time": 0.0,
+      "eye": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "contexts": {
+        "FIRST_PERSON_RIGHT_HAND": 190,
+        "GUI": 5825
+      },
+      "sceneError": "",
+      "contextEyes": {
+        "FIRST_PERSON_RIGHT_HAND": [
+          -0.79090905,
+          0.49090898,
+          1.309091
+        ],
+        "GUI": [
+          0.0,
+          0.0,
+          2.5
+        ]
+      },
+      "framebufferWidth": 1280,
+      "framebufferHeight": 720
+    },
+    {
+      "case": "hand-left",
+      "geometryDepthPixels": 60696,
+      "depthBins": 265,
+      "resolution": 384,
+      "fboStatus": 36053,
+      "glError": 0,
+      "stateMismatches": 0,
+      "shaderGeneration": 2,
+      "sceneGeneration": 2,
+      "time": 0.0,
+      "eye": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "contexts": {
+        "FIRST_PERSON_LEFT_HAND": 192,
+        "FIRST_PERSON_RIGHT_HAND": 195,
+        "GUI": 6022
+      },
+      "sceneError": "",
+      "contextEyes": {
+        "FIRST_PERSON_LEFT_HAND": [
+          0.7909092,
+          0.49090898,
+          1.309091
+        ],
+        "FIRST_PERSON_RIGHT_HAND": [
+          -0.79090905,
+          0.49090898,
+          1.309091
+        ],
+        "GUI": [
+          0.0,
+          0.0,
+          2.5
+        ]
+      },
+      "framebufferWidth": 1280,
+      "framebufferHeight": 720
+    },
+    {
+      "case": "third-person",
+      "geometryDepthPixels": 60696,
+      "depthBins": 265,
+      "resolution": 384,
+      "fboStatus": 36053,
+      "glError": 0,
+      "stateMismatches": 0,
+      "shaderGeneration": 2,
+      "sceneGeneration": 2,
+      "time": 0.0,
+      "eye": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "contexts": {
+        "FIRST_PERSON_LEFT_HAND": 192,
+        "FIRST_PERSON_RIGHT_HAND": 195,
+        "GUI": 6220,
+        "THIRD_PERSON_LEFT_HAND": 6,
+        "THIRD_PERSON_RIGHT_HAND": 192
+      },
+      "sceneError": "",
+      "contextEyes": {
+        "FIRST_PERSON_LEFT_HAND": [
+          0.7909092,
+          0.49090898,
+          1.309091
+        ],
+        "FIRST_PERSON_RIGHT_HAND": [
+          -0.79090905,
+          0.49090898,
+          1.309091
+        ],
+        "GUI": [
+          0.0,
+          0.0,
+          2.5
+        ],
+        "THIRD_PERSON_LEFT_HAND": [
+          3.959044,
+          -2.0807178,
+          3.836072
+        ],
+        "THIRD_PERSON_RIGHT_HAND": [
+          5.2757587,
+          -1.6096916,
+          3.9836237
+        ]
+      },
+      "framebufferWidth": 1280,
+      "framebufferHeight": 720
+    }
+  ],
+  "restoration": {
+    "inventory": true,
+    "selectedSlot": true,
+    "options": true
+  }
+}

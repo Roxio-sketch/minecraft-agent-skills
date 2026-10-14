@@ -1,0 +1,330 @@
+{
+  "researchDate": "2026-10-07",
+  "timezone": "Asia/Shanghai",
+  "scope": "Text-page, author lecture, abstract and metadata research only. No remote images or videos were downloaded, inspected, redistributed or bundled; no skill/mod edits.",
+  "sources": [
+    {
+      "id": "P1",
+      "category": "physics",
+      "title": "White Holes and Wormholes",
+      "authors": [
+        "Andrew J. S. Hamilton"
+      ],
+      "year": null,
+      "yearNote": "Author education page; publication date not asserted. Site family dates to 1997/1998 and a separate rights page was updated 2018.",
+      "url": "https://jila.colorado.edu/~ajsh/bh/schww.html",
+      "access": {
+        "httpStatus": 200,
+        "status": "read",
+        "readScope": "Author-page text: Schwarzschild extension, time reversal, Kruskal diagram descriptions, wormhole instability; image files not fetched."
+      },
+      "readScope": "Whole text page; diagram captions read, diagram images not inspected.",
+      "localText": "source-text/hamilton-wormholes.txt",
+      "evidence": [
+        "Hamilton 作者页解释完整 Schwarzschild 延拓中黑洞、白洞与两外部区域，并把白洞描述为黑洞的时间反演。"
+      ],
+      "use": "Establish outward causal flow and distinguish past/white horizon from future/black horizon.",
+      "boundary": "Its strong thermodynamics claim is not adopted as a universal dismissal of quantum white-hole proposals. Negative square-root branch does not define negative mass. No claim that the source predicts a permanently white sphere, disk or jets.",
+      "credit": "Andrew Hamilton / JILA, University of Colorado Boulder",
+      "license": "Personal/educational-use wording on L2; no commercial game-asset license verified. Cite/link; create original shader/geometry.",
+      "textSha256": "71a1a343939dc501ab7a7f13807a4785d8ce07a7fbe7a4abec788cc668aa25fa",
+      "evidenceKind": "Chinese paraphrase from actually read text; not verbatim excerpts"
+    },
+    {
+      "id": "P2",
+      "category": "physics",
+      "title": "Lecture Notes on General Relativity, Chapter 7: The Schwarzschild Solution and Black Holes",
+      "authors": [
+        "Sean M. Carroll"
+      ],
+      "year": 1997,
+      "url": "https://ned.ipac.caltech.edu/level5/March01/Carroll3/Carroll7.html",
+      "canonicalRecord": "https://arxiv.org/abs/gr-qc/9712019",
+      "access": {
+        "httpStatus": 200,
+        "status": "read",
+        "readScope": "Caltech/NED hosted lecture text: Schwarzschild mass interpretation, Birkhoff theorem, geodesic discussion and Kruskal regions. Math/diagram image files not fetched."
+      },
+      "readScope": "Relevant prose sections of chapter 7. Some equations are image-based in this HTML; those images were not downloaded or inspected.",
+      "localText": "source-text/carroll-blackholes.txt",
+      "evidence": [
+        "Carroll 第七章先解释通常的正质量参数，再在同一 Schwarzschild/Kruskal 延拓中描述只能向外逃出的时间反演区域。"
+      ],
+      "use": "Primary author basis for causal direction and for keeping the same positive-mass exterior lensing instead of negating mass when changing black to white.",
+      "boundary": "Same exterior metric is an interpretation of the lecture's extension, not a supplied VFX algorithm. It does not fix radiance, jet axes, color, particle motion or player repulsion. Caltech/NED is a mirror, not a new 2026 observation report.",
+      "credit": "Sean M. Carroll; HTML mirror hosted by NASA/IPAC Extragalactic Database, Caltech",
+      "license": "No reusable art/code license checked; cite/link the lecture.",
+      "textSha256": "59fba87e88fe9f0c1c7f8982228f5608760293137a047cd969e90c46d6a53bd3",
+      "evidenceKind": "Chinese paraphrase from actually read text; not verbatim excerpts"
+    },
+    {
+      "id": "P3",
+      "category": "physics",
+      "title": "Death of White Holes in the Early Universe",
+      "authors": [
+        "Douglas M. Eardley"
+      ],
+      "year": 1974,
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.33.442",
+      "doi": "10.1103/PhysRevLett.33.442",
+      "publication": "Physical Review Letters 33, 442–444; published 12 August 1974",
+      "metadataUrl": "https://api.crossref.org/works/10.1103/PhysRevLett.33.442",
+      "access": {
+        "httpStatus": 200,
+        "status": "abstract_read_fulltext_not_read",
+        "readScope": "APS public abstract and bibliographic metadata; Crossref DOI metadata. Full article not accessed; page shows Authorization Required."
+      },
+      "readScope": "Abstract and verified metadata only; no full-text proof or figures reviewed.",
+      "localText": "source-text/eardley-aps.txt",
+      "metadataText": "source-text/eardley-crossref.txt",
+      "evidence": [
+        "Eardley 1974 摘要研究早期宇宙长延迟白洞的指数增长不稳定性；本轮未读取其全文和定量推导。"
+      ],
+      "use": "Explain why a permanent stable classical white-hole object is a gameplay assumption; motivates short/pulsed variants.",
+      "boundary": "This is the author's early-universe model and conclusion in a 1974 abstract. Do not generalize it to every later quantum remnant/bounce proposal, and do not invent quantitative lifetime values without reading the full model.",
+      "credit": "Douglas M. Eardley; © 1974 American Physical Society",
+      "license": "APS copyright/reuse permissions apply; no figure or asset reuse authorized by this research.",
+      "textSha256": "4f504816988ca2d9e243654f3718ea5009df110ccc2d05944d50bc82eb8b92a8",
+      "evidenceKind": "Chinese paraphrase from actually read text; not verbatim excerpts"
+    },
+    {
+      "id": "P4",
+      "category": "physics",
+      "title": "Black hole fireworks: quantum-gravity effects outside the horizon spark black to white hole tunneling",
+      "authors": [
+        "Hal M. Haggard",
+        "Carlo Rovelli"
+      ],
+      "year": 2014,
+      "url": "https://arxiv.org/abs/1407.0989",
+      "doi": "10.1103/PhysRevD.92.104020",
+      "publication": "arXiv v1 3 July 2014, v2 6 July 2014; journal record Phys. Rev. D 92, 104020 (2015)",
+      "access": {
+        "httpStatus": 200,
+        "status": "abstract_read_fulltext_not_read",
+        "readScope": "arXiv abstract, author/year/version, journal reference and license-link metadata. PDF/TeX/figures not downloaded."
+      },
+      "readScope": "Abstract and bibliographic metadata only.",
+      "localText": "source-text/haggard-rovelli.txt",
+      "evidence": [
+        "Haggard/Rovelli 2014 摘要提出局域量子区域中的黑转白隧穿模型；这是理论提案而非观测确认。"
+      ],
+      "use": "Theory-inspired transition/burst storyboard: black collapse followed by white emission, with an explicitly artistic timing envelope.",
+      "boundary": "Proposed quantum-gravity scenario, not observational confirmation or an implemented renderer; no game timing, bright-core color, jets or shockwave is prescribed by the abstract.",
+      "credit": "Hal M. Haggard and Carlo Rovelli",
+      "license": "arXiv page links nonexclusive-distrib/1.0; this is not a blanket game-art/code license. Cite/link only.",
+      "textSha256": "131e5b02dd2daad7811ac1f479d6026b784eba16e50825892a79cc1036e21118",
+      "evidenceKind": "Chinese paraphrase from actually read text; not verbatim excerpts"
+    },
+    {
+      "id": "P5",
+      "category": "physics-status",
+      "title": "Ask an Astrophysicist: Do white holes exist?",
+      "authors": [
+        "Andy Ptak",
+        "NASA Goddard Imagine the Universe"
+      ],
+      "year": 1997,
+      "url": "https://imagine.gsfc.nasa.gov/ask_astro/black_holes.html",
+      "questionId": "970301",
+      "access": {
+        "httpStatus": 200,
+        "status": "read",
+        "readScope": "Archived FAQ entry submitted 1 March 1997; surrounding giant FAQ index was not treated as a contemporary review."
+      },
+      "readScope": "Question 970301 answer only; historical status/AGN explanation.",
+      "localText": "source-text/nasa-whitehole-faq.txt",
+      "evidence": [
+        "NASA 历史问答将白洞定位为高度假设的对象，并说明类星体的黑洞解释不能作为白洞证据。"
+      ],
+      "use": "Do not sell the planned VFX as an observed white-hole reconstruction or use quasars/black-hole jets as white-hole evidence.",
+      "boundary": "Historical NASA answer, not a complete 2026 observational survey. The proposed cautious description is a theoretical object without confirmed observational appearance, based on the sources read here.",
+      "credit": "Andy Ptak / NASA Goddard Imagine the Universe",
+      "license": "Text used as short attributed evidence; no media downloaded or license inferred.",
+      "textSha256": "ff27381d67b6e692f39308f0f651a4af9abd7f226acb2e6c3c4a31429ce0a13a",
+      "evidenceKind": "Chinese paraphrase from actually read text; not verbatim excerpts"
+    },
+    {
+      "id": "V1",
+      "category": "visual-reference",
+      "title": "NASA’s Hubble Finds that a Black Hole Beam Promotes Stellar Eruptions",
+      "authors": [
+        "NASA Hubble Mission Team",
+        "NASA Goddard Space Flight Center"
+      ],
+      "year": 2024,
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-finds-that-a-black-hole-beam-promotes-stellar-eruptions/",
+      "access": {
+        "httpStatus": 200,
+        "status": "caption_and_article_read_no_image_fetched",
+        "readScope": "Article, observed M87 jet image caption, artist-concept caption and credits; no image/video downloaded or inspected."
+      },
+      "readScope": "Article/captions/credits only. Contains both observation and artist-concept material; preserve this distinction.",
+      "localText": "source-text/nasa-m87-jet.txt",
+      "evidence": [
+        "NASA 的 2024 M87 文章区分 Hubble 观察影像与艺术概念图，描述黑洞系统喷流及周围现象。"
+      ],
+      "use": "External link to study directed plasma flow, surrounding disk and jet scale. Shape/color inspiration only, not a white-hole image.",
+      "boundary": "M87 is a black-hole system. The referenced artist concept is explicitly not an observation. No claim that white holes necessarily have disks or 1/2 jets.",
+      "credit": "Artist-concept caption: NASA, ESA, Joseph Olmsted (STScI). Article credits: NASA Hubble Mission Team / Goddard Space Flight Center. Other media need their individual full credit line.",
+      "license": "Full NASA media-use conditions not read in this subtask; do not infer unconditional public-domain/commercial rights from NASA hosting. Link and keep credits.",
+      "textSha256": "034043e791b0c8f7c26bd92efee004d56cbd495e91db529f679e754e75297994",
+      "evidenceKind": "Chinese paraphrase from actually read text; not verbatim excerpts"
+    },
+    {
+      "id": "V2",
+      "category": "visual-reference",
+      "title": "A cosmic searchlight",
+      "authors": [
+        "The Hubble Heritage Team (STScI/AURA)",
+        "NASA",
+        "ESA"
+      ],
+      "year": 2000,
+      "url": "https://esahubble.org/images/opo0020a/",
+      "access": {
+        "httpStatus": 200,
+        "status": "caption_read_no_image_fetched",
+        "readScope": "Official ESA/Hubble caption, observation type, release date, credits and listed formats; no image file downloaded or inspected."
+      },
+      "readScope": "Caption/metadata/credit only; 6 July 2000 observation image.",
+      "localText": "source-text/esa-m87-jet.txt",
+      "evidence": [
+        "ESA/Hubble M87 喷流图说明外流由黑洞系统驱动；可以参考喷口、细长束和颜色层次，不是白洞影像。"
+      ],
+      "use": "Jet strand, segmented flow and cool/warm contrast inspiration; a useful visual-study link for a directed white-hole fantasy variant.",
+      "boundary": "Black-hole jet observation, not white-hole evidence. Use recent sources for modern M87 mass/distance parameters rather than this historic caption.",
+      "credit": "The Hubble Heritage Team (STScI/AURA) and NASA/ESA",
+      "license": "ESA/Hubble L1: CC BY 4.0 for images with complete visible credit, subject to detailed conditions. No image redistributed.",
+      "textSha256": "bc7ebf23af9cf9ed8506bd363c3aea4e5a6214093ec44863b5713950ce6c45d9",
+      "evidenceKind": "Chinese paraphrase from actually read text; not verbatim excerpts"
+    },
+    {
+      "id": "V3",
+      "category": "visual-reference",
+      "title": "Active galaxy M87",
+      "authors": [
+        "Holland Ford et al.",
+        "NASA",
+        "ESA"
+      ],
+      "year": 1994,
+      "url": "https://esahubble.org/images/opo9423a/",
+      "access": {
+        "httpStatus": 200,
+        "status": "caption_read_no_image_fetched",
+        "readScope": "Official ESA/Hubble caption, credits and metadata; no image file downloaded or inspected."
+      },
+      "readScope": "Caption/metadata/credit only; 25 May 1994 observation image.",
+      "localText": "source-text/esa-m87-old.txt",
+      "evidence": [
+        "ESA/Hubble 1994 M87 热气体盘观测说明中心附近盘结构；不是白洞外流盘，也不作当前质量测量依据。"
+      ],
+      "use": "A link for studying thin disk and hot spiral gas geometry. Artistic outward-disk variation must be separately defined.",
+      "boundary": "An observed black-hole environment. Not a white-hole disk and not proof that a white hole needs accretion.",
+      "credit": "Holland Ford, Space Telescope Science Institute/Johns Hopkins University; Richard Harms, Applied Research Corp.; Zlatan Tsvetanov, Arthur Davidsen, and Gerard Kriss at Johns Hopkins; Ralph Bohlin and George Hartig at Space Telescope Science Institute; Linda Dressel and Ajay K. Kochhar at Applied Research Corp. in Landover, Md.; and Bruce Margon from the University of Washington in Seattle; NASA/ESA",
+      "creditNote": "Whitespace-normalized spelling from the complete page credit; retain the full original credit line when actually reusing image.",
+      "license": "ESA/Hubble L1: CC BY 4.0 for images with complete visible credit, subject to detailed conditions. No image redistributed.",
+      "textSha256": "97bd8f6d2c9f74e02ff646773a6fb0be0073a61234cc4d7f88579b203f1e8543",
+      "evidenceKind": "Chinese paraphrase from actually read text; not verbatim excerpts"
+    },
+    {
+      "id": "L1",
+      "category": "rights",
+      "title": "ESA/Hubble Copyright Information: Usage of images, videos and web texts",
+      "authors": [
+        "ESA/Hubble"
+      ],
+      "year": null,
+      "url": "https://esahubble.org/copyright/",
+      "access": {
+        "httpStatus": 200,
+        "status": "read",
+        "readScope": "Summary, detailed conditions, exclusions and rights Q&A."
+      },
+      "readScope": "Entire rights page text.",
+      "localText": "source-text/esa-copyright.txt",
+      "evidence": [
+        "ESA/Hubble 使用权页说明图像、视频和网页文字的 CC BY 4.0 与完整署名要求，并列出其他材料例外。"
+      ],
+      "use": "Maintain full visible unaltered credit on any future image/footage use; mark material alterations; do not infer logo/music/paper/code rights.",
+      "boundary": "No media redistributed in this research. Page-specific exceptions still need checking before future asset use.",
+      "credit": "ESA/Hubble",
+      "license": "CC BY 4.0 as scoped in the linked terms; logo excluded.",
+      "textSha256": "703532e32c8808b8acc03db755fe5424059b538d26fe8b91594816ccf3d15b8b",
+      "evidenceKind": "Chinese paraphrase from actually read text; not verbatim excerpts"
+    },
+    {
+      "id": "L2",
+      "category": "rights",
+      "title": "Hamilton: Copyright",
+      "authors": [
+        "Andrew Hamilton"
+      ],
+      "year": 2018,
+      "url": "https://jila.colorado.edu/~ajsh/bh/copyright.html",
+      "access": {
+        "httpStatus": 200,
+        "status": "read",
+        "readScope": "Whole short rights page, marked Updated 27 Jan 2018."
+      },
+      "readScope": "Entire rights page text.",
+      "localText": "source-text/hamilton-copyright.txt",
+      "evidence": [
+        "Hamilton 作者说明个人或教育使用与来源链接条件；没有核得通用商业游戏素材许可。"
+      ],
+      "use": "Cite/link the author's physics illustrations as research; build original game assets.",
+      "boundary": "Personal/educational wording is not a verified permission to ship images/code in a commercial game.",
+      "credit": "Andrew Hamilton",
+      "license": "Author page permission limited to the described personal/educational use; asks for link attribution.",
+      "textSha256": "c3f2125740535d093c93e582c945dc0eb0fab1cc6382b2ec8d4f954dd3d69593",
+      "evidenceKind": "Chinese paraphrase from actually read text; not verbatim excerpts"
+    }
+  ],
+  "attemptedUrls": [
+    {
+      "url": "https://jila.colorado.edu/~ajsh/insidebh/white.html",
+      "access": "HTTP 404",
+      "action": "Replaced with verified P1; not cited as read."
+    },
+    {
+      "url": "https://jila.colorado.edu/~ajsh/insidebh/whitehole.html",
+      "access": "HTTP 404",
+      "action": "Replaced with verified P1; not cited as read."
+    },
+    {
+      "url": "https://www.preposterousuniverse.com/grnotes/grnotes-seven.pdf",
+      "access": "HTTP 404",
+      "action": "Replaced with verified P2 NED mirror; no PDF downloaded."
+    },
+    {
+      "url": "https://eventhorizontelescope.org/press-release-april-10-2019-astronomers-capture-first-image-black-hole",
+      "access": "HTTP 403",
+      "action": "Not read and not used as evidence."
+    },
+    {
+      "url": "https://esahubble.org/images/heic1918a/",
+      "access": "HTTP 200, text read",
+      "action": "Rejected: real page is comet 2I/Borisov, unrelated to M87 or white-hole reference."
+    },
+    {
+      "url": "https://blog.richmond.edu/physicsbunn/frequently-asked-questions-about-black-holes/",
+      "access": "TLS UNEXPECTED_EOF_WHILE_READING",
+      "action": "Not read and not used as evidence."
+    },
+    {
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Black_holes_what_are_they",
+      "access": "HTTP 403",
+      "action": "Not read and not used as evidence."
+    }
+  ],
+  "validation": {
+    "primaryPhysicsSources": 5,
+    "visualReferences": 3,
+    "rightsPages": 2,
+    "allSelectedUrlsRead": true,
+    "noImageDownloads": true,
+    "noSkillOrModEdits": true,
+    "rawTextMetadata": "source-text/fetch-metadata.json"
+  }
+}

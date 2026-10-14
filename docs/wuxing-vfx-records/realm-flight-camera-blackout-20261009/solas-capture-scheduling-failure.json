@@ -1,0 +1,3527 @@
+{
+  "result": "FAIL",
+  "captures": [
+    {
+      "name": "01-day-moving-first.png",
+      "tick": 80,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(5.497799126148224, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(6.468, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 5.39,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": true,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": true,
+      "packName": "Solas Shader V3.7b.zip",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 196.36660962527458,
+        "lumaStdDev": 19.015874108312858,
+        "nearBlackFractionRgbLe3": 1.2056327160493826E-5,
+        "minimumChannel": 1,
+        "maximumChannel": 245,
+        "blackScreenCriterion": "meanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world",
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 80,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 344,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "particlesAfterProduction": {
+          "tick": 80,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 344,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ],
+          "restoredComparedToBefore": true,
+          "stateDifferences": []
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 80,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": false,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 80,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 80,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            24,
+            0
+          ]
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "尚未捕获",
+      "diagnosticGeometryOnly": 0,
+      "fps": 60
+    },
+    {
+      "name": "02-day-moving-back.png",
+      "tick": 110,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(47.242239730834946, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(52.527999999999984, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 50.95999999999999,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": true,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": true,
+      "packName": "Solas Shader V3.7b.zip",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 198.41955587654505,
+        "lumaStdDev": 23.485843392436223,
+        "nearBlackFractionRgbLe3": 1.2056327160493826E-5,
+        "minimumChannel": 1,
+        "maximumChannel": 255,
+        "blackScreenCriterion": "meanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world",
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 110,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 344,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "particlesAfterProduction": {
+          "tick": 110,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 344,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ],
+          "restoredComparedToBefore": true,
+          "stateDifferences": []
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 110,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": false,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 110,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 110,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            24,
+            0
+          ]
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 316,
+      "fps": 52
+    },
+    {
+      "name": "03-day-moving-front.png",
+      "tick": 140,
+      "cameraType": "THIRD_PERSON_FRONT",
+      "expectedCameraType": "THIRD_PERSON_FRONT",
+      "cameraPosition": "(102.15680003738396, 150.3571869702642, 0.0)",
+      "cameraLook": "(-1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(99.56799999999993, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 97.99999999999993,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": true,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": true,
+      "packName": "Solas Shader V3.7b.zip",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 197.7781124021338,
+        "lumaStdDev": 23.69739615258938,
+        "nearBlackFractionRgbLe3": 1.2056327160493826E-5,
+        "minimumChannel": 1,
+        "maximumChannel": 255,
+        "blackScreenCriterion": "meanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world",
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 140,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "particlesAfterProduction": {
+          "tick": 140,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ],
+          "restoredComparedToBefore": true,
+          "stateDifferences": []
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 140,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": false,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 140,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 140,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            24,
+            0
+          ]
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 316,
+      "fps": 60
+    },
+    {
+      "name": "04-day-moving-first-return.png",
+      "tick": 170,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(145.13407991027833, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(146.60800000000003, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 145.04000000000002,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": true,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": true,
+      "packName": "Solas Shader V3.7b.zip",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 199.68245826256214,
+        "lumaStdDev": 18.284260240946214,
+        "nearBlackFractionRgbLe3": 1.2056327160493826E-5,
+        "minimumChannel": 1,
+        "maximumChannel": 244,
+        "blackScreenCriterion": "meanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world",
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 170,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "particlesAfterProduction": {
+          "tick": 170,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ],
+          "restoredComparedToBefore": true,
+          "stateDifferences": []
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 170,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": false,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 170,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 170,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            24,
+            0
+          ]
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 51
+    },
+    {
+      "name": "05-day-hover-back.png",
+      "tick": 220,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(160.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": true,
+      "packName": "Solas Shader V3.7b.zip",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 194.62119584994005,
+        "lumaStdDev": 31.191871981330547,
+        "nearBlackFractionRgbLe3": 1.2056327160493826E-5,
+        "minimumChannel": 1,
+        "maximumChannel": 255,
+        "blackScreenCriterion": "meanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world",
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 220,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "particlesAfterProduction": {
+          "tick": 220,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ],
+          "restoredComparedToBefore": true,
+          "stateDifferences": []
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 220,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": false,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 220,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 220,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            24,
+            0
+          ]
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 59
+    },
+    {
+      "name": "06-day-hover-front.png",
+      "tick": 260,
+      "cameraType": "THIRD_PERSON_FRONT",
+      "expectedCameraType": "THIRD_PERSON_FRONT",
+      "cameraPosition": "(168.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "(-1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": true,
+      "packName": "Solas Shader V3.7b.zip",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 194.51400829577577,
+        "lumaStdDev": 30.05640658317799,
+        "nearBlackFractionRgbLe3": 1.2056327160493826E-5,
+        "minimumChannel": 1,
+        "maximumChannel": 255,
+        "blackScreenCriterion": "meanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world",
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 260,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "particlesAfterProduction": {
+          "tick": 260,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ],
+          "restoredComparedToBefore": true,
+          "stateDifferences": []
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 260,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": false,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 260,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 260,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            24,
+            0
+          ]
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 60
+    },
+    {
+      "name": "07-day-hover-first.png",
+      "tick": 290,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(164.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": true,
+      "packName": "Solas Shader V3.7b.zip",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 199.62836543548028,
+        "lumaStdDev": 18.44208096372996,
+        "nearBlackFractionRgbLe3": 1.2056327160493826E-5,
+        "minimumChannel": 1,
+        "maximumChannel": 243,
+        "blackScreenCriterion": "meanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world",
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 290,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "particlesAfterProduction": {
+          "tick": 290,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ],
+          "restoredComparedToBefore": true,
+          "stateDifferences": []
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 290,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": false,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 290,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 290,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            24,
+            0
+          ]
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 53
+    },
+    {
+      "name": "08-day-rapid-301.png",
+      "tick": 301,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(160.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": true,
+      "packName": "Solas Shader V3.7b.zip",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 194.98199103882473,
+        "lumaStdDev": 30.334260541813507,
+        "nearBlackFractionRgbLe3": 1.2056327160493826E-5,
+        "minimumChannel": 1,
+        "maximumChannel": 255,
+        "blackScreenCriterion": "meanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world",
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 301,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "particlesAfterProduction": {
+          "tick": 301,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ],
+          "restoredComparedToBefore": true,
+          "stateDifferences": []
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 301,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": false,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 301,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 301,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            24,
+            0
+          ]
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 53
+    },
+    {
+      "name": "09-day-rapid-303.png",
+      "tick": 304,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(164.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": true,
+      "packName": "Solas Shader V3.7b.zip",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 199.64058646713747,
+        "lumaStdDev": 18.15619185663348,
+        "nearBlackFractionRgbLe3": 1.2056327160493826E-5,
+        "minimumChannel": 1,
+        "maximumChannel": 241,
+        "blackScreenCriterion": "meanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world",
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 304,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "particlesAfterProduction": {
+          "tick": 304,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 44,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            44,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ],
+          "restoredComparedToBefore": true,
+          "stateDifferences": []
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 304,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": false,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 304,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            44,
+            0
+          ]
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 304,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "activeTextureBinding2d": 0,
+          "blend": false,
+          "depthTest": true,
+          "depthWrite": true,
+          "cull": true,
+          "scissor": false,
+          "scissorBox": [
+            0,
+            0,
+            854,
+            480
+          ],
+          "colorWriteMask": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "shaderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "blendSrcRgb": 770,
+          "blendDstRgb": 771,
+          "blendSrcAlpha": 1,
+          "blendDstAlpha": 0,
+          "blendEquationRgb": 32774,
+          "blendEquationAlpha": 32774,
+          "blendCacheIdentity": 328118693,
+          "blendCacheOpaque": false,
+          "clearColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textures01": [
+            0,
+            0
+          ],
+          "shaderTextures01": [
+            24,
+            0
+          ]
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 53
+    }
+  ],
+  "checks": [
+    {
+      "tick": 0,
+      "name": "initial_not_flying",
+      "pass": true,
+      "detail": "No fixture flying/mayfly grant; production permission arrived"
+    },
+    {
+      "tick": 60,
+      "name": "actual_shader_pack_mode",
+      "pass": true,
+      "detail": "oculusInstalled\u003dtrue, actualPackActive\u003dtrue, expected\u003dtrue, packName\u003dSolas Shader V3.7b.zip"
+    },
+    {
+      "tick": 60,
+      "name": "natural_double_space_entry",
+      "pass": true,
+      "detail": "Actual normal double-jump entry enabled both client/server flight"
+    },
+    {
+      "tick": 80,
+      "name": "exact_scope_restore_normal",
+      "pass": true,
+      "detail": "Entry unit2 sentinel; actual shader apply; precise State boundary differences\u003d[]"
+    },
+    {
+      "tick": 80,
+      "name": "exact_scope_restore_exception_finally",
+      "pass": true,
+      "detail": "Entry unit2 sentinel; actual shader apply; precise State boundary differences\u003d[]"
+    },
+    {
+      "tick": 80,
+      "name": "view_01-day-moving-first.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 80,
+      "name": "visible_world_01-day-moving-first.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d196.36660962527458, lumaStdDev\u003d19.015874108312858, nearBlackFractionRgbLe3\u003d1.2056327160493826E-5, minimumChannel\u003d1, maximumChannel\u003d245, blackScreenCriterion\u003dmeanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 80,
+      "name": "particle_blend_cache_restored_01-day-moving-first.png",
+      "pass": true,
+      "detail": "Multi-subscriber bracket: blend/cache/framebuffer differences\u003d[]; depth/texture/GL_PROGRAM are observations only"
+    },
+    {
+      "tick": 80,
+      "name": "flying_01-day-moving-first.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 110,
+      "name": "view_02-day-moving-back.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 110,
+      "name": "visible_world_02-day-moving-back.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d198.41955587654505, lumaStdDev\u003d23.485843392436223, nearBlackFractionRgbLe3\u003d1.2056327160493826E-5, minimumChannel\u003d1, maximumChannel\u003d255, blackScreenCriterion\u003dmeanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 110,
+      "name": "particle_blend_cache_restored_02-day-moving-back.png",
+      "pass": true,
+      "detail": "Multi-subscriber bracket: blend/cache/framebuffer differences\u003d[]; depth/texture/GL_PROGRAM are observations only"
+    },
+    {
+      "tick": 110,
+      "name": "flying_02-day-moving-back.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 140,
+      "name": "view_03-day-moving-front.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_FRONT"
+    },
+    {
+      "tick": 140,
+      "name": "visible_world_03-day-moving-front.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d197.7781124021338, lumaStdDev\u003d23.69739615258938, nearBlackFractionRgbLe3\u003d1.2056327160493826E-5, minimumChannel\u003d1, maximumChannel\u003d255, blackScreenCriterion\u003dmeanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 140,
+      "name": "particle_blend_cache_restored_03-day-moving-front.png",
+      "pass": true,
+      "detail": "Multi-subscriber bracket: blend/cache/framebuffer differences\u003d[]; depth/texture/GL_PROGRAM are observations only"
+    },
+    {
+      "tick": 140,
+      "name": "flying_03-day-moving-front.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 170,
+      "name": "view_04-day-moving-first-return.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 170,
+      "name": "visible_world_04-day-moving-first-return.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d199.68245826256214, lumaStdDev\u003d18.284260240946214, nearBlackFractionRgbLe3\u003d1.2056327160493826E-5, minimumChannel\u003d1, maximumChannel\u003d244, blackScreenCriterion\u003dmeanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 170,
+      "name": "particle_blend_cache_restored_04-day-moving-first-return.png",
+      "pass": true,
+      "detail": "Multi-subscriber bracket: blend/cache/framebuffer differences\u003d[]; depth/texture/GL_PROGRAM are observations only"
+    },
+    {
+      "tick": 170,
+      "name": "flying_04-day-moving-first-return.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 178,
+      "name": "actual_W_movement_178",
+      "pass": true,
+      "detail": "Client/server actual W displacement\u003d157.58400000000012 / 157.58400000000012"
+    },
+    {
+      "tick": 220,
+      "name": "view_05-day-hover-back.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 220,
+      "name": "visible_world_05-day-hover-back.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d194.62119584994005, lumaStdDev\u003d31.191871981330547, nearBlackFractionRgbLe3\u003d1.2056327160493826E-5, minimumChannel\u003d1, maximumChannel\u003d255, blackScreenCriterion\u003dmeanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 220,
+      "name": "particle_blend_cache_restored_05-day-hover-back.png",
+      "pass": true,
+      "detail": "Multi-subscriber bracket: blend/cache/framebuffer differences\u003d[]; depth/texture/GL_PROGRAM are observations only"
+    },
+    {
+      "tick": 220,
+      "name": "flying_05-day-hover-back.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 260,
+      "name": "view_06-day-hover-front.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_FRONT"
+    },
+    {
+      "tick": 260,
+      "name": "visible_world_06-day-hover-front.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d194.51400829577577, lumaStdDev\u003d30.05640658317799, nearBlackFractionRgbLe3\u003d1.2056327160493826E-5, minimumChannel\u003d1, maximumChannel\u003d255, blackScreenCriterion\u003dmeanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 260,
+      "name": "particle_blend_cache_restored_06-day-hover-front.png",
+      "pass": true,
+      "detail": "Multi-subscriber bracket: blend/cache/framebuffer differences\u003d[]; depth/texture/GL_PROGRAM are observations only"
+    },
+    {
+      "tick": 260,
+      "name": "flying_06-day-hover-front.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 290,
+      "name": "view_07-day-hover-first.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 290,
+      "name": "visible_world_07-day-hover-first.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d199.62836543548028, lumaStdDev\u003d18.44208096372996, nearBlackFractionRgbLe3\u003d1.2056327160493826E-5, minimumChannel\u003d1, maximumChannel\u003d243, blackScreenCriterion\u003dmeanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 290,
+      "name": "particle_blend_cache_restored_07-day-hover-first.png",
+      "pass": true,
+      "detail": "Multi-subscriber bracket: blend/cache/framebuffer differences\u003d[]; depth/texture/GL_PROGRAM are observations only"
+    },
+    {
+      "tick": 290,
+      "name": "flying_07-day-hover-first.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 301,
+      "name": "view_08-day-rapid-301.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 301,
+      "name": "visible_world_08-day-rapid-301.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d194.98199103882473, lumaStdDev\u003d30.334260541813507, nearBlackFractionRgbLe3\u003d1.2056327160493826E-5, minimumChannel\u003d1, maximumChannel\u003d255, blackScreenCriterion\u003dmeanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 301,
+      "name": "particle_blend_cache_restored_08-day-rapid-301.png",
+      "pass": true,
+      "detail": "Multi-subscriber bracket: blend/cache/framebuffer differences\u003d[]; depth/texture/GL_PROGRAM are observations only"
+    },
+    {
+      "tick": 301,
+      "name": "flying_08-day-rapid-301.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 304,
+      "name": "view_09-day-rapid-303.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 304,
+      "name": "visible_world_09-day-rapid-303.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d199.64058646713747, lumaStdDev\u003d18.15619185663348, nearBlackFractionRgbLe3\u003d1.2056327160493826E-5, minimumChannel\u003d1, maximumChannel\u003d241, blackScreenCriterion\u003dmeanLuma255\u003c5 AND nearBlackRgbLe3Fraction\u003e0.75 in this open, bright platform test world, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 304,
+      "name": "particle_blend_cache_restored_09-day-rapid-303.png",
+      "pass": true,
+      "detail": "Multi-subscriber bracket: blend/cache/framebuffer differences\u003d[]; depth/texture/GL_PROGRAM are observations only"
+    },
+    {
+      "tick": 304,
+      "name": "flying_09-day-rapid-303.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    }
+  ],
+  "failures": [
+    "Fixture exception: java.lang.IllegalStateException: Previous capture was not rendered"
+  ],
+  "glErrors": [],
+  "f5InputEvents": [
+    {
+      "tick": 100,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 130,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 160,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    },
+    {
+      "tick": 200,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 240,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 280,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    },
+    {
+      "tick": 300,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 302,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 304,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    },
+    {
+      "tick": 306,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    }
+  ],
+  "expectedPackActive": true,
+  "oculusInstalled": true,
+  "embeddiumInstalled": true,
+  "actualPackActive": true,
+  "packName": "Solas Shader V3.7b.zip",
+  "scope": "Independent survival world; normal production mayfly grant, logical double-space entry and W motion. F5 uses vanilla KeyMapping.click/consumeClick. No forced camera position, remote avatar, forced shader route or pre-enabled ordinary flight. Pixel candidate is a diagnostic proxy backed by saved actual screenshots, not a draw-count success claim. No native GLFW physical-key certification.",
+  "glStageScope": "AFTER_PARTICLES brackets multiple subscribers and asserts blend/cache/framebuffer/color state only. Sword renderer legitimately binds WHITE/depth false even with no swords; texture/depth/program across that entire event are observations. Two separate exact MeteorBloomRenderer.State boundary checks use active unit2 sentinel plus actual shader apply, normal close and injected exception finally, and compare all saved GL/cache/program/texture/clearColor state. GUI/no-GUI screenshots cover real deferred composites; sample ticks distinguish stale GUI-pre observations."
+}

@@ -1,0 +1,24 @@
+{
+  "javaSource": "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/MeteorHeadRenderer.java",
+  "javaCompile": {
+    "status": "PASS",
+    "jdk": "Temurin 17.0.20.1+1",
+    "scope": "Targeted javac against build/classes/java/main and the existing mapped classpath",
+    "exitCode": 0,
+    "warnings": ["ResourceLocation(String, String) carries a pre-existing removal/deprecation warning in the mapped compile classpath"]
+  },
+  "interfaces": {
+    "headRecordChanged": true,
+    "createSignatureChanged": "New overload ends in float speed, float turn; existing overload remains and supplies neutral values",
+    "newUniforms": "FlightMotion vec2: speed [0, 1], turn [-1, 1]; sanitised finite values in create",
+    "hostScaleContract": "Analytic unit sphere may receive a small host longitudinal stretch; inverse-transpose view normals preserve correct Fresnel",
+    "hostAnchorContract": "Interpolated original player body centre; independent of arm animation and bank"
+  },
+  "renderPipeline": {
+    "opaqueSceneDepth": "Each near and far sphere surface is rejected independently when behind captured opaque depth",
+    "emissionAlpha": "Nearest contributing surface linear view depth divided by 128; existing MIN metadata blend retained",
+    "baseAlpha": "Straight alpha; premultiplied surface integration is divided by total opacity before output",
+    "stateOwnership": "Existing MeteorBloomRenderer.State and draw safeguards are untouched"
+  },
+  "runtimeStatus": "Parent task performs Forge native/Oculus captures, unified build and installation; synthetic GPU checks do not establish runtime visual acceptance"
+}

@@ -1,0 +1,8 @@
+{
+  "key.categories.vfxworkbench": "VFX Workbench",
+  "key.vfxworkbench.open": "Open VFX Workbench",
+  "key.vfxworkbench.trigger": "Trigger Selected Effect",
+  "key.vfxworkbench.stop": "Stop Selected Effect",
+  "message.vfxworkbench.triggered": "Triggered: %s",
+  "message.vfxworkbench.stopped": "Stopped: %s"
+}

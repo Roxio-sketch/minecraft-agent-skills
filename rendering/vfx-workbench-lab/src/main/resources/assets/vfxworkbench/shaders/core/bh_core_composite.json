@@ -1,0 +1,66 @@
+{
+  "vertex": "vfxworkbench:bh_core_composite",
+  "fragment": "vfxworkbench:bh_core_composite",
+  "attributes": [
+    "Position",
+    "UV0"
+  ],
+  "samplers": [
+    {
+      "name": "Sampler0"
+    },
+    {
+      "name": "Sampler1"
+    },
+    {
+      "name": "Sampler2"
+    },
+    {
+      "name": "Sampler3"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "Intensity",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "Exposure",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.55
+      ]
+    },
+    {
+      "name": "GlareCenter",
+      "type": "float",
+      "count": 2,
+      "values": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "GlareScale",
+      "type": "float",
+      "count": 2,
+      "values": [
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "name": "DiskSource",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    }
+  ]
+}

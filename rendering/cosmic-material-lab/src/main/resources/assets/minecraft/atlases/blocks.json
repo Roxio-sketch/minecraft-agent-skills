@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:directory",
+      "source": "cosmic",
+      "prefix": "cosmic/"
+    },
+    {
+      "type": "minecraft:directory",
+      "source": "mask",
+      "prefix": "mask/"
+    }
+  ]
+}

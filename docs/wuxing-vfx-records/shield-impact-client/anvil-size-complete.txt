@@ -1,0 +1,1 @@
+Real client comparison: vanilla left, widened Xuanling right; no GL errors.

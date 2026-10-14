@@ -1,0 +1,18 @@
+{
+  "id": "spirit_guard_pale_blue",
+  "mode": "solid",
+  "texture": "wuxingxiantu:textures/misc/glint_item_spirit_guard_pale_blue.png",
+  "shader_texture": "wuxingxiantu:textures/misc/glint_carrier_spirit_guard_pale_blue.png",
+  "shader": "wuxingxiantu:glint_spirit_guard_pale_blue",
+  "shader_required": false,
+  "static_texture_is_neutral_carrier": false,
+  "shader_coordinate": "transformed glint UV, not normalized blade coordinates",
+  "shader_uses_neutral_carrier": true,
+  "period_seconds": 6.0,
+  "time_uniform": null,
+  "existing_lab_requires_registration": true,
+  "mc_template": "Forge 1.20.1 / POSITION_TEX",
+  "preview_is_game_capture": false,
+  "source_sha256": "5fccbb464fb55e47d9fc7f293d441a4fd86a5dc05e5436b475259c8f8283377d",
+  "tileable_applies_to": "palette field only; carrier seams must be checked separately"
+}

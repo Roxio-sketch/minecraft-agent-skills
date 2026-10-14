@@ -1,0 +1,216 @@
+Compiled from "CultivationVisionPage.java"
+class cn.blockforge.generated.generatedmod.client.CultivationVisionPage$1 extends cn.blockforge.generated.generatedmod.client.CultivationUi$Action {
+  final int val$index;
+    descriptor: I
+
+  final cn.blockforge.generated.generatedmod.client.CultivationVisionPage this$0;
+    descriptor: Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+
+  cn.blockforge.generated.generatedmod.client.CultivationVisionPage$1(cn.blockforge.generated.generatedmod.client.CultivationVisionPage, int, int, int, int, net.minecraft.network.chat.Component, net.minecraft.client.gui.components.Button$OnPress, int);
+    descriptor: (Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;I)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #31                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+       5: aload_0
+       6: iload         8
+       8: putfield      #33                 // Field val$index:I
+      11: aload_0
+      12: iload_2
+      13: iload_3
+      14: iload         4
+      16: iload         5
+      18: aload         6
+      20: aload         7
+      22: invokespecial #36                 // Method cn/blockforge/generated/generatedmod/client/CultivationUi$Action."<init>":(IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;)V
+      25: return
+
+  protected void m_87963_(net.minecraft.client.gui.GuiGraphics, int, int, float);
+    descriptor: (Lnet/minecraft/client/gui/GuiGraphics;IIF)V
+    Code:
+       0: aload_0
+       1: getfield      #31                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+       4: invokevirtual #52                 // Method cn/blockforge/generated/generatedmod/client/CultivationVisionPage.data:()Lcn/blockforge/generated/generatedmod/CultivationData;
+       7: ifnull        36
+      10: aload_0
+      11: getfield      #31                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+      14: invokevirtual #52                 // Method cn/blockforge/generated/generatedmod/client/CultivationVisionPage.data:()Lcn/blockforge/generated/generatedmod/CultivationData;
+      17: invokeinterface #58,  1           // InterfaceMethod cn/blockforge/generated/generatedmod/CultivationData.wuxingxiantu$getRootMask:()I
+      22: iconst_1
+      23: aload_0
+      24: getfield      #33                 // Field val$index:I
+      27: ishl
+      28: iand
+      29: ifeq          36
+      32: iconst_1
+      33: goto          37
+      36: iconst_0
+      37: istore        5
+      39: ldc           #60                 // String wuxingxiantu
+      41: getstatic     #64                 // Field cn/blockforge/generated/generatedmod/client/CultivationVisionPage.ROOT_NAMES:[Ljava/lang/String;
+      44: aload_0
+      45: getfield      #33                 // Field val$index:I
+      48: aaload
+      49: invokedynamic #76,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      54: invokestatic  #82                 // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      57: astore        6
+      59: invokestatic  #87                 // Method com/mojang/blaze3d/systems/RenderSystem.enableBlend:()V
+      62: invokestatic  #90                 // Method com/mojang/blaze3d/systems/RenderSystem.defaultBlendFunc:()V
+      65: aload_1
+      66: fconst_1
+      67: fconst_1
+      68: fconst_1
+      69: iload         5
+      71: ifeq          78
+      74: fconst_1
+      75: goto          80
+      78: ldc           #93                 // float 0.35f
+      80: invokevirtual #97                 // Method net/minecraft/client/gui/GuiGraphics.m_280246_:(FFFF)V
+      83: aload_0
+      84: getfield      #31                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+      87: invokevirtual #52                 // Method cn/blockforge/generated/generatedmod/client/CultivationVisionPage.data:()Lcn/blockforge/generated/generatedmod/CultivationData;
+      90: ifnull        118
+      93: aload_0
+      94: getfield      #33                 // Field val$index:I
+      97: iconst_1
+      98: if_icmpne     118
+     101: aload_0
+     102: getfield      #31                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+     105: invokevirtual #52                 // Method cn/blockforge/generated/generatedmod/client/CultivationVisionPage.data:()Lcn/blockforge/generated/generatedmod/CultivationData;
+     108: invokestatic  #103                // Method cn/blockforge/generated/generatedmod/items/CultivationLogic.isThunderForm:(Lcn/blockforge/generated/generatedmod/CultivationData;)Z
+     111: ifeq          118
+     114: iconst_1
+     115: goto          119
+     118: iconst_0
+     119: istore        7
+     121: aload_0
+     122: getfield      #31                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+     125: invokevirtual #52                 // Method cn/blockforge/generated/generatedmod/client/CultivationVisionPage.data:()Lcn/blockforge/generated/generatedmod/CultivationData;
+     128: ifnull        156
+     131: aload_0
+     132: getfield      #33                 // Field val$index:I
+     135: iconst_3
+     136: if_icmpne     156
+     139: aload_0
+     140: getfield      #31                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+     143: invokevirtual #52                 // Method cn/blockforge/generated/generatedmod/client/CultivationVisionPage.data:()Lcn/blockforge/generated/generatedmod/CultivationData;
+     146: invokestatic  #106                // Method cn/blockforge/generated/generatedmod/items/CultivationLogic.isExoticForm:(Lcn/blockforge/generated/generatedmod/CultivationData;)Z
+     149: ifeq          156
+     152: iconst_1
+     153: goto          157
+     156: iconst_0
+     157: istore        8
+     159: iload         7
+     161: ifne          169
+     164: iload         8
+     166: ifeq          200
+     169: aload_1
+     170: iload         7
+     172: ifeq          180
+     175: ldc           #108                // String root_thunder
+     177: goto          182
+     180: ldc           #110                // String root_exotic
+     182: aload_0
+     183: invokevirtual #115                // Method m_252754_:()I
+     186: aload_0
+     187: invokevirtual #118                // Method m_252907_:()I
+     190: bipush        22
+     192: bipush        24
+     194: invokestatic  #124                // Method cn/blockforge/generated/generatedmod/client/CultivationVisionAssets.draw:(Lnet/minecraft/client/gui/GuiGraphics;Ljava/lang/String;IIII)V
+     197: goto          240
+     200: aload_1
+     201: aload         6
+     203: aload_0
+     204: invokevirtual #115                // Method m_252754_:()I
+     207: aload_0
+     208: invokevirtual #118                // Method m_252907_:()I
+     211: bipush        22
+     213: bipush        24
+     215: fconst_0
+     216: fconst_0
+     217: getstatic     #128                // Field cn/blockforge/generated/generatedmod/client/CultivationVisionPage.ROOT_WIDTHS:[I
+     220: aload_0
+     221: getfield      #33                 // Field val$index:I
+     224: iaload
+     225: bipush        79
+     227: getstatic     #128                // Field cn/blockforge/generated/generatedmod/client/CultivationVisionPage.ROOT_WIDTHS:[I
+     230: aload_0
+     231: getfield      #33                 // Field val$index:I
+     234: iaload
+     235: bipush        79
+     237: invokevirtual #132                // Method net/minecraft/client/gui/GuiGraphics.m_280411_:(Lnet/minecraft/resources/ResourceLocation;IIIIFFIIII)V
+     240: aload_1
+     241: fconst_1
+     242: fconst_1
+     243: fconst_1
+     244: fconst_1
+     245: invokevirtual #97                 // Method net/minecraft/client/gui/GuiGraphics.m_280246_:(FFFF)V
+     248: invokestatic  #135                // Method com/mojang/blaze3d/systems/RenderSystem.disableBlend:()V
+     251: iload         7
+     253: ifne          261
+     256: iload         8
+     258: ifeq          312
+     261: aload_1
+     262: aload_0
+     263: getfield      #31                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+     266: invokestatic  #139                // Method cn/blockforge/generated/generatedmod/client/CultivationVisionPage.access$000:(Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;)Lnet/minecraft/client/gui/Font;
+     269: iload         7
+     271: ifeq          279
+     274: ldc           #141                // String À×
+     276: goto          281
+     279: ldc           #145                // String Òì
+     281: aload_0
+     282: invokevirtual #115                // Method m_252754_:()I
+     285: bipush        7
+     287: iadd
+     288: aload_0
+     289: invokevirtual #118                // Method m_252907_:()I
+     292: bipush        8
+     294: iadd
+     295: iload         7
+     297: ifeq          305
+     300: ldc           #146                // int 14271743
+     302: goto          307
+     305: ldc           #147                // int 10547455
+     307: iconst_0
+     308: invokevirtual #151                // Method net/minecraft/client/gui/GuiGraphics.m_280056_:(Lnet/minecraft/client/gui/Font;Ljava/lang/String;IIIZ)I
+     311: pop
+     312: aload_0
+     313: invokevirtual #155                // Method m_198029_:()Z
+     316: ifeq          396
+     319: aload_0
+     320: getfield      #33                 // Field val$index:I
+     323: iconst_1
+     324: if_icmpeq     335
+     327: aload_0
+     328: getfield      #33                 // Field val$index:I
+     331: iconst_3
+     332: if_icmpne     382
+     335: aload_0
+     336: getfield      #31                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+     339: aload_0
+     340: getfield      #33                 // Field val$index:I
+     343: invokevirtual #159                // Method cn/blockforge/generated/generatedmod/client/CultivationVisionPage.rootHint:(I)Lnet/minecraft/network/chat/Component;
+     346: invokeinterface #165,  1          // InterfaceMethod net/minecraft/network/chat/Component.m_6881_:()Lnet/minecraft/network/chat/MutableComponent;
+     351: ldc           #167                // String \n
+     353: invokevirtual #173                // Method net/minecraft/network/chat/MutableComponent.m_130946_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     356: aload_0
+     357: getfield      #31                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+     360: aload_0
+     361: getfield      #33                 // Field val$index:I
+     364: iconst_1
+     365: if_icmpne     372
+     368: iconst_0
+     369: goto          373
+     372: iconst_1
+     373: invokevirtual #176                // Method cn/blockforge/generated/generatedmod/client/CultivationVisionPage.formHint:(I)Lnet/minecraft/network/chat/Component;
+     376: invokevirtual #180                // Method net/minecraft/network/chat/MutableComponent.m_7220_:(Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent;
+     379: goto          393
+     382: aload_0
+     383: getfield      #31                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationVisionPage;
+     386: aload_0
+     387: getfield      #33                 // Field val$index:I
+     390: invokevirtual #159                // Method cn/blockforge/generated/generatedmod/client/CultivationVisionPage.rootHint:(I)Lnet/minecraft/network/chat/Component;
+     393: invokestatic  #184                // Method cn/blockforge/generated/generatedmod/client/CultivationUi.tooltip:(Lnet/minecraft/network/chat/Component;)V
+     396: return
+}

@@ -1,0 +1,27 @@
+const {chromium}=require(process.argv[2]);
+const fs=require('fs'),path=require('path'),assert=require('assert');
+const root=__dirname,checks=[],errors=[];
+const ok=(name)=>checks.push(name);
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});
+ const context=await browser.newContext({viewport:{width:1440,height:1080},acceptDownloads:true});
+ const page=await context.newPage();page.on('pageerror',e=>errors.push(String(e)));
+ await page.goto('http://127.0.0.1:8794/',{waitUntil:'networkidle'});
+ assert.strictEqual(await page.locator('[data-layer]').count(),12);assert.strictEqual(await page.locator('#layer-sources .card').count(),4);ok('12 组成层与默认体积来源显示');
+ await page.screenshot({path:path.join(root,'evidence','workbench-desktop.png')});
+ await page.locator('[data-layer="distortion"]').click();assert((await page.locator('#layer-detail').textContent()).includes('世界颜色副本'));ok('组成层切换及背景扭曲说明');
+ await page.locator('[data-view="library"]').click();assert.strictEqual(await page.locator('#library-cards .card').count(),17);ok('17 组源码资料库');
+ await page.locator('#priority').selectOption('P0');const expected=JSON.parse(fs.readFileSync(path.join(root,'catalog.json'),'utf8')).sources.filter(s=>s.priority==='P0').length;assert.strictEqual(await page.locator('#library-cards .card').count(),expected);ok('优先级筛选');
+ await page.locator('#priority').selectOption('all');await page.locator('#reuse').selectOption('unclear');assert.strictEqual(await page.locator('#library-cards .card').count(),2);ok('许可冲突与未授权来源筛选');
+ await page.locator('#reuse').selectOption('all');await page.locator('#search').fill('unfindable-QA-9921');assert.strictEqual(await page.locator('#library-cards .card').count(),0);ok('空检索结果');
+ await page.locator('#search').fill('');await page.locator('#library-cards [data-bookmark="psrd"]').click();await page.locator('#bookmarked').check();assert.strictEqual(await page.locator('#library-cards .card').count(),1);
+ await page.locator('#library-cards .source-notes summary').click();await page.locator('[data-note="psrd"]').fill('QA: 检查导数反馈与回放。');await page.reload({waitUntil:'networkidle'});await page.locator('[data-view="library"]').click();await page.locator('#bookmarked').check();assert.strictEqual(await page.locator('#library-cards .card').count(),1);assert.strictEqual(await page.locator('[data-note="psrd"]').inputValue(),'QA: 检查导数反馈与回放。');ok('收藏与笔记刷新持久化');
+ await page.locator('[data-view="plan"]').click();assert((await page.locator('#estimate').textContent()).includes('829.4'));await page.locator('#preset').selectOption('shield');assert.strictEqual(await page.locator('#strategy').inputValue(),'thin-shell');assert.strictEqual(await page.locator('[data-plan-layer][value="body"]').isChecked(),false);ok('采样算术估计与护盾路线切换');
+ await page.locator('#preset').selectOption('core');await page.locator('#plan-note').fill('QA: 保持三维结构。');const [dl]=await Promise.all([page.waitForEvent('download'),page.locator('#export').click()]);await dl.saveAs(path.join(root,'evidence','test-plan.json'));const plan=JSON.parse(fs.readFileSync(path.join(root,'evidence','test-plan.json'),'utf8'));assert.strictEqual(plan.kind,'research-plan');assert.strictEqual(plan.target.minecraft,'1.20.1');assert.strictEqual(plan.experiment.note,'QA: 保持三维结构。');assert(plan.sources.some(s=>s.id==='psrd'&&s.notes.includes('QA:')));assert(plan.sources.every(s=>s.code.length>0));ok('研究计划 JSON 下载、固定源码入口及笔记');
+ await page.locator('[data-view="reference"]').click();await page.waitForFunction(()=>document.querySelector('video').readyState>=1);await page.locator('[data-seek="132"]').click();await page.waitForFunction(()=>Math.abs(document.querySelector('video').currentTime-132)<.1);await page.locator('#speed').selectOption('0.25');assert.strictEqual(await page.locator('video').evaluate(v=>v.playbackRate),.25);await page.locator('#frame-next').click();assert(await page.locator('video').evaluate(v=>v.currentTime)>132);ok('原视频读取、跳转、慢放和单帧步进');
+ await page.locator('[data-view="decompose"]').click();await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth)<=391);await page.screenshot({path:path.join(root,'evidence','workbench-mobile.png'),fullPage:true});ok('390px 窄屏无横向溢出');
+ const offline=await context.newPage();offline.on('pageerror',e=>errors.push(String(e)));await offline.goto('file:///'+path.join(root,'index.html').replace(/\\/g,'/'));await offline.locator('[data-view="library"]').click();assert.strictEqual(await offline.locator('#library-cards .card').count(),17);await offline.locator('#search').fill('KvantWig');assert.strictEqual(await offline.locator('#library-cards .card').count(),1);ok('单文件 file:// 离线检索');
+ const range=await context.request.get('http://127.0.0.1:8794/reference.mp4',{headers:{Range:'bytes=0-1023'}});assert.strictEqual(range.status(),206);assert.strictEqual((await range.body()).length,1024);ok('视频 HTTP Range 支持');
+ assert.strictEqual(errors.length,0);ok('浏览器无页面脚本异常');
+ await browser.close();fs.writeFileSync(path.join(root,'evidence','browser-checks.json'),JSON.stringify({date:'2026-10-02',browser:'Microsoft Edge headless',checks,errors},null,2));console.log(JSON.stringify({checks:checks.length,errors},null,2));
+})().catch(e=>{fs.writeFileSync(path.join(root,'evidence','browser-checks.json'),JSON.stringify({checks,errors,failure:String(e)},null,2));console.error(e);process.exit(1)});

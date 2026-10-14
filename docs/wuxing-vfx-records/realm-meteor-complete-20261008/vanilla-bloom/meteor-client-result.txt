@@ -1,0 +1,1 @@
+PASS: isolated actual Forge rendering, remote hover/cruise/boost/turn/far observer, local first-person flight, stopped fade, depth-composite route, actual resource reload and resize. External shader pack=none; forced route fixture=true.

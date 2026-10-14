@@ -1,0 +1,23 @@
+{
+  "vertex":"localmaterial:sketch",
+  "fragment":"localmaterial:sketch",
+  "attributes":["Position","UV0"],
+  "samplers":[{"name":"Sampler0"},{"name":"Sampler1"},{"name":"Sampler2"},{"name":"Sampler3"},{"name":"Sampler4"},{"name":"Sampler5"}],
+  "uniforms":[
+    {"name":"TexelSize","type":"float","count":2,"values":[0.001,0.001]},
+    {"name":"Stop0","type":"float","count":4,"values":[0.95,0.40,0.10,0.0]},
+    {"name":"Stop1","type":"float","count":4,"values":[0.97,0.23,0.31,0.24]},
+    {"name":"Stop2","type":"float","count":4,"values":[0.81,0.23,0.62,0.49]},
+    {"name":"Stop3","type":"float","count":4,"values":[0.41,0.34,0.78,0.74]},
+    {"name":"Stop4","type":"float","count":4,"values":[0.11,0.77,0.88,1.0]},
+    {"name":"GradientAxis","type":"float","count":2,"values":[1,0]},
+    {"name":"GradientScale","type":"float","count":1,"values":[1]},
+    {"name":"GradientOffset","type":"float","count":1,"values":[0]},
+    {"name":"EdgeSensitivity","type":"float","count":1,"values":[0.58]},
+    {"name":"DetailSuppression","type":"float","count":1,"values":[0.88]},
+    {"name":"DepthStrength","type":"float","count":1,"values":[1.0]},
+    {"name":"ShadeAmount","type":"float","count":1,"values":[0.08]},
+    {"name":"LineWeight","type":"float","count":1,"values":[1]},
+    {"name":"DebugMode","type":"float","count":1,"values":[0]}
+  ]
+}

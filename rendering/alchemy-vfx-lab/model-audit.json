@@ -1,0 +1,55 @@
+{
+  "sourceProject": "E:\\五行仙途",
+  "model": "E:\\五行仙途\\src\\main\\resources\\assets\\wuxingxiantu\\models\\block\\cauldron_structure.obj",
+  "objSHA256": "31eae23cafb05f2a236e1a325f164945c0991d36312f1a98a9720f753aee28e2",
+  "bounds": {
+    "min": [
+      -2.50000014,
+      0.0,
+      -2.50000014
+    ],
+    "max": [
+      2.50000014,
+      3.577099066,
+      2.50000014
+    ]
+  },
+  "size": [
+    5.00000028,
+    3.577099066,
+    5.00000028
+  ],
+  "sourceVertices": 113010,
+  "faces": 28274,
+  "triangles": 56462,
+  "anchors": {
+    "fire": [
+      0,
+      0.045,
+      0
+    ],
+    "material": [
+      0,
+      1.38,
+      0
+    ],
+    "mouth": [
+      0,
+      3.2417925,
+      0
+    ],
+    "result": [
+      0,
+      4.0017925,
+      0
+    ]
+  },
+  "textureSHA256": {
+    "material_4": "508e2b5cebbaadd66d8d8b15bf5ac09f04bebcc8810671946c74dbc03cce1c36",
+    "material_2": "01e7ed01e47674a20b6f241f905cf0f7e55bf0254c7c298dd0577fd2e2e628bb",
+    "material_1": "0ca75421251e25c6955acc9e98a90602ce91f46d280ff0fa2b465f6f32a425cb",
+    "material_5": "5f6fea7995ccbaeb0b4ca7a1fa0e06e14eee9655ec113cdfed4a76715931b24f",
+    "material_0": "e82fed8b761db70757b34d40a86ad6480f193d222a2918d0ef94428ceb5461ca",
+    "material_3": "5aa17ed9b38f8cbe26ed53e1f224b810ea3d703c4bbac6788723646f44029ac1"
+  }
+}

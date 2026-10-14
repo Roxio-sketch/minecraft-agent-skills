@@ -1,0 +1,90 @@
+{
+  "environment": "oculus-off",
+  "label": "front-soft-oculus-off",
+  "savedAtUTC": "2026-10-10T02:24:20.441284+00:00",
+  "bloomDisabledForCapture": false,
+  "sourceFiles": 584,
+  "fixtureFiles": 3,
+  "actualImages": 291,
+  "resultSHA256": "562d507803e844d8c2c1e44385d1bb5157352f19fa121373e39ecca80cee29fd",
+  "result": "PASS",
+  "scope": "Actual production renderer/state evidence. Visual quality requires inspection.",
+  "implementation": "front-softening-20261010",
+  "sourceScope": {
+    "baselineReceipt": "reports/realm-flight-flow-20261009/delivery-verification.json",
+    "baselineReceiptSHA256": "1fca80d1fc5e37864e8004b94f47577af1fe0028fb15dba3acba0197ae650c74",
+    "baselineJarSHA256": "2abae1ead8115a9651b54ddcfbffd03526cec32f0af6dd8e950f6c842b6fe552",
+    "allowedChangedSources": [
+      "src/main/java/cn/blockforge/generated/generatedmod/client/CultivationVisionPage.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/client/FlyingSwordEffects.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/client/SwordFlightTrailHistory.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/MeteorBloomRenderer.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/event/CultivationTicker.java",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/realm_head_energy.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_post.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.fsh"
+    ],
+    "allowedAddedSources": [
+      "src/main/java/cn/blockforge/generated/generatedmod/client/SwordTrailPhase.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightCamera.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightCameraDynamics.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightLevel.java"
+    ],
+    "actualChangedSources": [
+      "src/main/java/cn/blockforge/generated/generatedmod/client/CultivationVisionPage.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/client/FlyingSwordEffects.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/client/SwordFlightTrailHistory.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/MeteorBloomRenderer.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/event/CultivationTicker.java",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/realm_head_energy.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_post.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.fsh"
+    ],
+    "actualAddedSources": [
+      "src/main/java/cn/blockforge/generated/generatedmod/client/SwordTrailPhase.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightCamera.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightCameraDynamics.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightLevel.java"
+    ],
+    "actualChangedResources": [
+      "META-INF/coremods.json",
+      "assets/wuxingxiantu/lang/en_us.json",
+      "assets/wuxingxiantu/lang/zh_cn.json",
+      "assets/wuxingxiantu/shaders/core/realm_head_energy.fsh",
+      "assets/wuxingxiantu/shaders/core/realm_meteor.fsh",
+      "assets/wuxingxiantu/shaders/core/realm_meteor_post.fsh",
+      "assets/wuxingxiantu/shaders/core/sword_flight.fsh",
+      "assets/wuxingxiantu/shaders/core/sword_flight_post.fsh"
+    ],
+    "allUnapprovedProductionJavaUnchanged": true,
+    "actualChangedBuildInputs": [
+      "src/main/java/cn/blockforge/generated/generatedmod/client/CultivationVisionPage.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/client/FlyingSwordEffects.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/client/SwordFlightTrailHistory.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/MeteorBloomRenderer.java",
+      "src/main/java/cn/blockforge/generated/generatedmod/event/CultivationTicker.java",
+      "src/main/resources/META-INF/coremods.json",
+      "src/main/resources/assets/wuxingxiantu/lang/en_us.json",
+      "src/main/resources/assets/wuxingxiantu/lang/zh_cn.json",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/realm_head_energy.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_post.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.fsh",
+      "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.fsh",
+      "src/regression/java/cn/blockforge/generated/generatedmod/BalanceRegression.java"
+    ],
+    "unapprovedBuildInputsUnchanged": true,
+    "flightMovementAndControlUnchanged": true,
+    "unapprovedCaptureFixturesUnchanged": true,
+    "scope": "Front-shader optimization plus explicitly requested third-person boost camera, six effect levels and long boosted sword-tail continuity. Realm movement/control/poses unchanged; FlightTierCapture appends independent actual-local camera and 2600-client-tick sword evidence."
+  },
+  "actualCameraImages": 10,
+  "actualCameraChecks": 42,
+  "actualLongSwordImages": 12,
+  "actualLongSwordChecks": 53,
+  "actualLongSwordClientTicks": 2600
+}

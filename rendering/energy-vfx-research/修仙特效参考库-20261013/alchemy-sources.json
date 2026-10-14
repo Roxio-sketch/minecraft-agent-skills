@@ -1,0 +1,211 @@
+[
+  {
+    "title": "Halloween Special ’20",
+    "url": "https://paulinavfx.com/halloween-special/",
+    "author": "Paulina VFX",
+    "platform": "作者博客",
+    "kind": "拆解",
+    "category": "炼丹炉/炉烟/炉火/药气",
+    "learn": "多层锅口幽灵烟、噪声扭曲、渐变遮罩、深度淡出、烟动画序列与上升光点；可迁移为炼丹炉口逸散药气。",
+    "license": "未知；未查到代码或贴图复用许可。",
+    "evidence": "本次打开作者页面并查阅文字拆解，核实 Shader Graph、EmberGen、纹理与粒子层的说明；未观看完整视频，未取得工程源码。"
+  },
+  {
+    "title": "Magic Potion Shader / Bubbling Cauldron / Dungeon Scene",
+    "url": "https://feargrieve.wordpress.com/portfolio/bubbling-cauldron-potion/",
+    "author": "Dominic Feargrieve",
+    "platform": "作者博客",
+    "kind": "拆解",
+    "category": "炼丹炉/药液沸腾/气泡/炉火",
+    "learn": "波纹、平面反射、液面顶点位移、气泡边缘 Fresnel 与生命周期破裂、球网格火焰；可迁移为温火、沸腾、暴沸丹炉状态。",
+    "license": "博客实现复用许可未知；页面链接商业 Unity 素材包，未下载。",
+    "evidence": "本次打开作者页查阅具体技术说明及商品链接；已核实作者描述的 shader 与粒子结构，未观看完整视频或读取工程源码。"
+  },
+  {
+    "title": "Solaris Workshop - Magic Cauldron | Simon Littlejohn | Houdini HIVE Worldwide",
+    "url": "https://vimeo.com/420539757",
+    "author": "Simon Littlejohn / SideFX Houdini",
+    "platform": "SideFX Houdini 官方 Vimeo",
+    "kind": "教程",
+    "category": "炼丹炉/扭卷烟气/炼化",
+    "learn": "作者课程简介列出 VEX、sparse pyro、模拟外观变体与 Karma/USD 工作流；可用于学习烟气形态后烘焙或迁移为实时近似，原课程不是实时 Minecraft 实现。",
+    "license": "未知；公开观看不等于工程或生成素材的再分发许可。",
+    "evidence": "本次打开官方视频页面并查阅标题、上传者和课程介绍；未观看完整课程，未取得工程。官方 YouTube 同课程 https://www.youtube.com/watch?v=h-jq7idM4Dc 只计一个来源。"
+  },
+  {
+    "title": "Liquid Shader Breakdown",
+    "url": "https://www.cyanilux.com/tutorials/liquid-shader-breakdown/",
+    "author": "Cyanilux",
+    "platform": "作者教程博客",
+    "kind": "拆解",
+    "category": "药瓶/药液/液位/泡沫",
+    "learn": "按世界高度裁剪容器、背面伪造液面、泡沫层及轻微液面摇动；可用于药瓶、丹液和小型炉口。",
+    "license": "作者主页 https://www.cyanilux.com/ 明示帖子中的 Shader Code、Shader Graph 和 C# 代码为 CC0，除非帖子另行注明；教程文本仍有版权；作者要求不要把教程 shader 上传素材商店。",
+    "evidence": "本次打开具体教程查阅逐步 Graph 技术说明，并打开主页核实 License / Usage；未下载工程，未观看完整视频。"
+  },
+  {
+    "title": "Whirlpool Shader Breakdown",
+    "url": "https://www.cyanilux.com/tutorials/whirlpool-shader-breakdown/",
+    "author": "Cyanilux",
+    "platform": "作者教程博客",
+    "kind": "拆解",
+    "category": "药液旋涡/灵气汇聚/炼化",
+    "learn": "极坐标、径向吸入、随半径改变角度、漏斗顶点形变、世界空间噪声；可迁移为炉内炼化旋涡与灵液凝聚。",
+    "license": "作者主页 https://www.cyanilux.com/ 明示帖内 Shader/Graph/C# 为 CC0（另有注明除外）；教程文本仍有版权，作者要求不要把教程 shader 上传素材商店。",
+    "evidence": "本次打开具体教程，查阅极坐标、透明排序限制与 C# 参数脚本；已读取页面中公开的 C# 代码；未下载工程。"
+  },
+  {
+    "title": "Dissolve Shader Breakdown",
+    "url": "https://www.cyanilux.com/tutorials/dissolve-shader-breakdown/",
+    "author": "Cyanilux",
+    "platform": "作者教程博客",
+    "kind": "拆解",
+    "category": "药材炼化/丹丸显现/发光溶解",
+    "learn": "噪声阈值溶解、发光边缘、按高度推进、每对象随机偏移；可迁移为药材化光和丹丸由灵光凝出。",
+    "license": "作者主页 https://www.cyanilux.com/ 明示帖内 Shader/Graph/C# 为 CC0（另有注明除外）；教程文本仍有版权，作者要求不要把教程 shader 上传素材商店。",
+    "evidence": "本次打开具体教程并查阅阈值、边缘颜色、高度溶解及视空间 UV 限制说明；未下载工程或观看完整视频。"
+  },
+  {
+    "title": "Simple shader that imitates a liquid moving inside a vessel",
+    "url": "https://gist.github.com/cortvi/876ef402b400eddc3450d147c9e4830f",
+    "author": "cortvi",
+    "platform": "作者 GitHub Gist",
+    "kind": "源码",
+    "category": "药瓶/液位/轻量药液",
+    "learn": "LiquidControl.cs 的液位参数控制与 LiquidVolume.shader 的容器液体裁剪、透明队列，可作为小型实现阅读。",
+    "license": "未知；本次未查到明确许可证，不可仅因公开源码就视为允许复用。",
+    "evidence": "本次打开 Gist，实际读取 LiquidControl.cs 及可见 LiquidVolume.shader 源码；未下载 ZIP。"
+  },
+  {
+    "title": "Magic Explosion Spell breakdown",
+    "url": "https://realtimevfx.com/t/magic-explosion-spell-breakdown/19039",
+    "author": "Geri",
+    "platform": "Real Time VFX 作者帖",
+    "kind": "拆解",
+    "category": "凝丹聚气/成丹爆发/炼化收束",
+    "learn": "多次生成螺旋网格、滚动噪声与软遮罩、向中心移动的局部掩码、核心抖动与双形状爆发；可迁移为丹成前收束和出丹瞬间。",
+    "license": "未知；作者使用商业 All In 1 VFX Toolkit，未核实免费工程或源码许可。",
+    "evidence": "本次打开作者原帖并查阅完整文字拆解及图/GIF条目；未观看完整视频，未取得 Toolkit 或工程源码。"
+  },
+  {
+    "title": "Leslie Stowe - Sketch #50: Magic Circle Intro WIP",
+    "url": "https://realtimevfx.com/t/leslie-stowe-sketch-50/19532/15",
+    "author": "Leslie Stowe / jehearo",
+    "platform": "Real Time VFX 作者帖",
+    "kind": "拆解",
+    "category": "炼丹符阵/符文逐段点亮/召唤阵",
+    "learn": "时间线驱动溶解、发光遮罩、粒子率与旋转速度，亮起区域生成粒子；可迁移为炉身符文和炼丹阵启动，原帖 GBuffer 方法须适配 Forge。",
+    "license": "未知；未核实完整源码或工程复用许可。",
+    "evidence": "本次打开具体帖子查阅 Timeline、reveal gradient、dissolve mask 与 Base Colour GBuffer 说明；未读取完整工程或观看视频。"
+  },
+  {
+    "title": "MagicCircle",
+    "url": "https://github.com/Dooomino/MagicCircle",
+    "author": "Dooomino",
+    "platform": "作者 GitHub",
+    "kind": "源码",
+    "category": "程序符阵/符环/阵纹生成",
+    "learn": "仓库公开 JS/CSS/HTML 与示例，可作为程序化魔法阵的结构入口；重新设计为八卦、阵纹、云篆属于迁移建议。",
+    "license": "未知；本次可见仓库根目录没有 LICENSE，未确认复用权限。",
+    "evidence": "本次打开仓库主页、查阅 README 和文件目录，核实 js/css/index.html 与在线演示存在；未逐行读取具体 JS 实现。"
+  },
+  {
+    "title": "Magic Circle FX - 15 Presets, Thousands of 2D Magic Circles for Godot 4",
+    "url": "https://dimensionalmios.itch.io/almios-magic-circles",
+    "author": "DimensionAlmios",
+    "platform": "作者 itch.io",
+    "kind": "商业素材",
+    "category": "多层符阵/召唤/封丹阵/灵核",
+    "learn": "多环、独立转动符文、星形与多边形、径向线、中心旋涡、逐笔显现及 seed 生成，可作为炼丹阵和封丹阵的交互参数参考。",
+    "license": "页面自定义许可：允许无限个人/商业项目和修改，禁止转售或再分发包本身；不是 MIT。",
+    "evidence": "本次打开作者商品页面，核实当前 15 预设、可试玩入口、包内容、付费获取与 License；没有下载、购买、读取付费 shader 或实际运行演示。"
+  },
+  {
+    "title": "Smoke Cauldron FX",
+    "url": "https://edvard-dante.artstation.com/projects/5vANXA",
+    "author": "Yuri Podchasha",
+    "platform": "作者 ArtStation",
+    "kind": "作品",
+    "category": "炉口烟气/手绘烟循环",
+    "learn": "作者说明为手绘风格化烟循环；可作为炼丹炉口烟形与循环动画参考。",
+    "license": "页面标注 All rights reserved；没有素材复用许可证据。",
+    "evidence": "本次打开作者作品页并查阅标题、作者、手绘烟循环说明和版权标注；未观看完整视频，未发现源码或教程。"
+  },
+  {
+    "title": "Bake ’n Switch VFX - Sage’s Vortex Cauldron",
+    "url": "https://sylviaysy.artstation.com/projects/J98Krn",
+    "author": "Sylvia Yap",
+    "platform": "作者 ArtStation",
+    "kind": "作品",
+    "category": "药材吸入/炼化旋涡/聚合",
+    "learn": "作者说明技能将对象吸入锅中，页面列多视角展示；可迁移为药材绕炉旋转后逐次吸入。",
+    "license": "页面标注 All rights reserved；没有素材复用许可证据。",
+    "evidence": "本次打开作者作品页，核实吸入机制文字、Preview/Front/Close/Side/Top Down条目；未观看完整视频，未读取实现源码。"
+  },
+  {
+    "title": "Ravenswatch - Baba Yaga’s VFX",
+    "url": "https://pikarine.artstation.com/projects/6LN5A0",
+    "author": "Karine Amadou",
+    "platform": "作者 ArtStation",
+    "kind": "作品",
+    "category": "炉口喷射/属性变体/失败喷发",
+    "learn": "页面列 Dark、Poison、Fire 的召出、攻击、消失和锅口弹体；可迁移为不同丹药属性和炼丹失败状态。",
+    "license": "页面标注 All rights reserved；没有素材复用许可证据。",
+    "evidence": "本次打开作者页，核实作品归属、Skulls Spawning/Attacks/Dying 与 Cauldron’s projectiles 条目；未观看完整视频，未读取源码。"
+  },
+  {
+    "title": "Rick & Morty [Cauldron - VFX / Character Animation]",
+    "url": "https://raelmegalos.artstation.com/projects/NGGNAz",
+    "author": "Israel Henrique",
+    "platform": "作者 ArtStation",
+    "kind": "作品",
+    "category": "炉材质/火烟雾协同/状态控制",
+    "learn": "作者说明锅材质用 shader 与 Blueprint 控制，火、烟、雾用 Niagara；可迁移为统一炼丹状态控制各视觉层。",
+    "license": "页面标注 All rights reserved；没有素材复用许可证据。",
+    "evidence": "本次打开作者页查阅 shader、Blueprint、Niagara 和工具说明；未观看完整视频，未取得工程。"
+  },
+  {
+    "title": "Soundcraft - Abertay Multidisciplinary Project Y2",
+    "url": "https://mmircea.artstation.com/projects/lGJodz",
+    "author": "Marius Mircea",
+    "platform": "作者 ArtStation",
+    "kind": "作品",
+    "category": "炉烟/气泡/药材悬浮/交互反馈",
+    "learn": "页面分别列 Cauldron VFX、Bubbles VFX、Ingredient highlight + hover shader；可映射药材品质高亮、投料悬浮和炉内气泡。",
+    "license": "页面标注 All rights reserved；没有素材复用许可证据。",
+    "evidence": "本次打开作者页并查阅项目职责、气泡与悬浮 shader 条目及团队游戏链接；未观看完整视频，未取得 VFX 源码。"
+  },
+  {
+    "title": "Shaders: Potions Liquid / Cauldron liquid animation / Smoke",
+    "url": "https://github.com/AsaelFernandez/Shaders",
+    "author": "AsaelFernandez",
+    "platform": "作者 GitHub",
+    "kind": "作品",
+    "category": "药液/沸腾/烟气合集",
+    "learn": "README 描述运动敏感药瓶、按时间沸腾锅液、气泡、波浪强度与烟气变形，可作方向参考。",
+    "license": "GitHub 主页明确标示 MIT；但当前可见文件仅 README 与 LICENSE，未见 shader 实现，不能称为可直接复用的源码资产。",
+    "evidence": "本次打开 GitHub 主页，查阅 README、MIT 标识及文件目录；没有读取 shader 源码，因为目录未显示任何 shader 文件。"
+  },
+  {
+    "title": "Liquid Potion",
+    "url": "https://dhassets.github.io/docs/shaders/liquid-potion/",
+    "author": "DH Assets / Dominik Hurta",
+    "platform": "作者文档",
+    "kind": "教程",
+    "category": "药液参数/分层颜色/药瓶玻璃",
+    "learn": "液位、底中顶颜色分层、Fresnel 玻璃参数；适合学习药瓶与炉液编辑台的参数组织。",
+    "license": "对应商品 https://marketplace.unity.com/packages/vfx/shaders/liquid-potion-dh-shaders-288005 明示 Standard Unity Asset Store EULA；文档文本复用许可未核实。",
+    "evidence": "本次打开作者文档并查阅液位/颜色/玻璃参数，同时检索核实商品页许可字段；未下载付费包或读取 shader 源码。"
+  },
+  {
+    "title": "Procedural Animation - Cauldron",
+    "url": "https://imagecomputing.net/course/2024_gdr_igrv/animation_graphics_2024/practice/content/01_procedural_animation/index.html",
+    "author": "imagecomputing.net 图形课程（本页未列个人作者）",
+    "platform": "图形课程练习",
+    "kind": "技术基础",
+    "category": "炼丹炉/轻量炉烟/气泡/液面形变",
+    "learn": "粒子气泡轨迹、相机朝向 smoke billboards、生命周期透明度、圆形网格液面及 simplex noise 顶点形变，适合轻量实时丹炉。",
+    "license": "未知；本页未见明确源码许可。",
+    "evidence": "本次打开练习页并查阅 bubbles、smoke billboards、liquid surface 的具体函数和 shader 路径说明；未取得完整课程代码或运行互动演示。"
+  }
+]

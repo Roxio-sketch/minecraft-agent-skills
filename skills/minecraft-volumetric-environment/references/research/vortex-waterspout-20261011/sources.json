@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-11",
+  "sources": [
+    {
+      "id": "noaa",
+      "url": "https://www.weather.gov/apx/waterspout",
+      "role": "surface spiral, spray ring, turbulent hollow condensation shell",
+      "scope": "weather morphology, not renderer code"
+    },
+    {
+      "id": "sidefx-vortex",
+      "url": "https://www.sidefx.com/docs/houdini/nodes/dop/vortexforce.html",
+      "role": "open curve axis with orbit and lift"
+    },
+    {
+      "id": "sidefx-attributes",
+      "url": "https://www.sidefx.com/docs/houdini/nodes/sop/vortexforceattribs",
+      "role": "radius/tangential velocity/lift separated along axis"
+    },
+    {
+      "id": "paper2005",
+      "url": "https://cs.uwaterloo.ca/~jwlwan/papers/WanDing05.pdf",
+      "role": "Navier Stokes + boundary inflow/updraft + particles density volume splatting",
+      "scope": "our procedural renderer is not its fluid solver"
+    },
+    {
+      "id": "epic-volume",
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/volumetric-clouds?application_version=4.27",
+      "role": "density material/volume ray marching/self shadow cost"
+    },
+    {
+      "id": "ue5-reference",
+      "url": "https://github.com/RafaelColpani/UE5-Tornado",
+      "role": "Niagara showcase smoke/dust/debris, author warns about performance",
+      "scope": "README inspected; no assets or code imported, no license verified"
+    }
+  ],
+  "iterationT": {
+    "zipManifest": "../iterationT-storm-20261010/manifest.json",
+    "anchors": [
+      {
+        "file": "shaders/Lib/IndividualFounctions/WaterWaves.glsl",
+        "line": 31,
+        "symbol": "float GetWaves",
+        "sha256": "cd319a2920a6c86dd4a7799203ee713826f2cdd22922bba1ad0602d22146aa51"
+      },
+      {
+        "file": "shaders/Lib/IndividualFounctions/WaterWaves.glsl",
+        "line": 94,
+        "symbol": "vec3 GetWaterParallaxCoord",
+        "sha256": "cd319a2920a6c86dd4a7799203ee713826f2cdd22922bba1ad0602d22146aa51"
+      },
+      {
+        "file": "shaders/Lib/Programs/Gbuffers/Water_FS.glsl",
+        "line": 154,
+        "symbol": "GetWaterParallaxCoord",
+        "sha256": "174a978e0908df159eac75e7108cfff26dda597d91364dfadee7afa23ca575c7"
+      },
+      {
+        "file": "shaders/Lib/Programs/Gbuffers/Water_FS.glsl",
+        "line": 157,
+        "symbol": "GetWavesNormal",
+        "sha256": "174a978e0908df159eac75e7108cfff26dda597d91364dfadee7afa23ca575c7"
+      },
+      {
+        "file": "shaders/Lib/Programs/Gbuffers/Water_FS.glsl",
+        "line": 54,
+        "symbol": "Ripple.glsl",
+        "sha256": "174a978e0908df159eac75e7108cfff26dda597d91364dfadee7afa23ca575c7"
+      }
+    ],
+    "finding": "No tornado/waterspout/vortex/Chinese equivalents found in extracted text. WaterWaves uses moving texture noise, normals and parallax; this is not a waterspout solver."
+  },
+  "iteration2": {
+    "cloudResearch": "CLOUD_ITERATION_RESEARCH.md",
+    "cloudSourceManifest": "cloud-iteration-source-manifest.json",
+    "waterResearch": "WATER_ITERATION.md",
+    "implemented": "ITERATION2_RESULT.md",
+    "redistribution": "Original workbench and notes only; exclude primary-pdf and third-party full code/textures"
+  }
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "path": "C:\\Users\\MAINTAINER\\Downloads\\[九寸灵台]新的遁光特效.mp4",
+    "metadata": {
+      "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+      "codec": "h264",
+      "pix_fmt": "yuv420p(tv, bt709, progressive)",
+      "audio_codec": "aac",
+      "fps": 28.71,
+      "source_size": [
+        1728,
+        1080
+      ],
+      "size": [
+        1728,
+        1080
+      ],
+      "rotate": 0,
+      "duration": 61.83
+    },
+    "times": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48,
+      52,
+      56,
+      60
+    ]
+  },
+  {
+    "path": "C:\\Users\\MAINTAINER\\Downloads\\在MC里实现真正的遁光飞行！修仙模组 - 修仙具象化 Xianxia visualization.mp4",
+    "metadata": {
+      "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+      "codec": "h264",
+      "pix_fmt": "yuv420p(tv, bt709, progressive)",
+      "audio_codec": "aac",
+      "fps": 30.0,
+      "source_size": [
+        1920,
+        1080
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "rotate": 0,
+      "duration": 161.62
+    },
+    "times": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160
+    ]
+  }
+]

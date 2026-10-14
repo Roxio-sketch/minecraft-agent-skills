@@ -1,0 +1,1268 @@
+{
+  "schema": "realm-flight-input-analysis/1",
+  "source": "fixed-input/flight-input-result.json",
+  "sourceSha256": "44a56de24409cb5bde231db3ad8702070e32ad8093de89919394a9b313819d30",
+  "result": "PASS",
+  "checkCount": 45,
+  "passedCheckCount": 45,
+  "failedChecks": [],
+  "telemetryPairs": 647,
+  "speed": {
+    "client": {
+      "allSampleCount": 647,
+      "allMin": 0.05,
+      "allMax": 0.05,
+      "flyingSampleCount": 432,
+      "flyingMin": 0.05,
+      "flyingMax": 0.05,
+      "zeroOrNegativeFlyingSamples": 0,
+      "controllerMaps": [
+        "CLIENT_STATES"
+      ]
+    },
+    "server": {
+      "allSampleCount": 647,
+      "allMin": 0.05,
+      "allMax": 0.05,
+      "flyingSampleCount": 432,
+      "flyingMin": 0.05,
+      "flyingMax": 0.05,
+      "zeroOrNegativeFlyingSamples": 0,
+      "controllerMaps": [
+        "SERVER_STATES"
+      ]
+    }
+  },
+  "movement": {
+    "realm8_special_ground": {
+      "tick": 85,
+      "pass": true,
+      "clientHorizontal": 51.45189492640809,
+      "serverHorizontal": 51.45189492640809,
+      "minimum": 8.0,
+      "positionAgreement": {
+        "tick": 85,
+        "name": "realm8_special_ground_position_agreement",
+        "pass": true,
+        "detail": "Client/server latest-sampled position discrepancy=0.0; asynchronous sample is usually one tick old"
+      },
+      "abilities": {
+        "tick": 85,
+        "name": "realm8_special_ground_abilities",
+        "pass": true,
+        "detail": "Actual client/server mayfly/flying are enabled"
+      }
+    },
+    "realm8_vanilla_preference": {
+      "tick": 180,
+      "pass": true,
+      "clientHorizontal": 61.348,
+      "serverHorizontal": 61.348,
+      "minimum": 8.0,
+      "positionAgreement": {
+        "tick": 180,
+        "name": "realm8_vanilla_preference_position_agreement",
+        "pass": true,
+        "detail": "Client/server latest-sampled position discrepancy=0.0; asynchronous sample is usually one tick old"
+      },
+      "abilities": {
+        "tick": 180,
+        "name": "realm8_vanilla_preference_abilities",
+        "pass": true,
+        "detail": "Actual client/server mayfly/flying are enabled"
+      }
+    },
+    "inventory_closed_resume": {
+      "tick": 250,
+      "pass": true,
+      "clientHorizontal": 37.14200000000022,
+      "serverHorizontal": 37.14200000000022,
+      "minimum": 8.0,
+      "positionAgreement": {
+        "tick": 250,
+        "name": "inventory_closed_resume_position_agreement",
+        "pass": true,
+        "detail": "Client/server latest-sampled position discrepancy=0.0; asynchronous sample is usually one tick old"
+      },
+      "abilities": {
+        "tick": 250,
+        "name": "inventory_closed_resume_abilities",
+        "pass": true,
+        "detail": "Actual client/server mayfly/flying are enabled"
+      }
+    },
+    "realm8_ground_reentry": {
+      "tick": 380,
+      "pass": true,
+      "clientHorizontal": 37.0133285524349,
+      "serverHorizontal": 37.0133285524349,
+      "minimum": 8.0,
+      "positionAgreement": {
+        "tick": 380,
+        "name": "realm8_ground_reentry_position_agreement",
+        "pass": true,
+        "detail": "Client/server latest-sampled position discrepancy=0.0; asynchronous sample is usually one tick old"
+      },
+      "abilities": {
+        "tick": 380,
+        "name": "realm8_ground_reentry_abilities",
+        "pass": true,
+        "detail": "Actual client/server mayfly/flying are enabled"
+      }
+    },
+    "realm3_ground_entry_remapped_boost": {
+      "tick": 500,
+      "pass": true,
+      "clientHorizontal": 18.640222222222263,
+      "serverHorizontal": 18.640222222222263,
+      "minimum": 6.0,
+      "positionAgreement": {
+        "tick": 500,
+        "name": "realm3_ground_entry_remapped_boost_position_agreement",
+        "pass": true,
+        "detail": "Client/server latest-sampled position discrepancy=0.0; asynchronous sample is usually one tick old"
+      },
+      "abilities": {
+        "tick": 500,
+        "name": "realm3_ground_entry_remapped_boost_abilities",
+        "pass": true,
+        "detail": "Actual client/server mayfly/flying are enabled"
+      }
+    },
+    "realm3_toggle_key_settings": {
+      "tick": 580,
+      "pass": true,
+      "clientHorizontal": 13.996888888889032,
+      "serverHorizontal": 13.996888888889032,
+      "minimum": 6.0,
+      "positionAgreement": {
+        "tick": 580,
+        "name": "realm3_toggle_key_settings_position_agreement",
+        "pass": true,
+        "detail": "Client/server latest-sampled position discrepancy=0.0; asynchronous sample is usually one tick old"
+      },
+      "abilities": {
+        "tick": 580,
+        "name": "realm3_toggle_key_settings_abilities",
+        "pass": true,
+        "detail": "Actual client/server mayfly/flying are enabled"
+      }
+    },
+    "custom_after_fallback": {
+      "tick": 280,
+      "pass": true,
+      "clientHorizontal": 7.6440000000000055,
+      "serverHorizontal": 7.6440000000000055,
+      "minimum": 2.0,
+      "positionAgreement": {
+        "tick": 280,
+        "name": "custom_after_fallback_position_agreement",
+        "pass": true,
+        "detail": "Client/server latest-sampled position discrepancy=0.0; asynchronous sample is usually one tick old"
+      },
+      "abilities": {
+        "tick": 280,
+        "name": "custom_after_fallback_abilities",
+        "pass": true,
+        "detail": "Actual client/server mayfly/flying are enabled"
+      }
+    },
+    "custom_after_non_periodic_fallback": {
+      "tick": 380,
+      "pass": true,
+      "clientHorizontal": 0.29400000000001114,
+      "serverHorizontal": 0.29400000000001114,
+      "minimum": 0.2,
+      "positionAgreement": {
+        "tick": 380,
+        "name": "custom_after_non_periodic_fallback_position_agreement",
+        "pass": true,
+        "detail": "Client/server latest-sampled position discrepancy=0.0; asynchronous sample is usually one tick old"
+      },
+      "abilities": {
+        "tick": 380,
+        "name": "custom_after_non_periodic_fallback_abilities",
+        "pass": true,
+        "detail": "Actual client/server mayfly/flying are enabled"
+      }
+    }
+  },
+  "menuChecks": [
+    {
+      "tick": 214,
+      "name": "inventory_stationary",
+      "pass": true,
+      "detail": "Horizontal displacement while menu open=0.0"
+    },
+    {
+      "tick": 214,
+      "name": "inventory_does_not_cancel_flight",
+      "pass": true,
+      "detail": "W held while InventoryScreen suppresses flight input"
+    }
+  ],
+  "doubleSpaceChecks": [
+    {
+      "tick": 0,
+      "name": "initial_survival_not_flying",
+      "pass": true,
+      "detail": "Flight starts disabled; real permission/buff arrived from server"
+    },
+    {
+      "tick": 98,
+      "name": "airborne_exit",
+      "pass": true,
+      "detail": "Real double-space exit while airborne"
+    },
+    {
+      "tick": 108,
+      "name": "airborne_reentry_abilities",
+      "pass": true,
+      "detail": "Actual client/server mayfly/flying are enabled"
+    },
+    {
+      "tick": 108,
+      "name": "airborne_reentry_above_ground",
+      "pass": true,
+      "detail": "Reentered with real jump presses before landing"
+    },
+    {
+      "tick": 448,
+      "name": "realm3_real_permission",
+      "pass": true,
+      "detail": "Realm3 synchronized and normal server flight grant remains active"
+    }
+  ],
+  "crouchAndRemapChecks": [
+    {
+      "tick": 315,
+      "name": "realm8_first_landing",
+      "pass": true,
+      "detail": "Actual onGround=true, flying=false, y=131.0"
+    },
+    {
+      "tick": 425,
+      "name": "realm8_second_landing",
+      "pass": true,
+      "detail": "Actual onGround=true, flying=false, y=131.0"
+    },
+    {
+      "tick": 485,
+      "name": "remapped_shift_boost",
+      "pass": true,
+      "detail": "Sprint is remapped to left Shift, held logical key is down"
+    },
+    {
+      "tick": 530,
+      "name": "realm3_remapped_control_landing",
+      "pass": true,
+      "detail": "Actual onGround=true, flying=false, y=131.0"
+    },
+    {
+      "tick": 565,
+      "name": "toggle_sprint_release_keeps_toggle",
+      "pass": true,
+      "detail": "Single remapped Shift press remains toggled after physical release"
+    },
+    {
+      "tick": 605,
+      "name": "toggle_crouch_release_keeps_toggle",
+      "pass": true,
+      "detail": "Single remapped Control press remains toggled after release"
+    },
+    {
+      "tick": 625,
+      "name": "realm3_toggle_crouch_landing",
+      "pass": true,
+      "detail": "Actual onGround=true, flying=false, y=131.0"
+    }
+  ],
+  "faultWindows": [
+    {
+      "fixtureTicks": [
+        260,
+        267
+      ],
+      "sampleCount": 8,
+      "injectedPreviousMomentum": "Vec3.ZERO after zero-speed packet, so subsequent displacement does not inherit the pre-fault custom flight velocity",
+      "speedRecoveryCheck": {
+        "tick": 267,
+        "name": "fallback_positive_speed",
+        "pass": true,
+        "detail": "Fallback restored positive ability speed without controller state"
+      },
+      "movementAssertion": {
+        "tick": 267,
+        "pass": true,
+        "clientHorizontal": 1.1509104492090216,
+        "serverHorizontal": 1.1509104492090216,
+        "minimum": 0.2,
+        "positionAgreement": {
+          "tick": 267,
+          "name": "zero_speed_no_state_fallback_position_agreement",
+          "pass": true,
+          "detail": "Client/server latest-sampled position discrepancy=0.0; asynchronous sample is usually one tick old"
+        },
+        "abilities": null
+      },
+      "sampleBoundary": "Client telemetry is sampled at ClientTick END. First-to-last END delta excludes physics at the first tick and includes physics at the last; movement assertion runs at last tick START. The server future snapshot is asynchronous and usually follows its paired client tick by one update.",
+      "firstToLastEndDelta": {
+        "client": {
+          "x": 1.3903285507508656,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.3903285507508656,
+          "distance3d": 1.3903285507508656
+        },
+        "server": {
+          "x": 1.3903285507508656,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.3903285507508656,
+          "distance3d": 1.3903285507508656
+        }
+      },
+      "previousEndToLastEndDelta": {
+        "client": {
+          "x": 1.439328552434688,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.439328552434688,
+          "distance3d": 1.439328552434688
+        },
+        "server": {
+          "x": 1.439328552434688,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.439328552434688,
+          "distance3d": 1.439328552434688
+        }
+      },
+      "previousEndToBeforeAssertionEndDelta": {
+        "client": {
+          "x": 1.1509104492090216,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.1509104492090216,
+          "distance3d": 1.1509104492090216
+        },
+        "server": {
+          "x": 1.1509104492090216,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.1509104492090216,
+          "distance3d": 1.1509104492090216
+        }
+      },
+      "endSnapshots": [
+        {
+          "client": {
+            "fixtureTick": 260,
+            "entityTick": 353,
+            "gameTime": 279,
+            "x": 197.00758967819164,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.044590002817362605, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": false,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 260,
+            "entityTick": 267,
+            "gameTime": 279,
+            "x": 197.00758967819164,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.0, 0.0, 0.0)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(0.0, 0.0, 0.0)",
+              "velocity": "(0.0, 0.0, 0.0)",
+              "received": "278",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 261,
+            "entityTick": 354,
+            "gameTime": 280,
+            "x": 197.10117968269282,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.08516690655058194, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": false,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 261,
+            "entityTick": 268,
+            "gameTime": 280,
+            "x": 197.10117968269282,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.0, 0.0, 0.0)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(0.0, 0.0, 0.0)",
+              "velocity": "(0.0, 0.0, 0.0)",
+              "received": "278",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 262,
+            "entityTick": 355,
+            "gameTime": 281,
+            "x": 197.23534659092724,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.1220918900119832, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": false,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 262,
+            "entityTick": 269,
+            "gameTime": 281,
+            "x": 197.23534659092724,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.0, 0.0, 0.0)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(0.0, 0.0, 0.0)",
+              "velocity": "(0.0, 0.0, 0.0)",
+              "received": "278",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 263,
+            "entityTick": 356,
+            "gameTime": 282,
+            "x": 197.40643848262306,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.15569362593025457, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": false,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 263,
+            "entityTick": 270,
+            "gameTime": 282,
+            "x": 197.40643848262306,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.0, 0.0, 0.0)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(0.0, 0.0, 0.0)",
+              "velocity": "(0.0, 0.0, 0.0)",
+              "received": "278",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 264,
+            "entityTick": 357,
+            "gameTime": 283,
+            "x": 197.61113211023715,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.1862712064971221, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": false,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 264,
+            "entityTick": 271,
+            "gameTime": 283,
+            "x": 197.61113211023715,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.0, 0.0, 0.0)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(0.0, 0.0, 0.0)",
+              "velocity": "(0.0, 0.0, 0.0)",
+              "received": "278",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 265,
+            "entityTick": 358,
+            "gameTime": 284,
+            "x": 197.8464033184181,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.2140968056149005, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": false,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 265,
+            "entityTick": 272,
+            "gameTime": 284,
+            "x": 197.8464033184181,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.0, 0.0, 0.0)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(0.0, 0.0, 0.0)",
+              "velocity": "(0.0, 0.0, 0.0)",
+              "received": "278",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 266,
+            "entityTick": 359,
+            "gameTime": 285,
+            "x": 198.10950012571683,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.23941810154183427, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": false,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 266,
+            "entityTick": 273,
+            "gameTime": 285,
+            "x": 198.10950012571683,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.0, 0.0, 0.0)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(0.0, 0.0, 0.0)",
+              "velocity": "(0.0, 0.0, 0.0)",
+              "received": "278",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 267,
+            "entityTick": 360,
+            "gameTime": 286,
+            "x": 198.3979182289425,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.2624604814994214, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": false,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 267,
+            "entityTick": 274,
+            "gameTime": 286,
+            "x": 198.3979182289425,
+            "y": 134.47024471241633,
+            "z": 0.0,
+            "delta": "(0.0, 0.0, 0.0)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(0.0, 0.0, 0.0)",
+              "velocity": "(0.0, 0.0, 0.0)",
+              "received": "278",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "fixtureTicks": [
+        370,
+        377
+      ],
+      "sampleCount": 8,
+      "injectedPreviousMomentum": "Vec3.ZERO after zero-speed packet, so subsequent displacement does not inherit the pre-fault custom flight velocity",
+      "speedRecoveryCheck": {
+        "tick": 377,
+        "name": "non_periodic_fallback_positive_speed",
+        "pass": true,
+        "detail": "Between periodic sync ticks, fallback restored positive ability speed"
+      },
+      "movementAssertion": {
+        "tick": 377,
+        "pass": true,
+        "clientHorizontal": 1.1509104492090216,
+        "serverHorizontal": 1.1509104492090216,
+        "minimum": 0.2,
+        "positionAgreement": {
+          "tick": 377,
+          "name": "non_periodic_zero_speed_fallback_position_agreement",
+          "pass": true,
+          "detail": "Client/server latest-sampled position discrepancy=0.0; asynchronous sample is usually one tick old"
+        },
+        "abilities": null
+      },
+      "sampleBoundary": "Client telemetry is sampled at ClientTick END. First-to-last END delta excludes physics at the first tick and includes physics at the last; movement assertion runs at last tick START. The server future snapshot is asynchronous and usually follows its paired client tick by one update.",
+      "firstToLastEndDelta": {
+        "client": {
+          "x": 1.3903285507508656,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.3903285507508656,
+          "distance3d": 1.3903285507508656
+        },
+        "server": {
+          "x": 1.3903285507508656,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.3903285507508656,
+          "distance3d": 1.3903285507508656
+        }
+      },
+      "previousEndToLastEndDelta": {
+        "client": {
+          "x": 1.439328552434688,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.439328552434688,
+          "distance3d": 1.439328552434688
+        },
+        "server": {
+          "x": 1.439328552434688,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.439328552434688,
+          "distance3d": 1.439328552434688
+        }
+      },
+      "previousEndToBeforeAssertionEndDelta": {
+        "client": {
+          "x": 1.1509104492090216,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.1509104492090216,
+          "distance3d": 1.1509104492090216
+        },
+        "server": {
+          "x": 1.1509104492090216,
+          "y": 0.0,
+          "z": 0.0,
+          "horizontal": 1.1509104492090216,
+          "distance3d": 1.1509104492090216
+        }
+      },
+      "endSnapshots": [
+        {
+          "client": {
+            "fixtureTick": 370,
+            "entityTick": 463,
+            "gameTime": 389,
+            "x": 248.84978741961896,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(0.044590002817362605, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": true,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 370,
+            "entityTick": 377,
+            "gameTime": 389,
+            "x": 248.84978741961896,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(1.568, 0.0, 9.601231324267716E-17)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(1.0, 0.0, 6.123234262925839E-17)",
+              "velocity": "(1.568, 0.0, 9.601231324267716E-17)",
+              "received": "388",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 371,
+            "entityTick": 464,
+            "gameTime": 390,
+            "x": 248.94337742412014,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(0.08516690655058194, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": true,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 371,
+            "entityTick": 378,
+            "gameTime": 390,
+            "x": 248.94337742412014,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(1.568, 0.0, 9.601231324267716E-17)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(1.0, 0.0, 6.123234262925839E-17)",
+              "velocity": "(1.568, 0.0, 9.601231324267716E-17)",
+              "received": "388",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 372,
+            "entityTick": 465,
+            "gameTime": 391,
+            "x": 249.07754433235456,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(0.1220918900119832, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": true,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 372,
+            "entityTick": 379,
+            "gameTime": 391,
+            "x": 249.07754433235456,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(1.568, 0.0, 9.601231324267716E-17)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(1.0, 0.0, 6.123234262925839E-17)",
+              "velocity": "(1.568, 0.0, 9.601231324267716E-17)",
+              "received": "388",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 373,
+            "entityTick": 466,
+            "gameTime": 392,
+            "x": 249.2486362240504,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(0.15569362593025457, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": true,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 373,
+            "entityTick": 380,
+            "gameTime": 392,
+            "x": 249.2486362240504,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(1.568, 0.0, 9.601231324267716E-17)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(1.0, 0.0, 6.123234262925839E-17)",
+              "velocity": "(1.568, 0.0, 9.601231324267716E-17)",
+              "received": "388",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 374,
+            "entityTick": 467,
+            "gameTime": 393,
+            "x": 249.45332985166448,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(0.1862712064971221, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": true,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 374,
+            "entityTick": 381,
+            "gameTime": 393,
+            "x": 249.45332985166448,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(1.568, 0.0, 9.601231324267716E-17)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(1.0, 0.0, 6.123234262925839E-17)",
+              "velocity": "(1.568, 0.0, 9.601231324267716E-17)",
+              "received": "388",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 375,
+            "entityTick": 468,
+            "gameTime": 394,
+            "x": 249.68860105984544,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(0.2140968056149005, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": true,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 375,
+            "entityTick": 382,
+            "gameTime": 394,
+            "x": 249.68860105984544,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(1.568, 0.0, 9.601231324267716E-17)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(1.0, 0.0, 6.123234262925839E-17)",
+              "velocity": "(1.568, 0.0, 9.601231324267716E-17)",
+              "received": "388",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 376,
+            "entityTick": 469,
+            "gameTime": 395,
+            "x": 249.95169786714416,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(0.23941810154183427, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": true,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 376,
+            "entityTick": 383,
+            "gameTime": 395,
+            "x": 249.95169786714416,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(1.568, 0.0, 9.601231324267716E-17)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(1.0, 0.0, 6.123234262925839E-17)",
+              "velocity": "(1.568, 0.0, 9.601231324267716E-17)",
+              "received": "388",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        },
+        {
+          "client": {
+            "fixtureTick": 377,
+            "entityTick": 470,
+            "gameTime": 396,
+            "x": 250.24011597036983,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(0.2624604814994214, 0.0, 0.0)",
+            "realm": 2,
+            "eligible": false,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "CLIENT_STATES",
+              "present": false
+            },
+            "keyForwardDown": true,
+            "keyJumpDown": false,
+            "keySprintDown": false,
+            "keyCrouchDown": false,
+            "specialPreference": true,
+            "screen": "none"
+          },
+          "server": {
+            "fixtureTick": 377,
+            "entityTick": 384,
+            "gameTime": 396,
+            "x": 250.24011597036983,
+            "y": 132.39918708470515,
+            "z": 0.0,
+            "delta": "(1.568, 0.0, 9.601231324267716E-17)",
+            "realm": 8,
+            "eligible": true,
+            "mayfly": true,
+            "flying": true,
+            "flyingSpeed": 0.05,
+            "onGround": false,
+            "controller": {
+              "map": "SERVER_STATES",
+              "present": true,
+              "input": "(1.0, 0.0, 6.123234262925839E-17)",
+              "velocity": "(1.568, 0.0, 9.601231324267716E-17)",
+              "received": "388",
+              "boost": "false",
+              "boostWeight": "0.0"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nonPeriodicInjectionCheck": {
+    "tick": 370,
+    "name": "fallback_outside_40_tick_sync",
+    "pass": true,
+    "detail": "Latest actual server entityTick=376; zero-speed packet injected between periodic ability sync ticks"
+  },
+  "scope": {
+    "fixture": "Independent generated survival world. Ordinary double-space flight entry and W movement use client KeyMapping input and production controller; flight is never pre-enabled for these paths. Two explicit zero-speed ClientboundPlayerAbilitiesPacket injections plus cleared state/client realm2 model the reported fallback failure. Injection clears previous momentum to test new W movement; second injection records an actual server tick outside the 40-tick sync boundary.",
+    "input": "Logical KeyMapping press/release states on the isolated client; no native physical keyboard events or GLFW modifier-state certification. Left Shift sprint and left Control crouch are remapped and both hold/toggle settings are exercised.",
+    "movement": "Actual client/server position changes and flight flags, not renderer submission counters. Server snapshots run on the integrated-server thread and can trail client samples by a tick.",
+    "coverageLimits": "Logical KeyMapping press/release on an independent Forge client. No native GLFW physical keyboard/modifier certification; this report is actual gameplay position/ability telemetry rather than a renderer-count assertion. Historical older baseline used pre-fault residual momentum; compare the strengthened old fixture separately once it completes."
+  }
+}

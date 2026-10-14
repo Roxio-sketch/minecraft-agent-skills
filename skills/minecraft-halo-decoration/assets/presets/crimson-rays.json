@@ -1,0 +1,12 @@
+{
+  "schema": "halo-decoration-v1", "id": "crimson-rays", "size": 256,
+  "contexts": ["GUI"],
+  "layers": [
+    {"shape": "glow", "color": "#DF2647", "radius": 0.72, "opacity": 0.38,
+     "motion": {"period_s": 2.8, "scale_amplitude": 0.1, "alpha_amplitude": 0.3}},
+    {"shape": "rays", "color": "#FF6C76", "radius": 0.85, "segments": 12, "duty": 0.3, "opacity": 0.85,
+     "motion": {"speed_deg_s": -7, "period_s": 2.8, "scale_amplitude": 0.06}},
+    {"shape": "ring", "color": "#FFC8BD", "radius": 0.4, "width": 0.009, "softness": 0.03, "opacity": 0.6,
+     "motion": {"period_s": 2.8, "phase_deg": 120, "alpha_amplitude": 0.35}}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "source": "E:\\五行仙途\\deliverables\\shield-guard-20261013\\wuxingxiantu-0.2-20261013-shield-guard-tiers.jar",
+  "installed": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2-20261013-shield-guard-tiers.jar",
+  "sha256": "2E2B78E1EA2659ACB5E754B22EBE6612AE686C3A13E41A442DF8EC1A09CAE10B",
+  "resource_bytes_match_source": {
+    "assets/wuxingxiantu/shaders/core/spirit_shield_sphere.fsh": "3e389114f727ccfdaa56abc6f23ecdec0cb3938d6132bb2d8f68ee154ae4bc9a",
+    "assets/wuxingxiantu/shaders/core/spirit_shield_sphere.vsh": "406a1655d99284e091efdc107099197b2164d5b63e3e0ae301b1aed7cbacbd95",
+    "assets/wuxingxiantu/shaders/core/spirit_shield_sphere.json": "c178becd66adf0d2b47522ed4d619e44ce091cb938c0fec628c1be753bf56bb3",
+    "assets/wuxingxiantu/shaders/core/spirit_shield_shards.fsh": "0e58fb78892155ef8b4379b24faf25c998b1733c23f5a0f9ea09e1d412447562",
+    "assets/wuxingxiantu/shaders/core/spirit_shield_shards.vsh": "cca9752ed55d72efa77c40ffc8f98ef103ca78d71c3a1c5c1dc59c3ae5529677",
+    "assets/wuxingxiantu/shaders/core/spirit_shield_shards.json": "c9ebf6a5024d714e22f29fc41fa2d9c9c9483d98674d7e56556a669265bc3bc0",
+    "assets/wuxingxiantu/shaders/core/spirit_guard_cloud.fsh": "ac37ff8f8be7eaea770915979305f824b71ca73acb3f0fb699b713065dcd1cdd",
+    "assets/wuxingxiantu/shaders/core/spirit_guard_cloud.vsh": "dceb89d08a3cb468d11f75e35780fe6b40659c3931a72686483bb7ebb1d234ab",
+    "assets/wuxingxiantu/shaders/core/spirit_guard_cloud.json": "23bb7a10823a5459289d21802226b07b42609dcdf9bee5535a8150a5c63b62df",
+    "assets/wuxingxiantu/textures/effect/spirit_guard_cloud_1.png": "bf1fc600243afe555abf33d0f8f052167b38cc883b05ffcaa40db1d2330c7b72",
+    "assets/wuxingxiantu/textures/effect/spirit_guard_cloud_2.png": "77c1f04f5b30db7037adafcda5f2c65865ca9dd78757fcf2ed22ef32639ce5a3",
+    "assets/wuxingxiantu/textures/effect/spirit_guard_cloud_mask.png": "ecf58272a43acdaa7e6e52b652b46dc79713490bc7fe8f306e4c819af95ad90e",
+    "assets/wuxingxiantu/textures/effect/spirit_guard_cloud_4.png": "027f80c68b51379a4f10675bf4fe22ce8bd001738cc3d3217cb5fb60064a1e79"
+  },
+  "production_classes_present": [
+    "cn/blockforge/generated/generatedmod/client/SpiritShieldRenderer.class",
+    "cn/blockforge/generated/generatedmod/client/shield/ShieldFractureGeometry.class",
+    "cn/blockforge/generated/generatedmod/client/SpiritGuardArmorRenderer.class",
+    "cn/blockforge/generated/generatedmod/client/SpiritGuardArmorRenderType.class",
+    "cn/blockforge/generated/generatedmod/network/packet/cultivation/ShieldShatterPacket.class"
+  ],
+  "test_fixtures_absent": true,
+  "protocol_version": "76",
+  "runtime_validation_sha256": {
+    "shield_shatter": "682bc81c0eb3734ddc624be558e9072c5aafe1f3ffa7153e642aa76af62c8e03",
+    "guard_world": "7b700d173a42b77c20b56b6b83b93bcdfd8d746db5ea367acb56d3602a69e117",
+    "guard_tiers": "b4621bd271f8aff5b70381122407b2db909d7ea159da0f6aa670525b54d2915c",
+    "sword_trail": "40adbc34342822dd28a02fea2493b47b3f834ff40cd1cdf62a82c34554efe00f"
+  },
+  "flight_trails_enabled": true
+}

@@ -1,0 +1,26 @@
+{
+  "vertex": "bloomlab:composite",
+  "fragment": "bloomlab:composite",
+  "attributes": [
+    "Position",
+    "UV0"
+  ],
+  "samplers": [
+    {
+      "name": "Sampler0"
+    },
+    {
+      "name": "Sampler1"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "Intensity",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.4
+      ]
+    }
+  ]
+}

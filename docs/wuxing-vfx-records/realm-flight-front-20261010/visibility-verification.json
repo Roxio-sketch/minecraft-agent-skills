@@ -1,0 +1,41 @@
+{
+  "sha256": "512d4d2157b45be151ffed6a620cd166b7e3587537adbc0e4b97b5be3a005269",
+  "runtimeResult": "PASS",
+  "runtimeEnvironment": "Native Forge 1.20.1 47.4.10",
+  "actualImages": 12,
+  "fixtureChecks": 93,
+  "additionalDeliveryAssertions": [
+    "All twelve current frames have successful Bloom draws",
+    "All advanced frames have zero independent heads/shells and an actually drawn LocalPlayer"
+  ],
+  "sourceHashes": {
+    "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightEffects.java": "33b43c26d17fae6479d6da99ef3aefdfeea6bfc89655a1cff7b99a44d20756a4",
+    "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor.fsh": "a9294a978216fdc11dbe0d1de6071504d41ceb6c4c7e2d9efd6f5deef6a06ac2",
+    "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_post.fsh": "8ff06f6e77420518bc8b3270589230dd0835f8a8a9393938a93fa0f9887074a1",
+    "src/meteorclienttest/java/cn/blockforge/generated/generatedmod/client/FlightVisibilityCapture.java": "0f160e303e60c44df2940575e133db2398deddf53ecd5d7366962ad65d9e7bae"
+  },
+  "screenshotHashes": {
+    "realm-4-huashen-local-day-side.png": "cd6ae77fe4ea05e62f75d255a11f79c4ba4748304c11458b4d95f93bba07d3d6",
+    "realm-4-huashen-local-day-front.png": "1ac7ff1651f0d5e67ff2440676e61e062618bdcaca35da45128e597c8023bc47",
+    "realm-4-huashen-local-night-side.png": "50424385ce5d32c67b2e1ba2b4780d7794f98a92c068d2f541b64e881712696f",
+    "realm-4-huashen-local-night-front.png": "02881da9a87d442c65a43b04fc36bc5e16ade6f1231af2d85408e8fbf43b5ac2",
+    "realm-5-lianxu-local-day-side.png": "56132cceb9181f8c7651de1512dec2e0596a361ee62f7b04416205cf795fafe5",
+    "realm-5-lianxu-local-day-front.png": "df7f0659e993b1362ea7fb3f52cf88bf874f59798eb49e22ec5f95f0c1702a2a",
+    "realm-5-lianxu-local-night-side.png": "70145b1d27daaf08004525a1edac25c636a2c7b7ab592eb2bae7d1ce5e688320",
+    "realm-5-lianxu-local-night-front.png": "090bd87c0f6a3f06f951f43be416a6a98f68a69b7dd30b898f38df2004521ae6",
+    "realm-8-dixian-local-day-side.png": "6a6c7e2bf2011476f42262596f9c26283e4057c593ee6af62ff83627ebc29f15",
+    "realm-8-dixian-local-day-front.png": "62bbefe701a69cf9e963c000b80a4701e1e9f8110c3e4ef18ed12ded884d8c9b",
+    "realm-8-dixian-local-night-side.png": "f0d78cd1953a797f655755c26b978bb051a43bd31dbf4e5abca137507fb56778",
+    "realm-8-dixian-local-night-front.png": "0df961fa9c64eab2c448b0e57699c0227f80943386e8b6eafc78e36b6426437e"
+  },
+  "limits": "Local survival W and double-space; side camera is DEV offset, front is vanilla third-person front. No shader-pack or multiplayer validation in this revision. Some long wake portions leave the image frame.",
+  "visualReview": {
+    "reviewedActualImages": 12,
+    "reviewers": [
+      "root",
+      "visibility_audit"
+    ],
+    "observations": "Day/night local wrapped flow and wake are clearly visible; face and body readable, no black screen or detached opaque independent orb. Flow-to-tail connection continuous in inspected pictures.",
+    "remainingLimit": "Front night views can show the existing eight-sided flow skin; some wake extends outside the image. No Solas runtime review this revision."
+  }
+}

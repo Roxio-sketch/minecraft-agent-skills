@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "fresh template creates complete project",
+      "passed": true
+    },
+    {
+      "name": "nonempty destination is refused",
+      "passed": true
+    },
+    {
+      "name": "skill overlap is refused",
+      "passed": true
+    },
+    {
+      "name": "skill overlap is refused",
+      "passed": true
+    },
+    {
+      "name": "full baseline evidence audit",
+      "passed": true
+    },
+    {
+      "name": "GL error corruption is rejected",
+      "passed": true
+    },
+    {
+      "name": "PNG and reported count disagreement is rejected",
+      "passed": true
+    },
+    {
+      "name": "missing landmark PNG is rejected",
+      "passed": true
+    },
+    {
+      "name": "complete copied bundle passes",
+      "passed": true
+    },
+    {
+      "name": "modified template hash is rejected",
+      "passed": true
+    },
+    {
+      "name": "scaffolder refuses corrupted template",
+      "passed": true
+    }
+  ],
+  "scope": "Offline helper validation in an isolated temporary directory; no Minecraft control"
+}

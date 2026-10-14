@@ -1,0 +1,2896 @@
+{
+  "schema": "sky-research/1",
+  "date": "2026-10-06",
+  "summary": "天空来源与原创实现地图：程序星空、七种二维巨天体、两类黑洞与宇宙背景透镜、球形大气和世界云雾雨雪；Bliss末地云内闪光另为源码研究。",
+  "implementation": {
+    "schema": "cosmic-sky/6",
+    "parameters": 188,
+    "presets": 39,
+    "features": [
+      "atmosphere",
+      "twilight",
+      "sun-moon",
+      "thin-clouds",
+      "volume-clouds",
+      "weather",
+      "fog",
+      "light-shafts",
+      "rainbow",
+      "halos",
+      "special",
+      "cosmic"
+    ],
+    "scope": "五份原创算法GLSL；RGB球形大气透射/高阶近似，世界环境仍为已曝光颜色的美术合成；原版BLOCK分层，外部光影所有权交接，无历史重投影。"
+  },
+  "features": [
+    {
+      "id": "atmosphere",
+      "name": "晴空与大气",
+      "status": "implemented",
+      "priority": 1,
+      "summary": "蓝色天顶、泛白地平线、太阳附近的前向散射，以及可调异星大气。",
+      "cost": "解析后端与球形后端可选。GPU生成256×64透射、32×32高阶散射、512×128天空L/T图集，共648KiB；缓存条件与本机计时见进阶验收。",
+      "algorithm": "球形km介质、Rayleigh/Mie指数密度、臭氧帐篷层、Beer路径积分、地面反馈与各向同性高阶几何级数近似；原创RGB实现，不是完整光谱求解器。",
+      "parameters": [
+        "大气强度",
+        "Rayleigh 强度",
+        "Mie 强度",
+        "气溶胶浑浊度",
+        "Mie 各向异性",
+        "夜间环境",
+        "大气色调"
+      ],
+      "integration": "太阳/高度变化重建天空表，材质变化重建介质表；视角旋转查表。大气外观察保留真实球面入口/退出，行星遮挡不使用平面地平线裁剪。",
+      "sources": [
+        "atmosphere-three-sky",
+        "godot-sky",
+        "atmosphere-hillaire-2020",
+        "atmosphere-bruneton-2017",
+        "photon",
+        "bliss"
+      ],
+      "palette": [
+        "#3f76b8",
+        "#a6d4e3"
+      ]
+    },
+    {
+      "id": "twilight",
+      "name": "晨昏与晚霞",
+      "status": "implemented",
+      "priority": 1,
+      "summary": "日出、夕阳、地平线下太阳的暮光和背光云色。",
+      "cost": "复用大气方向查询与解析颜色项；完整球形暮光积分仍是后续质量路线。",
+      "algorithm": "可选原解析晚霞或球形大气长路径消光与高阶散射缓存；太阳高度随独立时间轮转，不改变游戏世界时间。",
+      "parameters": [
+        "太阳初始仰角",
+        "太阳方位",
+        "自动昼夜速度",
+        "暮光强度",
+        "浑浊度",
+        "曝光"
+      ],
+      "integration": "日月轨道随工作台时间和自动昼夜速度变化，可暂停观察；不改变 Minecraft 世界真实时间或地形光照。",
+      "sources": [
+        "atmosphere-three-sky",
+        "atmosphere-hillaire-2020",
+        "atmosphere-bruneton-2017",
+        "solas",
+        "bliss",
+        "complementary"
+      ],
+      "palette": [
+        "#694f95",
+        "#e9a06f"
+      ]
+    },
+    {
+      "id": "sun-moon",
+      "name": "太阳、月亮与月相",
+      "status": "implemented",
+      "priority": 1,
+      "summary": "程序光盘、月球球面受光、月相和日月随时间转动。",
+      "cost": "有限角域太阳盘与解析球面月相，共用程序噪声制作月面细节；无外部日月贴图。",
+      "algorithm": "已实现太阳角域盘、程序月面受光、满月/半月/月牙与日月轨道。太阳和月亮的普通外晕不属于 22° 冰晶晕。",
+      "parameters": [
+        "日月方向",
+        "角半径",
+        "月相",
+        "月面细节",
+        "月面自转",
+        "月亮外晕",
+        "自动昼夜速度"
+      ],
+      "integration": "已与独立巨型天体和黑洞并存；日月依赖大气开启，天空替换不会驱动世界真实光照。",
+      "sources": [
+        "godot-sky",
+        "photon",
+        "hysteria",
+        "solas",
+        "bliss",
+        "complementary"
+      ],
+      "palette": [
+        "#b7ccdd",
+        "#fff0bf"
+      ]
+    },
+    {
+      "id": "thin-clouds",
+      "name": "程序薄云",
+      "status": "implemented",
+      "priority": 2,
+      "summary": "已可编辑的远平面程序薄云，随风流动并连续演化云形。",
+      "cost": "二维程序密度与有限地平线域，共用三档噪声质量；有厚度的体积云海仍在研究。",
+      "algorithm": "已实现远平面 FBM 密度、覆盖率、连续风速与云形演化、日月云色和银边。层云/卷云/夜光云细分类仍是源码选型研究。",
+      "parameters": [
+        "薄云强度",
+        "覆盖率",
+        "纹理尺度",
+        "远平面高度",
+        "风向",
+        "风速",
+        "演化速度",
+        "银边"
+      ],
+      "integration": "已接入大气合成并约束地平线交点；这是远平面视觉近似，没有可穿越厚度、体积自遮蔽或地形云影。",
+      "sources": [
+        "atmosphere-three-sky",
+        "cloud-unity-hdrp",
+        "photon",
+        "hysteria",
+        "astralex",
+        "lux"
+      ],
+      "palette": [
+        "#467b9c",
+        "#e6ebec"
+      ]
+    },
+    {
+      "id": "volume-clouds",
+      "name": "积云与体积云海",
+      "status": "implemented",
+      "priority": 4,
+      "summary": "能进入的世界高度云层，随风与云形演化，有世界视差和地形遮挡。",
+      "cost": "3D密度有限步积分：16/24/32视线步与2/3/4太阳步，按质量分档；未使用历史重投影。",
+      "algorithm": "原创3D噪声宏观云团、高度收束和细节侵蚀，Beer视线透射与有界前向相位；云层相交区间由真实位置/深度限定。",
+      "parameters": [
+        "云底/厚度",
+        "覆盖/密度",
+        "尺度/侵蚀",
+        "风向/风速/演化",
+        "环境/太阳云光",
+        "最大距离"
+      ],
+      "integration": "实际camera/逆投影/逆view旋转与平移，颜色/深度有限积分，可进入云体。原版BLOCK玻璃/水开启分层；其他RenderType需独立适配。",
+      "sources": [
+        "cloud-seblague",
+        "cloud-tylerdodds",
+        "cloud-unity-hdrp",
+        "cloud-tileable-volume-noise",
+        "photon",
+        "hysteria",
+        "bliss",
+        "complementary",
+        "solas",
+        "bliss-end-2-1-2"
+      ],
+      "palette": [
+        "#526477",
+        "#bfc6c8"
+      ]
+    },
+    {
+      "id": "weather",
+      "name": "风、雨雪与雷暴",
+      "status": "implemented",
+      "priority": 3,
+      "summary": "手动或读取实际雨雷：世界程序雨丝、方向遮光与确定性动态雷光。",
+      "cost": "48m局部有界DDA、三个固定旋转世界格场。区域presence跳过干燥区或不存在的雨/雪类型；网页与实际GPU分别计时。",
+      "algorithm": "按粒子真实位置查询3D气候与1m屋顶，雨丝和原创六臂雪花独立运动、飘摆、风与转动；旧雨幕保持模式0。",
+      "parameters": [
+        "雨量/雷强度",
+        "跟随世界天气",
+        "雨丝密度/速度/长度/风",
+        "雷光频率/时长"
+      ],
+      "integration": "网页是演示气候；Forge读Biome.getPrecipitationAt及MOTION_BLOCKING高度。跟随雨雷仅读取输入，保留服务器天气与原声音/tick。",
+      "sources": [
+        "cloud-tylerdodds",
+        "cloud-unity-hdrp",
+        "bliss",
+        "solas",
+        "complementary",
+        "bliss-end-2-1-2"
+      ],
+      "palette": [
+        "#263955",
+        "#8d9aab"
+      ]
+    },
+    {
+      "id": "fog",
+      "name": "雾与空气透视",
+      "status": "implemented",
+      "priority": 5,
+      "summary": "真实场景距离、高度和3D噪声驱动的流动雾与空气透视。",
+      "cost": "12/20/28有界视线步，在已曝光颜色后期合成。",
+      "algorithm": "深度重建长度和世界位置，积分高度衰减密度与有界光照，按T×scene+L合成。",
+      "parameters": [
+        "雾强度/密度",
+        "基准高度/衰减",
+        "噪声尺度/速度",
+        "颜色",
+        "最大距离"
+      ],
+      "integration": "背景与原版透明BLOCK表面各按距离应用同一算子，含表面前降水；避免晚期重复。仍为显示空间美术近似，不是完整物理空气透视体积。",
+      "sources": [
+        "atmosphere-bruneton-2017",
+        "atmosphere-hillaire-2020",
+        "cloud-unity-hdrp",
+        "photon",
+        "hysteria",
+        "bliss-end-2-1-2"
+      ],
+      "palette": [
+        "#92a8b8",
+        "#cfcdc1"
+      ]
+    },
+    {
+      "id": "light-shafts",
+      "name": "云影与曙暮光",
+      "status": "implemented",
+      "priority": 5,
+      "summary": "同一世界云密度产生地面云影与视线中云缝天光。",
+      "cost": "太阳方向云透射采样调制12/20/28步天光积分；距离与能量有界。",
+      "algorithm": "重建可见表面位置计算太阳云透射，另沿视线积分云遮光调制的空气散射；不是固定屏幕亮条。",
+      "parameters": [
+        "云影强度/柔度",
+        "天光强度/密度/距离",
+        "各向异性",
+        "太阳方向",
+        "云密度"
+      ],
+      "integration": "云影乘法调制已曝光表面，不区分自发光/直接照明；不会代替完整光照或物体阴影系统。",
+      "sources": [
+        "photon",
+        "cloud-unity-hdrp",
+        "cloud-tylerdodds",
+        "atmosphere-bruneton-2017"
+      ],
+      "palette": [
+        "#778290",
+        "#e4c792"
+      ]
+    },
+    {
+      "id": "rainbow",
+      "name": "雨后彩虹与双虹",
+      "status": "implemented",
+      "priority": 3,
+      "summary": "反太阳轴约41.6°主虹与51.6°反虹，外虹色序相反。",
+      "cost": "有限角带、湿度/日照显隐和艺术颜色近似，无谱积分。",
+      "algorithm": "方向点积构造世界角环，主虹外红内蓝、反虹反色，间隙轻度暗带；以天气/显式水滴条件显隐。",
+      "parameters": [
+        "虹强度/角宽",
+        "反虹强度",
+        "水滴条件",
+        "太阳方向"
+      ],
+      "integration": "锁定反太阳轴，随转头保持几何；天空入口自然被地形遮挡，世界云后期遮蔽方向天空。",
+      "sources": [
+        "optics-atmospheric-optics",
+        "photon",
+        "solas",
+        "complementary"
+      ],
+      "palette": [
+        "#ca8c76",
+        "#94b9c3"
+      ]
+    },
+    {
+      "id": "halos",
+      "name": "冰晶日晕与月晕",
+      "status": "implemented",
+      "priority": 6,
+      "summary": "日月周围约22°冰晶环，红内缘及较淡外侧，与普通外晕独立。",
+      "cost": "有限角环与冰晶显隐，月晕降低饱和度；没有冰晶谱射线求解。",
+      "algorithm": "依据Atmospheric Optics的六边冰晶最小偏折事实，原创21.8°内边界与有限宽度色环。",
+      "parameters": [
+        "强度/宽度",
+        "冰晶条件",
+        "日/月选择",
+        "日月方向"
+      ],
+      "integration": "共用原创方向天空；不能用glow/glare/HG亮区冒充冰晶晕。",
+      "sources": [
+        "optics-atmospheric-optics"
+      ],
+      "palette": [
+        "#87969f",
+        "#e8d8c0"
+      ]
+    },
+    {
+      "id": "special",
+      "name": "异界与天空装饰",
+      "status": "implemented",
+      "priority": 3,
+      "summary": "原创紫金裂幕、赤焰波域与动态远景飞鸟剪影。",
+      "cost": "有界方向波域与有限鸟候选；不生成近处体积/游戏实体。",
+      "algorithm": "连续方向变形与多色带、确定性稀疏鸟群和振翅，采用独立时间和颜色。",
+      "parameters": [
+        "样式/强度",
+        "波域尺度/速度/变形",
+        "色板",
+        "鸟群密度/速度"
+      ],
+      "integration": "天空装饰可与宇宙及大气并存；按目标维度effects路由，当前预设本身不自动传送或更改维度。",
+      "sources": [
+        "lux",
+        "astralex",
+        "complementary",
+        "hysteria",
+        "solas",
+        "bliss-end-2-1-2"
+      ],
+      "palette": [
+        "#25214c",
+        "#8477ae"
+      ]
+    },
+    {
+      "id": "cosmic",
+      "name": "现有程序宇宙",
+      "status": "implemented",
+      "priority": 0,
+      "summary": "动态星空、七种二维巨天体与两类远景黑洞；金环黑洞可以弯曲背景星光。",
+      "cost": "现有三档质量与真实 GPU 记录见项目 VALIDATION.md。",
+      "algorithm": "五份原创GLSL共用cosmic-sky/6，188字段/39起点。巨天体有限角域与程序表面；电影黑洞用有界逆透镜映射重采样星点/银河/星云，曲率积分类型独立保留。参考代码和天体图片未打包。",
+      "parameters": [
+        "星点/星云/天体",
+        "自转/环倾角",
+        "黑洞样式",
+        "金白环/亮弧/横盘",
+        "流动纹理/暗核/色板",
+        "巨型天体样式",
+        "巨型尺寸倍率",
+        "伴星/碎片间距",
+        "天体边缘气层",
+        "黑洞引力透镜强度"
+      ],
+      "integration": "天空方向无平移视差；两类黑洞均动态、有限支撑，二维巨大天体参考见Solas/AstraLex/Hysteria。不分发参考图片或代码。",
+      "sources": [
+        "solas",
+        "astralex",
+        "hysteria",
+        "photon",
+        "super-duper-vanilla"
+      ],
+      "palette": [
+        "#152341",
+        "#847ac0"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "atmosphere-bruneton-2017",
+      "name": "Bruneton 2017 Precomputed Atmospheric Scattering",
+      "kind": "algorithm",
+      "url": "https://github.com/ebruneton/precomputed_atmospheric_scattering",
+      "commit": "34f14e745cff948f4ca3157d1b62a445ffa7286f",
+      "snapshot": "固定提交 34f14e745cff948f4ca3157d1b62a445ffa7286f",
+      "license": {
+        "label": "BSD-3-Clause",
+        "summary": "BSD-3-Clause 允许修改/源码与二进制复用；保留版权、三条条件和免责声明，二进制分发须在随附资料保留这些内容，不用作者名背书。此次只保存研究副本，未把参考代码或图片并入现有工作台。",
+        "mode": "open"
+      },
+      "features": [
+        "atmosphere",
+        "twilight",
+        "fog",
+        "light-shafts"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "atmosphere/functions.glsl",
+          "line": 275,
+          "endLine": 319,
+          "claim": "指数密度积分；每种密度轮廓 500 个区间/501 个端点采样，透射含 Rayleigh、Mie 和吸收。",
+          "url": "https://github.com/ebruneton/precomputed_atmospheric_scattering/blob/34f14e745cff948f4ca3157d1b62a445ffa7286f/atmosphere/functions.glsl#L275-L319",
+          "sha256": "fae5b16bdd2b5a1d1a8b423c5b76973984eaf9b7514c349fe74b1d44d0c9f498"
+        },
+        {
+          "file": "atmosphere/functions.glsl",
+          "line": 552,
+          "endLine": 562,
+          "claim": "太阳有限圆盘穿过行星地平线的可见比例平滑处理。",
+          "url": "https://github.com/ebruneton/precomputed_atmospheric_scattering/blob/34f14e745cff948f4ca3157d1b62a445ffa7286f/atmosphere/functions.glsl#L552-L562",
+          "sha256": "fae5b16bdd2b5a1d1a8b423c5b76973984eaf9b7514c349fe74b1d44d0c9f498"
+        },
+        {
+          "file": "atmosphere/functions.glsl",
+          "line": 695,
+          "endLine": 729,
+          "claim": "单次散射 50 个区间/51 个端点采样，相位函数留到实际绘制。",
+          "url": "https://github.com/ebruneton/precomputed_atmospheric_scattering/blob/34f14e745cff948f4ca3157d1b62a445ffa7286f/atmosphere/functions.glsl#L695-L729",
+          "sha256": "fae5b16bdd2b5a1d1a8b423c5b76973984eaf9b7514c349fe74b1d44d0c9f498"
+        },
+        {
+          "file": "atmosphere/functions.glsl",
+          "line": 739,
+          "endLine": 749,
+          "claim": "方向相关的 Rayleigh 和 Mie 相位函数。",
+          "url": "https://github.com/ebruneton/precomputed_atmospheric_scattering/blob/34f14e745cff948f4ca3157d1b62a445ffa7286f/atmosphere/functions.glsl#L739-L749",
+          "sha256": "fae5b16bdd2b5a1d1a8b423c5b76973984eaf9b7514c349fe74b1d44d0c9f498"
+        },
+        {
+          "file": "atmosphere/functions.glsl",
+          "line": 1658,
+          "endLine": 1688,
+          "claim": "4D 参数打包到 3D 纹理；沿 nu 用两次 3D 采样插值，分离 Mie 模式还需另两次采样。",
+          "url": "https://github.com/ebruneton/precomputed_atmospheric_scattering/blob/34f14e745cff948f4ca3157d1b62a445ffa7286f/atmosphere/functions.glsl#L1658-L1688",
+          "sha256": "fae5b16bdd2b5a1d1a8b423c5b76973984eaf9b7514c349fe74b1d44d0c9f498"
+        },
+        {
+          "file": "atmosphere/functions.glsl",
+          "line": 1705,
+          "endLine": 1768,
+          "claim": "支持大气内/外相机，返回天空散射辐亮度与空间物体所需的视线透射。",
+          "url": "https://github.com/ebruneton/precomputed_atmospheric_scattering/blob/34f14e745cff948f4ca3157d1b62a445ffa7286f/atmosphere/functions.glsl#L1705-L1768",
+          "sha256": "fae5b16bdd2b5a1d1a8b423c5b76973984eaf9b7514c349fe74b1d44d0c9f498"
+        },
+        {
+          "file": "atmosphere/functions.glsl",
+          "line": 1787,
+          "endLine": 1862,
+          "claim": "有限距离的空气透视；不等同于仅替换无限远背景。",
+          "url": "https://github.com/ebruneton/precomputed_atmospheric_scattering/blob/34f14e745cff948f4ca3157d1b62a445ffa7286f/atmosphere/functions.glsl#L1787-L1862",
+          "sha256": "fae5b16bdd2b5a1d1a8b423c5b76973984eaf9b7514c349fe74b1d44d0c9f498"
+        },
+        {
+          "file": "atmosphere/constants.h",
+          "line": 47,
+          "endLine": 61,
+          "claim": "透射 256×64、散射 256×128×32、辐照度 64×16。",
+          "url": "https://github.com/ebruneton/precomputed_atmospheric_scattering/blob/34f14e745cff948f4ca3157d1b62a445ffa7286f/atmosphere/constants.h#L47-L61",
+          "sha256": "0c01133e995ae9c232a486445e99543a01b036e17f665524edc7da98ffbb6ffc"
+        },
+        {
+          "file": "atmosphere/model.cc",
+          "line": 422,
+          "endLine": 454,
+          "claim": "2D 表使用 RGBA32F；3D 表可选 RGB/RGBA 与 16/32F，原代码指出透射 16F 会有伪影。",
+          "url": "https://github.com/ebruneton/precomputed_atmospheric_scattering/blob/34f14e745cff948f4ca3157d1b62a445ffa7286f/atmosphere/model.cc#L422-L454",
+          "sha256": "5ae93aa940787f0d20dcecdefde3ff512d4f228c4111aa5df3ebfdd0f952aff2"
+        },
+        {
+          "file": "atmosphere/model.h",
+          "line": 285,
+          "endLine": 285,
+          "claim": "默认预计算到 4 阶散射。",
+          "url": "https://github.com/ebruneton/precomputed_atmospheric_scattering/blob/34f14e745cff948f4ca3157d1b62a445ffa7286f/atmosphere/model.h#L285-L285",
+          "sha256": "ab0be7828f3e8f491d7b06ba4e27bcb4b014fdfcfeb9231b0b05dce6bb3d0df0"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/atmosphere/sources.json#atmosphere-bruneton-2017",
+      "summary": "将球形分层大气的透射、单/多次散射及地表辐照度预计算；运行时按相机半径、视天顶角、太阳天顶角和视线太阳夹角查表。2017 实现加入可配置光谱、臭氧和自定义密度。",
+      "textureDependencies": "程序化计算；LUT 是算法生成的数值表，不是静态天空照片。此轮不下载天空贴图。",
+      "budget": "transmittance_lut：256；64；scattering_lut：256；128；32；irradiance_lut：64；16；precompute_scattering_orders_default：4；precompute_intervals：optical_length：500；single_scattering：50；multiple_scattering：50；runtime_texture_fetches_combined_no_shadow：GetSkyRadiance 主路径为 2 次 3D 散射查表 + 1 次 2D 透射查表；分离 Mie 另加 2 次 3D。地表相交/光柱分支会改变路径。；derived_storage：主散射表 1,048,576 texels，选 RGBA16F 时逻辑数据 8 MiB；此数只含主表，不含临时预计算表/额外 Mie/驱动开销。",
+      "integration": "作为高质量固定大气后端；先接方向和太阳角度，再接 LUT 创建/缓存和资源重载。；以 MC 海拔构造局部相机半径并统一单位；不要将 MC 的巨大世界 x/z 当作行星中心坐标直接输入浮点。；以 L_atmosphere + T_view * L_space 合成现有星空/天体；所有辐亮度在同一线性颜色空间，曝光/tone-map 只做一次。；空气透视是第二阶段，需要真实场景深度和有限距离点；不能把天空验证记录当成地形雾验证。",
+      "evidenceCount": 10
+    },
+    {
+      "id": "atmosphere-hillaire-2020",
+      "name": "Hillaire / Epic A Scalable and Production Ready Sky and Atmosphere Rendering Technique",
+      "kind": "algorithm",
+      "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere",
+      "commit": "183ead5bdacc701b3b626347a680a2f3cd3d4fbd",
+      "snapshot": "固定提交 183ead5bdacc701b3b626347a680a2f3cd3d4fbd",
+      "license": {
+        "label": "MIT",
+        "summary": "根 LICENSE 为 MIT，Epic 2020 代码允许复用但须附版权及许可全文。仓库另有 Bruneton17 代码及 attribution，不能把 MIT 根文件当成所有第三方内容的统一许可；本次未取 Bruneton17/图片。论文图与蓝噪声图片没有被认定为可分发天空素材。",
+        "mode": "open"
+      },
+      "features": [
+        "atmosphere",
+        "twilight",
+        "fog"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "Resources/RenderSkyRayMarching.hlsl",
+          "line": 24,
+          "endLine": 27,
+          "claim": "统一射线积分入口，返回散射亮度、透射和多重散射贡献。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Resources/RenderSkyRayMarching.hlsl#L24-L27",
+          "sha256": "023871e742842d8b347967331e72d78036bd3750884d3d94707f6db3c971673e"
+        },
+        {
+          "file": "Resources/RenderSkyRayMarching.hlsl",
+          "line": 79,
+          "endLine": 144,
+          "claim": "积分步数依路径长度在 min/max 之间插值；平方分布集中近相机的采样。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Resources/RenderSkyRayMarching.hlsl#L79-L144",
+          "sha256": "023871e742842d8b347967331e72d78036bd3750884d3d94707f6db3c971673e"
+        },
+        {
+          "file": "Resources/RenderSkyRayMarching.hlsl",
+          "line": 318,
+          "endLine": 338,
+          "claim": "低分辨率 Sky-View 查表路径与太阳圆盘分开合成。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Resources/RenderSkyRayMarching.hlsl#L318-L338",
+          "sha256": "023871e742842d8b347967331e72d78036bd3750884d3d94707f6db3c971673e"
+        },
+        {
+          "file": "Resources/RenderSkyRayMarching.hlsl",
+          "line": 345,
+          "endLine": 369,
+          "claim": "深度位置重建后采样 3D 空气透视体积。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Resources/RenderSkyRayMarching.hlsl#L345-L369",
+          "sha256": "023871e742842d8b347967331e72d78036bd3750884d3d94707f6db3c971673e"
+        },
+        {
+          "file": "Resources/RenderSkyRayMarching.hlsl",
+          "line": 438,
+          "endLine": 469,
+          "claim": "64 个球面方向，各 20 步，生成多重散射表。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Resources/RenderSkyRayMarching.hlsl#L438-L469",
+          "sha256": "023871e742842d8b347967331e72d78036bd3750884d3d94707f6db3c971673e"
+        },
+        {
+          "file": "Resources/RenderSkyRayMarching.hlsl",
+          "line": 518,
+          "endLine": 536,
+          "claim": "用几何级数 1/(1-r) 近似后续多次散射。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Resources/RenderSkyRayMarching.hlsl#L518-L536",
+          "sha256": "023871e742842d8b347967331e72d78036bd3750884d3d94707f6db3c971673e"
+        },
+        {
+          "file": "Resources/RenderSkyRayMarching.hlsl",
+          "line": 547,
+          "endLine": 570,
+          "claim": "透射表固定 40 步。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Resources/RenderSkyRayMarching.hlsl#L547-L570",
+          "sha256": "023871e742842d8b347967331e72d78036bd3750884d3d94707f6db3c971673e"
+        },
+        {
+          "file": "Resources/RenderSkyRayMarching.hlsl",
+          "line": 581,
+          "endLine": 630,
+          "claim": "Sky-View 192×108，名义 SampleCountIni=30，但开启 VariableSampleCount，实际使用 min/max。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Resources/RenderSkyRayMarching.hlsl#L581-L630",
+          "sha256": "023871e742842d8b347967331e72d78036bd3750884d3d94707f6db3c971673e"
+        },
+        {
+          "file": "Resources/RenderSkyCommon.hlsl",
+          "line": 121,
+          "endLine": 189,
+          "claim": "非线性映射把纹理分辨率集中在地平线，并限制有效 subtexel 区域。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Resources/RenderSkyCommon.hlsl#L121-L189",
+          "sha256": "7d799dce0dcb5b30a810d1a25b7642a821042fe1f56ef5a70a69a49fc9d011a4"
+        },
+        {
+          "file": "Resources/RenderSkyCommon.hlsl",
+          "line": 228,
+          "endLine": 257,
+          "claim": "Rayleigh/Mie 指数密度及分层臭氧吸收。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Resources/RenderSkyCommon.hlsl#L228-L257",
+          "sha256": "7d799dce0dcb5b30a810d1a25b7642a821042fe1f56ef5a70a69a49fc9d011a4"
+        },
+        {
+          "file": "Resources/RenderSkyCommon.hlsl",
+          "line": 394,
+          "endLine": 403,
+          "claim": "有限角直径太阳圆盘；源码的 1,000,000 亮度明确标为任意演示值。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Resources/RenderSkyCommon.hlsl#L394-L403",
+          "sha256": "7d799dce0dcb5b30a810d1a25b7642a821042fe1f56ef5a70a69a49fc9d011a4"
+        },
+        {
+          "file": "Application/SkyAtmosphereCommon.h",
+          "line": 26,
+          "endLine": 36,
+          "claim": "启用分支中透射表 256×64。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Application/SkyAtmosphereCommon.h#L26-L36",
+          "sha256": "5be99858c3f5b2ec4454d14a0261ff6fde621cbbf669b20cecf442cd7cf21571"
+        },
+        {
+          "file": "Application/Game.h",
+          "line": 133,
+          "endLine": 133,
+          "claim": "多重散射表边长 32。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Application/Game.h#L133-L133",
+          "sha256": "bddbee6040466219d1acdc496aa238dc05afa7eb6dc018763e0532a7ba9b1fc8"
+        },
+        {
+          "file": "Application/Game.h",
+          "line": 341,
+          "endLine": 342,
+          "claim": "源码初始实际可变积分预算 4–14 步。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Application/Game.h#L341-L342",
+          "sha256": "bddbee6040466219d1acdc496aa238dc05afa7eb6dc018763e0532a7ba9b1fc8"
+        },
+        {
+          "file": "Application/Game.cpp",
+          "line": 413,
+          "endLine": 442,
+          "claim": "32³ 空气透视、256×64 透射、32² 多重散射与 192×108 Sky-View 的实际格式分配。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Application/Game.cpp#L413-L442",
+          "sha256": "065ba7423a82fb3fb1c286f1c6ff104a77566848f8f1b9b44ed1a51468a3570f"
+        },
+        {
+          "file": "Application/Game.cpp",
+          "line": 420,
+          "endLine": 420,
+          "claim": "作者不记得蓝噪声贴图来源；本次未下载该 EXR。",
+          "url": "https://github.com/sebh/UnrealEngineSkyAtmosphere/blob/183ead5bdacc701b3b626347a680a2f3cd3d4fbd/Application/Game.cpp#L420-L420",
+          "sha256": "065ba7423a82fb3fb1c286f1c6ff104a77566848f8f1b9b44ed1a51468a3570f"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/atmosphere/sources.json#atmosphere-hillaire-2020",
+      "summary": "用小的透射表和 2D 多重散射表解决昂贵项，按当前相机高度/太阳角生成 Sky-View，另用相机视锥体积保存空气透视；可较快响应天空物质和时间变化。",
+      "textureDependencies": "程序化计算；LUT 是算法生成的数值表，不是静态天空照片。此轮不下载天空贴图。",
+      "budget": "transmittance_lut：256；64；multi_scattering_lut：32；32；sky_view_lut：192；108；aerial_volume：32；32；32；transmittance_steps：40；multi_scattering_sphere_directions：64；multi_scattering_steps_per_direction：20；sky_view_variable_steps_default：4；14；sky_view_nominal_sample_count_ignored_when_variable：30；runtime：FASTSKY 主路径 1 次 Sky-View 2D 查表加太阳圆盘；空气透视另为 1 次 3D 查表。实际 shader permutation/分支会改变成本。；paper_difference：作者论文 PDF page 9 / Table 2 的 PC Sky-View 为 200×100、30 步；固定源码 commit 的 Sky-View 为 192×108、初始可变 4–14 步。论文 GTX1080 的时间不代表本项目显卡或 MC 整帧。",
+      "integration": "适合作为后续中/高质量动态天气后端；用 framebuffer 多 pass 创建 2D LUT，确保 GLSL 版本与 MC 能力匹配。；HLSL 的 z-up/公里、Direct3D 深度 [0,1] 与 MC 的 y-up/OpenGL 深度必须明确转换，不能只替换语法。；优先只接天空；深度空气透视、地形阴影、透明层单独验收后加入。；地平线和天顶处独立测试 LUT 端点、退化 cross basis、FOV/resize/重载；引用源码不代表这些边界已在 MC 通过。",
+      "evidenceCount": 16
+    },
+    {
+      "id": "atmosphere-three-sky",
+      "name": "three.js Sky: analytic daylight and procedural plane clouds",
+      "kind": "algorithm",
+      "url": "https://github.com/mrdoob/three.js",
+      "commit": "f0a67319f396dfeaa05480bbba557e6ac7e6d445",
+      "snapshot": "固定提交 f0a67319f396dfeaa05480bbba557e6ac7e6d445",
+      "license": {
+        "label": "MIT",
+        "summary": "根 LICENSE 为 MIT（2010–2026 three.js authors）；若复制 substantial portions，附版权/许可全文。引用的 Preetham 论文、外链图片及论文原图不自动获得 MIT 许可。此轮只保存 Sky.js、README、LICENSE 3 个文件，没有下载整个 three.js。",
+        "mode": "open"
+      },
+      "features": [
+        "atmosphere",
+        "twilight",
+        "thin-clouds"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "examples/jsm/objects/Sky.js",
+          "line": 10,
+          "endLine": 19,
+          "claim": "上游注明基于 Preetham 日光模型；这不是我们重新测得的模型精度结论。",
+          "url": "https://github.com/mrdoob/three.js/blob/f0a67319f396dfeaa05480bbba557e6ac7e6d445/examples/jsm/objects/Sky.js#L10-L19",
+          "sha256": "34121b60a3bd9adc004a5a637f6135e9d2b72757eeb9e476ae1988fe2db6a9fb"
+        },
+        {
+          "file": "examples/jsm/objects/Sky.js",
+          "line": 49,
+          "endLine": 57,
+          "claim": "背面天空盒、depthWrite=false。",
+          "url": "https://github.com/mrdoob/three.js/blob/f0a67319f396dfeaa05480bbba557e6ac7e6d445/examples/jsm/objects/Sky.js#L49-L57",
+          "sha256": "34121b60a3bd9adc004a5a637f6135e9d2b72757eeb9e476ae1988fe2db6a9fb"
+        },
+        {
+          "file": "examples/jsm/objects/Sky.js",
+          "line": 79,
+          "endLine": 92,
+          "claim": "浑浊度、Rayleigh、Mie、太阳位置、云覆盖/密度/尺度/高度/速度/时间。",
+          "url": "https://github.com/mrdoob/three.js/blob/f0a67319f396dfeaa05480bbba557e6ac7e6d445/examples/jsm/objects/Sky.js#L79-L92",
+          "sha256": "34121b60a3bd9adc004a5a637f6135e9d2b72757eeb9e476ae1988fe2db6a9fb"
+        },
+        {
+          "file": "examples/jsm/objects/Sky.js",
+          "line": 130,
+          "endLine": 163,
+          "claim": "用太阳高度控制照度和 Rayleigh 淡出，按浑浊度生成 Mie 系数。",
+          "url": "https://github.com/mrdoob/three.js/blob/f0a67319f396dfeaa05480bbba557e6ac7e6d445/examples/jsm/objects/Sky.js#L130-L163",
+          "sha256": "34121b60a3bd9adc004a5a637f6135e9d2b72757eeb9e476ae1988fe2db6a9fb"
+        },
+        {
+          "file": "examples/jsm/objects/Sky.js",
+          "line": 182,
+          "endLine": 210,
+          "claim": "不使用噪声图片；4 octave FBM 随层级 drift 演化。",
+          "url": "https://github.com/mrdoob/three.js/blob/f0a67319f396dfeaa05480bbba557e6ac7e6d445/examples/jsm/objects/Sky.js#L182-L210",
+          "sha256": "34121b60a3bd9adc004a5a637f6135e9d2b72757eeb9e476ae1988fe2db6a9fb"
+        },
+        {
+          "file": "examples/jsm/objects/Sky.js",
+          "line": 229,
+          "endLine": 275,
+          "claim": "解析光程、Rayleigh/HG 相位、Beer 消光、散射和太阳圆盘。",
+          "url": "https://github.com/mrdoob/three.js/blob/f0a67319f396dfeaa05480bbba557e6ac7e6d445/examples/jsm/objects/Sky.js#L229-L275",
+          "sha256": "34121b60a3bd9adc004a5a637f6135e9d2b72757eeb9e476ae1988fe2db6a9fb"
+        },
+        {
+          "file": "examples/jsm/objects/Sky.js",
+          "line": 277,
+          "endLine": 300,
+          "claim": "向云平面投影、FBM 形状和独立大尺度 coverage、地平线淡出。",
+          "url": "https://github.com/mrdoob/three.js/blob/f0a67319f396dfeaa05480bbba557e6ac7e6d445/examples/jsm/objects/Sky.js#L277-L300",
+          "sha256": "34121b60a3bd9adc004a5a637f6135e9d2b72757eeb9e476ae1988fe2db6a9fb"
+        },
+        {
+          "file": "examples/jsm/objects/Sky.js",
+          "line": 303,
+          "endLine": 319,
+          "claim": "取天空环境色，Beer-powder 假自阴影和 HG 太阳银边。",
+          "url": "https://github.com/mrdoob/three.js/blob/f0a67319f396dfeaa05480bbba557e6ac7e6d445/examples/jsm/objects/Sky.js#L303-L319",
+          "sha256": "34121b60a3bd9adc004a5a637f6135e9d2b72757eeb9e476ae1988fe2db6a9fb"
+        },
+        {
+          "file": "examples/jsm/objects/Sky.js",
+          "line": 321,
+          "endLine": 329,
+          "claim": "Beer 云不透明度与大气消光合成。",
+          "url": "https://github.com/mrdoob/three.js/blob/f0a67319f396dfeaa05480bbba557e6ac7e6d445/examples/jsm/objects/Sky.js#L321-L329",
+          "sha256": "34121b60a3bd9adc004a5a637f6135e9d2b72757eeb9e476ae1988fe2db6a9fb"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/atmosphere/sources.json#atmosphere-three-sky",
+      "summary": "固定开销的日光散射近似，加 2D 程序化平面云；无需预计算纹理。此处选的是 2026-10-06 固定 dev commit，已含程序云，旧教程的 Sky.js 可能没有这些参数。",
+      "textureDependencies": "无静态天空/云图、无外部噪声纹理；依赖 three.js 相机、矩阵和最终 tone-map/colorspace includes。",
+      "budget": "atmosphere：每像素固定光程/相位/exp/pow，无视线积分循环，无 LUT sampler。；cloud_shape_octaves：4；cloud_extra_region_noise：1；cloud_gradient_evaluations：4 octave × 每 noise 4 个梯度 + 1 region noise × 4 个梯度 = 20 个梯度哈希/云像素；只在上半球且云覆盖>0 时执行。；asset_inputs：无静态天空/云图、无外部噪声纹理；依赖 three.js 相机、矩阵和最终 tone-map/colorspace includes。",
+      "integration": "最适合先扩展现有共用 GLSL 工作台：原创重写解析散射/平面云，参数名与现有 schema 分开设计。；将 sunPosition 的方向改成统一规范化 sunDirection，使用现有实际投影重建世界方向，避免随相机平移的天空。；平面投影 direction.xz/direction.y 接近地平线会趋于无穷；移植时先限制有效方向和采样距离，再做有限尺度 FBM 与地平线 fade，避免重现越界细线/不稳定导数问题。；在低质量档先启用平面云；真正体积云另选 ray-march 路线，不把该云材质描述为 volumetric。",
+      "evidenceCount": 9
+    },
+    {
+      "id": "cloud-seblague",
+      "name": "Sebastian Lague Clouds",
+      "kind": "algorithm",
+      "url": "https://github.com/SebLague/Clouds",
+      "commit": "fcc997c40d36c7bedf95a294cd2136b8c5127009",
+      "snapshot": "固定提交 fcc997c40d36c7bedf95a294cd2136b8c5127009",
+      "license": {
+        "label": "MIT",
+        "summary": "可使用、修改、分发和商业使用源码；复制或实质复用时保留版权与完整许可。SimplexNoise还需保留Ashima Arts、Stefan Gustavson及原移植归属说明。Unity引擎头文件不在本MIT授权中。",
+        "mode": "open"
+      },
+      "features": [
+        "volume-clouds"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "line": 121,
+          "endLine": 141,
+          "claim": "射线/AABB 有限交点",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L121",
+          "sha256": "932543d8297e92b812ffaa602957eb167279642939664802ea30c9ab25621402"
+        },
+        {
+          "file": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "line": 165,
+          "endLine": 214,
+          "claim": "高度轮廓、大形噪声和边缘侵蚀；天气图采样行已注释",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L165",
+          "sha256": "932543d8297e92b812ffaa602957eb167279642939664802ea30c9ab25621402"
+        },
+        {
+          "file": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "line": 218,
+          "endLine": 232,
+          "claim": "向太阳二次步进和指数透射",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L218",
+          "sha256": "932543d8297e92b812ffaa602957eb167279642939664802ea30c9ab25621402"
+        },
+        {
+          "file": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "line": 281,
+          "endLine": 335,
+          "claim": "场景深度限制、蓝噪声偏移、固定11单位步长和低透射提前退出",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L281",
+          "sha256": "932543d8297e92b812ffaa602957eb167279642939664802ea30c9ab25621402"
+        },
+        {
+          "file": "Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "line": 21,
+          "endLine": 22,
+          "claim": "形状132³/细节32³分辨率",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs#L21",
+          "sha256": "f1f113e9908407de68fe38e04675f6aa10cec999042de5a54fd3a03c6336ff71"
+        },
+        {
+          "file": "Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "line": 193,
+          "endLine": 211,
+          "claim": "RGBA16 UNorm 3D纹理、Repeat采样",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs#L193",
+          "sha256": "f1f113e9908407de68fe38e04675f6aa10cec999042de5a54fd3a03c6336ff71"
+        },
+        {
+          "file": "Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "line": 31,
+          "endLine": 122,
+          "claim": "可平铺Worley生成与三个频段混合",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute#L31",
+          "sha256": "97e7977062871eb28f63e26b835f46d979d5378299318dbdb621f1d41e7eb189"
+        },
+        {
+          "file": "Assets/Scripts/Clouds/Noise/Compute/WeatherMapGen.compute",
+          "line": 31,
+          "endLine": 86,
+          "claim": "二维天气噪声生成，不能据此声称主云shader已使用天气覆盖",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/WeatherMapGen.compute#L31",
+          "sha256": "6843a4ddc8ec3c0128cd7b80935d4dc097af766ca26959bb5ab8752c4b43a0aa"
+        },
+        {
+          "file": "Assets/Scripts/Clouds/Noise/Compute/SimplexNoise.compute",
+          "line": 406,
+          "endLine": 440,
+          "claim": "内嵌 Ashima/Gustavson MIT 许可与归属",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/SimplexNoise.compute#L406",
+          "sha256": "6f13c5f8290783874e54dfb89abca9a27104eae24506c1a0d954e2c48e96b192"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/clouds/sources.json#cloud-seblague",
+      "summary": "有限盒内双层Worley密度，分离形状/细节时间偏移，高度轮廓和局部侵蚀；视线与光线分别积分，HG相位与Beer透射。",
+      "textureDependencies": "生成的3D噪声：NoiseGenCompute.compute生成3D shape/detail噪声，不是照片/静态天空背景；生成的2D输入：WeatherMapGen.compute生成2D天气图，但主shader天气采样目前注释；外部图片：BlueNoise为外部2D采样纹理；本次未下载任何图片或Unity资产；移植：Unity ComputeShader需改为离线CPU生成3D数据或可用GL compute；浏览器WebGL2可上传Texture3D，但无通用compute shader。",
+      "budget": "主射线没有固定最大步数：约ceil(有限路径长度/11)，每个有密度采样再做numStepsLight次采样，CloudMaster默认8。shape132³ RGBA16 UNorm约17.55MiB，detail32³约0.25MiB，均未计驱动开销。主代码无历史重投影。以上是源码/容量推算，非GPU耗时。",
+      "integration": "AABB有限世界云不等于无限远天空材质；需选择云壳/平面或世界体积接入。；替换Unity深度和相机反投影，校准太阳方向与游戏时间。；主shader没有真实投射到地形的云影；仅有云内自遮蔽。；地平线长路径必须限制距离和步数，并保护平行交点/除零。",
+      "evidenceCount": 9
+    },
+    {
+      "id": "cloud-tylerdodds",
+      "name": "Tyler Dodds Volumetric Clouds Tutorial",
+      "kind": "algorithm",
+      "url": "https://github.com/TylerDodds/VolumetricCloudsTutorial",
+      "commit": "216f465b68c547068d08c029b9bd8788a5f0f1fd",
+      "snapshot": "固定提交 216f465b68c547068d08c029b9bd8788a5f0f1fd",
+      "license": {
+        "label": "MIT",
+        "summary": "可使用、修改、分发和商业使用本仓库源码，须在副本或实质部分保留版权和完整许可。文档指向的第三方生成器和图片不是本仓库许可的自动延伸；纹理生成器见独立sebh源记录，图片本次未取。",
+        "mode": "open"
+      },
+      "features": [
+        "volume-clouds",
+        "weather",
+        "light-shafts"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "Assets/VolumetricCloudsTutorial/Shaders/CloudDensity.cginc",
+          "line": 74,
+          "endLine": 81,
+          "claim": "固定风速乘时间的平流位移与按高度风剪切",
+          "url": "https://github.com/TylerDodds/VolumetricCloudsTutorial/blob/216f465b68c547068d08c029b9bd8788a5f0f1fd/Assets/VolumetricCloudsTutorial/Shaders/CloudDensity.cginc#L74",
+          "sha256": "af7be2dfccb9e08aaf3a619321b7b6eed78154e60bb12dfd99b6f0452a4bfe95"
+        },
+        {
+          "file": "Assets/VolumetricCloudsTutorial/Shaders/CloudDensity.cginc",
+          "line": 90,
+          "endLine": 133,
+          "claim": "天气RGB覆盖/湿度/云型、高度轮廓查表和大形密度",
+          "url": "https://github.com/TylerDodds/VolumetricCloudsTutorial/blob/216f465b68c547068d08c029b9bd8788a5f0f1fd/Assets/VolumetricCloudsTutorial/Shaders/CloudDensity.cginc#L90",
+          "sha256": "af7be2dfccb9e08aaf3a619321b7b6eed78154e60bb12dfd99b6f0452a4bfe95"
+        },
+        {
+          "file": "Assets/VolumetricCloudsTutorial/Shaders/CloudDensity.cginc",
+          "line": 165,
+          "endLine": 183,
+          "claim": "Curl扰动与细节侵蚀",
+          "url": "https://github.com/TylerDodds/VolumetricCloudsTutorial/blob/216f465b68c547068d08c029b9bd8788a5f0f1fd/Assets/VolumetricCloudsTutorial/Shaders/CloudDensity.cginc#L165",
+          "sha256": "af7be2dfccb9e08aaf3a619321b7b6eed78154e60bb12dfd99b6f0452a4bfe95"
+        },
+        {
+          "file": "Assets/VolumetricCloudsTutorial/Shaders/RaymarchInterval.cginc",
+          "line": 6,
+          "endLine": 55,
+          "claim": "质量12-128步范围及视线方向步数",
+          "url": "https://github.com/TylerDodds/VolumetricCloudsTutorial/blob/216f465b68c547068d08c029b9bd8788a5f0f1fd/Assets/VolumetricCloudsTutorial/Shaders/RaymarchInterval.cginc#L6",
+          "sha256": "4eb97ce07ecccbc17f64e2aa12f6a0e42ea1b52660ea339f7a5591ea2b558d1e"
+        },
+        {
+          "file": "Assets/VolumetricCloudsTutorial/Shaders/CloudLighting.cginc",
+          "line": 27,
+          "endLine": 60,
+          "claim": "五步递增光线积分",
+          "url": "https://github.com/TylerDodds/VolumetricCloudsTutorial/blob/216f465b68c547068d08c029b9bd8788a5f0f1fd/Assets/VolumetricCloudsTutorial/Shaders/CloudLighting.cginc#L27",
+          "sha256": "2d6ede3738eafb3abb2888b633ffd3b5753770bbe7fb3c579030ea4c2c79d1f4"
+        },
+        {
+          "file": "Assets/VolumetricCloudsTutorial/Shaders/RaymarchIntegral.cginc",
+          "line": 13,
+          "endLine": 41,
+          "claim": "空域自适应步长与回退",
+          "url": "https://github.com/TylerDodds/VolumetricCloudsTutorial/blob/216f465b68c547068d08c029b9bd8788a5f0f1fd/Assets/VolumetricCloudsTutorial/Shaders/RaymarchIntegral.cginc#L13",
+          "sha256": "a8a3702562ac11c7b0068cf2056b4fb33ce8fa9928ea9d5fde78e67ce8fed154"
+        },
+        {
+          "file": "Assets/VolumetricCloudsTutorial/Shaders/RaymarchIntegral.cginc",
+          "line": 48,
+          "endLine": 112,
+          "claim": "Beer透射、湿度调暗与积分",
+          "url": "https://github.com/TylerDodds/VolumetricCloudsTutorial/blob/216f465b68c547068d08c029b9bd8788a5f0f1fd/Assets/VolumetricCloudsTutorial/Shaders/RaymarchIntegral.cginc#L48",
+          "sha256": "a8a3702562ac11c7b0068cf2056b4fb33ce8fa9928ea9d5fde78e67ce8fed154"
+        },
+        {
+          "file": "Assets/VolumetricCloudsTutorial/Shaders/CloudsHistoryEffectShader.shader",
+          "line": 139,
+          "endLine": 192,
+          "claim": "旧帧反投影、邻域裁剪、时间混合",
+          "url": "https://github.com/TylerDodds/VolumetricCloudsTutorial/blob/216f465b68c547068d08c029b9bd8788a5f0f1fd/Assets/VolumetricCloudsTutorial/Shaders/CloudsHistoryEffectShader.shader#L139",
+          "sha256": "56b4f120a4427cbc50e01461ddc02e6d20eef042f1c8314358584327021a1ccc"
+        },
+        {
+          "file": "Assets/VolumetricCloudsTutorial/CloudDensity/NoiseTextures/NoiseTextures.md",
+          "line": 205,
+          "endLine": 242,
+          "claim": "离线128³/32³生成、TGA切片及Texture3D导入",
+          "url": "https://github.com/TylerDodds/VolumetricCloudsTutorial/blob/216f465b68c547068d08c029b9bd8788a5f0f1fd/Assets/VolumetricCloudsTutorial/CloudDensity/NoiseTextures/NoiseTextures.md#L205",
+          "sha256": "251fb1101a350439ee1e1806441e5d4d751ac0553078caacb812ea3a64831053"
+        },
+        {
+          "file": "Assets/VolumetricCloudsTutorial/CloudDensity/NoiseTextures/CurlNoise.cs",
+          "line": 1,
+          "endLine": 20,
+          "claim": "Curl噪声由2D源图生成的编辑器工具入口",
+          "url": "https://github.com/TylerDodds/VolumetricCloudsTutorial/blob/216f465b68c547068d08c029b9bd8788a5f0f1fd/Assets/VolumetricCloudsTutorial/CloudDensity/NoiseTextures/CurlNoise.cs#L1",
+          "sha256": "74b9d08571301498546eef637d1c1f48c2758b9beefaccd99ceb47e3fc818a92"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/clouds/sources.json#cloud-tylerdodds",
+      "summary": "平层/曲率云壳，天气RGB决定coverage/wetness/type；云型/高度LUT改变密度与侵蚀，风剪切+Curl扭曲，高频细节侵蚀；质量档、自适应空域步进、五步光照和历史重投影。",
+      "textureDependencies": "生成的3D噪声：离线TileableVolumeNoise输出noiseShape.tga与noiseErosion.tga，后者作为3D切片载体；使用生成噪声不等于使用静态天空图片；二维图/LUT：WeatherTex RGB=覆盖/湿度/云型；DensityErosionTex按云型和高度的RG曲线；CurlTex从2D源噪声图派生；可自己程序生成这些输入；外部图片：原教程图片/示例纹理未下载。本快照只含代码/许可/文档，不是可直接启动的完整Unity工程。",
+      "budget": "视线步数按abs(ray.y)在Low12-16、Normal24-32、High48-64、Extreme96-128之间；光线固定5步，可跳过空区域；历史shader从低分辨率图与平均云深度重投影。128³RGBA8为8MiB，32³RGBA8为0.125MiB（文档方案、未计mip），不是实际MC显存/帧率。",
+      "integration": "云壳有世界位置和高度；无法直接塞进仅按视线方向着色的无限天空而保留近距离视差。；历史帧需独立FBO、云深度、上一帧相机、风位移补偿和切换维度/重载清理，避免拖影。；wetness只是云色调参数，不是降雨粒子/碰撞/积水实现。；单位以米/千米设计，接入时应明确Minecraft方块单位与云高。",
+      "evidenceCount": 10
+    },
+    {
+      "id": "cloud-unity-hdrp",
+      "name": "Unity HDRP Volumetric Clouds / Cloud Layer / Volumetric Fog",
+      "kind": "algorithm",
+      "url": "https://github.com/Unity-Technologies/Graphics",
+      "commit": "a7e4c051d256a781ab362c64316b125a1e104694",
+      "snapshot": "固定提交 a7e4c051d256a781ab362c64316b125a1e104694",
+      "license": {
+        "label": "LicenseRef-Unity-Companion",
+        "summary": "官方声明为Unity Companion License for Unity-dependent projects；不具有可直接复制进Minecraft/Forge的通用MIT许可。本项目只研究原理与管线；Minecraft实现需独立编写，不能把这些源码或Unity默认云纹理放入skill/发布包。若要复制需获得覆盖该用途的另行许可。官方现行法律网页仅另存为检索证据，不把页面metadata摘要当完整条款。",
+        "mode": "reference"
+      },
+      "features": [
+        "thin-clouds",
+        "volume-clouds",
+        "weather",
+        "fog",
+        "light-shafts"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/VolumetricClouds.cs",
+          "line": 179,
+          "endLine": 200,
+          "claim": "默认64主步/6光步、云图与LUT接口",
+          "url": "https://github.com/Unity-Technologies/Graphics/blob/a7e4c051d256a781ab362c64316b125a1e104694/Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/VolumetricClouds.cs#L179",
+          "sha256": "0f12ddf10a53816b2510604625909410a227172d2b29cbac5a05bad93a285184"
+        },
+        {
+          "file": "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/VolumetricCloudsUtilities.hlsl",
+          "line": 231,
+          "endLine": 371,
+          "claim": "风位移、2D天气图、3D噪声、height LUT和多级侵蚀",
+          "url": "https://github.com/Unity-Technologies/Graphics/blob/a7e4c051d256a781ab362c64316b125a1e104694/Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/VolumetricCloudsUtilities.hlsl#L231",
+          "sha256": "3d50db296eb4092e6003c6ee5f8f44af038f10a019fa43d45c8b498c4d17b38c"
+        },
+        {
+          "file": "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/VolumetricCloudsUtilities.hlsl",
+          "line": 480,
+          "endLine": 611,
+          "claim": "有限球壳、密度早停和空区跳步",
+          "url": "https://github.com/Unity-Technologies/Graphics/blob/a7e4c051d256a781ab362c64316b125a1e104694/Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/VolumetricCloudsUtilities.hlsl#L480",
+          "sha256": "3d50db296eb4092e6003c6ee5f8f44af038f10a019fa43d45c8b498c4d17b38c"
+        },
+        {
+          "file": "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/VolumetricCloudsTraceShadows.compute",
+          "line": 25,
+          "endLine": 81,
+          "claim": "太阳方向云影，15个循环采样（区间分16份）",
+          "url": "https://github.com/Unity-Technologies/Graphics/blob/a7e4c051d256a781ab362c64316b125a1e104694/Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/VolumetricCloudsTraceShadows.compute#L25",
+          "sha256": "50fe985c30e62cd6b9b8d36ec838c1cdac1e7afd467bc22ed4031c1158268a1d"
+        },
+        {
+          "file": "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/VolumetricCloudsDenoising.hlsl",
+          "line": 54,
+          "endLine": 77,
+          "claim": "旧帧颜色范围裁剪并降低历史有效性",
+          "url": "https://github.com/Unity-Technologies/Graphics/blob/a7e4c051d256a781ab362c64316b125a1e104694/Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/VolumetricCloudsDenoising.hlsl#L54",
+          "sha256": "06dbdc95d23f4b6b42617ed03ffb4d1b51b3945f49f3f3597ed6fcb1f412f7c9"
+        },
+        {
+          "file": "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/HDRenderPipeline.VolumetricCloudsLowResolution.cs",
+          "line": 40,
+          "endLine": 49,
+          "claim": "1/4宽高追踪、1/2宽高累积",
+          "url": "https://github.com/Unity-Technologies/Graphics/blob/a7e4c051d256a781ab362c64316b125a1e104694/Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricClouds/HDRenderPipeline.VolumetricCloudsLowResolution.cs#L40",
+          "sha256": "1d6ef16b9b01a32153ed77f9954e214c7ed2014a39d116d988b00af0c8529570"
+        },
+        {
+          "file": "Packages/com.unity.render-pipelines.high-definition/Runtime/Sky/CloudSystem/CloudLayer/CloudLayer.cs",
+          "line": 115,
+          "endLine": 178,
+          "claim": "外部LatLong云图、flowmap、默认6光照步和投影云影接口",
+          "url": "https://github.com/Unity-Technologies/Graphics/blob/a7e4c051d256a781ab362c64316b125a1e104694/Packages/com.unity.render-pipelines.high-definition/Runtime/Sky/CloudSystem/CloudLayer/CloudLayer.cs#L115",
+          "sha256": "e815422bf439f8886dce78d229c354a1b031ca8c0c982849fb0d3f9b86888ba9"
+        },
+        {
+          "file": "Packages/com.unity.render-pipelines.high-definition/Runtime/Sky/CloudSystem/CloudLayer/CloudLayerCommon.hlsl",
+          "line": 96,
+          "endLine": 139,
+          "claim": "两相错开流动混合及云层光照",
+          "url": "https://github.com/Unity-Technologies/Graphics/blob/a7e4c051d256a781ab362c64316b125a1e104694/Packages/com.unity.render-pipelines.high-definition/Runtime/Sky/CloudSystem/CloudLayer/CloudLayerCommon.hlsl#L96",
+          "sha256": "1ce9815ff056d07e7bd69e92c0ae5f408f763c32b3eef75262a1297fa37fa225"
+        },
+        {
+          "file": "Packages/com.unity.render-pipelines.high-definition/Runtime/Sky/CloudSystem/CloudLayer/BakeCloudShadows.compute",
+          "line": 23,
+          "endLine": 57,
+          "claim": "薄云影纹理及边界平铺",
+          "url": "https://github.com/Unity-Technologies/Graphics/blob/a7e4c051d256a781ab362c64316b125a1e104694/Packages/com.unity.render-pipelines.high-definition/Runtime/Sky/CloudSystem/CloudLayer/BakeCloudShadows.compute#L23",
+          "sha256": "0cc04dc526f12e5e28f3ae8de317243a72e058d6483ca1f5ced4577ad8b91233"
+        },
+        {
+          "file": "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricLighting/VolumetricLighting.compute",
+          "line": 577,
+          "endLine": 622,
+          "claim": "场景深度限界和froxel密度积分",
+          "url": "https://github.com/Unity-Technologies/Graphics/blob/a7e4c051d256a781ab362c64316b125a1e104694/Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricLighting/VolumetricLighting.compute#L577",
+          "sha256": "2685ae420a24bec8a62a6a0d433954e2f099c629806e4aa5d94865b330b87f1b"
+        },
+        {
+          "file": "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricLighting/VolumetricLighting.compute",
+          "line": 680,
+          "endLine": 774,
+          "claim": "历史重投影及体积光合成",
+          "url": "https://github.com/Unity-Technologies/Graphics/blob/a7e4c051d256a781ab362c64316b125a1e104694/Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/VolumetricLighting/VolumetricLighting.compute#L680",
+          "sha256": "2685ae420a24bec8a62a6a0d433954e2f099c629806e4aa5d94865b330b87f1b"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/clouds/sources.json#cloud-unity-hdrp",
+      "summary": "云图+height LUT+3D大形/侵蚀，独立云影低分辨率缓冲，稀疏步进与重投影裁剪；CloudLayer另走LatLong二维薄云、两相循环流动、烘焙照明；雾用相机froxel/VBuffer积分。",
+      "textureDependencies": "生成的3D噪声：3D Worley128和32³erosion采样输入，生成/打包流程未从Unity资产中移植；云图与LUT：CloudMap 2D；CloudLut 2D；CloudLayer LatLong cloudMap及可选flowmap；关键字PROCEDURAL不代表主shader无云图片输入；外部图片：Unity默认纹理和HDRI均未下载；不能将此实现宣称为无图像依赖的完整程序化天空；快照范围：只下载云、薄云、云影与雾相关小文本子集及root/package许可证；大量HDRP/core头文件/引擎运行时不在子集中，不能独立编译。",
+      "budget": "默认64主步和6光步，分辨率策略可1/4宽高追踪（1/16像素）及1/2宽高中间合成；不等于全GPU成本降低16倍。云影256²默认，可64-1024；TraceShadows循环i=1..15。薄云照明烘焙默认6步，渲染期每流动层两次云图采样且可能再采flowmap。所列源码不是FPS实测。",
+      "integration": "HLSL compute、RenderGraph、HDRP相机相对坐标、SH环境探针和pre-exposure均非Forge现成接口。；真实云影需地形表面位置或着色入口；天空方向shader不会自行照暗地形。；体积雾需要世界深度和独立合成，天空地平线颜色渐变不等于场景体积雾。；源许可不适用于直接Minecraft移植，仅作为自主实现架构对照。",
+      "evidenceCount": 11
+    },
+    {
+      "id": "cloud-tileable-volume-noise",
+      "name": "Sébastien Hillaire Tileable Volume Noise",
+      "kind": "algorithm",
+      "url": "https://github.com/sebh/TileableVolumeNoise",
+      "commit": "1f879a26b89aaa4b5a7f112f14ec149d08057661",
+      "snapshot": "固定提交 1f879a26b89aaa4b5a7f112f14ec149d08057661",
+      "license": {
+        "label": "MIT",
+        "summary": "仓库原作MIT：复制/实质复用须保留Hillaire版权与完整许可；使用libtarga/GLM时同时保留其各自文件许可和归属。GLM原通知另带关于military purposes的Bunny句，本快照完整保留，不擅自删改依赖通知。Worley源码另有对Marc-Andre Loyer方法的归属，不另取Shadertoy内容或按仓库许可推及Shadertoy素材。",
+        "mode": "open"
+      },
+      "features": [
+        "volume-clouds"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "TileableVolumeNoise.cpp",
+          "line": 35,
+          "endLine": 59,
+          "claim": "周期cell坐标Worley邻域搜索",
+          "url": "https://github.com/sebh/TileableVolumeNoise/blob/1f879a26b89aaa4b5a7f112f14ec149d08057661/TileableVolumeNoise.cpp#L35",
+          "sha256": "a52192bf509b1152b3d3369dc2a67814f5640c0b425608f2a8d5a656e3249848"
+        },
+        {
+          "file": "TileableVolumeNoise.cpp",
+          "line": 66,
+          "endLine": 94,
+          "claim": "可平铺四维Perlin采样及octave归一化",
+          "url": "https://github.com/sebh/TileableVolumeNoise/blob/1f879a26b89aaa4b5a7f112f14ec149d08057661/TileableVolumeNoise.cpp#L66",
+          "sha256": "a52192bf509b1152b3d3369dc2a67814f5640c0b425608f2a8d5a656e3249848"
+        },
+        {
+          "file": "main.cpp",
+          "line": 97,
+          "endLine": 184,
+          "claim": "128³RGBA Perlin-Worley形状体积与TGA切片输出",
+          "url": "https://github.com/sebh/TileableVolumeNoise/blob/1f879a26b89aaa4b5a7f112f14ec149d08057661/main.cpp#L97",
+          "sha256": "21e6ab49f830db00dfd9c922aba154d34d1de9cdb3dbc55e0f75218687d3186d"
+        },
+        {
+          "file": "main.cpp",
+          "line": 192,
+          "endLine": 253,
+          "claim": "32³细节Worley体积及切片输出",
+          "url": "https://github.com/sebh/TileableVolumeNoise/blob/1f879a26b89aaa4b5a7f112f14ec149d08057661/main.cpp#L192",
+          "sha256": "21e6ab49f830db00dfd9c922aba154d34d1de9cdb3dbc55e0f75218687d3186d"
+        },
+        {
+          "file": "libtarga.h",
+          "line": 4,
+          "endLine": 39,
+          "claim": "TGA依赖MIT许可",
+          "url": "https://github.com/sebh/TileableVolumeNoise/blob/1f879a26b89aaa4b5a7f112f14ec149d08057661/libtarga.h#L4",
+          "sha256": "ea908c1f76e0c7f395ca34ffc95960bda0c66de2382deacbaa89d695f5666a98"
+        },
+        {
+          "file": "glm/glm.hpp",
+          "line": 2,
+          "endLine": 26,
+          "claim": "GLM依赖内嵌许可通知",
+          "url": "https://github.com/sebh/TileableVolumeNoise/blob/1f879a26b89aaa4b5a7f112f14ec149d08057661/glm/glm.hpp#L2",
+          "sha256": "64169ee59805974d590b4c137ae3b599e7316f261f0e53687536e8006e5674d2"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/clouds/sources.json#cloud-tileable-volume-noise",
+      "summary": "离线生成可平铺Perlin/Worley，用Perlin连通形与Worley团块边界组合，RGBA分别保存基形和多个频段，让实时云shader只需几次3D纹理读取。",
+      "textureDependencies": "生成的3D噪声：噪声由C++函数生成；TGA为3D切片的存储容器，不是艺术家绘制/照片天空贴图；外部图片：Examples图片未下载且不进入主工程；依赖：GLM / libtarga / Windows concurrency.h；快照保留原理相关源文件和依赖许可头，不含全部GLM头文件，因此不是独立可构建工程。",
+      "budget": "128³×4字节=8MiB基形；32³×4=0.125MiB侵蚀，未计mip/驱动开销。生成器逐体素循环，Worley每次检查27邻格，多个频段只应在预处理生成，不能把整个生成循环搬到每个云步进采样。未编译/执行生成器。",
+      "integration": "可按公式独立实现CPU生成器并上传GL_TEXTURE_3D，统一WebGL2/Forge数据格式和线性采样。；原C++ GLM及Windows parallel_for不是Java运行时接口。；生成mip时保持周期边界，sRGB关闭，纹理格式和RGBA通道协议必须明确。",
+      "evidenceCount": 6
+    },
+    {
+      "id": "solas",
+      "name": "Solas Shader V3.7b（用户本地改动快照，非上游认证版本）",
+      "kind": "minecraft",
+      "url": "https://modrinth.com/shader/solas-shader",
+      "commit": "",
+      "snapshot": "同名ZIP当前hash与旧manifest不同，所读锚点全部与本轮冻结ZIP一致。Solas云函数包含本地改动，只作为本地参考，不认证上游算法。",
+      "license": {
+        "label": "未确认开放许可",
+        "summary": "文件只有作者和官方来源声明；未附完整开放许可证，不能据此确认代码/纹理公开复用或再分发。研究采用算法描述与原创重写。",
+        "mode": "reference"
+      },
+      "features": [
+        "twilight",
+        "sun-moon",
+        "volume-clouds",
+        "weather",
+        "rainbow",
+        "special",
+        "cosmic"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "shaders/lib/atmosphere/sky.glsl",
+          "line": 1,
+          "endLine": 1,
+          "claim": "经验大气色；日落、雨湿、生物群系、高空过渡",
+          "url": "",
+          "sha256": "78d1ed9d62c3a13311e60a427e522abe066063cc3a07f64d8bd6089f8d84398e"
+        },
+        {
+          "file": "shaders/lib/atmosphere/sky.glsl",
+          "line": 35,
+          "endLine": 35,
+          "claim": "日出/日落散射色混合，非物理路径积分",
+          "url": "",
+          "sha256": "78d1ed9d62c3a13311e60a427e522abe066063cc3a07f64d8bd6089f8d84398e"
+        },
+        {
+          "file": "shaders/lib/atmosphere/sunMoon.glsl",
+          "line": 7,
+          "endLine": 7,
+          "claim": "角方向幂函数太阳盘/月盘",
+          "url": "",
+          "sha256": "1c947e5e59bd0fd4e994ce68508e947a6d23dc32148a9ee6a9984b4346f85980"
+        },
+        {
+          "file": "shaders/lib/atmosphere/sunMoon.glsl",
+          "line": 14,
+          "endLine": 14,
+          "claim": "moonPhase 偏移盘遮罩产生月相",
+          "url": "",
+          "sha256": "1c947e5e59bd0fd4e994ce68508e947a6d23dc32148a9ee6a9984b4346f85980"
+        },
+        {
+          "file": "shaders/lib/atmosphere/rainbow.glsl",
+          "line": 2,
+          "endLine": 2,
+          "claim": "雨后湿度/日照/雪地条件控制",
+          "url": "",
+          "sha256": "5829d9e442160c08ed098f703ec1331d7637e64425eaa723f00a5fee0ee2a338"
+        },
+        {
+          "file": "shaders/lib/atmosphere/rainbow.glsl",
+          "line": 11,
+          "endLine": 11,
+          "claim": "三个 smoothstep 颜色带程序弧虹",
+          "url": "",
+          "sha256": "5829d9e442160c08ed098f703ec1331d7637e64425eaa723f00a5fee0ee2a338"
+        },
+        {
+          "file": "shaders/lib/atmosphere/planarClouds.glsl",
+          "line": 7,
+          "endLine": 7,
+          "claim": "多尺度二维噪声纹理生成平面云",
+          "url": "",
+          "sha256": "a4b74ff53dad24a23686674cabd9a40ea6103dafef65ae4909cecf84f8a3c0e1"
+        },
+        {
+          "file": "shaders/lib/atmosphere/volumetricClouds.glsl",
+          "line": 8,
+          "endLine": 8,
+          "claim": "按日龄函数改变云层参数",
+          "url": "",
+          "sha256": "18e19170e8cf7f7f40e601ca7940a0b28c8311015ae2aa82b7f8cc7b2ed3232f"
+        },
+        {
+          "file": "shaders/lib/atmosphere/volumetricClouds.glsl",
+          "line": 141,
+          "endLine": 141,
+          "claim": "体积云沿射线绘制入口",
+          "url": "",
+          "sha256": "18e19170e8cf7f7f40e601ca7940a0b28c8311015ae2aa82b7f8cc7b2ed3232f"
+        },
+        {
+          "file": "shaders/lib/atmosphere/volumetricClouds.glsl",
+          "line": 159,
+          "endLine": 159,
+          "claim": "Distant Horizons 深度读取",
+          "url": "",
+          "sha256": "18e19170e8cf7f7f40e601ca7940a0b28c8311015ae2aa82b7f8cc7b2ed3232f"
+        },
+        {
+          "file": "shaders/programs/deferred1.glsl",
+          "line": 279,
+          "endLine": 279,
+          "claim": "太阳/月亮真实调用",
+          "url": "",
+          "sha256": "47f31d07ef3d78ca079f22ca2c635a789ab2d1c5f75a81dfc4df21f94c7a16bb"
+        },
+        {
+          "file": "shaders/programs/deferred1.glsl",
+          "line": 300,
+          "endLine": 300,
+          "claim": "彩虹真实调用",
+          "url": "",
+          "sha256": "47f31d07ef3d78ca079f22ca2c635a789ab2d1c5f75a81dfc4df21f94c7a16bb"
+        },
+        {
+          "file": "shaders/shaders.properties",
+          "line": 126,
+          "endLine": 126,
+          "claim": "自带噪声纹理槽位",
+          "url": "",
+          "sha256": "9fed287e7da2d1bb7bb4c76e7397a5e0d1b7989b43a147d7d8f5508ffdb4a362"
+        },
+        {
+          "file": "endNebula.glsl",
+          "line": 47,
+          "endLine": 47,
+          "claim": "drawEndNebula方向投影天幕入口",
+          "url": "",
+          "sha256": "45c5a32695782a996825db17a03955ce87715f9053d3a4bad935d646c2897d2e"
+        },
+        {
+          "file": "endNebula.glsl",
+          "line": 61,
+          "endLine": 61,
+          "claim": "观察方向与太阳方向投影到二维天幕",
+          "url": "",
+          "sha256": "45c5a32695782a996825db17a03955ce87715f9053d3a4bad935d646c2897d2e"
+        },
+        {
+          "file": "endNebula.glsl",
+          "line": 115,
+          "endLine": 115,
+          "claim": "暗核、光子环与压扁torus的二维黑洞组合",
+          "url": "",
+          "sha256": "45c5a32695782a996825db17a03955ce87715f9053d3a4bad935d646c2897d2e"
+        },
+        {
+          "file": "endNebula.glsl",
+          "line": 128,
+          "endLine": 128,
+          "claim": "Time滚动盘纹坐标，依赖noisetex",
+          "url": "",
+          "sha256": "45c5a32695782a996825db17a03955ce87715f9053d3a4bad935d646c2897d2e"
+        },
+        {
+          "file": "deferred1.glsl",
+          "line": 305,
+          "endLine": 305,
+          "claim": "真实天空pass调用drawEndNebula",
+          "url": "",
+          "sha256": "47f31d07ef3d78ca079f22ca2c635a789ab2d1c5f75a81dfc4df21f94c7a16bb"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/shaderpacks/sources.json#solas",
+      "summary": "经验日落色、程序日月和雨后虹；平面/体积云及每日天气。当前包含本地修改，不能认证上游原版云算法。",
+      "textureDependencies": "天空色/日月/彩虹程序；平面与体积云读取noisetex；非全包无纹理",
+      "budget": "多 pass 与宏配置相关；未编译参考包、未测 GPU 耗时。详细步数/纹理契约见研究报告。",
+      "integration": "deferred1天空层+体积云；太阳月亮和虹只进入天空分支；体积云独立可被场景深度截断；静态含DH/Voxy分支，未实测；Forge天空替换不能直接include此包函数",
+      "evidenceCount": 18
+    },
+    {
+      "id": "photon",
+      "name": "Photon v1.3b（用户本地快照）",
+      "kind": "minecraft",
+      "url": "https://modrinth.com/shader/photon",
+      "commit": "",
+      "snapshot": "用户本地 ZIP，SHA-256 120897768eaa8cb1f14a3e98f88dff009ae3204ee3b96904a4fe8586edfc1ead",
+      "license": {
+        "label": "本地自定义受限许可",
+        "summary": "允许学习、个人修改和受限再分发；不得未经书面许可在为创作者提供直接/间接金钱补偿的平台分发衍生物，不能收费索取副本；实质性副本须附许可证；另有商用modpack授权。非MIT项目总授权。",
+        "mode": "reference"
+      },
+      "features": [
+        "atmosphere",
+        "sun-moon",
+        "thin-clouds",
+        "volume-clouds",
+        "fog",
+        "light-shafts",
+        "rainbow",
+        "cosmic"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "shaders/include/sky/atmosphere.glsl",
+          "line": 56,
+          "endLine": 56,
+          "claim": "Rayleigh/Mie/臭氧系数",
+          "url": "",
+          "sha256": "d6033728e8f6301d9b68b5a294ae06dcfc3ae5315208ab3e25fbbe826714ba79"
+        },
+        {
+          "file": "shaders/include/sky/atmosphere.glsl",
+          "line": 256,
+          "endLine": 256,
+          "claim": "预计算散射三维LUT采样",
+          "url": "",
+          "sha256": "d6033728e8f6301d9b68b5a294ae06dcfc3ae5315208ab3e25fbbe826714ba79"
+        },
+        {
+          "file": "shaders/include/sky/sky.glsl",
+          "line": 34,
+          "endLine": 34,
+          "claim": "程序太阳强前向散射外观",
+          "url": "",
+          "sha256": "9121b52697ad724a05cf46afe0f2857c73984246604cc08df458db5a078302ff"
+        },
+        {
+          "file": "shaders/include/sky/sky.glsl",
+          "line": 75,
+          "endLine": 75,
+          "claim": "月面纹理由noise采样整形，不是月亮图片",
+          "url": "",
+          "sha256": "9121b52697ad724a05cf46afe0f2857c73984246604cc08df458db5a078302ff"
+        },
+        {
+          "file": "shaders/include/sky/sky.glsl",
+          "line": 84,
+          "endLine": 84,
+          "claim": "8个moonPhase相位控制照明方向",
+          "url": "",
+          "sha256": "9121b52697ad724a05cf46afe0f2857c73984246604cc08df458db5a078302ff"
+        },
+        {
+          "file": "shaders/include/sky/rainbow.glsl",
+          "line": 29,
+          "endLine": 29,
+          "claim": "42度主虹与47度副虹",
+          "url": "",
+          "sha256": "2eceb17ab248c753ffa490d15da31ab7e16afd6ed449001f84cede5507e775b8"
+        },
+        {
+          "file": "shaders/include/sky/rainbow.glsl",
+          "line": 72,
+          "endLine": 72,
+          "claim": "反光源方向角投影",
+          "url": "",
+          "sha256": "2eceb17ab248c753ffa490d15da31ab7e16afd6ed449001f84cede5507e775b8"
+        },
+        {
+          "file": "shaders/include/weather/rainbow.glsl",
+          "line": 7,
+          "endLine": 7,
+          "claim": "湿度/雨后rainbow_amount",
+          "url": "",
+          "sha256": "d35cf3c5fb2a846c5ee1e5a5b6a5747ee9b78077599ba1c43b3e77bf0c511456"
+        },
+        {
+          "file": "shaders/include/sky/clouds/cumulus.glsl",
+          "line": 10,
+          "endLine": 10,
+          "claim": "积云与层云高度整形",
+          "url": "",
+          "sha256": "1923542cd9ad862a6166a542dbdcb1597fd70316e4338b236deefc2ccb932ba5"
+        },
+        {
+          "file": "shaders/include/sky/clouds/cumulus.glsl",
+          "line": 80,
+          "endLine": 80,
+          "claim": "三维Worley纹理侵蚀云细节",
+          "url": "",
+          "sha256": "1923542cd9ad862a6166a542dbdcb1597fd70316e4338b236deefc2ccb932ba5"
+        },
+        {
+          "file": "shaders/include/sky/clouds/cirrus.glsl",
+          "line": 8,
+          "endLine": 8,
+          "claim": "卷云/卷积云密度函数",
+          "url": "",
+          "sha256": "4e1f13c6ab74d616495e2d5a7a463f3502d160b8a38ef45d057be67995b8d030"
+        },
+        {
+          "file": "shaders/include/sky/clouds/noctilucent.glsl",
+          "line": 51,
+          "endLine": 51,
+          "claim": "夜光云依赖低太阳高度窗口",
+          "url": "",
+          "sha256": "ebff1f706a8680ef937edb570242d147b073111e3bb09b87cc6c6c1ada4dba56"
+        },
+        {
+          "file": "shaders/include/sky/clouds.glsl",
+          "line": 57,
+          "endLine": 57,
+          "claim": "浓积云真实组合",
+          "url": "",
+          "sha256": "07bac05a93b29cff55841d6f7425fe46d1555fe1e6b2cfc037d9fb9fee992972"
+        },
+        {
+          "file": "shaders/include/sky/clouds.glsl",
+          "line": 106,
+          "endLine": 106,
+          "claim": "夜光云真实组合",
+          "url": "",
+          "sha256": "07bac05a93b29cff55841d6f7425fe46d1555fe1e6b2cfc037d9fb9fee992972"
+        },
+        {
+          "file": "shaders/include/sky/crepuscular_rays.glsl",
+          "line": 85,
+          "endLine": 85,
+          "claim": "曙暮光射线积累",
+          "url": "",
+          "sha256": "924e9f08adaf24e37d6a619602da6ded226f3664f54e9db78ee770ef73fb1b93"
+        },
+        {
+          "file": "shaders/include/sky/crepuscular_rays.glsl",
+          "line": 94,
+          "endLine": 94,
+          "claim": "云影图采样用于曙暮光",
+          "url": "",
+          "sha256": "924e9f08adaf24e37d6a619602da6ded226f3664f54e9db78ee770ef73fb1b93"
+        },
+        {
+          "file": "shaders/include/sky/sky.glsl",
+          "line": 237,
+          "endLine": 237,
+          "claim": "雷电天空亮度闪光，非闪电几何",
+          "url": "",
+          "sha256": "9121b52697ad724a05cf46afe0f2857c73984246604cc08df458db5a078302ff"
+        },
+        {
+          "file": "shaders/include/sky/sky.glsl",
+          "line": 183,
+          "endLine": 183,
+          "claim": "大气透射率乘远背景",
+          "url": "",
+          "sha256": "9121b52697ad724a05cf46afe0f2857c73984246604cc08df458db5a078302ff"
+        },
+        {
+          "file": "shaders/include/sky/sky.glsl",
+          "line": 189,
+          "endLine": 189,
+          "claim": "云透射/散射合成",
+          "url": "",
+          "sha256": "9121b52697ad724a05cf46afe0f2857c73984246604cc08df458db5a078302ff"
+        },
+        {
+          "file": "shaders/program/d4_deferred_shading.fsh",
+          "line": 291,
+          "endLine": 291,
+          "claim": "depth等于1的天空像素入口",
+          "url": "",
+          "sha256": "212081e707c20c78e17cbfd3380b2f22eb696cc1aa14bdf006c07d59f53f67e0"
+        },
+        {
+          "file": "shaders/program/d4_deferred_shading.fsh",
+          "line": 658,
+          "endLine": 658,
+          "claim": "云表观距离与地形比较",
+          "url": "",
+          "sha256": "212081e707c20c78e17cbfd3380b2f22eb696cc1aa14bdf006c07d59f53f67e0"
+        },
+        {
+          "file": "shaders/shaders.properties",
+          "line": 347,
+          "endLine": 347,
+          "claim": "大气LUT资产绑定",
+          "url": "",
+          "sha256": "f8cc8df60f930612e8817e4176a34886c1a9de778c15427a5468ecbc4f71ee9a"
+        },
+        {
+          "file": "shaders/shaders.properties",
+          "line": 350,
+          "endLine": 350,
+          "claim": "三维噪声资产绑定",
+          "url": "",
+          "sha256": "f8cc8df60f930612e8817e4176a34886c1a9de778c15427a5468ecbc4f71ee9a"
+        },
+        {
+          "file": "shaders/program/d4_deferred_shading.fsh",
+          "line": 300,
+          "endLine": 300,
+          "claim": "真实末地世界方向天空调用入口",
+          "url": "",
+          "sha256": "212081e707c20c78e17cbfd3380b2f22eb696cc1aa14bdf006c07d59f53f67e0"
+        },
+        {
+          "file": "shaders/include/sky/sky.glsl",
+          "line": 298,
+          "endLine": 335,
+          "claim": "末地橙色实体恒星盘、临边昏暗与动态噪声耀斑；不是黑洞",
+          "url": "",
+          "sha256": "9121b52697ad724a05cf46afe0f2857c73984246604cc08df458db5a078302ff"
+        },
+        {
+          "file": "shaders/include/sky/sky.glsl",
+          "line": 350,
+          "endLine": 352,
+          "claim": "END_SUN_EFFECT实际启用分支",
+          "url": "",
+          "sha256": "9121b52697ad724a05cf46afe0f2857c73984246604cc08df458db5a078302ff"
+        },
+        {
+          "file": "shaders/settings.glsl",
+          "line": 177,
+          "endLine": 177,
+          "claim": "默认启用末地恒星效果",
+          "url": "",
+          "sha256": "93401d268fe859cc1df81929ad41156757a98db80f80cf32af80d9cdca96c394"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/shaderpacks/sources.json#photon",
+      "summary": "数值大气 LUT、多种体积云/卷云/夜光云、程序月相、主虹/反虹与云影驱动的曙暮光。 指定v1.3b另核对末地橙色恒星和流动耀斑。",
+      "textureDependencies": "日月/彩虹是程序化；散射三维LUT、噪声二维/三维DAT采样；块状云采样Minecraft clouds.png",
+      "budget": "多 pass 与宏配置相关；未编译参考包、未测 GPU 耗时。详细步数/纹理契约见研究报告。",
+      "integration": "deferred4 depth==1绘制背景；云alpha是透射率；表观距离允许云和虹在地形前合成；环境天空映射另在deferred0；Iris/OptiFine闪电输入不同；DH/LOD有专门入口，未运行参考包",
+      "evidenceCount": 27
+    },
+    {
+      "id": "astralex",
+      "name": "AstraLex V93.0（用户本地快照）",
+      "kind": "minecraft",
+      "url": "https://modrinth.com/shader/astralex",
+      "commit": "",
+      "snapshot": "用户本地 ZIP，SHA-256 70b6d8127a6733f0a19bd1d351b92709d6ee7496967ff49c4793d2c28c7a6c58",
+      "license": {
+        "label": "归属记录，完整许可未确认",
+        "summary": "Credits说明BSL等来源，但本地快照未找到完整再分发条款；about宏不是许可证。公开学习文件不等于任意发布授权。",
+        "mode": "reference"
+      },
+      "features": [
+        "thin-clouds",
+        "special",
+        "cosmic"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "shaders/lib/atmospherics/sky.glsl",
+          "line": 19,
+          "endLine": 19,
+          "claim": "指数式经验天空高度渐变",
+          "url": "",
+          "sha256": "05720b9978be9bd33c52d16726c322358af51f1b652a3b09eb47dd20e6d285e6"
+        },
+        {
+          "file": "shaders/lib/atmospherics/sky.glsl",
+          "line": 62,
+          "endLine": 62,
+          "claim": "雨天渐变混合",
+          "url": "",
+          "sha256": "05720b9978be9bd33c52d16726c322358af51f1b652a3b09eb47dd20e6d285e6"
+        },
+        {
+          "file": "shaders/lib/atmospherics/sunGlare.glsl",
+          "line": 12,
+          "endLine": 12,
+          "claim": "方向响应太阳眩光",
+          "url": "",
+          "sha256": "378513ae7f14ef62b85290c5b13edbc4f8072c72eee97aaf725f66308c30b48b"
+        },
+        {
+          "file": "shaders/lib/atmospherics/sunGlare.glsl",
+          "line": 56,
+          "endLine": 56,
+          "claim": "新月时月眩光开关",
+          "url": "",
+          "sha256": "378513ae7f14ef62b85290c5b13edbc4f8072c72eee97aaf725f66308c30b48b"
+        },
+        {
+          "file": "shaders/lib/atmospherics/skyBirds.glsl",
+          "line": 37,
+          "endLine": 37,
+          "claim": "正弦振翅",
+          "url": "",
+          "sha256": "ab6fe549f882168806712f0bf6b10198f159679705ae1b9888f55fe9722a66c2"
+        },
+        {
+          "file": "shaders/lib/atmospherics/skyBirds.glsl",
+          "line": 59,
+          "endLine": 59,
+          "claim": "方向两线段剪影，非鸟实体",
+          "url": "",
+          "sha256": "ab6fe549f882168806712f0bf6b10198f159679705ae1b9888f55fe9722a66c2"
+        },
+        {
+          "file": "shaders/lib/atmospherics/ovclouds.glsl",
+          "line": 69,
+          "endLine": 69,
+          "claim": "多高度层云累积循环",
+          "url": "",
+          "sha256": "8eff4b274180555b2d5005f25b8fb318341389cbd4440dff3b245e7a2c5f4f3c"
+        },
+        {
+          "file": "shaders/lib/atmospherics/ovclouds.glsl",
+          "line": 74,
+          "endLine": 74,
+          "claim": "相机XZ参与云世界坐标",
+          "url": "",
+          "sha256": "8eff4b274180555b2d5005f25b8fb318341389cbd4440dff3b245e7a2c5f4f3c"
+        },
+        {
+          "file": "shaders/program/gbuffers_skybasic.glsl",
+          "line": 271,
+          "endLine": 271,
+          "claim": "天空实际传入10层云",
+          "url": "",
+          "sha256": "52fe7908bb2a0cabb24539499b1fcd43cf1d84359d5748840a0a700638da02c5"
+        },
+        {
+          "file": "shaders/program/deferred.glsl",
+          "line": 366,
+          "endLine": 366,
+          "claim": "反射云实际4层",
+          "url": "",
+          "sha256": "846c3fdf2cc66dd02d0f9bd87acf847118ae9f485490351af26d281c556c2ee4"
+        },
+        {
+          "file": "shaders/program/gbuffers_skytextured.glsl",
+          "line": 123,
+          "endLine": 123,
+          "claim": "可采样原版/资源包太阳月亮",
+          "url": "",
+          "sha256": "95ddefc771e9e60fd6837bc7b80a0b469f467d2f9a4976895faaefee7603c7df"
+        },
+        {
+          "file": "skyimage.glsl",
+          "line": 3,
+          "endLine": 3,
+          "claim": "二维巨行星投影函数",
+          "url": "",
+          "sha256": "e7504916de573df4bdfb631b3be1da16f956f312ceb913bdb910675aca9f5b1f"
+        },
+        {
+          "file": "skyimage.glsl",
+          "line": 9,
+          "endLine": 9,
+          "claim": "透明RGBA巨行星图片采样",
+          "url": "",
+          "sha256": "e7504916de573df4bdfb631b3be1da16f956f312ceb913bdb910675aca9f5b1f"
+        },
+        {
+          "file": "gbuffers_skybasic.glsl",
+          "line": 344,
+          "endLine": 344,
+          "claim": "方向天空实际绘制巨行星",
+          "url": "",
+          "sha256": "52fe7908bb2a0cabb24539499b1fcd43cf1d84359d5748840a0a700638da02c5"
+        },
+        {
+          "file": "shaders.properties",
+          "line": 532,
+          "endLine": 532,
+          "claim": "PLANET绑定静态planet.png；不是程序表面",
+          "url": "",
+          "sha256": "f41738863446205bd189b4071858caa407990bc238023004e687d2cb7b92c59d"
+        },
+        {
+          "file": "planet.png.mcmeta",
+          "line": 2,
+          "endLine": 2,
+          "claim": "仅texture元数据；没有animation帧表",
+          "url": "",
+          "sha256": "e9c800d49d941e58d1c9f114b4564886b0c984369fab42515935497948ea8440"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/shaderpacks/sources.json#astralex",
+      "summary": "艺术天空、分层采样云、太阳眩光、贴图日月及程序飞鸟剪影。",
+      "textureDependencies": "渐变/眩光/鸟剪影程序；云多尺度noisetex；日月可采样texture",
+      "budget": "多 pass 与宏配置相关；未编译参考包、未测 GPU 耗时。详细步数/纹理契约见研究报告。",
+      "integration": "gbuffers_skybasic方向天空与10层云；gbuffers_skytextured贴图日月；deferred反射4层云；原包固定管线矩阵及sampler契约；云不是当前方向空间星云，飞鸟不是可交互实体",
+      "evidenceCount": 16
+    },
+    {
+      "id": "hysteria",
+      "name": "Hysteria Universal v1.2.2（用户本地快照）",
+      "kind": "minecraft",
+      "url": "https://modrinth.com/shader/hysteria-shaders",
+      "commit": "",
+      "snapshot": "用户本地 ZIP，SHA-256 96fd64f9058a964d7014933c54f8d5d8833fca0854b20a82f8c772c5838f76d6",
+      "license": {
+        "label": "AGNYA Rev1.3",
+        "summary": "AGNYA Rev1.3：私人修改允许；项目代码作为其他项目的一部分、公开修改与再分发需作者明确许可，官方链接传播限制。文末旧Photon MIT段仅对应其独立来源，不覆盖前部Hysteria总代码条款。",
+        "mode": "reference"
+      },
+      "features": [
+        "sun-moon",
+        "thin-clouds",
+        "volume-clouds",
+        "fog",
+        "special",
+        "cosmic"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "shaders/include/sky/atmosphere.glsl",
+          "line": 46,
+          "endLine": 46,
+          "claim": "Rayleigh/Mie/臭氧模型",
+          "url": "",
+          "sha256": "fcac34ac53f51b1f037bf3f86c6c2c1af6e74e144a3bc1a51732f915a2f8f7c7"
+        },
+        {
+          "file": "shaders/include/sky/atmosphere.glsl",
+          "line": 162,
+          "endLine": 162,
+          "claim": "三维预计算散射LUT",
+          "url": "",
+          "sha256": "fcac34ac53f51b1f037bf3f86c6c2c1af6e74e144a3bc1a51732f915a2f8f7c7"
+        },
+        {
+          "file": "shaders/include/sky/sky.glsl",
+          "line": 86,
+          "endLine": 86,
+          "claim": "太阳盘临边昏暗",
+          "url": "",
+          "sha256": "38c9a3536bc0db5708ee881e3d4eb059809d10544d802e6c92f56043435dd14e"
+        },
+        {
+          "file": "shaders/include/sky/clouds.glsl",
+          "line": 106,
+          "endLine": 106,
+          "claim": "三维密度积云风场",
+          "url": "",
+          "sha256": "b0dd2ba304dbd90b7cf7ec1ee8f7906a7fd5abce12c01ecc56d182989426ec06"
+        },
+        {
+          "file": "shaders/include/sky/clouds.glsl",
+          "line": 136,
+          "endLine": 136,
+          "claim": "三维curl噪声域扰动",
+          "url": "",
+          "sha256": "b0dd2ba304dbd90b7cf7ec1ee8f7906a7fd5abce12c01ecc56d182989426ec06"
+        },
+        {
+          "file": "shaders/include/sky/clouds.glsl",
+          "line": 260,
+          "endLine": 260,
+          "claim": "云射线地形截断",
+          "url": "",
+          "sha256": "b0dd2ba304dbd90b7cf7ec1ee8f7906a7fd5abce12c01ecc56d182989426ec06"
+        },
+        {
+          "file": "shaders/include/sky/clouds.glsl",
+          "line": 1178,
+          "endLine": 1178,
+          "claim": "浓积云组合入口",
+          "url": "",
+          "sha256": "b0dd2ba304dbd90b7cf7ec1ee8f7906a7fd5abce12c01ecc56d182989426ec06"
+        },
+        {
+          "file": "shaders/include/sky/clouds.glsl",
+          "line": 1190,
+          "endLine": 1190,
+          "claim": "卷云/卷积云组合入口",
+          "url": "",
+          "sha256": "b0dd2ba304dbd90b7cf7ec1ee8f7906a7fd5abce12c01ecc56d182989426ec06"
+        },
+        {
+          "file": "shaders/program/deferred4.glsl",
+          "line": 371,
+          "endLine": 371,
+          "claim": "depth==1天空入口",
+          "url": "",
+          "sha256": "e5ca74fd7886981fea6ab2b6a48fcc295456233c15f8d96609b454de52d3a133"
+        },
+        {
+          "file": "shaders/program/gbuffer/skytextured.glsl",
+          "line": 129,
+          "endLine": 129,
+          "claim": "八种moonPhase程序月相",
+          "url": "",
+          "sha256": "426b2789d396e78dc78d134f7de72686772e544dcd787ced6a08cd13373e26ce"
+        },
+        {
+          "file": "shaders/program/gbuffer/skytextured.glsl",
+          "line": 157,
+          "endLine": 157,
+          "claim": "月盘边缘glow不是22度冰晶晕",
+          "url": "",
+          "sha256": "426b2789d396e78dc78d134f7de72686772e544dcd787ced6a08cd13373e26ce"
+        },
+        {
+          "file": "shaders/shaders.properties",
+          "line": 454,
+          "endLine": 454,
+          "claim": "Iris闪电亮度输入",
+          "url": "",
+          "sha256": "9fca81da7061be7864ef86d0e31d2f5065d3430fbef5e2373dca1c85f9fedc80"
+        },
+        {
+          "file": "shaders/include/fog/end_fog_vl.glsl",
+          "line": 1,
+          "endLine": 1,
+          "claim": "末地体积发光雾独立模块",
+          "url": "",
+          "sha256": "19febd2f6b0f09f5c9d8a9db5e33691c3dd9a5b83777903fe43e97b869fdf496"
+        },
+        {
+          "file": "sky.glsl",
+          "line": 242,
+          "endLine": 242,
+          "claim": "末地方向天体构造",
+          "url": "",
+          "sha256": "38c9a3536bc0db5708ee881e3d4eb059809d10544d802e6c92f56043435dd14e"
+        },
+        {
+          "file": "sky.glsl",
+          "line": 279,
+          "endLine": 279,
+          "claim": "动态noisetex耀斑采样",
+          "url": "",
+          "sha256": "38c9a3536bc0db5708ee881e3d4eb059809d10544d802e6c92f56043435dd14e"
+        },
+        {
+          "file": "sky.glsl",
+          "line": 301,
+          "endLine": 301,
+          "claim": "END_BLACK_HOLE暗盘和耀斑组合分支",
+          "url": "",
+          "sha256": "38c9a3536bc0db5708ee881e3d4eb059809d10544d802e6c92f56043435dd14e"
+        },
+        {
+          "file": "Hysteria-main/shaders/program/deferred4.glsl",
+          "line": 375,
+          "endLine": 375,
+          "claim": "真实末地draw_sky调用入口",
+          "url": "",
+          "sha256": "e5ca74fd7886981fea6ab2b6a48fcc295456233c15f8d96609b454de52d3a133"
+        },
+        {
+          "file": "Hysteria-main/shaders/include/sky/sky.glsl",
+          "line": 242,
+          "endLine": 299,
+          "claim": "双色反向动态耀光；黑盘只加零RGB，不遮已有背景，也不重采样引力透镜",
+          "url": "",
+          "sha256": "38c9a3536bc0db5708ee881e3d4eb059809d10544d802e6c92f56043435dd14e"
+        },
+        {
+          "file": "Hysteria-main/shaders/settings.glsl",
+          "line": 246,
+          "endLine": 246,
+          "claim": "END_BLACK_HOLE默认开启",
+          "url": "",
+          "sha256": "e541edddf1744437569014a6ba9a9f3d10a564921f2ea09b37f1154a0bfb29f9"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/shaderpacks/sources.json#hysteria",
+      "summary": "大气 LUT、云散射/透射、程序月相与末地发光雾；部分结构来自 Photon，需要区分来源。 末地含洋红/橙双色耀光暗盘，原实现不遮背景、无引力透镜。",
+      "textureDependencies": "太阳/月相程序分支；散射LUT与云Worley/curl文件；原版日月/自定义sky贴图也有分支",
+      "budget": "多 pass 与宏配置相关；未编译参考包、未测 GPU 耗时。详细步数/纹理契约见研究报告。",
+      "integration": "deferred4 depth==1天空；云散射+透射率独立deferred1；skytextured程序月相或原版图分支；来自Photon结构并有差异；不得把它当独立发明的同名云算法；未验证当前Iris/OptiFine/DH组合",
+      "evidenceCount": 19
+    },
+    {
+      "id": "bliss",
+      "name": "Bliss Shader Stable（已有固定提交）",
+      "kind": "minecraft",
+      "url": "https://github.com/X0nk/Bliss-Shader",
+      "commit": "81e403ed308141039a09d792a36f8eb328898a60",
+      "snapshot": "固定提交 81e403ed308141039a09d792a36f8eb328898a60",
+      "license": {
+        "label": "All rights reserved",
+        "summary": "LICENSE.md只有“© 2020 Chocapic13. All rights reserved.”；本快照无宽松源码/资产复用许可。不复制其代码和贴图进入交付。",
+        "mode": "reference"
+      },
+      "features": [
+        "atmosphere",
+        "twilight",
+        "sun-moon",
+        "volume-clouds",
+        "weather"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "shaders/lib/ROBOBO_sky.glsl",
+          "line": 20,
+          "endLine": 20,
+          "claim": "Rayleigh/Mie/臭氧参数",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/lib/ROBOBO_sky.glsl#L20",
+          "sha256": "b590c4f9a9c20947644a114cb0483f2718ddf191ec83d75e352d734de07ddc4b"
+        },
+        {
+          "file": "shaders/lib/ROBOBO_sky.glsl",
+          "line": 95,
+          "endLine": 95,
+          "claim": "数值大气积分接口",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/lib/ROBOBO_sky.glsl#L95",
+          "sha256": "b590c4f9a9c20947644a114cb0483f2718ddf191ec83d75e352d734de07ddc4b"
+        },
+        {
+          "file": "shaders/lib/ROBOBO_sky.glsl",
+          "line": 145,
+          "endLine": 145,
+          "claim": "每步光学质量与朝光透射累计",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/lib/ROBOBO_sky.glsl#L145",
+          "sha256": "b590c4f9a9c20947644a114cb0483f2718ddf191ec83d75e352d734de07ddc4b"
+        },
+        {
+          "file": "shaders/lib/sky_gradient.glsl",
+          "line": 29,
+          "endLine": 29,
+          "claim": "moonPhase查表月球照明方向",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/lib/sky_gradient.glsl#L29",
+          "sha256": "95b5558d66134ab879c3b2809ca69fe326be02c4fb7ab24ce20f89d888e66afd"
+        },
+        {
+          "file": "shaders/lib/volumetricClouds.glsl",
+          "line": 19,
+          "endLine": 19,
+          "claim": "每日天气覆盖和密度varying",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/lib/volumetricClouds.glsl#L19",
+          "sha256": "b7574b7673045863b34e004336830b741cd28e1fc0be99433fa1ca31cb2b1117"
+        },
+        {
+          "file": "shaders/lib/volumetricClouds.glsl",
+          "line": 41,
+          "endLine": 41,
+          "claim": "雨强改变三层覆盖",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/lib/volumetricClouds.glsl#L41",
+          "sha256": "b7574b7673045863b34e004336830b741cd28e1fc0be99433fa1ca31cb2b1117"
+        },
+        {
+          "file": "shaders/lib/volumetricClouds.glsl",
+          "line": 63,
+          "endLine": 63,
+          "claim": "二维多通道噪声插值实现3D噪声",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/lib/volumetricClouds.glsl#L63",
+          "sha256": "b7574b7673045863b34e004336830b741cd28e1fc0be99433fa1ca31cb2b1117"
+        },
+        {
+          "file": "shaders/lib/volumetricClouds.glsl",
+          "line": 69,
+          "endLine": 69,
+          "claim": "高层高层云密度",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/lib/volumetricClouds.glsl#L69",
+          "sha256": "b7574b7673045863b34e004336830b741cd28e1fc0be99433fa1ca31cb2b1117"
+        },
+        {
+          "file": "shaders/lib/volumetricClouds.glsl",
+          "line": 295,
+          "endLine": 295,
+          "claim": "地形/DH最大距离遮挡",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/lib/volumetricClouds.glsl#L295",
+          "sha256": "b7574b7673045863b34e004336830b741cd28e1fc0be99433fa1ca31cb2b1117"
+        },
+        {
+          "file": "shaders/lib/volumetricClouds.glsl",
+          "line": 328,
+          "endLine": 328,
+          "claim": "散射与指数透射率合成",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/lib/volumetricClouds.glsl#L328",
+          "sha256": "b7574b7673045863b34e004336830b741cd28e1fc0be99433fa1ca31cb2b1117"
+        },
+        {
+          "file": "shaders/dimensions/deferred.fsh",
+          "line": 260,
+          "endLine": 260,
+          "claim": "大气真实10步调用",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/dimensions/deferred.fsh#L260",
+          "sha256": "64f7438ecee7e98553eeb7498bd8cf45e1f716c38e3dfb5808ccd19b482ae21b"
+        },
+        {
+          "file": "shaders/dimensions/deferred.fsh",
+          "line": 289,
+          "endLine": 289,
+          "claim": "天空环境图云真实调用",
+          "url": "https://github.com/X0nk/Bliss-Shader/blob/81e403ed308141039a09d792a36f8eb328898a60/shaders/dimensions/deferred.fsh#L289",
+          "sha256": "64f7438ecee7e98553eeb7498bd8cf45e1f716c38e3dfb5808ccd19b482ae21b"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/shaderpacks/sources.json#bliss",
+      "summary": "积分大气、三层云、云光照、季节/生物群系和每日天气参数。",
+      "textureDependencies": "大气数值积分；三层云以二维噪声多通道模拟3D密度；不等于纯hash实现",
+      "budget": "多 pass 与宏配置相关；未编译参考包、未测 GPU 耗时。详细步数/纹理契约见研究报告。",
+      "integration": "环境天空映射deferred大气10步、云/雾；云射线支持地形距离与DH分支；需追踪实际屏幕合成；季节/生物群系/每日天气宏会改变参数；不能把环境图入口认作唯一屏幕绘制入口",
+      "evidenceCount": 12
+    },
+    {
+      "id": "lux",
+      "name": "Lux Shader（已有固定提交）",
+      "kind": "minecraft",
+      "url": "https://github.com/Aurealis-Graphics/Lux-Shader",
+      "commit": "49ad70f1014519991824880f07c7acc10d4bdefd",
+      "snapshot": "固定提交 49ad70f1014519991824880f07c7acc10d4bdefd",
+      "license": {
+        "label": "BSL 协议引用",
+        "summary": "AGREEMENT声明采用BSL协议并链接BSL网页，但没有完整展开条款；需追溯BSL及原创部分，不能判为宽松许可。研究只描述方法。",
+        "mode": "reference"
+      },
+      "features": [
+        "thin-clouds",
+        "special"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "shaders/lib/atmospherics/sky.glsl",
+          "line": 17,
+          "endLine": 17,
+          "claim": "太阳高度/方向与雨强的经验天空",
+          "url": "https://github.com/Aurealis-Graphics/Lux-Shader/blob/49ad70f1014519991824880f07c7acc10d4bdefd/shaders/lib/atmospherics/sky.glsl#L17",
+          "sha256": "400b9c100d9a6eb4c03714474382caee2ea8022776b0dfeb2922446b38ecd5d0"
+        },
+        {
+          "file": "shaders/lib/atmospherics/clouds.glsl",
+          "line": 19,
+          "endLine": 19,
+          "claim": "六尺度噪声纹理云形状",
+          "url": "https://github.com/Aurealis-Graphics/Lux-Shader/blob/49ad70f1014519991824880f07c7acc10d4bdefd/shaders/lib/atmospherics/clouds.glsl#L19",
+          "sha256": "74de1c43e8d54aaee073c39ddcb55dbb4c8c7bb75dafbf034cab99a6d3dce09a"
+        },
+        {
+          "file": "shaders/lib/atmospherics/clouds.glsl",
+          "line": 62,
+          "endLine": 62,
+          "claim": "固定六层云累积",
+          "url": "https://github.com/Aurealis-Graphics/Lux-Shader/blob/49ad70f1014519991824880f07c7acc10d4bdefd/shaders/lib/atmospherics/clouds.glsl#L62",
+          "sha256": "74de1c43e8d54aaee073c39ddcb55dbb4c8c7bb75dafbf034cab99a6d3dce09a"
+        },
+        {
+          "file": "shaders/lib/atmospherics/clouds.glsl",
+          "line": 67,
+          "endLine": 67,
+          "claim": "相机平移世界云坐标",
+          "url": "https://github.com/Aurealis-Graphics/Lux-Shader/blob/49ad70f1014519991824880f07c7acc10d4bdefd/shaders/lib/atmospherics/clouds.glsl#L67",
+          "sha256": "74de1c43e8d54aaee073c39ddcb55dbb4c8c7bb75dafbf034cab99a6d3dce09a"
+        },
+        {
+          "file": "shaders/lib/atmospherics/endSky.glsl",
+          "line": 36,
+          "endLine": 36,
+          "claim": "16层不同方向动态波及域变形末地天幕",
+          "url": "https://github.com/Aurealis-Graphics/Lux-Shader/blob/49ad70f1014519991824880f07c7acc10d4bdefd/shaders/lib/atmospherics/endSky.glsl#L36",
+          "sha256": "93a444d66a072d63e180b846ccd2c6e3a707c4ec1ceb574129998a34593a4895"
+        },
+        {
+          "file": "shaders/program/gbuffers_skybasic.glsl",
+          "line": 57,
+          "endLine": 57,
+          "claim": "程序圆形日月外观",
+          "url": "https://github.com/Aurealis-Graphics/Lux-Shader/blob/49ad70f1014519991824880f07c7acc10d4bdefd/shaders/program/gbuffers_skybasic.glsl#L57",
+          "sha256": "283c3909d29faed52a6f76e40300d8cdcb3aa223a2ee60a8d61f34a08b2481f9"
+        },
+        {
+          "file": "shaders/program/gbuffers_skybasic.glsl",
+          "line": 136,
+          "endLine": 136,
+          "claim": "云实际调用",
+          "url": "https://github.com/Aurealis-Graphics/Lux-Shader/blob/49ad70f1014519991824880f07c7acc10d4bdefd/shaders/program/gbuffers_skybasic.glsl#L136",
+          "sha256": "283c3909d29faed52a6f76e40300d8cdcb3aa223a2ee60a8d61f34a08b2481f9"
+        },
+        {
+          "file": "shaders/program/gbuffers_skytextured.glsl",
+          "line": 57,
+          "endLine": 57,
+          "claim": "原版/资源包日月贴图分支",
+          "url": "https://github.com/Aurealis-Graphics/Lux-Shader/blob/49ad70f1014519991824880f07c7acc10d4bdefd/shaders/program/gbuffers_skytextured.glsl#L57",
+          "sha256": "f518f788e29ff42ac9064e0c03a878c2ffca809e53dadd1eb18023a33168c90c"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/shaderpacks/sources.json#lux",
+      "summary": "方向天空、六层采样云、程序日月与末地多方向波域；已记静态代码疑点。",
+      "textureDependencies": "天空/圆日月/末地波程序；云FBM采样二维noisetex；可选日月贴图",
+      "budget": "多 pass 与宏配置相关；未编译参考包、未测 GPU 耗时。详细步数/纹理契约见研究报告。",
+      "integration": "skyBasic天空和6层云；skyTextured原版日月可选；末地方向波场独立GetEndSkyColor；末地GetWaveLayer有未初始化layer.xz的静态疑点，不能照抄；原包未编译，建议只借鉴多方向波域变形思路",
+      "evidenceCount": 8
+    },
+    {
+      "id": "complementary",
+      "name": "Complementary Reimagined（本轮新增固定提交）",
+      "kind": "minecraft",
+      "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined",
+      "commit": "c09950df0650b27dac260c1b0f69afc11387aa6f",
+      "snapshot": "固定提交 c09950df0650b27dac260c1b0f69afc11387aa6f",
+      "license": {
+        "label": "Complementary License 1.7",
+        "summary": "Complementary License Agreement1.7：通常游戏/内容创作允许；modpack须用Modrinth/CurseForge系统加原包且不得改包；修改包另需署名链接、保留许可证、命名差异、多个场景含白天明显不同、只用同一协议并有显著human-written code；未明确授权的部分用法all rights reserved。不是可直接嵌入Forge/skill的宽松许可。",
+        "mode": "reference"
+      },
+      "features": [
+        "twilight",
+        "sun-moon",
+        "volume-clouds",
+        "weather",
+        "rainbow",
+        "special"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "shaders/lib/atmospherics/sky.glsl",
+          "line": 24,
+          "endLine": 24,
+          "claim": "三高度日夜天空色",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/lib/atmospherics/sky.glsl#L24",
+          "sha256": "6545f1a500ce40beb1243c2b7087b16ec8bba6ceb42eee8c31239d2f8910b376"
+        },
+        {
+          "file": "shaders/lib/atmospherics/sky.glsl",
+          "line": 39,
+          "endLine": 39,
+          "claim": "程序夕照方向层",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/lib/atmospherics/sky.glsl#L39",
+          "sha256": "6545f1a500ce40beb1243c2b7087b16ec8bba6ceb42eee8c31239d2f8910b376"
+        },
+        {
+          "file": "shaders/program/gbuffers_skybasic.glsl",
+          "line": 111,
+          "endLine": 111,
+          "claim": "可选程序日月盘",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/program/gbuffers_skybasic.glsl#L111",
+          "sha256": "867b53fc4e27240839946ca70833786d73f02d786193b7d386dbc805a84d56a7"
+        },
+        {
+          "file": "shaders/program/gbuffers_skybasic.glsl",
+          "line": 138,
+          "endLine": 138,
+          "claim": "程序月相遮罩",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/program/gbuffers_skybasic.glsl#L138",
+          "sha256": "867b53fc4e27240839946ca70833786d73f02d786193b7d386dbc805a84d56a7"
+        },
+        {
+          "file": "shaders/program/gbuffers_skytextured.glsl",
+          "line": 45,
+          "endLine": 45,
+          "claim": "原版/资源包日月贴图采样",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/program/gbuffers_skytextured.glsl#L45",
+          "sha256": "8ec94c56921825d426eaf0b46c8d3f38c767c721ce4d5289668b53605963bcff"
+        },
+        {
+          "file": "shaders/program/gbuffers_skytextured.glsl",
+          "line": 58,
+          "endLine": 58,
+          "claim": "Iris renderStage选择日/月",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/program/gbuffers_skytextured.glsl#L58",
+          "sha256": "8ec94c56921825d426eaf0b46c8d3f38c767c721ce4d5289668b53605963bcff"
+        },
+        {
+          "file": "shaders/lib/atmospherics/clouds/reimaginedClouds.glsl",
+          "line": 12,
+          "endLine": 12,
+          "claim": "云图蓝通道采样而非纯程序hash",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/lib/atmospherics/clouds/reimaginedClouds.glsl#L12",
+          "sha256": "904cbdd4e849eced061d5ef4fd5647fa6af340938ffe0ed318cb10a774cdba16"
+        },
+        {
+          "file": "shaders/lib/atmospherics/clouds/reimaginedClouds.glsl",
+          "line": 65,
+          "endLine": 65,
+          "claim": "云高度区间射线循环",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/lib/atmospherics/clouds/reimaginedClouds.glsl#L65",
+          "sha256": "904cbdd4e849eced061d5ef4fd5647fa6af340938ffe0ed318cb10a774cdba16"
+        },
+        {
+          "file": "shaders/lib/atmospherics/clouds/reimaginedClouds.glsl",
+          "line": 140,
+          "endLine": 140,
+          "claim": "Reimagined首次命中即停止，非所有体积积分",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/lib/atmospherics/clouds/reimaginedClouds.glsl#L140",
+          "sha256": "904cbdd4e849eced061d5ef4fd5647fa6af340938ffe0ed318cb10a774cdba16"
+        },
+        {
+          "file": "shaders/lib/atmospherics/clouds/mainClouds.glsl",
+          "line": 32,
+          "endLine": 32,
+          "claim": "场景阴影图控制云光照",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/lib/atmospherics/clouds/mainClouds.glsl#L32",
+          "sha256": "a6a2d383961efef6e32329035c6e21246461278ce24b8d031d568f614547495b"
+        },
+        {
+          "file": "shaders/lib/atmospherics/clouds/mainClouds.glsl",
+          "line": 69,
+          "endLine": 69,
+          "claim": "大坐标整数+小数处理Iris分支",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/lib/atmospherics/clouds/mainClouds.glsl#L69",
+          "sha256": "a6a2d383961efef6e32329035c6e21246461278ce24b8d031d568f614547495b"
+        },
+        {
+          "file": "shaders/lib/atmospherics/rainbow.glsl",
+          "line": 32,
+          "endLine": 32,
+          "claim": "反光源方向虹带加程序颜色",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/lib/atmospherics/rainbow.glsl#L32",
+          "sha256": "322626bae289ecbe5cbd59704b6890cd940d87c4cc7600b425459a231bf4f47b"
+        },
+        {
+          "file": "shaders/lib/atmospherics/rainbow.glsl",
+          "line": 54,
+          "endLine": 54,
+          "claim": "彩虹半透明透射乘子",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/lib/atmospherics/rainbow.glsl#L54",
+          "sha256": "322626bae289ecbe5cbd59704b6890cd940d87c4cc7600b425459a231bf4f47b"
+        },
+        {
+          "file": "shaders/lib/atmospherics/netherStorm.glsl",
+          "line": 31,
+          "endLine": 31,
+          "claim": "下界世界体积风暴射线积分",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/lib/atmospherics/netherStorm.glsl#L31",
+          "sha256": "243307e59e1dedc7b7711a4b685a6944f60d2dbee542387c5801ac80ca51d6ae"
+        },
+        {
+          "file": "shaders/lib/atmospherics/netherStorm.glsl",
+          "line": 42,
+          "endLine": 42,
+          "claim": "噪声域扰动与高度密度",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/lib/atmospherics/netherStorm.glsl#L42",
+          "sha256": "243307e59e1dedc7b7711a4b685a6944f60d2dbee542387c5801ac80ca51d6ae"
+        },
+        {
+          "file": "shaders/program/deferred1.glsl",
+          "line": 401,
+          "endLine": 401,
+          "claim": "云真实pass调用",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/program/deferred1.glsl#L401",
+          "sha256": "7f9f4482f1d1892815098fff65541c8fafa29cc848252610d0d4ec87437d8159"
+        },
+        {
+          "file": "shaders/program/composite1.glsl",
+          "line": 232,
+          "endLine": 232,
+          "claim": "彩虹真实调用",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/program/composite1.glsl#L232",
+          "sha256": "6c15aa4c5bce5709a41799b9cee598141e91c0c0a934e3d8e74d7fcb8e146365"
+        },
+        {
+          "file": "shaders/program/composite1.glsl",
+          "line": 242,
+          "endLine": 242,
+          "claim": "下界风暴真实调用",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/program/composite1.glsl#L242",
+          "sha256": "6c15aa4c5bce5709a41799b9cee598141e91c0c0a934e3d8e74d7fcb8e146365"
+        },
+        {
+          "file": "shaders/shaders.properties",
+          "line": 232,
+          "endLine": 232,
+          "claim": "云图纹理资源绑定",
+          "url": "https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/c09950df0650b27dac260c1b0f69afc11387aa6f/shaders/shaders.properties#L232",
+          "sha256": "8222397b0f79d37a623872b6672625a411345fe2b6b5dbd6e6cc298c5a5c9ed3"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/shaderpacks/sources.json#complementary",
+      "summary": "程序日月与虹、Reimagined 图片密度云、维度风暴；实际云算法与许可证均需按固定源码理解。",
+      "textureDependencies": "渐变/日月相/虹程序；Reimagined云采样cloud-water.png蓝通道并首次命中退出；下界风暴噪声体积",
+      "budget": "多 pass 与宏配置相关；未编译参考包、未测 GPU 耗时。详细步数/纹理契约见研究报告。",
+      "integration": "skyBasic天空/程序日月；skyTextured纹理日月；deferred1云合成；composite1虹和下界风暴；含Iris旧版日月stage workaround、大世界坐标及VOXY分支；静态存在不等于已实测。人工code条款限制复制交付",
+      "evidenceCount": 19
+    },
+    {
+      "id": "godot-sky",
+      "name": "Godot · 三种天空材质",
+      "kind": "engine",
+      "url": "https://github.com/godotengine/godot",
+      "commit": "c016f22009aa773f0b2e6fce72baec168746491f",
+      "snapshot": "固定提交 c016f22009aa773f0b2e6fce72baec168746491f",
+      "license": {
+        "label": "MIT",
+        "summary": "源文件及根许可证均为 MIT；复制实质性代码需保留版权与许可。当前只保存参考子集，原创项目未复制其源码。",
+        "mode": "open"
+      },
+      "features": [
+        "atmosphere",
+        "sun-moon"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "scene/resources/3d/sky_material.cpp",
+          "line": 328,
+          "endLine": 328,
+          "claim": "艺术渐变由方向和曲线生成",
+          "url": "https://github.com/godotengine/godot/blob/c016f22009aa773f0b2e6fce72baec168746491f/scene/resources/3d/sky_material.cpp#L328",
+          "sha256": "fea858bf8ddad54b679872ca689fb3f515323da76f470dc2e14d412bab902533"
+        },
+        {
+          "file": "scene/resources/3d/sky_material.cpp",
+          "line": 330,
+          "endLine": 330,
+          "claim": "太阳盘及四个独立方向光入口",
+          "url": "https://github.com/godotengine/godot/blob/c016f22009aa773f0b2e6fce72baec168746491f/scene/resources/3d/sky_material.cpp#L330",
+          "sha256": "fea858bf8ddad54b679872ca689fb3f515323da76f470dc2e14d412bab902533"
+        },
+        {
+          "file": "scene/resources/3d/sky_material.cpp",
+          "line": 502,
+          "endLine": 502,
+          "claim": "全景天空需要图片，不能称为程序天空",
+          "url": "https://github.com/godotengine/godot/blob/c016f22009aa773f0b2e6fce72baec168746491f/scene/resources/3d/sky_material.cpp#L502",
+          "sha256": "fea858bf8ddad54b679872ca689fb3f515323da76f470dc2e14d412bab902533"
+        },
+        {
+          "file": "scene/resources/3d/sky_material.cpp",
+          "line": 772,
+          "endLine": 772,
+          "claim": "太阳能量的地平线限制，夜晚需单独背景",
+          "url": "https://github.com/godotengine/godot/blob/c016f22009aa773f0b2e6fce72baec168746491f/scene/resources/3d/sky_material.cpp#L772",
+          "sha256": "fea858bf8ddad54b679872ca689fb3f515323da76f470dc2e14d412bab902533"
+        },
+        {
+          "file": "scene/resources/3d/sky_material.cpp",
+          "line": 783,
+          "endLine": 783,
+          "claim": "解析光学厚度近似而非 LUT 或射线积分",
+          "url": "https://github.com/godotengine/godot/blob/c016f22009aa773f0b2e6fce72baec168746491f/scene/resources/3d/sky_material.cpp#L783",
+          "sha256": "fea858bf8ddad54b679872ca689fb3f515323da76f470dc2e14d412bab902533"
+        },
+        {
+          "file": "scene/resources/3d/sky_material.cpp",
+          "line": 788,
+          "endLine": 788,
+          "claim": "Rayleigh/Mie 消光",
+          "url": "https://github.com/godotengine/godot/blob/c016f22009aa773f0b2e6fce72baec168746491f/scene/resources/3d/sky_material.cpp#L788",
+          "sha256": "fea858bf8ddad54b679872ca689fb3f515323da76f470dc2e14d412bab902533"
+        },
+        {
+          "file": "scene/resources/3d/sky_material.cpp",
+          "line": 796,
+          "endLine": 796,
+          "claim": "前向散射形成太阳附近亮区",
+          "url": "https://github.com/godotengine/godot/blob/c016f22009aa773f0b2e6fce72baec168746491f/scene/resources/3d/sky_material.cpp#L796",
+          "sha256": "fea858bf8ddad54b679872ca689fb3f515323da76f470dc2e14d412bab902533"
+        },
+        {
+          "file": "scene/resources/3d/sky_material.cpp",
+          "line": 823,
+          "endLine": 823,
+          "claim": "可选夜景图片与解析大气分开",
+          "url": "https://github.com/godotengine/godot/blob/c016f22009aa773f0b2e6fce72baec168746491f/scene/resources/3d/sky_material.cpp#L823",
+          "sha256": "fea858bf8ddad54b679872ca689fb3f515323da76f470dc2e14d412bab902533"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/engines/sources.json#godot-sky",
+      "summary": "在同一源码中对比艺术渐变、Preetham 风格解析大气和全景图天空，帮助区分程序算法与贴图承载。",
+      "textureDependencies": "ProceduralSkyMaterial 的 sky_cover 可选；PhysicalSkyMaterial 的 night_sky 可选；PanoramaSkyMaterial 依赖 panorama 图片。解析白天天空没有大气 LUT 或噪声纹理。",
+      "budget": "解析渐变/光学厚度/相函数，非体积射线积分；最多四个程序光盘。没有本项目实测 GPU 耗时。",
+      "integration": "移植方向域数学时替换 EYEDIR/LIGHTn_*，统一 linear/HDR 颜色；借鉴渐变与物理模式分离。PhysicalSkyMaterial 中太阳在地平线下的能量受截断，不能等同完整暮光模型。",
+      "evidenceCount": 8
+    },
+    {
+      "id": "optics-atmospheric-optics",
+      "name": "Atmospheric Optics：22°冰晶晕与双虹",
+      "kind": "algorithm",
+      "url": "https://www.atoptics.org.uk/halo/circular.htm",
+      "commit": "",
+      "snapshot": "2026-10-06 直接读取4页光学解释正文；没有下载照片或图表。",
+      "license": {
+        "label": "版权所有；光学事实参考",
+        "summary": "Les Cowley Atmospheric Optics 的解释性文字作为光学事实出处；没有明确授予网站照片、图表或源码的复用许可，不复制素材/代码到项目。",
+        "mode": "reference"
+      },
+      "features": [
+        "rainbow",
+        "halos"
+      ],
+      "validation": "静态研究；未编译或运行参考渲染器，也未接入 Minecraft。",
+      "evidence": [
+        {
+          "file": "halo-reference-atoptics-circular.html",
+          "line": 94,
+          "endLine": 94,
+          "claim": "高空薄云冰晶形成22°晕",
+          "url": "https://www.atoptics.org.uk/halo/circular.htm",
+          "sha256": "71633418e77c35f046edf1486d0528dab412c2d942063398795447d76942ea6d"
+        },
+        {
+          "file": "halo-reference-atoptics-circular.html",
+          "line": 97,
+          "endLine": 97,
+          "claim": "内缘偏红，外侧渐弱",
+          "url": "https://www.atoptics.org.uk/halo/circular.htm",
+          "sha256": "71633418e77c35f046edf1486d0528dab412c2d942063398795447d76942ea6d"
+        },
+        {
+          "file": "halo-reference-atoptics-circular.html",
+          "line": 131,
+          "endLine": 131,
+          "claim": "水滴corona与冰晶晕分开",
+          "url": "https://www.atoptics.org.uk/halo/circular.htm",
+          "sha256": "71633418e77c35f046edf1486d0528dab412c2d942063398795447d76942ea6d"
+        },
+        {
+          "file": "halo-reference-atoptics-formation.html",
+          "line": 129,
+          "endLine": 129,
+          "claim": "六边形冰晶通光面夹角60°",
+          "url": "https://www.atoptics.org.uk/halo/circ1.htm",
+          "sha256": "e1587abd08b9e559b49ef3f851903a486d49bf7bbd448238b33a3e7be4b1b7f9"
+        },
+        {
+          "file": "halo-reference-atoptics-formation.html",
+          "line": 138,
+          "endLine": 138,
+          "claim": "红光最小偏折约21.7°",
+          "url": "https://www.atoptics.org.uk/halo/circ1.htm",
+          "sha256": "e1587abd08b9e559b49ef3f851903a486d49bf7bbd448238b33a3e7be4b1b7f9"
+        },
+        {
+          "file": "halo-reference-atoptics-formation.html",
+          "line": 212,
+          "endLine": 212,
+          "claim": "红色内缘向外混合与减淡",
+          "url": "https://www.atoptics.org.uk/halo/circ1.htm",
+          "sha256": "e1587abd08b9e559b49ef3f851903a486d49bf7bbd448238b33a3e7be4b1b7f9"
+        },
+        {
+          "file": "rainbow-reference-primary.html",
+          "line": 139,
+          "endLine": 139,
+          "claim": "主虹红色外侧，紫色内侧",
+          "url": "https://www.atoptics.org.uk/rainbows/primcol.htm",
+          "sha256": "ad50b097277ca39c05e9e5604d8fcd62c2a8d566e767c8da8c834007d4adee7e"
+        },
+        {
+          "file": "rainbow-reference-secondary.html",
+          "line": 147,
+          "endLine": 147,
+          "claim": "反虹角半径约51°",
+          "url": "https://www.atoptics.org.uk/rainbows/ord2form.htm",
+          "sha256": "a330080b92347395f871971adba7a432fc290656388bf69f293f5a59f80e689b"
+        },
+        {
+          "file": "rainbow-reference-secondary.html",
+          "line": 171,
+          "endLine": 171,
+          "claim": "反虹颜色顺序反转",
+          "url": "https://www.atoptics.org.uk/rainbows/ord2form.htm",
+          "sha256": "a330080b92347395f871971adba7a432fc290656388bf69f293f5a59f80e689b"
+        }
+      ],
+      "originRecord": "research/sky-materials-20261006/optics/sources.json#optics-atmospheric-optics",
+      "summary": "22°晕的几何角、红色内边缘、与水滴corona的区别；主虹红外紫内、约51°反虹色序反转。原创程序近似据此区分这些现象。",
+      "textureDependencies": "来源含照片/图表，但本次仅请求HTML正文；原创GLSL无任何照片、图表或噪声贴图依赖。",
+      "budget": "解释来源，不是运行渲染器；原创新增环场每片元固定角距运算，无谱积分或晶体射线求解。",
+      "integration": "以世界方向和日月方向构造角环，按显式水滴/冰晶与天气条件显隐；Forge与WebGL共用原创函数。",
+      "evidenceCount": 9
+    },
+    {
+      "id": "super-duper-vanilla",
+      "name": "Super Duper Vanilla（用户指定本地ZIP）",
+      "kind": "minecraft",
+      "url": "https://modrinth.com/shader/super-duper-vanilla",
+      "commit": "",
+      "snapshot": "用户本地ZIP，SHA-256 c1cd481ac7ec81b6cb82f162b235509568f6f1ab9e416ccfedaee15e79e1a795",
+      "license": {
+        "label": "FlameRender Studios License 1.6",
+        "summary": "本地自定义许可，按包内规则处理修改、分享与署名；本项目只研究结构，不复制源码或纹理。",
+        "mode": "reference"
+      },
+      "features": [
+        "cosmic",
+        "special"
+      ],
+      "validation": "静态源码调用链及ZIP纹理尺寸核查；未对参考包进行视觉或性能认证。",
+      "summary": "末地的黑色方向盘、半径相关旋转与动态噪声环；原创旋涡暗星参考其视觉构成。",
+      "textureDependencies": "256×256 RGBA noise.png；不是完整天体成品贴图。",
+      "budget": "未运行参考包或测其GPU性能。",
+      "integration": "world1设置WORLD_SUN_MOON=2；deferred1→getFullSkyRender→有限方向暗盘与噪声环。Unused celestialFunctions不是实际入口。",
+      "originRecord": "research/sky-materials-user-20261006/user-pack-manifest.json",
+      "evidence": [
+        {
+          "file": "shaders/main/deferred1.glsl",
+          "line": 279,
+          "endLine": 279,
+          "claim": "真实getFullSkyRender调用",
+          "url": "",
+          "sha256": "7efe109d25f5db566aa8f8d037a0d2152ac0da8ab0bf85d1b4c0631bdef8bd6f"
+        },
+        {
+          "file": "shaders/lib/atmospherics/skyRender.glsl",
+          "line": 280,
+          "endLine": 295,
+          "claim": "暗盘遮罩、径向扭转、fragmentFrameTime驱动噪声环；不是相对论透镜",
+          "url": "",
+          "sha256": "924af535e53f9d217047f0fb8e43e574153f488ac442ab2648bb49f75ab52980"
+        },
+        {
+          "file": "shaders/world1/world.glsl",
+          "line": 12,
+          "endLine": 14,
+          "claim": "末地默认类型2，尺寸配置0.4",
+          "url": "",
+          "sha256": "79a96a1c2a96192fadf8ec460b9dd4016cf64f727d62fb9ad94e32a9900d331a"
+        },
+        {
+          "file": "shaders/shaders.properties",
+          "line": 372,
+          "endLine": 372,
+          "claim": "噪声纹理绑定",
+          "url": "",
+          "sha256": "b7b13f4341685e305c5fcf0d15e76930f51b56e7e839c1fd373409ef32974cd2"
+        }
+      ],
+      "evidenceCount": 4
+    },
+    {
+      "id": "bliss-end-2-1-2",
+      "name": "Bliss 2.1.2（指定ZIP · 末地云内闪光）",
+      "kind": "minecraft",
+      "url": "https://github.com/X0nk/Bliss-Shader",
+      "commit": "",
+      "snapshot": "用户本地ZIP，SHA-256 f41db92acc585fe9ffe0cc124d6ecaea27cef9ded91129ebc2a8e60226947b2c",
+      "license": {
+        "label": "Chocapic13自定义规则",
+        "summary": "该本地ZIP LICENSE.md的修改、命名、署名与分享规则；end_fog内MIT哈希片段不覆盖整包。只研究，不复制shader。",
+        "mode": "reference"
+      },
+      "features": [
+        "volume-clouds",
+        "fog",
+        "weather",
+        "special"
+      ],
+      "validation": "32源码锚点、原ZIP CRC/哈希复核通过；未运行Bliss，云内闪光尚未在本项目实现。",
+      "summary": "世界空间末地云雾：中心球形空洞、环形稀疏带与外围风暴；跨帧局部光照产生间歇云内闪光。",
+      "textureDependencies": "512²双通道noisetex插值三维密度；colortex4三个特定像素保存倒计时、闪光和空间状态。",
+      "budget": "16指数样本，视线最长384；局部光三点密度自遮挡。未测参考包耗时。",
+      "integration": "world1/composite3积分、composite4深度约束合成；5*u^5秒随机等待与历史flash响应。地形/透明表面读取局部光；独立behind-translucent雾调用受OVERWORLD宏保护。",
+      "originRecord": "research/sky-materials-user-20261006/Bliss-End-clouds-manifest.json",
+      "evidence": [
+        {
+          "file": "shaders/world1/deferred.fsh",
+          "line": 3,
+          "endLine": 5,
+          "claim": "End-specific deferred entry",
+          "url": "",
+          "sha256": "fd8379fdddeb058aca10b98f8338c9325bf553b8a9c9d3e6599da784df763d60"
+        },
+        {
+          "file": "shaders/world1/composite2.fsh",
+          "line": 3,
+          "endLine": 5,
+          "claim": "Opaque lighting entry is world1/composite2",
+          "url": "",
+          "sha256": "40a8aedffb68659614b32a65c58dacadb99bc77ab28214def313f3ed6d75ae20"
+        },
+        {
+          "file": "shaders/world1/composite3.fsh",
+          "line": 3,
+          "endLine": 5,
+          "claim": "Fog integration entry is world1/composite3",
+          "url": "",
+          "sha256": "31ef6e538e7c2a5345abf8c2fbc6e053b8e7fc1b24bc532e8160366c2613729f"
+        },
+        {
+          "file": "shaders/world1/composite4.fsh",
+          "line": 3,
+          "endLine": 5,
+          "claim": "Fog upscale/composition entry is world1/composite4",
+          "url": "",
+          "sha256": "7ee42e8b341d30d5ebf2dfe9958718b8501cde1218e70f6c7197b0600db2e0dd"
+        },
+        {
+          "file": "shaders/world1/gbuffers_water.fsh",
+          "line": 3,
+          "endLine": 5,
+          "claim": "Transparent lighting entry",
+          "url": "",
+          "sha256": "cc14c294de03d49227bf4c487eedfe9809ee445e1888a49a29861138ae1c25ae"
+        },
+        {
+          "file": "shaders/dimensions/deferred.fsh",
+          "line": 168,
+          "endLine": 179,
+          "claim": "Persistent buffer target and warmup history gate",
+          "url": "",
+          "sha256": "480e041a41e24d638271f7fd8390f2c28e702cc82fec06a5243dc4fe1be17d12"
+        },
+        {
+          "file": "shaders/dimensions/deferred.fsh",
+          "line": 321,
+          "endLine": 340,
+          "claim": "Random countdown and single-frame trigger",
+          "url": "",
+          "sha256": "480e041a41e24d638271f7fd8390f2c28e702cc82fec06a5243dc4fe1be17d12"
+        },
+        {
+          "file": "shaders/dimensions/deferred.fsh",
+          "line": 342,
+          "endLine": 347,
+          "claim": "Flash history response",
+          "url": "",
+          "sha256": "480e041a41e24d638271f7fd8390f2c28e702cc82fec06a5243dc4fe1be17d12"
+        },
+        {
+          "file": "shaders/dimensions/deferred.fsh",
+          "line": 350,
+          "endLine": 365,
+          "claim": "Spatial state random walk",
+          "url": "",
+          "sha256": "480e041a41e24d638271f7fd8390f2c28e702cc82fec06a5243dc4fe1be17d12"
+        },
+        {
+          "file": "shaders/dimensions/deferred.fsh",
+          "line": 373,
+          "endLine": 379,
+          "claim": "Scale and temporal accumulation",
+          "url": "",
+          "sha256": "480e041a41e24d638271f7fd8390f2c28e702cc82fec06a5243dc4fe1be17d12"
+        },
+        {
+          "file": "shaders/dimensions/composite5.fsh",
+          "line": 23,
+          "endLine": 39,
+          "claim": "State buffer persists between frames",
+          "url": "",
+          "sha256": "42cd23ff9e80a67ef18c6835d0a322ec4fb56ef92b4cbec1a2e2e11c20368c42"
+        },
+        {
+          "file": "shaders/lib/end_fog.glsl",
+          "line": 66,
+          "endLine": 93,
+          "claim": "World center vortex and camera-cell flash light",
+          "url": "",
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888"
+        },
+        {
+          "file": "shaders/lib/end_fog.glsl",
+          "line": 95,
+          "endLine": 107,
+          "claim": "Two-channel 512-square noise slice interpolation",
+          "url": "",
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888"
+        },
+        {
+          "file": "shaders/lib/end_fog.glsl",
+          "line": 110,
+          "endLine": 119,
+          "claim": "Height-dependent world swirl",
+          "url": "",
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888"
+        },
+        {
+          "file": "shaders/lib/end_fog.glsl",
+          "line": 122,
+          "endLine": 141,
+          "claim": "Central and annular cloud holes",
+          "url": "",
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888"
+        },
+        {
+          "file": "shaders/lib/end_fog.glsl",
+          "line": 144,
+          "endLine": 167,
+          "claim": "Anisotropic density, erosion and lower void",
+          "url": "",
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888"
+        },
+        {
+          "file": "shaders/lib/end_fog.glsl",
+          "line": 169,
+          "endLine": 191,
+          "claim": "Finite local light falloff and flash color",
+          "url": "",
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888"
+        },
+        {
+          "file": "shaders/lib/end_fog.glsl",
+          "line": 194,
+          "endLine": 208,
+          "claim": "Three density samples for approximate self shadow",
+          "url": "",
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888"
+        },
+        {
+          "file": "shaders/lib/end_fog.glsl",
+          "line": 215,
+          "endLine": 253,
+          "claim": "Finite ray with 16 exponentially spaced samples",
+          "url": "",
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888"
+        },
+        {
+          "file": "shaders/lib/end_fog.glsl",
+          "line": 259,
+          "endLine": 301,
+          "claim": "Camera clearing, Beer integration and additive haze",
+          "url": "",
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888"
+        },
+        {
+          "file": "shaders/lib/end_fog.glsl",
+          "line": 345,
+          "endLine": 355,
+          "claim": "Approximate cloud shadow on surfaces",
+          "url": "",
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888"
+        },
+        {
+          "file": "shaders/dimensions/composite1.fsh",
+          "line": 1084,
+          "endLine": 1103,
+          "claim": "Actual opaque surface flash lighting",
+          "url": "",
+          "sha256": "b0189476c1a703d8dad6a8e5d306ccfeab8b991fbb6232e6866fa0be3868cfa7"
+        },
+        {
+          "file": "shaders/dimensions/all_translucent.fsh",
+          "line": 642,
+          "endLine": 662,
+          "claim": "Actual transparent surface flash lighting",
+          "url": "",
+          "sha256": "307610a974eca9d7ce0a37ef51093d26daf46bf16c11e4342e7f36ffd63e65be"
+        },
+        {
+          "file": "shaders/dimensions/composite2.fsh",
+          "line": 374,
+          "endLine": 428,
+          "claim": "Actual depth reconstruction and fog write",
+          "url": "",
+          "sha256": "de7eb25909fb3296d59816d596ec27917d6bc353079ab977d25d2f367c6eafb3"
+        },
+        {
+          "file": "shaders/dimensions/composite3.fsh",
+          "line": 133,
+          "endLine": 180,
+          "claim": "Five-tap depth rejection in upscale",
+          "url": "",
+          "sha256": "a07afd463cb83a7e92d559f8cf603f619cf7cd4a42746ff60d4a84e4bbf5e4d7"
+        },
+        {
+          "file": "shaders/dimensions/composite3.fsh",
+          "line": 303,
+          "endLine": 315,
+          "claim": "Actual low resolution fog read",
+          "url": "",
+          "sha256": "a07afd463cb83a7e92d559f8cf603f619cf7cd4a42746ff60d4a84e4bbf5e4d7"
+        },
+        {
+          "file": "shaders/dimensions/composite3.fsh",
+          "line": 438,
+          "endLine": 440,
+          "claim": "Scene transmittance plus fog radiance",
+          "url": "",
+          "sha256": "a07afd463cb83a7e92d559f8cf603f619cf7cd4a42746ff60d4a84e4bbf5e4d7"
+        },
+        {
+          "file": "shaders/dimensions/fogBehindTranslucent_pass.fsh",
+          "line": 375,
+          "endLine": 390,
+          "claim": "Separate behind-translucent fog call is Overworld-only",
+          "url": "",
+          "sha256": "31fac3a6bf43969057bad4d880b5e3b49b19ecbcd5f12c32d9a6894e41e390de"
+        },
+        {
+          "file": "shaders/lib/settings.glsl",
+          "line": 638,
+          "endLine": 648,
+          "claim": "Defaults for End fog and flash colors",
+          "url": "",
+          "sha256": "214782ddd37baa3f454bb78e0cc16bb83c3fa251f9bc0feeffa010f9f7d11106"
+        },
+        {
+          "file": "shaders/shaders.properties",
+          "line": 291,
+          "endLine": 293,
+          "claim": "Player controls for End fog",
+          "url": "",
+          "sha256": "6c1b92c65d27eaf55f0723e5bb85e9c213aa6603d9eb558a3803caa7d3621e2f"
+        },
+        {
+          "file": "LICENSE.md",
+          "line": 1,
+          "endLine": 16,
+          "claim": "Custom overall sharing and attribution rules",
+          "url": "",
+          "sha256": "0a0e5b77277a737002f90a7dfb5bb9b0fa9f7aff0d0f86355a198bf7a4cc3b86"
+        },
+        {
+          "file": "shaders/lib/end_fog.glsl",
+          "line": 1,
+          "endLine": 35,
+          "claim": "MIT header covers local hash fragment, not automatic whole-pack relicensing",
+          "url": "",
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888"
+        }
+      ],
+      "evidenceCount": 32
+    }
+  ],
+  "roadmap": [
+    {
+      "stage": 1,
+      "title": "大气底座与日月",
+      "status": "implemented",
+      "features": [
+        "atmosphere",
+        "twilight",
+        "sun-moon"
+      ],
+      "reason": "本阶段已实现原创分析近似、连续晨昏与日月轨道，统一宇宙背景透射和曝光。"
+    },
+    {
+      "stage": 2,
+      "title": "轻量薄云与云色",
+      "status": "implemented",
+      "features": [
+        "thin-clouds"
+      ],
+      "reason": "本阶段已实现远平面程序薄云、随风流动、云形演化与日月云色；不提供体积厚度和地形云影。"
+    },
+    {
+      "stage": 3,
+      "title": "天气、双虹、冰晕与异界装饰",
+      "status": "implemented",
+      "features": [
+        "weather",
+        "rainbow",
+        "halos",
+        "special"
+      ],
+      "reason": "共享天气状态并控制显隐；真实空间约束与已有星空参数分开。"
+    },
+    {
+      "stage": 4,
+      "title": "世界云层与体积云海",
+      "status": "implemented",
+      "features": [
+        "volume-clouds"
+      ],
+      "reason": "已接入位置、深度、3D噪声与有限区间；云内外、平移、风与演化已有实际GPU验证。未实现历史帧。"
+    },
+    {
+      "stage": 5,
+      "title": "云影、曙暮光与空气透视",
+      "status": "implemented",
+      "features": [
+        "light-shafts",
+        "fog"
+      ],
+      "reason": "实际颜色深度接入；原版BLOCK透明分段与外部光影交接由0.6进阶路线覆盖，其他透明对象仍需自己的适配。"
+    },
+    {
+      "stage": 6,
+      "title": "球形大气、世界雨雪与原版透明环境",
+      "status": "implemented",
+      "features": [
+        "atmosphere",
+        "weather",
+        "fog",
+        "volume-clouds"
+      ],
+      "reason": "球形透射/高阶散射缓存、气候/屋顶降水、玻璃水面分段、深度delta重建及实际所有权交接；验证记录见项目进阶证据。"
+    }
+  ],
+  "evidenceOriginSha256": {
+    "research\\sky-materials-20261006\\atmosphere\\sources.json": "d34aac570ae06b0dcadefbc2d27f3904eea394f103bdf4573312db903211eaad",
+    "research\\sky-materials-20261006\\clouds\\sources.json": "47b1efe461621229058f4e7eed9dbabc73388404071566334ad21a3cc5e69a3c",
+    "research\\sky-materials-20261006\\shaderpacks\\sources.json": "47877642e1f5445c88ee6799f69fa1e61ecc9bbf665a232ec80d7dd03fbd1337",
+    "research\\sky-materials-20261006\\engines\\sources.json": "697eb804289e6422b489716b24712c31b6a515b2f1339fe18f541dcf3249d318",
+    "cosmic-sky-lab\\evidence\\full-sky-20261006\\extra\\source-records.json": "1cc6492295afdcb3b246bf8a90ac3dbe3256a435d89e257e75e2e3c6f40606bc"
+  }
+}

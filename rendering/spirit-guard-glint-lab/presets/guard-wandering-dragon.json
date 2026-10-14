@@ -1,0 +1,22 @@
+{
+  "schema": "spirit-guard-glint/1",
+  "preset": "guard-wandering-dragon",
+  "parameters": {
+    "style": 10,
+    "color": "#7DC6F8",
+    "color2": "#D0F1FF",
+    "intensity": 0.96,
+    "speed": 0.9,
+    "scale": 1,
+    "width": 0.14,
+    "angle": 12,
+    "secondary": 0.65
+  },
+  "scene": {
+    "shape": "chest",
+    "material": "netherite",
+    "yaw": 0.32,
+    "pitch": 0.13,
+    "orbit": false
+  }
+}

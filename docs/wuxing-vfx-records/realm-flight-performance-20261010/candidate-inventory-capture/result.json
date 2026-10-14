@@ -1,0 +1,39 @@
+{
+  "fixture": "flightSelectionCapture",
+  "result": "FAIL",
+  "scope": "Isolated local DEV survival save; exact vanilla inventory Open event, actual production navigation/category/selection mouseClicked and mouseScrolled. Reflection only reads widget coordinates, server snapshot and actual renderer state. Real production network validates one deliberately locked selection. No remote multiplayer/FPS/shader-pack claim.",
+  "captures": [],
+  "actualInputEvents": [
+    {
+      "accepted": true,
+      "action": "actual_screen_mouseClicked",
+      "label": "背包",
+      "stage": 1,
+      "y": 81.0,
+      "x": 116.0
+    }
+  ],
+  "checks": [
+    {
+      "details": "Opened exact vanilla InventoryScreen, Forge Open event returned cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "name": "production_inventory_replacement_stage_0",
+      "passed": true
+    },
+    {
+      "details": "[]",
+      "name": "no_GL_errors",
+      "passed": true
+    },
+    {
+      "details": "Original animation/horizontal/preferred restored",
+      "name": "DEV_preferences_restored",
+      "passed": true
+    }
+  ],
+  "failures": [
+    "Capture exception: java.lang.NullPointerException: Cannot invoke \"cn.blockforge.generated.generatedmod.client.CultivationPage.children()\" because the return value of \"cn.blockforge.generated.generatedmod.client.FlightSelectionCapture.page(net.minecraft.client.Minecraft)\" is null"
+  ],
+  "glErrors": [],
+  "configRestored": true,
+  "ticks": 8
+}

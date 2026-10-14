@@ -1,0 +1,15 @@
+{
+  "rayCases": 5400,
+  "maxUnitSphereResidual": 4.569677969357144e-13,
+  "legacyDensityUnchanged": true,
+  "unoccludedCentralAlphaWithoutFrontOrArcs": 0.07759600000000011,
+  "grazingRimAlphaWithoutArcs": 0.44753600000000004,
+  "foregroundDepthRejectsBothSurfaces": true,
+  "centralBodyDepthRejectsRearSurface": true,
+  "cameraInsideSphereFinite": true,
+  "uniformRadiusRange": [
+    1.38,
+    1.58
+  ],
+  "scope": "Independent CPU sphere intersection, bounded proxy, finite values and opacity/depth checks; runtime visual QA remains separate"
+}

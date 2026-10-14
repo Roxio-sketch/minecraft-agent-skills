@@ -1,0 +1,37 @@
+{
+  "scope": "Forge 1.20.1 / 47.4.10 isolated real client, worn player armor",
+  "captured_frames": 30,
+  "gpu_errors": 0,
+  "shader_replaced_on_reload": true,
+  "confirmed_server_contacts": [
+    "phase=1 tick=311 hit=322.0",
+    "phase=2 tick=367 hit=379.0"
+  ],
+  "front_moving_pixels": [
+    3262,
+    4269,
+    3937,
+    4377,
+    5071
+  ],
+  "central_wall_blue_pixels": 0,
+  "central_wall_changed_pixels_over_4": 2016,
+  "central_wall_chromatic_changed_pixels_over_4": 0,
+  "mixed_slot_guard_levels": {
+    "head": 0,
+    "chest": 0,
+    "legs": 0,
+    "feet": 3
+  },
+  "ordinary_enchanted_leggings_has_foil": true,
+  "texture_size": [
+    1024,
+    512
+  ],
+  "mask_edge_aa_pixels": 0.32,
+  "limitations": [
+    "Arbitrary third-party armor UVs keep their original glint; only local hits use captured geometry.",
+    "Inventory item / held / dropped armor item glint is unchanged.",
+    "No external shader pack compatibility acceptance was performed."
+  ]
+}

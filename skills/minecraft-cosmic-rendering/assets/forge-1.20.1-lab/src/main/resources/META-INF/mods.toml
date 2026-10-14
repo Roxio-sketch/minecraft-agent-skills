@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="cosmiclab"
+version="0.1.0"
+displayName="Cosmic Rendering Lab"
+description='''Isolated sky rendering experiments: direction, stars, and nebula.'''
+[[dependencies.cosmiclab]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.22,48)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.cosmiclab]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"

@@ -1,0 +1,172 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "workbench self-test",
+      "passed": true
+    },
+    {
+      "name": "cloud-sea deterministic paused frame",
+      "passed": true
+    },
+    {
+      "name": "cloud-sea valid renderer",
+      "passed": true
+    },
+    {
+      "name": "ground-mist deterministic paused frame",
+      "passed": true
+    },
+    {
+      "name": "ground-mist valid renderer",
+      "passed": true
+    },
+    {
+      "name": "alien-storm deterministic paused frame",
+      "passed": true
+    },
+    {
+      "name": "alien-storm valid renderer",
+      "passed": true
+    },
+    {
+      "name": "luminous-pocket deterministic paused frame",
+      "passed": true
+    },
+    {
+      "name": "luminous-pocket valid renderer",
+      "passed": true
+    },
+    {
+      "name": "cloud-flash deterministic paused frame",
+      "passed": true
+    },
+    {
+      "name": "cloud-flash valid renderer",
+      "passed": true
+    },
+    {
+      "name": "sun-shafts deterministic paused frame",
+      "passed": true
+    },
+    {
+      "name": "sun-shafts valid renderer",
+      "passed": true
+    },
+    {
+      "name": "end-vortex deterministic paused frame",
+      "passed": true
+    },
+    {
+      "name": "end-vortex valid renderer",
+      "passed": true
+    },
+    {
+      "name": "purple-light-fog deterministic paused frame",
+      "passed": true
+    },
+    {
+      "name": "purple-light-fog valid renderer",
+      "passed": true
+    },
+    {
+      "name": "all actual preset frames distinct",
+      "passed": true
+    },
+    {
+      "name": "flash changes actual composed frame",
+      "passed": true
+    },
+    {
+      "name": "download download.json",
+      "passed": true
+    },
+    {
+      "name": "download download.png",
+      "passed": true
+    },
+    {
+      "name": "download download.zip",
+      "passed": true
+    },
+    {
+      "name": "downloaded JSON preserves every parameter",
+      "passed": true
+    },
+    {
+      "name": "real file import restores all parameters",
+      "passed": true
+    },
+    {
+      "name": "server rejects malformed export",
+      "passed": true,
+      "actual": 400
+    },
+    {
+      "name": "390px no horizontal overflow",
+      "passed": true,
+      "actual": {
+        "width": 390,
+        "scroll": 390,
+        "controls": 62
+      }
+    },
+    {
+      "name": "no uncaught browser errors",
+      "passed": true,
+      "actual": []
+    }
+  ],
+  "images": [
+    {
+      "id": "cloud-sea",
+      "name": "日照云海",
+      "file": "cloud-sea.png",
+      "sha256": "9ca7d4525133bab7f424c278c0baf9abe4255ed63c45f98e5be0311f024e7dd3"
+    },
+    {
+      "id": "ground-mist",
+      "name": "贴地冷雾",
+      "file": "ground-mist.png",
+      "sha256": "1b8594fac931828c631f5d29a809937c90ad58c53e6a054a505f25bac2663c29"
+    },
+    {
+      "id": "alien-storm",
+      "name": "异界环形风暴",
+      "file": "alien-storm.png",
+      "sha256": "bc4fe2565787d3426859355d313c14f870c26d9d11a4577f2eb235feaab1c628"
+    },
+    {
+      "id": "luminous-pocket",
+      "name": "紫色发光雾团",
+      "file": "luminous-pocket.png",
+      "sha256": "1de31e4e14e6f93820e36e1e7804e46ad9b598fedf50425a5c143f50634cd1da"
+    },
+    {
+      "id": "cloud-flash",
+      "name": "云内蓝白闪光",
+      "file": "cloud-flash.png",
+      "sha256": "a7a8e75625db3f58a4d6fafb9925591c19696d2b15a977fdb124491ac7cc9f9a"
+    },
+    {
+      "id": "sun-shafts",
+      "name": "晨光穿雾",
+      "file": "sun-shafts.png",
+      "sha256": "206249c17d776819b11d0f48b301e852731ada5ff32b5780c376dc86e54e2bb5"
+    },
+    {
+      "id": "end-vortex",
+      "name": "末地蓝灰扭卷云",
+      "file": "end-vortex.png",
+      "sha256": "6233a349c143feb52db0a642721337a5b882f94f3ab12611a71511c20d5525cc"
+    },
+    {
+      "id": "purple-light-fog",
+      "name": "紫色光雾分布学习",
+      "file": "purple-light-fog.png",
+      "sha256": "c443e356f1bb012a725376bf3651ecf60c6b3a3ae5a67ad1064b52c61ab3cda4"
+    }
+  ],
+  "errors": [],
+  "coreSha256": "55fb1baf79f11d7d87211cc2a2786b53a98b0ff8854023c51c3ce0e09fcca275"
+}

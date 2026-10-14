@@ -1,0 +1,1 @@
+PASS: 15 frames; bare enchanted weapon, real attack, source palette, native fire flag suppressed, 360-degree yaw/pitch orbit, target reposition, burn expiry; customRenderer=true; livingEvents=0. Visual acceptance is manual.

@@ -1,0 +1,10 @@
+{
+  "engine": "Photon Forge 1.20.1 1.1.17",
+  "jarSha256": "3bd09a759744e9e3b3e7315eaafa9dcd27945ef13331148e8b8169950560e5fb",
+  "verification": "Decompiled local installed-version classes with existing IntelliJ Java decompiler; no engine process started",
+  "horizontal": "Y rotation 0; X rotation +90 degrees",
+  "size": "quad vertices +/-1 multiply startSize, giving world extent 2*size",
+  "uv": "u0 at +X and v0 at +Z under Horizontal, before explicit particle rotations",
+  "burst": "count 1, cycles 1, interval 1; emission rate zero",
+  "minecraftRendered": false
+}

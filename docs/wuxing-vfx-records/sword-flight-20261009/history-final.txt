@@ -1,0 +1,1 @@
+PASS: duplicate ticks, fixed-tick arc, expiry, teleport, finite inputs, capacity and UV continuity

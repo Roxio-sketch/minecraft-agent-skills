@@ -1,0 +1,13 @@
+{
+  "installed": true,
+  "installedAt": "2026-10-10T00:00:52.3909514+08:00",
+  "implementation": "continuous-flow-20261009",
+  "source": "E:\\五行仙途\\build\\libs\\wuxingxiantu-0.2.jar",
+  "destination": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "size": 45094179,
+  "sha256": "2abae1ead8115a9651b54ddcfbffd03526cec32f0af6dd8e950f6c842b6fe552",
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-continuous-flow-20261010-000052.jar",
+  "backupSha256": "11f8c80c912330068df94b90d05125b3a5dace22ec36ebf1d28e70ddea4d444d",
+  "method": "fresh matrix/JAR verification; staged copy and hash; previous JAR renamed to sibling backup; staged JAR renamed to final",
+  "requiresGameRestart": true
+}

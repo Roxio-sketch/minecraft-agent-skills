@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "id": "ember_wave",
+  "mode": "traveling",
+  "stops": [
+    {
+      "at": 0.0,
+      "color": "#D61E45"
+    },
+    {
+      "at": 0.6,
+      "color": "#FF8D30"
+    },
+    {
+      "at": 1.0,
+      "color": "#FFE09A"
+    }
+  ],
+  "interpolation": "linear-rgb",
+  "wrap": "pingpong",
+  "axis": "u",
+  "bands": 2.0,
+  "period_seconds": 4.0,
+  "strength": 0.9,
+  "tileable": true,
+  "phase": 0.0
+}

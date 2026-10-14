@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Glass Rim</title>
+<style>
+*{box-sizing:border-box;letter-spacing:0}body{margin:0;background:#151719;color:#e9eded;font:14px system-ui}canvas{display:block;width:100%;height:100%}main{height:100dvh;display:grid;grid-template-columns:1fr 280px}#scene{min-width:0;min-height:0;position:relative}aside{overflow:auto;padding:18px;background:#232729}h1{font-size:20px;margin:0 0 18px}label{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:14px 0}input[type=range]{width:132px}select,button{background:#363d40;color:inherit;border:1px solid #596267;padding:7px;border-radius:4px}button{cursor:pointer}#status{color:#f6aa78} @media(max-width:650px){main{height:auto;grid-template-columns:1fr;grid-template-rows:55dvh auto}aside{overflow:visible}label{max-width:420px}}
+</style><main><div id="scene"></div><aside><h1>玻璃边缘亮</h1>
+<label>模型<select id="shape"><option value="sphere">球体</option><option value="box">硬边方块</option><option value="plane">平面</option></select></label>
+<label>权重<select id="mode"><option value="art">美术边缘</option><option value="fresnel">Fresnel 近似</option></select></label>
+<label>投影<select id="projection"><option value="perspective">透视</option><option value="ortho">正交</option></select></label>
+<label>底色<input id="base" type="color" value="#123a45"></label><label>边缘色<input id="edge" type="color" value="#7fe6ff"></label>
+<div id="sliders"></div><label>非均匀缩放<input id="stretch" type="checkbox"></label><label>双面权重<input id="twoSided" type="checkbox" checked></label><label>旋转<input id="rotate" type="checkbox" checked></label>
+<button id="pause" title="暂停动画">暂停</button> <button id="reset" title="重置参数">重置</button> <button id="export" title="下载配方">导出配方</button><p id="status"></p></aside></main><script type="module" src="app.js"></script></html>

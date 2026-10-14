@@ -1,0 +1,10 @@
+{
+  "installed": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2-20261013-guard-cloud-glyph.jar",
+  "sha256": "840D826F96E1147B640F2918C48ED570C39B7B3EB17D53756B97DBF2B6D1A592",
+  "same_as_release": true,
+  "shader_and_texture_match_source": true,
+  "test_fixture_excluded": true,
+  "removed_old_versions": [
+    "wuxingxiantu-0.2-20261012-guard-buff-glow.jar"
+  ]
+}

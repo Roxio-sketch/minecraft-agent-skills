@@ -1,0 +1,1 @@
+4 real contacts passed: creative arrow, survival arrow, melee, shield depletion.

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>星空工坊 · 程序化天空工作台</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101a2c'/%3E%3Cpath d='M16 4l3 9 9 3-9 3-3 9-3-9-9-3 9-3z' fill='%23b3c4ff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="./" aria-label="星空工坊首页"><span class="brand-mark" aria-hidden="true">✦</span><span>星空工坊<small>PROCEDURAL SKY STUDIO</small></span></a>
+    <div class="headline"><span class="live-dot"></span>从穿云风雨，到异界星海</div>
+    <div class="header-actions"><button id="reset" class="quiet-button">恢复默认</button><button id="exportRecipe" class="primary-button">导出配方 <span aria-hidden="true">↗</span></button></div>
+  </header>
+  <main class="workspace">
+    <aside class="sidebar" aria-label="天空参数">
+      <div class="sidebar-heading"><div><span class="eyebrow">01 / 创作</span><h1>调出你的天空</h1></div><span id="fieldCount" class="count-badge">参数</span></div>
+      <section class="preset-section" aria-label="天空预设">
+        <div class="section-title"><h2>从一种天空开始</h2><span id="presetCount">起点</span></div>
+        <select id="presetFilter" aria-label="筛选天空起点"><option value="all">全部天空</option><option value="physical">球形大气与新雨雪</option><option value="cosmic">宇宙与黑洞</option><option value="day">日月与光学色环</option><option value="world">体积云与天气环境</option><option value="special">异界与剪影</option></select><div id="presets" class="preset-grid"></div>
+        <p id="presetDescription" class="subtle-note"></p>
+      </section>
+      <div class="parameter-navigation"><label for="parameterJump">跳转到参数</label><select id="parameterJump" aria-label="跳转并展开参数组"></select></div>
+      <p id="layerHint" class="layer-hint" hidden></p>
+      <div id="parameterGroups" class="parameter-groups"></div>
+      <section class="recipe-section">
+        <span class="eyebrow">保存与接入</span>
+        <p>配方记录全部参数。导入后即可继续创作，也能生成 Minecraft 着色器资源。</p>
+        <div class="recipe-actions"><button id="importRecipe" class="outline-button">导入配方</button><button id="saveRecipe" class="outline-button">保存到本机</button><button id="exportResources" class="outline-button wide-button">生成 Minecraft 资源包 <span aria-hidden="true">↓</span></button></div>
+        <input id="importFile" type="file" accept=".json,application/json" hidden>
+      </section>
+    </aside>
+    <section class="preview-column" aria-label="实时天空预览">
+      <div class="preview-heading"><div><span class="eyebrow">02 / 实时观察</span><h2 id="sceneTitle">静谧银河</h2></div><div class="render-badges"><span id="gpuBadge">WebGL 2</span><span id="qualityBadge">中等采样</span></div></div>
+      <div class="viewport" id="viewport">
+        <canvas id="sky" tabindex="0" aria-label="可拖拽旋转的程序化天空"></canvas>
+        <div class="viewport-top"><span class="procedural-badge"><span class="live-dot"></span>程序化实时天空</span><button id="fullscreen" class="glass-button" title="全屏预览" aria-label="全屏预览">⛶</button></div>
+        <div class="reticle" aria-hidden="true"></div>
+        <div id="viewHud" class="view-hud">北 · 仰角 22°</div>
+        <div class="viewport-bottom"><span id="renderStats">正在初始化渲染器…</span><span class="gesture-hint">拖动环顾 · 滚轮调整视野</span></div>
+        <div id="loading" class="loading"><div class="loading-orbit" aria-hidden="true"></div><span>正在绘制这片天空</span></div>
+        <div id="shaderError" class="shader-error" role="alert" hidden><strong>天空预览未能启动</strong><pre id="shaderErrorText"></pre></div>
+      </div>
+      <div class="playback-bar">
+        <button id="playPause" class="play-button" aria-label="暂停动态天空" title="暂停动态天空"><span id="playIcon" aria-hidden="true">Ⅱ</span></button>
+        <div class="time-control"><div class="time-label"><label for="timeline">时间 <span id="playbackState" class="playback-state">正在播放</span></label><output id="timeOutput">00:00.0</output></div><input id="timeline" type="range" min="0" max="120" step="0.05" value="0" aria-label="天空时间"></div>
+        <button id="resetTime" class="quiet-button compact" title="时间归零">↺ 归零</button>
+        <span class="toolbar-divider"></span>
+        <button id="capture" class="outline-button compact">保存图片 <span aria-hidden="true">↓</span></button>
+      </div>
+      <div class="view-controls">
+        <div class="view-control"><label for="yaw">观看方向 <output id="yawValue">0°</output></label><input id="yaw" type="range" min="-180" max="180" step="1" value="0"></div>
+        <div class="view-control"><label for="pitch">仰角 <output id="pitchValue">22°</output></label><input id="pitch" type="range" min="-89" max="89" step="1" value="22"></div>
+        <div class="view-control"><label for="fov">视野 FOV <output id="fovValue">70°</output></label><input id="fov" type="range" min="30" max="110" step="1" value="70"></div>
+        <div class="scale-control"><label for="previewScale">预览分辨率</label><select id="previewScale"><option value="0.5">50% · 流畅</option><option value="0.75">75% · 均衡</option><option value="1" selected>100% · 清晰</option></select></div>
+      </div>
+      <details class="world-preview-panel" open><summary>空间观察与天气模拟 <span>预览控制，不写入配方</span></summary>
+        <div class="world-preview-grid">
+          <label>预览场景<select id="previewScene"><option value="sky">仅天空背景</option><option value="scene">地面与方块深度场景</option><option value="glass">玻璃与远景</option><option value="water">水面与远景</option></select></label>
+          <label>演示气候<select id="demoBiome"><option value="mixed">雨雪与干燥区域</option><option value="rain">降雨区域</option><option value="snow">降雪区域</option><option value="dry">干燥区域</option><option value="altitude">随高度转为降雪</option></select></label>
+          <label>世界 X<input id="previewX" type="number" min="-8192" max="8192" step="1" value="0"></label>
+          <label>观察高度 <output id="previewHeightValue">64</output><input id="previewHeight" type="range" min="-128" max="1024" step="1" value="64"></label>
+          <label>世界 Z<input id="previewZ" type="number" min="-8192" max="8192" step="1" value="0"></label>
+          <label>游戏雨量模拟<input id="gameRain" type="range" min="0" max="1" step=".01" value="0"></label>
+          <label>游戏雷暴模拟<input id="gameThunder" type="range" min="0" max="1" step=".01" value="0"></label>
+        </div><div class="flight-buttons"><button id="flyForward" class="outline-button">向前</button><button id="flyBack" class="outline-button">后退</button><button id="flyUp" class="outline-button">升高</button><button id="flyDown" class="outline-button">降低</button></div>
+        <p>选体积云起点后移动、升高飞入云层。画布获焦点时 WASD 平移、Q/E 升降；方向键环顾。演示气候用于“按生物群系”雨雪，游戏读取实际气候；雨雷模拟供“跟随游戏天气”使用。</p>
+      </details>
+      <details class="render-telemetry" open><summary>渲染状态 <span>当前画面与 GPU 用时</span></summary>
+        <div class="telemetry-grid">
+          <div><span class="telemetry-label">天空模型</span><strong id="atmosphereStatus">等待预览</strong><small id="atmosphereDetail">调整参数后即时更新</small></div>
+          <div><span class="telemetry-label">天空缓存更新</span><strong id="lutGpuTime">等待计时</strong><small id="lutBuildState">太阳与视角变化即时预览</small></div>
+          <div><span class="telemetry-label" id="environmentStatus">环境合成</span><strong id="environmentGpuTime">等待计时</strong><small id="environmentDetail">云、雨、雪与雾的画面用时</small></div>
+        </div><p>用时来自独立 GPU 绘制阶段；缓存未更新时会保留上次更新时间。页面帧率还受其他场景和浏览器影响。</p>
+      </details>
+      <div class="preview-notes"><span class="note-star" aria-hidden="true">✧</span><p>天空、黑洞、云雨雪和光学色环均由原创程序计算。选「轨道边缘」观察球形气层，「金环黑洞」查看二维电影式黑洞；暂停时间轴可复查。</p><span class="save-state" id="saveState">参数自动保存在此浏览器</span></div>
+      <div id="status" class="status" role="status" aria-live="polite"><span class="status-dot"></span><span id="statusText">准备创作</span></div>
+      <footer class="workbench-footer" style="flex-wrap:wrap;gap:8px 16px"><span>星空工坊 / COSMIC SKY</span><a href="./sky-library.html" style="color:#93a9d3;text-decoration:underline;text-underline-offset:3px">天空研究库 ↗</a><span>原创程序着色器 · 无需外部网络</span></footer>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

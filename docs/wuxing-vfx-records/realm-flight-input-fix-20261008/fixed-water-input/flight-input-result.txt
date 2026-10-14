@@ -1,0 +1,1 @@
+FAIL: 52 checks; 737 client/server telemetry pairs; [server_positive_speed: Server published flyingSpeed=0.0 while flying]

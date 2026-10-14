@@ -1,0 +1,11 @@
+{
+  "installedAt": "2026-10-09T07:56:50.7169713+08:00",
+  "destination": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-flight-input-fix-20261009-075650.jar",
+  "sourceJar": "E:\\五行仙途\\build\\libs\\wuxingxiantu-0.2.jar",
+  "bytes": 45043119,
+  "installedSha256": "2E61B8A7BEADC1A4505B3851F9BEE4306144B958514C32DEB592ACC48ED7641B",
+  "previousSha256": "DB7638D824F0AA5DF5D00752139A07ABECB0DF5AD543C1E293737FE876489C15",
+  "finalClientChecks": 51,
+  "finalClientResult": "PASS"
+}

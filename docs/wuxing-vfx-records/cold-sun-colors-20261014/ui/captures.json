@@ -1,0 +1,211 @@
+{
+  "test": "real-domain-ui-selection-hover",
+  "input": "Test pointer supplied to real Screen.renderWithTooltip, no OS cursor injection",
+  "captures": [
+    {
+      "name": "settings-mana-loss",
+      "detail": "[{Amount:5965.0f,At:1791974862033L,Source:\"业火领域\"}]",
+      "glError": 0
+    },
+    {
+      "name": "root-fire-details",
+      "detail": "火灵根\n已拥有 · 极品\n火灵根：免疫普通火焰伤害。\n火 / 异火灵根切换\n点击灵根图标切换形态\n领域未激活\n当前领域效果\n半径7格；最多12个敌对目标\n单目标伤害 81.3；1秒一次\n单目标灵力：7843 / 秒\n点燃2秒，最多12个敌对目标\n空场免费，多目标额外收费；灵力不足不释放\n各品质完整效果可在领域选择列表中查看",
+      "glError": 0
+    },
+    {
+      "name": "mana-hover",
+      "detail": "mana\u003d1032000.0, regeneration\u003d6600.0",
+      "glError": 0
+    },
+    {
+      "name": "meditation-rates",
+      "detail": "meditationCultivation\u003d28000, manaRegeneration\u003d13200.0",
+      "glError": 0
+    },
+    {
+      "name": "inventory-mana",
+      "detail": "灵力：108.3万 / 121万\n当前恢复：9075 / 秒",
+      "glError": 0
+    },
+    {
+      "name": "mutated-roots",
+      "detail": "both mutated roots",
+      "glError": 0
+    },
+    {
+      "name": "tracking-disabled",
+      "detail": "recorder disabled on actual server/client",
+      "glError": 0
+    },
+    {
+      "name": "alchemy-preview-grey",
+      "glError": 0,
+      "hasResult": false,
+      "capacity": 180,
+      "injectionPerSecond": 20
+    },
+    {
+      "name": "alchemy-complete",
+      "glError": 0,
+      "hasResult": true,
+      "capacity": 180,
+      "injectionPerSecond": 20
+    },
+    {
+      "name": "alchemy-collected",
+      "glError": 0,
+      "hasResult": false,
+      "capacity": 180,
+      "injectionPerSecond": 20
+    },
+    {
+      "name": "inventory-physique",
+      "detail": "inventory-physique",
+      "glError": 0
+    },
+    {
+      "name": "inventory-heart",
+      "detail": "inventory-heart",
+      "glError": 0
+    },
+    {
+      "name": "inventory-domain",
+      "detail": "inventory-domain",
+      "glError": 0
+    },
+    {
+      "name": "inventory-fire",
+      "detail": "inventory-fire",
+      "glError": 0
+    },
+    {
+      "name": "roots-five-hd",
+      "actualTooltip": "",
+      "glError": 0
+    },
+    {
+      "name": "roots-mutated-hd",
+      "actualTooltip": "",
+      "glError": 0
+    },
+    {
+      "name": "focused-root-mana",
+      "rootFocused": true,
+      "actualTooltip": "灵力：121万 / 121万\n当前恢复：9075 / 秒\n",
+      "glError": 0
+    },
+    {
+      "name": "focused-root-attack",
+      "rootFocused": true,
+      "actualTooltip": "攻击：261\n",
+      "glError": 0
+    },
+    {
+      "name": "alchemy-special",
+      "failurePercent": 2,
+      "freeMode": false,
+      "hasResult": false,
+      "result": "空气",
+      "actualTooltip": "",
+      "glError": 0
+    },
+    {
+      "name": "alchemy-essence-tooltip",
+      "failurePercent": 2,
+      "freeMode": false,
+      "hasResult": false,
+      "result": "空气",
+      "actualTooltip": "存量 / 本炉吸收增量\n左侧为异火现有药力，右侧为本炉成功后的预计增加量。\n重复炼制会衰减；失败不增加药力，供灵不足会额外失败。\n",
+      "glError": 0
+    },
+    {
+      "name": "alchemy-ash",
+      "failurePercent": 2,
+      "freeMode": false,
+      "hasResult": true,
+      "result": "丹灰",
+      "actualTooltip": "",
+      "glError": 0
+    },
+    {
+      "name": "alchemy-ash-collected",
+      "failurePercent": 2,
+      "freeMode": false,
+      "hasResult": false,
+      "result": "空气",
+      "actualTooltip": "",
+      "glError": 0
+    },
+    {
+      "name": "alchemy-free-waste",
+      "failurePercent": 75,
+      "freeMode": true,
+      "hasResult": false,
+      "result": "空气",
+      "actualTooltip": "",
+      "glError": 0
+    },
+    {
+      "name": "special-pill-tooltip",
+      "actualTooltip": "净神丹\n品质：特殊\n以清心定神之药力主动引动心魔，使其显于心境之中。\n主动引发心魔入侵；持续打坐十五秒进入心境，对抗心魔\n服用境界：金丹以上\n",
+      "glError": 0
+    },
+    {
+      "name": "hover-gold",
+      "buttonActive": false,
+      "expectedRoot": 0,
+      "actualTooltip": "金灵根\n已拥有 · 极品\n金灵根：随品质提升幸运效果。\n领域未激活\n金光领域\n当前灵根品质：极品\n下品：领域未解锁\n中品：铁矿→金矿，20灵力/次，无冷却\n上品：提取矿物，25%双倍；30灵力/次，冷却1秒\n极品〔当前〕：矿石→对应矿物块；40灵力/次，冷却1秒\n潜行右键对应矿石，成功才扣费\n",
+      "glError": 0
+    },
+    {
+      "name": "hover-wood",
+      "buttonActive": true,
+      "expectedRoot": 1,
+      "actualTooltip": "木灵根\n已拥有 · 极品\n木灵根：极品以下高品质开启生命恢复；混沌灵根强化恢复\n。\n木 / 天雷灵根切换\n点击灵根图标切换形态\n领域未激活\n木灵领域\n当前灵根品质：极品\n下品：领域未解锁\n中品：催生3×3植物，2灵力/次\n上品：催生5×5植物，3灵力/次\n极品〔当前〕：催生7×7植物，5灵力/次\n右键催生植物，成功才扣费\n",
+      "glError": 0
+    },
+    {
+      "name": "hover-water",
+      "buttonActive": false,
+      "expectedRoot": 2,
+      "actualTooltip": "水灵根\n已拥有 · 极品\n水灵根：水下呼吸；上品及以上获得海豚的恩惠。\n领域未激活\n当前领域效果\n半径3格；最多12个敌对目标\n单目标伤害 26.6；1秒一次\n单目标灵力：5916 / 秒\n减速40%，跳跃降低50%；20%冻结2秒\n空场免费，多目标额外收费；灵力不足不释放\n各品质完整效果可在领域选择列表中查看\n",
+      "glError": 0
+    },
+    {
+      "name": "hover-fire",
+      "buttonActive": true,
+      "expectedRoot": 3,
+      "actualTooltip": "火灵根\n已拥有 · 极品\n火灵根：免疫普通火焰伤害。\n火 / 异火灵根切换\n点击灵根图标切换形态\n领域已激活\n当前领域效果\n半径7格；最多12个敌对目标\n单目标伤害 81.3；1秒一次\n单目标灵力：8628 / 秒\n点燃2秒，最多12个敌对目标\n空场免费，多目标额外收费；灵力不足不释放\n各品质完整效果可在领域选择列表中查看\n",
+      "glError": 0
+    },
+    {
+      "name": "hover-earth",
+      "buttonActive": false,
+      "expectedRoot": 4,
+      "actualTooltip": "土灵根\n已拥有 · 极品\n土灵根：随品质强化急迫与抗性；高品质且生命低于一半时\n强化抗性。\n领域未激活\n当前领域效果\n半径3格；最多12个敌对目标\n单目标伤害 37.5；1秒一次\n单目标灵力：6677 / 秒\n减速35%，抗击退降低50%；15%定身2秒，跳跃降低50%\n空场免费，多目标额外收费；灵力不足不释放\n各品质完整效果可在领域选择列表中查看\n",
+      "glError": 0
+    },
+    {
+      "name": "hover-thunder",
+      "buttonActive": true,
+      "expectedRoot": 1,
+      "actualTooltip": "天雷灵根\n已拥有 · 极品\n天雷灵根：保留木灵根恢复；雷霆领域取代催生领域，并免\n疫闪电伤害。\n木 / 天雷灵根切换\n点击灵根图标切换形态\n领域未激活\n当前领域效果\n半径6格；最多3个敌对目标\n单目标伤害 148.6；1秒一次\n单目标灵力：13304 / 秒\n最多3道雷；麻痹0.5秒，自身免雷\n空场免费，多目标额外收费；灵力不足不释放\n各品质完整效果可在领域选择列表中查看\n",
+      "glError": 0
+    },
+    {
+      "name": "hover-exotic",
+      "buttonActive": true,
+      "expectedRoot": 3,
+      "actualTooltip": "异火灵根\n已拥有 · 极品\n异火灵根：保留火焰抗性；领域使用已装备异火灼烧。\n火 / 异火灵根切换\n点击灵根图标切换形态\n领域已激活\n当前领域效果\n半径7格；最多12个敌对目标\n单目标伤害 91.7；1秒一次\n单目标灵力：9319 / 秒\n装备异火续燃不叠层，最多12个敌对目标\n空场免费，多目标额外收费；灵力不足不释放\n各品质完整效果可在领域选择列表中查看\n",
+      "glError": 0
+    },
+    {
+      "name": "hover-missing-gold",
+      "buttonActive": false,
+      "expectedRoot": 0,
+      "actualTooltip": "金灵根\n未拥有\n金灵根：随品质提升幸运效果。\n领域未解锁：需要灵根品质达到中品。\n金光领域\n当前灵根品质：未获得\n下品：领域未解锁\n中品：铁矿→金矿，20灵力/次，无冷却\n上品：提取矿物，25%双倍；30灵力/次，冷却1秒\n极品〔当前〕：矿石→对应矿物块；40灵力/次，冷却1秒\n潜行右键对应矿石，成功才扣费\n",
+      "glError": 0
+    }
+  ],
+  "failures": []
+}

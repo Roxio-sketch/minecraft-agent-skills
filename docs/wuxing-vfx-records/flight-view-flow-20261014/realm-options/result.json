@@ -1,0 +1,5040 @@
+{
+  "fixture": "flightVisibilityCapture",
+  "result": "FAIL",
+  "expectedImages": 12,
+  "actualImages": 12,
+  "packName": "none",
+  "actualShaderPackActive": false,
+  "scope": "Fresh isolated survival world, real local double-space and W input, production END history/pose/shader renderer; no RemotePlayer, no sword, no multiplayer/FPS claim. Side pictures use DEV camera position only; front pictures use vanilla third-person front. Actual source/shader/JAR binding must be supplied by the external delivery verifier. Pixel metrics do not establish aesthetic approval.",
+  "turnSequence": null,
+  "outputAbsolutePath": "E:\\五行仙途\\reports\\flight-view-flow-20261014\\realm-options",
+  "actualMovementClientTicks": 405,
+  "captures": [
+    {
+      "screenshot": "realm-4-huashen-local-day-side.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 80,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          14.475999999999994,
+          136.37518708470515,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 242,
+      "actualPartialTick": 0.27999067,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.5605600161552429,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        14.032474254608148,
+        137.99518697026423,
+        0.0
+      ],
+      "position": [
+        14.475999999999994,
+        136.37518708470515,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 211.50034722222222,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 27.884954893611837,
+        "glow": 0.9999251481701122,
+        "speedWeight": 0.6762292554361208,
+        "flowPhase": 1.4036903953364976,
+        "historySamples": 57,
+        "historySpeed": 0.6158885824249724,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 96,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999997632,
+            "y": 3.937461341127289E-7,
+            "z": 5.644830998705047E-7
+          },
+          "previousHeading": {
+            "x": 0.999999999999296,
+            "y": 6.788632882565783E-7,
+            "z": 9.732333098504675E-7
+          },
+          "side": {
+            "x": 3.9374613411291536E-7,
+            "y": -0.9999999999999225,
+            "z": -2.1919134564379163E-13
+          },
+          "previousSide": {
+            "x": 6.788632882568999E-7,
+            "y": -0.9999999999997696,
+            "z": -1.030450848510874E-28
+          }
+        },
+        "actualWorldGameTime": 110,
+        "actualAdaptiveFrames": 82,
+        "actualRenderClock": 95.27999067306519,
+        "actualHeadFrame": {
+          "position": {
+            "x": 14.032474254608148,
+            "y": 137.2751870608633,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 95.27999067306519,
+          "arc": 18.010251484755173,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 12.627999999999995,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 93.0,
+            "arc": 16.60577723014702,
+            "opacity": 0.9620001554489136
+          },
+          {
+            "position": {
+              "x": 12.935999999999995,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 93.5,
+            "arc": 16.91377723014702,
+            "opacity": 0.9703334887822469
+          },
+          {
+            "position": {
+              "x": 13.243999999999994,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 94.0,
+            "arc": 17.22177723014702,
+            "opacity": 0.9786668221155802
+          },
+          {
+            "position": {
+              "x": 13.579720359086984,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 94.5,
+            "arc": 17.55749758923401,
+            "opacity": 0.9870001554489136
+          },
+          {
+            "position": {
+              "x": 13.859999999999994,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 95.0,
+            "arc": 17.83777723014702,
+            "opacity": 0.9953334887822469
+          },
+          {
+            "position": {
+              "x": 14.032474254608148,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 95.27999067306519,
+            "arc": 18.010251484755173,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 74,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 75,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 76,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 77,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 78,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 79,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 80,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 81,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 82,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 83,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 84,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 85,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 86,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 2688
+    },
+    {
+      "screenshot": "realm-4-huashen-local-day-front.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 115,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          36.03599999999999,
+          136.37518708470515,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 341,
+      "actualPartialTick": 0.05999136,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.5605600161552429,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        35.45695467758178,
+        137.99518697026423,
+        0.0
+      ],
+      "position": [
+        36.03599999999999,
+        136.37518708470515,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 211.6125,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 27.99989509244226,
+        "glow": 0.9999997808114095,
+        "speedWeight": 0.6802729374854638,
+        "flowPhase": 4.378557861512873,
+        "historySamples": 64,
+        "historySpeed": 0.6159999999684554,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 131,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999992812,
+            "y": 3.311265797620921E-10,
+            "z": 1.1990341018363047E-6
+          },
+          "previousHeading": {
+            "x": 0.9999999999996435,
+            "y": 3.3112657996961604E-10,
+            "z": 8.443926012482416E-7
+          },
+          "side": {
+            "x": 3.3112658046355785E-10,
+            "y": -1.0,
+            "z": -5.848271812314713E-13
+          },
+          "previousSide": {
+            "x": 3.311265804635578E-10,
+            "y": -1.0,
+            "z": -5.848271812314713E-13
+          }
+        },
+        "actualWorldGameTime": 145,
+        "actualAdaptiveFrames": 93,
+        "actualRenderClock": 130.0599913597107,
+        "actualHeadFrame": {
+          "position": {
+            "x": 35.45695467758178,
+            "y": 137.2751870608633,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 130.0599913597107,
+          "arc": 39.43295467758178,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 34.18799999999999,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 128.0,
+            "arc": 38.163999999999994,
+            "opacity": 0.9656668106714884
+          },
+          {
+            "position": {
+              "x": 34.49599999999999,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 128.5,
+            "arc": 38.471999999999994,
+            "opacity": 0.9740001440048218
+          },
+          {
+            "position": {
+              "x": 34.80399999999999,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 129.0,
+            "arc": 38.779999999999994,
+            "opacity": 0.9823334773381551
+          },
+          {
+            "position": {
+              "x": 35.148190332651126,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 129.5,
+            "arc": 39.12419033265113,
+            "opacity": 0.9906668106714884
+          },
+          {
+            "position": {
+              "x": 35.41999999999999,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 130.0,
+            "arc": 39.395999999999994,
+            "opacity": 0.9990001440048217
+          },
+          {
+            "position": {
+              "x": 35.45695467758178,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 130.0599913597107,
+            "arc": 39.43295467758178,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 85,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 86,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 87,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 88,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 89,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 90,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 91,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 92,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 93,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 94,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 95,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 96,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 97,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 2688
+    },
+    {
+      "screenshot": "realm-4-huashen-local-night-side.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 150,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          57.595999999999975,
+          136.37518708470515,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 442,
+      "actualPartialTick": 0.1799922,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.5605600161552429,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        57.09087519454953,
+        137.99518697026423,
+        0.0
+      ],
+      "position": [
+        57.595999999999975,
+        136.37518708470515,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 170.65694444444443,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 27.99999990433669,
+        "glow": 0.9999999993581501,
+        "speedWeight": 0.6802729770209582,
+        "flowPhase": 7.354752123475277,
+        "historySamples": 64,
+        "historySpeed": 0.6159999999999995,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 166,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999995748,
+            "y": 1.615378995201107E-13,
+            "z": 9.222944006872288E-7
+          },
+          "previousHeading": {
+            "x": 0.9999999999997892,
+            "y": 1.615380591089303E-13,
+            "z": 6.495650456146203E-7
+          },
+          "side": {
+            "x": 1.6153843920481563E-13,
+            "y": -1.0,
+            "z": -5.851544103706525E-13
+          },
+          "previousSide": {
+            "x": 1.615384392048156E-13,
+            "y": -1.0,
+            "z": -5.851544103706525E-13
+          }
+        },
+        "actualWorldGameTime": 180,
+        "actualAdaptiveFrames": 93,
+        "actualRenderClock": 165.1799921989441,
+        "actualHeadFrame": {
+          "position": {
+            "x": 57.09087519454953,
+            "y": 137.2751870608633,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 165.1799921989441,
+          "arc": 61.066875194549525,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 55.747999999999976,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 163.0,
+            "arc": 59.72399999999997,
+            "opacity": 0.9636667966842651
+          },
+          {
+            "position": {
+              "x": 56.055999999999976,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 163.5,
+            "arc": 60.03199999999997,
+            "opacity": 0.9720001300175984
+          },
+          {
+            "position": {
+              "x": 56.363999999999976,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 164.0,
+            "arc": 60.33999999999997,
+            "opacity": 0.9803334633509319
+          },
+          {
+            "position": {
+              "x": 56.70357030034063,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 164.5,
+            "arc": 60.67957030034062,
+            "opacity": 0.9886667966842652
+          },
+          {
+            "position": {
+              "x": 56.979999999999976,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 165.0,
+            "arc": 60.95599999999997,
+            "opacity": 0.9970001300175985
+          },
+          {
+            "position": {
+              "x": 57.09087519454953,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 165.1799921989441,
+            "arc": 61.066875194549525,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 85,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 86,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 87,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 88,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 89,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 90,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 91,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 92,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 93,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 94,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 95,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 96,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 97,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 2688
+    },
+    {
+      "screenshot": "realm-4-huashen-local-night-front.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 180,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          76.07599999999996,
+          136.37518708470515,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 527,
+      "actualPartialTick": 0.19999278,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.5605600161552429,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        75.58319554996487,
+        137.99518697026423,
+        0.0
+      ],
+      "position": [
+        76.07599999999996,
+        136.37518708470515,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 159.12368055555555,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 27.999999999762874,
+        "glow": 0.9999999999956753,
+        "speedWeight": 0.6802729770212984,
+        "flowPhase": 9.905775787305046,
+        "historySamples": 64,
+        "historySpeed": 0.6159999999999995,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 196,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.999999999999729,
+            "y": 2.3374134762549917E-16,
+            "z": 7.362245745307707E-7
+          },
+          "previousHeading": {
+            "x": 0.9999999999991944,
+            "y": 4.029970362373547E-16,
+            "z": 1.2693360612277099E-6
+          },
+          "side": {
+            "x": 2.3417215279570054E-16,
+            "y": -1.0,
+            "z": -5.851545643019065E-13
+          },
+          "previousSide": {
+            "x": 4.037397940273245E-16,
+            "y": -1.0,
+            "z": -5.851545641318689E-13
+          }
+        },
+        "actualWorldGameTime": 210,
+        "actualAdaptiveFrames": 93,
+        "actualRenderClock": 195.19999277591705,
+        "actualHeadFrame": {
+          "position": {
+            "x": 75.58319554996487,
+            "y": 137.2751870608633,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 0.9999999999999999,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 195.19999277591705,
+          "arc": 79.55919554996478,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 74.22799999999997,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 0.9999999999999999,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 193.0,
+            "arc": 78.20399999999988,
+            "opacity": 0.9633334537347158
+          },
+          {
+            "position": {
+              "x": 74.53599999999997,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 193.5,
+            "arc": 78.51199999999989,
+            "opacity": 0.9716667870680491
+          },
+          {
+            "position": {
+              "x": 74.84399999999997,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 194.0,
+            "arc": 78.81999999999988,
+            "opacity": 0.9800001204013824
+          },
+          {
+            "position": {
+              "x": 75.18280027812715,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 194.5,
+            "arc": 79.15880027812706,
+            "opacity": 0.9883334537347158
+          },
+          {
+            "position": {
+              "x": 75.45999999999997,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 195.0,
+            "arc": 79.43599999999988,
+            "opacity": 0.9966667870680491
+          },
+          {
+            "position": {
+              "x": 75.58319554996487,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 0.9999999999999999,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 195.19999277591705,
+            "arc": 79.55919554996478,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 85,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 86,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 87,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 88,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 89,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 90,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 91,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 92,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 93,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 94,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 95,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 96,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 97,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 2688
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-day-side.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 80,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          18.424000000000003,
+          137.2081870847053,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 788,
+      "actualPartialTick": 0.19999349,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.7134400205612182,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        17.796794897079472,
+        138.82818697026437,
+        0.0
+      ],
+      "position": [
+        18.424000000000003,
+        137.2081870847053,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 211.53215277777778,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 31.903202363349937,
+        "glow": 0.9999269725220907,
+        "speedWeight": 0.6440671800779185,
+        "flowPhase": 11.921799828732464,
+        "historySamples": 57,
+        "historySpeed": 0.7838581749279676,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 285,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999997633,
+            "y": 3.937265611855067E-7,
+            "z": 5.644777236223858E-7
+          },
+          "previousHeading": {
+            "x": 0.999999999999296,
+            "y": 6.788360076644822E-7,
+            "z": 9.732333098523522E-7
+          },
+          "side": {
+            "x": 3.937259928288459E-7,
+            "y": -0.9999999999994157,
+            "z": 1.0068714851166052E-6
+          },
+          "previousSide": {
+            "x": 6.788350277433784E-7,
+            "y": -0.9999999999992628,
+            "z": 1.0068717043009422E-6
+          }
+        },
+        "actualWorldGameTime": 299,
+        "actualAdaptiveFrames": 100,
+        "actualRenderClock": 284.1999934911728,
+        "actualHeadFrame": {
+          "position": {
+            "x": 17.796794897079472,
+            "y": 138.10818706086343,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 284.1999934911728,
+          "arc": 22.60759502582112,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 16.594666666666672,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 282.6666666666667,
+            "arc": 21.40546679540832,
+            "opacity": 0.9744445529248983
+          },
+          {
+            "position": {
+              "x": 16.856000000000005,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 283.0,
+            "arc": 21.666800128741652,
+            "opacity": 0.9800001084804535
+          },
+          {
+            "position": {
+              "x": 17.140563151960023,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 283.3333333333333,
+            "arc": 21.95136328070167,
+            "opacity": 0.9855556640360087
+          },
+          {
+            "position": {
+              "x": 17.425126303920045,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 283.6666666666667,
+            "arc": 22.235926432661692,
+            "opacity": 0.9911112195915649
+          },
+          {
+            "position": {
+              "x": 17.640000000000004,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 284.0,
+            "arc": 22.45080012874165,
+            "opacity": 0.9966667751471202
+          },
+          {
+            "position": {
+              "x": 17.796794897079472,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 284.1999934911728,
+            "arc": 22.60759502582112,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 92,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 93,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 94,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 95,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 96,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 97,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 98,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 99,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 100,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 101,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 102,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 103,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 104,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 0
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-day-front.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 115,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          45.86399999999997,
+          137.2081870847053,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 888,
+      "actualPartialTick": 0.19999349,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.7134400205612182,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        45.236794897079434,
+        138.82818697026437,
+        0.0
+      ],
+      "position": [
+        45.86399999999997,
+        137.2081870847053,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 211.62631944444445,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 31.999911731980827,
+        "glow": 0.9999997861536588,
+        "speedWeight": 0.6479999614907146,
+        "flowPhase": 14.755508825487492,
+        "historySamples": 64,
+        "historySpeed": 0.7839999999598457,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 320,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999992814,
+            "y": 3.32302978674265E-10,
+            "z": 1.198873894230582E-6
+          },
+          "previousHeading": {
+            "x": 0.9999999999996436,
+            "y": 3.319459559963219E-10,
+            "z": 8.442876208486067E-7
+          },
+          "side": {
+            "x": 3.3109586717423215E-10,
+            "y": -0.9999999999994933,
+            "z": 1.0068711195659658E-6
+          },
+          "previousSide": {
+            "x": 3.310958671742321E-10,
+            "y": -0.9999999999994931,
+            "z": 1.0068711195659656E-6
+          }
+        },
+        "actualWorldGameTime": 334,
+        "actualAdaptiveFrames": 124,
+        "actualRenderClock": 319.1999934911728,
+        "actualHeadFrame": {
+          "position": {
+            "x": 45.236794897079434,
+            "y": 138.10818706086343,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 319.1999934911728,
+          "arc": 50.045794897079574,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 44.03466666666664,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 317.6666666666667,
+            "arc": 48.84366666666678,
+            "opacity": 0.9744445529248983
+          },
+          {
+            "position": {
+              "x": 44.29599999999997,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 318.0,
+            "arc": 49.10500000000011,
+            "opacity": 0.9800001084804535
+          },
+          {
+            "position": {
+              "x": 44.580563151959986,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 318.3333333333333,
+            "arc": 49.389563151960125,
+            "opacity": 0.9855556640360087
+          },
+          {
+            "position": {
+              "x": 44.86512630392001,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 318.6666666666667,
+            "arc": 49.67412630392015,
+            "opacity": 0.9911112195915649
+          },
+          {
+            "position": {
+              "x": 45.07999999999997,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 319.0,
+            "arc": 49.88900000000011,
+            "opacity": 0.9966667751471202
+          },
+          {
+            "position": {
+              "x": 45.236794897079434,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 319.1999934911728,
+            "arc": 50.045794897079574,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 116,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 117,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 118,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 119,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 120,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 121,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 122,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 123,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 124,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 125,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 126,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 127,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 128,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 0
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-night-side.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 150,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          73.30400000000002,
+          137.2081870847053,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 989,
+      "actualPartialTick": 0.19999337,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.7134400205612182,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        72.6767948036194,
+        138.82818697026437,
+        0.0
+      ],
+      "position": [
+        73.30400000000002,
+        137.2081870847053,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 162.92354166666667,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 31.999999919509982,
+        "glow": 0.9999999993737939,
+        "speedWeight": 0.6479999999996765,
+        "flowPhase": 17.590508813306283,
+        "historySamples": 64,
+        "historySpeed": 0.7840000000000059,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 355,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999995753,
+            "y": 1.0894440112854666E-12,
+            "z": 9.21610884356151E-7
+          },
+          "previousHeading": {
+            "x": 0.9999999999997895,
+            "y": 8.150576922767708E-13,
+            "z": 6.490970404631858E-7
+          },
+          "side": {
+            "x": 1.6150062865059838E-13,
+            "y": -0.9999999999994931,
+            "z": 1.0068711192388504E-6
+          },
+          "previousSide": {
+            "x": 1.615006286505984E-13,
+            "y": -0.9999999999994933,
+            "z": 1.0068711192388506E-6
+          }
+        },
+        "actualWorldGameTime": 369,
+        "actualAdaptiveFrames": 124,
+        "actualRenderClock": 354.1999933719635,
+        "actualHeadFrame": {
+          "position": {
+            "x": 72.6767948036194,
+            "y": 138.10818706086343,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 354.1999933719635,
+          "arc": 77.48579480361964,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 71.47466666666666,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 352.6666666666667,
+            "arc": 76.2836666666669,
+            "opacity": 0.9744445549117198
+          },
+          {
+            "position": {
+              "x": 71.736,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 353.0,
+            "arc": 76.54500000000024,
+            "opacity": 0.980000110467275
+          },
+          {
+            "position": {
+              "x": 72.02056315542151,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 353.3333333333333,
+            "arc": 76.82956315542175,
+            "opacity": 0.9855556660228302
+          },
+          {
+            "position": {
+              "x": 72.30512631084302,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 353.6666666666667,
+            "arc": 77.11412631084326,
+            "opacity": 0.9911112215783864
+          },
+          {
+            "position": {
+              "x": 72.52000000000001,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 354.0,
+            "arc": 77.32900000000025,
+            "opacity": 0.9966667771339417
+          },
+          {
+            "position": {
+              "x": 72.6767948036194,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 354.1999933719635,
+            "arc": 77.48579480361964,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 116,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 117,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 118,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 119,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 120,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 121,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 122,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 123,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 124,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 125,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 126,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 127,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 128,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 0
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-night-front.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 180,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          96.8240000000002,
+          137.2081870847053,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 1074,
+      "actualPartialTick": 0.21999383,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.7134400205612182,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        96.2124751625063,
+        138.82818697026437,
+        0.0
+      ],
+      "position": [
+        96.8240000000002,
+        137.2081870847053,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 155.01479166666667,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 31.999999999800487,
+        "glow": 0.9999999999957807,
+        "speedWeight": 0.6480000000000083,
+        "flowPhase": 20.02050881330618,
+        "historySamples": 64,
+        "historySpeed": 0.7840000000000059,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 385,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999997294,
+            "y": 7.409424383888167E-13,
+            "z": 7.356535174607577E-7
+          },
+          "previousHeading": {
+            "x": 0.9999999999991956,
+            "y": 1.2774795320556483E-12,
+            "z": 1.2683607559102998E-6
+          },
+          "side": {
+            "x": 2.3415789084519147E-16,
+            "y": -0.9999999999994931,
+            "z": 1.0068711192386952E-6
+          },
+          "previousSide": {
+            "x": 4.037181531598596E-16,
+            "y": -0.9999999999994933,
+            "z": 1.0068711192386956E-6
+          }
+        },
+        "actualWorldGameTime": 399,
+        "actualAdaptiveFrames": 124,
+        "actualRenderClock": 384.2199938297272,
+        "actualHeadFrame": {
+          "position": {
+            "x": 96.2124751625063,
+            "y": 138.10818706086343,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 0.9999999999999999,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 384.2199938297272,
+          "arc": 101.02147516250653,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 94.99466666666684,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 382.6666666666667,
+            "arc": 99.80366666666708,
+            "opacity": 0.9741112139489919
+          },
+          {
+            "position": {
+              "x": 95.25600000000018,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 383.0,
+            "arc": 100.06500000000042,
+            "opacity": 0.9796667695045471
+          },
+          {
+            "position": {
+              "x": 95.53998240138885,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 383.3333333333333,
+            "arc": 100.3489824013891,
+            "opacity": 0.9852223250601023
+          },
+          {
+            "position": {
+              "x": 95.82396480277751,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 383.6666666666667,
+            "arc": 100.63296480277775,
+            "opacity": 0.9907778806156585
+          },
+          {
+            "position": {
+              "x": 96.04000000000019,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 384.0,
+            "arc": 100.84900000000043,
+            "opacity": 0.9963334361712138
+          },
+          {
+            "position": {
+              "x": 96.2124751625063,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 0.9999999999999999,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 384.2199938297272,
+            "arc": 101.02147516250653,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 116,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 117,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 118,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 119,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 120,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 121,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 122,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 123,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 124,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 125,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 126,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 127,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 128,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 0
+    },
+    {
+      "screenshot": "realm-8-dixian-local-day-side.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 80,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          36.848000000000006,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 1334,
+      "actualPartialTick": 0.15999508,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        1.4268800411224365,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        35.53087228393556,
+        143.63718697026422,
+        0.0
+      ],
+      "position": [
+        36.848000000000006,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 211.59034722222222,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 43.89416820580428,
+        "glow": 0.9999269725220907,
+        "speedWeight": 0.6440671799052454,
+        "flowPhase": 22.002663619248477,
+        "historySamples": 57,
+        "historySpeed": 1.5677163498532145,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 474,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999997633,
+            "y": 3.937272637100162E-7,
+            "z": 5.644779165904913E-7
+          },
+          "previousHeading": {
+            "x": 0.999999999999296,
+            "y": 6.788369868453433E-7,
+            "z": 9.732333098508718E-7
+          },
+          "side": {
+            "x": 3.937261274416523E-7,
+            "y": -0.9999999999978967,
+            "z": 2.0129532007461307E-6
+          },
+          "previousSide": {
+            "x": 6.7883502777097E-7,
+            "y": -0.9999999999977436,
+            "z": 2.0129534199303913E-6
+          }
+        },
+        "actualWorldGameTime": 488,
+        "actualAdaptiveFrames": 156,
+        "actualRenderClock": 473.1599950790405,
+        "actualHeadFrame": {
+          "position": {
+            "x": 35.53087228393556,
+            "y": 142.91718706086328,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 0.9999999999999999,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 473.1599950790405,
+          "arc": 45.15247254141856,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 34.40242213037111,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": -4.0546884002115524E-14,
+              "z": 0.0
+            },
+            "side": {
+              "x": -4.0546884002115524E-14,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0
+            },
+            "tick": 472.4,
+            "arc": 44.02402238785411,
+            "opacity": 0.9873334153493242
+          },
+          {
+            "position": {
+              "x": 34.74763319555665,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 472.6,
+            "arc": 44.369233453039655,
+            "opacity": 0.9906667486826582
+          },
+          {
+            "position": {
+              "x": 35.050696173828136,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 472.8,
+            "arc": 44.67229643131114,
+            "opacity": 0.9940000820159914
+          },
+          {
+            "position": {
+              "x": 35.28000000000001,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 473.0,
+            "arc": 44.90160025748301,
+            "opacity": 0.9973334153493245
+          },
+          {
+            "position": {
+              "x": 35.421115659713756,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 473.07999753952026,
+            "arc": 45.04271591719676,
+            "opacity": 0.9986667076746623
+          },
+          {
+            "position": {
+              "x": 35.53087228393556,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 0.9999999999999999,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 473.1599950790405,
+            "arc": 45.15247254141856,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 148,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 149,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 150,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 151,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 152,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 153,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 154,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 155,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 156,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 157,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 158,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 159,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 160,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 0
+    },
+    {
+      "screenshot": "realm-8-dixian-local-day-front.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 115,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          91.72799999999994,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 1436,
+      "actualPartialTick": 0.319996,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        1.4268800411224365,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        90.66175372695916,
+        143.63718697026422,
+        0.0
+      ],
+      "position": [
+        91.72799999999994,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 199.249375,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 43.99990349389549,
+        "glow": 0.9999997861536588,
+        "speedWeight": 0.647999961490713,
+        "flowPhase": 24.836372615948488,
+        "historySamples": 64,
+        "historySpeed": 1.5679999999196914,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 509,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999992814,
+            "y": 3.3351083511325E-10,
+            "z": 1.1988744863848652E-6
+          },
+          "previousHeading": {
+            "x": 0.9999999999996436,
+            "y": 3.32797069669044E-10,
+            "z": 8.442882130034285E-7
+          },
+          "side": {
+            "x": 3.3109755731640065E-10,
+            "y": -0.9999999999979741,
+            "z": 2.0129528351952146E-6
+          },
+          "previousSide": {
+            "x": 3.3109755731640065E-10,
+            "y": -0.9999999999979741,
+            "z": 2.0129528351952146E-6
+          }
+        },
+        "actualWorldGameTime": 523,
+        "actualAdaptiveFrames": 142,
+        "actualRenderClock": 508.31999599933624,
+        "actualHeadFrame": {
+          "position": {
+            "x": 90.66175372695916,
+            "y": 142.91718706086328,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 508.31999599933624,
+          "arc": 100.27975372695907,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 89.27037982110589,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": -4.1376189116502065E-14,
+              "z": 0.0
+            },
+            "side": {
+              "x": -4.1376189116502065E-14,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0
+            },
+            "tick": 507.4,
+            "arc": 98.8883798211058,
+            "opacity": 0.9846667333443956
+          },
+          {
+            "position": {
+              "x": 89.60956973165888,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 507.6,
+            "arc": 99.22756973165879,
+            "opacity": 0.9880000666777297
+          },
+          {
+            "position": {
+              "x": 89.91463976147456,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 507.8,
+            "arc": 99.53263976147447,
+            "opacity": 0.9913334000110628
+          },
+          {
+            "position": {
+              "x": 90.15999999999994,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 508.0,
+            "arc": 99.77799999999985,
+            "opacity": 0.9946667333443959
+          },
+          {
+            "position": {
+              "x": 90.4422364714145,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 508.1599979996681,
+            "arc": 100.06023647141441,
+            "opacity": 0.997333366672198
+          },
+          {
+            "position": {
+              "x": 90.66175372695916,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 508.31999599933624,
+            "arc": 100.27975372695907,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 134,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 135,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 136,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 137,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 138,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 139,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 140,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 141,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 142,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 143,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 144,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 145,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 146,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 0
+    },
+    {
+      "screenshot": "realm-8-dixian-local-night-side.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 150,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          146.60800000000003,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 1535,
+      "actualPartialTick": 0.059996367,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        1.4268800411224365,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        145.13407430267335,
+        143.63718697026422,
+        0.0
+      ],
+      "position": [
+        146.60800000000003,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 172.74729166666665,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 43.99999991199782,
+        "glow": 0.9999999993737939,
+        "speedWeight": 0.6479999999996765,
+        "flowPhase": 27.67137260376728,
+        "historySamples": 64,
+        "historySpeed": 1.5680000000000118,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 544,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999995753,
+            "y": 2.016662688398584E-12,
+            "z": 9.216114768440745E-7
+          },
+          "previousHeading": {
+            "x": 0.9999999999997895,
+            "y": 1.4681051737931945E-12,
+            "z": 6.490976329515233E-7
+          },
+          "side": {
+            "x": 1.6150225343431353E-13,
+            "y": -0.9999999999979741,
+            "z": 2.012952834868097E-6
+          },
+          "previousSide": {
+            "x": 1.6150225343431393E-13,
+            "y": -0.9999999999979741,
+            "z": 2.012952834868097E-6
+          }
+        },
+        "actualWorldGameTime": 558,
+        "actualAdaptiveFrames": 143,
+        "actualRenderClock": 543.0599963665009,
+        "actualHeadFrame": {
+          "position": {
+            "x": 145.13407430267335,
+            "y": 142.91718706086328,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 543.0599963665009,
+          "arc": 154.75207430267346,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 143.80918281115723,
+              "y": 142.9171870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 542.2,
+            "arc": 153.42718281115734,
+            "opacity": 0.9856667272249865
+          },
+          {
+            "position": {
+              "x": 144.1699484334717,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": -4.004525019820559E-14,
+              "z": 0.0
+            },
+            "side": {
+              "x": -4.004525019820559E-14,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0
+            },
+            "tick": 542.4,
+            "arc": 153.7879484334718,
+            "opacity": 0.9890000605583187
+          },
+          {
+            "position": {
+              "x": 144.51892265020754,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 0.9999999999999999,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": -1.2621774483536189E-29,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0
+            },
+            "tick": 542.6,
+            "arc": 154.13692265020765,
+            "opacity": 0.9923333938916528
+          },
+          {
+            "position": {
+              "x": 144.82073124462892,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 542.8,
+            "arc": 154.43873124462903,
+            "opacity": 0.995666727224985
+          },
+          {
+            "position": {
+              "x": 145.04000000000002,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 543.0,
+            "arc": 154.65800000000013,
+            "opacity": 0.9990000605583191
+          },
+          {
+            "position": {
+              "x": 145.13407430267335,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 543.0599963665009,
+            "arc": 154.75207430267346,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 135,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 136,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 137,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 138,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 139,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 140,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 141,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 142,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 143,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 144,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 145,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 146,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 147,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 0
+    },
+    {
+      "screenshot": "realm-8-dixian-local-night-front.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 180,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          193.6480000000004,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 1621,
+      "actualPartialTick": 0.3399974,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        1.4268800411224365,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        192.6131159400944,
+        143.63718697026422,
+        0.0
+      ],
+      "position": [
+        193.6480000000004,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 171.73465277777777,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 43.99999999978186,
+        "glow": 0.9999999999957807,
+        "speedWeight": 0.6480000000000083,
+        "flowPhase": 30.101372603767178,
+        "historySamples": 64,
+        "historySpeed": 1.5680000000000118,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 574,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999997295,
+            "y": 1.4810699803576858E-12,
+            "z": 7.356535036318303E-7
+          },
+          "previousHeading": {
+            "x": 0.9999999999991959,
+            "y": 2.553406057463554E-12,
+            "z": 1.268287209436352E-6
+          },
+          "side": {
+            "x": 2.3417473845921295E-16,
+            "y": -0.9999999999979741,
+            "z": 2.0129528348679414E-6
+          },
+          "previousSide": {
+            "x": 4.0372379672512495E-16,
+            "y": -0.9999999999979741,
+            "z": 2.012952834867942E-6
+          }
+        },
+        "actualWorldGameTime": 588,
+        "actualAdaptiveFrames": 142,
+        "actualRenderClock": 573.3399974107742,
+        "actualHeadFrame": {
+          "position": {
+            "x": 192.6131159400944,
+            "y": 142.91718706086328,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 573.3399974107742,
+          "arc": 202.23111594009455,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 191.18887443487586,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": -4.148225051074279E-14,
+              "z": 0.0
+            },
+            "side": {
+              "x": -4.148225051074279E-14,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0
+            },
+            "tick": 572.4,
+            "arc": 200.80687443487602,
+            "opacity": 0.9843333764870957
+          },
+          {
+            "position": {
+              "x": 191.5273116523136,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 572.6,
+            "arc": 201.14531165231378,
+            "opacity": 0.9876667098204298
+          },
+          {
+            "position": {
+              "x": 191.83263257983435,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 572.8,
+            "arc": 201.45063257983452,
+            "opacity": 0.9910000431537621
+          },
+          {
+            "position": {
+              "x": 192.08000000000038,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 573.0,
+            "arc": 201.69800000000055,
+            "opacity": 0.9943333764870962
+          },
+          {
+            "position": {
+              "x": 192.37987771630327,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 573.1699987053871,
+            "arc": 201.99787771630344,
+            "opacity": 0.997166688243548
+          },
+          {
+            "position": {
+              "x": 192.6131159400944,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 573.3399974107742,
+            "arc": 202.23111594009455,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 134,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 135,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 136,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 137,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 138,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 139,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 140,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 141,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 142,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 143,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 144,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 145,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 146,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 0
+    }
+  ],
+  "checks": [
+    {
+      "name": "actual_shader_pack",
+      "passed": true,
+      "details": "Expected\u003dfalse, actual\u003dfalse, pack\u003dnone"
+    },
+    {
+      "name": "production_survival_permission_realm_4",
+      "passed": true,
+      "details": "Landed survival player; actual production mayfly\u003dtrue; no fixture mayfly grant"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[14.475999999999994, 136.37518708470515, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "View vertices\u003d2688, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d211.50034722222222, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[36.03599999999999, 136.37518708470515, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "View vertices\u003d2688, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d211.6125, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[57.595999999999975, 136.37518708470515, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "View vertices\u003d2688, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d170.65694444444443, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[76.07599999999996, 136.37518708470515, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "View vertices\u003d2688, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d159.12368055555555, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "local_actual_W_displacement_realm_4",
+      "passed": true,
+      "details": "Actual W displacement\u003d78.53999999999996"
+    },
+    {
+      "name": "production_survival_permission_realm_5",
+      "passed": true,
+      "details": "Landed survival player; actual production mayfly\u003dtrue; no fixture mayfly grant"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[18.424000000000003, 137.2081870847053, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-5-lianxu-local-day-side.png",
+      "passed": false,
+      "details": "View vertices\u003d0, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d211.53215277777778, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[45.86399999999997, 137.2081870847053, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-5-lianxu-local-day-front.png",
+      "passed": false,
+      "details": "View vertices\u003d0, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d211.62631944444445, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[73.30400000000002, 137.2081870847053, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-5-lianxu-local-night-side.png",
+      "passed": false,
+      "details": "View vertices\u003d0, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d162.92354166666667, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[96.8240000000002, 137.2081870847053, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-5-lianxu-local-night-front.png",
+      "passed": false,
+      "details": "View vertices\u003d0, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d155.01479166666667, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "local_actual_W_displacement_realm_5",
+      "passed": true,
+      "details": "Actual W displacement\u003d99.96000000000022"
+    },
+    {
+      "name": "production_survival_permission_realm_8",
+      "passed": true,
+      "details": "Landed survival player; actual production mayfly\u003dtrue; no fixture mayfly grant"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[36.848000000000006, 142.01718708470514, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-8-dixian-local-day-side.png",
+      "passed": false,
+      "details": "View vertices\u003d0, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d211.59034722222222, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[91.72799999999994, 142.01718708470514, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-8-dixian-local-day-front.png",
+      "passed": false,
+      "details": "View vertices\u003d0, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d199.249375, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[146.60800000000003, 142.01718708470514, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-8-dixian-local-night-side.png",
+      "passed": false,
+      "details": "View vertices\u003d0, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d172.74729166666665, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[193.6480000000004, 142.01718708470514, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-8-dixian-local-night-front.png",
+      "passed": false,
+      "details": "View vertices\u003d0, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d171.73465277777777, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "local_actual_W_displacement_realm_8",
+      "passed": true,
+      "details": "Actual W displacement\u003d199.92000000000044"
+    },
+    {
+      "name": "complete_actual_images",
+      "passed": true,
+      "details": "Actual PNGs\u003d12, expected\u003d12"
+    },
+    {
+      "name": "no_GL_errors",
+      "passed": true,
+      "details": "[]"
+    }
+  ],
+  "failures": [
+    "fixed_view_flow_realm-5-lianxu-local-day-side.png: View vertices\u003d0, world history vertices\u003d0",
+    "fixed_view_flow_realm-5-lianxu-local-day-front.png: View vertices\u003d0, world history vertices\u003d0",
+    "fixed_view_flow_realm-5-lianxu-local-night-side.png: View vertices\u003d0, world history vertices\u003d0",
+    "fixed_view_flow_realm-5-lianxu-local-night-front.png: View vertices\u003d0, world history vertices\u003d0",
+    "fixed_view_flow_realm-8-dixian-local-day-side.png: View vertices\u003d0, world history vertices\u003d0",
+    "fixed_view_flow_realm-8-dixian-local-day-front.png: View vertices\u003d0, world history vertices\u003d0",
+    "fixed_view_flow_realm-8-dixian-local-night-side.png: View vertices\u003d0, world history vertices\u003d0",
+    "fixed_view_flow_realm-8-dixian-local-night-front.png: View vertices\u003d0, world history vertices\u003d0"
+  ],
+  "glErrors": []
+}

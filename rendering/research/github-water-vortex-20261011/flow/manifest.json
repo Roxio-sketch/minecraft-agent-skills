@@ -1,0 +1,772 @@
+{
+  "schema": "github-source-study/1",
+  "accessedDate": "2026-10-11",
+  "timezone": "Asia/Shanghai",
+  "scope": "static source study; downloaded projects not executed",
+  "upstreamCodeModified": false,
+  "projects": [
+    {
+      "id": "three-water2",
+      "folder": "three.js",
+      "repo": "mrdoob/three.js",
+      "commit": "9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8",
+      "selectedRef": "refs/heads/master",
+      "license": "MIT",
+      "licenseFile": "LICENSE",
+      "category": "surface-flow-planar-water",
+      "notices": [
+        "Copyright © 2010-2026 three.js authors",
+        "Water2 cites Vlachos SIGGRAPH10 water flow and graphicsrunner.",
+        "Reflector/Refractor retain oblique clipping and projection references."
+      ],
+      "anchors": [
+        {
+          "path": "examples/jsm/objects/Water2.js",
+          "symbol": "updateFlow",
+          "line": 181,
+          "needle": "function updateFlow()",
+          "url": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Water2.js#L181"
+        },
+        {
+          "path": "examples/jsm/objects/Water2.js",
+          "symbol": "flow-normal-blend",
+          "line": 357,
+          "needle": "float flowLerp =",
+          "url": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Water2.js#L357"
+        },
+        {
+          "path": "examples/jsm/objects/Water2.js",
+          "symbol": "Fresnel",
+          "line": 365,
+          "needle": "float reflectance =",
+          "url": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Water2.js#L365"
+        },
+        {
+          "path": "examples/jsm/objects/Reflector.js",
+          "symbol": "reflection-pass",
+          "line": 116,
+          "needle": "this.onBeforeRender =",
+          "url": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Reflector.js#L116"
+        },
+        {
+          "path": "examples/jsm/objects/Refractor.js",
+          "symbol": "refraction-pass",
+          "line": 230,
+          "needle": "function render( renderer, scene, camera )",
+          "url": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Refractor.js#L230"
+        }
+      ],
+      "omitted": [
+        "textures/water/*.jpg",
+        "three core runtime",
+        "demo scenes"
+      ],
+      "acquisition": "fixed-commit raw.githubusercontent.com selected files",
+      "url": "https://github.com/mrdoob/three.js",
+      "files": [
+        {
+          "path": "examples/jsm/objects/Reflector.js",
+          "localPath": "three.js/examples/jsm/objects/Reflector.js",
+          "bytes": 10943,
+          "sha256": "57836df976f02a474b2dcfbb6609bca8bde0ccc6e77159ad8e418fa11c065d3b",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Reflector.js",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Reflector.js",
+          "lineCount": 385,
+          "readRanges": [
+            [
+              112,
+              254
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "examples/jsm/objects/Refractor.js",
+          "localPath": "three.js/examples/jsm/objects/Refractor.js",
+          "bytes": 10176,
+          "sha256": "512c4ec056b8af3c7aa24f80a74d606dfd10c06697686b2b73df8dbe7f2f9d78",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Refractor.js",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Refractor.js",
+          "lineCount": 389,
+          "readRanges": [
+            [
+              107,
+              285
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "examples/jsm/objects/Water2.js",
+          "localPath": "three.js/examples/jsm/objects/Water2.js",
+          "bytes": 10459,
+          "sha256": "80180ce0b031169883e14a79374e2c4d899b7726a1af4897dd7a9efc9d9240f7",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Water2.js",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Water2.js",
+          "lineCount": 403,
+          "readRanges": [
+            [
+              1,
+              403
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "examples/jsm/shaders/WaterRefractionShader.js",
+          "localPath": "three.js/examples/jsm/shaders/WaterRefractionShader.js",
+          "bytes": 2046,
+          "sha256": "cad67ed479d112d787281b1ab37561659a50d5fad6ad951a2d9f89a45f229cf5",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/shaders/WaterRefractionShader.js",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/shaders/WaterRefractionShader.js",
+          "lineCount": 106,
+          "readRanges": [
+            [
+              1,
+              106
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "LICENSE",
+          "localPath": "three.js/LICENSE",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/LICENSE",
+          "lineCount": 21,
+          "readRanges": [
+            [
+              1,
+              21
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "README.md",
+          "localPath": "three.js/README.md",
+          "bytes": 2969,
+          "sha256": "d553d824625a07d7690de93af6f8daf13d6aaed42700929d7ce4e725fa5ef10d",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/README.md",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/README.md",
+          "lineCount": 85,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        }
+      ]
+    },
+    {
+      "id": "waterways",
+      "folder": "Waterways",
+      "repo": "Arnklit/Waterways",
+      "commit": "cd2e2193fe2c7792efb4c35118ade3ad868538b4",
+      "selectedRef": "refs/heads/main",
+      "license": "MIT; retain file notices",
+      "licenseFile": "LICENSE",
+      "category": "surface-flow-baked-obstacles",
+      "notices": [
+        "Copyright (c) 2021 Kasper Arnklit Frandsen",
+        "river.shader retains comment that ease came from math_funcs.cpp; upstream identity is not pinned by that comment.",
+        "File headers say LICENSE.md; actual pinned root file is LICENSE. No upstream text changed."
+      ],
+      "anchors": [
+        {
+          "path": "addons/waterways/shaders/river.shader",
+          "symbol": "FlowUVW",
+          "line": 56,
+          "needle": "vec3 FlowUVW(",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river.shader#L56"
+        },
+        {
+          "path": "addons/waterways/shaders/river.shader",
+          "symbol": "flow-strength",
+          "line": 139,
+          "needle": "float flow_force =",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river.shader#L139"
+        },
+        {
+          "path": "addons/waterways/shaders/river.shader",
+          "symbol": "refraction-foreground-check",
+          "line": 209,
+          "needle": "if (surface_dist2 < -VERTEX.z)",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river.shader#L209"
+        },
+        {
+          "path": "addons/waterways/river_manager.gd",
+          "symbol": "bake-flowmap",
+          "line": 612,
+          "needle": "func _generate_flowmap(",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/river_manager.gd#L612"
+        },
+        {
+          "path": "addons/waterways/water_helper_methods.gd",
+          "symbol": "mesh",
+          "line": 74,
+          "needle": "static func generate_river_mesh(",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/water_helper_methods.gd#L74"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+          "symbol": "nm2flow",
+          "line": 6,
+          "needle": "vec3 nm2flow(",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/normal_to_flow_filter.shader#L6"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/flow_pressure_pass.shader",
+          "symbol": "occupancy-pressure-heuristic",
+          "line": 13,
+          "needle": "value += textureLod",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/flow_pressure_pass.shader#L13"
+        }
+      ],
+      "omitted": [
+        "binary textures",
+        "plugin scenes/resources",
+        "project and runtime"
+      ],
+      "acquisition": "fixed-commit codeload archive; ZIP CRC checked in memory; selected LICENSE and .gd/.shader files retained",
+      "archiveBytes": 3101784,
+      "url": "https://github.com/Arnklit/Waterways",
+      "files": [
+        {
+          "path": "addons/waterways/buoyant_manager.gd",
+          "localPath": "Waterways/addons/waterways/buoyant_manager.gd",
+          "bytes": 2329,
+          "sha256": "26163a141a0338d4d1457615bc354226597adcd3f01da3355bb779a6254d77f1",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/buoyant_manager.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/buoyant_manager.gd",
+          "lineCount": 73,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/editor_property.gd",
+          "localPath": "Waterways/addons/waterways/editor_property.gd",
+          "bytes": 778,
+          "sha256": "ac4c148f6d07279342b82e1ec3f77cb169f6b3a5c4be64105aaa552367d585cb",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/editor_property.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/editor_property.gd",
+          "lineCount": 27,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/filter_renderer.gd",
+          "localPath": "Waterways/addons/waterways/filter_renderer.gd",
+          "bytes": 10035,
+          "sha256": "fdbe09def51b0d075029c47271699929056f3889eb7a35a588ae6ccb680b6f37",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/filter_renderer.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/filter_renderer.gd",
+          "lineCount": 254,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/gui/gradient_inspector.gd",
+          "localPath": "Waterways/addons/waterways/gui/gradient_inspector.gd",
+          "bytes": 679,
+          "sha256": "7d36da73c7d98a64a72ca878c84b52ca2d4e5233552c968cc49f0d171609c580",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/gradient_inspector.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/gradient_inspector.gd",
+          "lineCount": 18,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/gui/river_controls.gd",
+          "localPath": "Waterways/addons/waterways/gui/river_controls.gd",
+          "bytes": 2884,
+          "sha256": "61bf71772974efd53333ea4d4f69a8e7803045d79bfba7df50bc01c7ea3097ba",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/river_controls.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/river_controls.gd",
+          "lineCount": 110,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/gui/river_menu.gd",
+          "localPath": "Waterways/addons/waterways/gui/river_menu.gd",
+          "bytes": 2369,
+          "sha256": "a6410658afcbf4599ea103e14bd22a180676edf08bfaf4708049ae5d40d27a87",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/river_menu.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/river_menu.gd",
+          "lineCount": 67,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/gui/water_system_controls.gd",
+          "localPath": "Waterways/addons/waterways/gui/water_system_controls.gd",
+          "bytes": 217,
+          "sha256": "e38f6f9b8717283caf55be95cc1abdbbf786a3c0715906ea9fcba15e5f6fbe88",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/water_system_controls.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/water_system_controls.gd",
+          "lineCount": 9,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/gui/water_system_menu.gd",
+          "localPath": "Waterways/addons/waterways/gui/water_system_menu.gd",
+          "bytes": 616,
+          "sha256": "4303aab63e2c2f192ade3580b0d7f6958cac0f793ab77f9509f44fb87c0e671d",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/water_system_menu.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/water_system_menu.gd",
+          "lineCount": 26,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/inspector_plugin.gd",
+          "localPath": "Waterways/addons/waterways/inspector_plugin.gd",
+          "bytes": 640,
+          "sha256": "45737b142cb7fd2eed04ed4a0a2c4854f7c06aaa85d9bc039ee66b62900b932c",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/inspector_plugin.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/inspector_plugin.gd",
+          "lineCount": 18,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/plugin.gd",
+          "localPath": "Waterways/addons/waterways/plugin.gd",
+          "bytes": 13371,
+          "sha256": "8d9759a0f119698f6d80707ed0fd7fad1d80e41c3b28f7315339773cac6b2296",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/plugin.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/plugin.gd",
+          "lineCount": 325,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/progress_window.gd",
+          "localPath": "Waterways/addons/waterways/progress_window.gd",
+          "bytes": 314,
+          "sha256": "c7db40db0fa9ecf205e05f9d1477988137d5083a72b5519c66aa77c4a5782d01",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/progress_window.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/progress_window.gd",
+          "lineCount": 12,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/river_gizmo.gd",
+          "localPath": "Waterways/addons/waterways/river_gizmo.gd",
+          "bytes": 17175,
+          "sha256": "8eb83808ee38fb5e006e448133910321bce781b183e60e3313ba837824c926cd",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/river_gizmo.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/river_gizmo.gd",
+          "lineCount": 409,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/river_manager.gd",
+          "localPath": "Waterways/addons/waterways/river_manager.gd",
+          "bytes": 22238,
+          "sha256": "44fd9e68b90dddabc21a30f1b6bc53f6aeb37962e40405190ea451d7da4f4dcc",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/river_manager.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/river_manager.gd",
+          "lineCount": 694,
+          "readRanges": [
+            [
+              596,
+              691
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/blur_pass1.shader",
+          "localPath": "Waterways/addons/waterways/shaders/filters/blur_pass1.shader",
+          "bytes": 460,
+          "sha256": "900a283454d0e6e2876c05052dbbc920db121b3bc56df00fad420959ab59d9b3",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/blur_pass1.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/blur_pass1.shader",
+          "lineCount": 21,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/blur_pass2.shader",
+          "localPath": "Waterways/addons/waterways/shaders/filters/blur_pass2.shader",
+          "bytes": 460,
+          "sha256": "506dcd1bdd7ece3d3a7b1d26159f7f00d7243c741532dccac6338cb93240b291",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/blur_pass2.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/blur_pass2.shader",
+          "lineCount": 21,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/combine_pass.shader",
+          "localPath": "Waterways/addons/waterways/shaders/filters/combine_pass.shader",
+          "bytes": 361,
+          "sha256": "f70ff229f82a540828430801a635d15d35365284fef13f21be6c814bb02b4c06",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/combine_pass.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/combine_pass.shader",
+          "lineCount": 11,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+          "localPath": "Waterways/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+          "bytes": 740,
+          "sha256": "1589c334d845ab0869f2ee133850fdf94f7c20533184f108ee57b0b3422e807f",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+          "lineCount": 35,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+          "localPath": "Waterways/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+          "bytes": 766,
+          "sha256": "d2c150a41613ad23f8d2d4459ebff59b587f57d230161aa49608aab301d194ce",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+          "lineCount": 30,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+          "localPath": "Waterways/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+          "bytes": 412,
+          "sha256": "c1a44890a2b92fbf3add7823ccd8c183140cf5b7f28004c04f8fe2e51e3a04fb",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+          "lineCount": 13,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/dotproduct.shader",
+          "localPath": "Waterways/addons/waterways/shaders/filters/dotproduct.shader",
+          "bytes": 232,
+          "sha256": "748337aa9a87676cd29c2f5ccde68a0348e9241fa2f8413d2227c1ae05f6a9a6",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dotproduct.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dotproduct.shader",
+          "lineCount": 9,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/flow_pressure_pass.shader",
+          "localPath": "Waterways/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+          "bytes": 463,
+          "sha256": "e3644e59f9ef0270c2454466b5536a4144f2dc69dd8ebe63b1de77602cec0e15",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+          "lineCount": 17,
+          "readRanges": [
+            [
+              1,
+              17
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/foam_pass.shader",
+          "localPath": "Waterways/addons/waterways/shaders/filters/foam_pass.shader",
+          "bytes": 731,
+          "sha256": "1b9d7aa1b21f9c53b3713a27e6485e9bcffcd3453befa32ab3a6e2d9cf7a9bfe",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/foam_pass.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/foam_pass.shader",
+          "lineCount": 26,
+          "readRanges": [
+            [
+              1,
+              26
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/normal_map_pass.shader",
+          "localPath": "Waterways/addons/waterways/shaders/filters/normal_map_pass.shader",
+          "bytes": 930,
+          "sha256": "09d3eb6e4aa770fb0e105c666e3ef0425be9f57598e21b469b3c251aa4c53875",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/normal_map_pass.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/normal_map_pass.shader",
+          "lineCount": 31,
+          "readRanges": [
+            [
+              1,
+              31
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+          "localPath": "Waterways/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+          "bytes": 385,
+          "sha256": "2a2131c1f703a1f317de39b1be56b8ac867cf6930faef3ed195318c9e28e0bb9",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+          "lineCount": 16,
+          "readRanges": [
+            [
+              1,
+              16
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/gui/gradient.shader",
+          "localPath": "Waterways/addons/waterways/shaders/gui/gradient.shader",
+          "bytes": 217,
+          "sha256": "c152ac7604112bfc9de1846e34e77914fd3a607edc6460257dd6a3c17bdc264f",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/gui/gradient.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/gui/gradient.shader",
+          "lineCount": 9,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/lava.shader",
+          "localPath": "Waterways/addons/waterways/shaders/lava.shader",
+          "bytes": 6260,
+          "sha256": "f7308f3569467f5f37f6661e30998923eb481d3cba6b81d70d1af5e262d135a6",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/lava.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/lava.shader",
+          "lineCount": 170,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/river.shader",
+          "localPath": "Waterways/addons/waterways/shaders/river.shader",
+          "bytes": 9052,
+          "sha256": "7a9ac760c7b9a80090b37bd5da5d59011f23a3a07e05e8be7ab7f04e3d89d087",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river.shader",
+          "lineCount": 233,
+          "readRanges": [
+            [
+              1,
+              233
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/river_debug.shader",
+          "localPath": "Waterways/addons/waterways/shaders/river_debug.shader",
+          "bytes": 6248,
+          "sha256": "f05b16fc4b98c0172eeb5fdcf536db57ca0c975ffb7095c4f9a9c3e4bcc3ea25",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river_debug.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river_debug.shader",
+          "lineCount": 178,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/system_renders/alpha.shader",
+          "localPath": "Waterways/addons/waterways/shaders/system_renders/alpha.shader",
+          "bytes": 84,
+          "sha256": "4c2bde79249c8fe3c36f50c4145666384f785faadb3880ed308ac383141c5d47",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/alpha.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/alpha.shader",
+          "lineCount": 6,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/system_renders/system_flow.shader",
+          "localPath": "Waterways/addons/waterways/shaders/system_renders/system_flow.shader",
+          "bytes": 1704,
+          "sha256": "b19f225851b8aba8a3fa7bb2c2ed3ffd0131e44280b00773fc76cb1dc2b6899d",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/system_flow.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/system_flow.shader",
+          "lineCount": 53,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/system_renders/system_height.shader",
+          "localPath": "Waterways/addons/waterways/shaders/system_renders/system_height.shader",
+          "bytes": 355,
+          "sha256": "a316bf116a2fedc0c7e1182fc6afa0d266e96a2e81c03add627c321c7dbcc61e",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/system_height.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/system_height.shader",
+          "lineCount": 15,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/system_map_renderer.gd",
+          "localPath": "Waterways/addons/waterways/system_map_renderer.gd",
+          "bytes": 5804,
+          "sha256": "4342795ce0309f1a123abe689dbe0b5a7c5f22eab19df394dfb259ce45f2f854",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/system_map_renderer.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/system_map_renderer.gd",
+          "lineCount": 153,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/water_helper_methods.gd",
+          "localPath": "Waterways/addons/waterways/water_helper_methods.gd",
+          "bytes": 10728,
+          "sha256": "47855530b45f7400ad728167c4ea8a9f86bbc8a6575aa1a56254c7d4f802e3bb",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/water_helper_methods.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/water_helper_methods.gd",
+          "lineCount": 273,
+          "readRanges": [
+            [
+              1,
+              273
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/water_system_manager.gd",
+          "localPath": "Waterways/addons/waterways/water_system_manager.gd",
+          "bytes": 6484,
+          "sha256": "f6c4cb4ad9cfeb72748f81b056be5de801dd2087e78397be4f206dc5d764b2b0",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/water_system_manager.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/water_system_manager.gd",
+          "lineCount": 207,
+          "readRanges": [],
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "LICENSE",
+          "localPath": "Waterways/LICENSE",
+          "bytes": 1080,
+          "sha256": "8da0249fe2a334230e8c7bb633f4558e40ddafc95d30c1cfcffbf302a3f83c34",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/LICENSE",
+          "lineCount": 21,
+          "readRanges": [
+            [
+              1,
+              21
+            ]
+          ],
+          "readStatus": "body-read"
+        }
+      ]
+    },
+    {
+      "id": "tiled-directional-flow",
+      "folder": "Tiled-Directional-Flow",
+      "repo": "Scrawk/Tiled-Directional-Flow",
+      "commit": "386892cc3f6e21b4694b2777a9e7e66d47a3dd67",
+      "selectedRef": "HEAD",
+      "license": "MIT root + retained Frans van Hoesel Creditware notice",
+      "licenseFile": "LICENSE",
+      "category": "surface-tiled-direction-flow",
+      "notices": [
+        "Copyright (c) 2017 Justin",
+        "Frans van Hoesel (c) 2010 Creditware at shader lines 49-59 and root LICENSE"
+      ],
+      "anchors": [
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "symbol": "Creditware",
+          "line": 49,
+          "needle": "This software is Creditware:",
+          "url": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader#L49"
+        },
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "symbol": "surf",
+          "line": 100,
+          "needle": "void surf (",
+          "url": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader#L100"
+        },
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "symbol": "blend-weights",
+          "line": 113,
+          "needle": "float2 ff =",
+          "url": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader#L113"
+        },
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "symbol": "rotation-scale",
+          "line": 142,
+          "needle": "float2x2 rotmat =",
+          "url": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader#L142"
+        },
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "symbol": "normal-normalization-compensation",
+          "line": 197,
+          "needle": "NormalT = (NormalT - 0.5) / (ffscale.y * ffscale.x);",
+          "url": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader#L197"
+        }
+      ],
+      "omitted": [
+        "Water normal texture",
+        "hpcvrock texture",
+        "skybox",
+        "Unity scenes"
+      ],
+      "acquisition": "fixed-commit codeload archive; ZIP CRC checked in memory; selected source retained",
+      "archiveBytes": 17407778,
+      "url": "https://github.com/Scrawk/Tiled-Directional-Flow",
+      "files": [
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "localPath": "Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "bytes": 10952,
+          "sha256": "72612d7597ef0e7a151bb0530c7f1bada51eb3084db42366fa1ab0ce1ae9debc",
+          "sourceUrl": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Scrawk/Tiled-Directional-Flow/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "lineCount": 248,
+          "readRanges": [
+            [
+              1,
+              248
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "LICENSE",
+          "localPath": "Tiled-Directional-Flow/LICENSE",
+          "bytes": 1620,
+          "sha256": "ed471ce09ebcba676424c710e333080cb130c160049f2ec5f8935a2f54d883aa",
+          "sourceUrl": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Scrawk/Tiled-Directional-Flow/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/LICENSE",
+          "lineCount": 34,
+          "readRanges": [
+            [
+              1,
+              34
+            ]
+          ],
+          "readStatus": "body-read"
+        },
+        {
+          "path": "README.md",
+          "localPath": "Tiled-Directional-Flow/README.md",
+          "bytes": 1535,
+          "sha256": "0966442aa391267f43c446001f2a83b2a66e7d1705516483c688c7c6795381bc",
+          "sourceUrl": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/README.md",
+          "rawUrl": "https://raw.githubusercontent.com/Scrawk/Tiled-Directional-Flow/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/README.md",
+          "lineCount": 19,
+          "readRanges": [
+            [
+              1,
+              19
+            ]
+          ],
+          "readStatus": "body-read"
+        }
+      ]
+    }
+  ]
+}

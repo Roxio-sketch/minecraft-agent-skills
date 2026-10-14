@@ -1,0 +1,551 @@
+{
+  "status": "PASS",
+  "views": [
+    {
+      "view": "side",
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      },
+      "animation": {
+        "max": 70,
+        "changed": 6911,
+        "mean": 0.25803602430555556
+      },
+      "smallTimeStep": {
+        "max": 3,
+        "changed": 0,
+        "mean": 0.0017896412037037037
+      },
+      "pixels": 8304,
+      "bluePixels": 7675,
+      "whitePixels": 0,
+      "bounds": {
+        "left": 213,
+        "right": 515,
+        "bottom": 211,
+        "top": 258
+      },
+      "maxColumnThickness": 48
+    },
+    {
+      "view": "rear",
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      },
+      "animation": {
+        "max": 51,
+        "changed": 965,
+        "mean": 0.02594039351851852
+      },
+      "smallTimeStep": {
+        "max": 2,
+        "changed": 0,
+        "mean": 0.00012586805555555555
+      },
+      "pixels": 1319,
+      "bluePixels": 1204,
+      "whitePixels": 0,
+      "bounds": {
+        "left": 343,
+        "right": 386,
+        "bottom": 219,
+        "top": 266
+      },
+      "maxColumnThickness": 48
+    },
+    {
+      "view": "diagonalRear",
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      },
+      "animation": {
+        "max": 82,
+        "changed": 5425,
+        "mean": 0.20011140046296297
+      },
+      "smallTimeStep": {
+        "max": 3,
+        "changed": 0,
+        "mean": 0.0013469328703703703
+      },
+      "pixels": 6505,
+      "bluePixels": 6060,
+      "whitePixels": 0,
+      "bounds": {
+        "left": 207,
+        "right": 478,
+        "bottom": 212,
+        "top": 275
+      },
+      "maxColumnThickness": 42
+    },
+    {
+      "view": "front",
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      },
+      "animation": {
+        "max": 85,
+        "changed": 2971,
+        "mean": 0.11289424189814815
+      },
+      "smallTimeStep": {
+        "max": 2,
+        "changed": 0,
+        "mean": 0.0005237268518518518
+      },
+      "pixels": 3811,
+      "bluePixels": 3491,
+      "whitePixels": 0,
+      "bounds": {
+        "left": 326,
+        "right": 390,
+        "bottom": 175,
+        "top": 259
+      },
+      "maxColumnThickness": 84
+    },
+    {
+      "view": "top",
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      },
+      "animation": {
+        "max": 88,
+        "changed": 6956,
+        "mean": 0.3426649305555556
+      },
+      "smallTimeStep": {
+        "max": 2,
+        "changed": 0,
+        "mean": 0.0017925347222222223
+      },
+      "pixels": 8086,
+      "bluePixels": 7665,
+      "whitePixels": 0,
+      "bounds": {
+        "left": 204,
+        "right": 510,
+        "bottom": 217,
+        "top": 268
+      },
+      "maxColumnThickness": 48
+    }
+  ],
+  "lodSameObserverDistance": [
+    {
+      "radial": 6,
+      "view": "side",
+      "visiblePixels": 8255,
+      "maxColumnThickness": 48,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 6,
+      "view": "rear",
+      "visiblePixels": 1260,
+      "maxColumnThickness": 48,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 6,
+      "view": "diagonalRear",
+      "visiblePixels": 6443,
+      "maxColumnThickness": 42,
+      "nativePost": {
+        "max": 1,
+        "changed": 0,
+        "mean": 0.0000014467592592592592
+      }
+    },
+    {
+      "radial": 6,
+      "view": "front",
+      "visiblePixels": 3572,
+      "maxColumnThickness": 84,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 6,
+      "view": "top",
+      "visiblePixels": 7498,
+      "maxColumnThickness": 45,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 4,
+      "view": "side",
+      "visiblePixels": 8117,
+      "maxColumnThickness": 48,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 4,
+      "view": "rear",
+      "visiblePixels": 1073,
+      "maxColumnThickness": 48,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 4,
+      "view": "diagonalRear",
+      "visiblePixels": 6342,
+      "maxColumnThickness": 42,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 4,
+      "view": "front",
+      "visiblePixels": 3101,
+      "maxColumnThickness": 84,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 4,
+      "view": "top",
+      "visiblePixels": 7844,
+      "maxColumnThickness": 48,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    }
+  ],
+  "viewSpaceNormalRotationCovariance": {
+    "max": 1,
+    "changed": 0,
+    "mean": 0.000013020833333333334
+  },
+  "fullyOccludedPostPixels": 0,
+  "seamCases": 45,
+  "maximumCircumferenceSeamChannelDelta": 1,
+  "seams": [
+    {
+      "style": 1,
+      "layer": 0,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 0,
+      "time": 7.5,
+      "maxDelta": 1
+    },
+    {
+      "style": 1,
+      "layer": 0,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 1,
+      "time": 0,
+      "maxDelta": 1
+    },
+    {
+      "style": 1,
+      "layer": 1,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 1,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 2,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 2,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 2,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 0,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 0,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 0,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 1,
+      "time": 0,
+      "maxDelta": 1
+    },
+    {
+      "style": 2,
+      "layer": 1,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 1,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 2,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 2,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 2,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 0,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 0,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 0,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 1,
+      "time": 0,
+      "maxDelta": 1
+    },
+    {
+      "style": 3,
+      "layer": 1,
+      "time": 7.5,
+      "maxDelta": 1
+    },
+    {
+      "style": 3,
+      "layer": 1,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 2,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 2,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 2,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 0,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 0,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 0,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 1,
+      "time": 0,
+      "maxDelta": 1
+    },
+    {
+      "style": 4,
+      "layer": 1,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 1,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 2,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 2,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 2,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 0,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 0,
+      "time": 7.5,
+      "maxDelta": 1
+    },
+    {
+      "style": 5,
+      "layer": 0,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 1,
+      "time": 0,
+      "maxDelta": 1
+    },
+    {
+      "style": 5,
+      "layer": 1,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 1,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 2,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 2,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 2,
+      "time": 103.7,
+      "maxDelta": 0
+    }
+  ],
+  "emissionFloatBuffer": {
+    "cases": 15,
+    "scale": 0.45,
+    "maximumPremultipliedRadianceError": 2.2100216767739767e-8,
+    "maximumDepthMetadataError": 0,
+    "fullyOccludedNonzeroSamples": 0
+  },
+  "glError": 0,
+  "geometry": "Synthetic 64 segment curved history, 8/6/4 radial vertices, original .65 radius width ratio and three 1.08 / 1 / .42 nested sections; no sphere or player geometry",
+  "scope": "Exact production native/post GLSL in an independent WebGL2 material/geometry harness; Minecraft/Oculus visual acceptance and performance remain separate",
+  "sourceHashes": {
+    "realm_meteor": "42323a9bfdb97c0032cf817380d1151ec3595d4593ba3246226173e813ac5bd0",
+    "realm_meteor_post": "06de0e8c09e3aedd8dbbebfb60848c351836c6dda06d7a05ef602f959df09350"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "sha256": "5cd588004cfbb5c4bdb2bdacaeb55365a1ea508bd4dba9fa7380a2f6d0ddc86b",
+  "turnReviewed": true,
+  "selectionReviewed": true,
+  "reviewer": "root",
+  "observations": [
+    "Six actual production inventory pages reviewed; paper/effects and split-pane boundaries abut; controls retain internal spacing. Vision tooltip obscures some inner content but shared right edge remains visible.",
+    "All 120 fresh actual turn screenshots reviewed via six crop sheets. Body envelope remains attached during left/right turns, climb/descent and early/late interpolation. No new hard displacement or black-screen seen in these captures.",
+    "Existing brightness fluctuations from moving flow remain; shader formulas and vertex output equations are unchanged."
+  ],
+  "limits": "Native client only, camera offsets in fixture side views. Selected screenshot sequence and geometry counters do not establish FPS, all-frame aesthetics, shader-pack or remote multiplayer behavior."
+}

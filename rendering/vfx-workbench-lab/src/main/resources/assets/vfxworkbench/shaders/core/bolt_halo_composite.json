@@ -1,0 +1,14 @@
+{
+  "vertex": "vfxworkbench:bolt_halo_composite",
+  "fragment": "vfxworkbench:bolt_halo_composite",
+  "attributes": [
+    "Position",
+    "UV0"
+  ],
+  "samplers": [
+    {
+      "name": "Sampler0"
+    }
+  ],
+  "uniforms": []
+}

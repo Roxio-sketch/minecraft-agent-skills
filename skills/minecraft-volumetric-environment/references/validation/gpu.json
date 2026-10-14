@@ -1,0 +1,2230 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "group": "legacy-contracts",
+      "name": "sphere analytic entry / exit",
+      "passed": true,
+      "actual": [
+        135,
+        265,
+        1,
+        1
+      ],
+      "expected": [
+        135,
+        265,
+        1,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "opaque depth clips interval",
+      "passed": true,
+      "actual": [
+        135,
+        170,
+        1,
+        1
+      ],
+      "expected": [
+        135,
+        170,
+        1,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "near opaque wall excludes all volume",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "finite sphere ray miss identity",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "zero density exact identity",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "zero coverage exact identity",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "horizontal finite slab interval",
+      "passed": true,
+      "actual": [
+        20,
+        380,
+        1,
+        1
+      ],
+      "expected": [
+        20,
+        380,
+        1,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "vertical slab interval",
+      "passed": true,
+      "actual": [
+        35,
+        135,
+        1,
+        1
+      ],
+      "expected": [
+        35,
+        135,
+        1,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "annulus center exact vacuum",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "sphere outside density zero",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "medium attenuates",
+      "passed": true,
+      "actual": [
+        0.11050444096326828,
+        0.125008225440979,
+        0.1560831367969513,
+        0.11390414088964462
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "emission raises radiance only",
+      "passed": true,
+      "actual": [
+        0.4791571795940399,
+        0.20927178859710693,
+        0.9987179636955261,
+        0.11390414088964462
+      ],
+      "expected": [
+        0.11050444096326828,
+        0.125008225440979,
+        0.1560831367969513,
+        0.11390414088964462
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "zero extinction emissive transfer finite",
+      "passed": true,
+      "actual": [
+        0.9080851078033447,
+        0.20756228268146515,
+        2.075623035430908,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "zero speed freezes wind and emission",
+      "passed": true
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "world wind changes density integral",
+      "passed": true,
+      "actual": [
+        0.022792747244238853,
+        0.025536900386214256,
+        0.03146077319979668,
+        0.8298202753067017
+      ],
+      "expected": [
+        0.08174129575490952,
+        0.09160524606704712,
+        0.11289437115192413,
+        0.3885355293750763
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "common world translation preserves anchored density",
+      "passed": true,
+      "actual": [
+        0.07994235306978226,
+        0.08921408653259277,
+        0.10929834842681885,
+        0.4210769236087799
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "intermittent event has finite positive peak",
+      "passed": true,
+      "actual": {
+        "time": 0.775,
+        "state": [
+          29.927310943603516,
+          54.925682067871094,
+          -19.3355712890625,
+          8.623588562011719
+        ]
+      }
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "same seed/time exact event replay",
+      "passed": true
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "negative time clamps to zero",
+      "passed": true
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "ring event placement control changes radial position",
+      "passed": true,
+      "actual": [
+        57.11613464355469,
+        54.925682067871094,
+        -36.90184783935547,
+        8.623588562011719
+      ],
+      "expected": [
+        79.30418395996094,
+        54.925682067871094,
+        -51.23720169067383,
+        8.623588562011719
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "event disabled exact zero intensity",
+      "passed": true,
+      "actual": [
+        0,
+        75,
+        0,
+        0
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "local flash raises cloud radiance without opacity change",
+      "passed": true,
+      "actual": [
+        0.555074155330658,
+        0.6548705101013184,
+        0.997965395450592,
+        0.12935839593410492
+      ],
+      "expected": [
+        0.03096582368016243,
+        0.035469941794872284,
+        0.04504118859767914,
+        0.12935839593410492
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "surface gain does not alter medium integral",
+      "passed": true
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "local flash lights facing surface",
+      "passed": true,
+      "actual": [
+        1.624678373336792,
+        1.9200743436813354,
+        2.953960657119751,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "medium gain does not alter surface light",
+      "passed": true
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "surface switch exact zero",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "surface Lambert facing-away zero",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "local light finite support",
+      "passed": true,
+      "actual": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "extreme finite shape 0 steps 8",
+      "passed": true,
+      "actual": [
+        0.0848265141248703,
+        0.09604035317897797,
+        0.1244034469127655,
+        4.2483537175483534e-18
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "extreme finite shape 0 steps 96",
+      "passed": true,
+      "actual": [
+        0.17200466990470886,
+        0.11596561223268509,
+        0.32366886734962463,
+        0.000015266326954588294
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "extreme finite shape 1 steps 8",
+      "passed": true,
+      "actual": [
+        0.11451606452465057,
+        0.13106651604175568,
+        0.16666530072689056,
+        4.2483537175483534e-18
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "extreme finite shape 1 steps 96",
+      "passed": true,
+      "actual": [
+        0.19209963083267212,
+        0.14874568581581116,
+        0.34404829144477844,
+        0.000516817846801132
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "extreme finite shape 2 steps 8",
+      "passed": true,
+      "actual": [
+        0.0848265141248703,
+        0.09604035317897797,
+        0.1244034469127655,
+        4.2483537175483534e-18
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "extreme finite shape 2 steps 96",
+      "passed": true,
+      "actual": [
+        0.17200466990470886,
+        0.11596561223268509,
+        0.32366886734962463,
+        0.000015266326954588294
+      ]
+    },
+    {
+      "group": "legacy-contracts",
+      "name": "GL error zero",
+      "passed": true
+    },
+    {
+      "group": "end-distributions",
+      "name": "End vertical stretch preserves coherent columns",
+      "passed": true,
+      "actual": {
+        "isotropicVariation": 2.4797545485198498,
+        "stretchedVariation": 0.033678941428661346,
+        "isotropic": [
+          [
+            0.03187220171093941,
+            0.06758441776037216,
+            0.06273289024829865,
+            0.09679438173770905,
+            0.16816961765289307,
+            0.15606199204921722,
+            0.15390625596046448,
+            0.13926097750663757,
+            0.22675296664237976
+          ],
+          [
+            0.3543913960456848,
+            0.28006255626678467,
+            0.0997009128332138,
+            0.07643312960863113,
+            0.10086239129304886,
+            0.27253496646881104,
+            0.4166472554206848,
+            0.345400869846344,
+            0.15521162748336792
+          ],
+          [
+            0.1279376596212387,
+            0.15395376086235046,
+            0.0940481498837471,
+            0.05027211457490921,
+            0.05087278038263321,
+            0.0981166809797287,
+            0.14991237223148346,
+            0.20422708988189697,
+            0.11303399503231049
+          ],
+          [
+            0.14968718588352203,
+            0.16857489943504333,
+            0.2341730296611786,
+            0.25298282504081726,
+            0.2124204933643341,
+            0.16516701877117157,
+            0.16317462921142578,
+            0.09213950484991074,
+            0.13605202734470367
+          ],
+          [
+            0.20618122816085815,
+            0.36604204773902893,
+            0.311129093170166,
+            0.37498825788497925,
+            0.39432960748672485,
+            0.2102910429239273,
+            0.2432274967432022,
+            0.16270439326763153,
+            0.10332867503166199
+          ]
+        ],
+        "stretched": [
+          [
+            0.16372433304786682,
+            0.16496895253658295,
+            0.16609697043895721,
+            0.1671610027551651,
+            0.16816961765289307,
+            0.1691066026687622,
+            0.16995519399642944,
+            0.17069873213768005,
+            0.17132024466991425
+          ],
+          [
+            0.09597473591566086,
+            0.09714565426111221,
+            0.09832249581813812,
+            0.0995555967092514,
+            0.10086239129304886,
+            0.10224082320928574,
+            0.10368894040584564,
+            0.10520457476377487,
+            0.10678572952747345
+          ],
+          [
+            0.04822355508804321,
+            0.04887906834483147,
+            0.049543097615242004,
+            0.050209663808345795,
+            0.05087278038263321,
+            0.05152696371078491,
+            0.05216653645038605,
+            0.052785493433475494,
+            0.053378015756607056
+          ],
+          [
+            0.21474064886569977,
+            0.21407654881477356,
+            0.21349650621414185,
+            0.2129485309123993,
+            0.2124204933643341,
+            0.21192285418510437,
+            0.21146585047245026,
+            0.21105974912643433,
+            0.21071448922157288
+          ],
+          [
+            0.39560210704803467,
+            0.39557093381881714,
+            0.39537861943244934,
+            0.3949702978134155,
+            0.39432960748672485,
+            0.39345958828926086,
+            0.3923640847206116,
+            0.39104634523391724,
+            0.3895106911659241
+          ]
+        ]
+      },
+      "expected": {
+        "maximumRatio": 0.2,
+        "columns": [
+          [
+            30,
+            20
+          ],
+          [
+            70,
+            -40
+          ],
+          [
+            -60,
+            55
+          ],
+          [
+            -100,
+            -30
+          ],
+          [
+            110,
+            15
+          ]
+        ],
+        "heights": [
+          -80,
+          -60,
+          -40,
+          -20,
+          0,
+          20,
+          40,
+          60,
+          80
+        ]
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "End height-dependent twist changes raw density",
+      "passed": true,
+      "actual": {
+        "straight": [
+          [
+            0.18148094415664673,
+            1,
+            0,
+            1
+          ],
+          [
+            0.03300033137202263,
+            1,
+            0,
+            1
+          ],
+          [
+            0.23356088995933533,
+            1,
+            0,
+            1
+          ],
+          [
+            0.12012828886508942,
+            1,
+            0,
+            1
+          ]
+        ],
+        "twisted": [
+          [
+            0.26110056042671204,
+            1,
+            0,
+            1
+          ],
+          [
+            0.1884543001651764,
+            1,
+            0,
+            1
+          ],
+          [
+            0.25270867347717285,
+            1,
+            0,
+            1
+          ],
+          [
+            0.24128055572509766,
+            1,
+            0,
+            1
+          ]
+        ],
+        "points": [
+          [
+            60,
+            145,
+            20
+          ],
+          [
+            -65,
+            25,
+            45
+          ],
+          [
+            90,
+            115,
+            -40
+          ],
+          [
+            30,
+            10,
+            -85
+          ]
+        ]
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "End twist speed remains active with zero advection speed",
+      "passed": true,
+      "actual": {
+        "rotationA": [
+          [
+            0.24731266498565674,
+            1,
+            0,
+            1
+          ],
+          [
+            0.19238337874412537,
+            1,
+            0,
+            1
+          ],
+          [
+            0.2406614124774933,
+            1,
+            0,
+            1
+          ],
+          [
+            0.2571985125541687,
+            1,
+            0,
+            1
+          ]
+        ],
+        "rotationB": [
+          [
+            0.06000597029924393,
+            1,
+            0,
+            1
+          ],
+          [
+            0.1426151543855667,
+            1,
+            0,
+            1
+          ],
+          [
+            0.4025614857673645,
+            1,
+            0,
+            1
+          ],
+          [
+            0.577666163444519,
+            1,
+            0,
+            1
+          ]
+        ],
+        "recipe": {
+          "densityModel": 1,
+          "shape": 1,
+          "radius": 300,
+          "centerY": 75,
+          "density": 1,
+          "coverage": 0.9,
+          "erosion": 0,
+          "cavityRadius": 0,
+          "torusWidth": 0,
+          "voidDensity": 0,
+          "nearClearRadius": 0,
+          "twistAmount": 0.023,
+          "twistSpeed": 0.07,
+          "speed": 0,
+          "emission": 0,
+          "flashEnabled": 0,
+          "verticalStretch": 48
+        }
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "End zero twist and advection speeds freeze density and transfer",
+      "passed": true,
+      "actual": {
+        "frozenDensityA": [
+          [
+            0.26110056042671204,
+            1,
+            0,
+            1
+          ],
+          [
+            0.1884543001651764,
+            1,
+            0,
+            1
+          ],
+          [
+            0.25270867347717285,
+            1,
+            0,
+            1
+          ],
+          [
+            0.24128055572509766,
+            1,
+            0,
+            1
+          ]
+        ],
+        "frozenDensityB": [
+          [
+            0.26110056042671204,
+            1,
+            0,
+            1
+          ],
+          [
+            0.1884543001651764,
+            1,
+            0,
+            1
+          ],
+          [
+            0.25270867347717285,
+            1,
+            0,
+            1
+          ],
+          [
+            0.24128055572509766,
+            1,
+            0,
+            1
+          ]
+        ],
+        "frozenIntegralA": [
+          0.1186843290925026,
+          0.13507679104804993,
+          0.1700517237186432,
+          0.006849457044154406
+        ],
+        "frozenIntegralB": [
+          0.1186843290925026,
+          0.13507679104804993,
+          0.1700517237186432,
+          0.006849457044154406
+        ]
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "End center ellipsoid subtracts density without altering finite support",
+      "passed": true,
+      "actual": {
+        "centerUncarved": [
+          0.1517459750175476,
+          1,
+          0,
+          1
+        ],
+        "centerCarved": [
+          0,
+          1,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "End ellipsoid aspect changes vertical carving",
+      "passed": true,
+      "actual": {
+        "point": [
+          0,
+          145,
+          0
+        ],
+        "cavityRound": [
+          0.1510891169309616,
+          1,
+          0,
+          1
+        ],
+        "cavityTall": [
+          0,
+          1,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "End torus groove carves a finite ring cross-section",
+      "passed": true,
+      "actual": {
+        "torusRaw": [
+          0.11242824792861938,
+          1,
+          0,
+          1
+        ],
+        "torusCut": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "torusAxis": [
+          0.1517459750175476,
+          1,
+          0,
+          1
+        ],
+        "torusAbove": [
+          0.11751559376716614,
+          1,
+          0,
+          1
+        ],
+        "aboveUncut": [
+          0.11751559376716614,
+          1,
+          0,
+          1
+        ],
+        "torusPoint": [
+          70,
+          75,
+          0
+        ],
+        "aboveTorusPoint": [
+          70,
+          125,
+          0
+        ]
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "Torus groove differs from the ordinary annular support hole",
+      "passed": true,
+      "actual": {
+        "annulusAxis": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "annulusBand": [
+          0.6666666865348816,
+          0.7407407760620117,
+          0,
+          1
+        ],
+        "torusAxis": [
+          0.1517459750175476,
+          1,
+          0,
+          1
+        ],
+        "torusCut": [
+          0,
+          1,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "End lower fog survives carving and decays above its floor",
+      "passed": true,
+      "actual": {
+        "voidProfiles": [
+          [
+            0.6000000238418579,
+            1,
+            0,
+            1
+          ],
+          [
+            0.6000000238418579,
+            1,
+            0,
+            1
+          ],
+          [
+            0.34460949897766113,
+            1,
+            0,
+            1
+          ],
+          [
+            0.19792617857456207,
+            1,
+            0,
+            1
+          ]
+        ],
+        "noVoid": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "heights": [
+          55,
+          75,
+          91,
+          139
+        ]
+      },
+      "expected": [
+        0.6,
+        0.6,
+        0.34460950649911043,
+        0.1979261866159341
+      ]
+    },
+    {
+      "group": "end-distributions",
+      "name": "End near clear modifies only view transfer",
+      "passed": true,
+      "actual": {
+        "nearRawOff": [
+          0.6816639304161072,
+          1,
+          0,
+          1
+        ],
+        "nearRawOn": [
+          0.6816639304161072,
+          1,
+          0,
+          1
+        ],
+        "nearLightOff": [
+          0.14127622544765472,
+          0,
+          0,
+          1
+        ],
+        "nearLightOn": [
+          0.14127622544765472,
+          0,
+          0,
+          1
+        ],
+        "nearViewOff": [
+          0.12263505905866623,
+          0.14047285914421082,
+          0.17837823927402496,
+          0.14241234958171844
+        ],
+        "nearViewOn": [
+          0.03957168757915497,
+          0.0453275628387928,
+          0.0575588196516037,
+          0.7232751250267029
+        ],
+        "origin": [
+          30,
+          75,
+          0
+        ],
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "limit": 60
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "Purple light fog animates radiance with fixed density and transmittance",
+      "passed": true,
+      "actual": {
+        "purpleDensityA": [
+          0.2449999898672104,
+          1,
+          0,
+          1
+        ],
+        "purpleDensityB": [
+          0.2449999898672104,
+          1,
+          0,
+          1
+        ],
+        "purpleA": [
+          0.05471291020512581,
+          0.06267115473747253,
+          0.07958240807056427,
+          0.22327643632888794
+        ],
+        "purpleB": [
+          0.048415739089250565,
+          0.05545802414417267,
+          0.07042290270328522,
+          0.22327643632888794
+        ],
+        "recipe": {
+          "densityModel": 2,
+          "shape": 1,
+          "radius": 80,
+          "centerY": 75,
+          "density": 0.35,
+          "coverage": 0.7,
+          "ambient": 0.4,
+          "sunGain": 0,
+          "flashEnabled": 0,
+          "emission": 0,
+          "speed": 1.5
+        }
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "Purple zero speed freezes brightness and transfer",
+      "passed": true,
+      "actual": {
+        "purpleFrozenA": [
+          0.05400952696800232,
+          0.061865463852882385,
+          0.07855929434299469,
+          0.23171742260456085
+        ],
+        "purpleFrozenB": [
+          0.05400952696800232,
+          0.061865463852882385,
+          0.07855929434299469,
+          0.23171742260456085
+        ]
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "Purple brightness modulation stays within declared bounds",
+      "passed": true,
+      "actual": [
+        {
+          "time": 0,
+          "point": [
+            0,
+            75,
+            0
+          ],
+          "value": [
+            0.3965767025947571,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        },
+        {
+          "time": 0,
+          "point": [
+            40,
+            85,
+            -30
+          ],
+          "value": [
+            0.3750137984752655,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        },
+        {
+          "time": 0,
+          "point": [
+            -20,
+            100,
+            25
+          ],
+          "value": [
+            0.5605801939964294,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        },
+        {
+          "time": 1,
+          "point": [
+            0,
+            75,
+            0
+          ],
+          "value": [
+            0.4660135507583618,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        },
+        {
+          "time": 1,
+          "point": [
+            40,
+            85,
+            -30
+          ],
+          "value": [
+            0.350004643201828,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        },
+        {
+          "time": 1,
+          "point": [
+            -20,
+            100,
+            25
+          ],
+          "value": [
+            0.6276299953460693,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        },
+        {
+          "time": 7,
+          "point": [
+            0,
+            75,
+            0
+          ],
+          "value": [
+            0.5317065119743347,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        },
+        {
+          "time": 7,
+          "point": [
+            40,
+            85,
+            -30
+          ],
+          "value": [
+            0.6394416093826294,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        },
+        {
+          "time": 7,
+          "point": [
+            -20,
+            100,
+            25
+          ],
+          "value": [
+            0.3520909249782562,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        },
+        {
+          "time": 19,
+          "point": [
+            0,
+            75,
+            0
+          ],
+          "value": [
+            0.5097349286079407,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        },
+        {
+          "time": 19,
+          "point": [
+            40,
+            85,
+            -30
+          ],
+          "value": [
+            0.5848115682601929,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        },
+        {
+          "time": 19,
+          "point": [
+            -20,
+            100,
+            25
+          ],
+          "value": [
+            0.35591065883636475,
+            0.2449999898672104,
+            0,
+            1
+          ]
+        }
+      ],
+      "expected": {
+        "minimum": 0.35,
+        "maximum": 0.65
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "model 1 preserves zero / support / opaque identity",
+      "passed": true,
+      "actual": {
+        "zeroNew": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "noCoverage": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "frontNew": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outsideNew": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "extreme finite model 1 steps 8",
+      "passed": true,
+      "actual": [
+        0.11440000683069229,
+        0.13103999197483063,
+        0.1664000004529953,
+        4.2483537175483534e-18
+      ]
+    },
+    {
+      "group": "end-distributions",
+      "name": "extreme finite model 1 steps 96",
+      "passed": true,
+      "actual": [
+        0.12690037488937378,
+        0.1338498294353485,
+        0.19501526653766632,
+        0.00045194581616669893
+      ]
+    },
+    {
+      "group": "end-distributions",
+      "name": "model 2 preserves zero / support / opaque identity",
+      "passed": true,
+      "actual": {
+        "zeroNew": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "noCoverage": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "frontNew": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outsideNew": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "group": "end-distributions",
+      "name": "extreme finite model 2 steps 8",
+      "passed": true,
+      "actual": [
+        0.07150466740131378,
+        0.08190535008907318,
+        0.1040067970752716,
+        0.0000013489897128238226
+      ]
+    },
+    {
+      "group": "end-distributions",
+      "name": "extreme finite model 2 steps 96",
+      "passed": true,
+      "actual": [
+        0.07526102662086487,
+        0.0833158791065216,
+        0.11209241300821304,
+        0.0007111574523150921
+      ]
+    },
+    {
+      "group": "legacy-core-compatibility",
+      "name": "mode 0 frozen 0.1.0 slab-transfer within 1e-6",
+      "passed": true,
+      "actual": {
+        "name": "slab-transfer",
+        "recipe": {
+          "densityModel": 0,
+          "shape": 0,
+          "flashEnabled": 0
+        },
+        "time": 2,
+        "mode": 0,
+        "origin": [
+          0,
+          60,
+          200
+        ],
+        "latest": [
+          0.020535515621304512,
+          0.022664597257971764,
+          0.02732791379094124,
+          0.8140855431556702
+        ],
+        "previous": [
+          0.020535515621304512,
+          0.022664597257971764,
+          0.02732791379094124,
+          0.8140855431556702
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      "expected": {
+        "maximumAbsoluteDifference": 0.000001
+      }
+    },
+    {
+      "group": "legacy-core-compatibility",
+      "name": "mode 0 frozen 0.1.0 sphere-transfer within 1e-6",
+      "passed": true,
+      "actual": {
+        "name": "sphere-transfer",
+        "recipe": {
+          "shape": 1,
+          "radius": 65,
+          "centerY": 75,
+          "flashEnabled": 0,
+          "densityModel": 0,
+          "coverage": 1,
+          "density": 0.5
+        },
+        "time": 0,
+        "mode": 0,
+        "origin": [
+          0,
+          75,
+          200
+        ],
+        "latest": [
+          0.11783219128847122,
+          0.13269631564617157,
+          0.16465117037296295,
+          0.08574490994215012
+        ],
+        "previous": [
+          0.11783219128847122,
+          0.13269631564617157,
+          0.16465117037296295,
+          0.08574490994215012
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      "expected": {
+        "maximumAbsoluteDifference": 0.000001
+      }
+    },
+    {
+      "group": "legacy-core-compatibility",
+      "name": "mode 0 frozen 0.1.0 annulus-transfer within 1e-6",
+      "passed": true,
+      "actual": {
+        "name": "annulus-transfer",
+        "recipe": {
+          "densityModel": 0,
+          "shape": 2,
+          "innerRadius": 42,
+          "coverage": 1,
+          "flashEnabled": 0
+        },
+        "time": 5,
+        "mode": 0,
+        "origin": [
+          30,
+          60,
+          200
+        ],
+        "latest": [
+          0.09291085600852966,
+          0.10478745400905609,
+          0.13029064238071442,
+          0.0026394047308713198
+        ],
+        "previous": [
+          0.09291085600852966,
+          0.10478745400905609,
+          0.13029064238071442,
+          0.0026394047308713198
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      "expected": {
+        "maximumAbsoluteDifference": 0.000001
+      }
+    },
+    {
+      "group": "legacy-core-compatibility",
+      "name": "mode 0 frozen 0.1.0 emission-transfer within 1e-6",
+      "passed": true,
+      "actual": {
+        "name": "emission-transfer",
+        "recipe": {
+          "shape": 1,
+          "radius": 65,
+          "centerY": 75,
+          "flashEnabled": 0,
+          "densityModel": 0,
+          "coverage": 1,
+          "emission": 3,
+          "emissionThreshold": 0
+        },
+        "time": 3,
+        "mode": 0,
+        "origin": [
+          0,
+          75,
+          200
+        ],
+        "latest": [
+          0.5230260491371155,
+          0.22800666093826294,
+          1.090144157409668,
+          0.04105648770928383
+        ],
+        "previous": [
+          0.5230260491371155,
+          0.22800666093826294,
+          1.090144157409668,
+          0.04105648770928383
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      "expected": {
+        "maximumAbsoluteDifference": 0.000001
+      }
+    },
+    {
+      "group": "legacy-core-compatibility",
+      "name": "mode 0 frozen 0.1.0 flash-transfer within 1e-6",
+      "passed": true,
+      "actual": {
+        "name": "flash-transfer",
+        "recipe": {
+          "shape": 0,
+          "bottom": 8,
+          "height": 105,
+          "coverage": 1,
+          "density": 0.3,
+          "flashPeriod": 4,
+          "flashDuration": 0.8,
+          "flashStrength": 10,
+          "flashRadius": 180,
+          "flashPlacement": 0.2,
+          "speed": 0,
+          "emissionSpeed": 0,
+          "ambient": 0.1,
+          "sunGain": 0,
+          "densityModel": 0,
+          "mediumGain": 2,
+          "surfaceGain": 1
+        },
+        "time": 0.775,
+        "mode": 0,
+        "origin": [
+          0,
+          60,
+          200
+        ],
+        "latest": [
+          0.555074155330658,
+          0.6548705101013184,
+          0.997965395450592,
+          0.12935839593410492
+        ],
+        "previous": [
+          0.555074155330658,
+          0.6548705101013184,
+          0.997965395450592,
+          0.12935839593410492
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      "expected": {
+        "maximumAbsoluteDifference": 0.000001
+      }
+    },
+    {
+      "group": "legacy-core-compatibility",
+      "name": "mode 0 frozen 0.1.0 raw-density within 1e-6",
+      "passed": true,
+      "actual": {
+        "name": "raw-density",
+        "recipe": {
+          "shape": 1,
+          "radius": 65,
+          "centerY": 75,
+          "flashEnabled": 0,
+          "densityModel": 0,
+          "coverage": 1
+        },
+        "time": 9,
+        "mode": 1,
+        "origin": [
+          20,
+          85,
+          -30
+        ],
+        "latest": [
+          0.6499999761581421,
+          1,
+          0,
+          1
+        ],
+        "previous": [
+          0.6499999761581421,
+          1,
+          0,
+          1
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      "expected": {
+        "maximumAbsoluteDifference": 0.000001
+      }
+    },
+    {
+      "group": "legacy-core-compatibility",
+      "name": "mode 0 frozen 0.1.0 flash-state within 1e-6",
+      "passed": true,
+      "actual": {
+        "name": "flash-state",
+        "recipe": {
+          "shape": 0,
+          "bottom": 8,
+          "height": 105,
+          "coverage": 1,
+          "density": 0.3,
+          "flashPeriod": 4,
+          "flashDuration": 0.8,
+          "flashStrength": 10,
+          "flashRadius": 180,
+          "flashPlacement": 0.2,
+          "speed": 0,
+          "emissionSpeed": 0,
+          "ambient": 0.1,
+          "sunGain": 0,
+          "densityModel": 0
+        },
+        "time": 0.775,
+        "mode": 2,
+        "origin": [
+          0,
+          60,
+          200
+        ],
+        "latest": [
+          29.927310943603516,
+          54.925682067871094,
+          -19.3355712890625,
+          8.623588562011719
+        ],
+        "previous": [
+          29.927310943603516,
+          54.925682067871094,
+          -19.3355712890625,
+          8.623588562011719
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      "expected": {
+        "maximumAbsoluteDifference": 0.000001
+      }
+    },
+    {
+      "group": "legacy-core-compatibility",
+      "name": "mode 0 frozen 0.1.0 ring-flash-state within 1e-6",
+      "passed": true,
+      "actual": {
+        "name": "ring-flash-state",
+        "recipe": {
+          "shape": 2,
+          "bottom": 8,
+          "height": 105,
+          "coverage": 1,
+          "density": 0.3,
+          "flashPeriod": 4,
+          "flashDuration": 0.8,
+          "flashStrength": 10,
+          "flashRadius": 180,
+          "flashPlacement": 0.9,
+          "speed": 0,
+          "emissionSpeed": 0,
+          "ambient": 0.1,
+          "sunGain": 0,
+          "densityModel": 0,
+          "innerRadius": 40
+        },
+        "time": 0.775,
+        "mode": 2,
+        "origin": [
+          0,
+          60,
+          200
+        ],
+        "latest": [
+          79.30418395996094,
+          54.925682067871094,
+          -51.23720169067383,
+          8.623588562011719
+        ],
+        "previous": [
+          79.30418395996094,
+          54.925682067871094,
+          -51.23720169067383,
+          8.623588562011719
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      "expected": {
+        "maximumAbsoluteDifference": 0.000001
+      }
+    },
+    {
+      "group": "context",
+      "name": "GL error zero after both programs and new models",
+      "passed": true
+    }
+  ],
+  "groups": {
+    "legacy-contracts": {
+      "passed": 35,
+      "total": 35,
+      "ok": true
+    },
+    "end-distributions": {
+      "passed": 19,
+      "total": 19,
+      "ok": true
+    },
+    "legacy-core-compatibility": {
+      "passed": 8,
+      "total": 8,
+      "ok": true
+    },
+    "context": {
+      "passed": 1,
+      "total": 1,
+      "ok": true
+    }
+  },
+  "witnesses": {
+    "peak": {
+      "time": 0.775,
+      "state": [
+        29.927310943603516,
+        54.925682067871094,
+        -19.3355712890625,
+        8.623588562011719
+      ]
+    },
+    "baseline": [
+      0.11050444096326828,
+      0.125008225440979,
+      0.1560831367969513,
+      0.11390414088964462
+    ],
+    "glow": [
+      0.4791571795940399,
+      0.20927178859710693,
+      0.9987179636955261,
+      0.11390414088964462
+    ],
+    "endFixture": {
+      "densityModel": 1,
+      "shape": 1,
+      "radius": 300,
+      "centerY": 75,
+      "density": 1,
+      "coverage": 0.9,
+      "erosion": 0,
+      "cavityRadius": 0,
+      "torusWidth": 0,
+      "voidDensity": 0,
+      "nearClearRadius": 0,
+      "twistAmount": 0,
+      "twistSpeed": 0,
+      "speed": 0,
+      "emission": 0,
+      "flashEnabled": 0
+    },
+    "purpleFixture": {
+      "densityModel": 2,
+      "shape": 1,
+      "radius": 80,
+      "centerY": 75,
+      "density": 0.35,
+      "coverage": 0.7,
+      "ambient": 0.4,
+      "sunGain": 0,
+      "flashEnabled": 0,
+      "emission": 0,
+      "speed": 1.5
+    }
+  },
+  "legacyCompatibility": {
+    "strictFloatExact": true,
+    "maximumAbsoluteDifference": 0,
+    "tolerance": 0.000001,
+    "comparisons": [
+      {
+        "name": "slab-transfer",
+        "recipe": {
+          "densityModel": 0,
+          "shape": 0,
+          "flashEnabled": 0
+        },
+        "time": 2,
+        "mode": 0,
+        "origin": [
+          0,
+          60,
+          200
+        ],
+        "latest": [
+          0.020535515621304512,
+          0.022664597257971764,
+          0.02732791379094124,
+          0.8140855431556702
+        ],
+        "previous": [
+          0.020535515621304512,
+          0.022664597257971764,
+          0.02732791379094124,
+          0.8140855431556702
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      {
+        "name": "sphere-transfer",
+        "recipe": {
+          "shape": 1,
+          "radius": 65,
+          "centerY": 75,
+          "flashEnabled": 0,
+          "densityModel": 0,
+          "coverage": 1,
+          "density": 0.5
+        },
+        "time": 0,
+        "mode": 0,
+        "origin": [
+          0,
+          75,
+          200
+        ],
+        "latest": [
+          0.11783219128847122,
+          0.13269631564617157,
+          0.16465117037296295,
+          0.08574490994215012
+        ],
+        "previous": [
+          0.11783219128847122,
+          0.13269631564617157,
+          0.16465117037296295,
+          0.08574490994215012
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      {
+        "name": "annulus-transfer",
+        "recipe": {
+          "densityModel": 0,
+          "shape": 2,
+          "innerRadius": 42,
+          "coverage": 1,
+          "flashEnabled": 0
+        },
+        "time": 5,
+        "mode": 0,
+        "origin": [
+          30,
+          60,
+          200
+        ],
+        "latest": [
+          0.09291085600852966,
+          0.10478745400905609,
+          0.13029064238071442,
+          0.0026394047308713198
+        ],
+        "previous": [
+          0.09291085600852966,
+          0.10478745400905609,
+          0.13029064238071442,
+          0.0026394047308713198
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      {
+        "name": "emission-transfer",
+        "recipe": {
+          "shape": 1,
+          "radius": 65,
+          "centerY": 75,
+          "flashEnabled": 0,
+          "densityModel": 0,
+          "coverage": 1,
+          "emission": 3,
+          "emissionThreshold": 0
+        },
+        "time": 3,
+        "mode": 0,
+        "origin": [
+          0,
+          75,
+          200
+        ],
+        "latest": [
+          0.5230260491371155,
+          0.22800666093826294,
+          1.090144157409668,
+          0.04105648770928383
+        ],
+        "previous": [
+          0.5230260491371155,
+          0.22800666093826294,
+          1.090144157409668,
+          0.04105648770928383
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      {
+        "name": "flash-transfer",
+        "recipe": {
+          "shape": 0,
+          "bottom": 8,
+          "height": 105,
+          "coverage": 1,
+          "density": 0.3,
+          "flashPeriod": 4,
+          "flashDuration": 0.8,
+          "flashStrength": 10,
+          "flashRadius": 180,
+          "flashPlacement": 0.2,
+          "speed": 0,
+          "emissionSpeed": 0,
+          "ambient": 0.1,
+          "sunGain": 0,
+          "densityModel": 0,
+          "mediumGain": 2,
+          "surfaceGain": 1
+        },
+        "time": 0.775,
+        "mode": 0,
+        "origin": [
+          0,
+          60,
+          200
+        ],
+        "latest": [
+          0.555074155330658,
+          0.6548705101013184,
+          0.997965395450592,
+          0.12935839593410492
+        ],
+        "previous": [
+          0.555074155330658,
+          0.6548705101013184,
+          0.997965395450592,
+          0.12935839593410492
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      {
+        "name": "raw-density",
+        "recipe": {
+          "shape": 1,
+          "radius": 65,
+          "centerY": 75,
+          "flashEnabled": 0,
+          "densityModel": 0,
+          "coverage": 1
+        },
+        "time": 9,
+        "mode": 1,
+        "origin": [
+          20,
+          85,
+          -30
+        ],
+        "latest": [
+          0.6499999761581421,
+          1,
+          0,
+          1
+        ],
+        "previous": [
+          0.6499999761581421,
+          1,
+          0,
+          1
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      {
+        "name": "flash-state",
+        "recipe": {
+          "shape": 0,
+          "bottom": 8,
+          "height": 105,
+          "coverage": 1,
+          "density": 0.3,
+          "flashPeriod": 4,
+          "flashDuration": 0.8,
+          "flashStrength": 10,
+          "flashRadius": 180,
+          "flashPlacement": 0.2,
+          "speed": 0,
+          "emissionSpeed": 0,
+          "ambient": 0.1,
+          "sunGain": 0,
+          "densityModel": 0
+        },
+        "time": 0.775,
+        "mode": 2,
+        "origin": [
+          0,
+          60,
+          200
+        ],
+        "latest": [
+          29.927310943603516,
+          54.925682067871094,
+          -19.3355712890625,
+          8.623588562011719
+        ],
+        "previous": [
+          29.927310943603516,
+          54.925682067871094,
+          -19.3355712890625,
+          8.623588562011719
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      },
+      {
+        "name": "ring-flash-state",
+        "recipe": {
+          "shape": 2,
+          "bottom": 8,
+          "height": 105,
+          "coverage": 1,
+          "density": 0.3,
+          "flashPeriod": 4,
+          "flashDuration": 0.8,
+          "flashStrength": 10,
+          "flashRadius": 180,
+          "flashPlacement": 0.9,
+          "speed": 0,
+          "emissionSpeed": 0,
+          "ambient": 0.1,
+          "sunGain": 0,
+          "densityModel": 0,
+          "innerRadius": 40
+        },
+        "time": 0.775,
+        "mode": 2,
+        "origin": [
+          0,
+          60,
+          200
+        ],
+        "latest": [
+          79.30418395996094,
+          54.925682067871094,
+          -51.23720169067383,
+          8.623588562011719
+        ],
+        "previous": [
+          79.30418395996094,
+          54.925682067871094,
+          -51.23720169067383,
+          8.623588562011719
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbsoluteDifference": 0,
+        "strictFloatExact": true
+      }
+    ],
+    "scope": "Eight fixed fixtures compiled from the frozen 0.1.0 source in the same WebGL2 context; exactness and numeric compatibility reported separately."
+  },
+  "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Ti (0x00002803) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "format": "RGBA32F",
+  "dimensions": [
+    1,
+    1
+  ],
+  "scope": "Shared core analytic transfer and effect contracts; no Minecraft runtime certification",
+  "coreSha256": "55fb1baf79f11d7d87211cc2a2786b53a98b0ff8854023c51c3ce0e09fcca275",
+  "schemaSha256": "871d57fb970143b632552b99b566bd0aa6de3cd4ba51b590f2aada3ea4fbb8a0",
+  "contractSha256": "115d4171b0b54e236fd0d107b4521bdec88393e415190016676dc9613eacebe3",
+  "frozenSource": {
+    "zip": "E:\\着色器渲染\\deliverables\\world-volume\\world-volume-lab-source-0.1.0.zip",
+    "zipSha256": "ff6eec5de1bfc1438432d9ce9366f25cb0724672d4751eb37a0ee29f70efe8a7",
+    "entry": "world-volume-lab/workbench/volume-core.glsl",
+    "entrySha256": "68cff95fd711c1bc683d3a6e59bba89d867e62d53986bf5892443148426e834b"
+  },
+  "schema": "world-volume/2",
+  "version": "0.2.0",
+  "createdAt": "2026-10-06T13:54:28.701Z"
+}

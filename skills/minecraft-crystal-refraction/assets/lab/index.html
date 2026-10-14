@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>碎晶折射 · 材质制作台</title>
+<style>
+:root{color-scheme:dark;font:15px/1.5 system-ui,sans-serif;background:#09111c;color:#e1edf9}*{box-sizing:border-box}body{margin:0;padding:28px;max-width:1440px;margin:auto}header{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}h1{font-size:27px;margin:4px 0}p{color:#a4b7cb;margin:4px 0}small{color:#8cacc6}.tag{letter-spacing:.16em;color:#72d5ee;font-size:12px}main{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px}canvas#view{width:100%;aspect-ratio:3/2;border:1px solid #294157;border-radius:12px;display:block;touch-action:none}aside,section.panel{background:#101e2d;border:1px solid #26394c;border-radius:12px;padding:16px}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:10px 0}label{display:block;font-size:13px;margin-top:10px}input[type=range]{width:100%;accent-color:#73d9e9}select,button,input[type=number]{background:#1a2c3e;color:#e6f4ff;border:1px solid #37516a;border-radius:6px;padding:7px}button{cursor:pointer}button:hover{background:#28445b}output{float:right;color:#7ee5ef;font-variant-numeric:tabular-nums}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.mini{display:flex;gap:22px;align-items:center}.mini canvas{width:96px;height:96px;image-rendering:pixelated;background:#000;border:1px solid #304659}.mini figure{margin:0}figcaption{font-size:12px;color:#a9c1d3}.panel{margin-top:18px}#status{font-size:12px;color:#79cbbd;overflow-wrap:anywhere}#error{color:#ff9d91;white-space:pre-wrap}footer{margin-top:20px;font-size:12px;color:#89a2b6}@media(max-width:850px){main{grid-template-columns:1fr}body{padding:16px}aside{max-width:none}}
+</style>
+<header><div><div class="tag">CRYSTAL REFRACTION / MATERIAL LAB</div><h1>碎晶折射与色散</h1><p>先看背景怎样折断，再调晶片、彩边和动态。</p></div><small>原创薄层材质预览 · WebGL 2</small></header>
+<main><div><canvas id="view" width="900" height="600" aria-label="碎晶折射预览"></canvas>
+<div class="toolbar"><button id="pause">播放动画</button><button id="reset">重置时间 / 视角</button><button id="before">查看原图</button><button id="save">导出配方</button><button id="load">导入配方</button><button id="png">保存 PNG</button><input hidden type="file" id="file" accept="application/json,.json"></div>
+<p><small>拖动预览改变入射方向；晶片布局保持固定。仅展示薄层近似，不模拟厚晶体光路。</small></p>
+<section class="panel"><div class="mini"><figure><canvas id="mini16" width="16" height="16"></canvas><figcaption>16 × 16 实际渲染</figcaption></figure><figure><canvas id="mini32" width="32" height="32"></canvas><figcaption>32 × 32 实际渲染</figcaption></figure><div><p>小图保持相对折射幅度</p><small>采样像素会减少，主形应仍可辨认。<br>导出保留固定种子、时间与视角。</small></div></div></section>
+<div id="error" role="alert"></div><p id="status">加载着色器…</p></div>
+<aside><label>起点配方<select id="preset" style="width:100%"></select></label>
+<div class="row"><label>背景<select id="background"><option value="0">规则网格</option><option value="1">内部星域</option></select></label><label>覆盖<select id="shape"><option value="0">全幅</option><option value="1">晶片窗口</option><option value="2">剑刃窗口</option></select></label></div>
+<label>诊断视图<select id="debug"><option value="0">最终材质</option><option value="1">稳定晶片 ID</option><option value="2">晶片接缝</option><option value="3">折射位移</option></select></label>
+<div id="controls"></div><div class="row"><label>布局种子<input id="seed" type="number" min="0" max="65535" step="1" style="width:110px"></label><label>底色<input id="tint" type="color"></label></div></aside></main>
+<footer>预览使用合成背景与独立离屏纹理。世界折射还需场景捕获、深度与透明排序接入；此页面不是 Forge 运行验证。</footer>
+<script type="module" src="preview.js"></script></html>

@@ -1,0 +1,15 @@
+{
+  "backend": "GLSL 150 bodies adapted to GLSL ES 300 in Edge; not Forge/Oculus runtime",
+  "shaders": [
+    {
+      "name": "realm_meteor",
+      "compiled": true,
+      "linked": true
+    },
+    {
+      "name": "realm_meteor_post",
+      "compiled": true,
+      "linked": true
+    }
+  ]
+}

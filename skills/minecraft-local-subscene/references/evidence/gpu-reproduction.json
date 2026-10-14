@@ -1,0 +1,206 @@
+{
+  "scope": "WebGL2 synthetic GPU pipeline; NOT Minecraft runtime",
+  "checks": [
+    {
+      "name": "fbo_stencil_equivalent_0",
+      "passed": true,
+      "detail": {
+        "changed": 0
+      }
+    },
+    {
+      "name": "outside_unchanged_0",
+      "passed": true,
+      "detail": {
+        "outside": 0
+      }
+    },
+    {
+      "name": "foreground_preserved_0",
+      "passed": true,
+      "detail": {
+        "front": 0
+      }
+    },
+    {
+      "name": "independent_scene_visible_0",
+      "passed": true,
+      "detail": {
+        "inside": 34192
+      }
+    },
+    {
+      "name": "fbo_stencil_equivalent_1",
+      "passed": true,
+      "detail": {
+        "changed": 0
+      }
+    },
+    {
+      "name": "outside_unchanged_1",
+      "passed": true,
+      "detail": {
+        "outside": 0
+      }
+    },
+    {
+      "name": "foreground_preserved_1",
+      "passed": true,
+      "detail": {
+        "front": 0
+      }
+    },
+    {
+      "name": "independent_scene_visible_1",
+      "passed": true,
+      "detail": {
+        "inside": 41322
+      }
+    },
+    {
+      "name": "fbo_stencil_equivalent_2",
+      "passed": true,
+      "detail": {
+        "changed": 0
+      }
+    },
+    {
+      "name": "outside_unchanged_2",
+      "passed": true,
+      "detail": {
+        "outside": 0
+      }
+    },
+    {
+      "name": "foreground_preserved_2",
+      "passed": true,
+      "detail": {
+        "front": 0
+      }
+    },
+    {
+      "name": "independent_scene_visible_2",
+      "passed": true,
+      "detail": {
+        "inside": 10740
+      }
+    },
+    {
+      "name": "fbo_stencil_equivalent_3",
+      "passed": true,
+      "detail": {
+        "changed": 0
+      }
+    },
+    {
+      "name": "outside_unchanged_3",
+      "passed": true,
+      "detail": {
+        "outside": 0
+      }
+    },
+    {
+      "name": "foreground_preserved_3",
+      "passed": true,
+      "detail": {
+        "front": 0
+      }
+    },
+    {
+      "name": "independent_scene_visible_3",
+      "passed": true,
+      "detail": {
+        "inside": 21034
+      }
+    },
+    {
+      "name": "nested_child_clipped_and_parent_resumed",
+      "passed": true,
+      "detail": {
+        "changed": 0
+      }
+    },
+    {
+      "name": "fbo_late_background_blocked",
+      "passed": true
+    },
+    {
+      "name": "fbo_late_foreground_visible",
+      "passed": true
+    },
+    {
+      "name": "stencil_late_background_blocked",
+      "passed": true
+    },
+    {
+      "name": "stencil_late_foreground_visible",
+      "passed": true
+    },
+    {
+      "name": "scaled_targets_freed",
+      "passed": true,
+      "detail": {
+        "allocated": 2
+      }
+    },
+    {
+      "name": "sphere_outside_and_foreground_40",
+      "passed": true,
+      "detail": {
+        "outside": 0,
+        "front": 0,
+        "visible": 24772
+      }
+    },
+    {
+      "name": "sphere_outside_and_foreground_70",
+      "passed": true,
+      "detail": {
+        "outside": 0,
+        "front": 0,
+        "visible": 7320
+      }
+    },
+    {
+      "name": "sphere_outside_and_foreground_110",
+      "passed": true,
+      "detail": {
+        "outside": 0,
+        "front": 0,
+        "visible": 1936
+      }
+    },
+    {
+      "name": "inside_domain_replaces_primary",
+      "passed": true,
+      "detail": {
+        "changed": 98304,
+        "policy": "replace entire interior view including primary geometry; hand/UI not modeled"
+      }
+    },
+    {
+      "name": "shader_recreation_deterministic",
+      "passed": true
+    },
+    {
+      "name": "declared_scope_exception_restore",
+      "passed": true
+    },
+    {
+      "name": "gl_error_zero",
+      "passed": true,
+      "detail": {
+        "error": 0
+      }
+    }
+  ],
+  "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Ti (0x00002803) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "stencilBits": 8,
+  "size": [
+    384,
+    256
+  ],
+  "passed": true,
+  "browser": "154.0.4258.37",
+  "pageErrors": []
+}

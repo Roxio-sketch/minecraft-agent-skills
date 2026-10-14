@@ -1,0 +1,2 @@
+Realm flight visual regression: pose, six tiers, opposite/vertical turns and hover contracts passed
+Realm meteor path regression: 6868 geometry/time/lifecycle checks passed

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "name": "Amber braided plasma",
+  "section": "tube",
+  "sides": 10,
+  "sampling": {
+    "lifetime": 0.85,
+    "minDistance": 0.015,
+    "maxStep": 0.1,
+    "breakDistance": 4,
+    "maxPoints": 256
+  },
+  "layers": [
+    {
+      "width": 0.13,
+      "blend": "additive",
+      "profile": "solid",
+      "texture": "trailbeam:textures/weave.png",
+      "repeat": 2.0,
+      "scroll": 0.9,
+      "gain": 1.0,
+      "fadePower": 1.4,
+      "taper": [
+        {
+          "at": 0,
+          "value": 0.05
+        },
+        {
+          "at": 0.18,
+          "value": 1
+        },
+        {
+          "at": 0.8,
+          "value": 1
+        },
+        {
+          "at": 1,
+          "value": 0.1
+        }
+      ],
+      "colors": [
+        {
+          "at": 0.0,
+          "color": "#F04818",
+          "alpha": 0.8
+        },
+        {
+          "at": 0.5,
+          "color": "#FFAA29",
+          "alpha": 0.8
+        },
+        {
+          "at": 1.0,
+          "color": "#FFF3A4",
+          "alpha": 0.8
+        }
+      ]
+    }
+  ]
+}

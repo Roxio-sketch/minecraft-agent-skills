@@ -1,0 +1,1483 @@
+Classfile jar:file:///D:/MC/��/red.ghs.axolotl/profiles/����%20(1)/mods/oculus-mc1.20.1-1.8.0.jar!/net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.class
+  Last modified 1980��1��1��; size 10988 bytes
+  SHA-256 checksum 7ca2ddc451ff9b5fc31577ecdd77f1f09a5824ed23290cd444991a61d006956a
+  Compiled from "FullyBufferedMultiBufferSource.java"
+public class net.irisshaders.batchedentityrendering.impl.FullyBufferedMultiBufferSource extends net.minecraft.client.renderer.MultiBufferSource$BufferSource implements net.irisshaders.batchedentityrendering.impl.MemoryTrackingBuffer,net.irisshaders.batchedentityrendering.impl.Groupable,net.irisshaders.iris.layer.WrappingMultiBufferSource
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource
+  super_class: #4                         // net/minecraft/client/renderer/MultiBufferSource$BufferSource
+  interfaces: 3, fields: 13, methods: 21, attributes: 4
+Constant pool:
+    #1 = Utf8               net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource
+    #2 = Class              #1            // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource
+    #3 = Utf8               net/minecraft/client/renderer/MultiBufferSource$BufferSource
+    #4 = Class              #3            // net/minecraft/client/renderer/MultiBufferSource$BufferSource
+    #5 = Utf8               net/irisshaders/batchedentityrendering/impl/MemoryTrackingBuffer
+    #6 = Class              #5            // net/irisshaders/batchedentityrendering/impl/MemoryTrackingBuffer
+    #7 = Utf8               net/irisshaders/batchedentityrendering/impl/Groupable
+    #8 = Class              #7            // net/irisshaders/batchedentityrendering/impl/Groupable
+    #9 = Utf8               net/irisshaders/iris/layer/WrappingMultiBufferSource
+   #10 = Class              #9            // net/irisshaders/iris/layer/WrappingMultiBufferSource
+   #11 = Utf8               FullyBufferedMultiBufferSource.java
+   #12 = Utf8               net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper
+   #13 = Class              #12           // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper
+   #14 = Utf8               net/minecraft/client/renderer/MultiBufferSource
+   #15 = Class              #14           // net/minecraft/client/renderer/MultiBufferSource
+   #16 = Utf8               BufferSource
+   #17 = Utf8               UnflushableWrapper
+   #18 = Utf8               java/util/Map$Entry
+   #19 = Class              #18           // java/util/Map$Entry
+   #20 = Utf8               java/util/Map
+   #21 = Class              #20           // java/util/Map
+   #22 = Utf8               Entry
+   #23 = Utf8               java/lang/invoke/MethodHandles$Lookup
+   #24 = Class              #23           // java/lang/invoke/MethodHandles$Lookup
+   #25 = Utf8               java/lang/invoke/MethodHandles
+   #26 = Class              #25           // java/lang/invoke/MethodHandles
+   #27 = Utf8               Lookup
+   #28 = Utf8               NUM_BUFFERS
+   #29 = Utf8               I
+   #30 = Integer            32
+   #31 = Utf8               renderOrderManager
+   #32 = Utf8               Lnet/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager;
+   #33 = Utf8               builders
+   #34 = Utf8               [Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+   #35 = Utf8               affinities
+   #36 = Utf8               Ljava/util/LinkedHashMap;
+   #37 = Utf8               Ljava/util/LinkedHashMap<Lnet/minecraft/client/renderer/RenderType;Ljava/lang/Integer;>;
+   #38 = Utf8               segmentRenderer
+   #39 = Utf8               Lnet/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer;
+   #40 = Utf8               unflushableWrapper
+   #41 = Utf8               Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper;
+   #42 = Utf8               wrappingFunctionStack
+   #43 = Utf8               Ljava/util/List;
+   #44 = Utf8               Ljava/util/List<Ljava/util/function/Function<Lnet/minecraft/client/renderer/RenderType;Lnet/minecraft/client/renderer/RenderType;>;>;
+   #45 = Utf8               typeToSegment
+   #46 = Utf8               Ljava/util/Map;
+   #47 = Utf8               Ljava/util/Map<Lnet/minecraft/client/renderer/RenderType;Ljava/util/List<Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;>;>;
+   #48 = Utf8               drawCalls
+   #49 = Utf8               renderTypes
+   #50 = Utf8               wrappingFunction
+   #51 = Utf8               Ljava/util/function/Function;
+   #52 = Utf8               Ljava/util/function/Function<Lnet/minecraft/client/renderer/RenderType;Lnet/minecraft/client/renderer/RenderType;>;
+   #53 = Utf8               isReady
+   #54 = Utf8               Z
+   #55 = Utf8               renderOrder
+   #56 = Utf8               Ljava/util/List<Lnet/minecraft/client/renderer/RenderType;>;
+   #57 = Utf8               <init>
+   #58 = Utf8               ()V
+   #59 = Utf8               com/mojang/blaze3d/vertex/BufferBuilder
+   #60 = Class              #59           // com/mojang/blaze3d/vertex/BufferBuilder
+   #61 = Utf8               (I)V
+   #62 = NameAndType        #57:#61       // "<init>":(I)V
+   #63 = Methodref          #60.#62       // com/mojang/blaze3d/vertex/BufferBuilder."<init>":(I)V
+   #64 = Utf8               java/util/Collections
+   #65 = Class              #64           // java/util/Collections
+   #66 = Utf8               emptyMap
+   #67 = Utf8               ()Ljava/util/Map;
+   #68 = NameAndType        #66:#67       // emptyMap:()Ljava/util/Map;
+   #69 = Methodref          #65.#68       // java/util/Collections.emptyMap:()Ljava/util/Map;
+   #70 = Utf8               (Lcom/mojang/blaze3d/vertex/BufferBuilder;Ljava/util/Map;)V
+   #71 = NameAndType        #57:#70       // "<init>":(Lcom/mojang/blaze3d/vertex/BufferBuilder;Ljava/util/Map;)V
+   #72 = Methodref          #4.#71        // net/minecraft/client/renderer/MultiBufferSource$BufferSource."<init>":(Lcom/mojang/blaze3d/vertex/BufferBuilder;Ljava/util/Map;)V
+   #73 = Utf8               java/util/HashMap
+   #74 = Class              #73           // java/util/HashMap
+   #75 = NameAndType        #57:#58       // "<init>":()V
+   #76 = Methodref          #74.#75       // java/util/HashMap."<init>":()V
+   #77 = NameAndType        #45:#46       // typeToSegment:Ljava/util/Map;
+   #78 = Fieldref           #2.#77        // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.typeToSegment:Ljava/util/Map;
+   #79 = NameAndType        #50:#51       // wrappingFunction:Ljava/util/function/Function;
+   #80 = Fieldref           #2.#79        // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.wrappingFunction:Ljava/util/function/Function;
+   #81 = Utf8               java/util/ArrayList
+   #82 = Class              #81           // java/util/ArrayList
+   #83 = Methodref          #82.#75       // java/util/ArrayList."<init>":()V
+   #84 = NameAndType        #55:#43       // renderOrder:Ljava/util/List;
+   #85 = Fieldref           #2.#84        // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.renderOrder:Ljava/util/List;
+   #86 = Utf8               net/irisshaders/batchedentityrendering/impl/ordering/GraphTranslucencyRenderOrderManager
+   #87 = Class              #86           // net/irisshaders/batchedentityrendering/impl/ordering/GraphTranslucencyRenderOrderManager
+   #88 = Methodref          #87.#75       // net/irisshaders/batchedentityrendering/impl/ordering/GraphTranslucencyRenderOrderManager."<init>":()V
+   #89 = NameAndType        #31:#32       // renderOrderManager:Lnet/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager;
+   #90 = Fieldref           #2.#89        // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.renderOrderManager:Lnet/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager;
+   #91 = Utf8               net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder
+   #92 = Class              #91           // net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder
+   #93 = NameAndType        #33:#34       // builders:[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+   #94 = Fieldref           #2.#93        // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.builders:[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+   #95 = Methodref          #92.#75       // net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder."<init>":()V
+   #96 = Utf8               java/util/LinkedHashMap
+   #97 = Class              #96           // java/util/LinkedHashMap
+   #98 = Float              0.75f
+   #99 = Utf8               (IFZ)V
+  #100 = NameAndType        #57:#99       // "<init>":(IFZ)V
+  #101 = Methodref          #97.#100      // java/util/LinkedHashMap."<init>":(IFZ)V
+  #102 = NameAndType        #35:#36       // affinities:Ljava/util/LinkedHashMap;
+  #103 = Fieldref           #2.#102       // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.affinities:Ljava/util/LinkedHashMap;
+  #104 = NameAndType        #48:#29       // drawCalls:I
+  #105 = Fieldref           #2.#104       // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.drawCalls:I
+  #106 = Utf8               net/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer
+  #107 = Class              #106          // net/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer
+  #108 = Methodref          #107.#75      // net/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer."<init>":()V
+  #109 = NameAndType        #38:#39       // segmentRenderer:Lnet/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer;
+  #110 = Fieldref           #2.#109       // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.segmentRenderer:Lnet/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer;
+  #111 = Utf8               (Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;)V
+  #112 = NameAndType        #57:#111      // "<init>":(Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;)V
+  #113 = Methodref          #13.#112      // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper."<init>":(Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;)V
+  #114 = NameAndType        #40:#41       // unflushableWrapper:Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper;
+  #115 = Fieldref           #2.#114       // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.unflushableWrapper:Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper;
+  #116 = NameAndType        #42:#43       // wrappingFunctionStack:Ljava/util/List;
+  #117 = Fieldref           #2.#116       // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.wrappingFunctionStack:Ljava/util/List;
+  #118 = Utf8               i
+  #119 = Utf8               this
+  #120 = Utf8               Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+  #121 = Utf8               m_6299_
+  #122 = Utf8               (Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+  #123 = Utf8               renderType
+  #124 = Utf8               removeReady
+  #125 = NameAndType        #124:#58      // removeReady:()V
+  #126 = Methodref          #2.#125       // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.removeReady:()V
+  #127 = Utf8               java/util/function/Function
+  #128 = Class              #127          // java/util/function/Function
+  #129 = Utf8               apply
+  #130 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #131 = NameAndType        #129:#130     // apply:(Ljava/lang/Object;)Ljava/lang/Object;
+  #132 = InterfaceMethodref #128.#131     // java/util/function/Function.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+  #133 = Utf8               net/minecraft/client/renderer/RenderType
+  #134 = Class              #133          // net/minecraft/client/renderer/RenderType
+  #135 = Utf8               net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager
+  #136 = Class              #135          // net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager
+  #137 = Utf8               begin
+  #138 = Utf8               (Lnet/minecraft/client/renderer/RenderType;)V
+  #139 = NameAndType        #137:#138     // begin:(Lnet/minecraft/client/renderer/RenderType;)V
+  #140 = InterfaceMethodref #136.#139     // net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.begin:(Lnet/minecraft/client/renderer/RenderType;)V
+  #141 = Utf8               get
+  #142 = NameAndType        #141:#130     // get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #143 = Methodref          #97.#142      // java/util/LinkedHashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #144 = Utf8               java/lang/Integer
+  #145 = Class              #144          // java/lang/Integer
+  #146 = Utf8               size
+  #147 = Utf8               ()I
+  #148 = NameAndType        #146:#147     // size:()I
+  #149 = Methodref          #97.#148      // java/util/LinkedHashMap.size:()I
+  #150 = Utf8               valueOf
+  #151 = Utf8               (I)Ljava/lang/Integer;
+  #152 = NameAndType        #150:#151     // valueOf:(I)Ljava/lang/Integer;
+  #153 = Methodref          #145.#152     // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #154 = Utf8               entrySet
+  #155 = Utf8               ()Ljava/util/Set;
+  #156 = NameAndType        #154:#155     // entrySet:()Ljava/util/Set;
+  #157 = Methodref          #97.#156      // java/util/LinkedHashMap.entrySet:()Ljava/util/Set;
+  #158 = Utf8               java/util/Set
+  #159 = Class              #158          // java/util/Set
+  #160 = Utf8               iterator
+  #161 = Utf8               ()Ljava/util/Iterator;
+  #162 = NameAndType        #160:#161     // iterator:()Ljava/util/Iterator;
+  #163 = InterfaceMethodref #159.#162     // java/util/Set.iterator:()Ljava/util/Iterator;
+  #164 = Utf8               java/util/Iterator
+  #165 = Class              #164          // java/util/Iterator
+  #166 = Utf8               next
+  #167 = Utf8               ()Ljava/lang/Object;
+  #168 = NameAndType        #166:#167     // next:()Ljava/lang/Object;
+  #169 = InterfaceMethodref #165.#168     // java/util/Iterator.next:()Ljava/lang/Object;
+  #170 = Utf8               remove
+  #171 = NameAndType        #170:#58      // remove:()V
+  #172 = InterfaceMethodref #165.#171     // java/util/Iterator.remove:()V
+  #173 = Utf8               getKey
+  #174 = NameAndType        #173:#167     // getKey:()Ljava/lang/Object;
+  #175 = InterfaceMethodref #19.#174      // java/util/Map$Entry.getKey:()Ljava/lang/Object;
+  #176 = NameAndType        #170:#130     // remove:(Ljava/lang/Object;)Ljava/lang/Object;
+  #177 = Methodref          #97.#176      // java/util/LinkedHashMap.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+  #178 = Utf8               getValue
+  #179 = NameAndType        #178:#167     // getValue:()Ljava/lang/Object;
+  #180 = InterfaceMethodref #19.#179      // java/util/Map$Entry.getValue:()Ljava/lang/Object;
+  #181 = Utf8               put
+  #182 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #183 = NameAndType        #181:#182     // put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #184 = Methodref          #97.#183      // java/util/LinkedHashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #185 = Utf8               intValue
+  #186 = NameAndType        #185:#147     // intValue:()I
+  #187 = Methodref          #145.#186     // java/lang/Integer.intValue:()I
+  #188 = NameAndType        #121:#122     // m_6299_:(Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+  #189 = Methodref          #92.#188      // net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder.m_6299_:(Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+  #190 = Utf8               Ljava/util/Iterator<Ljava/util/Map$Entry<Lnet/minecraft/client/renderer/RenderType;Ljava/lang/Integer;>;>;
+  #191 = Utf8               Ljava/util/Iterator;
+  #192 = Utf8               evicted
+  #193 = Utf8               Ljava/util/Map$Entry<Lnet/minecraft/client/renderer/RenderType;Ljava/lang/Integer;>;
+  #194 = Utf8               Ljava/util/Map$Entry;
+  #195 = Utf8               Lnet/minecraft/client/renderer/RenderType;
+  #196 = Utf8               affinity
+  #197 = Utf8               Ljava/lang/Integer;
+  #198 = NameAndType        #53:#54       // isReady:Z
+  #199 = Fieldref           #2.#198       // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.isReady:Z
+  #200 = Utf8               clear
+  #201 = NameAndType        #200:#58      // clear:()V
+  #202 = InterfaceMethodref #21.#201      // java/util/Map.clear:()V
+  #203 = Utf8               java/util/List
+  #204 = Class              #203          // java/util/List
+  #205 = InterfaceMethodref #204.#201     // java/util/List.clear:()V
+  #206 = Utf8               readyUp
+  #207 = Utf8               net/minecraft/client/Minecraft
+  #208 = Class              #207          // net/minecraft/client/Minecraft
+  #209 = Utf8               m_91087_
+  #210 = Utf8               ()Lnet/minecraft/client/Minecraft;
+  #211 = NameAndType        #209:#210     // m_91087_:()Lnet/minecraft/client/Minecraft;
+  #212 = Methodref          #208.#211     // net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+  #213 = Utf8               m_91307_
+  #214 = Utf8               ()Lnet/minecraft/util/profiling/ProfilerFiller;
+  #215 = NameAndType        #213:#214     // m_91307_:()Lnet/minecraft/util/profiling/ProfilerFiller;
+  #216 = Methodref          #208.#215     // net/minecraft/client/Minecraft.m_91307_:()Lnet/minecraft/util/profiling/ProfilerFiller;
+  #217 = Utf8               collect
+  #218 = String             #217          // collect
+  #219 = Utf8               net/minecraft/util/profiling/ProfilerFiller
+  #220 = Class              #219          // net/minecraft/util/profiling/ProfilerFiller
+  #221 = Utf8               m_6180_
+  #222 = Utf8               (Ljava/lang/String;)V
+  #223 = NameAndType        #221:#222     // m_6180_:(Ljava/lang/String;)V
+  #224 = InterfaceMethodref #220.#223     // net/minecraft/util/profiling/ProfilerFiller.m_6180_:(Ljava/lang/String;)V
+  #225 = Class              #34           // "[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;"
+  #226 = Utf8               getSegments
+  #227 = Utf8               ()Ljava/util/List;
+  #228 = NameAndType        #226:#227     // getSegments:()Ljava/util/List;
+  #229 = Methodref          #92.#228      // net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder.getSegments:()Ljava/util/List;
+  #230 = InterfaceMethodref #204.#162     // java/util/List.iterator:()Ljava/util/Iterator;
+  #231 = Utf8               hasNext
+  #232 = Utf8               ()Z
+  #233 = NameAndType        #231:#232     // hasNext:()Z
+  #234 = InterfaceMethodref #165.#233     // java/util/Iterator.hasNext:()Z
+  #235 = Utf8               net/irisshaders/batchedentityrendering/impl/BufferSegment
+  #236 = Class              #235          // net/irisshaders/batchedentityrendering/impl/BufferSegment
+  #237 = Utf8               type
+  #238 = Utf8               ()Lnet/minecraft/client/renderer/RenderType;
+  #239 = NameAndType        #237:#238     // type:()Lnet/minecraft/client/renderer/RenderType;
+  #240 = Methodref          #236.#239     // net/irisshaders/batchedentityrendering/impl/BufferSegment.type:()Lnet/minecraft/client/renderer/RenderType;
+  #241 = MethodType         #130          //  (Ljava/lang/Object;)Ljava/lang/Object;
+  #242 = Utf8               lambda$readyUp$0
+  #243 = Utf8               (Lnet/minecraft/client/renderer/RenderType;)Ljava/util/List;
+  #244 = NameAndType        #242:#243     // lambda$readyUp$0:(Lnet/minecraft/client/renderer/RenderType;)Ljava/util/List;
+  #245 = Methodref          #2.#244       // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.lambda$readyUp$0:(Lnet/minecraft/client/renderer/RenderType;)Ljava/util/List;
+  #246 = MethodHandle       6:#245        // REF_invokeStatic net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.lambda$readyUp$0:(Lnet/minecraft/client/renderer/RenderType;)Ljava/util/List;
+  #247 = MethodType         #243          //  (Lnet/minecraft/client/renderer/RenderType;)Ljava/util/List;
+  #248 = Utf8               java/lang/invoke/LambdaMetafactory
+  #249 = Class              #248          // java/lang/invoke/LambdaMetafactory
+  #250 = Utf8               metafactory
+  #251 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #252 = NameAndType        #250:#251     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #253 = Methodref          #249.#252     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #254 = MethodHandle       6:#253        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #255 = Utf8               ()Ljava/util/function/Function;
+  #256 = NameAndType        #129:#255     // apply:()Ljava/util/function/Function;
+  #257 = InvokeDynamic      #0:#256       // #0:apply:()Ljava/util/function/Function;
+  #258 = Utf8               computeIfAbsent
+  #259 = Utf8               (Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+  #260 = NameAndType        #258:#259     // computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+  #261 = InterfaceMethodref #21.#260      // java/util/Map.computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+  #262 = Utf8               add
+  #263 = Utf8               (Ljava/lang/Object;)Z
+  #264 = NameAndType        #262:#263     // add:(Ljava/lang/Object;)Z
+  #265 = InterfaceMethodref #204.#264     // java/util/List.add:(Ljava/lang/Object;)Z
+  #266 = Utf8               resolve ordering
+  #267 = String             #266          // resolve ordering
+  #268 = Utf8               m_6182_
+  #269 = NameAndType        #268:#222     // m_6182_:(Ljava/lang/String;)V
+  #270 = InterfaceMethodref #220.#269     // net/minecraft/util/profiling/ProfilerFiller.m_6182_:(Ljava/lang/String;)V
+  #271 = Utf8               getRenderOrder
+  #272 = NameAndType        #271:#227     // getRenderOrder:()Ljava/util/List;
+  #273 = InterfaceMethodref #136.#272     // net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.getRenderOrder:()Ljava/util/List;
+  #274 = Utf8               reset
+  #275 = NameAndType        #274:#58      // reset:()V
+  #276 = InterfaceMethodref #136.#275     // net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.reset:()V
+  #277 = Methodref          #97.#201      // java/util/LinkedHashMap.clear:()V
+  #278 = Utf8               m_7238_
+  #279 = NameAndType        #278:#58      // m_7238_:()V
+  #280 = InterfaceMethodref #220.#279     // net/minecraft/util/profiling/ProfilerFiller.m_7238_:()V
+  #281 = Utf8               segment
+  #282 = Utf8               Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;
+  #283 = Utf8               segments
+  #284 = Utf8               Ljava/util/List<Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;>;
+  #285 = Utf8               builder
+  #286 = Utf8               Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+  #287 = Utf8               profiler
+  #288 = Utf8               Lnet/minecraft/util/profiling/ProfilerFiller;
+  #289 = Utf8               m_109911_
+  #290 = NameAndType        #206:#58      // readyUp:()V
+  #291 = Methodref          #2.#290       // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.readyUp:()V
+  #292 = Utf8               draw buffers
+  #293 = String             #292          // draw buffers
+  #294 = Utf8               m_110185_
+  #295 = NameAndType        #294:#58      // m_110185_:()V
+  #296 = Methodref          #134.#295     // net/minecraft/client/renderer/RenderType.m_110185_:()V
+  #297 = NameAndType        #49:#29       // renderTypes:I
+  #298 = Fieldref           #2.#297       // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.renderTypes:I
+  #299 = Utf8               emptyList
+  #300 = NameAndType        #299:#227     // emptyList:()Ljava/util/List;
+  #301 = Methodref          #65.#300      // java/util/Collections.emptyList:()Ljava/util/List;
+  #302 = Utf8               getOrDefault
+  #303 = NameAndType        #302:#182     // getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #304 = InterfaceMethodref #21.#303      // java/util/Map.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #305 = Utf8               drawInner
+  #306 = Utf8               (Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;)V
+  #307 = NameAndType        #305:#306     // drawInner:(Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;)V
+  #308 = Methodref          #107.#307     // net/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer.drawInner:(Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;)V
+  #309 = Utf8               m_110188_
+  #310 = NameAndType        #309:#58      // m_110188_:()V
+  #311 = Methodref          #134.#310     // net/minecraft/client/renderer/RenderType.m_110188_:()V
+  #312 = String             #274          // reset
+  #313 = Utf8               endBatchWithType
+  #314 = Utf8               (Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;)V
+  #315 = Utf8               transparencyType
+  #316 = Utf8               net/irisshaders/batchedentityrendering/impl/BlendingStateHolder
+  #317 = Class              #316          // net/irisshaders/batchedentityrendering/impl/BlendingStateHolder
+  #318 = Utf8               getTransparencyType
+  #319 = Utf8               ()Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+  #320 = NameAndType        #318:#319     // getTransparencyType:()Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+  #321 = InterfaceMethodref #317.#320     // net/irisshaders/batchedentityrendering/impl/BlendingStateHolder.getTransparencyType:()Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+  #322 = InterfaceMethodref #21.#176      // java/util/Map.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+  #323 = Utf8               reset type \u0001
+  #324 = String             #323          // reset type \u0001
+  #325 = Utf8               java/lang/invoke/StringConcatFactory
+  #326 = Class              #325          // java/lang/invoke/StringConcatFactory
+  #327 = Utf8               makeConcatWithConstants
+  #328 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #329 = NameAndType        #327:#328     // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #330 = Methodref          #326.#329     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #331 = MethodHandle       6:#330        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #332 = Utf8               (Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;)Ljava/lang/String;
+  #333 = NameAndType        #327:#332     // makeConcatWithConstants:(Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;)Ljava/lang/String;
+  #334 = InvokeDynamic      #1:#333       // #1:makeConcatWithConstants:(Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;)Ljava/lang/String;
+  #335 = Utf8               removeAll
+  #336 = Utf8               (Ljava/util/Collection;)Z
+  #337 = NameAndType        #335:#336     // removeAll:(Ljava/util/Collection;)Z
+  #338 = InterfaceMethodref #204.#337     // java/util/List.removeAll:(Ljava/util/Collection;)Z
+  #339 = Utf8               Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+  #340 = Utf8               types
+  #341 = Utf8               getDrawCalls
+  #342 = Utf8               getRenderTypes
+  #343 = Utf8               resetDrawCalls
+  #344 = Utf8               m_109912_
+  #345 = Utf8               getUnflushableWrapper
+  #346 = Utf8               ()Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;
+  #347 = Utf8               getAllocatedSize
+  #348 = NameAndType        #347:#147     // getAllocatedSize:()I
+  #349 = Methodref          #92.#348      // net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder.getAllocatedSize:()I
+  #350 = Utf8               getUsedSize
+  #351 = NameAndType        #350:#147     // getUsedSize:()I
+  #352 = Methodref          #92.#351      // net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder.getUsedSize:()I
+  #353 = Utf8               freeAndDeleteBuffer
+  #354 = NameAndType        #353:#58      // freeAndDeleteBuffer:()V
+  #355 = Methodref          #92.#354      // net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder.freeAndDeleteBuffer:()V
+  #356 = Utf8               startGroup
+  #357 = NameAndType        #356:#58      // startGroup:()V
+  #358 = InterfaceMethodref #136.#357     // net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.startGroup:()V
+  #359 = Utf8               maybeStartGroup
+  #360 = NameAndType        #359:#232     // maybeStartGroup:()Z
+  #361 = InterfaceMethodref #136.#360     // net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.maybeStartGroup:()Z
+  #362 = Utf8               endGroup
+  #363 = NameAndType        #362:#58      // endGroup:()V
+  #364 = InterfaceMethodref #136.#363     // net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.endGroup:()V
+  #365 = Utf8               pushWrappingFunction
+  #366 = Utf8               (Ljava/util/function/Function;)V
+  #367 = Utf8               (Ljava/util/function/Function<Lnet/minecraft/client/renderer/RenderType;Lnet/minecraft/client/renderer/RenderType;>;)V
+  #368 = Utf8               popWrappingFunction
+  #369 = Utf8               isEmpty
+  #370 = NameAndType        #369:#232     // isEmpty:()Z
+  #371 = InterfaceMethodref #204.#370     // java/util/List.isEmpty:()Z
+  #372 = InterfaceMethodref #204.#148     // java/util/List.size:()I
+  #373 = Utf8               (I)Ljava/lang/Object;
+  #374 = NameAndType        #170:#373     // remove:(I)Ljava/lang/Object;
+  #375 = InterfaceMethodref #204.#374     // java/util/List.remove:(I)Ljava/lang/Object;
+  #376 = Utf8               assertWrapStackEmpty
+  #377 = Utf8               java/lang/IllegalStateException
+  #378 = Class              #377          // java/lang/IllegalStateException
+  #379 = Utf8               Wrapping function stack not empty!
+  #380 = String             #379          // Wrapping function stack not empty!
+  #381 = NameAndType        #57:#222      // "<init>":(Ljava/lang/String;)V
+  #382 = Methodref          #378.#381     // java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+  #383 = Utf8               ConstantValue
+  #384 = Utf8               Signature
+  #385 = Utf8               Code
+  #386 = Utf8               StackMapTable
+  #387 = Utf8               LineNumberTable
+  #388 = Utf8               LocalVariableTable
+  #389 = Utf8               LocalVariableTypeTable
+  #390 = Utf8               MethodParameters
+  #391 = Utf8               InnerClasses
+  #392 = Utf8               SourceFile
+  #393 = Utf8               BootstrapMethods
+  #394 = Utf8               NestMembers
+{
+  private static final int NUM_BUFFERS;
+    descriptor: I
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 32
+
+  private final net.irisshaders.batchedentityrendering.impl.ordering.RenderOrderManager renderOrderManager;
+    descriptor: Lnet/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private final net.irisshaders.batchedentityrendering.impl.SegmentedBufferBuilder[] builders;
+    descriptor: [Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private final java.util.LinkedHashMap<net.minecraft.client.renderer.RenderType, java.lang.Integer> affinities;
+    descriptor: Ljava/util/LinkedHashMap;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #37                          // Ljava/util/LinkedHashMap<Lnet/minecraft/client/renderer/RenderType;Ljava/lang/Integer;>;
+
+  private final net.irisshaders.batchedentityrendering.impl.BufferSegmentRenderer segmentRenderer;
+    descriptor: Lnet/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private final net.irisshaders.batchedentityrendering.impl.FullyBufferedMultiBufferSource$UnflushableWrapper unflushableWrapper;
+    descriptor: Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private final java.util.List<java.util.function.Function<net.minecraft.client.renderer.RenderType, net.minecraft.client.renderer.RenderType>> wrappingFunctionStack;
+    descriptor: Ljava/util/List;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #44                          // Ljava/util/List<Ljava/util/function/Function<Lnet/minecraft/client/renderer/RenderType;Lnet/minecraft/client/renderer/RenderType;>;>;
+
+  private final java.util.Map<net.minecraft.client.renderer.RenderType, java.util.List<net.irisshaders.batchedentityrendering.impl.BufferSegment>> typeToSegment;
+    descriptor: Ljava/util/Map;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #47                          // Ljava/util/Map<Lnet/minecraft/client/renderer/RenderType;Ljava/util/List<Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;>;>;
+
+  private int drawCalls;
+    descriptor: I
+    flags: (0x0002) ACC_PRIVATE
+
+  private int renderTypes;
+    descriptor: I
+    flags: (0x0002) ACC_PRIVATE
+
+  private java.util.function.Function<net.minecraft.client.renderer.RenderType, net.minecraft.client.renderer.RenderType> wrappingFunction;
+    descriptor: Ljava/util/function/Function;
+    flags: (0x0002) ACC_PRIVATE
+    Signature: #52                          // Ljava/util/function/Function<Lnet/minecraft/client/renderer/RenderType;Lnet/minecraft/client/renderer/RenderType;>;
+
+  private boolean isReady;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+
+  private java.util.List<net.minecraft.client.renderer.RenderType> renderOrder;
+    descriptor: Ljava/util/List;
+    flags: (0x0002) ACC_PRIVATE
+    Signature: #56                          // Ljava/util/List<Lnet/minecraft/client/renderer/RenderType;>;
+
+  public net.irisshaders.batchedentityrendering.impl.FullyBufferedMultiBufferSource();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=2, args_size=1
+         0: aload_0
+         1: new           #60                 // class com/mojang/blaze3d/vertex/BufferBuilder
+         4: dup
+         5: iconst_0
+         6: invokespecial #63                 // Method com/mojang/blaze3d/vertex/BufferBuilder."<init>":(I)V
+         9: invokestatic  #69                 // Method java/util/Collections.emptyMap:()Ljava/util/Map;
+        12: invokespecial #72                 // Method net/minecraft/client/renderer/MultiBufferSource$BufferSource."<init>":(Lcom/mojang/blaze3d/vertex/BufferBuilder;Ljava/util/Map;)V
+        15: aload_0
+        16: new           #74                 // class java/util/HashMap
+        19: dup
+        20: invokespecial #76                 // Method java/util/HashMap."<init>":()V
+        23: putfield      #78                 // Field typeToSegment:Ljava/util/Map;
+        26: aload_0
+        27: aconst_null
+        28: putfield      #80                 // Field wrappingFunction:Ljava/util/function/Function;
+        31: aload_0
+        32: new           #82                 // class java/util/ArrayList
+        35: dup
+        36: invokespecial #83                 // Method java/util/ArrayList."<init>":()V
+        39: putfield      #85                 // Field renderOrder:Ljava/util/List;
+        42: aload_0
+        43: new           #87                 // class net/irisshaders/batchedentityrendering/impl/ordering/GraphTranslucencyRenderOrderManager
+        46: dup
+        47: invokespecial #88                 // Method net/irisshaders/batchedentityrendering/impl/ordering/GraphTranslucencyRenderOrderManager."<init>":()V
+        50: putfield      #90                 // Field renderOrderManager:Lnet/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager;
+        53: aload_0
+        54: bipush        32
+        56: anewarray     #92                 // class net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder
+        59: putfield      #94                 // Field builders:[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+        62: iconst_0
+        63: istore_1
+        64: iload_1
+        65: aload_0
+        66: getfield      #94                 // Field builders:[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+        69: arraylength
+        70: if_icmpge     92
+        73: aload_0
+        74: getfield      #94                 // Field builders:[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+        77: iload_1
+        78: new           #92                 // class net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder
+        81: dup
+        82: invokespecial #95                 // Method net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder."<init>":()V
+        85: aastore
+        86: iinc          1, 1
+        89: goto          64
+        92: aload_0
+        93: new           #97                 // class java/util/LinkedHashMap
+        96: dup
+        97: bipush        32
+        99: ldc           #98                 // float 0.75f
+       101: iconst_1
+       102: invokespecial #101                // Method java/util/LinkedHashMap."<init>":(IFZ)V
+       105: putfield      #103                // Field affinities:Ljava/util/LinkedHashMap;
+       108: aload_0
+       109: iconst_0
+       110: putfield      #105                // Field drawCalls:I
+       113: aload_0
+       114: new           #107                // class net/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer
+       117: dup
+       118: invokespecial #108                // Method net/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer."<init>":()V
+       121: putfield      #110                // Field segmentRenderer:Lnet/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer;
+       124: aload_0
+       125: new           #13                 // class net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper
+       128: dup
+       129: aload_0
+       130: invokespecial #113                // Method net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper."<init>":(Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;)V
+       133: putfield      #115                // Field unflushableWrapper:Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper;
+       136: aload_0
+       137: new           #82                 // class java/util/ArrayList
+       140: dup
+       141: invokespecial #83                 // Method java/util/ArrayList."<init>":()V
+       144: putfield      #117                // Field wrappingFunctionStack:Ljava/util/List;
+       147: return
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 64
+          locals = [ class net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource, int ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 27
+      LineNumberTable:
+        line 42: 0
+        line 34: 15
+        line 37: 26
+        line 39: 31
+        line 44: 42
+        line 45: 53
+        line 47: 62
+        line 48: 73
+        line 47: 86
+        line 52: 92
+        line 54: 108
+        line 55: 113
+        line 56: 124
+        line 57: 136
+        line 58: 147
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           64      28     1     i   I
+            0     148     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  public com.mojang.blaze3d.vertex.VertexConsumer m_6299_(net.minecraft.client.renderer.RenderType);
+    descriptor: (Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=5, args_size=2
+         0: aload_0
+         1: invokevirtual #126                // Method removeReady:()V
+         4: aload_0
+         5: getfield      #80                 // Field wrappingFunction:Ljava/util/function/Function;
+         8: ifnull        25
+        11: aload_0
+        12: getfield      #80                 // Field wrappingFunction:Ljava/util/function/Function;
+        15: aload_1
+        16: invokeinterface #132,  2          // InterfaceMethod java/util/function/Function.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+        21: checkcast     #134                // class net/minecraft/client/renderer/RenderType
+        24: astore_1
+        25: aload_0
+        26: getfield      #90                 // Field renderOrderManager:Lnet/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager;
+        29: aload_1
+        30: invokeinterface #140,  2          // InterfaceMethod net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.begin:(Lnet/minecraft/client/renderer/RenderType;)V
+        35: aload_0
+        36: getfield      #103                // Field affinities:Ljava/util/LinkedHashMap;
+        39: aload_1
+        40: invokevirtual #143                // Method java/util/LinkedHashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        43: checkcast     #145                // class java/lang/Integer
+        46: astore_2
+        47: aload_2
+        48: ifnonnull     146
+        51: aload_0
+        52: getfield      #103                // Field affinities:Ljava/util/LinkedHashMap;
+        55: invokevirtual #149                // Method java/util/LinkedHashMap.size:()I
+        58: aload_0
+        59: getfield      #94                 // Field builders:[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+        62: arraylength
+        63: if_icmpge     80
+        66: aload_0
+        67: getfield      #103                // Field affinities:Ljava/util/LinkedHashMap;
+        70: invokevirtual #149                // Method java/util/LinkedHashMap.size:()I
+        73: invokestatic  #153                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        76: astore_2
+        77: goto          136
+        80: aload_0
+        81: getfield      #103                // Field affinities:Ljava/util/LinkedHashMap;
+        84: invokevirtual #157                // Method java/util/LinkedHashMap.entrySet:()Ljava/util/Set;
+        87: invokeinterface #163,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+        92: astore_3
+        93: aload_3
+        94: invokeinterface #169,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        99: checkcast     #19                 // class java/util/Map$Entry
+       102: astore        4
+       104: aload_3
+       105: invokeinterface #172,  1          // InterfaceMethod java/util/Iterator.remove:()V
+       110: aload_0
+       111: getfield      #103                // Field affinities:Ljava/util/LinkedHashMap;
+       114: aload         4
+       116: invokeinterface #175,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+       121: invokevirtual #177                // Method java/util/LinkedHashMap.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+       124: pop
+       125: aload         4
+       127: invokeinterface #180,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+       132: checkcast     #145                // class java/lang/Integer
+       135: astore_2
+       136: aload_0
+       137: getfield      #103                // Field affinities:Ljava/util/LinkedHashMap;
+       140: aload_1
+       141: aload_2
+       142: invokevirtual #184                // Method java/util/LinkedHashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       145: pop
+       146: aload_0
+       147: getfield      #94                 // Field builders:[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+       150: aload_2
+       151: invokevirtual #187                // Method java/lang/Integer.intValue:()I
+       154: aaload
+       155: aload_1
+       156: invokevirtual #189                // Method net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder.m_6299_:(Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+       159: areturn
+      StackMapTable: number_of_entries = 4
+        frame_type = 25 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 54
+          locals = [ class java/lang/Integer ]
+        frame_type = 55 /* same */
+        frame_type = 9 /* same */
+      LineNumberTable:
+        line 62: 0
+        line 64: 4
+        line 65: 11
+        line 68: 25
+        line 69: 35
+        line 71: 47
+        line 72: 51
+        line 73: 66
+        line 77: 80
+        line 78: 93
+        line 79: 104
+        line 82: 110
+        line 85: 125
+        line 88: 136
+        line 91: 146
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           93      43     3 iterator   Ljava/util/Iterator;
+          104      32     4 evicted   Ljava/util/Map$Entry;
+            0     160     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+            0     160     1 renderType   Lnet/minecraft/client/renderer/RenderType;
+           47     113     2 affinity   Ljava/lang/Integer;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+           93      43     3 iterator   Ljava/util/Iterator<Ljava/util/Map$Entry<Lnet/minecraft/client/renderer/RenderType;Ljava/lang/Integer;>;>;
+          104      32     4 evicted   Ljava/util/Map$Entry<Lnet/minecraft/client/renderer/RenderType;Ljava/lang/Integer;>;
+    MethodParameters:
+      Name                           Flags
+      renderType
+
+  private void removeReady();
+    descriptor: ()V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: iconst_0
+         2: putfield      #199                // Field isReady:Z
+         5: aload_0
+         6: getfield      #78                 // Field typeToSegment:Ljava/util/Map;
+         9: invokeinterface #202,  1          // InterfaceMethod java/util/Map.clear:()V
+        14: aload_0
+        15: getfield      #85                 // Field renderOrder:Ljava/util/List;
+        18: invokeinterface #205,  1          // InterfaceMethod java/util/List.clear:()V
+        23: return
+      LineNumberTable:
+        line 95: 0
+        line 96: 5
+        line 97: 14
+        line 98: 23
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      24     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  public void readyUp();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=9, args_size=1
+         0: aload_0
+         1: iconst_1
+         2: putfield      #199                // Field isReady:Z
+         5: invokestatic  #212                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+         8: invokevirtual #216                // Method net/minecraft/client/Minecraft.m_91307_:()Lnet/minecraft/util/profiling/ProfilerFiller;
+        11: astore_1
+        12: aload_1
+        13: ldc           #218                // String collect
+        15: invokeinterface #224,  2          // InterfaceMethod net/minecraft/util/profiling/ProfilerFiller.m_6180_:(Ljava/lang/String;)V
+        20: aload_0
+        21: getfield      #94                 // Field builders:[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+        24: astore_2
+        25: aload_2
+        26: arraylength
+        27: istore_3
+        28: iconst_0
+        29: istore        4
+        31: iload         4
+        33: iload_3
+        34: if_icmpge     120
+        37: aload_2
+        38: iload         4
+        40: aaload
+        41: astore        5
+        43: aload         5
+        45: invokevirtual #229                // Method net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder.getSegments:()Ljava/util/List;
+        48: astore        6
+        50: aload         6
+        52: invokeinterface #230,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        57: astore        7
+        59: aload         7
+        61: invokeinterface #234,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        66: ifeq          114
+        69: aload         7
+        71: invokeinterface #169,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        76: checkcast     #236                // class net/irisshaders/batchedentityrendering/impl/BufferSegment
+        79: astore        8
+        81: aload_0
+        82: getfield      #78                 // Field typeToSegment:Ljava/util/Map;
+        85: aload         8
+        87: invokevirtual #240                // Method net/irisshaders/batchedentityrendering/impl/BufferSegment.type:()Lnet/minecraft/client/renderer/RenderType;
+        90: invokedynamic #257,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+        95: invokeinterface #261,  3          // InterfaceMethod java/util/Map.computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+       100: checkcast     #204                // class java/util/List
+       103: aload         8
+       105: invokeinterface #265,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       110: pop
+       111: goto          59
+       114: iinc          4, 1
+       117: goto          31
+       120: aload_1
+       121: ldc_w         #267                // String resolve ordering
+       124: invokeinterface #270,  2          // InterfaceMethod net/minecraft/util/profiling/ProfilerFiller.m_6182_:(Ljava/lang/String;)V
+       129: aload_0
+       130: aload_0
+       131: getfield      #90                 // Field renderOrderManager:Lnet/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager;
+       134: invokeinterface #273,  1          // InterfaceMethod net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.getRenderOrder:()Ljava/util/List;
+       139: putfield      #85                 // Field renderOrder:Ljava/util/List;
+       142: aload_0
+       143: getfield      #90                 // Field renderOrderManager:Lnet/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager;
+       146: invokeinterface #276,  1          // InterfaceMethod net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.reset:()V
+       151: aload_0
+       152: getfield      #103                // Field affinities:Ljava/util/LinkedHashMap;
+       155: invokevirtual #277                // Method java/util/LinkedHashMap.clear:()V
+       158: aload_1
+       159: invokeinterface #280,  1          // InterfaceMethod net/minecraft/util/profiling/ProfilerFiller.m_7238_:()V
+       164: return
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 31
+          locals = [ class net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource, class net/minecraft/util/profiling/ProfilerFiller, class "[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;", int, int ]
+          stack = []
+        frame_type = 254 /* append */
+          offset_delta = 27
+          locals = [ class net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder, class java/util/List, class java/util/Iterator ]
+        frame_type = 248 /* chop */
+          offset_delta = 54
+        frame_type = 248 /* chop */
+          offset_delta = 5
+      LineNumberTable:
+        line 101: 0
+        line 103: 5
+        line 105: 12
+        line 107: 20
+        line 108: 43
+        line 110: 50
+        line 111: 81
+        line 112: 111
+        line 107: 114
+        line 115: 120
+        line 117: 129
+        line 119: 142
+        line 120: 151
+        line 122: 158
+        line 123: 164
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           81      30     8 segment   Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;
+           50      64     6 segments   Ljava/util/List;
+           43      71     5 builder   Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+            0     165     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+           12     153     1 profiler   Lnet/minecraft/util/profiling/ProfilerFiller;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+           50      64     6 segments   Ljava/util/List<Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;>;
+
+  public void m_109911_();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=6, args_size=1
+         0: invokestatic  #212                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+         3: invokevirtual #216                // Method net/minecraft/client/Minecraft.m_91307_:()Lnet/minecraft/util/profiling/ProfilerFiller;
+         6: astore_1
+         7: aload_0
+         8: getfield      #199                // Field isReady:Z
+        11: ifne          18
+        14: aload_0
+        15: invokevirtual #291                // Method readyUp:()V
+        18: aload_1
+        19: ldc_w         #293                // String draw buffers
+        22: invokeinterface #224,  2          // InterfaceMethod net/minecraft/util/profiling/ProfilerFiller.m_6180_:(Ljava/lang/String;)V
+        27: aload_0
+        28: getfield      #85                 // Field renderOrder:Ljava/util/List;
+        31: invokeinterface #230,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        36: astore_2
+        37: aload_2
+        38: invokeinterface #234,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        43: ifeq          144
+        46: aload_2
+        47: invokeinterface #169,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        52: checkcast     #134                // class net/minecraft/client/renderer/RenderType
+        55: astore_3
+        56: aload_3
+        57: invokevirtual #296                // Method net/minecraft/client/renderer/RenderType.m_110185_:()V
+        60: aload_0
+        61: dup
+        62: getfield      #298                // Field renderTypes:I
+        65: iconst_1
+        66: iadd
+        67: putfield      #298                // Field renderTypes:I
+        70: aload_0
+        71: getfield      #78                 // Field typeToSegment:Ljava/util/Map;
+        74: aload_3
+        75: invokestatic  #301                // Method java/util/Collections.emptyList:()Ljava/util/List;
+        78: invokeinterface #304,  3          // InterfaceMethod java/util/Map.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        83: checkcast     #204                // class java/util/List
+        86: invokeinterface #230,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        91: astore        4
+        93: aload         4
+        95: invokeinterface #234,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+       100: ifeq          137
+       103: aload         4
+       105: invokeinterface #169,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       110: checkcast     #236                // class net/irisshaders/batchedentityrendering/impl/BufferSegment
+       113: astore        5
+       115: aload_0
+       116: getfield      #110                // Field segmentRenderer:Lnet/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer;
+       119: aload         5
+       121: invokevirtual #308                // Method net/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer.drawInner:(Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;)V
+       124: aload_0
+       125: dup
+       126: getfield      #105                // Field drawCalls:I
+       129: iconst_1
+       130: iadd
+       131: putfield      #105                // Field drawCalls:I
+       134: goto          93
+       137: aload_3
+       138: invokevirtual #311                // Method net/minecraft/client/renderer/RenderType.m_110188_:()V
+       141: goto          37
+       144: aload_1
+       145: ldc_w         #312                // String reset
+       148: invokeinterface #270,  2          // InterfaceMethod net/minecraft/util/profiling/ProfilerFiller.m_6182_:(Ljava/lang/String;)V
+       153: aload_0
+       154: invokevirtual #126                // Method removeReady:()V
+       157: aload_1
+       158: invokeinterface #280,  1          // InterfaceMethod net/minecraft/util/profiling/ProfilerFiller.m_7238_:()V
+       163: return
+      StackMapTable: number_of_entries = 5
+        frame_type = 252 /* append */
+          offset_delta = 18
+          locals = [ class net/minecraft/util/profiling/ProfilerFiller ]
+        frame_type = 252 /* append */
+          offset_delta = 18
+          locals = [ class java/util/Iterator ]
+        frame_type = 253 /* append */
+          offset_delta = 55
+          locals = [ class net/minecraft/client/renderer/RenderType, class java/util/Iterator ]
+        frame_type = 250 /* chop */
+          offset_delta = 43
+        frame_type = 249 /* chop */
+          offset_delta = 6
+      LineNumberTable:
+        line 127: 0
+        line 129: 7
+        line 131: 18
+        line 133: 27
+        line 134: 56
+        line 136: 60
+        line 138: 70
+        line 139: 115
+        line 140: 124
+        line 141: 134
+        line 143: 137
+        line 144: 141
+        line 146: 144
+        line 148: 153
+        line 150: 157
+        line 151: 163
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+          115      19     5 segment   Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;
+           56      85     3  type   Lnet/minecraft/client/renderer/RenderType;
+            0     164     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+            7     157     1 profiler   Lnet/minecraft/util/profiling/ProfilerFiller;
+
+  public void endBatchWithType(net.irisshaders.batchedentityrendering.impl.TransparencyType);
+    descriptor: (Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=8, args_size=2
+         0: invokestatic  #212                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+         3: invokevirtual #216                // Method net/minecraft/client/Minecraft.m_91307_:()Lnet/minecraft/util/profiling/ProfilerFiller;
+         6: astore_2
+         7: aload_0
+         8: getfield      #199                // Field isReady:Z
+        11: ifne          18
+        14: aload_0
+        15: invokevirtual #291                // Method readyUp:()V
+        18: aload_2
+        19: ldc_w         #293                // String draw buffers
+        22: invokeinterface #224,  2          // InterfaceMethod net/minecraft/util/profiling/ProfilerFiller.m_6180_:(Ljava/lang/String;)V
+        27: new           #82                 // class java/util/ArrayList
+        30: dup
+        31: invokespecial #83                 // Method java/util/ArrayList."<init>":()V
+        34: astore_3
+        35: aload_0
+        36: getfield      #85                 // Field renderOrder:Ljava/util/List;
+        39: invokeinterface #230,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        44: astore        4
+        46: aload         4
+        48: invokeinterface #234,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        53: ifeq          197
+        56: aload         4
+        58: invokeinterface #169,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        63: checkcast     #134                // class net/minecraft/client/renderer/RenderType
+        66: astore        5
+        68: aload         5
+        70: checkcast     #317                // class net/irisshaders/batchedentityrendering/impl/BlendingStateHolder
+        73: invokeinterface #321,  1          // InterfaceMethod net/irisshaders/batchedentityrendering/impl/BlendingStateHolder.getTransparencyType:()Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+        78: aload_1
+        79: if_acmpeq     85
+        82: goto          46
+        85: aload_3
+        86: aload         5
+        88: invokeinterface #265,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        93: pop
+        94: aload         5
+        96: invokevirtual #296                // Method net/minecraft/client/renderer/RenderType.m_110185_:()V
+        99: aload_0
+       100: dup
+       101: getfield      #298                // Field renderTypes:I
+       104: iconst_1
+       105: iadd
+       106: putfield      #298                // Field renderTypes:I
+       109: aload_0
+       110: getfield      #78                 // Field typeToSegment:Ljava/util/Map;
+       113: aload         5
+       115: invokestatic  #301                // Method java/util/Collections.emptyList:()Ljava/util/List;
+       118: invokeinterface #304,  3          // InterfaceMethod java/util/Map.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       123: checkcast     #204                // class java/util/List
+       126: invokeinterface #230,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       131: astore        6
+       133: aload         6
+       135: invokeinterface #234,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+       140: ifeq          177
+       143: aload         6
+       145: invokeinterface #169,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       150: checkcast     #236                // class net/irisshaders/batchedentityrendering/impl/BufferSegment
+       153: astore        7
+       155: aload_0
+       156: getfield      #110                // Field segmentRenderer:Lnet/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer;
+       159: aload         7
+       161: invokevirtual #308                // Method net/irisshaders/batchedentityrendering/impl/BufferSegmentRenderer.drawInner:(Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;)V
+       164: aload_0
+       165: dup
+       166: getfield      #105                // Field drawCalls:I
+       169: iconst_1
+       170: iadd
+       171: putfield      #105                // Field drawCalls:I
+       174: goto          133
+       177: aload_0
+       178: getfield      #78                 // Field typeToSegment:Ljava/util/Map;
+       181: aload         5
+       183: invokeinterface #322,  2          // InterfaceMethod java/util/Map.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+       188: pop
+       189: aload         5
+       191: invokevirtual #311                // Method net/minecraft/client/renderer/RenderType.m_110188_:()V
+       194: goto          46
+       197: aload_2
+       198: aload_1
+       199: invokedynamic #334,  0            // InvokeDynamic #1:makeConcatWithConstants:(Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;)Ljava/lang/String;
+       204: invokeinterface #270,  2          // InterfaceMethod net/minecraft/util/profiling/ProfilerFiller.m_6182_:(Ljava/lang/String;)V
+       209: aload_0
+       210: getfield      #85                 // Field renderOrder:Ljava/util/List;
+       213: aload_3
+       214: invokeinterface #338,  2          // InterfaceMethod java/util/List.removeAll:(Ljava/util/Collection;)Z
+       219: pop
+       220: aload_2
+       221: invokeinterface #280,  1          // InterfaceMethod net/minecraft/util/profiling/ProfilerFiller.m_7238_:()V
+       226: return
+      StackMapTable: number_of_entries = 6
+        frame_type = 252 /* append */
+          offset_delta = 18
+          locals = [ class net/minecraft/util/profiling/ProfilerFiller ]
+        frame_type = 253 /* append */
+          offset_delta = 27
+          locals = [ class java/util/List, class java/util/Iterator ]
+        frame_type = 252 /* append */
+          offset_delta = 38
+          locals = [ class net/minecraft/client/renderer/RenderType ]
+        frame_type = 252 /* append */
+          offset_delta = 47
+          locals = [ class java/util/Iterator ]
+        frame_type = 250 /* chop */
+          offset_delta = 43
+        frame_type = 249 /* chop */
+          offset_delta = 19
+      LineNumberTable:
+        line 154: 0
+        line 156: 7
+        line 158: 18
+        line 160: 27
+        line 162: 35
+        line 163: 68
+        line 164: 82
+        line 167: 85
+        line 169: 94
+        line 171: 99
+        line 173: 109
+        line 174: 155
+        line 175: 164
+        line 176: 174
+        line 178: 177
+        line 180: 189
+        line 181: 194
+        line 183: 197
+        line 185: 209
+        line 187: 220
+        line 188: 226
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+          155      19     7 segment   Lnet/irisshaders/batchedentityrendering/impl/BufferSegment;
+           68     126     5  type   Lnet/minecraft/client/renderer/RenderType;
+            0     227     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+            0     227     1 transparencyType   Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+            7     220     2 profiler   Lnet/minecraft/util/profiling/ProfilerFiller;
+           35     192     3 types   Ljava/util/List;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+           35     192     3 types   Ljava/util/List<Lnet/minecraft/client/renderer/RenderType;>;
+    MethodParameters:
+      Name                           Flags
+      transparencyType
+
+  public int getDrawCalls();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #105                // Field drawCalls:I
+         4: ireturn
+      LineNumberTable:
+        line 191: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  public int getRenderTypes();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #298                // Field renderTypes:I
+         4: ireturn
+      LineNumberTable:
+        line 195: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  public void resetDrawCalls();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: iconst_0
+         2: putfield      #105                // Field drawCalls:I
+         5: aload_0
+         6: iconst_0
+         7: putfield      #298                // Field renderTypes:I
+        10: return
+      LineNumberTable:
+        line 199: 0
+        line 200: 5
+        line 201: 10
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  public void m_109912_(net.minecraft.client.renderer.RenderType);
+    descriptor: (Lnet/minecraft/client/renderer/RenderType;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=0, locals=2, args_size=2
+         0: return
+      LineNumberTable:
+        line 206: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       1     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+            0       1     1  type   Lnet/minecraft/client/renderer/RenderType;
+    MethodParameters:
+      Name                           Flags
+      type
+
+  public net.minecraft.client.renderer.MultiBufferSource$BufferSource getUnflushableWrapper();
+    descriptor: ()Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #115                // Field unflushableWrapper:Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper;
+         4: areturn
+      LineNumberTable:
+        line 209: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  public int getAllocatedSize();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=6, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: aload_0
+         3: getfield      #94                 // Field builders:[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+         6: astore_2
+         7: aload_2
+         8: arraylength
+         9: istore_3
+        10: iconst_0
+        11: istore        4
+        13: iload         4
+        15: iload_3
+        16: if_icmpge     39
+        19: aload_2
+        20: iload         4
+        22: aaload
+        23: astore        5
+        25: iload_1
+        26: aload         5
+        28: invokevirtual #349                // Method net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder.getAllocatedSize:()I
+        31: iadd
+        32: istore_1
+        33: iinc          4, 1
+        36: goto          13
+        39: iload_1
+        40: ireturn
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 13
+          locals = [ class net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource, int, class "[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;", int, int ]
+          stack = []
+        frame_type = 248 /* chop */
+          offset_delta = 25
+      LineNumberTable:
+        line 214: 0
+        line 216: 2
+        line 217: 25
+        line 216: 33
+        line 220: 39
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           25       8     5 builder   Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+            0      41     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+            2      39     1  size   I
+
+  public int getUsedSize();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=6, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: aload_0
+         3: getfield      #94                 // Field builders:[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+         6: astore_2
+         7: aload_2
+         8: arraylength
+         9: istore_3
+        10: iconst_0
+        11: istore        4
+        13: iload         4
+        15: iload_3
+        16: if_icmpge     39
+        19: aload_2
+        20: iload         4
+        22: aaload
+        23: astore        5
+        25: iload_1
+        26: aload         5
+        28: invokevirtual #352                // Method net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder.getUsedSize:()I
+        31: iadd
+        32: istore_1
+        33: iinc          4, 1
+        36: goto          13
+        39: iload_1
+        40: ireturn
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 13
+          locals = [ class net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource, int, class "[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;", int, int ]
+          stack = []
+        frame_type = 248 /* chop */
+          offset_delta = 25
+      LineNumberTable:
+        line 225: 0
+        line 227: 2
+        line 228: 25
+        line 227: 33
+        line 231: 39
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           25       8     5 builder   Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+            0      41     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+            2      39     1  size   I
+
+  public void freeAndDeleteBuffer();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=5, args_size=1
+         0: aload_0
+         1: getfield      #94                 // Field builders:[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+         4: astore_1
+         5: aload_1
+         6: arraylength
+         7: istore_2
+         8: iconst_0
+         9: istore_3
+        10: iload_3
+        11: iload_2
+        12: if_icmpge     31
+        15: aload_1
+        16: iload_3
+        17: aaload
+        18: astore        4
+        20: aload         4
+        22: invokevirtual #355                // Method net/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder.freeAndDeleteBuffer:()V
+        25: iinc          3, 1
+        28: goto          10
+        31: return
+      StackMapTable: number_of_entries = 2
+        frame_type = 254 /* append */
+          offset_delta = 10
+          locals = [ class "[Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;", int, int ]
+        frame_type = 248 /* chop */
+          offset_delta = 20
+      LineNumberTable:
+        line 236: 0
+        line 237: 20
+        line 236: 25
+        line 239: 31
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           20       5     4 builder   Lnet/irisshaders/batchedentityrendering/impl/SegmentedBufferBuilder;
+            0      32     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  public void startGroup();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #90                 // Field renderOrderManager:Lnet/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager;
+         4: invokeinterface #358,  1          // InterfaceMethod net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.startGroup:()V
+         9: return
+      LineNumberTable:
+        line 243: 0
+        line 244: 9
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  public boolean maybeStartGroup();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #90                 // Field renderOrderManager:Lnet/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager;
+         4: invokeinterface #361,  1          // InterfaceMethod net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.maybeStartGroup:()Z
+         9: ireturn
+      LineNumberTable:
+        line 248: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  public void endGroup();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #90                 // Field renderOrderManager:Lnet/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager;
+         4: invokeinterface #364,  1          // InterfaceMethod net/irisshaders/batchedentityrendering/impl/ordering/RenderOrderManager.endGroup:()V
+         9: return
+      LineNumberTable:
+        line 253: 0
+        line 254: 9
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  public void pushWrappingFunction(java.util.function.Function<net.minecraft.client.renderer.RenderType, net.minecraft.client.renderer.RenderType>);
+    descriptor: (Ljava/util/function/Function;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #80                 // Field wrappingFunction:Ljava/util/function/Function;
+         4: ifnull        21
+         7: aload_0
+         8: getfield      #117                // Field wrappingFunctionStack:Ljava/util/List;
+        11: aload_0
+        12: getfield      #80                 // Field wrappingFunction:Ljava/util/function/Function;
+        15: invokeinterface #265,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        20: pop
+        21: aload_0
+        22: aload_1
+        23: putfield      #80                 // Field wrappingFunction:Ljava/util/function/Function;
+        26: return
+      StackMapTable: number_of_entries = 1
+        frame_type = 21 /* same */
+      LineNumberTable:
+        line 258: 0
+        line 259: 7
+        line 262: 21
+        line 263: 26
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      27     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+            0      27     1 wrappingFunction   Ljava/util/function/Function;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0      27     1 wrappingFunction   Ljava/util/function/Function<Lnet/minecraft/client/renderer/RenderType;Lnet/minecraft/client/renderer/RenderType;>;
+    Signature: #367                         // (Ljava/util/function/Function<Lnet/minecraft/client/renderer/RenderType;Lnet/minecraft/client/renderer/RenderType;>;)V
+    MethodParameters:
+      Name                           Flags
+      wrappingFunction
+
+  public void popWrappingFunction();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #117                // Field wrappingFunctionStack:Ljava/util/List;
+         4: invokeinterface #371,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+         9: ifeq          20
+        12: aload_0
+        13: aconst_null
+        14: putfield      #80                 // Field wrappingFunction:Ljava/util/function/Function;
+        17: goto          47
+        20: aload_0
+        21: aload_0
+        22: getfield      #117                // Field wrappingFunctionStack:Ljava/util/List;
+        25: aload_0
+        26: getfield      #117                // Field wrappingFunctionStack:Ljava/util/List;
+        29: invokeinterface #372,  1          // InterfaceMethod java/util/List.size:()I
+        34: iconst_1
+        35: isub
+        36: invokeinterface #375,  2          // InterfaceMethod java/util/List.remove:(I)Ljava/lang/Object;
+        41: checkcast     #128                // class java/util/function/Function
+        44: putfield      #80                 // Field wrappingFunction:Ljava/util/function/Function;
+        47: return
+      StackMapTable: number_of_entries = 2
+        frame_type = 20 /* same */
+        frame_type = 26 /* same */
+      LineNumberTable:
+        line 267: 0
+        line 268: 12
+        line 270: 20
+        line 272: 47
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      48     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  public void assertWrapStackEmpty();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #117                // Field wrappingFunctionStack:Ljava/util/List;
+         4: invokeinterface #371,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+         9: ifeq          19
+        12: aload_0
+        13: getfield      #80                 // Field wrappingFunction:Ljava/util/function/Function;
+        16: ifnull        30
+        19: new           #378                // class java/lang/IllegalStateException
+        22: dup
+        23: ldc_w         #380                // String Wrapping function stack not empty!
+        26: invokespecial #382                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+        29: athrow
+        30: return
+      StackMapTable: number_of_entries = 2
+        frame_type = 19 /* same */
+        frame_type = 10 /* same */
+      LineNumberTable:
+        line 276: 0
+        line 277: 19
+        line 279: 30
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      31     0  this   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+
+  private static java.util.List lambda$readyUp$0(net.minecraft.client.renderer.RenderType);
+    descriptor: (Lnet/minecraft/client/renderer/RenderType;)Ljava/util/List;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: new           #82                 // class java/util/ArrayList
+         3: dup
+         4: invokespecial #83                 // Method java/util/ArrayList."<init>":()V
+         7: areturn
+      LineNumberTable:
+        line 111: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0  type   Lnet/minecraft/client/renderer/RenderType;
+    MethodParameters:
+      Name                           Flags
+      type
+}
+InnerClasses:
+  public static #16= #4 of #15;           // BufferSource=class net/minecraft/client/renderer/MultiBufferSource$BufferSource of class net/minecraft/client/renderer/MultiBufferSource
+  private static #17= #13 of #2;          // UnflushableWrapper=class net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper of class net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource
+  public static #22= #19 of #21;          // Entry=class java/util/Map$Entry of class java/util/Map
+  public static final #27= #24 of #26;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+SourceFile: "FullyBufferedMultiBufferSource.java"
+BootstrapMethods:
+  0: #254 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #241 (Ljava/lang/Object;)Ljava/lang/Object;
+      #246 REF_invokeStatic net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.lambda$readyUp$0:(Lnet/minecraft/client/renderer/RenderType;)Ljava/util/List;
+      #247 (Lnet/minecraft/client/renderer/RenderType;)Ljava/util/List;
+  1: #331 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #324 reset type \u0001
+NestMembers:
+  net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource$UnflushableWrapper

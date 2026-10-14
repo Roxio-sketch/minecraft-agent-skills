@@ -1,0 +1,34 @@
+{
+  "performance": {
+    "native": {
+      "cases": 9,
+      "beforeMs": [
+        83.012608,
+        86.27712
+      ],
+      "afterMs": [
+        11.016192,
+        11.484672
+      ],
+      "fieldDifference": 0,
+      "captures": 11
+    },
+    "solas": {
+      "cases": 9,
+      "beforeMs": [
+        83.029504,
+        85.993472
+      ],
+      "afterMs": [
+        11.056640000000002,
+        11.473919999999998
+      ],
+      "fieldDifference": 0,
+      "captures": 11
+    }
+  },
+  "flightChecks": 6,
+  "anvilCaptures": 9,
+  "build": "PASS",
+  "installedSha256": "34AEFFF4E652539CDA135ED842DE8B47D29C50E30F3B99B628352DED9D083FB3"
+}

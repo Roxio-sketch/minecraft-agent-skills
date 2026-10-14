@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-04",
+  "build": "passed",
+  "blackHoleCheck": "passed: recipe defaults, outer radius 8, frozen time, pause/resume, form reset",
+  "jarSha256": "11385EBE3A0CB66C7C236F90D2EA56C37BD889E62093EB6F5BCF372346F83BF6",
+  "sourceRecipeSha256": "8E79D783DE4EA1F725AACB73E03BECC82176C9F511C47D0FC373C605A9428666",
+  "bundledRecipeSha256": "8E79D783DE4EA1F725AACB73E03BECC82176C9F511C47D0FC373C605A9428666",
+  "defaultRecipeWorldVisualVerified": false,
+  "previousFiveFormRuntimeEvidence": "validation-before-default-recipe.json"
+}

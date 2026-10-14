@@ -1,0 +1,167 @@
+[
+  {
+    "title": "Unreal Engine Lightning Hit Tutorial",
+    "url": "https://cghow.com/unreal-engine-lightning-hit-tutorial/amp/",
+    "author": "Ashif Ali",
+    "platform": "CGHOW / Unreal Engine",
+    "kind": "教程",
+    "category": "雷劫 / 落雷 / 击地",
+    "learn": "学习落雷主体、碰撞火花、地面光圈与烟的分层，以及随机旋转、缩放和光强。可作为雷劫单次击地的参考；雷云与多次蓄势需要另做。",
+    "license": "作者公开教程；未确认项目或贴图的再分发许可证，不能据此直接打包复用。",
+    "evidence": "2026-10-13 已读取作者 AMP 页面标题、作者和 Key Elements 正文；普通页面返回 429。未完整观看视频、未下载项目或游戏验证。"
+  },
+  {
+    "title": "Electric Projectile in Unreal Engine 5.4 Niagara Tutorial",
+    "url": "https://cghow.com/electric-projectile-in-unreal-engine-5-4-niagara-tutorial-download-files/",
+    "author": "Ashif Ali",
+    "platform": "CGHOW / UE5.4 Niagara",
+    "kind": "教程",
+    "category": "雷法 / 雷弹 / 电弧材质",
+    "learn": "学习 UV 条纹生成电弧亮核、Power 调整发光和噪声扰动 UV；正文用低分辨率噪声产生尖折电弧。适合雷弹或武器表面的细电流。",
+    "license": "作者公开教程；项目下载入口另列，未下载，未确认资产复用许可证。",
+    "evidence": "2026-10-13 搜索工具返回作者原页的标题、作者和材质步骤正文；直接打开返回 429。仅核查网页文本，未完整看视频。"
+  },
+  {
+    "title": "UE4 Niagara Spline based Lightning",
+    "url": "https://cghow.com/ue4-niagara-spline-based-lightning/",
+    "author": "Ashif Ali",
+    "platform": "CGHOW / UE4 Niagara",
+    "kind": "教程",
+    "category": "雷法 / 路径闪电 / 缠绕电流",
+    "learn": "作者明确采用样条控制闪电形状。学习把路径形状与闪电扰动分开；迁移提案是用样条提供缠绕骨架，再单独控制电弧宽度与闪烁。页面正文没有完整算法代码。",
+    "license": "公开作者教程；未确认项目源码或贴图许可证。",
+    "evidence": "2026-10-13 已打开作者原页，确认标题、作者和基于样条可设任意形状的正文说明。未完整观看视频或核查工程。"
+  },
+  {
+    "title": "Ice Attac FX in Unreal Engine 5.1 Niagara",
+    "url": "https://cghow.com/ice-attac-fx-in-unreal-engine-5-1-niagara/",
+    "author": "Ashif Ali",
+    "platform": "CGHOW / UE5.1 Niagara",
+    "kind": "教程",
+    "category": "冰系 / 冰锥 / 冰封冲击",
+    "learn": "学习参数化冰锥数量、主次冰锥、随机大小旋转、霜材质溶解、冲击环、SubUV 烟与雪花。可把成排冰锥改为寒莲外围冰瓣，但寒莲造型是后续设计提案。",
+    "license": "作者公开教程；工程另有 Patreon 入口，未下载，未确认复用权限。",
+    "evidence": "2026-10-13 已打开作者原页，并读取搜索工具提供的 Dynamic Icicle Creation、Mesh and Materials、Particle System Setup 等正文。未完整看视频。"
+  },
+  {
+    "title": "Ice Portal, Houdini and Niagara Forever",
+    "url": "https://realtimevfx.com/t/ice-portal-houdini-and-niagara-forever/29338",
+    "author": "Ivan Ostanin / UnitFX",
+    "platform": "Real Time VFX / Houdini / Niagara",
+    "kind": "拆解",
+    "category": "冰系 / 冰传送门 / 冻结领域",
+    "learn": "学习双颜色参数、Sine/Cosine 扭转 UV、视差、单引导粒子加 Attribute Reader 的二次发射、阻力稳定运动，以及修改 LineAttraction 改善旋涡控制。另有 Houdini 冰石、开启与消失阶段。",
+    "license": "作者公开 WIP 和图解；噪声取自作者已有素材库，未确认噪声资产或工程的再利用许可证。",
+    "evidence": "2026-10-13 已读取作者原帖多次更新及方法说明；作者 ArtStation 原页确认 Ivan Ostanin 并链接该帖。没有下载素材或完整逐帧观看视频。"
+  },
+  {
+    "title": "RodyMuijrers: Sketch #22 — Seven Black & White Portals",
+    "url": "https://realtimevfx.com/t/rodymuijrers-sketch-22/8663",
+    "author": "Rody Muijrers",
+    "platform": "Real Time VFX / Unity",
+    "kind": "拆解",
+    "category": "空间 / 传送门 / 裂隙 / 虚空",
+    "learn": "七种方案覆盖伪视差、折叠 UV、双旋转中心、噪声边界、弯曲带状网格、Stencil 瀑布窗口与折射膜。适合空间裂隙与洞天入口；作者明确伪视差方案有视角限制，部分重复网格方案成本较高。",
+    "license": "作者公开图解；未发现代码或贴图复用许可证。",
+    "evidence": "2026-10-13 已读取作者完整主帖、Portal 1–7 方法和后续视角限制答复；没有把嵌入视频当成完整观看。"
+  },
+  {
+    "title": "NickR: Sketch #35 — Refractive Teleport",
+    "url": "https://realtimevfx.com/t/nickr-sketch-35/12903",
+    "author": "NickR",
+    "platform": "Real Time VFX / Maya / Unreal Engine",
+    "kind": "拆解",
+    "category": "遁术 / 瞬移 / 折射残影",
+    "learn": "作者用 Maya 流体驱动粒子产生触须序列，分开前后各 64 帧用于出入场，并计划导出法线贴图做折射；角色快速溶解和随机目标旁瞬移由 Blueprint 编排。适合学习进出场配对与遁术节奏。",
+    "license": "公开作者 WIP；提及外部动画和流体生成资产，未确认工程或序列图复用许可。",
+    "evidence": "2026-10-13 已读取作者原帖的序列制作、Blueprint 和 erosion 更新。未下载或完整观看演示。"
+  },
+  {
+    "title": "Heal Spell in UE5 Niagara Tutorial",
+    "url": "https://cghow.com/heal-spell-in-ue5-niagara-tutorial/",
+    "author": "Ashif Ali",
+    "platform": "CGHOW / UE5 Niagara",
+    "kind": "教程",
+    "category": "治疗 / 灵气旋流 / 回春",
+    "learn": "学习扭转细长网格、滚动材质、UV 边缘淡出、不同尺度螺旋发射器、涡旋粒子和发光核心。可将旋流改为回春或护体灵气，莲花几何需要另做。",
+    "license": "公开教程；工程在 Gumroad / ArtStation 另售，未下载，未确认工程资产复用条款。",
+    "evidence": "2026-10-13 已读取作者正文与章节时间：0:50 Spiral Mesh、2:52 Spiral Material、16:36 Particle Vortex、20:44 Core Spiral。未完整观看视频。"
+  },
+  {
+    "title": "[Breakdown] Stylized Energy Beam",
+    "url": "https://realtimevfx.com/t/breakdown-stylized-energy-beam/21866",
+    "author": "fabriciohoddev",
+    "platform": "Real Time VFX / Unity VFX Graph",
+    "kind": "拆解",
+    "category": "能量束 / 聚气 / 星阵爆发",
+    "learn": "学习聚气、蓄力、法环、光束与爆发的时间线同步；圆柱 BlendShape 开合、顶点色遮罩端点、双层 Alpha Clip 光束、星形 Point Cache 和 Vortex 聚拢。作者说明是课堂临摹，原作另链。",
+    "license": "公开图解；使用外部噪声包，未确认工程与素材许可，不能直接当免费源码。",
+    "evidence": "2026-10-13 已读取作者原帖 Initial Burst、Charge、Circles、Beam、Timeline 等拆解段落及归因。未完整观看动画或运行工程。"
+  },
+  {
+    "title": "Step by Step VFX Breakdown — Pulse Cannon Effect",
+    "url": "https://realtimevfx.com/t/step-by-step-vfx-breakdown-pulse-cannon-effect/3161",
+    "author": "Atif",
+    "platform": "Real Time VFX / Fork Particle",
+    "kind": "拆解",
+    "category": "能量束 / 蓄力 / 冲击波",
+    "learn": "18 个发射器按聚能、释放、光束分组：球面向心光线、旋转消散雾、冲击环、双透明度束和 UV 流动束。适合学习主次层与蓄力释放逻辑；不应在 Minecraft 原样复制所有发射器数量。",
+    "license": "公开作者拆解；未确认素材或工程再利用许可。",
+    "evidence": "2026-10-13 搜索工具读取原帖作者、正文和分层说明，未下载、完整看视频或做游戏性能验证。"
+  },
+  {
+    "title": "Create a Bubble Shield VFX in UE5 Niagara!",
+    "url": "https://cghow.com/create-a-bubble-shield-vfx-in-ue5-niagara-character-defense-multi-layer-bubbles-%F0%9F%9B%A1%EF%B8%8F/",
+    "author": "Ashif Ali",
+    "platform": "CGHOW / UE5 Niagara",
+    "kind": "教程",
+    "category": "护罩 / 结界 / 水幕护体",
+    "learn": "学习主体气泡壳、周围小气泡和接地光环三层，控制光泽、折射、颜色与脉动。适合水幕护体和圆形结界；屏幕折射与透明排序需在 Minecraft 单独适配。",
+    "license": "公开作者教程；依赖之前的气泡材质，未确认项目或贴图许可证。",
+    "evidence": "2026-10-13 已打开作者原页并读取 Main Bubble、Ambient Bubbles、Ground Interaction 方法。未完整观看视频。"
+  },
+  {
+    "title": "Poison Effect | Unreal Engine Niagara Tutorial",
+    "url": "https://cghow.com/poison-effect/",
+    "author": "Ashif Ali",
+    "platform": "CGHOW / Unreal Engine Niagara",
+    "kind": "教程",
+    "category": "毒系 / 毒域 / 腐蚀烟雾",
+    "learn": "学习毒液地面 Decal、向上烟柱、气泡快速缩放破裂、烟卡噪声扭曲和旋涡运动。能扩展成毒瘴阵或丹毒外泄；带颜色的烟雾与屏幕畸变要作为独立层控制。",
+    "license": "公开作者教程；未确认素材或工程的复用许可。",
+    "evidence": "2026-10-13 搜索工具返回原页标题、作者和 Decal、emitters、material control 正文；未完整观看视频或核查项目文件。"
+  },
+  {
+    "title": "Recreated a fan made version of Nami's Ultimate from League of Legends",
+    "url": "https://realtimevfx.com/t/recreated-a-fan-made-version-of-namis-ultimate-from-league-of-legends-and-made-a-tutorial-too/21502",
+    "author": "Gabriel Aguiar",
+    "platform": "Real Time VFX / Unity",
+    "kind": "教程",
+    "category": "水系 / 巨浪 / 水墙冲击",
+    "learn": "作者教程明确覆盖风格化水纹理和水材质，并临摹娜美大招。适合水墙、潮汐冲击和水系技能视觉基础；原帖没有逐节点文字方法，具体网格与运动实现尚需学习完整视频。",
+    "license": "作者公开教程入口；基于游戏技能的 fan art，未确认工程、纹理或原作设计复用权限。",
+    "evidence": "2026-10-13 已打开作者原帖，确认作者和其明确说明的纹理/材质学习内容。未完整观看视频，未推断未公开实现。"
+  },
+  {
+    "title": "Master Dynamic Environments & FX Part 1 — Complex Wooden Portal",
+    "url": "https://www.sidefx.com/ja/tutorials/master-dynamic-environments-fx-in-ue5-houdini-part-1/",
+    "author": "Cosku Turhan / CGCircuit",
+    "platform": "SideFX 作者课程入口 / Houdini 20 / UE5",
+    "kind": "教程",
+    "category": "木系 / 藤蔓生长 / 木门 / 束缚",
+    "learn": "付费课程介绍明确包括 POP 藤蔓生长、复杂几何、VAT 导出、Niagara 粒子烟和 Sequencer。适合作为木系生长动画的高级路线；VAT 可预烘焙运动，但不是直接可导入的 Minecraft 特效。",
+    "license": "付费课程；页面说明此部分仅附 Wooden Portal Houdini 项目，不附完整 Unreal 项目。未购买下载，未确认素材复用条款。",
+    "evidence": "2026-10-13 已读取 SideFX 课程原始介绍、作者、Main Takeaways、费用和 Example Files 范围。没有学习付费课程内部或运行工程。"
+  },
+  {
+    "title": "Meteor Rain with Unity VFX Graph — Trigger Events and Trails",
+    "url": "https://realtimevfx.com/t/meteor-rain-with-unity-vfx-graph-trigger-events-and-trails/18165",
+    "author": "Gabriel Aguiar",
+    "platform": "Real Time VFX / Unity VFX Graph",
+    "kind": "教程",
+    "category": "陨石 / 天火坠落 / 群体轰击",
+    "learn": "原帖明确用 Trigger Events 与 Trails 组织陨石雨及各自撞击。适合学习飞行、拖尾、击地的事件连接；具体碰撞和发射参数未从原帖文字核查，后续需学习完整教程。",
+    "license": "作者公开教程入口；未确认项目或素材复用许可证。",
+    "evidence": "2026-10-13 已打开作者原帖，核查标题、作者与事件/拖尾/撞击的明确描述；未完整观看视频、下载或游戏验证。"
+  }
+]

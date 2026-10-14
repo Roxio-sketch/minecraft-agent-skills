@@ -1,0 +1,68 @@
+{
+  "authority": "host weapon_flames coreColor/bodyColor/edgeColor, not SpiritFirePalette base swatches",
+  "palettes": [
+    {
+      "id": "slot1",
+      "hostId": "red_flow",
+      "name": "赤炎流火",
+      "source": "E:\\五行仙途\\src\\main\\resources\\assets\\wuxingxiantu\\weapon_flames\\red_flow.json",
+      "sha256": "1164ddb277edaeeab6aa52dafa680daf6810c01dc99fecdf2ea8812be9d779a1"
+    },
+    {
+      "id": "slot2",
+      "hostId": "molten_gold",
+      "name": "熔金淬火",
+      "source": "E:\\五行仙途\\src\\main\\resources\\assets\\wuxingxiantu\\weapon_flames\\molten_gold.json",
+      "sha256": "d34afec48a3ec4c39d837f1dd759fe042714caab032e243fc4da467b0634b936"
+    },
+    {
+      "id": "slot3",
+      "hostId": "cold_ash",
+      "name": "枯骨冷火",
+      "source": "E:\\五行仙途\\src\\main\\resources\\assets\\wuxingxiantu\\weapon_flames\\cold_ash.json",
+      "sha256": "bf0ff2d3bd2ee9c6ed8a5406576df12570f439a0e639f0cfca37270e6a6b54e1"
+    },
+    {
+      "id": "slot4",
+      "hostId": "azure_wood",
+      "name": "青木灵火",
+      "source": "E:\\五行仙途\\src\\main\\resources\\assets\\wuxingxiantu\\weapon_flames\\azure_wood.json",
+      "sha256": "2e65b2275d328869e70fa0a58f5c5739970ac9a2d26e731184d53072dc9c33bc"
+    },
+    {
+      "id": "slot5",
+      "hostId": "cobalt_sea",
+      "name": "碧海沧火",
+      "source": "E:\\五行仙途\\src\\main\\resources\\assets\\wuxingxiantu\\weapon_flames\\cobalt_sea.json",
+      "sha256": "b5bfa97742455af1fb4ad9f0a39e165000ab5b4e82631b7f117b093fc7ac358f"
+    },
+    {
+      "id": "slot6",
+      "hostId": "violet_thunder",
+      "name": "紫霄雷火",
+      "source": "E:\\五行仙途\\src\\main\\resources\\assets\\wuxingxiantu\\weapon_flames\\violet_thunder.json",
+      "sha256": "2e5d1405be97ec4b95323214fc37a9b02d35f0a7ec794313b4d4295afe8df23b"
+    },
+    {
+      "id": "slot7",
+      "hostId": "sun_saint",
+      "name": "大日圣火",
+      "source": "E:\\五行仙途\\src\\main\\resources\\assets\\wuxingxiantu\\weapon_flames\\sun_saint.json",
+      "sha256": "4c2f29ada5c59d5104fdb397d53d48f9fdedf31495ac0dd157f4cebfb9bd70e1"
+    },
+    {
+      "id": "slot8",
+      "hostId": "nether_void",
+      "name": "九幽冥火",
+      "source": "E:\\五行仙途\\src\\main\\resources\\assets\\wuxingxiantu\\weapon_flames\\nether_void.json",
+      "sha256": "e8664075e1d41f5d2343cfe220c7d3e2841a41ef9808930365bc97e7d7abd13a"
+    },
+    {
+      "id": "slot9",
+      "hostId": "nirvana",
+      "name": "涅槃神火",
+      "source": "E:\\五行仙途\\src\\main\\resources\\assets\\wuxingxiantu\\weapon_flames\\nirvana.json",
+      "sha256": "355ace07fa6a24fb78a39f873e0884352444d2d01b4e0ab47c181f2e1505f0cb"
+    }
+  ]
+}

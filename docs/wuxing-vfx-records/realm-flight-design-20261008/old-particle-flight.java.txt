@@ -1,0 +1,85 @@
+package cn.blockforge.generated.generatedmod.client.realmflight;
+
+import cn.blockforge.generated.generatedmod.GeneratedMod;
+import cn.blockforge.generated.generatedmod.client.arts.ArtMaterialParticle;
+import cn.blockforge.generated.generatedmod.realmflight.*;
+import net.minecraft.client.Minecraft;
+import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import java.util.*;
+
+/** Fixed-tick real-path silk and library sprites on the existing translucent particle pass. */
+@Mod.EventBusSubscriber(modid=GeneratedMod.MOD_ID,value=Dist.CLIENT)
+public final class RealmFlightEffects {
+    private static final Map<UUID,Flight> FLIGHTS=new LinkedHashMap<>();
+    private static net.minecraft.client.multiplayer.ClientLevel world;
+    private static long clock;
+    private static final PriorityQueue<Long> EXPIRY=new PriorityQueue<>();
+    private static final class Flight {
+        RealmFlightVisualPacket state;Vec3 previous;boolean active,boost;int fade;
+        final PriorityQueue<Long> expiry=new PriorityQueue<>();
+        Flight(RealmFlightVisualPacket state){this.state=state;}
+    }
+    private static void checkWorld(){var current=Minecraft.getInstance().level;if(world!=current){world=current;FLIGHTS.clear();EXPIRY.clear();clock=0;}}
+    public static void accept(RealmFlightVisualPacket p){
+        checkWorld();if(world==null||p.realm()<3||p.realm()>8||p.stage()>3)return;
+        if(!FLIGHTS.containsKey(p.player())&&FLIGHTS.size()>=32)return;
+        FLIGHTS.computeIfAbsent(p.player(),k->new Flight(p)).state=p;
+    }
+    private static int total(){int n=0;for(var f:FLIGHTS.values())n+=f.expiry.size();return n;}
+    private static void spawn(Flight f,String material,Vec3 at,Vec3 velocity,double width,double height,int life,int color,boolean ground,Vec3 axis,float roll){
+        if(f.expiry.size()>=100||EXPIRY.size()>=1200)return;
+        ArtMaterialParticle.spawn(world,material,at,velocity,width,height,life,color,ground,axis,roll);f.expiry.add(clock+Math.max(4,life));EXPIRY.add(clock+Math.max(4,life));
+    }
+    private static void pulse(Flight f,Vec3 at,int color,boolean first){
+        if(first)return;
+        for(int i=0;i<16;i++){double a=i*Math.PI/8;Vec3 radial=new Vec3(Math.cos(a),0,Math.sin(a));spawn(f,"spark_soft",at.add(radial.scale(.35)),radial.scale(.045).add(0,.02,0),.09,.09,10,color,false,Vec3.ZERO,0);}
+        spawn(f,"lens_crescent",at,Vec3.ZERO,1,1,8,color,true,Vec3.ZERO,0);
+    }
+    @SubscribeEvent public static void tick(TickEvent.ClientTickEvent e){
+        if(e.phase!=TickEvent.Phase.END)return;var mc=Minecraft.getInstance();checkWorld();if(world==null||mc.player==null||mc.isPaused())return;clock++;
+        while(!EXPIRY.isEmpty()&&EXPIRY.peek()<=clock)EXPIRY.poll();
+        for(var it=FLIGHTS.entrySet().iterator();it.hasNext();){var entry=it.next();var f=entry.getValue();
+            while(!f.expiry.isEmpty()&&f.expiry.peek()<=clock)f.expiry.poll();
+            var p=world.getPlayerByUUID(entry.getKey());if(p==null){it.remove();continue;}
+            boolean first=p==mc.player&&mc.options.getCameraType().isFirstPerson();
+            boolean active=f.state.active()&&p.isAlive()&&!p.isPassenger()&&!p.isSpectator()&&!p.isInWater();
+            Vec3 at=p.position().add(0,.12,0);double distance=p.distanceToSqr(mc.player);
+            if(distance>16384){f.previous=at;continue;}
+            int realm=f.state.realm(),color=f.state.ghost()?0xB7A1EE:realm>=8?0xEAF6DC:0x91E4EF;
+            if(active&&!f.active)pulse(f,at,color,first);
+            if(!active&&f.active){pulse(f,at,color,first);f.fade=8;}
+            if(active&&f.state.boost()&&!f.boost)pulse(f,at,color,first);
+            f.boost=f.state.boost();f.active=active;
+            if(!active){f.previous=null;if(f.fade--<=0&&f.expiry.isEmpty())it.remove();continue;}
+            Vec3 delta=f.previous==null?Vec3.ZERO:at.subtract(f.previous);double moved=delta.length();
+            int stride=distance>4096?4:distance>1024?2:1;
+            if(moved>4*stride){f.previous=at;continue;} // Teleport, dimension or corrective jump: break the trail.
+            if(clock%stride!=0){continue;}
+            boolean moving=moved>.025;int strands=distance>4096?1:realm>=6?3:2;
+            double yaw=Math.toRadians(p.getYRot());Vec3 side=new Vec3(Math.cos(yaw),0,Math.sin(yaw));
+            if(moving){
+                int pieces=Math.min(8,Math.max(1,(int)Math.ceil(moved/.35)));Vec3 axis=delta.normalize();
+                double length=(realm-1)*(f.state.boost()?1.15:1);int life=Math.max(4,Math.min(20,(int)Math.ceil(length/Math.max(.1,moved))));
+                for(int j=0;j<pieces;j++)for(int k=0;k<strands;k++){
+                    double t=(j+.5)/pieces,phase=(clock-t)*.28+k*Math.PI*2/strands;
+                    double offset=strands==2?(k==0?-.28:.28):Math.cos(phase)*.38;
+                    Vec3 point=f.previous.add(delta.scale(t)).add(side.scale(offset)).add(0,.3+(realm>=6?Math.sin(phase)*.15:0),0);
+                    spawn(f,"wind_streak",point,Vec3.ZERO,.06,moved/pieces+.1,life,k==2&&realm>=7?0xEBD193:color,false,axis,0);
+                }
+                if(distance<4096&&clock%4==0)spawn(f,realm>=7?"prism_glint":"spark_soft",at.add(side.scale(.4)),new Vec3(0,.02,0),.09,.13,14,color,false,Vec3.ZERO,0);
+            } else if(!first&&distance<4096){
+                double a=clock*.13;Vec3 orbit=at.add(Math.cos(a)*.4,.05,Math.sin(a)*.4);
+                spawn(f,"spark_soft",orbit,new Vec3(0,.025,0),.075,.12,12,color,false,Vec3.ZERO,0);
+                if(clock%8==0)spawn(f,"wind_curl",at,Vec3.ZERO,.75,.75,10,color,true,Vec3.ZERO,(float)a);
+            }
+            if(!first&&distance<1024&&realm>=5&&clock%12==0)spawn(f,"meridian_knot",at.add(side.scale(.48)),new Vec3(0,.025,0),.13,.2,16,color,false,Vec3.ZERO,(float)(clock*.03));
+            if(!first&&realm>=8&&distance<1024&&clock%40==0)spawn(f,"ruyi_cloud",at,Vec3.ZERO,.9,.35,12,color,true,Vec3.ZERO,0);
+            f.previous=at;
+        }
+    }
+    private RealmFlightEffects(){}
+}

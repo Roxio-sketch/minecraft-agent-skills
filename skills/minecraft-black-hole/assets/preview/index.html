@@ -6,8 +6,8 @@
 </style>
 <header><h1>黑洞材质工作台</h1><span>v3.2 · 2026.10.03</span></header>
 <main><section><canvas id="scene" width="960" height="600" aria-label="黑洞实时材质"></canvas><p class="note">拖动旋转视角，鼠标滚轮拉近或拉远。</p><div class="small"><canvas id="small16" width="16" height="16"></canvas><span>16 px</span><canvas id="small32" width="32" height="32"></canvas><span>32 px</span></div><p id="status" class="note">正在编译…</p><div class="actions"><button id="play">播放</button><button id="reset">恢复配方视角</button><button id="random">随机方案</button><button id="export">导出配方</button><button id="capture">保存画面</button></div></section>
- <aside><label>主配方<select id="recipe"></select></label><p class="note">主配方按四类盘面算法整理；颜色、光圈、渐变和粒子强度请直接在右侧调整。旧链接与导入的兼容变体会保留为隐藏选项。世界配方中的尺寸、放置距离和玩家透镜选项会保留并随配方重导。</p><label>视图<select id="mode"><option value="scene">内部空间</option><option value="blade">剑刃窗口</option></select></label>
-<label>盘面结构<select id="diskStyle"><option value="cinematic">宽窄光带</option><option value="dust">透镜尘埃</option><option value="ribbons">基础光带</option><option value="granular">颗粒吸积盘</option><option value="classic">经典条带</option></select></label>
+ <aside><label>主配方<select id="recipe"></select></label><p class="note">主配方按三类盘面算法整理；颜色、光圈、渐变和粒子强度请直接在右侧调整。旧链接与导入的兼容变体会保留为隐藏选项。世界配方中的尺寸、放置距离和玩家透镜选项会保留并随配方重导。</p><label>视图<select id="mode"><option value="scene">内部空间</option><option value="blade">剑刃窗口</option></select></label>
+<label>盘面结构<select id="diskStyle"><option value="dust">透镜尘埃</option><option value="ribbons">基础光带</option><option value="granular">颗粒吸积盘</option><option value="classic">经典条带</option></select></label>
 <label>背景<select id="backgroundStyle"><option value="nebula">弥散星云</option><option value="stars">稀疏星点</option><option value="black">纯黑</option></select></label>
 <label>检查画面<select id="diagnostic"><option value="0">完整合成</option><option value="2">仅盘面与核心</option><option value="3">仅透镜背景</option><option value="1">射线：捕获 / 耗尽 / 透射</option></select></label>
 <label>预览画幅<select id="aspect"><option value="wide">横向 16:10</option><option value="cinema">影院 16:9</option><option value="square">方形 1:1</option></select></label>

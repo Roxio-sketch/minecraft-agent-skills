@@ -1,0 +1,396 @@
+Compiled from "BlendMode.java"
+public class com.mojang.blaze3d.shaders.BlendMode {
+  private static com.mojang.blaze3d.shaders.BlendMode lastApplied;
+
+  private final int srcColorFactor;
+
+  private final int srcAlphaFactor;
+
+  private final int dstColorFactor;
+
+  private final int dstAlphaFactor;
+
+  private final int blendFunc;
+
+  private final boolean separateBlend;
+
+  private final boolean opaque;
+
+  private com.mojang.blaze3d.shaders.BlendMode(boolean, boolean, int, int, int, int, int);
+    Code:
+       0: aload_0
+       1: invokespecial #26                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iload_1
+       6: putfield      #28                 // Field separateBlend:Z
+       9: aload_0
+      10: iload_3
+      11: putfield      #30                 // Field srcColorFactor:I
+      14: aload_0
+      15: iload         4
+      17: putfield      #32                 // Field dstColorFactor:I
+      20: aload_0
+      21: iload         5
+      23: putfield      #34                 // Field srcAlphaFactor:I
+      26: aload_0
+      27: iload         6
+      29: putfield      #36                 // Field dstAlphaFactor:I
+      32: aload_0
+      33: iload_2
+      34: putfield      #38                 // Field opaque:Z
+      37: aload_0
+      38: iload         7
+      40: putfield      #40                 // Field blendFunc:I
+      43: return
+
+  public com.mojang.blaze3d.shaders.BlendMode();
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: iconst_1
+       3: iconst_1
+       4: iconst_0
+       5: iconst_1
+       6: iconst_0
+       7: ldc           #49                 // int 32774
+       9: invokespecial #51                 // Method "<init>":(ZZIIIII)V
+      12: return
+
+  public com.mojang.blaze3d.shaders.BlendMode(int, int, int);
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: iconst_0
+       3: iload_1
+       4: iload_2
+       5: iload_1
+       6: iload_2
+       7: iload_3
+       8: invokespecial #51                 // Method "<init>":(ZZIIIII)V
+      11: return
+
+  public com.mojang.blaze3d.shaders.BlendMode(int, int, int, int, int);
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: iconst_0
+       3: iload_1
+       4: iload_2
+       5: iload_3
+       6: iload         4
+       8: iload         5
+      10: invokespecial #51                 // Method "<init>":(ZZIIIII)V
+      13: return
+
+  public void apply();
+    Code:
+       0: aload_0
+       1: getstatic     #64                 // Field lastApplied:Lcom/mojang/blaze3d/shaders/BlendMode;
+       4: invokevirtual #68                 // Method equals:(Ljava/lang/Object;)Z
+       7: ifeq          11
+      10: return
+      11: getstatic     #64                 // Field lastApplied:Lcom/mojang/blaze3d/shaders/BlendMode;
+      14: ifnull        30
+      17: aload_0
+      18: getfield      #38                 // Field opaque:Z
+      21: getstatic     #64                 // Field lastApplied:Lcom/mojang/blaze3d/shaders/BlendMode;
+      24: invokevirtual #72                 // Method isOpaque:()Z
+      27: if_icmpeq     48
+      30: aload_0
+      31: putstatic     #64                 // Field lastApplied:Lcom/mojang/blaze3d/shaders/BlendMode;
+      34: aload_0
+      35: getfield      #38                 // Field opaque:Z
+      38: ifeq          45
+      41: invokestatic  #77                 // Method com/mojang/blaze3d/systems/RenderSystem.disableBlend:()V
+      44: return
+      45: invokestatic  #80                 // Method com/mojang/blaze3d/systems/RenderSystem.enableBlend:()V
+      48: aload_0
+      49: getfield      #40                 // Field blendFunc:I
+      52: invokestatic  #84                 // Method com/mojang/blaze3d/systems/RenderSystem.blendEquation:(I)V
+      55: aload_0
+      56: getfield      #28                 // Field separateBlend:Z
+      59: ifeq          84
+      62: aload_0
+      63: getfield      #30                 // Field srcColorFactor:I
+      66: aload_0
+      67: getfield      #32                 // Field dstColorFactor:I
+      70: aload_0
+      71: getfield      #34                 // Field srcAlphaFactor:I
+      74: aload_0
+      75: getfield      #36                 // Field dstAlphaFactor:I
+      78: invokestatic  #88                 // Method com/mojang/blaze3d/systems/RenderSystem.blendFuncSeparate:(IIII)V
+      81: goto          95
+      84: aload_0
+      85: getfield      #30                 // Field srcColorFactor:I
+      88: aload_0
+      89: getfield      #32                 // Field dstColorFactor:I
+      92: invokestatic  #91                 // Method com/mojang/blaze3d/systems/RenderSystem.blendFunc:(II)V
+      95: return
+
+  public boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: if_acmpne     7
+       5: iconst_1
+       6: ireturn
+       7: aload_1
+       8: instanceof    #2                  // class com/mojang/blaze3d/shaders/BlendMode
+      11: ifne          16
+      14: iconst_0
+      15: ireturn
+      16: aload_1
+      17: checkcast     #2                  // class com/mojang/blaze3d/shaders/BlendMode
+      20: astore_2
+      21: aload_0
+      22: getfield      #40                 // Field blendFunc:I
+      25: aload_2
+      26: getfield      #40                 // Field blendFunc:I
+      29: if_icmpeq     34
+      32: iconst_0
+      33: ireturn
+      34: aload_0
+      35: getfield      #36                 // Field dstAlphaFactor:I
+      38: aload_2
+      39: getfield      #36                 // Field dstAlphaFactor:I
+      42: if_icmpeq     47
+      45: iconst_0
+      46: ireturn
+      47: aload_0
+      48: getfield      #32                 // Field dstColorFactor:I
+      51: aload_2
+      52: getfield      #32                 // Field dstColorFactor:I
+      55: if_icmpeq     60
+      58: iconst_0
+      59: ireturn
+      60: aload_0
+      61: getfield      #38                 // Field opaque:Z
+      64: aload_2
+      65: getfield      #38                 // Field opaque:Z
+      68: if_icmpeq     73
+      71: iconst_0
+      72: ireturn
+      73: aload_0
+      74: getfield      #28                 // Field separateBlend:Z
+      77: aload_2
+      78: getfield      #28                 // Field separateBlend:Z
+      81: if_icmpeq     86
+      84: iconst_0
+      85: ireturn
+      86: aload_0
+      87: getfield      #34                 // Field srcAlphaFactor:I
+      90: aload_2
+      91: getfield      #34                 // Field srcAlphaFactor:I
+      94: if_icmpeq     99
+      97: iconst_0
+      98: ireturn
+      99: aload_0
+     100: getfield      #30                 // Field srcColorFactor:I
+     103: aload_2
+     104: getfield      #30                 // Field srcColorFactor:I
+     107: if_icmpne     114
+     110: iconst_1
+     111: goto          115
+     114: iconst_0
+     115: ireturn
+
+  public int hashCode();
+    Code:
+       0: aload_0
+       1: getfield      #30                 // Field srcColorFactor:I
+       4: istore_1
+       5: bipush        31
+       7: iload_1
+       8: imul
+       9: aload_0
+      10: getfield      #34                 // Field srcAlphaFactor:I
+      13: iadd
+      14: istore_1
+      15: bipush        31
+      17: iload_1
+      18: imul
+      19: aload_0
+      20: getfield      #32                 // Field dstColorFactor:I
+      23: iadd
+      24: istore_1
+      25: bipush        31
+      27: iload_1
+      28: imul
+      29: aload_0
+      30: getfield      #36                 // Field dstAlphaFactor:I
+      33: iadd
+      34: istore_1
+      35: bipush        31
+      37: iload_1
+      38: imul
+      39: aload_0
+      40: getfield      #40                 // Field blendFunc:I
+      43: iadd
+      44: istore_1
+      45: bipush        31
+      47: iload_1
+      48: imul
+      49: aload_0
+      50: getfield      #28                 // Field separateBlend:Z
+      53: ifeq          60
+      56: iconst_1
+      57: goto          61
+      60: iconst_0
+      61: iadd
+      62: istore_1
+      63: bipush        31
+      65: iload_1
+      66: imul
+      67: aload_0
+      68: getfield      #38                 // Field opaque:Z
+      71: ifeq          78
+      74: iconst_1
+      75: goto          79
+      78: iconst_0
+      79: iadd
+      80: istore_1
+      81: iload_1
+      82: ireturn
+
+  public boolean isOpaque();
+    Code:
+       0: aload_0
+       1: getfield      #38                 // Field opaque:Z
+       4: ireturn
+
+  public static int stringToBlendFunc(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokevirtual #105                // Method java/lang/String.trim:()Ljava/lang/String;
+       4: getstatic     #111                // Field java/util/Locale.ROOT:Ljava/util/Locale;
+       7: invokevirtual #115                // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+      10: astore_1
+      11: ldc           #117                // String add
+      13: aload_1
+      14: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      17: ifeq          23
+      20: ldc           #49                 // int 32774
+      22: ireturn
+      23: ldc           #120                // String subtract
+      25: aload_1
+      26: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      29: ifeq          35
+      32: ldc           #121                // int 32778
+      34: ireturn
+      35: ldc           #123                // String reversesubtract
+      37: aload_1
+      38: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      41: ifeq          47
+      44: ldc           #124                // int 32779
+      46: ireturn
+      47: ldc           #126                // String reverse_subtract
+      49: aload_1
+      50: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      53: ifeq          59
+      56: ldc           #124                // int 32779
+      58: ireturn
+      59: ldc           #128                // String min
+      61: aload_1
+      62: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      65: ifeq          71
+      68: ldc           #129                // int 32775
+      70: ireturn
+      71: ldc           #131                // String max
+      73: aload_1
+      74: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      77: ifeq          83
+      80: ldc           #132                // int 32776
+      82: ireturn
+      83: ldc           #49                 // int 32774
+      85: ireturn
+
+  public static int stringToBlendFactor(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokevirtual #105                // Method java/lang/String.trim:()Ljava/lang/String;
+       4: getstatic     #111                // Field java/util/Locale.ROOT:Ljava/util/Locale;
+       7: invokevirtual #115                // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+      10: astore_1
+      11: aload_1
+      12: ldc           #137                // String _
+      14: ldc           #139                // String
+      16: invokevirtual #143                // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      19: astore_1
+      20: aload_1
+      21: ldc           #145                // String one
+      23: ldc           #147                // String 1
+      25: invokevirtual #143                // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      28: astore_1
+      29: aload_1
+      30: ldc           #149                // String zero
+      32: ldc           #151                // String 0
+      34: invokevirtual #143                // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      37: astore_1
+      38: aload_1
+      39: ldc           #153                // String minus
+      41: ldc           #155                // String -
+      43: invokevirtual #143                // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      46: astore_1
+      47: ldc           #151                // String 0
+      49: aload_1
+      50: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      53: ifeq          58
+      56: iconst_0
+      57: ireturn
+      58: ldc           #147                // String 1
+      60: aload_1
+      61: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      64: ifeq          69
+      67: iconst_1
+      68: ireturn
+      69: ldc           #157                // String srccolor
+      71: aload_1
+      72: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      75: ifeq          82
+      78: sipush        768
+      81: ireturn
+      82: ldc           #159                // String 1-srccolor
+      84: aload_1
+      85: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      88: ifeq          95
+      91: sipush        769
+      94: ireturn
+      95: ldc           #161                // String dstcolor
+      97: aload_1
+      98: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     101: ifeq          108
+     104: sipush        774
+     107: ireturn
+     108: ldc           #163                // String 1-dstcolor
+     110: aload_1
+     111: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     114: ifeq          121
+     117: sipush        775
+     120: ireturn
+     121: ldc           #165                // String srcalpha
+     123: aload_1
+     124: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     127: ifeq          134
+     130: sipush        770
+     133: ireturn
+     134: ldc           #167                // String 1-srcalpha
+     136: aload_1
+     137: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     140: ifeq          147
+     143: sipush        771
+     146: ireturn
+     147: ldc           #169                // String dstalpha
+     149: aload_1
+     150: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     153: ifeq          160
+     156: sipush        772
+     159: ireturn
+     160: ldc           #171                // String 1-dstalpha
+     162: aload_1
+     163: invokevirtual #118                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     166: ifeq          173
+     169: sipush        773
+     172: ireturn
+     173: iconst_m1
+     174: ireturn
+}

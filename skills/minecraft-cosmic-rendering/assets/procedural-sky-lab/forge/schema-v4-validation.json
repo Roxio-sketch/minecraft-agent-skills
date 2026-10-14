@@ -1,0 +1,1683 @@
+{
+  "schema": "cosmic-sky/4",
+  "fields": [
+    {
+      "key": "rainAmount",
+      "label": "雨量",
+      "group": "天气",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "thunderAmount",
+      "label": "雷暴强度",
+      "group": "天气",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "weatherSpeed",
+      "label": "天气演化速度",
+      "group": "天气",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "stormDarkening",
+      "label": "风暴遮光",
+      "group": "天气",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0.65
+    },
+    {
+      "key": "rainDensity",
+      "label": "雨丝密度",
+      "group": "雨幕",
+      "min": 0.1,
+      "max": 3,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "rainSpeed",
+      "label": "雨滴速度",
+      "group": "雨幕",
+      "min": 0.1,
+      "max": 3,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "rainLength",
+      "label": "雨丝长度",
+      "group": "雨幕",
+      "min": 0.03,
+      "max": 1,
+      "step": 0.01,
+      "value": 0.22
+    },
+    {
+      "key": "rainBrightness",
+      "label": "雨丝亮度",
+      "group": "雨幕",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0.6
+    },
+    {
+      "key": "rainWind",
+      "label": "降雨风向 °",
+      "group": "天气",
+      "min": -180,
+      "max": 180,
+      "step": 1,
+      "value": 25
+    },
+    {
+      "key": "weatherFollowWorld",
+      "label": "跟随游戏天气",
+      "group": "天气",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "value": 0,
+      "integer": true,
+      "options": {
+        "0": "使用配方天气",
+        "1": "跟随游戏天气"
+      }
+    },
+    {
+      "key": "lightningFrequency",
+      "label": "雷光频率",
+      "group": "天气",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.7
+    },
+    {
+      "key": "lightningDuration",
+      "label": "雷光持续秒",
+      "group": "天气",
+      "min": 0.05,
+      "max": 1.5,
+      "step": 0.01,
+      "value": 0.28
+    },
+    {
+      "key": "fogStrength",
+      "label": "场景雾强度",
+      "group": "雾与空气透视",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "fogDensity",
+      "label": "每米雾密度",
+      "group": "雾与空气透视",
+      "min": 0,
+      "max": 0.03,
+      "step": 0.0001,
+      "value": 0.002
+    },
+    {
+      "key": "fogHeightFalloff",
+      "label": "雾高度衰减",
+      "group": "雾与空气透视",
+      "min": 0,
+      "max": 0.1,
+      "step": 0.001,
+      "value": 0.015
+    },
+    {
+      "key": "fogBaseHeight",
+      "label": "雾层基准高度",
+      "group": "雾与空气透视",
+      "min": -128,
+      "max": 384,
+      "step": 1,
+      "value": 64
+    },
+    {
+      "key": "fogNoise",
+      "label": "雾密度变化",
+      "group": "雾与空气透视",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0.3
+    },
+    {
+      "key": "fogScale",
+      "label": "雾形尺度",
+      "group": "雾与空气透视",
+      "min": 0.001,
+      "max": 0.05,
+      "step": 0.001,
+      "value": 0.008
+    },
+    {
+      "key": "fogSpeed",
+      "label": "雾流动速度",
+      "group": "雾与空气透视",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.4
+    },
+    {
+      "key": "fogDistance",
+      "label": "最大雾积分距离",
+      "group": "雾与空气透视",
+      "min": 16,
+      "max": 2048,
+      "step": 1,
+      "value": 512
+    },
+    {
+      "key": "volumeCloudStrength",
+      "label": "体积云强度",
+      "group": "体积云",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "volumeCloudCoverage",
+      "label": "云海覆盖率",
+      "group": "体积云",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0.48
+    },
+    {
+      "key": "volumeCloudDensity",
+      "label": "云体密度",
+      "group": "体积云",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.8
+    },
+    {
+      "key": "volumeCloudScale",
+      "label": "世界云形尺度",
+      "group": "体积云",
+      "min": 0.001,
+      "max": 0.025,
+      "step": 0.0001,
+      "value": 0.004
+    },
+    {
+      "key": "volumeCloudBase",
+      "label": "云底世界高度",
+      "group": "体积云",
+      "min": 32,
+      "max": 384,
+      "step": 1,
+      "value": 150
+    },
+    {
+      "key": "volumeCloudThickness",
+      "label": "云层厚度",
+      "group": "体积云",
+      "min": 8,
+      "max": 200,
+      "step": 1,
+      "value": 70
+    },
+    {
+      "key": "volumeCloudDistance",
+      "label": "云体最远距离",
+      "group": "体积云",
+      "min": 64,
+      "max": 2048,
+      "step": 1,
+      "value": 1000
+    },
+    {
+      "key": "volumeCloudErosion",
+      "label": "细节侵蚀",
+      "group": "体积云",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0.25
+    },
+    {
+      "key": "volumeCloudSpeed",
+      "label": "云风速度",
+      "group": "体积云",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.6
+    },
+    {
+      "key": "volumeCloudWind",
+      "label": "云风向 °",
+      "group": "体积云",
+      "min": -180,
+      "max": 180,
+      "step": 1,
+      "value": 25
+    },
+    {
+      "key": "volumeCloudEvolution",
+      "label": "云体演化",
+      "group": "体积云",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0.15
+    },
+    {
+      "key": "volumeCloudAnisotropy",
+      "label": "云散射方向性",
+      "group": "体积云",
+      "min": 0,
+      "max": 0.85,
+      "step": 0.01,
+      "value": 0.65
+    },
+    {
+      "key": "volumeCloudAmbient",
+      "label": "云环境照明",
+      "group": "云影与天光",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0.6
+    },
+    {
+      "key": "volumeCloudSunlight",
+      "label": "云太阳照明",
+      "group": "云影与天光",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "cloudShadowStrength",
+      "label": "地形云影强度",
+      "group": "云影与天光",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "lightShaftStrength",
+      "label": "云隙天光强度",
+      "group": "云影与天光",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "lightShaftDensity",
+      "label": "光柱介质密度",
+      "group": "云影与天光",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0.12
+    },
+    {
+      "key": "lightShaftDistance",
+      "label": "光柱积分距离",
+      "group": "云影与天光",
+      "min": 16,
+      "max": 1024,
+      "step": 1,
+      "value": 320
+    },
+    {
+      "key": "cloudShadowSoftness",
+      "label": "云影柔度",
+      "group": "云影与天光",
+      "min": 0.1,
+      "max": 4,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "lightShaftAnisotropy",
+      "label": "天光方向性",
+      "group": "云影与天光",
+      "min": 0,
+      "max": 0.9,
+      "step": 0.01,
+      "value": 0.75
+    },
+    {
+      "key": "rainbowStrength",
+      "label": "主虹强度",
+      "group": "彩虹",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "rainbowWidth",
+      "label": "色带宽度 °",
+      "group": "彩虹",
+      "min": 0.25,
+      "max": 4,
+      "step": 0.05,
+      "value": 1
+    },
+    {
+      "key": "secondaryRainbow",
+      "label": "反虹强度",
+      "group": "彩虹",
+      "min": 0,
+      "max": 1.5,
+      "step": 0.01,
+      "value": 0.55
+    },
+    {
+      "key": "rainbowWetness",
+      "label": "空气水滴条件",
+      "group": "彩虹",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0.7
+    },
+    {
+      "key": "haloStrength",
+      "label": "冰晶晕强度",
+      "group": "冰晶晕",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "haloWidth",
+      "label": "冰晕宽度 °",
+      "group": "冰晶晕",
+      "min": 0.2,
+      "max": 4,
+      "step": 0.05,
+      "value": 1
+    },
+    {
+      "key": "haloIce",
+      "label": "冰晶条件",
+      "group": "冰晶晕",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "haloMoon",
+      "label": "日晕或月晕",
+      "group": "冰晶晕",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "value": 0,
+      "integer": true,
+      "options": {
+        "0": "太阳冰晶晕",
+        "1": "月亮冰晶晕"
+      }
+    },
+    {
+      "key": "specialStrength",
+      "label": "异界层强度",
+      "group": "异界天空",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "specialStyle",
+      "label": "异界样式",
+      "group": "异界天空",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "value": 1,
+      "integer": true,
+      "options": {
+        "1": "空间裂幕",
+        "2": "赤焰风暴",
+        "3": "方向剪影"
+      }
+    },
+    {
+      "key": "specialScale",
+      "label": "异界形态尺度",
+      "group": "异界天空",
+      "min": 0.3,
+      "max": 6,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "specialSpeed",
+      "label": "异界演化速度",
+      "group": "异界天空",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.6
+    },
+    {
+      "key": "specialDistortion",
+      "label": "波域扭曲",
+      "group": "异界天空",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0.5
+    },
+    {
+      "key": "specialBandWidth",
+      "label": "裂幕宽度",
+      "group": "异界天空",
+      "min": 0.03,
+      "max": 0.8,
+      "step": 0.005,
+      "value": 0.25
+    },
+    {
+      "key": "birdDensity",
+      "label": "远景鸟群密度",
+      "group": "异界天空",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "birdSpeed",
+      "label": "鸟群移动速度",
+      "group": "异界天空",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.7
+    },
+    {
+      "key": "blackHoleStyle",
+      "label": "黑洞二维或透镜类型",
+      "group": "黑洞",
+      "min": 1,
+      "max": 2,
+      "step": 1,
+      "value": 1,
+      "integer": true,
+      "options": {
+        "1": "曲率积分透镜",
+        "2": "二维电影光环"
+      }
+    },
+    {
+      "key": "blackHoleRingBrightness",
+      "label": "电影光环亮度",
+      "group": "黑洞",
+      "min": 0,
+      "max": 4,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "blackHoleRingWidth",
+      "label": "电影光环宽度",
+      "group": "黑洞",
+      "min": 0.01,
+      "max": 0.25,
+      "step": 0.005,
+      "value": 0.06
+    },
+    {
+      "key": "blackHoleGlow",
+      "label": "电影光晕强度",
+      "group": "黑洞",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.9
+    },
+    {
+      "key": "blackHoleArc",
+      "label": "弯曲光弧强度",
+      "group": "黑洞",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "blackHoleStreak",
+      "label": "横向亮盘强度",
+      "group": "黑洞",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 1.1
+    },
+    {
+      "key": "blackHoleContrast",
+      "label": "黑洞暗核对比",
+      "group": "黑洞",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 1.1
+    },
+    {
+      "key": "blackHoleNoise",
+      "label": "盘纹细节",
+      "group": "黑洞",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "fogColor",
+      "label": "雾颜色",
+      "group": "色彩",
+      "color": true,
+      "value": "#8199b4"
+    },
+    {
+      "key": "volumeCloudColor",
+      "label": "云体颜色",
+      "group": "色彩",
+      "color": true,
+      "value": "#ffffff"
+    },
+    {
+      "key": "rainColor",
+      "label": "雨丝颜色",
+      "group": "色彩",
+      "color": true,
+      "value": "#b3c8dc"
+    },
+    {
+      "key": "lightningColor",
+      "label": "雷光颜色",
+      "group": "色彩",
+      "color": true,
+      "value": "#e1e6ff"
+    },
+    {
+      "key": "specialColorA",
+      "label": "异界主色",
+      "group": "色彩",
+      "color": true,
+      "value": "#5b389a"
+    },
+    {
+      "key": "specialColorB",
+      "label": "异界辉光色",
+      "group": "色彩",
+      "color": true,
+      "value": "#df9585"
+    },
+    {
+      "key": "seed",
+      "label": "星空种子",
+      "group": "整体",
+      "min": 0,
+      "max": 9999,
+      "step": 1,
+      "value": 2718,
+      "integer": true
+    },
+    {
+      "key": "quality",
+      "label": "采样质量",
+      "group": "整体",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "value": 2,
+      "integer": true
+    },
+    {
+      "key": "exposure",
+      "label": "整体曝光",
+      "group": "整体",
+      "min": 0.2,
+      "max": 3,
+      "step": 0.01,
+      "value": 1.15
+    },
+    {
+      "key": "atmosphereStrength",
+      "label": "大气启用与强度",
+      "group": "大气",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "turbidity",
+      "label": "气溶胶浑浊度",
+      "group": "大气",
+      "min": 1,
+      "max": 10,
+      "step": 0.05,
+      "value": 2
+    },
+    {
+      "key": "rayleighStrength",
+      "label": "蓝天散射强度",
+      "group": "大气",
+      "min": 0,
+      "max": 4,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "mieStrength",
+      "label": "太阳附近散射",
+      "group": "大气",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "mieAnisotropy",
+      "label": "散射朝向集中度",
+      "group": "大气",
+      "min": 0,
+      "max": 0.9,
+      "step": 0.01,
+      "value": 0.76
+    },
+    {
+      "key": "nightAmbient",
+      "label": "夜间大气微光",
+      "group": "大气",
+      "min": 0,
+      "max": 0.3,
+      "step": 0.005,
+      "value": 0.04
+    },
+    {
+      "key": "twilightStrength",
+      "label": "晨昏晚霞强度",
+      "group": "大气",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "sunBrightness",
+      "label": "太阳亮度",
+      "group": "太阳",
+      "min": 0,
+      "max": 5,
+      "step": 0.01,
+      "value": 1.3
+    },
+    {
+      "key": "sunElevation",
+      "label": "太阳初始仰角 °",
+      "group": "太阳",
+      "min": -18,
+      "max": 85,
+      "step": 0.1,
+      "value": 25
+    },
+    {
+      "key": "sunYaw",
+      "label": "太阳方位 °",
+      "group": "太阳",
+      "min": -180,
+      "max": 180,
+      "step": 1,
+      "value": 15
+    },
+    {
+      "key": "sunSize",
+      "label": "太阳角半径 °",
+      "group": "太阳",
+      "min": 0.15,
+      "max": 4,
+      "step": 0.05,
+      "value": 0.45
+    },
+    {
+      "key": "cycleSpeed",
+      "label": "自动昼夜速度",
+      "group": "昼夜",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "moonBrightness",
+      "label": "月亮亮度",
+      "group": "月亮",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.8
+    },
+    {
+      "key": "moonYaw",
+      "label": "月亮方位 °",
+      "group": "月亮",
+      "min": -180,
+      "max": 180,
+      "step": 1,
+      "value": -130
+    },
+    {
+      "key": "moonElevation",
+      "label": "月亮初始仰角 °",
+      "group": "月亮",
+      "min": -18,
+      "max": 85,
+      "step": 0.1,
+      "value": 30
+    },
+    {
+      "key": "moonSize",
+      "label": "月亮角半径 °",
+      "group": "月亮",
+      "min": 0.15,
+      "max": 6,
+      "step": 0.05,
+      "value": 1.2
+    },
+    {
+      "key": "moonPhase",
+      "label": "月相 °（0 为满月）",
+      "group": "月亮",
+      "min": -180,
+      "max": 180,
+      "step": 1,
+      "value": 55
+    },
+    {
+      "key": "moonDetail",
+      "label": "月面细节",
+      "group": "月亮",
+      "min": 1,
+      "max": 12,
+      "step": 0.05,
+      "value": 4
+    },
+    {
+      "key": "moonHalo",
+      "label": "月亮外晕强度",
+      "group": "月亮",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0.35
+    },
+    {
+      "key": "moonSpeed",
+      "label": "月面缓慢自转",
+      "group": "月亮",
+      "min": 0,
+      "max": 1,
+      "step": 0.005,
+      "value": 0.08
+    },
+    {
+      "key": "thinCloudStrength",
+      "label": "薄云强度",
+      "group": "薄云",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "thinCloudCoverage",
+      "label": "薄云覆盖率",
+      "group": "薄云",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0.45
+    },
+    {
+      "key": "thinCloudScale",
+      "label": "薄云纹理尺度",
+      "group": "薄云",
+      "min": 0.25,
+      "max": 4,
+      "step": 0.01,
+      "value": 0.85
+    },
+    {
+      "key": "thinCloudHeight",
+      "label": "薄云远平面高度",
+      "group": "薄云",
+      "min": 0.3,
+      "max": 3,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "thinCloudSpeed",
+      "label": "薄云风速",
+      "group": "薄云",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0.6
+    },
+    {
+      "key": "thinCloudWind",
+      "label": "薄云风向 °",
+      "group": "薄云",
+      "min": -180,
+      "max": 180,
+      "step": 1,
+      "value": 25
+    },
+    {
+      "key": "thinCloudEvolution",
+      "label": "云形演化速度",
+      "group": "薄云",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0.35
+    },
+    {
+      "key": "thinCloudSilver",
+      "label": "背光银边强度",
+      "group": "薄云",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "starDensity",
+      "label": "星点密度",
+      "group": "恒星",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0.38
+    },
+    {
+      "key": "starBrightness",
+      "label": "星点亮度",
+      "group": "恒星",
+      "min": 0,
+      "max": 4,
+      "step": 0.01,
+      "value": 1.35
+    },
+    {
+      "key": "starSize",
+      "label": "星点大小",
+      "group": "恒星",
+      "min": 0.3,
+      "max": 2.5,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "twinkleAmount",
+      "label": "闪烁幅度",
+      "group": "恒星",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0.65
+    },
+    {
+      "key": "twinkleSpeed",
+      "label": "闪烁速度",
+      "group": "恒星",
+      "min": 0,
+      "max": 4,
+      "step": 0.01,
+      "value": 1.4
+    },
+    {
+      "key": "galacticYaw",
+      "label": "银河方向",
+      "group": "银河",
+      "min": -180,
+      "max": 180,
+      "step": 1,
+      "value": 25
+    },
+    {
+      "key": "galacticTilt",
+      "label": "银河倾角",
+      "group": "银河",
+      "min": -85,
+      "max": 85,
+      "step": 1,
+      "value": 32
+    },
+    {
+      "key": "bandWidth",
+      "label": "银河宽度",
+      "group": "银河",
+      "min": 0.04,
+      "max": 0.8,
+      "step": 0.005,
+      "value": 0.26
+    },
+    {
+      "key": "galaxyStrength",
+      "label": "银河亮度",
+      "group": "银河",
+      "min": 0,
+      "max": 4,
+      "step": 0.01,
+      "value": 1.2
+    },
+    {
+      "key": "dustStrength",
+      "label": "暗尘遮光",
+      "group": "银河",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 1.35
+    },
+    {
+      "key": "nebulaStrength",
+      "label": "星云亮度",
+      "group": "星云",
+      "min": 0,
+      "max": 4,
+      "step": 0.01,
+      "value": 0.75
+    },
+    {
+      "key": "nebulaScale",
+      "label": "星云细碎度",
+      "group": "星云",
+      "min": 1,
+      "max": 10,
+      "step": 0.05,
+      "value": 3.5
+    },
+    {
+      "key": "nebulaSpeed",
+      "label": "星云流动",
+      "group": "星云",
+      "min": 0,
+      "max": 1,
+      "step": 0.005,
+      "value": 0.4
+    },
+    {
+      "key": "auroraStrength",
+      "label": "极光亮度",
+      "group": "极光",
+      "min": 0,
+      "max": 4,
+      "step": 0.01,
+      "value": 0.65
+    },
+    {
+      "key": "auroraHeight",
+      "label": "极光仰角",
+      "group": "极光",
+      "min": 0.05,
+      "max": 0.95,
+      "step": 0.005,
+      "value": 0.38
+    },
+    {
+      "key": "auroraWidth",
+      "label": "极光高度范围",
+      "group": "极光",
+      "min": 0.02,
+      "max": 0.45,
+      "step": 0.005,
+      "value": 0.2
+    },
+    {
+      "key": "auroraCurtains",
+      "label": "极光帘幕密度",
+      "group": "极光",
+      "min": 0.3,
+      "max": 3,
+      "step": 0.01,
+      "value": 1.1
+    },
+    {
+      "key": "auroraSpeed",
+      "label": "极光流动",
+      "group": "极光",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.35
+    },
+    {
+      "key": "meteorRate",
+      "label": "流星频度",
+      "group": "流星",
+      "min": 0,
+      "max": 8,
+      "step": 0.1,
+      "value": 1.8
+    },
+    {
+      "key": "meteorBrightness",
+      "label": "流星亮度",
+      "group": "流星",
+      "min": 0,
+      "max": 5,
+      "step": 0.01,
+      "value": 2.3
+    },
+    {
+      "key": "meteorSpeed",
+      "label": "流星速度",
+      "group": "流星",
+      "min": 0.1,
+      "max": 3,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "meteorLength",
+      "label": "流星尾长",
+      "group": "流星",
+      "min": 0.02,
+      "max": 0.4,
+      "step": 0.005,
+      "value": 0.16
+    },
+    {
+      "key": "horizonGlow",
+      "label": "地平线微光",
+      "group": "整体",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 0.08
+    },
+    {
+      "key": "celestialStrength",
+      "label": "天体亮度",
+      "group": "天体",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 1.1
+    },
+    {
+      "key": "celestialSize",
+      "label": "天体角半径 °",
+      "group": "天体",
+      "min": 2,
+      "max": 28,
+      "step": 0.1,
+      "value": 12
+    },
+    {
+      "key": "celestialYaw",
+      "label": "天体方位 °",
+      "group": "天体",
+      "min": -180,
+      "max": 180,
+      "step": 1,
+      "value": 28
+    },
+    {
+      "key": "celestialPitch",
+      "label": "天体仰角 °",
+      "group": "天体",
+      "min": -70,
+      "max": 85,
+      "step": 1,
+      "value": 35
+    },
+    {
+      "key": "celestialType",
+      "label": "天体表面",
+      "group": "天体",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "value": 1,
+      "integer": true,
+      "options": {
+        "1": "气态巨行星",
+        "2": "岩质月球",
+        "3": "发光恒星"
+      }
+    },
+    {
+      "key": "celestialPhase",
+      "label": "天体光照相位 °",
+      "group": "天体",
+      "min": -180,
+      "max": 180,
+      "step": 1,
+      "value": 38
+    },
+    {
+      "key": "celestialDetail",
+      "label": "天体表面细节",
+      "group": "天体",
+      "min": 1,
+      "max": 12,
+      "step": 0.05,
+      "value": 4.2
+    },
+    {
+      "key": "celestialSpeed",
+      "label": "天体自转",
+      "group": "天体",
+      "min": 0,
+      "max": 1,
+      "step": 0.005,
+      "value": 0.15
+    },
+    {
+      "key": "ringStrength",
+      "label": "行星光环亮度",
+      "group": "天体",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0.75
+    },
+    {
+      "key": "ringTilt",
+      "label": "光环倾角 °",
+      "group": "天体",
+      "min": 0,
+      "max": 85,
+      "step": 1,
+      "value": 62
+    },
+    {
+      "key": "ringWidth",
+      "label": "光环外径倍率",
+      "group": "天体",
+      "min": 1.3,
+      "max": 3,
+      "step": 0.01,
+      "value": 1.9
+    },
+    {
+      "key": "blackHoleStrength",
+      "label": "黑洞吸积盘亮度",
+      "group": "黑洞",
+      "min": 0,
+      "max": 4,
+      "step": 0.01,
+      "value": 0
+    },
+    {
+      "key": "blackHoleSize",
+      "label": "黑洞暗核角半径 °",
+      "group": "黑洞",
+      "min": 1,
+      "max": 16,
+      "step": 0.1,
+      "value": 6
+    },
+    {
+      "key": "blackHoleYaw",
+      "label": "黑洞方位 °",
+      "group": "黑洞",
+      "min": -180,
+      "max": 180,
+      "step": 1,
+      "value": -24
+    },
+    {
+      "key": "blackHolePitch",
+      "label": "黑洞仰角 °",
+      "group": "黑洞",
+      "min": -70,
+      "max": 85,
+      "step": 1,
+      "value": 30
+    },
+    {
+      "key": "diskTilt",
+      "label": "吸积盘倾角 °",
+      "group": "黑洞",
+      "min": 0,
+      "max": 85,
+      "step": 1,
+      "value": 72
+    },
+    {
+      "key": "diskWidth",
+      "label": "吸积盘外径倍率",
+      "group": "黑洞",
+      "min": 3.5,
+      "max": 9,
+      "step": 0.05,
+      "value": 6.5
+    },
+    {
+      "key": "diskSpeed",
+      "label": "吸积盘旋转与内流",
+      "group": "黑洞",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "lensingStrength",
+      "label": "背景偏折强度",
+      "group": "黑洞",
+      "min": 0,
+      "max": 1.5,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "backgroundColor",
+      "label": "背景底色",
+      "group": "色彩",
+      "color": true,
+      "value": "#020511"
+    },
+    {
+      "key": "starCoolColor",
+      "label": "冷色恒星",
+      "group": "色彩",
+      "color": true,
+      "value": "#9acaff"
+    },
+    {
+      "key": "starWarmColor",
+      "label": "暖色恒星",
+      "group": "色彩",
+      "color": true,
+      "value": "#ffd8a6"
+    },
+    {
+      "key": "galaxyColor",
+      "label": "银河主色",
+      "group": "色彩",
+      "color": true,
+      "value": "#aebedc"
+    },
+    {
+      "key": "nebulaColorA",
+      "label": "星云色一",
+      "group": "色彩",
+      "color": true,
+      "value": "#3659b4"
+    },
+    {
+      "key": "nebulaColorB",
+      "label": "星云色二",
+      "group": "色彩",
+      "color": true,
+      "value": "#b75cbe"
+    },
+    {
+      "key": "auroraColorA",
+      "label": "极光下缘",
+      "group": "色彩",
+      "color": true,
+      "value": "#52e8b0"
+    },
+    {
+      "key": "auroraColorB",
+      "label": "极光上缘",
+      "group": "色彩",
+      "color": true,
+      "value": "#8460ef"
+    },
+    {
+      "key": "celestialColorA",
+      "label": "天体主色",
+      "group": "色彩",
+      "color": true,
+      "value": "#5475b7"
+    },
+    {
+      "key": "celestialColorB",
+      "label": "天体纹理色",
+      "group": "色彩",
+      "color": true,
+      "value": "#e0bcb9"
+    },
+    {
+      "key": "ringColor",
+      "label": "光环颜色",
+      "group": "色彩",
+      "color": true,
+      "value": "#b3c9ea"
+    },
+    {
+      "key": "diskColorA",
+      "label": "吸积盘外缘颜色",
+      "group": "色彩",
+      "color": true,
+      "value": "#db4a12"
+    },
+    {
+      "key": "diskColorB",
+      "label": "吸积盘内缘颜色",
+      "group": "色彩",
+      "color": true,
+      "value": "#fff1b7"
+    },
+    {
+      "key": "skyTint",
+      "label": "大气整体染色",
+      "group": "色彩",
+      "color": true,
+      "value": "#ffffff"
+    },
+    {
+      "key": "sunColor",
+      "label": "太阳色",
+      "group": "色彩",
+      "color": true,
+      "value": "#fff1d1"
+    },
+    {
+      "key": "moonColor",
+      "label": "月亮色",
+      "group": "色彩",
+      "color": true,
+      "value": "#bed4ee"
+    },
+    {
+      "key": "thinCloudColor",
+      "label": "薄云色",
+      "group": "色彩",
+      "color": true,
+      "value": "#edf1fa"
+    }
+  ],
+  "packs": {
+    "WeatherSettings": [
+      "rainAmount",
+      "thunderAmount",
+      "weatherSpeed",
+      "stormDarkening"
+    ],
+    "RainSettings": [
+      "rainDensity",
+      "rainSpeed",
+      "rainLength",
+      "rainBrightness"
+    ],
+    "WeatherMotion": [
+      "rainWind",
+      "weatherFollowWorld",
+      "lightningFrequency",
+      "lightningDuration"
+    ],
+    "FogSettings": [
+      "fogStrength",
+      "fogDensity",
+      "fogHeightFalloff",
+      "fogBaseHeight"
+    ],
+    "FogMotion": [
+      "fogNoise",
+      "fogScale",
+      "fogSpeed",
+      "fogDistance"
+    ],
+    "VolumeCloudSettings": [
+      "volumeCloudStrength",
+      "volumeCloudCoverage",
+      "volumeCloudDensity",
+      "volumeCloudScale"
+    ],
+    "VolumeCloudGeometry": [
+      "volumeCloudBase",
+      "volumeCloudThickness",
+      "volumeCloudDistance",
+      "volumeCloudErosion"
+    ],
+    "VolumeCloudMotion": [
+      "volumeCloudSpeed",
+      "volumeCloudWind",
+      "volumeCloudEvolution",
+      "volumeCloudAnisotropy"
+    ],
+    "CloudLighting": [
+      "volumeCloudAmbient",
+      "volumeCloudSunlight",
+      "cloudShadowStrength",
+      "lightShaftStrength"
+    ],
+    "LightingDetail": [
+      "lightShaftDensity",
+      "lightShaftDistance",
+      "cloudShadowSoftness",
+      "lightShaftAnisotropy"
+    ],
+    "RainbowSettings": [
+      "rainbowStrength",
+      "rainbowWidth",
+      "secondaryRainbow",
+      "rainbowWetness"
+    ],
+    "HaloSettings": [
+      "haloStrength",
+      "haloWidth",
+      "haloIce",
+      "haloMoon"
+    ],
+    "SpecialSettings": [
+      "specialStrength",
+      "specialStyle",
+      "specialScale",
+      "specialSpeed"
+    ],
+    "SpecialShape": [
+      "specialDistortion",
+      "specialBandWidth",
+      "birdDensity",
+      "birdSpeed"
+    ],
+    "BlackHoleAppearance": [
+      "blackHoleStyle",
+      "blackHoleRingBrightness",
+      "blackHoleRingWidth",
+      "blackHoleGlow"
+    ],
+    "BlackHoleCinematic": [
+      "blackHoleArc",
+      "blackHoleStreak",
+      "blackHoleContrast",
+      "blackHoleNoise"
+    ],
+    "StarSettings": [
+      "starDensity",
+      "starBrightness",
+      "starSize",
+      "twinkleAmount"
+    ],
+    "MotionSettings": [
+      "twinkleSpeed",
+      "nebulaSpeed",
+      "auroraSpeed",
+      "meteorSpeed"
+    ],
+    "GalaxySettings": [
+      "galacticYaw",
+      "galacticTilt",
+      "bandWidth",
+      "galaxyStrength"
+    ],
+    "CloudSettings": [
+      "nebulaStrength",
+      "nebulaScale",
+      "dustStrength",
+      "exposure"
+    ],
+    "AuroraSettings": [
+      "auroraStrength",
+      "auroraHeight",
+      "auroraWidth",
+      "auroraCurtains"
+    ],
+    "MeteorSettings": [
+      "meteorRate",
+      "meteorBrightness",
+      "meteorLength",
+      "horizonGlow"
+    ],
+    "BodySettings": [
+      "celestialStrength",
+      "celestialSize",
+      "celestialYaw",
+      "celestialPitch"
+    ],
+    "BodySurface": [
+      "celestialType",
+      "celestialPhase",
+      "celestialDetail",
+      "celestialSpeed"
+    ],
+    "RingSettings": [
+      "ringStrength",
+      "ringTilt",
+      "ringWidth"
+    ],
+    "BlackHoleSettings": [
+      "blackHoleStrength",
+      "blackHoleSize",
+      "blackHoleYaw",
+      "blackHolePitch"
+    ],
+    "DiskSettings": [
+      "diskTilt",
+      "diskWidth",
+      "diskSpeed",
+      "lensingStrength"
+    ],
+    "AtmosphereSettings": [
+      "atmosphereStrength",
+      "turbidity",
+      "rayleighStrength",
+      "mieStrength"
+    ],
+    "SunSettings": [
+      "sunBrightness",
+      "sunElevation",
+      "sunYaw",
+      "sunSize"
+    ],
+    "DaySettings": [
+      "cycleSpeed",
+      "mieAnisotropy",
+      "nightAmbient",
+      "twilightStrength"
+    ],
+    "MoonSettings": [
+      "moonBrightness",
+      "moonYaw",
+      "moonElevation",
+      "moonSize"
+    ],
+    "MoonSurface": [
+      "moonPhase",
+      "moonDetail",
+      "moonHalo",
+      "moonSpeed"
+    ],
+    "ThinCloudSettings": [
+      "thinCloudStrength",
+      "thinCloudCoverage",
+      "thinCloudScale",
+      "thinCloudHeight"
+    ],
+    "ThinCloudMotion": [
+      "thinCloudSpeed",
+      "thinCloudWind",
+      "thinCloudEvolution",
+      "thinCloudSilver"
+    ]
+  },
+  "colors": {
+    "FogColor": "fogColor",
+    "VolumeCloudColor": "volumeCloudColor",
+    "RainColor": "rainColor",
+    "LightningColor": "lightningColor",
+    "SpecialColorA": "specialColorA",
+    "SpecialColorB": "specialColorB",
+    "BackgroundColor": "backgroundColor",
+    "StarCoolColor": "starCoolColor",
+    "StarWarmColor": "starWarmColor",
+    "GalaxyColor": "galaxyColor",
+    "NebulaColorA": "nebulaColorA",
+    "NebulaColorB": "nebulaColorB",
+    "AuroraColorA": "auroraColorA",
+    "AuroraColorB": "auroraColorB",
+    "BodyColorA": "celestialColorA",
+    "BodyColorB": "celestialColorB",
+    "RingColor": "ringColor",
+    "DiskColorA": "diskColorA",
+    "DiskColorB": "diskColorB",
+    "SkyTint": "skyTint",
+    "SunColor": "sunColor",
+    "MoonColor": "moonColor",
+    "ThinCloudColor": "thinCloudColor"
+  },
+  "angles": [
+    "rainWind",
+    "volumeCloudWind",
+    "rainbowWidth",
+    "haloWidth",
+    "galacticYaw",
+    "galacticTilt",
+    "celestialSize",
+    "celestialYaw",
+    "celestialPitch",
+    "celestialPhase",
+    "ringTilt",
+    "blackHoleSize",
+    "blackHoleYaw",
+    "blackHolePitch",
+    "diskTilt",
+    "sunElevation",
+    "sunYaw",
+    "sunSize",
+    "moonYaw",
+    "moonElevation",
+    "moonSize",
+    "moonPhase",
+    "thinCloudWind"
+  ]
+}

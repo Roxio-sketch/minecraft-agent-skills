@@ -39,13 +39,19 @@ final class LightningHalo {
     static void release(){if(scratch!=null)try(State state=new State()){GlStateManager._activeTexture(GL13.GL_TEXTURE0);scratch.destroyBuffers();scratch=null;}}
 
     static void draw(List<List<HaloGeometry.Point>> paths,LightningRecipe recipe,HaloGeometry.Projection projection,Matrix4f pose,int width,int height){
-        if(profile==null||composite==null||paths.isEmpty()||recipe.glowGain<=0)return;
+        drawLayer(paths,recipe,projection,pose,width,height,true);
+    }
+    static boolean drawCore(List<List<HaloGeometry.Point>> paths,LightningRecipe recipe,HaloGeometry.Projection projection,Matrix4f pose,int width,int height){
+        return drawLayer(paths,recipe,projection,pose,width,height,false);
+    }
+    private static boolean drawLayer(List<List<HaloGeometry.Point>> paths,LightningRecipe recipe,HaloGeometry.Projection projection,Matrix4f pose,int width,int height,boolean halo){
+        if(profile==null||composite==null||paths.isEmpty()||(halo?recipe.glowGain:recipe.coreGain)<=0)return false;
         var main=Minecraft.getInstance().getMainRenderTarget();
         // Leave alternate framebuffer owners to an explicit integration adapter.
-        if(GL11.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING)!=main.frameBufferId||main.getDepthTextureId()<0)return;
+        if(GL11.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING)!=main.frameBufferId||main.getDepthTextureId()<0)return false;
         long started=PROBES?System.nanoTime():0;
         try(State state=new State()){
-            if(state.vp[0]!=0||state.vp[1]!=0||width!=main.width||height!=main.height)return;
+            if(state.vp[0]!=0||state.vp[1]!=0||width!=main.width||height!=main.height)return false;
             GlStateManager._activeTexture(GL13.GL_TEXTURE0);
             if(scratch==null||scratch.width!=main.width||scratch.height!=main.height||scratch.isStencilEnabled()!=main.isStencilEnabled()){
                 release();scratch=new TextureTarget(main.width,main.height,true,Minecraft.ON_OSX);
@@ -60,7 +66,7 @@ final class LightningHalo {
             GL30.glBlitFramebuffer(0,0,main.width,main.height,0,0,scratch.width,scratch.height,GL11.GL_DEPTH_BUFFER_BIT,GL11.GL_NEAREST);
             }
             for(var path:paths){
-                var mesh=HaloGeometry.build(path,projection,recipe,true);
+                var mesh=HaloGeometry.build(path,projection,recipe,halo);
                 var bounds=mesh.bounds();
                 if(bounds.width()<=0||bounds.height()<=0)continue;
                 if(PROBES){framePaths++;frameBodyQuads+=mesh.body().size()/4;frameRoundQuads+=mesh.round().size()/4;}
@@ -70,7 +76,9 @@ final class LightningHalo {
                 GL11.glClearColor(0,0,0,0);GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
                 if(LightningShaderBridge.late)RenderSystem.disableDepthTest();else RenderSystem.enableDepthTest();RenderSystem.depthFunc(GL11.GL_LEQUAL);RenderSystem.depthMask(false);
                 LightningShaderBridge.uniforms(profile);
-                profile.safeGetUniform("Gain").set((float)recipe.glowGain);
+                profile.safeGetUniform("Gain").set((float)(halo?recipe.glowGain:recipe.coreGain));
+                profile.safeGetUniform("Core").set(halo?0f:1f);
+                profile.safeGetUniform("Vivid").set(!halo&&LightningAppearance.vividCore(recipe)?1f:0f);
                 RenderSystem.setShader(()->profile);
                 profile.apply();
                 RenderSystem.enableBlend();RenderSystem.blendFuncSeparate(GL11.GL_ONE,GL11.GL_ONE,GL11.GL_ONE,GL11.GL_ONE);
@@ -82,13 +90,14 @@ final class LightningHalo {
                 RenderSystem.setShader(()->composite);RenderSystem.setShaderTexture(0,scratch.getColorTextureId());
                 composite.apply();
                 RenderSystem.enableBlend();GL20.glBlendEquationSeparate(GL14.GL_FUNC_ADD,GL14.GL_FUNC_ADD);
-                RenderSystem.blendFuncSeparate(GL11.GL_ONE,GL11.GL_ONE,GL11.GL_ZERO,GL11.GL_ONE);
+                RenderSystem.blendFuncSeparate(GL11.GL_ONE,!halo&&LightningAppearance.vividCore(recipe)?GL11.GL_ONE_MINUS_SRC_ALPHA:GL11.GL_ONE,GL11.GL_ZERO,GL11.GL_ONE);
                 BUFFER.begin(VertexFormat.Mode.TRIANGLES,DefaultVertexFormat.POSITION_TEX);
                 BUFFER.vertex(-1,-1,0).uv(0,0).endVertex();BUFFER.vertex(3,-1,0).uv(2,0).endVertex();BUFFER.vertex(-1,3,0).uv(0,2).endVertex();
                 BufferUploader.drawWithShader(BUFFER.end());
             }
         }
         if(PROBES)frameCpuMillis+=(System.nanoTime()-started)/1e6;
+        return true;
     }
     private static void vertices(List<HaloGeometry.Vertex> vertices,Matrix4f pose){
         if(vertices.isEmpty())return;

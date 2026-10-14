@@ -1,0 +1,4 @@
+tier=1 tick=71 hit=6030.0
+tier=2 tick=121 hit=92430.0
+tier=3 tick=171 hit=178830.0
+tier=4 tick=221 hit=265230.0

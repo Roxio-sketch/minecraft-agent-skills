@@ -1,0 +1,4 @@
+interface:
+  display_name: "Minecraft 玻璃边缘亮"
+  short_description: "制作玻璃、水晶和能量护罩的视角边缘光，提供预览与 Forge 接入方法"
+  default_prompt: "使用 $minecraft-glass-rim 制作中心透明、冰蓝细边的水晶外壳，检查三维和小图效果。"

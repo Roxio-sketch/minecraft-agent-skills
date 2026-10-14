@@ -1,0 +1,465 @@
+{
+  "date": "2026-09-29",
+  "scope": "Inspected source fingerprints; 1.21 cross references are not 1.20.1 compatibility proof",
+  "sources": [
+    {
+      "path": "research/render-frameworks/sources/Veil-1.21/Veil-1.21/common/src/main/java/foundry/veil/VeilClient.java",
+      "sha256": "ee906b1049741da8793e37a744a3ddd8a45c4f7c20492b5daa27267753f44d52",
+      "lines": 84,
+      "anchors": [
+        {
+          "line": 52,
+          "text": "VeilEventPlatform.INSTANCE.onVeilRegisterFixedBuffers(registry -> registry.registerFixedBuffer(VeilRenderLevelStageEvent.Stage.AFTER_TRANSLUCENT_BLOCKS, RenderType.translucentMovingBlock()));"
+        },
+        {
+          "line": 55,
+          "text": "RenderTypeShardRegistry.addGenericShard(renderType -> \"translucent_target\".equals(getOutputName(renderType)), new DynamicBufferShard(\"translucent\", () -> Minecraft.getInstance().levelRenderer.getTrans"
+        }
+      ]
+    },
+    {
+      "path": "research/render-frameworks/sources/Veil-1.21/Veil-1.21/common/src/main/java/foundry/veil/mixin/pipeline/client/PipelineLevelRendererMixin.java",
+      "sha256": "1efcf016bc8deb66f4bd1ebbff4f723aae6ba354e1d110c8d6229b7c8b72787d",
+      "lines": 331,
+      "anchors": [
+        {
+          "line": 65,
+          "text": "private @Nullable PostChain transparencyChain;"
+        },
+        {
+          "line": 68,
+          "text": "private @Nullable RenderTarget translucentTarget;"
+        },
+        {
+          "line": 136,
+          "text": "@Inject(method = \"deinitTransparency\", at = @At(\"RETURN\"))"
+        },
+        {
+          "line": 137,
+          "text": "public void deinitTransparency(CallbackInfo ci) {"
+        },
+        {
+          "line": 146,
+          "text": "@Inject(method = \"initTransparency\", at = @At(\"RETURN\"))"
+        },
+        {
+          "line": 147,
+          "text": "public void initTransparency(CallbackInfo ci) {"
+        },
+        {
+          "line": 148,
+          "text": "if (this.transparencyChain == null) {"
+        },
+        {
+          "line": 153,
+          "text": "framebufferManager.setFramebuffer(VeilFramebuffers.TRANSLUCENT_TARGET, VeilRenderBridge.wrap(this.translucentTarget));"
+        }
+      ]
+    },
+    {
+      "path": "research/render-frameworks/sources/Veil-1.21/Veil-1.21/common/src/main/java/foundry/veil/impl/client/render/dynamicbuffer/DynamicBufferProcessor.java",
+      "sha256": "4d5906d9ed185290c253a1e13d910af4f0f862d1fae1fad00775e876a2df5d70",
+      "lines": 377,
+      "anchors": [
+        {
+          "line": 35,
+          "text": "private static final Set<String> BLOCK_SHADERS = Set.of(\"rendertype_solid\", \"rendertype_cutout\", \"rendertype_cutout_mipped\", \"rendertype_translucent\");"
+        },
+        {
+          "line": 73,
+          "text": "return invokeFunctionNode.getHeader() instanceof GlslVariableNode variableNode && (\"minecraft_sample_lightmap\".equals(variableNode.getName()));"
+        }
+      ]
+    },
+    {
+      "path": "research/render-frameworks/sources/Veil-1.21/Veil-1.21/neoforge/src/main/java/foundry/veil/forge/mixin/compat/sodium/DefaultFluidRendererMixin.java",
+      "sha256": "7010db28de1474547133cbaef01949521a34834dc2c3623b00d9b5b6bb0d56ea",
+      "lines": 32,
+      "anchors": [
+        {
+          "line": 10,
+          "text": "import net.caffeinemc.mods.sodium.client.render.chunk.translucent_sorting.TranslucentGeometryCollector;"
+        },
+        {
+          "line": 27,
+          "text": "@Inject(method = \"writeQuad\", at = @At(value = \"INVOKE\", target = \"Lnet/caffeinemc/mods/sodium/client/model/quad/ModelQuadView;getTexV(I)F\"), remap = false)"
+        }
+      ]
+    },
+    {
+      "path": "research/render-frameworks/sources/Veil-1.21/Veil-1.21/neoforge/src/main/java/foundry/veil/forge/mixin/compat/sodium/ShaderChunkRendererMixin.java",
+      "sha256": "bad7082c64d91f14b7b03503644dab9e4d6370a6a226dd9b94e317746ced9b62",
+      "lines": 183,
+      "anchors": [
+        {
+          "line": 74,
+          "text": "@Inject(method = \"compileProgram\", at = @At(\"HEAD\"), remap = false)"
+        }
+      ]
+    },
+    {
+      "path": "research/render-frameworks/sources/Veil-1.21/Veil-1.21/neoforge/src/main/java/foundry/veil/forge/compat/iris/VeilForgeIrisCompat.java",
+      "sha256": "7dd1ef1e6b9b468c8fb272507f996b7acd8aca1911ffdfda345e785d169a7dc7",
+      "lines": 59,
+      "anchors": [
+        {
+          "line": 10,
+          "text": "import net.irisshaders.iris.targets.RenderTargets;"
+        },
+        {
+          "line": 29,
+          "text": "public Map<String, IrisRenderTargetExtension> getRenderTargets() {"
+        },
+        {
+          "line": 32,
+          "text": "RenderTargets renderTargets = accessor.getRenderTargets();"
+        }
+      ]
+    },
+    {
+      "path": "research/render-frameworks/sources/veil-example-mod-1.21/veil-example-mod-1.21/src/main/resources/resourcepacks/test_shaders/assets/veil/pinwheel/shader_modifiers/sodium/shaders/blocks/block_layer_opaque.vsh.txt",
+      "sha256": "ec3d077d1b1e3e8f83dd5b999912bcb95f258bbbabb8def4306a3b4b57f02170",
+      "lines": 21,
+      "anchors": []
+    },
+    {
+      "path": "research/render-frameworks/sources/Lodestone-1.21/Lodestone-1.21/src/main/java/team/lodestar/lodestone/systems/rendering/rendeertype/LodestoneRenderType.java",
+      "sha256": "59f3d2f691efc891d9819987d4c51129f00c62e7c7fdabd9903f6e3356521a2d",
+      "lines": 93,
+      "anchors": [
+        {
+          "line": 59,
+          "text": "return renderType.state.transparencyState.equals(StateShards.ADDITIVE_TRANSPARENCY) || renderType.state.transparencyState.equals(ADDITIVE_TRANSPARENCY);"
+        },
+        {
+          "line": 84,
+          "text": "RenderSystem.depthMask(state.writeMaskState.writeDepth);"
+        }
+      ]
+    },
+    {
+      "path": "research/render-frameworks/sources/ImmersivePortalsMod-1.21/ImmersivePortalsMod-1.21/src/main/java/qouteall/imm_ptl/core/render/renderer/RendererUsingStencil.java",
+      "sha256": "387f10d533c44b25a1668514f51a2a2ba1b854fcd85a90695ea47ef549473194",
+      "lines": 317,
+      "anchors": [
+        {
+          "line": 31,
+          "text": "public class RendererUsingStencil extends PortalRenderer {"
+        },
+        {
+          "line": 39,
+          "text": "RenderSystem.depthMask(false);"
+        },
+        {
+          "line": 41,
+          "text": "RenderSystem.depthMask(true);"
+        },
+        {
+          "line": 58,
+          "text": "RenderSystem.depthMask(true);"
+        },
+        {
+          "line": 63,
+          "text": "setStencilStateForWorldRendering();"
+        },
+        {
+          "line": 92,
+          "text": "if (!IPPortingLibCompat.getIsStencilEnabled(client.getMainRenderTarget())) {"
+        },
+        {
+          "line": 93,
+          "text": "IPPortingLibCompat.setIsStencilEnabled(client.getMainRenderTarget(), true);"
+        },
+        {
+          "line": 95,
+          "text": "if (Minecraft.useShaderTransparency()) {"
+        },
+        {
+          "line": 102,
+          "text": "GL11.glClearStencil(0);"
+        },
+        {
+          "line": 116,
+          "text": "GL11.glStencilFunc(GL_ALWAYS, 2333, 0xFF);"
+        },
+        {
+          "line": 117,
+          "text": "GL11.glStencilOp(GL_KEEP, GL_KEEP, GL_KEEP);"
+        },
+        {
+          "line": 131,
+          "text": "int outerPortalStencilValue = PortalRendering.getPortalLayer();"
+        },
+        {
+          "line": 136,
+          "text": "renderPortalViewAreaToStencil(portal, modelView);"
+        },
+        {
+          "line": 142,
+          "text": "setStencilStateForWorldRendering();"
+        }
+      ]
+    },
+    {
+      "path": "research/local-environment/forge/decompiled/net/minecraft/client/renderer/LevelRenderer.java",
+      "sha256": "f8c5383a07f7d6555f0bbcefd4b283f1b7e1e6f95154312a9d1779d86f348447",
+      "lines": 2983,
+      "anchors": [
+        {
+          "line": 60,
+          "text": "*  net.minecraft.client.renderer.LevelRenderer$TransparencyShaderException"
+        },
+        {
+          "line": 404,
+          "text": "private RenderTarget translucentTarget;"
+        },
+        {
+          "line": 414,
+          "text": "private PostChain transparencyChain;"
+        },
+        {
+          "line": 492,
+          "text": "RenderSystem.depthMask((boolean)Minecraft.useShaderTransparency());"
+        },
+        {
+          "line": 628,
+          "text": "if (this.transparencyChain != null) {"
+        },
+        {
+          "line": 629,
+          "text": "this.transparencyChain.close();"
+        },
+        {
+          "line": 635,
+          "text": "if (Minecraft.useShaderTransparency()) {"
+        },
+        {
+          "line": 636,
+          "text": "this.initTransparency();"
+        },
+        {
+          "line": 662,
+          "text": "private void initTransparency() {"
+        },
+        {
+          "line": 663,
+          "text": "this.deinitTransparency();"
+        },
+        {
+          "line": 664,
+          "text": "ResourceLocation resourcelocation = new ResourceLocation(\"shaders/post/transparency.json\");"
+        },
+        {
+          "line": 668,
+          "text": "RenderTarget rendertarget1 = postchain.getTempTarget(\"translucent\");"
+        },
+        {
+          "line": 673,
+          "text": "this.transparencyChain = postchain;"
+        },
+        {
+          "line": 674,
+          "text": "this.translucentTarget = rendertarget1;"
+        }
+      ]
+    },
+    {
+      "path": "research/local-environment/water-review/decompiled/net/minecraft/client/renderer/block/LiquidBlockRenderer.java",
+      "sha256": "d57d2945e4a7d58a185057f2d305493792ded036ad103717c48aabeb33f76336",
+      "lines": 361,
+      "anchors": [
+        {
+          "line": 99,
+          "text": "TextureAtlasSprite[] atextureatlassprite = ForgeHooksClient.getFluidSprites((BlockAndTintGetter)p_234370_, (BlockPos)p_234371_, (FluidState)p_234374_);"
+        },
+        {
+          "line": 100,
+          "text": "int i = IClientFluidTypeExtensions.of((FluidState)p_234374_).getTintColor(p_234374_, p_234370_, p_234371_);"
+        },
+        {
+          "line": 349,
+          "text": "p_110985_.vertex(p_110986_, p_110987_, p_110988_).color(p_110989_, p_110990_, p_110991_, alpha).uv(p_110992_, p_110993_).uv2(p_110994_).normal(0.0f, 1.0f, 0.0f).endVertex();"
+        }
+      ]
+    },
+    {
+      "path": "research/local-environment/water-review/decompiled/net/minecraftforge/client/extensions/common/IClientFluidTypeExtensions.java",
+      "sha256": "872ad61d80f90b3fbf3f4ea03d8e7b9687e60d03498aacbc169f87a9ca46d29f",
+      "lines": 128,
+      "anchors": [
+        {
+          "line": 60,
+          "text": "default public int getTintColor() {"
+        },
+        {
+          "line": 109,
+          "text": "default public int getTintColor(FluidState state, BlockAndTintGetter getter, BlockPos pos) {"
+        },
+        {
+          "line": 110,
+          "text": "return this.getTintColor();"
+        },
+        {
+          "line": 113,
+          "text": "default public int getTintColor(FluidStack stack) {"
+        },
+        {
+          "line": 114,
+          "text": "return this.getTintColor();"
+        }
+      ]
+    },
+    {
+      "path": "research/local-environment/water-review/decompiled/net/minecraft/client/renderer/RenderType.java",
+      "sha256": "5b19e1b9006d38aa8b92c72030e2ddad5136ceee9f5bd6efcca7f9cee6c207f3",
+      "lines": 512,
+      "anchors": [
+        {
+          "line": 69,
+          "text": "private static final RenderType TRANSLUCENT = RenderType.create(\"translucent\", DefaultVertexFormat.BLOCK, VertexFormat.Mode.QUADS, 0x200000, true, true, RenderType.translucentState(RENDERTYPE_TRANSLUC"
+        },
+        {
+          "line": 70,
+          "text": "private static final RenderType TRANSLUCENT_MOVING_BLOCK = RenderType.create(\"translucent_moving_block\", DefaultVertexFormat.BLOCK, VertexFormat.Mode.QUADS, 262144, false, true, RenderType.translucent"
+        },
+        {
+          "line": 71,
+          "text": "private static final RenderType TRANSLUCENT_NO_CRUMBLING = RenderType.create(\"translucent_no_crumbling\", DefaultVertexFormat.BLOCK, VertexFormat.Mode.QUADS, 262144, false, true, RenderType.translucent"
+        },
+        {
+          "line": 73,
+          "text": "CompositeState rendertype$compositestate = CompositeState.builder().setShaderState(RENDERTYPE_ARMOR_CUTOUT_NO_CULL_SHADER).setTextureState((RenderStateShard.EmptyTextureStateShard)new RenderStateShard"
+        },
+        {
+          "line": 77,
+          "text": "CompositeState rendertype$compositestate = CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_SOLID_SHADER).setTextureState((RenderStateShard.EmptyTextureStateShard)new RenderStateShard.Texture"
+        },
+        {
+          "line": 81,
+          "text": "CompositeState rendertype$compositestate = CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_CUTOUT_SHADER).setTextureState((RenderStateShard.EmptyTextureStateShard)new RenderStateShard.Textur"
+        },
+        {
+          "line": 85,
+          "text": "CompositeState rendertype$compositestate = CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_CUTOUT_NO_CULL_SHADER).setTextureState((RenderStateShard.EmptyTextureStateShard)new RenderStateShar"
+        },
+        {
+          "line": 89,
+          "text": "CompositeState rendertype$compositestate = CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_CUTOUT_NO_CULL_Z_OFFSET_SHADER).setTextureState((RenderStateShard.EmptyTextureStateShard)new Render"
+        },
+        {
+          "line": 93,
+          "text": "CompositeState rendertype$compositestate = CompositeState.builder().setShaderState(RENDERTYPE_ITEM_ENTITY_TRANSLUCENT_CULL_SHADER).setTextureState((RenderStateShard.EmptyTextureStateShard)new RenderSt"
+        },
+        {
+          "line": 94,
+          "text": "return RenderType.create(\"item_entity_translucent_cull\", DefaultVertexFormat.NEW_ENTITY, VertexFormat.Mode.QUADS, 256, true, true, rendertype$compositestate);"
+        },
+        {
+          "line": 97,
+          "text": "CompositeState rendertype$compositestate = CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_TRANSLUCENT_CULL_SHADER).setTextureState((RenderStateShard.EmptyTextureStateShard)new RenderStateSh"
+        },
+        {
+          "line": 98,
+          "text": "return RenderType.create(\"entity_translucent_cull\", DefaultVertexFormat.NEW_ENTITY, VertexFormat.Mode.QUADS, 256, true, true, rendertype$compositestate);"
+        },
+        {
+          "line": 101,
+          "text": "CompositeState rendertype$compositestate = CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_TRANSLUCENT_SHADER).setTextureState((RenderStateShard.EmptyTextureStateShard)new RenderStateShard.T"
+        },
+        {
+          "line": 102,
+          "text": "return RenderType.create(\"entity_translucent\", DefaultVertexFormat.NEW_ENTITY, VertexFormat.Mode.QUADS, 256, true, true, rendertype$compositestate);"
+        }
+      ]
+    },
+    {
+      "path": "research/local-environment/water-review/decompiled/net/minecraft/client/renderer/ShaderInstance.java",
+      "sha256": "415cd3318c2a840605450288a4d5af19e88fcd807edfbf6de939a6f13d96c6ac",
+      "lines": 482,
+      "anchors": [
+        {
+          "line": 234,
+          "text": "this.CHUNK_OFFSET = this.getUniform(\"ChunkOffset\");"
+        }
+      ]
+    },
+    {
+      "path": "research/local-environment/water-review/decompiled/net/minecraft/client/renderer/GameRenderer$1.java",
+      "sha256": "469db49c3fc4180e3c464c83cbe6c23522c4a3e9884f4fabb7d1a38c780c00df",
+      "lines": 67,
+      "anchors": []
+    },
+    {
+      "path": "research/local-environment/surface/moonlight/decompiled/net/mehvahdjukaar/moonlight/core/MoonlightClient$MLDynamicClientResources.java",
+      "sha256": "e3f81dbeb8b9b3c1fa7896662563a664e9b0a1e36a7b2b419180c440e13be8d3",
+      "lines": 51,
+      "anchors": [
+        {
+          "line": 48,
+          "text": "executor.accept((manager, sink) -> sink.addBytes(new ResourceLocation(\"shaders/include/light.glsl\"), \"#version 150\\n\\n#define MINECRAFT_LIGHT_POWER   (0.6)\\n#define MINECRAFT_LIGHT_POWER_FIXED   (0.5)"
+        }
+      ]
+    },
+    {
+      "path": "research/local-environment/surface/rendertype_translucent.json",
+      "sha256": "d305c7ced70612d9b1cc9a844bd2334a221410a9480df4e341c1397d007bf2cd",
+      "lines": 30,
+      "anchors": [
+        {
+          "line": 7,
+          "text": "\"vertex\": \"rendertype_translucent\","
+        },
+        {
+          "line": 8,
+          "text": "\"fragment\": \"rendertype_translucent\","
+        },
+        {
+          "line": 23,
+          "text": "{ \"name\": \"ChunkOffset\", \"type\": \"float\", \"count\": 3, \"values\": [ 0.0, 0.0, 0.0 ] },"
+        }
+      ]
+    },
+    {
+      "path": "research/local-environment/surface/rendertype_translucent.vsh",
+      "sha256": "865a29f399b813997a20fadaa4789752bed2894035ae2a89beaf69446594d7d9",
+      "lines": 32,
+      "anchors": [
+        {
+          "line": 16,
+          "text": "uniform vec3 ChunkOffset;"
+        },
+        {
+          "line": 25,
+          "text": "vec3 pos = Position + ChunkOffset;"
+        },
+        {
+          "line": 29,
+          "text": "vertexColor = Color * minecraft_sample_lightmap(Sampler2, UV2);"
+        }
+      ]
+    },
+    {
+      "path": "research/local-environment/surface/rendertype_translucent.fsh",
+      "sha256": "4f021fe50a473bd97147051654eb8e154ff9ea32352ae8b259189ac3d5d3f20d",
+      "lines": 22,
+      "anchors": []
+    },
+    {
+      "path": "research/local-environment/surface/fog.glsl",
+      "sha256": "c599820ddec8e4019a43e6720b02d3e7c7e6dbc97aa50df76340bd2001c12647",
+      "lines": 30,
+      "anchors": []
+    },
+    {
+      "path": "research/local-environment/surface/light.glsl",
+      "sha256": "de5cc7083938a7eb72b571df4b90ce947b1ac2d2eb37498406207f3548032d3d",
+      "lines": 17,
+      "anchors": [
+        {
+          "line": 15,
+          "text": "vec4 minecraft_sample_lightmap(sampler2D lightMap, ivec2 uv) {"
+        }
+      ]
+    }
+  ]
+}

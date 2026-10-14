@@ -3,3 +3,12 @@ __pycache__/
 .venv/
 venv/
 .env
+
+# Generated development state
+.gradle/
+node_modules/
+**/build/
+**/run/
+# Optional extracted Minecraft armor textures
+rendering/spirit-guard-glint-lab/textures/
+skills/minecraft-colored-glint/assets/workbench/textures/

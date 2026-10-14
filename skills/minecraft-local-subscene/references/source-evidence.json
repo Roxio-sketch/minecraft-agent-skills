@@ -1,0 +1,888 @@
+{
+  "date": "2026-09-29",
+  "scope": "Relevant rendering dependency chains; static source evidence, not runtime certification",
+  "archives": [
+    {
+      "name": "ImmersivePortalsMod-1.21.zip",
+      "sha256": "2c9b46862d4f1e018565f4f5731ac407e6d3315acf22886eb70192e821ce26bd"
+    },
+    {
+      "name": "veil-example-mod-1.21.zip",
+      "sha256": "5128c7026e4d151d072996b4c06004c59dc01f3ff5826410b1aa132eef5635ee"
+    },
+    {
+      "name": "Veil-1.21.zip",
+      "sha256": "046abfa897c72bd36420438727c5cedea98c9b473fb0e7b5132b993dea569b2b"
+    },
+    {
+      "name": "Lodestone-1.21.zip",
+      "sha256": "87396f4508aac70c31a344532e22d04620834a6ad880bbe250676e021959c2b5"
+    }
+  ],
+  "files": [
+    {
+      "id": "IP-STENCIL",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/renderer/RendererUsingStencil.java",
+      "sha256": "387f10d533c44b25a1668514f51a2a2ba1b854fcd85a90695ea47ef549473194",
+      "line_count": 317,
+      "anchors": {
+        "doRenderPortal(": [
+          76,
+          123
+        ],
+        "renderPortalViewAreaToStencil(": [
+          136,
+          175
+        ],
+        "clearDepthOfThePortalViewArea(": [
+          152,
+          203
+        ],
+        "restoreDepthOfPortalViewArea(": [
+          164,
+          231
+        ],
+        "clampStencilValue(": [
+          167,
+          253
+        ]
+      }
+    },
+    {
+      "id": "IP-FBO",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/renderer/RendererUsingFrameBuffer.java",
+      "sha256": "723dbe57d531b7fb084663db851359d0e3b8006c2ca9b6c4c35bf2234387a35c",
+      "line_count": 142,
+      "anchors": {
+        "doRenderPortal(": [
+          58,
+          139
+        ],
+        "only support one-layer": [
+          63
+        ],
+        "ip_setFrameBuffer": [
+          75,
+          88
+        ],
+        "renderSecondBufferIntoMainBuffer(": [
+          94,
+          126
+        ]
+      }
+    },
+    {
+      "id": "IP-TARGET",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/SecondaryFrameBuffer.java",
+      "sha256": "32e356f83c6f6e537a58bedb833ef9684ef4695a5502376b77c402b2b5f5079c",
+      "line_count": 41,
+      "anchors": {
+        "prepare(": [
+          12,
+          16,
+          19
+        ],
+        "resize(": [
+          32
+        ],
+        "TextureTarget": [
+          4,
+          10,
+          21
+        ]
+      }
+    },
+    {
+      "id": "IP-COMPOSE",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/MyRenderHelper.java",
+      "sha256": "8a63fc7159e702f2881645350a4b1f43321bf905bf213b3cb7c6048599075b0b",
+      "line_count": 575,
+      "anchors": {
+        "drawPortalAreaWithFramebuffer(": [
+          146
+        ],
+        "depthMask": [
+          155,
+          338,
+          384
+        ]
+      }
+    },
+    {
+      "id": "IP-AREA",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/ViewAreaRenderer.java",
+      "sha256": "d675a91c367edb0cc20adfdde40e2de4bb7b2ffb8c60b754a0a83b86e71c176f",
+      "line_count": 224,
+      "anchors": {
+        "renderPortalArea(": [
+          25
+        ],
+        "renderViewAreaMesh(": [
+          142
+        ],
+        "outputTriangle(": [
+          147,
+          215,
+          219
+        ]
+      }
+    },
+    {
+      "id": "IP-RENDER",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/renderer/PortalRenderer.java",
+      "sha256": "ea22a73c3cbf3ee030b1abfda7c3ef608967971ae163637d679990e58d022ae0",
+      "line_count": 362,
+      "anchors": {
+        "getPortalsToRender(": [
+          86
+        ],
+        "renderPortalContent(": [
+          199
+        ],
+        "getMaxPortalLayer(": [
+          202
+        ]
+      }
+    },
+    {
+      "id": "IP-CONTEXT",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/context_management/WorldRenderInfo.java",
+      "sha256": "7ddbe0672f643b1d2dbd369048922e2a9fb702dfd8c5563271f5a969ac6f2bd3",
+      "line_count": 279,
+      "anchors": {
+        "pushRenderInfo(": [
+          103
+        ],
+        "popRenderInfo(": [
+          108
+        ],
+        "cameraPos": [
+          37,
+          79,
+          91,
+          116,
+          178,
+          199,
+          218,
+          219,
+          271,
+          273
+        ],
+        "renderDistance": [
+          60,
+          83,
+          94,
+          169,
+          203,
+          238,
+          239,
+          274
+        ]
+      }
+    },
+    {
+      "id": "IP-STACK",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/context_management/PortalRendering.java",
+      "sha256": "cedf36eb7331323913d64c64379c2d3da4ce45100fba0309d25b27918a4c00d2",
+      "line_count": 228,
+      "anchors": {
+        "pushPortalLayer(": [
+          33
+        ],
+        "popPortalLayer(": [
+          38
+        ],
+        "getRenderingCameraPos(": [
+          105
+        ],
+        "getActiveClippingPlane(": [
+          178
+        ]
+      }
+    },
+    {
+      "id": "IP-WORLD-DRAW",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/MyGameRenderer.java",
+      "sha256": "e170663b288c136f44a9166645af37b6fb3fd224de732f232962b3dddd3fbee3",
+      "line_count": 335,
+      "anchors": {
+        "renderWorldNew(": [
+          96
+        ],
+        "renderLevel(": [
+          231
+        ],
+        "oldWorld": [
+          142,
+          143,
+          148,
+          166,
+          241,
+          242,
+          244,
+          248,
+          256
+        ],
+        "oldCamera": [
+          150,
+          250,
+          278
+        ]
+      }
+    },
+    {
+      "id": "IP-CAMERA",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/portal/Portal.java",
+      "sha256": "e4a2d3ff50020c0f760275c1b6b9be3173a002b373dc16cc3d6b26b006fa3472",
+      "line_count": 1963,
+      "anchors": {
+        "transformPoint(": [
+          464
+        ],
+        "transformLocalVec(": [
+          467,
+          474,
+          1071,
+          1158,
+          1159,
+          1160,
+          1161
+        ],
+        "inverseTransformPoint(": [
+          1224
+        ]
+      }
+    },
+    {
+      "id": "IP-CLIP",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/FrontClipping.java",
+      "sha256": "e0331e1c573eb5c338d4a572597bb69bf7df8513396838d4e600c7b89a0081f2",
+      "line_count": 219,
+      "anchors": {
+        "updateInnerClipping(": [
+          48,
+          50,
+          53
+        ],
+        "transform": [
+          79,
+          89,
+          97,
+          130
+        ],
+        "invert()": [
+          95
+        ],
+        "transpose()": [
+          96
+        ]
+      }
+    },
+    {
+      "id": "IP-HOOKS",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/mixin/client/render/MixinGameRenderer.java",
+      "sha256": "657b022b14c8f7f4ffe3a09fcacb5d232be13e62c363806f984c8851590f2602",
+      "line_count": 337,
+      "anchors": {
+        "prepareRendering(": [
+          114
+        ],
+        "finishRendering(": [
+          129
+        ],
+        "resize(": [
+          185,
+          193
+        ],
+        "renderLevel": [
+          106,
+          122,
+          147,
+          157,
+          160,
+          168,
+          171,
+          276,
+          303
+        ]
+      }
+    },
+    {
+      "id": "IP-WORLDS",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/ClientWorldLoader.java",
+      "sha256": "fe6af6cc56062a71221f66160aa0331c705b503b4121e397b80959d23a958341",
+      "line_count": 634,
+      "anchors": {
+        "createSecondaryClientWorld(": [
+          315,
+          389
+        ],
+        "withSwitchedWorld(": [
+          157,
+          527,
+          544,
+          585,
+          586,
+          602
+        ],
+        "finally": [
+          479,
+          569
+        ],
+        "cleanUp(": [
+          208,
+          258
+        ],
+        "disposeDimensionDynamically(": [
+          92,
+          233
+        ]
+      }
+    },
+    {
+      "id": "IP-PACKETS",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/network/PacketRedirectionClient.java",
+      "sha256": "378a0a13249518aa675d9d21ee35829f27c7a71d3406e030d516bc1ff7f360b5",
+      "line_count": 116,
+      "anchors": {
+        "withSwitchedWorld": [
+          59,
+          100
+        ],
+        "finally": [
+          66,
+          112
+        ]
+      }
+    },
+    {
+      "id": "IP-CHUNK-LOAD",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/chunk_loading/PlayerChunkLoading.java",
+      "sha256": "76f0a4e0d0efcba3af03698f8e1b5b4971aa7940514585b43221efd991260e1b",
+      "line_count": 243,
+      "anchors": {
+        "send": [
+          36,
+          90,
+          166,
+          170,
+          183,
+          190,
+          193,
+          201
+        ]
+      }
+    },
+    {
+      "id": "IP-CHUNKS",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/chunk_loading/ImmPtlChunkTracking.java",
+      "sha256": "7384623d7bf06344a3e077f0e8c2c2ca84ca05deec863b8d9ef4534ec5b36881",
+      "line_count": 669,
+      "anchors": {
+        "getPlayersViewingChunk(": [
+          456,
+          467
+        ],
+        "tick(": [
+          362,
+          389,
+          398
+        ],
+        "updateForPlayer(": [
+          149,
+          160,
+          375
+        ]
+      }
+    },
+    {
+      "id": "IP-ENTITIES",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/chunk_loading/EntitySync.java",
+      "sha256": "bba62539a9900c1226581f59b17498cc36fbaa6a048d03fef305cb6f7b7aaa82",
+      "line_count": 79,
+      "anchors": {
+        "tick(": [
+          20,
+          46
+        ],
+        "sendChanges": [
+          63
+        ]
+      }
+    },
+    {
+      "id": "IP-WORLD-INFO",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/chunk_loading/WorldInfoSender.java",
+      "sha256": "9e580b73f17781d2d4c9a3a39270de69cad0342dd4ae0fd308382611e6a4ca07",
+      "line_count": 100,
+      "anchors": {
+        "Time": [
+          5,
+          21,
+          53,
+          54,
+          55
+        ]
+      }
+    },
+    {
+      "id": "IP-SHAPE",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/portal/shape/PortalShape.java",
+      "sha256": "fd9696653a9dd83b53461abc07719a87f41367788a948defaf7f7bea5462d883",
+      "line_count": 206,
+      "anchors": {
+        "renderViewAreaMesh(": [
+          100
+        ],
+        "getInnerClipping(": [
+          70
+        ],
+        "raytracePortalShape": [
+          38,
+          43,
+          51
+        ]
+      }
+    },
+    {
+      "id": "IP-FLAT-MESH",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/portal/shape/SpecialFlatPortalShape.java",
+      "sha256": "7bb83eeb21722b686abf69c1f0d6d8b74b78a042170384dc0a774c286b4c7d0b",
+      "line_count": 287,
+      "anchors": {
+        "renderViewAreaMesh(": [
+          156
+        ],
+        "mesh.boxIntersects(": [
+          97,
+          218
+        ],
+        "getInnerClipping(": [
+          116,
+          120
+        ]
+      }
+    },
+    {
+      "id": "IP-BOX",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/portal/shape/BoxPortalShape.java",
+      "sha256": "144f5c70533607da8f14377d6e01caff6364efbccdcdf489799eda5c275fc148",
+      "line_count": 437,
+      "anchors": {
+        "getInnerClipping(": [
+          138
+        ],
+        "getOuterClipping(": [
+          133
+        ],
+        "renderViewAreaMesh(": [
+          189
+        ]
+      }
+    },
+    {
+      "id": "IP-IRIS",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/compat/iris_compatibility/IrisPortalRenderer.java",
+      "sha256": "f4a0aece2c35d766a8381c57bc934b58b564e6325ff35abe1ac14586b1d2f680",
+      "line_count": 333,
+      "anchors": {
+        "blit": [
+          227
+        ],
+        "copy": [
+          126
+        ],
+        "depth": [
+          67,
+          68,
+          103,
+          126
+        ],
+        "onHandRenderingEnded(": [
+          171
+        ]
+      }
+    },
+    {
+      "id": "IP-IRIS-COMPAT",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/compat/iris_compatibility/IrisCompatibilityPortalRenderer.java",
+      "sha256": "0b8445506fe2af04cea7c19e0057050998e88290c77b0cc98db9814769432d81",
+      "line_count": 215,
+      "anchors": {
+        "one-layer": [
+          87
+        ],
+        "isRendering(": [
+          51,
+          86,
+          165
+        ],
+        "doRenderPortal(": [
+          85,
+          212
+        ]
+      }
+    },
+    {
+      "id": "IP-SODIUM",
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/compat/sodium_compatibility/SodiumInterface.java",
+      "sha256": "5cdbdaa383865d9f1e1ea4eaae2b456884cae82dfe63cf3f5cfcf70228e08f28",
+      "line_count": 96,
+      "anchors": {
+        "Context": [
+          29,
+          33,
+          59,
+          60,
+          64,
+          73
+        ],
+        "switch": [
+          33,
+          64
+        ],
+        "Chunk": [
+          5,
+          6,
+          41,
+          45,
+          84,
+          85,
+          86,
+          90,
+          91,
+          92
+        ]
+      }
+    },
+    {
+      "id": "VEIL-VIEW",
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/VeilLevelPerspectiveRenderer.java",
+      "sha256": "ef69547303f6e9e50c279b396a9f6c11cd38b4fc10030da9b5bd34b4075aa87f",
+      "line_count": 236,
+      "anchors": {
+        "render(": [
+          70,
+          71,
+          78,
+          88
+        ],
+        "finally": [
+          179
+        ],
+        "renderLevel(": [
+          165
+        ],
+        "renderingPerspective": [
+          52,
+          89,
+          153,
+          186,
+          229
+        ]
+      }
+    },
+    {
+      "id": "VEIL-FBO",
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/framebuffer/AdvancedFbo.java",
+      "sha256": "d2c1a222f90661047f9c8f6bc248d9cd383a988ed98ec0e46c3f4a5b97c5b913",
+      "line_count": 1088,
+      "anchors": {
+        "create(": [
+          40,
+          1083
+        ],
+        "free(": [
+          27
+        ],
+        "resolveToFbo(": [
+          220
+        ],
+        "bind(": [
+          141,
+          169,
+          208
+        ]
+      }
+    },
+    {
+      "id": "VEIL-MANAGER",
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/framebuffer/FramebufferManager.java",
+      "sha256": "5324e4984dec312aff0d9bf3b210134c02f342db474e7ec7a136e71555447643",
+      "line_count": 243,
+      "anchors": {
+        "setFramebuffer(": [
+          159,
+          232
+        ],
+        "removeFramebuffer(": [
+          178
+        ],
+        "free(": [
+          85,
+          163,
+          218,
+          236
+        ]
+      }
+    },
+    {
+      "id": "VEIL-STACK",
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/framebuffer/FramebufferStack.java",
+      "sha256": "d9f14c0cbe7e9410bcd7b78013ce64d2f08917eae46295024f1eb5847c3df56b",
+      "line_count": 112,
+      "anchors": {
+        "STATE_STACK.add(": [
+          47
+        ],
+        "STATE_STACK.removeFirst(": [
+          74
+        ],
+        "push(": [
+          34
+        ],
+        "pop(": [
+          61
+        ]
+      }
+    },
+    {
+      "id": "VEIL-POST",
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/post/PostProcessingManager.java",
+      "sha256": "99b15bfbf6f09e846b5324a3f31a6c3e757086c75818e81d7b5efb5369854158",
+      "line_count": 495,
+      "anchors": {
+        "runPipeline(": [
+          264,
+          265,
+          274
+        ],
+        "catch": [
+          244,
+          291,
+          360,
+          370
+        ],
+        "FramebufferStack": [
+          18,
+          173,
+          183
+        ]
+      }
+    },
+    {
+      "id": "VEIL-PIPELINE",
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/post/stage/CompositePostPipeline.java",
+      "sha256": "fa240f5954650e2a08faa6d9c76376d6382ea4ebf6099e02229774bda42c4db8",
+      "line_count": 261,
+      "anchors": {
+        "apply(": [
+          48,
+          98,
+          125
+        ],
+        "free(": [
+          130,
+          132
+        ],
+        "stages": [
+          37,
+          50,
+          65,
+          66,
+          87,
+          89,
+          93,
+          94,
+          124,
+          131,
+          149,
+          165,
+          174,
+          184,
+          194,
+          201,
+          207,
+          210,
+          214,
+          221,
+          256
+        ]
+      }
+    },
+    {
+      "id": "EXAMPLE-MIRROR",
+      "project": "veil-example-mod-1.21",
+      "path": "src/main/java/foundry/veil/example/client/render/MirrorBlockEntityRenderer.java",
+      "sha256": "968eb0505e9bd986d6a28b2b35cce005d229132d9fb492736719b7d2e6d4e165",
+      "line_count": 283,
+      "anchors": {
+        "render(": [
+          77,
+          196
+        ],
+        "renderLevel(": [
+          150
+        ],
+        "perspective": [
+          183
+        ]
+      }
+    },
+    {
+      "id": "EXAMPLE-STAGE",
+      "project": "veil-example-mod-1.21",
+      "path": "src/main/java/foundry/veil/example/VeilExampleModClient.java",
+      "sha256": "e88beaa668f4bc1903287b13f5f9ddd67a22eab1b5b8a8a6e7ae0093d6a9704f",
+      "line_count": 102,
+      "anchors": {
+        "AFTER_LEVEL": [
+          57
+        ],
+        "MirrorBlockEntityRenderer.renderLevel": [
+          58
+        ]
+      }
+    },
+    {
+      "id": "LOD-VFX",
+      "project": "Lodestone-1.21",
+      "path": "src/main/java/team/lodestar/lodestone/systems/rendering/builder/WorldVFXBuilder.java",
+      "sha256": "674b17319a1146e9d3a8e980143a344261fb04d295bd0b5d4a615c3559ecc028",
+      "line_count": 461,
+      "anchors": {
+        "renderSphere(": [
+          389
+        ],
+        "renderTrail(": [
+          270,
+          271,
+          275,
+          276,
+          280
+        ],
+        "renderQuad(": [
+          327,
+          328,
+          330,
+          348,
+          352,
+          353,
+          356,
+          357,
+          360,
+          362,
+          365,
+          366,
+          369,
+          373,
+          376
+        ],
+        "renderBeam(": [
+          239,
+          240,
+          243,
+          244,
+          247,
+          248,
+          251,
+          252,
+          256
+        ]
+      }
+    },
+    {
+      "id": "LOD-TRAIL",
+      "project": "Lodestone-1.21",
+      "path": "src/main/java/team/lodestar/lodestone/systems/rendering/trail/TrailPointBuilder.java",
+      "sha256": "04d47a1057c00635fd5fea279b3034bd9a80461ad81cf31696cfde5b54a4ce6a",
+      "line_count": 71,
+      "anchors": {
+        "addTrailPoint(": [
+          30,
+          31,
+          34
+        ],
+        "tickTrailPoints(": [
+          52
+        ],
+        "build(": [
+          64,
+          68
+        ]
+      }
+    },
+    {
+      "id": "LOD-BLOOM",
+      "project": "Lodestone-1.21",
+      "path": "src/main/resources/assets/lodestone/shaders/post/pb_bloom.json",
+      "sha256": "968386f3c283643d7903660e5b43b7f55bf5d9c730320d7f81f42848e88ca9ad",
+      "line_count": 124,
+      "anchors": {
+        "depth": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "LOD-BLOOM-TARGETS",
+      "project": "Lodestone-1.21",
+      "path": "src/main/java/team/lodestar/lodestone/modules/rendering/postprocess/effects/PhysicallyBasedBloomPostProcessor.java",
+      "sha256": "02044224518558f3a430b1dea4423f7400793f32d37461718baf961bbbd2f682",
+      "line_count": 112,
+      "anchors": {
+        "resize(": [
+          43,
+          58,
+          68,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          78,
+          80
+        ],
+        "width /": [
+          80
+        ],
+        "copyDepthFrom(": [
+          104,
+          107,
+          109
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "rainbow_cycle",
+  "mode": "temporal",
+  "stops": [
+    {"at": 0, "color": "#FF304F"},
+    {"at": 0.1666666667, "color": "#FFD640"},
+    {"at": 0.3333333333, "color": "#4FFF76"},
+    {"at": 0.5, "color": "#3BE7FF"},
+    {"at": 0.6666666667, "color": "#5570FF"},
+    {"at": 0.8333333333, "color": "#E34FFF"},
+    {"at": 1, "color": "#FF304F"}
+  ],
+  "interpolation": "hsv-shortest",
+  "wrap": "repeat",
+  "period_seconds": 6,
+  "strength": 1.0
+}

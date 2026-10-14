@@ -1,0 +1,37 @@
+{
+  "version": "0.2.5",
+  "jar": "skills/minecraft-energy-vfx/assets/runtime/energyvfx-0.2.5.jar",
+  "sha256": "7a4e001ac749843cf9d9583d4290c32cd717b2aed6fc9a1c78e0311893813ac9",
+  "zip_crc_ok": true,
+  "shared_resources_byte_equal": [
+    {
+      "name": "field.glsl",
+      "sha256": "948ad2dd55efa447a4744b448b978867e47ecd3b9ae167050918b3dc82ec1398"
+    },
+    {
+      "name": "volume.glsl",
+      "sha256": "54d2d393484a11c2b7345bfbf4168e1c0f44fc46cc6457f8d8e9fa1b6105572f"
+    },
+    {
+      "name": "scene.glsl",
+      "sha256": "2ce388325c816496fecfc767c369f2acb71897704c49067cd8aa1de7fbbb5828"
+    },
+    {
+      "name": "composite.glsl",
+      "sha256": "44e3c3c1e897149ec93ac1113a80854534b5fe55c98c3f7c3ac0066797918239"
+    },
+    {
+      "name": "blur.glsl",
+      "sha256": "661a9ab3e56ef65c7091e78bf72a217983270b58dd6612259c4d6f181365aa16"
+    },
+    {
+      "name": "noise.glsl",
+      "sha256": "766069cb5b02eb3366c82c7ec31d5d22972b7cb26e1704f29654b7010d680f33"
+    },
+    {
+      "name": "flow-cache.glsl",
+      "sha256": "a5d4bfb40bc1612dcbdf53fe2e2a1f0fc8623acfb530d87594a4b12930cb1a23"
+    }
+  ],
+  "scope": "Artifact integrity and shared GLSL equality; no fresh game test"
+}

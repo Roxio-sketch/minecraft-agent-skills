@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT; textures from RenderBlender, see THIRD_PARTY_NOTICES.md"
+[[mods]]
+modId="coloredglint"
+version="0.2.0"
+displayName="Colored Glint Lab"
+displayTest="IGNORE_ALL_VERSION"
+description="Per-stack colored enchantment glint on native baked item rendering, with an opt-in showcase and audit."
+[[dependencies.coloredglint]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,48)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.coloredglint]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"

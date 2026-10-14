@@ -1,0 +1,317 @@
+{
+  "scope": "Selected source byte comparison with fixed-commit raw URLs; no upstream code executed",
+  "accessedDate": "2026-10-11",
+  "ok": true,
+  "total": 44,
+  "passed": 44,
+  "files": [
+    {
+      "project": "three-water2",
+      "path": "three.js/examples/jsm/objects/Reflector.js",
+      "ok": true,
+      "remoteSha256": "57836df976f02a474b2dcfbb6609bca8bde0ccc6e77159ad8e418fa11c065d3b",
+      "bytes": 10943
+    },
+    {
+      "project": "three-water2",
+      "path": "three.js/examples/jsm/objects/Refractor.js",
+      "ok": true,
+      "remoteSha256": "512c4ec056b8af3c7aa24f80a74d606dfd10c06697686b2b73df8dbe7f2f9d78",
+      "bytes": 10176
+    },
+    {
+      "project": "three-water2",
+      "path": "three.js/examples/jsm/objects/Water2.js",
+      "ok": true,
+      "remoteSha256": "80180ce0b031169883e14a79374e2c4d899b7726a1af4897dd7a9efc9d9240f7",
+      "bytes": 10459
+    },
+    {
+      "project": "three-water2",
+      "path": "three.js/examples/jsm/shaders/WaterRefractionShader.js",
+      "ok": true,
+      "remoteSha256": "cad67ed479d112d787281b1ab37561659a50d5fad6ad951a2d9f89a45f229cf5",
+      "bytes": 2046
+    },
+    {
+      "project": "three-water2",
+      "path": "three.js/LICENSE",
+      "ok": true,
+      "remoteSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "bytes": 1081
+    },
+    {
+      "project": "three-water2",
+      "path": "three.js/README.md",
+      "ok": true,
+      "remoteSha256": "d553d824625a07d7690de93af6f8daf13d6aaed42700929d7ce4e725fa5ef10d",
+      "bytes": 2969
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/buoyant_manager.gd",
+      "ok": true,
+      "remoteSha256": "26163a141a0338d4d1457615bc354226597adcd3f01da3355bb779a6254d77f1",
+      "bytes": 2329
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/editor_property.gd",
+      "ok": true,
+      "remoteSha256": "ac4c148f6d07279342b82e1ec3f77cb169f6b3a5c4be64105aaa552367d585cb",
+      "bytes": 778
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/filter_renderer.gd",
+      "ok": true,
+      "remoteSha256": "fdbe09def51b0d075029c47271699929056f3889eb7a35a588ae6ccb680b6f37",
+      "bytes": 10035
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/gui/gradient_inspector.gd",
+      "ok": true,
+      "remoteSha256": "7d36da73c7d98a64a72ca878c84b52ca2d4e5233552c968cc49f0d171609c580",
+      "bytes": 679
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/gui/river_controls.gd",
+      "ok": true,
+      "remoteSha256": "61bf71772974efd53333ea4d4f69a8e7803045d79bfba7df50bc01c7ea3097ba",
+      "bytes": 2884
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/gui/river_menu.gd",
+      "ok": true,
+      "remoteSha256": "a6410658afcbf4599ea103e14bd22a180676edf08bfaf4708049ae5d40d27a87",
+      "bytes": 2369
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/gui/water_system_controls.gd",
+      "ok": true,
+      "remoteSha256": "e38f6f9b8717283caf55be95cc1abdbbf786a3c0715906ea9fcba15e5f6fbe88",
+      "bytes": 217
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/gui/water_system_menu.gd",
+      "ok": true,
+      "remoteSha256": "4303aab63e2c2f192ade3580b0d7f6958cac0f793ab77f9509f44fb87c0e671d",
+      "bytes": 616
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/inspector_plugin.gd",
+      "ok": true,
+      "remoteSha256": "45737b142cb7fd2eed04ed4a0a2c4854f7c06aaa85d9bc039ee66b62900b932c",
+      "bytes": 640
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/plugin.gd",
+      "ok": true,
+      "remoteSha256": "8d9759a0f119698f6d80707ed0fd7fad1d80e41c3b28f7315339773cac6b2296",
+      "bytes": 13371
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/progress_window.gd",
+      "ok": true,
+      "remoteSha256": "c7db40db0fa9ecf205e05f9d1477988137d5083a72b5519c66aa77c4a5782d01",
+      "bytes": 314
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/river_gizmo.gd",
+      "ok": true,
+      "remoteSha256": "8eb83808ee38fb5e006e448133910321bce781b183e60e3313ba837824c926cd",
+      "bytes": 17175
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/river_manager.gd",
+      "ok": true,
+      "remoteSha256": "44fd9e68b90dddabc21a30f1b6bc53f6aeb37962e40405190ea451d7da4f4dcc",
+      "bytes": 22238
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/filters/blur_pass1.shader",
+      "ok": true,
+      "remoteSha256": "900a283454d0e6e2876c05052dbbc920db121b3bc56df00fad420959ab59d9b3",
+      "bytes": 460
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/filters/blur_pass2.shader",
+      "ok": true,
+      "remoteSha256": "506dcd1bdd7ece3d3a7b1d26159f7f00d7243c741532dccac6338cb93240b291",
+      "bytes": 460
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/filters/combine_pass.shader",
+      "ok": true,
+      "remoteSha256": "f70ff229f82a540828430801a635d15d35365284fef13f21be6c814bb02b4c06",
+      "bytes": 361
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+      "ok": true,
+      "remoteSha256": "1589c334d845ab0869f2ee133850fdf94f7c20533184f108ee57b0b3422e807f",
+      "bytes": 740
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+      "ok": true,
+      "remoteSha256": "d2c150a41613ad23f8d2d4459ebff59b587f57d230161aa49608aab301d194ce",
+      "bytes": 766
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+      "ok": true,
+      "remoteSha256": "c1a44890a2b92fbf3add7823ccd8c183140cf5b7f28004c04f8fe2e51e3a04fb",
+      "bytes": 412
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/filters/dotproduct.shader",
+      "ok": true,
+      "remoteSha256": "748337aa9a87676cd29c2f5ccde68a0348e9241fa2f8413d2227c1ae05f6a9a6",
+      "bytes": 232
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+      "ok": true,
+      "remoteSha256": "e3644e59f9ef0270c2454466b5536a4144f2dc69dd8ebe63b1de77602cec0e15",
+      "bytes": 463
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/filters/foam_pass.shader",
+      "ok": true,
+      "remoteSha256": "1b9d7aa1b21f9c53b3713a27e6485e9bcffcd3453befa32ab3a6e2d9cf7a9bfe",
+      "bytes": 731
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/filters/normal_map_pass.shader",
+      "ok": true,
+      "remoteSha256": "09d3eb6e4aa770fb0e105c666e3ef0425be9f57598e21b469b3c251aa4c53875",
+      "bytes": 930
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+      "ok": true,
+      "remoteSha256": "2a2131c1f703a1f317de39b1be56b8ac867cf6930faef3ed195318c9e28e0bb9",
+      "bytes": 385
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/gui/gradient.shader",
+      "ok": true,
+      "remoteSha256": "c152ac7604112bfc9de1846e34e77914fd3a607edc6460257dd6a3c17bdc264f",
+      "bytes": 217
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/lava.shader",
+      "ok": true,
+      "remoteSha256": "f7308f3569467f5f37f6661e30998923eb481d3cba6b81d70d1af5e262d135a6",
+      "bytes": 6260
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/river.shader",
+      "ok": true,
+      "remoteSha256": "7a9ac760c7b9a80090b37bd5da5d59011f23a3a07e05e8be7ab7f04e3d89d087",
+      "bytes": 9052
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/river_debug.shader",
+      "ok": true,
+      "remoteSha256": "f05b16fc4b98c0172eeb5fdcf536db57ca0c975ffb7095c4f9a9c3e4bcc3ea25",
+      "bytes": 6248
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/system_renders/alpha.shader",
+      "ok": true,
+      "remoteSha256": "4c2bde79249c8fe3c36f50c4145666384f785faadb3880ed308ac383141c5d47",
+      "bytes": 84
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/system_renders/system_flow.shader",
+      "ok": true,
+      "remoteSha256": "b19f225851b8aba8a3fa7bb2c2ed3ffd0131e44280b00773fc76cb1dc2b6899d",
+      "bytes": 1704
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/shaders/system_renders/system_height.shader",
+      "ok": true,
+      "remoteSha256": "a316bf116a2fedc0c7e1182fc6afa0d266e96a2e81c03add627c321c7dbcc61e",
+      "bytes": 355
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/system_map_renderer.gd",
+      "ok": true,
+      "remoteSha256": "4342795ce0309f1a123abe689dbe0b5a7c5f22eab19df394dfb259ce45f2f854",
+      "bytes": 5804
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/water_helper_methods.gd",
+      "ok": true,
+      "remoteSha256": "47855530b45f7400ad728167c4ea8a9f86bbc8a6575aa1a56254c7d4f802e3bb",
+      "bytes": 10728
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/addons/waterways/water_system_manager.gd",
+      "ok": true,
+      "remoteSha256": "f6c4cb4ad9cfeb72748f81b056be5de801dd2087e78397be4f206dc5d764b2b0",
+      "bytes": 6484
+    },
+    {
+      "project": "waterways",
+      "path": "Waterways/LICENSE",
+      "ok": true,
+      "remoteSha256": "8da0249fe2a334230e8c7bb633f4558e40ddafc95d30c1cfcffbf302a3f83c34",
+      "bytes": 1080
+    },
+    {
+      "project": "tiled-directional-flow",
+      "path": "Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+      "ok": true,
+      "remoteSha256": "72612d7597ef0e7a151bb0530c7f1bada51eb3084db42366fa1ab0ce1ae9debc",
+      "bytes": 10952
+    },
+    {
+      "project": "tiled-directional-flow",
+      "path": "Tiled-Directional-Flow/LICENSE",
+      "ok": true,
+      "remoteSha256": "ed471ce09ebcba676424c710e333080cb130c160049f2ec5f8935a2f54d883aa",
+      "bytes": 1620
+    },
+    {
+      "project": "tiled-directional-flow",
+      "path": "Tiled-Directional-Flow/README.md",
+      "ok": true,
+      "remoteSha256": "0966442aa391267f43c446001f2a83b2a66e7d1705516483c688c7c6795381bc",
+      "bytes": 1535
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "test": "cloud-glyph-real-client",
+  "isolated": true,
+  "initialShaderIdentity": 1877976610,
+  "reloadedShaderIdentity": 0,
+  "captureCount": 20,
+  "captures": [
+    {
+      "name": "01-iron-plain-front.png",
+      "tick": 40,
+      "worldTime": 53,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.06999988555908, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1053.0,
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-front-80.png",
+      "tick": 80,
+      "worldTime": 93,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.07000012397766, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1093.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-front-88.png",
+      "tick": 88,
+      "worldTime": 101,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.07109506130219, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1101.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-front-96.png",
+      "tick": 96,
+      "worldTime": 109,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.07123537063599, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1109.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-front-104.png",
+      "tick": 104,
+      "worldTime": 117,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.07118589878083, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1117.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-front-112.png",
+      "tick": 112,
+      "worldTime": 125,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.07107479572296, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1125.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-front-120.png",
+      "tick": 120,
+      "worldTime": 133,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.07121069431305, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1133.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-back-144.png",
+      "tick": 144,
+      "worldTime": 157,
+      "view": "back",
+      "cameraPosition": "(0.5, 122.07000012397766, 4.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1157.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-back-152.png",
+      "tick": 152,
+      "worldTime": 165,
+      "view": "back",
+      "cameraPosition": "(0.5, 122.07107038497925, 4.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1165.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-back-160.png",
+      "tick": 160,
+      "worldTime": 173,
+      "view": "back",
+      "cameraPosition": "(0.5, 122.07114882469178, 4.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1173.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-left-184.png",
+      "tick": 184,
+      "worldTime": 197,
+      "view": "left",
+      "cameraPosition": "(-3.5, 122.07000012397766, 0.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1197.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-left-192.png",
+      "tick": 192,
+      "worldTime": 205,
+      "view": "left",
+      "cameraPosition": "(-3.5, 122.07123036384583, 0.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1205.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-right-214.png",
+      "tick": 214,
+      "worldTime": 227,
+      "view": "right",
+      "cameraPosition": "(4.5, 122.07000012397766, 0.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1227.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-cloud-right-222.png",
+      "tick": 222,
+      "worldTime": 235,
+      "view": "right",
+      "cameraPosition": "(4.5, 122.07110733985901, 0.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1235.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "iron-mixed-slots-front.png",
+      "tick": 248,
+      "worldTime": 261,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.07000012397766, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1261.0,
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "netherite-cloud-front-280.png",
+      "tick": 280,
+      "worldTime": 293,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.07000012397766, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1293.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "netherite-cloud-front-288.png",
+      "tick": 288,
+      "worldTime": 301,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.07114429473877, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1301.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "netherite-cloud-front-296.png",
+      "tick": 296,
+      "worldTime": 309,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.07119829654694, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 1309.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "impact-1-early.png",
+      "tick": 312,
+      "worldTime": 325,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.07000477313996, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 2.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "impact-1-peak.png",
+      "tick": 316,
+      "worldTime": 329,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.08712823390961, -3.5)",
+      "wall": false,
+      "shaderIdentity": 1877976610,
+      "glError": 0,
+      "hitAgeTicks": 6.0,
+      "guardLevels": {
+        "head": 3,
+        "chest": 3,
+        "legs": 3,
+        "feet": 3
+      },
+      "foilSlots": {
+        "head": true,
+        "chest": true,
+        "legs": true,
+        "feet": true
+      },
+      "visualEnabled": true
+    }
+  ],
+  "failures": [
+    "java.lang.AssertionError: No production hit packet for phase 2"
+  ]
+}

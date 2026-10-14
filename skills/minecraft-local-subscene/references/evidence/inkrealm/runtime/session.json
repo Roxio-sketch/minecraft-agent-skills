@@ -1,0 +1,44 @@
+{
+  "prefix": "20260929-100841",
+  "cases": [
+    "20260929-100841-foreground",
+    "20260929-100841-front",
+    "20260929-100841-left",
+    "20260929-100841-right",
+    "20260929-100841-time4",
+    "20260929-100841-low",
+    "20260929-100841-high",
+    "20260929-100841-reloaded",
+    "20260929-100841-recovered"
+  ],
+  "fault": {
+    "nonce": "6c03565a2cc945cfb116a81e62e7be5a",
+    "enabled": true,
+    "failed": true,
+    "error": "java.lang.IllegalStateException: Intentional one-shot restoration test",
+    "blockedRenderer": false,
+    "draws": 9958,
+    "shaderGeneration": 3,
+    "stateErrors": 0,
+    "inside": false,
+    "entries": 2,
+    "exits": 2,
+    "portalCenter": [
+      -208.01901445307132,
+      75.02814676600502,
+      -810.2828273633673
+    ],
+    "portalNormal": [
+      -0.0,
+      -0.0,
+      -1.0
+    ],
+    "minecraft": "1.20.1",
+    "forge": "47.4.10",
+    "world": "ASTRA_VFX_TEST",
+    "center": "(-208.01901445307132, 75.02814676600502, -810.2828273633673)",
+    "player": "(-208.01901445307132, 73.15814676123665, -819.2828273633673)"
+  },
+  "world": "ASTRA_VFX_TEST",
+  "scope": "Lightweight procedural secondary scene in real Forge; no second ClientLevel"
+}

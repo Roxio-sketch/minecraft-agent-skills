@@ -1,0 +1,284 @@
+{
+  "test": "spirit-shield-shatter-real-client",
+  "passed": true,
+  "capture_count": 39,
+  "real_server_contacts": [
+    {
+      "kind": "actual-server-melee",
+      "worldTime": 138,
+      "serverPlayerTick": 130,
+      "requestedAmount": 6.0,
+      "poolBefore": 12.0,
+      "healthBefore": 103.49999,
+      "effectBefore": true,
+      "hurtReturned": true,
+      "poolAfter": 6.0,
+      "healthAfter": 103.49999,
+      "effectAfter": true
+    },
+    {
+      "kind": "actual-server-melee",
+      "worldTime": 168,
+      "serverPlayerTick": 160,
+      "requestedAmount": 5.0,
+      "poolBefore": 6.0,
+      "healthBefore": 103.49999,
+      "effectBefore": true,
+      "hurtReturned": true,
+      "poolAfter": 1.0,
+      "healthAfter": 103.49999,
+      "effectAfter": true
+    },
+    {
+      "kind": "actual-server-melee",
+      "worldTime": 198,
+      "serverPlayerTick": 190,
+      "requestedAmount": 1.0,
+      "poolBefore": 1.0,
+      "healthBefore": 104.49999,
+      "effectBefore": true,
+      "hurtReturned": true,
+      "poolAfter": 0.0,
+      "healthAfter": 104.49999,
+      "effectAfter": true
+    },
+    {
+      "kind": "actual-server-melee",
+      "worldTime": 236,
+      "serverPlayerTick": 228,
+      "requestedAmount": 1.0,
+      "poolBefore": 0.0,
+      "healthBefore": 102.899994,
+      "effectBefore": false,
+      "hurtReturned": true,
+      "poolAfter": 0.0,
+      "healthAfter": 102.09999,
+      "effectAfter": false
+    },
+    {
+      "kind": "actual-server-melee",
+      "worldTime": 240,
+      "serverPlayerTick": 232,
+      "requestedAmount": 1.0,
+      "poolBefore": 0.0,
+      "healthBefore": 102.09999,
+      "effectBefore": false,
+      "hurtReturned": true,
+      "poolAfter": 0.0,
+      "healthAfter": 101.29999,
+      "effectAfter": false
+    },
+    {
+      "kind": "actual-server-melee",
+      "worldTime": 378,
+      "serverPlayerTick": 370,
+      "requestedAmount": 12.0,
+      "poolBefore": 12.0,
+      "healthBefore": 102.29999,
+      "effectBefore": true,
+      "hurtReturned": true,
+      "poolAfter": 0.0,
+      "healthAfter": 102.29999,
+      "effectAfter": true
+    },
+    {
+      "kind": "actual-server-melee",
+      "worldTime": 403,
+      "serverPlayerTick": 395,
+      "requestedAmount": 1.0,
+      "poolBefore": 0.0,
+      "healthBefore": 102.29999,
+      "effectBefore": true,
+      "hurtReturned": true,
+      "poolAfter": 0.0,
+      "healthAfter": 101.499985,
+      "effectAfter": false
+    },
+    {
+      "kind": "actual-server-melee",
+      "worldTime": 489,
+      "serverPlayerTick": 481,
+      "requestedAmount": 12.0,
+      "poolBefore": 12.0,
+      "healthBefore": 101.499985,
+      "effectBefore": true,
+      "hurtReturned": true,
+      "poolAfter": 0.0,
+      "healthAfter": 101.499985,
+      "effectAfter": true
+    },
+    {
+      "kind": "actual-server-melee",
+      "worldTime": 504,
+      "serverPlayerTick": 496,
+      "requestedAmount": 1.0,
+      "poolBefore": 0.0,
+      "healthBefore": 101.499985,
+      "effectBefore": true,
+      "hurtReturned": true,
+      "poolAfter": 0.0,
+      "healthAfter": 100.69998,
+      "effectAfter": false
+    }
+  ],
+  "combat_ready_server_tick": 80,
+  "fragment_count": 110,
+  "spark_count": 64,
+  "duration_seconds": 2.4,
+  "gpu_errors": 0,
+  "depleted_shell_retained_until_next_contact": true,
+  "repeated_contacts_do_not_restart": true,
+  "recast_clears_mid_burst": true,
+  "shader_resource_reload_passed": true,
+  "wall_warm_pixels": {
+    "wall-shatter-0.png": 0,
+    "wall-shatter-1.png": 0
+  },
+  "motion": [
+    {
+      "name": "shatter-00-at-00t.png",
+      "age_seconds": 0.06400070190429688,
+      "patch_count": 0,
+      "warm_pixels_outside_player": 0
+    },
+    {
+      "name": "shatter-01-at-01t.png",
+      "age_seconds": 0.12500076293945311,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 8347
+    },
+    {
+      "name": "shatter-02-at-02t.png",
+      "age_seconds": 0.20800094604492186,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 20722
+    },
+    {
+      "name": "shatter-03-at-03t.png",
+      "age_seconds": 0.2910011291503906,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 28053
+    },
+    {
+      "name": "shatter-04-at-04t.png",
+      "age_seconds": 0.37400131225585936,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 32850
+    },
+    {
+      "name": "shatter-05-at-05t.png",
+      "age_seconds": 0.4440010070800781,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 37301
+    },
+    {
+      "name": "shatter-06-at-07t.png",
+      "age_seconds": 0.5710006713867187,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 29032
+    },
+    {
+      "name": "shatter-07-at-09t.png",
+      "age_seconds": 0.6500007629394531,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 25705
+    },
+    {
+      "name": "shatter-08-at-11t.png",
+      "age_seconds": 0.7160011291503906,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 18990
+    },
+    {
+      "name": "shatter-09-at-14t.png",
+      "age_seconds": 0.7790008544921875,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 14511
+    },
+    {
+      "name": "shatter-10-at-17t.png",
+      "age_seconds": 0.8550010681152344,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 12703
+    },
+    {
+      "name": "shatter-11-at-20t.png",
+      "age_seconds": 1.0120010375976562,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 5957
+    },
+    {
+      "name": "shatter-12-at-23t.png",
+      "age_seconds": 1.1540008544921876,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 3832
+    },
+    {
+      "name": "shatter-13-at-26t.png",
+      "age_seconds": 1.3100006103515625,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 2676
+    },
+    {
+      "name": "shatter-14-at-29t.png",
+      "age_seconds": 1.4510009765625,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 2107
+    },
+    {
+      "name": "shatter-15-at-32t.png",
+      "age_seconds": 1.6090011596679688,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 1131
+    },
+    {
+      "name": "shatter-16-at-34t.png",
+      "age_seconds": 1.7160003662109375,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 508
+    },
+    {
+      "name": "shatter-17-at-38t.png",
+      "age_seconds": 1.9060012817382812,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 0
+    },
+    {
+      "name": "shatter-18-at-42t.png",
+      "age_seconds": 2.1110015869140626,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 0
+    },
+    {
+      "name": "shatter-19-at-45t.png",
+      "age_seconds": 2.253001403808594,
+      "patch_count": 110,
+      "warm_pixels_outside_player": 0
+    },
+    {
+      "name": "shatter-20-at-48t.png",
+      "age_seconds": 2.4090011596679686,
+      "patch_count": 0,
+      "warm_pixels_outside_player": 0
+    },
+    {
+      "name": "shatter-21-at-51t.png",
+      "age_seconds": 2.56300048828125,
+      "patch_count": 0,
+      "warm_pixels_outside_player": 0
+    },
+    {
+      "name": "shatter-22-at-54t.png",
+      "age_seconds": 2.7010009765625,
+      "patch_count": 0,
+      "warm_pixels_outside_player": 0
+    },
+    {
+      "name": "shatter-23-at-56t.png",
+      "age_seconds": 2.8020004272460937,
+      "patch_count": 0,
+      "warm_pixels_outside_player": 0
+    }
+  ],
+  "scope": "Forge 47.4.10 isolated client, native shaders; no external shader pack acceptance"
+}

@@ -1,0 +1,3 @@
+interface:
+  display_name: "武器拖尾与能量束"
+  short_description: "HTML 工作台自由设计刀光、分叉能量束与多层光带，面向 Forge 1.20.1"

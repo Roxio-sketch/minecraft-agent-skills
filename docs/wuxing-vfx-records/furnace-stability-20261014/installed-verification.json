@@ -1,0 +1,94 @@
+{
+  "artifact": {
+    "source": "E:\\五行仙途\\deliverables\\furnace-stability-20261014\\wuxingxiantu-0.2-20261014-furnace-stable-fast.jar",
+    "installed": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2-20261014-furnace-stable-fast.jar",
+    "sha256": "35E4F73A0BBF4DA325A502921923162423B0A4B2DD5E896EEBD16E3B4E22047D",
+    "resourcesVerified": 2115,
+    "qaClassesAbsent": true
+  },
+  "evidenceDirectory": "E:\\五行仙途\\reports\\furnace-stability-20261014",
+  "aged": {
+    "aged-native": {
+      "captures": 11,
+      "pairedCases": 9,
+      "clockSeconds": [
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94
+      ],
+      "medianSavedPercent": 25.922816720574804,
+      "medianBaselineGpuMs": 20.736512,
+      "medianOptimizedGpuMs": 15.363584,
+      "maxFloatError": 0.0
+    },
+    "aged-solas": {
+      "captures": 11,
+      "pairedCases": 9,
+      "clockSeconds": [
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94,
+        339277.94
+      ],
+      "medianSavedPercent": 25.339974120461928,
+      "medianBaselineGpuMs": 20.982784000000002,
+      "medianOptimizedGpuMs": 15.691264,
+      "maxFloatError": 0.0
+    },
+    "older-native": {
+      "captures": 11,
+      "pairedCases": 9,
+      "clockSeconds": [
+        600000.0,
+        600000.0,
+        600000.0,
+        600000.0,
+        600000.0,
+        600000.0,
+        600000.0,
+        600000.0,
+        600000.0
+      ],
+      "medianSavedPercent": 25.839126117179735,
+      "medianBaselineGpuMs": 20.739584,
+      "medianOptimizedGpuMs": 15.341568,
+      "maxFloatError": 0.0
+    }
+  },
+  "motion": {
+    "motion-native": {
+      "captures": 18,
+      "walkingDistanceBlocks": 2.8470867,
+      "walkingBugExercised": true,
+      "sameFrameAlignmentObservations": 756,
+      "oldWalkingRayMissBlocks": 0.09405095875263214,
+      "fixedWalkingRayMissBlocks": 5.442073961603455e-05,
+      "maxRayDistanceBlocks": 0.00012132397387176752,
+      "maxProjectionErrorPixels": 0.0171661376953125
+    },
+    "motion-solas": {
+      "captures": 18,
+      "walkingDistanceBlocks": 2.8470867,
+      "walkingBugExercised": true,
+      "sameFrameAlignmentObservations": 606,
+      "oldWalkingRayMissBlocks": 0.09424923360347748,
+      "fixedWalkingRayMissBlocks": 4.8453115596203133e-05,
+      "maxRayDistanceBlocks": 0.000110626220703125,
+      "maxProjectionErrorPixels": 0.0171661376953125
+    }
+  },
+  "actualScreenshotsVerified": 69,
+  "pairedGpuCasesVerified": 27,
+  "visualComparisonScope": "Paired RGBA32F full-resolution draw output; GPU timings are not whole-game FPS"
+}

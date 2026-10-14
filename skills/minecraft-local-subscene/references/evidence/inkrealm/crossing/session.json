@@ -1,0 +1,31 @@
+{
+  "prefix": "20260929-100726",
+  "cases": [
+    "20260929-100726-window",
+    "20260929-100726-near",
+    "20260929-100726-inside",
+    "20260929-100726-inside-turn",
+    "20260929-100726-inside-move",
+    "20260929-100726-inside-reload",
+    "20260929-100726-returned"
+  ],
+  "finalTestState": {
+    "nonce": "530f112e25594f80b3f5ee8b4a7424c6",
+    "enabled": false,
+    "failed": false,
+    "error": "",
+    "blockedRenderer": false,
+    "draws": 2448,
+    "shaderGeneration": 2,
+    "stateErrors": 0,
+    "inside": false,
+    "entries": 1,
+    "exits": 1,
+    "minecraft": "1.20.1",
+    "forge": "47.4.10",
+    "world": "ASTRA_VFX_TEST",
+    "center": "",
+    "player": "(-207.69999998807907, 90.29327542197039, -812.2029128606729)"
+  },
+  "scope": "Enterable lightweight visual domain; player remains in the original Minecraft dimension"
+}

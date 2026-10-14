@@ -1,0 +1,71 @@
+{
+  "source": "E:\\五行仙途\\build\\libs\\wuxingxiantu-0.2.jar",
+  "shaderHashes": [
+    {
+      "sha256": "0C8019B07367EA6A17AA812203BB0FBBF3BC021DD8D5062838F5995D369D897A",
+      "file": "energy_blur.fsh"
+    },
+    {
+      "sha256": "779EC4D04799511453CC30114ABFF2ABFFAED64C879E3393D34A17622C83C02C",
+      "file": "energy_blur.json"
+    },
+    {
+      "sha256": "5AAD28DBCD5B806C76BC214F0A01F840C72E9E6E13A8E1BB19A9C0FC7CF1D374",
+      "file": "energy_blur.vsh"
+    },
+    {
+      "sha256": "1A2A8290F4C5E23EC2B39EBF59EC8E9531494FCE0F34FC9D0F95681B579EE133",
+      "file": "realm_head_energy.fsh"
+    },
+    {
+      "sha256": "07C7A16AF7F10E0C009CC012AD3F14F8E4FD17C3DB4B49A7F27ECAEBB431B755",
+      "file": "realm_head_energy.json"
+    },
+    {
+      "sha256": "8389FCB0BDF2FD8CF73E5C489CEB24F393336C8B7938DA774D0C00E0A622EBB0",
+      "file": "realm_head_energy.vsh"
+    },
+    {
+      "sha256": "142632A0C1527B4B4F382E90A77DC0FDE4A63CC0AA0416D05B4AC0DDDD138287",
+      "file": "realm_meteor_bloom.fsh"
+    },
+    {
+      "sha256": "F0EE395029A053AA62E1F02486BBBFF3A00570D30549042D9DED60F3D3C4B152",
+      "file": "realm_meteor_bloom.json"
+    },
+    {
+      "sha256": "5AAD28DBCD5B806C76BC214F0A01F840C72E9E6E13A8E1BB19A9C0FC7CF1D374",
+      "file": "realm_meteor_bloom.vsh"
+    },
+    {
+      "sha256": "55E9A3B7B37FD66A02815B0C710C4915CDB2F8547C2E71FA7916D5EE07A5A97C",
+      "file": "realm_meteor_post.fsh"
+    },
+    {
+      "sha256": "023A3511D1E96E3C2A6EC61D9F631CF2827DE08C895EF68DCEE96BAA84561ACB",
+      "file": "realm_meteor_post.json"
+    },
+    {
+      "sha256": "9D4114FE3BE65983D57177D44E07960C225533497C8A93275B6A30A7D6E70D1B",
+      "file": "realm_meteor_post.vsh"
+    },
+    {
+      "sha256": "89953EEDFB7ECA238D5B847AC52B9A0E6B0B45611A8CE59B3924DAEB419F32BA",
+      "file": "realm_meteor.fsh"
+    },
+    {
+      "sha256": "E51C1C1DF0E5BF42AFCB7A785DB390B03ECA0E519599E13EF421B0772776CB1C",
+      "file": "realm_meteor.json"
+    },
+    {
+      "sha256": "4AE5EE09B28A0A74F01388BA36C43CA477DB116CFDCD4D3AD2E9B9078261AEF9",
+      "file": "realm_meteor.vsh"
+    }
+  ],
+  "bytes": 45042707,
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-single-meteor-20261008-214726.jar",
+  "testFixtureExcluded": true,
+  "installed": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "sha256": "DB7638D824F0AA5DF5D00752139A07ABECB0DF5AD543C1E293737FE876489C15",
+  "installedAt": "2026-10-08T21:47:26.7393780+08:00"
+}

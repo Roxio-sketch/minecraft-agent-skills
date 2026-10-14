@@ -1,0 +1,163 @@
+{
+  "01-hover-three-dimensional-shell.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 22645,
+    "whitePixels": 528
+  },
+  "02-cruise-body-and-shader-trail.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 60360,
+    "whitePixels": 423
+  },
+  "03-boost-long-meteor-trail.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 103493,
+    "whitePixels": 19868
+  },
+  "04-turn-curved-history.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 14206,
+    "whitePixels": 344
+  },
+  "05-distant-observer.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 1633,
+    "whitePixels": 0
+  },
+  "06-first-person-clear-view.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 5842,
+    "whitePixels": 186
+  },
+  "07-stopped-and-expired-control.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 381,
+    "whitePixels": 0
+  },
+  "08-forced-depth-composite-route.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 101686,
+    "whitePixels": 17284
+  },
+  "09-after-resource-reload.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 21337,
+    "whitePixels": 290
+  },
+  "10-resized-depth-composite.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 88915,
+    "whitePixels": 12488
+  },
+  "11-no-bloom-side-three-strands.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 34533,
+    "whitePixels": 0
+  },
+  "12-no-bloom-rear-width.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 186403,
+    "whitePixels": 0
+  },
+  "13-no-bloom-front-open-head.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 6985,
+    "whitePixels": 94
+  },
+  "14-no-bloom-48-block-observer.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 78,
+    "whitePixels": 0
+  },
+  "15-remote-visible-with-local-vanilla-preference.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 22288,
+    "whitePixels": 4395
+  },
+  "16-realm2-inactive-clear-control.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 3443,
+    "whitePixels": 1927
+  },
+  "17-stone-wall-occlusion-with-energy.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 0,
+    "whitePixels": 0
+  },
+  "18-stone-wall-no-energy-control.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 0,
+    "whitePixels": 0
+  },
+  "occlusionPair": {
+    "changedPixels": 0,
+    "changedPixelsOver4": 0,
+    "maximumChannelDifference": 0,
+    "meanChannelDifference": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "boundsOfDifference": null
+  },
+  "animation": {
+    "actualFrames": 21,
+    "fps": 5,
+    "file": "turn-actual-frames.webp",
+    "source": "Unedited Minecraft frame captures; lossless WebP sequence."
+  }
+}

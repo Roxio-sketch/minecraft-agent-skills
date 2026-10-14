@@ -1,0 +1,19 @@
+{
+ "blend":{"func":"add","srcrgb":"srcalpha","dstrgb":"1-srcalpha","srcalpha":"1","dstalpha":"1-srcalpha"},
+ "vertex":"firecoil:fire","fragment":"firecoil:fire",
+ "attributes":["Position","Color","UV0"],"samplers":[],
+ "uniforms":[
+  {"name":"ModelViewMat","type":"matrix4x4","count":16,"values":[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]},
+  {"name":"ProjMat","type":"matrix4x4","count":16,"values":[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]},
+  {"name":"Time","type":"float","count":1,"values":[0]},
+  {"name":"RiseSpeed","type":"float","count":1,"values":[0.8]},
+  {"name":"Turbulence","type":"float","count":1,"values":[0.75]},
+  {"name":"TongueLength","type":"float","count":1,"values":[0.7]},
+  {"name":"Erosion","type":"float","count":1,"values":[0.45]},
+  {"name":"Intensity","type":"float","count":1,"values":[1.45]},
+  {"name":"Opacity","type":"float","count":1,"values":[0.9]},
+  {"name":"CoreColor","type":"float","count":3,"values":[1,0.96,0.76]},
+  {"name":"MidColor","type":"float","count":3,"values":[1,0.73,0.22]},
+  {"name":"EdgeColor","type":"float","count":3,"values":[0.85,0.20,0.07]}
+ ]
+}

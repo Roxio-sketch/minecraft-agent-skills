@@ -1,0 +1,10 @@
+{
+  "file": "wuxingxiantu-0.2-20260928-burn-anchor.jar",
+  "bytes": 36387335,
+  "sha256": "1bb7cb0a0d54fcc63dbf1661385183a16fd391f744ba42d74eb5633e1043fc72",
+  "zip_integrity": "pass",
+  "retired_appearance_absent": true,
+  "capture_classes_absent": true,
+  "burn_shader_and_hook_match_source": true,
+  "heart_sword_present": true
+}

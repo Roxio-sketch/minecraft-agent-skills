@@ -1,0 +1,10 @@
+{
+  "changes": "Stronger realm hue, less white mixing; temporary local-only flightfx 1..6, realm names, next and off commands",
+  "destination": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "visualRuntimeRetested": false,
+  "installed": true,
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-flightfx-commands-20261010-121538.jar",
+  "build": "PASS",
+  "resources": "PASS",
+  "sha256": "421E229B5906477F12851349F3457935A11CDCBBFFD0471D2812F0881A07DD6E"
+}

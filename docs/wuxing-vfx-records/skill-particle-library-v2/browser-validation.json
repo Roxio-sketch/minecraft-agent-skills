@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "skills": 139,
+  "materials": 138,
+  "skillFrameSamples": 556,
+  "materialFrameSamples": 552,
+  "blank": [],
+  "heartDemonSearchResults": 10,
+  "graySoundSkillHashes": [
+    "2addb46eadeb4a6401e59b07366758d780ae56bdd0fa3a880d7e48a876a332b2",
+    "32b6bf7564ee7d4baa11456192d346fbaa2999dde535b38ee7790b739e6148cd",
+    "a8f4fd92ee6c39a99c6c43478ea25b33fe7030b17461ada678c1eb3c833cecfe",
+    "391757aea73109a33f6c89364a87260874acb240d64319a1e7175ad0c2cbd21e",
+    "04f5452978f07e2f49058dbaeaba6da68813fb1910ef9b25aa81a1ea19c6d1c2",
+    "db3434260496b06dafbe210479a4d9420ebd82d56905a19b9243fd73b99d7f6a"
+  ],
+  "layerIsolation": true,
+  "recipeExportWithPaths": true,
+  "mobileOverflow": false,
+  "errors": []
+}

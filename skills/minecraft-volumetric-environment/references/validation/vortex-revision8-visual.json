@@ -1,0 +1,564 @@
+{
+  "date": "2026-10-11T05:51:12.041Z",
+  "scope": "WebGL2 actual frames; strict byte equality retained; no Minecraft certification",
+  "previewSha256": "9b9d02fd6bbbe169da7d17a62f4a111b9677caa2a75c01617d42c2df38f4ae46",
+  "coreSha256": "6024be6bf63aa9ea4e294ad996fa208b5ca6c30313ff6276d5295d24789dbed0",
+  "checks": [
+    {
+      "name": "mode-1-early: fixed-time PNG byte exact",
+      "passed": true
+    },
+    {
+      "name": "mode-1-early: fixed-time RGBA byte exact",
+      "passed": true,
+      "data": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "3784b0cdee9e0a37da09b1a05e880ae38f5df72adc22b27365c674d54964a842",
+        "glError": 0
+      }
+    },
+    {
+      "name": "mode-1-early: no GL error",
+      "passed": true
+    },
+    {
+      "name": "mode-1-middle: fixed-time PNG byte exact",
+      "passed": true
+    },
+    {
+      "name": "mode-1-middle: fixed-time RGBA byte exact",
+      "passed": true,
+      "data": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "d2f2bc5a5cc56e8a2fc46c0b3fffbc818e8c35d10bb0fa1e87641185e60ae3de",
+        "glError": 0
+      }
+    },
+    {
+      "name": "mode-1-middle: no GL error",
+      "passed": true
+    },
+    {
+      "name": "mode-1-mature: fixed-time PNG byte exact",
+      "passed": true
+    },
+    {
+      "name": "mode-1-mature: fixed-time RGBA byte exact",
+      "passed": true,
+      "data": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "82a40554ad5703b71a7307812095fa188d69745c5e92d7a09c5f6781b1f22061",
+        "glError": 0
+      }
+    },
+    {
+      "name": "mode-1-mature: no GL error",
+      "passed": true
+    },
+    {
+      "name": "mode-1-near: fixed-time PNG byte exact",
+      "passed": true
+    },
+    {
+      "name": "mode-1-near: fixed-time RGBA byte exact",
+      "passed": true,
+      "data": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "19b14a377c8cd8862f8a4cd2be5ac3a1ac0e807d5222fd6deb4450d10fa64986",
+        "glError": 0
+      }
+    },
+    {
+      "name": "mode-1-near: no GL error",
+      "passed": true
+    },
+    {
+      "name": "mode-2-early: fixed-time PNG byte exact",
+      "passed": true
+    },
+    {
+      "name": "mode-2-early: fixed-time RGBA byte exact",
+      "passed": true,
+      "data": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "3784b0cdee9e0a37da09b1a05e880ae38f5df72adc22b27365c674d54964a842",
+        "glError": 0
+      }
+    },
+    {
+      "name": "mode-2-early: no GL error",
+      "passed": true
+    },
+    {
+      "name": "mode-2-middle: fixed-time PNG byte exact",
+      "passed": true
+    },
+    {
+      "name": "mode-2-middle: fixed-time RGBA byte exact",
+      "passed": true,
+      "data": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "e9d3c9dedc9366293c572539127fe0eed8b2d23d65f31fe22e9ce36ebacc4a13",
+        "glError": 0
+      }
+    },
+    {
+      "name": "mode-2-middle: no GL error",
+      "passed": true
+    },
+    {
+      "name": "mode-2-mature: fixed-time PNG byte exact",
+      "passed": true
+    },
+    {
+      "name": "mode-2-mature: fixed-time RGBA byte exact",
+      "passed": true,
+      "data": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "47bc19d330a14da0655efcff62df9c2c55c8bddfdb72a1c393750a64b4440c6f",
+        "glError": 0
+      }
+    },
+    {
+      "name": "mode-2-mature: no GL error",
+      "passed": true
+    },
+    {
+      "name": "mode-2-near: fixed-time PNG byte exact",
+      "passed": false
+    },
+    {
+      "name": "mode-2-near: fixed-time RGBA byte exact",
+      "passed": false,
+      "data": {
+        "changedChannels": 985,
+        "changedPixels": 878,
+        "maxDifference": 25,
+        "sumAbsoluteDifference": 1145,
+        "meanAbsoluteChannelDifference": 0.0004977914579855315,
+        "sha256": "bf93e2160d788a0268001bf2fc0da0af1ce06f327ea51de7d2db8482ca226365",
+        "glError": 0
+      }
+    },
+    {
+      "name": "mode-2-near: no GL error",
+      "passed": true
+    },
+    {
+      "name": "user recipe and event fields retained",
+      "passed": true
+    },
+    {
+      "name": "user camera and mature time retained",
+      "passed": true
+    },
+    {
+      "name": "no page errors",
+      "passed": true,
+      "data": []
+    },
+    {
+      "name": "source did not change during review",
+      "passed": true
+    }
+  ],
+  "frames": [
+    {
+      "file": "mode-1-early.png",
+      "mode": 1,
+      "view": "outside",
+      "time": 0,
+      "pngSha256": "655d5b44e7ec7c2786491b475a030d105901e93298da6f55c1d1481ca0f0ee17",
+      "firstRgba": {
+        "width": 960,
+        "height": 599,
+        "sha256": "3784b0cdee9e0a37da09b1a05e880ae38f5df72adc22b27365c674d54964a842",
+        "glError": 0
+      },
+      "replayRgba": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "3784b0cdee9e0a37da09b1a05e880ae38f5df72adc22b27365c674d54964a842",
+        "glError": 0
+      },
+      "state": {
+        "ready": true,
+        "failed": false,
+        "rendered": true,
+        "time": 0,
+        "paused": true,
+        "fieldCount": 62,
+        "presetCount": 8,
+        "camera": {
+          "position": [
+            195,
+            78,
+            295
+          ],
+          "yaw": -2.5575115985669856,
+          "pitch": 0.016965541737996078
+        },
+        "resolution": [
+          960,
+          599
+        ],
+        "error": null,
+        "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+      }
+    },
+    {
+      "file": "mode-1-middle.png",
+      "mode": 1,
+      "view": "outside",
+      "time": 8.1,
+      "pngSha256": "7ce10c05f9da0134f36319678e2cef417fdf1ffc2d54cf3cb059a2fb1a7ed607",
+      "firstRgba": {
+        "width": 960,
+        "height": 599,
+        "sha256": "d2f2bc5a5cc56e8a2fc46c0b3fffbc818e8c35d10bb0fa1e87641185e60ae3de",
+        "glError": 0
+      },
+      "replayRgba": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "d2f2bc5a5cc56e8a2fc46c0b3fffbc818e8c35d10bb0fa1e87641185e60ae3de",
+        "glError": 0
+      },
+      "state": {
+        "ready": true,
+        "failed": false,
+        "rendered": true,
+        "time": 8.1,
+        "paused": true,
+        "fieldCount": 62,
+        "presetCount": 8,
+        "camera": {
+          "position": [
+            195,
+            78,
+            295
+          ],
+          "yaw": -2.5575115985669856,
+          "pitch": 0.016965541737996078
+        },
+        "resolution": [
+          960,
+          599
+        ],
+        "error": null,
+        "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+      }
+    },
+    {
+      "file": "mode-1-mature.png",
+      "mode": 1,
+      "view": "outside",
+      "time": 21.599999999999998,
+      "pngSha256": "b2592541771f9990ca20826ed3dd032f0b9eef67ee07ef6222683257f3531ebe",
+      "firstRgba": {
+        "width": 960,
+        "height": 599,
+        "sha256": "82a40554ad5703b71a7307812095fa188d69745c5e92d7a09c5f6781b1f22061",
+        "glError": 0
+      },
+      "replayRgba": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "82a40554ad5703b71a7307812095fa188d69745c5e92d7a09c5f6781b1f22061",
+        "glError": 0
+      },
+      "state": {
+        "ready": true,
+        "failed": false,
+        "rendered": true,
+        "time": 21.599999999999998,
+        "paused": true,
+        "fieldCount": 62,
+        "presetCount": 8,
+        "camera": {
+          "position": [
+            195,
+            78,
+            295
+          ],
+          "yaw": -2.5575115985669856,
+          "pitch": 0.016965541737996078
+        },
+        "resolution": [
+          960,
+          599
+        ],
+        "error": null,
+        "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+      }
+    },
+    {
+      "file": "mode-1-near.png",
+      "mode": 1,
+      "view": "liquid",
+      "time": 21.599999999999998,
+      "pngSha256": "4475a2fc37c37be294c7caff6297bec8f5ceaa2d3eeb3d06dc373c3908daaeba",
+      "firstRgba": {
+        "width": 960,
+        "height": 599,
+        "sha256": "19b14a377c8cd8862f8a4cd2be5ac3a1ac0e807d5222fd6deb4450d10fa64986",
+        "glError": 0
+      },
+      "replayRgba": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "19b14a377c8cd8862f8a4cd2be5ac3a1ac0e807d5222fd6deb4450d10fa64986",
+        "glError": 0
+      },
+      "state": {
+        "ready": true,
+        "failed": false,
+        "rendered": true,
+        "time": 21.599999999999998,
+        "paused": true,
+        "fieldCount": 62,
+        "presetCount": 8,
+        "camera": {
+          "position": [
+            78,
+            38,
+            105
+          ],
+          "yaw": -2.502678668585906,
+          "pitch": 0
+        },
+        "resolution": [
+          960,
+          599
+        ],
+        "error": null,
+        "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+      }
+    },
+    {
+      "file": "mode-2-early.png",
+      "mode": 2,
+      "view": "outside",
+      "time": 0,
+      "pngSha256": "655d5b44e7ec7c2786491b475a030d105901e93298da6f55c1d1481ca0f0ee17",
+      "firstRgba": {
+        "width": 960,
+        "height": 599,
+        "sha256": "3784b0cdee9e0a37da09b1a05e880ae38f5df72adc22b27365c674d54964a842",
+        "glError": 0
+      },
+      "replayRgba": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "3784b0cdee9e0a37da09b1a05e880ae38f5df72adc22b27365c674d54964a842",
+        "glError": 0
+      },
+      "state": {
+        "ready": true,
+        "failed": false,
+        "rendered": true,
+        "time": 0,
+        "paused": true,
+        "fieldCount": 62,
+        "presetCount": 8,
+        "camera": {
+          "position": [
+            195,
+            78,
+            295
+          ],
+          "yaw": -2.5575115985669856,
+          "pitch": 0.016965541737996078
+        },
+        "resolution": [
+          960,
+          599
+        ],
+        "error": null,
+        "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+      }
+    },
+    {
+      "file": "mode-2-middle.png",
+      "mode": 2,
+      "view": "outside",
+      "time": 8.1,
+      "pngSha256": "5a044aedb274a4bdf439718f81c78aed189ce5c7a3758c74715726b35b92423c",
+      "firstRgba": {
+        "width": 960,
+        "height": 599,
+        "sha256": "e9d3c9dedc9366293c572539127fe0eed8b2d23d65f31fe22e9ce36ebacc4a13",
+        "glError": 0
+      },
+      "replayRgba": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "e9d3c9dedc9366293c572539127fe0eed8b2d23d65f31fe22e9ce36ebacc4a13",
+        "glError": 0
+      },
+      "state": {
+        "ready": true,
+        "failed": false,
+        "rendered": true,
+        "time": 8.1,
+        "paused": true,
+        "fieldCount": 62,
+        "presetCount": 8,
+        "camera": {
+          "position": [
+            195,
+            78,
+            295
+          ],
+          "yaw": -2.5575115985669856,
+          "pitch": 0.016965541737996078
+        },
+        "resolution": [
+          960,
+          599
+        ],
+        "error": null,
+        "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+      }
+    },
+    {
+      "file": "mode-2-mature.png",
+      "mode": 2,
+      "view": "outside",
+      "time": 21.599999999999998,
+      "pngSha256": "e30707419b2a64f15e5907c8985456f0b4f74892abfaff6bff83cb89371e9f48",
+      "firstRgba": {
+        "width": 960,
+        "height": 599,
+        "sha256": "47bc19d330a14da0655efcff62df9c2c55c8bddfdb72a1c393750a64b4440c6f",
+        "glError": 0
+      },
+      "replayRgba": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxDifference": 0,
+        "sumAbsoluteDifference": 0,
+        "meanAbsoluteChannelDifference": 0,
+        "sha256": "47bc19d330a14da0655efcff62df9c2c55c8bddfdb72a1c393750a64b4440c6f",
+        "glError": 0
+      },
+      "state": {
+        "ready": true,
+        "failed": false,
+        "rendered": true,
+        "time": 21.599999999999998,
+        "paused": true,
+        "fieldCount": 62,
+        "presetCount": 8,
+        "camera": {
+          "position": [
+            195,
+            78,
+            295
+          ],
+          "yaw": -2.5575115985669856,
+          "pitch": 0.016965541737996078
+        },
+        "resolution": [
+          960,
+          599
+        ],
+        "error": null,
+        "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+      }
+    },
+    {
+      "file": "mode-2-near.png",
+      "mode": 2,
+      "view": "liquid",
+      "time": 21.599999999999998,
+      "pngSha256": "23f372877feae19510f2d286bfe7dbb4c0c8309f4877029599f8263409bf6376",
+      "firstRgba": {
+        "width": 960,
+        "height": 599,
+        "sha256": "3fd4596dca486fadf99ae9d04c7a6462dee1ae7f25c0a8eb474bf1f4239a0261",
+        "glError": 0
+      },
+      "replayRgba": {
+        "changedChannels": 985,
+        "changedPixels": 878,
+        "maxDifference": 25,
+        "sumAbsoluteDifference": 1145,
+        "meanAbsoluteChannelDifference": 0.0004977914579855315,
+        "sha256": "bf93e2160d788a0268001bf2fc0da0af1ce06f327ea51de7d2db8482ca226365",
+        "glError": 0
+      },
+      "state": {
+        "ready": true,
+        "failed": false,
+        "rendered": true,
+        "time": 21.599999999999998,
+        "paused": true,
+        "fieldCount": 62,
+        "presetCount": 8,
+        "camera": {
+          "position": [
+            78,
+            38,
+            105
+          ],
+          "yaw": -2.502678668585906,
+          "pitch": 0
+        },
+        "resolution": [
+          960,
+          599
+        ],
+        "error": null,
+        "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+      }
+    }
+  ],
+  "passed": false
+}

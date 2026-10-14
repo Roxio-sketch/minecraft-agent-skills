@@ -1,0 +1,75 @@
+plugins {
+    id "java"
+    id "net.minecraftforge.gradle" version "6.0.54"
+}
+group = "dev.vfxworkbench"
+version = "0.1.0"
+base { archivesName = "vfx-workbench-forge-1.20.1" }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+minecraft {
+    mappings channel: "official", version: "1.20.1"
+    runs { client {
+        workingDirectory project.file("run")
+        property "forge.logging.markers", "REGISTRIES"
+        property "forge.logging.console.level", "info"
+        property "vfxworkbench.blackHoleDemo", project.findProperty("blackHoleDemo") ?: "false"
+        property "vfxworkbench.whiteHoleRegression", project.findProperty("whiteHoleRegression") ?: "false"
+        property "vfxworkbench.blackHoleRegression", project.findProperty("blackHoleRegression") ?: "false"
+        property "vfxworkbench.blackHoleVerticalRegression", project.findProperty("blackHoleVerticalRegression") ?: "false"
+        property "vfxworkbench.blackHoleThirdPersonRegression", project.findProperty("blackHoleThirdPersonRegression") ?: "false"
+        property "vfxworkbench.blackHolePlayerToggleRegression", project.findProperty("blackHolePlayerToggleRegression") ?: "false"
+        property "vfxworkbench.blackHolePresetRegression", project.findProperty("blackHolePresetRegression") ?: "false"
+        property "vfxworkbench.blackHoleGroundRegression", project.findProperty("blackHoleGroundRegression") ?: "false"
+        property "vfxworkbench.blackHoleMotionRegression", project.findProperty("blackHoleMotionRegression") ?: "false"
+        property "vfxworkbench.stencilRegression", project.findProperty("stencilRegression") ?: "false"
+        property "vfxworkbench.workbenchUiRegression", project.findProperty("workbenchUiRegression") ?: "false"
+        property "vfxworkbench.workbenchFeatureRegression", project.findProperty("workbenchFeatureRegression") ?: "false"
+        property "vfxworkbench.workbenchNavigationRegression", project.findProperty("workbenchNavigationRegression") ?: "false"
+        property "vfxworkbench.lightningDemo", project.findProperty("lightningDemo") ?: "false"
+        property "vfxworkbench.lightningDemoExit", project.findProperty("lightningDemoExit") ?: "false"
+        property "vfxworkbench.lightningGlowRegression", project.findProperty("lightningGlowRegression") ?: "false"
+        property "vfxworkbench.lightningGradientRegression", project.findProperty("lightningGradientRegression") ?: "false"
+        property "vfxworkbench.lightningGradientClarityRegression", project.findProperty("lightningGradientClarityRegression") ?: "false"
+        property "vfxworkbench.lightningImpactColorRegression", project.findProperty("lightningImpactColorRegression") ?: "false"
+        mods { vfxworkbench { source sourceSets.main } }
+    } }
+}
+dependencies { minecraft "net.minecraftforge:forge:1.20.1-47.4.10" }
+tasks.withType(JavaCompile).configureEach { options.encoding = "UTF-8" }
+tasks.named("jar", Jar).configure { finalizedBy "reobfJar" }
+tasks.register("workbenchCheck", JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.vfxworkbench.WorkbenchWaveCheck"
+}
+
+tasks.register("lightningCheck", JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.vfxworkbench.effects.lightning.LightningCheck"
+}
+
+tasks.register("blackHoleCheck", JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.vfxworkbench.BlackHoleSchemaCheck"
+}
+tasks.register("blackHoleFlowCheck", JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.vfxworkbench.effects.blackhole.BlackHoleFlowClockCheck"
+}
+
+// Guard the client entry point against a partial/stale jar: rain preview must
+// ship its package-private geometry helper alongside LightningClient.
+tasks.register("lightningJarCheck") {
+    dependsOn reobfJar
+    doLast {
+        def artifact = tasks.named("jar").get().archiveFile.get().asFile
+        def expected = "dev/vfxworkbench/effects/lightning/RainGeometry.class"
+        if (!zipTree(artifact).matching { include expected }.files) {
+            throw new GradleException("Missing ${expected} in ${artifact}")
+        }
+        logger.lifecycle("PASS: ${expected} present in ${artifact.name}")
+    }
+}

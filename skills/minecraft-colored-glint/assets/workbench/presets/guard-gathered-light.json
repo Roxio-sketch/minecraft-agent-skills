@@ -1,0 +1,22 @@
+{
+  "schema": "spirit-guard-glint/1",
+  "preset": "guard-gathered-light",
+  "parameters": {
+    "style": 11,
+    "color": "#91CEF6",
+    "color2": "#D2F3FF",
+    "intensity": 0.96,
+    "speed": 1,
+    "scale": 1,
+    "width": 0.12,
+    "angle": -12,
+    "secondary": 0.75
+  },
+  "scene": {
+    "shape": "chest",
+    "material": "netherite",
+    "yaw": 0.32,
+    "pitch": 0.13,
+    "orbit": false
+  }
+}

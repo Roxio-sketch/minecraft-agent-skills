@@ -1,0 +1,5478 @@
+{
+  "fixture": "flightVisibilityCapture",
+  "result": "PASS",
+  "expectedImages": 12,
+  "actualImages": 12,
+  "packName": "none",
+  "actualShaderPackActive": false,
+  "scope": "Fresh isolated survival world, real local double-space and W input, production END history/pose/shader renderer; no RemotePlayer, no sword, no multiplayer/FPS claim. Side pictures use DEV camera position only; front pictures use vanilla third-person front. Actual source/shader/JAR binding must be supplied by the external delivery verifier. Pixel metrics do not establish aesthetic approval.",
+  "turnSequence": null,
+  "outputAbsolutePath": "E:\\五行仙途\\reports\\flight-surround-flow-20261014\\final-ui",
+  "actualMovementClientTicks": 315,
+  "captures": [
+    {
+      "screenshot": "realm-4-huashen-local-day-side.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 80,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          0.0,
+          136.37518708470515,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 246,
+      "actualPartialTick": 0.13999522,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actualWKey": false,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        0.0,
+        137.99518697026423,
+        0.0
+      ],
+      "position": [
+        0.0,
+        136.37518708470515,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 0.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 211.1561111111111,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 0.042484040853696725,
+        "glow": 0.9999251481701122,
+        "speedWeight": 8.019477741117092E-7,
+        "flowPhase": 0.07749880875313152,
+        "historySamples": 1,
+        "historySpeed": 1.5699159392007356E-7,
+        "historyDirection": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 96,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+          },
+          "previousHeading": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "previousSide": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "actualWorldGameTime": 109,
+        "actualAdaptiveFrames": 0,
+        "actualRenderClock": 95.1399952173233
+      },
+      "firstPersonFlowVertices": 0,
+      "firstPersonFlowStrength": 0.0
+    },
+    {
+      "screenshot": "realm-4-huashen-local-day-front.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 115,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          5.235999999999999,
+          136.37518708470515,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 347,
+      "actualPartialTick": 0.319996,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.5605600161552428,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        4.817117535591125,
+        137.99518697026423,
+        0.0
+      ],
+      "position": [
+        5.235999999999999,
+        136.37518708470515,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 211.38756944444444,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 24.649588649378302,
+        "glow": 0.9999997808114095,
+        "speedWeight": 0.37012576497420013,
+        "flowPhase": 0.2550418081439055,
+        "historySamples": 17,
+        "historySpeed": 0.5445725971795434,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 131,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999998902975102,
+            "y": 4.6840683974341726E-4,
+            "z": 0.0
+          },
+          "previousHeading": {
+            "x": 0.9999996738927295,
+            "y": 8.07597941275835E-4,
+            "z": 0.0
+          },
+          "side": {
+            "x": 4.6840683974341726E-4,
+            "y": -0.9999998902975102,
+            "z": 0.0
+          },
+          "previousSide": {
+            "x": 8.07597941275835E-4,
+            "y": -0.9999996738927295,
+            "z": 0.0
+          }
+        },
+        "actualWorldGameTime": 144,
+        "actualAdaptiveFrames": 23,
+        "actualRenderClock": 130.31999599933624,
+        "actualHeadFrame": {
+          "position": {
+            "x": 4.817117535591125,
+            "y": 137.2751870608633,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 130.31999599933624,
+          "arc": 8.793117535591124,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 3.5035,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 128.0,
+            "arc": 7.479499999999998,
+            "opacity": 0.9613334000110626
+          },
+          {
+            "position": {
+              "x": 3.7705937499999997,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 128.5,
+            "arc": 7.746593749999998,
+            "opacity": 0.9696667333443959
+          },
+          {
+            "position": {
+              "x": 4.0424999999999995,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 129.0,
+            "arc": 8.018499999999998,
+            "opacity": 0.9780000666777293
+          },
+          {
+            "position": {
+              "x": 4.352617654025554,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 129.5,
+            "arc": 8.328617654025553,
+            "opacity": 0.9863334000110626
+          },
+          {
+            "position": {
+              "x": 4.619999999999999,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 130.0,
+            "arc": 8.595999999999998,
+            "opacity": 0.9946667333443959
+          },
+          {
+            "position": {
+              "x": 4.817117535591125,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 130.31999599933624,
+            "arc": 8.793117535591124,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 15,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 16,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 17,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 18,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 19,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 20,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 21,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 22,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 23,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 24,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 25,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 26,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 27,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 16,
+      "firstPersonFlowStrength": 0.5434266693592071
+    },
+    {
+      "screenshot": "realm-4-huashen-local-night-side.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 150,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          28.335999999999995,
+          136.37518708470515,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 447,
+      "actualPartialTick": 0.2399962,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.7941266895532609,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": true,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        27.672770012696578,
+        137.99518697026423,
+        0.0
+      ],
+      "position": [
+        28.335999999999995,
+        136.37518708470515,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 168.29659722222223,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 35.504041267308466,
+        "glow": 0.9999999993581501,
+        "speedWeight": 0.9177157673192035,
+        "flowPhase": 3.2525605430807194,
+        "historySamples": 52,
+        "historySpeed": 0.8297125137151574,
+        "historyDirection": {
+          "x": 0.9999999999999999,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 166,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999995536,
+            "y": 8.695926563451731E-9,
+            "z": 9.448609784468505E-7
+          },
+          "previousHeading": {
+            "x": 0.9999999999997786,
+            "y": 8.695926563614843E-9,
+            "z": 6.653930471780731E-7
+          },
+          "side": {
+            "x": 8.69592656400047E-9,
+            "y": -1.0,
+            "z": -5.766523837313499E-13
+          },
+          "previousSide": {
+            "x": 8.69592656400047E-9,
+            "y": -1.0,
+            "z": -5.766523837313499E-13
+          }
+        },
+        "actualWorldGameTime": 179,
+        "actualAdaptiveFrames": 101,
+        "actualRenderClock": 165.23999619483948,
+        "actualHeadFrame": {
+          "position": {
+            "x": 27.672770012696578,
+            "y": 137.2751870608633,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 0.9999999999999999,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 165.23999619483948,
+          "arc": 31.648770012696577,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 26.613999999999994,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 164.0,
+            "arc": 30.589999999999993,
+            "opacity": 0.9793333967526754
+          },
+          {
+            "position": {
+              "x": 26.919082592122344,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 164.33333333333334,
+            "arc": 30.895082592122343,
+            "opacity": 0.984888952308231
+          },
+          {
+            "position": {
+              "x": 27.226757776837285,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 164.66666666666666,
+            "arc": 31.202757776837284,
+            "opacity": 0.9904445078637863
+          },
+          {
+            "position": {
+              "x": 27.463333333333328,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 165.0,
+            "arc": 31.439333333333327,
+            "opacity": 0.996000063419342
+          },
+          {
+            "position": {
+              "x": 27.581141465475156,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 165.11999809741974,
+            "arc": 31.557141465475155,
+            "opacity": 0.998000031709671
+          },
+          {
+            "position": {
+              "x": 27.672770012696578,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 0.9999999999999999,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 165.23999619483948,
+            "arc": 31.648770012696577,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 93,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 94,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 95,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 96,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 97,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 98,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 99,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 100,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 101,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 102,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 103,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 104,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 105,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 16,
+      "firstPersonFlowStrength": 0.9323544482588768
+    },
+    {
+      "screenshot": "realm-4-huashen-local-night-front.png",
+      "realm": 4,
+      "actualDataRealm": 4,
+      "actualDataStage": 3,
+      "clientTick": 180,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 4,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          55.216000000000015,
+          136.37518708470515,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 531,
+      "actualPartialTick": 0.3199972,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.8153600234985353,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": true,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        54.60671748352052,
+        137.99518697026423,
+        0.0
+      ],
+      "position": [
+        55.216000000000015,
+        136.37518708470515,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 165.79770833333333,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 43.97774800022515,
+        "glow": 0.9999999999956753,
+        "speedWeight": 0.999995832944746,
+        "flowPhase": 6.97444075716475,
+        "historySamples": 64,
+        "historySpeed": 0.8959998382544849,
+        "historyDirection": {
+          "x": 0.9999999999999999,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 196,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999997154,
+            "y": 1.2608344070538747E-11,
+            "z": 7.545878977971118E-7
+          },
+          "previousHeading": {
+            "x": 0.9999999999991539,
+            "y": 2.173735233135764E-11,
+            "z": 1.3009434789871998E-6
+          },
+          "side": {
+            "x": 1.2608344512084268E-11,
+            "y": -1.0,
+            "z": -5.851431426063946E-13
+          },
+          "previousSide": {
+            "x": 2.173735309260198E-11,
+            "y": -1.0,
+            "z": -5.851337594857232E-13
+          }
+        },
+        "actualWorldGameTime": 209,
+        "actualAdaptiveFrames": 151,
+        "actualRenderClock": 195.31999719142914,
+        "actualHeadFrame": {
+          "position": {
+            "x": 54.60671748352052,
+            "y": 137.2751870608633,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 195.31999719142914,
+          "arc": 58.58271748352051,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 53.424000000000014,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 194.0,
+            "arc": 57.400000000000006,
+            "opacity": 0.9780000468095144
+          },
+          {
+            "position": {
+              "x": 53.74523268579556,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 194.33333333333334,
+            "arc": 57.72123268579555,
+            "opacity": 0.9835556023650701
+          },
+          {
+            "position": {
+              "x": 54.066465371591086,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 194.66666666666666,
+            "arc": 58.04246537159108,
+            "opacity": 0.9891111579206253
+          },
+          {
+            "position": {
+              "x": 54.320000000000014,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 195.0,
+            "arc": 58.29600000000001,
+            "opacity": 0.9946667134761811
+          },
+          {
+            "position": {
+              "x": 54.48127858448029,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 195.15999859571457,
+            "arc": 58.457278584480285,
+            "opacity": 0.9973333567380905
+          },
+          {
+            "position": {
+              "x": 54.60671748352052,
+              "y": 137.2751870608633,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 195.31999719142914,
+            "arc": 58.58271748352051,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 143,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 144,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 145,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 146,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 147,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 148,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 149,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 150,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 151,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 152,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 153,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 154,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 155,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 16,
+      "firstPersonFlowStrength": 0.9358933372497559
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-day-side.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 80,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          0.0,
+          137.2081870847053,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 850,
+      "actualPartialTick": 0.2399987,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actualWKey": false,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        0.0,
+        138.82818697026437,
+        0.0
+      ],
+      "position": [
+        0.0,
+        137.2081870847053,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 0.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 211.17645833333333,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 0.05260791341906303,
+        "glow": 0.9999251481701122,
+        "speedWeight": 5.540234891518035E-7,
+        "flowPhase": 0.05595914648507512,
+        "historySamples": 1,
+        "historySpeed": 1.7891912890922812E-7,
+        "historyDirection": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 305,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+          },
+          "previousHeading": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "previousSide": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "actualWorldGameTime": 318,
+        "actualAdaptiveFrames": 0,
+        "actualRenderClock": 304.23999869823456
+      },
+      "firstPersonFlowVertices": 0,
+      "firstPersonFlowStrength": 0.0
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-day-front.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 115,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          6.664,
+          137.2081870847053,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 951,
+      "actualPartialTick": 0.039999485,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.7134400205612182,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        5.911359596252441,
+        138.82818697026437,
+        0.0
+      ],
+      "position": [
+        6.664,
+        137.2081870847053,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 211.44125,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 28.780572802070655,
+        "glow": 0.9999997808114095,
+        "speedWeight": 0.3493273402973219,
+        "flowPhase": 0.22282255050891775,
+        "historySamples": 17,
+        "historySpeed": 0.6930923964103224,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 340,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999630960822,
+            "y": 2.7167597365948716E-4,
+            "z": 0.0
+          },
+          "previousHeading": {
+            "x": 0.9999998902975102,
+            "y": 4.6840683974341726E-4,
+            "z": 0.0
+          },
+          "side": {
+            "x": 2.7167597365948716E-4,
+            "y": -0.9999999630960822,
+            "z": 0.0
+          },
+          "previousSide": {
+            "x": 4.6840683974341726E-4,
+            "y": -0.9999998902975102,
+            "z": 0.0
+          }
+        },
+        "actualWorldGameTime": 353,
+        "actualAdaptiveFrames": 26,
+        "actualRenderClock": 339.03999948501587,
+        "actualHeadFrame": {
+          "position": {
+            "x": 5.911359596252441,
+            "y": 138.10818706086343,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 339.03999948501587,
+          "arc": 10.720359596252584,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 4.7989375,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 337.5,
+            "arc": 9.607937500000144,
+            "opacity": 0.9743333419164022
+          },
+          {
+            "position": {
+              "x": 5.145,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 338.0,
+            "arc": 9.954000000000143,
+            "opacity": 0.9826666752497355
+          },
+          {
+            "position": {
+              "x": 5.412431126064724,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 338.3333333333333,
+            "arc": 10.221431126064868,
+            "opacity": 0.9882222308052907
+          },
+          {
+            "position": {
+              "x": 5.6853066965738925,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 338.6666666666667,
+            "arc": 10.494306696574036,
+            "opacity": 0.9937777863608469
+          },
+          {
+            "position": {
+              "x": 5.88,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 339.0,
+            "arc": 10.689000000000142,
+            "opacity": 0.9993333419164022
+          },
+          {
+            "position": {
+              "x": 5.911359596252441,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 339.03999948501587,
+            "arc": 10.720359596252584,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 18,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 19,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 20,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 21,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 22,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 23,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 24,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 25,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 26,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 27,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 28,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 29,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 30,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 16,
+      "firstPersonFlowStrength": 0.5689066700935363
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-night-side.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 150,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          36.26,
+          137.2081870847053,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 1052,
+      "actualPartialTick": 0.119999886,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        1.0404333633184435,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": true,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        35.25386653582255,
+        138.82818697026437,
+        0.0
+      ],
+      "position": [
+        36.26,
+        137.2081870847053,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 169.21847222222223,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 40.44254852570078,
+        "glow": 0.9999999993581501,
+        "speedWeight": 0.9086026698594103,
+        "flowPhase": 3.0976283401045035,
+        "historySamples": 52,
+        "historySpeed": 1.0831975217749774,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 375,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999990999,
+            "y": 8.695926563218936E-9,
+            "z": 1.3417201666602396E-6
+          },
+          "previousHeading": {
+            "x": 0.9999999999995536,
+            "y": 8.695926563451731E-9,
+            "z": 9.448609784468505E-7
+          },
+          "side": {
+            "x": 8.69592656400047E-9,
+            "y": -1.0,
+            "z": -5.766523837313499E-13
+          },
+          "previousSide": {
+            "x": 8.69592656400047E-9,
+            "y": -1.0,
+            "z": -5.766523837313499E-13
+          }
+        },
+        "actualWorldGameTime": 388,
+        "actualAdaptiveFrames": 133,
+        "actualRenderClock": 374.1199998855591,
+        "actualHeadFrame": {
+          "position": {
+            "x": 35.25386653582255,
+            "y": 138.10818706086343,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 374.1199998855591,
+          "arc": 40.0628665358227,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 34.006,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 373.0,
+            "arc": 38.81500000000015,
+            "opacity": 0.981333335240682
+          },
+          {
+            "position": {
+              "x": 34.30418541973333,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 373.25,
+            "arc": 39.113185419733476,
+            "opacity": 0.9855000019073487
+          },
+          {
+            "position": {
+              "x": 34.62013334151109,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 373.5,
+            "arc": 39.42913334151124,
+            "opacity": 0.9896666685740153
+          },
+          {
+            "position": {
+              "x": 34.90668125919998,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 0.9999999999999999,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 373.75,
+            "arc": 39.715681259200124,
+            "opacity": 0.993833335240682
+          },
+          {
+            "position": {
+              "x": 35.11666666666667,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 374.0,
+            "arc": 39.925666666666814,
+            "opacity": 0.9980000019073486
+          },
+          {
+            "position": {
+              "x": 35.25386653582255,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 374.1199998855591,
+            "arc": 40.0628665358227,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 125,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 126,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 127,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 128,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 129,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 130,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 131,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 132,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 133,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 134,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 135,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 136,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 137,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 16,
+      "firstPersonFlowStrength": 0.9734055605530739
+    },
+    {
+      "screenshot": "realm-5-lianxu-local-night-front.png",
+      "realm": 5,
+      "actualDataRealm": 5,
+      "actualDataStage": 3,
+      "clientTick": 180,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 5,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          71.54000000000005,
+          137.2081870847053,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 1136,
+      "actualPartialTick": 0.3000008,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        1.0701600308418275,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": true,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        70.71680092525487,
+        138.82818697026437,
+        0.0
+      ],
+      "position": [
+        71.54000000000005,
+        137.2081870847053,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 157.12465277777778,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 49.97496774490613,
+        "glow": 0.9999999999956753,
+        "speedWeight": 0.9999953666639366,
+        "flowPhase": 6.816371532568949,
+        "historySamples": 64,
+        "historySpeed": 1.1759997735562857,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 405,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.999999999999426,
+            "y": 1.2608343885136763E-11,
+            "z": 1.0714305983210654E-6
+          },
+          "previousHeading": {
+            "x": 0.9999999999997154,
+            "y": 1.2608344070538747E-11,
+            "z": 7.545878977971118E-7
+          },
+          "side": {
+            "x": 1.2608344512084267E-11,
+            "y": -1.0,
+            "z": -5.851431426063946E-13
+          },
+          "previousSide": {
+            "x": 1.2608344512084268E-11,
+            "y": -1.0,
+            "z": -5.851431426063946E-13
+          }
+        },
+        "actualWorldGameTime": 418,
+        "actualAdaptiveFrames": 174,
+        "actualRenderClock": 404.3000007867813,
+        "actualHeadFrame": {
+          "position": {
+            "x": 70.71680092525487,
+            "y": 138.10818706086343,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 404.3000007867813,
+          "arc": 75.52580092525503,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 69.50129372831438,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 403.25,
+            "arc": 74.31029372831453,
+            "opacity": 0.9824999868869781
+          },
+          {
+            "position": {
+              "x": 69.82744994217161,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 403.5,
+            "arc": 74.63644994217177,
+            "opacity": 0.9866666535536448
+          },
+          {
+            "position": {
+              "x": 70.12788118494306,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 403.75,
+            "arc": 74.93688118494322,
+            "opacity": 0.9908333202203115
+          },
+          {
+            "position": {
+              "x": 70.36400000000005,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 404.0,
+            "arc": 75.1730000000002,
+            "opacity": 0.9949999868869781
+          },
+          {
+            "position": {
+              "x": 70.5624505204559,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 404.15000039339066,
+            "arc": 75.37145052045605,
+            "opacity": 0.997499993443489
+          },
+          {
+            "position": {
+              "x": 70.71680092525487,
+              "y": 138.10818706086343,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 404.3000007867813,
+            "arc": 75.52580092525503,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 166,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 167,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 168,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 169,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 170,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 171,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 172,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 173,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 174,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 175,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 176,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 177,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 178,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 16,
+      "firstPersonFlowStrength": 0.9783600051403046
+    },
+    {
+      "screenshot": "realm-8-dixian-local-day-side.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 80,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          0.0,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 1455,
+      "actualPartialTick": 0.32000256,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actualWKey": false,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        0.0,
+        143.63718697026422,
+        0.0
+      ],
+      "position": [
+        0.0,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 0.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 211.43805555555556,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 0.07837262114953472,
+        "glow": 0.9999251481701122,
+        "speedWeight": 5.540234891517035E-7,
+        "flowPhase": 0.055959146485064115,
+        "historySamples": 1,
+        "historySpeed": 3.578382578184552E-7,
+        "historyDirection": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 514,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+          },
+          "previousHeading": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "previousSide": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "actualWorldGameTime": 527,
+        "actualAdaptiveFrames": 0,
+        "actualRenderClock": 513.3200025558472
+      },
+      "firstPersonFlowVertices": 0,
+      "firstPersonFlowStrength": 0.0
+    },
+    {
+      "screenshot": "realm-8-dixian-local-day-front.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 115,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          13.328,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 6000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 1557,
+      "actualPartialTick": 0.32000363,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        1.4268800411224365,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": false,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        12.261765689849852,
+        143.63718697026422,
+        0.0
+      ],
+      "position": [
+        13.328,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 6000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 211.47993055555557,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 39.986806304622554,
+        "glow": 0.9999997808114095,
+        "speedWeight": 0.3493273402973219,
+        "flowPhase": 0.22282255050890676,
+        "historySamples": 17,
+        "historySpeed": 1.3861847928206448,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 549,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999630960822,
+            "y": 2.7167597365948716E-4,
+            "z": 0.0
+          },
+          "previousHeading": {
+            "x": 0.9999998902975102,
+            "y": 4.6840683974341726E-4,
+            "z": 0.0
+          },
+          "side": {
+            "x": 2.7167597365948716E-4,
+            "y": -0.9999999630960822,
+            "z": 0.0
+          },
+          "previousSide": {
+            "x": 4.6840683974341726E-4,
+            "y": -0.9999998902975102,
+            "z": 0.0
+          }
+        },
+        "actualWorldGameTime": 562,
+        "actualAdaptiveFrames": 44,
+        "actualRenderClock": 548.3200036287308,
+        "actualHeadFrame": {
+          "position": {
+            "x": 12.261765689849852,
+            "y": 142.91718706086328,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 0.9999999999999999,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 548.3200036287308,
+          "arc": 21.879765689849854,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 10.917419246887206,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": -4.414754534837787E-14,
+              "z": 0.0
+            },
+            "side": {
+              "x": -4.414754534837787E-14,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -1.0
+            },
+            "tick": 547.4,
+            "arc": 20.535419246887205,
+            "opacity": 0.9846666061878201
+          },
+          {
+            "position": {
+              "x": 11.23700887033081,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 547.6,
+            "arc": 20.855008870330806,
+            "opacity": 0.9879999395211542
+          },
+          {
+            "position": {
+              "x": 11.526398995849608,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 547.8,
+            "arc": 21.144398995849606,
+            "opacity": 0.9913332728544864
+          },
+          {
+            "position": {
+              "x": 11.76,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 548.0,
+            "arc": 21.378,
+            "opacity": 0.9946666061878204
+          },
+          {
+            "position": {
+              "x": 12.042243200540542,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 548.1600018143654,
+            "arc": 21.660243200540542,
+            "opacity": 0.9973333030939102
+          },
+          {
+            "position": {
+              "x": 12.261765689849852,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 0.9999999999999999,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 548.3200036287308,
+            "arc": 21.879765689849854,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 36,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 37,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 38,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 39,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 40,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 41,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 42,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 43,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 44,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 45,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 46,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 47,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 48,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 16,
+      "firstPersonFlowStrength": 0.65
+    },
+    {
+      "screenshot": "realm-8-dixian-local-night-side.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 150,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          72.52,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "DEV side-offset camera only; actual LocalPlayer production opacity branch",
+      "renderSequence": 1657,
+      "actualPartialTick": 0.10000348,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        2.080866726636887,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": true,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        70.46200795968373,
+        143.63718697026422,
+        0.0
+      ],
+      "position": [
+        72.52,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 163.23652777777778,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 55.256986125447554,
+        "glow": 0.9999999993581501,
+        "speedWeight": 0.9086026698594103,
+        "flowPhase": 3.097628340104493,
+        "historySamples": 52,
+        "historySpeed": 2.166395043549955,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 584,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.9999999999990999,
+            "y": 8.695926563218936E-9,
+            "z": 1.3417201666602396E-6
+          },
+          "previousHeading": {
+            "x": 0.9999999999995536,
+            "y": 8.695926563451731E-9,
+            "z": 9.448609784468505E-7
+          },
+          "side": {
+            "x": 8.69592656400047E-9,
+            "y": -1.0,
+            "z": -5.766523837313499E-13
+          },
+          "previousSide": {
+            "x": 8.69592656400047E-9,
+            "y": -1.0,
+            "z": -5.766523837313499E-13
+          }
+        },
+        "actualWorldGameTime": 597,
+        "actualAdaptiveFrames": 170,
+        "actualRenderClock": 583.1000034809113,
+        "actualHeadFrame": {
+          "position": {
+            "x": 70.46200795968373,
+            "y": 142.91718706086328,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 583.1000034809113,
+          "arc": 80.08000795968373,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 69.24312450251978,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 582.5,
+            "arc": 78.86112450251977,
+            "opacity": 0.9899999419848124
+          },
+          {
+            "position": {
+              "x": 69.63807348446787,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 582.6666666666666,
+            "arc": 79.25607348446786,
+            "opacity": 0.9927777197625896
+          },
+          {
+            "position": {
+              "x": 69.97767083566646,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 582.8333333333334,
+            "arc": 79.59567083566645,
+            "opacity": 0.9955554975403687
+          },
+          {
+            "position": {
+              "x": 70.23333333333333,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 583.0,
+            "arc": 79.85133333333333,
+            "opacity": 0.9983332753181458
+          },
+          {
+            "position": {
+              "x": 70.36196281065543,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 0.9999999999999999,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 583.0500017404556,
+            "arc": 79.97996281065542,
+            "opacity": 0.9991666376590729
+          },
+          {
+            "position": {
+              "x": 70.46200795968373,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 583.1000034809113,
+            "arc": 80.08000795968373,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 162,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 163,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 164,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 165,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 166,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 167,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 168,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 169,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 170,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 171,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 172,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 173,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 174,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 16,
+      "firstPersonFlowStrength": 1.0
+    },
+    {
+      "screenshot": "realm-8-dixian-local-night-front.png",
+      "realm": 8,
+      "actualDataRealm": 8,
+      "actualDataStage": 3,
+      "clientTick": 180,
+      "localPlayerUUID": "380df991-f603-344c-a090-369bad2a924a",
+      "actualClientFlying": true,
+      "actualClientMayfly": true,
+      "actualServer": {
+        "realm": 8,
+        "stage": 3,
+        "flying": true,
+        "mayfly": true,
+        "creative": false,
+        "position": [
+          143.0800000000001,
+          142.01718708470514,
+          0.0
+        ],
+        "dayTime": 18000
+      },
+      "camera": "FIRST_PERSON",
+      "cameraScope": "Vanilla third-person front camera",
+      "renderSequence": 1741,
+      "actualPartialTick": 0.1400044,
+      "requestedPartialTickBand": "unrestricted",
+      "partialBandReached": true,
+      "actualYaw": -90.0,
+      "actualPitch": 0.0,
+      "actualMotion": [
+        2.140320061683655,
+        0.0,
+        0.0
+      ],
+      "actualWKey": true,
+      "actualBoostKey": true,
+      "actualAscentKey": false,
+      "actualDescentKey": false,
+      "cameraPosition": [
+        141.0572903404237,
+        143.63718697026422,
+        0.0
+      ],
+      "position": [
+        143.0800000000001,
+        142.01718708470514,
+        0.0
+      ],
+      "actualLocalPlayerDrawn": false,
+      "actualCompiledLocalSection": true,
+      "renderedShells": 0,
+      "headDrawsInFrame": 0,
+      "bloomDrawsInFrame": 0,
+      "renderedTrailSegments": 0,
+      "renderedVertices": 0,
+      "cachedSectionEvaluations": 0,
+      "previousSectionEvaluations": 0,
+      "forwardBodyPoseWeight": 1.0,
+      "lastPostDrawSucceeded": false,
+      "dayTime": 18000,
+      "metrics": {
+        "width": 1280,
+        "height": 720,
+        "centralMean": 168.8384722222222,
+        "centralDarkFraction": 0.0,
+        "blackScreenCandidate": false
+      },
+      "productionFlight": {
+        "trailLength": 67.9666242913564,
+        "glow": 0.9999999999956753,
+        "speedWeight": 0.9999953666639366,
+        "flowPhase": 6.8163715325689385,
+        "historySamples": 64,
+        "historySpeed": 2.3519995471125714,
+        "historyDirection": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "productionMonotonicClock": 614,
+        "actualProductionHeadOrientation": {
+          "heading": {
+            "x": 0.999999999999426,
+            "y": 1.2608343885136763E-11,
+            "z": 1.0714305983210654E-6
+          },
+          "previousHeading": {
+            "x": 0.9999999999997154,
+            "y": 1.2608344070538747E-11,
+            "z": 7.545878977971118E-7
+          },
+          "side": {
+            "x": 1.2608344512084267E-11,
+            "y": -1.0,
+            "z": -5.851431426063946E-13
+          },
+          "previousSide": {
+            "x": 1.2608344512084268E-11,
+            "y": -1.0,
+            "z": -5.851431426063946E-13
+          }
+        },
+        "actualWorldGameTime": 627,
+        "actualAdaptiveFrames": 176,
+        "actualRenderClock": 613.1400043964386,
+        "actualHeadFrame": {
+          "position": {
+            "x": 141.0572903404237,
+            "y": 142.91718706086328,
+            "z": 0.0
+          },
+          "tangent": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "side": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "up": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "tick": 613.1400043964386,
+          "arc": 150.67529034042366,
+          "opacity": 1.0
+        },
+        "actualRearNearHeadFrames": [
+          {
+            "position": {
+              "x": 139.67841935372363,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 612.5,
+            "arc": 149.2964193537236,
+            "opacity": 0.9893332600593567
+          },
+          {
+            "position": {
+              "x": 140.0938303451539,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 612.6666666666666,
+            "arc": 149.71183034515386,
+            "opacity": 0.9921110378371338
+          },
+          {
+            "position": {
+              "x": 140.4530549571515,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 612.8333333333334,
+            "arc": 150.07105495715146,
+            "opacity": 0.9948888156149128
+          },
+          {
+            "position": {
+              "x": 140.7280000000001,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 613.0,
+            "arc": 150.34600000000006,
+            "opacity": 0.99766659339269
+          },
+          {
+            "position": {
+              "x": 140.91322581648836,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 613.0700021982193,
+            "arc": 150.53122581648833,
+            "opacity": 0.998833296696345
+          },
+          {
+            "position": {
+              "x": 141.0572903404237,
+              "y": 142.91718706086328,
+              "z": 0.0
+            },
+            "tangent": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "side": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "up": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "tick": 613.1400043964386,
+            "arc": 150.67529034042366,
+            "opacity": 1.0
+          }
+        ],
+        "actualSubmittedJoinFrames": [
+          {
+            "index": 168,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 169,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 170,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 171,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 172,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 173,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 174,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 175,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 176,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 177,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 178,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 179,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          },
+          {
+            "index": 180,
+            "frame": null,
+            "width": 0.0,
+            "behind": 0.0,
+            "opacity": 0.0
+          }
+        ]
+      },
+      "firstPersonFlowVertices": 16,
+      "firstPersonFlowStrength": 1.0
+    }
+  ],
+  "checks": [
+    {
+      "name": "actual_shader_pack",
+      "passed": true,
+      "details": "Expected\u003dfalse, actual\u003dfalse, pack\u003dnone"
+    },
+    {
+      "name": "production_survival_permission_realm_4",
+      "passed": true,
+      "details": "Landed survival player; actual production mayfly\u003dtrue; no fixture mayfly grant"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_4",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[0.0, 136.37518708470515, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "View vertices\u003d0, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-day-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d211.1561111111111, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[5.235999999999999, 136.37518708470515, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "View vertices\u003d16, world history vertices\u003d0"
+    },
+    {
+      "name": "hover_cruise_boost_strength_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Flow strength\u003d0.5434266693592071, tick\u003d115"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-day-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d211.38756944444444, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[28.335999999999995, 136.37518708470515, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "View vertices\u003d16, world history vertices\u003d0"
+    },
+    {
+      "name": "hover_cruise_boost_strength_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Flow strength\u003d0.9323544482588768, tick\u003d150"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-night-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d168.29659722222223, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d4, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[55.216000000000015, 136.37518708470515, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d4 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "View vertices\u003d16, world history vertices\u003d0"
+    },
+    {
+      "name": "hover_cruise_boost_strength_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Flow strength\u003d0.9358933372497559, tick\u003d180"
+    },
+    {
+      "name": "actual_scene_time_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-4-huashen-local-night-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d165.79770833333333, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "landing_keeps_view_realm_4",
+      "passed": true,
+      "details": "Double-jump flight exit, camera\u003dFIRST_PERSON"
+    },
+    {
+      "name": "landing_keeps_view_realm_4",
+      "passed": true,
+      "details": "Double-jump flight exit, camera\u003dFIRST_PERSON"
+    },
+    {
+      "name": "landing_keeps_view_realm_4",
+      "passed": true,
+      "details": "Double-jump flight exit, camera\u003dFIRST_PERSON"
+    },
+    {
+      "name": "local_actual_W_displacement_realm_4",
+      "passed": true,
+      "details": "Actual W displacement\u003d63.00243225218718"
+    },
+    {
+      "name": "production_survival_permission_realm_5",
+      "passed": true,
+      "details": "Landed survival player; actual production mayfly\u003dtrue; no fixture mayfly grant"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_5",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[0.0, 137.2081870847053, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "View vertices\u003d0, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-day-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d211.17645833333333, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[6.664, 137.2081870847053, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "View vertices\u003d16, world history vertices\u003d0"
+    },
+    {
+      "name": "hover_cruise_boost_strength_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Flow strength\u003d0.5689066700935363, tick\u003d115"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-day-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d211.44125, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[36.26, 137.2081870847053, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "View vertices\u003d16, world history vertices\u003d0"
+    },
+    {
+      "name": "hover_cruise_boost_strength_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Flow strength\u003d0.9734055605530739, tick\u003d150"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-night-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d169.21847222222223, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d5, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[71.54000000000005, 137.2081870847053, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d5 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "View vertices\u003d16, world history vertices\u003d0"
+    },
+    {
+      "name": "hover_cruise_boost_strength_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Flow strength\u003d0.9783600051403046, tick\u003d180"
+    },
+    {
+      "name": "actual_scene_time_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-5-lianxu-local-night-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d157.12465277777778, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "landing_keeps_view_realm_5",
+      "passed": true,
+      "details": "Double-jump flight exit, camera\u003dFIRST_PERSON"
+    },
+    {
+      "name": "landing_keeps_view_realm_5",
+      "passed": true,
+      "details": "Double-jump flight exit, camera\u003dFIRST_PERSON"
+    },
+    {
+      "name": "landing_keeps_view_realm_5",
+      "passed": true,
+      "details": "Double-jump flight exit, camera\u003dFIRST_PERSON"
+    },
+    {
+      "name": "local_actual_W_displacement_realm_5",
+      "passed": true,
+      "details": "Actual W displacement\u003d81.83878398441705"
+    },
+    {
+      "name": "production_survival_permission_realm_8",
+      "passed": true,
+      "details": "Landed survival player; actual production mayfly\u003dtrue; no fixture mayfly grant"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "first_takeoff_keeps_view_realm_8",
+      "passed": true,
+      "details": "First-person double jump must not force default third person"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[0.0, 142.01718708470514, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "View vertices\u003d0, world history vertices\u003d0"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-day-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d211.43805555555556, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[13.328, 142.01718708470514, 0.0], dayTime\u003d6000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "View vertices\u003d16, world history vertices\u003d0"
+    },
+    {
+      "name": "hover_cruise_boost_strength_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Flow strength\u003d0.65, tick\u003d115"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d6000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-day-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d211.47993055555557, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[72.52, 142.01718708470514, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "View vertices\u003d16, world history vertices\u003d0"
+    },
+    {
+      "name": "hover_cruise_boost_strength_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Flow strength\u003d1.0, tick\u003d150"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-night-side.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d163.23652777777778, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "actual_survival_flight_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Real survival double-jump flight client/server\u003dtrue / {realm\u003d8, stage\u003d3, flying\u003dtrue, mayfly\u003dtrue, creative\u003dfalse, position\u003d[143.0800000000001, 142.01718708470514, 0.0], dayTime\u003d18000}"
+    },
+    {
+      "name": "actual_realm_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Actual data realm/stage\u003d8 / 3"
+    },
+    {
+      "name": "actual_local_model_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "First person\u003dtrue, RenderPlayer.Post local draw\u003dfalse, actual section compiled\u003dtrue"
+    },
+    {
+      "name": "advanced_independent_shell_removed_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Actual shell submissions/head draws\u003d0 / 0"
+    },
+    {
+      "name": "fixed_view_flow_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "View vertices\u003d16, world history vertices\u003d0"
+    },
+    {
+      "name": "hover_cruise_boost_strength_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Flow strength\u003d1.0, tick\u003d180"
+    },
+    {
+      "name": "actual_scene_time_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Actual client day time\u003d18000"
+    },
+    {
+      "name": "visible_world_realm-8-dixian-local-night-front.png",
+      "passed": true,
+      "details": "Pixel statistics are diagnostics only\u003d{width\u003d1280, height\u003d720, centralMean\u003d168.8384722222222, centralDarkFraction\u003d0.0, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "name": "landing_keeps_view_realm_8",
+      "passed": true,
+      "details": "Double-jump flight exit, camera\u003dFIRST_PERSON"
+    },
+    {
+      "name": "landing_keeps_view_realm_8",
+      "passed": true,
+      "details": "Double-jump flight exit, camera\u003dFIRST_PERSON"
+    },
+    {
+      "name": "landing_keeps_view_realm_8",
+      "passed": true,
+      "details": "Double-jump flight exit, camera\u003dFIRST_PERSON"
+    },
+    {
+      "name": "local_actual_W_displacement_realm_8",
+      "passed": true,
+      "details": "Actual W displacement\u003d163.6775679688341"
+    },
+    {
+      "name": "complete_actual_images",
+      "passed": true,
+      "details": "Actual PNGs\u003d12, expected\u003d12"
+    },
+    {
+      "name": "no_GL_errors",
+      "passed": true,
+      "details": "[]"
+    }
+  ],
+  "failures": [],
+  "glErrors": []
+}

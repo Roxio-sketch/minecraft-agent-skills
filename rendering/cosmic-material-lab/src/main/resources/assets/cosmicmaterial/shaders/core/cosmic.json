@@ -1,0 +1,249 @@
+{
+  "blend": {
+    "func": "add",
+    "srcrgb": "srcalpha",
+    "dstrgb": "1-srcalpha"
+  },
+  "vertex": "cosmicmaterial:cosmic",
+  "fragment": "cosmicmaterial:cosmic",
+  "attributes": [
+    "Position",
+    "Color",
+    "UV0",
+    "UV1",
+    "UV2",
+    "Normal"
+  ],
+  "samplers": [
+    {"name":"fmOcean0"},
+    {"name":"fmOcean1"},
+    {
+      "name": "Sampler0"
+    },
+    {
+      "name": "CosmicAtlas"
+    },
+    {
+      "name": "Sampler2"
+    },
+    {
+      "name": "Sampler1"
+    }
+  ],
+  "uniforms": [
+    {"name":"fmMode","type":"int","count":1,"values":[-1]},
+    {"name":"fmGui","type":"int","count":1,"values":[1]},
+    {"name":"fmTime","type":"float","count":1,"values":[0]},
+    {"name":"fmSeed","type":"float","count":1,"values":[418]},
+    {"name":"fmScale","type":"float","count":1,"values":[1]},
+    {"name":"fmSpeed","type":"float","count":1,"values":[0.3]},
+    {"name":"fmDetail","type":"float","count":1,"values":[1]},
+    {"name":"fmWarp","type":"float","count":1,"values":[1]},
+    {"name":"fmEmission","type":"float","count":1,"values":[1]},
+    {"name":"fmDepth","type":"float","count":1,"values":[3]},
+    {"name":"fmParallax","type":"float","count":1,"values":[0.7]},
+    {"name":"fmExposure","type":"float","count":1,"values":[1]},
+    {"name":"fmWaveHeight","type":"float","count":1,"values":[0.30]},
+    {"name":"fmWaveLength","type":"float","count":1,"values":[2.1]},
+    {"name":"fmWindAngle","type":"float","count":1,"values":[35]},
+    {"name":"fmChoppiness","type":"float","count":1,"values":[0.78]},
+    {"name":"fmFoam","type":"float","count":1,"values":[0.55]},
+    {"name":"fmRoughness","type":"float","count":1,"values":[0.16]},
+    {"name":"fmWaterOpacity","type":"float","count":1,"values":[0.90]},
+    {"name":"fmWaterTilt","type":"float","count":1,"values":[0.85]},
+    {"name":"fmWaterLightAzimuth","type":"float","count":1,"values":[250]},
+    {"name":"fmWaterLightElevation","type":"float","count":1,"values":[0.62]},
+    {"name":"fmOceanLengths","type":"float","count":2,"values":[67.2,7.77]},
+    {"name":"fmBase","type":"float","count":3,"values":[0.01,0.02,0.03]},
+    {"name":"fmAccent","type":"float","count":3,"values":[0.1,0.6,0.5]},
+    {"name":"fmHighlight","type":"float","count":3,"values":[1,0.7,0.2]},
+    {"name":"fmSpriteRect","type":"float","count":4,"values":[0,0,1,1]},
+    {"name":"screenSize","type":"float","count":2,"values":[1280,720]},
+    {
+      "name": "ModelViewMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ProjMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ColorModulator",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "FogStart",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "FogEnd",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.0
+      ]
+    },
+    {
+      "name": "FogColor",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "FogShape",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "time",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "yaw",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "pitch",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "externalScale",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.0
+      ]
+    },
+    {
+      "name": "opacity",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.0
+      ]
+    },
+    {
+      "name": "cosmicuvs",
+      "type": "matrix2x2",
+      "count": 40,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "baseRect",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "maskRect",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "maskMode",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "shieldRimMode",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "paletteMode",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    }
+  ]
+}

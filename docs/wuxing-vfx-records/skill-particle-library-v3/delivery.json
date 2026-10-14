@@ -1,0 +1,24 @@
+{
+  "artifacts": [
+    {
+      "name": "wuxingxiantu-boss-particle-library-v3.zip",
+      "bytes": 55504364,
+      "files": 2853,
+      "sha256": "73af94effb56aa1c516f2a62a9b010cff9d4e157c76629c6ff050a25f1807963",
+      "zipIntegrity": true
+    },
+    {
+      "name": "wuxingxiantu-boss-vfx-resourcepack-v3.zip",
+      "bytes": 41550992,
+      "files": 2328,
+      "sha256": "79b27b9e9f69a584f96c211bed081babc7bb0125aab854eb9eba7db6773256ae",
+      "zipIntegrity": true
+    }
+  ],
+  "minecraftRendered": false,
+  "productionIntegrated": false,
+  "libraryManifestHashesVerified": 2852,
+  "libraryZipIntegrity": true,
+  "resourcepackZipIntegrity": true,
+  "v2ArchivesUnmodified": true
+}

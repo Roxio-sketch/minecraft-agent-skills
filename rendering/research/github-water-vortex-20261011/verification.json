@@ -1,0 +1,2661 @@
+{
+  "schema": "source-dossier-verification/1",
+  "date": "2026-10-11",
+  "scope": "Local source bytes, fixed versions, licenses, anchors, authored links and offline index; not upstream runtime acceptance",
+  "projectCount": 8,
+  "upstreamFileCount": 99,
+  "anchorCount": 75,
+  "passed": 662,
+  "total": 662,
+  "ok": true,
+  "checks": [
+    {
+      "name": "fixed commit: Habrador/Unity-Tornado-Simulator",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/unity-tornado-simulator/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/unity-tornado-simulator/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/unity-tornado-simulator/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/unity-tornado-simulator/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/unity-tornado-simulator/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDustTop.cs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDustTop.cs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDustTop.cs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDustTop.cs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDustTop.cs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/unity-tornado-simulator/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/unity-tornado-simulator/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/unity-tornado-simulator/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/unity-tornado-simulator/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/unity-tornado-simulator/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/unity-tornado-simulator/README.md",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/unity-tornado-simulator/README.md",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/unity-tornado-simulator/README.md",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/unity-tornado-simulator/README.md",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/unity-tornado-simulator/README.md",
+      "ok": true
+    },
+    {
+      "name": "original license: Habrador/Unity-Tornado-Simulator",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/float getDensityVolume",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/half getPhaseFunctionValue",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/float3 getIncidentLightning",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/fixed4 getColorVolumeRendering",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/fixed4 getColor(",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/fixed4 frag",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/private void OnPreRender()",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/void Start()",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/void AddSkeletonPieces()",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/void MoveTornado()",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/void TornadoDynamics()",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/void LateUpdate()",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/void RotateParticles()",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/public int FindIndex",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/void LateUpdate()",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/void RotateParticles()",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/public static float GetAngle",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/public static Vector3 GetParticlePos",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/public static Vector3 GetParticleVel",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/public static float CalculateProgress",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Habrador/Unity-Tornado-Simulator/public static Vector3 CheckRadius",
+      "ok": true
+    },
+    {
+      "name": "fixed commit: SebLague/Clouds",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/seblague-clouds/Assets/Scripts/Clouds/CloudMaster.cs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/seblague-clouds/Assets/Scripts/Clouds/CloudMaster.cs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/seblague-clouds/Assets/Scripts/Clouds/CloudMaster.cs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/seblague-clouds/Assets/Scripts/Clouds/CloudMaster.cs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/seblague-clouds/Assets/Scripts/Clouds/CloudMaster.cs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/seblague-clouds/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/seblague-clouds/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/seblague-clouds/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/seblague-clouds/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/seblague-clouds/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: cloud/seblague-clouds/README.md",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: cloud/seblague-clouds/README.md",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: cloud/seblague-clouds/README.md",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: cloud/seblague-clouds/README.md",
+      "ok": true
+    },
+    {
+      "name": "unique source path: cloud/seblague-clouds/README.md",
+      "ok": true
+    },
+    {
+      "name": "original license: SebLague/Clouds",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/private void OnRenderImage",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/void SetDebugParams",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/float worley(",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/void CSWorley",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/void CSNormalize",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/public void UpdateNoise",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/void UpdateWorley",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/void CreateWorleyPointsBuffer",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/void CreateTexture",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/#define DEBUG_MODE 1",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/float2 rayBoxDst",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/float hg(",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/float phase(",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/float sampleDensity",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/float lightmarch",
+      "ok": true
+    },
+    {
+      "name": "source anchor: SebLague/Clouds/float4 frag",
+      "ok": true
+    },
+    {
+      "name": "fixed commit: dli/fluid",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/README.md",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/README.md",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/README.md",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/README.md",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/README.md",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/simulator.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/simulator.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/simulator.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/simulator.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/simulator.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/renderer.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/renderer.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/renderer.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/renderer.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/renderer.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/common.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/common.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/common.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/common.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/common.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/addforce.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/addforce.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/addforce.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/addforce.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/addforce.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/advect.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/advect.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/advect.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/advect.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/advect.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/transfertogrid.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/transfertogrid.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/transfertogrid.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/transfertogrid.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/transfertogrid.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/transfertogrid.vert",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/transfertogrid.vert",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/transfertogrid.vert",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/transfertogrid.vert",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/transfertogrid.vert",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/normalizegrid.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/normalizegrid.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/normalizegrid.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/normalizegrid.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/normalizegrid.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/divergence.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/divergence.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/divergence.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/divergence.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/divergence.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/jacobi.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/jacobi.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/jacobi.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/jacobi.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/jacobi.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/subtract.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/subtract.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/subtract.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/subtract.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/subtract.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/transfertoparticles.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/transfertoparticles.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/transfertoparticles.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/transfertoparticles.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/transfertoparticles.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/extendvelocity.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/extendvelocity.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/extendvelocity.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/extendvelocity.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/extendvelocity.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/enforceboundaries.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/enforceboundaries.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/enforceboundaries.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/enforceboundaries.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/enforceboundaries.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/sphere.vert",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/sphere.vert",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/sphere.vert",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/sphere.vert",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/sphere.vert",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/sphere.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/sphere.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/sphere.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/sphere.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/sphere.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/spheredepth.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/spheredepth.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/spheredepth.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/spheredepth.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/spheredepth.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/sphereao.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/sphereao.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/sphereao.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/sphereao.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/sphereao.frag",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/dli-fluid/shaders/composite.frag",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/dli-fluid/shaders/composite.frag",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/dli-fluid/shaders/composite.frag",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/dli-fluid/shaders/composite.frag",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/dli-fluid/shaders/composite.frag",
+      "ok": true
+    },
+    {
+      "name": "original license: dli/fluid",
+      "ok": true
+    },
+    {
+      "name": "source anchor: dli/fluid/simulate",
+      "ok": true
+    },
+    {
+      "name": "source anchor: dli/fluid/force injection point",
+      "ok": true
+    },
+    {
+      "name": "source anchor: dli/fluid/PIC/FLIP mixing",
+      "ok": true
+    },
+    {
+      "name": "source anchor: dli/fluid/RK2 advection",
+      "ok": true
+    },
+    {
+      "name": "source anchor: dli/fluid/pressure Jacobi passes",
+      "ok": true
+    },
+    {
+      "name": "source anchor: dli/fluid/particle sphere renderer",
+      "ok": true
+    },
+    {
+      "name": "fixed commit: matsuoka-601/Particles4All",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/particles4all/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/particles4all/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/particles4all/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/particles4all/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/particles4all/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/particles4all/README.md",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/particles4all/README.md",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/particles4all/README.md",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/particles4all/README.md",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/particles4all/README.md",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/particles4all/src/sim.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/particles4all/src/sim.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/particles4all/src/sim.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/particles4all/src/sim.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/particles4all/src/sim.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/particles4all/src/wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/particles4all/src/wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/particles4all/src/wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/particles4all/src/wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/particles4all/src/wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/particles4all/src/aniso_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/particles4all/src/aniso_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/particles4all/src/aniso_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/particles4all/src/aniso_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/particles4all/src/aniso_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/particles4all/src/ssfr.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/particles4all/src/ssfr.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/particles4all/src/ssfr.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/particles4all/src/ssfr.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/particles4all/src/ssfr.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/particles4all/src/ssfr_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/particles4all/src/ssfr_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/particles4all/src/ssfr_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/particles4all/src/ssfr_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/particles4all/src/ssfr_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/particles4all/src/ssfr_composite_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/particles4all/src/ssfr_composite_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/particles4all/src/ssfr_composite_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/particles4all/src/ssfr_composite_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/particles4all/src/ssfr_composite_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/particles4all/src/render.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/particles4all/src/render.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/particles4all/src/render.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/particles4all/src/render.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/particles4all/src/render.js",
+      "ok": true
+    },
+    {
+      "name": "original license: matsuoka-601/Particles4All",
+      "ok": true
+    },
+    {
+      "name": "source anchor: matsuoka-601/Particles4All/constraint dispatch loop",
+      "ok": true
+    },
+    {
+      "name": "source anchor: matsuoka-601/Particles4All/lambdaWGSL (compression-only condition)",
+      "ok": true
+    },
+    {
+      "name": "source anchor: matsuoka-601/Particles4All/deltaWGSL",
+      "ok": true
+    },
+    {
+      "name": "source anchor: matsuoka-601/Particles4All/tensionWGSL",
+      "ok": true
+    },
+    {
+      "name": "source anchor: matsuoka-601/Particles4All/anisoWGSL",
+      "ok": true
+    },
+    {
+      "name": "source anchor: matsuoka-601/Particles4All/hitEllipsoid",
+      "ok": true
+    },
+    {
+      "name": "source anchor: matsuoka-601/Particles4All/sphere thickness pass",
+      "ok": true
+    },
+    {
+      "name": "source anchor: matsuoka-601/Particles4All/narrowRange",
+      "ok": true
+    },
+    {
+      "name": "source anchor: matsuoka-601/Particles4All/empty pixel remains empty",
+      "ok": true
+    },
+    {
+      "name": "source anchor: matsuoka-601/Particles4All/water optical composite",
+      "ok": true
+    },
+    {
+      "name": "fixed commit: InteractiveComputerGraphics/splashsurf",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/splashsurf/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/splashsurf/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/splashsurf/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/splashsurf/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/splashsurf/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/splashsurf/README.md",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/splashsurf/README.md",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/splashsurf/README.md",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/splashsurf/README.md",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/splashsurf/README.md",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/splashsurf/splashsurf_lib/README.md",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/splashsurf/splashsurf_lib/README.md",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/splashsurf/splashsurf_lib/README.md",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/splashsurf/splashsurf_lib/README.md",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/splashsurf/splashsurf_lib/README.md",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/splashsurf/splashsurf_lib/src/reconstruction.rs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/splashsurf/splashsurf_lib/src/reconstruction.rs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/splashsurf/splashsurf_lib/src/reconstruction.rs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/splashsurf/splashsurf_lib/src/reconstruction.rs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/splashsurf/splashsurf_lib/src/reconstruction.rs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/splashsurf/splashsurf_lib/src/density_map.rs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/splashsurf/splashsurf_lib/src/density_map.rs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/splashsurf/splashsurf_lib/src/density_map.rs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/splashsurf/splashsurf_lib/src/density_map.rs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/splashsurf/splashsurf_lib/src/density_map.rs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/splashsurf/splashsurf_lib/src/marching_cubes.rs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/splashsurf/splashsurf_lib/src/marching_cubes.rs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/splashsurf/splashsurf_lib/src/marching_cubes.rs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/splashsurf/splashsurf_lib/src/marching_cubes.rs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/splashsurf/splashsurf_lib/src/marching_cubes.rs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/splashsurf/splashsurf_lib/src/marching_cubes/triangulation.rs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/splashsurf/splashsurf_lib/src/marching_cubes/triangulation.rs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/splashsurf/splashsurf_lib/src/marching_cubes/triangulation.rs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/splashsurf/splashsurf_lib/src/marching_cubes/triangulation.rs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/splashsurf/splashsurf_lib/src/marching_cubes/triangulation.rs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/splashsurf/splashsurf_lib/src/postprocessing.rs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/splashsurf/splashsurf_lib/src/postprocessing.rs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/splashsurf/splashsurf_lib/src/postprocessing.rs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/splashsurf/splashsurf_lib/src/postprocessing.rs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/splashsurf/splashsurf_lib/src/postprocessing.rs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/splashsurf/splashsurf_lib/src/kernel.rs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/splashsurf/splashsurf_lib/src/kernel.rs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/splashsurf/splashsurf_lib/src/kernel.rs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/splashsurf/splashsurf_lib/src/kernel.rs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/splashsurf/splashsurf_lib/src/kernel.rs",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: liquid/splashsurf/splashsurf_lib/examples/minimal_sph_levelset.rs",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: liquid/splashsurf/splashsurf_lib/examples/minimal_sph_levelset.rs",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: liquid/splashsurf/splashsurf_lib/examples/minimal_sph_levelset.rs",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: liquid/splashsurf/splashsurf_lib/examples/minimal_sph_levelset.rs",
+      "ok": true
+    },
+    {
+      "name": "unique source path: liquid/splashsurf/splashsurf_lib/examples/minimal_sph_levelset.rs",
+      "ok": true
+    },
+    {
+      "name": "original license: InteractiveComputerGraphics/splashsurf",
+      "ok": true
+    },
+    {
+      "name": "source anchor: InteractiveComputerGraphics/splashsurf/reconstruct_single_surface_append",
+      "ok": true
+    },
+    {
+      "name": "source anchor: InteractiveComputerGraphics/splashsurf/particle_support_loop",
+      "ok": true
+    },
+    {
+      "name": "source anchor: InteractiveComputerGraphics/splashsurf/support margin against boundary holes",
+      "ok": true
+    },
+    {
+      "name": "source anchor: InteractiveComputerGraphics/splashsurf/triangulate_density_map_append",
+      "ok": true
+    },
+    {
+      "name": "source anchor: InteractiveComputerGraphics/splashsurf/par_laplacian_smoothing_inplace",
+      "ok": true
+    },
+    {
+      "name": "fixed commit: mrdoob/three.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/three.js/examples/jsm/objects/Reflector.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/three.js/examples/jsm/objects/Reflector.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/three.js/examples/jsm/objects/Reflector.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/three.js/examples/jsm/objects/Reflector.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/three.js/examples/jsm/objects/Reflector.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/three.js/examples/jsm/objects/Refractor.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/three.js/examples/jsm/objects/Refractor.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/three.js/examples/jsm/objects/Refractor.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/three.js/examples/jsm/objects/Refractor.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/three.js/examples/jsm/objects/Refractor.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/three.js/examples/jsm/objects/Water2.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/three.js/examples/jsm/objects/Water2.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/three.js/examples/jsm/objects/Water2.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/three.js/examples/jsm/objects/Water2.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/three.js/examples/jsm/objects/Water2.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/three.js/examples/jsm/shaders/WaterRefractionShader.js",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/three.js/examples/jsm/shaders/WaterRefractionShader.js",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/three.js/examples/jsm/shaders/WaterRefractionShader.js",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/three.js/examples/jsm/shaders/WaterRefractionShader.js",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/three.js/examples/jsm/shaders/WaterRefractionShader.js",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/three.js/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/three.js/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/three.js/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/three.js/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/three.js/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/three.js/README.md",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/three.js/README.md",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/three.js/README.md",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/three.js/README.md",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/three.js/README.md",
+      "ok": true
+    },
+    {
+      "name": "original license: mrdoob/three.js",
+      "ok": true
+    },
+    {
+      "name": "source anchor: mrdoob/three.js/updateFlow",
+      "ok": true
+    },
+    {
+      "name": "source anchor: mrdoob/three.js/flow-normal-blend",
+      "ok": true
+    },
+    {
+      "name": "source anchor: mrdoob/three.js/Fresnel",
+      "ok": true
+    },
+    {
+      "name": "source anchor: mrdoob/three.js/reflection-pass",
+      "ok": true
+    },
+    {
+      "name": "source anchor: mrdoob/three.js/refraction-pass",
+      "ok": true
+    },
+    {
+      "name": "fixed commit: Arnklit/Waterways",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/buoyant_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/buoyant_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/buoyant_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/buoyant_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/buoyant_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/editor_property.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/editor_property.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/editor_property.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/editor_property.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/editor_property.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/filter_renderer.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/filter_renderer.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/filter_renderer.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/filter_renderer.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/filter_renderer.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/gui/gradient_inspector.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/gui/gradient_inspector.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/gui/gradient_inspector.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/gui/gradient_inspector.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/gui/gradient_inspector.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/gui/river_controls.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/gui/river_controls.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/gui/river_controls.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/gui/river_controls.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/gui/river_controls.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/gui/river_menu.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/gui/river_menu.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/gui/river_menu.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/gui/river_menu.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/gui/river_menu.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/gui/water_system_controls.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/gui/water_system_controls.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/gui/water_system_controls.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/gui/water_system_controls.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/gui/water_system_controls.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/gui/water_system_menu.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/gui/water_system_menu.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/gui/water_system_menu.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/gui/water_system_menu.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/gui/water_system_menu.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/inspector_plugin.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/inspector_plugin.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/inspector_plugin.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/inspector_plugin.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/inspector_plugin.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/plugin.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/plugin.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/plugin.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/plugin.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/plugin.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/progress_window.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/progress_window.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/progress_window.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/progress_window.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/progress_window.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/river_gizmo.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/river_gizmo.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/river_gizmo.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/river_gizmo.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/river_gizmo.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/river_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/river_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/river_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/river_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/river_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/filters/blur_pass1.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/filters/blur_pass1.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/filters/blur_pass1.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/filters/blur_pass1.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/filters/blur_pass1.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/filters/blur_pass2.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/filters/blur_pass2.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/filters/blur_pass2.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/filters/blur_pass2.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/filters/blur_pass2.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/filters/combine_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/filters/combine_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/filters/combine_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/filters/combine_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/filters/combine_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/filters/dotproduct.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/filters/dotproduct.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/filters/dotproduct.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/filters/dotproduct.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/filters/dotproduct.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/filters/foam_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/filters/foam_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/filters/foam_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/filters/foam_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/filters/foam_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/filters/normal_map_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/filters/normal_map_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/filters/normal_map_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/filters/normal_map_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/filters/normal_map_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/gui/gradient.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/gui/gradient.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/gui/gradient.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/gui/gradient.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/gui/gradient.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/lava.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/lava.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/lava.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/lava.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/lava.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/river.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/river.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/river.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/river.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/river.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/river_debug.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/river_debug.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/river_debug.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/river_debug.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/river_debug.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/system_renders/alpha.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/system_renders/alpha.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/system_renders/alpha.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/system_renders/alpha.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/system_renders/alpha.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/system_renders/system_flow.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/system_renders/system_flow.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/system_renders/system_flow.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/system_renders/system_flow.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/system_renders/system_flow.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/shaders/system_renders/system_height.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/shaders/system_renders/system_height.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/shaders/system_renders/system_height.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/shaders/system_renders/system_height.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/shaders/system_renders/system_height.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/system_map_renderer.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/system_map_renderer.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/system_map_renderer.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/system_map_renderer.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/system_map_renderer.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/water_helper_methods.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/water_helper_methods.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/water_helper_methods.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/water_helper_methods.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/water_helper_methods.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/addons/waterways/water_system_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/addons/waterways/water_system_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/addons/waterways/water_system_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/addons/waterways/water_system_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/addons/waterways/water_system_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Waterways/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Waterways/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Waterways/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Waterways/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Waterways/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "original license: Arnklit/Waterways",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Arnklit/Waterways/FlowUVW",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Arnklit/Waterways/flow-strength",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Arnklit/Waterways/refraction-foreground-check",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Arnklit/Waterways/bake-flowmap",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Arnklit/Waterways/mesh",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Arnklit/Waterways/nm2flow",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Arnklit/Waterways/occupancy-pressure-heuristic",
+      "ok": true
+    },
+    {
+      "name": "fixed commit: Scrawk/Tiled-Directional-Flow",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Tiled-Directional-Flow/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Tiled-Directional-Flow/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Tiled-Directional-Flow/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Tiled-Directional-Flow/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Tiled-Directional-Flow/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "path inside dossier: flow/Tiled-Directional-Flow/README.md",
+      "ok": true
+    },
+    {
+      "name": "upstream bytes/hash: flow/Tiled-Directional-Flow/README.md",
+      "ok": true
+    },
+    {
+      "name": "pinned source URL: flow/Tiled-Directional-Flow/README.md",
+      "ok": true
+    },
+    {
+      "name": "read line ranges: flow/Tiled-Directional-Flow/README.md",
+      "ok": true
+    },
+    {
+      "name": "unique source path: flow/Tiled-Directional-Flow/README.md",
+      "ok": true
+    },
+    {
+      "name": "original license: Scrawk/Tiled-Directional-Flow",
+      "ok": true
+    },
+    {
+      "name": "Creditware notices retained",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Scrawk/Tiled-Directional-Flow/Creditware",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Scrawk/Tiled-Directional-Flow/surf",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Scrawk/Tiled-Directional-Flow/blend-weights",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Scrawk/Tiled-Directional-Flow/rotation-scale",
+      "ok": true
+    },
+    {
+      "name": "source anchor: Scrawk/Tiled-Directional-Flow/normal-normalization-compensation",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/README.md",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/simulator.js",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/renderer.js",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/common.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/addforce.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/advect.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/transfertogrid.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/transfertogrid.vert",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/normalizegrid.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/divergence.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/jacobi.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/subtract.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/transfertoparticles.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/extendvelocity.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/enforceboundaries.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/sphere.vert",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/sphere.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/spheredepth.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/sphereao.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/dli-fluid/shaders/composite.frag",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/particles4all/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/particles4all/README.md",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/particles4all/src/sim.js",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/particles4all/src/wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/particles4all/src/aniso_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/particles4all/src/ssfr.js",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/particles4all/src/ssfr_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/particles4all/src/ssfr_composite_wgsl.js",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/particles4all/src/render.js",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/splashsurf/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/splashsurf/README.md",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/splashsurf/splashsurf_lib/README.md",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/splashsurf/splashsurf_lib/src/reconstruction.rs",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/splashsurf/splashsurf_lib/src/density_map.rs",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/splashsurf/splashsurf_lib/src/marching_cubes.rs",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/splashsurf/splashsurf_lib/src/marching_cubes/triangulation.rs",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/splashsurf/splashsurf_lib/src/postprocessing.rs",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/splashsurf/splashsurf_lib/src/kernel.rs",
+      "ok": true
+    },
+    {
+      "name": "Git blob: liquid/splashsurf/splashsurf_lib/examples/minimal_sph_levelset.rs",
+      "ok": true
+    },
+    {
+      "name": "authored document link: README.md/index.html",
+      "ok": true
+    },
+    {
+      "name": "authored document link: README.md/cloud/findings.md",
+      "ok": true
+    },
+    {
+      "name": "authored document link: README.md/liquid/findings.md",
+      "ok": true
+    },
+    {
+      "name": "authored document link: README.md/flow/findings.md",
+      "ok": true
+    },
+    {
+      "name": "authored document link: README.md/catalog.json",
+      "ok": true
+    },
+    {
+      "name": "authored document link: README.md/SEARCH_LOG.md",
+      "ok": true
+    },
+    {
+      "name": "authored document link: README.md/audit-notes.md",
+      "ok": true
+    },
+    {
+      "name": "authored document link: README.md/verification.json",
+      "ok": true
+    },
+    {
+      "name": "authored document link: SEARCH_LOG.md/flow/acquisition-verification.json",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/manifest.json",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/three.js/examples/jsm/objects/Water2.js",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/three.js/examples/jsm/objects/Reflector.js",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/three.js/examples/jsm/objects/Refractor.js",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/three.js/examples/jsm/shaders/WaterRefractionShader.js",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/three.js/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/Waterways/addons/waterways/shaders/river.shader",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/Waterways/addons/waterways/river_manager.gd",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/Waterways/addons/waterways/water_helper_methods.gd",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/Waterways/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/Waterways/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/Tiled-Directional-Flow/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "authored document link: flow/findings.md/../liquid/findings.md",
+      "ok": true
+    },
+    {
+      "name": "authored document link: cloud/findings.md/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+      "ok": true
+    },
+    {
+      "name": "authored document link: cloud/findings.md/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+      "ok": true
+    },
+    {
+      "name": "authored document link: cloud/findings.md/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+      "ok": true
+    },
+    {
+      "name": "authored document link: cloud/findings.md/seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+      "ok": true
+    },
+    {
+      "name": "authored document link: cloud/findings.md/manifest.json",
+      "ok": true
+    },
+    {
+      "name": "authored document link: liquid/findings.md/manifest.json",
+      "ok": true
+    },
+    {
+      "name": "authored document link: liquid/findings.md/dli-fluid/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "authored document link: liquid/findings.md/particles4all/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "authored document link: liquid/findings.md/splashsurf/LICENSE",
+      "ok": true
+    },
+    {
+      "name": "offline browser reader smoke check",
+      "ok": true
+    },
+    {
+      "name": "flow fixed-commit remote byte comparison",
+      "ok": true
+    },
+    {
+      "name": "no .git/cache/build/runtime/archives",
+      "ok": true
+    }
+  ]
+}

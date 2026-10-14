@@ -1,0 +1,253 @@
+{
+  "verifiedOn": "2026-10-07 (Asia/Shanghai)",
+  "fixedCommits": {
+    "stegu/psrdnoise": "419175a270862ce7ae692038fafafb42ec0427e9",
+    "stegu/webgl-noise": "22434e04d7753f7e949e8d724ab3da2864c17a0f",
+    "mrdoob/three.js": "f27bb5ae1ede1309841e6fc9586cce768a99f9ad",
+    "pmndrs/postprocessing": "9cf03cff26615636a564d8bfddf765edb8917441",
+    "ebruneton/black_hole_shader": "e72b3f293409893a6fa25528b29572c96fc57f57",
+    "mmp/pbrt-v4": "b4ce9687e6c695f5582997c61b0c66cf064bdb4a",
+    "keijiro/KinoBloom": "0a04c43fa47de12bb52edb325c8d3c0125d0b4ca"
+  },
+  "commitVerification": "git ls-remote <public repository> HEAD; raw.githubusercontent.com fixed-commit file retrieval. GitHub API returned HTTP 403 rate-limit; no API result is used as successful evidence.",
+  "files": {
+    "psrd-readme": {
+      "url": "https://raw.githubusercontent.com/stegu/psrdnoise/419175a270862ce7ae692038fafafb42ec0427e9/README.md",
+      "httpStatus": 200,
+      "bytesRead": 2871,
+      "sha256": "55daba2b16c716391a36bb935d1e4d2239ac3d484a9afa82c57fa3dfbc4d96ec",
+      "snapshot": "snapshots/technical-psrd-readme.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 45
+    },
+    "psrd3": {
+      "url": "https://raw.githubusercontent.com/stegu/psrdnoise/419175a270862ce7ae692038fafafb42ec0427e9/src/psrdnoise3.glsl",
+      "httpStatus": 200,
+      "bytesRead": 10483,
+      "sha256": "766069cb5b02eb3366c82c7ec31d5d22972b7cb26e1704f29654b7010d680f33",
+      "snapshot": "snapshots/technical-psrd3.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 287
+    },
+    "noise-license": {
+      "url": "https://raw.githubusercontent.com/stegu/webgl-noise/22434e04d7753f7e949e8d724ab3da2864c17a0f/LICENSE",
+      "httpStatus": 200,
+      "bytesRead": 1145,
+      "sha256": "bdafce1bb01517c9ae6c4f3620c01340790b5e9d039ae9e356347d1174250916",
+      "snapshot": "snapshots/technical-noise-license.txt",
+      "readScope": "complete license",
+      "totalLines": 20
+    },
+    "noise3": {
+      "url": "https://raw.githubusercontent.com/stegu/webgl-noise/22434e04d7753f7e949e8d724ab3da2864c17a0f/src/noise3D.glsl",
+      "httpStatus": 200,
+      "bytesRead": 2915,
+      "sha256": "bf18982b8edd25218b5096cba6f7838a0508416be51acd1fd88d0ba8acb5169e",
+      "snapshot": "snapshots/technical-noise3.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 103
+    },
+    "three-license": {
+      "url": "https://raw.githubusercontent.com/mrdoob/three.js/f27bb5ae1ede1309841e6fc9586cce768a99f9ad/LICENSE",
+      "httpStatus": 200,
+      "bytesRead": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "snapshot": "snapshots/technical-three-license.txt",
+      "readScope": "complete license",
+      "totalLines": 21
+    },
+    "three-lines": {
+      "url": "https://raw.githubusercontent.com/mrdoob/three.js/f27bb5ae1ede1309841e6fc9586cce768a99f9ad/examples/jsm/lines/LineMaterial.js",
+      "httpStatus": 200,
+      "bytesRead": 14436,
+      "sha256": "6e1f9a21a784f4a06da5682feb638747261b7c54799380a937b18c7cbd4546df",
+      "snapshot": "snapshots/technical-three-lines.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 740
+    },
+    "three-bloom": {
+      "url": "https://raw.githubusercontent.com/mrdoob/three.js/f27bb5ae1ede1309841e6fc9586cce768a99f9ad/examples/jsm/postprocessing/UnrealBloomPass.js",
+      "httpStatus": 200,
+      "bytesRead": 15397,
+      "sha256": "ba8f2fcadfa6588384c9473498f974d81d120f02f0e63a0e59c265202a006b5a",
+      "snapshot": "snapshots/technical-three-bloom.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 541
+    },
+    "three-tonemap": {
+      "url": "https://raw.githubusercontent.com/mrdoob/three.js/f27bb5ae1ede1309841e6fc9586cce768a99f9ad/src/renderers/shaders/ShaderChunk/tonemapping_pars_fragment.glsl.js",
+      "httpStatus": 200,
+      "bytesRead": 5260,
+      "sha256": "447958b93d07616c83d9273829ed810eb734d02ebbe60f12fc9bdda4f7928f44",
+      "snapshot": "snapshots/technical-three-tonemap.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 200
+    },
+    "post-license": {
+      "url": "https://raw.githubusercontent.com/pmndrs/postprocessing/9cf03cff26615636a564d8bfddf765edb8917441/LICENSE.md",
+      "httpStatus": 200,
+      "bytesRead": 858,
+      "sha256": "b7650918449bd5fb011ce30ce0e5bcda27aa9639db1fb3aef8c67c32945237f2",
+      "snapshot": "snapshots/technical-post-license.txt",
+      "readScope": "complete license",
+      "totalLines": 19
+    },
+    "shock-wave": {
+      "url": "https://raw.githubusercontent.com/pmndrs/postprocessing/9cf03cff26615636a564d8bfddf765edb8917441/src/effects/glsl/shock-wave.frag",
+      "httpStatus": 200,
+      "bytesRead": 746,
+      "sha256": "fa6e3a7b16e978037cd3692ec6d35209d53e3ce33b52d358f71553a00f89ad6b",
+      "snapshot": "snapshots/technical-shock-wave.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 36
+    },
+    "shock-effect": {
+      "url": "https://raw.githubusercontent.com/pmndrs/postprocessing/9cf03cff26615636a564d8bfddf765edb8917441/src/effects/ShockWaveEffect.js",
+      "httpStatus": 200,
+      "bytesRead": 5381,
+      "sha256": "08ed9c08c86e242b459b6646a7aff08df078afbbbb97b726e8335aa1949548db",
+      "snapshot": "snapshots/technical-shock-effect.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 303
+    },
+    "pbrt-license": {
+      "url": "https://raw.githubusercontent.com/mmp/pbrt-v4/b4ce9687e6c695f5582997c61b0c66cf064bdb4a/LICENSE.txt",
+      "httpStatus": 200,
+      "bytesRead": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "snapshot": "snapshots/technical-pbrt-license.txt",
+      "readScope": "complete license",
+      "totalLines": 202
+    },
+    "pbrt-media": {
+      "url": "https://raw.githubusercontent.com/mmp/pbrt-v4/b4ce9687e6c695f5582997c61b0c66cf064bdb4a/src/pbrt/media.h",
+      "httpStatus": 200,
+      "bytesRead": 30032,
+      "sha256": "c3d5018d54549b3061e23de9bb2e14d7e9dca06268984cf21e670fb3a6e78d5f",
+      "snapshot": "snapshots/technical-pbrt-media.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 804
+    },
+    "black-license": {
+      "url": "https://raw.githubusercontent.com/ebruneton/black_hole_shader/e72b3f293409893a6fa25528b29572c96fc57f57/LICENSE",
+      "httpStatus": 200,
+      "bytesRead": 1483,
+      "sha256": "e7f54c857e6bcc0bb57f77fcacaae95cf9ef785243da7f9ec243087c0931aeed",
+      "snapshot": "snapshots/technical-black-license.txt",
+      "readScope": "complete license",
+      "totalLines": 27
+    },
+    "black-readme": {
+      "url": "https://raw.githubusercontent.com/ebruneton/black_hole_shader/e72b3f293409893a6fa25528b29572c96fc57f57/README.md",
+      "httpStatus": 200,
+      "bytesRead": 392,
+      "sha256": "bd833faad18cfe2618e42569537348d11e2ab030373392570501b1defa3bb3dc",
+      "snapshot": "snapshots/technical-black-readme.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 11
+    },
+    "black-functions": {
+      "url": "https://raw.githubusercontent.com/ebruneton/black_hole_shader/e72b3f293409893a6fa25528b29572c96fc57f57/black_hole/functions.glsl",
+      "httpStatus": 200,
+      "bytesRead": 19005,
+      "sha256": "ee254594ca8461d0360bc1741c14d93d0fc80103b3f50670e677f0fd8e26df45",
+      "snapshot": "snapshots/technical-black-functions.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 413
+    },
+    "black-model": {
+      "url": "https://raw.githubusercontent.com/ebruneton/black_hole_shader/e72b3f293409893a6fa25528b29572c96fc57f57/black_hole/model.glsl",
+      "httpStatus": 200,
+      "bytesRead": 16613,
+      "sha256": "34f8de3599578e8573cf88582ebb9da0372f83f307da08e26a9c7c21a5a666a8",
+      "snapshot": "snapshots/technical-black-model.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 360
+    },
+    "kino-license": {
+      "url": "https://raw.githubusercontent.com/keijiro/KinoBloom/0a04c43fa47de12bb52edb325c8d3c0125d0b4ca/LICENSE.md",
+      "httpStatus": 200,
+      "bytesRead": 1079,
+      "sha256": "ee32f9c1de520eb7a690663670515125cb3b5eed716fcaaae6259e631d0c6bc6",
+      "snapshot": "snapshots/technical-kino-license.txt",
+      "readScope": "complete license",
+      "totalLines": 21
+    },
+    "kino-readme": {
+      "url": "https://raw.githubusercontent.com/keijiro/KinoBloom/0a04c43fa47de12bb52edb325c8d3c0125d0b4ca/README.md",
+      "httpStatus": 200,
+      "bytesRead": 1443,
+      "sha256": "d887eb387eda7fcdffa23c08716962481fc248a3786f9fffb38ad991993da4af",
+      "snapshot": "snapshots/technical-kino-readme.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 49
+    },
+    "kino-cs": {
+      "url": "https://raw.githubusercontent.com/keijiro/KinoBloom/0a04c43fa47de12bb52edb325c8d3c0125d0b4ca/Assets/Kino/Bloom/Bloom.cs",
+      "httpStatus": 200,
+      "bytesRead": 8581,
+      "sha256": "2c1de0d3fc92226895b127a2cb29f3d8ffd6301146028d886a7727256ca4559a",
+      "snapshot": "snapshots/technical-kino-cs.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 258
+    },
+    "kino-shader": {
+      "url": "https://raw.githubusercontent.com/keijiro/KinoBloom/0a04c43fa47de12bb52edb325c8d3c0125d0b4ca/Assets/Kino/Bloom/Shader/Bloom.shader",
+      "httpStatus": 200,
+      "bytesRead": 4407,
+      "sha256": "e56eee2a704d89fddfe1b9006ea14bcfafbbb3a6e9fb8b91eff0e32b7c724877",
+      "snapshot": "snapshots/technical-kino-shader.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 141
+    },
+    "kino-filter": {
+      "url": "https://raw.githubusercontent.com/keijiro/KinoBloom/0a04c43fa47de12bb52edb325c8d3c0125d0b4ca/Assets/Kino/Bloom/Shader/Bloom.cginc",
+      "httpStatus": 200,
+      "bytesRead": 6926,
+      "sha256": "fbb7caf093c7e59475bb66a0a34cf08df4cbaec8e608961c300f89b9c29cea23",
+      "snapshot": "snapshots/technical-kino-filter.txt",
+      "readScope": "bounded source/readme excerpts",
+      "totalLines": 251
+    },
+    "bridson-author": {
+      "url": "https://www.cs.ubc.ca/~rbridson/",
+      "httpStatus": 200,
+      "bytesRead": 29261,
+      "sha256": "728103d645fb23540d56c0c7d2e2a602466e6f18da77dfdda455c74698613967",
+      "snapshot": "snapshots/technical-bridson-author.txt",
+      "readScope": "short author-page excerpt; page text reviewed in memory; no image/video fetched"
+    },
+    "iq-warp": {
+      "url": "https://iquilezles.org/articles/warp/",
+      "httpStatus": 200,
+      "bytesRead": 13325,
+      "sha256": "2bbf67fa57e39138a7c3871f459f471cd220686d0cc2592365910127751a7b33",
+      "snapshot": "snapshots/technical-iq-warp.txt",
+      "readScope": "short author-page excerpt; page text reviewed in memory; no image/video fetched"
+    },
+    "pbrt-transmittance": {
+      "url": "https://pbr-book.org/4ed/Volume_Scattering/Transmittance",
+      "httpStatus": 200,
+      "bytesRead": 451059,
+      "sha256": "caced3064b7427fb9f91cacefd40c327b49950eb5a44863ca8505dce0d6dc857",
+      "snapshot": "snapshots/technical-pbrt-transmittance.txt",
+      "readScope": "short author-page excerpt; page text reviewed in memory; no image/video fetched"
+    },
+    "pbrt-scattering": {
+      "url": "https://pbr-book.org/4ed/Volume_Scattering/Volume_Scattering_Processes",
+      "httpStatus": 200,
+      "bytesRead": 175665,
+      "sha256": "b5886e01d2059a377fd80992535cf35f06bc108e92ab23db277b2e3a7cde1a5d",
+      "snapshot": "snapshots/technical-pbrt-scattering.txt",
+      "readScope": "short author-page excerpt; page text reviewed in memory; no image/video fetched"
+    },
+    "bridson-paper": {
+      "url": "https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph2007-curlnoise.pdf",
+      "httpStatus": 200,
+      "bytesRead": 360080,
+      "sha256": "ac0bb333e0cf935eeb8f85a0e37503d14f9a3d026119443d718baecb27e45b30",
+      "snapshot": "snapshots/technical-bridson-paper.txt",
+      "readScope": "3 PDF pages text parsed; short excerpt stored, no PDF/image download artifact"
+    }
+  }
+}

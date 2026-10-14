@@ -1,0 +1,68 @@
+{
+  "vertex": "cosmiclab:environment_composite",
+  "fragment": "cosmiclab:environment_composite",
+  "attributes": [
+    "Position"
+  ],
+  "samplers": [
+    {
+      "name": "SceneSampler"
+    },
+    {
+      "name": "DepthSampler"
+    },
+    {
+      "name": "EnvironmentSampler"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "InverseProjection",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "LowSize",
+      "type": "float",
+      "count": 2,
+      "values": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "DepthTolerance",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "OutputDeltaEncoding",
+      "type": "int",
+      "count": 1,
+      "values": [
+        2
+      ]
+    }
+  ]
+}

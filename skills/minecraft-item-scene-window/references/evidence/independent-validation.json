@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checks": {
+    "completed": true,
+    "target_version": true,
+    "restored": true,
+    "gpu_health": true,
+    "real_depth": true,
+    "resource_reload": true,
+    "resolution_switch": true,
+    "hand-right_drawn": true,
+    "hand-left_drawn": true,
+    "third-person_drawn": true,
+    "reload_pixels": true,
+    "parallax_direction": true,
+    "parallax_magnitude": true,
+    "static_floor_stable": true,
+    "animation_visible": true,
+    "resolution-64_pixels": true,
+    "resolution-64_composition": true,
+    "resolution-512_pixels": true,
+    "resolution-512_composition": true,
+    "vanilla_footer_stable": true,
+    "deployed_hash": true
+  },
+  "details": {
+    "hand-right_draws": 190,
+    "hand-left_draws": 192,
+    "third-person_draws": 192,
+    "magenta_cube_window_x": [
+      -0.31860224732031306,
+      -0.0013020833333333148,
+      0.3159980806536463
+    ],
+    "expected_center_span": 0.6545454545454544,
+    "observed_center_span": 0.6346003279739594,
+    "animated_pixels": 38361,
+    "resolution-64_normalized_cube_x": -0.0078125,
+    "resolution-512_normalized_cube_x": -0.0009765625,
+    "jar_sha256": "054c07ea337bbbc43012ce395bda5d5b3296299e070d2d540778b1e86f27413a"
+  },
+  "manual_review_required": [
+    "mask edges / occlusion / left and right hand / third person"
+  ],
+  "scope": "Miniature mesh scene; no full world rendering or performance certification"
+}

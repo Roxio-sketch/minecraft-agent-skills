@@ -1,0 +1,35 @@
+{
+  "schema": "world-volume/2",
+  "version": "0.2.0",
+  "uniforms": {
+    "Bounds": ["centerX", "centerY", "centerZ", "radius"],
+    "Layer": ["bottom", "height", "shape", "innerRadius"],
+    "Density": ["density", "coverage", "scale", "erosion"],
+    "Flow": ["windX", "windZ", "speed", "curl"],
+    "Optics": ["extinction", "anisotropy", "ambient", "sunGain"],
+    "Glow": ["emission", "emissionScale", "emissionThreshold", "emissionSpeed"],
+    "Flash": ["flashEnabled", "flashPeriod", "flashDuration", "flashStrength"],
+    "FlashShape": ["flashRadius", "flashPlacement", "mediumGain", "surfaceGain"],
+    "MediumColor": ["mediumR", "mediumG", "mediumB"],
+    "EmissionColor": ["emissionR", "emissionG", "emissionB"],
+    "FlashColor": ["flashR", "flashG", "flashB"],
+    "SunDirection": ["sunX", "sunY", "sunZ"],
+    "SunColor": ["sunR", "sunG", "sunB"],
+    "Seed": ["seed"],
+    "ViewSteps": ["viewSteps"],
+    "LightSteps": ["lightSteps"],
+    "EndWarp": ["densityModel", "verticalStretch", "twistAmount", "twistSpeed"],
+    "EndCarve": ["cavityRadius", "cavityAspect", "torusRadius", "torusWidth"],
+    "EndDepth": ["voidDensity", "voidFloor", "voidFalloff", "nearClearRadius"]
+  },
+  "api": {
+    "veDensity": "float veDensity(vec3 world)",
+    "veFlashState": "vec4 veFlashState(): xyz world position, w envelope * flashStrength",
+    "veSurfaceLight": "vec3 veSurfaceLight(vec3 world, vec3 normal): additive, bounded direct surface radiance; no terrain shadow map",
+    "veIntegrate": "vec4 veIntegrate(vec3 origin, vec3 normalizedDirection, float opaqueDistance): rgb premultiplied radiance, alpha transmittance",
+    "composition": "linearSceneRGB * volume.a + volume.rgb; add veSurfaceLight at opaque scene surface before volume integration"
+  },
+  "time": "Time is elapsed seconds; event hash uses floor(Time / flashPeriod) and Seed. A frozen Time freezes both wind and events. No persistent history. Reload with unchanged Time/Seed replays identically. Negative Time is clamped to zero.",
+  "coordinates": "World block units. Finite slab/cylinder (shape 0), sphere (shape 1), annular slab (shape 2). Bounds xyz center; Bounds.w radius. Layer xy bottom/height for 0/2; Layer.w inner radius for 2. Sphere uses centerY and radius.",
+  "limits": "Single finite volume, single flash per cycle, no light propagation into block light, no terrain occlusion along local-light rays, no arbitrary transparent-layer support. Core maximum 96 view steps and 12 light steps."
+}

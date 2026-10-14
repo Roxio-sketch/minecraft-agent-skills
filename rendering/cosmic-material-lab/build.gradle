@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '6.0.54'
+}
+group = 'dev.cosmicmaterial'
+version = '0.4.0'
+base { archivesName = 'cosmic-material-lab' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+minecraft { mappings channel: 'official', version: '1.20.1' }
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.4.10'
+    annotationProcessor 'org.spongepowered:mixin:0.8.5'
+    annotationProcessor 'com.google.code.gson:gson:2.10'
+    annotationProcessor 'com.google.guava:guava:31.1-jre'
+    annotationProcessor 'org.ow2.asm:asm:9.7.1'
+    annotationProcessor 'org.ow2.asm:asm-tree:9.7.1'
+    annotationProcessor 'org.ow2.asm:asm-commons:9.7.1'
+    annotationProcessor 'org.ow2.asm:asm-util:9.7.1'
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+def refmap = layout.buildDirectory.file('mixin/cosmicmaterial.refmap.json')
+tasks.named('compileJava', JavaCompile).configure {
+    dependsOn 'createMcpToSrg'
+    doFirst { refmap.get().asFile.parentFile.mkdirs() }
+    options.compilerArgs += [
+        '-AreobfTsrgFile=' + layout.buildDirectory.file('createMcpToSrg/output.tsrg').get().asFile,
+        '-AoutRefMapFile=' + refmap.get().asFile,
+        '-AmappingTypes=tsrg',
+        '-AdefaultObfuscationEnv=searge'
+    ]
+}
+tasks.named('processResources').configure {
+    from('../skill/minecraft-cosmic-material/assets/fantasy-lab/material.glsl') {
+        into 'assets/cosmicmaterial/shaders/include'
+        rename { 'fantasy_material.glsl' }
+    }
+    from('../skill/minecraft-cosmic-material/assets/fantasy-lab/recipes.json') {
+        into 'assets/cosmicmaterial'
+        rename { 'fantasy-recipes.json' }
+    }
+}
+tasks.named('jar', Jar).configure {
+    from(refmap)
+    from('THIRD_PARTY_LICENSES') { into 'META-INF/licenses' }
+    from('THIRD_PARTY_NOTICES.md')
+    manifest { attributes 'MixinConfigs': 'cosmicmaterial.mixins.json' }
+    finalizedBy 'reobfJar'
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "skills": 77,
+  "scenarios": 173,
+  "geometryFrameSamples": 519,
+  "blank": [],
+  "originalModels": 10,
+  "fileProtocolLoaded": true,
+  "searchHeartSkills": 10,
+  "geometryExport": true,
+  "grayAndHeightControls": true,
+  "mobileOverflow": false,
+  "errors": [],
+  "minecraftRendered": false
+}

@@ -1,0 +1,11 @@
+{
+  "vertex":"localmaterial:sketch",
+  "fragment":"localmaterial:sketch_mask",
+  "attributes":["Position","UV0"],
+  "samplers":[{"name":"Sampler0"},{"name":"Sampler1"},{"name":"Sampler2"},{"name":"Sampler3"}],
+  "uniforms":[
+    {"name":"TexelSize","type":"float","count":2,"values":[0.001,0.001]},
+    {"name":"DetailSuppression","type":"float","count":1,"values":[0.88]},
+    {"name":"LineWeight","type":"float","count":1,"values":[1.0]}
+  ]
+}

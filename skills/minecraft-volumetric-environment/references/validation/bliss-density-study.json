@@ -1,0 +1,190 @@
+{
+  "schema": "bliss-end-density-static-study/1",
+  "date": "2026-10-06",
+  "scope": "Direct ZIP static analysis only; no shaderpack execution; screenshot version/settings not confirmed",
+  "zip": {
+    "path": "D:/MC/库/red.ghs.axolotl/profiles/测试 (1)/shaderpacks/Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip",
+    "sha256": "f41db92acc585fe9ffe0cc124d6ecaea27cef9ded91129ebc2a8e60226947b2c",
+    "bytes": 1791406,
+    "entries": 356
+  },
+  "rangeHashMethod": "UTF-8-sig splitlines; join selected inclusive one-based lines with LF; append one LF; UTF-8 encode; SHA256",
+  "files": [
+    {
+      "path": "shaders/lib/end_fog.glsl",
+      "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888",
+      "bytes": 12672,
+      "lineCount": 356,
+      "crc32": "fac0598c",
+      "anchors": [
+        {
+          "start": 66,
+          "end": 67,
+          "sha256": "c6d0e2c4b8934a7ba4c87e771ac123e06d6c01251e81c39cbf3ecd729021c88f",
+          "meaning": "World-origin vortex range and separate lighting position"
+        },
+        {
+          "start": 95,
+          "end": 107,
+          "sha256": "b25f2845bc96b381ae8479a9420a42d42f772172f7e3fbff9aad5fb61081a842",
+          "meaning": "512 RG texture reconstructed continuous 3D noise"
+        },
+        {
+          "start": 110,
+          "end": 119,
+          "sha256": "6c581a31170dc3470379107dcb94ae42814a5f8a402389ff6a54127dedd3f831",
+          "meaning": "Height/time twist and distance blend"
+        },
+        {
+          "start": 122,
+          "end": 141,
+          "sha256": "06b0bba18d22c516f9258007d6749cfd0d1381f1bcc69227f8900c168c503be2",
+          "meaning": "Subtractive ellipsoidal center and broad toroidal groove; orb unused"
+        },
+        {
+          "start": 144,
+          "end": 167,
+          "sha256": "6dc140e955fadb95d2617376c9a49529146d505ba500bfcdda15200ad11a317d",
+          "meaning": "Density formation order and independent deep void component"
+        },
+        {
+          "start": 215,
+          "end": 240,
+          "sha256": "243d1e25d6bbb340b1fc0a55b4363351300164a8f1783ec675e4b9a82127d18c",
+          "meaning": "Depth endpoint transforms, max 384 ray length, 16 exponential samples"
+        },
+        {
+          "start": 259,
+          "end": 281,
+          "sha256": "d4f2e105fe99c4203e04e0058c7b84d9fd9e27ed110d159d29a74658e22a2e9b",
+          "meaning": "World-space march samples, lighting split, camera clear upper cap"
+        },
+        {
+          "start": 287,
+          "end": 301,
+          "sha256": "5b866bf4a6a15b3b9fe37c3fe31e362a063cb90d72793be4997c2ec0352315ab",
+          "meaning": "Absorption/radiance accumulation and nonabsorbing blue haze"
+        },
+        {
+          "start": 345,
+          "end": 356,
+          "sha256": "f571b0c8a9a983985cb379c2a00b2d28995ea49090df7f4792450e14b00c9802",
+          "meaning": "Shadow path calls raw fogShape; camera clear absent"
+        }
+      ]
+    },
+    {
+      "path": "shaders/lib/settings.glsl",
+      "sha256": "214782ddd37baa3f454bb78e0cc16bb83c3fa251f9bc0feeffa010f9f7d11106",
+      "bytes": 95534,
+      "lineCount": 815,
+      "crc32": "bfc7ff29",
+      "anchors": [
+        {
+          "start": 638,
+          "end": 648,
+          "sha256": "d65ed8df3475392acb62650ff6d2b2b0ab0cf5f94fa72097ecbcbf0902efb229",
+          "meaning": "End switch/density defaults and blue center versus magenta event colors"
+        }
+      ]
+    },
+    {
+      "path": "shaders/shaders.properties",
+      "sha256": "6c1b92c65d27eaf55f0723e5bb85e9c213aa6603d9eb558a3803caa7d3621e2f",
+      "bytes": 34800,
+      "lineCount": 606,
+      "crc32": "1b2bf62e",
+      "anchors": [
+        {
+          "start": 290,
+          "end": 293,
+          "sha256": "907fecf125652bcd10d8dd62a015797378aafa32a384066909a7dd3ff9fbb76a",
+          "meaning": "User UI exposes densities and light colors"
+        },
+        {
+          "start": 517,
+          "end": 518,
+          "sha256": "dac57a32c13d0bee8703297f24ca17b8012ec8e004708e49c715350d3cffc800",
+          "meaning": "Binding for noise texture"
+        }
+      ]
+    },
+    {
+      "path": "shaders/world1/composite3.fsh",
+      "sha256": "31ef6e538e7c2a5345abf8c2fbc6e053b8e7fc1b24bc532e8160366c2613729f",
+      "bytes": 75,
+      "lineCount": 5,
+      "crc32": "7d318dfc",
+      "anchors": [
+        {
+          "start": 1,
+          "end": 5,
+          "sha256": "7701dfe29445f8089d123c475c40712ae0c3ebaa8194ef6a9e7dbb29a9e4edbe",
+          "meaning": "Actual END_SHADER entry includes shared composite2"
+        }
+      ]
+    },
+    {
+      "path": "shaders/dimensions/composite2.fsh",
+      "sha256": "de7eb25909fb3296d59816d596ec27917d6bc353079ab977d25d2f367c6eafb3",
+      "bytes": 14420,
+      "lineCount": 449,
+      "crc32": "a224dc9a",
+      "anchors": [
+        {
+          "start": 374,
+          "end": 386,
+          "sha256": "f45d28996d708eb3a0793f1e997db9ac3e270a42e824cd8a281d9000905eb0e8",
+          "meaning": "depthtex0 and conditional DH depth reconstruct scene endpoint"
+        },
+        {
+          "start": 420,
+          "end": 428,
+          "sha256": "b901a5adce1be229d48de950cf21a72179d500da187b8cd30ed8dbe6976f8470",
+          "meaning": "Actual End volumetric call and low-resolution output"
+        }
+      ]
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "0a0e5b77277a737002f90a7dfb5bb9b0fa9f7aff0d0f86355a198bf7a4cc3b86",
+      "bytes": 2391,
+      "lineCount": 47,
+      "crc32": "a55d206a",
+      "anchors": [
+        {
+          "start": 1,
+          "end": 16,
+          "sha256": "ec365651e495fd2b3080479094efc0d91346aec3243e3620f558b4e5c72a8fed",
+          "meaning": "Package license is custom and not general MIT"
+        }
+      ]
+    }
+  ],
+  "derived": {
+    "baseWorldUnitsPerNoiseCellXZ": 3,
+    "baseWorldUnitsPerNoiseCellY": 72,
+    "baseVerticalStretchRelativeToHorizontal": 24,
+    "twistRadiansPerWorldBlockY": 0.013888888888888888,
+    "twistPitchBlocks": 452.3893421169302,
+    "twistDegreesPerSecond": 1.1459155902616465,
+    "centerCarveSupportXZ": 75,
+    "centerCarveSupportY": 93.75,
+    "centerGuaranteedFullCarveXZ": 60,
+    "torusMajorRadius": 150,
+    "torusFullCarveMinorRadius": 12.24744871391589,
+    "torusOuterSupportMinorRadius": 87.46427842267951,
+    "voidDensityBelowMinus60": 1,
+    "cameraClearRadius": 100,
+    "cameraClearOperation": "min(rawDensity, min(cameraDistance/100,1)^2 * END_STORM_DENSTIY)",
+    "maxIntegrationRayDistance": 384
+  },
+  "noiseTexture": {
+    "path": "shaders/texture/noises.png",
+    "sha256": "77d1aa0c2195a4f644296b681295865cdb3c71bb6c380b69c2f43338f653acf5",
+    "bytes": 695035,
+    "width": 512,
+    "height": 512,
+    "copied": false
+  }
+}

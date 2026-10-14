@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "skills": 77,
+  "bossModels": 10,
+  "scenarios": 173,
+  "events": 1649,
+  "modelFaces": 45130,
+  "materials": 50,
+  "nativeScenes": 223,
+  "nativeFilesChecked": 446,
+  "textureReferencesChecked": 2100,
+  "preservedHazards": 1031,
+  "maxSceneEmitters": 51,
+  "sourceHashFilesChecked": 6,
+  "rasterPointChecks": 1280426,
+  "rasterOutsideFootprintSamples": 0,
+  "rasterPrecisionNotice": "Baked images have finite texel resolution; exact geometry resides in recipe contours and source predicate.",
+  "minecraftRendered": false,
+  "productionIntegrated": false
+}

@@ -1,0 +1,1 @@
+FAIL: 89 screenshots; 180 actual turning frames; 580 checks; failures=[actual_sword_shader_draw_sword-jiyu-turn.png: Actual material draws in frame native/post=0 / 0; submitted=false];GL=[]

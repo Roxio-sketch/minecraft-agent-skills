@@ -1,0 +1,31 @@
+{
+  "previousJar": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2-20261014-performance-ui-fixes.jar",
+  "currentJar": "E:\\五行仙途\\deliverables\\furnace-stability-20261014\\wuxingxiantu-0.2-20261014-furnace-stable-fast.jar",
+  "previousSha256": "AC6B0A6A662456F2C38212AAA9CCE31AE244C833FEE0097003F6DA4D5CFF3A50",
+  "currentSha256": "35E4F73A0BBF4DA325A502921923162423B0A4B2DD5E896EEBD16E3B4E22047D",
+  "changed": [
+    "assets/wuxingxiantu/shaders/furnacevolume/volume.fsh",
+    "cn/blockforge/generated/generatedmod/client/furnacevolume/FireCornerCache.class",
+    "cn/blockforge/generated/generatedmod/client/furnacevolume/FurnaceFireVolume$DrawProbe.class",
+    "cn/blockforge/generated/generatedmod/client/furnacevolume/VolumeGpu$Bounds.class",
+    "cn/blockforge/generated/generatedmod/client/furnacevolume/VolumeGpu$Rect.class",
+    "cn/blockforge/generated/generatedmod/client/furnacevolume/VolumeGpu$State.class",
+    "cn/blockforge/generated/generatedmod/client/furnacevolume/VolumeGpu.class"
+  ],
+  "added": [
+    "assets/wuxingxiantu/shaders/furnacevolume/bed_noise.glsl",
+    "cn/blockforge/generated/generatedmod/client/furnacevolume/FireBedNoiseCache$ComputeState.class",
+    "cn/blockforge/generated/generatedmod/client/furnacevolume/FireBedNoiseCache$Entry.class",
+    "cn/blockforge/generated/generatedmod/client/furnacevolume/FireBedNoiseCache.class"
+  ],
+  "removed": [],
+  "unchangedEntries": 3088,
+  "visualPresetsUnchanged": [
+    "assets/wuxingxiantu/shaders/furnacevolume/recipe.json",
+    "assets/wuxingxiantu/shaders/furnacevolume/nine-flames.json"
+  ],
+  "comparisonBaselineFieldUnchanged": true,
+  "onlyFurnaceClientRenderingChanged": true,
+  "baselineShaderSha256": "fd77c6fbdbf9649e73dee07bb5eaab02a408bfe1f42bfc3cbe08db6ec4d050a9",
+  "referenceShaderSha256": "a8c03970e931c38e946e9239e88e4b9635df2bd1051c5927a4b562e4fb65f132"
+}

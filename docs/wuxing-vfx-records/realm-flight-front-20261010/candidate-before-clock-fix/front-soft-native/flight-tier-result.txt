@@ -1,0 +1,1 @@
+PASS: 89 screenshots; 180 actual turning frames; 580 checks; camera=10 images/42 checks; longSword=12 images/53 checks/2600 real client ticks; failures=[];GL=[]

@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="energyvfx"
+version="0.2.5"
+displayName="Energy VFX Workbench Runtime"
+description="Client volumetric energy and body/equipment aura renderer consuming energy-vfx/2 recipes."
+[[dependencies.energyvfx]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.energyvfx]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="CLIENT"

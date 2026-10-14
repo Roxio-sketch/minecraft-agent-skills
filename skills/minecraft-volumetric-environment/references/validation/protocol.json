@@ -1,0 +1,122 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "preset cloud-sea",
+      "passed": true
+    },
+    {
+      "name": "preset ground-mist",
+      "passed": true
+    },
+    {
+      "name": "preset alien-storm",
+      "passed": true
+    },
+    {
+      "name": "preset luminous-pocket",
+      "passed": true
+    },
+    {
+      "name": "preset cloud-flash",
+      "passed": true
+    },
+    {
+      "name": "preset sun-shafts",
+      "passed": true
+    },
+    {
+      "name": "preset end-vortex",
+      "passed": true
+    },
+    {
+      "name": "preset purple-light-fog",
+      "passed": true
+    },
+    {
+      "name": "complete legacy upgrade preserves 50 values",
+      "passed": true
+    },
+    {
+      "name": "new fields explicit defaults",
+      "passed": true
+    },
+    {
+      "name": "malformed legacy upgrade rejected",
+      "passed": true
+    },
+    {
+      "name": "missing",
+      "passed": true
+    },
+    {
+      "name": "unknown field",
+      "passed": true
+    },
+    {
+      "name": "unknown outer",
+      "passed": true
+    },
+    {
+      "name": "old schema requires upgrade",
+      "passed": true
+    },
+    {
+      "name": "NaN",
+      "passed": true
+    },
+    {
+      "name": "bool",
+      "passed": true
+    },
+    {
+      "name": "fractional int",
+      "passed": true
+    },
+    {
+      "name": "out of range",
+      "passed": true
+    },
+    {
+      "name": "empty sun",
+      "passed": true
+    },
+    {
+      "name": "event exceeds cycle",
+      "passed": true
+    },
+    {
+      "name": "invalid ring",
+      "passed": true
+    },
+    {
+      "name": "duplicate keys",
+      "passed": true
+    },
+    {
+      "name": "JSON roundtrip",
+      "passed": true
+    },
+    {
+      "name": "ZIP CRC",
+      "passed": true
+    },
+    {
+      "name": "ZIP core exact",
+      "passed": true
+    },
+    {
+      "name": "ZIP recipe exact",
+      "passed": true
+    },
+    {
+      "name": "safe member paths",
+      "passed": true
+    },
+    {
+      "name": "uniform mapping complete unique",
+      "passed": true
+    }
+  ],
+  "coreSha256": "55fb1baf79f11d7d87211cc2a2786b53a98b0ff8854023c51c3ce0e09fcca275"
+}

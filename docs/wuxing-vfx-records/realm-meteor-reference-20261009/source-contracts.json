@@ -1,0 +1,8 @@
+{
+  "legacyTailFunctionUnchanged": true,
+  "nativePostMaterialIdentical": true,
+  "movementHashes": {
+    "RealmFlightControl.java": "6da3f776a279c057fa8c1ac7bab89d4312ce1d9cf3002cbc7d828105c8871afe",
+    "RealmFlightMovement.java": "662184185a3b4f10970693969e54a49676b920ea56d77b7c52db4ae8bc70f8c3"
+  }
+}

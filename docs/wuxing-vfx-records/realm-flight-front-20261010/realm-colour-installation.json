@@ -1,0 +1,10 @@
+{
+  "destination": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "runtimeVisualRetested": false,
+  "build": "PASS",
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-realm-front-colour-20261010-113839.jar",
+  "sha256": "8E9CCA01BF3162AC92CFD48A408C5F5BA38646D804EDB71FD0309606731C3BF7",
+  "shaderResourceMatch": "PASS",
+  "installed": true,
+  "changes": "Realm front hue and head-to-wake colour continuity only"
+}

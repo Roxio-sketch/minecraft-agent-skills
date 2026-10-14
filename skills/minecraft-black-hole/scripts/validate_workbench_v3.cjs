@@ -40,7 +40,7 @@ function difference(a,b){let count=0;for(let i=0;i<a.pixels.length;i+=4)if(a.pix
     await page.locator('#aspect').selectOption('cinema');
     check('cinema_view',await page.evaluate(()=>document.getElementById('scene').width===960&&document.getElementById('scene').height===540));
     const unit=await page.evaluate(()=>blackHolePreview.catalog.recipes.find(r=>r.name.startsWith('层叠光带')));
-    check('unity_band_preset',unit?.diskStyle==='cinematic'&&unit.bandDetail<=6);
+    check('unity_band_preset',unit?.diskStyle==='ribbons'&&unit.bandDetail>=1&&unit.bandDetail<=24);
     await page.evaluate(p=>blackHolePreview.set(p,277.85),unit);
     const cyan=await page.evaluate(()=>blackHolePreview.frame());
     check('unity_band_long_playback',cyan.glError===0&&new Set(cyan.pixels).size>100);
@@ -59,7 +59,7 @@ function difference(a,b){let count=0;for(let i=0;i<a.pixels.length;i+=4)if(a.pix
       blackHolePreview.set({skyStrength:.3,bloom:.62},1.7);return result;
     });
     check('full_size_disk_diagnostic_isolates_background',fullSizeDiagnosticDifference[0].changed===0&&fullSizeDiagnosticDifference[.62].changed===0,fullSizeDiagnosticDifference);
-    await page.locator('#scene').screenshot({path:path.join(output,'cinematic-wide.png')});
+    await page.locator('#scene').screenshot({path:path.join(output,'default-dust-wide.png')});
     check('no_page_errors',errors.length===0,errors);
     console.log(JSON.stringify({status:'passed',checks:checks.length}));
   }finally{await browser.close();fs.writeFileSync(path.join(output,'verification.json'),JSON.stringify({status:checks.every(c=>c.passed)&&errors.length===0?'passed':'failed',checks,errors},null,2));}

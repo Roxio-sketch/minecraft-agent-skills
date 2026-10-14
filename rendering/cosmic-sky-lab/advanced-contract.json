@@ -1,0 +1,303 @@
+{
+  "schema": "cosmic-sky/5",
+  "version": "0.6.0",
+  "fields": 184,
+  "oldFields": 160,
+  "newFields": [
+    {
+      "key": "atmosphereStyle",
+      "label": "大气模型",
+      "group": "物理大气",
+      "min": 1,
+      "max": 2,
+      "step": 1,
+      "value": 1,
+      "integer": true,
+      "options": {
+        "1": "解析美术大气",
+        "2": "球形散射LUT"
+      }
+    },
+    {
+      "key": "planetRadius",
+      "label": "行星半径 km",
+      "group": "物理大气",
+      "min": 1000,
+      "max": 10000,
+      "step": 1,
+      "value": 6360
+    },
+    {
+      "key": "atmosphereHeight",
+      "label": "大气厚度 km",
+      "group": "物理大气",
+      "min": 20,
+      "max": 200,
+      "step": 1,
+      "value": 100
+    },
+    {
+      "key": "rayleighHeight",
+      "label": "Rayleigh高度尺度 km",
+      "group": "物理大气",
+      "min": 1,
+      "max": 20,
+      "step": 0.1,
+      "value": 8
+    },
+    {
+      "key": "mieHeight",
+      "label": "Mie高度尺度 km",
+      "group": "物理大气",
+      "min": 0.1,
+      "max": 8,
+      "step": 0.05,
+      "value": 1.2
+    },
+    {
+      "key": "rayleighDensity",
+      "label": "Rayleigh密度",
+      "group": "物理大气",
+      "min": 0,
+      "max": 5,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "mieDensity",
+      "label": "Mie密度",
+      "group": "物理大气",
+      "min": 0,
+      "max": 5,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "ozoneDensity",
+      "label": "臭氧密度",
+      "group": "物理大气",
+      "min": 0,
+      "max": 5,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "groundAlbedo",
+      "label": "地表反照率",
+      "group": "物理大气",
+      "min": 0,
+      "max": 0.9,
+      "step": 0.01,
+      "value": 0.1
+    },
+    {
+      "key": "observerAltitude",
+      "label": "观察基准海拔 km",
+      "group": "物理大气",
+      "min": 0,
+      "max": 200,
+      "step": 0.001,
+      "value": 0.07
+    },
+    {
+      "key": "multipleScattering",
+      "label": "多次散射比例",
+      "group": "物理大气",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "key": "groundLevel",
+      "label": "世界海平面 Y",
+      "group": "物理大气",
+      "min": -64,
+      "max": 512,
+      "step": 1,
+      "value": 64
+    },
+    {
+      "key": "snowDensity",
+      "label": "雪花密度",
+      "group": "雨雪",
+      "min": 0.1,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.8
+    },
+    {
+      "key": "snowSize",
+      "label": "雪花半径 m",
+      "group": "雨雪",
+      "min": 0.01,
+      "max": 0.25,
+      "step": 0.001,
+      "value": 0.06
+    },
+    {
+      "key": "snowSpeed",
+      "label": "降雪速度",
+      "group": "雨雪",
+      "min": 0.05,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.5
+    },
+    {
+      "key": "snowBrightness",
+      "label": "雪花亮度",
+      "group": "雨雪",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0.9
+    },
+    {
+      "key": "precipitationMode",
+      "label": "降水类型",
+      "group": "雨雪",
+      "min": 0,
+      "max": 3,
+      "step": 1,
+      "value": 0,
+      "integer": true,
+      "options": {
+        "0": "原雨幕",
+        "1": "按生物群系",
+        "2": "雨",
+        "3": "雪"
+      }
+    },
+    {
+      "key": "precipitationRoof",
+      "label": "屋顶遮挡降水",
+      "group": "雨雪",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "value": 0,
+      "integer": true,
+      "options": {
+        "0": "关闭",
+        "1": "开启"
+      }
+    },
+    {
+      "key": "snowFlutter",
+      "label": "雪花飘摆",
+      "group": "雨雪",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "value": 0.6
+    },
+    {
+      "key": "snowWindStrength",
+      "label": "降雪风力",
+      "group": "雨雪",
+      "min": 0,
+      "max": 3,
+      "step": 0.01,
+      "value": 0.5
+    },
+    {
+      "key": "nativeTransparentMode",
+      "label": "玻璃与水合成",
+      "group": "合成与性能",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "value": 0,
+      "integer": true,
+      "options": {
+        "0": "最终场景合成",
+        "1": "按透明层分段"
+      }
+    },
+    {
+      "key": "environmentRenderScale",
+      "label": "环境渲染比例",
+      "group": "合成与性能",
+      "min": 0.5,
+      "max": 1,
+      "step": 0.05,
+      "value": 1
+    },
+    {
+      "key": "environmentDepthTolerance",
+      "label": "边缘深度容差",
+      "group": "合成与性能",
+      "min": 0,
+      "max": 0.1,
+      "step": 0.001,
+      "value": 0.025
+    },
+    {
+      "key": "snowColor",
+      "label": "雪花颜色",
+      "group": "色彩",
+      "color": true,
+      "value": "#eef5ff"
+    }
+  ],
+  "packs": {
+    "AtmosphereGeometry": [
+      "planetRadius",
+      "atmosphereHeight",
+      "rayleighHeight",
+      "mieHeight"
+    ],
+    "AtmosphereComposition": [
+      "rayleighDensity",
+      "mieDensity",
+      "ozoneDensity",
+      "groundAlbedo"
+    ],
+    "AtmospherePhysical": [
+      "atmosphereStyle",
+      "observerAltitude",
+      "multipleScattering",
+      "groundLevel"
+    ],
+    "SnowSettings": [
+      "snowDensity",
+      "snowSize",
+      "snowSpeed",
+      "snowBrightness"
+    ],
+    "PrecipitationSettings": [
+      "precipitationMode",
+      "precipitationRoof",
+      "snowFlutter",
+      "snowWindStrength"
+    ],
+    "PipelineSettings": [
+      "nativeTransparentMode",
+      "environmentRenderScale",
+      "environmentDepthTolerance"
+    ]
+  },
+  "colors": {
+    "SnowColor": "snowColor"
+  },
+  "sourceOrder": [
+    "sky-core.glsl",
+    "sky-extra.glsl",
+    "atmosphere-physical.glsl",
+    "weather-core.glsl",
+    "environment-core.glsl"
+  ],
+  "worldData": {
+    "WeatherVolumeSampler": [
+      64,
+      64,
+      "RGBA32F"
+    ],
+    "SurfaceSampler": [
+      128,
+      128,
+      "RGBA32F"
+    ]
+  }
+}

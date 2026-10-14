@@ -1,0 +1,24 @@
+impact-1-early.png hit=0.9041665 age=0.09583346 directionZ=-1.0
+impact-1.png hit=0.74999964 age=0.25000033 directionZ=-1.0
+impact-2-early.png hit=0.9124997 age=0.08750025 directionZ=-1.0
+impact-2.png hit=0.7491665 age=0.2508335 directionZ=-1.0
+impact-3-early.png hit=0.9116662 age=0.08833376 directionZ=-0.9408874
+impact-3.png hit=0.74666655 age=0.25333342 directionZ=-0.9408874
+impact-4-early.png hit=0.9083328 age=0.091667175 directionZ=-1.0
+impact-4.png hit=0.7408333 age=0.25916672 directionZ=-1.0
+impact-1-early.png hit=0.9091673 age=0.09083271 directionZ=-1.0
+impact-1.png hit=0.745834 age=0.25416598 directionZ=-1.0
+impact-2-early.png hit=0.909167 age=0.09083303 directionZ=-1.0
+impact-2.png hit=0.73833406 age=0.26166597 directionZ=-1.0
+impact-3-early.png hit=0.9141674 age=0.085832596 directionZ=-0.9408874
+impact-3.png hit=0.7483336 age=0.2516664 directionZ=-0.9408874
+impact-4-early.png hit=0.9058342 age=0.0941658 directionZ=-1.0
+impact-4.png hit=0.74750006 age=0.2524999 directionZ=-1.0
+impact-1-early.png hit=0.90666646 age=0.093333565 directionZ=-1.0 integrity=0.8
+impact-1.png hit=0.7433332 age=0.2566668 directionZ=-1.0 integrity=0.8
+impact-2-early.png hit=0.90583295 age=0.094167076 directionZ=-1.0 integrity=0.6
+impact-2.png hit=0.7416668 age=0.2583332 directionZ=-1.0 integrity=0.6
+impact-3-early.png hit=0.90916634 age=0.090833664 directionZ=-0.9408874 integrity=0.45
+impact-3.png hit=0.73749983 age=0.26250014 directionZ=-0.9408874 integrity=0.45
+impact-4-early.png hit=0.91416675 age=0.08583323 directionZ=-1.0 integrity=0.0
+impact-4.png hit=0.7425003 age=0.2574997 directionZ=-1.0 integrity=0.0

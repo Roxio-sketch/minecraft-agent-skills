@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="scenewindow"
+version="0.1.0"
+displayName="Item Scene Window Lab"
+description="Real depth-tested miniature scenes behind freely designed item apertures."
+[[dependencies.scenewindow]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,48)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.scenewindow]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"

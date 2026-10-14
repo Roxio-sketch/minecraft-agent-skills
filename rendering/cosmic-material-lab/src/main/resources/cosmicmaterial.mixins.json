@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.cosmicmaterial.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "cosmicmaterial.refmap.json",
+  "client": ["HumanoidArmorLayerMixin", "ShieldRendererMixin"],
+  "injectors": {"defaultRequire": 1}
+}

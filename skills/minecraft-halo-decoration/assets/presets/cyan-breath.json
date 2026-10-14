@@ -1,0 +1,10 @@
+{
+  "schema": "halo-decoration-v1", "id": "cyan-breath", "size": 256,
+  "contexts": ["GUI"],
+  "layers": [
+    {"shape": "glow", "color": "#3AAFC4", "radius": 0.73, "opacity": 0.42,
+     "motion": {"period_s": 4, "alpha_amplitude": 0.3, "scale_amplitude": 0.08}},
+    {"shape": "ring", "color": "#83F9EE", "radius": 0.64, "width": 0.014, "softness": 0.05, "opacity": 0.8,
+     "motion": {"period_s": 4, "scale_amplitude": 0.045}}
+  ]
+}

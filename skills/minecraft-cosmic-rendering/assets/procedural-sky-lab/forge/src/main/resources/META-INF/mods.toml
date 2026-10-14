@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="cosmiclab"
+version="0.6.0"
+displayName="Cosmic Sky Lab"
+description='''Procedural atmospheres, day and moon phases, stars, nebulae, cinematic sky black holes, world-space volume clouds, cloud shadows, shafts, depth fog and rain with strict 160-parameter player-editable recipes.'''
+[[dependencies.cosmiclab]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.22,48)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.cosmiclab]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"

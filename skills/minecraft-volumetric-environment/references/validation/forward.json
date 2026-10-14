@@ -1,0 +1,507 @@
+{
+  "ok": false,
+  "request": "Pale violet low annular storm; outer radius140, hole40, bottom8, height70, period6, medium flash only, speed0.",
+  "useScope": "Independent forward authoring from staged skill; actual WebGL2 preview and UI export/import; no Minecraft execution.",
+  "createdBy": "skill/scripts/author.py from alien-storm; copied assets used without implementation edits",
+  "skill": "E:\\着色器渲染\\skill\\minecraft-volumetric-environment\\SKILL.md",
+  "skillSha256": "a82df9cf8945463a430125c2541ea2c77ed477d9c23f5a3dd2dc320ff3426d81",
+  "coreSha256": "68cff95fd711c1bc683d3a6e59bba89d867e62d53986bf5892443148426e834b",
+  "sourceCoreSha256": "68cff95fd711c1bc683d3a6e59bba89d867e62d53986bf5892443148426e834b",
+  "checks": [
+    {
+      "name": "author initial-recipe automatically loads all 50 parameters",
+      "passed": true
+    },
+    {
+      "name": "copied workbench self-test passes",
+      "passed": true,
+      "actual": {
+        "fields": true,
+        "presets": true,
+        "reject_missing": true,
+        "reject_extra": true,
+        "reject_string": true,
+        "reject_integer": true,
+        "reject_nan": true,
+        "reject_outer": true,
+        "reject_wrongSchema": true,
+        "reject_duplicate": true,
+        "reject_nestedDuplicate": true,
+        "reject_escapedDuplicate": true,
+        "render": true,
+        "webglError": true,
+        "exportEnabled": true
+      }
+    },
+    {
+      "name": "stationary cloud has a visible intermittent local flash",
+      "passed": true,
+      "actual": {
+        "peak": {
+          "time": 2,
+          "brightness": 113202219,
+          "glError": 0
+        },
+        "minBrightness": 92496672
+      }
+    },
+    {
+      "name": "actual scan has zero WebGL errors",
+      "passed": true
+    },
+    {
+      "name": "same frozen time draws byte-identical RGBA8",
+      "passed": true
+    },
+    {
+      "name": "turning off cloud flash changes the actual rendered frame",
+      "passed": true
+    },
+    {
+      "name": "three illumination controls match cloud-only flash request",
+      "passed": true,
+      "actual": {
+        "emission": false,
+        "medium": true,
+        "surface": false
+      }
+    },
+    {
+      "name": "actual UI export pale-violet-ring.json",
+      "passed": true,
+      "actual": 1126
+    },
+    {
+      "name": "actual UI export pale-violet-ring.png",
+      "passed": true,
+      "actual": 311562
+    },
+    {
+      "name": "actual UI export pale-violet-ring-resources.zip",
+      "passed": true,
+      "actual": 10533
+    },
+    {
+      "name": "exported JSON preserves all 50 parameters",
+      "passed": true
+    },
+    {
+      "name": "changing seed changes actual paused frame",
+      "passed": true
+    },
+    {
+      "name": "real file input imports full exported recipe",
+      "passed": true
+    },
+    {
+      "name": "import exposes a valid reset camera that can be restored",
+      "passed": true,
+      "actual": {
+        "position": [
+          189,
+          62.400000000000006,
+          203
+        ],
+        "yaw": -2.391893602871669,
+        "pitch": -0.08237656874314725
+      }
+    },
+    {
+      "name": "file reimport restores byte-identical paused RGBA8",
+      "passed": false
+    },
+    {
+      "name": "restored same camera supports file-import replay",
+      "passed": true
+    },
+    {
+      "name": "renderer remains valid after import and exports",
+      "passed": true,
+      "actual": {
+        "ready": true,
+        "failed": false,
+        "rendered": true,
+        "time": 2,
+        "paused": true,
+        "fieldCount": 50,
+        "presetCount": 6,
+        "camera": {
+          "position": [
+            0,
+            150,
+            205
+          ],
+          "yaw": 3.141592653589793,
+          "pitch": -0.53
+        },
+        "resolution": [
+          768,
+          479
+        ],
+        "error": null,
+        "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+      }
+    },
+    {
+      "name": "no uncaught browser errors",
+      "passed": true,
+      "actual": []
+    },
+    {
+      "name": "downloaded ZIP CRC passes",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "name": "resource ZIP has all seven integration members",
+      "passed": true,
+      "actual": [
+        "assets/worldvolume/shaders/core/volume-core.glsl",
+        "assets/worldvolume/shaders/core/world_volume.fsh",
+        "assets/worldvolume/shaders/core/world_volume.json",
+        "assets/worldvolume/shaders/core/world_volume.vsh",
+        "contract.json",
+        "pack.mcmeta",
+        "world-volume.json"
+      ]
+    },
+    {
+      "name": "ZIP config preserves every authored parameter",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "name": "downloaded shared GLSL is byte-identical to copied work",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "name": "Forge fragment embeds actual core and wrapper bytes",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "name": "ZIP contains world-volume/1 contract",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "name": "copied core equals staged skill core at browser test",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "name": "complete recipe preserves all specified requirements",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "name": "single browser-local same-input replay after actual file import",
+      "passed": true,
+      "actual": {
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxLSB": 0,
+        "activeUniforms": 22
+      }
+    },
+    {
+      "name": "actual exported PNG dimensions match render",
+      "passed": true,
+      "actual": [
+        768,
+        479
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "pale-violet-ring.json",
+      "bytes": 1126,
+      "sha256": "a2fd8c9b9509befc420d9d27fb6e2e316d552fd3bd354e63743a92dc0b83bf27",
+      "path": "E:/着色器渲染/volumetric-environment-lab/evidence/forward/pale-violet-ring/pale-violet-ring.json"
+    },
+    {
+      "file": "pale-violet-ring.png",
+      "bytes": 311562,
+      "sha256": "f2b8bc8b2b92850bddd898282f1426f8b2cbcf01957ad2abeff03ccddb5382b2",
+      "path": "E:/着色器渲染/volumetric-environment-lab/evidence/forward/pale-violet-ring/pale-violet-ring.png"
+    },
+    {
+      "file": "pale-violet-ring-resources.zip",
+      "bytes": 10533,
+      "sha256": "c105dbe78f15b97a56a4c768a2dfd48656f5efde561a95243348e3b8a669429f",
+      "path": "E:/着色器渲染/volumetric-environment-lab/evidence/forward/pale-violet-ring/pale-violet-ring-resources.zip"
+    }
+  ],
+  "scan": [
+    {
+      "time": 0,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 0.2,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 0.4,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 0.6000000000000001,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 0.8,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 1,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 1.2000000000000002,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 1.4000000000000001,
+      "brightness": 101635368,
+      "glError": 0
+    },
+    {
+      "time": 1.6,
+      "brightness": 112137470,
+      "glError": 0
+    },
+    {
+      "time": 1.8,
+      "brightness": 108187143,
+      "glError": 0
+    },
+    {
+      "time": 2,
+      "brightness": 113202219,
+      "glError": 0
+    },
+    {
+      "time": 2.2,
+      "brightness": 104156392,
+      "glError": 0
+    },
+    {
+      "time": 2.4000000000000004,
+      "brightness": 98112769,
+      "glError": 0
+    },
+    {
+      "time": 2.6,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 2.8000000000000003,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 3,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 3.2,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 3.4000000000000004,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 3.6,
+      "brightness": 92496702,
+      "glError": 0
+    },
+    {
+      "time": 3.8000000000000003,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 4,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 4.2,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 4.4,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 4.6000000000000005,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 4.800000000000001,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 5,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 5.2,
+      "brightness": 92496702,
+      "glError": 0
+    },
+    {
+      "time": 5.4,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 5.6000000000000005,
+      "brightness": 92496672,
+      "glError": 0
+    },
+    {
+      "time": 5.800000000000001,
+      "brightness": 92496672,
+      "glError": 0
+    }
+  ],
+  "selectedTimeSeconds": 2,
+  "pixelSha256": "663c7aa3c580cc197eefbf55ab61ebb45833c1ebefcb184d65b51b5872b4e765",
+  "unlitPixelSha256": "a7fc6be8f2a4e5d535976b535afb9f03235ea986b054bcf5a9f3d88d6701d98f",
+  "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Ti (0x00002803) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "state": {
+    "ready": true,
+    "failed": false,
+    "rendered": true,
+    "time": 2,
+    "paused": true,
+    "fieldCount": 50,
+    "presetCount": 6,
+    "camera": {
+      "position": [
+        0,
+        150,
+        205
+      ],
+      "yaw": 3.141592653589793,
+      "pitch": -0.53
+    },
+    "resolution": [
+      768,
+      479
+    ],
+    "error": null,
+    "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+  },
+  "browserErrors": [],
+  "observedIssues": [
+    {
+      "severity": "minor console encoding",
+      "message": "Bundled Python author.py stdout showed replacement mojibake for Chinese path under the current terminal encoding; created file paths and JSON were correct. PYTHONIOENCODING=utf-8 makes later CLI output readable."
+    },
+    {
+      "severity": "strict diagnostic remains failed",
+      "message": "One earlier hash comparison still differed after restoring the same camera. Those pixel arrays were not retained, so the earlier count/maxLSB cannot be reconstructed. The requested single browser-local follow-up found zero difference with all 22 active GPU uniforms identical. Earlier failure is not converted to passed."
+    },
+    {
+      "severity": "documented workflow limitation",
+      "message": "Recipe JSON contains 50 effect parameters but does not store preview camera/time. UI file import resets camera; explicit restoration of the same camera/time reproduces the authored frame in the browser-local diagnostic."
+    }
+  ],
+  "correctedAssumption": "The initial test incorrectly required JSON file import to preserve a custom camera. UI import deliberately resets the camera. Recipe JSON contains parameters only; after explicitly restoring the same camera/time, replay is assessed on the same inputs. The initial failed report is preserved as failed-import-camera-assumption.json.",
+  "limits": [
+    "Recipe JSON does not include preview camera/time; restore both for image replay.",
+    "Resource ZIP needs companion Forge render backend; it does not create a volume pass as a resource pack alone.",
+    "The preview uses analytic boxes/ground, not a Minecraft screenshot.",
+    "This work was not run in Minecraft."
+  ],
+  "zipMembers": [
+    {
+      "file": "assets/worldvolume/shaders/core/volume-core.glsl",
+      "sha256": "68cff95fd711c1bc683d3a6e59bba89d867e62d53986bf5892443148426e834b",
+      "bytes": 9644
+    },
+    {
+      "file": "assets/worldvolume/shaders/core/world_volume.fsh",
+      "sha256": "a03bce9a0e4cca2faf92074e845f3bd2b181c422d2c30c7d4bbdcb2b49dfff5b",
+      "bytes": 11529
+    },
+    {
+      "file": "assets/worldvolume/shaders/core/world_volume.json",
+      "sha256": "b20ed874eab6e5b6cf3cfe6ee9d5086991cd2b7036b830a26002ad3845cfc999",
+      "bytes": 3572
+    },
+    {
+      "file": "assets/worldvolume/shaders/core/world_volume.vsh",
+      "sha256": "1ee7e9698ea342881ae9a1c5bdcb108563300477b211cc0df49c3a7d02e98ada",
+      "bytes": 124
+    },
+    {
+      "file": "contract.json",
+      "sha256": "f25d0d9244faa77d5f80b037cbc09e37552f4571c59dc00eda53f66e85e144fa",
+      "bytes": 2240
+    },
+    {
+      "file": "pack.mcmeta",
+      "sha256": "b985757025b328eccac5eebca57d9a630e68fe969a9d2c5bffe7b7f309a70277",
+      "bytes": 133
+    },
+    {
+      "file": "world-volume.json",
+      "sha256": "4ae5ffa6e49b82625737c4c7ce47cee46c303b86e0381fbc6fedbbe2402b1924",
+      "bytes": 1182
+    }
+  ],
+  "deliveryComplete": true,
+  "strictByteExact": false,
+  "strictScope": "Earlier restored-camera cross-CDP hash comparison remains failed and is preserved. The single browser-local same-input diagnostic was byte-exact; do not enlarge that result into universal ANGLE certification.",
+  "replayDiagnostic": {
+    "path": "E:/着色器渲染/volumetric-environment-lab/evidence/forward/pale-violet-ring/replay-diagnostic.json",
+    "strictByteExact": true,
+    "dimensionsBefore": [
+      768,
+      479
+    ],
+    "dimensionsAfter": [
+      768,
+      479
+    ],
+    "uniformCount": 22,
+    "uniformDiffs": [],
+    "changedChannels": 0,
+    "changedPixels": 0,
+    "maxLSB": 0,
+    "positions": [],
+    "glErrors": [
+      0,
+      0
+    ]
+  },
+  "earlierFailedReports": [
+    "E:/着色器渲染/volumetric-environment-lab/evidence/forward/pale-violet-ring/failed-import-camera-assumption.json",
+    "E:/着色器渲染/volumetric-environment-lab/evidence/forward/pale-violet-ring/failed-import-restored-camera.json"
+  ],
+  "documentationState": "references/validation.md was absent on initial read, then created by the skill author before final verification. The authoring guide now documents camera/time restoration.",
+  "visualInspection": "Actual exported PNG viewed: pale violet finite low clouds form an annulus, central clearing visible, local cloud flash lights the right/front arc; this is the workbench's analytic world preview."
+}

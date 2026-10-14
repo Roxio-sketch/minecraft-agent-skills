@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>能量护盾 · 三维材质工作台</title>
+<link rel="icon" href="data:,">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#070f1d;color:#d4e6f7;font:13px/1.5 system-ui,"Microsoft YaHei",sans-serif;overflow:hidden}aside{position:absolute;inset:0 auto 0 0;width:340px;overflow:auto;padding:22px;background:#101d2d;border-right:1px solid #294259;z-index:3}h1{font-size:21px;margin:0;color:#bce8ff}p{color:#8ea8bd;margin:7px 0 16px}.tag{font-size:11px;color:#71d9ff;letter-spacing:1px}h2{font-size:13px;color:#a1d6f2;margin:20px 0 9px;padding-bottom:7px;border-bottom:1px solid #294259}label{display:block;margin:10px 0}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}output{color:#7bd7ff;font-variant-numeric:tabular-nums}input[type=range]{width:100%;accent-color:#55baf7;cursor:pointer}input[type=color]{width:48px;height:27px;border:1px solid #405e76;background:#142b40;cursor:pointer}select,button{font:inherit;border-radius:5px;border:1px solid #3c6684;background:#18334b;color:#d7f0ff;padding:7px 9px}select{max-width:195px}button{cursor:pointer;margin:3px 3px 3px 0}button.primary{background:#6ecfff;color:#082034;border:0;font-weight:650}button:hover{filter:brightness(1.15)}.toggle{display:flex;gap:8px;align-items:center}.hint{font-size:12px;color:#819db5}.stage{position:absolute;left:340px;top:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 40%,#182b47,#070f1d 76%)}canvas{position:absolute;inset:0;width:100%;height:100%;display:block}#c{touch-action:none}#bg,#fx{pointer-events:none}.toolbar{position:absolute;top:20px;left:24px;right:24px;display:flex;justify-content:space-between;align-items:center;pointer-events:none}.toolbar button{pointer-events:auto}#hud{position:absolute;bottom:20px;left:24px;background:#071322bd;padding:8px 12px;border:1px solid #2d4561;border-radius:6px;color:#a5cbe6;font-size:12px;pointer-events:none}#error{white-space:pre-wrap;color:#ffac90}#status{min-height:18px}@media(max-width:780px){aside{width:280px;padding:15px}.stage{left:280px}.toolbar{left:12px;right:12px;font-size:11px}}
+</style>
+</head><body>
+<aside><div class="tag">SHIELD LAB / FORGE 1.20.1</div><h1>能量护盾材质工作台</h1><p>拖动旋转 · 滚轮缩放 · 点击表面命中<br>图案、溶解和冲击波均附着于同一网格。</p>
+<label class="row">效果预设<select id="preset"><option value="flow">流动球形护盾</option><option value="panel">蜂窝弧面屏障</option><option value="holo">全息穹顶</option><option value="danger">濒危熔红护盾</option></select></label>
+<div id="controls"></div><h2>配方与回放</h2><p class="hint">受击耗尽生命变红后，下一击触发破碎。碎片消退后需手动恢复；可暂停并拖动视角观察。</p><button id="hit" class="primary">中心撞击</button><button id="burst">连续撞击</button><button id="shatterDemo">破碎演示</button><button id="reset">恢复护盾</button><button id="pause">暂停动画</button><br><button id="export" class="primary">导出 JSON</button><button id="import">导入 JSON</button><input id="file" type="file" accept=".json,application/json" hidden><p id="status" class="hint">配方 v2 · 离线运行，无外部依赖</p><p id="error"></p>
+</aside>
+<div class="stage" id="stage"><canvas id="bg"></canvas><canvas id="c"></canvas><canvas id="fx"></canvas><div class="toolbar"><span>真实网格 / 对象空间材质</span><div><button id="front">正面</button><button id="side">侧面</button><button id="orbit">三维视角</button><button id="breakPreview">演示破碎</button></div></div><div id="hud">初始化渲染器…</div></div>
+<script src="shader-source.js"></script><script src="fracture-core.js"></script><script src="workbench.js"></script>
+</body></html>

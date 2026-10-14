@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>天空研究库 · 星空工坊</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101a2c'/%3E%3Cpath d='M5 22h22M8 17a8 8 0 0116 0' fill='none' stroke='%23b3c4ff' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./sky-library.css">
+</head>
+<body>
+  <header class="library-masthead">
+    <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>星空工坊<small>PROCEDURAL SKY STUDIO</small></span></a>
+    <nav aria-label="项目导航"><span class="current-page">天空研究库</span><a class="nav-back" href="./index.html">返回天空工作台 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main class="library-main">
+    <section class="hero" aria-labelledby="libraryTitle">
+      <div class="hero-copy">
+        <span class="eyebrow">BEYOND THE NIGHT / 天空材质研究</span>
+        <h1 id="libraryTitle">从夜空，走向整个天空。</h1>
+        <p>寻找大气的颜色、云层的体积与光的轨迹。按效果浏览真实源码，查看算法、资源依赖与 Minecraft 接入方向。</p>
+        <div class="hero-stats" id="libraryStats" aria-live="polite"><span>正在读取本地研究索引…</span></div>
+      </div>
+      <div class="sky-study" role="img" aria-label="原创天空风格示意：由暮色渐变与云带构成，不是渲染截图">
+        <div class="study-sun"></div><div class="study-cloud cloud-one"></div><div class="study-cloud cloud-two"></div><div class="study-cloud cloud-three"></div><div class="study-horizon"></div>
+        <span class="study-coordinate">ATMOSPHERE / 01</span><span class="study-caption">风格示意 · CSS 绘制</span>
+      </div>
+    </section>
+    <div class="research-notice"><span aria-hidden="true">◌</span><p><strong>研究与实现</strong> · 12类表现已在<a href="./index.html?preset=physicalsunny">天空工作台</a>开放编辑，共188参数、39起点，包含球形大气、动态黑洞、世界云雾雨雪、玻璃水面、双虹和22°冰晶晕。参考光影包仅静态研究，工作台效果由程序实时生成。</p></div>
+    <div class="load-error" id="loadError" role="alert" hidden><strong>研究索引未能读取</strong><p id="loadErrorMessage"></p><button class="outline-button" id="retryLoad">重新读取</button></div>
+    <section class="effects-section" aria-labelledby="effectsTitle">
+      <div class="section-heading"><div><span class="eyebrow">01 / 效果地图</span><h2 id="effectsTitle">天空可以有多少种表情</h2></div><button class="text-button" id="clearFeature" hidden>清除效果筛选 ×</button></div>
+      <p class="section-note">选择一类效果，查看实现方向，并筛选相关源码。</p>
+      <div id="featureGrid" class="feature-grid" aria-label="天空效果筛选"></div>
+      <section class="feature-detail" id="featureDetail" aria-labelledby="featureDetailTitle" hidden></section>
+    </section>
+    <section class="sources-section" aria-labelledby="sourcesTitle">
+      <div class="section-heading"><div><span class="eyebrow">02 / 源码与证据</span><h2 id="sourcesTitle">让每一种表现都有出处</h2></div><button id="exportIndex" class="outline-button" disabled>导出研究索引 <span aria-hidden="true">↓</span></button></div>
+      <form class="search-controls" id="searchForm" role="search">
+        <label class="search-box" for="searchInput"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="搜索源码、效果、算法或文件…" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
+        <label class="filter-control" for="kindSelect"><span>来源类型</span><select id="kindSelect"><option value="all">全部类型</option><option value="algorithm">算法与论文实现</option><option value="engine">引擎与工具</option><option value="minecraft">Minecraft 光影</option></select></label>
+        <label class="filter-control" for="licenseSelect"><span>许可用途</span><select id="licenseSelect"><option value="all">全部许可</option><option value="open">开放许可</option><option value="reference">仅参考研究</option></select></label>
+      </form>
+      <div class="results-bar"><p id="resultsCount" role="status" aria-live="polite">正在整理来源…</p><span id="activeFeatureLabel"></span></div>
+      <div id="sourceGrid" class="source-grid"></div>
+      <div id="emptyState" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3 id="emptyTitle">没有匹配的来源</h3><p id="emptyMessage">试试更短的关键词，或放宽效果、类型和许可筛选。</p><div class="empty-actions"><a id="emptyWorkbench" class="outline-button" href="./index.html" hidden>打开实时天空工作台 ↗</a><button id="resetFilters" class="outline-button">重置全部筛选</button></div></div>
+    </section>
+    <section class="roadmap-section" aria-labelledby="roadmapTitle">
+      <div class="section-heading"><div><span class="eyebrow">03 / 实现路线</span><h2 id="roadmapTitle">从研究到可编辑天空</h2></div><span class="planning-label">六阶段已接入原创工作台</span></div>
+      <div id="roadmap" class="roadmap"></div>
+    </section>
+    <footer class="library-footer"><span>星空工坊 / SKY RESEARCH</span><span id="indexDate"></span><a href="./index.html">回到实时天空 ↗</a></footer>
+  </main>
+  <dialog id="sourceDialog" class="source-dialog" aria-labelledby="dialogTitle">
+    <div class="dialog-header"><span class="eyebrow">SOURCE / 研究详情</span><button id="closeDialog" class="dialog-close" aria-label="关闭源码详情">×</button></div>
+    <div id="dialogBody"></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="./sky-library.js"></script>
+</body>
+</html>

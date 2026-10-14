@@ -1,0 +1,1410 @@
+{
+  "createdAt": "2026-10-06T15:00:12.963Z",
+  "scope": "Final skill forward use: two authored works, actual WebGL PNG/JSON/ZIP exports, browser-local fixed-time replay. No Minecraft run.",
+  "port": 8776,
+  "works": [
+    {
+      "work": "end-vortex",
+      "authoredRecipe": {
+        "path": "end-vortex/recipe.json",
+        "sha256": "cd3cc9fdcedce9388f7916ef8c89d95b93238315438fa6859718f26aec094bee",
+        "name": "蓝灰扭带·独立试作",
+        "fields": 62,
+        "densityModel": 1
+      },
+      "initial": {
+        "state": {
+          "ready": true,
+          "failed": false,
+          "rendered": true,
+          "time": 0.11239999999999965,
+          "paused": true,
+          "fieldCount": 62,
+          "presetCount": 8,
+          "camera": {
+            "position": [
+              200,
+              120,
+              240
+            ],
+            "yaw": -2.44685437739309,
+            "pitch": -0.15245209264656603
+          },
+          "resolution": [
+            695,
+            434
+          ],
+          "error": null,
+          "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+        },
+        "notice": "已载入 initial-recipe.json，全部 62 个字段通过严格验证。",
+        "recipeName": "蓝灰扭带·独立试作",
+        "schemaTag": "WORLD VOLUME/2"
+      },
+      "replay": {
+        "time": 2,
+        "state": {
+          "ready": true,
+          "failed": false,
+          "rendered": true,
+          "time": 2,
+          "paused": true,
+          "fieldCount": 62,
+          "presetCount": 8,
+          "camera": {
+            "position": [
+              70,
+              105,
+              85
+            ],
+            "yaw": -2.5337906574758327,
+            "pitch": -0.03567638644652721
+          },
+          "resolution": [
+            695,
+            434
+          ],
+          "error": null,
+          "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+        },
+        "rawComparison": {
+          "byteExact": true,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "maximumLSBDifference": 0,
+          "bytes": 1206520,
+          "fnv1a32A": "cc59bd70",
+          "fnv1a32B": "cc59bd70"
+        },
+        "uniformComparison": {
+          "count": 25,
+          "exact": true
+        },
+        "imageSummary": {
+          "minimum": [
+            23,
+            21,
+            26
+          ],
+          "maximum": [
+            103,
+            97,
+            91
+          ],
+          "mean": [
+            50.8078838311839,
+            56.22582302821338,
+            64.51752146669762
+          ]
+        },
+        "webglError": 0,
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Ti (0x00002803) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "exports": {
+        "json": {
+          "path": "end-vortex/export-time2.json",
+          "suggestedFilename": "蓝灰扭带·独立试作.json",
+          "bytes": 1424,
+          "sha256": "2acb4b406f29daadcbb5a5575adb2a92658d48500dc8a2558aeef7b1e722af75"
+        },
+        "png": {
+          "path": "end-vortex/export-time2.png",
+          "suggestedFilename": "蓝灰扭带·独立试作.png",
+          "bytes": 160202,
+          "sha256": "4f5a175780dfe53007365406e93ca35de4a922c4fd0d79cf484e9bc0301de074"
+        },
+        "zip": {
+          "path": "end-vortex/export-time2.zip",
+          "suggestedFilename": "蓝灰扭带·独立试作.zip",
+          "bytes": 12380,
+          "sha256": "8b2866646e3288d7b7f5cd8412fded9c015a9c9344497e6192c14d8f680a132f"
+        }
+      },
+      "checks": {
+        "automaticInitialRecipe": true,
+        "completeRecipe": true,
+        "initialNotice": true,
+        "eightPresets": true,
+        "namePreserved": true,
+        "fixedTime": true,
+        "actualRender": true,
+        "nonuniformImage": true,
+        "rawReplay": true,
+        "uniformReplay": true,
+        "glErrorZero": true,
+        "actualJSONExport": true,
+        "downloadsNonempty": true,
+        "noPageErrors": true
+      },
+      "pageErrors": [],
+      "ok": true,
+      "service": {
+        "pid": 22272,
+        "exitCode": null,
+        "signalCode": "SIGTERM",
+        "portStillListening": false
+      },
+      "artifactAudit": {
+        "checks": {
+          "authorRecipeEqualsInitial": true,
+          "authorRecipeEqualsForgeConfig": true,
+          "exact62FieldSet": true,
+          "uiJSONEqualsAuthored": true,
+          "coreCopiedFromSkill": true,
+          "zipCRC": true,
+          "zipSevenMembers": true,
+          "zipRecipeEqualsUI": true,
+          "zipCoreExact": true,
+          "zipWrapperExact": true,
+          "uniformGroups19": true,
+          "uniformFields62": true,
+          "allUniformDefaultsMatchSchema": true,
+          "endUniformsPresent": true,
+          "pngDimensionsMatch": true,
+          "pngMatchesActualRawFrame": true
+        },
+        "zip": {
+          "path": "E:\\着色器渲染\\volumetric-environment-lab\\evidence\\forward-v2\\end-vortex\\export-time2.zip",
+          "members": [
+            "assets/worldvolume/shaders/core/volume-core.glsl",
+            "assets/worldvolume/shaders/core/world_volume.fsh",
+            "assets/worldvolume/shaders/core/world_volume.json",
+            "assets/worldvolume/shaders/core/world_volume.vsh",
+            "contract.json",
+            "pack.mcmeta",
+            "world-volume.json"
+          ],
+          "coreSha256": "55fb1baf79f11d7d87211cc2a2786b53a98b0ff8854023c51c3ce0e09fcca275",
+          "wrapperSha256": "a4dd4ec57798e74af17d1d15a4cbd429a8701d2babd28dc6bee7af2b8b579f69",
+          "uniformGroups": {
+            "Bounds": {
+              "fields": [
+                "centerX",
+                "centerY",
+                "centerZ",
+                "radius"
+              ],
+              "schemaDefaults": [
+                0,
+                75,
+                0,
+                180
+              ],
+              "authoredValues": [
+                0,
+                100,
+                0,
+                900
+              ],
+              "values": [
+                0,
+                75,
+                0,
+                180
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Layer": {
+              "fields": [
+                "bottom",
+                "height",
+                "shape",
+                "innerRadius"
+              ],
+              "schemaDefaults": [
+                35,
+                100,
+                0,
+                25
+              ],
+              "authoredValues": [
+                35,
+                100,
+                1,
+                25
+              ],
+              "values": [
+                35,
+                100,
+                0,
+                25
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Density": {
+              "fields": [
+                "density",
+                "coverage",
+                "scale",
+                "erosion"
+              ],
+              "schemaDefaults": [
+                0.65,
+                0.66,
+                0.018,
+                0.25
+              ],
+              "authoredValues": [
+                1.1,
+                0.6,
+                0.018,
+                0.22
+              ],
+              "values": [
+                0.65,
+                0.66,
+                0.018,
+                0.25
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Flow": {
+              "fields": [
+                "windX",
+                "windZ",
+                "speed",
+                "curl"
+              ],
+              "schemaDefaults": [
+                0.8,
+                0.35,
+                1,
+                0.5
+              ],
+              "authoredValues": [
+                0.8,
+                0.35,
+                1,
+                0.5
+              ],
+              "values": [
+                0.8,
+                0.35,
+                1,
+                0.5
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Optics": {
+              "fields": [
+                "extinction",
+                "anisotropy",
+                "ambient",
+                "sunGain"
+              ],
+              "schemaDefaults": [
+                0.045,
+                0.45,
+                0.32,
+                1
+              ],
+              "authoredValues": [
+                0.009,
+                0.45,
+                0.28,
+                0.15
+              ],
+              "values": [
+                0.045,
+                0.45,
+                0.32,
+                1
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Glow": {
+              "fields": [
+                "emission",
+                "emissionScale",
+                "emissionThreshold",
+                "emissionSpeed"
+              ],
+              "schemaDefaults": [
+                0,
+                2.2,
+                0.45,
+                0.3
+              ],
+              "authoredValues": [
+                0,
+                2.2,
+                0.45,
+                0.3
+              ],
+              "values": [
+                0,
+                2.2,
+                0.45,
+                0.3
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Flash": {
+              "fields": [
+                "flashEnabled",
+                "flashPeriod",
+                "flashDuration",
+                "flashStrength"
+              ],
+              "schemaDefaults": [
+                1,
+                7,
+                0.9,
+                4
+              ],
+              "authoredValues": [
+                1,
+                5,
+                0.9,
+                10
+              ],
+              "values": [
+                1,
+                7,
+                0.9,
+                4
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "FlashShape": {
+              "fields": [
+                "flashRadius",
+                "flashPlacement",
+                "mediumGain",
+                "surfaceGain"
+              ],
+              "schemaDefaults": [
+                65,
+                0.65,
+                1,
+                0.5
+              ],
+              "authoredValues": [
+                250,
+                0.3,
+                1,
+                0.45
+              ],
+              "values": [
+                65,
+                0.65,
+                1,
+                0.5
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "MediumColor": {
+              "fields": [
+                "mediumR",
+                "mediumG",
+                "mediumB"
+              ],
+              "schemaDefaults": [
+                0.55,
+                0.63,
+                0.8
+              ],
+              "authoredValues": [
+                0.23,
+                0.34,
+                0.48
+              ],
+              "values": [
+                0.55,
+                0.63,
+                0.8
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "EmissionColor": {
+              "fields": [
+                "emissionR",
+                "emissionG",
+                "emissionB"
+              ],
+              "schemaDefaults": [
+                0.35,
+                0.08,
+                0.8
+              ],
+              "authoredValues": [
+                0.35,
+                0.08,
+                0.8
+              ],
+              "values": [
+                0.35,
+                0.08,
+                0.8
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "FlashColor": {
+              "fields": [
+                "flashR",
+                "flashG",
+                "flashB"
+              ],
+              "schemaDefaults": [
+                0.55,
+                0.65,
+                1
+              ],
+              "authoredValues": [
+                0.5,
+                0.75,
+                1
+              ],
+              "values": [
+                0.55,
+                0.65,
+                1
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "SunDirection": {
+              "fields": [
+                "sunX",
+                "sunY",
+                "sunZ"
+              ],
+              "schemaDefaults": [
+                0.4,
+                0.8,
+                -0.3
+              ],
+              "authoredValues": [
+                0.4,
+                0.8,
+                -0.3
+              ],
+              "values": [
+                0.4,
+                0.8,
+                -0.3
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "SunColor": {
+              "fields": [
+                "sunR",
+                "sunG",
+                "sunB"
+              ],
+              "schemaDefaults": [
+                1,
+                0.85,
+                0.65
+              ],
+              "authoredValues": [
+                1,
+                0.85,
+                0.65
+              ],
+              "values": [
+                1,
+                0.85,
+                0.65
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Seed": {
+              "fields": [
+                "seed"
+              ],
+              "schemaDefaults": [
+                17
+              ],
+              "authoredValues": [
+                17
+              ],
+              "values": [
+                17
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "ViewSteps": {
+              "fields": [
+                "viewSteps"
+              ],
+              "schemaDefaults": [
+                48
+              ],
+              "authoredValues": [
+                48
+              ],
+              "values": [
+                48
+              ],
+              "matches": true,
+              "expectedType": "int",
+              "type": "int"
+            },
+            "LightSteps": {
+              "fields": [
+                "lightSteps"
+              ],
+              "schemaDefaults": [
+                4
+              ],
+              "authoredValues": [
+                4
+              ],
+              "values": [
+                4
+              ],
+              "matches": true,
+              "expectedType": "int",
+              "type": "int"
+            },
+            "EndWarp": {
+              "fields": [
+                "densityModel",
+                "verticalStretch",
+                "twistAmount",
+                "twistSpeed"
+              ],
+              "schemaDefaults": [
+                0,
+                24,
+                0.014,
+                0.02
+              ],
+              "authoredValues": [
+                1,
+                32,
+                0.018,
+                0.02
+              ],
+              "values": [
+                0,
+                24,
+                0.014,
+                0.02
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "EndCarve": {
+              "fields": [
+                "cavityRadius",
+                "cavityAspect",
+                "torusRadius",
+                "torusWidth"
+              ],
+              "schemaDefaults": [
+                75,
+                0.8,
+                150,
+                85
+              ],
+              "authoredValues": [
+                75,
+                0.8,
+                150,
+                72
+              ],
+              "values": [
+                75,
+                0.8,
+                150,
+                85
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "EndDepth": {
+              "fields": [
+                "voidDensity",
+                "voidFloor",
+                "voidFalloff",
+                "nearClearRadius"
+              ],
+              "schemaDefaults": [
+                0.35,
+                -60,
+                0.7,
+                80
+              ],
+              "authoredValues": [
+                0.8,
+                -60,
+                0.7,
+                80
+              ],
+              "values": [
+                0.35,
+                -60,
+                0.7,
+                80
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            }
+          },
+          "packDescription": "Original world-volume/1 Forge 1.20.1 shader integration assets"
+        },
+        "png": {
+          "width": 695,
+          "height": 434,
+          "decodedBottomUpFNV1a32": "cc59bd70"
+        },
+        "coreSha256": "55fb1baf79f11d7d87211cc2a2786b53a98b0ff8854023c51c3ce0e09fcca275",
+        "schemaSha256": "871d57fb970143b632552b99b566bd0aa6de3cd4ba51b590f2aada3ea4fbb8a0",
+        "contractSha256": "115d4171b0b54e236fd0d107b4521bdec88393e415190016676dc9613eacebe3"
+      }
+    },
+    {
+      "work": "purple-light-fog",
+      "authoredRecipe": {
+        "path": "purple-light-fog/recipe.json",
+        "sha256": "f6a8884cf56d2df33fb9bd98910b0a92fc12cda0cdd0a44fa3e41b5c030db709",
+        "name": "紫光浮岛·独立试作",
+        "fields": 62,
+        "densityModel": 2
+      },
+      "initial": {
+        "state": {
+          "ready": true,
+          "failed": false,
+          "rendered": true,
+          "time": 0.4953999999999999,
+          "paused": true,
+          "fieldCount": 62,
+          "presetCount": 8,
+          "camera": {
+            "position": [
+              200,
+              120,
+              240
+            ],
+            "yaw": -2.44685437739309,
+            "pitch": -0.15245209264656603
+          },
+          "resolution": [
+            695,
+            434
+          ],
+          "error": null,
+          "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+        },
+        "notice": "已载入 initial-recipe.json，全部 62 个字段通过严格验证。",
+        "recipeName": "紫光浮岛·独立试作",
+        "schemaTag": "WORLD VOLUME/2"
+      },
+      "replay": {
+        "time": 2,
+        "state": {
+          "ready": true,
+          "failed": false,
+          "rendered": true,
+          "time": 2,
+          "paused": true,
+          "fieldCount": 62,
+          "presetCount": 8,
+          "camera": {
+            "position": [
+              70,
+              105,
+              85
+            ],
+            "yaw": -2.5337906574758327,
+            "pitch": -0.03567638644652721
+          },
+          "resolution": [
+            695,
+            434
+          ],
+          "error": null,
+          "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+        },
+        "rawComparison": {
+          "byteExact": true,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "maximumLSBDifference": 0,
+          "bytes": 1206520,
+          "fnv1a32A": "336af59b",
+          "fnv1a32B": "336af59b"
+        },
+        "uniformComparison": {
+          "count": 25,
+          "exact": true
+        },
+        "imageSummary": {
+          "minimum": [
+            49,
+            33,
+            59
+          ],
+          "maximum": [
+            153,
+            99,
+            174
+          ],
+          "mean": [
+            117.41342041574114,
+            78.04548619169181,
+            131.03010310645493
+          ]
+        },
+        "webglError": 0,
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Ti (0x00002803) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "exports": {
+        "json": {
+          "path": "purple-light-fog/export-time2.json",
+          "suggestedFilename": "紫光浮岛·独立试作.json",
+          "bytes": 1417,
+          "sha256": "59b9a80c646361e8bbc1873b8520fef5f043c8a92dd5fc207ce923435d035586"
+        },
+        "png": {
+          "path": "purple-light-fog/export-time2.png",
+          "suggestedFilename": "紫光浮岛·独立试作.png",
+          "bytes": 164867,
+          "sha256": "9ac22ef349c8e7834fb42289e006335e1ee93ad35a1844aa2d747d9bf30312be"
+        },
+        "zip": {
+          "path": "purple-light-fog/export-time2.zip",
+          "suggestedFilename": "紫光浮岛·独立试作.zip",
+          "bytes": 12374,
+          "sha256": "bc6603e7002cdb5147dc4f1f3683093bf61993c5712ca36d8733524d3a7b6150"
+        }
+      },
+      "checks": {
+        "automaticInitialRecipe": true,
+        "completeRecipe": true,
+        "initialNotice": true,
+        "eightPresets": true,
+        "namePreserved": true,
+        "fixedTime": true,
+        "actualRender": true,
+        "nonuniformImage": true,
+        "rawReplay": true,
+        "uniformReplay": true,
+        "glErrorZero": true,
+        "actualJSONExport": true,
+        "downloadsNonempty": true,
+        "noPageErrors": true
+      },
+      "pageErrors": [],
+      "ok": true,
+      "service": {
+        "pid": 38900,
+        "exitCode": null,
+        "signalCode": "SIGTERM",
+        "portStillListening": false
+      },
+      "artifactAudit": {
+        "checks": {
+          "authorRecipeEqualsInitial": true,
+          "authorRecipeEqualsForgeConfig": true,
+          "exact62FieldSet": true,
+          "uiJSONEqualsAuthored": true,
+          "coreCopiedFromSkill": true,
+          "zipCRC": true,
+          "zipSevenMembers": true,
+          "zipRecipeEqualsUI": true,
+          "zipCoreExact": true,
+          "zipWrapperExact": true,
+          "uniformGroups19": true,
+          "uniformFields62": true,
+          "allUniformDefaultsMatchSchema": true,
+          "endUniformsPresent": true,
+          "pngDimensionsMatch": true,
+          "pngMatchesActualRawFrame": true
+        },
+        "zip": {
+          "path": "E:\\着色器渲染\\volumetric-environment-lab\\evidence\\forward-v2\\purple-light-fog\\export-time2.zip",
+          "members": [
+            "assets/worldvolume/shaders/core/volume-core.glsl",
+            "assets/worldvolume/shaders/core/world_volume.fsh",
+            "assets/worldvolume/shaders/core/world_volume.json",
+            "assets/worldvolume/shaders/core/world_volume.vsh",
+            "contract.json",
+            "pack.mcmeta",
+            "world-volume.json"
+          ],
+          "coreSha256": "55fb1baf79f11d7d87211cc2a2786b53a98b0ff8854023c51c3ce0e09fcca275",
+          "wrapperSha256": "a4dd4ec57798e74af17d1d15a4cbd429a8701d2babd28dc6bee7af2b8b579f69",
+          "uniformGroups": {
+            "Bounds": {
+              "fields": [
+                "centerX",
+                "centerY",
+                "centerZ",
+                "radius"
+              ],
+              "schemaDefaults": [
+                0,
+                75,
+                0,
+                180
+              ],
+              "authoredValues": [
+                0,
+                75,
+                0,
+                800
+              ],
+              "values": [
+                0,
+                75,
+                0,
+                180
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Layer": {
+              "fields": [
+                "bottom",
+                "height",
+                "shape",
+                "innerRadius"
+              ],
+              "schemaDefaults": [
+                35,
+                100,
+                0,
+                25
+              ],
+              "authoredValues": [
+                -80,
+                380,
+                0,
+                25
+              ],
+              "values": [
+                35,
+                100,
+                0,
+                25
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Density": {
+              "fields": [
+                "density",
+                "coverage",
+                "scale",
+                "erosion"
+              ],
+              "schemaDefaults": [
+                0.65,
+                0.66,
+                0.018,
+                0.25
+              ],
+              "authoredValues": [
+                0.1,
+                1,
+                0.018,
+                0.25
+              ],
+              "values": [
+                0.65,
+                0.66,
+                0.018,
+                0.25
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Flow": {
+              "fields": [
+                "windX",
+                "windZ",
+                "speed",
+                "curl"
+              ],
+              "schemaDefaults": [
+                0.8,
+                0.35,
+                1,
+                0.5
+              ],
+              "authoredValues": [
+                0.8,
+                0.35,
+                0.8,
+                0.5
+              ],
+              "values": [
+                0.8,
+                0.35,
+                1,
+                0.5
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Optics": {
+              "fields": [
+                "extinction",
+                "anisotropy",
+                "ambient",
+                "sunGain"
+              ],
+              "schemaDefaults": [
+                0.045,
+                0.45,
+                0.32,
+                1
+              ],
+              "authoredValues": [
+                0.012,
+                0.45,
+                0.95,
+                0.1
+              ],
+              "values": [
+                0.045,
+                0.45,
+                0.32,
+                1
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Glow": {
+              "fields": [
+                "emission",
+                "emissionScale",
+                "emissionThreshold",
+                "emissionSpeed"
+              ],
+              "schemaDefaults": [
+                0,
+                2.2,
+                0.45,
+                0.3
+              ],
+              "authoredValues": [
+                0.12,
+                2.2,
+                0.45,
+                0.3
+              ],
+              "values": [
+                0,
+                2.2,
+                0.45,
+                0.3
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Flash": {
+              "fields": [
+                "flashEnabled",
+                "flashPeriod",
+                "flashDuration",
+                "flashStrength"
+              ],
+              "schemaDefaults": [
+                1,
+                7,
+                0.9,
+                4
+              ],
+              "authoredValues": [
+                0,
+                7,
+                0.9,
+                4
+              ],
+              "values": [
+                1,
+                7,
+                0.9,
+                4
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "FlashShape": {
+              "fields": [
+                "flashRadius",
+                "flashPlacement",
+                "mediumGain",
+                "surfaceGain"
+              ],
+              "schemaDefaults": [
+                65,
+                0.65,
+                1,
+                0.5
+              ],
+              "authoredValues": [
+                65,
+                0.65,
+                1,
+                0.5
+              ],
+              "values": [
+                65,
+                0.65,
+                1,
+                0.5
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "MediumColor": {
+              "fields": [
+                "mediumR",
+                "mediumG",
+                "mediumB"
+              ],
+              "schemaDefaults": [
+                0.55,
+                0.63,
+                0.8
+              ],
+              "authoredValues": [
+                0.62,
+                0.3,
+                0.85
+              ],
+              "values": [
+                0.55,
+                0.63,
+                0.8
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "EmissionColor": {
+              "fields": [
+                "emissionR",
+                "emissionG",
+                "emissionB"
+              ],
+              "schemaDefaults": [
+                0.35,
+                0.08,
+                0.8
+              ],
+              "authoredValues": [
+                0.8,
+                0.32,
+                1
+              ],
+              "values": [
+                0.35,
+                0.08,
+                0.8
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "FlashColor": {
+              "fields": [
+                "flashR",
+                "flashG",
+                "flashB"
+              ],
+              "schemaDefaults": [
+                0.55,
+                0.65,
+                1
+              ],
+              "authoredValues": [
+                0.55,
+                0.65,
+                1
+              ],
+              "values": [
+                0.55,
+                0.65,
+                1
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "SunDirection": {
+              "fields": [
+                "sunX",
+                "sunY",
+                "sunZ"
+              ],
+              "schemaDefaults": [
+                0.4,
+                0.8,
+                -0.3
+              ],
+              "authoredValues": [
+                0.4,
+                0.8,
+                -0.3
+              ],
+              "values": [
+                0.4,
+                0.8,
+                -0.3
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "SunColor": {
+              "fields": [
+                "sunR",
+                "sunG",
+                "sunB"
+              ],
+              "schemaDefaults": [
+                1,
+                0.85,
+                0.65
+              ],
+              "authoredValues": [
+                1,
+                0.85,
+                0.65
+              ],
+              "values": [
+                1,
+                0.85,
+                0.65
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "Seed": {
+              "fields": [
+                "seed"
+              ],
+              "schemaDefaults": [
+                17
+              ],
+              "authoredValues": [
+                17
+              ],
+              "values": [
+                17
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "ViewSteps": {
+              "fields": [
+                "viewSteps"
+              ],
+              "schemaDefaults": [
+                48
+              ],
+              "authoredValues": [
+                48
+              ],
+              "values": [
+                48
+              ],
+              "matches": true,
+              "expectedType": "int",
+              "type": "int"
+            },
+            "LightSteps": {
+              "fields": [
+                "lightSteps"
+              ],
+              "schemaDefaults": [
+                4
+              ],
+              "authoredValues": [
+                4
+              ],
+              "values": [
+                4
+              ],
+              "matches": true,
+              "expectedType": "int",
+              "type": "int"
+            },
+            "EndWarp": {
+              "fields": [
+                "densityModel",
+                "verticalStretch",
+                "twistAmount",
+                "twistSpeed"
+              ],
+              "schemaDefaults": [
+                0,
+                24,
+                0.014,
+                0.02
+              ],
+              "authoredValues": [
+                2,
+                5,
+                0.014,
+                0.02
+              ],
+              "values": [
+                0,
+                24,
+                0.014,
+                0.02
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "EndCarve": {
+              "fields": [
+                "cavityRadius",
+                "cavityAspect",
+                "torusRadius",
+                "torusWidth"
+              ],
+              "schemaDefaults": [
+                75,
+                0.8,
+                150,
+                85
+              ],
+              "authoredValues": [
+                75,
+                0.8,
+                150,
+                85
+              ],
+              "values": [
+                75,
+                0.8,
+                150,
+                85
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            },
+            "EndDepth": {
+              "fields": [
+                "voidDensity",
+                "voidFloor",
+                "voidFalloff",
+                "nearClearRadius"
+              ],
+              "schemaDefaults": [
+                0.35,
+                -60,
+                0.7,
+                80
+              ],
+              "authoredValues": [
+                0,
+                -60,
+                0.7,
+                0
+              ],
+              "values": [
+                0.35,
+                -60,
+                0.7,
+                80
+              ],
+              "matches": true,
+              "expectedType": "float",
+              "type": "float"
+            }
+          },
+          "packDescription": "Original world-volume/1 Forge 1.20.1 shader integration assets"
+        },
+        "png": {
+          "width": 695,
+          "height": 434,
+          "decodedBottomUpFNV1a32": "336af59b"
+        },
+        "coreSha256": "55fb1baf79f11d7d87211cc2a2786b53a98b0ff8854023c51c3ce0e09fcca275",
+        "schemaSha256": "871d57fb970143b632552b99b566bd0aa6de3cd4ba51b590f2aada3ea4fbb8a0",
+        "contractSha256": "115d4171b0b54e236fd0d107b4521bdec88393e415190016676dc9613eacebe3"
+      }
+    }
+  ],
+  "serviceClosed": true,
+  "ok": true,
+  "skillRead": [
+    "E:\\着色器渲染\\skill\\minecraft-volumetric-environment\\SKILL.md",
+    "E:\\着色器渲染\\skill\\minecraft-volumetric-environment\\references\\authoring.md",
+    "E:\\着色器渲染\\skill\\minecraft-volumetric-environment\\references\\bliss-end-density.md",
+    "E:\\着色器渲染\\skill\\minecraft-volumetric-environment\\references\\astralex-purple-fog.md",
+    "E:\\着色器渲染\\skill\\minecraft-volumetric-environment\\references\\validation.md"
+  ],
+  "skillSourceModified": false,
+  "authoring": {
+    "end-vortex": {
+      "preset": "end-vortex",
+      "name": "蓝灰扭带·独立试作",
+      "assignments": {
+        "verticalStretch": 32,
+        "twistAmount": 0.018,
+        "torusWidth": 72
+      }
+    },
+    "purple-light-fog": {
+      "preset": "purple-light-fog",
+      "name": "紫光浮岛·独立试作",
+      "assignments": {
+        "density": 0.1,
+        "ambient": 0.95
+      }
+    }
+  },
+  "visualQA": {
+    "end-vortex": "Inspected actual exported PNG: visible near and far stepped islands and pillars, blue-gray structured cloud wall behind them. This is the analytic preview scene, not Minecraft.",
+    "purple-light-fog": "Inspected actual exported PNG: near island silhouettes and far geometry remain visible through purple luminous haze. This is the analytic preview scene, not the original AstraLex output."
+  },
+  "notes": [
+    "No reference shader source or textures copied into the works.",
+    "Fixed-time exactness is browser-local on the recorded renderer and camera; it is not a cross-GPU or Minecraft assertion.",
+    "Shader descriptor uniform values are schema fallback defaults. Authored values are in the exact packed world-volume.json; the paired Forge renderer uploads the runtime recipe before shader.apply(). The initial test incorrectly expected authored values in the fallback descriptor; its failure is preserved in failed-uniform-assumption.json.",
+    "The exported pack description still says world-volume/1; actual recipes and the full uniform mapping are world-volume/2. This metadata observation was reported to the parent."
+  ]
+}

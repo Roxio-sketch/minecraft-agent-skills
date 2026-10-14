@@ -1,0 +1,63 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '6.0.54'
+}
+
+group = 'dev.cosmiclab'
+version = mod_version
+base { archivesName = 'cosmic-sky-lab' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+    runs {
+        client {
+            workingDirectory project.file('run')
+            // Keep this isolated lab predictable when other Minecraft clients are open.
+            jvmArgs '-Xms128M', '-Xmx768M', '-XX:+UseSerialGC', '-XX:ActiveProcessorCount=4'
+            property 'forge.logging.console.level', 'info'
+            property 'cosmiclab.autorun', project.findProperty('labAuto') ?: 'false'
+            property 'cosmiclab.output', project.file(project.findProperty('labOutput') ?: 'validation').absolutePath
+            property 'cosmiclab.cases', project.findProperty('labCases') ?: ''
+            property 'cosmiclab.exitOnComplete', project.findProperty('labExitOnComplete') ?: 'false'
+            property 'cosmiclab.advancedCases', project.findProperty('labAdvancedCases') ?: ''
+            property 'cosmiclab.compatPack', project.findProperty('labCompatPack') ?: ''
+            property 'mixin.env.disableRefMap', 'true'
+            if (project.hasProperty('labNativeDir')) {
+                property 'org.lwjgl.librarypath', project.file(project.property('labNativeDir')).absolutePath
+            }
+            args '--width', '960', '--height', '540', '--username', 'CosmicLab'
+            mods { cosmiclab { source sourceSets.main } }
+        }
+    }
+}
+
+repositories { maven { url 'https://api.modrinth.com/maven' } }
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    if (project.hasProperty('labCompat')) {
+        runtimeOnly fg.deobf('maven.modrinth:embeddium:0.3.31+mc1.20.1')
+        runtimeOnly fg.deobf('maven.modrinth:oculus:1.20.1-1.8.0')
+    }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.register('mixinSrg') {
+    dependsOn 'createMcpToSrg'
+    inputs.file(layout.buildDirectory.file('createMcpToSrg/output.tsrg'))
+    outputs.file(layout.buildDirectory.file('mixin/mappings.srg'))
+    doLast {
+        def output = layout.buildDirectory.file('mixin/mappings.srg').get().asFile
+        output.parentFile.mkdirs()
+        net.minecraftforge.srgutils.IMappingFile.load(layout.buildDirectory.file('createMcpToSrg/output.tsrg').get().asFile)
+                .write(output.toPath(), net.minecraftforge.srgutils.IMappingFile.Format.SRG, false)
+    }
+}
+tasks.named('compileJava', JavaCompile).configure {
+    dependsOn 'mixinSrg'
+    options.compilerArgs += ["-AreobfSrgFile=${layout.buildDirectory.get()}/mixin/mappings.srg".toString(),
+        "-AoutRefMapFile=${layout.buildDirectory.get()}/classes/java/main/cosmiclab.refmap.json".toString(),
+        '-AdefaultObfuscationEnv=searge']
+}
+tasks.named('jar', Jar).configure { manifest.attributes('MixinConfigs': 'cosmiclab.mixins.json') }
+tasks.named('jar', Jar).configure { finalizedBy 'reobfJar' }

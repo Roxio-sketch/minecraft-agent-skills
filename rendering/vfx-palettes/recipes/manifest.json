@@ -1,0 +1,222 @@
+{
+  "count": 27,
+  "activeRecipesChanged": false,
+  "recipes": [
+    {
+      "mode": "body",
+      "id": "slot1",
+      "name": "赤炎流火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\body\\slot1.json",
+      "sha256": "71958158cdf58aef9d6aa77ecc16d959cd7ab17afa3e7edb930547049c9a6f2f"
+    },
+    {
+      "mode": "body",
+      "id": "slot2",
+      "name": "熔金淬火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\body\\slot2.json",
+      "sha256": "38465bb817414667fff7efa74638cc61b9eda60bb34424399d0f9f7294b8d095"
+    },
+    {
+      "mode": "body",
+      "id": "slot3",
+      "name": "枯骨冷火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\body\\slot3.json",
+      "sha256": "ece301eaff4c4b382c1a5d477e05838d6247d1a705ad0ea19ec597cf3534f67a"
+    },
+    {
+      "mode": "body",
+      "id": "slot4",
+      "name": "青木灵火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\body\\slot4.json",
+      "sha256": "c764405383ac2e9e04edd62a38cd5961f7419f915536d04c1573f79bf9fd9dd3"
+    },
+    {
+      "mode": "body",
+      "id": "slot5",
+      "name": "碧海沧火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\body\\slot5.json",
+      "sha256": "4f00a7f2d8d6c8defee2756feba6175d1a3f2e3a411143f9caaa584d4404e15a"
+    },
+    {
+      "mode": "body",
+      "id": "slot6",
+      "name": "紫霄雷火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\body\\slot6.json",
+      "sha256": "3dac461599bc7b0dfad48a3b61367457309dd1f03d023db13cb1226533233347"
+    },
+    {
+      "mode": "body",
+      "id": "slot7",
+      "name": "大日圣火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\body\\slot7.json",
+      "sha256": "8fbafbbadfc824d040fa992694ac9cc7e9f0e6cc1324fa0e08bf0060dc10fafc"
+    },
+    {
+      "mode": "body",
+      "id": "slot8",
+      "name": "九幽冥火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\body\\slot8.json",
+      "sha256": "db415b9ef8563fda7cc1faa3661bec5faba93bd5cf44c55cf2dcfdecaddd23c1"
+    },
+    {
+      "mode": "body",
+      "id": "slot9",
+      "name": "涅槃神火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\body\\slot9.json",
+      "sha256": "8f9834327b88ddaaa8c72c5e7b8fe1828eb7ffe90f78cc80c100c15a9b0e983b"
+    },
+    {
+      "mode": "weapon",
+      "id": "slot1",
+      "name": "赤炎流火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\weapon\\slot1.json",
+      "sha256": "ada2a6b2e130e52cbd69f9065a1b13caceec54daf86169b204db71bc9757a667"
+    },
+    {
+      "mode": "weapon",
+      "id": "slot2",
+      "name": "熔金淬火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\weapon\\slot2.json",
+      "sha256": "6fb1fce8cc422b3ecdee0653d93e273723e6d0dbe8144bd4c661272a6cc6c620"
+    },
+    {
+      "mode": "weapon",
+      "id": "slot3",
+      "name": "枯骨冷火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\weapon\\slot3.json",
+      "sha256": "98b2c9804905b5f84bde525593fe27ec7395808f7b1c5282eea46d57f9985241"
+    },
+    {
+      "mode": "weapon",
+      "id": "slot4",
+      "name": "青木灵火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\weapon\\slot4.json",
+      "sha256": "29a7fa36e07a705b1a87eec0f3a0bc5fdf673f48448e1e1911d3fe4ec6e837b4"
+    },
+    {
+      "mode": "weapon",
+      "id": "slot5",
+      "name": "碧海沧火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\weapon\\slot5.json",
+      "sha256": "72a47ddf936de50d92bb7e40f1c974e10da9f00660a1056f087f94bd295246ec"
+    },
+    {
+      "mode": "weapon",
+      "id": "slot6",
+      "name": "紫霄雷火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\weapon\\slot6.json",
+      "sha256": "d449b5a3038a8bff1f3ba1ce4b3f1decdd20b5535bb89dada8395c56fa053415"
+    },
+    {
+      "mode": "weapon",
+      "id": "slot7",
+      "name": "大日圣火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\weapon\\slot7.json",
+      "sha256": "f8ab7b37ef3cfbce0afaff861e366a33d7ebdc6a98ea936ddeb12f14d2778994"
+    },
+    {
+      "mode": "weapon",
+      "id": "slot8",
+      "name": "九幽冥火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\weapon\\slot8.json",
+      "sha256": "ab79b9e407ed6e924d786b7347e851db06bafcf7e2fad36084ecbe5113acbc6f"
+    },
+    {
+      "mode": "weapon",
+      "id": "slot9",
+      "name": "涅槃神火",
+      "schema": "fire-coil/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\weapon\\slot9.json",
+      "sha256": "615104c96dc49c0c4b06075a9c2e4d95b4f36e5b41292cae04b7adef68feb027"
+    },
+    {
+      "mode": "furnace",
+      "id": "slot1",
+      "name": "赤炎流火",
+      "schema": "alchemy-vfx/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\furnace\\slot1.json",
+      "sha256": "7ad3f8be1c73bf7148a529302908b470a462b3a57f86555e6e1f9511c33ac37b"
+    },
+    {
+      "mode": "furnace",
+      "id": "slot2",
+      "name": "熔金淬火",
+      "schema": "alchemy-vfx/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\furnace\\slot2.json",
+      "sha256": "bd679bc973664083a475ecd189b28bff6b4a6625d400135fa2e3f47efe38aa15"
+    },
+    {
+      "mode": "furnace",
+      "id": "slot3",
+      "name": "枯骨冷火",
+      "schema": "alchemy-vfx/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\furnace\\slot3.json",
+      "sha256": "e2fc7f78c6d7f34f4a134f0525c54de848de1996ae54040881eca0893ed8c006"
+    },
+    {
+      "mode": "furnace",
+      "id": "slot4",
+      "name": "青木灵火",
+      "schema": "alchemy-vfx/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\furnace\\slot4.json",
+      "sha256": "5e2503cf1c220b9c3d020a734639427b0b00f7c74d5b358b807e332bcf825d84"
+    },
+    {
+      "mode": "furnace",
+      "id": "slot5",
+      "name": "碧海沧火",
+      "schema": "alchemy-vfx/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\furnace\\slot5.json",
+      "sha256": "818dd07eb3370dff478c0547d113d32b8e0cd51331fad213e6a9b9fdeb1e2537"
+    },
+    {
+      "mode": "furnace",
+      "id": "slot6",
+      "name": "紫霄雷火",
+      "schema": "alchemy-vfx/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\furnace\\slot6.json",
+      "sha256": "3995e258e0ec728cef32570ae271c2508153e97d843258b56e689147c4d3b7f3"
+    },
+    {
+      "mode": "furnace",
+      "id": "slot7",
+      "name": "大日圣火",
+      "schema": "alchemy-vfx/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\furnace\\slot7.json",
+      "sha256": "e72df6ee76c42d44f9c95234e52c1a804c32126981590dee8b61722900b96b7f"
+    },
+    {
+      "mode": "furnace",
+      "id": "slot8",
+      "name": "九幽冥火",
+      "schema": "alchemy-vfx/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\furnace\\slot8.json",
+      "sha256": "1d87597b1f5d2b23af01714365dea1c10bb6a157b203c313420189b1d6fbfbfc"
+    },
+    {
+      "mode": "furnace",
+      "id": "slot9",
+      "name": "涅槃神火",
+      "schema": "alchemy-vfx/2",
+      "file": "E:\\着色器渲染\\vfx-palettes\\recipes\\furnace\\slot9.json",
+      "sha256": "94761ed8737b4f01935d2cca7cb42aee76b9e3e0b902fbc950a35059738479cc"
+    }
+  ]
+}

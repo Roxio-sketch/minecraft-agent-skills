@@ -1,0 +1,24 @@
+{
+  "vertex": "bloomlab:blur",
+  "fragment": "bloomlab:blur",
+  "attributes": [
+    "Position",
+    "UV0"
+  ],
+  "samplers": [
+    {
+      "name": "Sampler0"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "Direction",
+      "type": "float",
+      "count": 2,
+      "values": [
+        0.001,
+        0
+      ]
+    }
+  ]
+}

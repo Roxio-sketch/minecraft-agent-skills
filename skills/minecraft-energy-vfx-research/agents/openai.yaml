@@ -1,0 +1,4 @@
+interface:
+  display_name: "实时能量 VFX 源码研究"
+  short_description: "拆解体积能量、流动细丝与冲击波，核查源码许可并建立 Forge 研发路线"
+  default_prompt: "使用 $minecraft-energy-vfx-research 分析能量特效参考，建立源码图谱、迁移路线和 HTML 研究工作台。"

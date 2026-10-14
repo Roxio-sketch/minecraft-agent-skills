@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '6.0.54'
+}
+group = 'dev.lightninglab'
+version = '0.1.0'
+base { archivesName = 'lightning-lab-forge-1.20.1' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    runs { client {
+        workingDirectory project.file('run')
+        if(project.hasProperty('nativeDir')) property 'org.lwjgl.librarypath', project.file(project.property('nativeDir')).absolutePath
+        mods { lightninglab { source sourceSets.main } }
+    } }
+}
+dependencies { minecraft 'net.minecraftforge:forge:1.20.1-47.4.10' }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar', Jar).configure { finalizedBy 'reobfJar' }
+tasks.register('lightningCheck', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'dev.lightninglab.LightningCheck'
+}
+tasks.named('check').configure { dependsOn 'lightningCheck' }

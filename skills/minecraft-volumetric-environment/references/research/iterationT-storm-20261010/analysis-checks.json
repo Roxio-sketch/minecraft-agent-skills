@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "anchorCount": 18,
+  "coverageChecks": [
+    {
+      "coverageNoise": 0.1,
+      "thresholds": [
+        1,
+        1,
+        1,
+        1,
+        0.9218749999999998
+      ],
+      "nonIncreasing": true
+    },
+    {
+      "coverageNoise": 0.3,
+      "thresholds": [
+        1,
+        1,
+        1,
+        0.8575949367088604,
+        0.661458333333333
+      ],
+      "nonIncreasing": true
+    },
+    {
+      "coverageNoise": 0.5,
+      "thresholds": [
+        1,
+        1,
+        0.7580645161290321,
+        0.541139240506329,
+        0.4010416666666665
+      ],
+      "nonIncreasing": true
+    },
+    {
+      "coverageNoise": 0.7,
+      "thresholds": [
+        1,
+        0.5833333333333333,
+        0.3548387096774193,
+        0.22468354430379744,
+        0.140625
+      ],
+      "nonIncreasing": true
+    },
+    {
+      "coverageNoise": 0.9,
+      "thresholds": [
+        0.19642857142857126,
+        0.02777777777777764,
+        0,
+        0,
+        0
+      ],
+      "nonIncreasing": true
+    }
+  ],
+  "scope": "Formula evaluation only, no rendered appearance or runtime timing certification"
+}

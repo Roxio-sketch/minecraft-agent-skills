@@ -1,0 +1,47 @@
+{
+  "shader_clock_wrapped": 6020,
+  "chest_region_xyxy": [
+    573,
+    536,
+    709,
+    632
+  ],
+  "stable_chest_core_region_xyxy": [
+    580,
+    536,
+    690,
+    632
+  ],
+  "rule": "cyan in either frame and max absolute RGB delta > 12; cyan=B-R>25,B-G>5,G>130",
+  "files": [
+    "diagnostic-slot-crops.png",
+    "diagnostic-chest-II-mixed-III.png",
+    "diagnostic-chest-blue-diff.png"
+  ],
+  "mixed_vs_tier_2": {
+    "changed_cyan_pixels": 458,
+    "changed_cyan_bbox_xyxy": [
+      692,
+      536,
+      709,
+      594
+    ],
+    "mixed_only_cyan_pixels": 379,
+    "reference_only_cyan_pixels": 79,
+    "both_cyan_changed_pixels": 0,
+    "stable_chest_core_changed_cyan_pixels": 0
+  },
+  "mixed_vs_tier_3": {
+    "changed_cyan_pixels": 1585,
+    "changed_cyan_bbox_xyxy": [
+      656,
+      536,
+      709,
+      632
+    ],
+    "mixed_only_cyan_pixels": 3,
+    "reference_only_cyan_pixels": 324,
+    "both_cyan_changed_pixels": 1258,
+    "stable_chest_core_changed_cyan_pixels": 717
+  }
+}

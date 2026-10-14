@@ -1,0 +1,22 @@
+{
+  "schema": "spirit-guard-glint/1",
+  "preset": "guard-water-sheen",
+  "parameters": {
+    "style": 8,
+    "color": "#91CBF5",
+    "color2": "#D5F3FF",
+    "intensity": 0.92,
+    "speed": 1,
+    "scale": 1,
+    "width": 0.15,
+    "angle": -22,
+    "secondary": 0.22
+  },
+  "scene": {
+    "shape": "chest",
+    "material": "netherite",
+    "yaw": 0.32,
+    "pitch": 0.13,
+    "orbit": false
+  }
+}

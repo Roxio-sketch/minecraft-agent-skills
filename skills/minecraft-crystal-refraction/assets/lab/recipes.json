@@ -1,0 +1,8 @@
+{
+  "schema": "crystal-refraction-preview/v1",
+  "presets": [
+    {"name":"冰晶棱镜","cells":5,"jitter":0.85,"bendPx":58,"dispersion":0.085,"ior":1.52,"bevelPx":0.8,"edgeLight":0.07,"tintMix":0.10,"tint":"#A9EFFF","speed":0.18,"blurPx":0,"seed":173,"shape":1,"background":0},
+    {"name":"星域碎镜","cells":7,"jitter":0.95,"bendPx":84,"dispersion":0.10,"ior":1.68,"bevelPx":0.6,"edgeLight":0.09,"tintMix":0.07,"tint":"#C9B7FF","speed":0.10,"blurPx":0,"seed":918,"shape":1,"background":1},
+    {"name":"琥珀裂刃","cells":4,"jitter":0.75,"bendPx":50,"dispersion":0.045,"ior":1.45,"bevelPx":0.7,"edgeLight":0.11,"tintMix":0.18,"tint":"#FFD29A","speed":0,"blurPx":0.5,"seed":304,"shape":2,"background":1}
+  ]
+}

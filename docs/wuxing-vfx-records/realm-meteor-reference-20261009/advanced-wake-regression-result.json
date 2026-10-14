@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checks": 37626,
+  "sequences": [
+    {
+      "name": "camera_plane_crossing",
+      "samples": 1001,
+      "minimum_adjacent_dot": 0.9999999999499998,
+      "old_minimum_adjacent_dot": -0.99999999995
+    },
+    {
+      "name": "near_axial_camera_orbit",
+      "samples": 2401,
+      "minimum_adjacent_dot": 0.9999875000260414,
+      "old_minimum_adjacent_dot": -0.9999875000260419
+    },
+    {
+      "name": "three_dimensional_turn",
+      "samples": 6001,
+      "minimum_adjacent_dot": 0.9999268263488079,
+      "old_minimum_adjacent_dot": -0.9999945628632704
+    }
+  ],
+  "core_valley_intensity_ratio": 0.12,
+  "core_only_near_head_valley_alpha": 0.0449616,
+  "scope": "pure mathematics and source consistency; no client or GL validation"
+}

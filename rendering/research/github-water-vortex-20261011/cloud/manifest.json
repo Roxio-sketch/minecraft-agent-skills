@@ -1,0 +1,584 @@
+{
+  "schema": "github-water-vortex-research/cloud/1",
+  "retrievedOn": "2026-10-11",
+  "timezone": "Asia/Shanghai",
+  "purpose": "static source study for coherent spiral funnel and continuous macro structure",
+  "executionPolicy": "Downloaded upstream code was not executed; no renderer or skill changed by this collection.",
+  "acquisition": {
+    "commitResolution": "git ls-remote <repo>.git HEAD",
+    "sourceDownloads": "raw.githubusercontent.com URLs pinned to each resolved full commitSHA",
+    "directoryDiscovery": "static GitHub HTML tree pages; GitHub API returned HTTP 403 rate limit exceeded",
+    "licenseVerification": "MIT license text and copyright checked at fixed commit; original LICENSE retained"
+  },
+  "scope": {
+    "repositoryCount": 2,
+    "upstreamFileCount": 15,
+    "upstreamBytes": 84031,
+    "sourceFileCount": 11,
+    "notIncluded": [
+      "complete Unity projects",
+      "Assets/Standard Assets",
+      "Assets/Scripts/3rd Party",
+      "prefabs",
+      "prebaked textures",
+      "meshes",
+      "screenshots",
+      "videos"
+    ],
+    "runtimeValidated": false,
+    "directWaterspoutImplemented": false
+  },
+  "repositories": [
+    {
+      "id": "unity-tornado-simulator",
+      "repoUrl": "https://github.com/Habrador/Unity-Tornado-Simulator",
+      "commitSHA": "46f0a76885203562d8203e037fd8f3660e931537",
+      "defaultBranchObserved": "main",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2021 Erik Nordeus",
+      "role": "particle tornado skeleton, orbital motion and upper cloud association",
+      "isWaterspoutImplementation": false,
+      "files": [
+        {
+          "repositoryPath": "Assets/Material/Weather/Cloud.shader",
+          "localPath": "unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+          "bytes": 16796,
+          "sha256": "095e9511d60596300584eee10dd02d808a52d2614b46076eaf86ca72c8b87bb6",
+          "lineCount": 553,
+          "license": "MIT",
+          "licenseLocalPath": "unity-tornado-simulator/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader",
+          "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 553,
+            "executed": false
+          },
+          "anchors": [
+            {
+              "line": 161,
+              "symbol": "float getDensityVolume",
+              "lineText": "float getDensityVolume(float3 sampleCoordinate)",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L161"
+            },
+            {
+              "line": 189,
+              "symbol": "half getPhaseFunctionValue",
+              "lineText": "half getPhaseFunctionValue(fixed3 sunDir, fixed3 viewDir)",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L189"
+            },
+            {
+              "line": 213,
+              "symbol": "float3 getIncidentLightning",
+              "lineText": "float3 getIncidentLightning(float3 startCoordinate, fixed3 ray)",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L213"
+            },
+            {
+              "line": 291,
+              "symbol": "fixed4 getColorVolumeRendering",
+              "lineText": "fixed4 getColorVolumeRendering(float3 startPos, fixed3 ray)",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L291"
+            },
+            {
+              "line": 466,
+              "symbol": "fixed4 getColor(",
+              "lineText": "fixed4 getColor(float3 startPos, fixed3 ray)",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L466"
+            },
+            {
+              "line": 522,
+              "symbol": "fixed4 frag",
+              "lineText": "fixed4 frag(v2f i) : SV_Target",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L522"
+            }
+          ],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+          "localPath": "unity-tornado-simulator/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+          "bytes": 1514,
+          "sha256": "1084d166bd7cc49d5647cf9abd6f3e767cc365ae99d0efa2259577d2de9b1e33",
+          "lineCount": 45,
+          "license": "MIT",
+          "licenseLocalPath": "unity-tornado-simulator/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+          "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 45,
+            "executed": false
+          },
+          "anchors": [
+            {
+              "line": 20,
+              "symbol": "private void OnPreRender()",
+              "lineText": "private void OnPreRender()",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Clouds/GlobalShaderVariables.cs#L20"
+            }
+          ],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "Assets/Scripts/Tornado/Tornado.cs",
+          "localPath": "unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+          "bytes": 11670,
+          "sha256": "87a05cab03e1e0a9da4a9e4a57b9291f90cdb0200dcb40b05fd3520ec557f43b",
+          "lineCount": 376,
+          "license": "MIT",
+          "licenseLocalPath": "unity-tornado-simulator/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs",
+          "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 376,
+            "executed": false
+          },
+          "anchors": [
+            {
+              "line": 69,
+              "symbol": "void Start()",
+              "lineText": "void Start()",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs#L69"
+            },
+            {
+              "line": 150,
+              "symbol": "void AddSkeletonPieces()",
+              "lineText": "void AddSkeletonPieces()",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs#L150"
+            },
+            {
+              "line": 194,
+              "symbol": "void MoveTornado()",
+              "lineText": "void MoveTornado()",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs#L194"
+            },
+            {
+              "line": 235,
+              "symbol": "void TornadoDynamics()",
+              "lineText": "void TornadoDynamics()",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs#L235"
+            }
+          ],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "Assets/Scripts/Tornado/TornadoDust.cs",
+          "localPath": "unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+          "bytes": 8620,
+          "sha256": "34899b4ef4669a561a67c259be29484669d346b37e935db3843d10782a1da99b",
+          "lineCount": 273,
+          "license": "MIT",
+          "licenseLocalPath": "unity-tornado-simulator/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDust.cs",
+          "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDust.cs",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 273,
+            "executed": false
+          },
+          "anchors": [
+            {
+              "line": 56,
+              "symbol": "void LateUpdate()",
+              "lineText": "void LateUpdate()",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDust.cs#L56"
+            },
+            {
+              "line": 96,
+              "symbol": "void RotateParticles()",
+              "lineText": "void RotateParticles()",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDust.cs#L96"
+            },
+            {
+              "line": 240,
+              "symbol": "public int FindIndex",
+              "lineText": "public int FindIndex(Vector3 particlePos)",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDust.cs#L240"
+            }
+          ],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "localPath": "unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "bytes": 5215,
+          "sha256": "10b23ee1a01b65a4b683afbb3b3a4c2cdad12d60dabcf44b6f8a11799ac322e2",
+          "lineCount": 157,
+          "license": "MIT",
+          "licenseLocalPath": "unity-tornado-simulator/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 157,
+            "executed": false
+          },
+          "anchors": [
+            {
+              "line": 51,
+              "symbol": "void LateUpdate()",
+              "lineText": "void LateUpdate()",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDustTop.cs#L51"
+            },
+            {
+              "line": 67,
+              "symbol": "void RotateParticles()",
+              "lineText": "void RotateParticles()",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDustTop.cs#L67"
+            }
+          ],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "Assets/Scripts/Tornado/TornadoMath.cs",
+          "localPath": "unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+          "bytes": 4128,
+          "sha256": "fd79ce74ebd4a0eca03cba4748957605de70fb406153b97c2ae13a61e3fa22a5",
+          "lineCount": 135,
+          "license": "MIT",
+          "licenseLocalPath": "unity-tornado-simulator/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs",
+          "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 135,
+            "executed": false
+          },
+          "anchors": [
+            {
+              "line": 7,
+              "symbol": "public static float GetAngle",
+              "lineText": "public static float GetAngle(float x, float y)",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs#L7"
+            },
+            {
+              "line": 29,
+              "symbol": "public static Vector3 GetParticlePos",
+              "lineText": "public static Vector3 GetParticlePos(Vector3 centerPos, float angle, float radius, float rotationSpeed)",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs#L29"
+            },
+            {
+              "line": 49,
+              "symbol": "public static Vector3 GetParticleVel",
+              "lineText": "public static Vector3 GetParticleVel(float angle, float radius, float rotationSpeed)",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs#L49"
+            },
+            {
+              "line": 77,
+              "symbol": "public static float CalculateProgress",
+              "lineText": "public static float CalculateProgress(Vector3 from, Vector3 to, Vector3 current)",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs#L77"
+            },
+            {
+              "line": 110,
+              "symbol": "public static Vector3 CheckRadius",
+              "lineText": "public static Vector3 CheckRadius(Vector3 particlePos, Vector3 centerPos, float wantedRadius)",
+              "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs#L110"
+            }
+          ],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "LICENSE",
+          "localPath": "unity-tornado-simulator/LICENSE",
+          "bytes": 1069,
+          "sha256": "e384020ec265ff356df283774702fd05b54586d799477ba1f40dbb839089689f",
+          "lineCount": 21,
+          "license": "MIT",
+          "licenseLocalPath": "unity-tornado-simulator/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/LICENSE",
+          "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/LICENSE",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 21,
+            "executed": false
+          },
+          "anchors": [],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "README.md",
+          "localPath": "unity-tornado-simulator/README.md",
+          "bytes": 471,
+          "sha256": "d40a1177c4b478e5db0f7b90f6b860c26e415fba9f993bb947698726e2ac6f88",
+          "lineCount": 9,
+          "license": "MIT",
+          "licenseLocalPath": "unity-tornado-simulator/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/README.md",
+          "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/README.md",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 9,
+            "executed": false
+          },
+          "anchors": [],
+          "unmodifiedUpstreamBytes": true
+        }
+      ],
+      "pinnedUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/tree/46f0a76885203562d8203e037fd8f3660e931537",
+      "licensePath": "unity-tornado-simulator/LICENSE"
+    },
+    {
+      "id": "seblague-clouds",
+      "repoUrl": "https://github.com/SebLague/Clouds",
+      "commitSHA": "fcc997c40d36c7bedf95a294cd2136b8c5127009",
+      "defaultBranchObserved": "master",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2019 Sebastian Lague",
+      "role": "finite volumetric density, edge erosion, light transport and 3D Worley generation",
+      "isWaterspoutImplementation": false,
+      "files": [
+        {
+          "repositoryPath": "Assets/Scripts/Clouds/CloudMaster.cs",
+          "localPath": "seblague-clouds/Assets/Scripts/Clouds/CloudMaster.cs",
+          "bytes": 6000,
+          "sha256": "c7ee76194fad405675d5c10f16f1f1147cc8f8bb3a2714c0731e54f816760b43",
+          "lineCount": 160,
+          "license": "MIT",
+          "licenseLocalPath": "seblague-clouds/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/CloudMaster.cs",
+          "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/CloudMaster.cs",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 160,
+            "executed": false
+          },
+          "anchors": [
+            {
+              "line": 68,
+              "symbol": "private void OnRenderImage",
+              "lineText": "private void OnRenderImage (RenderTexture src, RenderTexture dest) {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/CloudMaster.cs#L68"
+            },
+            {
+              "line": 138,
+              "symbol": "void SetDebugParams",
+              "lineText": "void SetDebugParams () {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/CloudMaster.cs#L138"
+            }
+          ],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "localPath": "seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "bytes": 4047,
+          "sha256": "97e7977062871eb28f63e26b835f46d979d5378299318dbdb621f1d41e7eb189",
+          "lineCount": 135,
+          "license": "MIT",
+          "licenseLocalPath": "seblague-clouds/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 135,
+            "executed": false
+          },
+          "anchors": [
+            {
+              "line": 67,
+              "symbol": "float worley(",
+              "lineText": "float worley(StructuredBuffer<float3> points, int numCells, float3 samplePos) {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute#L67"
+            },
+            {
+              "line": 98,
+              "symbol": "void CSWorley",
+              "lineText": "void CSWorley (uint3 id : SV_DispatchThreadID)",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute#L98"
+            },
+            {
+              "line": 127,
+              "symbol": "void CSNormalize",
+              "lineText": "void CSNormalize (uint3 id : SV_DispatchThreadID)",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute#L127"
+            }
+          ],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "localPath": "seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "bytes": 9054,
+          "sha256": "f1f113e9908407de68fe38e04675f6aa10cec999042de5a54fd3a03c6336ff71",
+          "lineCount": 231,
+          "license": "MIT",
+          "licenseLocalPath": "seblague-clouds/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 231,
+            "executed": false
+          },
+          "anchors": [
+            {
+              "line": 51,
+              "symbol": "public void UpdateNoise",
+              "lineText": "public void UpdateNoise () {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs#L51"
+            },
+            {
+              "line": 148,
+              "symbol": "void UpdateWorley",
+              "lineText": "void UpdateWorley (WorleyNoiseSettings settings) {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs#L148"
+            },
+            {
+              "line": 162,
+              "symbol": "void CreateWorleyPointsBuffer",
+              "lineText": "void CreateWorleyPointsBuffer (System.Random prng, int numCellsPerAxis, string bufferName) {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs#L162"
+            },
+            {
+              "line": 193,
+              "symbol": "void CreateTexture",
+              "lineText": "void CreateTexture (ref RenderTexture texture, int resolution, string name) {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs#L193"
+            }
+          ],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+          "localPath": "seblague-clouds/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+          "bytes": 55,
+          "sha256": "bbb38aeebb4402fd4d8504aa09565a1c03ccad3d58fc281a0843fc6200593212",
+          "lineCount": 3,
+          "license": "MIT",
+          "licenseLocalPath": "seblague-clouds/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+          "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 3,
+            "executed": false
+          },
+          "anchors": [
+            {
+              "line": 1,
+              "symbol": "#define DEBUG_MODE 1",
+              "lineText": "#define DEBUG_MODE 1",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc#L1"
+            }
+          ],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "localPath": "seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "bytes": 14147,
+          "sha256": "932543d8297e92b812ffaa602957eb167279642939664802ea30c9ab25621402",
+          "lineCount": 342,
+          "license": "MIT",
+          "licenseLocalPath": "seblague-clouds/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 342,
+            "executed": false
+          },
+          "anchors": [
+            {
+              "line": 121,
+              "symbol": "float2 rayBoxDst",
+              "lineText": "float2 rayBoxDst(float3 boundsMin, float3 boundsMax, float3 rayOrigin, float3 invRaydir) {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L121"
+            },
+            {
+              "line": 145,
+              "symbol": "float hg(",
+              "lineText": "float hg(float a, float g) {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L145"
+            },
+            {
+              "line": 150,
+              "symbol": "float phase(",
+              "lineText": "float phase(float a) {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L150"
+            },
+            {
+              "line": 165,
+              "symbol": "float sampleDensity",
+              "lineText": "float sampleDensity(float3 rayPos) {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L165"
+            },
+            {
+              "line": 218,
+              "symbol": "float lightmarch",
+              "lineText": "float lightmarch(float3 position) {",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L218"
+            },
+            {
+              "line": 264,
+              "symbol": "float4 frag",
+              "lineText": "float4 frag (v2f i) : SV_Target",
+              "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L264"
+            }
+          ],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "LICENSE",
+          "localPath": "seblague-clouds/LICENSE",
+          "bytes": 1072,
+          "sha256": "24f060a992cf2dd33a9b2045645ea70a67380b439a99f121841e84915370d4d7",
+          "lineCount": 21,
+          "license": "MIT",
+          "licenseLocalPath": "seblague-clouds/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/LICENSE",
+          "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/LICENSE",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 21,
+            "executed": false
+          },
+          "anchors": [],
+          "unmodifiedUpstreamBytes": true
+        },
+        {
+          "repositoryPath": "README.md",
+          "localPath": "seblague-clouds/README.md",
+          "bytes": 173,
+          "sha256": "01327ec8653078226852dec49fe5ffe7a76da2d1aea9b563df91122414d9df3a",
+          "lineCount": 7,
+          "license": "MIT",
+          "licenseLocalPath": "seblague-clouds/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/README.md",
+          "pinnedUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/README.md",
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 7,
+            "executed": false
+          },
+          "anchors": [],
+          "unmodifiedUpstreamBytes": true
+        }
+      ],
+      "pinnedUrl": "https://github.com/SebLague/Clouds/tree/fcc997c40d36c7bedf95a294cd2136b8c5127009",
+      "licensePath": "seblague-clouds/LICENSE"
+    }
+  ],
+  "findings": {
+    "localPath": "findings.md",
+    "bytes": 6961,
+    "sha256": "b3f730a0b971ddbe05e12960c1be0e363f639835f042da9383799c57627ec51b"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "动态模型材质适配"
+  short_description: "从效果描述制作可修改的渲染资源，提供 Forge 1.20.1 示例与分级验证"
+  default_prompt: "使用 $minecraft-animated-material-adapter 按我的描述制作效果，并验证实际实现与接入边界。"

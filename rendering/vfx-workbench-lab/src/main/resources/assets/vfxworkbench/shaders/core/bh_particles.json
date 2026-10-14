@@ -1,0 +1,550 @@
+{
+  "vertex": "vfxworkbench:bh_particles",
+  "fragment": "vfxworkbench:bh_particles",
+  "attributes": [
+    "Position",
+    "UV0"
+  ],
+  "samplers": [
+    {
+      "name": "RibbonNoise"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "uTime",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uCore",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.58
+      ]
+    },
+    {
+      "name": "uInner",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.94
+      ]
+    },
+    {
+      "name": "uOuter",
+      "type": "float",
+      "count": 1,
+      "values": [
+        2.9
+      ]
+    },
+    {
+      "name": "uThickness",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.105
+      ]
+    },
+    {
+      "name": "uTilt",
+      "type": "float",
+      "count": 1,
+      "values": [
+        -12
+      ]
+    },
+    {
+      "name": "uBend",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.1
+      ]
+    },
+    {
+      "name": "uDensity",
+      "type": "float",
+      "count": 1,
+      "values": [
+        6
+      ]
+    },
+    {
+      "name": "uSpeed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.55
+      ]
+    },
+    {
+      "name": "uSeed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        17
+      ]
+    },
+    {
+      "name": "uSteps",
+      "type": "int",
+      "count": 1,
+      "values": [
+        160
+      ]
+    },
+    {
+      "name": "ViewProjection",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "CenterRelative",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        0,
+        14
+      ]
+    },
+    {
+      "name": "CameraOriginRelative",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "WorldScale",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.6
+      ]
+    },
+    {
+      "name": "CameraRight",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "CameraUp",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "ParticleSpeed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1
+      ]
+    },
+    {
+      "name": "ParticleSize",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.022
+      ]
+    },
+    {
+      "name": "ParticleOuter",
+      "type": "float",
+      "count": 1,
+      "values": [
+        5.4
+      ]
+    },
+    {
+      "name": "ParticleBrightness",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.25
+      ]
+    },
+    {
+      "name": "ParticleDebug",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "ParticleCold",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1,
+        0.2,
+        0.03
+      ]
+    },
+    {
+      "name": "ParticleHot",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1,
+        0.9,
+        0.65
+      ]
+    },
+    {
+      "name": "uBeaming",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uDiskGradientPosition",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.46
+      ]
+    },
+    {
+      "name": "uCoreGradientStrength",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.495
+      ]
+    },
+    {
+      "name": "uBandDetail",
+      "type": "float",
+      "count": 1,
+      "values": [
+        12
+      ]
+    },
+    {
+      "name": "uDustScale",
+      "type": "float",
+      "count": 1,
+      "values": [
+        4
+      ]
+    },
+    {
+      "name": "uDustFill",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.375
+      ]
+    },
+    {
+      "name": "uFilament",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uSpiral",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.32
+      ]
+    },
+    {
+      "name": "uDiskMid",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.2581828529215958,
+        0.07421356838014963,
+        1
+      ]
+    },
+    {
+      "name": "uOrbitPhase",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uRadialPhase",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uClassicRadialPhase",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uShearLocal",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uShearParity",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uDustDriftA",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uDustDriftB",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uGranular",
+      "type": "int",
+      "count": 1,
+      "values": [
+        1
+      ]
+    },
+    {
+      "name": "uHaloRadius",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.7
+      ]
+    },
+    {
+      "name": "uHaloWidth",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.01
+      ]
+    },
+    {
+      "name": "uHaloSharpness",
+      "type": "float",
+      "count": 1,
+      "values": [
+        8
+      ]
+    },
+    {
+      "name": "uHaloGradientMix",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1
+      ]
+    },
+    {
+      "name": "uHaloDiskGradientMix",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1
+      ]
+    },
+    {
+      "name": "uHaloAuraGradientMix",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "JetStrength",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "JetLength",
+      "type": "float",
+      "count": 1,
+      "values": [
+        5.5
+      ]
+    },
+    {
+      "name": "JetWidth",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.24
+      ]
+    },
+    {
+      "name": "uCoreEdgeColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "uHaloGradientStart",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.006048833022857054,
+        0.0024282158683907,
+        0.0024282158683907
+      ]
+    },
+    {
+      "name": "uHaloGradientEnd",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "uHaloDiskInnerColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.184474994500441,
+        0.17464740365558504,
+        0.1559264637078274
+      ]
+    },
+    {
+      "name": "uHaloDiskOuterColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.3564001441459435,
+        0.10224173308810132,
+        0.7230551289219693
+      ]
+    },
+    {
+      "name": "uHaloAuraInnerColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.7912979403326302,
+        0.5711248294648731,
+        0.39157247774972326
+      ]
+    },
+    {
+      "name": "uHaloAuraOuterColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.33245153634617935,
+        0.38132601143253014,
+        0.5840784178911641
+      ]
+    },
+    {
+      "name": "uJetBaseColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.2581828529215958,
+        0.6866853124353135,
+        1.0
+      ]
+    },
+    {
+      "name": "uJetTipColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.6307571363461468,
+        0.5775804404296506,
+        0.9911020971138298
+      ]
+    },
+    {
+      "name": "uObjectMode",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uParticleClock",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    }
+  ]
+}

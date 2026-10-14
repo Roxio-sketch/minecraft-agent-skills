@@ -41,7 +41,7 @@ scratch 有独立深度附件，先复制主场景深度，兼容普通 depth �
 
 ## 同步工作台与接入 UI
 
-`gpu.js` 使用 WebGL2、RGBA8/MAX/ADD、逐节点颜色/宽度、相同径向曲线与 coverage 补偿。保色核心用真实 SRC_ALPHA/ONE_MINUS_SRC_ALPHA，先将 Canvas 场景参照作为纹理送进 WebGL，再合成光晕和核心，最后 source-over 显示完整场景；不能在结束时再次用 Canvas lighter 把保色结果加到背景上。Canvas2D 仅画场景参照与合成 WebGL 结果，不再用平均线宽、首尾线性 Canvas 渐变或经验增益模拟材质。工作台的 screen-space core miter 和简化相机不替代 Forge 实际 VP/遮挡；分形 JS/Java 随机序列分别确定，跨语言不承诺逐点同形。
+`gpu.js` 使用 WebGL2、RGBA8/MAX/ADD、逐节点颜色/宽度、相同径向曲线与 coverage 补偿。保色核心用真实 SRC_ALPHA/ONE_MINUS_SRC_ALPHA，先将 Canvas 场景参照作为纹理送进 WebGL，再合成光晕和核心，最后 source-over 显示完整场景；不能在结束时再次用 Canvas lighter 把保色结果加到背景上。Canvas2D 仅画场景参照与合成 WebGL 结果，不再用平均线宽、首尾线性 Canvas 渐变或经验增益模拟材质。工作台的 独立凸带与圆接点 和简化相机不替代 Forge 实际 VP/遮挡；分形 JS/Java 随机序列分别确定，跨语言不承诺逐点同形。
 
 接入其它参数 UI 时使用 schema 的完整范围，保持渐变底色可编辑；比例只在渐变启用时显示。颜色、增益、比例、目标层与显色方式的即时修改须保持 seed/当前时序，结构字段才需要重新生成缓存。自绘按钮与即时标记统一使用面板布局坐标；这属于宿主 UI，独立 skill 不复制整个 MOD 参数框架。
 
@@ -57,3 +57,8 @@ BoltGeometry 采用按层队列；先生成主干各处的一级分叉，再生�
 ## 2026-10-09 CPU 渲染优化
 
 每次 draw 捕获实际相机矩阵与 viewport，复用 `HaloGeometry.Projection` 的逆矩阵供各分叉核心/光晕使用；不可跨相机、视口或帧复用。每条路径的 `Palette` 预解析底色及渐变色，保持原通道舍入与基础色相乘。保留逐路径 MAX→ADD、核心/光晕顺序和全部几何精度。`PerformanceCheck` 检查颜色精确一致与投影快照；微基准仅表示材质 CPU 开销，不能当作 FPS 提升。
+
+
+## 2026-10-10 接点并集与白核心参考
+
+核心与光晕均使用独立凸带及圆接点，同一路径先 MAX 合并再合成。核心带和圆盘不可直接加法重复叠亮；vivid scratch 使用预乘 RGB 与 alpha，合成 ONE/ONE_MINUS_SRC_ALPHA。渐变仅作用光晕时保持原白核心加法增益。光晕沿用逐通道增益截断，不以峰值归一化压低其它通道。新增 assets/presets/white-core-magenta-cyan.json 参考配方保留用户的 .004 宽度、3.8/2.4 增益和紫青光晕；它是可选示例，不覆盖通用雷劫默认。

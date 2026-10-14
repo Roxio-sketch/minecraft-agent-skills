@@ -1,0 +1,12 @@
+{
+  "world": "COSMIC_LAB_1791214010839",
+  "minecraft": "1.20.1",
+  "forge": "47.4.22",
+  "gpu": "NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2",
+  "glVersion": "4.6.0 NVIDIA 617.14",
+  "glslVersion": "4.60 NVIDIA",
+  "casesCompleted": 22,
+  "directionCasesPassed": 8,
+  "animationCasesPassed": 3,
+  "richTranslationCasesPassed": 1
+}

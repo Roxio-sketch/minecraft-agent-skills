@@ -1,0 +1,4 @@
+interface:
+  display_name: "物品内三维场景窗口"
+  short_description: "为 Forge 1.20.1 自由设计物品内的三维场景、观察方式与窗口"
+  default_prompt: "使用 $minecraft-item-scene-window 为 Forge 1.20.1 制作一个可自由设计的物品内三维场景窗口。"

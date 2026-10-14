@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT; see THIRD_PARTY_NOTICES.md"
+[[mods]]
+modId="cosmicmaterial"
+version="0.4.0"
+displayName="Cosmic Material Lab"
+description="Opt-in Cosmic material for items, worn armor and shields, plus item outline."
+[[dependencies.cosmicmaterial]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,48)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.cosmicmaterial]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"

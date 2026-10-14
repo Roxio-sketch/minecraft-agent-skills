@@ -1,0 +1,60 @@
+{
+  "scope": "Independent runtime route override; explicit level-zero noise sampling is sole shader change in comparison",
+  "ok": true,
+  "cases": [
+    {
+      "case": "replay-diagnosis",
+      "sameUniforms": true,
+      "sameWork": true,
+      "changes": {
+        "second": {
+          "changedPixels": 1156,
+          "maxChannelDifference": 56
+        },
+        "reset": {
+          "changedPixels": 0,
+          "maxChannelDifference": 0
+        },
+        "reset-again": {
+          "changedPixels": 1156,
+          "maxChannelDifference": 56
+        },
+        "no-dither": {
+          "changedPixels": 0,
+          "maxChannelDifference": 0
+        },
+        "no-dither-reset": {
+          "changedPixels": 1156,
+          "maxChannelDifference": 56
+        }
+      }
+    },
+    {
+      "case": "replay-diagnosis-lod",
+      "sameUniforms": true,
+      "sameWork": true,
+      "changes": {
+        "second": {
+          "changedPixels": 0,
+          "maxChannelDifference": 0
+        },
+        "reset": {
+          "changedPixels": 0,
+          "maxChannelDifference": 0
+        },
+        "reset-again": {
+          "changedPixels": 0,
+          "maxChannelDifference": 0
+        },
+        "no-dither": {
+          "changedPixels": 0,
+          "maxChannelDifference": 0
+        },
+        "no-dither-reset": {
+          "changedPixels": 0,
+          "maxChannelDifference": 0
+        }
+      }
+    }
+  ]
+}

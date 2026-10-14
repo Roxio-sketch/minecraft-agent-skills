@@ -1,0 +1,22 @@
+{
+  "color": [
+    0.25,
+    0.65,
+    1
+  ],
+  "accent": [
+    1,
+    0.35,
+    0.12
+  ],
+  "rate": 32,
+  "lifetime": 2.5,
+  "capacity": 256,
+  "size": 0.06,
+  "speed": 1.6,
+  "drag": 0.3,
+  "gravity": -0.4,
+  "orbit": 1.4,
+  "seed": 42,
+  "motion": "orbit"
+}

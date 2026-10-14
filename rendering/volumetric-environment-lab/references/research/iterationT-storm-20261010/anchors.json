@@ -1,0 +1,110 @@
+[
+  {
+    "file": "shaders/Lib/IndividualFounctions/NUBIS.glsl",
+    "line": 31,
+    "text": "float coverage = mix(CLOUD_CLEAR_COVERY, CLOUD_RAIN_COVERY, wetness);",
+    "sha256": "feb6f751c6d75730f5a2548af5a77a412e87ed88264885a8f0bd213708d4e7eb"
+  },
+  {
+    "file": "shaders/Lib/IndividualFounctions/NUBIS.glsl",
+    "line": 53,
+    "text": "detailedDensity *= (0.21 - wetness * 0.11) * CLOUD_DETAILED_NOISE_STRENGTH;",
+    "sha256": "feb6f751c6d75730f5a2548af5a77a412e87ed88264885a8f0bd213708d4e7eb"
+  },
+  {
+    "file": "shaders/Lib/IndividualFounctions/NUBIS.glsl",
+    "line": 163,
+    "text": "float absorption = exp2(-cloudDensity.y * cloudDensityMul);",
+    "sha256": "feb6f751c6d75730f5a2548af5a77a412e87ed88264885a8f0bd213708d4e7eb"
+  },
+  {
+    "file": "shaders/Lib/IndividualFounctions/NUBIS.glsl",
+    "line": 88,
+    "text": "float directScattering = exp2(-lightingDensity * (cloudPos.w * 0.15 + 0.05)) * (hg + 0.02) * (1.0 - wetness * 0.8);",
+    "sha256": "feb6f751c6d75730f5a2548af5a77a412e87ed88264885a8f0bd213708d4e7eb"
+  },
+  {
+    "file": "shaders/Lib/IndividualFounctions/NUBIS.glsl",
+    "line": 143,
+    "text": "float cloudDensityMul = \t mix(CLOUD_CLEAR_DENSITY,     CLOUD_RAIN_DENSITY,     wetness);",
+    "sha256": "feb6f751c6d75730f5a2548af5a77a412e87ed88264885a8f0bd213708d4e7eb"
+  },
+  {
+    "file": "shaders/Lib/IndividualFounctions/NUBIS.glsl",
+    "line": 142,
+    "text": "float cloudScale = \t\t\t mix(CLOUD_CLEAR_SCALE,       CLOUD_RAIN_SCALE,       wetness);",
+    "sha256": "feb6f751c6d75730f5a2548af5a77a412e87ed88264885a8f0bd213708d4e7eb"
+  },
+  {
+    "file": "shaders/Lib/IndividualFounctions/NUBIS.glsl",
+    "line": 129,
+    "text": "float marchingSteps = 20.0 - saturate(fsqrt(abs(worldDir.y)) * 1.4 - 0.4) * 8.0;",
+    "sha256": "feb6f751c6d75730f5a2548af5a77a412e87ed88264885a8f0bd213708d4e7eb"
+  },
+  {
+    "file": "shaders/deferred3.fsh",
+    "line": 135,
+    "text": "vec2 cloudAltitude = vec2(mix(CLOUD_CLEAR_ALTITUDE, CLOUD_RAIN_ALTITUDE, wetness));",
+    "sha256": "a97f148f0c620d9c1354a19c0e8b66a746a7d6fc270f72c298c7d78a9f948bb6"
+  },
+  {
+    "file": "shaders/deferred3.fsh",
+    "line": 138,
+    "text": "float wind = 0.0005 * (frameTimeCounter * CLOUD_SPEED + 10.0 * FTC_OFFSET);",
+    "sha256": "a97f148f0c620d9c1354a19c0e8b66a746a7d6fc270f72c298c7d78a9f948bb6"
+  },
+  {
+    "file": "shaders/deferred3.fsh",
+    "line": 106,
+    "text": "if (depth == 1.0){",
+    "sha256": "a97f148f0c620d9c1354a19c0e8b66a746a7d6fc270f72c298c7d78a9f948bb6"
+  },
+  {
+    "file": "shaders/deferred3.fsh",
+    "line": 148,
+    "text": "if (depth == 1.0){",
+    "sha256": "a97f148f0c620d9c1354a19c0e8b66a746a7d6fc270f72c298c7d78a9f948bb6"
+  },
+  {
+    "file": "shaders/deferred3.fsh",
+    "line": 166,
+    "text": "NubisCumulus(finalComposite, worldDir, cloudAltitude, windDirection, camera, noise_1, cloudTransmittance);",
+    "sha256": "a97f148f0c620d9c1354a19c0e8b66a746a7d6fc270f72c298c7d78a9f948bb6"
+  },
+  {
+    "file": "shaders/composite.fsh",
+    "line": 48,
+    "text": "const float wetnessHalflife \t\t= 200.0; \t//[10.0 20.0 30.0 50.0 75.0 100.0 150.0 200.0 300.0 500.0]",
+    "sha256": "addc5c6008d985222fb5396fb360a950cbb2a27638d3c8b5f93bf7d465039702"
+  },
+  {
+    "file": "shaders/composite.fsh",
+    "line": 49,
+    "text": "const float drynessHalflife \t\t= 50.0; \t//[10.0 20.0 30.0 50.0 75.0 100.0 150.0 200.0 300.0 500.0]",
+    "sha256": "addc5c6008d985222fb5396fb360a950cbb2a27638d3c8b5f93bf7d465039702"
+  },
+  {
+    "file": "shaders/shaders.properties",
+    "line": 180,
+    "text": "texture.deferred.colortex4=texture/CloudNoise_128_128_128.bin TEXTURE_3D RGBA8 128 128 128 RGBA UNSIGNED_BYTE",
+    "sha256": "8c7e349e42cbb882c9b807b5a7b9cdb1c63a9336133ea0ab8c8c9432b46647f7"
+  },
+  {
+    "file": "shaders/shaders.properties",
+    "line": 181,
+    "text": "texture.deferred.colortex6=texture/CloudNoise2_32_32_32.bin TEXTURE_3D RGB8 32 32 32 RGB UNSIGNED_BYTE",
+    "sha256": "8c7e349e42cbb882c9b807b5a7b9cdb1c63a9336133ea0ab8c8c9432b46647f7"
+  },
+  {
+    "file": "shaders/Lib/IndividualFounctions/PlanarClouds.glsl",
+    "line": 124,
+    "text": "cloudTransmittance *= 1.0 - wetness;",
+    "sha256": "1dce8392509d8686c413fcbd22ecca9a9a112a598aa250774b6efe2ac44af992"
+  },
+  {
+    "file": "shaders/Lib/IndividualFounctions/PlanarClouds.glsl",
+    "line": 153,
+    "text": "color *= (1.0 - cloudTransmittance);",
+    "sha256": "1dce8392509d8686c413fcbd22ecca9a9a112a598aa250774b6efe2ac44af992"
+  }
+]

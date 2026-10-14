@@ -1,0 +1,377 @@
+{
+  "date": "2026-10-14",
+  "browser": "Microsoft Edge, headless",
+  "scope": "Page load, JavaScript exception and required resource smoke, requestAnimationFrame capped at three callbacks. This is not complete animation, pixel-quality, export/API, or game certification. Optional texture, favicon, reference video and initial recipe 404s are not required resources.",
+  "entries": [
+    {
+      "number": 1,
+      "name": "天空",
+      "url": "/index.html",
+      "title": "星空工坊 · 程序化天空工作台",
+      "canvas": 1,
+      "text": "✦\n星空工坊\nPROCEDURAL SKY STUDIO\n恢复默认\n导出配方 ↗\n01 / 创作\n调出你的天空\n188 个参数\n从一种天空开始\n39 个起点\n全部天空\n球形大气与新雨雪\n宇宙与黑洞\n日月与光学色环\n体积云与天气环境\n异界与剪影\n静谧银河\nMILKY WAY\n极地夜幕\nPOLAR NIGHT\n玫瑰星海\nROSE NEBULA\n深空群星\nDEEP",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 2,
+      "name": "体积云雾",
+      "url": "/index.html",
+      "title": "世界体积环境 · 参数工作台",
+      "canvas": 1,
+      "text": "WORLD VOLUME/2\n世界体积环境\n共享 GLSL · WebGL2\n打开渡劫黑云凝聚工作台 → 打开龙卷风 / 龙吸水工作台 →\n外部观察\n491 × 368 · 48/4 步 · 30 fps 上限\n世界坐标 · 解析地面与实体盒子深度 · 有限区域\n暂停\n时间\n秒\n设置时间\n回到 0 秒\n预览分辨率\n60%\n80%\n100%\n外部观察\n进入云雾",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 3,
+      "name": "闪电",
+      "url": "/index.html",
+      "title": "雷电研究工作台 · Forge 1.20.1",
+      "canvas": 1,
+      "text": "LIGHTNING / FORGE 1.20.1\n雷电研究工作台\n环绕电流 · 真实闪电 · 固定 tick · 配方单位与材质预览\nWebGL2 / 可导入导出 JSON\n棍状物 · 局部根部延长\n每道电弧在棍身上固定自己的根部，从自身一端延长，棍子不是统一发射端\n左键拖动旋转 · 滚轮缩放 · 预览模拟与 Forge CPU 内核共享字段\n固定种子触发\n",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 4,
+      "name": "黑洞",
+      "url": "/index.html",
+      "title": "黑洞材质工作台 · v3.2",
+      "canvas": 3,
+      "text": "黑洞材质工作台\nv3.2 · 2026.10.03\n\n拖动旋转视角，鼠标滚轮拉近或拉远。\n\n16 px\n32 px\n\n体积尘埃 · BlackHole 研究 · 256 步 · 时间 1.70 s · WebGL 2 预览\n\n播放恢复配方视角随机方案导出配方保存画面\n主配方\n体积尘埃 · BlackHole 研究\n层叠光带 · Unity 研究\n颗粒吸积 ·",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 5,
+      "name": "能量特效",
+      "url": "/index.html",
+      "title": "能量特效 · 编辑工作台",
+      "canvas": 1,
+      "text": "能量特效编辑工作台\n三维体积 · 卷吸细丝 · 共用渲染内核\n导入配方\n保存当前配方\n导出游戏配方\n接入游戏\n起点\n青焰 · 卷吸\n金焰 · 聚气\n紫霄 · 裂隙\n赤炎 · 冲击\n冰蓝 · 护罩\n幽气 · 消散\n天旋 · 涡柱\n白虹 · 能量束\n幽气 · 冰蓝发散\n玄霭 · 蓝色薄雾\n冥蓝 · 冷焰\n魂丝 · 漂散\n霜息 · 装备溢散\n幽纹 · 卷曲游丝\n幽",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 6,
+      "name": "水波",
+      "url": "/index.html",
+      "title": "水波材质工作台 · Forge 1.20.1",
+      "canvas": 1,
+      "text": "WATER / MATERIAL LAB\n水波材质工作台\n高度场传播 · 波纹干涉 · Forge 1.20.1\n本地运行 / 无需联网\n涟漪 · 高度与速度\n点击或拖动水面，注入波纹\n正负扰动可相互抵消 · 右键拖动旋转视角 · 滚轮缩放\n中心落水\n双源干涉\n开启雨滴\n暂停\n清空波纹\n恢复默认\n网格 65 × 65\n模拟 60 Hz\n帧率 —\n最大振幅 0",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 7,
+      "name": "拖尾与光束",
+      "url": "/index.html",
+      "title": "武器拖尾与能量束 · 创作工作台",
+      "canvas": 1,
+      "text": "TRAIL / BEAM · FORGE 1.20.1\n武器拖尾与能量束\n\n从动作轨迹、束形和材料层设计你的特效。\n\n导出完整设计\n起点样式\n霜蓝双刃\n棱彩双芯束\n金色螺旋\n熔火鞭痕\n紫电鞭束\n符文牵引\n分叉雷束\n暂停\n换种子\n保存预览图\nAmber braided plasma\n开口管束 · 1 层 · 螺旋\n拖动旋转视角 · 滚轮缩放 · 下方拖动时间\n",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 8,
+      "name": "奇幻材质",
+      "url": "/index.html",
+      "title": "奇幻材质工坊",
+      "canvas": 3,
+      "text": "奇幻材质工坊\nFANTASY & COSMIC / 17\n导入配方\n导出配方\n奇幻材质14\n内部星空03\n幻流云廊\n封印回廊\n流汞秘银\n苍玉灵脉\n金缮灵瓷\n虹蜃织锦\n熔流折界\n流光极幕\n雷晶裂隙\n琉璃泡海\n时轮机芯\n荧孢菌脉\n澄浪水镜\n电视雪花屏\n材质面\n剑刃\n封存球\n↺\nⅡ\n幻流云廊\n16 × 16\n32 × 32\n材质参数\n还原材质\n结构尺度\n1.00\n",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 9,
+      "name": "星空材质",
+      "url": "/index.html",
+      "title": "Cosmic · 内部星空制作台",
+      "canvas": 3,
+      "text": "COSMIC / 内部星空制作台\n把气氛拆成可制作的层：深色底场 · 星云 · 暗尘 · 远近星点\nWebGL 创作预览 · 新效果尚未接入 Forge\n深空星海\n紫蓝星云\n赤金裂隙\n展开内部材质\n示意剑形遮罩\n暂停动态\n复位视角\n拖动：移动虚拟观察位置 · 暂停后可单独观察视差\n16 px\n实际采样\n32 px\n实际采样\n内部是一条斜向展开的紫蓝星云，亮处",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 10,
+      "name": "描边",
+      "url": "/index.html",
+      "title": "物品描边 · Outline Studio",
+      "canvas": 4,
+      "text": "物品描边 Outline Studio\n这是二维配色与轮廓草图，不能代表 ArcaneVortex 的三维物品效果。Forge 1.20.1 实际描边请在游戏里运行 /cosmicmaterial outline；两套宽度单位不同。\n鎏金细边\n青红流彩\n星海边缘\n虹彩变色\n棋盘背景\n深色背景\n浅色背景\n16 × 16\n32 × 32\n原始轮廓\ns\n物品\n轮廓",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 11,
+      "name": "能量护盾",
+      "url": "/index.html",
+      "title": "能量护盾 · 三维材质工作台",
+      "canvas": 3,
+      "text": "SHIELD LAB / FORGE 1.20.1\n能量护盾材质工作台\n\n拖动旋转 · 滚轮缩放 · 点击表面命中\n图案、溶解和冲击波均附着于同一网格。\n\n效果预设\n流动球形护盾\n蜂窝弧面屏障\n全息穹顶\n濒危熔红护盾\n几何与空间\n护盾形状\n完整球形\n半球穹顶\n弧面矩形\n平面矩形\n弧面深度 / 球体纵深\n0.80\n网格细分\n56\n显示网格线\n显示空间参照\n颜色",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 12,
+      "name": "区域材质",
+      "url": "/workbench/index.html",
+      "title": "彩色原画线稿 · 渲染预设工作台",
+      "canvas": 1,
+      "text": "MINECRAFT · FORGE 1.20.1 · RENDER PRESET 04\n彩色原画线稿\n\n用多尺度结构线与深度边界提取画面，再用一条连续的屏幕空间渐变为线条着色。\n\n 实时预览 · 与 Forge 使用同一片元着色器\n导入场景截图\n输入：Minecraft 场景截图\n预览缺少真实深度；深度轮廓仅在游戏内生效\n画面留白由线条强度控制。色彩只赋予线",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 13,
+      "name": "碎晶折射",
+      "url": "/index.html",
+      "title": "碎晶折射 · 材质制作台",
+      "canvas": 3,
+      "text": "CRYSTAL REFRACTION / MATERIAL LAB\n碎晶折射与色散\n\n先看背景怎样折断，再调晶片、彩边和动态。\n\n原创薄层材质预览 · WebGL 2\n播放动画\n重置时间 / 视角\n查看原图\n导出配方\n导入配方\n保存 PNG\n\n拖动预览改变入射方向；晶片布局保持固定。仅展示薄层近似，不模拟厚晶体光路。\n\n16 × 16 实际渲染\n32 × 3",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 14,
+      "name": "玻璃边光",
+      "url": "/lab/index.html",
+      "title": "Glass Rim",
+      "canvas": 1,
+      "text": "玻璃边缘亮\n模型\n球体\n硬边方块\n平面\n权重\n美术边缘\nFresnel 近似\n投影\n透视\n正交\n底色\n边缘色\n边缘收窄\n边缘亮度\n中心透明度\n边缘覆盖\n折射率权重\n呼吸幅度\n呼吸频率\n非均匀缩放\n双面权重\n旋转\n暂停 重置 导出配方",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 15,
+      "name": "原画线稿",
+      "url": "/workbench/index.html",
+      "title": "彩色原画线稿 · 渲染预设工作台",
+      "canvas": 1,
+      "text": "MINECRAFT · FORGE 1.20.1 · RENDER PRESET 04\n彩色原画线稿\n\n用多尺度结构线与深度边界提取画面，再用一条连续的屏幕空间渐变为线条着色。\n\n 实时预览 · 与 Forge 使用同一片元着色器\n导入场景截图\n输入：Minecraft 场景截图\n预览缺少真实深度；深度轮廓仅在游戏内生效\n画面留白由线条强度控制。色彩只赋予线",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 16,
+      "name": "天空预设",
+      "url": "/sky-library.html",
+      "title": "天空研究库 · 星空工坊",
+      "canvas": 0,
+      "text": "✦\n星空工坊\nPROCEDURAL SKY STUDIO\n返回天空工作台 ↗\nBEYOND THE NIGHT / 天空材质研究\n从夜空，走向整个天空。\n\n寻找大气的颜色、云层的体积与光的轨迹。按效果浏览真实源码，查看算法、资源依赖与 Minecraft 接入方向。\n\n12类天空表现\n18个源码来源\n7个开放许可\nATMOSPHERE / 01\n风格示意 ·",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 17,
+      "name": "星空盾牌",
+      "url": "/index.html",
+      "title": "Cosmic Shield · 盾牌预设工作台",
+      "canvas": 1,
+      "text": "Cosmic Shield / 盾牌预设工作台\n\n比较完整宇宙盾面与保留原版金属边框的版本。预览用于选型；游戏截图和实际着色以 Forge 1.20.1 运行为准。\n\n实时预览\n金属边框 Cosmic / 青蓝星海\n配色 · 游戏内 PALETTE\n蓝紫星海\n熔金星海\n青蓝星海\n播放星点闪烁与缓慢流动\n保留原版金属边框\nCosmic 内部场\n原版纹章图案\n完",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 18,
+      "name": "渡劫黑云",
+      "url": "/tribulation/index.html",
+      "title": "世界体积环境 · 参数工作台",
+      "canvas": 1,
+      "text": "WORLD VOLUME/2\n渡劫 · 黑云凝聚\n黑云形成 · WebGL2\n贴近地面\n491 × 368 · 64/5 步 · 30 fps 上限\n世界坐标 · 解析地面与实体盒子深度 · 有限区域\n晴空 · 尚未形成\n重新播放形成过程\n形成时长 \n向心强度 \n旋转强度 \n劫云密度 \n密度值 \n形成时间线 \n\n默认24秒完成形成，之后保持雷云。拖动时间线暂",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 19,
+      "name": "龙卷风",
+      "url": "/vortex/index.html",
+      "title": "龙卷风、龙吸水与水龙卷 · 体积工作台",
+      "canvas": 1,
+      "text": "VORTEX CLOUD / 1\n龙吸水 · 水片与飞溅\n正在载入水体与云雾\n渡劫黑云\n体积环境\n外部观察\nWebGL2\n世界坐标 · 云雾体积 · 海面与吸水柱实际深度\n陆地龙卷风\n龙吸水\n水龙卷\n重新形成\n尚未形成\n形成时间线（秒）\n云体总密度\n暂停\n时间\n秒\n设置时间\n回到 0 秒\n预览分辨率\n60%\n80%\n100%\n外部观察\n进入云雾\n贴近地面\n水",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 20,
+      "name": "能量研究",
+      "url": "/index.html",
+      "title": "能量 VFX · 源码研究工作台",
+      "canvas": 0,
+      "text": "ENERGY / VFX RESEARCH\nForge 1.20.1 · 研究阶段\n从影视参考到可解释的实时技术\n让能量的每一层\n都有可研究的实现。\n\n把流动、卷吸、撕裂、体积与爆发拆开研究。沿着具体源码入口选择算法，建立适合修仙技能的长期研发路线。\n\n17\n源码研究档案\n12\n效果组成层\n05\n技术学习阶段\n效果拆解与路线\n源码资料库\n研究计划\n参考视频\n",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 21,
+      "name": "白洞研究",
+      "url": "/index.html",
+      "title": "白洞特效 · 研究资料台",
+      "canvas": 0,
+      "text": "MINECRAFT VFX RESEARCH · 2026.10.07\n白洞特效研究\n\n从成熟黑洞能力出发，建立清楚的向外运动、发光层次和可复用实现路线。资料台整理已读来源与方案，示意图只表示结构。\n\n研究阶段 · Forge 1.20.1\n完整研究报告 ↗\n·\n现有源码复用地图 ↗\n·\n物理依据 ↗\n·\n技术审读 ↗\n正质量白洞的外流行为，不等于反向引力。",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 22,
+      "name": "水龙卷研究",
+      "url": "/index.html",
+      "title": "水龙卷 · GitHub 源码研究",
+      "canvas": 0,
+      "text": "水龙卷 · GitHub 源码研究\n\n为“螺旋感弱、间隙太多”整理：漏斗骨架 → 连续水体 → 表面流动 → 飞溅。\n\n2026-10-11 · 8 个项目 · 99 个精选原始文件 · 612.5 KiB 源码与文档 · 固定提交 / SHA256 / 原始许可\n\n离线资料索引。源码作为文本展示；本页没有运行所收录的项目，也不是渲染效果工作台。\n\n研究路线",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 23,
+      "name": "异空间验证",
+      "url": "/index.html",
+      "title": "局部异空间：区域与深度验证",
+      "canvas": 1,
+      "text": "局部异空间 · 独立场景合成实验\n\n绿色格面是主场景，红色柱体在窗口之前；窗口内为独立星域与两层三角形。该实验验证 GPU 区域、深度与状态契约，不是 Minecraft 游戏画面。",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 24,
+      "name": "动态照明预览",
+      "url": "/index.html",
+      "title": "Rendercraft Workbench",
+      "canvas": 1,
+      "text": "lighting workbench\n\nOriginal independent preview. Minecraft integration requires its own verification.\n\nPause / playReset seed and time\n\n{\"mode\":\"lighting\",\"shaderPrograms\":[\"scene",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 25,
+      "name": "Bloom 预览",
+      "url": "/index.html",
+      "title": "Rendercraft Workbench",
+      "canvas": 1,
+      "text": "bloom workbench\n\nOriginal independent preview. Minecraft integration requires its own verification.\n\nPause / playReset seed and time\n\n{\"mode\":\"bloom\",\"shaderPrograms\":[\"scene\",\"blu",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 26,
+      "name": "粒子预览",
+      "url": "/index.html",
+      "title": "Rendercraft Workbench",
+      "canvas": 1,
+      "text": "particles workbench\n\nOriginal independent preview. Minecraft integration requires its own verification.\n\nPause / playReset seed and time\n",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 27,
+      "name": "动画适配预览",
+      "url": "/index.html",
+      "title": "Rendercraft Workbench",
+      "canvas": 1,
+      "text": "adapter workbench\n\nOriginal independent preview. Minecraft integration requires its own verification.\n\nPause / playReset seed and time\n",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 28,
+      "name": "御体流光",
+      "url": "/index.html",
+      "title": "灵力御体 · 流光工坊",
+      "canvas": 1,
+      "text": "装备附魔 · 外观设计\n灵力御体\n流光工坊\n导入配方\n导出配方\n流光调节\n恢复预设\n\n六缕淡蓝细光从装备四周交叉绕行，亮段带着柔尾向上游走；正面、侧面和背面都有护纹，光纹之间保留原甲片。\n\n主色\n辅色\n流光强度\n0.96\n流动速度\n0.90\n纹理密度\n1.00\n光纹宽度\n0.14\n流动倾角\n12°\n辅光比例\n0.65\n\n原贴图保持不变。光纹只附着在装备表面，",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 29,
+      "name": "异火缠绕",
+      "url": "/index.html",
+      "title": "异火缠绕 · 参数编辑台",
+      "canvas": 1,
+      "text": "异火缠绕 / 参数编辑台\n三维灵火 · 卷曲离体火丝 · 世界空间余烬\n暂停\n重播效果\n复位视角\n身体\n武器\n身体＋武器\n 走动／挥剑演示\n蓝白 · 飘逸灵火\n三维密度 / 代理人形深度遮挡\n5 FPS\n离体 1 / 512\n采样 512 步\n体积灵火 0 / 24\n顶点 9\n时间 0.2s\n拖动旋转 · 滚轮缩放\n观察分层\n 环绕主体\n 离体火舌\n 余烬\n",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 30,
+      "name": "炼丹炉特效",
+      "url": "/index.html",
+      "title": "炼丹炉 · 三维特效编辑台",
+      "canvas": 1,
+      "text": "炼丹炉 / 三维特效编辑台\n炉底异火 · 四窗药香与火星 · 炉内汇集 · 能量环流\n暂停\n重播\n复位视角\n时间\n观察精度\n全分辨率\n75% 分辨率\n50% 分辨率\n炼化 · 火候流转\n真实炉体 · 三维密度 · 场景深度遮挡\n30 FPS\n采样 400 步\n模型 — 面\n时间 0.2s\n固定 20 Hz\n预热\nPREHEAT\n炼化\nREFINE\n凝丹\nCO",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 31,
+      "name": "修仙特效参考库",
+      "url": "/index.html",
+      "title": "修仙特效 · 社区学习参考库",
+      "canvas": 0,
+      "text": "CULTIVATION / VFX REFERENCES\n社区学习 · 2026.10.13\n异火 · 剑阵 · 灵剑 · 炼丹炉\n修仙特效，先找到值得学的做法。\n\n从作者原作、制作拆解和公开代码中，学习形状、运动、材质和施法节奏。为下一轮可编辑游戏特效选择明确的参考。\n\n86\n去重来源\n48\n拓展方向\n04\n优先制作方向\n这是独立参考库，参数编辑台保持原样",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    },
+    {
+      "number": 32,
+      "name": "彩色流光工作台",
+      "url": "/index.html",
+      "title": "灵力御体 · 流光工坊",
+      "canvas": 1,
+      "text": "装备附魔 · 外观设计\n灵力御体\n流光工坊\n导入配方\n导出配方\n流光调节\n恢复预设\n\n六缕淡蓝细光从装备四周交叉绕行，亮段带着柔尾向上游走；正面、侧面和背面都有护纹，光纹之间保留原甲片。\n\n主色\n辅色\n流光强度\n0.96\n流动速度\n0.90\n纹理密度\n1.00\n光纹宽度\n0.14\n流动倾角\n12°\n辅光比例\n0.65\n\n原贴图保持不变。光纹只附着在装备表面，",
+      "errors": [],
+      "failed": [],
+      "ok": true
+    }
+  ],
+  "first_batch_observations": [
+    {
+      "number": 23,
+      "name": "异空间验证",
+      "issue": "First browser batch hit a 30-second load timeout; a fresh browser session passed the same page."
+    },
+    {
+      "number": 24,
+      "name": "动态照明预览",
+      "issue": "First browser batch hit a 30-second load timeout; a fresh browser session passed the same page."
+    },
+    {
+      "number": 25,
+      "name": "Bloom 预览",
+      "issue": "First browser batch hit a 30-second load timeout; a fresh browser session passed the same page."
+    }
+  ],
+  "ok": true
+}

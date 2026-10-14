@@ -1,0 +1,44 @@
+{
+  "initialMs": 65843,
+  "frames": [
+    {
+      "mode": 1,
+      "view": "outside",
+      "time": 20,
+      "renderCaptureMs": 734
+    },
+    {
+      "mode": 1,
+      "view": "liquid",
+      "time": 20,
+      "renderCaptureMs": 106
+    },
+    {
+      "mode": 1,
+      "view": "ground",
+      "time": 20,
+      "renderCaptureMs": 94
+    },
+    {
+      "mode": 2,
+      "view": "outside",
+      "time": 20,
+      "renderCaptureMs": 72
+    },
+    {
+      "mode": 2,
+      "view": "liquid",
+      "time": 20,
+      "renderCaptureMs": 93
+    },
+    {
+      "mode": 2,
+      "view": "ground",
+      "time": 20,
+      "renderCaptureMs": 83
+    }
+  ],
+  "scope": "Developer actual Edge headless full-scene renders at 869x542; init and render-plus-capture timings; hardware/browser dependent, not 30fps certification",
+  "previewSha256": "2d883af32459ee6e99a714b96814ce3ad8a35b71dde56ddd569d5a12eac106d1",
+  "originalTimingSha256": "87d9b0a3503fc5cb13e3798269c7df3eb9ce6b7322ff49bf9d0c2dbef3eb56c5"
+}

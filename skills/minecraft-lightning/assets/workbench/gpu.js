@@ -51,18 +51,12 @@ const LightningMaterial=(()=>{
     tangents.push(t);normals.push([-t[1],t[0]]);
    }
    const radii=run.map(n=>{const native=n.w*scale*n.p[3],rendered=Math.max(min,native);return {native,rendered,coverage:native/rendered};});
-   let joins=null;
-   if(!halo)joins=run.map((n,i)=>{
-    const prev=normals[Math.max(0,i-1)],next=normals[Math.min(i,normals.length-1)],sum=[prev[0]+next[0],prev[1]+next[1]],length=Math.hypot(...sum);
-    const direction=length>1e-6?sum.map(v=>v/length):next,den=Math.abs(direction[0]*next[0]+direction[1]*next[1]),miter=Math.min(2,1/Math.max(.5,den));
-    return direction.map(v=>v*miter*radii[i].rendered);
-   });
    for(let i=0;i+1<run.length;i++){
-    const a=run[i],b=run[i+1],sa=halo?normals[i].map(v=>v*radii[i].rendered):joins[i],sb=halo?normals[i].map(v=>v*radii[i+1].rendered):joins[i+1];
+    const a=run[i],b=run[i+1],sa=normals[i].map(v=>v*radii[i].rendered),sb=normals[i].map(v=>v*radii[i+1].rendered);
     const add=(p,s,k)=>[p[0]+s[0]*k,p[1]+s[1]*k];
     quad([add(a.p,sa,1),add(a.p,sa,-1),add(b.p,sb,-1),add(b.p,sb,1)],a,b,radii[i].coverage,radii[i+1].coverage);
    }
-   if(halo)for(let i=1;i+1<run.length;i++){
+   for(let i=1;i+1<run.length;i++){
     const a=tangents[i-1],b=tangents[i],turn=a[0]*b[1]-a[1]*b[0],forward=a[0]*b[0]+a[1]*b[1];
     if(forward>0&&Math.abs(turn)<1e-7)continue;
     const n=run[i],p=n.p,rad=radii[i].rendered,cov=radii[i].coverage**2;
@@ -88,11 +82,11 @@ class LightningGpuPreview {
    'void main(){gl_Position=vec4(Position.x/Size.x*2.-1.,1.-Position.y/Size.y*2.,0,1);color=Color;uv=UV;coverage=Coverage;roundJoint=Round;}']),
   lines(['#version 300 es',
    'precision highp float;in vec4 color;in vec2 uv;in float coverage;flat in float roundJoint;uniform float Gain;uniform float Halo;uniform float VividCore;out vec4 outColor;',
-   'void main(){float d=roundJoint>.5?length(uv):abs(uv.y*2.-1.);if(d>=1.)discard;float profile=Halo>.5?max(0.,exp(-5.*d*d)-exp(-5.)):1.-smoothstep(.30,.95,d);float a=color.a*coverage*profile;if(Halo<.5&&VividCore>.5){float top=max(color.r,max(color.g,color.b));outColor=vec4(top>0.?color.rgb/top:vec3(0.),clamp(a*Gain*top,0.,1.));}else{vec3 e=(Halo>.5?clamp(color.rgb*Gain,0.,1.):color.rgb*Gain)*a;outColor=vec4(e,0);}}']));
+   'void main(){float d=roundJoint>.5?length(uv):abs(uv.y*2.-1.);if(d>=1.)discard;float profile=Halo>.5?max(0.,exp(-8.*d*d)-exp(-8.)):1.-smoothstep(.15,.75,d);float a=color.a*coverage*profile;if(Halo<.5&&VividCore>.5){float top=max(color.r,max(color.g,color.b));float opacity=clamp(a*Gain*top,0.,1.);outColor=vec4(top>0.?color.rgb/top*opacity:vec3(0.),opacity);}else{vec3 e=(Halo>.5?clamp(color.rgb*Gain,0.,1.):color.rgb*Gain)*a;outColor=vec4(e,0);}}']));
   this.copy=program(lines(['#version 300 es',
    'out vec2 uv;void main(){vec2 p=vec2(gl_VertexID==1?3.:-1.,gl_VertexID==2?3.:-1.);gl_Position=vec4(p,0,1);uv=p*.5+.5;}']),
   lines(['#version 300 es',
-   'precision highp float;in vec2 uv;uniform sampler2D Image;uniform float Scene;out vec4 outColor;void main(){outColor=vec4(texture(Image,uv).rgb,Scene);}']));
+   'precision highp float;in vec2 uv;uniform sampler2D Image;uniform float Scene;out vec4 outColor;void main(){outColor=Scene<0.?texture(Image,uv):vec4(texture(Image,uv).rgb,Scene);}']));
   this.buffer=gl.createBuffer();this.vao=gl.createVertexArray();gl.bindVertexArray(this.vao);gl.bindBuffer(gl.ARRAY_BUFFER,this.buffer);
   for(const [location,count,offset] of [[0,2,0],[1,4,2],[2,2,6],[3,1,8],[4,1,9]]){gl.enableVertexAttribArray(location);gl.vertexAttribPointer(location,count,gl.FLOAT,false,40,offset*4);}
   this.texture=gl.createTexture();this.sceneTexture=gl.createTexture();this.fbo=gl.createFramebuffer();
@@ -131,23 +125,19 @@ class LightningGpuPreview {
  }
  draw(segments,r,project){
   const gl=this.gl,groups=LightningMaterial.paths(segments,project);
-  gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE);
-  for(const runs of groups){
-   if(r.glowGain>0){
-    const mesh=LightningMaterial.mesh(runs,r,true),e=mesh.extent,w=this.canvas.width,h=this.canvas.height;
-    const x=Math.max(0,Math.floor(e[0]-1)),y=Math.max(0,Math.floor(h-e[3]-1)),right=Math.min(w,Math.ceil(e[2]+1)),top=Math.min(h,Math.ceil(h-e[1]+1));
-    if(right>x&&top>y){
-     gl.bindFramebuffer(gl.FRAMEBUFFER,this.fbo);gl.enable(gl.SCISSOR_TEST);gl.scissor(x,y,right-x,top-y);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);
-     gl.blendEquation(gl.MAX);this.upload(mesh,r,true);
-     gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.blendEquation(gl.FUNC_ADD);gl.useProgram(this.copy);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,this.texture);
-     gl.blendFunc(gl.ONE,gl.ONE);gl.uniform1i(gl.getUniformLocation(this.copy,'Image'),0);gl.uniform1f(gl.getUniformLocation(this.copy,'Scene'),0);gl.drawArrays(gl.TRIANGLES,0,3);gl.disable(gl.SCISSOR_TEST);
-    }
-   }
-  }
-  gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.blendEquation(gl.FUNC_ADD);
-  gl.blendFuncSeparate(LightningMaterial.vividCore(r)?gl.SRC_ALPHA:gl.ONE,LightningMaterial.vividCore(r)?gl.ONE_MINUS_SRC_ALPHA:gl.ONE,gl.ZERO,gl.ONE);
-  for(const runs of groups){
-   this.upload(LightningMaterial.mesh(runs,r,false),r,false);this.stats.paths++;
+  gl.enable(gl.BLEND);
+  // Union segment/joint overlaps before compositing either material.
+  for(const halo of [true,false])for(const runs of groups){
+   if((halo?r.glowGain:r.coreGain)<=0)continue;
+   const mesh=LightningMaterial.mesh(runs,r,halo),e=mesh.extent,w=this.canvas.width,h=this.canvas.height;
+   const x=Math.max(0,Math.floor(e[0]-1)),y=Math.max(0,Math.floor(h-e[3]-1)),right=Math.min(w,Math.ceil(e[2]+1)),top=Math.min(h,Math.ceil(h-e[1]+1));
+   if(right<=x||top<=y)continue;
+   gl.bindFramebuffer(gl.FRAMEBUFFER,this.fbo);gl.enable(gl.SCISSOR_TEST);gl.scissor(x,y,right-x,top-y);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);
+   gl.blendFunc(gl.ONE,gl.ONE);gl.blendEquation(gl.MAX);this.upload(mesh,r,halo);
+   gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.blendEquation(gl.FUNC_ADD);gl.useProgram(this.copy);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,this.texture);
+   gl.blendFuncSeparate(gl.ONE,!halo&&LightningMaterial.vividCore(r)?gl.ONE_MINUS_SRC_ALPHA:gl.ONE,gl.ZERO,gl.ONE);
+   gl.uniform1i(gl.getUniformLocation(this.copy,'Image'),0);gl.uniform1f(gl.getUniformLocation(this.copy,'Scene'),-1);gl.drawArrays(gl.TRIANGLES,0,3);gl.disable(gl.SCISSOR_TEST);
+   if(!halo)this.stats.paths++;
   }
  }
  finish(ctx){

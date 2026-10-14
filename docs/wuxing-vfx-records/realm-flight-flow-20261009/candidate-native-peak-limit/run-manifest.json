@@ -1,0 +1,12 @@
+{
+  "environment": "native",
+  "label": "candidate-native-peak-limit",
+  "savedAtUTC": "2026-10-09T15:40:38.731801+00:00",
+  "bloomDisabledForCapture": false,
+  "sourceFiles": 580,
+  "fixtureFiles": 3,
+  "actualImages": 269,
+  "resultSHA256": "9f564ec3c0ed0b54cfb95b83ef4c56d2bfde006bef854969a908797efe5b51e9",
+  "result": "PASS",
+  "scope": "Actual production renderer/state evidence. Visual quality requires inspection."
+}

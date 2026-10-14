@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "date": "2026-09-29",
+  "minecraft": "1.20.1",
+  "forge": "47.4.10",
+  "java": 17,
+  "gradle": "8.8",
+  "forgegradle": "6.0.54",
+  "source_files_identical": true,
+  "source_file_count": 17,
+  "source_differences": [],
+  "jar_payloads_identical": true,
+  "jar_entries": 12,
+  "jar_differences": [],
+  "original_tested_jar_sha256": "bd6f5383323d0d94a11219f0d455e57c639def3e8f21e5343d5e03bb837fe0c7",
+  "fresh_jar_sha256": "96d1616e00871e551d5671242375c3bf3f079e152afee68cecf887a20a58f5a8",
+  "scope": "Fresh scaffold offline Gradle build and all uncompressed JAR file-entry byte comparison; not a new game run",
+  "warnings": "Three deprecated Forge/Minecraft API warnings; build succeeds in the pinned version"
+}

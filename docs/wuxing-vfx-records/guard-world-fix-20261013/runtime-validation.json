@@ -1,0 +1,119 @@
+{
+  "test": "spirit-guard-world-render-compatibility",
+  "source": "E:\\五行仙途\\reports\\guard-world-fix-20261013\\compatible-final\\cloud-glyph-client",
+  "runtime": {
+    "minecraft": "1.20.1",
+    "forge": "47.4.10",
+    "embeddium": "0.3.31",
+    "oculus": "1.8.0",
+    "external_shader_pack_enabled": false
+  },
+  "capture_count": 39,
+  "checks": {
+    "39_captures": true,
+    "no_fixture_failures": true,
+    "no_gl_errors": true,
+    "resource_reload_replaced_shader": true,
+    "normal_f5_world_cloud_visible": true,
+    "inventory_cloud_visible": true,
+    "fully_buffered_world_draw": true,
+    "gui_immediate_draw": true,
+    "wall_hides_cloud": true,
+    "writing_is_dynamic": true,
+    "movement_does_not_accumulate_draws": true,
+    "no_blue_residual_outside_equipment": true
+  },
+  "passed": true,
+  "world_pair": {
+    "on": "normal-f5-cloud.png",
+    "off": "normal-f5-visual-off.png",
+    "rectangle": [
+      470,
+      340,
+      810,
+      900
+    ],
+    "on_blue_pixels": 5764,
+    "off_blue_pixels": 0,
+    "changed_pixels_above_10": 189718,
+    "mean_channel_difference": 103.45016281512605
+  },
+  "gui_pair": {
+    "on": "inventory-cloud.png",
+    "off": "inventory-visual-off.png",
+    "rectangle": [
+      490,
+      245,
+      645,
+      490
+    ],
+    "on_blue_pixels": 354,
+    "off_blue_pixels": 0,
+    "changed_pixels_above_10": 4760,
+    "mean_channel_difference": 2.904191353960939
+  },
+  "wall_pair": {
+    "on": "wall-occlusion-cloud.png",
+    "off": "wall-occlusion-off.png",
+    "rectangle": [
+      0,
+      0,
+      1280,
+      790
+    ],
+    "on_blue_pixels": 0,
+    "off_blue_pixels": 0,
+    "changed_pixels_above_10": 1542,
+    "mean_channel_difference": 0.044353573312236286
+  },
+  "dynamic": {
+    "blue_union_pixels": 3900,
+    "changed_blue_pixels": 3872
+  },
+  "movement": [
+    {
+      "name": "movement-before.png",
+      "player_position": "(0.5, 121.0, 0.5)",
+      "world_draws": 1,
+      "captured_vertices": 240,
+      "blue_pixels": 777,
+      "blue_pixels_outside_player_rectangle": 0
+    },
+    {
+      "name": "movement-during.png",
+      "player_position": "(1.5424309281337472, 121.0, 0.5)",
+      "world_draws": 1,
+      "captured_vertices": 240,
+      "blue_pixels": 678,
+      "blue_pixels_outside_player_rectangle": 0
+    },
+    {
+      "name": "movement-stop-2.png",
+      "player_position": "(2.1500924396580845, 121.0, 0.5)",
+      "world_draws": 1,
+      "captured_vertices": 240,
+      "blue_pixels": 720,
+      "blue_pixels_outside_player_rectangle": 0
+    },
+    {
+      "name": "movement-stop-4.png",
+      "player_position": "(2.203983163388503, 121.0, 0.5)",
+      "world_draws": 1,
+      "captured_vertices": 240,
+      "blue_pixels": 899,
+      "blue_pixels_outside_player_rectangle": 0
+    },
+    {
+      "name": "movement-stop-12.png",
+      "player_position": "(2.2231468103731467, 121.0, 0.5)",
+      "world_draws": 1,
+      "captured_vertices": 240,
+      "blue_pixels": 2500,
+      "blue_pixels_outside_player_rectangle": 0
+    }
+  ],
+  "limits": [
+    "Visual residual check is limited to the captured front-camera movement sequence.",
+    "External shader-pack rendering is not asserted; Oculus is installed with shader packs disabled."
+  ]
+}

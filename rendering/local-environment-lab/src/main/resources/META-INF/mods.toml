@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="localmaterial"
+version="0.3.0"
+displayName="Local Environment Material Lab"
+description="Local environment material lab with optional translucent injection and whole-scene illustration preset. Renderer adapters are explicitly gated."
+[[dependencies.localmaterial]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,48)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.localmaterial]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"

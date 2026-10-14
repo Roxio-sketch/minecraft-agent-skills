@@ -1,0 +1,151 @@
+{
+  "checkedOn": "2026-10-07",
+  "scope": "local static reading and prior evidence",
+  "sources": [
+    {
+      "id": "local-blackhole",
+      "title": "现有黑洞世界渲染器与工作台",
+      "category": "现有工程",
+      "priority": "P0",
+      "tags": [
+        "核心",
+        "环盘",
+        "喷流",
+        "透镜",
+        "粒子",
+        "Forge"
+      ],
+      "summary": "复用固定世界中心、光学眼点、五种盘、三层光晕、双极喷流、360度环境透镜及整模型玩家策略。",
+      "useFor": "白洞的世界宿主与环盘外流首版；新增外流消费者，旧黑洞保持默认行为。",
+      "limits": "白核可染色但未实现白洞生命周期；喷流没有轴向输运；网页HDR Bloom未接入世界；新喷雾遮挡需单独设计。",
+      "license": "本项目源码与自有skill；复用时按各资源许可核对",
+      "localPath": "E:\\着色器渲染\\vfx-workbench-lab\\src\\main\\resources\\assets\\vfxworkbench\\shaders\\core\\bh_world.fsh",
+      "files": [
+        "E:\\着色器渲染\\vfx-workbench-lab\\src\\main\\java\\dev\\vfxworkbench\\effects\\blackhole\\BlackHoleWorld.java",
+        "E:\\着色器渲染\\vfx-workbench-lab\\src\\main\\resources\\assets\\vfxworkbench\\shaders\\core\\bh_particles.vsh"
+      ],
+      "verificationStatus": "已审读实际消费者，本轮未运行白洞",
+      "readScope": "核心、盘、halo、jet、sprite轨迹、world lens及状态保存；详见existing-capabilities.md",
+      "checkedOn": "2026-10-07",
+      "fileHashes": {
+        "E:\\着色器渲染\\vfx-workbench-lab\\src\\main\\resources\\assets\\vfxworkbench\\shaders\\core\\bh_world.fsh": "ec36079323fbcd2ae4e2e1efb61e97c4b30c9a430e5a31dee6ec0e7794fdafdf",
+        "E:\\着色器渲染\\vfx-workbench-lab\\src\\main\\java\\dev\\vfxworkbench\\effects\\blackhole\\BlackHoleWorld.java": "5eb9a2454108dbeb2353a4b7a707d04c4b8e06a0de51d344bdd2ab8979445fef",
+        "E:\\着色器渲染\\vfx-workbench-lab\\src\\main\\resources\\assets\\vfxworkbench\\shaders\\core\\bh_particles.vsh": "7e7b0c20cd340d4ea42095b07bd5756b8e4c4032858949dab61e5002579a86a1"
+      }
+    },
+    {
+      "id": "local-energy",
+      "title": "已有三维能量与烟纱体积核",
+      "category": "现有工程",
+      "priority": "P1",
+      "tags": [
+        "体积",
+        "外喷烟纱",
+        "卷动",
+        "爆发",
+        "HDR"
+      ],
+      "summary": "有限包围域、局部密度/细丝、透射率积分、分离emission与局部Bloom；可作为白洞外围稀薄喷雾。",
+      "useFor": "后续双极喷发的外鞘、蓄能尾雾与爆发壳；先提取必要层。",
+      "limits": "最多32烟包的既有预算不等于白洞预算；依附装备/玩家的挂点要改为固定天体源，不能整套搬入首版。",
+      "license": "MIT；psrdnoise等第三方文件保留各自声明",
+      "localPath": "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-energy-vfx\\assets\\lab\\volume.glsl",
+      "files": [
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-energy-vfx\\assets\\lab\\field.glsl",
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-energy-vfx\\LICENSE"
+      ],
+      "verificationStatus": "已审读，本轮未适配",
+      "readScope": "volume.glsl的有限域/场景深度截断、分离光辐射与消光积分；field.glsl入口由本地审读代理核对",
+      "checkedOn": "2026-10-07",
+      "fileHashes": {
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-energy-vfx\\assets\\lab\\volume.glsl": "54d2d393484a11c2b7345bfbf4168e1c0f44fc46cc6457f8d8e9fa1b6105572f",
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-energy-vfx\\assets\\lab\\field.glsl": "948ad2dd55efa447a4744b448b978867e47ecd3b9ae167050918b3dc82ec1398",
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-energy-vfx\\LICENSE": "bd52df6bc0a358e6d05407db00f52ab61144919b79c52c2a4ab592b960514276"
+      }
+    },
+    {
+      "id": "local-particles",
+      "title": "固定tick程序粒子与burst生命周期",
+      "category": "现有工程",
+      "priority": "P0",
+      "tags": [
+        "外流",
+        "粒子",
+        "生命周期",
+        "爆发",
+        "容量"
+      ],
+      "summary": "0.05秒固定步、birth累积器、稳定seed、age/life、burst一次出生与容量拒绝计数。",
+      "useFor": "内侧喷口发射、球面爆发与出域渐隐的状态管理。",
+      "limits": "现有orbit/burst/fountain/attract并未接到黑洞；持续外流应新增发射面和速度场，不只倒放attract。",
+      "license": "MIT",
+      "localPath": "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-procedural-particles\\assets\\forge-1.20.1\\src\\main\\java\\dev\\rendercraft\\particlelab\\ParticleEngine.java",
+      "files": [
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-procedural-particles\\assets\\forge-1.20.1\\LICENSE"
+      ],
+      "verificationStatus": "已审读实际模拟核，本轮未接入",
+      "readScope": "ParticleEngine.Config/spawn/tick/clear及0.05秒固定步",
+      "checkedOn": "2026-10-07",
+      "fileHashes": {
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-procedural-particles\\assets\\forge-1.20.1\\src\\main\\java\\dev\\rendercraft\\particlelab\\ParticleEngine.java": "6b1a269caa96b94bd4eda0b664427171fd2c48e12eda018cf665a467ddc36d05",
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-procedural-particles\\assets\\forge-1.20.1\\LICENSE": "d80a889f1d4f049d00a87ebe813654d32caa89a5323781e56c14af552dfcbcc2"
+      }
+    },
+    {
+      "id": "local-bloom",
+      "title": "选择性发光缓冲与分离模糊示例",
+      "category": "现有工程",
+      "priority": "P1",
+      "tags": [
+        "Bloom",
+        "发光缓冲",
+        "深度",
+        "资源恢复"
+      ],
+      "summary": "只为指定发光对象写emission，复制深度后测试，再两向模糊和合成。",
+      "useFor": "白洞自己的核心/盘/喷流发光通道，不提取整场景亮像素。",
+      "limits": "示例只画marker且使用普通TextureTarget；不是现成HDR白洞后处理。AFTER_ENTITIES与黑洞AFTER_LEVEL不同，必须重定合成阶段。",
+      "license": "MIT",
+      "localPath": "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-selective-bloom\\assets\\forge-1.20.1\\src\\main\\java\\dev\\rendercraft\\bloomlab\\Bloom.java",
+      "files": [
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-selective-bloom\\assets\\forge-1.20.1\\src\\main\\java\\dev\\rendercraft\\bloomlab\\Gpu.java",
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-selective-bloom\\assets\\forge-1.20.1\\LICENSE"
+      ],
+      "verificationStatus": "已审读实际pass，本轮未接入",
+      "readScope": "Bloom.render及Gpu.target/blit/full；示例没有证明任意白洞自动有Bloom",
+      "checkedOn": "2026-10-07",
+      "fileHashes": {
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-selective-bloom\\assets\\forge-1.20.1\\src\\main\\java\\dev\\rendercraft\\bloomlab\\Bloom.java": "f7758e4b1578e855a6193e744bc39ce127f275c127980ba7211218b49ceb4c01",
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-selective-bloom\\assets\\forge-1.20.1\\src\\main\\java\\dev\\rendercraft\\bloomlab\\Gpu.java": "7e4383a96779a576d7bee20e1259d5a782c90679bb7500374689befd301d45fd",
+        "C:\\Users\\MAINTAINER\\.codex\\skills\\minecraft-selective-bloom\\assets\\forge-1.20.1\\LICENSE": "d80a889f1d4f049d00a87ebe813654d32caa89a5323781e56c14af552dfcbcc2"
+      }
+    },
+    {
+      "id": "local-lightning-color",
+      "title": "主雷高增益保色修复与实测记录",
+      "category": "现有工程",
+      "priority": "P1",
+      "tags": [
+        "颜色",
+        "过曝",
+        "渐变",
+        "发光层"
+      ],
+      "summary": "核心和光晕分层控制、实际材质色卡，以及高亮主干被LDR加法洗白的修复。",
+      "useFor": "对白洞采用白核、带色边缘、盘面和喷流分别预览，避免增益掩盖外流结构。",
+      "limits": "alpha保色路径适用于窄核心，不自动等于HDR体积或科学辐射模型；白核应白，但周围结构不可整体截白。",
+      "license": "本项目自有实现；本轮只作设计参考",
+      "localPath": "E:\\着色器渲染\\vfx-workbench-lab\\src\\main\\resources\\assets\\vfxworkbench\\shaders\\core\\bolt.fsh",
+      "files": [
+        "E:\\着色器渲染\\vfx-workbench-lab\\evidence\\gradient-clarity-20261006\\gpu\\runtime.json"
+      ],
+      "verificationStatus": "既有MOD实测记录；本轮审读",
+      "readScope": "Vivid分支、分层实际材质色与2026-10-06高增益GPU对照",
+      "checkedOn": "2026-10-07",
+      "fileHashes": {
+        "E:\\着色器渲染\\vfx-workbench-lab\\src\\main\\resources\\assets\\vfxworkbench\\shaders\\core\\bolt.fsh": "994c95dd462794ba3e3124600d075ba7c43fb8f3f8361d55e6b56b6da83f6aad",
+        "E:\\着色器渲染\\vfx-workbench-lab\\evidence\\gradient-clarity-20261006\\gpu\\runtime.json": "4e4bb2f08c4e884c6637fd272bc1e1b9f9e7e7ece3ce347d5ec1a876413fa0c0"
+      }
+    }
+  ]
+}

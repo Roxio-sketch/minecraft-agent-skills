@@ -1,0 +1,41 @@
+{
+  "oldWater": {
+    "horizontalClientServer": [
+      0.0,
+      0.0
+    ],
+    "verticalClientServer": [
+      0.0,
+      0.0
+    ],
+    "result": "FAIL"
+  },
+  "fixedWater": {
+    "horizontalClientServer": [
+      25.370619026235886,
+      25.370619026235886
+    ],
+    "verticalClientServer": [
+      12.385303383716604,
+      12.385303383716604
+    ],
+    "result": "PASS"
+  },
+  "finalChecks": 51,
+  "telemetryPairs": 736,
+  "checkAllPass": true,
+  "client": {
+    "normalMinFlyingSpeed": 0.05,
+    "normalZeroSpeedCount": 0,
+    "controllerMaps": [
+      "CLIENT_STATES"
+    ]
+  },
+  "server": {
+    "normalMinFlyingSpeed": 0.05,
+    "normalZeroSpeedCount": 0,
+    "controllerMaps": [
+      "SERVER_STATES"
+    ]
+  }
+}

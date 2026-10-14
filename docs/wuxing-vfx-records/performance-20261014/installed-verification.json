@@ -1,0 +1,29 @@
+{
+  "source": "E:\\五行仙途\\deliverables\\performance-20261014\\wuxingxiantu-0.2-20261014-performance-ui-fixes.jar",
+  "installed": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2-20261014-performance-ui-fixes.jar",
+  "sha256": "AC6B0A6A662456F2C38212AAA9CCE31AE244C833FEE0097003F6DA4D5CFF3A50",
+  "protocol": 78,
+  "resourcesVerified": 2114,
+  "serverTests": 197,
+  "captures": {
+    "native": 11,
+    "solas": 11,
+    "ui": 14,
+    "anvil-native": 9,
+    "anvil-solas": 9,
+    "cloud-native": 14,
+    "cloud-solas": 14
+  },
+  "performance": {
+    "native": {
+      "cases": 9,
+      "medianSavedPercent": 40.31767850324551,
+      "maxFloatError": 1.5497207641601562e-06
+    },
+    "solas": {
+      "cases": 9,
+      "medianSavedPercent": 41.20232590082872,
+      "maxFloatError": 9.834766387939453e-07
+    }
+  }
+}

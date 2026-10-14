@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.coloredglint.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "coloredglint.refmap.json",
+  "client": ["ItemRendererMixin", "RenderBuffersMixin"],
+  "injectors": {"defaultRequire": 1}
+}

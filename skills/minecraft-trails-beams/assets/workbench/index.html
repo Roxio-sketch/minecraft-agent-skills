@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>武器拖尾与能量束 · 创作工作台</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead">
+    <div><span class="eyebrow">TRAIL / BEAM · FORGE 1.20.1</span><h1>武器拖尾与能量束</h1><p>从动作轨迹、束形和材料层设计你的特效。</p></div>
+    <div class="header-actions"><span class="pill">本地运行 · 无需联网</span><button id="exportProject" class="primary">导出完整设计</button></div>
+  </header>
+  <main>
+    <section class="workspace">
+      <div class="toolbar">
+        <label class="preset-label">起点样式 <select id="preset"></select></label>
+        <div class="toolbar-actions"><button id="play" title="播放或暂停">暂停</button><button id="newSeed" title="重新生成稳定形状">换种子</button><button id="exportImage">保存预览图</button></div>
+      </div>
+      <div class="stage" id="stage">
+        <canvas id="preview" aria-label="效果动态预览"></canvas>
+        <div class="stage-info"><strong id="effectTitle">—</strong><span id="effectMeta">—</span></div>
+        <div class="stage-hint">拖动旋转视角 · 滚轮缩放 · 下方拖动时间</div>
+      </div>
+      <div class="timeline">
+        <span id="timeValue">0.00 s</span><input id="time" type="range" min="0" max="4" step="0.01" value="0"><span>4.00 s</span>
+      </div>
+      <div class="metrics"><span>路径点 <b id="points">—</b></span><span>层数 <b id="layers">—</b></span><span>估算四边形 <b id="quads">—</b></span><span>状态 <b id="status">就绪</b></span></div>
+      <div class="below">
+        <div><h2>落地流程</h2><p>导出 <code>recipe.json</code> 和 <code>path.json</code>，放到实例的 <code>config/trailbeam/</code>。游戏内执行 <code>/trailbeam reload</code>，再用 <code>/trailbeam world</code> 看实机。现有项目可用技能中的 <code>author_effect.py --recipe … --path … --out …</code> 生成独立工程。</p></div>
+        <div><h2>预览范围</h2><p>画布快速展示几何、渐变、图案与时间节奏；它是 Canvas 近似图。Forge 的深度、透明排序、纹理过滤、相机投影和实际武器挂点仍需在游戏中确认。自定义纹理 ID 可导出，画布仅内建白色/编织示意。</p></div>
+      </div>
+    </section>
+    <aside class="inspector">
+      <div class="inspector-head"><span class="eyebrow">DESIGN CONTROLS</span><h2>设计参数</h2><p id="recipeName">—</p></div>
+      <div class="tabs" role="tablist"><button class="active" data-tab="form">形态</button><button data-tab="material">材质</button><button data-tab="sampling">采样</button><button data-tab="files">文件</button></div>
+      <div class="tab-body" id="controls"></div>
+    </aside>
+  </main>
+  <input id="fileInput" type="file" accept=".json,application/json" hidden>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="core.js"></script><script src="preset-data.js"></script><script src="app.js"></script>
+</body>
+</html>

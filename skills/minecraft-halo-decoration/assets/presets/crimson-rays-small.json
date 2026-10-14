@@ -1,0 +1,11 @@
+{
+  "schema": "halo-decoration-v1", "id": "crimson-rays-small", "size": 128,
+  "contexts": ["GUI"],
+  "layers": [
+    {"shape": "rays", "color": "#FF6578", "radius": 0.86,
+     "inner_radius": 0.32, "segments": 6, "duty": 0.48,
+     "scale": 1.45, "opacity": 0.95,
+     "motion": {"speed_deg_s": -7, "period_s": 2.8,
+                "scale_amplitude": 0.02, "alpha_amplitude": 0.06}}
+  ]
+}

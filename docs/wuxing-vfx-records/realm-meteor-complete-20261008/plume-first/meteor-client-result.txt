@@ -1,0 +1,1 @@
+PASS: isolated actual Forge rendering, eighteen diagnostic captures, turning frame sequence, Bloom OFF shape views, local vanilla preference with remote effects, realm2 inactive, first-person flight, stopped fade, stone-wall depth occlusion, resource reload and resize. External shader pack=none; forced route fixture=true.

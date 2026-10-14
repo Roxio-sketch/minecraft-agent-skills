@@ -1,0 +1,32 @@
+from pathlib import Path
+root=Path(__file__).resolve().parent
+pending={}
+def change(path,old,new):
+ p=root/path;s=pending.get(p,p.read_text(encoding='utf-8'));assert s.count(old)==1,(path,old);pending[p]=s.replace(old,new)
+base='forge/src/main/java/dev/energyvfx/'
+change(base+'AuraEmitter.java','private static final float[] uploadData','static final float[] uploadData')
+change(base+'OptimizedGpu.java','volumeProgram=Gpu.program(noise+field+world+','volumeProgram=Gpu.program((FlowCache.supported()?"#define ENERGY_FLOW_CACHE\\n":"")+noise+field+world+')
+change(base+'OptimizedGpu.java','for(int i=2;i<=6;i++)PerfTrace.mark(i);','for(int i=2;i<=6;i++)PerfTrace.mark(i);PerfTrace.mark(8);FlowCache.active=false;')
+change(base+'OptimizedGpu.java','// Fast full clears prevent','if(u[39]>.5)FlowCache.prepare(time,u[7],p);else{FlowCache.active=false;GL20.glUniform1i(loc(p,"smokeCacheEnabled"),0);}PerfTrace.mark(8);\n   // Fast full clears prevent')
+change(base+'OptimizedGpu.java','static void release(){freeTargets();','static void release(){FlowCache.release();freeTargets();')
+change(base+'Gpu.java','PerfTrace.mark(2);','PerfTrace.mark(2);PerfTrace.mark(8);')
+change(base+'Gpu.java','textures=new int[4],scissorBox','textures=new int[5],scissorBox')
+change(base+'Gpu.java','final boolean depth=','int cacheArray;\n  final boolean depth=')
+change(base+'Gpu.java','for(int i=0;i<4;i++){GlStateManager._activeTexture(GL13.GL_TEXTURE0+i);textures[i]=GL11.glGetInteger(GL11.GL_TEXTURE_BINDING_2D);}','for(int i=0;i<5;i++){GlStateManager._activeTexture(GL13.GL_TEXTURE0+i);textures[i]=GL11.glGetInteger(GL11.GL_TEXTURE_BINDING_2D);if(i==4)cacheArray=GL11.glGetInteger(GL30.GL_TEXTURE_BINDING_2D_ARRAY);}')
+change(base+'Gpu.java','for(int i=0;i<4;i++){GlStateManager._activeTexture(GL13.GL_TEXTURE0+i);GlStateManager._bindTexture(textures[i]);}','for(int i=0;i<5;i++){GlStateManager._activeTexture(GL13.GL_TEXTURE0+i);GlStateManager._bindTexture(textures[i]);if(i==4)GL11.glBindTexture(GL30.GL_TEXTURE_2D_ARRAY,cacheArray);}')
+change(base+'EnergyVfx.java','PerformanceQa.ENABLED&&!PerformanceQa.optimized','PerformanceQa.ENABLED&&!PerformanceQa.optimized&&!PerformanceQa.FLOW')
+change(base+'PerfTrace.java','RING=24,MARKS=8','RING=24,MARKS=9')
+change(base+'PerfTrace.java','add(label,"volumeGpuMs",(t[3]-t[2])/1e6);','add(label,"flowCacheGpuMs",(t[8]-t[2])/1e6);add(label,"volumeWithCacheGpuMs",(t[3]-t[2])/1e6);add(label,"volumeGpuMs",(t[3]-t[8])/1e6);')
+change(base+'PerfTrace.java','for(int j=1;j<=6;j++)if(!marked[j])','if(!marked[8])GL33.glQueryCounter(queries[slot][8],GL33.GL_TIMESTAMP);for(int j=1;j<=6;j++)if(!marked[j])')
+change(base+'PerformanceQa.java','static final boolean QUALITY_ONLY=','static final boolean FLOW=Boolean.getBoolean("energyvfx.flowQa"),FIRST_PERSON=Boolean.getBoolean("energyvfx.firstPersonQa");\n static final boolean QUALITY_ONLY=')
+change(base+'PerformanceQa.java','.resolve("performance");','.resolve(FLOW?(FIRST_PERSON?"flow-first-person-":"flow-front-")+System.getProperty("energyvfx.qa.width","960"):"performance");')
+change(base+'PerformanceQa.java','setCameraType(CameraType.THIRD_PERSON_FRONT)','setCameraType(FIRST_PERSON?CameraType.FIRST_PERSON:CameraType.THIRD_PERSON_FRONT)')
+change(base+'PerformanceQa.java','if(frames==100)','if(frames==(FLOW?60:100))')
+change(base+'PerformanceQa.java','if(frames<360)','if(frames<(FLOW?200:360))')
+change(base+'PerformanceQa.java','PerfTrace.count(label)<220','PerfTrace.count(label)<(FLOW?120:220)')
+change(base+'PerformanceQa.java','phase>=(COMPARE?CASES.length:2)','phase>=(FLOW?5:COMPARE?CASES.length:2)')
+change(base+'PerformanceQa.java','report.addProperty("packets",','report.addProperty("flowCacheTest",FLOW);report.addProperty("firstPerson",FIRST_PERSON);report.addProperty("cacheSupported",FlowCache.supported());report.addProperty("warmupFrames",FLOW?60:100);report.addProperty("measurementFrames",FLOW?140:260);report.addProperty("packets",')
+change('prepare_forge.py',"property 'energyvfx.perfCompare',","property 'energyvfx.flowQa', project.findProperty('flowQa') ?: 'false'; property 'energyvfx.firstPersonQa', project.findProperty('firstPersonQa') ?: 'false'; property 'energyvfx.qa.width', project.findProperty('qaWidth') ?: '960'; property 'energyvfx.perfCompare',")
+change('prepare_forge.py',"['noise','field','scene','volume','blur','composite']","['noise','field','scene','volume','blur','composite','flow-cache']")
+for p,s in pending.items():p.write_text(s,encoding='utf-8')
+print('Flow cache host and isolated QA updated.')

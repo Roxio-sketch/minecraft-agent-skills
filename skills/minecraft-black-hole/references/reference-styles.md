@@ -2,9 +2,11 @@
 
 以下记录描述 v2.2 的研究与旧配方。当前默认配方、宽画幅背景、分层 HDR 光带及诊断入口见 [v3.1 工作台](v3-workbench.md)。
 
+适用于用户要求按 `unity-black-hole-shader-main` 的光带或 `BlackHole-master` 的尘埃分布制作黑洞。2026-09-30 工作台 v2.2 修复了这两条路线的长时间剪切及背景采样问题；Forge 已发布示例仍是前一轮颗粒盘与 sprite 组合，不能拿新浏览器效果当作其已更新的证明。
 
 ## 来源核对
 
+`BlackHole-master/src/shaders/blackhole.frag` 的 `accretionDiskColor` 使用球坐标、垂直/径向密度衰减和多尺度 snoise 相乘形成疏密不均的连续尘埃。其 `accretionDiskParticle` 开关并不创建粒子对象。不能以规则点阵、几百个拉伸 billboard 或均匀发光环代替这种分布。
 
 该 shader 的运动有三处：盘噪声循环中的角坐标随 time 改变；`traceColor` 的最终 galaxy Cubemap 方向绕 Y 按 time 度旋转；`main` 中相机按 time*0.1 环绕并上下移动。引力加速度公式本身没有独立 time 项，因此“透镜在转”的观感包含被偏折的运动素材与视点变化，不能声称它实现了旋转时空或 frame dragging。
 

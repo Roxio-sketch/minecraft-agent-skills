@@ -1,0 +1,510 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "artifact metadata",
+      "passed": true
+    },
+    {
+      "name": "original tested jar",
+      "passed": true,
+      "sha256": "bd6f5383323d0d94a11219f0d455e57c639def3e8f21e5343d5e03bb837fe0c7"
+    },
+    {
+      "name": "runtime case inventory",
+      "passed": true
+    },
+    {
+      "name": "foreground identity",
+      "passed": true
+    },
+    {
+      "name": "foreground recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "foreground recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "foreground view mode",
+      "passed": true
+    },
+    {
+      "name": "foreground recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "foreground scene image",
+      "passed": true
+    },
+    {
+      "name": "foreground independent pixel change",
+      "passed": true,
+      "measured": 121864,
+      "recorded": 121864
+    },
+    {
+      "name": "front identity",
+      "passed": true
+    },
+    {
+      "name": "front recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "front recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "front view mode",
+      "passed": true
+    },
+    {
+      "name": "front recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "front scene image",
+      "passed": true
+    },
+    {
+      "name": "front independent pixel change",
+      "passed": true,
+      "measured": 52718,
+      "recorded": 52718
+    },
+    {
+      "name": "left identity",
+      "passed": true
+    },
+    {
+      "name": "left recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "left recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "left view mode",
+      "passed": true
+    },
+    {
+      "name": "left recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "left scene image",
+      "passed": true
+    },
+    {
+      "name": "right identity",
+      "passed": true
+    },
+    {
+      "name": "right recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "right recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "right view mode",
+      "passed": true
+    },
+    {
+      "name": "right recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "right scene image",
+      "passed": true
+    },
+    {
+      "name": "time4 identity",
+      "passed": true
+    },
+    {
+      "name": "time4 recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "time4 recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "time4 view mode",
+      "passed": true
+    },
+    {
+      "name": "time4 recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "time4 scene image",
+      "passed": true
+    },
+    {
+      "name": "low identity",
+      "passed": true
+    },
+    {
+      "name": "low recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "low recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "low view mode",
+      "passed": true
+    },
+    {
+      "name": "low recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "low scene image",
+      "passed": true
+    },
+    {
+      "name": "high identity",
+      "passed": true
+    },
+    {
+      "name": "high recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "high recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "high view mode",
+      "passed": true
+    },
+    {
+      "name": "high recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "high scene image",
+      "passed": true
+    },
+    {
+      "name": "reloaded identity",
+      "passed": true
+    },
+    {
+      "name": "reloaded recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "reloaded recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "reloaded view mode",
+      "passed": true
+    },
+    {
+      "name": "reloaded recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "reloaded scene image",
+      "passed": true
+    },
+    {
+      "name": "recovered identity",
+      "passed": true
+    },
+    {
+      "name": "recovered recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "recovered recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "recovered view mode",
+      "passed": true
+    },
+    {
+      "name": "recovered recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "recovered scene image",
+      "passed": true
+    },
+    {
+      "name": "crossing case inventory",
+      "passed": true
+    },
+    {
+      "name": "window identity",
+      "passed": true
+    },
+    {
+      "name": "window recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "window recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "window view mode",
+      "passed": true
+    },
+    {
+      "name": "window recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "window scene image",
+      "passed": true
+    },
+    {
+      "name": "near identity",
+      "passed": true
+    },
+    {
+      "name": "near recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "near recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "near view mode",
+      "passed": true
+    },
+    {
+      "name": "near recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "near scene image",
+      "passed": true
+    },
+    {
+      "name": "near independent pixel change",
+      "passed": true,
+      "measured": 921600,
+      "recorded": 921600
+    },
+    {
+      "name": "inside identity",
+      "passed": true
+    },
+    {
+      "name": "inside recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "inside recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "inside view mode",
+      "passed": true
+    },
+    {
+      "name": "inside recorded fullscreen",
+      "passed": true
+    },
+    {
+      "name": "inside scene image",
+      "passed": true
+    },
+    {
+      "name": "inside independent pixel change",
+      "passed": true,
+      "measured": 921600,
+      "recorded": 921600
+    },
+    {
+      "name": "inside-turn identity",
+      "passed": true
+    },
+    {
+      "name": "inside-turn recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "inside-turn recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "inside-turn view mode",
+      "passed": true
+    },
+    {
+      "name": "inside-turn recorded fullscreen",
+      "passed": true
+    },
+    {
+      "name": "inside-turn scene image",
+      "passed": true
+    },
+    {
+      "name": "inside-move identity",
+      "passed": true
+    },
+    {
+      "name": "inside-move recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "inside-move recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "inside-move view mode",
+      "passed": true
+    },
+    {
+      "name": "inside-move recorded fullscreen",
+      "passed": true
+    },
+    {
+      "name": "inside-move scene image",
+      "passed": true
+    },
+    {
+      "name": "inside-reload identity",
+      "passed": true
+    },
+    {
+      "name": "inside-reload recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "inside-reload recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "inside-reload view mode",
+      "passed": true
+    },
+    {
+      "name": "inside-reload recorded fullscreen",
+      "passed": true
+    },
+    {
+      "name": "inside-reload scene image",
+      "passed": true
+    },
+    {
+      "name": "returned identity",
+      "passed": true
+    },
+    {
+      "name": "returned recorded GL state",
+      "passed": true
+    },
+    {
+      "name": "returned recorded geometry",
+      "passed": true
+    },
+    {
+      "name": "returned view mode",
+      "passed": true
+    },
+    {
+      "name": "returned recorded aperture/depth",
+      "passed": true
+    },
+    {
+      "name": "returned scene image",
+      "passed": true
+    },
+    {
+      "name": "returned independent pixel change",
+      "passed": true,
+      "measured": 921600,
+      "recorded": 921600
+    },
+    {
+      "name": "parallax fixture",
+      "passed": true
+    },
+    {
+      "name": "independent red-sail parallax",
+      "passed": true,
+      "measured_uv_span": 0.13052660909386982,
+      "expected_uv_span": 0.13076923076923078
+    },
+    {
+      "name": "time fixture",
+      "passed": true
+    },
+    {
+      "name": "front to time4 image response",
+      "passed": true,
+      "changed_pixels": 170277
+    },
+    {
+      "name": "inside to inside-turn image response",
+      "passed": true,
+      "changed_pixels": 254523
+    },
+    {
+      "name": "inside-turn to inside-move image response",
+      "passed": true,
+      "changed_pixels": 272520
+    },
+    {
+      "name": "two resolution targets",
+      "passed": true
+    },
+    {
+      "name": "window reload generation",
+      "passed": true
+    },
+    {
+      "name": "window reload image stability",
+      "passed": true
+    },
+    {
+      "name": "interior reload state",
+      "passed": true
+    },
+    {
+      "name": "crossing entry and return",
+      "passed": true
+    },
+    {
+      "name": "injected failure restores recorded state",
+      "passed": true
+    },
+    {
+      "name": "recovered output stable",
+      "passed": true
+    },
+    {
+      "name": "explicit off resets visual domain",
+      "passed": true
+    },
+    {
+      "name": "foreground occlusion exercised",
+      "passed": true
+    }
+  ],
+  "cases": 16,
+  "scope": "Offline audit of recorded Ink Realm 0.2.0 runtime evidence; does not launch or retest Minecraft",
+  "limitations": [
+    "Only selected before/after PNG pairs are independently compared.",
+    "Depth, outside-mask and state assertions rely on the Java probe records.",
+    "Historical captures omit complete orientation/FOV/projection metadata.",
+    "Interior reload pixel identity is not asserted; camera may have changed.",
+    "Visual entry only: no second ClientLevel, collision or remote gameplay certification."
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "能量特效编辑与接入"
+  short_description: "编辑蓝色幽气、白蓝烟纱与能量体积，从玩家装备表面持续发散并接入游戏"
+  default_prompt: "使用 $minecraft-energy-vfx 打开特效编辑工作台，读取我保存或导出的 energy-vfx 配方，将相同参数应用到 Forge 1.20.1 的玩家与装备持续发散效果。保留真实动作和挂点，用固定命令桥加载配方，保持 control_mode=false，并分别验证网页、构建和实际游戏。"

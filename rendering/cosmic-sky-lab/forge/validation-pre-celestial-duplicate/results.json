@@ -1,0 +1,3335 @@
+[
+  {
+    "name": "direction-base",
+    "mode": 0,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 1,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 1,
+    "skyFrames": 187,
+    "skyCenterPixelABGR": "4294934399",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "gpuSampleCount": 157,
+    "skyGpuMedianMs": 0.04608,
+    "skyGpuP95Ms": 0.049152,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "directionMaxError": 0.0021337671607148945,
+    "directionPass": true,
+    "directionSamples": [
+      {
+        "pixel": [
+          96.0,
+          54.0
+        ],
+        "actual": [
+          0.8274509803921568,
+          0.6823529411764706,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.827789843082428,
+          0.6841948181390762,
+          0.8295847475528717
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          270.0
+        ],
+        "actual": [
+          0.8509803921568627,
+          0.4980392156862745,
+          0.8549019607843137
+        ],
+        "expected": [
+          0.852586567401886,
+          0.49954031794914044,
+          0.854517251253128
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          486.0
+        ],
+        "actual": [
+          0.8274509803921568,
+          0.3137254901960784,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.8275831341743469,
+          0.3150671571493149,
+          0.8293769061565399
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          54.0
+        ],
+        "actual": [
+          0.4980392156862745,
+          0.7450980392156863,
+          0.9372549019607843
+        ],
+        "expected": [
+          0.49943405558587983,
+          0.7439257651567459,
+          0.936462938785553
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          270.0
+        ],
+        "actual": [
+          0.4980392156862745,
+          0.4980392156862745,
+          1.0
+        ],
+        "expected": [
+          0.499351670674514,
+          0.49935167998773977,
+          0.9999991655349731
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          486.0
+        ],
+        "actual": [
+          0.4980392156862745,
+          0.2549019607843137,
+          0.9372549019607843
+        ],
+        "expected": [
+          0.4994346809689887,
+          0.2552131414413452,
+          0.9359806180000305
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          54.0
+        ],
+        "actual": [
+          0.17254901960784313,
+          0.6823529411764706,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.1717236340045929,
+          0.6839884370565414,
+          0.8292154669761658
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          270.0
+        ],
+        "actual": [
+          0.1450980392156863,
+          0.4980392156862745,
+          0.8549019607843137
+        ],
+        "expected": [
+          0.1469520926475525,
+          0.49954091364634223,
+          0.8540578484535217
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          486.0
+        ],
+        "actual": [
+          0.17254901960784313,
+          0.3137254901960784,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.17193016409873962,
+          0.31527408957481384,
+          0.8290083408355713
+        ]
+      }
+    ],
+    "worldCenterPixelABGR": "4294934399"
+  },
+  {
+    "name": "direction-translate",
+    "mode": 0,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 1,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 1,
+    "skyFrames": 283,
+    "skyCenterPixelABGR": "4294934399",
+    "cameraPosition": [
+      512.0,
+      151.61999988555908,
+      512.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "gpuSampleCount": 253,
+    "skyGpuMedianMs": 0.047104,
+    "skyGpuP95Ms": 0.064512,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "directionMaxError": 0.0021337671607148945,
+    "directionPass": true,
+    "directionSamples": [
+      {
+        "pixel": [
+          96.0,
+          54.0
+        ],
+        "actual": [
+          0.8274509803921568,
+          0.6823529411764706,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.827789843082428,
+          0.6841948181390762,
+          0.8295847475528717
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          270.0
+        ],
+        "actual": [
+          0.8509803921568627,
+          0.4980392156862745,
+          0.8549019607843137
+        ],
+        "expected": [
+          0.852586567401886,
+          0.49954031794914044,
+          0.854517251253128
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          486.0
+        ],
+        "actual": [
+          0.8274509803921568,
+          0.3137254901960784,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.8275831341743469,
+          0.3150671571493149,
+          0.8293769061565399
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          54.0
+        ],
+        "actual": [
+          0.4980392156862745,
+          0.7450980392156863,
+          0.9372549019607843
+        ],
+        "expected": [
+          0.49943405558587983,
+          0.7439257651567459,
+          0.936462938785553
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          270.0
+        ],
+        "actual": [
+          0.4980392156862745,
+          0.4980392156862745,
+          1.0
+        ],
+        "expected": [
+          0.499351670674514,
+          0.49935167998773977,
+          0.9999991655349731
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          486.0
+        ],
+        "actual": [
+          0.4980392156862745,
+          0.2549019607843137,
+          0.9372549019607843
+        ],
+        "expected": [
+          0.4994346809689887,
+          0.2552131414413452,
+          0.9359806180000305
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          54.0
+        ],
+        "actual": [
+          0.17254901960784313,
+          0.6823529411764706,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.1717236340045929,
+          0.6839884370565414,
+          0.8292154669761658
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          270.0
+        ],
+        "actual": [
+          0.1450980392156863,
+          0.4980392156862745,
+          0.8549019607843137
+        ],
+        "expected": [
+          0.1469520926475525,
+          0.49954091364634223,
+          0.8540578484535217
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          486.0
+        ],
+        "actual": [
+          0.17254901960784313,
+          0.3137254901960784,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.17193016409873962,
+          0.31527408957481384,
+          0.8290083408355713
+        ]
+      }
+    ],
+    "differentPixelsFromBase": 0,
+    "identicalToBase": true,
+    "worldCenterPixelABGR": "4294934399"
+  },
+  {
+    "name": "direction-yaw90",
+    "mode": 0,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 1,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 1,
+    "skyFrames": 288,
+    "skyCenterPixelABGR": "4287233648",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      -0.12194609642028809,
+      0.9896525144577026,
+      0.07561090588569641
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -0.52696127,
+      7.4505806E-9,
+      -0.8498893,
+      0.8410951,
+      0.14348474,
+      -0.5215086,
+      0.12194614,
+      -0.9896525,
+      -0.07561091
+    ],
+    "gpuSampleCount": 258,
+    "skyGpuMedianMs": 0.028672,
+    "skyGpuP95Ms": 0.064512,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "directionMaxError": 0.0017187358117570772,
+    "directionPass": true,
+    "directionSamples": [
+      {
+        "pixel": [
+          96.0,
+          54.0
+        ],
+        "actual": [
+          0.788235294117647,
+          0.8509803921568627,
+          0.7058823529411765
+        ],
+        "expected": [
+          0.7874664068222046,
+          0.8526035249233246,
+          0.7074459940195084
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          270.0
+        ],
+        "actual": [
+          0.6431372549019608,
+          0.8509803921568627,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.6421809494495392,
+          0.8507829308509827,
+          0.8267045617103577
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          486.0
+        ],
+        "actual": [
+          0.47843137254901963,
+          0.8,
+          0.8980392156862745
+        ],
+        "expected": [
+          0.4769114125519991,
+          0.7994336485862732,
+          0.8997579514980316
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          54.0
+        ],
+        "actual": [
+          0.6509803921568628,
+          0.9686274509803922,
+          0.403921568627451
+        ],
+        "expected": [
+          0.6516415327787399,
+          0.9669462740421295,
+          0.4053109362721443
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          270.0
+        ],
+        "actual": [
+          0.4392156862745098,
+          0.996078431372549,
+          0.5372549019607843
+        ],
+        "expected": [
+          0.4381401091814041,
+          0.9947324097156525,
+          0.5375924855470657
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          486.0
+        ],
+        "actual": [
+          0.23921568627450981,
+          0.8980392156862745,
+          0.6588235294117647
+        ],
+        "expected": [
+          0.24064701795578003,
+          0.8963460922241211,
+          0.6601429283618927
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          54.0
+        ],
+        "actual": [
+          0.44313725490196076,
+          0.8509803921568627,
+          0.14901960784313725
+        ],
+        "expected": [
+          0.4416161738336086,
+          0.8522084355354309,
+          0.14994215965270996
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          270.0
+        ],
+        "actual": [
+          0.27058823529411763,
+          0.8509803921568627,
+          0.22745098039215686
+        ],
+        "expected": [
+          0.2703952342271805,
+          0.8503283858299255,
+          0.2269584834575653
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          486.0
+        ],
+        "actual": [
+          0.13333333333333333,
+          0.8,
+          0.3411764705882353
+        ],
+        "expected": [
+          0.13162648677825928,
+          0.7990986108779907,
+          0.3423898220062256
+        ]
+      }
+    ],
+    "worldCenterPixelABGR": "4287233648"
+  },
+  {
+    "name": "direction-pitch-up",
+    "mode": 0,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 1,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 1,
+    "skyFrames": 288,
+    "skyCenterPixelABGR": "4292685209",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.20494522154331207,
+      -0.6474616527557373,
+      0.7340238094329834
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -0.9631619,
+      -1.4901158E-8,
+      0.26892203,
+      0.1741167,
+      0.762098,
+      0.6236104,
+      -0.20494498,
+      0.6474616,
+      -0.7340238
+    ],
+    "gpuSampleCount": 258,
+    "skyGpuMedianMs": 0.064512,
+    "skyGpuP95Ms": 0.064512,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "directionMaxError": 0.0017351076006889565,
+    "directionPass": true,
+    "directionSamples": [
+      {
+        "pixel": [
+          96.0,
+          54.0
+        ],
+        "actual": [
+          0.9137254901960784,
+          0.42745098039215684,
+          0.7686274509803922
+        ],
+        "expected": [
+          0.9153329133987427,
+          0.42698103934526443,
+          0.7686387896537781
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          270.0
+        ],
+        "actual": [
+          0.9137254901960784,
+          0.27058823529411763,
+          0.6666666666666666
+        ],
+        "expected": [
+          0.9121744930744171,
+          0.27011336386203766,
+          0.665119007229805
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          486.0
+        ],
+        "actual": [
+          0.8509803921568627,
+          0.1450980392156863,
+          0.5372549019607843
+        ],
+        "expected": [
+          0.8508198857307434,
+          0.14580413699150085,
+          0.5383500158786774
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          54.0
+        ],
+        "actual": [
+          0.6313725490196078,
+          0.403921568627451,
+          0.9725490196078431
+        ],
+        "expected": [
+          0.6313775032758713,
+          0.4033023416996002,
+          0.9726409912109375
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          270.0
+        ],
+        "actual": [
+          0.6,
+          0.17647058823529413,
+          0.8666666666666667
+        ],
+        "expected": [
+          0.6017351076006889,
+          0.17577561736106873,
+          0.8667813241481781
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          486.0
+        ],
+        "actual": [
+          0.5450980392156862,
+          0.03137254901960784,
+          0.6666666666666666
+        ],
+        "expected": [
+          0.5461861193180084,
+          0.031167715787887573,
+          0.6675205528736115
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          54.0
+        ],
+        "actual": [
+          0.2823529411764706,
+          0.42745098039215684,
+          0.9450980392156862
+        ],
+        "expected": [
+          0.2833233177661896,
+          0.42706284672021866,
+          0.9446699619293213
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          270.0
+        ],
+        "actual": [
+          0.23137254901960785,
+          0.27058823529411763,
+          0.8549019607843137
+        ],
+        "expected": [
+          0.23244023323059082,
+          0.2704112380743027,
+          0.8545430898666382
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          486.0
+        ],
+        "actual": [
+          0.2196078431372549,
+          0.1450980392156863,
+          0.7137254901960784
+        ],
+        "expected": [
+          0.2192804217338562,
+          0.14620047807693481,
+          0.7145283073186874
+        ]
+      }
+    ],
+    "worldCenterPixelABGR": "4292685209"
+  },
+  {
+    "name": "direction-fov40",
+    "mode": 0,
+    "quality": 2,
+    "requestedFov": 40,
+    "generationBefore": 1,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 1,
+    "skyFrames": 289,
+    "skyCenterPixelABGR": "4281392477",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      -0.27369529008865356,
+      0.7360981702804565,
+      -0.6190721988677979
+    ],
+    "projection": [
+      1.545456,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.7474775,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      0.914604,
+      0.0,
+      -0.4043511,
+      0.2976421,
+      0.6768749,
+      0.67323834,
+      0.27369508,
+      -0.73609823,
+      0.61907244
+    ],
+    "gpuSampleCount": 259,
+    "skyGpuMedianMs": 0.064512,
+    "skyGpuP95Ms": 0.064512,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "directionMaxError": 0.0020158601157805878,
+    "directionPass": true,
+    "directionSamples": [
+      {
+        "pixel": [
+          96.0,
+          54.0
+        ],
+        "actual": [
+          0.21568627450980393,
+          0.9019607843137255,
+          0.40784313725490196
+        ],
+        "expected": [
+          0.21613138914108276,
+          0.9011384546756744,
+          0.407769039273262
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          270.0
+        ],
+        "actual": [
+          0.16862745098039217,
+          0.8274509803921568,
+          0.3176470588235294
+        ],
+        "expected": [
+          0.1683383584022522,
+          0.8267408609390259,
+          0.31767895817756653
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          486.0
+        ],
+        "actual": [
+          0.1411764705882353,
+          0.7333333333333333,
+          0.23921568627450981
+        ],
+        "expected": [
+          0.14169052243232727,
+          0.731547012925148,
+          0.23923134803771973
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          54.0
+        ],
+        "actual": [
+          0.4117647058823529,
+          0.9490196078431372,
+          0.2980392156862745
+        ],
+        "expected": [
+          0.4103977456688881,
+          0.9478510916233063,
+          0.29652804136276245
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          270.0
+        ],
+        "actual": [
+          0.36470588235294116,
+          0.8666666666666667,
+          0.18823529411764706
+        ],
+        "expected": [
+          0.36336034536361694,
+          0.8678207993507385,
+          0.19010090827941895
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          486.0
+        ],
+        "actual": [
+          0.3254901960784314,
+          0.7568627450980392,
+          0.10980392156862745
+        ],
+        "expected": [
+          0.32723456621170044,
+          0.7584922015666962,
+          0.10842126607894897
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          54.0
+        ],
+        "actual": [
+          0.6235294117647059,
+          0.9019607843137255,
+          0.22745098039215686
+        ],
+        "expected": [
+          0.6232922226190567,
+          0.9009315669536591,
+          0.227873295545578
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          270.0
+        ],
+        "actual": [
+          0.5882352941176471,
+          0.8274509803921568,
+          0.13333333333333333
+        ],
+        "expected": [
+          0.5888545662164688,
+          0.8265610933303833,
+          0.1319473683834076
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          486.0
+        ],
+        "actual": [
+          0.5490196078431373,
+          0.7294117647058823,
+          0.058823529411764705
+        ],
+        "expected": [
+          0.5487715862691402,
+          0.7314276248216629,
+          0.059474676847457886
+        ]
+      }
+    ],
+    "worldCenterPixelABGR": "4281392477"
+  },
+  {
+    "name": "direction-fov100",
+    "mode": 0,
+    "quality": 2,
+    "requestedFov": 100,
+    "generationBefore": 1,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 1,
+    "skyFrames": 291,
+    "skyCenterPixelABGR": "4280339619",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.2787524163722992,
+      0.6004201173782349,
+      -0.7495283484458923
+    ],
+    "projection": [
+      0.47199354,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.8390996,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      0.93727976,
+      0.0,
+      0.3485779,
+      -0.20929316,
+      0.7996847,
+      0.5627616,
+      -0.27875242,
+      -0.60042006,
+      0.74952835
+    ],
+    "gpuSampleCount": 261,
+    "skyGpuMedianMs": 0.064512,
+    "skyGpuP95Ms": 0.064512,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "directionMaxError": 0.00214932479110419,
+    "directionPass": true,
+    "directionSamples": [
+      {
+        "pixel": [
+          96.0,
+          54.0
+        ],
+        "actual": [
+          0.15294117647058825,
+          0.8117647058823529,
+          0.3137254901960784
+        ],
+        "expected": [
+          0.15502548217773438,
+          0.8115934431552887,
+          0.3158748149871826
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          270.0
+        ],
+        "actual": [
+          0.16862745098039217,
+          0.6509803921568628,
+          0.1607843137254902
+        ],
+        "expected": [
+          0.16751861572265625,
+          0.6522483825683594,
+          0.1590065360069275
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          486.0
+        ],
+        "actual": [
+          0.24705882352941178,
+          0.4627450980392157,
+          0.07058823529411765
+        ],
+        "expected": [
+          0.24661126732826233,
+          0.46254170313477516,
+          0.0705922544002533
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          54.0
+        ],
+        "actual": [
+          0.5294117647058824,
+          0.9921568627450981,
+          0.4235294117647059
+        ],
+        "expected": [
+          0.5296137556433678,
+          0.9930948317050934,
+          0.4226662144064903
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          270.0
+        ],
+        "actual": [
+          0.6392156862745098,
+          0.8,
+          0.12549019607843137
+        ],
+        "expected": [
+          0.6406407058238983,
+          0.7993261814117432,
+          0.12500134110450745
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          486.0
+        ],
+        "actual": [
+          0.6745098039215687,
+          0.4392156862745098,
+          0.03529411764705882
+        ],
+        "expected": [
+          0.6738105267286301,
+          0.44080083444714546,
+          0.03493508696556091
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          54.0
+        ],
+        "actual": [
+          0.8823529411764706,
+          0.8117647058823529,
+          0.5843137254901961
+        ],
+        "expected": [
+          0.8818029165267944,
+          0.8111059069633484,
+          0.5862534418702126
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          270.0
+        ],
+        "actual": [
+          0.9764705882352941,
+          0.6509803921568628,
+          0.4588235294117647
+        ],
+        "expected": [
+          0.9746338427066803,
+          0.6519545614719391,
+          0.4595951735973358
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          486.0
+        ],
+        "actual": [
+          0.9725490196078431,
+          0.4627450980392157,
+          0.3411764705882353
+        ],
+        "expected": [
+          0.9726068079471588,
+          0.4626002125442028,
+          0.3411162793636322
+        ]
+      }
+    ],
+    "worldCenterPixelABGR": "4280339619"
+  },
+  {
+    "name": "direction-resize",
+    "mode": 0,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 1,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 800,
+    "height": 600,
+    "generationAfter": 1,
+    "skyFrames": 287,
+    "skyCenterPixelABGR": "4294801303",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.18187589943408966,
+      -0.06279054284095764,
+      0.9813147187232971
+    ],
+    "projection": [
+      1.071111,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -0.9832549,
+      -9.313228E-10,
+      0.18223616,
+      0.011442707,
+      0.9980268,
+      0.061739106,
+      -0.18187657,
+      0.06279054,
+      -0.98131466
+    ],
+    "gpuSampleCount": 257,
+    "skyGpuMedianMs": 0.063488,
+    "skyGpuP95Ms": 0.063488,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "directionMaxError": 0.001974445698308014,
+    "directionPass": true,
+    "directionSamples": [
+      {
+        "pixel": [
+          80.0,
+          60.0
+        ],
+        "actual": [
+          0.8352941176470589,
+          0.6823529411764706,
+          0.8235294117647058
+        ],
+        "expected": [
+          0.8370640575885773,
+          0.6810972541570663,
+          0.8218564987182617
+        ]
+      },
+      {
+        "pixel": [
+          80.0,
+          300.0
+        ],
+        "actual": [
+          0.8666666666666667,
+          0.4745098039215686,
+          0.8392156862745098
+        ],
+        "expected": [
+          0.866790384054184,
+          0.4743653554469347,
+          0.838832825422287
+        ]
+      },
+      {
+        "pixel": [
+          80.0,
+          540.0
+        ],
+        "actual": [
+          0.8313725490196079,
+          0.27058823529411763,
+          0.796078431372549
+        ],
+        "expected": [
+          0.8321426808834076,
+          0.27227555215358734,
+          0.7963491678237915
+        ]
+      },
+      {
+        "pixel": [
+          400.0,
+          60.0
+        ],
+        "actual": [
+          0.5803921568627451,
+          0.7176470588235294,
+          0.9450980392156862
+        ],
+        "expected": [
+          0.5816685631871223,
+          0.7160832732915878,
+          0.9434391856193542
+        ]
+      },
+      {
+        "pixel": [
+          400.0,
+          300.0
+        ],
+        "actual": [
+          0.592156862745098,
+          0.4666666666666667,
+          0.9921568627450981
+        ],
+        "expected": [
+          0.5903574079275131,
+          0.4680224135518074,
+          0.9907270073890686
+        ]
+      },
+      {
+        "pixel": [
+          400.0,
+          540.0
+        ],
+        "actual": [
+          0.5764705882352941,
+          0.22745098039215686,
+          0.9137254901960784
+        ],
+        "expected": [
+          0.5759979337453842,
+          0.2283620834350586,
+          0.9128403961658478
+        ]
+      },
+      {
+        "pixel": [
+          720.0,
+          60.0
+        ],
+        "actual": [
+          0.2980392156862745,
+          0.6823529411764706,
+          0.9215686274509803
+        ],
+        "expected": [
+          0.3000136613845825,
+          0.6809285581111908,
+          0.9210348725318909
+        ]
+      },
+      {
+        "pixel": [
+          720.0,
+          300.0
+        ],
+        "actual": [
+          0.2784313725490196,
+          0.4745098039215686,
+          0.9490196078431372
+        ],
+        "expected": [
+          0.2783268392086029,
+          0.47439402528107166,
+          0.9474431276321411
+        ]
+      },
+      {
+        "pixel": [
+          720.0,
+          540.0
+        ],
+        "actual": [
+          0.29411764705882354,
+          0.27058823529411763,
+          0.8941176470588236
+        ],
+        "expected": [
+          0.29547177255153656,
+          0.27248741686344147,
+          0.8954822719097137
+        ]
+      }
+    ],
+    "worldCenterPixelABGR": "4294801303"
+  },
+  {
+    "name": "direction-reload",
+    "mode": 0,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 1,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 396,
+    "skyCenterPixelABGR": "4294934399",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "gpuSampleCount": 366,
+    "skyGpuMedianMs": 0.064512,
+    "skyGpuP95Ms": 0.065536,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "directionMaxError": 0.0021337671607148945,
+    "directionPass": true,
+    "directionSamples": [
+      {
+        "pixel": [
+          96.0,
+          54.0
+        ],
+        "actual": [
+          0.8274509803921568,
+          0.6823529411764706,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.827789843082428,
+          0.6841948181390762,
+          0.8295847475528717
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          270.0
+        ],
+        "actual": [
+          0.8509803921568627,
+          0.4980392156862745,
+          0.8549019607843137
+        ],
+        "expected": [
+          0.852586567401886,
+          0.49954031794914044,
+          0.854517251253128
+        ]
+      },
+      {
+        "pixel": [
+          96.0,
+          486.0
+        ],
+        "actual": [
+          0.8274509803921568,
+          0.3137254901960784,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.8275831341743469,
+          0.3150671571493149,
+          0.8293769061565399
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          54.0
+        ],
+        "actual": [
+          0.4980392156862745,
+          0.7450980392156863,
+          0.9372549019607843
+        ],
+        "expected": [
+          0.49943405558587983,
+          0.7439257651567459,
+          0.936462938785553
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          270.0
+        ],
+        "actual": [
+          0.4980392156862745,
+          0.4980392156862745,
+          1.0
+        ],
+        "expected": [
+          0.499351670674514,
+          0.49935167998773977,
+          0.9999991655349731
+        ]
+      },
+      {
+        "pixel": [
+          480.0,
+          486.0
+        ],
+        "actual": [
+          0.4980392156862745,
+          0.2549019607843137,
+          0.9372549019607843
+        ],
+        "expected": [
+          0.4994346809689887,
+          0.2552131414413452,
+          0.9359806180000305
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          54.0
+        ],
+        "actual": [
+          0.17254901960784313,
+          0.6823529411764706,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.1717236340045929,
+          0.6839884370565414,
+          0.8292154669761658
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          270.0
+        ],
+        "actual": [
+          0.1450980392156863,
+          0.4980392156862745,
+          0.8549019607843137
+        ],
+        "expected": [
+          0.1469520926475525,
+          0.49954091364634223,
+          0.8540578484535217
+        ]
+      },
+      {
+        "pixel": [
+          864.0,
+          486.0
+        ],
+        "actual": [
+          0.17254901960784313,
+          0.3137254901960784,
+          0.8274509803921568
+        ],
+        "expected": [
+          0.17193016409873962,
+          0.31527408957481384,
+          0.8290083408355713
+        ]
+      }
+    ],
+    "differentPixelsFromBase": 0,
+    "identicalToBase": true,
+    "worldCenterPixelABGR": "4294934399"
+  },
+  {
+    "name": "stars-low",
+    "mode": 1,
+    "quality": 1,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 1.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 284,
+    "skyCenterPixelABGR": "4279436802",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      -0.4529465436935425,
+      0.35265856981277466,
+      0.8188232183456421
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -0.8750428,
+      0.0,
+      -0.48404557,
+      0.17070282,
+      0.93575203,
+      -0.30859134,
+      0.45294663,
+      -0.35265857,
+      -0.8188231
+    ],
+    "gpuSampleCount": 254,
+    "skyGpuMedianMs": 1.154048,
+    "skyGpuP95Ms": 1.545216,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "worldCenterPixelABGR": "4279436802"
+  },
+  {
+    "name": "stars-medium",
+    "mode": 1,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 292,
+    "skyCenterPixelABGR": "4279436802",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4226182699203491,
+      0.9063078165054321
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.9063078,
+      -0.42261827,
+      -0.0,
+      -0.42261827,
+      -0.9063078
+    ],
+    "gpuSampleCount": 262,
+    "skyGpuMedianMs": 2.077696,
+    "skyGpuP95Ms": 2.236416,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "worldCenterPixelABGR": "4279436802"
+  },
+  {
+    "name": "stars-high",
+    "mode": 1,
+    "quality": 3,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 3.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 291,
+    "skyCenterPixelABGR": "4279502595",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4202441871166229,
+      0.9074111580848694
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0000001,
+      0.0,
+      -0.0,
+      0.0,
+      0.9074112,
+      -0.4202442,
+      -0.0,
+      -0.4202442,
+      -0.9074112
+    ],
+    "gpuSampleCount": 261,
+    "skyGpuMedianMs": 2.417664,
+    "skyGpuP95Ms": 2.562048,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "worldCenterPixelABGR": "4279502595"
+  },
+  {
+    "name": "nebula-low",
+    "mode": 2,
+    "quality": 1,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 1.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 285,
+    "skyCenterPixelABGR": "4280291082",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4226182699203491,
+      0.9063078165054321
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.9063078,
+      -0.42261827,
+      -0.0,
+      -0.42261827,
+      -0.9063078
+    ],
+    "gpuSampleCount": 255,
+    "skyGpuMedianMs": 2.393088,
+    "skyGpuP95Ms": 3.224576,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "worldCenterPixelABGR": "4280291082"
+  },
+  {
+    "name": "nebula-medium",
+    "mode": 2,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 284,
+    "skyCenterPixelABGR": "4280291082",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4226182699203491,
+      0.9063078165054321
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.9063078,
+      -0.42261827,
+      -0.0,
+      -0.42261827,
+      -0.9063078
+    ],
+    "gpuSampleCount": 254,
+    "skyGpuMedianMs": 2.639872,
+    "skyGpuP95Ms": 2.793472,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "worldCenterPixelABGR": "4280291082"
+  },
+  {
+    "name": "nebula-high",
+    "mode": 2,
+    "quality": 3,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 3.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 282,
+    "skyCenterPixelABGR": "4280554253",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4226182699203491,
+      0.9063078165054321
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.9063078,
+      -0.42261827,
+      -0.0,
+      -0.42261827,
+      -0.9063078
+    ],
+    "gpuSampleCount": 252,
+    "skyGpuMedianMs": 2.812928,
+    "skyGpuP95Ms": 3.290112,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "worldCenterPixelABGR": "4280554253"
+  },
+  {
+    "name": "terrain-occlusion",
+    "mode": 2,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 279,
+    "skyCenterPixelABGR": "4282067236",
+    "cameraPosition": [
+      0.0,
+      9.619999885559082,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "gpuSampleCount": 249,
+    "skyGpuMedianMs": 2.08384,
+    "skyGpuP95Ms": 2.789376,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "worldCenterPixelABGR": "4280129719"
+  },
+  {
+    "name": "nebula-animation-time0",
+    "mode": 2,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.0,
+        "starBrightness": 0.0,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 0.0,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.0,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 0.0,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.0,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 281,
+    "skyCenterPixelABGR": "4279436803",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4226182699203491,
+      0.9063078165054321
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.9063078,
+      -0.42261827,
+      -0.0,
+      -0.42261827,
+      -0.9063078
+    ],
+    "gpuSampleCount": 251,
+    "skyGpuMedianMs": 0.915456,
+    "skyGpuP95Ms": 1.7664,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "worldCenterPixelABGR": "4279436803"
+  },
+  {
+    "name": "nebula-animation-time90",
+    "mode": 2,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 90.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.0,
+        "starBrightness": 0.0,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 0.0,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.0,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 0.0,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.0,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 288,
+    "skyCenterPixelABGR": "4279502339",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4226182699203491,
+      0.9063078165054321
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.9063078,
+      -0.42261827,
+      -0.0,
+      -0.42261827,
+      -0.9063078
+    ],
+    "gpuSampleCount": 258,
+    "skyGpuMedianMs": 1.891328,
+    "skyGpuP95Ms": 2.11968,
+    "glErrorAfterSky": 0,
+    "actualTime": 90.0,
+    "animationFeature": "nebula",
+    "differentPixelsFromAnimationBase": 349767,
+    "animationPass": true,
+    "worldCenterPixelABGR": "4279502339"
+  },
+  {
+    "name": "aurora-animation-time0",
+    "mode": 2,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.0,
+        "starBrightness": 0.0,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 0.0,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.0,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 2.0,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.55,
+        "meteorRate": 0.0,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.0,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 285,
+    "skyCenterPixelABGR": "4281737239",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4226182699203491,
+      0.9063078165054321
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.9063078,
+      -0.42261827,
+      -0.0,
+      -0.42261827,
+      -0.9063078
+    ],
+    "gpuSampleCount": 255,
+    "skyGpuMedianMs": 1.275904,
+    "skyGpuP95Ms": 1.564672,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "worldCenterPixelABGR": "4281737239"
+  },
+  {
+    "name": "aurora-animation-time12",
+    "mode": 2,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 12.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.0,
+        "starBrightness": 0.0,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 0.0,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.0,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 2.0,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.55,
+        "meteorRate": 0.0,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.0,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 290,
+    "skyCenterPixelABGR": "4279831046",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4226182699203491,
+      0.9063078165054321
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.9063078,
+      -0.42261827,
+      -0.0,
+      -0.42261827,
+      -0.9063078
+    ],
+    "gpuSampleCount": 260,
+    "skyGpuMedianMs": 1.14688,
+    "skyGpuP95Ms": 1.498112,
+    "glErrorAfterSky": 0,
+    "actualTime": 12.0,
+    "animationFeature": "aurora",
+    "differentPixelsFromAnimationBase": 198745,
+    "animationPass": true,
+    "worldCenterPixelABGR": "4279831046"
+  },
+  {
+    "name": "meteor-animation-time0",
+    "mode": 2,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.0,
+        "starBrightness": 0.0,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 0.0,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.0,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.0,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 8.0,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.0,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 290,
+    "skyCenterPixelABGR": "4279436802",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4226182699203491,
+      0.9063078165054321
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.9063078,
+      -0.42261827,
+      -0.0,
+      -0.42261827,
+      -0.9063078
+    ],
+    "gpuSampleCount": 260,
+    "skyGpuMedianMs": 1.309696,
+    "skyGpuP95Ms": 1.432576,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "worldCenterPixelABGR": "4279436802"
+  },
+  {
+    "name": "meteor-animation-time4",
+    "mode": 2,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 4.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.0,
+        "starBrightness": 0.0,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 0.0,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.0,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.0,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 8.0,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.0,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 292,
+    "skyCenterPixelABGR": "4279436802",
+    "cameraPosition": [
+      0.0,
+      101.61999988555908,
+      0.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4226182699203491,
+      0.9063078165054321
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.9063078,
+      -0.42261827,
+      -0.0,
+      -0.42261827,
+      -0.9063078
+    ],
+    "gpuSampleCount": 262,
+    "skyGpuMedianMs": 1.30048,
+    "skyGpuP95Ms": 1.435648,
+    "glErrorAfterSky": 0,
+    "actualTime": 4.0,
+    "animationFeature": "meteor",
+    "differentPixelsFromAnimationBase": 1207,
+    "animationPass": true,
+    "worldCenterPixelABGR": "4279436802"
+  },
+  {
+    "name": "rich-sky-translate",
+    "mode": 2,
+    "quality": 2,
+    "requestedFov": 70,
+    "generationBefore": 2,
+    "requestedTime": 0.0,
+    "recipe": {
+      "schema": "cosmic-sky/1",
+      "parameters": {
+        "seed": 2718.0,
+        "quality": 2.0,
+        "exposure": 1.15,
+        "starDensity": 0.38,
+        "starBrightness": 1.35,
+        "starSize": 1.0,
+        "twinkleAmount": 0.24,
+        "twinkleSpeed": 1.0,
+        "galacticYaw": 25.0,
+        "galacticTilt": 32.0,
+        "bandWidth": 0.26,
+        "galaxyStrength": 1.2,
+        "dustStrength": 1.35,
+        "nebulaStrength": 0.75,
+        "nebulaScale": 3.5,
+        "nebulaSpeed": 0.16,
+        "auroraStrength": 0.65,
+        "auroraHeight": 0.38,
+        "auroraWidth": 0.2,
+        "auroraCurtains": 1.1,
+        "auroraSpeed": 0.35,
+        "meteorRate": 1.8,
+        "meteorBrightness": 2.3,
+        "meteorSpeed": 1.0,
+        "meteorLength": 0.16,
+        "horizonGlow": 0.08,
+        "backgroundColor": "#020511",
+        "starCoolColor": "#9acaff",
+        "starWarmColor": "#ffd8a6",
+        "galaxyColor": "#aebedc",
+        "nebulaColorA": "#3659b4",
+        "nebulaColorB": "#b75cbe",
+        "auroraColorA": "#52e8b0",
+        "auroraColorB": "#8460ef"
+      }
+    },
+    "width": 960,
+    "height": 540,
+    "generationAfter": 2,
+    "skyFrames": 244,
+    "skyCenterPixelABGR": "4280291082",
+    "cameraPosition": [
+      512.0,
+      151.61999988555908,
+      512.0
+    ],
+    "cameraLook": [
+      0.0,
+      0.4226182699203491,
+      0.9063078165054321
+    ],
+    "projection": [
+      0.8033332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.428148,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0003906,
+      -1.0,
+      0.0,
+      0.0,
+      -0.10001954,
+      0.0
+    ],
+    "inverseViewRotation": [
+      -1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.9063078,
+      -0.42261827,
+      -0.0,
+      -0.42261827,
+      -0.9063078
+    ],
+    "gpuSampleCount": 214,
+    "skyGpuMedianMs": 2.63168,
+    "skyGpuP95Ms": 3.876864,
+    "glErrorAfterSky": 0,
+    "actualTime": 0.0,
+    "differentPixelsFromRichBase": 0,
+    "richTranslationPass": true,
+    "worldCenterPixelABGR": "4280291082"
+  }
+]

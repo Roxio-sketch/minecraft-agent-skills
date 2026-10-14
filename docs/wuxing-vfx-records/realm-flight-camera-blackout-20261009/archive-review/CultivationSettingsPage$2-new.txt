@@ -1,0 +1,39 @@
+Compiled from "CultivationSettingsPage.java"
+class cn.blockforge.generated.generatedmod.client.CultivationSettingsPage$2 extends cn.blockforge.generated.generatedmod.client.CultivationUi$Slider {
+  final cn.blockforge.generated.generatedmod.client.CultivationSettingsPage this$0;
+    descriptor: Lcn/blockforge/generated/generatedmod/client/CultivationSettingsPage;
+
+  cn.blockforge.generated.generatedmod.client.CultivationSettingsPage$2(cn.blockforge.generated.generatedmod.client.CultivationSettingsPage, int, int, int, java.lang.String, net.minecraftforge.common.ForgeConfigSpec$DoubleValue, double, double, double);
+    descriptor: (Lcn/blockforge/generated/generatedmod/client/CultivationSettingsPage;IIILjava/lang/String;Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;DDD)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #29                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationSettingsPage;
+       5: aload_0
+       6: iload_2
+       7: iload_3
+       8: iload         4
+      10: aload         5
+      12: aload         6
+      14: dload         7
+      16: dload         9
+      18: dload         11
+      20: invokespecial #32                 // Method cn/blockforge/generated/generatedmod/client/CultivationUi$Slider."<init>":(IIILjava/lang/String;Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;DDD)V
+      23: return
+
+  protected void m_5695_();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: getstatic     #52                 // Field cn/blockforge/generated/generatedmod/HudConfig.SCALE:Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;
+       4: invokevirtual #56                 // Method net/minecraftforge/common/ForgeConfigSpec$DoubleValue.get:()Ljava/lang/Object;
+       7: checkcast     #58                 // class java/lang/Double
+      10: invokevirtual #62                 // Method java/lang/Double.doubleValue:()D
+      13: ldc2_w        #63                 // double 100.0d
+      16: dmul
+      17: invokestatic  #70                 // Method java/lang/Math.round:(D)J
+      20: invokedynamic #82,  0             // InvokeDynamic #0:makeConcatWithConstants:(J)Ljava/lang/String;
+      25: invokestatic  #88                 // InterfaceMethod net/minecraft/network/chat/Component.m_237113_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      28: invokevirtual #92                 // Method m_93666_:(Lnet/minecraft/network/chat/Component;)V
+      31: return
+}

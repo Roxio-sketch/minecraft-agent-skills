@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="worldvolume"
+version="0.2.0"
+displayName="World Volume Environment Lab"
+description="Original finite world cloud/fog and local flash integration example."
+[[dependencies.worldvolume]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.22,)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.worldvolume]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"

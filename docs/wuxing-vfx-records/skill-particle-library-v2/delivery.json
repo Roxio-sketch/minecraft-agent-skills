@@ -1,0 +1,22 @@
+{
+  "created": "2026-09-29",
+  "artifacts": [
+    {
+      "name": "wuxingxiantu-skill-particle-library-v2.zip",
+      "bytes": 12912190,
+      "files": 1067,
+      "sha256": "de8a721e36621305d9177828cc3516327b7e50d3d244d0cfa0326c23d27c6a3d",
+      "zipIntegrity": true
+    },
+    {
+      "name": "wuxingxiantu-vfx-resourcepack-v2.zip",
+      "bytes": 5846452,
+      "files": 480,
+      "sha256": "3b9f973385124b900d67124fa2eb622d2043b6da1f922212f56f6fd6edbe1de6",
+      "zipIntegrity": true
+    }
+  ],
+  "v1ArchivesUnmodified": true,
+  "minecraftRendered": false,
+  "productionIntegrated": false
+}

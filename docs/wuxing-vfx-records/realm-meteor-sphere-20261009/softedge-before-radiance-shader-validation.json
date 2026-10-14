@@ -1,0 +1,29 @@
+{
+  "steps8vs24MaxDelta": 0,
+  "legacyProductionBeforeAfterMaxDelta": 0,
+  "fullyOccludedPixels": 0,
+  "stretchedFullyOccludedPixels": 0,
+  "animatedPixels": 12507,
+  "speedFeedbackPixels": 15026,
+  "opposingTurnFeedbackPixels": 11088,
+  "visiblePixels": 28628,
+  "spherePixelBounds": {
+    "left": 205,
+    "right": 394,
+    "bottom": 205,
+    "top": 394
+  },
+  "stretchedSpherePixelBounds": {
+    "left": 194,
+    "right": 405,
+    "bottom": 208,
+    "top": 391
+  },
+  "centerAlpha": 0.0784313725490196,
+  "centralOpaqueDepthAlpha": 0.050980392156862744,
+  "rimAlphaAtRadius90": 0.3333333333333333,
+  "emissionVisiblePixels": 25648,
+  "glError": 0,
+  "scope": "Production GLSL compiled and rendered in WebGL2 with synthetic perspective/depth/motion; actual Minecraft/Solas captures are separate",
+  "shaderSha256": "ba2dfe0ac4d5dddc2d36c6b9ee0f0010f7c77ecadb68ffa06c9a29fb87cf4749"
+}

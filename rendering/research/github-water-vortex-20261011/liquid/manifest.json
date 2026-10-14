@@ -1,0 +1,937 @@
+{
+  "schema": "github-liquid-source-study/1",
+  "acquired_date": "2026-10-11",
+  "projects": [
+    {
+      "id": "dli-fluid",
+      "repo": "dli/fluid",
+      "commit": "ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab",
+      "commit_date": "2016-06-29T23:06:44+01:00",
+      "license": "MIT",
+      "license_scope": "Selected upstream source and documentation only; external dependencies and referenced media not acquired.",
+      "files": [
+        {
+          "path": "LICENSE",
+          "local_path": "dli-fluid/LICENSE",
+          "bytes": 1093,
+          "sha256": "ea23c60d44803af81c7d05fb4fe035afd9d3d6988041b7248ab72acc9b9c6ed7",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/LICENSE",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/LICENSE",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "9f0e7e1e493baeda04503be6fe7099d944bfae28",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                21
+              ]
+            ],
+            "purpose": "MIT copyright and grant"
+          }
+        },
+        {
+          "path": "README.md",
+          "local_path": "dli-fluid/README.md",
+          "bytes": 389,
+          "sha256": "64c004cb54f326e800edbcb3308fb1c2f6667f47c553a50e9d94083aa77a6eec",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/README.md",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/README.md",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "701b4a693bf8cdda04bd462124a0598e20dc20a4",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                8
+              ]
+            ],
+            "purpose": "Upstream purpose and method"
+          }
+        },
+        {
+          "path": "simulator.js",
+          "local_path": "dli-fluid/simulator.js",
+          "bytes": 28250,
+          "sha256": "3ed92041ec4a2130dcfb36a49d54ced3936b10d960e1aba89b1b1fd70259ef5b",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/simulator.js",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/simulator.js",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "ccd9d73a2611bb6c27d653c7d780de0b7840aef6",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                30,
+                69
+              ],
+              [
+                274,
+                291
+              ],
+              [
+                294,
+                368
+              ],
+              [
+                369,
+                461
+              ],
+              [
+                485,
+                587
+              ]
+            ],
+            "purpose": "GPU types; PIC/FLIP pipeline; pressure; particle advection"
+          }
+        },
+        {
+          "path": "renderer.js",
+          "local_path": "dli-fluid/renderer.js",
+          "bytes": 19217,
+          "sha256": "34fcaada9420e1c693ea77bab0d1d642e0a7fd9c4521823f905e5a955c579b65",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/renderer.js",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/renderer.js",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "1b2463e06cc408dfffc89714d56043cec1e5f64e",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                274,
+                317
+              ]
+            ],
+            "purpose": "Sphere instance rendering; not a common fluid mesh"
+          }
+        },
+        {
+          "path": "shaders/common.frag",
+          "local_path": "dli-fluid/shaders/common.frag",
+          "bytes": 2559,
+          "sha256": "e3b4f347fe42c0c61782526c8cafbaf41fd71247e5a68533599129ff32ac23fa",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/common.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/common.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "12831b371d1c7f2e7850352d3519e36ed3aca6e7",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/addforce.frag",
+          "local_path": "dli-fluid/shaders/addforce.frag",
+          "bytes": 1396,
+          "sha256": "69033b4014026112a9b9ff6bc61fe9e0fb8f10de204d1e0190c70310206babb6",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/addforce.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/addforce.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "03fb9eb4cdb33df95fb4795ff1a02a0bd9ca6988",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                42
+              ]
+            ],
+            "purpose": "Gravity and mouse force; potential custom vortex injection point"
+          }
+        },
+        {
+          "path": "shaders/advect.frag",
+          "local_path": "dli-fluid/shaders/advect.frag",
+          "bytes": 1982,
+          "sha256": "d03f08414a324e02f05e4e08b9eab0fcd79171de612a25a1034567e94c4f737f",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/advect.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/advect.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "f8c87210b8084c45b9360421fb788e0192a0a1bd",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                59
+              ]
+            ],
+            "purpose": "Staggered velocity sampling; RK2; random displacement; commented CFL clamp"
+          }
+        },
+        {
+          "path": "shaders/transfertogrid.frag",
+          "local_path": "dli-fluid/shaders/transfertogrid.frag",
+          "bytes": 1940,
+          "sha256": "e54a3ad1f3d097758e43bb0ac57e93e553ef17f038a65bd6f9dd6dc8d8c3909f",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertogrid.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertogrid.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "e18cea7b9116a10944bac332832c4100f04f76be",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/transfertogrid.vert",
+          "local_path": "dli-fluid/shaders/transfertogrid.vert",
+          "bytes": 1235,
+          "sha256": "8eefb38efd6b786ad4b98d6b114911cfc23460236a110e0f192e6860e0ca9de1",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertogrid.vert",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertogrid.vert",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "60951557e1022de55008c9d86df80cd076221e74",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/normalizegrid.frag",
+          "local_path": "dli-fluid/shaders/normalizegrid.frag",
+          "bytes": 760,
+          "sha256": "511d1ac8b0d0f0078e00c18927ead58e7d13e7533f09f21f51783eb090319416",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/normalizegrid.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/normalizegrid.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "22a226c3961f2a244b5be9d6a808f0341b4a7d98",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/divergence.frag",
+          "local_path": "dli-fluid/shaders/divergence.frag",
+          "bytes": 1672,
+          "sha256": "8e8ad27568ed2905b21dd8360ed5e167e78c2d9012fe22187e9851a70955264d",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/divergence.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/divergence.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "7c0498d2d150c35c7dcb7b687139dd9019815c69",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/jacobi.frag",
+          "local_path": "dli-fluid/shaders/jacobi.frag",
+          "bytes": 1463,
+          "sha256": "a7c02b26b1508e7efd7bb4d4b265ef4c9d9559ed2eeaaa73fa54afced3845cba",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/jacobi.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/jacobi.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "e2d21cecd992f2cc1b4f1bba60ad957945937d4c",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                34
+              ]
+            ],
+            "purpose": "Pressure iterative stencil and air-cell handling"
+          }
+        },
+        {
+          "path": "shaders/subtract.frag",
+          "local_path": "dli-fluid/shaders/subtract.frag",
+          "bytes": 1311,
+          "sha256": "944608d1e4eb50d0af20ad611331ca8e38b42d3ee3cab6f1c260c1ba1e4add65",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/subtract.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/subtract.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "cab52558f37d66c54decaab53be7fec953cec41a",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/transfertoparticles.frag",
+          "local_path": "dli-fluid/shaders/transfertoparticles.frag",
+          "bytes": 1999,
+          "sha256": "c3a7215d2472772c0153b5bd3e9095a1d9047b7673880a893dcf1d1fdee043a9",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertoparticles.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertoparticles.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "a15ba70b8952788b0d3e42d339cddca4b5902115",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                50
+              ]
+            ],
+            "purpose": "PIC versus FLIP velocity update"
+          }
+        },
+        {
+          "path": "shaders/extendvelocity.frag",
+          "local_path": "dli-fluid/shaders/extendvelocity.frag",
+          "bytes": 1527,
+          "sha256": "0643b159ec7fdc602137fc0d9efe5f88bb0268eec66591b127da29f9b3275284",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/extendvelocity.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/extendvelocity.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "60827ba7d9c66ec564bd24069a7cece06cff3e4e",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/enforceboundaries.frag",
+          "local_path": "dli-fluid/shaders/enforceboundaries.frag",
+          "bytes": 815,
+          "sha256": "32cc45686c57a70ec23f435315560e0e64e0c959e387f8118b8191b15e78eb3e",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/enforceboundaries.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/enforceboundaries.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "bdd5473eed21e4089bec125287ff88c719fa382b",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/sphere.vert",
+          "local_path": "dli-fluid/shaders/sphere.vert",
+          "bytes": 950,
+          "sha256": "74fb67b1cd4edb81d300e83bb58a454186de8ad66ec0b6b4c533d0ae130487b5",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphere.vert",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphere.vert",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "0d7fd067b976d7adfcc57fade35b0a09cffdc312",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/sphere.frag",
+          "local_path": "dli-fluid/shaders/sphere.frag",
+          "bytes": 230,
+          "sha256": "d04ba92d3f8516a2b6035790dfc9bb45baab8535d8c9b78957b3f8c4a0b1c0b0",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphere.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphere.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "079531936365c01d68d5d6ba9c156613a8ed4f9e",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/spheredepth.frag",
+          "local_path": "dli-fluid/shaders/spheredepth.frag",
+          "bytes": 71,
+          "sha256": "357319ce2d8cdc528b58c8025a91e1ee41ae40515b9e9900e7a5644d00d59d02",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/spheredepth.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/spheredepth.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "4d2f488efa6d67648828b6ca27d17629ec2b8653",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/sphereao.frag",
+          "local_path": "dli-fluid/shaders/sphereao.frag",
+          "bytes": 1437,
+          "sha256": "4b4bb4b4b80e76aeddfbc697b6cc792a2823baf165fa8e46000eb8e109e353e7",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphereao.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphereao.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "8b91d6e518192300c1157c292a51e0672041ed20",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "shaders/composite.frag",
+          "local_path": "dli-fluid/shaders/composite.frag",
+          "bytes": 2600,
+          "sha256": "b5d5d5c601f9c051dfb88be762ea6a549abbec1eff0f4446e1c81a6d88a059de",
+          "github_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/composite.frag",
+          "raw_url": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/composite.frag",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "de630dea8c54e55f62fddc25cd4196a1f2c5c4d0",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                77
+              ]
+            ],
+            "purpose": "Normal/speed/AO/shadow composite; not refractive continuous water"
+          }
+        }
+      ],
+      "license_url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/LICENSE",
+      "key_anchors": [
+        {
+          "symbol": "simulate",
+          "path": "simulator.js",
+          "start_line": 274,
+          "end_line": 587,
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/simulator.js#L274-L587"
+        },
+        {
+          "symbol": "force injection point",
+          "path": "shaders/addforce.frag",
+          "start_line": 26,
+          "end_line": 41,
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/addforce.frag#L26-L41"
+        },
+        {
+          "symbol": "PIC/FLIP mixing",
+          "path": "shaders/transfertoparticles.frag",
+          "start_line": 35,
+          "end_line": 49,
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertoparticles.frag#L35-L49"
+        },
+        {
+          "symbol": "RK2 advection",
+          "path": "shaders/advect.frag",
+          "start_line": 39,
+          "end_line": 58,
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/advect.frag#L39-L58"
+        },
+        {
+          "symbol": "pressure Jacobi passes",
+          "path": "simulator.js",
+          "start_line": 485,
+          "end_line": 533,
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/simulator.js#L485-L533"
+        },
+        {
+          "symbol": "particle sphere renderer",
+          "path": "renderer.js",
+          "start_line": 274,
+          "end_line": 317,
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/renderer.js#L274-L317"
+        }
+      ],
+      "not_run": true
+    },
+    {
+      "id": "particles4all",
+      "repo": "matsuoka-601/Particles4All",
+      "commit": "58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0",
+      "commit_date": "2026-08-24T23:00:35+09:00",
+      "license": "MIT",
+      "license_scope": "Selected upstream source and documentation only; external dependencies and referenced media not acquired.",
+      "files": [
+        {
+          "path": "LICENSE",
+          "local_path": "particles4all/LICENSE",
+          "bytes": 1069,
+          "sha256": "0034e724545817127357c12071ef141d8774371ea78062bf6545b73e9a1c0816",
+          "github_url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/LICENSE",
+          "raw_url": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/LICENSE",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "42889a6bb695eb0a2d68eab1b863f2e0580670e0",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                21
+              ]
+            ],
+            "purpose": "MIT copyright and grant"
+          }
+        },
+        {
+          "path": "README.md",
+          "local_path": "particles4all/README.md",
+          "bytes": 2562,
+          "sha256": "29c0a88a48dfbcdfdc79faad153b10b62dfb4a3ca958052c29ee60a144a08183",
+          "github_url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/README.md",
+          "raw_url": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/README.md",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "21d909b674eacdc3acfa5a625f5f8833cfadd87e",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                51
+              ]
+            ],
+            "purpose": "PBF/WebGPU; anisotropic surface; narrow-range filtering"
+          }
+        },
+        {
+          "path": "src/sim.js",
+          "local_path": "particles4all/src/sim.js",
+          "bytes": 31582,
+          "sha256": "ef44d11b90ac638299ed94042b1bc9c4d0c46c50a990ecd40e514cb3ec82cbb1",
+          "github_url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/sim.js",
+          "raw_url": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/sim.js",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "b918550c8c0706867b75f56fe2619ed3a507465b",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                470,
+                603
+              ]
+            ],
+            "purpose": "Grid sorting, iterative constraints, finish pass"
+          }
+        },
+        {
+          "path": "src/wgsl.js",
+          "local_path": "particles4all/src/wgsl.js",
+          "bytes": 30201,
+          "sha256": "cd9c884e1cfa4a6138ed98ccf24d613cf5117c7b0ae85afc85b345254f87d180",
+          "github_url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/wgsl.js",
+          "raw_url": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/wgsl.js",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "91d17b4b32d1f865fc066eed9ffa1b5df21fc39c",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                61,
+                84
+              ],
+              [
+                250,
+                337
+              ],
+              [
+                477,
+                610
+              ]
+            ],
+            "purpose": "Predicted position, velocity update, surface tension, lambda/delta"
+          }
+        },
+        {
+          "path": "src/aniso_wgsl.js",
+          "local_path": "particles4all/src/aniso_wgsl.js",
+          "bytes": 4843,
+          "sha256": "bf8f9be3bf692fad7788231192d60718281a7db496114fbcbf9dca8bac268bdb",
+          "github_url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/aniso_wgsl.js",
+          "raw_url": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/aniso_wgsl.js",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "d608c7c94e9ba77020d2a8f60600cca051a1d5e0",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                159
+              ]
+            ],
+            "purpose": "Weighted covariance; eigenbasis; support/extent clamps; neighbor fallback"
+          }
+        },
+        {
+          "path": "src/ssfr.js",
+          "local_path": "particles4all/src/ssfr.js",
+          "bytes": 13942,
+          "sha256": "fd8d414d8afa684c6bd906ce24598cc6ca7bd13369bdf9fbf96c9c1fc2316ac9",
+          "github_url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr.js",
+          "raw_url": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr.js",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "67815eaea83d77c02efa03323a12a78dd2728b8a",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                83
+              ],
+              [
+                174,
+                301
+              ]
+            ],
+            "purpose": "Depth/thickness/filter pipelines, radius setup, render bindings"
+          }
+        },
+        {
+          "path": "src/ssfr_wgsl.js",
+          "local_path": "particles4all/src/ssfr_wgsl.js",
+          "bytes": 10779,
+          "sha256": "8d509a5c323c1c263eda90db3564b1da237ce406d7822724374434bc1df62718",
+          "github_url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js",
+          "raw_url": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "d4f6f574d5d755ea3a7dd0568df875a3c82990e1",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                183
+              ],
+              [
+                207,
+                338
+              ]
+            ],
+            "purpose": "Ellipsoid depth, sphere thickness, depth filter and empty pixel return"
+          }
+        },
+        {
+          "path": "src/ssfr_composite_wgsl.js",
+          "local_path": "particles4all/src/ssfr_composite_wgsl.js",
+          "bytes": 10411,
+          "sha256": "add7a05f4628884f1999d1f63dc798cf6f67b2026142f7e3f5b44d8e3fb78314",
+          "github_url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_composite_wgsl.js",
+          "raw_url": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_composite_wgsl.js",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "aa7a158303b84c82132e219311c6c62470a00ff4",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                45
+              ],
+              [
+                70,
+                260
+              ],
+              [
+                265,
+                330
+              ]
+            ],
+            "purpose": "Nearest-depth normal reconstruction, Fresnel, refraction and thickness absorption"
+          }
+        },
+        {
+          "path": "src/render.js",
+          "local_path": "particles4all/src/render.js",
+          "bytes": 11836,
+          "sha256": "8db5a2e4bf83e3da0da82b64ae14d200c2cbffbf2a1470cbb83b81a512c3c1a1",
+          "github_url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/render.js",
+          "raw_url": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/render.js",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "1041feacc3e754d2cfd4b2e19cc7931b4841d301",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        }
+      ],
+      "license_url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/LICENSE",
+      "key_anchors": [
+        {
+          "symbol": "constraint dispatch loop",
+          "path": "src/sim.js",
+          "start_line": 473,
+          "end_line": 595,
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/sim.js#L473-L595"
+        },
+        {
+          "symbol": "lambdaWGSL (compression-only condition)",
+          "path": "src/wgsl.js",
+          "start_line": 477,
+          "end_line": 542,
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/wgsl.js#L477-L542"
+        },
+        {
+          "symbol": "deltaWGSL",
+          "path": "src/wgsl.js",
+          "start_line": 545,
+          "end_line": 610,
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/wgsl.js#L545-L610"
+        },
+        {
+          "symbol": "tensionWGSL",
+          "path": "src/wgsl.js",
+          "start_line": 290,
+          "end_line": 334,
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/wgsl.js#L290-L334"
+        },
+        {
+          "symbol": "anisoWGSL",
+          "path": "src/aniso_wgsl.js",
+          "start_line": 66,
+          "end_line": 157,
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/aniso_wgsl.js#L66-L157"
+        },
+        {
+          "symbol": "hitEllipsoid",
+          "path": "src/ssfr_wgsl.js",
+          "start_line": 92,
+          "end_line": 112,
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js#L92-L112"
+        },
+        {
+          "symbol": "sphere thickness pass",
+          "path": "src/ssfr_wgsl.js",
+          "start_line": 150,
+          "end_line": 160,
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js#L150-L160"
+        },
+        {
+          "symbol": "narrowRange",
+          "path": "src/ssfr_wgsl.js",
+          "start_line": 219,
+          "end_line": 233,
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js#L219-L233"
+        },
+        {
+          "symbol": "empty pixel remains empty",
+          "path": "src/ssfr_wgsl.js",
+          "start_line": 242,
+          "end_line": 246,
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js#L242-L246"
+        },
+        {
+          "symbol": "water optical composite",
+          "path": "src/ssfr_composite_wgsl.js",
+          "start_line": 281,
+          "end_line": 330,
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_composite_wgsl.js#L281-L330"
+        }
+      ],
+      "not_run": true
+    },
+    {
+      "id": "splashsurf",
+      "repo": "InteractiveComputerGraphics/splashsurf",
+      "commit": "56d3e6ac444cf8540c238a4391483955a9484210",
+      "commit_date": "2026-06-02T21:02:40+02:00",
+      "license": "MIT",
+      "license_scope": "Selected upstream source and documentation only; external dependencies and referenced media not acquired.",
+      "files": [
+        {
+          "path": "LICENSE",
+          "local_path": "splashsurf/LICENSE",
+          "bytes": 1073,
+          "sha256": "f9ce649ea11b2215b32ca9149b03c5f7e5e60b06e3bc49fb6e72a0270a485771",
+          "github_url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/LICENSE",
+          "raw_url": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/LICENSE",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "5a7f7d179176357ad03fa849dc0bccc12d561c9c",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                21
+              ]
+            ],
+            "purpose": "MIT copyright and grant"
+          }
+        },
+        {
+          "path": "README.md",
+          "local_path": "splashsurf/README.md",
+          "bytes": 37660,
+          "sha256": "4f4ea40bc2bda54d36a4f546a69922a3ee746270771385ae51f89ddbbbfdb3b6",
+          "github_url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/README.md",
+          "raw_url": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/README.md",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "76c67e3329ddb68898f27fee1243077fe84ffa43",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                10,
+                111
+              ]
+            ],
+            "purpose": "Particle-to-mesh purpose, parameters, subdomain approach and nondeterminism note"
+          }
+        },
+        {
+          "path": "splashsurf_lib/README.md",
+          "local_path": "splashsurf/splashsurf_lib/README.md",
+          "bytes": 6094,
+          "sha256": "ad21cfbd54d4e0a9f2c200ad89e837e76283bb554a73de256bbc9c5163805a2b",
+          "github_url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/README.md",
+          "raw_url": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/README.md",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "5aae6a56e0f376af8765614298a1f532b437c67e",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "splashsurf_lib/src/reconstruction.rs",
+          "local_path": "splashsurf/splashsurf_lib/src/reconstruction.rs",
+          "bytes": 7108,
+          "sha256": "e216e853c5b805fced8f9dc09690631012aa7926c2ec64a449d8ea38eb14e6d2",
+          "github_url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/reconstruction.rs",
+          "raw_url": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/reconstruction.rs",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "2ebfce853fe7e7fbce24714253050acbb1a09e31",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                114,
+                192
+              ]
+            ],
+            "purpose": "Neighbor search, density map and triangulation pipeline"
+          }
+        },
+        {
+          "path": "splashsurf_lib/src/density_map.rs",
+          "local_path": "splashsurf/splashsurf_lib/src/density_map.rs",
+          "bytes": 31707,
+          "sha256": "b411b57587e2bd7225913d8bd51f65b3244a433279ffc5595f833750b3504510",
+          "github_url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/density_map.rs",
+          "raw_url": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/density_map.rs",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "0043439028a3042363111c55f6a47a264114cf9f",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                150,
+                188
+              ],
+              [
+                520,
+                631
+              ],
+              [
+                635,
+                730
+              ]
+            ],
+            "purpose": "Density sum; support bounds; domain margins; per-particle scalar contributions"
+          }
+        },
+        {
+          "path": "splashsurf_lib/src/marching_cubes.rs",
+          "local_path": "splashsurf/splashsurf_lib/src/marching_cubes.rs",
+          "bytes": 14017,
+          "sha256": "7f7b830c9e18e9088219111d4cc68e6b6fe7f404f243046b392e28ae6f517355",
+          "github_url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/marching_cubes.rs",
+          "raw_url": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/marching_cubes.rs",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "77bdb379c787115fdcbd8a4eb4b86744e105dd1c",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                90,
+                126
+              ]
+            ],
+            "purpose": "Iso-surface triangulation entry"
+          }
+        },
+        {
+          "path": "splashsurf_lib/src/marching_cubes/triangulation.rs",
+          "local_path": "splashsurf/splashsurf_lib/src/marching_cubes/triangulation.rs",
+          "bytes": 3339,
+          "sha256": "f62b1d9bd273b703f0ae756264459dbb1cccd74c7393fab740c7d1835c49fc69",
+          "github_url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/marching_cubes/triangulation.rs",
+          "raw_url": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/marching_cubes/triangulation.rs",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "84a6fc9de32311de4494c3d06c08eb39a5138a76",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                21,
+                53
+              ]
+            ],
+            "purpose": "Triangle connectivity loop"
+          }
+        },
+        {
+          "path": "splashsurf_lib/src/postprocessing.rs",
+          "local_path": "splashsurf/splashsurf_lib/src/postprocessing.rs",
+          "bytes": 33000,
+          "sha256": "d4f4d443240eda577d1507e79634be2d70e3a549ee3939c20fc0116bf14e3b5a",
+          "github_url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/postprocessing.rs",
+          "raw_url": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/postprocessing.rs",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "a103fe73b3cae546dcda5058edb98488f8e34ca8",
+          "verified_against_git_tree": true,
+          "read_scope": {
+            "line_ranges": [
+              [
+                1,
+                90
+              ],
+              [
+                105,
+                163
+              ]
+            ],
+            "purpose": "Weighted Laplacian/normal smoothing; limited cleanup inspection"
+          }
+        },
+        {
+          "path": "splashsurf_lib/src/kernel.rs",
+          "local_path": "splashsurf/splashsurf_lib/src/kernel.rs",
+          "bytes": 21382,
+          "sha256": "575cf002cccee265a2f1c9880f4eeee76493d312b61aa48d41bdc6fc271c80d1",
+          "github_url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/kernel.rs",
+          "raw_url": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/kernel.rs",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "3b3c84a7c5b10d8ca6af5e1ae664e1fde7e14c3e",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        },
+        {
+          "path": "splashsurf_lib/examples/minimal_sph_levelset.rs",
+          "local_path": "splashsurf/splashsurf_lib/examples/minimal_sph_levelset.rs",
+          "bytes": 18238,
+          "sha256": "6c721f1ea3e72b4d6ad746c0852d9113af9fd38e94fe2875e6a1395a12c8d845",
+          "github_url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/examples/minimal_sph_levelset.rs",
+          "raw_url": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/examples/minimal_sph_levelset.rs",
+          "license": "MIT",
+          "upstream_git_blob_sha1": "a1e5201848995c59841a4772e26325ff56b6728c",
+          "verified_against_git_tree": true,
+          "read_scope": "Acquired source; not closely read in this study"
+        }
+      ],
+      "license_url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/LICENSE",
+      "key_anchors": [
+        {
+          "symbol": "reconstruct_single_surface_append",
+          "path": "splashsurf_lib/src/reconstruction.rs",
+          "start_line": 149,
+          "end_line": 191,
+          "url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/reconstruction.rs#L149-L191"
+        },
+        {
+          "symbol": "particle_support_loop",
+          "path": "splashsurf_lib/src/density_map.rs",
+          "start_line": 677,
+          "end_line": 728,
+          "url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/density_map.rs#L677-L728"
+        },
+        {
+          "symbol": "support margin against boundary holes",
+          "path": "splashsurf_lib/src/density_map.rs",
+          "start_line": 600,
+          "end_line": 609,
+          "url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/density_map.rs#L600-L609"
+        },
+        {
+          "symbol": "triangulate_density_map_append",
+          "path": "splashsurf_lib/src/marching_cubes.rs",
+          "start_line": 113,
+          "end_line": 125,
+          "url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/marching_cubes.rs#L113-L125"
+        },
+        {
+          "symbol": "par_laplacian_smoothing_inplace",
+          "path": "splashsurf_lib/src/postprocessing.rs",
+          "start_line": 17,
+          "end_line": 52,
+          "url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/postprocessing.rs#L17-L52"
+        }
+      ],
+      "not_run": true
+    }
+  ],
+  "total_files": 40,
+  "total_bytes": 363739,
+  "acquisition": "GitHub repository pages; git ls-remote HEAD and filtered no-checkout metadata; immutable raw commit URLs (API rate limit 403).",
+  "execution": "No downloaded source was executed. No install, build, npm, cargo or shader execution.",
+  "exclusions": [
+    ".git directories",
+    "binary assets",
+    "HDR panoramas",
+    "videos",
+    "particle simulation data",
+    "third-party dependencies"
+  ],
+  "verification": {
+    "all_selected_bytes_match_immutable_git_tree": true,
+    "verified_files": 40,
+    "method": "SHA256 and byte count plus Git blob SHA1 against git ls-tree for the fixed commit; no source execution",
+    "notes": "Uninspected files are marked. Selected subsets omit dependencies and are not runnable packages."
+  }
+}

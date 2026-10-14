@@ -1,0 +1,14 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="adapterlab"
+version="0.1.0"
+displayName="动态模型材质适配 Lab"
+description="Original rendercraft reference demo"
+[[dependencies.adapterlab]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"

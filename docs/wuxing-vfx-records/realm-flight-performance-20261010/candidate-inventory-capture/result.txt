@@ -1,0 +1,1 @@
+FAIL: 0 real screenshots, 3 checks, 1 actual mouse/packet inputs; failures=[Capture exception: java.lang.NullPointerException: Cannot invoke "cn.blockforge.generated.generatedmod.client.CultivationPage.children()" because the return value of "cn.blockforge.generated.generatedmod.client.FlightSelectionCapture.page(net.minecraft.client.Minecraft)" is null]

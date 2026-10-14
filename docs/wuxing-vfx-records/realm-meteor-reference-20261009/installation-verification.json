@@ -1,0 +1,12 @@
+{
+  "installed": true,
+  "installedAt": "2026-10-09T17:16:04.9640742+08:00",
+  "source": "E:\\五行仙途\\build\\libs\\wuxingxiantu-0.2.jar",
+  "destination": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "size": 45078884,
+  "sha256": "06732b56bdc2e51df4ffcf32f1ece02e41c0d5491add17869ce21585ea0e2d5e",
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-reference-flight-20261009-171604.jar",
+  "backupSha256": "47a1a03791273009a65860174bb330d473eaaa54f2ea1f78a6dcfdac2ec92495",
+  "method": "verified staged copy; same-volume rename of previous JAR; staged rename to final",
+  "requiresGameRestart": true
+}

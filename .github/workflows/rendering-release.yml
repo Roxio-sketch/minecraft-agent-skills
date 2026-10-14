@@ -1,0 +1,17 @@
+name: Rendering release checks
+on:
+  push:
+    paths: ['skills/**', 'rendering/**', 'scripts/check_rendering_release.py', '.github/workflows/rendering-release.yml']
+  pull_request:
+    paths: ['skills/**', 'rendering/**', 'scripts/check_rendering_release.py', '.github/workflows/rendering-release.yml']
+permissions:
+  contents: read
+jobs:
+  portable-entry-points:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/check_rendering_release.py

@@ -1,0 +1,368 @@
+{
+  "files": [
+    {
+      "path": "assets/forge-api-probe/build.gradle",
+      "sha256": "62cad42cc50b00ad950409984d6558c237f8643d0b9cd03efedeb91e8febdbba"
+    },
+    {
+      "path": "assets/forge-api-probe/gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "ed2c26eba7cfb93cc2b7785d05e534f07b5b48b5e7fc941921cd098628abca58"
+    },
+    {
+      "path": "assets/forge-api-probe/gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "0c0c22ccb8e653a13a7df19493b11fe5ce0f5fae7ee4835223d2d2ad028799da"
+    },
+    {
+      "path": "assets/forge-api-probe/gradle.properties",
+      "sha256": "613a08ff4c1a550ca53c2c58f038dfa6e5422fb3e3750b280a4d813c64961b6b"
+    },
+    {
+      "path": "assets/forge-api-probe/gradlew",
+      "sha256": "fb3cbfe6d066ee52bc07f62ed61ff77bde195384f52496c94280a83008d9f531"
+    },
+    {
+      "path": "assets/forge-api-probe/gradlew.bat",
+      "sha256": "8e327fcb99d29ce0fe3ee2fec6e6a25de815a2df83a6a44a553dea89ffc92955"
+    },
+    {
+      "path": "assets/forge-api-probe/settings.gradle",
+      "sha256": "c036c0c756067e1a838e3344f7fde7ddcb0ef0d5dbda90433c30556565801694"
+    },
+    {
+      "path": "assets/forge-api-probe/src/main/java/research/subscene/ForgeRouteProbe.java",
+      "sha256": "50f44075ac2d662b730274907b449c659151fca4eaf408e2263091eed41e04c5"
+    },
+    {
+      "path": "assets/forge-api-probe/src/main/java/research/subscene/MathContracts.java",
+      "sha256": "f88e7b535681fd7b9e681f2878c61db63858c806c15ad817781a35d5a8269f5f"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/build.gradle",
+      "sha256": "9cf0ef493fc1c05a58317f45083f7e7b083a7defd6ff1bd06af26f8e26676245"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "ed2c26eba7cfb93cc2b7785d05e534f07b5b48b5e7fc941921cd098628abca58"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "0c0c22ccb8e653a13a7df19493b11fe5ce0f5fae7ee4835223d2d2ad028799da"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/gradle.properties",
+      "sha256": "613a08ff4c1a550ca53c2c58f038dfa6e5422fb3e3750b280a4d813c64961b6b"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/gradlew",
+      "sha256": "fb3cbfe6d066ee52bc07f62ed61ff77bde195384f52496c94280a83008d9f531"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/gradlew.bat",
+      "sha256": "8e327fcb99d29ce0fe3ee2fec6e6a25de815a2df83a6a44a553dea89ffc92955"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/settings.gradle",
+      "sha256": "276921a7d90d3a4e235eca134c000dd8195a929e15855a75046f093d55af8eb1"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/src/main/java/dev/inkrealm/InkClient.java",
+      "sha256": "c6dc3dec43ecc2401433df81fdbbef8886cf68031de321012856f113c53e6448"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/src/main/java/dev/inkrealm/InkRealm.java",
+      "sha256": "bed4abebcdca1281c233a1ee9f97a4c542cb28feb2e1898d16deec5e86616b7d"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/src/main/resources/assets/inkrealm/shaders/core/aperture.fsh",
+      "sha256": "6969a108eeb5fb3411d3751d8589c8e9d69051da15446a381947d28a578c1d63"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/src/main/resources/assets/inkrealm/shaders/core/aperture.json",
+      "sha256": "568903191307edb369efe3cf843b9d1f7adbf1e68e4c576fd82b34e5d508069f"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/src/main/resources/assets/inkrealm/shaders/core/aperture.vsh",
+      "sha256": "3cb8cd4b9d5f4f99f8f7e7bb21a91c82599bbaa4f0321b0c6a8a392e16d2d627"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/src/main/resources/assets/inkrealm/shaders/core/landscape.fsh",
+      "sha256": "b7314c9a48a72f3fd81817ce85ad71fed9ac0821f6be2b354e77ed5a902875f5"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/src/main/resources/assets/inkrealm/shaders/core/landscape.json",
+      "sha256": "0e3dd66625cefc39c0e906b78f84ae238f54c9094c2ff15d4aa63d8be68e8984"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/src/main/resources/assets/inkrealm/shaders/core/landscape.vsh",
+      "sha256": "ad9687bac5e6918c047a8bd272cd2723b79ed84acc07d9ed17ae2a75d4c94ce2"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/src/main/resources/META-INF/mods.toml",
+      "sha256": "0f660dcf998b86658206c38c8895810db8a2d3cfdd1a0d14cc3ade25bc8eaf33"
+    },
+    {
+      "path": "assets/forge-inkrealm-example/src/main/resources/pack.mcmeta",
+      "sha256": "05a3914a24a2de44d6ecaedd48edf2e466cf16fc18469d02826e49ebf038f5bb"
+    },
+    {
+      "path": "assets/gpu-probe/index.html",
+      "sha256": "d31a7a8b9fb9dc7da7c698b31e236598b79065725328c0e4e2c302c03fbdab11"
+    },
+    {
+      "path": "assets/gpu-probe/validate.cjs",
+      "sha256": "c8aec0d6e70711071c9e2ccfd424cd2ad0cb9a00613c400418825a3ae2ece75d"
+    },
+    {
+      "path": "references/evidence/circle.png",
+      "sha256": "3529de909a01d9dcf4116972738404245e31240965260d7a440f233059cfde6d"
+    },
+    {
+      "path": "references/evidence/forge-probe.log",
+      "sha256": "84104bf736445cf1cc92661fac7b6d450b877c52193f3e17597d62889d9d89e5"
+    },
+    {
+      "path": "references/evidence/forge-reproduction.log",
+      "sha256": "6b1693865ab5b0a7ecad12be7b323c2875d6526ccfc950b570cc6182b56b3082"
+    },
+    {
+      "path": "references/evidence/gpu-reproduction.json",
+      "sha256": "8c05028179a6d484dc2512e5989c7d286a236d5f6ec26d6e59001e58802cdbfe"
+    },
+    {
+      "path": "references/evidence/gpu-validation.json",
+      "sha256": "8c05028179a6d484dc2512e5989c7d286a236d5f6ec26d6e59001e58802cdbfe"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-inside-before.png",
+      "sha256": "dd54b2efd145a1c5fe3e02dffc10323bc4e657a8a526f4276b43d45e18eeca35"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-inside-move-scene.png",
+      "sha256": "c1ae7d46aeb2b409b775d9cf7fcaad20ab510432d841324f3efc4d9bc76e2393"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-inside-move.json",
+      "sha256": "ea820f36a55321cdb421a7d212d88f0f0d5e015324d6c29da9e6ff21bd62c458"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-inside-reload-scene.png",
+      "sha256": "beee896ff83bffd447243847827d582081d3948bb2b6d603d4a2337585dcf4d5"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-inside-reload.json",
+      "sha256": "ee9d29ffae2ad8029ba25367c66b3880d13b029b0ac1ade5ca7308a921f6fccd"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-inside-scene.png",
+      "sha256": "095ab44a0562eddcb84e6735b614ad39aa814af68db4dbcaaef33ec7b783b1bf"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-inside-turn-scene.png",
+      "sha256": "445fc8e7ac9390dee7c852ff042c96ecc0527856d788972c99f8218e49ead84a"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-inside-turn.json",
+      "sha256": "c58af7853ec0a3947557d5c9f670ebed22f1da2d2323f27fe67baf4755412b86"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-inside-world.png",
+      "sha256": "5a396c21d623b5623f86bcbae09c9793718d926419cf8898212f041e27a9eb5f"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-inside.json",
+      "sha256": "b8797e4862753b2eb67f3730ad614139eaffea6462dc7d85c79151b2567d602f"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-near-before.png",
+      "sha256": "ecd1bf5a9f11d9bde6b283062e88840243818578b6d3632489afbdf28389bb93"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-near-scene.png",
+      "sha256": "a68a62409ceecb19f7ffb85ce97e55a13c7ad0c4f203c72069ed93e41855e0a8"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-near-world.png",
+      "sha256": "eccdd70757a6b8d90ed5aba8c76700f0fe2cdcfd909a6ad814801b62676b8e34"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-near.json",
+      "sha256": "b5f431e1524e2cd0c1ea7a5961e5abc692175d082ba5c2c0ff0f5afe2fdaa6e5"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-returned-before.png",
+      "sha256": "7f3b67e5508fd1743a63162b322c52bc2a1927a567189b231a543c7b16864ef6"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-returned-scene.png",
+      "sha256": "80fd2c6205d8724ed458bd0cea0e68e5a738dd984d6fb0d138b5dd1a03d47509"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-returned-world.png",
+      "sha256": "a3703a13160fa26884fe70fc5a4259a5b3469adbf3da899ecf1e35ad6518098b"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-returned.json",
+      "sha256": "af3cc325a5697cdff286ddeb4bd3a2020aa12c5b5b088dbc6cc35a942aef4518"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-window-scene.png",
+      "sha256": "1552499b9e0575dec0d54e426fca3d83e8b2c7eb765520454521ccdcf63d852f"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/20260929-100726-window.json",
+      "sha256": "ff8c284b35b7852e47c354a14e236741c77027d6aafd4357e7ae5c065dbf4973"
+    },
+    {
+      "path": "references/evidence/inkrealm/crossing/session.json",
+      "sha256": "403d5b57e510e5ee1916ef28990072b62d6c39c21c5803e21283c8242b52eddc"
+    },
+    {
+      "path": "references/evidence/inkrealm/deployment.json",
+      "sha256": "1c639f6f71d3b4e0abbe8c039589d54b0acb88a6e62c928454d51d1503f49ac0"
+    },
+    {
+      "path": "references/evidence/inkrealm/helper-validation.json",
+      "sha256": "f8be60d981801b4ff4ddaa2a9ed34e15e11b4cbd0668d6319aaec459aefd011b"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-foreground-before.png",
+      "sha256": "87326da0d0105ab979c5358cb1698ea237d64ff576d76717dff6736119669a86"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-foreground-scene.png",
+      "sha256": "08b68c0954499cd1302c992c10208d9aa5c61b626671aa1cd6fc134aff5b6a80"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-foreground-world.png",
+      "sha256": "d8981997b9fd280300eaee0f276e0129b9ce8998892c303d3fa931bed2472ca0"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-foreground.json",
+      "sha256": "7f6a5a59fa8c3922ef5f2226d644ca831ea875aaf9aca3d532d9964dce6b6471"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-front-before.png",
+      "sha256": "b31b5cfc1bc0672593216e3ec4c5ebcbdee066f1faf9effbc07c5eb37d5ced4a"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-front-scene.png",
+      "sha256": "1552499b9e0575dec0d54e426fca3d83e8b2c7eb765520454521ccdcf63d852f"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-front-world.png",
+      "sha256": "ca2e6ed1318a1ab8af0dbea362839f390992ec232a02b59ae853406e30cad283"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-front.json",
+      "sha256": "848404ce3ceee40cdbbf41f136e89032441fc0763e1c59493b149dfa71cd3707"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-high-scene.png",
+      "sha256": "1552499b9e0575dec0d54e426fca3d83e8b2c7eb765520454521ccdcf63d852f"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-high.json",
+      "sha256": "f1eb4e310858adf54cf16ffac620ffa66448727ee65207b3c791e24677818cef"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-left-scene.png",
+      "sha256": "55822326069f0cd5a7db3555768847b90bbf0ccb233947e517597e51a588f3a1"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-left.json",
+      "sha256": "36cf11606b4382a913252df79c85be4ab8b82aa10c17fcb062f40f13a4dd1651"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-low-scene.png",
+      "sha256": "47190c56e9deff443fa0074f333e9af3441074f008eabcdb8c8b7c27bd561be6"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-low.json",
+      "sha256": "ed60454a91bcbba52770c10a99c9b138691419ae67c3e946ce21653db934988d"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-recovered-scene.png",
+      "sha256": "1552499b9e0575dec0d54e426fca3d83e8b2c7eb765520454521ccdcf63d852f"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-recovered.json",
+      "sha256": "7d1620392ad9d6434bc359ec33bcac217b56afb4244a4d1ced05a4b471b9618f"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-reloaded-scene.png",
+      "sha256": "1552499b9e0575dec0d54e426fca3d83e8b2c7eb765520454521ccdcf63d852f"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-reloaded.json",
+      "sha256": "f66209c71ac771d4463911379af8c70fd813ed089c4d96ff741333c5f9c4dfee"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-right-scene.png",
+      "sha256": "c65d590698518c4ed32b288eb9eb07f7042a53852ea3d8ca4934d1b524524968"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-right.json",
+      "sha256": "effdda3caab79a42b59fc69bf0cfbcf04dda579162e68c98baabbbec6e7d34a4"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-time4-scene.png",
+      "sha256": "077fea265614e5b78f99f224f21b626b8cc17d5c26b1cc5d2a1b8d209add1d38"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/20260929-100841-time4.json",
+      "sha256": "734df3af96ec63778fd384d6e200c4410730de2aa7f386131eadb08a2aef767f"
+    },
+    {
+      "path": "references/evidence/inkrealm/runtime/session.json",
+      "sha256": "600c7d5b155bd0e360effaa158a8a4f57261724caea9d5b5546210ad15583c73"
+    },
+    {
+      "path": "references/evidence/inkrealm/scaffold-build.json",
+      "sha256": "8ceeacebcd86dcc275da81a6a905746c1746d2da0c1e5e76e2a36d3cbec9b022"
+    },
+    {
+      "path": "references/evidence/inkrealm/scaffold-build.log",
+      "sha256": "96b71f97bd060859f589565d36ed98a9db40a107881497e6bdbb37a5c77dab4b"
+    },
+    {
+      "path": "references/evidence/inkrealm/verification.json",
+      "sha256": "d9d764ecb704c3b8e1700144e8650bdee937ecc2612dc832671992b5682af6f7"
+    },
+    {
+      "path": "references/evidence/irregular.png",
+      "sha256": "66395996f6ed3170c2d7b1910a1299cce8d49d5fcbc13aa60a37426bdf89ee00"
+    },
+    {
+      "path": "references/evidence/pipeline.png",
+      "sha256": "205b6dfbfbdf93bbab2a42e52f712f4aa7b94e6c25138106275a99bea4ad736b"
+    },
+    {
+      "path": "references/evidence/plane.png",
+      "sha256": "1e003065160a590f557cf5d5f391b1374f677a3465aea57bde1c1936408a8814"
+    },
+    {
+      "path": "references/evidence/rift.png",
+      "sha256": "c4218e7945240e3ab4e1c00af301df9dbd03df0fb46531d176fa6a3b145188e8"
+    },
+    {
+      "path": "references/evidence/sphere-eye-0.png",
+      "sha256": "5b773c28f2bad1c45cd15edb831792dea265af9cbe5a5d860801d4fb96e284e7"
+    },
+    {
+      "path": "references/evidence/sphere-eye-3.png",
+      "sha256": "3bdd4b8be4469fbbbd5b8899ea691127dabe3e1900eacfbd8dc7201b33d75b01"
+    },
+    {
+      "path": "scripts/scaffold_inkrealm.py",
+      "sha256": "65de69fd31a9254093b2824134781e7db460c07f9b9562a271be6d0fa48d4c66"
+    },
+    {
+      "path": "scripts/verify_bundle.py",
+      "sha256": "c61d37901b3123e06bb1332b555f4317dedb777f773d413fecb9d0acdc43fd2a"
+    },
+    {
+      "path": "scripts/verify_inkrealm_evidence.py",
+      "sha256": "4d3af29919002d4c38e29092cbc65006c675887361d4804346f90eb3eb164b9e"
+    }
+  ]
+}

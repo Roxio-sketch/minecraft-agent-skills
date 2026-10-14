@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "name": "Prismatic energy conduit",
+  "section": "cross",
+  "sides": 10,
+  "sampling": {
+    "lifetime": 0.85,
+    "minDistance": 0.015,
+    "maxStep": 0.1,
+    "breakDistance": 4,
+    "maxPoints": 256
+  },
+  "layers": [
+    {
+      "width": 0.26,
+      "blend": "additive",
+      "profile": "double",
+      "texture": "trailbeam:textures/white.png",
+      "repeat": 2.0,
+      "scroll": 0.65,
+      "gain": 1.0,
+      "fadePower": 1.4,
+      "taper": [
+        {
+          "at": 0,
+          "value": 0.05
+        },
+        {
+          "at": 0.18,
+          "value": 1
+        },
+        {
+          "at": 0.8,
+          "value": 1
+        },
+        {
+          "at": 1,
+          "value": 0.1
+        }
+      ],
+      "colors": [
+        {
+          "at": 0.0,
+          "color": "#342280",
+          "alpha": 0.8
+        },
+        {
+          "at": 0.5,
+          "color": "#913DEE",
+          "alpha": 0.8
+        },
+        {
+          "at": 1.0,
+          "color": "#34D9EF",
+          "alpha": 0.8
+        }
+      ]
+    },
+    {
+      "width": 0.055,
+      "blend": "additive",
+      "profile": "dash",
+      "texture": "trailbeam:textures/white.png",
+      "repeat": 2.0,
+      "scroll": -1.2,
+      "gain": 1.0,
+      "fadePower": 1.4,
+      "taper": [
+        {
+          "at": 0,
+          "value": 0.05
+        },
+        {
+          "at": 0.18,
+          "value": 1
+        },
+        {
+          "at": 0.8,
+          "value": 1
+        },
+        {
+          "at": 1,
+          "value": 0.1
+        }
+      ],
+      "colors": [
+        {
+          "at": 0.0,
+          "color": "#CFC6FF",
+          "alpha": 0.8
+        },
+        {
+          "at": 0.5,
+          "color": "#FFFFFF",
+          "alpha": 0.8
+        },
+        {
+          "at": 1.0,
+          "color": "#BCFFFF",
+          "alpha": 0.8
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.cosmiclab.mixin",
+  "plugin": "dev.cosmiclab.mixin.NativePipelineMixinPlugin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "cosmiclab.refmap.json",
+  "client": [
+    "NativeTranslucentMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

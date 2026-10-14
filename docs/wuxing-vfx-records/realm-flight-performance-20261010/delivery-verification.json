@@ -1,0 +1,1376 @@
+{
+  "result": "PASS",
+  "sha256": "5cd588004cfbb5c4bdb2bdacaeb55365a1ea508bd4dba9fa7380a2f6d0ddc86b",
+  "runtimeEnvironment": "Native Forge 1.20.1 / 47.4.10",
+  "temporaryPreviewCommandsRemoved": true,
+  "cachedGeometryEvaluationsSavedPercent": [
+    71.6875,
+    71.69699367088607,
+    71.69117647058823,
+    71.69921875,
+    71.70350609756098,
+    71.71052631578947,
+    71.71052631578947,
+    71.7085798816568,
+    71.7095588235294,
+    71.7095588235294,
+    71.71052631578947,
+    71.7085798816568,
+    71.7085798816568,
+    71.70758928571428,
+    71.7085798816568,
+    71.70758928571428,
+    71.7085798816568,
+    71.70758928571428,
+    71.7085798816568,
+    71.70758928571428,
+    71.7085798816568,
+    71.70245398773007,
+    71.68367346938776,
+    71.66666666666667,
+    71.65865384615384,
+    71.64256198347107,
+    71.640625,
+    71.63461538461539,
+    71.63254310344827,
+    71.6282894736842,
+    71.6282894736842,
+    71.62610619469027,
+    71.62610619469027,
+    71.62162162162163,
+    71.63865546218487,
+    71.66193181818181,
+    71.67832167832168,
+    71.69117647058823,
+    71.69585987261146,
+    71.69921875,
+    71.70031055900621,
+    71.69471153846155,
+    71.67832167832168,
+    71.66193181818181,
+    71.65697674418605,
+    71.64446721311475,
+    71.64446721311475,
+    71.63254310344827,
+    71.63043478260869,
+    71.62610619469027,
+    71.6282894736842,
+    71.62610619469027,
+    71.62610619469027,
+    71.62162162162163,
+    71.63865546218487,
+    71.66353383458647,
+    71.68367346938776,
+    71.69117647058823,
+    71.69699367088607,
+    71.69921875,
+    71.74295774647888,
+    71.70015760441292,
+    71.68137254901961,
+    71.65396639312232,
+    71.64230019493178,
+    71.62280701754386,
+    71.60976080246914,
+    71.60796766743648,
+    71.60762679055361,
+    71.60762679055361,
+    71.60762679055361,
+    71.60886319845858,
+    71.60886319845858,
+    71.60886319845858,
+    71.60886319845858,
+    71.60762679055361,
+    71.60796766743648,
+    71.60672853828306,
+    71.60796766743648,
+    71.60672853828306,
+    71.60796766743648,
+    71.5998427672956,
+    71.58239700374531,
+    71.5683023872679,
+    71.56193078324226,
+    71.55720338983052,
+    71.56000937646508,
+    71.55822725129656,
+    71.56308851224105,
+    71.56412069778406,
+    71.56131628787878,
+    71.55952380952382,
+    71.56056270863138,
+    71.56056270863138,
+    71.56759906759906,
+    71.59470171047143,
+    71.60657998423956,
+    71.61664779161949,
+    71.6174832962138,
+    71.61429621462699,
+    71.61429621462699,
+    71.6059916571862,
+    71.57680787334189,
+    71.56292749658002,
+    71.55898876404494,
+    71.55745489078822,
+    71.55952380952382,
+    71.55563514804201,
+    71.55952380952382,
+    71.56160458452723,
+    71.56339031339031,
+    71.51785714285714,
+    71.56547619047619,
+    71.56295224312589,
+    71.57738095238095,
+    71.60475030450671,
+    71.61519036519037,
+    71.61842603102535,
+    71.62011173184356,
+    71.61487236403997
+  ],
+  "turnImages": 120,
+  "turnChecks": 1091,
+  "selection": {
+    "fixture": "flightSelectionCapture",
+    "result": "PASS",
+    "scope": "Isolated local DEV survival save; exact vanilla inventory Open event, actual production navigation/category/selection mouseClicked and mouseScrolled. Reflection only reads widget coordinates, server snapshot and actual renderer state. Real production network validates one deliberately locked selection. No remote multiplayer/FPS/shader-pack claim.",
+    "captures": [
+      {
+        "screenshot": "layout-page-0.png",
+        "stage": 1,
+        "actualRealm": 8,
+        "configPreference": 0,
+        "actualServer": {
+          "realm": 8,
+          "visualRealm": 8,
+          "packetPreference": 0,
+          "active": false,
+          "preferredRealm": 0,
+          "flying": false,
+          "mana": 1001320.0
+        },
+        "actualFlightPacket": null,
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 0,
+        "actualProductionWidgetLabels": [],
+        "actualScroll": 0,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "layout-page-1.png",
+        "stage": 1,
+        "actualRealm": 8,
+        "configPreference": 0,
+        "actualServer": {
+          "realm": 8,
+          "visualRealm": 8,
+          "packetPreference": 0,
+          "active": false,
+          "preferredRealm": 0,
+          "flying": false,
+          "mana": 1001540.0
+        },
+        "actualFlightPacket": null,
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 0,
+        "actualProductionWidgetLabels": [
+          "未开启领域  ▾",
+          "未装备异火  ▾",
+          "gold",
+          "wood",
+          "water",
+          "fire",
+          "earth",
+          "渡劫",
+          "凝晶"
+        ],
+        "actualScroll": 0,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "layout-page-2.png",
+        "stage": 1,
+        "actualRealm": 8,
+        "configPreference": 0,
+        "actualServer": {
+          "realm": 8,
+          "visualRealm": 8,
+          "packetPreference": 0,
+          "active": false,
+          "preferredRealm": 0,
+          "flying": false,
+          "mana": 1002200.0
+        },
+        "actualFlightPacket": null,
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 0,
+        "actualProductionWidgetLabels": [
+          "功法",
+          "神通",
+          "心法",
+          "轮盘配置",
+          "被动功法槽 1\n空槽",
+          "被动功法槽 2\n空槽",
+          "被动功法槽 3\n空槽",
+          "功法槽 1\n空槽",
+          "功法槽 2\n空槽",
+          "功法槽 3\n空槽",
+          "功法槽 4\n空槽",
+          "功法槽 5\n空槽",
+          "功法槽 6\n空槽",
+          "功法槽 7\n空槽",
+          "功法槽 8\n空槽",
+          "搜索功法",
+          "装备到槽 1",
+          "卸下槽 1"
+        ],
+        "actualScroll": 0,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "layout-page-3.png",
+        "stage": 1,
+        "actualRealm": 8,
+        "configPreference": 0,
+        "actualServer": {
+          "realm": 8,
+          "visualRealm": 8,
+          "packetPreference": 0,
+          "active": false,
+          "preferredRealm": 0,
+          "flying": false,
+          "mana": 1003520.0
+        },
+        "actualFlightPacket": null,
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 0,
+        "actualProductionWidgetLabels": [],
+        "actualScroll": 0,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "layout-page-4.png",
+        "stage": 1,
+        "actualRealm": 8,
+        "configPreference": 0,
+        "actualServer": {
+          "realm": 8,
+          "visualRealm": 8,
+          "packetPreference": 0,
+          "active": false,
+          "preferredRealm": 0,
+          "flying": false,
+          "mana": 1004180.0
+        },
+        "actualFlightPacket": null,
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 0,
+        "actualProductionWidgetLabels": [
+          "全部",
+          "未达成",
+          "已达成"
+        ],
+        "actualScroll": 0,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "layout-page-5.png",
+        "stage": 1,
+        "actualRealm": 8,
+        "configPreference": 0,
+        "actualServer": {
+          "realm": 8,
+          "visualRealm": 8,
+          "packetPreference": 0,
+          "active": false,
+          "preferredRealm": 0,
+          "flying": false,
+          "mana": 1004620.0
+        },
+        "actualFlightPacket": null,
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 0,
+        "actualProductionWidgetLabels": [
+          "界面显示",
+          "御剑视角",
+          "操控设置",
+          "HUD 布局",
+          "境界御空",
+          "剑迹特效",
+          "御剑调试信息",
+          "第一人称隐藏手持飞剑",
+          "剑迹显示：自动"
+        ],
+        "actualScroll": 0,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "dixian-settings-top.png",
+        "stage": 4,
+        "actualRealm": 8,
+        "configPreference": 0,
+        "actualServer": null,
+        "actualFlightPacket": null,
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 0,
+        "actualProductionWidgetLabels": [
+          "界面显示",
+          "御剑视角",
+          "操控设置",
+          "HUD 布局",
+          "境界御空",
+          "飞行模式：特殊御空",
+          "高速后掠姿态",
+          "转向镜头侧倾",
+          "镜头侧倾幅度：0.35",
+          "随当前境界",
+          "元婴 Lv1",
+          "化神 Lv2",
+          "炼虚 Lv3",
+          "合体 Lv4",
+          "大乘 Lv5",
+          "地仙 Lv6"
+        ],
+        "actualScroll": 0,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "dixian-settings-bottom.png",
+        "stage": 5,
+        "actualRealm": 8,
+        "configPreference": 0,
+        "actualServer": {
+          "realm": 8,
+          "visualRealm": 8,
+          "packetPreference": 0,
+          "active": false,
+          "preferredRealm": 0,
+          "flying": false,
+          "mana": 1005720.0
+        },
+        "actualFlightPacket": null,
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 0,
+        "actualProductionWidgetLabels": [
+          "界面显示",
+          "御剑视角",
+          "操控设置",
+          "HUD 布局",
+          "境界御空",
+          "飞行模式：特殊御空",
+          "高速后掠姿态",
+          "转向镜头侧倾",
+          "镜头侧倾幅度：0.35",
+          "随当前境界",
+          "元婴 Lv1",
+          "化神 Lv2",
+          "炼虚 Lv3",
+          "合体 Lv4",
+          "大乘 Lv5",
+          "地仙 Lv6"
+        ],
+        "actualScroll": 156,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "dixian-selected-huashen.png",
+        "stage": 6,
+        "actualRealm": 8,
+        "configPreference": 4,
+        "actualServer": {
+          "realm": 8,
+          "visualRealm": 4,
+          "packetPreference": 4,
+          "active": false,
+          "preferredRealm": 4,
+          "flying": false,
+          "mana": 1006380.0
+        },
+        "actualFlightPacket": null,
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 0,
+        "actualProductionWidgetLabels": [
+          "界面显示",
+          "御剑视角",
+          "操控设置",
+          "HUD 布局",
+          "境界御空",
+          "飞行模式：特殊御空",
+          "高速后掠姿态",
+          "转向镜头侧倾",
+          "镜头侧倾幅度：0.35",
+          "随当前境界",
+          "元婴 Lv1",
+          "化神 Lv2",
+          "炼虚 Lv3",
+          "合体 Lv4",
+          "大乘 Lv5",
+          "地仙 Lv6"
+        ],
+        "actualScroll": 156,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "dixian-flight-huashen-selected.png",
+        "stage": 8,
+        "actualRealm": 8,
+        "configPreference": 4,
+        "actualServer": null,
+        "actualFlightPacket": {
+          "player": "380df991-f603-344c-a090-369bad2a924a",
+          "active": true,
+          "realm": 8,
+          "stage": 3,
+          "ghost": false,
+          "boost": false,
+          "visualRealm": 4
+        },
+        "screenClass": null,
+        "actualFlying": true,
+        "trailSegments": 111
+      },
+      {
+        "screenshot": "dixian-selected-dixian.png",
+        "stage": 10,
+        "actualRealm": 8,
+        "configPreference": 8,
+        "actualServer": null,
+        "actualFlightPacket": {
+          "player": "380df991-f603-344c-a090-369bad2a924a",
+          "active": true,
+          "realm": 8,
+          "stage": 3,
+          "ghost": false,
+          "boost": false,
+          "visualRealm": 4
+        },
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": true,
+        "trailSegments": 112,
+        "actualProductionWidgetLabels": [
+          "界面显示",
+          "御剑视角",
+          "操控设置",
+          "HUD 布局",
+          "境界御空",
+          "飞行模式：特殊御空",
+          "高速后掠姿态",
+          "转向镜头侧倾",
+          "镜头侧倾幅度：0.35",
+          "随当前境界",
+          "元婴 Lv1",
+          "化神 Lv2",
+          "炼虚 Lv3",
+          "合体 Lv4",
+          "大乘 Lv5",
+          "地仙 Lv6"
+        ],
+        "actualScroll": 144,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "dixian-flight-dixian-selected.png",
+        "stage": 12,
+        "actualRealm": 8,
+        "configPreference": 8,
+        "actualServer": null,
+        "actualFlightPacket": {
+          "player": "380df991-f603-344c-a090-369bad2a924a",
+          "active": true,
+          "realm": 8,
+          "stage": 3,
+          "ghost": false,
+          "boost": false,
+          "visualRealm": 8
+        },
+        "screenClass": null,
+        "actualFlying": true,
+        "trailSegments": 162
+      },
+      {
+        "screenshot": "dixian-auto-selected.png",
+        "stage": 14,
+        "actualRealm": 8,
+        "configPreference": 0,
+        "actualServer": null,
+        "actualFlightPacket": {
+          "player": "380df991-f603-344c-a090-369bad2a924a",
+          "active": true,
+          "realm": 8,
+          "stage": 3,
+          "ghost": false,
+          "boost": false,
+          "visualRealm": 8
+        },
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": true,
+        "trailSegments": 162,
+        "actualProductionWidgetLabels": [
+          "界面显示",
+          "御剑视角",
+          "操控设置",
+          "HUD 布局",
+          "境界御空",
+          "飞行模式：特殊御空",
+          "高速后掠姿态",
+          "转向镜头侧倾",
+          "镜头侧倾幅度：0.35",
+          "随当前境界",
+          "元婴 Lv1",
+          "化神 Lv2",
+          "炼虚 Lv3",
+          "合体 Lv4",
+          "大乘 Lv5",
+          "地仙 Lv6"
+        ],
+        "actualScroll": 0,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "huashen-settings-top.png",
+        "stage": 17,
+        "actualRealm": 4,
+        "configPreference": 0,
+        "actualServer": null,
+        "actualFlightPacket": {
+          "player": "380df991-f603-344c-a090-369bad2a924a",
+          "active": false,
+          "realm": 4,
+          "stage": 3,
+          "ghost": false,
+          "boost": false,
+          "visualRealm": 0
+        },
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 121,
+        "actualProductionWidgetLabels": [
+          "界面显示",
+          "御剑视角",
+          "操控设置",
+          "HUD 布局",
+          "境界御空",
+          "飞行模式：特殊御空",
+          "高速后掠姿态",
+          "转向镜头侧倾",
+          "镜头侧倾幅度：0.35",
+          "随当前境界",
+          "元婴 Lv1",
+          "化神 Lv2"
+        ],
+        "actualScroll": 0,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "huashen-settings-bottom.png",
+        "stage": 18,
+        "actualRealm": 4,
+        "configPreference": 0,
+        "actualServer": {
+          "realm": 4,
+          "visualRealm": 4,
+          "packetPreference": 0,
+          "active": false,
+          "preferredRealm": 0,
+          "flying": false,
+          "mana": 11000.0
+        },
+        "actualFlightPacket": {
+          "player": "380df991-f603-344c-a090-369bad2a924a",
+          "active": false,
+          "realm": 4,
+          "stage": 3,
+          "ghost": false,
+          "boost": false,
+          "visualRealm": 0
+        },
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 91,
+        "actualProductionWidgetLabels": [
+          "界面显示",
+          "御剑视角",
+          "操控设置",
+          "HUD 布局",
+          "境界御空",
+          "飞行模式：特殊御空",
+          "高速后掠姿态",
+          "转向镜头侧倾",
+          "镜头侧倾幅度：0.35",
+          "随当前境界",
+          "元婴 Lv1",
+          "化神 Lv2"
+        ],
+        "actualScroll": 44,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "huashen-selected-yuanying.png",
+        "stage": 19,
+        "actualRealm": 4,
+        "configPreference": 3,
+        "actualServer": null,
+        "actualFlightPacket": {
+          "player": "380df991-f603-344c-a090-369bad2a924a",
+          "active": false,
+          "realm": 4,
+          "stage": 3,
+          "ghost": false,
+          "boost": false,
+          "visualRealm": 0
+        },
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 27,
+        "actualProductionWidgetLabels": [
+          "界面显示",
+          "御剑视角",
+          "操控设置",
+          "HUD 布局",
+          "境界御空",
+          "飞行模式：特殊御空",
+          "高速后掠姿态",
+          "转向镜头侧倾",
+          "镜头侧倾幅度：0.35",
+          "随当前境界",
+          "元婴 Lv1",
+          "化神 Lv2"
+        ],
+        "actualScroll": 44,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "huashen-auto-after-untrusted.png",
+        "stage": 21,
+        "actualRealm": 4,
+        "configPreference": 0,
+        "actualServer": null,
+        "actualFlightPacket": {
+          "player": "380df991-f603-344c-a090-369bad2a924a",
+          "active": false,
+          "realm": 4,
+          "stage": 3,
+          "ghost": false,
+          "boost": false,
+          "visualRealm": 4
+        },
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 28,
+        "actualProductionWidgetLabels": [
+          "界面显示",
+          "御剑视角",
+          "操控设置",
+          "HUD 布局",
+          "境界御空",
+          "飞行模式：特殊御空",
+          "高速后掠姿态",
+          "转向镜头侧倾",
+          "镜头侧倾幅度：0.35",
+          "随当前境界",
+          "元婴 Lv1",
+          "化神 Lv2"
+        ],
+        "actualScroll": 44,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      },
+      {
+        "screenshot": "huashen-reopened-auto.png",
+        "stage": 23,
+        "actualRealm": 4,
+        "configPreference": 0,
+        "actualServer": null,
+        "actualFlightPacket": {
+          "player": "380df991-f603-344c-a090-369bad2a924a",
+          "active": false,
+          "realm": 4,
+          "stage": 3,
+          "ghost": false,
+          "boost": false,
+          "visualRealm": 0
+        },
+        "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "actualFlying": false,
+        "trailSegments": 16,
+        "actualProductionWidgetLabels": [
+          "界面显示",
+          "御剑视角",
+          "操控设置",
+          "HUD 布局",
+          "境界御空",
+          "飞行模式：特殊御空",
+          "高速后掠姿态",
+          "转向镜头侧倾",
+          "镜头侧倾幅度：0.35",
+          "随当前境界",
+          "元婴 Lv1",
+          "化神 Lv2"
+        ],
+        "actualScroll": 0,
+        "contentBounds": [
+          156,
+          61,
+          396,
+          258
+        ]
+      }
+    ],
+    "actualInputEvents": [
+      {
+        "stage": 1,
+        "y": 81.0,
+        "x": 116.0,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "背包"
+      },
+      {
+        "stage": 1,
+        "y": 117.0,
+        "x": 116.0,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "内视"
+      },
+      {
+        "stage": 1,
+        "y": 153.0,
+        "x": 116.0,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "功法"
+      },
+      {
+        "stage": 1,
+        "y": 189.0,
+        "x": 116.0,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "灵剑"
+      },
+      {
+        "stage": 1,
+        "y": 225.0,
+        "x": 116.0,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "成就"
+      },
+      {
+        "stage": 1,
+        "y": 261.0,
+        "x": 116.0,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "设置"
+      },
+      {
+        "stage": 2,
+        "y": 189.5,
+        "x": 188.5,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "境界御空"
+      },
+      {
+        "delta": -100,
+        "stage": 4,
+        "action": "actual_mouseScrolled"
+      },
+      {
+        "stage": 5,
+        "y": 160.0,
+        "x": 385.5,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "化神 Lv2"
+      },
+      {
+        "stage": 8,
+        "y": 261.0,
+        "x": 116.0,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "设置"
+      },
+      {
+        "stage": 8,
+        "y": 189.5,
+        "x": 188.5,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "境界御空"
+      },
+      {
+        "delta": -1,
+        "stage": 9,
+        "action": "actual_mouseScrolled"
+      },
+      {
+        "delta": -1,
+        "stage": 9,
+        "action": "actual_mouseScrolled"
+      },
+      {
+        "delta": -1,
+        "stage": 9,
+        "action": "actual_mouseScrolled"
+      },
+      {
+        "delta": -1,
+        "stage": 9,
+        "action": "actual_mouseScrolled"
+      },
+      {
+        "delta": -1,
+        "stage": 9,
+        "action": "actual_mouseScrolled"
+      },
+      {
+        "delta": -1,
+        "stage": 9,
+        "action": "actual_mouseScrolled"
+      },
+      {
+        "stage": 9,
+        "y": 284.0,
+        "x": 385.5,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "地仙 Lv6"
+      },
+      {
+        "stage": 12,
+        "y": 261.0,
+        "x": 116.0,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "设置"
+      },
+      {
+        "stage": 12,
+        "y": 189.5,
+        "x": 188.5,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "境界御空"
+      },
+      {
+        "stage": 13,
+        "y": 256.0,
+        "x": 385.5,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "随当前境界"
+      },
+      {
+        "stage": 15,
+        "y": 261.0,
+        "x": 116.0,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "设置"
+      },
+      {
+        "stage": 15,
+        "y": 189.5,
+        "x": 188.5,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "境界御空"
+      },
+      {
+        "delta": -100,
+        "stage": 17,
+        "action": "actual_mouseScrolled"
+      },
+      {
+        "stage": 18,
+        "y": 244.0,
+        "x": 385.5,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "元婴 Lv1"
+      },
+      {
+        "actualRealm": 4,
+        "action": "actual_untrusted_packet",
+        "requestedPreference": 8
+      },
+      {
+        "stage": 20,
+        "y": 212.0,
+        "x": 385.5,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "随当前境界"
+      },
+      {
+        "stage": 21,
+        "y": 261.0,
+        "x": 116.0,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "设置"
+      },
+      {
+        "stage": 21,
+        "y": 189.5,
+        "x": 188.5,
+        "accepted": true,
+        "action": "actual_screen_mouseClicked",
+        "label": "境界御空"
+      }
+    ],
+    "checks": [
+      {
+        "passed": true,
+        "details": "Opened exact vanilla InventoryScreen, Forge Open event returned cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "name": "production_inventory_replacement_stage_0"
+      },
+      {
+        "passed": true,
+        "details": "[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+        "name": "auto_choice_realm_8"
+      },
+      {
+        "passed": true,
+        "details": "Expected available 元婴 Lv1; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+        "name": "unlocked_choice_8_3"
+      },
+      {
+        "passed": true,
+        "details": "Expected available 化神 Lv2; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+        "name": "unlocked_choice_8_4"
+      },
+      {
+        "passed": true,
+        "details": "Expected available 炼虚 Lv3; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+        "name": "unlocked_choice_8_5"
+      },
+      {
+        "passed": true,
+        "details": "Expected available 合体 Lv4; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+        "name": "unlocked_choice_8_6"
+      },
+      {
+        "passed": true,
+        "details": "Expected available 大乘 Lv5; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+        "name": "unlocked_choice_8_7"
+      },
+      {
+        "passed": true,
+        "details": "Expected available 地仙 Lv6; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+        "name": "unlocked_choice_8_8"
+      },
+      {
+        "passed": true,
+        "details": "Read-only production widget bounds, same page space; scrolling captures top/bottom",
+        "name": "actual_controls_no_overlap_realm_8"
+      },
+      {
+        "passed": true,
+        "details": "After production mouseClicked config=4",
+        "name": "real_click_saved_huashen"
+      },
+      {
+        "passed": true,
+        "details": "Actual realm unchanged 8; config=4; actual integrated-server snapshot={realm=8, visualRealm=4, packetPreference=4, active=false, preferredRealm=4, flying=false, mana=1006380.0}",
+        "name": "actual_server_round_trip_stage_6"
+      },
+      {
+        "passed": true,
+        "details": "Read saved production config .\\config\\wuxingxiantu-hud-client.toml; realmFlightVisualRealm=4",
+        "name": "actual_config_saved_stage_6"
+      },
+      {
+        "passed": true,
+        "details": "Read actual production renderer resolver=4; state=RealmFlightVisualPacket[player=380df991-f603-344c-a090-369bad2a924a, active=true, realm=8, stage=3, ghost=false, boost=false, visualRealm=4]; flying=true; actual trail segments=110",
+        "name": "actual_render_selection_stage_7"
+      },
+      {
+        "passed": true,
+        "details": "Opened exact vanilla InventoryScreen, Forge Open event returned cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "name": "production_inventory_replacement_stage_8"
+      },
+      {
+        "passed": true,
+        "details": "Actual realm unchanged 8; config=8; actual integrated-server snapshot={realm=8, visualRealm=8, packetPreference=8, active=true, preferredRealm=8, flying=true, mana=1027500.0}",
+        "name": "actual_server_round_trip_stage_10"
+      },
+      {
+        "passed": true,
+        "details": "Read actual FLIGHTS state after production S2C delivery=RealmFlightVisualPacket[player=380df991-f603-344c-a090-369bad2a924a, active=true, realm=8, stage=3, ghost=false, boost=false, visualRealm=8]",
+        "name": "received_visual_packet_stage_10"
+      },
+      {
+        "passed": true,
+        "details": "Read actual production renderer resolver=8; state=RealmFlightVisualPacket[player=380df991-f603-344c-a090-369bad2a924a, active=true, realm=8, stage=3, ghost=false, boost=false, visualRealm=8]; flying=true; actual trail segments=161",
+        "name": "actual_render_selection_stage_11"
+      },
+      {
+        "passed": true,
+        "details": "Opened exact vanilla InventoryScreen, Forge Open event returned cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "name": "production_inventory_replacement_stage_12"
+      },
+      {
+        "passed": true,
+        "details": "Actual realm unchanged 8; config=0; actual integrated-server snapshot={realm=8, visualRealm=8, packetPreference=0, active=true, preferredRealm=0, flying=true, mana=1041800.0}",
+        "name": "actual_server_round_trip_stage_14"
+      },
+      {
+        "passed": true,
+        "details": "Read actual FLIGHTS state after production S2C delivery=RealmFlightVisualPacket[player=380df991-f603-344c-a090-369bad2a924a, active=true, realm=8, stage=3, ghost=false, boost=false, visualRealm=0]",
+        "name": "received_visual_packet_stage_14"
+      },
+      {
+        "passed": true,
+        "details": "Read saved production config .\\config\\wuxingxiantu-hud-client.toml; realmFlightVisualRealm=0",
+        "name": "actual_config_saved_stage_14"
+      },
+      {
+        "passed": true,
+        "details": "Opened exact vanilla InventoryScreen, Forge Open event returned cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "name": "production_inventory_replacement_stage_15"
+      },
+      {
+        "passed": true,
+        "details": "[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+        "name": "auto_choice_realm_4"
+      },
+      {
+        "passed": true,
+        "details": "Expected available 元婴 Lv1; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+        "name": "unlocked_choice_4_3"
+      },
+      {
+        "passed": true,
+        "details": "Expected available 化神 Lv2; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+        "name": "unlocked_choice_4_4"
+      },
+      {
+        "passed": true,
+        "details": "Expected absent 炼虚 Lv3; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+        "name": "unlocked_choice_4_5"
+      },
+      {
+        "passed": true,
+        "details": "Expected absent 合体 Lv4; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+        "name": "unlocked_choice_4_6"
+      },
+      {
+        "passed": true,
+        "details": "Expected absent 大乘 Lv5; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+        "name": "unlocked_choice_4_7"
+      },
+      {
+        "passed": true,
+        "details": "Expected absent 地仙 Lv6; labels=[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+        "name": "unlocked_choice_4_8"
+      },
+      {
+        "passed": true,
+        "details": "Read-only production widget bounds, same page space; scrolling captures top/bottom",
+        "name": "actual_controls_no_overlap_realm_4"
+      },
+      {
+        "passed": true,
+        "details": "Actual realm unchanged 4; config=3; actual integrated-server snapshot={realm=4, visualRealm=3, packetPreference=3, active=false, preferredRealm=3, flying=false, mana=11000.0}",
+        "name": "actual_server_round_trip_stage_19"
+      },
+      {
+        "passed": true,
+        "details": "Read actual FLIGHTS state after production S2C delivery=RealmFlightVisualPacket[player=380df991-f603-344c-a090-369bad2a924a, active=false, realm=4, stage=3, ghost=false, boost=false, visualRealm=3]",
+        "name": "received_visual_packet_stage_19"
+      },
+      {
+        "passed": true,
+        "details": "Requested 地仙 8 at actual 化神 4, server stores 4 and snapshot visual 4",
+        "name": "actual_server_rejects_locked_effect"
+      },
+      {
+        "passed": true,
+        "details": "Actual realm unchanged 4; config=0; actual integrated-server snapshot={realm=4, visualRealm=4, packetPreference=0, active=false, preferredRealm=0, flying=false, mana=11000.0}",
+        "name": "actual_server_round_trip_stage_21"
+      },
+      {
+        "passed": true,
+        "details": "Read actual FLIGHTS state after production S2C delivery=RealmFlightVisualPacket[player=380df991-f603-344c-a090-369bad2a924a, active=false, realm=4, stage=3, ghost=false, boost=false, visualRealm=0]",
+        "name": "received_visual_packet_stage_21"
+      },
+      {
+        "passed": true,
+        "details": "Read saved production config .\\config\\wuxingxiantu-hud-client.toml; realmFlightVisualRealm=0",
+        "name": "actual_config_saved_stage_21"
+      },
+      {
+        "passed": true,
+        "details": "Opened exact vanilla InventoryScreen, Forge Open event returned cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+        "name": "production_inventory_replacement_stage_21"
+      },
+      {
+        "passed": true,
+        "details": "Reopened production page preserves auto",
+        "name": "preference_after_reopen"
+      },
+      {
+        "passed": true,
+        "details": "Actual screenshots=18; expected=18",
+        "name": "complete_actual_images"
+      },
+      {
+        "passed": true,
+        "details": "[]",
+        "name": "no_GL_errors"
+      },
+      {
+        "passed": true,
+        "details": "Original animation/horizontal/preferred restored",
+        "name": "DEV_preferences_restored"
+      }
+    ],
+    "failures": [],
+    "glErrors": [],
+    "configRestored": true,
+    "ticks": 207
+  },
+  "sourceAndRuntimeBindingUnchanged": true,
+  "productionResourcesMatchJar": 1867,
+  "movementAndControlUnchanged": true,
+  "meteorShadersUnchanged": true,
+  "testFixturesExcluded": true,
+  "screenshotHashes": {
+    "native-turn/realm-4-huashen-turn-00-left-rear-side-early.png": "2ed53c472f5efffeff4bf52af91694c0cef857f2de5c43ce27975f6a05254ad2",
+    "native-turn/realm-4-huashen-turn-01-left-rear-side-late.png": "4d2315b74282edbc5e7ddf2ad099a98355e52daea84057800687d0cfb507182d",
+    "native-turn/realm-4-huashen-turn-02-left-rear-side-early.png": "5c4504a38b8d057494c090baf0ff16c5a9c30c021982bdca747b0be4430051b9",
+    "native-turn/realm-4-huashen-turn-03-left-rear-side-late.png": "1254af9de822b5c1c7f0a398eb69a6618f10e90252ae8a07842e684cdaa84557",
+    "native-turn/realm-4-huashen-turn-04-left-rear-side-early.png": "4cb3e07f2b2a42f8ff9f1efacef7972d17982412a1d61c515c875b6f3da9ea34",
+    "native-turn/realm-4-huashen-turn-05-left-rear-side-late.png": "2143439af9160baa1a93be1974eedf1587761e6d4ceac18fbaffc93a11440fa9",
+    "native-turn/realm-4-huashen-turn-06-left-rear-side-early.png": "38ef32d42d23c774d3fb0368264e07462c14201797b37cb62bfb82f888db27a8",
+    "native-turn/realm-4-huashen-turn-07-left-rear-side-late.png": "3801665e2d41051affcda88a5e619bf122326e91e7acf16bb4d0170a4e4f2658",
+    "native-turn/realm-4-huashen-turn-08-left-rear-side-early.png": "85d4f28bc642a79a12bed895fe7d01a0b41ed2125b6e4a88663265d006127fd7",
+    "native-turn/realm-4-huashen-turn-09-left-rear-side-late.png": "81b661da3b8d87e01c3ed7cbf7ff16dbf75990ef02193c51416650acea302d4f",
+    "native-turn/realm-4-huashen-turn-10-left-rear-side-early.png": "7111859717dcf9fb9503d3ae685c42d556f966c282f0973927f862ded458986c",
+    "native-turn/realm-4-huashen-turn-11-left-rear-side-late.png": "ba1141a683c0ccaf3925adce629870f28ab857ab9b1e372ee820fc30126e5270",
+    "native-turn/realm-4-huashen-turn-12-left-rear-side-early.png": "123348250294bafa7e0161c919cc224af9af837ca9d95e1f98256a90227cfb86",
+    "native-turn/realm-4-huashen-turn-13-left-rear-side-late.png": "987dc93d3e7c18c451406b177242ee3b95a70893cf9c2304cdc4ac0fc220296d",
+    "native-turn/realm-4-huashen-turn-14-left-rear-side-early.png": "fefdf2f0794589c116389efca24ea5fc3bfd24584b57502ea01ae75c7d7e892e",
+    "native-turn/realm-4-huashen-turn-15-right-climb-rear-side-late.png": "66af0fbc396dd92c88f9fd48b96691dbeef8c023c4e7eb61ae4912e2ee722c57",
+    "native-turn/realm-4-huashen-turn-16-right-climb-rear-side-early.png": "2d7f0d5d661686b2ced5797f767c721748a9922c30189a9e85a985dd535bb6bb",
+    "native-turn/realm-4-huashen-turn-17-right-climb-front-late.png": "49645e13b92e08d9d2ad165f64692d3d0f9de511fadaf616bf3f8d4457f741a1",
+    "native-turn/realm-4-huashen-turn-18-right-climb-front-early.png": "306043bae01101226ababe42b0bb3421727bc1fb390dedf3e813f234fdaa66a7",
+    "native-turn/realm-4-huashen-turn-19-right-climb-front-late.png": "8cbc84f28977069733dcca2730b34328a19d33761e7954278cc2c841154b85ed",
+    "native-turn/realm-4-huashen-turn-20-right-climb-rear-side-early.png": "e0cba1731cdb095713060d45b73036c16458bbe725a22fa8bb7196a2c0aaabea",
+    "native-turn/realm-4-huashen-turn-21-right-climb-rear-side-late.png": "58603f59c23a762bffbb4352fea489737c5bc2c93aabc2a790ec8ee1f9864621",
+    "native-turn/realm-4-huashen-turn-22-right-climb-rear-side-early.png": "0786b1347d45536ade4fe870477f7e83b6763af891cbeaaa50a866059dc0737d",
+    "native-turn/realm-4-huashen-turn-23-right-climb-rear-side-late.png": "80a18bc57315aaa9dcf4a0a43ba987745f1c40af099d930635744b93275c389e",
+    "native-turn/realm-4-huashen-turn-24-right-climb-rear-side-early.png": "4760da4dce93d483b95415a4fe96b35051636499cc845c89864be513c65bc95d",
+    "native-turn/realm-4-huashen-turn-25-right-climb-rear-side-late.png": "78b5f6f5ab4a626646b28361fe60aad7cdcbcfe1cc79f4abc5a33f3786f26cd4",
+    "native-turn/realm-4-huashen-turn-26-right-climb-rear-side-early.png": "52d47d59c666613066f9c1d40663496db10ba1f27f20751be037008531be4800",
+    "native-turn/realm-4-huashen-turn-27-right-climb-rear-side-late.png": "9cdc4bf3991b04fdf23e47ceee89ad56f508d0cf83c2f77664b20dc7836efeb7",
+    "native-turn/realm-4-huashen-turn-28-right-climb-rear-side-early.png": "2604249a263d73dbc6e8b78fdf9fabd3d3babedc26c5022ed8884d083a483d41",
+    "native-turn/realm-4-huashen-turn-29-right-climb-rear-side-late.png": "1d6df64ea24058f09e633b88e067278742736de0a18312237771ab0240435c02",
+    "native-turn/realm-4-huashen-turn-30-left-descend-rear-side-early.png": "ae5b1b97ee74c5d2e21d9a1da5e82e14fe6a7eba3950e85fb1c1fe790f38e877",
+    "native-turn/realm-4-huashen-turn-31-left-descend-rear-side-late.png": "eda6995d5a1a3f9f55e4e57f15e24cb6c6a6086e3d5e7553826f483be9d47426",
+    "native-turn/realm-4-huashen-turn-32-left-descend-rear-side-early.png": "8b74ddcd07a5b449d01f022eb4eefc97535449a1e527796dc5c4d84f3585a4a0",
+    "native-turn/realm-4-huashen-turn-33-left-descend-rear-side-late.png": "0bbed206ce9c31fa05b520529ce56683c67124f7922ad982d659b17bf30f4ab8",
+    "native-turn/realm-4-huashen-turn-34-left-descend-rear-side-early.png": "8fba72dfed2a9f7daff8e70ef6d2b86af7afb811a86d0a4629d49bba10340611",
+    "native-turn/realm-4-huashen-turn-35-left-descend-rear-side-late.png": "f9aae93c322caf4087833b86cf9648aa05d0dcfcb0e8ab3a58806511e4d83769",
+    "native-turn/realm-4-huashen-turn-36-left-descend-rear-side-early.png": "8eca7db05965209ba35101cb2ad71c0c17251237fd3c3e0233dac09abd09a0c6",
+    "native-turn/realm-4-huashen-turn-37-left-descend-rear-side-late.png": "728571184f2b6235415912d78c521982e0a99f3c11c8ff2f9fcd369773e0db02",
+    "native-turn/realm-4-huashen-turn-38-left-descend-rear-side-early.png": "e87b9452d61fab0117b8b7d10f65525aa063442ea7e37347abf6abf778934a5a",
+    "native-turn/realm-4-huashen-turn-39-left-descend-rear-side-late.png": "3fb77ba05a1d084d8917c5ccb5227765ff2502ceb01accfe4ebb877f9262e158",
+    "native-turn/realm-4-huashen-turn-40-left-descend-rear-side-early.png": "f14d588ac79605be6b95c68dd9abc225f5db284fd51641c396adfdfba443073e",
+    "native-turn/realm-4-huashen-turn-41-left-descend-rear-side-late.png": "60331e4517409e86b618459f5321b85469e001c44057c4964f317ca49f554619",
+    "native-turn/realm-4-huashen-turn-42-left-descend-rear-side-early.png": "51d5a0716a5a8bc549aeb746d49c23961f8e601ff05051c81e65b17eddee881c",
+    "native-turn/realm-4-huashen-turn-43-left-descend-rear-side-late.png": "755fe49dbf21b46085b08f5b273cb73822a9daca24ee6d970b2d693a6a54daf9",
+    "native-turn/realm-4-huashen-turn-44-left-descend-rear-side-early.png": "300e0b3ad66eb1612bd234025e7cf2487be4ba9435aed97f727f0ad43eec283e",
+    "native-turn/realm-4-huashen-turn-45-right-return-rear-side-late.png": "cd35753fae92b01b1cdb80ccdb350105bf6d22264fcf9457018fc3769ccf090e",
+    "native-turn/realm-4-huashen-turn-46-right-return-rear-side-early.png": "c5ca3ccc72de7658ec125a720cf25457ba60dbc232fdc51a495b234d264aa6f7",
+    "native-turn/realm-4-huashen-turn-47-right-return-front-late.png": "1f9a5903bb48cc2d5057c0bd264bdfb1b3b69d280098278ba31fef492729c878",
+    "native-turn/realm-4-huashen-turn-48-right-return-front-early.png": "3af5e8b87af71610c81d242c636e133c098c60a969e526ce331f28becd7d704e",
+    "native-turn/realm-4-huashen-turn-49-right-return-front-late.png": "141786441427c9716e7a4178fcc6ba278a8478e789d94b3c834a974e54e34822",
+    "native-turn/realm-4-huashen-turn-50-right-return-rear-side-early.png": "1e9c2ee06ceeb325f624bf81d739a3fc584e3929c379e71fd849b50ff362b2b7",
+    "native-turn/realm-4-huashen-turn-51-right-return-rear-side-late.png": "351190137572f8ff99058cea773214e11ab9b3e9ce7855b59a4f6bbf20e126b1",
+    "native-turn/realm-4-huashen-turn-52-right-return-rear-side-early.png": "551168b0156cde2b4a94cdc3b5fcb3938fe2562426bb5627cf43384437bcd7a1",
+    "native-turn/realm-4-huashen-turn-53-right-return-rear-side-late.png": "4a387f9df7153a4aabb0655dcac621e9f0155e99b3fc72b9f5dbdbe636a4083c",
+    "native-turn/realm-4-huashen-turn-54-right-return-rear-side-early.png": "8983c192a128b13adee0407a3345c5d93d7b239551530ab79a6685c0d342fb32",
+    "native-turn/realm-4-huashen-turn-55-right-return-rear-side-late.png": "724eaa2e29ab20c76eed9cd915b7f0b039cff683384f97fa219e259e91cff387",
+    "native-turn/realm-4-huashen-turn-56-right-return-rear-side-early.png": "4a63296a0be9f7d4e0a5f169d1b078223f0d7807be326abfbbe0017178ab05c8",
+    "native-turn/realm-4-huashen-turn-57-right-return-rear-side-late.png": "2a67bbc32f49e8102b111482361c1271021967548eb5e89acde264551ab3c5db",
+    "native-turn/realm-4-huashen-turn-58-right-return-rear-side-early.png": "9240c0802eb962efa40bc93396ce49d07a8c991db3fc654635ff0016ca5b84e4",
+    "native-turn/realm-4-huashen-turn-59-right-return-rear-side-late.png": "e4128653abe5e15d6540a230fa06eefb894e1d1b4d4eeebc4f6fabeff8755fd1",
+    "native-turn/realm-8-dixian-turn-00-left-rear-side-early.png": "175c9a3567948c00f8843af70aad6870247cd2c6e5e8ec445f00ad4006c15ea7",
+    "native-turn/realm-8-dixian-turn-01-left-rear-side-late.png": "73e732f159f31d802151a7aa54b537146b0b74dbff98361611a448533de01cf0",
+    "native-turn/realm-8-dixian-turn-02-left-rear-side-early.png": "462cb73be1246617d883435e81294bbf1ba8c902d58fd335beafca71ca15bd69",
+    "native-turn/realm-8-dixian-turn-03-left-rear-side-late.png": "c59c0a53ae3fae2a7049501644d0cd6328e49af5b19e7482f0f21fb5841e7594",
+    "native-turn/realm-8-dixian-turn-04-left-rear-side-early.png": "e928d010a1d4cae7ca98dad599344b085aef58d800355c3ee8c34677a3287c68",
+    "native-turn/realm-8-dixian-turn-05-left-rear-side-late.png": "1b2006ed0313a91e29d1ee74694511d6781bf9374d611c64439447ad59a35ed8",
+    "native-turn/realm-8-dixian-turn-06-left-rear-side-early.png": "1db0fe66611eb65e42da5ab9f692dac1704eac6d7a7908972f8fd1f7f0040c74",
+    "native-turn/realm-8-dixian-turn-07-left-rear-side-late.png": "3aa32f2d3fee6373ad3efa859e0bc3abcade760cd50089431d7455ef779aef94",
+    "native-turn/realm-8-dixian-turn-08-left-rear-side-early.png": "9b059197e889b6d2dd56a4488dce0393bc7a50478482521d3c4e34097e1c87d1",
+    "native-turn/realm-8-dixian-turn-09-left-rear-side-late.png": "56fbd8a656506026a72a8ec53bee942c30a6fa558749ac0e0e1d7717ce9955e6",
+    "native-turn/realm-8-dixian-turn-10-left-rear-side-early.png": "c71d4244b7435717af0b9e1dc1e3f6643cffceeaccc65cb66d3f219b3146c8a9",
+    "native-turn/realm-8-dixian-turn-11-left-rear-side-late.png": "5c824d6c7755f753b333eaf30f555c99813afe336174774a297e8ecf2a04cdd5",
+    "native-turn/realm-8-dixian-turn-12-left-rear-side-early.png": "01e9e05dfc1e5c817e6f00ed62fc50d3a26489a2ff01f60ad336517d6763b1f5",
+    "native-turn/realm-8-dixian-turn-13-left-rear-side-late.png": "2805d5d2eb86901eea2af1817c55f9ec2920a234fa32f3c32e06fc826abf9bad",
+    "native-turn/realm-8-dixian-turn-14-left-rear-side-early.png": "245b5f813bcce4a6e6f4ceee9fde668f9c109c5d53fefafcf456e3adb8e992bd",
+    "native-turn/realm-8-dixian-turn-15-right-climb-rear-side-late.png": "65e9d1bdb4180769e5389021348e1ea8f542daa3de844dc6374cd71681fb87a8",
+    "native-turn/realm-8-dixian-turn-16-right-climb-rear-side-early.png": "4f952de8d539c926260d1c77e1aa5bd2a3d6dd38706d95b932f9eb6df8417c20",
+    "native-turn/realm-8-dixian-turn-17-right-climb-front-late.png": "d878530fdd5d748253c79214432258999f94dd3ae90307e061715637a964aec9",
+    "native-turn/realm-8-dixian-turn-18-right-climb-front-early.png": "e3af6c4f560c4226bc521e7098f6b263c1fd1a7dac76b8b591200c26e3c5b13b",
+    "native-turn/realm-8-dixian-turn-19-right-climb-front-late.png": "68a1aee21da3e9ccfa1620cfc21df9aaf0a7fc56eb41af61510620186d6f5873",
+    "native-turn/realm-8-dixian-turn-20-right-climb-rear-side-early.png": "49e03d2440e3541aa999fae56be4190ef1ec99eda1c8010764a32c43e0f9ec3d",
+    "native-turn/realm-8-dixian-turn-21-right-climb-rear-side-late.png": "aef6ec84be5829a53acdd37ea2acf1da6667278b8d03689399fc3232d162ba01",
+    "native-turn/realm-8-dixian-turn-22-right-climb-rear-side-early.png": "32812dcf8031bbed211354db1180e981ca5b2d7e137753c5c99ee796b3adb846",
+    "native-turn/realm-8-dixian-turn-23-right-climb-rear-side-late.png": "a8c1c60894e2d917700770f6c4c984c7d2b6d88f35f2bd198951c350d2329ece",
+    "native-turn/realm-8-dixian-turn-24-right-climb-rear-side-early.png": "4c8f45ab21fb87b929be8dfe2efedcf41a25926d19d579b210ccd9327a0b1689",
+    "native-turn/realm-8-dixian-turn-25-right-climb-rear-side-late.png": "5b18ea4d1e706d52c62f7bc2d1afa248994700aaeaf34bae882dcd562824439d",
+    "native-turn/realm-8-dixian-turn-26-right-climb-rear-side-early.png": "4d91f073676db245c228c10c25ef1397664614022f2a898395eb2d6a6268b123",
+    "native-turn/realm-8-dixian-turn-27-right-climb-rear-side-late.png": "b127c5451f4caa6b62d2cba8eff778c065a2bec06b50042e6e2f0ec30fa50bae",
+    "native-turn/realm-8-dixian-turn-28-right-climb-rear-side-early.png": "a738ac36671687f798fa5476c36612d209148608d214b68339036555ae474fff",
+    "native-turn/realm-8-dixian-turn-29-right-climb-rear-side-late.png": "a70f8eb34430cd75677f23b896e92060467a58233ab90496075345f6d787689e",
+    "native-turn/realm-8-dixian-turn-30-left-descend-rear-side-early.png": "68a1452fa755c2baa3fb5faf4c53e36a134fa9422f3a288bc9cfd226a2fcf1b6",
+    "native-turn/realm-8-dixian-turn-31-left-descend-rear-side-late.png": "f9c56781cd83c6f9d9d2242b763e4b2f5e583bd619b846fb15f955ab9b294da3",
+    "native-turn/realm-8-dixian-turn-32-left-descend-rear-side-early.png": "0e3063badd3a7599038ad0c2f05f6365c532854720b4ac1155c776cad90fa9a1",
+    "native-turn/realm-8-dixian-turn-33-left-descend-rear-side-late.png": "5ccfe8a0cdac0709b6d4669d35fb4495402c3a2b05b9869b29f048cad602d727",
+    "native-turn/realm-8-dixian-turn-34-left-descend-rear-side-early.png": "62f984dde6f4c9e766dddc96379815e96f13d971554e64b7a7065d964a5c4db2",
+    "native-turn/realm-8-dixian-turn-35-left-descend-rear-side-late.png": "30bc12c74fec5abc00d3f64c6f3923c8bdcac9725883bf4a154c736a50f9e5d2",
+    "native-turn/realm-8-dixian-turn-36-left-descend-rear-side-early.png": "8937ba053e2a82d7858feaa345a24ffe7508a5b0074510e651d2edf9e7320471",
+    "native-turn/realm-8-dixian-turn-37-left-descend-rear-side-late.png": "246e1f1f7b73d03ba1e81e539ab2f4a5138fa23649aaef5220b519995ed3e0d7",
+    "native-turn/realm-8-dixian-turn-38-left-descend-rear-side-early.png": "cd02d903497ad1ae48f2537a37e0415d98211f565ba6295020f717340929f4d5",
+    "native-turn/realm-8-dixian-turn-39-left-descend-rear-side-late.png": "e72f3e91237912a696b49c2f3eaae4647c4039987f0151e8a1e7c11b9194fa01",
+    "native-turn/realm-8-dixian-turn-40-left-descend-rear-side-early.png": "c201b45ab25f8071f8a777e698c97e23cecddc5fd4e042a669255b79b65a973e",
+    "native-turn/realm-8-dixian-turn-41-left-descend-rear-side-late.png": "45bcf48038b838947303b57f1a524dc9b85bb01649586198f8e39970608c6ff7",
+    "native-turn/realm-8-dixian-turn-42-left-descend-rear-side-early.png": "7c79715d690e75e0f8fd936c1f53049e2cd531b5223f15a8674980f2d5ea813b",
+    "native-turn/realm-8-dixian-turn-43-left-descend-rear-side-late.png": "e54522d669d30fea37c4b70941a4bfb7ccab8e0393bc825f9e3456c582a54477",
+    "native-turn/realm-8-dixian-turn-44-left-descend-rear-side-early.png": "e4db522a6b8ad747ad5be99a6b3d83b5cacffa1eecc8fafa0295b80b7fa84f5a",
+    "native-turn/realm-8-dixian-turn-45-right-return-rear-side-late.png": "869221e14ec1530dd96f3946061c97122e2475c5e84b19c0fa274f99d9da4d9f",
+    "native-turn/realm-8-dixian-turn-46-right-return-rear-side-early.png": "c9d81d5511d65d0b16be6d00cabb3aeeaf1692c157b2c1d2f6b6f6997e5eca22",
+    "native-turn/realm-8-dixian-turn-47-right-return-front-late.png": "d82f4c1bc2e1d2b3ad2608da8bb1eef413a3669e2beb568a3c071c73bd6a7f2a",
+    "native-turn/realm-8-dixian-turn-48-right-return-front-early.png": "0650b0ab6ddb8afb79707124c80cb377464598c4ff5efd84a490219482c39428",
+    "native-turn/realm-8-dixian-turn-49-right-return-front-late.png": "b2df93aaaf27ffccc9714f681d720c40839551410082d805601d2d74d1a1b08d",
+    "native-turn/realm-8-dixian-turn-50-right-return-rear-side-early.png": "ea880fd4a09602243b622a5348c322cd8d71d5e6f37dd05d90030a014d7cee92",
+    "native-turn/realm-8-dixian-turn-51-right-return-rear-side-late.png": "8b984e1e7893beeebdef5787e53243f7c29765599798e5b8df403e15563ddd49",
+    "native-turn/realm-8-dixian-turn-52-right-return-rear-side-early.png": "9c551a6397e4ee4a54f5d530728f0e0a8187c22f1b8ffb89328c3e5f42e977a9",
+    "native-turn/realm-8-dixian-turn-53-right-return-rear-side-late.png": "6fdc276e674085bbd9da8ee52dce6d266f7604a4f3023f0b33a34827a41fafbf",
+    "native-turn/realm-8-dixian-turn-54-right-return-rear-side-early.png": "5cc83ae2bc347b851c287d5672ef912fbc64375eb30ae88474178d7be18bf423",
+    "native-turn/realm-8-dixian-turn-55-right-return-rear-side-late.png": "462a00b435006b253d8495cc9cc7d3e34715d1ff65072c7031ec9a0217f69690",
+    "native-turn/realm-8-dixian-turn-56-right-return-rear-side-early.png": "a035448ab4273f19511365e0e9a9b8b90464b8e12a88640267d3ad6caff54f8b",
+    "native-turn/realm-8-dixian-turn-57-right-return-rear-side-late.png": "343cda3e90c25c3eda9c667756c7bc821882c7b0db9d8cc6241ec299f8d740c2",
+    "native-turn/realm-8-dixian-turn-58-right-return-rear-side-early.png": "b5a2dbb44dd2ddb82f454d08ac31641e1fe90d72eb2257ecd0b23e6846619441",
+    "native-turn/realm-8-dixian-turn-59-right-return-rear-side-late.png": "8348dad3bde879820d146f4c9fbd0646b09ec5f27badca3794dbc03281abf44a",
+    "native-selection/dixian-auto-selected.png": "af32b8312670681315d76703e7daab5a7148b843300eac93b5453c2273101cd2",
+    "native-selection/dixian-flight-dixian-selected.png": "5b660af0d8d6d98263b613a30191e31d450421839675ab7646cde59f4021692d",
+    "native-selection/dixian-flight-huashen-selected.png": "6d142d9a0693bcddbdfe311919fe8d3f0e006a351e70d992908617d205c57b02",
+    "native-selection/dixian-selected-dixian.png": "cbe9cc8910d9981336d83972da0ea659dfae4a24c1bff42a286e1645703de7e5",
+    "native-selection/dixian-selected-huashen.png": "428fc65bf3761420584321ae75923e543b6c0f5e2fa3701b895b3cf2f82a26bd",
+    "native-selection/dixian-settings-bottom.png": "bf2a591a3282b44035f9d33a5cd29b1cd84aac3f40ccce928f224b5b9180d662",
+    "native-selection/dixian-settings-top.png": "630985208363bc1fe102a5812f95070816ad5a65a82975c062a6de57e2a58f6d",
+    "native-selection/huashen-auto-after-untrusted.png": "569e108637ba74f061f174d088a88841a9cbb2d46c6aac2b38c3aa5b1d06f3af",
+    "native-selection/huashen-reopened-auto.png": "7096185e8f82e1916316156e46f9a250480f4b631093a4aa1bcf18d749608b39",
+    "native-selection/huashen-selected-yuanying.png": "62b33ec3eafc89d3d2ec4a282eb2740a13946eff072c3b82bdaf1b078cdbbf3b",
+    "native-selection/huashen-settings-bottom.png": "55261b6cf884556111b44a6bbde380233eb074d9a3b7054f63b6632d7e7dc6b6",
+    "native-selection/huashen-settings-top.png": "46a7648437b7f5ca4a234dcf53e3a7915b009ae35671e68d9334b65df3f0b6d7",
+    "native-selection/layout-page-0.png": "f67d2a74aa5709ef5da16dce697de96a3d0a724d68797b523188018b9785dff4",
+    "native-selection/layout-page-1.png": "ee998457087a33c0ddcff7ad6608070ba1aa7bdf34e4c4645b0fe3a42b668584",
+    "native-selection/layout-page-2.png": "a5fe458f558c63679ef48ed6c6b451a6087a66fa40f288f8a89dadde08c7735a",
+    "native-selection/layout-page-3.png": "f7cd5f1a1fa2e6d5efdb9cea734fddae1c388574ea65de25df74c0912628b988",
+    "native-selection/layout-page-4.png": "31c539e0e99333568672fafad1924ae95e6687199566ae90c0f6dd35b3ddc3a6",
+    "native-selection/layout-page-5.png": "b5951d7784fe0e0a4b8c7e442bb189381a2ad5ff416df62072e6872269462125"
+  },
+  "visualReview": {
+    "sha256": "5cd588004cfbb5c4bdb2bdacaeb55365a1ea508bd4dba9fa7380a2f6d0ddc86b",
+    "turnReviewed": true,
+    "selectionReviewed": true,
+    "reviewer": "root",
+    "observations": [
+      "Six actual production inventory pages reviewed; paper/effects and split-pane boundaries abut; controls retain internal spacing. Vision tooltip obscures some inner content but shared right edge remains visible.",
+      "All 120 fresh actual turn screenshots reviewed via six crop sheets. Body envelope remains attached during left/right turns, climb/descent and early/late interpolation. No new hard displacement or black-screen seen in these captures.",
+      "Existing brightness fluctuations from moving flow remain; shader formulas and vertex output equations are unchanged."
+    ],
+    "limits": "Native client only, camera offsets in fixture side views. Selected screenshot sequence and geometry counters do not establish FPS, all-frame aesthetics, shader-pack or remote multiplayer behavior."
+  },
+  "limits": "This revision tests a fresh isolated native client and integrated server. No shader-pack, LAN/dedicated-server visual or FPS validation."
+}

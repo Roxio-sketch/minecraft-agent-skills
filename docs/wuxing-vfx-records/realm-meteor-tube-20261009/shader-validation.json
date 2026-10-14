@@ -1,0 +1,551 @@
+{
+  "status": "PASS",
+  "views": [
+    {
+      "view": "side",
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      },
+      "animation": {
+        "max": 99,
+        "changed": 7072,
+        "mean": 0.39084997106481484
+      },
+      "smallTimeStep": {
+        "max": 2,
+        "changed": 0,
+        "mean": 0.002420428240740741
+      },
+      "pixels": 8219,
+      "bluePixels": 7513,
+      "whitePixels": 0,
+      "bounds": {
+        "left": 213,
+        "right": 514,
+        "bottom": 211,
+        "top": 258
+      },
+      "maxColumnThickness": 48
+    },
+    {
+      "view": "rear",
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      },
+      "animation": {
+        "max": 85,
+        "changed": 902,
+        "mean": 0.03046657986111111
+      },
+      "smallTimeStep": {
+        "max": 1,
+        "changed": 0,
+        "mean": 0.00018952546296296295
+      },
+      "pixels": 1311,
+      "bluePixels": 936,
+      "whitePixels": 0,
+      "bounds": {
+        "left": 343,
+        "right": 386,
+        "bottom": 219,
+        "top": 266
+      },
+      "maxColumnThickness": 48
+    },
+    {
+      "view": "diagonalRear",
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      },
+      "animation": {
+        "max": 106,
+        "changed": 5396,
+        "mean": 0.2898133680555556
+      },
+      "smallTimeStep": {
+        "max": 3,
+        "changed": 0,
+        "mean": 0.0018171296296296297
+      },
+      "pixels": 6477,
+      "bluePixels": 5933,
+      "whitePixels": 0,
+      "bounds": {
+        "left": 207,
+        "right": 477,
+        "bottom": 212,
+        "top": 275
+      },
+      "maxColumnThickness": 42
+    },
+    {
+      "view": "front",
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      },
+      "animation": {
+        "max": 105,
+        "changed": 2981,
+        "mean": 0.16016059027777776
+      },
+      "smallTimeStep": {
+        "max": 3,
+        "changed": 0,
+        "mean": 0.0007935474537037038
+      },
+      "pixels": 3777,
+      "bluePixels": 3213,
+      "whitePixels": 0,
+      "bounds": {
+        "left": 326,
+        "right": 389,
+        "bottom": 174,
+        "top": 259
+      },
+      "maxColumnThickness": 84
+    },
+    {
+      "view": "top",
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      },
+      "animation": {
+        "max": 102,
+        "changed": 7049,
+        "mean": 0.4284780092592593
+      },
+      "smallTimeStep": {
+        "max": 2,
+        "changed": 0,
+        "mean": 0.0024811921296296296
+      },
+      "pixels": 7991,
+      "bluePixels": 7522,
+      "whitePixels": 0,
+      "bounds": {
+        "left": 203,
+        "right": 508,
+        "bottom": 218,
+        "top": 268
+      },
+      "maxColumnThickness": 48
+    }
+  ],
+  "lodSameObserverDistance": [
+    {
+      "radial": 6,
+      "view": "side",
+      "visiblePixels": 8176,
+      "maxColumnThickness": 48,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 6,
+      "view": "rear",
+      "visiblePixels": 1251,
+      "maxColumnThickness": 48,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 6,
+      "view": "diagonalRear",
+      "visiblePixels": 6410,
+      "maxColumnThickness": 42,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 6,
+      "view": "front",
+      "visiblePixels": 3542,
+      "maxColumnThickness": 84,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 6,
+      "view": "top",
+      "visiblePixels": 7421,
+      "maxColumnThickness": 45,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 4,
+      "view": "side",
+      "visiblePixels": 8041,
+      "maxColumnThickness": 48,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 4,
+      "view": "rear",
+      "visiblePixels": 1059,
+      "maxColumnThickness": 48,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 4,
+      "view": "diagonalRear",
+      "visiblePixels": 6314,
+      "maxColumnThickness": 42,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 4,
+      "view": "front",
+      "visiblePixels": 3066,
+      "maxColumnThickness": 84,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    },
+    {
+      "radial": 4,
+      "view": "top",
+      "visiblePixels": 7763,
+      "maxColumnThickness": 47,
+      "nativePost": {
+        "max": 0,
+        "changed": 0,
+        "mean": 0
+      }
+    }
+  ],
+  "viewSpaceNormalRotationCovariance": {
+    "max": 1,
+    "changed": 0,
+    "mean": 0.000010127314814814815
+  },
+  "fullyOccludedPostPixels": 0,
+  "seamCases": 45,
+  "maximumCircumferenceSeamChannelDelta": 1,
+  "seams": [
+    {
+      "style": 1,
+      "layer": 0,
+      "time": 0,
+      "maxDelta": 1
+    },
+    {
+      "style": 1,
+      "layer": 0,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 0,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 1,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 1,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 1,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 2,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 2,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 1,
+      "layer": 2,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 0,
+      "time": 0,
+      "maxDelta": 1
+    },
+    {
+      "style": 2,
+      "layer": 0,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 0,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 1,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 1,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 1,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 2,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 2,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 2,
+      "layer": 2,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 0,
+      "time": 0,
+      "maxDelta": 1
+    },
+    {
+      "style": 3,
+      "layer": 0,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 0,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 1,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 1,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 1,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 2,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 2,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 3,
+      "layer": 2,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 0,
+      "time": 0,
+      "maxDelta": 1
+    },
+    {
+      "style": 4,
+      "layer": 0,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 0,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 1,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 1,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 1,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 2,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 2,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 4,
+      "layer": 2,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 0,
+      "time": 0,
+      "maxDelta": 1
+    },
+    {
+      "style": 5,
+      "layer": 0,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 0,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 1,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 1,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 1,
+      "time": 103.7,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 2,
+      "time": 0,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 2,
+      "time": 7.5,
+      "maxDelta": 0
+    },
+    {
+      "style": 5,
+      "layer": 2,
+      "time": 103.7,
+      "maxDelta": 0
+    }
+  ],
+  "emissionFloatBuffer": {
+    "cases": 15,
+    "scale": 0.45,
+    "maximumPremultipliedRadianceError": 1.6304356087459837e-8,
+    "maximumDepthMetadataError": 0,
+    "fullyOccludedNonzeroSamples": 0
+  },
+  "glError": 0,
+  "geometry": "Synthetic 64 segment curved history, 8/6/4 radial vertices, original .65 radius width ratio and three 1.08 / 1 / .42 nested sections; no sphere or player geometry",
+  "scope": "Exact production native/post GLSL in an independent WebGL2 material/geometry harness; Minecraft/Oculus visual acceptance and performance remain separate",
+  "sourceHashes": {
+    "realm_meteor": "3ab62464536e3b761c39b2c9eafbd32d35ac86db01dfbaa4fcb789e00e08108b",
+    "realm_meteor_post": "a1957746a47cb52ce17babc8717a1b85eb5f6ccf8354ca1852f948797e3e5dbb"
+  }
+}

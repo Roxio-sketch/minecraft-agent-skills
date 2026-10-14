@@ -1,0 +1,12 @@
+{
+  "environment": "native",
+  "label": "flow-native-no-bloom-final",
+  "savedAtUTC": "2026-10-09T15:47:26.630512+00:00",
+  "bloomDisabledForCapture": true,
+  "sourceFiles": 580,
+  "fixtureFiles": 3,
+  "actualImages": 269,
+  "resultSHA256": "29a755f01c97345ee26f875344cac401689b10c5d5ed4d9a49fdec0a9ce12bbe",
+  "result": "PASS",
+  "scope": "Actual production renderer/state evidence. Visual quality requires inspection."
+}

@@ -1,0 +1,87 @@
+{
+  "id": "gaze",
+  "name": "凝视 / 聚瞳",
+  "layers": [
+    {
+      "material": "eye_sigil",
+      "motion": "center",
+      "count": 1,
+      "sizeBlocks": 3,
+      "delayTicks": 0,
+      "lifetimeTicks": 55
+    },
+    {
+      "material": "rune_circle",
+      "motion": "center",
+      "count": 1,
+      "sizeBlocks": 3.5,
+      "delayTicks": 0,
+      "lifetimeTicks": 55
+    },
+    {
+      "material": "soul_wisp",
+      "motion": "inward",
+      "count": 20,
+      "sizeBlocks": 0.3,
+      "delayTicks": 0,
+      "lifetimeTicks": 40
+    }
+  ],
+  "defaultPalette": "muyan",
+  "curves": {
+    "alpha": [
+      [
+        0,
+        0
+      ],
+      [
+        0.08,
+        1
+      ],
+      [
+        0.68,
+        0.8
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "size": [
+      [
+        0,
+        0.35
+      ],
+      [
+        0.18,
+        1
+      ],
+      [
+        0.8,
+        1.15
+      ],
+      [
+        1,
+        0.7
+      ]
+    ]
+  },
+  "durationTicks": 55,
+  "geometryNote": "浏览器为二维构图预览；Photon 样片为 Billboard 材质组合。地面法阵、真实射线和曲线拖尾需由游戏几何/发射器承载。",
+  "quality": {
+    "low": 0.35,
+    "medium": 0.65,
+    "high": 1
+  },
+  "recommendedMaxParticles": 128,
+  "skillId": "heart_demon_05",
+  "palette": "heart_demon",
+  "previewColor": "#36abff",
+  "previewDensity": 1,
+  "previewScale": 1,
+  "source": {
+    "path": "src/main/java/cn/blockforge/generated/generatedmod/boss/combat/HeartDemonSkillPrograms.java",
+    "line": 14,
+    "sha256": "84875e9c95d6b0634262ec81b4cad09bb3669044b367c75158fc4c9b1f47eafc"
+  }
+}

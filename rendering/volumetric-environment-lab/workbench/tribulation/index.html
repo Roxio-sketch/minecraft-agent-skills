@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>世界体积环境 · 参数工作台</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div><span class="eyebrow" id="schemaTag">WORLD VOLUME</span><h1>渡劫 · 黑云凝聚</h1></div>
+    <p>碎云生成 → 向心旋转 → 增厚压顶 → 云内蓄雷</p>
+    <span class="badge" id="rendererStatus">正在载入</span>
+  </header>
+  <main>
+    <section class="stage" aria-label="三维环境预览">
+      <div class="canvas-wrap">
+        <canvas id="viewport" tabindex="0" aria-label="可拖动旋转的三维云雾地形预览"></canvas>
+        <div class="view-overlay"><span id="viewLabel">外部观察</span><span id="renderStats">WebGL2</span></div>
+        <div class="scene-caption" id="sceneCaption">世界坐标 · 解析地面与实体盒子深度 · 有限区域</div>
+        <div id="fatalError" class="fatal" role="alert" hidden></div>
+      </div>
+      <div class="stage-controls">
+        <div class="row wrap"><strong id="stormStatus">晴空</strong><button id="stormReplay">重新播放形成过程</button></div>
+        <div class="row wrap"><label>形成时长 <input id="storm_duration" type="range" min="1" max="120" step="1"></label><label>向心强度 <input id="storm_contraction" type="range" min="0" max="1.5" step="0.01"></label><label>旋转强度 <input id="storm_swirl" type="range" min="-6" max="6" step="0.05"></label></div>
+        <div class="row wrap"><label>劫云密度 <input id="storm_density" type="range" min="0" max="5" step="0.01"></label><label>密度值 <input id="storm_densityNumber" type="number" min="0" max="5" step="0.01" style="width:5em"></label></div>
+        <label style="display:block">形成时间线 <input style="width:100%" id="stormTime" type="range" min="0" max="120" step="0.1" value="0"></label>
+        <p class="help">默认24秒完成形成，之后保持雷云。拖动时间线暂停；点击重新播放从晴空开始。云场固定在世界区域中。</p>
+        <div class="row wrap">
+          <button id="pauseButton" type="button">暂停</button>
+          <label class="time-label">时间 <input id="timeInput" type="number" min="0" step="0.01" value="0"> 秒</label>
+          <button id="setTimeButton" type="button">设置时间</button>
+          <button id="zeroTimeButton" type="button">回到 0 秒</button>
+          <label class="compact">预览分辨率 <select id="resolutionSelect"><option value="0.6">60%</option><option value="0.8" selected>80%</option><option value="1">100%</option></select></label>
+        </div>
+        <div class="row wrap views" aria-label="相机预设">
+          <button type="button" data-view="outside">外部观察</button>
+          <button type="button" data-view="inside">进入云雾</button>
+          <button type="button" data-view="ground">贴近地面</button>
+          <button type="button" data-view="above">俯瞰区域</button>
+          <button id="resetCameraButton" type="button">重置相机</button>
+        </div>
+        <div class="row wrap camera-inputs">
+          <span>相机</span>
+          <label>X <input id="cameraX" type="number" step="1"></label>
+          <label>高度 Y <input id="cameraY" type="number" step="1"></label>
+          <label>Z <input id="cameraZ" type="number" step="1"></label>
+        </div>
+        <p class="help">拖动旋转，滚轮前后移动；点击画面后用 W/A/S/D 移动，Q/E 降低/升高，Shift 加速。也可直接输入相机高度。</p>
+        <div class="contracts">
+          <label><input type="checkbox" id="emissionToggle"> 介质自发光</label>
+          <label><input type="checkbox" id="mediumToggle"> 闪光照亮云雾</label>
+          <label><input type="checkbox" id="surfaceToggle"> 闪光照亮地形</label>
+        </div>
+        <p class="help">三个开关会写入配方中的 emission、mediumGain、surfaceGain。局部光不写入 Minecraft 方块光，也不计算地形对局部光的阴影。</p>
+      </div>
+    </section>
+    <aside class="panel" aria-label="配方编辑">
+      <div class="recipe-header">
+        <label>起点预设 <select id="presetSelect" aria-label="起点预设"></select></label>
+        <label>配方名称 <input id="recipeName" type="text" maxlength="120" value="日照云海"></label>
+      </div>
+      <div class="exports">
+        <button id="importButton" type="button">导入 JSON</button>
+        <button id="jsonButton" type="button" disabled>导出 JSON</button>
+        <button id="pngButton" type="button" disabled>截图 PNG</button>
+        <button id="zipButton" type="button" disabled>游戏接入待适配</button>
+        <input id="importFile" type="file" accept=".json,application/json" hidden>
+      </div>
+      <div id="recipeError" class="error" role="alert" hidden></div>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <div id="parameterGroups"></div>
+      <p class="help">JSON 包含完整形成时间线、云参数、相机与预览时间。此页为原创三维预览，新增聚拢流场尚未接入 Forge。</p><p><a href="../">返回环境工作台</a> · <a href="../vortex/">龙卷风 / 龙吸水</a> · <a href="tribulation-workbench-source.zip">下载本页源码</a></p><footer><strong id="contractSummary">正在载入参数契约</strong><p>暂停并设置同一秒数与种子，可重放同一风场与闪光事件。画面使用共享 GLSL 内核，JSON 是接入时的参数契约。完整 world-volume/1 配方可明确升级为普通分布。</p></footer>
+    </aside>
+  </main>
+  <script type="module" src="preview.js?v=density2"></script>
+</body>
+</html>

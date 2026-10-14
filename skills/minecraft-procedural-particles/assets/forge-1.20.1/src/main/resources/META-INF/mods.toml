@@ -1,0 +1,14 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="particlelab"
+version="0.1.0"
+displayName="程序化粒子制作 Lab"
+description="Original rendercraft reference demo"
+[[dependencies.particlelab]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "id": "rose_gold",
+  "mode": "solid",
+  "stops": [{"at": 0, "color": "#F5A7B8"}],
+  "strength": 1.0
+}

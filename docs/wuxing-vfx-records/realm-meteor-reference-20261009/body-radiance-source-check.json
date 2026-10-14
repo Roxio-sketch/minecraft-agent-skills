@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": {
+    "backup_hash_matches_density_scan": true,
+    "advancedDensity_byte_identical": true,
+    "legacyDensity_byte_identical": true,
+    "mass_unchanged": true,
+    "opacity_cap_unchanged": true,
+    "central_clearance_unchanged": true,
+    "advanced_base_rgb_gain": true,
+    "advanced_emission_gain": true,
+    "only_requested_main_output_and_comment_changes": true,
+    "density_scan_result_preserved": true
+  },
+  "old_shader_sha256": "4c78d171f69e1d9e935c869297750701498ce5ffa84e2b970a6439ce64e6550a",
+  "new_shader_sha256": "a11a9bcadccccb727fd7003387ac089c9605eee443684e4e3ac3c73fe7358080",
+  "backup_file": "E:\\\u4e94\u884c\u4ed9\u9014\\reports\\realm-meteor-reference-20261009\\body-wrap-before-radiance.fsh",
+  "density_result_file": "E:\\\u4e94\u884c\u4ed9\u9014\\reports\\realm-meteor-reference-20261009\\body-envelope-regression-result.json",
+  "density_result_sha256": "faf8bc6e07c710d9c0938a7cffb7586802f7906bb980773a4ff08fe5531635a4",
+  "legacyDensity_sha256": "71fb8a9d1f2b9ad41f2a25a6e3157125597583238903bcf0bfab478e87345185",
+  "advancedDensity_sha256": "6b18232d87ffca9702a307eaa17c523d9765841cbc57f37297f953f5953d6caf",
+  "advanced_base_rgb_gain": {
+    "old": 1.0,
+    "new": 1.5,
+    "ratio": 1.5
+  },
+  "advanced_emission_gain": {
+    "old": 0.98,
+    "new": 3.2,
+    "ratio": 3.2653061224489797
+  },
+  "style_0_base_rgb_gain": {
+    "old": 1.0,
+    "new": 1.0
+  },
+  "style_0_emission_gain": {
+    "old": 0.78,
+    "new": 0.78
+  },
+  "mass": 4.25,
+  "advanced_opacity_cap": 0.8,
+  "scope": "Existing CPU density scan remains valid for byte-identical field functions only. New HDR/base radiance has not been game-tested; no density scan rerun, Gradle or client run."
+}

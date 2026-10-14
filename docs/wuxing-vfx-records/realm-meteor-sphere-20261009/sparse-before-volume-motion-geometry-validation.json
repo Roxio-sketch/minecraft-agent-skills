@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "ellipsoidRayCases": 612,
+  "maximumEllipsoidSurfaceResidual": 8.215650382226158e-15,
+  "inverseTransposeNormalMaximumRadiansError": 2.580956827951785e-08,
+  "incorrectUnitSpaceNormalMaximumDegreesError": 4.11308963865028,
+  "stretch": [
+    0.97,
+    0.97,
+    1.12
+  ],
+  "neutralAdvectionLocalUnitsPerSecond": -0.44680851063829785,
+  "highSpeedAdvectionLocalUnitsPerSecond": -0.8265957446808511,
+  "maximumSpeedChangePhaseOffsetIndependentOfElapsedTime": 2.15945945945946,
+  "foregroundDepthRejectsAllSurfaces": true,
+  "centralDepthRejectsOnlyRearSurface": true,
+  "shaderSha256": "ed49888694a19077f50c07b28683516e3ac6b965f620c9f10d86c8799e0e176d",
+  "scope": "Independent CPU ellipsoid normals/intersections/distance conversion and bounded advected-coordinate reasoning; actual host/GPU/game evidence remains separate"
+}

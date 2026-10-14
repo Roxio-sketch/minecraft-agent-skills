@@ -1,0 +1,1 @@
+Fixed world-space bottom flame; lateral camera motion, four directions, close/far/high/low views and genuine vanilla walking bob; local projection alignment verified.

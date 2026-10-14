@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="localmaterial"
+version="0.2.0"
+displayName="Local Environment Material Lab"
+description="Local terrain material reconstruction and optional original-geometry translucent material injection. Renderer adapters are explicitly gated."
+[[dependencies.localmaterial]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,48)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.localmaterial]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"

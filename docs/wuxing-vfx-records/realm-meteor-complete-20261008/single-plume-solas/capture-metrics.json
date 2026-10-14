@@ -1,0 +1,229 @@
+{
+  "01-hover-three-dimensional-shell.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 1813,
+    "whitePixels": 0
+  },
+  "02-cruise-body-and-shader-trail.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 8931,
+    "whitePixels": 0
+  },
+  "03-boost-long-meteor-trail.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 47211,
+    "whitePixels": 0
+  },
+  "04-turn-curved-history.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 5537,
+    "whitePixels": 0
+  },
+  "05-distant-observer.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 295,
+    "whitePixels": 0
+  },
+  "06-first-person-clear-view.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 9684,
+    "whitePixels": 186
+  },
+  "07-stopped-and-expired-control.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 0,
+    "whitePixels": 0
+  },
+  "08-solas-depth-composite-route.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 46465,
+    "whitePixels": 0
+  },
+  "09-after-resource-reload.png": {
+    "size": [
+      1280,
+      720
+    ],
+    "cyanPixels": 4761,
+    "whitePixels": 0
+  },
+  "10-resized-depth-composite.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 49981,
+    "whitePixels": 0
+  },
+  "11-no-bloom-single-plume-side.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 19759,
+    "whitePixels": 0
+  },
+  "12-no-bloom-rear-width.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 70565,
+    "whitePixels": 675
+  },
+  "13-no-bloom-front-open-head.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 6978,
+    "whitePixels": 32
+  },
+  "14-no-bloom-48-block-observer.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 2169,
+    "whitePixels": 0
+  },
+  "15-remote-visible-with-local-vanilla-preference.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 21359,
+    "whitePixels": 0
+  },
+  "16-realm2-inactive-clear-control.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 50,
+    "whitePixels": 0
+  },
+  "17-stone-wall-occlusion-with-energy.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 0,
+    "whitePixels": 0
+  },
+  "18-stone-wall-no-energy-control.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 0,
+    "whitePixels": 0
+  },
+  "19-local-third-person-body-and-flight.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 146092,
+    "whitePixels": 0
+  },
+  "20-four-observed-flying-players.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 24509,
+    "whitePixels": 0
+  },
+  "21-night-meteor-flight.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 33,
+    "whitePixels": 0
+  },
+  "22-local-third-person-oblique-side.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "cyanPixels": 8260,
+    "whitePixels": 0
+  },
+  "occlusionPair": {
+    "changedPixels": 380705,
+    "changedPixelsOver4": 4524,
+    "maximumChannelDifference": 29,
+    "meanChannelDifference": [
+      0.23489791666666668,
+      0.19741458333333334,
+      0.18261944444444445
+    ],
+    "boundsOfDifference": [
+      0,
+      0,
+      1600,
+      900
+    ]
+  },
+  "animation": {
+    "actualFrames": 20,
+    "fps": 5,
+    "file": "turn-actual-frames.webp",
+    "decodedPixelsMatchOriginalPNGs": true,
+    "source": "Unedited Minecraft frame captures; lossless WebP sequence."
+  },
+  "manifestEvidence": {
+    "result": "PASS: isolated actual Forge rendering, twenty-two diagnostic captures, turning frame sequence, Bloom OFF shape views, local vanilla preference with remote effects, realm2 inactive, local first/third-person flight and oblique side view, four visible flying players, night flight, stopped fade, stone-wall depth occlusion, resource reload and resize. External shader pack=Solas Shader V3.7b.zip; forced route fixture=false.",
+    "recordedCaptures": 22,
+    "unrecordedPNGFilesExcluded": [
+      "08-forced-depth-composite-route.png",
+      "11-no-bloom-side-three-strands.png"
+    ],
+    "unrecordedSequenceFilesExcluded": [
+      "frame-020.png"
+    ],
+    "glErrors": [],
+    "externalShaderPack": "Solas Shader V3.7b.zip",
+    "observedFrameRateSamples": {
+      "singleLocalThirdPerson": {
+        "samples": 90,
+        "meanFPS": 59.34444444444444,
+        "minimumFPS": 59,
+        "maximumFPS": 60
+      },
+      "fourRemotePlayers": {
+        "samples": 90,
+        "meanFPS": 59.32222222222222,
+        "minimumFPS": 59,
+        "maximumFPS": 60
+      }
+    },
+    "performanceScope": "Real whole-client reported FPS, 60 FPS cap, isolated world; not a GPU timer or universal benchmark."
+  }
+}

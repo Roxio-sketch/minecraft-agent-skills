@@ -1,0 +1,1 @@
+Isolated guard tier GPU captures completed; four production hits, mixed equipment, no GL errors.

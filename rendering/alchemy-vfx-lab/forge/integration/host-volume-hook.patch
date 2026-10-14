@@ -1,0 +1,32 @@
+--- a/src/main/java/cn/blockforge/generated/generatedmod/client/AlchemyFurnaceEffects.java
++++ b/src/main/java/cn/blockforge/generated/generatedmod/client/AlchemyFurnaceEffects.java
+@@ -23,6 +23,21 @@
+ /** World geometry, with an independent post-composite buffer for shader packs. */
+ @Mod.EventBusSubscriber(modid=GeneratedMod.MOD_ID,value=Dist.CLIENT)
+ public final class AlchemyFurnaceEffects {
++    /** Versioned external VFX handoff. Missing/disabled/failed runtime retains original effects. */
++    public static int externalVolumeHookVersion() { return 1; }
++    private static java.lang.reflect.Method volumeClaim;
++    private static boolean volumeHookChecked;
++    private static boolean volumeClaims(AlchemyFurnaceBlockEntity furnace) {
++        if (!volumeHookChecked) {
++            volumeHookChecked=true;
++            try {
++                volumeClaim=Class.forName("dev.alchemyvfx.HostHook").getMethod("claims",Object.class);
++            } catch (ReflectiveOperationException absentRuntime) { }
++        }
++        if (volumeClaim==null) return false;
++        try { return Boolean.TRUE.equals(volumeClaim.invoke(null,furnace)); }
++        catch (ReflectiveOperationException failedRuntime) { return false; }
++    }
+     private static final BufferBuilder BUFFER=new BufferBuilder(262144);
+     private static final Map<AlchemyFurnaceBlockEntity,Long> VISIBLE=new WeakHashMap<>();
+     private static final Map<OfferingItemEntity,Long> OFFERINGS=new WeakHashMap<>();
+@@ -83,6 +98,7 @@
+     }
+     private static Vec3 rgb(int color){return new Vec3(ExoticFireColorRegistry.vector(color));}
+     private static void drawFurnace(AlchemyFurnaceBlockEntity f,Matrix4f matrix,double time,float partial,Vec3 eye,Vec3 right,Vec3 up){
++        if (volumeClaims(f)) return;
+         var fire=FireCatalog.id(f.activeFireId());
+         Vec3 outer=fire==null?GOLD:rgb(ExoticFireColorRegistry.color(fire.tier(),(long)time));
+         Vec3 accent=fire==null?WHITE_GOLD:rgb(ExoticFireColorRegistry.accentColor(fire.tier(),(long)time));

@@ -1,0 +1,22 @@
+{
+  "schema": "spirit-guard-glint/1",
+  "preset": "guard-rune-flow",
+  "parameters": {
+    "style": 5,
+    "color": "#A0D8FF",
+    "color2": "#E1F5FF",
+    "intensity": 0.95,
+    "speed": 0.65,
+    "scale": 1.15,
+    "width": 0.08,
+    "angle": 8,
+    "secondary": 0.4
+  },
+  "scene": {
+    "shape": "chest",
+    "material": "iron",
+    "yaw": 0.32,
+    "pitch": -0.08,
+    "orbit": false
+  }
+}

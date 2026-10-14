@@ -1,0 +1,6379 @@
+{
+  "schema": "world-volume-forge-validation/2",
+  "recipeSchema": "world-volume/2",
+  "modVersion": "0.2.0",
+  "complete": true,
+  "world": "WORLD_VOLUME_LAB_1791293705771",
+  "renderer": "NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2",
+  "vendor": "NVIDIA Corporation",
+  "glVersion": "4.6.0 NVIDIA 617.14",
+  "minecraft": "1.20.1",
+  "forge": "47.4.22",
+  "java": "17.0.20.1",
+  "results": [
+    {
+      "name": "off",
+      "generationBefore": 1,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 150.0,
+          "cavityRadius": 75.0,
+          "shape": 0.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": -60.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 85.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 0.0,
+          "nearClearRadius": 80.0,
+          "ambient": 0.2,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.014,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.0,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.35,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 206,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "generationAfter": 1,
+      "draws": 107,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 206,
+      "sourceFbo": 1,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.0,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            0.0,
+            24.0,
+            0.014,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            75.0,
+            0.8,
+            150.0,
+            85.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.35,
+            -69.62,
+            0.7,
+            80.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 0,
+      "changedPixels": 0,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 0,
+      "skyChangedPixels": 0,
+      "centerChangedPixels": 0,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 105,
+      "gpuMedianMs": 0.08192,
+      "gpuP95Ms": 0.08192,
+      "stateRestored": true
+    },
+    {
+      "name": "volume",
+      "generationBefore": 1,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 150.0,
+          "cavityRadius": 75.0,
+          "shape": 0.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": -60.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 85.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 0.0,
+          "nearClearRadius": 80.0,
+          "ambient": 0.2,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.014,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.35,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 206,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.5836815,
+        0.75,
+        0.75,
+        1.0
+      ],
+      "generationAfter": 1,
+      "draws": 126,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 206,
+      "sourceFbo": 1,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            0.0,
+            24.0,
+            0.014,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            75.0,
+            0.8,
+            150.0,
+            85.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.35,
+            -69.62,
+            0.7,
+            80.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 35039025,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 124,
+      "gpuMedianMs": 2.53952,
+      "gpuP95Ms": 27.148288,
+      "stateRestored": true
+    },
+    {
+      "name": "emission",
+      "generationBefore": 1,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 150.0,
+          "cavityRadius": 75.0,
+          "shape": 0.0,
+          "sunGain": 0.0,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": -60.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 85.0,
+          "emission": 3.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 0.0,
+          "nearClearRadius": 80.0,
+          "ambient": 0.0,
+          "extinction": 0.0,
+          "emissionThreshold": 0.15,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.014,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.35,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 206,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        1.0,
+        0.75,
+        0.75,
+        1.0
+      ],
+      "generationAfter": 1,
+      "draws": 132,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 206,
+      "sourceFbo": 1,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.0,
+            0.45,
+            0.0,
+            0.0
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            3.0,
+            2.2,
+            0.15,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            0.0,
+            24.0,
+            0.014,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            75.0,
+            0.8,
+            150.0,
+            85.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.35,
+            -69.62,
+            0.7,
+            80.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 22440375,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 130,
+      "gpuMedianMs": 1.988608,
+      "gpuP95Ms": 2.736128,
+      "stateRestored": true
+    },
+    {
+      "name": "flash-medium",
+      "generationBefore": 1,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 150.0,
+          "cavityRadius": 75.0,
+          "shape": 0.0,
+          "sunGain": 0.0,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 1.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": -60.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 85.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 0.0,
+          "nearClearRadius": 80.0,
+          "ambient": 0.0,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 1.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.014,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.35,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 206,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.5836815,
+        0.75,
+        0.75,
+        1.0
+      ],
+      "generationAfter": 1,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 206,
+      "sourceFbo": 1,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.0,
+            0.0
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            0.0,
+            24.0,
+            0.014,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            75.0,
+            0.8,
+            150.0,
+            85.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.35,
+            -69.62,
+            0.7,
+            80.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 33252421,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 6.703104,
+      "gpuP95Ms": 8.955904,
+      "stateRestored": true
+    },
+    {
+      "name": "flash-surface",
+      "generationBefore": 1,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 150.0,
+          "cavityRadius": 75.0,
+          "shape": 0.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.25,
+          "viewSteps": 32.0,
+          "voidFloor": -60.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 85.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 0.0,
+          "nearClearRadius": 80.0,
+          "ambient": 0.2,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 1.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.014,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.0,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.35,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 206,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "generationAfter": 1,
+      "draws": 130,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 206,
+      "sourceFbo": 1,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.0,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.25
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            0.0,
+            24.0,
+            0.014,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            75.0,
+            0.8,
+            150.0,
+            85.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.35,
+            -69.62,
+            0.7,
+            80.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 7542025,
+      "changedPixels": 50128,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 0,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 128,
+      "gpuMedianMs": 0.023552,
+      "gpuP95Ms": 0.08704,
+      "stateRestored": true
+    },
+    {
+      "name": "behind-wall",
+      "generationBefore": 1,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 150.0,
+          "cavityRadius": 75.0,
+          "shape": 1.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": -60.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 85.0,
+          "emission": 3.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 8.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 0.0,
+          "nearClearRadius": 80.0,
+          "ambient": 0.2,
+          "extinction": 0.0,
+          "emissionThreshold": 0.15,
+          "centerX": 0.0,
+          "centerY": 10.0,
+          "centerZ": 32.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.014,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.35,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 206,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "generationAfter": 1,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 206,
+      "sourceFbo": 1,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            0.3800001,
+            32.0,
+            8.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            1.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.0,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            3.0,
+            2.2,
+            0.15,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            0.0,
+            24.0,
+            0.014,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            75.0,
+            0.8,
+            150.0,
+            85.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.35,
+            -69.62,
+            0.7,
+            80.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 0,
+      "changedPixels": 0,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 0,
+      "skyChangedPixels": 0,
+      "centerChangedPixels": 0,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 0.09728,
+      "gpuP95Ms": 0.098304,
+      "stateRestored": true
+    },
+    {
+      "name": "sphere-visible",
+      "generationBefore": 1,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 150.0,
+          "cavityRadius": 75.0,
+          "shape": 1.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": -60.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 85.0,
+          "emission": 3.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 8.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 0.0,
+          "nearClearRadius": 80.0,
+          "ambient": 0.2,
+          "extinction": 0.0,
+          "emissionThreshold": 0.15,
+          "centerX": 0.0,
+          "centerY": 10.0,
+          "centerZ": 10.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.014,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.35,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 206,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        1.0,
+        0.75,
+        0.75,
+        1.0
+      ],
+      "generationAfter": 1,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 206,
+      "sourceFbo": 1,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            0.3800001,
+            10.0,
+            8.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            1.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.0,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            3.0,
+            2.2,
+            0.15,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            0.0,
+            24.0,
+            0.014,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            75.0,
+            0.8,
+            150.0,
+            85.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.35,
+            -69.62,
+            0.7,
+            80.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 10160112,
+      "changedPixels": 201038,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 150910,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 0.852992,
+      "gpuP95Ms": 10.418176,
+      "stateRestored": true
+    },
+    {
+      "name": "annulus",
+      "generationBefore": 1,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 150.0,
+          "cavityRadius": 75.0,
+          "shape": 2.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": -60.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 85.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 0.0,
+          "nearClearRadius": 80.0,
+          "ambient": 0.2,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.014,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 20.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.35,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 206,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "generationAfter": 1,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 206,
+      "sourceFbo": 1,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            2.0,
+            20.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            0.0,
+            24.0,
+            0.014,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            75.0,
+            0.8,
+            150.0,
+            85.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.35,
+            -69.62,
+            0.7,
+            80.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 13733526,
+      "changedPixels": 117530,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 0,
+      "skyChangedPixels": 117530,
+      "centerChangedPixels": 0,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 0.98304,
+      "gpuP95Ms": 2.830336,
+      "stateRestored": true
+    },
+    {
+      "name": "reload",
+      "generationBefore": 1,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 150.0,
+          "cavityRadius": 75.0,
+          "shape": 0.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": -60.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 85.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 0.0,
+          "nearClearRadius": 80.0,
+          "ambient": 0.2,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.014,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.35,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.5836815,
+        0.75,
+        0.75,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 184,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            0.0,
+            24.0,
+            0.014,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            75.0,
+            0.8,
+            150.0,
+            85.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.35,
+            -69.62,
+            0.7,
+            80.0
+          ]
+        }
+      },
+      "changedPixelsVsVolume": 0,
+      "sumAbsoluteRGBDelta": 35039025,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 182,
+      "gpuMedianMs": 6.925312,
+      "gpuP95Ms": 8.352768,
+      "stateRestored": true
+    },
+    {
+      "name": "resize",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 150.0,
+          "cavityRadius": 75.0,
+          "shape": 0.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": -60.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 85.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 0.0,
+          "nearClearRadius": 80.0,
+          "ambient": 0.2,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.014,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.35,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.5836815,
+        0.75,
+        0.75,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 134,
+      "width": 800,
+      "height": 450,
+      "Time": 0.5,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            0.0,
+            24.0,
+            0.014,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            75.0,
+            0.8,
+            150.0,
+            85.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.35,
+            -69.62,
+            0.7,
+            80.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 54722757,
+      "changedPixels": 360000,
+      "geometryPixels": 78561,
+      "skyPixels": 281439,
+      "geometryChangedPixels": 78561,
+      "skyChangedPixels": 281439,
+      "centerChangedPixels": 14151,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 132,
+      "gpuMedianMs": 7.067648,
+      "gpuP95Ms": 10.40896,
+      "stateRestored": true
+    },
+    {
+      "name": "end-raw",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 0.0,
+          "cavityRadius": 0.0,
+          "shape": 0.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": 30.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 0.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 1.0,
+          "nearClearRadius": 0.0,
+          "ambient": 0.2,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.05,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.0,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.90826577,
+        0.11723231,
+        0.13470449,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 134,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            1.0,
+            24.0,
+            0.05,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            0.0,
+            0.8,
+            0.0,
+            0.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.0,
+            20.380001,
+            0.7,
+            0.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 10514747,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 132,
+      "gpuMedianMs": 4.579328,
+      "gpuP95Ms": 7.192576,
+      "stateRestored": true
+    },
+    {
+      "name": "end-cavity",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 0.0,
+          "cavityRadius": 64.0,
+          "shape": 0.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": 30.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 0.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 1.0,
+          "nearClearRadius": 0.0,
+          "ambient": 0.2,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.05,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.0,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            1.0,
+            24.0,
+            0.05,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            64.0,
+            0.8,
+            0.0,
+            0.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.0,
+            20.380001,
+            0.7,
+            0.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 853565,
+      "changedPixels": 45714,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 0,
+      "skyChangedPixels": 45714,
+      "centerChangedPixels": 0,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 2.284544,
+      "gpuP95Ms": 5.057536,
+      "stateRestored": true
+    },
+    {
+      "name": "end-torus",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 32.0,
+          "cavityRadius": 0.0,
+          "shape": 0.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": 30.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 12.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 1.0,
+          "nearClearRadius": 0.0,
+          "ambient": 0.2,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.05,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.0,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.90826577,
+        0.11723231,
+        0.13470449,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 134,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            1.0,
+            24.0,
+            0.05,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            0.0,
+            0.8,
+            32.0,
+            12.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.0,
+            20.380001,
+            0.7,
+            0.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 8465348,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 132,
+      "gpuMedianMs": 2.497536,
+      "gpuP95Ms": 15.854592,
+      "stateRestored": true
+    },
+    {
+      "name": "end-twist-off",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 0.0,
+          "cavityRadius": 0.0,
+          "shape": 0.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": 30.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 0.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 1.0,
+          "nearClearRadius": 0.0,
+          "ambient": 0.2,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.0,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.0,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.9091353,
+        0.11720433,
+        0.13465844,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            1.0,
+            24.0,
+            0.0,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            0.0,
+            0.8,
+            0.0,
+            0.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.0,
+            20.380001,
+            0.7,
+            0.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 10560820,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 5.151744,
+      "gpuP95Ms": 6.664192,
+      "stateRestored": true
+    },
+    {
+      "name": "end-time8",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 0.0,
+          "cavityRadius": 0.0,
+          "shape": 0.0,
+          "sunGain": 0.5,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": 30.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 0.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 1.0,
+          "nearClearRadius": 0.0,
+          "ambient": 0.2,
+          "extinction": 0.045,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.05,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.0,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.9087156,
+        0.11737259,
+        0.13578591,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 8.0,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.045,
+            0.45,
+            0.2,
+            0.5
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            1.0,
+            24.0,
+            0.05,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            0.0,
+            0.8,
+            0.0,
+            0.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.0,
+            20.380001,
+            0.7,
+            0.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 10569840,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 6.765568,
+      "gpuP95Ms": 7.948288,
+      "stateRestored": true
+    },
+    {
+      "name": "end-void",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 0.0,
+          "cavityRadius": 64.0,
+          "shape": 0.0,
+          "sunGain": 0.0,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": 30.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 0.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 1.0,
+          "nearClearRadius": 0.0,
+          "ambient": 0.05,
+          "extinction": 0.08,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.05,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 1.0,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.38288736,
+        0.75,
+        0.75,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.08,
+            0.45,
+            0.05,
+            0.0
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            1.0,
+            24.0,
+            0.05,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            64.0,
+            0.8,
+            0.0,
+            0.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            1.0,
+            20.380001,
+            0.7,
+            0.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 66115055,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 1.80736,
+      "gpuP95Ms": 4.842496,
+      "stateRestored": true
+    },
+    {
+      "name": "end-near-clear",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 0.0,
+          "cavityRadius": 64.0,
+          "shape": 0.0,
+          "sunGain": 0.0,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": 30.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 0.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 1.0,
+          "nearClearRadius": 100.0,
+          "ambient": 0.05,
+          "extinction": 0.08,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.05,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 1.0,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.9918431,
+        0.75,
+        0.75,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 134,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.08,
+            0.45,
+            0.05,
+            0.0
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            1.0,
+            24.0,
+            0.05,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            64.0,
+            0.8,
+            0.0,
+            0.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            1.0,
+            20.380001,
+            0.7,
+            100.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 10158145,
+      "changedPixels": 221404,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 171276,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 132,
+      "gpuMedianMs": 5.10464,
+      "gpuP95Ms": 5.83168,
+      "stateRestored": true
+    },
+    {
+      "name": "end-void-low",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 0.0,
+          "cavityRadius": 64.0,
+          "shape": 0.0,
+          "sunGain": 0.0,
+          "coverage": 0.95,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": -20.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 0.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 0.0,
+          "emissionB": 0.8,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.35,
+          "verticalStretch": 24.0,
+          "densityModel": 1.0,
+          "nearClearRadius": 0.0,
+          "ambient": 0.05,
+          "extinction": 0.08,
+          "emissionThreshold": 0.45,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.05,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.75,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 1.0,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.9338297,
+        0.053484492,
+        0.053484492,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.75,
+            0.95,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            0.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.08,
+            0.45,
+            0.05,
+            0.0
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.45,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.35,
+            0.08,
+            0.8
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            1.0,
+            24.0,
+            0.05,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            64.0,
+            0.8,
+            0.0,
+            0.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            1.0,
+            -29.619999,
+            0.7,
+            0.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 8629372,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 5.039104,
+      "gpuP95Ms": 5.755904,
+      "stateRestored": true
+    },
+    {
+      "name": "purple-time8",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 0.0,
+          "cavityRadius": 0.0,
+          "shape": 0.0,
+          "sunGain": 0.0,
+          "coverage": 0.85,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": 30.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 0.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 2.0,
+          "emissionB": 1.0,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.8,
+          "verticalStretch": 24.0,
+          "densityModel": 2.0,
+          "nearClearRadius": 0.0,
+          "ambient": 0.6,
+          "extinction": 0.025,
+          "emissionThreshold": 0.15,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.05,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.12,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.0,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.9600199,
+        0.102,
+        0.102,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 8.0,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.12,
+            0.85,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            2.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.025,
+            0.45,
+            0.6,
+            0.0
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.15,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.8,
+            0.08,
+            1.0
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            2.0,
+            24.0,
+            0.05,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            0.0,
+            0.8,
+            0.0,
+            0.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.0,
+            20.380001,
+            0.7,
+            0.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 3913737,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 1.915904,
+      "gpuP95Ms": 3.062784,
+      "stateRestored": true
+    },
+    {
+      "name": "purple-off",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 0.0,
+          "cavityRadius": 0.0,
+          "shape": 0.0,
+          "sunGain": 0.0,
+          "coverage": 0.85,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": 30.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 0.0,
+          "emission": 0.0,
+          "mediumB": 1.0,
+          "speed": 2.0,
+          "emissionB": 1.0,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.8,
+          "verticalStretch": 24.0,
+          "densityModel": 2.0,
+          "nearClearRadius": 0.0,
+          "ambient": 0.6,
+          "extinction": 0.025,
+          "emissionThreshold": 0.15,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.05,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.12,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.0,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.9600199,
+        0.102,
+        0.102,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.12,
+            0.85,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            2.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.025,
+            0.45,
+            0.6,
+            0.0
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            0.0,
+            2.2,
+            0.15,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.8,
+            0.08,
+            1.0
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            2.0,
+            24.0,
+            0.05,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            0.0,
+            0.8,
+            0.0,
+            0.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.0,
+            20.380001,
+            0.7,
+            0.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 3848241,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 3.280896,
+      "gpuP95Ms": 3.283968,
+      "stateRestored": true
+    },
+    {
+      "name": "purple-glow",
+      "generationBefore": 2,
+      "recipe": {
+        "schema": "world-volume/2",
+        "name": "日照云海",
+        "parameters": {
+          "windX": 0.8,
+          "sunX": 0.4,
+          "windZ": 0.35,
+          "sunY": 0.8,
+          "sunZ": -0.3,
+          "torusRadius": 0.0,
+          "cavityRadius": 0.0,
+          "shape": 0.0,
+          "sunGain": 0.0,
+          "coverage": 0.85,
+          "flashPeriod": 1.0,
+          "twistSpeed": 0.02,
+          "curl": 0.5,
+          "mediumGain": 0.0,
+          "surfaceGain": 0.0,
+          "viewSteps": 32.0,
+          "voidFloor": 30.0,
+          "erosion": 0.1,
+          "emissionScale": 2.2,
+          "torusWidth": 0.0,
+          "emission": 3.0,
+          "mediumB": 1.0,
+          "speed": 2.0,
+          "emissionB": 1.0,
+          "mediumG": 0.9,
+          "emissionG": 0.08,
+          "radius": 64.0,
+          "height": 28.0,
+          "mediumR": 0.85,
+          "emissionR": 0.8,
+          "verticalStretch": 24.0,
+          "densityModel": 2.0,
+          "nearClearRadius": 0.0,
+          "ambient": 0.6,
+          "extinction": 0.025,
+          "emissionThreshold": 0.15,
+          "centerX": 0.0,
+          "centerY": 12.0,
+          "centerZ": 0.0,
+          "flashDuration": 1.0,
+          "lightSteps": 3.0,
+          "bottom": 3.0,
+          "flashEnabled": 0.0,
+          "flashStrength": 3.0,
+          "twistAmount": 0.05,
+          "anisotropy": 0.45,
+          "emissionSpeed": 0.3,
+          "flashRadius": 100.0,
+          "innerRadius": 25.0,
+          "flashB": 1.0,
+          "sunB": 0.65,
+          "flashG": 0.65,
+          "density": 0.12,
+          "flashPlacement": 0.0,
+          "scale": 0.03,
+          "sunG": 0.85,
+          "seed": 17.0,
+          "cavityAspect": 0.8,
+          "voidDensity": 0.0,
+          "flashR": 0.55,
+          "sunR": 1.0,
+          "voidFalloff": 0.7
+        }
+      },
+      "drawBindings": {
+        "program": 371,
+        "drawFbo": 2,
+        "SceneSamplerUnit": 0,
+        "SceneSamplerBoundTexture": 51,
+        "DepthSamplerUnit": 1,
+        "DepthSamplerBoundTexture": 52
+      },
+      "centerRayProbe": [
+        0.9600199,
+        0.102,
+        0.102,
+        1.0
+      ],
+      "generationAfter": 2,
+      "draws": 135,
+      "width": 640,
+      "height": 360,
+      "Time": 0.5,
+      "program": 371,
+      "sourceFbo": 4,
+      "outputFbo": 2,
+      "sceneTexture": 51,
+      "depthTexture": 52,
+      "outputColorTexture": 4,
+      "camera": [
+        0.0,
+        9.619999885559082,
+        0.0
+      ],
+      "inverseProjection": [
+        1.2448134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70020753,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -9.998047,
+        0.0,
+        0.0,
+        -1.0,
+        10.001952
+      ],
+      "inverseRotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "uploadedUniforms": {
+        "Bounds": {
+          "location": 0,
+          "value": [
+            0.0,
+            2.38,
+            0.0,
+            64.0
+          ]
+        },
+        "Layer": {
+          "location": 15,
+          "value": [
+            -6.62,
+            28.0,
+            0.0,
+            25.0
+          ]
+        },
+        "Density": {
+          "location": 1,
+          "value": [
+            0.12,
+            0.85,
+            0.03,
+            0.1
+          ]
+        },
+        "Flow": {
+          "location": 10,
+          "value": [
+            0.8,
+            0.35,
+            2.0,
+            0.5
+          ]
+        },
+        "Optics": {
+          "location": 18,
+          "value": [
+            0.025,
+            0.45,
+            0.6,
+            0.0
+          ]
+        },
+        "Glow": {
+          "location": 11,
+          "value": [
+            3.0,
+            2.2,
+            0.15,
+            0.3
+          ]
+        },
+        "Flash": {
+          "location": 7,
+          "value": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "FlashShape": {
+          "location": 9,
+          "value": [
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "MediumColor": {
+          "location": 17,
+          "value": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "EmissionColor": {
+          "location": 3,
+          "value": [
+            0.8,
+            0.08,
+            1.0
+          ]
+        },
+        "FlashColor": {
+          "location": 8,
+          "value": [
+            0.55,
+            0.65,
+            1.0
+          ]
+        },
+        "SunDirection": {
+          "location": 22,
+          "value": [
+            0.4,
+            0.8,
+            -0.3
+          ]
+        },
+        "SunColor": {
+          "location": 21,
+          "value": [
+            1.0,
+            0.85,
+            0.65
+          ]
+        },
+        "Seed": {
+          "location": 20,
+          "value": [
+            17.0
+          ]
+        },
+        "ViewSteps": {
+          "location": 25,
+          "value": [
+            32
+          ]
+        },
+        "LightSteps": {
+          "location": 16,
+          "value": [
+            3
+          ]
+        },
+        "EndWarp": {
+          "location": 6,
+          "value": [
+            2.0,
+            24.0,
+            0.05,
+            0.02
+          ]
+        },
+        "EndCarve": {
+          "location": 4,
+          "value": [
+            0.0,
+            0.8,
+            0.0,
+            0.0
+          ]
+        },
+        "EndDepth": {
+          "location": 5,
+          "value": [
+            0.0,
+            20.380001,
+            0.7,
+            0.0
+          ]
+        }
+      },
+      "sumAbsoluteRGBDelta": 7577355,
+      "changedPixels": 230400,
+      "geometryPixels": 50128,
+      "skyPixels": 180272,
+      "geometryChangedPixels": 50128,
+      "skyChangedPixels": 180272,
+      "centerChangedPixels": 9017,
+      "maxDepthDifference": 0.0,
+      "glError": 0,
+      "gpuSamples": 133,
+      "gpuMedianMs": 4.424704,
+      "gpuP95Ms": 4.721664,
+      "stateRestored": true
+    }
+  ]
+}

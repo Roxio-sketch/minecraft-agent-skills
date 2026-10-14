@@ -1,0 +1,26 @@
+{
+  "compile": true,
+  "zeroDensityScene": [
+    60,
+    90,
+    120,
+    255
+  ],
+  "zeroDensityVolume": [
+    0,
+    0,
+    0,
+    255
+  ],
+  "identityComposite": [
+    60,
+    90,
+    120,
+    255
+  ],
+  "glError": 0,
+  "gpuTimerAvailable": true,
+  "baselineMs": 7.405568,
+  "optimizedVolumeMs": 0.3396266666666667,
+  "note": "Synthetic WebGL volume pass only, excludes copy/composite; not Minecraft FPS."
+}

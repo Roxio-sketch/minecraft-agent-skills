@@ -1,0 +1,12 @@
+{
+  "installedAtAsiaShanghai": "2026-10-09 10:18:59 +08:00",
+  "source": "E:\\五行仙途\\build\\libs\\wuxingxiantu-0.2.jar",
+  "destination": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-camera-blackout-fix-20261009-101859.jar",
+  "sourceSha256": "47A1A03791273009A65860174BB330D473EAAA54F2EA1F78A6DCFDAC2EC92495",
+  "installedSha256": "47A1A03791273009A65860174BB330D473EAAA54F2EA1F78A6DCFDAC2EC92495",
+  "previousSha256": "2E61B8A7BEADC1A4505B3851F9BEE4306144B958514C32DEB592ACC48ED7641B",
+  "bytes": 45043814,
+  "method": "Verified temporary copy; same-volume old-JAR move to backup; install move; destination SHA256 verification",
+  "runtimeRestartRequired": true
+}

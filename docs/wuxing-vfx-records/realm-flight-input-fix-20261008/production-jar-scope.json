@@ -1,0 +1,11 @@
+{
+  "changed_entries": [
+    "cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightMovement.class",
+    "cn/blockforge/generated/generatedmod/realmflight/RealmFlightControl$State.class",
+    "cn/blockforge/generated/generatedmod/realmflight/RealmFlightControl.class"
+  ],
+  "added_entries": [],
+  "removed_entries": [],
+  "test_fixture_classes_in_release": [],
+  "finalInstalledSha256": "2E61B8A7BEADC1A4505B3851F9BEE4306144B958514C32DEB592ACC48ED7641B"
+}

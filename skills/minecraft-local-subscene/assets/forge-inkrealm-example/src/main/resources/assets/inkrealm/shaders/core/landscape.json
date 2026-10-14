@@ -1,0 +1,92 @@
+{
+  "vertex": "inkrealm:landscape",
+  "fragment": "inkrealm:landscape",
+  "attributes": [
+    "Position",
+    "UV0"
+  ],
+  "samplers": [],
+  "uniforms": [
+    {
+      "name": "Eye",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        0,
+        9
+      ]
+    },
+    {
+      "name": "HalfSize",
+      "type": "float",
+      "count": 2,
+      "values": [
+        5,
+        3.5
+      ]
+    },
+    {
+      "name": "SceneProjection",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "SceneTime",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "Interior",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "RayMatrix",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

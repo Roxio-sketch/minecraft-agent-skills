@@ -1,0 +1,233 @@
+[
+  {
+    "title": "Simple Fire Shader Breakdown",
+    "url": "https://realtimevfx.com/t/simple-fire-shader-breakdown/11213",
+    "author": "Aka / akashenen",
+    "platform": "RealTimeVFX",
+    "kind": "拆解",
+    "category": "异火基础、炉火",
+    "learn": "单噪声多频滚动、动态边缘、smoothstep、波动、每粒子随机偏移；作者示例使用少量粒子，适合学习轻量火焰路径。",
+    "license": "文章未声明明确资产或代码许可。",
+    "evidence": "本次已打开作者原帖并查阅文字拆解、参数说明和网页元数据；未观看完整视频，未下载资产。"
+  },
+  {
+    "title": "How to make an stylized fire shader",
+    "url": "https://papaya-games.itch.io/duck-in-town/devlog/95149/how-to-make-an-stylized-fire-shader",
+    "author": "Papaya Games",
+    "platform": "作者 itch.io",
+    "kind": "教程",
+    "category": "卡通丹火、硬边冷焰",
+    "learn": "Godot shader 的双噪声、形状遮罩、双色阈值、Y 轴 billboard 和闪烁灯光。",
+    "license": "文章未声明所展示 shader 代码的明确许可。",
+    "evidence": "本次已打开作者文章并实际阅读展示的 vertex/fragment shader 代码与解释；未下载项目。"
+  },
+  {
+    "title": "unity-procedural-volumetric-fire",
+    "url": "https://github.com/mattatz/unity-procedural-volumetric-fire",
+    "author": "mattatz",
+    "platform": "GitHub",
+    "kind": "源码",
+    "category": "程序体积火研究",
+    "learn": "实时程序体积火的 Unity 实现入口，README 关联原论文；可进一步研究体积采样与算法迁移。",
+    "license": "仓库 LICENSE 明确 MIT，版权为 mattatz 2016；复制重要代码需保留版权和许可声明。",
+    "evidence": "本次已打开仓库并查阅 README、目录、语言/仓库元数据，实际阅读 LICENSE 全文；尚未阅读具体 shader 实现代码，未克隆仓库。"
+  },
+  {
+    "title": "Here's a Fire Tornado in Unity!",
+    "url": "https://realtimevfx.com/t/heres-a-fire-tornado-in-unity/18516",
+    "author": "Gabriel Aguiar",
+    "platform": "RealTimeVFX",
+    "kind": "教程",
+    "category": "火龙卷、盘绕火柱",
+    "learn": "Blender 网格、Shader Graph 和 VFX Graph 组合制作火龙卷。",
+    "license": "原帖未声明明确资产或工程许可。",
+    "evidence": "本次已打开作者原帖并查阅文字说明、教程入口和网页元数据；未观看完整视频。"
+  },
+  {
+    "title": "Here's how to create a Dragon Breath in Unity!",
+    "url": "https://realtimevfx.com/t/heres-how-to-create-a-dragon-breath-in-unity/19009",
+    "author": "Gabriel Aguiar",
+    "platform": "RealTimeVFX",
+    "kind": "教程",
+    "category": "火龙吐息、定向喷火",
+    "learn": "Krita 基础火焰纹理与 Shader Graph、VFX Graph 的定向喷焰组合。",
+    "license": "原帖未声明明确资产或工程许可。",
+    "evidence": "本次已通过社区 fire 标签页进入作者原帖，查阅作者、时间和文字教程说明；未观看完整视频。"
+  },
+  {
+    "title": "Love this technique for Fire AoEs and I made a tutorial about it too!",
+    "url": "https://realtimevfx.com/t/love-this-technique-for-fire-aoes-and-i-made-a-tutorial-about-it-too/22757",
+    "author": "Gabriel Aguiar",
+    "platform": "RealTimeVFX",
+    "kind": "教程",
+    "category": "地面火阵、爆发异火",
+    "learn": "火焰 AOE 的组合思路；作者说明教程至少包含 lite 版完整制作步骤。",
+    "license": "原帖未声明明确资产或工程许可。",
+    "evidence": "本次已打开作者原帖并核实作者、日期和 lite 版教程文字说明；未观看完整视频。"
+  },
+  {
+    "title": "Stylized Fire with Unity VFX Graph",
+    "url": "https://realtimevfx.com/t/stylized-fire-with-unity-vfx-graph/17744",
+    "author": "Gabriel Aguiar",
+    "platform": "RealTimeVFX",
+    "kind": "教程",
+    "category": "持续火焰、烟与余烬",
+    "learn": "可调风格火焰，火焰、烟、余烬的分层组合；原帖链接作者视频 XQlFokCzU6M。",
+    "license": "原帖未声明明确资产或工程许可。",
+    "evidence": "本次已通过搜索结果查阅作者原帖正文、作者与日期，并核实其作者视频链接；未观看完整视频。"
+  },
+  {
+    "title": "Fire character Effect | UE5 Niagara Flame boy",
+    "url": "https://cghow.com/fire-character-effect-ue5-niagara-flame-boy/",
+    "author": "Ashif Ali",
+    "platform": "作者 CGHOW",
+    "kind": "教程",
+    "category": "异火缠身、身体点燃",
+    "learn": "角色动态材质、角色火粒子、余烬、动态光和点击触发爆发。",
+    "license": "页面提供 Patreon 工程入口；本次未确认工程访问条件与使用许可。",
+    "evidence": "本次已打开作者页面并查阅步骤文字、作者、日期及 Patreon 工程链接；未观看完整视频，未下载工程。"
+  },
+  {
+    "title": "Stylized Fire Ring in Unreal Engine 5.4 Niagara | Download Files",
+    "url": "https://cghow.com/stylized-fire-ring-in-unreal-engine-5-4-niagara-download-files/",
+    "author": "Ashif Ali",
+    "platform": "作者 CGHOW",
+    "kind": "教程",
+    "category": "扭转火环、绕体火带",
+    "learn": "环面网格采样、切线方向运动、curl noise、drag 与动态参数；正文涉及 twisted torus 和球体组合。",
+    "license": "页面提供作者工程入口；本次未确认具体工程使用许可。",
+    "evidence": "本次已打开作者页面并查阅标题、日期和步骤文字；标题为 UE 5.4，正文同时涉及 UE 5.5，存在版本描述差异；未观看完整视频。"
+  },
+  {
+    "title": "Volumetric Fire Ring in Unreal Engine 5 Niagara Tutorial",
+    "url": "https://cghow.com/volumetric-fire-ring-in-unreal-engine-5-niagara-tutorial/",
+    "author": "Ashif Ali",
+    "platform": "作者 CGHOW",
+    "kind": "教程",
+    "category": "圆柱火罩、炉周火墙",
+    "learn": "地面环、程序噪声、圆柱网格与 WPO 湍动；教程的体积感来自网格/WPO，不能当成真正体积流体求解。",
+    "license": "页面未声明明确资产或工程许可。",
+    "evidence": "本次已打开作者页面并阅读材质与 WPO 方法说明，核实作者和日期；未观看完整视频。"
+  },
+  {
+    "title": "Blue Flame VFX Effect",
+    "url": "https://tyoder.artstation.com/projects/0N415",
+    "author": "Tommy Yoder",
+    "platform": "作者 ArtStation",
+    "kind": "拆解",
+    "category": "蓝色冷焰、魂火",
+    "learn": "蓝焰、火星和模型制作流程，以及进入触发范围播放、离开停止的生命周期设计。",
+    "license": "页面明确 All rights reserved；未提供可重分发资产许可。",
+    "evidence": "本次已打开作者作品页，阅读 Breakdown 文字与触发说明，核实作者、日期和版权页脚；未观看完整视频。"
+  },
+  {
+    "title": "Stylized Fire Spell VFX",
+    "url": "https://discofish.artstation.com/projects/eRDOkP",
+    "author": "Alex Starovoyt",
+    "platform": "作者 ArtStation",
+    "kind": "拆解",
+    "category": "异火法术、火丝",
+    "learn": "简单网格、滚动纹理、顶点动画和出现/消失遮罩；两张纹理复用给火焰、烟、样条、余烬与火星。",
+    "license": "页面明确 All rights reserved；未提供可重分发资产许可。",
+    "evidence": "本次已打开作者作品页并阅读材质、网格、纹理复用说明，核实作者和版权页脚；未观看完整视频。"
+  },
+  {
+    "title": "FIRE VFX BREAKDOWN - UE5 Real-Time VFX",
+    "url": "https://matzmichon.artstation.com/projects/lDa4rY",
+    "author": "Matthieu Michon",
+    "platform": "作者 ArtStation",
+    "kind": "拆解",
+    "category": "丹炉火、火炬、蒸汽",
+    "learn": "一个 Niagara 系统通过参数切换三类火；火焰与余烬共用材质；RGB 通道打包；同系统通过配置变为蒸汽。",
+    "license": "页面明确 All rights reserved；未提供可重分发资产许可。",
+    "evidence": "本次已打开作者作品页并阅读文字拆解、参数切换和通道打包说明，核实作者与版权页脚；未观看完整视频。"
+  },
+  {
+    "title": "Lightning Smoke Ring in UE4 Niagara Tutorial | Download Files",
+    "url": "https://cghow.com/lightning-smoke-ring-in-ue4-niagara-tutorial-download-files/",
+    "author": "Ashif Ali",
+    "platform": "作者 CGHOW",
+    "kind": "教程",
+    "category": "雷火环、雷烟护体",
+    "learn": "光核、烟环旋转、curl noise、ribbon 闪电和动态起点；雷烟环是已有多个教程的组合。",
+    "license": "页面提供作者 Gumroad 和 ArtStation 工程入口；本次未确认工程使用许可。",
+    "evidence": "本次已打开作者页面并阅读各层说明，核实作者、日期和工程链接；未观看完整视频，未下载工程。"
+  },
+  {
+    "title": "Magical Aura VFX in Unreal Engine 5 Niagara - Remastered Tutorial",
+    "url": "https://cghow.com/magical-aura-in-unreal-engine-5-niagara/amp/",
+    "author": "Ashif Ali",
+    "platform": "作者 CGHOW",
+    "kind": "教程",
+    "category": "多元素灵气护体",
+    "learn": "暴露规模、色相和动态光开关，适合统一控制火、灵气、邪气的不同状态。",
+    "license": "网页标注 All Rights Reserved；未确认工程许可。",
+    "evidence": "本次已打开作者 AMP 页面并阅读参数说明、作者信息与视频链接，核实版权标记；未观看完整视频。"
+  },
+  {
+    "title": "Flower Burst Effect Part 5: Magic Aura",
+    "url": "https://clairemonart.artstation.com/blog/gv6q/flower-burst-effect-part-5-magic-aura",
+    "author": "Claire Monaghan",
+    "platform": "作者 ArtStation",
+    "kind": "拆解",
+    "category": "莲花灵气、丹成光华",
+    "learn": "腐蚀纹理、颜色与透明遮罩、花形网格、消散时飞出 wisps 和轻微位移。",
+    "license": "页面明确 All rights reserved；未提供可重分发资产许可。",
+    "evidence": "本次已打开作者 WIP 文章并阅读制作过程，核实作者、日期和版权页脚；未观看完整视频。"
+  },
+  {
+    "title": "Alex Fedorov: Sketch #20 WIP",
+    "url": "https://realtimevfx.com/t/alex-fedorov-sketch-20-wip/7628",
+    "author": "Alex Fedorov",
+    "platform": "RealTimeVFX",
+    "kind": "拆解",
+    "category": "活体异火、火灵",
+    "learn": "一张圆纹理通过平铺、滚动、相乘和相减构造魔火；叠加面孔、烟、火滴和法阵。",
+    "license": "原帖未声明明确资产或代码许可。",
+    "evidence": "本次已打开作者 WIP 原帖，阅读作者关于圆纹理构造、轻微扭曲和后续层次的解释；未观看完整视频，未下载素材。"
+  },
+  {
+    "title": "Gradient Mapping for VFX - Unreal Engine 4",
+    "url": "https://tobiasnoller.com/articles/ue4-gradient-mapping-vfx/",
+    "author": "Tobias Noller",
+    "platform": "作者网站",
+    "kind": "技术基础",
+    "category": "异火多色、分级品质",
+    "learn": "灰度火焰先腐蚀和扭曲后映射渐变，使用统一梯度快速改变多发射器配色；LUT 与 Curve Atlas 两种路径。",
+    "license": "文章未声明明确代码或资产许可。",
+    "evidence": "本次已打开作者文章并阅读技术解释，也查阅同作者 RealTimeVFX 的 Particle Gradient Mapping 原帖与讨论；未下载代码或纹理。"
+  },
+  {
+    "title": "Overwatch - Moira - Biotic Orb Recreation Attempt",
+    "url": "https://realtimevfx.com/t/overwatch-moira-biotic-orb-recreation-attempt/4640",
+    "author": "Kris Wilkins",
+    "platform": "RealTimeVFX",
+    "kind": "拆解",
+    "category": "灵气流动、邪气光球",
+    "learn": "flowmap 制作与调整、色彩聚焦和光球内部流动；原游戏视觉属于学习参考。",
+    "license": "原帖未声明明确资产或代码许可；复刻对象为 Overwatch 视觉，不代表取得原游戏资产权利。",
+    "evidence": "本次已通过搜索结果查阅作者原帖的正文、flowmap 制作讨论与网页元数据；未观看完整视频，未下载工程。"
+  },
+  {
+    "title": "I want to recreate the shader from Diablo 3 in Shaderforge - Page 2",
+    "url": "https://realtimevfx.com/t/i-want-to-recreate-the-shader-from-diablo-3-in-shaderforge/989?page=2",
+    "author": "colossaladvent、Torbach 等社区成员",
+    "platform": "RealTimeVFX",
+    "kind": "技术基础",
+    "category": "烟纱与火焰低成本运动",
+    "learn": "随机旋转、独立 UV 偏移、多纹理滚动、溶解、预乘混合和粒子 custom streams；讨论包含逐步纠错，需区分实验与最终方案。",
+    "license": "原帖提供分享工程入口，但未声明明确工程许可；原游戏视觉仅作学习参考。",
+    "evidence": "本次已打开讨论第二页并阅读帖子 22 至 39 的技术文字与纠错；未下载分享工程，未观看完整视频。"
+  },
+  {
+    "title": "How to Realtime - VFX / Stylized Fire Textures TUTORIAL PART 1 Using Substance Designer",
+    "url": "https://www.youtube.com/watch?v=m-XB7hJzjIs",
+    "author": "1MaFX / Piotr Margacz",
+    "platform": "作者 YouTube",
+    "kind": "教程",
+    "category": "火焰源纹理制作",
+    "learn": "Substance Designer 风格火焰纹理制作教程；第二集为 https://www.youtube.com/watch?v=bcfOmcxzBIU，可作为轻量火材质源纹理学习系列。",
+    "license": "本次未查到明确素材或工程许可。",
+    "evidence": "本次已查阅搜索返回的作者视频标题、发布时间、频道和简介元数据；直接打开第一集返回工具错误，未观看视频正文，也未阅读工程代码。"
+  }
+]

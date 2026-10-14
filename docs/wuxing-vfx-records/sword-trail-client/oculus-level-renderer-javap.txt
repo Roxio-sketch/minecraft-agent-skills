@@ -1,0 +1,622 @@
+Classfile jar:file:///D:/MC/��/red.ghs.axolotl/profiles/����%20(1)/mods/oculus-mc1.20.1-1.8.0.jar!/net/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer.class
+  Last modified 1980��1��1��; size 6014 bytes
+  SHA-256 checksum 2f7fd0043ca305cc4701d3be4d80c1e6d2361062c42f80481b31ea819e5565a4
+  Compiled from "MixinLevelRenderer.java"
+public class net.irisshaders.batchedentityrendering.mixin.MixinLevelRenderer
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // net/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 3, methods: 7, attributes: 3
+Constant pool:
+    #1 = Utf8               net/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer
+    #2 = Class              #1            // net/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               MixinLevelRenderer.java
+    #6 = Utf8               Lorg/spongepowered/asm/mixin/Mixin;
+    #7 = Utf8               value
+    #8 = Utf8               Lnet/minecraft/client/renderer/LevelRenderer;
+    #9 = Utf8               priority
+   #10 = Integer            999
+   #11 = Utf8               net/minecraft/client/renderer/MultiBufferSource$BufferSource
+   #12 = Class              #11           // net/minecraft/client/renderer/MultiBufferSource$BufferSource
+   #13 = Utf8               net/minecraft/client/renderer/MultiBufferSource
+   #14 = Class              #13           // net/minecraft/client/renderer/MultiBufferSource
+   #15 = Utf8               BufferSource
+   #16 = Utf8               org/spongepowered/asm/mixin/injection/At$Shift
+   #17 = Class              #16           // org/spongepowered/asm/mixin/injection/At$Shift
+   #18 = Utf8               org/spongepowered/asm/mixin/injection/At
+   #19 = Class              #18           // org/spongepowered/asm/mixin/injection/At
+   #20 = Utf8               Shift
+   #21 = Utf8               RENDER_ENTITY
+   #22 = Utf8               Ljava/lang/String;
+   #23 = Utf8               Lnet/minecraft/client/renderer/LevelRenderer;renderEntity(Lnet/minecraft/world/entity/Entity;DDDFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V
+   #24 = String             #23           // Lnet/minecraft/client/renderer/LevelRenderer;renderEntity(Lnet/minecraft/world/entity/Entity;DDDFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V
+   #25 = Utf8               f_109464_
+   #26 = Utf8               Lnet/minecraft/client/renderer/RenderBuffers;
+   #27 = Utf8               Lorg/spongepowered/asm/mixin/Shadow;
+   #28 = Utf8               groupable
+   #29 = Utf8               Lnet/irisshaders/batchedentityrendering/impl/Groupable;
+   #30 = Utf8               Lorg/spongepowered/asm/mixin/Unique;
+   #31 = Utf8               <init>
+   #32 = Utf8               ()V
+   #33 = NameAndType        #31:#32       // "<init>":()V
+   #34 = Methodref          #4.#33        // java/lang/Object."<init>":()V
+   #35 = Utf8               this
+   #36 = Utf8               Lnet/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer;
+   #37 = Utf8               batchedentityrendering$beginLevelRender
+   #38 = Utf8               (Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lorg/joml/Matrix4f;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+   #39 = Utf8               poseStack
+   #40 = Utf8               f
+   #41 = Utf8               l
+   #42 = Utf8               bl
+   #43 = Utf8               camera
+   #44 = Utf8               gameRenderer
+   #45 = Utf8               lightTexture
+   #46 = Utf8               projectionMatrix
+   #47 = Utf8               ci
+   #48 = Utf8               Lorg/spongepowered/asm/mixin/injection/Inject;
+   #49 = Utf8               method
+   #50 = Utf8               renderLevel
+   #51 = Utf8               at
+   #52 = Utf8               Lorg/spongepowered/asm/mixin/injection/At;
+   #53 = Utf8               HEAD
+   #54 = NameAndType        #25:#26       // f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+   #55 = Fieldref           #2.#54        // net/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer.f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+   #56 = Utf8               net/irisshaders/batchedentityrendering/impl/DrawCallTrackingRenderBuffers
+   #57 = Class              #56           // net/irisshaders/batchedentityrendering/impl/DrawCallTrackingRenderBuffers
+   #58 = Utf8               resetDrawCounts
+   #59 = NameAndType        #58:#32       // resetDrawCounts:()V
+   #60 = InterfaceMethodref #57.#59       // net/irisshaders/batchedentityrendering/impl/DrawCallTrackingRenderBuffers.resetDrawCounts:()V
+   #61 = Utf8               net/irisshaders/batchedentityrendering/impl/RenderBuffersExt
+   #62 = Class              #61           // net/irisshaders/batchedentityrendering/impl/RenderBuffersExt
+   #63 = Utf8               beginLevelRendering
+   #64 = NameAndType        #63:#32       // beginLevelRendering:()V
+   #65 = InterfaceMethodref #62.#64       // net/irisshaders/batchedentityrendering/impl/RenderBuffersExt.beginLevelRendering:()V
+   #66 = Utf8               net/minecraft/client/renderer/RenderBuffers
+   #67 = Class              #66           // net/minecraft/client/renderer/RenderBuffers
+   #68 = Utf8               m_110104_
+   #69 = Utf8               ()Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;
+   #70 = NameAndType        #68:#69       // m_110104_:()Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;
+   #71 = Methodref          #67.#70       // net/minecraft/client/renderer/RenderBuffers.m_110104_:()Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;
+   #72 = Utf8               net/irisshaders/batchedentityrendering/impl/Groupable
+   #73 = Class              #72           // net/irisshaders/batchedentityrendering/impl/Groupable
+   #74 = NameAndType        #28:#29       // groupable:Lnet/irisshaders/batchedentityrendering/impl/Groupable;
+   #75 = Fieldref           #2.#74        // net/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer.groupable:Lnet/irisshaders/batchedentityrendering/impl/Groupable;
+   #76 = Utf8               Lcom/mojang/blaze3d/vertex/PoseStack;
+   #77 = Utf8               F
+   #78 = Utf8               J
+   #79 = Utf8               Z
+   #80 = Utf8               Lnet/minecraft/client/Camera;
+   #81 = Utf8               Lnet/minecraft/client/renderer/GameRenderer;
+   #82 = Utf8               Lnet/minecraft/client/renderer/LightTexture;
+   #83 = Utf8               Lorg/joml/Matrix4f;
+   #84 = Utf8               Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;
+   #85 = Utf8               provider
+   #86 = Utf8               Lnet/minecraft/client/renderer/MultiBufferSource;
+   #87 = Utf8               batchedentityrendering$preRenderEntity
+   #88 = Utf8               INVOKE
+   #89 = Utf8               target
+   #90 = Utf8               startGroup
+   #91 = NameAndType        #90:#32       // startGroup:()V
+   #92 = InterfaceMethodref #73.#91       // net/irisshaders/batchedentityrendering/impl/Groupable.startGroup:()V
+   #93 = Utf8               batchedentityrendering$postRenderEntity
+   #94 = Utf8               shift
+   #95 = Utf8               Lorg/spongepowered/asm/mixin/injection/At$Shift;
+   #96 = Utf8               AFTER
+   #97 = Utf8               endGroup
+   #98 = NameAndType        #97:#32       // endGroup:()V
+   #99 = InterfaceMethodref #73.#98       // net/irisshaders/batchedentityrendering/impl/Groupable.endGroup:()V
+  #100 = Utf8               batchedentityrendering$beginTranslucents
+  #101 = Utf8               CONSTANT
+  #102 = Utf8               args
+  #103 = Utf8               stringValue=translucent
+  #104 = Utf8               locals
+  #105 = Utf8               Lorg/spongepowered/asm/mixin/injection/callback/LocalCapture;
+  #106 = Utf8               CAPTURE_FAILHARD
+  #107 = Utf8               net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource
+  #108 = Class              #107          // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource
+  #109 = Utf8               readyUp
+  #110 = NameAndType        #109:#32      // readyUp:()V
+  #111 = Methodref          #108.#110     // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.readyUp:()V
+  #112 = Utf8               net/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings
+  #113 = Class              #112          // net/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings
+  #114 = Utf8               INSTANCE
+  #115 = Utf8               Lnet/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings;
+  #116 = NameAndType        #114:#115     // INSTANCE:Lnet/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings;
+  #117 = Fieldref           #113.#116     // net/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings.INSTANCE:Lnet/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings;
+  #118 = Utf8               shouldSeparateEntityDraws
+  #119 = Utf8               ()Z
+  #120 = NameAndType        #118:#119     // shouldSeparateEntityDraws:()Z
+  #121 = Methodref          #113.#120     // net/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings.shouldSeparateEntityDraws:()Z
+  #122 = Utf8               net/minecraft/client/Minecraft
+  #123 = Class              #122          // net/minecraft/client/Minecraft
+  #124 = Utf8               m_91087_
+  #125 = Utf8               ()Lnet/minecraft/client/Minecraft;
+  #126 = NameAndType        #124:#125     // m_91087_:()Lnet/minecraft/client/Minecraft;
+  #127 = Methodref          #123.#126     // net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+  #128 = Utf8               m_91307_
+  #129 = Utf8               ()Lnet/minecraft/util/profiling/ProfilerFiller;
+  #130 = NameAndType        #128:#129     // m_91307_:()Lnet/minecraft/util/profiling/ProfilerFiller;
+  #131 = Methodref          #123.#130     // net/minecraft/client/Minecraft.m_91307_:()Lnet/minecraft/util/profiling/ProfilerFiller;
+  #132 = Utf8               entity_draws_opaque
+  #133 = String             #132          // entity_draws_opaque
+  #134 = Utf8               net/minecraft/util/profiling/ProfilerFiller
+  #135 = Class              #134          // net/minecraft/util/profiling/ProfilerFiller
+  #136 = Utf8               m_6182_
+  #137 = Utf8               (Ljava/lang/String;)V
+  #138 = NameAndType        #136:#137     // m_6182_:(Ljava/lang/String;)V
+  #139 = InterfaceMethodref #135.#138     // net/minecraft/util/profiling/ProfilerFiller.m_6182_:(Ljava/lang/String;)V
+  #140 = Utf8               net/irisshaders/batchedentityrendering/impl/TransparencyType
+  #141 = Class              #140          // net/irisshaders/batchedentityrendering/impl/TransparencyType
+  #142 = Utf8               OPAQUE
+  #143 = Utf8               Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+  #144 = NameAndType        #142:#143     // OPAQUE:Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+  #145 = Fieldref           #141.#144     // net/irisshaders/batchedentityrendering/impl/TransparencyType.OPAQUE:Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+  #146 = Utf8               endBatchWithType
+  #147 = Utf8               (Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;)V
+  #148 = NameAndType        #146:#147     // endBatchWithType:(Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;)V
+  #149 = Methodref          #108.#148     // net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.endBatchWithType:(Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;)V
+  #150 = Utf8               OPAQUE_DECAL
+  #151 = NameAndType        #150:#143     // OPAQUE_DECAL:Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+  #152 = Fieldref           #141.#151     // net/irisshaders/batchedentityrendering/impl/TransparencyType.OPAQUE_DECAL:Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+  #153 = Utf8               m_109911_
+  #154 = NameAndType        #153:#32      // m_109911_:()V
+  #155 = Methodref          #12.#154      // net/minecraft/client/renderer/MultiBufferSource$BufferSource.m_109911_:()V
+  #156 = Utf8               entity_draws
+  #157 = String             #156          // entity_draws
+  #158 = Utf8               fullyBufferedMultiBufferSource
+  #159 = Utf8               Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+  #160 = Utf8               source
+  #161 = Utf8               batchedentityrendering$endTranslucents
+  #162 = Utf8               batchedentityrendering$endLevelRender
+  #163 = Utf8               RETURN
+  #164 = Utf8               endLevelRendering
+  #165 = NameAndType        #164:#32      // endLevelRendering:()V
+  #166 = InterfaceMethodref #62.#165      // net/irisshaders/batchedentityrendering/impl/RenderBuffersExt.endLevelRendering:()V
+  #167 = Utf8               ConstantValue
+  #168 = Utf8               RuntimeVisibleAnnotations
+  #169 = Utf8               Code
+  #170 = Utf8               LineNumberTable
+  #171 = Utf8               LocalVariableTable
+  #172 = Utf8               StackMapTable
+  #173 = Utf8               MethodParameters
+  #174 = Utf8               InnerClasses
+  #175 = Utf8               SourceFile
+  #176 = Utf8               RuntimeInvisibleAnnotations
+{
+  private static final java.lang.String RENDER_ENTITY;
+    descriptor: Ljava/lang/String;
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    ConstantValue: String Lnet/minecraft/client/renderer/LevelRenderer;renderEntity(Lnet/minecraft/world/entity/Entity;DDDFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V
+
+  private net.minecraft.client.renderer.RenderBuffers f_109464_;
+    descriptor: Lnet/minecraft/client/renderer/RenderBuffers;
+    flags: (0x0002) ACC_PRIVATE
+    RuntimeVisibleAnnotations:
+      0: #27()
+        org.spongepowered.asm.mixin.Shadow
+
+  private net.irisshaders.batchedentityrendering.impl.Groupable groupable;
+    descriptor: Lnet/irisshaders/batchedentityrendering/impl/Groupable;
+    flags: (0x0002) ACC_PRIVATE
+    RuntimeVisibleAnnotations:
+      0: #30()
+        org.spongepowered.asm.mixin.Unique
+
+  public net.irisshaders.batchedentityrendering.mixin.MixinLevelRenderer();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #34                 // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 32: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lnet/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer;
+
+  private void batchedentityrendering$beginLevelRender(com.mojang.blaze3d.vertex.PoseStack, float, long, boolean, net.minecraft.client.Camera, net.minecraft.client.renderer.GameRenderer, net.minecraft.client.renderer.LightTexture, org.joml.Matrix4f, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    descriptor: (Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lorg/joml/Matrix4f;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=12, args_size=10
+         0: aload_0
+         1: getfield      #55                 // Field f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+         4: instanceof    #57                 // class net/irisshaders/batchedentityrendering/impl/DrawCallTrackingRenderBuffers
+         7: ifeq          22
+        10: aload_0
+        11: getfield      #55                 // Field f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+        14: checkcast     #57                 // class net/irisshaders/batchedentityrendering/impl/DrawCallTrackingRenderBuffers
+        17: invokeinterface #60,  1           // InterfaceMethod net/irisshaders/batchedentityrendering/impl/DrawCallTrackingRenderBuffers.resetDrawCounts:()V
+        22: aload_0
+        23: getfield      #55                 // Field f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+        26: checkcast     #62                 // class net/irisshaders/batchedentityrendering/impl/RenderBuffersExt
+        29: invokeinterface #65,  1           // InterfaceMethod net/irisshaders/batchedentityrendering/impl/RenderBuffersExt.beginLevelRendering:()V
+        34: aload_0
+        35: getfield      #55                 // Field f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+        38: invokevirtual #71                 // Method net/minecraft/client/renderer/RenderBuffers.m_110104_:()Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;
+        41: astore        11
+        43: aload         11
+        45: instanceof    #73                 // class net/irisshaders/batchedentityrendering/impl/Groupable
+        48: ifeq          60
+        51: aload_0
+        52: aload         11
+        54: checkcast     #73                 // class net/irisshaders/batchedentityrendering/impl/Groupable
+        57: putfield      #75                 // Field groupable:Lnet/irisshaders/batchedentityrendering/impl/Groupable;
+        60: return
+      StackMapTable: number_of_entries = 2
+        frame_type = 22 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 37
+          locals = [ class net/minecraft/client/renderer/MultiBufferSource ]
+      LineNumberTable:
+        line 44: 0
+        line 45: 10
+        line 48: 22
+        line 49: 34
+        line 51: 43
+        line 52: 51
+        line 54: 60
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      61     0  this   Lnet/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer;
+            0      61     1 poseStack   Lcom/mojang/blaze3d/vertex/PoseStack;
+            0      61     2     f   F
+            0      61     3     l   J
+            0      61     5    bl   Z
+            0      61     6 camera   Lnet/minecraft/client/Camera;
+            0      61     7 gameRenderer   Lnet/minecraft/client/renderer/GameRenderer;
+            0      61     8 lightTexture   Lnet/minecraft/client/renderer/LightTexture;
+            0      61     9 projectionMatrix   Lorg/joml/Matrix4f;
+            0      61    10    ci   Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;
+           43      18    11 provider   Lnet/minecraft/client/renderer/MultiBufferSource;
+    RuntimeVisibleAnnotations:
+      0: #48(#49=[s#50],#51=[@#52(#7=s#53)])
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["renderLevel"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="HEAD"
+          )]
+        )
+    MethodParameters:
+      Name                           Flags
+      poseStack
+      f
+      l
+      bl
+      camera
+      gameRenderer
+      lightTexture
+      projectionMatrix
+      ci
+
+  private void batchedentityrendering$preRenderEntity(com.mojang.blaze3d.vertex.PoseStack, float, long, boolean, net.minecraft.client.Camera, net.minecraft.client.renderer.GameRenderer, net.minecraft.client.renderer.LightTexture, org.joml.Matrix4f, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    descriptor: (Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lorg/joml/Matrix4f;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=1, locals=11, args_size=10
+         0: aload_0
+         1: getfield      #75                 // Field groupable:Lnet/irisshaders/batchedentityrendering/impl/Groupable;
+         4: ifnull        16
+         7: aload_0
+         8: getfield      #75                 // Field groupable:Lnet/irisshaders/batchedentityrendering/impl/Groupable;
+        11: invokeinterface #92,  1           // InterfaceMethod net/irisshaders/batchedentityrendering/impl/Groupable.startGroup:()V
+        16: return
+      StackMapTable: number_of_entries = 1
+        frame_type = 16 /* same */
+      LineNumberTable:
+        line 58: 0
+        line 59: 7
+        line 61: 16
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0  this   Lnet/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer;
+            0      17     1 poseStack   Lcom/mojang/blaze3d/vertex/PoseStack;
+            0      17     2     f   F
+            0      17     3     l   J
+            0      17     5    bl   Z
+            0      17     6 camera   Lnet/minecraft/client/Camera;
+            0      17     7 gameRenderer   Lnet/minecraft/client/renderer/GameRenderer;
+            0      17     8 lightTexture   Lnet/minecraft/client/renderer/LightTexture;
+            0      17     9 projectionMatrix   Lorg/joml/Matrix4f;
+            0      17    10    ci   Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;
+    RuntimeVisibleAnnotations:
+      0: #48(#49=[s#50],#51=[@#52(#7=s#88,#89=s#23)])
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["renderLevel"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="INVOKE"
+            target="Lnet/minecraft/client/renderer/LevelRenderer;renderEntity(Lnet/minecraft/world/entity/Entity;DDDFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V"
+          )]
+        )
+    MethodParameters:
+      Name                           Flags
+      poseStack
+      f
+      l
+      bl
+      camera
+      gameRenderer
+      lightTexture
+      projectionMatrix
+      ci
+
+  private void batchedentityrendering$postRenderEntity(com.mojang.blaze3d.vertex.PoseStack, float, long, boolean, net.minecraft.client.Camera, net.minecraft.client.renderer.GameRenderer, net.minecraft.client.renderer.LightTexture, org.joml.Matrix4f, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    descriptor: (Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lorg/joml/Matrix4f;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=1, locals=11, args_size=10
+         0: aload_0
+         1: getfield      #75                 // Field groupable:Lnet/irisshaders/batchedentityrendering/impl/Groupable;
+         4: ifnull        16
+         7: aload_0
+         8: getfield      #75                 // Field groupable:Lnet/irisshaders/batchedentityrendering/impl/Groupable;
+        11: invokeinterface #99,  1           // InterfaceMethod net/irisshaders/batchedentityrendering/impl/Groupable.endGroup:()V
+        16: return
+      StackMapTable: number_of_entries = 1
+        frame_type = 16 /* same */
+      LineNumberTable:
+        line 65: 0
+        line 66: 7
+        line 68: 16
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0  this   Lnet/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer;
+            0      17     1 poseStack   Lcom/mojang/blaze3d/vertex/PoseStack;
+            0      17     2     f   F
+            0      17     3     l   J
+            0      17     5    bl   Z
+            0      17     6 camera   Lnet/minecraft/client/Camera;
+            0      17     7 gameRenderer   Lnet/minecraft/client/renderer/GameRenderer;
+            0      17     8 lightTexture   Lnet/minecraft/client/renderer/LightTexture;
+            0      17     9 projectionMatrix   Lorg/joml/Matrix4f;
+            0      17    10    ci   Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;
+    RuntimeVisibleAnnotations:
+      0: #48(#49=[s#50],#51=[@#52(#7=s#88,#89=s#23,#94=e#95.#96)])
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["renderLevel"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="INVOKE"
+            target="Lnet/minecraft/client/renderer/LevelRenderer;renderEntity(Lnet/minecraft/world/entity/Entity;DDDFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V"
+            shift=Lorg/spongepowered/asm/mixin/injection/At$Shift;.AFTER
+          )]
+        )
+    MethodParameters:
+      Name                           Flags
+      poseStack
+      f
+      l
+      bl
+      camera
+      gameRenderer
+      lightTexture
+      projectionMatrix
+      ci
+
+  private void batchedentityrendering$beginTranslucents(com.mojang.blaze3d.vertex.PoseStack, float, long, boolean, net.minecraft.client.Camera, net.minecraft.client.renderer.GameRenderer, net.minecraft.client.renderer.LightTexture, org.joml.Matrix4f, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    descriptor: (Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lorg/joml/Matrix4f;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=13, args_size=10
+         0: aload_0
+         1: getfield      #55                 // Field f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+         4: invokevirtual #71                 // Method net/minecraft/client/renderer/RenderBuffers.m_110104_:()Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;
+         7: astore        12
+         9: aload         12
+        11: instanceof    #108                // class net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource
+        14: ifeq          29
+        17: aload         12
+        19: checkcast     #108                // class net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource
+        22: astore        11
+        24: aload         11
+        26: invokevirtual #111                // Method net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.readyUp:()V
+        29: getstatic     #117                // Field net/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings.INSTANCE:Lnet/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings;
+        32: invokevirtual #121                // Method net/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings.shouldSeparateEntityDraws:()Z
+        35: ifeq          107
+        38: invokestatic  #127                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+        41: invokevirtual #131                // Method net/minecraft/client/Minecraft.m_91307_:()Lnet/minecraft/util/profiling/ProfilerFiller;
+        44: ldc           #133                // String entity_draws_opaque
+        46: invokeinterface #139,  2          // InterfaceMethod net/minecraft/util/profiling/ProfilerFiller.m_6182_:(Ljava/lang/String;)V
+        51: aload_0
+        52: getfield      #55                 // Field f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+        55: invokevirtual #71                 // Method net/minecraft/client/renderer/RenderBuffers.m_110104_:()Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;
+        58: astore        12
+        60: aload         12
+        62: instanceof    #108                // class net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource
+        65: ifeq          94
+        68: aload         12
+        70: checkcast     #108                // class net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource
+        73: astore        11
+        75: aload         11
+        77: getstatic     #145                // Field net/irisshaders/batchedentityrendering/impl/TransparencyType.OPAQUE:Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+        80: invokevirtual #149                // Method net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.endBatchWithType:(Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;)V
+        83: aload         11
+        85: getstatic     #152                // Field net/irisshaders/batchedentityrendering/impl/TransparencyType.OPAQUE_DECAL:Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;
+        88: invokevirtual #149                // Method net/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource.endBatchWithType:(Lnet/irisshaders/batchedentityrendering/impl/TransparencyType;)V
+        91: goto          130
+        94: aload_0
+        95: getfield      #55                 // Field f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+        98: invokevirtual #71                 // Method net/minecraft/client/renderer/RenderBuffers.m_110104_:()Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;
+       101: invokevirtual #155                // Method net/minecraft/client/renderer/MultiBufferSource$BufferSource.m_109911_:()V
+       104: goto          130
+       107: invokestatic  #127                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+       110: invokevirtual #131                // Method net/minecraft/client/Minecraft.m_91307_:()Lnet/minecraft/util/profiling/ProfilerFiller;
+       113: ldc           #157                // String entity_draws
+       115: invokeinterface #139,  2          // InterfaceMethod net/minecraft/util/profiling/ProfilerFiller.m_6182_:(Ljava/lang/String;)V
+       120: aload_0
+       121: getfield      #55                 // Field f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+       124: invokevirtual #71                 // Method net/minecraft/client/renderer/RenderBuffers.m_110104_:()Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;
+       127: invokevirtual #155                // Method net/minecraft/client/renderer/MultiBufferSource$BufferSource.m_109911_:()V
+       130: return
+      StackMapTable: number_of_entries = 4
+        frame_type = 29 /* same */
+        frame_type = 251 /* same_frame_extended */
+          offset_delta = 64
+        frame_type = 12 /* same */
+        frame_type = 22 /* same */
+      LineNumberTable:
+        line 72: 0
+        line 73: 24
+        line 76: 29
+        line 77: 38
+        line 78: 51
+        line 79: 75
+        line 80: 83
+        line 82: 94
+        line 85: 107
+        line 86: 120
+        line 88: 130
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           24       5    11 fullyBufferedMultiBufferSource   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+           75      19    11 source   Lnet/irisshaders/batchedentityrendering/impl/FullyBufferedMultiBufferSource;
+            0     131     0  this   Lnet/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer;
+            0     131     1 poseStack   Lcom/mojang/blaze3d/vertex/PoseStack;
+            0     131     2     f   F
+            0     131     3     l   J
+            0     131     5    bl   Z
+            0     131     6 camera   Lnet/minecraft/client/Camera;
+            0     131     7 gameRenderer   Lnet/minecraft/client/renderer/GameRenderer;
+            0     131     8 lightTexture   Lnet/minecraft/client/renderer/LightTexture;
+            0     131     9 projectionMatrix   Lorg/joml/Matrix4f;
+            0     131    10    ci   Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;
+    RuntimeVisibleAnnotations:
+      0: #48(#49=[s#50],#51=[@#52(#7=s#101,#102=[s#103])],#104=e#105.#106)
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["renderLevel"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="CONSTANT"
+            args=["stringValue=translucent"]
+          )]
+          locals=Lorg/spongepowered/asm/mixin/injection/callback/LocalCapture;.CAPTURE_FAILHARD
+        )
+    MethodParameters:
+      Name                           Flags
+      poseStack
+      f
+      l
+      bl
+      camera
+      gameRenderer
+      lightTexture
+      projectionMatrix
+      ci
+
+  private void batchedentityrendering$endTranslucents(com.mojang.blaze3d.vertex.PoseStack, float, long, boolean, net.minecraft.client.Camera, net.minecraft.client.renderer.GameRenderer, net.minecraft.client.renderer.LightTexture, org.joml.Matrix4f, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    descriptor: (Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lorg/joml/Matrix4f;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=1, locals=11, args_size=10
+         0: getstatic     #117                // Field net/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings.INSTANCE:Lnet/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings;
+         3: invokevirtual #121                // Method net/irisshaders/iris/shaderpack/materialmap/WorldRenderingSettings.shouldSeparateEntityDraws:()Z
+         6: ifeq          19
+         9: aload_0
+        10: getfield      #55                 // Field f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+        13: invokevirtual #71                 // Method net/minecraft/client/renderer/RenderBuffers.m_110104_:()Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;
+        16: invokevirtual #155                // Method net/minecraft/client/renderer/MultiBufferSource$BufferSource.m_109911_:()V
+        19: return
+      StackMapTable: number_of_entries = 1
+        frame_type = 19 /* same */
+      LineNumberTable:
+        line 93: 0
+        line 94: 9
+        line 96: 19
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      20     0  this   Lnet/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer;
+            0      20     1 poseStack   Lcom/mojang/blaze3d/vertex/PoseStack;
+            0      20     2     f   F
+            0      20     3     l   J
+            0      20     5    bl   Z
+            0      20     6 camera   Lnet/minecraft/client/Camera;
+            0      20     7 gameRenderer   Lnet/minecraft/client/renderer/GameRenderer;
+            0      20     8 lightTexture   Lnet/minecraft/client/renderer/LightTexture;
+            0      20     9 projectionMatrix   Lorg/joml/Matrix4f;
+            0      20    10    ci   Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;
+    RuntimeVisibleAnnotations:
+      0: #48(#49=[s#50],#51=[@#52(#7=s#101,#102=[s#103],#94=e#95.#96)],#104=e#105.#106)
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["renderLevel"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="CONSTANT"
+            args=["stringValue=translucent"]
+            shift=Lorg/spongepowered/asm/mixin/injection/At$Shift;.AFTER
+          )]
+          locals=Lorg/spongepowered/asm/mixin/injection/callback/LocalCapture;.CAPTURE_FAILHARD
+        )
+    MethodParameters:
+      Name                           Flags
+      poseStack
+      f
+      l
+      bl
+      camera
+      gameRenderer
+      lightTexture
+      projectionMatrix
+      ci
+
+  private void batchedentityrendering$endLevelRender(com.mojang.blaze3d.vertex.PoseStack, float, long, boolean, net.minecraft.client.Camera, net.minecraft.client.renderer.GameRenderer, net.minecraft.client.renderer.LightTexture, org.joml.Matrix4f, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    descriptor: (Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lorg/joml/Matrix4f;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=11, args_size=10
+         0: aload_0
+         1: getfield      #55                 // Field f_109464_:Lnet/minecraft/client/renderer/RenderBuffers;
+         4: checkcast     #62                 // class net/irisshaders/batchedentityrendering/impl/RenderBuffersExt
+         7: invokeinterface #166,  1          // InterfaceMethod net/irisshaders/batchedentityrendering/impl/RenderBuffersExt.endLevelRendering:()V
+        12: aload_0
+        13: aconst_null
+        14: putfield      #75                 // Field groupable:Lnet/irisshaders/batchedentityrendering/impl/Groupable;
+        17: return
+      LineNumberTable:
+        line 100: 0
+        line 101: 12
+        line 102: 17
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0  this   Lnet/irisshaders/batchedentityrendering/mixin/MixinLevelRenderer;
+            0      18     1 poseStack   Lcom/mojang/blaze3d/vertex/PoseStack;
+            0      18     2     f   F
+            0      18     3     l   J
+            0      18     5    bl   Z
+            0      18     6 camera   Lnet/minecraft/client/Camera;
+            0      18     7 gameRenderer   Lnet/minecraft/client/renderer/GameRenderer;
+            0      18     8 lightTexture   Lnet/minecraft/client/renderer/LightTexture;
+            0      18     9 projectionMatrix   Lorg/joml/Matrix4f;
+            0      18    10    ci   Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;
+    RuntimeVisibleAnnotations:
+      0: #48(#49=[s#50],#51=[@#52(#7=s#163)])
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["renderLevel"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="RETURN"
+          )]
+        )
+    MethodParameters:
+      Name                           Flags
+      poseStack
+      f
+      l
+      bl
+      camera
+      gameRenderer
+      lightTexture
+      projectionMatrix
+      ci
+}
+InnerClasses:
+  public static #15= #12 of #14;          // BufferSource=class net/minecraft/client/renderer/MultiBufferSource$BufferSource of class net/minecraft/client/renderer/MultiBufferSource
+  public static final #20= #17 of #19;    // Shift=class org/spongepowered/asm/mixin/injection/At$Shift of class org/spongepowered/asm/mixin/injection/At
+SourceFile: "MixinLevelRenderer.java"
+RuntimeInvisibleAnnotations:
+  0: #6(#7=[c#8],#9=I#10)
+    org.spongepowered.asm.mixin.Mixin(
+      value=[class Lnet/minecraft/client/renderer/LevelRenderer;]
+      priority=999
+    )

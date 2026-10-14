@@ -1,0 +1,4 @@
+interface:
+  display_name: "碎晶折射与色散"
+  short_description: "制作 Minecraft 碎晶、棱镜与色散材质，提供原创预览及 Forge 接入方法"
+  default_prompt: "使用 $minecraft-crystal-refraction 制作蓝紫碎晶折射材质，保留物品轮廓，并验证小图和手持效果。"

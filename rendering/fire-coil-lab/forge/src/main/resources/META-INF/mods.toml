@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="firecoil"
+version="0.2.0"
+displayName="Fire Coil"
+displayTest="IGNORE_ALL_VERSION"
+description='''Editable local player fire coil: crossed ribbons, detached wisps and embers.'''
+[[dependencies.firecoil]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.firecoil]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"

@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "installed": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "sha256": "9fc3ec4d5a4f246d8ab07408deead6e9d57b5ac8131b3579ff4b9f349cd6579c",
+  "bytes": 45120300,
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-turn-join-and-selection-20261010-130424.jar",
+  "backupSha256": "512d4d2157b45be151ffed6a620cd166b7e3587537adbc0e4b97b5be3a005269",
+  "installedAt": "2026-10-10T13:04:25.2069250+08:00",
+  "restartRequired": true
+}

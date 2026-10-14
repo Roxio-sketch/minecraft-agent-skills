@@ -1,0 +1,20 @@
+{
+  "world": "COSMIC_LAB_1791215782636",
+  "minecraft": "1.20.1",
+  "forge": "47.4.22",
+  "gpu": "NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2",
+  "glVersion": "4.6.0 NVIDIA 617.14",
+  "glslVersion": "4.60 NVIDIA",
+  "casesCompleted": 36,
+  "directionCasesPassed": 8,
+  "animationCasesPassed": 6,
+  "richTranslationCasesPassed": 1,
+  "celestialDisplayPassCount": 1,
+  "blackholeDisplayPassCount": 1,
+  "blackholeLensingPassCount": 1,
+  "celestialTranslationPassCount": 1,
+  "blackholeTranslationPassCount": 1,
+  "celestialSurfaceTypePassCount": 2,
+  "schema": "cosmic-sky/2",
+  "parameters": 58
+}

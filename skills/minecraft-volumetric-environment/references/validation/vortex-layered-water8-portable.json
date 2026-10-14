@@ -1,0 +1,387 @@
+{
+  "date": "2026-10-11T05:57:12.536Z",
+  "iteration": 8,
+  "coreSha256": "6024be6bf63aa9ea4e294ad996fa208b5ca6c30313ff6276d5295d24789dbed0",
+  "previewSha256": "9b9d02fd6bbbe169da7d17a62f4a111b9677caa2a75c01617d42c2df38f4ae46",
+  "noiseGeneratorSha256": "f1d3d8cf4c38c8d9b27cb27430486d5bffbf370e48ca3ce80fb3823217763512",
+  "ok": false,
+  "passed": false,
+  "scope": "Installed skill creates independent work; actual portable three-mode WebGL PNG/JSON replay and source ZIP download; no Minecraft certification",
+  "installedSkill": "C:/Users/MAINTAINER/.codex/skills/minecraft-volumetric-environment",
+  "authoredWork": "E:\\着色器渲染\\volumetric-environment-lab\\evidence\\portable-vortex-revision8\\authored-work",
+  "url": "http://127.0.0.1:8775/vortex/",
+  "checks": [
+    {
+      "name": "installed skill authors a new independent work",
+      "passed": true,
+      "data": {
+        "installed": "C:/Users/MAINTAINER/.codex/skills/minecraft-volumetric-environment",
+        "workDir": "E:\\着色器渲染\\volumetric-environment-lab\\evidence\\portable-vortex-revision8\\authored-work"
+      }
+    },
+    {
+      "name": "canonical installed authored bytes: workbench/vortex/volume-core.glsl",
+      "passed": true,
+      "data": {
+        "canonical": "6024be6bf63aa9ea4e294ad996fa208b5ca6c30313ff6276d5295d24789dbed0",
+        "installed": "6024be6bf63aa9ea4e294ad996fa208b5ca6c30313ff6276d5295d24789dbed0",
+        "authored": "6024be6bf63aa9ea4e294ad996fa208b5ca6c30313ff6276d5295d24789dbed0",
+        "served": "6024be6bf63aa9ea4e294ad996fa208b5ca6c30313ff6276d5295d24789dbed0"
+      }
+    },
+    {
+      "name": "canonical installed authored bytes: workbench/vortex/preview.js",
+      "passed": true,
+      "data": {
+        "canonical": "9b9d02fd6bbbe169da7d17a62f4a111b9677caa2a75c01617d42c2df38f4ae46",
+        "installed": "9b9d02fd6bbbe169da7d17a62f4a111b9677caa2a75c01617d42c2df38f4ae46",
+        "authored": "9b9d02fd6bbbe169da7d17a62f4a111b9677caa2a75c01617d42c2df38f4ae46",
+        "served": "9b9d02fd6bbbe169da7d17a62f4a111b9677caa2a75c01617d42c2df38f4ae46"
+      }
+    },
+    {
+      "name": "canonical installed authored bytes: workbench/vortex/vortex-noise.js",
+      "passed": true,
+      "data": {
+        "canonical": "f1d3d8cf4c38c8d9b27cb27430486d5bffbf370e48ca3ce80fb3823217763512",
+        "installed": "f1d3d8cf4c38c8d9b27cb27430486d5bffbf370e48ca3ce80fb3823217763512",
+        "authored": "f1d3d8cf4c38c8d9b27cb27430486d5bffbf370e48ca3ce80fb3823217763512",
+        "served": "f1d3d8cf4c38c8d9b27cb27430486d5bffbf370e48ca3ce80fb3823217763512"
+      }
+    },
+    {
+      "name": "canonical installed authored bytes: scripts/fixtures/frozen-vortex-core-iteration1.glsl",
+      "passed": true,
+      "data": {
+        "canonical": "b949895abbcf516784282e5e0c1e070cbe5e48b326b01158c86e151d2b77bb1c",
+        "installed": "b949895abbcf516784282e5e0c1e070cbe5e48b326b01158c86e151d2b77bb1c",
+        "authored": "b949895abbcf516784282e5e0c1e070cbe5e48b326b01158c86e151d2b77bb1c"
+      }
+    },
+    {
+      "name": "final GPU report binds portable source",
+      "passed": true
+    },
+    {
+      "name": "portable schemas expose 62 base plus 20 event fields",
+      "passed": true
+    },
+    {
+      "name": "independent portable WebGL page renders",
+      "passed": true,
+      "data": {
+        "ready": true,
+        "failed": false,
+        "rendered": true,
+        "time": 22.5,
+        "paused": true,
+        "fieldCount": 62,
+        "presetCount": 8,
+        "camera": {
+          "position": [
+            195,
+            78,
+            295
+          ],
+          "yaw": -2.5575115985669856,
+          "pitch": 0.016965541737996078
+        },
+        "resolution": [
+          960,
+          599
+        ],
+        "error": null,
+        "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+      }
+    },
+    {
+      "name": "served bytes match authored source: workbench/vortex/volume-core.glsl",
+      "passed": true
+    },
+    {
+      "name": "served bytes match authored source: workbench/vortex/preview.js",
+      "passed": true
+    },
+    {
+      "name": "served bytes match authored source: workbench/vortex/vortex-noise.js",
+      "passed": true
+    },
+    {
+      "name": "portable generated noise data matches final GPU report",
+      "passed": true,
+      "data": {
+        "browser": "776937c4f059076a37201252dd2affb00388bf37214eabf13cdd3ec3bb87d1f8",
+        "finalReport": "776937c4f059076a37201252dd2affb00388bf37214eabf13cdd3ec3bb87d1f8"
+      }
+    },
+    {
+      "name": "mode 0 renders complete portable effect",
+      "passed": true
+    },
+    {
+      "name": "mode 1 renders complete portable effect",
+      "passed": true
+    },
+    {
+      "name": "mode 2 renders complete portable effect",
+      "passed": true
+    },
+    {
+      "name": "three modes produce distinct actual PNGs",
+      "passed": true
+    },
+    {
+      "name": "mode 2 near view is an actual rendered PNG",
+      "passed": true
+    },
+    {
+      "name": "mode 2 outside camera reset reproduces frame",
+      "passed": true
+    },
+    {
+      "name": "mode 2 has all schema keys and fixed time",
+      "passed": true
+    },
+    {
+      "name": "actual JSON download includes full recipe event and camera",
+      "passed": true
+    },
+    {
+      "name": "actual PNG export matches mode 2 frame",
+      "passed": false
+    },
+    {
+      "name": "actual import restores complete mode 2 work",
+      "passed": true
+    },
+    {
+      "name": "mode 2 import has exact PNG replay",
+      "passed": true
+    },
+    {
+      "name": "actual source ZIP download equals independent file",
+      "passed": true,
+      "data": {
+        "download": "2ecf352b59b5b3312df79656af6b258038d47ba6ae6b6a91db0ead64f34abea7",
+        "authored": "2ecf352b59b5b3312df79656af6b258038d47ba6ae6b6a91db0ead64f34abea7"
+      }
+    },
+    {
+      "name": "source ZIP CRC and manifest bytes",
+      "passed": true,
+      "data": {
+        "crc": true,
+        "manifestExact": true,
+        "sourceExact": {
+          "workbench/vortex/volume-core.glsl": true,
+          "workbench/vortex/preview.js": true,
+          "workbench/vortex/vortex-noise.js": true,
+          "scripts/fixtures/frozen-vortex-core-iteration1.glsl": true
+        },
+        "reportSourceBound": true,
+        "threeModeEvidence": {
+          "mode-0-time-20.png": true,
+          "mode-1-time-20.png": true,
+          "mode-2-time-20.png": true
+        },
+        "selectedResearchExact": true,
+        "threeModesDescribed": true,
+        "excluded": true,
+        "entries": 136
+      }
+    },
+    {
+      "name": "source ZIP ships exact core preview noise and fixture",
+      "passed": true,
+      "data": {
+        "workbench/vortex/volume-core.glsl": true,
+        "workbench/vortex/preview.js": true,
+        "workbench/vortex/vortex-noise.js": true,
+        "scripts/fixtures/frozen-vortex-core-iteration1.glsl": true
+      }
+    },
+    {
+      "name": "source ZIP contains bound three mode evidence",
+      "passed": true
+    },
+    {
+      "name": "source ZIP ships new research and three mode guidance",
+      "passed": true
+    },
+    {
+      "name": "new effect game resource export remains unavailable",
+      "passed": true
+    },
+    {
+      "name": "no portable browser errors",
+      "passed": true,
+      "data": []
+    },
+    {
+      "name": "owned 8775 helper stopped",
+      "passed": true,
+      "data": {
+        "pid": 36296,
+        "exitCode": null,
+        "signalCode": "SIGTERM"
+      }
+    }
+  ],
+  "hashes": {
+    "workbench/vortex/volume-core.glsl": {
+      "canonical": "6024be6bf63aa9ea4e294ad996fa208b5ca6c30313ff6276d5295d24789dbed0",
+      "installed": "6024be6bf63aa9ea4e294ad996fa208b5ca6c30313ff6276d5295d24789dbed0",
+      "authored": "6024be6bf63aa9ea4e294ad996fa208b5ca6c30313ff6276d5295d24789dbed0",
+      "served": "6024be6bf63aa9ea4e294ad996fa208b5ca6c30313ff6276d5295d24789dbed0"
+    },
+    "workbench/vortex/preview.js": {
+      "canonical": "9b9d02fd6bbbe169da7d17a62f4a111b9677caa2a75c01617d42c2df38f4ae46",
+      "installed": "9b9d02fd6bbbe169da7d17a62f4a111b9677caa2a75c01617d42c2df38f4ae46",
+      "authored": "9b9d02fd6bbbe169da7d17a62f4a111b9677caa2a75c01617d42c2df38f4ae46",
+      "served": "9b9d02fd6bbbe169da7d17a62f4a111b9677caa2a75c01617d42c2df38f4ae46"
+    },
+    "workbench/vortex/vortex-noise.js": {
+      "canonical": "f1d3d8cf4c38c8d9b27cb27430486d5bffbf370e48ca3ce80fb3823217763512",
+      "installed": "f1d3d8cf4c38c8d9b27cb27430486d5bffbf370e48ca3ce80fb3823217763512",
+      "authored": "f1d3d8cf4c38c8d9b27cb27430486d5bffbf370e48ca3ce80fb3823217763512",
+      "served": "f1d3d8cf4c38c8d9b27cb27430486d5bffbf370e48ca3ce80fb3823217763512"
+    },
+    "scripts/fixtures/frozen-vortex-core-iteration1.glsl": {
+      "canonical": "b949895abbcf516784282e5e0c1e070cbe5e48b326b01158c86e151d2b77bb1c",
+      "installed": "b949895abbcf516784282e5e0c1e070cbe5e48b326b01158c86e151d2b77bb1c",
+      "authored": "b949895abbcf516784282e5e0c1e070cbe5e48b326b01158c86e151d2b77bb1c"
+    },
+    "noiseData": {
+      "browser": "776937c4f059076a37201252dd2affb00388bf37214eabf13cdd3ec3bb87d1f8",
+      "finalReport": "776937c4f059076a37201252dd2affb00388bf37214eabf13cdd3ec3bb87d1f8"
+    },
+    "sourceArchive": {
+      "download": "2ecf352b59b5b3312df79656af6b258038d47ba6ae6b6a91db0ead64f34abea7",
+      "authored": "2ecf352b59b5b3312df79656af6b258038d47ba6ae6b6a91db0ead64f34abea7"
+    }
+  },
+  "screenshots": {
+    "mode-0-time-20.png": "3b401eeb8c181f209b7762a2aa1b134186484b4a9f8947cc9bcd095505439b57",
+    "mode-1-time-20.png": "ecbd0683573c0ea8dba661376d1b4561743801c95cb6622a1db239f157e62549",
+    "mode-2-time-20.png": "0401ce93c0182793723c0d8a4689ee6677bb0b245bd08804aa2549bd07677e36",
+    "mode-2-near.png": "379ea1f76f2957f163bb85459a9be8bcf4c6a303f095255cb7a66072e394f7d3",
+    "mode-2-outside.png": "0401ce93c0182793723c0d8a4689ee6677bb0b245bd08804aa2549bd07677e36"
+  },
+  "work": {
+    "schema": "vortex-cloud/1",
+    "recipe": {
+      "schema": "world-volume/2",
+      "name": "水龙卷 · 旋转液态漏斗",
+      "parameters": {
+        "centerX": 0,
+        "centerY": 95,
+        "centerZ": 0,
+        "radius": 150,
+        "bottom": 0,
+        "height": 190,
+        "shape": 0,
+        "innerRadius": 25,
+        "density": 1.6,
+        "coverage": 0.86,
+        "scale": 0.075,
+        "erosion": 0.5,
+        "windX": 0.8,
+        "windZ": 0.35,
+        "speed": 0.4,
+        "curl": 0.5,
+        "extinction": 0.095,
+        "anisotropy": 0.45,
+        "ambient": 0.65,
+        "sunGain": 2.5,
+        "emission": 0,
+        "emissionScale": 2.2,
+        "emissionThreshold": 0.45,
+        "emissionSpeed": 0.3,
+        "flashEnabled": 0,
+        "flashPeriod": 5,
+        "flashDuration": 0.7,
+        "flashStrength": 10,
+        "flashRadius": 100,
+        "flashPlacement": 0.15,
+        "mediumGain": 1.2,
+        "surfaceGain": 0.25,
+        "mediumR": 0.4,
+        "mediumG": 0.64,
+        "mediumB": 0.69,
+        "emissionR": 0.35,
+        "emissionG": 0.08,
+        "emissionB": 0.8,
+        "flashR": 0.55,
+        "flashG": 0.65,
+        "flashB": 1,
+        "sunR": 1,
+        "sunG": 0.85,
+        "sunB": 0.65,
+        "sunX": 0.7,
+        "sunY": 0.55,
+        "sunZ": -0.45,
+        "seed": 17,
+        "viewSteps": 96,
+        "lightSteps": 7,
+        "densityModel": 0,
+        "verticalStretch": 24,
+        "twistAmount": 0.014,
+        "twistSpeed": 0.02,
+        "cavityRadius": 75,
+        "cavityAspect": 0.8,
+        "torusRadius": 150,
+        "torusWidth": 85,
+        "voidDensity": 0.35,
+        "voidFloor": -60,
+        "voidFalloff": 0.7,
+        "nearClearRadius": 80
+      }
+    },
+    "vortex": {
+      "mode": 2,
+      "duration": 18,
+      "bottomRadius": 8,
+      "topRadius": 48,
+      "profile": 1.7,
+      "hollow": 0.28,
+      "rotation": 0.85,
+      "rise": 10,
+      "inflow": 0.45,
+      "bend": 12,
+      "turbulence": 1.25,
+      "canopyDensity": 1.15,
+      "ringRadius": 24,
+      "ringWidth": 9,
+      "sprayDensity": 2.7,
+      "sprayHeight": 15,
+      "waterDepth": 2.5,
+      "waveAmp": 1.3,
+      "waveSpeed": 2.2,
+      "foam": 0.7
+    },
+    "preview": {
+      "time": 20,
+      "camera": {
+        "position": [
+          195,
+          78,
+          295
+        ],
+        "yaw": -2.5575115985669856,
+        "pitch": 0.016965541737996078
+      }
+    }
+  },
+  "history": [
+    {
+      "role": "iteration1",
+      "path": "evidence/vortex/iteration1/portable.json",
+      "sha256": "24ca48441977840921784bbc22924c2a3a50d09068aa40dfa4cf2108b739c346"
+    },
+    {
+      "role": "previousUnchanged",
+      "path": "evidence/vortex/history/portable-cfa6fb01ea204b8a.json",
+      "sha256": "cfa6fb01ea204b8a68ef20e632eca78b335261e700e87d5fa447fd6446f07115"
+    }
+  ]
+}

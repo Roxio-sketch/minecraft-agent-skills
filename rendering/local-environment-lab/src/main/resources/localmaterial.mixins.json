@@ -1,0 +1,9 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "dev.localmaterial.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "localmaterial.refmap.json",
+  "client": ["TranslucentLayerMixin", "AfterHandSketchMixin"],
+  "injectors": {"defaultRequire": 0}
+}

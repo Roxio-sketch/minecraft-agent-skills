@@ -1,0 +1,1 @@
+Captured 20 frames: first-person, diagnostic FOV, side camera, real attack/burn/expiry, material board and Forge mod cover. Visual acceptance is manual.

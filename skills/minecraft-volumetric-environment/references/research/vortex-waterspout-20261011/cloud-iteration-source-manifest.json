@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-11",
+  "scope": "Text/selected slide reading, not original renderer execution",
+  "redistribution": "Exclude primary-pdf directory; links and research summary only",
+  "sources": [
+    {
+      "filename": "nubis-2017.pdf",
+      "url": "https://d3d3g8mu99pzk9.cloudfront.net/AndrewSchneider/Nubis-Authoring-Realtime-Volumetric-Cloudscapes-with-the-Decima-Engine-Final.pdf",
+      "bytes": 13672078,
+      "sha256": "0143f9b829e11c1ec30ed50223971450032c8be26f87ac73027fa380332cf9ae",
+      "totalPdfPages": 108,
+      "readPhysicalPages": [
+        33,
+        36,
+        39,
+        75,
+        84,
+        85,
+        89,
+        95
+      ]
+    },
+    {
+      "filename": "nubis-evolved-2022.pdf",
+      "url": "https://d3d3g8mu99pzk9.cloudfront.net/AndrewSchneider/NubisEvolved/NubisEvolved-NoVideos.pdf",
+      "bytes": 49079590,
+      "sha256": "eacbfc648252718e07b71163c02ff1cc9760d56c91bdb97053181debb50376a6",
+      "totalPdfPages": 207,
+      "readPhysicalPages": [
+        31,
+        32,
+        33,
+        34,
+        37,
+        43,
+        54,
+        59,
+        97,
+        102,
+        105,
+        112,
+        113,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        165,
+        167,
+        172,
+        183
+      ]
+    },
+    {
+      "filename": "nubis-cubed-2023.pdf",
+      "url": "https://d3d3g8mu99pzk9.cloudfront.net/AndrewSchneider/Nubis%20Cubed.pdf",
+      "bytes": 14305470,
+      "sha256": "8b084d192c72cac4c69e29de40ecf633ac396678a0c5fb83178ad7fee193700f",
+      "totalPdfPages": 220,
+      "readPhysicalPages": [
+        24,
+        25,
+        34,
+        97,
+        123,
+        129,
+        147,
+        150,
+        172
+      ]
+    }
+  ],
+  "renderedAndViewed": {
+    "nubis-evolved-2022.pdf": [
+      149,
+      150
+    ],
+    "nubis-cubed-2023.pdf": [
+      129
+    ]
+  },
+  "baselineScreenshot": {
+    "path": "volumetric-environment-lab/evidence/vortex/mode-1-time-20.png",
+    "sha256": "225b58d1c6fde1de6f44969493555653546987084125e4210c1612282559f87a"
+  },
+  "baselineCoreInspectedSha256": "b949895abbcf516784282e5e0c1e070cbe5e48b326b01158c86e151d2b77bb1c"
+}

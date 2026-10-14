@@ -1,0 +1,172 @@
+[
+  {
+    "id": "psrd",
+    "repo": "stegu/psrdnoise",
+    "branch": "main",
+    "commit": "419175a270862ce7ae692038fafafb42ec0427e9",
+    "checked_date": "2026-10-02",
+    "license": "MIT（GLSL 文件内）",
+    "license_url": "https://github.com/stegu/psrdnoise/blob/419175a270862ce7ae692038fafafb42ec0427e9/src/psrdnoise3.glsl",
+    "verified_entries": 2
+  },
+  {
+    "id": "curl",
+    "repo": "Bridson curl noise",
+    "branch": "论文配套归档",
+    "commit": null,
+    "checked_date": "2026-10-02",
+    "license": "作者主页声明 public domain；依赖单独核查",
+    "license_url": "https://www.cs.ubc.ca/~rbridson/",
+    "verified_entries": 3
+  },
+  {
+    "id": "noise",
+    "repo": "stegu/webgl-noise",
+    "branch": "master",
+    "commit": "22434e04d7753f7e949e8d724ab3da2864c17a0f",
+    "checked_date": "2026-10-02",
+    "license": "MIT",
+    "license_url": "https://github.com/stegu/webgl-noise/blob/22434e04d7753f7e949e8d724ab3da2864c17a0f/LICENSE",
+    "verified_entries": 3
+  },
+  {
+    "id": "clouds",
+    "repo": "SebLague/Clouds",
+    "branch": "master",
+    "commit": "fcc997c40d36c7bedf95a294cd2136b8c5127009",
+    "checked_date": "2026-10-02",
+    "license": "MIT；第三方资源另查",
+    "license_url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/LICENSE",
+    "verified_entries": 3
+  },
+  {
+    "id": "history",
+    "repo": "TylerDodds/VolumetricCloudsTutorial",
+    "branch": "master",
+    "commit": "216f465b68c547068d08c029b9bd8788a5f0f1fd",
+    "checked_date": "2026-10-02",
+    "license": "MIT；引用的噪声资源另查",
+    "license_url": "https://github.com/TylerDodds/VolumetricCloudsTutorial/blob/216f465b68c547068d08c029b9bd8788a5f0f1fd/LICENSE",
+    "verified_entries": 3
+  },
+  {
+    "id": "fluid2",
+    "repo": "PavelDoGreat/WebGL-Fluid-Simulation",
+    "branch": "master",
+    "commit": "a2d292931f19d9b3b9f564e23e6c32729d2121c3",
+    "checked_date": "2026-10-02",
+    "license": "MIT",
+    "license_url": "https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/blob/a2d292931f19d9b3b9f564e23e6c32729d2121c3/LICENSE",
+    "verified_entries": 3
+  },
+  {
+    "id": "fluid3",
+    "repo": "Scrawk/GPU-GEMS-3D-Fluid-Simulation",
+    "branch": "master",
+    "commit": "6d676c61c85126f35246ebc90568f4957f0a2ce0",
+    "checked_date": "2026-10-02",
+    "license": "MIT（仓库源码）；独立借入代码仍查原许可",
+    "license_url": "https://github.com/Scrawk/GPU-GEMS-3D-Fluid-Simulation/blob/6d676c61c85126f35246ebc90568f4957f0a2ce0/LICENSE",
+    "verified_entries": 4
+  },
+  {
+    "id": "swarm",
+    "repo": "keijiro/KvantSwarm",
+    "branch": "master",
+    "commit": "932bb30f70942143c591070be0d1d1e9504125a2",
+    "checked_date": "2026-10-02",
+    "license": "MIT（README 内）；噪声保留原版权",
+    "license_url": "https://github.com/keijiro/KvantSwarm/blob/932bb30f70942143c591070be0d1d1e9504125a2/README.md",
+    "verified_entries": 2
+  },
+  {
+    "id": "wig",
+    "repo": "keijiro/KvantWig",
+    "branch": "master",
+    "commit": "a955fe2d7e53103472e4b5f07850f099b1a32d49",
+    "checked_date": "2026-10-02",
+    "license": "MIT；内含组件逐文件保留署名",
+    "license_url": "https://github.com/keijiro/KvantWig/blob/a955fe2d7e53103472e4b5f07850f099b1a32d49/LICENSE.md",
+    "verified_entries": 2
+  },
+  {
+    "id": "bloom",
+    "repo": "keijiro/KinoBloom",
+    "branch": "master",
+    "commit": "0a04c43fa47de12bb52edb325c8d3c0125d0b4ca",
+    "checked_date": "2026-10-02",
+    "license": "MIT",
+    "license_url": "https://github.com/keijiro/KinoBloom/blob/0a04c43fa47de12bb52edb325c8d3c0125d0b4ca/LICENSE.md",
+    "verified_entries": 2
+  },
+  {
+    "id": "effekseer",
+    "repo": "effekseer/Effekseer",
+    "branch": "master",
+    "commit": "82b37081a302b9f9eff0bf14dc6c845fca8c3c54",
+    "checked_date": "2026-10-02",
+    "license": "MIT（核心）；第三方库与示例资产分开核查",
+    "license_url": "https://github.com/effekseer/Effekseer/blob/82b37081a302b9f9eff0bf14dc6c845fca8c3c54/LICENSE",
+    "verified_entries": 3
+  },
+  {
+    "id": "veil",
+    "repo": "FoundryMC/Veil",
+    "branch": "1.20",
+    "commit": "3592dddfcfcf92b298ec933c0d9fb951a69aba51",
+    "checked_date": "2026-10-02",
+    "license": "LGPLv3",
+    "license_url": "https://github.com/FoundryMC/Veil/blob/3592dddfcfcf92b298ec933c0d9fb951a69aba51/LICENSE",
+    "verified_entries": 3
+  },
+  {
+    "id": "shimmer",
+    "repo": "Low-Drag-MC/Shimmer",
+    "branch": "1.20",
+    "commit": "49cb20e7406de63027f8666d6dde9b73d8444f80",
+    "checked_date": "2026-10-02",
+    "license": "MIT",
+    "license_url": "https://github.com/Low-Drag-MC/Shimmer/blob/49cb20e7406de63027f8666d6dde9b73d8444f80/LICENSE",
+    "verified_entries": 3
+  },
+  {
+    "id": "photon",
+    "repo": "Low-Drag-MC/Photon",
+    "branch": "1.20.1",
+    "commit": "507499fbe5a3fc72bb90993e059848cbb31f13ca",
+    "checked_date": "2026-10-02",
+    "license": "GPLv3（该固定提交）；新分支条款不同",
+    "license_url": "https://github.com/Low-Drag-MC/Photon/blob/507499fbe5a3fc72bb90993e059848cbb31f13ca/LICENSE",
+    "verified_entries": 3
+  },
+  {
+    "id": "lodestone",
+    "repo": "LodestarMC/Lodestone",
+    "branch": "1.20",
+    "commit": "1980158f99c4ed849753960354972b3c7b18dfcc",
+    "checked_date": "2026-10-02",
+    "license": "冲突：LICENSE.txt 为 LGPLv3，modLicense 为 GPLv3",
+    "license_url": "https://github.com/LodestarMC/Lodestone/blob/1980158f99c4ed849753960354972b3c7b18dfcc/LICENSE.txt",
+    "verified_entries": 4
+  },
+  {
+    "id": "noiseball",
+    "repo": "keijiro/NoiseBall",
+    "branch": "master",
+    "commit": "fbd56c01514231068f52ed906c9e9fdebc2ddd3f",
+    "checked_date": "2026-10-02",
+    "license": "核心未发现明确授权；内含噪声文件有独立 MIT",
+    "license_url": null,
+    "verified_entries": 2
+  },
+  {
+    "id": "haxiomic",
+    "repo": "haxiomic/GPU-Fluid-Experiments",
+    "branch": "master",
+    "commit": "20210bd9e64884146a73e6cedc0c696ca50bd0fd",
+    "checked_date": "2026-10-02",
+    "license": "GPLv3",
+    "license_url": "https://github.com/haxiomic/GPU-Fluid-Experiments/blob/20210bd9e64884146a73e6cedc0c696ca50bd0fd/LICENSE.txt",
+    "verified_entries": 1
+  }
+]

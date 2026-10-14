@@ -1,0 +1,26 @@
+[
+  {
+    "texture": "xuanling_anvil.png",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "oldSelected": 107846,
+    "newSelected": 113177,
+    "newPaleCores": 5331,
+    "neutralIronSelected": 0,
+    "bronzeSelected": 0
+  },
+  {
+    "texture": "xuanling_anvil_adapted.png",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "oldSelected": 337654,
+    "newSelected": 340607,
+    "newPaleCores": 2953,
+    "neutralIronSelected": 0,
+    "bronzeSelected": 0
+  }
+]

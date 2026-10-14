@@ -12,6 +12,8 @@
     }
   ],
   "uniforms": [
+    {"name":"Core","type":"float","count":1,"values":[0]},
+    {"name":"Vivid","type":"float","count":1,"values":[0]},
     {
       "name": "ModelViewMat",
       "type": "matrix4x4",

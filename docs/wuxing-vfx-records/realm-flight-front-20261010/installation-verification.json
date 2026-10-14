@@ -1,0 +1,13 @@
+{
+  "installed": true,
+  "installedAt": "2026-10-10T11:01:16.7798274+08:00",
+  "implementation": "front-softening-20261010",
+  "source": "E:\\五行仙途\\build\\libs\\wuxingxiantu-0.2.jar",
+  "destination": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "size": 45107240,
+  "sha256": "af2c011c7281dae8a6fef835136b17ea0245f7c6f1f1bad533f0c461466a74b0",
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-front-softening-20261010-110116.jar",
+  "backupSha256": "2abae1ead8115a9651b54ddcfbffd03526cec32f0af6dd8e950f6c842b6fe552",
+  "method": "fresh matrix/JAR verification; staged copy and hash; previous JAR renamed to sibling backup; staged JAR renamed to final",
+  "requiresGameRestart": true
+}

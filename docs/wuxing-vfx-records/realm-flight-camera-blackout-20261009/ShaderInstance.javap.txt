@@ -1,0 +1,1246 @@
+Compiled from "ShaderInstance.java"
+public class net.minecraft.client.renderer.ShaderInstance implements com.mojang.blaze3d.shaders.Shader,java.lang.AutoCloseable {
+  public static final java.lang.String SHADER_PATH;
+
+  private static final java.lang.String SHADER_CORE_PATH;
+
+  private static final java.lang.String SHADER_INCLUDE_PATH;
+
+  static final org.slf4j.Logger LOGGER;
+
+  private static final com.mojang.blaze3d.shaders.AbstractUniform DUMMY_UNIFORM;
+
+  private static final boolean ALWAYS_REAPPLY;
+
+  private static net.minecraft.client.renderer.ShaderInstance lastAppliedShader;
+
+  private static int lastProgramId;
+
+  private final java.util.Map<java.lang.String, java.lang.Object> samplerMap;
+
+  private final java.util.List<java.lang.String> samplerNames;
+
+  private final java.util.List<java.lang.Integer> samplerLocations;
+
+  private final java.util.List<com.mojang.blaze3d.shaders.Uniform> uniforms;
+
+  private final java.util.List<java.lang.Integer> uniformLocations;
+
+  private final java.util.Map<java.lang.String, com.mojang.blaze3d.shaders.Uniform> uniformMap;
+
+  private final int programId;
+
+  private final java.lang.String name;
+
+  private boolean dirty;
+
+  private final com.mojang.blaze3d.shaders.BlendMode blend;
+
+  private final java.util.List<java.lang.Integer> attributes;
+
+  private final java.util.List<java.lang.String> attributeNames;
+
+  private final com.mojang.blaze3d.shaders.Program vertexProgram;
+
+  private final com.mojang.blaze3d.shaders.Program fragmentProgram;
+
+  private final com.mojang.blaze3d.vertex.VertexFormat vertexFormat;
+
+  public final com.mojang.blaze3d.shaders.Uniform MODEL_VIEW_MATRIX;
+
+  public final com.mojang.blaze3d.shaders.Uniform PROJECTION_MATRIX;
+
+  public final com.mojang.blaze3d.shaders.Uniform INVERSE_VIEW_ROTATION_MATRIX;
+
+  public final com.mojang.blaze3d.shaders.Uniform TEXTURE_MATRIX;
+
+  public final com.mojang.blaze3d.shaders.Uniform SCREEN_SIZE;
+
+  public final com.mojang.blaze3d.shaders.Uniform COLOR_MODULATOR;
+
+  public final com.mojang.blaze3d.shaders.Uniform LIGHT0_DIRECTION;
+
+  public final com.mojang.blaze3d.shaders.Uniform LIGHT1_DIRECTION;
+
+  public final com.mojang.blaze3d.shaders.Uniform GLINT_ALPHA;
+
+  public final com.mojang.blaze3d.shaders.Uniform FOG_START;
+
+  public final com.mojang.blaze3d.shaders.Uniform FOG_END;
+
+  public final com.mojang.blaze3d.shaders.Uniform FOG_COLOR;
+
+  public final com.mojang.blaze3d.shaders.Uniform FOG_SHAPE;
+
+  public final com.mojang.blaze3d.shaders.Uniform LINE_WIDTH;
+
+  public final com.mojang.blaze3d.shaders.Uniform GAME_TIME;
+
+  public final com.mojang.blaze3d.shaders.Uniform CHUNK_OFFSET;
+
+  public net.minecraft.client.renderer.ShaderInstance(net.minecraft.server.packs.resources.ResourceProvider, java.lang.String, com.mojang.blaze3d.vertex.VertexFormat) throws java.io.IOException;
+    Code:
+       0: aload_0
+       1: aload_1
+       2: new           #96                 // class net/minecraft/resources/ResourceLocation
+       5: dup
+       6: aload_2
+       7: invokespecial #99                 // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;)V
+      10: aload_3
+      11: invokespecial #102                // Method "<init>":(Lnet/minecraft/server/packs/resources/ResourceProvider;Lnet/minecraft/resources/ResourceLocation;Lcom/mojang/blaze3d/vertex/VertexFormat;)V
+      14: return
+
+  public net.minecraft.client.renderer.ShaderInstance(net.minecraft.server.packs.resources.ResourceProvider, net.minecraft.resources.ResourceLocation, com.mojang.blaze3d.vertex.VertexFormat) throws java.io.IOException;
+    Code:
+       0: aload_0
+       1: invokespecial #114                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: invokestatic  #120                // Method com/google/common/collect/Maps.newHashMap:()Ljava/util/HashMap;
+       8: putfield      #122                // Field samplerMap:Ljava/util/Map;
+      11: aload_0
+      12: invokestatic  #128                // Method com/google/common/collect/Lists.newArrayList:()Ljava/util/ArrayList;
+      15: putfield      #130                // Field samplerNames:Ljava/util/List;
+      18: aload_0
+      19: invokestatic  #128                // Method com/google/common/collect/Lists.newArrayList:()Ljava/util/ArrayList;
+      22: putfield      #132                // Field samplerLocations:Ljava/util/List;
+      25: aload_0
+      26: invokestatic  #128                // Method com/google/common/collect/Lists.newArrayList:()Ljava/util/ArrayList;
+      29: putfield      #134                // Field uniforms:Ljava/util/List;
+      32: aload_0
+      33: invokestatic  #128                // Method com/google/common/collect/Lists.newArrayList:()Ljava/util/ArrayList;
+      36: putfield      #136                // Field uniformLocations:Ljava/util/List;
+      39: aload_0
+      40: invokestatic  #120                // Method com/google/common/collect/Maps.newHashMap:()Ljava/util/HashMap;
+      43: putfield      #138                // Field uniformMap:Ljava/util/Map;
+      46: aload_0
+      47: aload_2
+      48: invokevirtual #142                // Method net/minecraft/resources/ResourceLocation.getNamespace:()Ljava/lang/String;
+      51: ldc           #144                // String minecraft
+      53: invokevirtual #150                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      56: ifeq          66
+      59: aload_2
+      60: invokevirtual #153                // Method net/minecraft/resources/ResourceLocation.getPath:()Ljava/lang/String;
+      63: goto          70
+      66: aload_2
+      67: invokevirtual #160                // Method net/minecraft/resources/ResourceLocation.toString:()Ljava/lang/String;
+      70: putfield      #162                // Field name:Ljava/lang/String;
+      73: aload_0
+      74: aload_3
+      75: putfield      #164                // Field vertexFormat:Lcom/mojang/blaze3d/vertex/VertexFormat;
+      78: new           #96                 // class net/minecraft/resources/ResourceLocation
+      81: dup
+      82: aload_2
+      83: invokevirtual #142                // Method net/minecraft/resources/ResourceLocation.getNamespace:()Ljava/lang/String;
+      86: aload_2
+      87: invokevirtual #153                // Method net/minecraft/resources/ResourceLocation.getPath:()Ljava/lang/String;
+      90: invokedynamic #176,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      95: invokespecial #179                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      98: astore        4
+     100: aload_1
+     101: aload         4
+     103: invokeinterface #183,  2          // InterfaceMethod net/minecraft/server/packs/resources/ResourceProvider.openAsReader:(Lnet/minecraft/resources/ResourceLocation;)Ljava/io/BufferedReader;
+     108: astore        5
+     110: aload         5
+     112: invokestatic  #189                // Method net/minecraft/util/GsonHelper.parse:(Ljava/io/Reader;)Lcom/google/gson/JsonObject;
+     115: astore        6
+     117: aload         6
+     119: ldc           #191                // String vertex
+     121: invokestatic  #195                // Method net/minecraft/util/GsonHelper.getAsString:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+     124: astore        7
+     126: aload         6
+     128: ldc           #197                // String fragment
+     130: invokestatic  #195                // Method net/minecraft/util/GsonHelper.getAsString:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+     133: astore        8
+     135: aload         6
+     137: ldc           #199                // String samplers
+     139: aconst_null
+     140: checkcast     #201                // class com/google/gson/JsonArray
+     143: invokestatic  #205                // Method net/minecraft/util/GsonHelper.getAsJsonArray:(Lcom/google/gson/JsonObject;Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;
+     146: astore        9
+     148: aload         9
+     150: ifnull        224
+     153: iconst_0
+     154: istore        10
+     156: aload         9
+     158: invokevirtual #209                // Method com/google/gson/JsonArray.iterator:()Ljava/util/Iterator;
+     161: astore        11
+     163: aload         11
+     165: invokeinterface #219,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     170: ifeq          224
+     173: aload         11
+     175: invokeinterface #223,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     180: checkcast     #225                // class com/google/gson/JsonElement
+     183: astore        12
+     185: aload_0
+     186: aload         12
+     188: invokevirtual #229                // Method parseSamplerNode:(Lcom/google/gson/JsonElement;)V
+     191: goto          218
+     194: astore        13
+     196: aload         13
+     198: invokestatic  #235                // Method net/minecraft/server/ChainedJsonException.forException:(Ljava/lang/Exception;)Lnet/minecraft/server/ChainedJsonException;
+     201: astore        14
+     203: aload         14
+     205: iload         10
+     207: invokedynamic #240,  0            // InvokeDynamic #1:makeConcatWithConstants:(I)Ljava/lang/String;
+     212: invokevirtual #243                // Method net/minecraft/server/ChainedJsonException.prependJsonKey:(Ljava/lang/String;)V
+     215: aload         14
+     217: athrow
+     218: iinc          10, 1
+     221: goto          163
+     224: aload         6
+     226: ldc           #244                // String attributes
+     228: aconst_null
+     229: checkcast     #201                // class com/google/gson/JsonArray
+     232: invokestatic  #205                // Method net/minecraft/util/GsonHelper.getAsJsonArray:(Lcom/google/gson/JsonObject;Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;
+     235: astore        10
+     237: aload         10
+     239: ifnull        352
+     242: iconst_0
+     243: istore        11
+     245: aload_0
+     246: aload         10
+     248: invokevirtual #248                // Method com/google/gson/JsonArray.size:()I
+     251: invokestatic  #252                // Method com/google/common/collect/Lists.newArrayListWithCapacity:(I)Ljava/util/ArrayList;
+     254: putfield      #254                // Field attributes:Ljava/util/List;
+     257: aload_0
+     258: aload         10
+     260: invokevirtual #248                // Method com/google/gson/JsonArray.size:()I
+     263: invokestatic  #252                // Method com/google/common/collect/Lists.newArrayListWithCapacity:(I)Ljava/util/ArrayList;
+     266: putfield      #256                // Field attributeNames:Ljava/util/List;
+     269: aload         10
+     271: invokevirtual #209                // Method com/google/gson/JsonArray.iterator:()Ljava/util/Iterator;
+     274: astore        12
+     276: aload         12
+     278: invokeinterface #219,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     283: ifeq          349
+     286: aload         12
+     288: invokeinterface #223,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     293: checkcast     #225                // class com/google/gson/JsonElement
+     296: astore        13
+     298: aload_0
+     299: getfield      #256                // Field attributeNames:Ljava/util/List;
+     302: aload         13
+     304: ldc_w         #258                // String attribute
+     307: invokestatic  #262                // Method net/minecraft/util/GsonHelper.convertToString:(Lcom/google/gson/JsonElement;Ljava/lang/String;)Ljava/lang/String;
+     310: invokeinterface #267,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     315: pop
+     316: goto          343
+     319: astore        14
+     321: aload         14
+     323: invokestatic  #235                // Method net/minecraft/server/ChainedJsonException.forException:(Ljava/lang/Exception;)Lnet/minecraft/server/ChainedJsonException;
+     326: astore        15
+     328: aload         15
+     330: iload         11
+     332: invokedynamic #270,  0            // InvokeDynamic #2:makeConcatWithConstants:(I)Ljava/lang/String;
+     337: invokevirtual #243                // Method net/minecraft/server/ChainedJsonException.prependJsonKey:(Ljava/lang/String;)V
+     340: aload         15
+     342: athrow
+     343: iinc          11, 1
+     346: goto          276
+     349: goto          362
+     352: aload_0
+     353: aconst_null
+     354: putfield      #254                // Field attributes:Ljava/util/List;
+     357: aload_0
+     358: aconst_null
+     359: putfield      #256                // Field attributeNames:Ljava/util/List;
+     362: aload         6
+     364: ldc_w         #271                // String uniforms
+     367: aconst_null
+     368: checkcast     #201                // class com/google/gson/JsonArray
+     371: invokestatic  #205                // Method net/minecraft/util/GsonHelper.getAsJsonArray:(Lcom/google/gson/JsonObject;Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;
+     374: astore        11
+     376: aload         11
+     378: ifnull        452
+     381: iconst_0
+     382: istore        12
+     384: aload         11
+     386: invokevirtual #209                // Method com/google/gson/JsonArray.iterator:()Ljava/util/Iterator;
+     389: astore        13
+     391: aload         13
+     393: invokeinterface #219,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     398: ifeq          452
+     401: aload         13
+     403: invokeinterface #223,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     408: checkcast     #225                // class com/google/gson/JsonElement
+     411: astore        14
+     413: aload_0
+     414: aload         14
+     416: invokevirtual #274                // Method parseUniformNode:(Lcom/google/gson/JsonElement;)V
+     419: goto          446
+     422: astore        15
+     424: aload         15
+     426: invokestatic  #235                // Method net/minecraft/server/ChainedJsonException.forException:(Ljava/lang/Exception;)Lnet/minecraft/server/ChainedJsonException;
+     429: astore        16
+     431: aload         16
+     433: iload         12
+     435: invokedynamic #277,  0            // InvokeDynamic #3:makeConcatWithConstants:(I)Ljava/lang/String;
+     440: invokevirtual #243                // Method net/minecraft/server/ChainedJsonException.prependJsonKey:(Ljava/lang/String;)V
+     443: aload         16
+     445: athrow
+     446: iinc          12, 1
+     449: goto          391
+     452: aload_0
+     453: aload         6
+     455: ldc_w         #278                // String blend
+     458: aconst_null
+     459: checkcast     #213                // class com/google/gson/JsonObject
+     462: invokestatic  #282                // Method net/minecraft/util/GsonHelper.getAsJsonObject:(Lcom/google/gson/JsonObject;Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/google/gson/JsonObject;
+     465: invokestatic  #286                // Method parseBlendNode:(Lcom/google/gson/JsonObject;)Lcom/mojang/blaze3d/shaders/BlendMode;
+     468: putfield      #288                // Field blend:Lcom/mojang/blaze3d/shaders/BlendMode;
+     471: aload_0
+     472: aload_1
+     473: getstatic     #292                // Field com/mojang/blaze3d/shaders/Program$Type.VERTEX:Lcom/mojang/blaze3d/shaders/Program$Type;
+     476: aload         7
+     478: invokestatic  #296                // Method getOrCreate:(Lnet/minecraft/server/packs/resources/ResourceProvider;Lcom/mojang/blaze3d/shaders/Program$Type;Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Program;
+     481: putfield      #298                // Field vertexProgram:Lcom/mojang/blaze3d/shaders/Program;
+     484: aload_0
+     485: aload_1
+     486: getstatic     #301                // Field com/mojang/blaze3d/shaders/Program$Type.FRAGMENT:Lcom/mojang/blaze3d/shaders/Program$Type;
+     489: aload         8
+     491: invokestatic  #296                // Method getOrCreate:(Lnet/minecraft/server/packs/resources/ResourceProvider;Lcom/mojang/blaze3d/shaders/Program$Type;Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Program;
+     494: putfield      #303                // Field fragmentProgram:Lcom/mojang/blaze3d/shaders/Program;
+     497: aload_0
+     498: invokestatic  #308                // Method com/mojang/blaze3d/shaders/ProgramManager.createProgram:()I
+     501: putfield      #310                // Field programId:I
+     504: aload_0
+     505: getfield      #256                // Field attributeNames:Ljava/util/List;
+     508: ifnull        577
+     511: iconst_0
+     512: istore        12
+     514: aload_3
+     515: invokevirtual #314                // Method com/mojang/blaze3d/vertex/VertexFormat.getElementAttributeNames:()Lcom/google/common/collect/ImmutableList;
+     518: invokevirtual #319                // Method com/google/common/collect/ImmutableList.iterator:()Lcom/google/common/collect/UnmodifiableIterator;
+     521: astore        13
+     523: aload         13
+     525: invokeinterface #219,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     530: ifeq          577
+     533: aload         13
+     535: invokeinterface #223,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     540: checkcast     #146                // class java/lang/String
+     543: astore        14
+     545: aload_0
+     546: getfield      #310                // Field programId:I
+     549: iload         12
+     551: aload         14
+     553: invokestatic  #325                // Method com/mojang/blaze3d/shaders/Uniform.glBindAttribLocation:(IILjava/lang/CharSequence;)V
+     556: aload_0
+     557: getfield      #254                // Field attributes:Ljava/util/List;
+     560: iload         12
+     562: invokestatic  #331                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     565: invokeinterface #267,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     570: pop
+     571: iinc          12, 1
+     574: goto          523
+     577: aload_0
+     578: invokestatic  #335                // Method com/mojang/blaze3d/shaders/ProgramManager.linkShader:(Lcom/mojang/blaze3d/shaders/Shader;)V
+     581: aload_0
+     582: invokevirtual #338                // Method updateLocations:()V
+     585: aload         5
+     587: ifnull        625
+     590: aload         5
+     592: invokevirtual #341                // Method java/io/Reader.close:()V
+     595: goto          625
+     598: astore        6
+     600: aload         5
+     602: ifnull        622
+     605: aload         5
+     607: invokevirtual #341                // Method java/io/Reader.close:()V
+     610: goto          622
+     613: astore        7
+     615: aload         6
+     617: aload         7
+     619: invokevirtual #345                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+     622: aload         6
+     624: athrow
+     625: goto          650
+     628: astore        5
+     630: aload         5
+     632: invokestatic  #235                // Method net/minecraft/server/ChainedJsonException.forException:(Ljava/lang/Exception;)Lnet/minecraft/server/ChainedJsonException;
+     635: astore        6
+     637: aload         6
+     639: aload         4
+     641: invokevirtual #153                // Method net/minecraft/resources/ResourceLocation.getPath:()Ljava/lang/String;
+     644: invokevirtual #348                // Method net/minecraft/server/ChainedJsonException.setFilenameAndFlush:(Ljava/lang/String;)V
+     647: aload         6
+     649: athrow
+     650: aload_0
+     651: invokevirtual #351                // Method markDirty:()V
+     654: aload_0
+     655: aload_0
+     656: ldc_w         #353                // String ModelViewMat
+     659: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     662: putfield      #359                // Field MODEL_VIEW_MATRIX:Lcom/mojang/blaze3d/shaders/Uniform;
+     665: aload_0
+     666: aload_0
+     667: ldc_w         #361                // String ProjMat
+     670: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     673: putfield      #363                // Field PROJECTION_MATRIX:Lcom/mojang/blaze3d/shaders/Uniform;
+     676: aload_0
+     677: aload_0
+     678: ldc_w         #365                // String IViewRotMat
+     681: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     684: putfield      #367                // Field INVERSE_VIEW_ROTATION_MATRIX:Lcom/mojang/blaze3d/shaders/Uniform;
+     687: aload_0
+     688: aload_0
+     689: ldc_w         #369                // String TextureMat
+     692: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     695: putfield      #371                // Field TEXTURE_MATRIX:Lcom/mojang/blaze3d/shaders/Uniform;
+     698: aload_0
+     699: aload_0
+     700: ldc_w         #373                // String ScreenSize
+     703: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     706: putfield      #375                // Field SCREEN_SIZE:Lcom/mojang/blaze3d/shaders/Uniform;
+     709: aload_0
+     710: aload_0
+     711: ldc_w         #377                // String ColorModulator
+     714: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     717: putfield      #379                // Field COLOR_MODULATOR:Lcom/mojang/blaze3d/shaders/Uniform;
+     720: aload_0
+     721: aload_0
+     722: ldc_w         #381                // String Light0_Direction
+     725: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     728: putfield      #383                // Field LIGHT0_DIRECTION:Lcom/mojang/blaze3d/shaders/Uniform;
+     731: aload_0
+     732: aload_0
+     733: ldc_w         #385                // String Light1_Direction
+     736: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     739: putfield      #387                // Field LIGHT1_DIRECTION:Lcom/mojang/blaze3d/shaders/Uniform;
+     742: aload_0
+     743: aload_0
+     744: ldc_w         #389                // String GlintAlpha
+     747: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     750: putfield      #391                // Field GLINT_ALPHA:Lcom/mojang/blaze3d/shaders/Uniform;
+     753: aload_0
+     754: aload_0
+     755: ldc_w         #393                // String FogStart
+     758: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     761: putfield      #395                // Field FOG_START:Lcom/mojang/blaze3d/shaders/Uniform;
+     764: aload_0
+     765: aload_0
+     766: ldc_w         #397                // String FogEnd
+     769: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     772: putfield      #399                // Field FOG_END:Lcom/mojang/blaze3d/shaders/Uniform;
+     775: aload_0
+     776: aload_0
+     777: ldc_w         #401                // String FogColor
+     780: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     783: putfield      #403                // Field FOG_COLOR:Lcom/mojang/blaze3d/shaders/Uniform;
+     786: aload_0
+     787: aload_0
+     788: ldc_w         #405                // String FogShape
+     791: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     794: putfield      #407                // Field FOG_SHAPE:Lcom/mojang/blaze3d/shaders/Uniform;
+     797: aload_0
+     798: aload_0
+     799: ldc_w         #409                // String LineWidth
+     802: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     805: putfield      #411                // Field LINE_WIDTH:Lcom/mojang/blaze3d/shaders/Uniform;
+     808: aload_0
+     809: aload_0
+     810: ldc_w         #413                // String GameTime
+     813: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     816: putfield      #415                // Field GAME_TIME:Lcom/mojang/blaze3d/shaders/Uniform;
+     819: aload_0
+     820: aload_0
+     821: ldc_w         #417                // String ChunkOffset
+     824: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+     827: putfield      #419                // Field CHUNK_OFFSET:Lcom/mojang/blaze3d/shaders/Uniform;
+     830: return
+    Exception table:
+       from    to  target type
+         185   191   194   Class java/lang/Exception
+         298   316   319   Class java/lang/Exception
+         413   419   422   Class java/lang/Exception
+         110   585   598   Class java/lang/Throwable
+         605   610   613   Class java/lang/Throwable
+         100   625   628   Class java/lang/Exception
+
+  private static com.mojang.blaze3d.shaders.Program getOrCreate(net.minecraft.server.packs.resources.ResourceProvider, com.mojang.blaze3d.shaders.Program$Type, java.lang.String) throws java.io.IOException;
+    Code:
+       0: aload_1
+       1: invokevirtual #455                // Method com/mojang/blaze3d/shaders/Program$Type.getPrograms:()Ljava/util/Map;
+       4: aload_2
+       5: invokeinterface #461,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: checkcast     #19                 // class com/mojang/blaze3d/shaders/Program
+      13: astore_3
+      14: aload_3
+      15: ifnonnull     151
+      18: new           #96                 // class net/minecraft/resources/ResourceLocation
+      21: dup
+      22: aload_2
+      23: invokespecial #99                 // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;)V
+      26: astore        5
+      28: aload         5
+      30: invokevirtual #153                // Method net/minecraft/resources/ResourceLocation.getPath:()Ljava/lang/String;
+      33: aload_1
+      34: invokevirtual #464                // Method com/mojang/blaze3d/shaders/Program$Type.getExtension:()Ljava/lang/String;
+      37: invokedynamic #469,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      42: astore        6
+      44: new           #96                 // class net/minecraft/resources/ResourceLocation
+      47: dup
+      48: aload         5
+      50: invokevirtual #142                // Method net/minecraft/resources/ResourceLocation.getNamespace:()Ljava/lang/String;
+      53: aload         6
+      55: invokespecial #179                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      58: astore        7
+      60: aload_0
+      61: aload         7
+      63: invokeinterface #473,  2          // InterfaceMethod net/minecraft/server/packs/resources/ResourceProvider.getResourceOrThrow:(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/server/packs/resources/Resource;
+      68: astore        8
+      70: aload         8
+      72: invokevirtual #479                // Method net/minecraft/server/packs/resources/Resource.open:()Ljava/io/InputStream;
+      75: astore        9
+      77: aload         6
+      79: invokestatic  #484                // Method net/minecraft/FileUtil.getFullResourcePath:(Ljava/lang/String;)Ljava/lang/String;
+      82: astore        10
+      84: aload_1
+      85: aload_2
+      86: aload         9
+      88: aload         8
+      90: invokevirtual #487                // Method net/minecraft/server/packs/resources/Resource.sourcePackId:()Ljava/lang/String;
+      93: new           #15                 // class net/minecraft/client/renderer/ShaderInstance$1
+      96: dup
+      97: aload         10
+      99: aload_0
+     100: invokespecial #490                // Method net/minecraft/client/renderer/ShaderInstance$1."<init>":(Ljava/lang/String;Lnet/minecraft/server/packs/resources/ResourceProvider;)V
+     103: invokestatic  #494                // Method com/mojang/blaze3d/shaders/Program.compileShader:(Lcom/mojang/blaze3d/shaders/Program$Type;Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;Lcom/mojang/blaze3d/preprocessor/GlslPreprocessor;)Lcom/mojang/blaze3d/shaders/Program;
+     106: astore        4
+     108: aload         9
+     110: ifnull        148
+     113: aload         9
+     115: invokevirtual #497                // Method java/io/InputStream.close:()V
+     118: goto          148
+     121: astore        10
+     123: aload         9
+     125: ifnull        145
+     128: aload         9
+     130: invokevirtual #497                // Method java/io/InputStream.close:()V
+     133: goto          145
+     136: astore        11
+     138: aload         10
+     140: aload         11
+     142: invokevirtual #345                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+     145: aload         10
+     147: athrow
+     148: goto          154
+     151: aload_3
+     152: astore        4
+     154: aload         4
+     156: areturn
+    Exception table:
+       from    to  target type
+          77   108   121   Class java/lang/Throwable
+         128   133   136   Class java/lang/Throwable
+
+  public static com.mojang.blaze3d.shaders.BlendMode parseBlendNode(com.google.gson.JsonObject);
+    Code:
+       0: aload_0
+       1: ifnonnull     12
+       4: new           #509                // class com/mojang/blaze3d/shaders/BlendMode
+       7: dup
+       8: invokespecial #510                // Method com/mojang/blaze3d/shaders/BlendMode."<init>":()V
+      11: areturn
+      12: ldc_w         #511                // int 32774
+      15: istore_1
+      16: iconst_1
+      17: istore_2
+      18: iconst_0
+      19: istore_3
+      20: iconst_1
+      21: istore        4
+      23: iconst_0
+      24: istore        5
+      26: iconst_1
+      27: istore        6
+      29: iconst_0
+      30: istore        7
+      32: aload_0
+      33: ldc_w         #513                // String func
+      36: invokestatic  #517                // Method net/minecraft/util/GsonHelper.isStringValue:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+      39: ifeq          66
+      42: aload_0
+      43: ldc_w         #513                // String func
+      46: invokevirtual #520                // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      49: invokevirtual #522                // Method com/google/gson/JsonElement.getAsString:()Ljava/lang/String;
+      52: invokestatic  #526                // Method com/mojang/blaze3d/shaders/BlendMode.stringToBlendFunc:(Ljava/lang/String;)I
+      55: istore_1
+      56: iload_1
+      57: ldc_w         #511                // int 32774
+      60: if_icmpeq     66
+      63: iconst_0
+      64: istore        6
+      66: aload_0
+      67: ldc_w         #528                // String srcrgb
+      70: invokestatic  #517                // Method net/minecraft/util/GsonHelper.isStringValue:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+      73: ifeq          98
+      76: aload_0
+      77: ldc_w         #528                // String srcrgb
+      80: invokevirtual #520                // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      83: invokevirtual #522                // Method com/google/gson/JsonElement.getAsString:()Ljava/lang/String;
+      86: invokestatic  #531                // Method com/mojang/blaze3d/shaders/BlendMode.stringToBlendFactor:(Ljava/lang/String;)I
+      89: istore_2
+      90: iload_2
+      91: iconst_1
+      92: if_icmpeq     98
+      95: iconst_0
+      96: istore        6
+      98: aload_0
+      99: ldc_w         #533                // String dstrgb
+     102: invokestatic  #517                // Method net/minecraft/util/GsonHelper.isStringValue:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+     105: ifeq          129
+     108: aload_0
+     109: ldc_w         #533                // String dstrgb
+     112: invokevirtual #520                // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     115: invokevirtual #522                // Method com/google/gson/JsonElement.getAsString:()Ljava/lang/String;
+     118: invokestatic  #531                // Method com/mojang/blaze3d/shaders/BlendMode.stringToBlendFactor:(Ljava/lang/String;)I
+     121: istore_3
+     122: iload_3
+     123: ifeq          129
+     126: iconst_0
+     127: istore        6
+     129: aload_0
+     130: ldc_w         #535                // String srcalpha
+     133: invokestatic  #517                // Method net/minecraft/util/GsonHelper.isStringValue:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+     136: ifeq          166
+     139: aload_0
+     140: ldc_w         #535                // String srcalpha
+     143: invokevirtual #520                // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     146: invokevirtual #522                // Method com/google/gson/JsonElement.getAsString:()Ljava/lang/String;
+     149: invokestatic  #531                // Method com/mojang/blaze3d/shaders/BlendMode.stringToBlendFactor:(Ljava/lang/String;)I
+     152: istore        4
+     154: iload         4
+     156: iconst_1
+     157: if_icmpeq     163
+     160: iconst_0
+     161: istore        6
+     163: iconst_1
+     164: istore        7
+     166: aload_0
+     167: ldc_w         #537                // String dstalpha
+     170: invokestatic  #517                // Method net/minecraft/util/GsonHelper.isStringValue:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+     173: ifeq          202
+     176: aload_0
+     177: ldc_w         #537                // String dstalpha
+     180: invokevirtual #520                // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     183: invokevirtual #522                // Method com/google/gson/JsonElement.getAsString:()Ljava/lang/String;
+     186: invokestatic  #531                // Method com/mojang/blaze3d/shaders/BlendMode.stringToBlendFactor:(Ljava/lang/String;)I
+     189: istore        5
+     191: iload         5
+     193: ifeq          199
+     196: iconst_0
+     197: istore        6
+     199: iconst_1
+     200: istore        7
+     202: iload         6
+     204: ifeq          215
+     207: new           #509                // class com/mojang/blaze3d/shaders/BlendMode
+     210: dup
+     211: invokespecial #510                // Method com/mojang/blaze3d/shaders/BlendMode."<init>":()V
+     214: areturn
+     215: iload         7
+     217: ifeq          237
+     220: new           #509                // class com/mojang/blaze3d/shaders/BlendMode
+     223: dup
+     224: iload_2
+     225: iload_3
+     226: iload         4
+     228: iload         5
+     230: iload_1
+     231: invokespecial #540                // Method com/mojang/blaze3d/shaders/BlendMode."<init>":(IIIII)V
+     234: goto          247
+     237: new           #509                // class com/mojang/blaze3d/shaders/BlendMode
+     240: dup
+     241: iload_2
+     242: iload_3
+     243: iload_1
+     244: invokespecial #543                // Method com/mojang/blaze3d/shaders/BlendMode."<init>":(III)V
+     247: areturn
+
+  public void close();
+    Code:
+       0: aload_0
+       1: getfield      #134                // Field uniforms:Ljava/util/List;
+       4: invokeinterface #548,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       9: astore_1
+      10: aload_1
+      11: invokeinterface #219,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      16: ifeq          36
+      19: aload_1
+      20: invokeinterface #223,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      25: checkcast     #321                // class com/mojang/blaze3d/shaders/Uniform
+      28: astore_2
+      29: aload_2
+      30: invokevirtual #549                // Method com/mojang/blaze3d/shaders/Uniform.close:()V
+      33: goto          10
+      36: aload_0
+      37: invokestatic  #552                // Method com/mojang/blaze3d/shaders/ProgramManager.releaseProgram:(Lcom/mojang/blaze3d/shaders/Shader;)V
+      40: return
+
+  public void clear();
+    Code:
+       0: invokestatic  #559                // Method com/mojang/blaze3d/systems/RenderSystem.assertOnRenderThread:()V
+       3: iconst_0
+       4: invokestatic  #563                // Method com/mojang/blaze3d/shaders/ProgramManager.glUseProgram:(I)V
+       7: iconst_m1
+       8: putstatic     #565                // Field lastProgramId:I
+      11: aconst_null
+      12: putstatic     #567                // Field lastAppliedShader:Lnet/minecraft/client/renderer/ShaderInstance;
+      15: invokestatic  #572                // Method com/mojang/blaze3d/platform/GlStateManager._getActiveTexture:()I
+      18: istore_1
+      19: iconst_0
+      20: istore_2
+      21: iload_2
+      22: aload_0
+      23: getfield      #132                // Field samplerLocations:Ljava/util/List;
+      26: invokeinterface #573,  1          // InterfaceMethod java/util/List.size:()I
+      31: if_icmpge     74
+      34: aload_0
+      35: getfield      #122                // Field samplerMap:Ljava/util/Map;
+      38: aload_0
+      39: getfield      #130                // Field samplerNames:Ljava/util/List;
+      42: iload_2
+      43: invokeinterface #576,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      48: invokeinterface #461,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      53: ifnull        68
+      56: ldc_w         #577                // int 33984
+      59: iload_2
+      60: iadd
+      61: invokestatic  #580                // Method com/mojang/blaze3d/platform/GlStateManager._activeTexture:(I)V
+      64: iconst_0
+      65: invokestatic  #583                // Method com/mojang/blaze3d/platform/GlStateManager._bindTexture:(I)V
+      68: iinc          2, 1
+      71: goto          21
+      74: iload_1
+      75: invokestatic  #580                // Method com/mojang/blaze3d/platform/GlStateManager._activeTexture:(I)V
+      78: return
+
+  public void apply();
+    Code:
+       0: invokestatic  #559                // Method com/mojang/blaze3d/systems/RenderSystem.assertOnRenderThread:()V
+       3: aload_0
+       4: iconst_0
+       5: putfield      #586                // Field dirty:Z
+       8: aload_0
+       9: putstatic     #567                // Field lastAppliedShader:Lnet/minecraft/client/renderer/ShaderInstance;
+      12: aload_0
+      13: getfield      #288                // Field blend:Lcom/mojang/blaze3d/shaders/BlendMode;
+      16: invokevirtual #588                // Method com/mojang/blaze3d/shaders/BlendMode.apply:()V
+      19: aload_0
+      20: getfield      #310                // Field programId:I
+      23: getstatic     #565                // Field lastProgramId:I
+      26: if_icmpeq     43
+      29: aload_0
+      30: getfield      #310                // Field programId:I
+      33: invokestatic  #563                // Method com/mojang/blaze3d/shaders/ProgramManager.glUseProgram:(I)V
+      36: aload_0
+      37: getfield      #310                // Field programId:I
+      40: putstatic     #565                // Field lastProgramId:I
+      43: invokestatic  #572                // Method com/mojang/blaze3d/platform/GlStateManager._getActiveTexture:()I
+      46: istore_1
+      47: iconst_0
+      48: istore_2
+      49: iload_2
+      50: aload_0
+      51: getfield      #132                // Field samplerLocations:Ljava/util/List;
+      54: invokeinterface #573,  1          // InterfaceMethod java/util/List.size:()I
+      59: if_icmpge     205
+      62: aload_0
+      63: getfield      #130                // Field samplerNames:Ljava/util/List;
+      66: iload_2
+      67: invokeinterface #576,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      72: checkcast     #146                // class java/lang/String
+      75: astore_3
+      76: aload_0
+      77: getfield      #122                // Field samplerMap:Ljava/util/Map;
+      80: aload_3
+      81: invokeinterface #461,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      86: ifnull        199
+      89: aload_0
+      90: getfield      #310                // Field programId:I
+      93: aload_3
+      94: invokestatic  #592                // Method com/mojang/blaze3d/shaders/Uniform.glGetUniformLocation:(ILjava/lang/CharSequence;)I
+      97: istore        4
+      99: iload         4
+     101: iload_2
+     102: invokestatic  #596                // Method com/mojang/blaze3d/shaders/Uniform.uploadInteger:(II)V
+     105: ldc_w         #577                // int 33984
+     108: iload_2
+     109: iadd
+     110: invokestatic  #599                // Method com/mojang/blaze3d/systems/RenderSystem.activeTexture:(I)V
+     113: aload_0
+     114: getfield      #122                // Field samplerMap:Ljava/util/Map;
+     117: aload_3
+     118: invokeinterface #461,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     123: astore        5
+     125: iconst_m1
+     126: istore        6
+     128: aload         5
+     130: instanceof    #601                // class com/mojang/blaze3d/pipeline/RenderTarget
+     133: ifeq          149
+     136: aload         5
+     138: checkcast     #601                // class com/mojang/blaze3d/pipeline/RenderTarget
+     141: invokevirtual #604                // Method com/mojang/blaze3d/pipeline/RenderTarget.getColorTextureId:()I
+     144: istore        6
+     146: goto          188
+     149: aload         5
+     151: instanceof    #606                // class net/minecraft/client/renderer/texture/AbstractTexture
+     154: ifeq          170
+     157: aload         5
+     159: checkcast     #606                // class net/minecraft/client/renderer/texture/AbstractTexture
+     162: invokevirtual #609                // Method net/minecraft/client/renderer/texture/AbstractTexture.getId:()I
+     165: istore        6
+     167: goto          188
+     170: aload         5
+     172: instanceof    #327                // class java/lang/Integer
+     175: ifeq          188
+     178: aload         5
+     180: checkcast     #327                // class java/lang/Integer
+     183: invokevirtual #612                // Method java/lang/Integer.intValue:()I
+     186: istore        6
+     188: iload         6
+     190: iconst_m1
+     191: if_icmpeq     199
+     194: iload         6
+     196: invokestatic  #615                // Method com/mojang/blaze3d/systems/RenderSystem.bindTexture:(I)V
+     199: iinc          2, 1
+     202: goto          49
+     205: iload_1
+     206: invokestatic  #580                // Method com/mojang/blaze3d/platform/GlStateManager._activeTexture:(I)V
+     209: aload_0
+     210: getfield      #134                // Field uniforms:Ljava/util/List;
+     213: invokeinterface #548,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     218: astore_2
+     219: aload_2
+     220: invokeinterface #219,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     225: ifeq          245
+     228: aload_2
+     229: invokeinterface #223,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     234: checkcast     #321                // class com/mojang/blaze3d/shaders/Uniform
+     237: astore_3
+     238: aload_3
+     239: invokevirtual #618                // Method com/mojang/blaze3d/shaders/Uniform.upload:()V
+     242: goto          219
+     245: return
+
+  public void markDirty();
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: putfield      #586                // Field dirty:Z
+       5: return
+
+  public com.mojang.blaze3d.shaders.Uniform getUniform(java.lang.String);
+    Code:
+       0: invokestatic  #559                // Method com/mojang/blaze3d/systems/RenderSystem.assertOnRenderThread:()V
+       3: aload_0
+       4: getfield      #138                // Field uniformMap:Ljava/util/Map;
+       7: aload_1
+       8: invokeinterface #461,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      13: checkcast     #321                // class com/mojang/blaze3d/shaders/Uniform
+      16: areturn
+
+  public com.mojang.blaze3d.shaders.AbstractUniform safeGetUniform(java.lang.String);
+    Code:
+       0: invokestatic  #626                // Method com/mojang/blaze3d/systems/RenderSystem.assertOnGameThread:()V
+       3: aload_0
+       4: aload_1
+       5: invokevirtual #357                // Method getUniform:(Ljava/lang/String;)Lcom/mojang/blaze3d/shaders/Uniform;
+       8: astore_2
+       9: aload_2
+      10: ifnonnull     19
+      13: getstatic     #628                // Field DUMMY_UNIFORM:Lcom/mojang/blaze3d/shaders/AbstractUniform;
+      16: goto          20
+      19: aload_2
+      20: areturn
+
+  private void updateLocations();
+    Code:
+       0: invokestatic  #559                // Method com/mojang/blaze3d/systems/RenderSystem.assertOnRenderThread:()V
+       3: new           #633                // class it/unimi/dsi/fastutil/ints/IntArrayList
+       6: dup
+       7: invokespecial #634                // Method it/unimi/dsi/fastutil/ints/IntArrayList."<init>":()V
+      10: astore_1
+      11: iconst_0
+      12: istore_2
+      13: iload_2
+      14: aload_0
+      15: getfield      #130                // Field samplerNames:Ljava/util/List;
+      18: invokeinterface #573,  1          // InterfaceMethod java/util/List.size:()I
+      23: if_icmpge     115
+      26: aload_0
+      27: getfield      #130                // Field samplerNames:Ljava/util/List;
+      30: iload_2
+      31: invokeinterface #576,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      36: checkcast     #146                // class java/lang/String
+      39: astore_3
+      40: aload_0
+      41: getfield      #310                // Field programId:I
+      44: aload_3
+      45: invokestatic  #592                // Method com/mojang/blaze3d/shaders/Uniform.glGetUniformLocation:(ILjava/lang/CharSequence;)I
+      48: istore        4
+      50: iload         4
+      52: iconst_m1
+      53: if_icmpne     94
+      56: getstatic     #638                // Field LOGGER:Lorg/slf4j/Logger;
+      59: ldc_w         #640                // String Shader {} could not find sampler named {} in the specified shader program.
+      62: aload_0
+      63: getfield      #162                // Field name:Ljava/lang/String;
+      66: aload_3
+      67: invokeinterface #646,  4          // InterfaceMethod org/slf4j/Logger.warn:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+      72: aload_0
+      73: getfield      #122                // Field samplerMap:Ljava/util/Map;
+      76: aload_3
+      77: invokeinterface #649,  2          // InterfaceMethod java/util/Map.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+      82: pop
+      83: aload_1
+      84: iload_2
+      85: invokeinterface #652,  2          // InterfaceMethod it/unimi/dsi/fastutil/ints/IntList.add:(I)Z
+      90: pop
+      91: goto          109
+      94: aload_0
+      95: getfield      #132                // Field samplerLocations:Ljava/util/List;
+      98: iload         4
+     100: invokestatic  #331                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     103: invokeinterface #267,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     108: pop
+     109: iinc          2, 1
+     112: goto          13
+     115: aload_1
+     116: invokeinterface #653,  1          // InterfaceMethod it/unimi/dsi/fastutil/ints/IntList.size:()I
+     121: iconst_1
+     122: isub
+     123: istore_2
+     124: iload_2
+     125: iflt          153
+     128: aload_1
+     129: iload_2
+     130: invokeinterface #657,  2          // InterfaceMethod it/unimi/dsi/fastutil/ints/IntList.getInt:(I)I
+     135: istore_3
+     136: aload_0
+     137: getfield      #130                // Field samplerNames:Ljava/util/List;
+     140: iload_3
+     141: invokeinterface #659,  2          // InterfaceMethod java/util/List.remove:(I)Ljava/lang/Object;
+     146: pop
+     147: iinc          2, -1
+     150: goto          124
+     153: aload_0
+     154: getfield      #134                // Field uniforms:Ljava/util/List;
+     157: invokeinterface #548,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     162: astore_2
+     163: aload_2
+     164: invokeinterface #219,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     169: ifeq          262
+     172: aload_2
+     173: invokeinterface #223,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     178: checkcast     #321                // class com/mojang/blaze3d/shaders/Uniform
+     181: astore_3
+     182: aload_3
+     183: invokevirtual #662                // Method com/mojang/blaze3d/shaders/Uniform.getName:()Ljava/lang/String;
+     186: astore        4
+     188: aload_0
+     189: getfield      #310                // Field programId:I
+     192: aload         4
+     194: invokestatic  #592                // Method com/mojang/blaze3d/shaders/Uniform.glGetUniformLocation:(ILjava/lang/CharSequence;)I
+     197: istore        5
+     199: iload         5
+     201: iconst_m1
+     202: if_icmpne     225
+     205: getstatic     #638                // Field LOGGER:Lorg/slf4j/Logger;
+     208: ldc_w         #664                // String Shader {} could not find uniform named {} in the specified shader program.
+     211: aload_0
+     212: getfield      #162                // Field name:Ljava/lang/String;
+     215: aload         4
+     217: invokeinterface #646,  4          // InterfaceMethod org/slf4j/Logger.warn:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+     222: goto          259
+     225: aload_0
+     226: getfield      #136                // Field uniformLocations:Ljava/util/List;
+     229: iload         5
+     231: invokestatic  #331                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     234: invokeinterface #267,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     239: pop
+     240: aload_3
+     241: iload         5
+     243: invokevirtual #667                // Method com/mojang/blaze3d/shaders/Uniform.setLocation:(I)V
+     246: aload_0
+     247: getfield      #138                // Field uniformMap:Ljava/util/Map;
+     250: aload         4
+     252: aload_3
+     253: invokeinterface #671,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     258: pop
+     259: goto          163
+     262: return
+
+  private void parseSamplerNode(com.google.gson.JsonElement);
+    Code:
+       0: aload_1
+       1: ldc_w         #675                // String sampler
+       4: invokestatic  #679                // Method net/minecraft/util/GsonHelper.convertToJsonObject:(Lcom/google/gson/JsonElement;Ljava/lang/String;)Lcom/google/gson/JsonObject;
+       7: astore_2
+       8: aload_2
+       9: ldc_w         #680                // String name
+      12: invokestatic  #195                // Method net/minecraft/util/GsonHelper.getAsString:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+      15: astore_3
+      16: aload_2
+      17: ldc_w         #682                // String file
+      20: invokestatic  #517                // Method net/minecraft/util/GsonHelper.isStringValue:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+      23: ifne          52
+      26: aload_0
+      27: getfield      #122                // Field samplerMap:Ljava/util/Map;
+      30: aload_3
+      31: aconst_null
+      32: invokeinterface #671,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      37: pop
+      38: aload_0
+      39: getfield      #130                // Field samplerNames:Ljava/util/List;
+      42: aload_3
+      43: invokeinterface #267,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      48: pop
+      49: goto          63
+      52: aload_0
+      53: getfield      #130                // Field samplerNames:Ljava/util/List;
+      56: aload_3
+      57: invokeinterface #267,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      62: pop
+      63: return
+
+  public void setSampler(java.lang.String, java.lang.Object);
+    Code:
+       0: aload_0
+       1: getfield      #122                // Field samplerMap:Ljava/util/Map;
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #671,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      11: pop
+      12: aload_0
+      13: invokevirtual #351                // Method markDirty:()V
+      16: return
+
+  private void parseUniformNode(com.google.gson.JsonElement) throws net.minecraft.server.ChainedJsonException;
+    Code:
+       0: aload_1
+       1: ldc_w         #688                // String uniform
+       4: invokestatic  #679                // Method net/minecraft/util/GsonHelper.convertToJsonObject:(Lcom/google/gson/JsonElement;Ljava/lang/String;)Lcom/google/gson/JsonObject;
+       7: astore_2
+       8: aload_2
+       9: ldc_w         #680                // String name
+      12: invokestatic  #195                // Method net/minecraft/util/GsonHelper.getAsString:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+      15: astore_3
+      16: aload_2
+      17: ldc_w         #690                // String type
+      20: invokestatic  #195                // Method net/minecraft/util/GsonHelper.getAsString:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+      23: invokestatic  #693                // Method com/mojang/blaze3d/shaders/Uniform.getTypeFromString:(Ljava/lang/String;)I
+      26: istore        4
+      28: aload_2
+      29: ldc_w         #695                // String count
+      32: invokestatic  #699                // Method net/minecraft/util/GsonHelper.getAsInt:(Lcom/google/gson/JsonObject;Ljava/lang/String;)I
+      35: istore        5
+      37: iload         5
+      39: bipush        16
+      41: invokestatic  #705                // Method java/lang/Math.max:(II)I
+      44: newarray       float
+      46: astore        6
+      48: aload_2
+      49: ldc_w         #707                // String values
+      52: invokestatic  #710                // Method net/minecraft/util/GsonHelper.getAsJsonArray:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonArray;
+      55: astore        7
+      57: aload         7
+      59: invokevirtual #248                // Method com/google/gson/JsonArray.size:()I
+      62: iload         5
+      64: if_icmpeq     96
+      67: aload         7
+      69: invokevirtual #248                // Method com/google/gson/JsonArray.size:()I
+      72: iconst_1
+      73: if_icmple     96
+      76: new           #231                // class net/minecraft/server/ChainedJsonException
+      79: dup
+      80: iload         5
+      82: aload         7
+      84: invokevirtual #248                // Method com/google/gson/JsonArray.size:()I
+      87: invokedynamic #715,  0            // InvokeDynamic #5:makeConcatWithConstants:(II)Ljava/lang/String;
+      92: invokespecial #716                // Method net/minecraft/server/ChainedJsonException."<init>":(Ljava/lang/String;)V
+      95: athrow
+      96: iconst_0
+      97: istore        8
+      99: aload         7
+     101: invokevirtual #209                // Method com/google/gson/JsonArray.iterator:()Ljava/util/Iterator;
+     104: astore        9
+     106: aload         9
+     108: invokeinterface #219,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     113: ifeq          174
+     116: aload         9
+     118: invokeinterface #223,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     123: checkcast     #225                // class com/google/gson/JsonElement
+     126: astore        10
+     128: aload         6
+     130: iload         8
+     132: aload         10
+     134: ldc_w         #719                // String value
+     137: invokestatic  #723                // Method net/minecraft/util/GsonHelper.convertToFloat:(Lcom/google/gson/JsonElement;Ljava/lang/String;)F
+     140: fastore
+     141: goto          168
+     144: astore        11
+     146: aload         11
+     148: invokestatic  #235                // Method net/minecraft/server/ChainedJsonException.forException:(Ljava/lang/Exception;)Lnet/minecraft/server/ChainedJsonException;
+     151: astore        12
+     153: aload         12
+     155: iload         8
+     157: invokedynamic #726,  0            // InvokeDynamic #6:makeConcatWithConstants:(I)Ljava/lang/String;
+     162: invokevirtual #243                // Method net/minecraft/server/ChainedJsonException.prependJsonKey:(Ljava/lang/String;)V
+     165: aload         12
+     167: athrow
+     168: iinc          8, 1
+     171: goto          106
+     174: iload         5
+     176: iconst_1
+     177: if_icmple     211
+     180: aload         7
+     182: invokevirtual #248                // Method com/google/gson/JsonArray.size:()I
+     185: iconst_1
+     186: if_icmpne     211
+     189: iload         8
+     191: iload         5
+     193: if_icmpge     211
+     196: aload         6
+     198: iload         8
+     200: aload         6
+     202: iconst_0
+     203: faload
+     204: fastore
+     205: iinc          8, 1
+     208: goto          189
+     211: iload         5
+     213: iconst_1
+     214: if_icmple     237
+     217: iload         5
+     219: iconst_4
+     220: if_icmpgt     237
+     223: iload         4
+     225: bipush        8
+     227: if_icmpge     237
+     230: iload         5
+     232: iconst_1
+     233: isub
+     234: goto          238
+     237: iconst_0
+     238: istore        9
+     240: new           #321                // class com/mojang/blaze3d/shaders/Uniform
+     243: dup
+     244: aload_3
+     245: iload         4
+     247: iload         9
+     249: iadd
+     250: iload         5
+     252: aload_0
+     253: invokespecial #729                // Method com/mojang/blaze3d/shaders/Uniform."<init>":(Ljava/lang/String;IILcom/mojang/blaze3d/shaders/Shader;)V
+     256: astore        10
+     258: iload         4
+     260: iconst_3
+     261: if_icmpgt     292
+     264: aload         10
+     266: aload         6
+     268: iconst_0
+     269: faload
+     270: f2i
+     271: aload         6
+     273: iconst_1
+     274: faload
+     275: f2i
+     276: aload         6
+     278: iconst_2
+     279: faload
+     280: f2i
+     281: aload         6
+     283: iconst_3
+     284: faload
+     285: f2i
+     286: invokevirtual #733                // Method com/mojang/blaze3d/shaders/Uniform.setSafe:(IIII)V
+     289: goto          336
+     292: iload         4
+     294: bipush        7
+     296: if_icmpgt     323
+     299: aload         10
+     301: aload         6
+     303: iconst_0
+     304: faload
+     305: aload         6
+     307: iconst_1
+     308: faload
+     309: aload         6
+     311: iconst_2
+     312: faload
+     313: aload         6
+     315: iconst_3
+     316: faload
+     317: invokevirtual #736                // Method com/mojang/blaze3d/shaders/Uniform.setSafe:(FFFF)V
+     320: goto          336
+     323: aload         10
+     325: aload         6
+     327: iconst_0
+     328: iload         5
+     330: invokestatic  #742                // Method java/util/Arrays.copyOfRange:([FII)[F
+     333: invokevirtual #746                // Method com/mojang/blaze3d/shaders/Uniform.set:([F)V
+     336: aload_0
+     337: getfield      #134                // Field uniforms:Ljava/util/List;
+     340: aload         10
+     342: invokeinterface #267,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     347: pop
+     348: return
+    Exception table:
+       from    to  target type
+         128   141   144   Class java/lang/Exception
+
+  public com.mojang.blaze3d.shaders.Program getVertexProgram();
+    Code:
+       0: aload_0
+       1: getfield      #298                // Field vertexProgram:Lcom/mojang/blaze3d/shaders/Program;
+       4: areturn
+
+  public com.mojang.blaze3d.shaders.Program getFragmentProgram();
+    Code:
+       0: aload_0
+       1: getfield      #303                // Field fragmentProgram:Lcom/mojang/blaze3d/shaders/Program;
+       4: areturn
+
+  public void attachToProgram();
+    Code:
+       0: aload_0
+       1: getfield      #303                // Field fragmentProgram:Lcom/mojang/blaze3d/shaders/Program;
+       4: aload_0
+       5: invokevirtual #755                // Method com/mojang/blaze3d/shaders/Program.attachToShader:(Lcom/mojang/blaze3d/shaders/Shader;)V
+       8: aload_0
+       9: getfield      #298                // Field vertexProgram:Lcom/mojang/blaze3d/shaders/Program;
+      12: aload_0
+      13: invokevirtual #755                // Method com/mojang/blaze3d/shaders/Program.attachToShader:(Lcom/mojang/blaze3d/shaders/Shader;)V
+      16: return
+
+  public com.mojang.blaze3d.vertex.VertexFormat getVertexFormat();
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field vertexFormat:Lcom/mojang/blaze3d/vertex/VertexFormat;
+       4: areturn
+
+  public java.lang.String getName();
+    Code:
+       0: aload_0
+       1: getfield      #162                // Field name:Ljava/lang/String;
+       4: areturn
+
+  public int getId();
+    Code:
+       0: aload_0
+       1: getfield      #310                // Field programId:I
+       4: ireturn
+
+  static {};
+    Code:
+       0: invokestatic  #764                // Method com/mojang/logging/LogUtils.getLogger:()Lorg/slf4j/Logger;
+       3: putstatic     #638                // Field LOGGER:Lorg/slf4j/Logger;
+       6: new           #630                // class com/mojang/blaze3d/shaders/AbstractUniform
+       9: dup
+      10: invokespecial #765                // Method com/mojang/blaze3d/shaders/AbstractUniform."<init>":()V
+      13: putstatic     #628                // Field DUMMY_UNIFORM:Lcom/mojang/blaze3d/shaders/AbstractUniform;
+      16: iconst_m1
+      17: putstatic     #565                // Field lastProgramId:I
+      20: return
+}

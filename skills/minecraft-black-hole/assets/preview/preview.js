@@ -18,7 +18,7 @@
       filament:[0,3,.005,'等离子细丝'],spiral:[0,3,.005,'螺旋结构'],beaming:[0,3,.005,'盘面方向明暗'],bloom:[0,2,.005,'镜头柔光'],bloomRadius:[.5,3,.05,'柔光范围'],skyStrength:[0,2,.005,'背景亮度'],lensBackground:[0,1,.005,'背景透镜强度']
     };
     const legacyLayers={diskStyle:'classic',particles:false,particleCount:640,particleSpeed:1,particleSize:.022,particleOuter:5.4,particleBrightness:1.25,particleCold:'#f26318',particleMid:'#ffae69',particleHot:'#ffefb1',particleGradientPosition:0,halo:0,haloRing:1,haloDisk:1,haloAura:1,haloRadius:1,haloWidth:.11,haloSharpness:2,haloGradientStart:'#ffd697',haloGradientEnd:'#8853ca',haloGradientMix:0,haloDiskInnerColor:'#ffdfad',haloDiskOuterColor:'#a15add',haloDiskGradientMix:0,haloAuraGradientMix:0,haloAuraInnerColor:'#f0b070',haloAuraOuterColor:'#516bc4',jetStrength:0,jetLength:5.5,jetWidth:.24,jetBaseColor:'#8bd8ff',jetTipColor:'#6852e3',bandDetail:12,dustScale:1,dustFill:.7,backgroundSpin:0,orbitSpeed:0,viewDistance:7.8,backgroundStyle:'stars',skyColor:'#314866',skyColorFar:'#172a56',skyGradientPosition:0,diskMid:'#e39a68',diskGradientPosition:0,coreEdgeColor:'#000000',coreGradientStrength:0,filament:0,spiral:0,beaming:0,bloom:0,bloomRadius:1,skyStrength:1,lensBackground:1,lensRadius:12,lensEnabled:true};
-    // Keep the landing view on one of the four public algorithm families.  The
+    // Keep the landing view on one of the three public algorithm families.  The
     // catalog still carries older compatibility recipes for imports and saved
     // URLs, but an unqualified workbench URL should never open on a hidden
     // legacy variant.
@@ -279,7 +279,10 @@ void main(){
     const renderers=['scene','small16','small32'].map(id=>makeRenderer($(id)));
     let diagnostic=0;
     function draw(){renderers.forEach((r,i)=>r.render(state,time,i===0?diagnostic:0));$('status').textContent=uiError||`${state.name} · ${state.steps} 步 · 时间 ${time.toFixed(2)} s · WebGL 2 预览${solver==='verlet'?' · Verlet 研究求解器':''}${time===MAX_TIME?' · 已到时间上限，请调低时间后继续播放':''}`;}
-    function ui(){$('inner').min=Math.max(bounds.inner[0],Number((state.core+.02).toFixed(2)));for(const k of Object.keys(bounds)){$(k).value=state[k];$(`${k}Value`).textContent=state[k];}for(const k of [...colorKeys,'steps','mode','diskStyle','backgroundStyle'])$(k).value=state[k];$('particles').checked=state.particles;$('lensEnabled').checked=state.lensEnabled;$('time').value=time.toFixed(2);}
+    function ui(){
+      const old=$('diskStyle').querySelector('option[data-legacy]');if(old)old.remove();
+      if(state.diskStyle==='cinematic'){const o=document.createElement('option');o.value='cinematic';o.textContent='旧配方（已停用）';o.disabled=true;o.dataset.legacy='true';$('diskStyle').append(o);}
+      $('inner').min=Math.max(bounds.inner[0],Number((state.core+.02).toFixed(2)));for(const k of Object.keys(bounds)){$(k).value=state[k];$(`${k}Value`).textContent=state[k];}for(const k of [...colorKeys,'steps','mode','diskStyle','backgroundStyle'])$(k).value=state[k];$('particles').checked=state.particles;$('lensEnabled').checked=state.lensEnabled;$('time').value=time.toFixed(2);}
     function change(patch){try{state=validate({...state,...patch});uiError='';ui();draw();}catch(e){uiError=e.message;$('status').textContent=uiError;ui();}}
     const compositionKeys=new Set(['core','inner','outer','viewDistance','thickness','tilt','bend','lensRadius','lensBackground','coreGradientStrength']);
     const motionKeys=new Set(['speed','infallSpeed','backgroundSpin','orbitSpeed']);
@@ -293,7 +296,7 @@ void main(){
       $(container).append(row);
       input.oninput=()=>change({[key]:Number(input.value)});
     }
-    // Keep the public catalog focused on the four distinct algorithms.  Older
+    // Keep the public catalog focused on the three distinct algorithms.  Older
     // color/compatibility variants remain in recipes.json so saved URLs and
     // imported recipes continue to resolve, but they are intentionally hidden
     // from the main selector.
@@ -307,7 +310,7 @@ void main(){
       const palettes=[['#f1faff','#64cfff','#2356b8'],['#fff6df','#ffad56','#aa3828'],['#faf0ff','#bf84ff','#5531a0'],['#eafff4','#65e1af','#136e82']];
       const palette=palettes[Math.floor(Math.random()*palettes.length)],roll=(a,b)=>Number((a+Math.random()*(b-a)).toFixed(4));
       const core=roll(.3,.8),inner=Number((core+roll(.03,.55)).toFixed(4));
-      change({name:'随机方案',diskStyle:['dust','cinematic','ribbons','granular'][Math.floor(Math.random()*4)],core,inner,outer:roll(3.6,7.5),thickness:roll(.055,.22),bend:roll(.45,1.4),density:roll(2,6),exposure:roll(.35,1.1),speed:roll(.2,1.3),infallSpeed:roll(.08,.8),seed:Math.floor(Math.random()*65536),hot:palette[0],diskMid:palette[1],cool:palette[2],dustScale:roll(1.5,5),dustFill:roll(.45,.9),filament:roll(.2,1.5),spiral:roll(.1,1.1),diskGradientPosition:roll(.35,.7),halo:roll(0,.65),haloGradientStart:palette[1],haloGradientEnd:palette[2]});
+      change({name:'随机方案',diskStyle:['dust','ribbons','granular'][Math.floor(Math.random()*3)],core,inner,outer:roll(3.6,7.5),thickness:roll(.055,.22),bend:roll(.45,1.4),density:roll(2,6),exposure:roll(.35,1.1),speed:roll(.2,1.3),infallSpeed:roll(.08,.8),seed:Math.floor(Math.random()*65536),hot:palette[0],diskMid:palette[1],cool:palette[2],dustScale:roll(1.5,5),dustFill:roll(.45,.9),filament:roll(.2,1.5),spiral:roll(.1,1.1),diskGradientPosition:roll(.35,.7),halo:roll(0,.65),haloGradientStart:palette[1],haloGradientEnd:palette[2]});
       customOption.textContent='随机方案';customOption.hidden=false;$('recipe').value='custom';
     }
     $('random').onclick=randomScheme;

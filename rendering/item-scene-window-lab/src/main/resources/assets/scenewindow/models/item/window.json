@@ -1,0 +1,14 @@
+{
+ "parent":"builtin/entity",
+ "gui_light":"front",
+ "textures":{"particle":"minecraft:block/obsidian"},
+ "display":{
+   "gui":{"rotation":[0,0,0],"translation":[0,0,0],"scale":[1,1,1]},
+   "firstperson_righthand":{"rotation":[0,0,0],"translation":[-2,4,0],"scale":[0.55,0.55,0.55]},
+   "firstperson_lefthand":{"rotation":[0,0,0],"translation":[-2,4,0],"scale":[0.55,0.55,0.55]},
+   "thirdperson_righthand":{"rotation":[90,0,0],"translation":[0,2,0],"scale":[0.6,0.6,0.6]},
+   "thirdperson_lefthand":{"rotation":[90,0,0],"translation":[0,2,0],"scale":[0.6,0.6,0.6]},
+   "ground":{"rotation":[0,0,0],"translation":[0,2,0],"scale":[0.65,0.65,0.65]},
+   "fixed":{"rotation":[0,180,0],"translation":[0,0,0],"scale":[1,1,1]}
+ }
+}

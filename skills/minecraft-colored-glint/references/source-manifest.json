@@ -1,0 +1,377 @@
+{
+  "source_project": "RenderBlender",
+  "source_mod_version": "1.1.2",
+  "minecraft": "1.20.1",
+  "forge": "47.4.13",
+  "java": 17,
+  "project_relative_source_root": "research/cosmic-material/sources/RenderBlender-master/RenderBlender-master",
+  "archive": "RenderBlender-master.zip",
+  "archive_sha256": "8d8d308f20c632bef744fe92f733d3fbe5afdd200a3629f1abd37bcad391db64",
+  "evidence_level": "static_source_and_texture_inspection",
+  "runtime_verified": false,
+  "source_files": [
+    {
+      "path": "gradle.properties",
+      "sha256": "60c79751f016cc86693437bdd6a918295ea970478c5029c00c6b22d8c8b04e07",
+      "lines": 25
+    },
+    {
+      "path": "build.gradle",
+      "sha256": "3eef7e45b2b505db1331e7212a69892df9b30dfd0dfd02f6e037c442c6eafd13",
+      "lines": 146
+    },
+    {
+      "path": "src/main/resources/renderblender.mixins.json",
+      "sha256": "5cefa1e8166d1e5b87c7c432a8176d950ae3f2b39520ba0013275b213de18827",
+      "lines": 16
+    },
+    {
+      "path": "src/main/java/committee/nova/mods/renderblender/client/glint/GlintManager.java",
+      "sha256": "427b083109ceb72374cca431e7d92b9e6f967448c09eca3ab3f7562227eec3bf",
+      "lines": 51
+    },
+    {
+      "path": "src/main/java/committee/nova/mods/renderblender/client/glint/GlintLayerManager.java",
+      "sha256": "5fe1826e643cc8e0c47efd8eaca459d4303cedc2a1535d1f04244876354278cd",
+      "lines": 94
+    },
+    {
+      "path": "src/main/java/committee/nova/mods/renderblender/client/glint/GlintProvider.java",
+      "sha256": "28205c6f86d263960766b8ce28c2c8ea067e724b12e27e4a24078d3f1ec566ad",
+      "lines": 10
+    },
+    {
+      "path": "src/main/java/committee/nova/mods/renderblender/init/mixins/ItemRendererMixin.java",
+      "sha256": "f9ffe32a272f9d11cf8a325a78cd168b92f078e9bf3a09a78e126c4396fda04c",
+      "lines": 67
+    },
+    {
+      "path": "src/main/java/committee/nova/mods/renderblender/init/mixins/RenderBuffersMixin.java",
+      "sha256": "cf9df0b5a669747f7a66b938e8c4de732c139f84cfb3a44fe6f4b870c3dc1e62",
+      "lines": 22
+    },
+    {
+      "path": "src/main/java/committee/nova/mods/renderblender/api/client/model/bakedmodels/WrappedItemModel.java",
+      "sha256": "ebb1bc3351a4df6bcf8e894e95e507491c712fb3bf7e244fa29b7880b6cd63f0",
+      "lines": 176
+    },
+    {
+      "path": "src/main/java/committee/nova/mods/renderblender/client/model/cosmic/CosmicBakeModel.java",
+      "sha256": "3311b8b641d0aaebf10b9d9ffbedaa06e2db443d36e8a6d4951e13c0eb0a3a0a",
+      "lines": 101
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a5681bf9b05db14d86776930017c647ad9e6e56ff6bbcfdf21e5848288dfaf1b",
+      "lines": 165
+    }
+  ],
+  "textures": [
+    {
+      "id": "aqua",
+      "source_path": "src/main/resources/assets/renderblender/textures/misc/glint_item_aqua.png",
+      "bundled_path": "assets/glint/glint_item_aqua.png",
+      "sha256": "31953492fe08c9e9a26c51c236b6b5f000c8cc42124f0b609266062fe6f3e4fc",
+      "original_mode": "RGB",
+      "width": 128,
+      "height": 128,
+      "rgba_extrema": [
+        [
+          0,
+          119
+        ],
+        [
+          146,
+          255
+        ],
+        [
+          132,
+          242
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "mean_rgba": [
+        13.254,
+        236.94,
+        215.853,
+        255.0
+      ],
+      "has_mcmeta": false
+    },
+    {
+      "id": "blue",
+      "source_path": "src/main/resources/assets/renderblender/textures/misc/glint_item_blue.png",
+      "bundled_path": "assets/glint/glint_item_blue.png",
+      "sha256": "e28ae6f22920ff3c45bd185a3814cadf41620fe5489c584240e0d2ec5c120b78",
+      "original_mode": "P",
+      "width": 128,
+      "height": 128,
+      "rgba_extrema": [
+        [
+          9,
+          55
+        ],
+        [
+          4,
+          65
+        ],
+        [
+          133,
+          249
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "mean_rgba": [
+        25.365,
+        18.655,
+        212.761,
+        255.0
+      ],
+      "has_mcmeta": false
+    },
+    {
+      "id": "green",
+      "source_path": "src/main/resources/assets/renderblender/textures/misc/glint_item_green.png",
+      "bundled_path": "assets/glint/glint_item_green.png",
+      "sha256": "34f6cdf2efd1a9cac786d4f5322371b83ec8cead494be9c237a5469b210165f7",
+      "original_mode": "RGBA",
+      "width": 128,
+      "height": 128,
+      "rgba_extrema": [
+        [
+          19,
+          144
+        ],
+        [
+          56,
+          255
+        ],
+        [
+          0,
+          85
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "mean_rgba": [
+        64.524,
+        183.28,
+        1.958,
+        255.0
+      ],
+      "has_mcmeta": false
+    },
+    {
+      "id": "orange",
+      "source_path": "src/main/resources/assets/renderblender/textures/misc/glint_item_orange.png",
+      "bundled_path": "assets/glint/glint_item_orange.png",
+      "sha256": "d716514398f43d5abc8a65fe583ad230a3c30154fbbe72cd1b4039cf18caedc5",
+      "original_mode": "RGBA",
+      "width": 128,
+      "height": 128,
+      "rgba_extrema": [
+        [
+          56,
+          255
+        ],
+        [
+          24,
+          158
+        ],
+        [
+          0,
+          85
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "mean_rgba": [
+        183.28,
+        80.174,
+        1.958,
+        255.0
+      ],
+      "has_mcmeta": false
+    },
+    {
+      "id": "pink",
+      "source_path": "src/main/resources/assets/renderblender/textures/misc/glint_item_pink.png",
+      "bundled_path": "assets/glint/glint_item_pink.png",
+      "sha256": "42912293d1cd2ad06e33301e0e8fbe7a257fd254a9317122660d6f0b6ccd4564",
+      "original_mode": "RGB",
+      "width": 128,
+      "height": 128,
+      "rgba_extrema": [
+        [
+          100,
+          255
+        ],
+        [
+          0,
+          101
+        ],
+        [
+          85,
+          233
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "mean_rgba": [
+        211.545,
+        5.536,
+        181.638,
+        255.0
+      ],
+      "has_mcmeta": false
+    },
+    {
+      "id": "purple",
+      "source_path": "src/main/resources/assets/renderblender/textures/misc/glint_item_purple.png",
+      "bundled_path": "assets/glint/glint_item_purple.png",
+      "sha256": "d3ef5f9f255096e9a26a40280d6c852f6f9be697a1d43b84a1362ea18aee2535",
+      "original_mode": "RGB",
+      "width": 128,
+      "height": 128,
+      "rgba_extrema": [
+        [
+          72,
+          195
+        ],
+        [
+          0,
+          111
+        ],
+        [
+          124,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "mean_rgba": [
+        134.211,
+        8.701,
+        224.953,
+        255.0
+      ],
+      "has_mcmeta": false
+    },
+    {
+      "id": "red",
+      "source_path": "src/main/resources/assets/renderblender/textures/misc/glint_item_red.png",
+      "bundled_path": "assets/glint/glint_item_red.png",
+      "sha256": "c62d1b7749c84dbc062a53473627dbf79838cd038eff317aa5c2ce50d578e9d5",
+      "original_mode": "RGB",
+      "width": 128,
+      "height": 128,
+      "rgba_extrema": [
+        [
+          56,
+          255
+        ],
+        [
+          0,
+          85
+        ],
+        [
+          0,
+          85
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "mean_rgba": [
+        183.28,
+        1.958,
+        1.958,
+        255.0
+      ],
+      "has_mcmeta": false
+    },
+    {
+      "id": "white",
+      "source_path": "src/main/resources/assets/renderblender/textures/misc/glint_item_white.png",
+      "bundled_path": "assets/glint/glint_item_white.png",
+      "sha256": "5fccbb464fb55e47d9fc7f293d441a4fd86a5dc05e5436b475259c8f8283377d",
+      "original_mode": "RGB",
+      "width": 128,
+      "height": 128,
+      "rgba_extrema": [
+        [
+          28,
+          170
+        ],
+        [
+          28,
+          170
+        ],
+        [
+          28,
+          170
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "mean_rgba": [
+        92.62,
+        92.62,
+        92.62,
+        255.0
+      ],
+      "has_mcmeta": false
+    },
+    {
+      "id": "yellow",
+      "source_path": "src/main/resources/assets/renderblender/textures/misc/glint_item_yellow.png",
+      "bundled_path": "assets/glint/glint_item_yellow.png",
+      "sha256": "574136e53c93957ad6f715284a2a72fd932f793cf58ec954a0d216c92422f936",
+      "original_mode": "RGB",
+      "width": 128,
+      "height": 128,
+      "rgba_extrema": [
+        [
+          47,
+          247
+        ],
+        [
+          48,
+          255
+        ],
+        [
+          8,
+          85
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "mean_rgba": [
+        138.799,
+        143.404,
+        42.31,
+        255.0
+      ],
+      "has_mcmeta": false
+    }
+  ]
+}

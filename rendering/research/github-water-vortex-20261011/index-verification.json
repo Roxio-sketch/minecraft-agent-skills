@@ -1,0 +1,81 @@
+{
+  "scope": "Authored offline research index only; no upstream code executed",
+  "checks": [
+    {
+      "name": "8 project cards",
+      "ok": true
+    },
+    {
+      "name": "liquid filter gives 3",
+      "ok": true
+    },
+    {
+      "name": "search gives 1",
+      "ok": true
+    },
+    {
+      "name": "reader opens and displays WGSL source as text",
+      "ok": true
+    },
+    {
+      "name": "anchor highlights one source line",
+      "ok": true
+    },
+    {
+      "name": "original MIT license text visible",
+      "ok": true
+    },
+    {
+      "name": "offline text files readable: Habrador/Unity-Tornado-Simulator",
+      "ok": true,
+      "fileCount": 8
+    },
+    {
+      "name": "offline text files readable: SebLague/Clouds",
+      "ok": true,
+      "fileCount": 7
+    },
+    {
+      "name": "offline text files readable: dli/fluid",
+      "ok": true,
+      "fileCount": 21
+    },
+    {
+      "name": "offline text files readable: matsuoka-601/Particles4All",
+      "ok": true,
+      "fileCount": 9
+    },
+    {
+      "name": "offline text files readable: InteractiveComputerGraphics/splashsurf",
+      "ok": true,
+      "fileCount": 10
+    },
+    {
+      "name": "offline text files readable: mrdoob/three.js",
+      "ok": true,
+      "fileCount": 6
+    },
+    {
+      "name": "offline text files readable: Arnklit/Waterways",
+      "ok": true,
+      "fileCount": 35
+    },
+    {
+      "name": "offline text files readable: Scrawk/Tiled-Directional-Flow",
+      "ok": true,
+      "fileCount": 3
+    },
+    {
+      "name": "390px no document overflow",
+      "ok": true
+    },
+    {
+      "name": "no page errors",
+      "ok": true,
+      "errors": []
+    }
+  ],
+  "passed": 16,
+  "total": 16,
+  "ok": true
+}

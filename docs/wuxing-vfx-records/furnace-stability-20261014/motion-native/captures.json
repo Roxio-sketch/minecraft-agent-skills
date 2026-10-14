@@ -1,0 +1,5150 @@
+{
+  "test": "furnace-fixed-field-real-camera-motion",
+  "isolated": true,
+  "tierCapture": false,
+  "furnaceMotionValidation": {
+    "fixedWorldAnchor": [
+      0.5,
+      121.0,
+      0.5
+    ],
+    "expectedCaptures": 18,
+    "observedCaptures": 18,
+    "maxProjectionErrorPixels": 0.0171661376953125,
+    "maxRayDistanceBlocks": 1.2132397387176752E-4,
+    "anchorErrorBlocks": 0.0,
+    "walkingDistanceBlocks": 2.8470867,
+    "sameFrameAlignmentObservations": 756,
+    "walkingBobFrames": 32,
+    "maxWalkingVirtualEyeOffsetBlocks": 0.0996272098543261,
+    "maxWalkingOldRayMissBlocks": 0.09405095875263214,
+    "maxWalkingNewRayMissBlocks": 5.442073961603455E-5,
+    "walkingBugExercised": true,
+    "rayVerification": "Actual shader homogeneous eye/far algorithm; old physical-origin algorithm independently checked on real walking event matrices",
+    "frozenTimeSeconds": 12,
+    "frozenPhase": 0.5,
+    "referenceGeometry": "5x5 furnace, checkerboard floor, four distinct colored reference pillars"
+  },
+  "initialShaderIdentity": 0,
+  "reloadedShaderIdentity": 0,
+  "captureCount": 18,
+  "captures": [
+    {
+      "name": "furnace-motion-01-front-left.png",
+      "tick": 76,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(-3.5, 123.24999988079071, -8.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 83.166664,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-01-front-left.png",
+        "scene": "front-left",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          -3.5,
+          123.24999988079071,
+          -8.5
+        ],
+        "partialTick": 0.17999613,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 79,
+        "coverage": 0.10470052083333334,
+        "drawCpuMs": 0.3454,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402952,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          2.4389699,
+          -0.17034255,
+          -0.1702095,
+          0.0,
+          0.42128327,
+          0.98617816,
+          0.9854079,
+          -6.9611807,
+          -1.6961329,
+          9.158834,
+          9.251643
+        ],
+        "shaderInverseLocalProjection": [
+          -0.57461506,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.3981305,
+          0.06876931,
+          -6.9160485E-8,
+          39.98354,
+          -22.490742,
+          89.96297,
+          -9.995885,
+          -40.014793,
+          22.338114,
+          -89.04789,
+          10.003698
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9854079,
+          0.1702095,
+          0.0,
+          0.0,
+          0.1702095,
+          -0.9854079,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1116,
+        "eventFrame": 1116,
+        "probeFrame": 1116,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": 0.0,
+        "cameraPitchDegrees": 9.8,
+        "requestedYawDegrees": 0.0,
+        "requestedPitchDegrees": 9.8,
+        "virtualEyeLocal": [
+          -4.0,
+          2.25,
+          -9.0
+        ],
+        "physicalEyeLocal": [
+          -4.0,
+          2.2499998807907104,
+          -9.0
+        ],
+        "virtualEyeOffsetBlocks": 1.1920928955078125E-7,
+        "oldPhysicalOriginRayMissBlocks": 4.915124804938387E-7,
+        "maxProjectionErrorPixels": 0.0029288270650252445,
+        "maxRayDistanceBlocks": 3.5743360058404505E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              158.44711303710938,
+              367.5000915527344
+            ],
+            "shaderPixel": [
+              158.44937133789062,
+              367.5003662109375
+            ],
+            "newRayMissBlocks": 3.5743360058404505E-5,
+            "oldRayMissBlocks": 4.915124804938387E-7
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              397.88726806640625,
+              402.8291931152344
+            ],
+            "shaderPixel": [
+              397.888427734375,
+              402.829345703125
+            ],
+            "newRayMissBlocks": 1.9845751012326218E-5,
+            "oldRayMissBlocks": 1.2287812012345967E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              23.77582550048828,
+              337.52691650390625
+            ],
+            "shaderPixel": [
+              23.778724670410156,
+              337.52734375
+            ],
+            "newRayMissBlocks": 3.37126330123283E-5,
+            "oldRayMissBlocks": 2.920019426255749E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              241.19976806640625,
+              445.0906677246094
+            ],
+            "shaderPixel": [
+              241.20162963867188,
+              445.0906066894531
+            ],
+            "newRayMissBlocks": 3.5359222238184884E-5,
+            "oldRayMissBlocks": 2.6656007889869215E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              148.5003662109375,
+              498.986083984375
+            ],
+            "shaderPixel": [
+              148.50262451171875,
+              498.98583984375
+            ],
+            "newRayMissBlocks": 3.4395339753245935E-5,
+            "oldRayMissBlocks": 3.769728778024728E-7
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-02-front-slide-mid.png",
+      "tick": 90,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(-1.4428582191467285, 123.24999988079071, -8.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 83.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-02-front-slide-mid.png",
+        "scene": "front-center",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          -1.4428582191467285,
+          123.24999988079071,
+          -8.5
+        ],
+        "partialTick": 0.19999623,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 108,
+        "coverage": 0.1533984375,
+        "drawCpuMs": 0.338,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402952,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          2.4389699,
+          -0.17034255,
+          -0.1702095,
+          0.0,
+          0.42128327,
+          0.98617816,
+          0.9854079,
+          -3.3811467,
+          -1.6961329,
+          9.158834,
+          9.251643
+        ],
+        "shaderInverseLocalProjection": [
+          -0.57461506,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.3981305,
+          0.06876931,
+          -6.9160485E-8,
+          19.420586,
+          -22.490742,
+          89.96297,
+          -9.995885,
+          -19.435768,
+          22.338114,
+          -89.04789,
+          10.003698
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9854079,
+          0.1702095,
+          0.0,
+          0.0,
+          0.1702095,
+          -0.9854079,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1145,
+        "eventFrame": 1145,
+        "probeFrame": 1145,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": 0.0,
+        "cameraPitchDegrees": 9.8,
+        "requestedYawDegrees": 0.0,
+        "requestedPitchDegrees": 9.8,
+        "virtualEyeLocal": [
+          -1.9428579807281494,
+          2.25,
+          -9.0
+        ],
+        "physicalEyeLocal": [
+          -1.9428582191467285,
+          2.2499998807907104,
+          -9.0
+        ],
+        "virtualEyeOffsetBlocks": 2.6656007498500226E-7,
+        "oldPhysicalOriginRayMissBlocks": 3.424026147058612E-7,
+        "maxProjectionErrorPixels": 0.0013175493139883099,
+        "maxRayDistanceBlocks": 2.0504789063124917E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              406.1027526855469,
+              367.5000915527344
+            ],
+            "shaderPixel": [
+              406.1025390625,
+              367.5003662109375
+            ],
+            "newRayMissBlocks": 9.76516184891807E-6,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              646.9174194335938,
+              402.8291931152344
+            ],
+            "shaderPixel": [
+              646.916015625,
+              402.829345703125
+            ],
+            "newRayMissBlocks": 2.0504789063124917E-5,
+            "oldRayMissBlocks": 2.451342879794538E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              162.69187927246094,
+              402.8291931152344
+            ],
+            "shaderPixel": [
+              162.6927947998047,
+              402.829345703125
+            ],
+            "newRayMissBlocks": 1.831376357586123E-5,
+            "oldRayMissBlocks": 3.424026147058612E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              340.6909484863281,
+              337.52691650390625
+            ],
+            "shaderPixel": [
+              340.6911926269531,
+              337.52734375
+            ],
+            "newRayMissBlocks": 9.634773050493095E-6,
+            "oldRayMissBlocks": 2.4575624024691933E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              446.29693603515625,
+              445.0906677246094
+            ],
+            "shaderPixel": [
+              446.29644775390625,
+              445.0906066894531
+            ],
+            "newRayMissBlocks": 6.5169033405254595E-6,
+            "oldRayMissBlocks": 2.4027400513659813E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              401.271484375,
+              498.986083984375
+            ],
+            "shaderPixel": [
+              401.27130126953125,
+              498.98583984375
+            ],
+            "newRayMissBlocks": 4.3213367462158203E-7,
+            "oldRayMissBlocks": 2.4978896817628993E-7
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-02-front-center.png",
+      "tick": 98,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(0.5, 123.24999988079071, -8.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 83.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-02-front-center.png",
+        "scene": "front-center",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          0.5,
+          123.24999988079071,
+          -8.5
+        ],
+        "partialTick": 0.07999635,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 121,
+        "coverage": 0.163359375,
+        "drawCpuMs": 0.2584,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402952,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          2.4389699,
+          -0.17034255,
+          -0.1702095,
+          0.0,
+          0.42128327,
+          0.98617816,
+          0.9854079,
+          0.0,
+          -1.6961329,
+          9.158834,
+          9.251643
+        ],
+        "shaderInverseLocalProjection": [
+          -0.57461506,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.3981305,
+          0.06876931,
+          -6.9160485E-8,
+          -0.0,
+          -22.490742,
+          89.96297,
+          -9.995885,
+          -0.0,
+          22.338114,
+          -89.04789,
+          10.003698
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9854079,
+          0.1702095,
+          0.0,
+          0.0,
+          0.1702095,
+          -0.9854079,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1158,
+        "eventFrame": 1158,
+        "probeFrame": 1158,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": 0.0,
+        "cameraPitchDegrees": 9.8,
+        "requestedYawDegrees": 0.0,
+        "requestedPitchDegrees": 9.8,
+        "virtualEyeLocal": [
+          0.0,
+          2.25,
+          -9.0
+        ],
+        "physicalEyeLocal": [
+          0.0,
+          2.2499998807907104,
+          -9.0
+        ],
+        "virtualEyeOffsetBlocks": 1.1920928955078125E-7,
+        "oldPhysicalOriginRayMissBlocks": 3.5762786865234375E-7,
+        "maxProjectionErrorPixels": 0.0011332987407332424,
+        "maxRayDistanceBlocks": 1.9616449208115228E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              367.5000915527344
+            ],
+            "shaderPixel": [
+              640.0,
+              367.5003662109375
+            ],
+            "newRayMissBlocks": 9.775161743164062E-6,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              882.1127319335938,
+              402.8291931152344
+            ],
+            "shaderPixel": [
+              882.1116943359375,
+              402.829345703125
+            ],
+            "newRayMissBlocks": 1.9616449208115228E-5,
+            "oldRayMissBlocks": 1.2287812012345967E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              397.88726806640625,
+              402.8291931152344
+            ],
+            "shaderPixel": [
+              397.88836669921875,
+              402.829345703125
+            ],
+            "newRayMissBlocks": 1.9616449208115228E-5,
+            "oldRayMissBlocks": 1.2287812012345967E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              640.0,
+              337.52691650390625
+            ],
+            "shaderPixel": [
+              640.0,
+              337.52734375
+            ],
+            "newRayMissBlocks": 9.059906005859375E-6,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              640.0,
+              445.0906677246094
+            ],
+            "shaderPixel": [
+              640.0,
+              445.0906066894531
+            ],
+            "newRayMissBlocks": 4.410743713378906E-6,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              498.986083984375
+            ],
+            "shaderPixel": [
+              640.0,
+              498.98583984375
+            ],
+            "newRayMissBlocks": 3.5762786865234375E-7,
+            "oldRayMissBlocks": 3.5762786865234375E-7
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-03-front-right.png",
+      "tick": 120,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(4.5, 123.24999988079071, -8.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 83.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-03-front-right.png",
+        "scene": "front-right",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          4.5,
+          123.24999988079071,
+          -8.5
+        ],
+        "partialTick": 0.25999606,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 170,
+        "coverage": 0.10470052083333334,
+        "drawCpuMs": 0.2553,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402952,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          2.4389699,
+          -0.17034255,
+          -0.1702095,
+          0.0,
+          0.42128327,
+          0.98617816,
+          0.9854079,
+          6.9611807,
+          -1.6961329,
+          9.158834,
+          9.251643
+        ],
+        "shaderInverseLocalProjection": [
+          -0.57461506,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.3981305,
+          0.06876931,
+          -6.9160485E-8,
+          -39.98354,
+          -22.490742,
+          89.96297,
+          -9.995885,
+          40.014793,
+          22.338114,
+          -89.04789,
+          10.003698
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9854079,
+          0.1702095,
+          0.0,
+          0.0,
+          0.1702095,
+          -0.9854079,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1207,
+        "eventFrame": 1207,
+        "probeFrame": 1207,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": 0.0,
+        "cameraPitchDegrees": 9.8,
+        "requestedYawDegrees": 0.0,
+        "requestedPitchDegrees": 9.8,
+        "virtualEyeLocal": [
+          4.0,
+          2.25,
+          -9.0
+        ],
+        "physicalEyeLocal": [
+          4.0,
+          2.2499998807907104,
+          -9.0
+        ],
+        "virtualEyeOffsetBlocks": 1.1920928955078125E-7,
+        "oldPhysicalOriginRayMissBlocks": 4.915124804938387E-7,
+        "maxProjectionErrorPixels": 0.0029288270650252445,
+        "maxRayDistanceBlocks": 3.5743360058404505E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              1121.5528564453125,
+              367.5000915527344
+            ],
+            "shaderPixel": [
+              1121.550537109375,
+              367.5003662109375
+            ],
+            "newRayMissBlocks": 3.5743360058404505E-5,
+            "oldRayMissBlocks": 4.915124804938387E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              882.1127319335938,
+              402.8291931152344
+            ],
+            "shaderPixel": [
+              882.111572265625,
+              402.829345703125
+            ],
+            "newRayMissBlocks": 1.9845751012326218E-5,
+            "oldRayMissBlocks": 1.2287812012345967E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              1256.2242431640625,
+              337.52691650390625
+            ],
+            "shaderPixel": [
+              1256.2213134765625,
+              337.52734375
+            ],
+            "newRayMissBlocks": 3.37126330123283E-5,
+            "oldRayMissBlocks": 2.920019426255749E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              1038.8001708984375,
+              445.0906677246094
+            ],
+            "shaderPixel": [
+              1038.79833984375,
+              445.0906066894531
+            ],
+            "newRayMissBlocks": 3.5359222238184884E-5,
+            "oldRayMissBlocks": 2.6656007889869215E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              1131.4996337890625,
+              498.986083984375
+            ],
+            "shaderPixel": [
+              1131.497314453125,
+              498.98583984375
+            ],
+            "newRayMissBlocks": 3.4395339753245935E-5,
+            "oldRayMissBlocks": 3.769728778024728E-7
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-04-front-return.png",
+      "tick": 142,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(0.5, 123.24999988079071, -8.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 83.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-04-front-return.png",
+        "scene": "front-return",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          0.5,
+          123.24999988079071,
+          -8.5
+        ],
+        "partialTick": 0.41999626,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 214,
+        "coverage": 0.163359375,
+        "drawCpuMs": 0.2255,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402952,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          2.4389699,
+          -0.17034255,
+          -0.1702095,
+          0.0,
+          0.42128327,
+          0.98617816,
+          0.9854079,
+          0.0,
+          -1.6961329,
+          9.158834,
+          9.251643
+        ],
+        "shaderInverseLocalProjection": [
+          -0.57461506,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.3981305,
+          0.06876931,
+          -6.9160485E-8,
+          -0.0,
+          -22.490742,
+          89.96297,
+          -9.995885,
+          -0.0,
+          22.338114,
+          -89.04789,
+          10.003698
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9854079,
+          0.1702095,
+          0.0,
+          0.0,
+          0.1702095,
+          -0.9854079,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1251,
+        "eventFrame": 1251,
+        "probeFrame": 1251,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": 0.0,
+        "cameraPitchDegrees": 9.8,
+        "requestedYawDegrees": 0.0,
+        "requestedPitchDegrees": 9.8,
+        "virtualEyeLocal": [
+          0.0,
+          2.25,
+          -9.0
+        ],
+        "physicalEyeLocal": [
+          0.0,
+          2.2499998807907104,
+          -9.0
+        ],
+        "virtualEyeOffsetBlocks": 1.1920928955078125E-7,
+        "oldPhysicalOriginRayMissBlocks": 3.5762786865234375E-7,
+        "maxProjectionErrorPixels": 0.0011332987407332424,
+        "maxRayDistanceBlocks": 1.9616449208115228E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              367.5000915527344
+            ],
+            "shaderPixel": [
+              640.0,
+              367.5003662109375
+            ],
+            "newRayMissBlocks": 9.775161743164062E-6,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              882.1127319335938,
+              402.8291931152344
+            ],
+            "shaderPixel": [
+              882.1116943359375,
+              402.829345703125
+            ],
+            "newRayMissBlocks": 1.9616449208115228E-5,
+            "oldRayMissBlocks": 1.2287812012345967E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              397.88726806640625,
+              402.8291931152344
+            ],
+            "shaderPixel": [
+              397.88836669921875,
+              402.829345703125
+            ],
+            "newRayMissBlocks": 1.9616449208115228E-5,
+            "oldRayMissBlocks": 1.2287812012345967E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              640.0,
+              337.52691650390625
+            ],
+            "shaderPixel": [
+              640.0,
+              337.52734375
+            ],
+            "newRayMissBlocks": 9.059906005859375E-6,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              640.0,
+              445.0906677246094
+            ],
+            "shaderPixel": [
+              640.0,
+              445.0906066894531
+            ],
+            "newRayMissBlocks": 4.410743713378906E-6,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              498.986083984375
+            ],
+            "shaderPixel": [
+              640.0,
+              498.98583984375
+            ],
+            "newRayMissBlocks": 3.5762786865234375E-7,
+            "oldRayMissBlocks": 3.5762786865234375E-7
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-05-north.png",
+      "tick": 164,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(0.5, 123.24999988079071, -8.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 83.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-05-north.png",
+        "scene": "north",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          0.5,
+          123.24999988079071,
+          -8.5
+        ],
+        "partialTick": 0.039996624,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 255,
+        "coverage": 0.164,
+        "drawCpuMs": 0.3723,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402953,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          2.4391775,
+          -0.16985625,
+          -0.16972359,
+          0.0,
+          0.42008057,
+          0.9862621,
+          0.98549175,
+          0.0,
+          -1.7074244,
+          9.158496,
+          9.251304
+        ],
+        "shaderInverseLocalProjection": [
+          -0.57461536,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.39816463,
+          0.06857247,
+          -0.0,
+          -0.0,
+          -22.49115,
+          89.96459,
+          -9.996066,
+          -0.0,
+          22.339008,
+          -89.04943,
+          10.003881
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.98549175,
+          0.16972359,
+          0.0,
+          0.0,
+          0.16972359,
+          -0.98549175,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1292,
+        "eventFrame": 1292,
+        "probeFrame": 1292,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": -0.0,
+        "cameraPitchDegrees": 9.771748,
+        "requestedYawDegrees": -0.0,
+        "requestedPitchDegrees": 9.771748,
+        "virtualEyeLocal": [
+          0.0,
+          2.250000238418579,
+          -9.0
+        ],
+        "physicalEyeLocal": [
+          0.0,
+          2.2499998807907104,
+          -9.0
+        ],
+        "virtualEyeOffsetBlocks": 3.5762786865234375E-7,
+        "oldPhysicalOriginRayMissBlocks": 1.6858739115832577E-7,
+        "maxProjectionErrorPixels": 0.0027842733202428113,
+        "maxRayDistanceBlocks": 1.7126589227700606E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              366.94781494140625
+            ],
+            "shaderPixel": [
+              640.0,
+              366.9490051269531
+            ],
+            "newRayMissBlocks": 5.7220458984375E-6,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              882.1178588867188,
+              402.2789611816406
+            ],
+            "shaderPixel": [
+              882.1202392578125,
+              402.2804870605469
+            ],
+            "newRayMissBlocks": 1.7126589227700606E-5,
+            "oldRayMissBlocks": 1.6858739115832577E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              397.88214111328125,
+              402.2789611816406
+            ],
+            "shaderPixel": [
+              397.8797912597656,
+              402.2804870605469
+            ],
+            "newRayMissBlocks": 1.7126589227700606E-5,
+            "oldRayMissBlocks": 1.6858739115832577E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              640.0,
+              336.9720764160156
+            ],
+            "shaderPixel": [
+              640.0,
+              336.97320556640625
+            ],
+            "newRayMissBlocks": 2.9802322387695312E-6,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              640.0,
+              444.54144287109375
+            ],
+            "shaderPixel": [
+              640.0,
+              444.5432434082031
+            ],
+            "newRayMissBlocks": 1.3113021850585938E-5,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              498.4358215332031
+            ],
+            "shaderPixel": [
+              640.0,
+              498.4383239746094
+            ],
+            "newRayMissBlocks": 1.3947486877441406E-5,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-06-east.png",
+      "tick": 186,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(9.5, 123.24999988079071, 0.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 84.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-06-east.png",
+        "scene": "east",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          9.5,
+          123.24999988079071,
+          0.5
+        ],
+        "partialTick": 0.019997597,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 309,
+        "coverage": 0.164,
+        "drawCpuMs": 0.2224,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          0.0,
+          -0.42008054,
+          -0.986262,
+          -0.9854917,
+          0.0,
+          2.4391773,
+          -0.16985624,
+          -0.16972357,
+          -1.7402952,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          -1.7074237,
+          9.158496,
+          9.251303
+        ],
+        "shaderInverseLocalProjection": [
+          -0.0,
+          -0.0,
+          -0.57461685,
+          -0.0,
+          -0.0685731,
+          0.3981692,
+          -0.0,
+          -0.0,
+          -89.96684,
+          -22.491713,
+          -0.0,
+          -9.996319,
+          89.051674,
+          22.33957,
+          0.0,
+          10.004131
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          0.0,
+          -0.16972357,
+          0.9854917,
+          0.0,
+          0.0,
+          0.9854917,
+          0.16972357,
+          0.0,
+          -0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1346,
+        "eventFrame": 1346,
+        "probeFrame": 1346,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": 90.0,
+        "cameraPitchDegrees": 9.771748,
+        "requestedYawDegrees": 90.0,
+        "requestedPitchDegrees": 9.771748,
+        "virtualEyeLocal": [
+          8.99999713897705,
+          2.249999523162842,
+          -0.0
+        ],
+        "physicalEyeLocal": [
+          9.0,
+          2.2499998807907104,
+          0.0
+        ],
+        "virtualEyeOffsetBlocks": 2.883288055049854E-6,
+        "oldPhysicalOriginRayMissBlocks": 3.5762786865234375E-7,
+        "maxProjectionErrorPixels": 0.003021083646417636,
+        "maxRayDistanceBlocks": 2.6823414373211563E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              366.9478454589844
+            ],
+            "shaderPixel": [
+              640.0,
+              366.9490966796875
+            ],
+            "newRayMissBlocks": 1.33514404296875E-5,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              444.5414733886719
+            ],
+            "shaderPixel": [
+              640.0,
+              444.5408935546875
+            ],
+            "newRayMissBlocks": 9.5367431640625E-7,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              336.9720764160156
+            ],
+            "shaderPixel": [
+              640.0,
+              336.9743347167969
+            ],
+            "newRayMissBlocks": 1.4185905456542969E-5,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              882.1178588867188,
+              402.27899169921875
+            ],
+            "shaderPixel": [
+              882.1148681640625,
+              402.2795104980469
+            ],
+            "newRayMissBlocks": 2.6823414373211563E-5,
+            "oldRayMissBlocks": 3.5762786865234375E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              397.88214111328125,
+              402.27899169921875
+            ],
+            "shaderPixel": [
+              397.8851318359375,
+              402.2795104980469
+            ],
+            "newRayMissBlocks": 2.6823414373211563E-5,
+            "oldRayMissBlocks": 3.5762786865234375E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              498.43585205078125
+            ],
+            "shaderPixel": [
+              640.0,
+              498.4344177246094
+            ],
+            "newRayMissBlocks": 1.0371208190917969E-5,
+            "oldRayMissBlocks": 0.0
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-07-south.png",
+      "tick": 208,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(0.5, 123.24999988079071, 9.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 84.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-07-south.png",
+        "scene": "south",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          0.5,
+          123.24999988079071,
+          9.5
+        ],
+        "partialTick": 0.37999797,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 356,
+        "coverage": 0.164,
+        "drawCpuMs": 0.2226,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4391775,
+          -0.16985625,
+          -0.16972359,
+          0.0,
+          -0.42008057,
+          -0.9862621,
+          -0.98549175,
+          0.0,
+          -1.7074244,
+          9.158496,
+          9.251304
+        ],
+        "shaderInverseLocalProjection": [
+          0.57461536,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.39816463,
+          -0.06857247,
+          -0.0,
+          0.0,
+          -22.49115,
+          -89.96459,
+          -9.996066,
+          -0.0,
+          22.339008,
+          89.04943,
+          10.003881
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.98549175,
+          0.16972359,
+          0.0,
+          0.0,
+          -0.16972359,
+          0.98549175,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1393,
+        "eventFrame": 1393,
+        "probeFrame": 1393,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": -180.0,
+        "cameraPitchDegrees": 9.771748,
+        "requestedYawDegrees": -180.0,
+        "requestedPitchDegrees": 9.771748,
+        "virtualEyeLocal": [
+          -0.0,
+          2.250000238418579,
+          9.0
+        ],
+        "physicalEyeLocal": [
+          0.0,
+          2.2499998807907104,
+          9.0
+        ],
+        "virtualEyeOffsetBlocks": 3.5762786865234375E-7,
+        "oldPhysicalOriginRayMissBlocks": 1.6858739115832577E-7,
+        "maxProjectionErrorPixels": 0.0027842733202428113,
+        "maxRayDistanceBlocks": 1.7126589227700606E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              366.94781494140625
+            ],
+            "shaderPixel": [
+              640.0,
+              366.9490051269531
+            ],
+            "newRayMissBlocks": 5.7220458984375E-6,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              397.88214111328125,
+              402.2789611816406
+            ],
+            "shaderPixel": [
+              397.8797912597656,
+              402.2804870605469
+            ],
+            "newRayMissBlocks": 1.7126589227700606E-5,
+            "oldRayMissBlocks": 1.6858739115832577E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              882.1178588867188,
+              402.2789611816406
+            ],
+            "shaderPixel": [
+              882.1202392578125,
+              402.2804870605469
+            ],
+            "newRayMissBlocks": 1.7126589227700606E-5,
+            "oldRayMissBlocks": 1.6858739115832577E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              640.0,
+              444.54144287109375
+            ],
+            "shaderPixel": [
+              640.0,
+              444.5432434082031
+            ],
+            "newRayMissBlocks": 1.3113021850585938E-5,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              640.0,
+              336.9720764160156
+            ],
+            "shaderPixel": [
+              640.0,
+              336.97320556640625
+            ],
+            "newRayMissBlocks": 2.9802322387695312E-6,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              498.4358215332031
+            ],
+            "shaderPixel": [
+              640.0,
+              498.4383239746094
+            ],
+            "newRayMissBlocks": 1.3947486877441406E-5,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-08-west.png",
+      "tick": 230,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(-8.5, 123.24999988079071, 0.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 84.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-08-west.png",
+        "scene": "west",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          -8.5,
+          123.24999988079071,
+          0.5
+        ],
+        "partialTick": 0.47999835,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 398,
+        "coverage": 0.164,
+        "drawCpuMs": 0.1876,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          0.0,
+          0.42008054,
+          0.986262,
+          0.9854917,
+          0.0,
+          2.4391773,
+          -0.16985624,
+          -0.16972357,
+          1.7402952,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.7074237,
+          9.158496,
+          9.251303
+        ],
+        "shaderInverseLocalProjection": [
+          -0.0,
+          -0.0,
+          0.57461685,
+          -0.0,
+          0.0685731,
+          0.3981692,
+          -0.0,
+          -0.0,
+          89.96684,
+          -22.491713,
+          -0.0,
+          -9.996319,
+          -89.051674,
+          22.33957,
+          -0.0,
+          10.004131
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          0.0,
+          0.16972357,
+          -0.9854917,
+          0.0,
+          0.0,
+          0.9854917,
+          0.16972357,
+          0.0,
+          0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1435,
+        "eventFrame": 1435,
+        "probeFrame": 1435,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": -90.0,
+        "cameraPitchDegrees": 9.771748,
+        "requestedYawDegrees": -90.0,
+        "requestedPitchDegrees": 9.771748,
+        "virtualEyeLocal": [
+          -8.99999713897705,
+          2.249999523162842,
+          -0.0
+        ],
+        "physicalEyeLocal": [
+          -9.0,
+          2.2499998807907104,
+          0.0
+        ],
+        "virtualEyeOffsetBlocks": 2.883288055049854E-6,
+        "oldPhysicalOriginRayMissBlocks": 3.5762786865234375E-7,
+        "maxProjectionErrorPixels": 0.003021083646417636,
+        "maxRayDistanceBlocks": 2.6823414373211563E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              366.9478454589844
+            ],
+            "shaderPixel": [
+              640.0,
+              366.9490966796875
+            ],
+            "newRayMissBlocks": 1.33514404296875E-5,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              336.9720764160156
+            ],
+            "shaderPixel": [
+              640.0,
+              336.9743347167969
+            ],
+            "newRayMissBlocks": 1.4185905456542969E-5,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              444.5414733886719
+            ],
+            "shaderPixel": [
+              640.0,
+              444.5408935546875
+            ],
+            "newRayMissBlocks": 9.5367431640625E-7,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              397.88214111328125,
+              402.27899169921875
+            ],
+            "shaderPixel": [
+              397.8851318359375,
+              402.2795104980469
+            ],
+            "newRayMissBlocks": 2.6823414373211563E-5,
+            "oldRayMissBlocks": 3.5762786865234375E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              882.1178588867188,
+              402.27899169921875
+            ],
+            "shaderPixel": [
+              882.1148681640625,
+              402.2795104980469
+            ],
+            "newRayMissBlocks": 2.6823414373211563E-5,
+            "oldRayMissBlocks": 3.5762786865234375E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              498.43585205078125
+            ],
+            "shaderPixel": [
+              640.0,
+              498.4344177246094
+            ],
+            "newRayMissBlocks": 1.0371208190917969E-5,
+            "oldRayMissBlocks": 0.0
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-09-near-front.png",
+      "tick": 252,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.29999988079071, -3.7)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 85.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-09-near-front.png",
+        "scene": "near-front",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          0.5,
+          122.29999988079071,
+          -3.7
+        ],
+        "partialTick": 0.73999786,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 415,
+        "coverage": 0.6555555555555556,
+        "drawCpuMs": 0.3097,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402953,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          2.4502108,
+          -0.14153188,
+          -0.14142135,
+          0.0,
+          0.3500301,
+          0.99072325,
+          0.98994946,
+          0.0,
+          -1.7151474,
+          4.24499,
+          4.3416357
+        ],
+        "shaderInverseLocalProjection": [
+          -0.57461506,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.39996567,
+          0.05713761,
+          3.4580733E-8,
+          -0.0,
+          -12.994834,
+          41.983322,
+          -9.996028,
+          -0.0,
+          12.863571,
+          -41.026188,
+          10.00384
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.98994946,
+          0.14142135,
+          0.0,
+          0.0,
+          0.14142135,
+          -0.98994946,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1452,
+        "eventFrame": 1452,
+        "probeFrame": 1452,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": -0.0,
+        "cameraPitchDegrees": 8.130102,
+        "requestedYawDegrees": -0.0,
+        "requestedPitchDegrees": 8.130102,
+        "virtualEyeLocal": [
+          0.0,
+          1.299999713897705,
+          -4.200000286102295
+        ],
+        "physicalEyeLocal": [
+          0.0,
+          1.2999998807907076,
+          -4.2
+        ],
+        "virtualEyeOffsetBlocks": 3.3122167403574093E-7,
+        "oldPhysicalOriginRayMissBlocks": 3.674277024856565E-7,
+        "maxProjectionErrorPixels": 0.003996491432189941,
+        "maxRayDistanceBlocks": 1.1563301086425781E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              272.2291259765625
+            ],
+            "shaderPixel": [
+              640.0,
+              272.2263488769531
+            ],
+            "newRayMissBlocks": 5.841255187988281E-6,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              1158.13671875,
+              347.4141845703125
+            ],
+            "shaderPixel": [
+              1158.1353759765625,
+              347.41119384765625
+            ],
+            "newRayMissBlocks": 8.766746759647503E-6,
+            "oldRayMissBlocks": 3.674277024856565E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              121.86332702636719,
+              347.4141845703125
+            ],
+            "shaderPixel": [
+              121.86466217041016,
+              347.41119384765625
+            ],
+            "newRayMissBlocks": 8.766746759647503E-6,
+            "oldRayMissBlocks": 3.674277024856565E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              640.0,
+              124.01303100585938
+            ],
+            "shaderPixel": [
+              640.0,
+              124.009033203125
+            ],
+            "newRayMissBlocks": 2.0265579223632812E-6,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              640.0,
+              429.9317321777344
+            ],
+            "shaderPixel": [
+              640.0,
+              429.9290771484375
+            ],
+            "newRayMissBlocks": 1.1563301086425781E-5,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              555.3584594726562
+            ],
+            "shaderPixel": [
+              640.0,
+              555.3547973632812
+            ],
+            "newRayMissBlocks": 8.970499038696289E-6,
+            "oldRayMissBlocks": 1.4901161193847656E-8
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-10-far-front.png",
+      "tick": 274,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(0.5, 124.39999988079072, -14.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 85.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-10-far-front.png",
+        "scene": "far-front",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          0.5,
+          124.39999988079072,
+          -14.5
+        ],
+        "partialTick": 0.059997797,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 458,
+        "coverage": 0.05198611111111111,
+        "drawCpuMs": 0.1295,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402952,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          2.4359388,
+          -0.17729148,
+          -0.177153,
+          0.0,
+          0.43846905,
+          0.98495257,
+          0.98418325,
+          0.0,
+          -1.7051554,
+          15.27704,
+          15.365068
+        ],
+        "shaderInverseLocalProjection": [
+          -0.57461524,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.39763606,
+          0.07157393,
+          6.916157E-8,
+          -0.0,
+          -33.986534,
+          149.94061,
+          -9.99604,
+          -0.0,
+          33.835945,
+          -149.07362,
+          10.003854
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.98418325,
+          0.177153,
+          0.0,
+          0.0,
+          0.177153,
+          -0.98418325,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1495,
+        "eventFrame": 1495,
+        "probeFrame": 1495,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": -0.0,
+        "cameraPitchDegrees": 10.203974,
+        "requestedYawDegrees": -0.0,
+        "requestedPitchDegrees": 10.203974,
+        "virtualEyeLocal": [
+          0.0,
+          3.3999996185302734,
+          -15.0
+        ],
+        "physicalEyeLocal": [
+          0.0,
+          3.399999880790716,
+          -15.0
+        ],
+        "virtualEyeOffsetBlocks": 2.6226044269606064E-7,
+        "oldPhysicalOriginRayMissBlocks": 7.152557373046875E-7,
+        "maxProjectionErrorPixels": 0.0015048204709513825,
+        "maxRayDistanceBlocks": 1.4703875422128476E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              400.0607604980469
+            ],
+            "shaderPixel": [
+              640.0,
+              400.05950927734375
+            ],
+            "newRayMissBlocks": 4.76837158203125E-7,
+            "oldRayMissBlocks": 4.76837158203125E-7
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              785.47998046875,
+              421.3642578125
+            ],
+            "shaderPixel": [
+              785.4810180664062,
+              421.3631896972656
+            ],
+            "newRayMissBlocks": 1.4703875422128476E-5,
+            "oldRayMissBlocks": 5.364418029785156E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              494.52001953125,
+              421.3642578125
+            ],
+            "shaderPixel": [
+              494.51898193359375,
+              421.3631896972656
+            ],
+            "newRayMissBlocks": 1.4703875422128476E-5,
+            "oldRayMissBlocks": 5.364418029785156E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              640.0,
+              387.56610107421875
+            ],
+            "shaderPixel": [
+              640.0,
+              387.56463623046875
+            ],
+            "newRayMissBlocks": 1.430511474609375E-6,
+            "oldRayMissBlocks": 7.152557373046875E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              640.0,
+              447.462646484375
+            ],
+            "shaderPixel": [
+              640.0,
+              447.4619140625
+            ],
+            "newRayMissBlocks": 5.7220458984375E-6,
+            "oldRayMissBlocks": 2.384185791015625E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              478.90338134765625
+            ],
+            "shaderPixel": [
+              640.0,
+              478.9027404785156
+            ],
+            "newRayMissBlocks": 8.344650268554688E-6,
+            "oldRayMissBlocks": 4.76837158203125E-7
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-11-high-front.png",
+      "tick": 296,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(0.5, 127.19999988079071, -8.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 85.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-11-high-front.png",
+        "scene": "high-front",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          0.5,
+          127.19999988079071,
+          -8.5
+        ],
+        "partialTick": 0.21999753,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 509,
+        "coverage": 0.19189583333333332,
+        "drawCpuMs": 0.1197,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402955,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          2.1119468,
+          -0.52185756,
+          -0.52145,
+          0.0,
+          1.2906339,
+          0.8539489,
+          0.8532819,
+          0.0,
+          -1.478364,
+          10.821018,
+          10.912527
+        ],
+        "shaderInverseLocalProjection": [
+          -0.5746157,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.34474906,
+          0.21067776,
+          1.3832422E-7,
+          -0.0,
+          -61.975964,
+          89.96511,
+          -9.996124,
+          -0.0,
+          61.502956,
+          -89.18217,
+          10.003938
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -1.0000001,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.8532819,
+          0.52145,
+          0.0,
+          0.0,
+          0.52145,
+          -0.8532819,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1546,
+        "eventFrame": 1546,
+        "probeFrame": 1546,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": -0.0,
+        "cameraPitchDegrees": 31.429565,
+        "requestedYawDegrees": -0.0,
+        "requestedPitchDegrees": 31.429565,
+        "virtualEyeLocal": [
+          0.0,
+          6.1999993324279785,
+          -8.999999046325684
+        ],
+        "physicalEyeLocal": [
+          0.0,
+          6.199999880790713,
+          -9.0
+        ],
+        "virtualEyeOffsetBlocks": 1.1000892648615766E-6,
+        "oldPhysicalOriginRayMissBlocks": 1.430511474609375E-6,
+        "maxProjectionErrorPixels": 0.0171661376953125,
+        "maxRayDistanceBlocks": 1.10626220703125E-4,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              389.03668212890625
+            ],
+            "shaderPixel": [
+              640.0,
+              389.0511779785156
+            ],
+            "newRayMissBlocks": 1.10626220703125E-4,
+            "oldRayMissBlocks": 1.430511474609375E-6
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              847.0992431640625,
+              414.6571350097656
+            ],
+            "shaderPixel": [
+              847.0960693359375,
+              414.67138671875
+            ],
+            "newRayMissBlocks": 1.0973796452162787E-4,
+            "oldRayMissBlocks": 1.0254771041218191E-6
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              432.9007568359375,
+              414.6571350097656
+            ],
+            "shaderPixel": [
+              432.9039001464844,
+              414.67138671875
+            ],
+            "newRayMissBlocks": 1.0973796452162787E-4,
+            "oldRayMissBlocks": 1.0254771041218191E-6
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              640.0,
+              279.6351623535156
+            ],
+            "shaderPixel": [
+              640.0,
+              279.6523132324219
+            ],
+            "newRayMissBlocks": 1.0251998901367188E-4,
+            "oldRayMissBlocks": 4.76837158203125E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              640.0,
+              512.7008666992188
+            ],
+            "shaderPixel": [
+              640.0,
+              512.7130126953125
+            ],
+            "newRayMissBlocks": 1.087188720703125E-4,
+            "oldRayMissBlocks": 1.430511474609375E-6
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              486.768798828125
+            ],
+            "shaderPixel": [
+              640.0,
+              486.7823181152344
+            ],
+            "newRayMissBlocks": 9.34600830078125E-5,
+            "oldRayMissBlocks": 9.5367431640625E-7
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-12-low-front.png",
+      "tick": 318,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(0.5, 121.3499998807907, -8.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 85.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-12-low-front.png",
+        "scene": "low-front",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          0.5,
+          121.3499998807907,
+          -8.5
+        ],
+        "partialTick": 0.23999798,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 552,
+        "coverage": 0.12630208333333334,
+        "drawCpuMs": 0.1254,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402955,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          2.4732175,
+          0.038889892,
+          0.038859516,
+          0.0,
+          -0.09618067,
+          1.0000259,
+          0.99924475,
+          0.0,
+          -1.7312518,
+          8.886581,
+          8.979603
+        ],
+        "shaderInverseLocalProjection": [
+          -0.5746151,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.40372106,
+          -0.015700048,
+          -1.729004E-8,
+          -0.0,
+          -3.4985433,
+          89.96258,
+          -9.995842,
+          -0.0,
+          3.540137,
+          -89.03367,
+          10.003654
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -1.0000001,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.99924475,
+          -0.038859516,
+          0.0,
+          0.0,
+          -0.038859516,
+          -0.99924475,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1589,
+        "eventFrame": 1589,
+        "probeFrame": 1589,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": -0.0,
+        "cameraPitchDegrees": -2.227047,
+        "requestedYawDegrees": -0.0,
+        "requestedPitchDegrees": -2.227047,
+        "virtualEyeLocal": [
+          0.0,
+          0.3499998450279236,
+          -9.0
+        ],
+        "physicalEyeLocal": [
+          0.0,
+          0.34999988079070476,
+          -9.0
+        ],
+        "virtualEyeOffsetBlocks": 3.576278118089249E-8,
+        "oldPhysicalOriginRayMissBlocks": 1.4901161193847656E-7,
+        "maxProjectionErrorPixels": 0.00778719889935205,
+        "maxRayDistanceBlocks": 6.127808592282236E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              363.24078369140625
+            ],
+            "shaderPixel": [
+              640.0,
+              363.2416687011719
+            ],
+            "newRayMissBlocks": 8.702278137207031E-6,
+            "oldRayMissBlocks": 1.4901161193847656E-7
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              887.749267578125,
+              400.48760986328125
+            ],
+            "shaderPixel": [
+              887.741455078125,
+              400.4873046875
+            ],
+            "newRayMissBlocks": 6.127808592282236E-5,
+            "oldRayMissBlocks": 1.3943737542376766E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              392.250732421875,
+              400.48760986328125
+            ],
+            "shaderPixel": [
+              392.258544921875,
+              400.4873046875
+            ],
+            "newRayMissBlocks": 6.127808592282236E-5,
+            "oldRayMissBlocks": 1.3943737542376766E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              640.0,
+              398.71612548828125
+            ],
+            "shaderPixel": [
+              640.0,
+              398.7158508300781
+            ],
+            "newRayMissBlocks": 1.1175870895385742E-7,
+            "oldRayMissBlocks": 7.82310962677002E-8
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              640.0,
+              401.6147766113281
+            ],
+            "shaderPixel": [
+              640.0,
+              401.614501953125
+            ],
+            "newRayMissBlocks": 1.039355993270874E-6,
+            "oldRayMissBlocks": 5.587935447692871E-8
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              499.34185791015625
+            ],
+            "shaderPixel": [
+              640.0,
+              499.3384704589844
+            ],
+            "newRayMissBlocks": 2.568960189819336E-5,
+            "oldRayMissBlocks": 5.9604644775390625E-8
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-13-diagonal.png",
+      "tick": 340,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(7.5, 124.39999988079072, -6.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 85.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-13-diagonal.png",
+        "scene": "diagonal",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          7.5,
+          124.39999988079072,
+          -6.5
+        ],
+        "partialTick": 0.2399987,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 608,
+        "coverage": 0.20775520833333333,
+        "drawCpuMs": 0.1144,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.230575,
+          -0.4605169,
+          -0.6827218,
+          -0.6821886,
+          0.0,
+          2.3878658,
+          -0.2633356,
+          -0.26312992,
+          -1.2305745,
+          0.46051708,
+          0.6827221,
+          0.68218887,
+          3.8146973E-6,
+          -1.6715052,
+          10.353409,
+          10.445284
+        ],
+        "shaderInverseLocalProjection": [
+          -0.40631488,
+          -1.1238768E-7,
+          -0.4063164,
+          -0.0,
+          -0.075173736,
+          0.3897888,
+          0.075173184,
+          -0.0,
+          -69.972404,
+          -33.98659,
+          69.9724,
+          -9.9960575,
+          69.3449,
+          33.750027,
+          -69.3449,
+          10.003871
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -0.707107,
+          -0.18606092,
+          0.6821886,
+          0.0,
+          0.0,
+          0.9647605,
+          0.26312992,
+          0.0,
+          -0.7071067,
+          0.186061,
+          -0.68218887,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1645,
+        "eventFrame": 1645,
+        "probeFrame": 1645,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": 45.0,
+        "cameraPitchDegrees": 15.25586,
+        "requestedYawDegrees": 45.0,
+        "requestedPitchDegrees": 15.25586,
+        "virtualEyeLocal": [
+          7.0,
+          3.3999993801116943,
+          -6.999999046325684
+        ],
+        "physicalEyeLocal": [
+          7.0,
+          3.399999880790716,
+          -7.0
+        ],
+        "virtualEyeOffsetBlocks": 1.0771138215811517E-6,
+        "oldPhysicalOriginRayMissBlocks": 7.152557373046875E-7,
+        "maxProjectionErrorPixels": 0.00662251773795572,
+        "maxRayDistanceBlocks": 6.968718662392348E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.000244140625,
+              377.9888000488281
+            ],
+            "shaderPixel": [
+              639.9945678710938,
+              377.9869689941406
+            ],
+            "newRayMissBlocks": 5.94059492868837E-5,
+            "oldRayMissBlocks": 7.152557373046875E-7
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              774.2745971679688,
+              448.69146728515625
+            ],
+            "shaderPixel": [
+              774.2681884765625,
+              448.68975830078125
+            ],
+            "newRayMissBlocks": 6.241480150492862E-5,
+            "oldRayMissBlocks": 4.915124804938387E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              465.0234375,
+              356.2115478515625
+            ],
+            "shaderPixel": [
+              465.01861572265625,
+              356.2095947265625
+            ],
+            "newRayMissBlocks": 5.4350024583982304E-5,
+            "oldRayMissBlocks": 3.3717478231665154E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              814.9771118164062,
+              356.2115173339844
+            ],
+            "shaderPixel": [
+              814.9718017578125,
+              356.2098693847656
+            ],
+            "newRayMissBlocks": 4.68292273581028E-5,
+            "oldRayMissBlocks": 5.462856051963172E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              505.7258605957031,
+              448.69146728515625
+            ],
+            "shaderPixel": [
+              505.7198486328125,
+              448.6896057128906
+            ],
+            "newRayMissBlocks": 6.968718662392348E-5,
+            "oldRayMissBlocks": 5.331201577973843E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.000244140625,
+              492.32208251953125
+            ],
+            "shaderPixel": [
+              639.9945678710938,
+              492.3204345703125
+            ],
+            "newRayMissBlocks": 5.791572039015591E-5,
+            "oldRayMissBlocks": 5.462856051963172E-7
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-14-near-side.png",
+      "tick": 362,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(-3.7, 122.19999988079071, 0.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(6.5, 121.0, 0.5)",
+      "shaderClockWrapped": 241,
+      "health": 85.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-14-near-side.png",
+        "scene": "near-side",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          -3.7,
+          122.19999988079071,
+          0.5
+        ],
+        "partialTick": 0.2199986,
+        "bobEnabled": false,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 629,
+        "coverage": 0.6455555555555555,
+        "drawCpuMs": 0.1224,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          0.0,
+          0.29258713,
+          0.9937644,
+          0.9929882,
+          0.0,
+          2.457732,
+          -0.11830528,
+          -0.11821288,
+          1.7402952,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.7204123,
+          4.215738,
+          4.3124056
+        ],
+        "shaderInverseLocalProjection": [
+          -0.0,
+          -0.0,
+          0.5746159,
+          -0.0,
+          0.047761317,
+          0.4011949,
+          -0.0,
+          -0.0,
+          41.983974,
+          -11.99542,
+          -0.0,
+          -9.996185,
+          -41.023796,
+          11.886584,
+          -0.0,
+          10.003998
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          0.0,
+          0.11821288,
+          -0.9929882,
+          0.0,
+          0.0,
+          0.9929882,
+          0.11821288,
+          0.0,
+          0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1666,
+        "eventFrame": 1666,
+        "probeFrame": 1666,
+        "cameraIsPlayer": false,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": -90.0,
+        "cameraPitchDegrees": 6.788975,
+        "requestedYawDegrees": -90.0,
+        "requestedPitchDegrees": 6.788975,
+        "virtualEyeLocal": [
+          -4.199999809265137,
+          1.1999998092651367,
+          -0.0
+        ],
+        "physicalEyeLocal": [
+          -4.2,
+          1.1999998807907133,
+          0.0
+        ],
+        "virtualEyeOffsetBlocks": 2.0370492444398174E-7,
+        "oldPhysicalOriginRayMissBlocks": 1.7881393432617188E-7,
+        "maxProjectionErrorPixels": 0.0024005770683288574,
+        "maxRayDistanceBlocks": 1.2159347534179688E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              270.47479248046875
+            ],
+            "shaderPixel": [
+              640.0,
+              270.47296142578125
+            ],
+            "newRayMissBlocks": 7.3909759521484375E-6,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              141.95513916015625
+            ],
+            "shaderPixel": [
+              640.0,
+              141.95330810546875
+            ],
+            "newRayMissBlocks": 3.337860107421875E-6,
+            "oldRayMissBlocks": 1.7881393432617188E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              421.4089660644531
+            ],
+            "shaderPixel": [
+              640.0,
+              421.4069519042969
+            ],
+            "newRayMissBlocks": 1.2159347534179688E-5,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              119.16572570800781,
+              346.5635681152344
+            ],
+            "shaderPixel": [
+              119.1653823852539,
+              346.56158447265625
+            ],
+            "newRayMissBlocks": 7.954317879921291E-6,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              1160.834228515625,
+              346.5635681152344
+            ],
+            "shaderPixel": [
+              1160.834716796875,
+              346.56158447265625
+            ],
+            "newRayMissBlocks": 7.954317879921291E-6,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              555.775390625
+            ],
+            "shaderPixel": [
+              640.0,
+              555.77294921875
+            ],
+            "newRayMissBlocks": 8.910894393920898E-6,
+            "oldRayMissBlocks": 2.9802322387695312E-8
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-15-bob-before.png",
+      "tick": 384,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(0.5, 122.62000381946564, -6.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(0.5, 121.0, -6.5)",
+      "shaderClockWrapped": 241,
+      "health": 85.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-15-bob-before.png",
+        "scene": "bob-before",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          0.5,
+          122.62000381946564,
+          -6.5
+        ],
+        "partialTick": 0.4399991,
+        "bobEnabled": true,
+        "walkDistance": 0.0,
+        "walkDistanceDelta": 0.0,
+        "drawSequence": 653,
+        "coverage": 0.2863732638888889,
+        "drawCpuMs": 0.1107,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402952,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.444614,
+          -0.15655674,
+          -0.15643446,
+          0.0,
+          0.38718885,
+          0.9884603,
+          0.98768824,
+          0.0,
+          -1.2499621,
+          7.0728054,
+          7.1672425
+        ],
+        "shaderInverseLocalProjection": [
+          -0.5746151,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.39905193,
+          0.06320379,
+          -0.0,
+          -0.0,
+          -16.193644,
+          69.97236,
+          -9.996051,
+          -0.0,
+          16.049866,
+          -69.03937,
+          10.003865
+        ],
+        "eventProjection": [
+          1.7402953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4750867,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0007817,
+          -1.0,
+          0.0,
+          0.0,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.98768824,
+          0.15643446,
+          0.0,
+          0.0,
+          0.15643446,
+          -0.98768824,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1690,
+        "eventFrame": 1690,
+        "probeFrame": 1690,
+        "cameraIsPlayer": true,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": 0.0,
+        "cameraPitchDegrees": 9.0,
+        "requestedYawDegrees": 0.0,
+        "requestedPitchDegrees": 9.0,
+        "virtualEyeLocal": [
+          0.0,
+          1.6200040578842163,
+          -7.0
+        ],
+        "physicalEyeLocal": [
+          0.0,
+          1.6200038194656372,
+          -7.0
+        ],
+        "virtualEyeOffsetBlocks": 2.384185791015625E-7,
+        "oldPhysicalOriginRayMissBlocks": 1.2287812012345967E-7,
+        "maxProjectionErrorPixels": 0.0016596168279647827,
+        "maxRayDistanceBlocks": 1.990795135498047E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              371.5202941894531
+            ],
+            "shaderPixel": [
+              640.0,
+              371.5216369628906
+            ],
+            "newRayMissBlocks": 1.3113021850585938E-5,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              952.848388671875,
+              417.3525390625
+            ],
+            "shaderPixel": [
+              952.8485717773438,
+              417.3538818359375
+            ],
+            "newRayMissBlocks": 1.6225169019890018E-5,
+            "oldRayMissBlocks": 1.2287812012345967E-7
+          },
+          {
+            "local": [
+              2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              2.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              327.1516418457031,
+              417.3525390625
+            ],
+            "shaderPixel": [
+              327.15142822265625,
+              417.3538818359375
+            ],
+            "newRayMissBlocks": 1.6225169019890018E-5,
+            "oldRayMissBlocks": 1.2287812012345967E-7
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              -2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              -1.5
+            ],
+            "expectedPixel": [
+              640.0,
+              337.0870056152344
+            ],
+            "shaderPixel": [
+              640.0,
+              337.0877990722656
+            ],
+            "newRayMissBlocks": 8.940696716308594E-6,
+            "oldRayMissBlocks": 0.0
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              640.0,
+              462.75439453125
+            ],
+            "shaderPixel": [
+              640.0,
+              462.75604248046875
+            ],
+            "newRayMissBlocks": 1.990795135498047E-5,
+            "oldRayMissBlocks": 1.1920928955078125E-7
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              640.0,
+              542.578369140625
+            ],
+            "shaderPixel": [
+              640.0,
+              542.579833984375
+            ],
+            "newRayMissBlocks": 1.71661376953125E-5,
+            "oldRayMissBlocks": 5.9604644775390625E-8
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-16-bob-walking.png",
+      "tick": 406,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(-2.5689692531815655, 122.62000012397766, -6.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(-2.6941597887680047, 121.0, -6.5)",
+      "shaderClockWrapped": 241,
+      "health": 85.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-16-bob-walking.png",
+        "scene": "bob-walking",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          -2.5689692531815655,
+          122.62000012397766,
+          -6.5
+        ],
+        "partialTick": 0.4199996,
+        "bobEnabled": true,
+        "walkDistance": 1.916496,
+        "walkDistanceDelta": 1.916496,
+        "drawSequence": 683,
+        "coverage": 0.15384375,
+        "drawCpuMs": 0.116,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402947,
+          -0.0011829656,
+          -0.0,
+          -0.0,
+          -8.2037324E-4,
+          2.4411647,
+          -0.16512078,
+          -0.16499184,
+          -1.3723574E-4,
+          0.40836906,
+          0.98706555,
+          0.98629475,
+          -5.3325996,
+          -1.3460611,
+          7.0769157,
+          7.17135
+        ],
+        "shaderInverseLocalProjection": [
+          -0.5746151,
+          -2.708731E-4,
+          -4.5312685E-5,
+          -0.0,
+          -1.9324206E-4,
+          0.3984892,
+          0.066660486,
+          -0.0,
+          30.632542,
+          -17.174889,
+          69.80848,
+          -9.996088,
+          -30.656483,
+          17.023321,
+          -68.87675,
+          10.003901
+        ],
+        "eventProjection": [
+          1.7402948,
+          0.0011829657,
+          0.0,
+          0.0,
+          -8.3174155E-4,
+          2.4749932,
+          -0.00867679,
+          -0.0086700125,
+          7.2114813E-6,
+          -0.02145903,
+          -1.0007439,
+          -0.99996233,
+          0.007942846,
+          -0.24632692,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.98768824,
+          0.15643446,
+          0.0,
+          0.0,
+          0.15643446,
+          -0.98768824,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1720,
+        "eventFrame": 1720,
+        "probeFrame": 1720,
+        "cameraIsPlayer": true,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": 0.0,
+        "cameraPitchDegrees": 9.0,
+        "requestedYawDegrees": 0.0,
+        "requestedPitchDegrees": 9.0,
+        "virtualEyeLocal": [
+          -3.064452886581421,
+          1.7181609869003296,
+          -6.983579635620117
+        ],
+        "physicalEyeLocal": [
+          -3.0689692531815655,
+          1.6200001239776611,
+          -7.0
+        ],
+        "virtualEyeOffsetBlocks": 0.0996272098543261,
+        "oldPhysicalOriginRayMissBlocks": 0.09405095875263214,
+        "maxProjectionErrorPixels": 0.003039844611686345,
+        "maxRayDistanceBlocks": 1.2555092325783335E-5,
+        "referencePoints": [
+          {
+            "local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "world": [
+              0.5,
+              121.0,
+              0.5
+            ],
+            "expectedPixel": [
+              164.09744262695312,
+              365.53509521484375
+            ],
+            "shaderPixel": [
+              164.09869384765625,
+              365.5338439941406
+            ],
+            "newRayMissBlocks": 1.1000408449035604E-5,
+            "oldRayMissBlocks": 0.09392454475164413
+          },
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              473.54833984375,
+              411.37164306640625
+            ],
+            "shaderPixel": [
+              473.5469970703125,
+              411.3700256347656
+            ],
+            "newRayMissBlocks": 5.569208042288665E-6,
+            "oldRayMissBlocks": 0.09405095875263214
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              264.6941833496094,
+              460.0458984375
+            ],
+            "shaderPixel": [
+              264.6951599121094,
+              460.0443420410156
+            ],
+            "newRayMissBlocks": 1.2555092325783335E-5,
+            "oldRayMissBlocks": 0.09252303093671799
+          },
+          {
+            "local": [
+              0.0,
+              1.1,
+              0.0
+            ],
+            "world": [
+              0.5,
+              122.1,
+              0.5
+            ],
+            "expectedPixel": [
+              151.65809631347656,
+              536.2176513671875
+            ],
+            "shaderPixel": [
+              151.65939331054688,
+              536.2149047851562
+            ],
+            "newRayMissBlocks": 1.23458257803577E-5,
+            "oldRayMissBlocks": 0.0938076600432396
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    },
+    {
+      "name": "furnace-motion-17-bob-stopped.png",
+      "tick": 428,
+      "worldTime": 241,
+      "view": "front",
+      "cameraPosition": "(-4.245144112488072, 122.62000012397766, -6.5)",
+      "wall": false,
+      "shaderIdentity": 528378938,
+      "glError": 0,
+      "hitAgeTicks": 1241.0,
+      "selfF5View": false,
+      "inventoryPreview": false,
+      "playerPosition": "(-4.245144112488072, 121.0, -6.5)",
+      "shaderClockWrapped": 241,
+      "health": 85.49999,
+      "canRender": false,
+      "worldDraws": 0,
+      "guiDraws": 0,
+      "capturedVertices": 0,
+      "bufferClass": "none",
+      "nativeFoilVertices": 0,
+      "bottomVolumeDraws": 1,
+      "furnaceMotion": {
+        "name": "furnace-motion-17-bob-stopped.png",
+        "scene": "bob-stopped",
+        "fire": "wuxingxiantu:red_flow",
+        "fixedTimeSeconds": 12.0,
+        "fixedPhase": 0.5,
+        "worldAnchor": [
+          0.5,
+          121.0,
+          0.5
+        ],
+        "cameraEye": [
+          -4.245144112488072,
+          122.62000012397766,
+          -6.5
+        ],
+        "partialTick": 0.2800002,
+        "bobEnabled": true,
+        "walkDistance": 2.8470867,
+        "walkDistanceDelta": 2.8470867,
+        "drawSequence": 742,
+        "coverage": 0.09428038194444445,
+        "drawCpuMs": 0.1271,
+        "viewport": [
+          1280,
+          900
+        ],
+        "eventBodyProjection": [
+          -1.7402952,
+          8.260883E-6,
+          -0.0,
+          -0.0,
+          5.7369116E-6,
+          2.4446094,
+          -0.15656817,
+          -0.15644589,
+          9.087056E-7,
+          0.38721713,
+          0.9884585,
+          0.98768646,
+          -8.258009,
+          -1.2500111,
+          7.072811,
+          7.1672473
+        ],
+        "shaderInverseLocalProjection": [
+          -0.57461524,
+          1.8942291E-6,
+          3.0003724E-7,
+          -0.0,
+          7.621819E-7,
+          0.3990515,
+          0.06320765,
+          1.3832448E-7,
+          47.433422,
+          -16.19495,
+          69.97276,
+          -9.996137,
+          -47.4705,
+          16.051163,
+          -69.03977,
+          10.003951
+        ],
+        "eventProjection": [
+          1.7402953,
+          -8.260884E-6,
+          0.0,
+          0.0,
+          5.8084343E-6,
+          2.4750867,
+          -1.1575273E-5,
+          -1.1566232E-5,
+          -6.71817E-11,
+          -2.8627428E-5,
+          -1.0007817,
+          -1.0,
+          -5.546646E-5,
+          -3.0273714E-4,
+          -0.10003908,
+          0.0
+        ],
+        "eventPose": [
+          -0.99999994,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.98768824,
+          0.15643446,
+          0.0,
+          0.0,
+          0.15643446,
+          -0.98768824,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "furnaceYawRadians": 0.0,
+        "renderFrame": 1779,
+        "eventFrame": 1779,
+        "probeFrame": 1779,
+        "cameraIsPlayer": true,
+        "cameraEntityExpected": true,
+        "cameraYawDegrees": 0.0,
+        "cameraPitchDegrees": 9.0,
+        "requestedYawDegrees": 0.0,
+        "requestedPitchDegrees": 9.0,
+        "virtualEyeLocal": [
+          -4.745175361633301,
+          1.620120882987976,
+          -6.999980449676514
+        ],
+        "physicalEyeLocal": [
+          -4.745144112488072,
+          1.6200001239776611,
+          -7.0
+        ],
+        "virtualEyeOffsetBlocks": 1.262595057736005E-4,
+        "oldPhysicalOriginRayMissBlocks": 1.1834390898002312E-4,
+        "maxProjectionErrorPixels": 0.0026698708717623506,
+        "maxRayDistanceBlocks": 1.0876173291762825E-5,
+        "referencePoints": [
+          {
+            "local": [
+              -2.0,
+              0.3,
+              0.0
+            ],
+            "world": [
+              -1.5,
+              121.3,
+              0.5
+            ],
+            "expectedPixel": [
+              210.58819580078125,
+              417.34832763671875
+            ],
+            "shaderPixel": [
+              210.58978271484375,
+              417.3504638671875
+            ],
+            "newRayMissBlocks": 5.5914906624821015E-6,
+            "oldRayMissBlocks": 1.1834390898002312E-4
+          },
+          {
+            "local": [
+              0.0,
+              0.3,
+              2.0
+            ],
+            "world": [
+              0.5,
+              121.3,
+              2.5
+            ],
+            "expectedPixel": [
+              58.94176483154297,
+              462.75469970703125
+            ],
+            "shaderPixel": [
+              58.942298889160156,
+              462.7568054199219
+            ],
+            "newRayMissBlocks": 1.0876173291762825E-5,
+            "oldRayMissBlocks": 1.1640762386377901E-4
+          }
+        ]
+      },
+      "guardLevels": {
+        "head": 0,
+        "chest": 0,
+        "legs": 0,
+        "feet": 0
+      },
+      "foilSlots": {
+        "head": false,
+        "chest": false,
+        "legs": false,
+        "feet": false
+      },
+      "visualEnabled": true
+    }
+  ],
+  "failures": []
+}

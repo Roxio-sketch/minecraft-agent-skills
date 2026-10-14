@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '6.0.54'
+}
+group='dev.localmaterial'
+version='0.3.0'
+base { archivesName='local-environment-lab' }
+java.toolchain.languageVersion=JavaLanguageVersion.of(17)
+minecraft { mappings channel:'official', version:'1.20.1' }
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.4.10'
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+}
+tasks.withType(JavaCompile).configureEach { options.encoding='UTF-8' }
+// ForgeGradle supplies official -> SRG mappings; the Mixin AP remaps method selectors.
+tasks.register('mixinSrg') {
+    dependsOn 'createMcpToSrg'
+    inputs.file(layout.buildDirectory.file('createMcpToSrg/output.tsrg'))
+    outputs.file(layout.buildDirectory.file('mixin/mappings.srg'))
+    doLast {
+        def output=layout.buildDirectory.file('mixin/mappings.srg').get().asFile
+        output.parentFile.mkdirs()
+        net.minecraftforge.srgutils.IMappingFile.load(layout.buildDirectory.file('createMcpToSrg/output.tsrg').get().asFile)
+            .write(output.toPath(), net.minecraftforge.srgutils.IMappingFile.Format.SRG, false)
+    }
+}
+tasks.named('compileJava', JavaCompile).configure {
+    dependsOn 'mixinSrg'
+    options.compilerArgs += ["-AreobfSrgFile=${layout.buildDirectory.get()}/mixin/mappings.srg".toString(),
+        "-AoutRefMapFile=${layout.buildDirectory.get()}/classes/java/main/localmaterial.refmap.json".toString(),
+        '-AdefaultObfuscationEnv=searge']
+}
+tasks.named('jar', Jar).configure { manifest.attributes('MixinConfigs':'localmaterial.mixins.json') }
+tasks.named('jar',Jar).configure { finalizedBy 'reobfJar' }

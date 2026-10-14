@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "createdAt": "2026-10-09T09:04:18.107Z",
+  "shaderPath": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_head_energy.fsh",
+  "shaderSha256": "e6cd70f4eb1f23cc7b2e039c260f80ed1cb950e6680725cb7c94a84848535133",
+  "sourceStillMatchesAtWrite": true,
+  "guard": "if(radius<0.0001)continue;",
+  "sample": {
+    "origin": [
+      -5,
+      0,
+      0
+    ],
+    "direction": [
+      1,
+      0,
+      0
+    ],
+    "viewDirection": [
+      0,
+      0,
+      -1
+    ],
+    "localPerWorld": 1,
+    "sceneLimit": "60/11",
+    "first": 4,
+    "last": "60/11",
+    "sampleCount": 8,
+    "zeroBasedSampleIndex": 5,
+    "stepSize": "2/11",
+    "travel": "4 + (5 + 1/2) * (2/11) = 5",
+    "point": [
+      0,
+      0,
+      0
+    ],
+    "turn": 0
+  },
+  "uniforms": {
+    "ViewToHead": "identity",
+    "HeadColor": [
+      0.396,
+      0.851,
+      0.949,
+      0.64
+    ],
+    "FlightMotion": [
+      0,
+      0
+    ],
+    "EffectTime": 7.5,
+    "EmissionPass": 0
+  },
+  "gpu": {
+    "sampleDiagnostic": {
+      "pixel": [
+        5,
+        0,
+        0.1818181872367859,
+        1
+      ],
+      "finiteValues": 64,
+      "nonFiniteValues": 0,
+      "glError": 0
+    },
+    "clippedCenterSample": {
+      "pixel": [
+        0.6548798084259033,
+        1.0768917798995972,
+        1.1457539796829224,
+        0.24484801292419434
+      ],
+      "finiteValues": 64,
+      "nonFiniteValues": 0,
+      "glError": 0
+    },
+    "fullInterval": {
+      "pixel": [
+        0.6508477926254272,
+        1.0702577829360962,
+        1.1386951208114624,
+        0.34716862440109253
+      ],
+      "finiteValues": 64,
+      "nonFiniteValues": 0,
+      "glError": 0
+    },
+    "framebuffer": {
+      "width": 4,
+      "height": 4,
+      "format": "RGBA32F",
+      "readback": "GL_FLOAT"
+    }
+  },
+  "steps": [
+    "Read current production sphere GLSL and require the radius guard.",
+    "Adapt only version 150 to ES 300 plus precision, rename reserved sample identifier, and replace main with the exact synthetic boundary entry.",
+    "Compile/link actual production advancedSphere and helper functions in WebGL2.",
+    "Render the 8-step sample diagnostic and confirm the center sample radius is below the guard threshold.",
+    "Render production advancedSphere with sceneLimit=60/11 and the full sceneLimit=6 interval into RGBA32F, then read all 64 float components per case.",
+    "Assert finite outputs, GL error 0, and an unchanged production hash before writing this report."
+  ],
+  "scope": "Targeted synthetic GPU boundary regression only. No production modification, Gradle build, Minecraft launch, or game visual acceptance."
+}

@@ -250,7 +250,7 @@ def snapshot(helper, effect, game, output, prepared=None, evidence=None, editor=
     if evidence:
         shutil.copytree(evidence, output / 'evidence')
     manifest = {'schema': 1, 'effect': effect, 'managedAssets': managed, 'externalResources': external,
-                'dependencies': {'minecraft': '1.20.1', 'loader': 'Forge', 'photon': '1.1.17', 'helper': 'photon-enabled'},
+                'dependencies': {'minecraft': '1.20.1', 'loader': 'Forge', 'photon': '1.1.17', 'helper': 'test18'},
                 'files': {p.relative_to(output).as_posix(): sha(p) for p in sorted(output.rglob('*')) if p.is_file()}}
     write_json(output / 'revision.json', manifest)
     return manifest

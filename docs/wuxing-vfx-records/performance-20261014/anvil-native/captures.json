@@ -1,0 +1,62 @@
+{
+  "test": "real-server-anvil-blue-ui",
+  "input": "Test pointer supplied to real Screen.renderWithTooltip, no OS cursor injection",
+  "captures": [
+    {
+      "name": "anvil-empty",
+      "glError": 0,
+      "manaCost": 0,
+      "result": "空气",
+      "mayPickup": false
+    },
+    {
+      "name": "anvil-rename",
+      "glError": 0,
+      "manaCost": 20,
+      "result": "玄灵剑",
+      "mayPickup": true
+    },
+    {
+      "name": "anvil-repair",
+      "glError": 0,
+      "manaCost": 40,
+      "result": "铁剑",
+      "mayPickup": true
+    },
+    {
+      "name": "anvil-poor",
+      "glError": 0,
+      "manaCost": 40,
+      "result": "铁剑",
+      "mayPickup": false
+    },
+    {
+      "name": "anvil-template-smithing",
+      "glError": 0,
+      "manaCost": 20,
+      "result": "下界合金剑",
+      "mayPickup": true
+    },
+    {
+      "name": "anvil-night-north",
+      "glError": 0,
+      "runeDraws": 1
+    },
+    {
+      "name": "anvil-night-east",
+      "glError": 0,
+      "runeDraws": 1
+    },
+    {
+      "name": "anvil-night-south",
+      "glError": 0,
+      "runeDraws": 1
+    },
+    {
+      "name": "anvil-night-west",
+      "glError": 0,
+      "runeDraws": 1
+    }
+  ],
+  "failures": []
+}

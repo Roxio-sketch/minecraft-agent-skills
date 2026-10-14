@@ -1,0 +1,86 @@
+{
+  "vertex": "lightlab:light",
+  "fragment": "lightlab:light",
+  "attributes": [
+    "Position",
+    "UV0"
+  ],
+  "samplers": [
+    {
+      "name": "Sampler0"
+    },
+    {
+      "name": "Sampler1"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "InverseVP",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "LightRelative",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "LightColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.25,
+        0.65,
+        1
+      ]
+    },
+    {
+      "name": "Radius",
+      "type": "float",
+      "count": 1,
+      "values": [
+        7
+      ]
+    },
+    {
+      "name": "Intensity",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.4
+      ]
+    },
+    {
+      "name": "Texel",
+      "type": "float",
+      "count": 2,
+      "values": [
+        0.001,
+        0.001
+      ]
+    }
+  ]
+}

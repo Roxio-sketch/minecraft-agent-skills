@@ -1,0 +1,16 @@
+{
+  "loader": "forge:obj",
+  "model": "wuxingxiantu:models/block/cauldron_structure.obj",
+  "flip_v": false,
+  "automatic_culling": false,
+  "shade_quads": true,
+  "textures": {
+    "material_0": "wuxingxiantu:block/cauldron/material_0",
+    "material_1": "wuxingxiantu:block/cauldron/material_1",
+    "material_2": "wuxingxiantu:block/cauldron/material_2",
+    "material_3": "wuxingxiantu:block/cauldron/material_3",
+    "material_4": "wuxingxiantu:block/cauldron/material_4",
+    "material_5": "wuxingxiantu:block/cauldron/material_5",
+    "particle": "wuxingxiantu:block/cauldron/material_4"
+  }
+}

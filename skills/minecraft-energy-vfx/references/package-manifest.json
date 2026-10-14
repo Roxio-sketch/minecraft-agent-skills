@@ -1,0 +1,28 @@
+{
+  "version": "0.2.5",
+  "schema": "energy-vfx/2",
+  "fields": 48,
+  "presets": 20,
+  "runtime": "energyvfx-0.2.5.jar",
+  "runtimeSha256": "7a4e001ac749843cf9d9583d4290c32cd717b2aed6fc9a1c78e0311893813ac9",
+  "sharedShaders": {
+    "noise.glsl": "766069cb5b02eb3366c82c7ec31d5d22972b7cb26e1704f29654b7010d680f33",
+    "field.glsl": "948ad2dd55efa447a4744b448b978867e47ecd3b9ae167050918b3dc82ec1398",
+    "scene.glsl": "2ce388325c816496fecfc767c369f2acb71897704c49067cd8aa1de7fbbb5828",
+    "volume.glsl": "54d2d393484a11c2b7345bfbf4168e1c0f44fc46cc6457f8d8e9fa1b6105572f",
+    "blur.glsl": "661a9ab3e56ef65c7091e78bf72a217983270b58dd6612259c4d6f181365aa16",
+    "composite.glsl": "44e3c3c1e897149ec93ac1113a80854534b5fe55c98c3f7c3ac0066797918239"
+  },
+  "nativeShaders": {
+    "flow-cache.glsl": "a5d4bfb40bc1612dcbdf53fe2e2a1f0fc8623acfb530d87594a4b12930cb1a23"
+  },
+  "runtimeShaders": {
+    "noise.glsl": "766069cb5b02eb3366c82c7ec31d5d22972b7cb26e1704f29654b7010d680f33",
+    "field.glsl": "948ad2dd55efa447a4744b448b978867e47ecd3b9ae167050918b3dc82ec1398",
+    "scene.glsl": "2ce388325c816496fecfc767c369f2acb71897704c49067cd8aa1de7fbbb5828",
+    "volume.glsl": "54d2d393484a11c2b7345bfbf4168e1c0f44fc46cc6457f8d8e9fa1b6105572f",
+    "blur.glsl": "661a9ab3e56ef65c7091e78bf72a217983270b58dd6612259c4d6f181365aa16",
+    "composite.glsl": "44e3c3c1e897149ec93ac1113a80854534b5fe55c98c3f7c3ac0066797918239",
+    "flow-cache.glsl": "a5d4bfb40bc1612dcbdf53fe2e2a1f0fc8623acfb530d87594a4b12930cb1a23"
+  }
+}

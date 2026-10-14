@@ -1,0 +1,2609 @@
+{
+  "schema": "github-water-vortex-catalog/1",
+  "accessedDate": "2026-10-11",
+  "scope": "selected static source; no upstream execution or renderer changes",
+  "projectCount": 8,
+  "upstreamFileCount": 99,
+  "upstreamBytes": 627152,
+  "projects": [
+    {
+      "id": "unity-tornado-simulator",
+      "repo": "Habrador/Unity-Tornado-Simulator",
+      "commit": "46f0a76885203562d8203e037fd8f3660e931537",
+      "url": "https://github.com/Habrador/Unity-Tornado-Simulator",
+      "license": "MIT",
+      "licenseLocalPath": "cloud/unity-tornado-simulator/LICENSE",
+      "category": "云与漏斗",
+      "purpose": "弯曲中心线、按高度取半径、主体绕轴运动与顶部云层衔接",
+      "platform": "Unity / C# + shader",
+      "limitation": "粒子龙卷，不是液体表面求解器",
+      "findings": "cloud/findings.md",
+      "groupManifest": "cloud/manifest.json",
+      "files": [
+        {
+          "path": "Assets/Material/Weather/Cloud.shader",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+          "bytes": 16796,
+          "sha256": "095e9511d60596300584eee10dd02d808a52d2614b46076eaf86ca72c8b87bb6",
+          "sourceUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader",
+          "lineCount": 553,
+          "readRanges": [
+            [
+              1,
+              553
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 553,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+          "bytes": 1514,
+          "sha256": "1084d166bd7cc49d5647cf9abd6f3e767cc365ae99d0efa2259577d2de9b1e33",
+          "sourceUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+          "lineCount": 45,
+          "readRanges": [
+            [
+              1,
+              45
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 45,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/Tornado.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+          "bytes": 11670,
+          "sha256": "87a05cab03e1e0a9da4a9e4a57b9291f90cdb0200dcb40b05fd3520ec557f43b",
+          "sourceUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs",
+          "lineCount": 376,
+          "readRanges": [
+            [
+              1,
+              376
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 376,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoDust.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+          "bytes": 8620,
+          "sha256": "34899b4ef4669a561a67c259be29484669d346b37e935db3843d10782a1da99b",
+          "sourceUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDust.cs",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDust.cs",
+          "lineCount": 273,
+          "readRanges": [
+            [
+              1,
+              273
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 273,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "bytes": 5215,
+          "sha256": "10b23ee1a01b65a4b683afbb3b3a4c2cdad12d60dabcf44b6f8a11799ac322e2",
+          "sourceUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "lineCount": 157,
+          "readRanges": [
+            [
+              1,
+              157
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 157,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoMath.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+          "bytes": 4128,
+          "sha256": "fd79ce74ebd4a0eca03cba4748957605de70fb406153b97c2ae13a61e3fa22a5",
+          "sourceUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs",
+          "lineCount": 135,
+          "readRanges": [
+            [
+              1,
+              135
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 135,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "LICENSE",
+          "localPath": "cloud/unity-tornado-simulator/LICENSE",
+          "bytes": 1069,
+          "sha256": "e384020ec265ff356df283774702fd05b54586d799477ba1f40dbb839089689f",
+          "sourceUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/LICENSE",
+          "lineCount": 21,
+          "readRanges": [
+            [
+              1,
+              21
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 21,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "README.md",
+          "localPath": "cloud/unity-tornado-simulator/README.md",
+          "bytes": 471,
+          "sha256": "d40a1177c4b478e5db0f7b90f6b860c26e415fba9f993bb947698726e2ac6f88",
+          "sourceUrl": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/README.md",
+          "rawUrl": "https://raw.githubusercontent.com/Habrador/Unity-Tornado-Simulator/46f0a76885203562d8203e037fd8f3660e931537/README.md",
+          "lineCount": 9,
+          "readRanges": [
+            [
+              1,
+              9
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 9,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        }
+      ],
+      "anchors": [
+        {
+          "path": "Assets/Material/Weather/Cloud.shader",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+          "symbol": "float getDensityVolume",
+          "line": 161,
+          "needle": "float getDensityVolume(float3 sampleCoordinate)",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L161"
+        },
+        {
+          "path": "Assets/Material/Weather/Cloud.shader",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+          "symbol": "half getPhaseFunctionValue",
+          "line": 189,
+          "needle": "half getPhaseFunctionValue(fixed3 sunDir, fixed3 viewDir)",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L189"
+        },
+        {
+          "path": "Assets/Material/Weather/Cloud.shader",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+          "symbol": "float3 getIncidentLightning",
+          "line": 213,
+          "needle": "float3 getIncidentLightning(float3 startCoordinate, fixed3 ray)",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L213"
+        },
+        {
+          "path": "Assets/Material/Weather/Cloud.shader",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+          "symbol": "fixed4 getColorVolumeRendering",
+          "line": 291,
+          "needle": "fixed4 getColorVolumeRendering(float3 startPos, fixed3 ray)",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L291"
+        },
+        {
+          "path": "Assets/Material/Weather/Cloud.shader",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+          "symbol": "fixed4 getColor(",
+          "line": 466,
+          "needle": "fixed4 getColor(float3 startPos, fixed3 ray)",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L466"
+        },
+        {
+          "path": "Assets/Material/Weather/Cloud.shader",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Material/Weather/Cloud.shader",
+          "symbol": "fixed4 frag",
+          "line": 522,
+          "needle": "fixed4 frag(v2f i) : SV_Target",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Material/Weather/Cloud.shader#L522"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Clouds/GlobalShaderVariables.cs",
+          "symbol": "private void OnPreRender()",
+          "line": 20,
+          "needle": "private void OnPreRender()",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Clouds/GlobalShaderVariables.cs#L20"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/Tornado.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+          "symbol": "void Start()",
+          "line": 69,
+          "needle": "void Start()",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs#L69"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/Tornado.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+          "symbol": "void AddSkeletonPieces()",
+          "line": 150,
+          "needle": "void AddSkeletonPieces()",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs#L150"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/Tornado.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+          "symbol": "void MoveTornado()",
+          "line": 194,
+          "needle": "void MoveTornado()",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs#L194"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/Tornado.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/Tornado.cs",
+          "symbol": "void TornadoDynamics()",
+          "line": 235,
+          "needle": "void TornadoDynamics()",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/Tornado.cs#L235"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoDust.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+          "symbol": "void LateUpdate()",
+          "line": 56,
+          "needle": "void LateUpdate()",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDust.cs#L56"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoDust.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+          "symbol": "void RotateParticles()",
+          "line": 96,
+          "needle": "void RotateParticles()",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDust.cs#L96"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoDust.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDust.cs",
+          "symbol": "public int FindIndex",
+          "line": 240,
+          "needle": "public int FindIndex(Vector3 particlePos)",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDust.cs#L240"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "symbol": "void LateUpdate()",
+          "line": 51,
+          "needle": "void LateUpdate()",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDustTop.cs#L51"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoDustTop.cs",
+          "symbol": "void RotateParticles()",
+          "line": 67,
+          "needle": "void RotateParticles()",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoDustTop.cs#L67"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoMath.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+          "symbol": "public static float GetAngle",
+          "line": 7,
+          "needle": "public static float GetAngle(float x, float y)",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs#L7"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoMath.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+          "symbol": "public static Vector3 GetParticlePos",
+          "line": 29,
+          "needle": "public static Vector3 GetParticlePos(Vector3 centerPos, float angle, float radius, float rotationSpeed)",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs#L29"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoMath.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+          "symbol": "public static Vector3 GetParticleVel",
+          "line": 49,
+          "needle": "public static Vector3 GetParticleVel(float angle, float radius, float rotationSpeed)",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs#L49"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoMath.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+          "symbol": "public static float CalculateProgress",
+          "line": 77,
+          "needle": "public static float CalculateProgress(Vector3 from, Vector3 to, Vector3 current)",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs#L77"
+        },
+        {
+          "path": "Assets/Scripts/Tornado/TornadoMath.cs",
+          "localPath": "cloud/unity-tornado-simulator/Assets/Scripts/Tornado/TornadoMath.cs",
+          "symbol": "public static Vector3 CheckRadius",
+          "line": 110,
+          "needle": "public static Vector3 CheckRadius(Vector3 particlePos, Vector3 centerPos, float wantedRadius)",
+          "url": "https://github.com/Habrador/Unity-Tornado-Simulator/blob/46f0a76885203562d8203e037fd8f3660e931537/Assets/Scripts/Tornado/TornadoMath.cs#L110"
+        }
+      ]
+    },
+    {
+      "id": "seblague-clouds",
+      "repo": "SebLague/Clouds",
+      "commit": "fcc997c40d36c7bedf95a294cd2136b8c5127009",
+      "url": "https://github.com/SebLague/Clouds",
+      "license": "MIT",
+      "licenseLocalPath": "cloud/seblague-clouds/LICENSE",
+      "category": "云与漏斗",
+      "purpose": "基形密度、边缘侵蚀、Worley 噪声和云内光照积分",
+      "platform": "Unity / C# + HLSL compute",
+      "limitation": "云盒，无漏斗或螺旋域",
+      "findings": "cloud/findings.md",
+      "groupManifest": "cloud/manifest.json",
+      "files": [
+        {
+          "path": "Assets/Scripts/Clouds/CloudMaster.cs",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/CloudMaster.cs",
+          "bytes": 6000,
+          "sha256": "c7ee76194fad405675d5c10f16f1f1147cc8f8bb3a2714c0731e54f816760b43",
+          "sourceUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/CloudMaster.cs",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/CloudMaster.cs",
+          "lineCount": 160,
+          "readRanges": [
+            [
+              1,
+              160
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 160,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "bytes": 4047,
+          "sha256": "97e7977062871eb28f63e26b835f46d979d5378299318dbdb621f1d41e7eb189",
+          "sourceUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "lineCount": 135,
+          "readRanges": [
+            [
+              1,
+              135
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 135,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "bytes": 9054,
+          "sha256": "f1f113e9908407de68fe38e04675f6aa10cec999042de5a54fd3a03c6336ff71",
+          "sourceUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "lineCount": 231,
+          "readRanges": [
+            [
+              1,
+              231
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 231,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+          "bytes": 55,
+          "sha256": "bbb38aeebb4402fd4d8504aa09565a1c03ccad3d58fc281a0843fc6200593212",
+          "sourceUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+          "lineCount": 3,
+          "readRanges": [
+            [
+              1,
+              3
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 3,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "bytes": 14147,
+          "sha256": "932543d8297e92b812ffaa602957eb167279642939664802ea30c9ab25621402",
+          "sourceUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "lineCount": 342,
+          "readRanges": [
+            [
+              1,
+              342
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 342,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "LICENSE",
+          "localPath": "cloud/seblague-clouds/LICENSE",
+          "bytes": 1072,
+          "sha256": "24f060a992cf2dd33a9b2045645ea70a67380b439a99f121841e84915370d4d7",
+          "sourceUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/LICENSE",
+          "lineCount": 21,
+          "readRanges": [
+            [
+              1,
+              21
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 21,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "README.md",
+          "localPath": "cloud/seblague-clouds/README.md",
+          "bytes": 173,
+          "sha256": "01327ec8653078226852dec49fe5ffe7a76da2d1aea9b563df91122414d9df3a",
+          "sourceUrl": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/README.md",
+          "rawUrl": "https://raw.githubusercontent.com/SebLague/Clouds/fcc997c40d36c7bedf95a294cd2136b8c5127009/README.md",
+          "lineCount": 7,
+          "readRanges": [
+            [
+              1,
+              7
+            ]
+          ],
+          "readScope": {
+            "kind": "complete-file-static-read",
+            "startLine": 1,
+            "endLine": 7,
+            "executed": false
+          },
+          "readStatus": "body-read"
+        }
+      ],
+      "anchors": [
+        {
+          "path": "Assets/Scripts/Clouds/CloudMaster.cs",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/CloudMaster.cs",
+          "symbol": "private void OnRenderImage",
+          "line": 68,
+          "needle": "private void OnRenderImage (RenderTexture src, RenderTexture dest) {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/CloudMaster.cs#L68"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/CloudMaster.cs",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/CloudMaster.cs",
+          "symbol": "void SetDebugParams",
+          "line": 138,
+          "needle": "void SetDebugParams () {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/CloudMaster.cs#L138"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "symbol": "float worley(",
+          "line": 67,
+          "needle": "float worley(StructuredBuffer<float3> points, int numCells, float3 samplePos) {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute#L67"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "symbol": "void CSWorley",
+          "line": 98,
+          "needle": "void CSWorley (uint3 id : SV_DispatchThreadID)",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute#L98"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute",
+          "symbol": "void CSNormalize",
+          "line": 127,
+          "needle": "void CSNormalize (uint3 id : SV_DispatchThreadID)",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/Compute/NoiseGenCompute.compute#L127"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "symbol": "public void UpdateNoise",
+          "line": 51,
+          "needle": "public void UpdateNoise () {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs#L51"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "symbol": "void UpdateWorley",
+          "line": 148,
+          "needle": "void UpdateWorley (WorleyNoiseSettings settings) {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs#L148"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "symbol": "void CreateWorleyPointsBuffer",
+          "line": 162,
+          "needle": "void CreateWorleyPointsBuffer (System.Random prng, int numCellsPerAxis, string bufferName) {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs#L162"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs",
+          "symbol": "void CreateTexture",
+          "line": 193,
+          "needle": "void CreateTexture (ref RenderTexture texture, int resolution, string name) {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Noise/NoiseGenerator.cs#L193"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc",
+          "symbol": "#define DEBUG_MODE 1",
+          "line": 1,
+          "needle": "#define DEBUG_MODE 1",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/CloudDebug.cginc#L1"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "symbol": "float2 rayBoxDst",
+          "line": 121,
+          "needle": "float2 rayBoxDst(float3 boundsMin, float3 boundsMax, float3 rayOrigin, float3 invRaydir) {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L121"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "symbol": "float hg(",
+          "line": 145,
+          "needle": "float hg(float a, float g) {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L145"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "symbol": "float phase(",
+          "line": 150,
+          "needle": "float phase(float a) {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L150"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "symbol": "float sampleDensity",
+          "line": 165,
+          "needle": "float sampleDensity(float3 rayPos) {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L165"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "symbol": "float lightmarch",
+          "line": 218,
+          "needle": "float lightmarch(float3 position) {",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L218"
+        },
+        {
+          "path": "Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "localPath": "cloud/seblague-clouds/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+          "symbol": "float4 frag",
+          "line": 264,
+          "needle": "float4 frag (v2f i) : SV_Target",
+          "url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader#L264"
+        }
+      ]
+    },
+    {
+      "id": "dli-fluid",
+      "repo": "dli/fluid",
+      "commit": "ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab",
+      "url": "https://github.com/dli/fluid",
+      "license": "MIT",
+      "licenseLocalPath": "liquid/dli-fluid/LICENSE",
+      "category": "液体与表面",
+      "purpose": "PIC/FLIP 网格与粒子速度传递、压力投影和粒子绘制",
+      "platform": "WebGL / fragment passes",
+      "limitation": "液体模拟参考，粒子渲染不是闭合水片重建",
+      "findings": "liquid/findings.md",
+      "groupManifest": "liquid/manifest.json",
+      "files": [
+        {
+          "path": "LICENSE",
+          "localPath": "liquid/dli-fluid/LICENSE",
+          "bytes": 1093,
+          "sha256": "ea23c60d44803af81c7d05fb4fe035afd9d3d6988041b7248ab72acc9b9c6ed7",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/LICENSE",
+          "lineCount": 21,
+          "readRanges": [
+            [
+              1,
+              21
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                21
+              ]
+            ],
+            "purpose": "MIT copyright and grant"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "README.md",
+          "localPath": "liquid/dli-fluid/README.md",
+          "bytes": 389,
+          "sha256": "64c004cb54f326e800edbcb3308fb1c2f6667f47c553a50e9d94083aa77a6eec",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/README.md",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/README.md",
+          "lineCount": 9,
+          "readRanges": [
+            [
+              1,
+              8
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                8
+              ]
+            ],
+            "purpose": "Upstream purpose and method"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "simulator.js",
+          "localPath": "liquid/dli-fluid/simulator.js",
+          "bytes": 28250,
+          "sha256": "3ed92041ec4a2130dcfb36a49d54ced3936b10d960e1aba89b1b1fd70259ef5b",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/simulator.js",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/simulator.js",
+          "lineCount": 591,
+          "readRanges": [
+            [
+              30,
+              69
+            ],
+            [
+              274,
+              291
+            ],
+            [
+              294,
+              368
+            ],
+            [
+              369,
+              461
+            ],
+            [
+              485,
+              587
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                30,
+                69
+              ],
+              [
+                274,
+                291
+              ],
+              [
+                294,
+                368
+              ],
+              [
+                369,
+                461
+              ],
+              [
+                485,
+                587
+              ]
+            ],
+            "purpose": "GPU types; PIC/FLIP pipeline; pressure; particle advection"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "renderer.js",
+          "localPath": "liquid/dli-fluid/renderer.js",
+          "bytes": 19217,
+          "sha256": "34fcaada9420e1c693ea77bab0d1d642e0a7fd9c4521823f905e5a955c579b65",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/renderer.js",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/renderer.js",
+          "lineCount": 474,
+          "readRanges": [
+            [
+              274,
+              317
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                274,
+                317
+              ]
+            ],
+            "purpose": "Sphere instance rendering; not a common fluid mesh"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "shaders/common.frag",
+          "localPath": "liquid/dli-fluid/shaders/common.frag",
+          "bytes": 2559,
+          "sha256": "e3b4f347fe42c0c61782526c8cafbaf41fd71247e5a68533599129ff32ac23fa",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/common.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/common.frag",
+          "lineCount": 64,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/addforce.frag",
+          "localPath": "liquid/dli-fluid/shaders/addforce.frag",
+          "bytes": 1396,
+          "sha256": "69033b4014026112a9b9ff6bc61fe9e0fb8f10de204d1e0190c70310206babb6",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/addforce.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/addforce.frag",
+          "lineCount": 42,
+          "readRanges": [
+            [
+              1,
+              42
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                42
+              ]
+            ],
+            "purpose": "Gravity and mouse force; potential custom vortex injection point"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "shaders/advect.frag",
+          "localPath": "liquid/dli-fluid/shaders/advect.frag",
+          "bytes": 1982,
+          "sha256": "d03f08414a324e02f05e4e08b9eab0fcd79171de612a25a1034567e94c4f737f",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/advect.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/advect.frag",
+          "lineCount": 59,
+          "readRanges": [
+            [
+              1,
+              59
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                59
+              ]
+            ],
+            "purpose": "Staggered velocity sampling; RK2; random displacement; commented CFL clamp"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "shaders/transfertogrid.frag",
+          "localPath": "liquid/dli-fluid/shaders/transfertogrid.frag",
+          "bytes": 1940,
+          "sha256": "e54a3ad1f3d097758e43bb0ac57e93e553ef17f038a65bd6f9dd6dc8d8c3909f",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertogrid.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertogrid.frag",
+          "lineCount": 56,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/transfertogrid.vert",
+          "localPath": "liquid/dli-fluid/shaders/transfertogrid.vert",
+          "bytes": 1235,
+          "sha256": "8eefb38efd6b786ad4b98d6b114911cfc23460236a110e0f192e6860e0ca9de1",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertogrid.vert",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertogrid.vert",
+          "lineCount": 37,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/normalizegrid.frag",
+          "localPath": "liquid/dli-fluid/shaders/normalizegrid.frag",
+          "bytes": 760,
+          "sha256": "511d1ac8b0d0f0078e00c18927ead58e7d13e7533f09f21f51783eb090319416",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/normalizegrid.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/normalizegrid.frag",
+          "lineCount": 30,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/divergence.frag",
+          "localPath": "liquid/dli-fluid/shaders/divergence.frag",
+          "bytes": 1672,
+          "sha256": "8e8ad27568ed2905b21dd8360ed5e167e78c2d9012fe22187e9851a70955264d",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/divergence.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/divergence.frag",
+          "lineCount": 36,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/jacobi.frag",
+          "localPath": "liquid/dli-fluid/shaders/jacobi.frag",
+          "bytes": 1463,
+          "sha256": "a7c02b26b1508e7efd7bb4d4b265ef4c9d9559ed2eeaaa73fa54afced3845cba",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/jacobi.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/jacobi.frag",
+          "lineCount": 34,
+          "readRanges": [
+            [
+              1,
+              34
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                34
+              ]
+            ],
+            "purpose": "Pressure iterative stencil and air-cell handling"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "shaders/subtract.frag",
+          "localPath": "liquid/dli-fluid/shaders/subtract.frag",
+          "bytes": 1311,
+          "sha256": "944608d1e4eb50d0af20ad611331ca8e38b42d3ee3cab6f1c260c1ba1e4add65",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/subtract.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/subtract.frag",
+          "lineCount": 32,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/transfertoparticles.frag",
+          "localPath": "liquid/dli-fluid/shaders/transfertoparticles.frag",
+          "bytes": 1999,
+          "sha256": "c3a7215d2472772c0153b5bd3e9095a1d9047b7673880a893dcf1d1fdee043a9",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertoparticles.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertoparticles.frag",
+          "lineCount": 50,
+          "readRanges": [
+            [
+              1,
+              50
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                50
+              ]
+            ],
+            "purpose": "PIC versus FLIP velocity update"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "shaders/extendvelocity.frag",
+          "localPath": "liquid/dli-fluid/shaders/extendvelocity.frag",
+          "bytes": 1527,
+          "sha256": "0643b159ec7fdc602137fc0d9efe5f88bb0268eec66591b127da29f9b3275284",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/extendvelocity.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/extendvelocity.frag",
+          "lineCount": 46,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/enforceboundaries.frag",
+          "localPath": "liquid/dli-fluid/shaders/enforceboundaries.frag",
+          "bytes": 815,
+          "sha256": "32cc45686c57a70ec23f435315560e0e64e0c959e387f8118b8191b15e78eb3e",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/enforceboundaries.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/enforceboundaries.frag",
+          "lineCount": 40,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/sphere.vert",
+          "localPath": "liquid/dli-fluid/shaders/sphere.vert",
+          "bytes": 950,
+          "sha256": "74fb67b1cd4edb81d300e83bb58a454186de8ad66ec0b6b4c533d0ae130487b5",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphere.vert",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphere.vert",
+          "lineCount": 32,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/sphere.frag",
+          "localPath": "liquid/dli-fluid/shaders/sphere.frag",
+          "bytes": 230,
+          "sha256": "d04ba92d3f8516a2b6035790dfc9bb45baab8535d8c9b78957b3f8c4a0b1c0b0",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphere.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphere.frag",
+          "lineCount": 9,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/spheredepth.frag",
+          "localPath": "liquid/dli-fluid/shaders/spheredepth.frag",
+          "bytes": 71,
+          "sha256": "357319ce2d8cdc528b58c8025a91e1ee41ae40515b9e9900e7a5644d00d59d02",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/spheredepth.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/spheredepth.frag",
+          "lineCount": 5,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/sphereao.frag",
+          "localPath": "liquid/dli-fluid/shaders/sphereao.frag",
+          "bytes": 1437,
+          "sha256": "4b4bb4b4b80e76aeddfbc697b6cc792a2823baf165fa8e46000eb8e109e353e7",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphereao.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/sphereao.frag",
+          "lineCount": 53,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "shaders/composite.frag",
+          "localPath": "liquid/dli-fluid/shaders/composite.frag",
+          "bytes": 2600,
+          "sha256": "b5d5d5c601f9c051dfb88be762ea6a549abbec1eff0f4446e1c81a6d88a059de",
+          "sourceUrl": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/composite.frag",
+          "rawUrl": "https://raw.githubusercontent.com/dli/fluid/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/composite.frag",
+          "lineCount": 77,
+          "readRanges": [
+            [
+              1,
+              77
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                77
+              ]
+            ],
+            "purpose": "Normal/speed/AO/shadow composite; not refractive continuous water"
+          },
+          "readStatus": "body-read"
+        }
+      ],
+      "anchors": [
+        {
+          "path": "simulator.js",
+          "localPath": "liquid/dli-fluid/simulator.js",
+          "symbol": "simulate",
+          "line": 274,
+          "endLine": 587,
+          "needle": "    Simulator.prototype.simulate = function (timeStep, mouseVelocity, mouseRayOrigin, mouseRayDirection) {",
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/simulator.js#L274-L587"
+        },
+        {
+          "path": "shaders/addforce.frag",
+          "localPath": "liquid/dli-fluid/shaders/addforce.frag",
+          "symbol": "force injection point",
+          "line": 26,
+          "endLine": 41,
+          "needle": "void main () {",
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/addforce.frag#L26-L41"
+        },
+        {
+          "path": "shaders/transfertoparticles.frag",
+          "localPath": "liquid/dli-fluid/shaders/transfertoparticles.frag",
+          "symbol": "PIC/FLIP mixing",
+          "line": 35,
+          "endLine": 49,
+          "needle": "void main () {",
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/transfertoparticles.frag#L35-L49"
+        },
+        {
+          "path": "shaders/advect.frag",
+          "localPath": "liquid/dli-fluid/shaders/advect.frag",
+          "symbol": "RK2 advection",
+          "line": 39,
+          "endLine": 58,
+          "needle": "void main () {",
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/shaders/advect.frag#L39-L58"
+        },
+        {
+          "path": "simulator.js",
+          "localPath": "liquid/dli-fluid/simulator.js",
+          "symbol": "pressure Jacobi passes",
+          "line": 485,
+          "endLine": 533,
+          "needle": "        //compute pressure via jacobi iteration",
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/simulator.js#L485-L533"
+        },
+        {
+          "path": "renderer.js",
+          "localPath": "liquid/dli-fluid/renderer.js",
+          "symbol": "particle sphere renderer",
+          "line": 274,
+          "endLine": 317,
+          "needle": "        // draw particles",
+          "url": "https://github.com/dli/fluid/blob/ac3ee551ee33caaf4c0aa38da21e2be5562fd5ab/renderer.js#L274-L317"
+        }
+      ]
+    },
+    {
+      "id": "particles4all",
+      "repo": "matsuoka-601/Particles4All",
+      "commit": "58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0",
+      "url": "https://github.com/matsuoka-601/Particles4All",
+      "license": "MIT",
+      "licenseLocalPath": "liquid/particles4all/LICENSE",
+      "category": "液体与表面",
+      "purpose": "PBF 密度约束、邻域搜索与各向异性屏幕空间液体表面",
+      "platform": "WebGPU / WGSL",
+      "limitation": "移植至现有 WebGL/Forge 需要另做后端",
+      "findings": "liquid/findings.md",
+      "groupManifest": "liquid/manifest.json",
+      "files": [
+        {
+          "path": "LICENSE",
+          "localPath": "liquid/particles4all/LICENSE",
+          "bytes": 1069,
+          "sha256": "0034e724545817127357c12071ef141d8774371ea78062bf6545b73e9a1c0816",
+          "sourceUrl": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/LICENSE",
+          "lineCount": 21,
+          "readRanges": [
+            [
+              1,
+              21
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                21
+              ]
+            ],
+            "purpose": "MIT copyright and grant"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "README.md",
+          "localPath": "liquid/particles4all/README.md",
+          "bytes": 2562,
+          "sha256": "29c0a88a48dfbcdfdc79faad153b10b62dfb4a3ca958052c29ee60a144a08183",
+          "sourceUrl": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/README.md",
+          "rawUrl": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/README.md",
+          "lineCount": 51,
+          "readRanges": [
+            [
+              1,
+              51
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                51
+              ]
+            ],
+            "purpose": "PBF/WebGPU; anisotropic surface; narrow-range filtering"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "src/sim.js",
+          "localPath": "liquid/particles4all/src/sim.js",
+          "bytes": 31582,
+          "sha256": "ef44d11b90ac638299ed94042b1bc9c4d0c46c50a990ecd40e514cb3ec82cbb1",
+          "sourceUrl": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/sim.js",
+          "rawUrl": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/sim.js",
+          "lineCount": 814,
+          "readRanges": [
+            [
+              470,
+              603
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                470,
+                603
+              ]
+            ],
+            "purpose": "Grid sorting, iterative constraints, finish pass"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "src/wgsl.js",
+          "localPath": "liquid/particles4all/src/wgsl.js",
+          "bytes": 30201,
+          "sha256": "cd9c884e1cfa4a6138ed98ccf24d613cf5117c7b0ae85afc85b345254f87d180",
+          "sourceUrl": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/wgsl.js",
+          "rawUrl": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/wgsl.js",
+          "lineCount": 943,
+          "readRanges": [
+            [
+              61,
+              84
+            ],
+            [
+              250,
+              337
+            ],
+            [
+              477,
+              610
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                61,
+                84
+              ],
+              [
+                250,
+                337
+              ],
+              [
+                477,
+                610
+              ]
+            ],
+            "purpose": "Predicted position, velocity update, surface tension, lambda/delta"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "src/aniso_wgsl.js",
+          "localPath": "liquid/particles4all/src/aniso_wgsl.js",
+          "bytes": 4843,
+          "sha256": "bf8f9be3bf692fad7788231192d60718281a7db496114fbcbf9dca8bac268bdb",
+          "sourceUrl": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/aniso_wgsl.js",
+          "rawUrl": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/aniso_wgsl.js",
+          "lineCount": 159,
+          "readRanges": [
+            [
+              1,
+              159
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                159
+              ]
+            ],
+            "purpose": "Weighted covariance; eigenbasis; support/extent clamps; neighbor fallback"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "src/ssfr.js",
+          "localPath": "liquid/particles4all/src/ssfr.js",
+          "bytes": 13942,
+          "sha256": "fd8d414d8afa684c6bd906ce24598cc6ca7bd13369bdf9fbf96c9c1fc2316ac9",
+          "sourceUrl": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr.js",
+          "rawUrl": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr.js",
+          "lineCount": 358,
+          "readRanges": [
+            [
+              1,
+              83
+            ],
+            [
+              174,
+              301
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                83
+              ],
+              [
+                174,
+                301
+              ]
+            ],
+            "purpose": "Depth/thickness/filter pipelines, radius setup, render bindings"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "src/ssfr_wgsl.js",
+          "localPath": "liquid/particles4all/src/ssfr_wgsl.js",
+          "bytes": 10779,
+          "sha256": "8d509a5c323c1c263eda90db3564b1da237ce406d7822724374434bc1df62718",
+          "sourceUrl": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js",
+          "rawUrl": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js",
+          "lineCount": 338,
+          "readRanges": [
+            [
+              1,
+              183
+            ],
+            [
+              207,
+              338
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                183
+              ],
+              [
+                207,
+                338
+              ]
+            ],
+            "purpose": "Ellipsoid depth, sphere thickness, depth filter and empty pixel return"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "src/ssfr_composite_wgsl.js",
+          "localPath": "liquid/particles4all/src/ssfr_composite_wgsl.js",
+          "bytes": 10411,
+          "sha256": "add7a05f4628884f1999d1f63dc798cf6f67b2026142f7e3f5b44d8e3fb78314",
+          "sourceUrl": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_composite_wgsl.js",
+          "rawUrl": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_composite_wgsl.js",
+          "lineCount": 333,
+          "readRanges": [
+            [
+              1,
+              45
+            ],
+            [
+              70,
+              260
+            ],
+            [
+              265,
+              330
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                45
+              ],
+              [
+                70,
+                260
+              ],
+              [
+                265,
+                330
+              ]
+            ],
+            "purpose": "Nearest-depth normal reconstruction, Fresnel, refraction and thickness absorption"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "src/render.js",
+          "localPath": "liquid/particles4all/src/render.js",
+          "bytes": 11836,
+          "sha256": "8db5a2e4bf83e3da0da82b64ae14d200c2cbffbf2a1470cbb83b81a512c3c1a1",
+          "sourceUrl": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/render.js",
+          "rawUrl": "https://raw.githubusercontent.com/matsuoka-601/Particles4All/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/render.js",
+          "lineCount": 321,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        }
+      ],
+      "anchors": [
+        {
+          "path": "src/sim.js",
+          "localPath": "liquid/particles4all/src/sim.js",
+          "symbol": "constraint dispatch loop",
+          "line": 473,
+          "endLine": 595,
+          "needle": "      run('predict', `predict${par}`, nG);",
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/sim.js#L473-L595"
+        },
+        {
+          "path": "src/wgsl.js",
+          "localPath": "liquid/particles4all/src/wgsl.js",
+          "symbol": "lambdaWGSL (compression-only condition)",
+          "line": 477,
+          "endLine": 542,
+          "needle": "export const lambdaWGSL = `",
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/wgsl.js#L477-L542"
+        },
+        {
+          "path": "src/wgsl.js",
+          "localPath": "liquid/particles4all/src/wgsl.js",
+          "symbol": "deltaWGSL",
+          "line": 545,
+          "endLine": 610,
+          "needle": "export const deltaWGSL = `",
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/wgsl.js#L545-L610"
+        },
+        {
+          "path": "src/wgsl.js",
+          "localPath": "liquid/particles4all/src/wgsl.js",
+          "symbol": "tensionWGSL",
+          "line": 290,
+          "endLine": 334,
+          "needle": "export const tensionWGSL = `",
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/wgsl.js#L290-L334"
+        },
+        {
+          "path": "src/aniso_wgsl.js",
+          "localPath": "liquid/particles4all/src/aniso_wgsl.js",
+          "symbol": "anisoWGSL",
+          "line": 66,
+          "endLine": 157,
+          "needle": "@compute @workgroup_size(256)",
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/aniso_wgsl.js#L66-L157"
+        },
+        {
+          "path": "src/ssfr_wgsl.js",
+          "localPath": "liquid/particles4all/src/ssfr_wgsl.js",
+          "symbol": "hitEllipsoid",
+          "line": 92,
+          "endLine": 112,
+          "needle": "fn hitEllipsoid(id: u32, centre: vec3f, ro: vec3f, rd: vec3f) -> Hit {",
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js#L92-L112"
+        },
+        {
+          "path": "src/ssfr_wgsl.js",
+          "localPath": "liquid/particles4all/src/ssfr_wgsl.js",
+          "symbol": "sphere thickness pass",
+          "line": 150,
+          "endLine": 160,
+          "needle": "export const thickFS = `",
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js#L150-L160"
+        },
+        {
+          "path": "src/ssfr_wgsl.js",
+          "localPath": "liquid/particles4all/src/ssfr_wgsl.js",
+          "symbol": "narrowRange",
+          "line": 219,
+          "endLine": 233,
+          "needle": "fn narrowRange(zIn: f32, wIn: f32, wOtherIn: f32, upperIn: f32, lowerIn: f32,",
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js#L219-L233"
+        },
+        {
+          "path": "src/ssfr_wgsl.js",
+          "localPath": "liquid/particles4all/src/ssfr_wgsl.js",
+          "symbol": "empty pixel remains empty",
+          "line": 242,
+          "endLine": 246,
+          "needle": "fn fs(@builtin(position) frag: vec4f) -> @location(0) f32 {",
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_wgsl.js#L242-L246"
+        },
+        {
+          "path": "src/ssfr_composite_wgsl.js",
+          "localPath": "liquid/particles4all/src/ssfr_composite_wgsl.js",
+          "symbol": "water optical composite",
+          "line": 281,
+          "endLine": 330,
+          "needle": "  let p0 = viewPos(in.ndc, z);",
+          "url": "https://github.com/matsuoka-601/Particles4All/blob/58d6fa6d2c50e3f58da5c7a6f9b885ce26c485f0/src/ssfr_composite_wgsl.js#L281-L330"
+        }
+      ]
+    },
+    {
+      "id": "splashsurf",
+      "repo": "InteractiveComputerGraphics/splashsurf",
+      "commit": "56d3e6ac444cf8540c238a4391483955a9484210",
+      "url": "https://github.com/InteractiveComputerGraphics/splashsurf",
+      "license": "MIT",
+      "licenseLocalPath": "liquid/splashsurf/LICENSE",
+      "category": "液体与表面",
+      "purpose": "粒子密度场、等值面网格重建、网格后处理",
+      "platform": "CPU / Rust",
+      "limitation": "离线/CPU 表面重建，不模拟粒子或直接渲染折射",
+      "findings": "liquid/findings.md",
+      "groupManifest": "liquid/manifest.json",
+      "files": [
+        {
+          "path": "LICENSE",
+          "localPath": "liquid/splashsurf/LICENSE",
+          "bytes": 1073,
+          "sha256": "f9ce649ea11b2215b32ca9149b03c5f7e5e60b06e3bc49fb6e72a0270a485771",
+          "sourceUrl": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/LICENSE",
+          "lineCount": 21,
+          "readRanges": [
+            [
+              1,
+              21
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                21
+              ]
+            ],
+            "purpose": "MIT copyright and grant"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "README.md",
+          "localPath": "liquid/splashsurf/README.md",
+          "bytes": 37660,
+          "sha256": "4f4ea40bc2bda54d36a4f546a69922a3ee746270771385ae51f89ddbbbfdb3b6",
+          "sourceUrl": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/README.md",
+          "rawUrl": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/README.md",
+          "lineCount": 488,
+          "readRanges": [
+            [
+              10,
+              111
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                10,
+                111
+              ]
+            ],
+            "purpose": "Particle-to-mesh purpose, parameters, subdomain approach and nondeterminism note"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "splashsurf_lib/README.md",
+          "localPath": "liquid/splashsurf/splashsurf_lib/README.md",
+          "bytes": 6094,
+          "sha256": "ad21cfbd54d4e0a9f2c200ad89e837e76283bb554a73de256bbc9c5163805a2b",
+          "sourceUrl": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/README.md",
+          "rawUrl": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/README.md",
+          "lineCount": 63,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "splashsurf_lib/src/reconstruction.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/src/reconstruction.rs",
+          "bytes": 7108,
+          "sha256": "e216e853c5b805fced8f9dc09690631012aa7926c2ec64a449d8ea38eb14e6d2",
+          "sourceUrl": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/reconstruction.rs",
+          "rawUrl": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/reconstruction.rs",
+          "lineCount": 194,
+          "readRanges": [
+            [
+              114,
+              192
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                114,
+                192
+              ]
+            ],
+            "purpose": "Neighbor search, density map and triangulation pipeline"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "splashsurf_lib/src/density_map.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/src/density_map.rs",
+          "bytes": 31707,
+          "sha256": "b411b57587e2bd7225913d8bd51f65b3244a433279ffc5595f833750b3504510",
+          "sourceUrl": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/density_map.rs",
+          "rawUrl": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/density_map.rs",
+          "lineCount": 827,
+          "readRanges": [
+            [
+              150,
+              188
+            ],
+            [
+              520,
+              631
+            ],
+            [
+              635,
+              730
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                150,
+                188
+              ],
+              [
+                520,
+                631
+              ],
+              [
+                635,
+                730
+              ]
+            ],
+            "purpose": "Density sum; support bounds; domain margins; per-particle scalar contributions"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "splashsurf_lib/src/marching_cubes.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/src/marching_cubes.rs",
+          "bytes": 14017,
+          "sha256": "7f7b830c9e18e9088219111d4cc68e6b6fe7f404f243046b392e28ae6f517355",
+          "sourceUrl": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/marching_cubes.rs",
+          "rawUrl": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/marching_cubes.rs",
+          "lineCount": 400,
+          "readRanges": [
+            [
+              90,
+              126
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                90,
+                126
+              ]
+            ],
+            "purpose": "Iso-surface triangulation entry"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "splashsurf_lib/src/marching_cubes/triangulation.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/src/marching_cubes/triangulation.rs",
+          "bytes": 3339,
+          "sha256": "f62b1d9bd273b703f0ae756264459dbb1cccd74c7393fab740c7d1835c49fc69",
+          "sourceUrl": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/marching_cubes/triangulation.rs",
+          "rawUrl": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/marching_cubes/triangulation.rs",
+          "lineCount": 95,
+          "readRanges": [
+            [
+              21,
+              53
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                21,
+                53
+              ]
+            ],
+            "purpose": "Triangle connectivity loop"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "splashsurf_lib/src/postprocessing.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/src/postprocessing.rs",
+          "bytes": 33000,
+          "sha256": "d4f4d443240eda577d1507e79634be2d70e3a549ee3939c20fc0116bf14e3b5a",
+          "sourceUrl": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/postprocessing.rs",
+          "rawUrl": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/postprocessing.rs",
+          "lineCount": 910,
+          "readRanges": [
+            [
+              1,
+              90
+            ],
+            [
+              105,
+              163
+            ]
+          ],
+          "readScope": {
+            "line_ranges": [
+              [
+                1,
+                90
+              ],
+              [
+                105,
+                163
+              ]
+            ],
+            "purpose": "Weighted Laplacian/normal smoothing; limited cleanup inspection"
+          },
+          "readStatus": "body-read"
+        },
+        {
+          "path": "splashsurf_lib/src/kernel.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/src/kernel.rs",
+          "bytes": 21382,
+          "sha256": "575cf002cccee265a2f1c9880f4eeee76493d312b61aa48d41bdc6fc271c80d1",
+          "sourceUrl": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/kernel.rs",
+          "rawUrl": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/kernel.rs",
+          "lineCount": 579,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        },
+        {
+          "path": "splashsurf_lib/examples/minimal_sph_levelset.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/examples/minimal_sph_levelset.rs",
+          "bytes": 18238,
+          "sha256": "6c721f1ea3e72b4d6ad746c0852d9113af9fd38e94fe2875e6a1395a12c8d845",
+          "sourceUrl": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/examples/minimal_sph_levelset.rs",
+          "rawUrl": "https://raw.githubusercontent.com/InteractiveComputerGraphics/splashsurf/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/examples/minimal_sph_levelset.rs",
+          "lineCount": 454,
+          "readRanges": [],
+          "readScope": "Acquired source; not closely read in this study",
+          "readStatus": "see-group-findings"
+        }
+      ],
+      "anchors": [
+        {
+          "path": "splashsurf_lib/src/reconstruction.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/src/reconstruction.rs",
+          "symbol": "reconstruct_single_surface_append",
+          "line": 149,
+          "endLine": 191,
+          "needle": "pub(crate) fn reconstruct_single_surface_append<I: Index, R: Real>(",
+          "url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/reconstruction.rs#L149-L191"
+        },
+        {
+          "path": "splashsurf_lib/src/density_map.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/src/density_map.rs",
+          "symbol": "particle_support_loop",
+          "line": 677,
+          "endLine": 728,
+          "needle": "    fn particle_support_loop(",
+          "url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/density_map.rs#L677-L728"
+        },
+        {
+          "path": "splashsurf_lib/src/density_map.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/src/density_map.rs",
+          "symbol": "support margin against boundary holes",
+          "line": 600,
+          "endLine": 609,
+          "needle": "        // Shrink the allowed domain for particles by the kernel evaluation radius. This ensures that all cells/points",
+          "url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/density_map.rs#L600-L609"
+        },
+        {
+          "path": "splashsurf_lib/src/marching_cubes.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/src/marching_cubes.rs",
+          "symbol": "triangulate_density_map_append",
+          "line": 113,
+          "endLine": 125,
+          "needle": "pub fn triangulate_density_map_append<I: Index, R: Real>(",
+          "url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/marching_cubes.rs#L113-L125"
+        },
+        {
+          "path": "splashsurf_lib/src/postprocessing.rs",
+          "localPath": "liquid/splashsurf/splashsurf_lib/src/postprocessing.rs",
+          "symbol": "par_laplacian_smoothing_inplace",
+          "line": 17,
+          "endLine": 52,
+          "needle": "pub fn par_laplacian_smoothing_inplace<R: Real>(",
+          "url": "https://github.com/InteractiveComputerGraphics/splashsurf/blob/56d3e6ac444cf8540c238a4391483955a9484210/splashsurf_lib/src/postprocessing.rs#L17-L52"
+        }
+      ]
+    },
+    {
+      "id": "three-water2",
+      "repo": "mrdoob/three.js",
+      "commit": "9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8",
+      "url": "https://github.com/mrdoob/three.js",
+      "license": "MIT",
+      "licenseLocalPath": "flow/three.js/LICENSE",
+      "category": "表面流动",
+      "purpose": "双相位流动法线、平面反射/折射与 Fresnel",
+      "platform": "three.js / WebGL",
+      "limitation": "已有网格的材质，曲面水柱需改坐标与厚度方案",
+      "findings": "flow/findings.md",
+      "groupManifest": "flow/manifest.json",
+      "files": [
+        {
+          "path": "examples/jsm/objects/Reflector.js",
+          "localPath": "flow/three.js/examples/jsm/objects/Reflector.js",
+          "bytes": 10943,
+          "sha256": "57836df976f02a474b2dcfbb6609bca8bde0ccc6e77159ad8e418fa11c065d3b",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Reflector.js",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Reflector.js",
+          "lineCount": 385,
+          "readRanges": [
+            [
+              112,
+              254
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "examples/jsm/objects/Refractor.js",
+          "localPath": "flow/three.js/examples/jsm/objects/Refractor.js",
+          "bytes": 10176,
+          "sha256": "512c4ec056b8af3c7aa24f80a74d606dfd10c06697686b2b73df8dbe7f2f9d78",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Refractor.js",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Refractor.js",
+          "lineCount": 389,
+          "readRanges": [
+            [
+              107,
+              285
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "examples/jsm/objects/Water2.js",
+          "localPath": "flow/three.js/examples/jsm/objects/Water2.js",
+          "bytes": 10459,
+          "sha256": "80180ce0b031169883e14a79374e2c4d899b7726a1af4897dd7a9efc9d9240f7",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Water2.js",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Water2.js",
+          "lineCount": 403,
+          "readRanges": [
+            [
+              1,
+              403
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "examples/jsm/shaders/WaterRefractionShader.js",
+          "localPath": "flow/three.js/examples/jsm/shaders/WaterRefractionShader.js",
+          "bytes": 2046,
+          "sha256": "cad67ed479d112d787281b1ab37561659a50d5fad6ad951a2d9f89a45f229cf5",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/shaders/WaterRefractionShader.js",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/shaders/WaterRefractionShader.js",
+          "lineCount": 106,
+          "readRanges": [
+            [
+              1,
+              106
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "LICENSE",
+          "localPath": "flow/three.js/LICENSE",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/LICENSE",
+          "lineCount": 21,
+          "readRanges": [
+            [
+              1,
+              21
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "README.md",
+          "localPath": "flow/three.js/README.md",
+          "bytes": 2969,
+          "sha256": "d553d824625a07d7690de93af6f8daf13d6aaed42700929d7ce4e725fa5ef10d",
+          "sourceUrl": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/README.md",
+          "rawUrl": "https://raw.githubusercontent.com/mrdoob/three.js/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/README.md",
+          "lineCount": 85,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        }
+      ],
+      "anchors": [
+        {
+          "path": "examples/jsm/objects/Water2.js",
+          "symbol": "updateFlow",
+          "line": 181,
+          "needle": "function updateFlow()",
+          "url": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Water2.js#L181",
+          "localPath": "flow/three.js/examples/jsm/objects/Water2.js"
+        },
+        {
+          "path": "examples/jsm/objects/Water2.js",
+          "symbol": "flow-normal-blend",
+          "line": 357,
+          "needle": "float flowLerp =",
+          "url": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Water2.js#L357",
+          "localPath": "flow/three.js/examples/jsm/objects/Water2.js"
+        },
+        {
+          "path": "examples/jsm/objects/Water2.js",
+          "symbol": "Fresnel",
+          "line": 365,
+          "needle": "float reflectance =",
+          "url": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Water2.js#L365",
+          "localPath": "flow/three.js/examples/jsm/objects/Water2.js"
+        },
+        {
+          "path": "examples/jsm/objects/Reflector.js",
+          "symbol": "reflection-pass",
+          "line": 116,
+          "needle": "this.onBeforeRender =",
+          "url": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Reflector.js#L116",
+          "localPath": "flow/three.js/examples/jsm/objects/Reflector.js"
+        },
+        {
+          "path": "examples/jsm/objects/Refractor.js",
+          "symbol": "refraction-pass",
+          "line": 230,
+          "needle": "function render( renderer, scene, camera )",
+          "url": "https://github.com/mrdoob/three.js/blob/9b4a2ac29c63ccb43fd51c5661f2f873ac2c39b8/examples/jsm/objects/Refractor.js#L230",
+          "localPath": "flow/three.js/examples/jsm/objects/Refractor.js"
+        }
+      ]
+    },
+    {
+      "id": "waterways",
+      "repo": "Arnklit/Waterways",
+      "commit": "cd2e2193fe2c7792efb4c35118ade3ad868538b4",
+      "url": "https://github.com/Arnklit/Waterways",
+      "license": "MIT; retain file notices",
+      "licenseLocalPath": "flow/Waterways/LICENSE",
+      "category": "表面流动",
+      "purpose": "河面载体、碰撞烘焙方向图、泡沫与双相位水纹",
+      "platform": "Godot 3 / GDScript + shader",
+      "limitation": "河流构形不能直接沿竖直轴复制",
+      "findings": "flow/findings.md",
+      "groupManifest": "flow/manifest.json",
+      "files": [
+        {
+          "path": "addons/waterways/buoyant_manager.gd",
+          "localPath": "flow/Waterways/addons/waterways/buoyant_manager.gd",
+          "bytes": 2329,
+          "sha256": "26163a141a0338d4d1457615bc354226597adcd3f01da3355bb779a6254d77f1",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/buoyant_manager.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/buoyant_manager.gd",
+          "lineCount": 73,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/editor_property.gd",
+          "localPath": "flow/Waterways/addons/waterways/editor_property.gd",
+          "bytes": 778,
+          "sha256": "ac4c148f6d07279342b82e1ec3f77cb169f6b3a5c4be64105aaa552367d585cb",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/editor_property.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/editor_property.gd",
+          "lineCount": 27,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/filter_renderer.gd",
+          "localPath": "flow/Waterways/addons/waterways/filter_renderer.gd",
+          "bytes": 10035,
+          "sha256": "fdbe09def51b0d075029c47271699929056f3889eb7a35a588ae6ccb680b6f37",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/filter_renderer.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/filter_renderer.gd",
+          "lineCount": 254,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/gui/gradient_inspector.gd",
+          "localPath": "flow/Waterways/addons/waterways/gui/gradient_inspector.gd",
+          "bytes": 679,
+          "sha256": "7d36da73c7d98a64a72ca878c84b52ca2d4e5233552c968cc49f0d171609c580",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/gradient_inspector.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/gradient_inspector.gd",
+          "lineCount": 18,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/gui/river_controls.gd",
+          "localPath": "flow/Waterways/addons/waterways/gui/river_controls.gd",
+          "bytes": 2884,
+          "sha256": "61bf71772974efd53333ea4d4f69a8e7803045d79bfba7df50bc01c7ea3097ba",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/river_controls.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/river_controls.gd",
+          "lineCount": 110,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/gui/river_menu.gd",
+          "localPath": "flow/Waterways/addons/waterways/gui/river_menu.gd",
+          "bytes": 2369,
+          "sha256": "a6410658afcbf4599ea103e14bd22a180676edf08bfaf4708049ae5d40d27a87",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/river_menu.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/river_menu.gd",
+          "lineCount": 67,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/gui/water_system_controls.gd",
+          "localPath": "flow/Waterways/addons/waterways/gui/water_system_controls.gd",
+          "bytes": 217,
+          "sha256": "e38f6f9b8717283caf55be95cc1abdbbf786a3c0715906ea9fcba15e5f6fbe88",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/water_system_controls.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/water_system_controls.gd",
+          "lineCount": 9,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/gui/water_system_menu.gd",
+          "localPath": "flow/Waterways/addons/waterways/gui/water_system_menu.gd",
+          "bytes": 616,
+          "sha256": "4303aab63e2c2f192ade3580b0d7f6958cac0f793ab77f9509f44fb87c0e671d",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/water_system_menu.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/gui/water_system_menu.gd",
+          "lineCount": 26,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/inspector_plugin.gd",
+          "localPath": "flow/Waterways/addons/waterways/inspector_plugin.gd",
+          "bytes": 640,
+          "sha256": "45737b142cb7fd2eed04ed4a0a2c4854f7c06aaa85d9bc039ee66b62900b932c",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/inspector_plugin.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/inspector_plugin.gd",
+          "lineCount": 18,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/plugin.gd",
+          "localPath": "flow/Waterways/addons/waterways/plugin.gd",
+          "bytes": 13371,
+          "sha256": "8d9759a0f119698f6d80707ed0fd7fad1d80e41c3b28f7315339773cac6b2296",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/plugin.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/plugin.gd",
+          "lineCount": 325,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/progress_window.gd",
+          "localPath": "flow/Waterways/addons/waterways/progress_window.gd",
+          "bytes": 314,
+          "sha256": "c7db40db0fa9ecf205e05f9d1477988137d5083a72b5519c66aa77c4a5782d01",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/progress_window.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/progress_window.gd",
+          "lineCount": 12,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/river_gizmo.gd",
+          "localPath": "flow/Waterways/addons/waterways/river_gizmo.gd",
+          "bytes": 17175,
+          "sha256": "8eb83808ee38fb5e006e448133910321bce781b183e60e3313ba837824c926cd",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/river_gizmo.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/river_gizmo.gd",
+          "lineCount": 409,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/river_manager.gd",
+          "localPath": "flow/Waterways/addons/waterways/river_manager.gd",
+          "bytes": 22238,
+          "sha256": "44fd9e68b90dddabc21a30f1b6bc53f6aeb37962e40405190ea451d7da4f4dcc",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/river_manager.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/river_manager.gd",
+          "lineCount": 694,
+          "readRanges": [
+            [
+              596,
+              691
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/blur_pass1.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/blur_pass1.shader",
+          "bytes": 460,
+          "sha256": "900a283454d0e6e2876c05052dbbc920db121b3bc56df00fad420959ab59d9b3",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/blur_pass1.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/blur_pass1.shader",
+          "lineCount": 21,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/blur_pass2.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/blur_pass2.shader",
+          "bytes": 460,
+          "sha256": "506dcd1bdd7ece3d3a7b1d26159f7f00d7243c741532dccac6338cb93240b291",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/blur_pass2.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/blur_pass2.shader",
+          "lineCount": 21,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/combine_pass.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/combine_pass.shader",
+          "bytes": 361,
+          "sha256": "f70ff229f82a540828430801a635d15d35365284fef13f21be6c814bb02b4c06",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/combine_pass.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/combine_pass.shader",
+          "lineCount": 11,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+          "bytes": 740,
+          "sha256": "1589c334d845ab0869f2ee133850fdf94f7c20533184f108ee57b0b3422e807f",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass1.shader",
+          "lineCount": 35,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+          "bytes": 766,
+          "sha256": "d2c150a41613ad23f8d2d4459ebff59b587f57d230161aa49608aab301d194ce",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass2.shader",
+          "lineCount": 30,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+          "bytes": 412,
+          "sha256": "c1a44890a2b92fbf3add7823ccd8c183140cf5b7f28004c04f8fe2e51e3a04fb",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dilate_filter_pass3.shader",
+          "lineCount": 13,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/dotproduct.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/dotproduct.shader",
+          "bytes": 232,
+          "sha256": "748337aa9a87676cd29c2f5ccde68a0348e9241fa2f8413d2227c1ae05f6a9a6",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dotproduct.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/dotproduct.shader",
+          "lineCount": 9,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/flow_pressure_pass.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+          "bytes": 463,
+          "sha256": "e3644e59f9ef0270c2454466b5536a4144f2dc69dd8ebe63b1de77602cec0e15",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/flow_pressure_pass.shader",
+          "lineCount": 17,
+          "readRanges": [
+            [
+              1,
+              17
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/foam_pass.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/foam_pass.shader",
+          "bytes": 731,
+          "sha256": "1b9d7aa1b21f9c53b3713a27e6485e9bcffcd3453befa32ab3a6e2d9cf7a9bfe",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/foam_pass.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/foam_pass.shader",
+          "lineCount": 26,
+          "readRanges": [
+            [
+              1,
+              26
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/normal_map_pass.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/normal_map_pass.shader",
+          "bytes": 930,
+          "sha256": "09d3eb6e4aa770fb0e105c666e3ef0425be9f57598e21b469b3c251aa4c53875",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/normal_map_pass.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/normal_map_pass.shader",
+          "lineCount": 31,
+          "readRanges": [
+            [
+              1,
+              31
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+          "bytes": 385,
+          "sha256": "2a2131c1f703a1f317de39b1be56b8ac867cf6930faef3ed195318c9e28e0bb9",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+          "lineCount": 16,
+          "readRanges": [
+            [
+              1,
+              16
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/gui/gradient.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/gui/gradient.shader",
+          "bytes": 217,
+          "sha256": "c152ac7604112bfc9de1846e34e77914fd3a607edc6460257dd6a3c17bdc264f",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/gui/gradient.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/gui/gradient.shader",
+          "lineCount": 9,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/lava.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/lava.shader",
+          "bytes": 6260,
+          "sha256": "f7308f3569467f5f37f6661e30998923eb481d3cba6b81d70d1af5e262d135a6",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/lava.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/lava.shader",
+          "lineCount": 170,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/river.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/river.shader",
+          "bytes": 9052,
+          "sha256": "7a9ac760c7b9a80090b37bd5da5d59011f23a3a07e05e8be7ab7f04e3d89d087",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river.shader",
+          "lineCount": 233,
+          "readRanges": [
+            [
+              1,
+              233
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/shaders/river_debug.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/river_debug.shader",
+          "bytes": 6248,
+          "sha256": "f05b16fc4b98c0172eeb5fdcf536db57ca0c975ffb7095c4f9a9c3e4bcc3ea25",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river_debug.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river_debug.shader",
+          "lineCount": 178,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/system_renders/alpha.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/system_renders/alpha.shader",
+          "bytes": 84,
+          "sha256": "4c2bde79249c8fe3c36f50c4145666384f785faadb3880ed308ac383141c5d47",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/alpha.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/alpha.shader",
+          "lineCount": 6,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/system_renders/system_flow.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/system_renders/system_flow.shader",
+          "bytes": 1704,
+          "sha256": "b19f225851b8aba8a3fa7bb2c2ed3ffd0131e44280b00773fc76cb1dc2b6899d",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/system_flow.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/system_flow.shader",
+          "lineCount": 53,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/shaders/system_renders/system_height.shader",
+          "localPath": "flow/Waterways/addons/waterways/shaders/system_renders/system_height.shader",
+          "bytes": 355,
+          "sha256": "a316bf116a2fedc0c7e1182fc6afa0d266e96a2e81c03add627c321c7dbcc61e",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/system_height.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/system_renders/system_height.shader",
+          "lineCount": 15,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/system_map_renderer.gd",
+          "localPath": "flow/Waterways/addons/waterways/system_map_renderer.gd",
+          "bytes": 5804,
+          "sha256": "4342795ce0309f1a123abe689dbe0b5a7c5f22eab19df394dfb259ce45f2f854",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/system_map_renderer.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/system_map_renderer.gd",
+          "lineCount": 153,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "addons/waterways/water_helper_methods.gd",
+          "localPath": "flow/Waterways/addons/waterways/water_helper_methods.gd",
+          "bytes": 10728,
+          "sha256": "47855530b45f7400ad728167c4ea8a9f86bbc8a6575aa1a56254c7d4f802e3bb",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/water_helper_methods.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/water_helper_methods.gd",
+          "lineCount": 273,
+          "readRanges": [
+            [
+              1,
+              273
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "addons/waterways/water_system_manager.gd",
+          "localPath": "flow/Waterways/addons/waterways/water_system_manager.gd",
+          "bytes": 6484,
+          "sha256": "f6c4cb4ad9cfeb72748f81b056be5de801dd2087e78397be4f206dc5d764b2b0",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/water_system_manager.gd",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/water_system_manager.gd",
+          "lineCount": 207,
+          "readRanges": [],
+          "readScope": null,
+          "readStatus": "acquired-only"
+        },
+        {
+          "path": "LICENSE",
+          "localPath": "flow/Waterways/LICENSE",
+          "bytes": 1080,
+          "sha256": "8da0249fe2a334230e8c7bb633f4558e40ddafc95d30c1cfcffbf302a3f83c34",
+          "sourceUrl": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Arnklit/Waterways/cd2e2193fe2c7792efb4c35118ade3ad868538b4/LICENSE",
+          "lineCount": 21,
+          "readRanges": [
+            [
+              1,
+              21
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        }
+      ],
+      "anchors": [
+        {
+          "path": "addons/waterways/shaders/river.shader",
+          "symbol": "FlowUVW",
+          "line": 56,
+          "needle": "vec3 FlowUVW(",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river.shader#L56",
+          "localPath": "flow/Waterways/addons/waterways/shaders/river.shader"
+        },
+        {
+          "path": "addons/waterways/shaders/river.shader",
+          "symbol": "flow-strength",
+          "line": 139,
+          "needle": "float flow_force =",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river.shader#L139",
+          "localPath": "flow/Waterways/addons/waterways/shaders/river.shader"
+        },
+        {
+          "path": "addons/waterways/shaders/river.shader",
+          "symbol": "refraction-foreground-check",
+          "line": 209,
+          "needle": "if (surface_dist2 < -VERTEX.z)",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/river.shader#L209",
+          "localPath": "flow/Waterways/addons/waterways/shaders/river.shader"
+        },
+        {
+          "path": "addons/waterways/river_manager.gd",
+          "symbol": "bake-flowmap",
+          "line": 612,
+          "needle": "func _generate_flowmap(",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/river_manager.gd#L612",
+          "localPath": "flow/Waterways/addons/waterways/river_manager.gd"
+        },
+        {
+          "path": "addons/waterways/water_helper_methods.gd",
+          "symbol": "mesh",
+          "line": 74,
+          "needle": "static func generate_river_mesh(",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/water_helper_methods.gd#L74",
+          "localPath": "flow/Waterways/addons/waterways/water_helper_methods.gd"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/normal_to_flow_filter.shader",
+          "symbol": "nm2flow",
+          "line": 6,
+          "needle": "vec3 nm2flow(",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/normal_to_flow_filter.shader#L6",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/normal_to_flow_filter.shader"
+        },
+        {
+          "path": "addons/waterways/shaders/filters/flow_pressure_pass.shader",
+          "symbol": "occupancy-pressure-heuristic",
+          "line": 13,
+          "needle": "value += textureLod",
+          "url": "https://github.com/Arnklit/Waterways/blob/cd2e2193fe2c7792efb4c35118ade3ad868538b4/addons/waterways/shaders/filters/flow_pressure_pass.shader#L13",
+          "localPath": "flow/Waterways/addons/waterways/shaders/filters/flow_pressure_pass.shader"
+        }
+      ]
+    },
+    {
+      "id": "tiled-directional-flow",
+      "repo": "Scrawk/Tiled-Directional-Flow",
+      "commit": "386892cc3f6e21b4694b2777a9e7e66d47a3dd67",
+      "url": "https://github.com/Scrawk/Tiled-Directional-Flow",
+      "license": "MIT root + retained Frans van Hoesel Creditware notice",
+      "licenseLocalPath": "flow/Tiled-Directional-Flow/LICENSE",
+      "category": "表面流动",
+      "purpose": "四组方向瓦片混合、局部波长和运动速度",
+      "platform": "Unity / surface shader",
+      "limitation": "根 MIT + 文件 Creditware；不是水体模拟",
+      "findings": "flow/findings.md",
+      "groupManifest": "flow/manifest.json",
+      "files": [
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "localPath": "flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "bytes": 10952,
+          "sha256": "72612d7597ef0e7a151bb0530c7f1bada51eb3084db42366fa1ab0ce1ae9debc",
+          "sourceUrl": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "rawUrl": "https://raw.githubusercontent.com/Scrawk/Tiled-Directional-Flow/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "lineCount": 248,
+          "readRanges": [
+            [
+              1,
+              248
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "LICENSE",
+          "localPath": "flow/Tiled-Directional-Flow/LICENSE",
+          "bytes": 1620,
+          "sha256": "ed471ce09ebcba676424c710e333080cb130c160049f2ec5f8935a2f54d883aa",
+          "sourceUrl": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/LICENSE",
+          "rawUrl": "https://raw.githubusercontent.com/Scrawk/Tiled-Directional-Flow/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/LICENSE",
+          "lineCount": 34,
+          "readRanges": [
+            [
+              1,
+              34
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        },
+        {
+          "path": "README.md",
+          "localPath": "flow/Tiled-Directional-Flow/README.md",
+          "bytes": 1535,
+          "sha256": "0966442aa391267f43c446001f2a83b2a66e7d1705516483c688c7c6795381bc",
+          "sourceUrl": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/README.md",
+          "rawUrl": "https://raw.githubusercontent.com/Scrawk/Tiled-Directional-Flow/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/README.md",
+          "lineCount": 19,
+          "readRanges": [
+            [
+              1,
+              19
+            ]
+          ],
+          "readScope": null,
+          "readStatus": "body-read"
+        }
+      ],
+      "anchors": [
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "symbol": "Creditware",
+          "line": 49,
+          "needle": "This software is Creditware:",
+          "url": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader#L49",
+          "localPath": "flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader"
+        },
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "symbol": "surf",
+          "line": 100,
+          "needle": "void surf (",
+          "url": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader#L100",
+          "localPath": "flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader"
+        },
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "symbol": "blend-weights",
+          "line": 113,
+          "needle": "float2 ff =",
+          "url": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader#L113",
+          "localPath": "flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader"
+        },
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "symbol": "rotation-scale",
+          "line": 142,
+          "needle": "float2x2 rotmat =",
+          "url": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader#L142",
+          "localPath": "flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader"
+        },
+        {
+          "path": "Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader",
+          "symbol": "normal-normalization-compensation",
+          "line": 197,
+          "needle": "NormalT = (NormalT - 0.5) / (ffscale.y * ffscale.x);",
+          "url": "https://github.com/Scrawk/Tiled-Directional-Flow/blob/386892cc3f6e21b4694b2777a9e7e66d47a3dd67/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader#L197",
+          "localPath": "flow/Tiled-Directional-Flow/Assets/TiledDirectionalFlow/Shaders/TiledDirectinalFlow.shader"
+        }
+      ]
+    }
+  ]
+}

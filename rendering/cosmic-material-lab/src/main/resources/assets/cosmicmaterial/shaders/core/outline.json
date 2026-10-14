@@ -1,0 +1,17 @@
+{
+  "vertex":"cosmicmaterial:outline",
+  "fragment":"cosmicmaterial:outline",
+  "attributes":["Position","Color","UV0","UV1","UV2","Normal"],
+  "samplers":[{"name":"Sampler0"}],
+  "blend":{"func":"add","srcrgb":"srcalpha","dstrgb":"1-srcalpha","srcalpha":"one","dstalpha":"1-srcalpha"},
+  "uniforms":[
+    {"name":"ModelViewMat","type":"matrix4x4","count":16,"values":[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]},
+    {"name":"ProjMat","type":"matrix4x4","count":16,"values":[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]},
+    {"name":"time","type":"float","count":1,"values":[0]},
+    {"name":"mode","type":"int","count":1,"values":[0]},
+    {"name":"outlineColor","type":"float","count":4,"values":[0.33,0.9,1,1]},
+    {"name":"color1","type":"float","count":4,"values":[0,0.72,0.91,1]},
+    {"name":"color2","type":"float","count":4,"values":[0.92,0.26,0.48,1]},
+    {"name":"color3","type":"float","count":4,"values":[1,0.85,0.45,1]}
+  ]
+}

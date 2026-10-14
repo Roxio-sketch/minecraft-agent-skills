@@ -1,0 +1,37 @@
+{
+  "backend": "Production GLSL 150 bodies adapted to GLSL ES 300 in Edge. Synthetic geometry; not Forge/Oculus runtime.",
+  "programs": [
+    {
+      "name": "realm_meteor",
+      "compiled": true,
+      "linked": true
+    },
+    {
+      "name": "realm_meteor_post",
+      "compiled": true,
+      "linked": true
+    },
+    {
+      "name": "energy_blur",
+      "compiled": true,
+      "linked": true
+    },
+    {
+      "name": "realm_meteor_bloom",
+      "compiled": true,
+      "linked": true
+    }
+  ],
+  "normalPostMaxChannelDelta": 1,
+  "animationPixels": 28095,
+  "visiblePixels": 33152,
+  "fullyOccludedRemainingPixels": 0,
+  "vertexCount": 15552,
+  "materialBodiesIdentical": true,
+  "bloom": {
+    "kernelTaps": 13,
+    "expandedHaloPixels": 96,
+    "foregroundBlurLeakPixels": 0,
+    "foregroundCompositeLeakPixels": 0
+  }
+}

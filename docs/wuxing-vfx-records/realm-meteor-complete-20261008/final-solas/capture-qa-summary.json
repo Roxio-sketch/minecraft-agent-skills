@@ -1,0 +1,70 @@
+{
+  "recordedScreenshots": 22,
+  "actualTurnFrames": 20,
+  "rawPNGsCopiedWithoutChangesAndSHA256Checked": 42,
+  "losslessAnimatedWebPDecodedPixelsMatchRawPNGs": true,
+  "realExternalShaderPack": "Solas Shader V3.7b.zip",
+  "forcedShaderPackFixture": false,
+  "openglErrors": [],
+  "allTrailAndHeadShadersReady": true,
+  "farViews": {
+    "05-distant-observer.png": {
+      "cameraToCapturedSubjectFeetMetres": 87.52591895791967,
+      "bloomDisabled": false,
+      "strictCyanMaskPixels": 295,
+      "renderedTrailSegments": 29,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "14-no-bloom-48-block-observer.png": {
+      "cameraToCapturedSubjectFeetMetres": 49.29087765138431,
+      "bloomDisabled": true,
+      "strictCyanMaskPixels": 2169,
+      "renderedTrailSegments": 46,
+      "size": [
+        1600,
+        900
+      ]
+    }
+  },
+  "maskMethod": "Whole-image RGB proxy: G > R + 20, B > R + 20, G > 0.88 * B. It can include scene colours and miss faint glow; it is not a visibility/readability pass criterion.",
+  "farViewComparisonLimit": "05 and 14 use different times, observer distances, paths, Bloom states and resolutions. Do not directly difference them or treat mask counts as a controlled Bloom comparison.",
+  "wallOcclusionPair": {
+    "changedPixels": 380705,
+    "changedPixelsOver4": 4524,
+    "maximumChannelDifference": 29,
+    "meanChannelDifference": [
+      0.23489791666666668,
+      0.19741458333333334,
+      0.18261944444444445
+    ],
+    "boundsOfDifference": [
+      0,
+      0,
+      1600,
+      900
+    ]
+  },
+  "wallStrictCyanMaskPixels": [
+    0,
+    0
+  ],
+  "wallAssessment": "Both actual captures show opaque stone with no visible energy leaking through. Solas frames are not pixel-identical; mean per-channel difference stays below 0.24 on an 8-bit scale. Colour masks and differences supplement visual inspection, not proof that temporal variation is zero.",
+  "observedFrameRateSamples": {
+    "singleLocalThirdPerson": {
+      "samples": 90,
+      "meanFPS": 59.34444444444444,
+      "minimumFPS": 59,
+      "maximumFPS": 60
+    },
+    "fourRemotePlayers": {
+      "samples": 90,
+      "meanFPS": 59.32222222222222,
+      "minimumFPS": 59,
+      "maximumFPS": 60
+    }
+  },
+  "performanceScope": "Real whole-client reported FPS, 60 FPS cap, isolated world; not a GPU timer or universal benchmark."
+}

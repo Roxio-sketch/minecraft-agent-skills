@@ -1,0 +1,10 @@
+{
+ "vertex":"scenewindow:aperture","fragment":"scenewindow:aperture",
+ "attributes":["Position","UV0"],"samplers":[{"name":"Sampler0"},{"name":"Sampler1"}],
+ "uniforms":[
+  {"name":"ModelViewMat","type":"matrix4x4","count":16,"values":[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]},
+  {"name":"ProjMat","type":"matrix4x4","count":16,"values":[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]},
+  {"name":"Shape","type":"int","count":1,"values":[0]},
+  {"name":"FrameColor","type":"float","count":3,"values":[0.7,0.5,0.18]}
+ ]
+}

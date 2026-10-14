@@ -1,0 +1,5 @@
+# Preserve exact shared shader bytes for browser/runtime SHA-256 comparisons.
+*.glsl -text
+*.png binary
+*.jpg binary
+*.jar binary

@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="waterripple"
+version="0.1.0"
+displayName="Water Ripple Lab"
+displayTest="IGNORE_ALL_VERSION"
+description='''Interactive heightfield water ripples for Forge 1.20.1.'''
+[[dependencies.waterripple]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.waterripple]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"

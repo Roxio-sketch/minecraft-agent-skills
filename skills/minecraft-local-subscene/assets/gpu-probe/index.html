@@ -1,0 +1,65 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>局部异空间：区域与深度验证</title>
+<style>body{background:#101622;color:#dae3ef;font:16px system-ui;margin:24px}canvas{width:768px;height:512px;border:1px solid #435}p{max-width:850px}</style>
+<h1>局部异空间 · 独立场景合成实验</h1><p>绿色格面是主场景，红色柱体在窗口之前；窗口内为独立星域与两层三角形。该实验验证 GPU 区域、深度与状态契约，不是 Minecraft 游戏画面。</p><canvas id="c" width="384" height="256"></canvas>
+<script>
+'use strict';
+const canvas=document.querySelector('canvas'),gl=canvas.getContext('webgl2',{antialias:false,depth:true,stencil:true,preserveDrawingBuffer:true});
+if(!gl)throw Error('WebGL2 unavailable');
+const W=canvas.width,H=canvas.height;gl.disable(gl.DITHER);
+function shader(type,src){let s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s;}
+function program(fs){let v=shader(gl.VERTEX_SHADER,`#version 300 es
+in vec2 p; out vec2 uv;uniform float z;void main(){uv=p*.5+.5;gl_Position=vec4(p,z*2.-1.,1.);}`),f=shader(gl.FRAGMENT_SHADER,fs),p=gl.createProgram();gl.attachShader(p,v);gl.attachShader(p,f);gl.linkProgram(p);gl.deleteShader(v);gl.deleteShader(f);if(!gl.getProgramParameter(p,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(p));return p;}
+const fs=`#version 300 es
+precision highp float; in vec2 uv;out vec4 outColor;uniform int mode,shape;uniform float phase,z,eyeZ,tanHalfFov;uniform sampler2D scene;uniform vec4 region;uniform vec3 color;
+bool inside(vec2 v){vec2 q=(v-region.xy)/region.zw;if(shape==0)return dot(q,q)<1.;if(shape==1)return max(abs(q.x),abs(q.y))<1.;if(shape==2)return abs(q.y)<1.&&abs(q.x-0.20*sin(q.y*7.))<0.12+0.16*(1.-abs(q.y));float r=length(q),a=atan(q.y,q.x);return r<.77+.16*sin(a*5.)&&length(q-vec2(.33,0))>.17;}
+void main(){
+ if(mode==5){vec3 ro=vec3(0,0,eyeZ),rd=normalize(vec3((uv*2.-1.)*vec2(1.5,1.)*tanHalfFov,-1.));float b=dot(ro,rd),c=dot(ro,ro)-.64,h=b*b-c;if(h<0.)discard;float t1=-b-sqrt(h),t2=-b+sqrt(h);float start=max(t1,.1/(-rd.z));if(t2<start)discard;float viewDepth=-rd.z*start;gl_FragDepth=30./29.9-3./(29.9*viewDepth);outColor=texture(scene,uv);return;}
+ if(mode==1||mode==2){if(!inside(uv))discard;outColor=mode==2?texture(scene,uv):vec4(color,1.);}
+ else if(mode==3){vec2 q=uv+vec2(phase,0);float n=fract(sin(dot(floor(q*100.),vec2(12.7,31.3)))*4312.7);float star=step(.987,n);vec3 neb=.045*vec3(.4,.6,1.)*(.5+.5*sin(q.x*30.+sin(q.y*8.)));outColor=vec4(vec3(.008,.012,.04)+neb+star*vec3(.3,.65,1.),1.);}
+ else if(mode==4){float k=mod(floor(uv.x*18.)+floor(uv.y*12.),2.);outColor=vec4(mix(vec3(.04,.18,.09),vec3(.075,.24,.13),k),1.);}
+ else outColor=vec4(color,1.);
+ gl_FragDepth=z;
+}`;
+let p=program(fs);const vao=gl.createVertexArray(),buf=gl.createBuffer();gl.bindVertexArray(vao);gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+function draw(vertices,{mode=0,shape=0,z=.5,color=[1,1,1],region=[.5,.5,.36,.38],phase=0,texture=null,eyeZ=3,fov=70}={}){
+ gl.useProgram(p);gl.bindVertexArray(vao);gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(vertices),gl.STREAM_DRAW);
+ let a=gl.getAttribLocation(p,'p');gl.enableVertexAttribArray(a);gl.vertexAttribPointer(a,2,gl.FLOAT,false,0,0);
+ gl.uniform1i(gl.getUniformLocation(p,'mode'),mode);gl.uniform1i(gl.getUniformLocation(p,'shape'),shape);gl.uniform1f(gl.getUniformLocation(p,'z'),z);gl.uniform1f(gl.getUniformLocation(p,'phase'),phase);gl.uniform3fv(gl.getUniformLocation(p,'color'),color);gl.uniform4fv(gl.getUniformLocation(p,'region'),region);
+ gl.uniform1f(gl.getUniformLocation(p,'eyeZ'),eyeZ);gl.uniform1f(gl.getUniformLocation(p,'tanHalfFov'),Math.tan(fov*Math.PI/360));gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,texture);gl.uniform1i(gl.getUniformLocation(p,'scene'),0);gl.drawArrays(gl.TRIANGLES,0,vertices.length/2);
+}
+const full=[-1,-1,3,-1,-1,3];function rect(x0,y0,x1,y1,o){draw([x0,y0,x1,y0,x1,y1,x0,y0,x1,y1,x0,y1],o);}
+let allocated=0;function target(w=W,h=H){const f=gl.createFramebuffer(),t=gl.createTexture(),d=gl.createRenderbuffer();gl.bindFramebuffer(gl.FRAMEBUFFER,f);gl.bindTexture(gl.TEXTURE_2D,t);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA8,w,h,0,gl.RGBA,gl.UNSIGNED_BYTE,null);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.framebufferTexture2D(gl.FRAMEBUFFER,gl.COLOR_ATTACHMENT0,gl.TEXTURE_2D,t,0);gl.bindRenderbuffer(gl.RENDERBUFFER,d);gl.renderbufferStorage(gl.RENDERBUFFER,gl.DEPTH24_STENCIL8,w,h);gl.framebufferRenderbuffer(gl.FRAMEBUFFER,gl.DEPTH_STENCIL_ATTACHMENT,gl.RENDERBUFFER,d);if(gl.checkFramebufferStatus(gl.FRAMEBUFFER)!==gl.FRAMEBUFFER_COMPLETE)throw Error('incomplete FBO');allocated++;return {f,t,d,w,h};}
+function dispose(t){gl.deleteFramebuffer(t.f);gl.deleteTexture(t.t);gl.deleteRenderbuffer(t.d);allocated--;}
+const main=target(),child=target();
+function bind(t){gl.bindFramebuffer(gl.FRAMEBUFFER,t.f);gl.viewport(0,0,t.w,t.h);}
+function init(t){bind(t);gl.disable(gl.SCISSOR_TEST);gl.disable(gl.BLEND);gl.disable(gl.CULL_FACE);gl.disable(gl.STENCIL_TEST);gl.enable(gl.DEPTH_TEST);gl.depthFunc(gl.LESS);gl.depthMask(true);gl.colorMask(true,true,true,true);gl.stencilMask(255);gl.clearColor(0,0,0,1);gl.clearDepth(1);gl.clearStencil(0);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT|gl.STENCIL_BUFFER_BIT);}
+function primary(){draw(full,{mode:4,z:.9});rect(-.69,-.78,-.36,.76,{color:[.85,.14,.1],z:.15});}
+function secondary(phase=0){draw(full,{mode:3,z:.98,phase});draw([-.5,-.5,.55,-.5,.08,.65],{color:[.16,.3,.72],z:.65});draw([-.3,-.3,.36,-.3,.04,.40],{color:[.9,.65,.18],z:.3});}
+function windowFbo(shape,phase=0,nested=false,scale=1){const c=scale===1?child:target(Math.max(1,Math.round(W*scale)),Math.max(1,Math.round(H*scale)));init(c);secondary(phase);if(nested)rect(.0,.12,.38,.47,{z:.18,color:[.65,.07,.85]});bind(main);gl.disable(gl.STENCIL_TEST);gl.enable(gl.DEPTH_TEST);gl.depthFunc(gl.LESS);gl.depthMask(true);draw(full,{mode:2,shape,z:.45,texture:c.t});if(c!==child)dispose(c);}
+function windowStencil(shape,nested=false){gl.enable(gl.STENCIL_TEST);gl.stencilMask(255);gl.stencilFunc(gl.EQUAL,0,255);gl.stencilOp(gl.KEEP,gl.KEEP,gl.INCR);gl.colorMask(false,false,false,false);gl.depthMask(false);draw(full,{mode:1,shape,z:.45});gl.stencilMask(0);gl.stencilFunc(gl.EQUAL,1,255);gl.stencilOp(gl.KEEP,gl.KEEP,gl.KEEP);gl.depthMask(true);gl.depthFunc(gl.ALWAYS);draw(full,{z:1});gl.colorMask(true,true,true,true);gl.depthFunc(gl.LESS);secondary();
+ if(nested){gl.stencilMask(255);gl.stencilFunc(gl.EQUAL,1,255);gl.stencilOp(gl.KEEP,gl.KEEP,gl.INCR);gl.colorMask(false,false,false,false);gl.depthMask(false);rect(.0,.12,.38,.47,{z:.18});gl.stencilMask(0);gl.stencilFunc(gl.EQUAL,2,255);gl.stencilOp(gl.KEEP,gl.KEEP,gl.KEEP);gl.depthFunc(gl.ALWAYS);gl.depthMask(true);draw(full,{z:1});gl.colorMask(true,true,true,true);draw(full,{color:[.65,.07,.85],z:.3});gl.colorMask(false,false,false,false);rect(.0,.12,.38,.47,{z:.18});gl.stencilMask(255);gl.stencilFunc(gl.EQUAL,2,255);gl.stencilOp(gl.KEEP,gl.KEEP,gl.DECR);gl.depthMask(false);draw(full);gl.stencilMask(0);gl.stencilOp(gl.KEEP,gl.KEEP,gl.KEEP);gl.stencilFunc(gl.EQUAL,1,255);}
+ gl.colorMask(false,false,false,false);gl.depthMask(true);gl.depthFunc(gl.ALWAYS);draw(full,{mode:1,shape,z:.45});gl.colorMask(true,true,true,true);gl.disable(gl.STENCIL_TEST);gl.depthFunc(gl.LESS);
+}
+function pixels(){const a=new Uint8Array(W*H*4);bind(main);gl.readPixels(0,0,W,H,gl.RGBA,gl.UNSIGNED_BYTE,a);return Array.from(a);}
+function show(){gl.bindFramebuffer(gl.READ_FRAMEBUFFER,main.f);gl.bindFramebuffer(gl.DRAW_FRAMEBUFFER,null);gl.blitFramebuffer(0,0,W,H,0,0,W,H,gl.COLOR_BUFFER_BIT,gl.NEAREST);bind(main);}
+function render(route='fbo',shape=0,nested=false,scale=1){init(main);primary();if(route==='fbo')windowFbo(shape,0,nested,scale);if(route==='stencil')windowStencil(shape,nested);show();return pixels();}
+function sphere(eyeZ=3,fov=70,enabled=true){init(child);secondary();init(main);draw(full,{mode:4,z:.995});rect(-.35,-.65,-.19,.65,{color:[.85,.14,.1],z:.9});if(enabled)draw(full,{mode:5,texture:child.t,eyeZ,fov});show();return pixels();}
+function pixel(a,x,y){let i=(y*W+x)*4;return a.slice(i,i+4);}
+const checks=[];function check(name,ok,detail){checks.push({name,passed:!!ok,detail});}
+function diff(a,b){let n=0;for(let i=0;i<a.length;i+=4)if(a[i]!==b[i]||a[i+1]!==b[i+1]||a[i+2]!==b[i+2]||a[i+3]!==b[i+3])n++;return n;}
+function within(u,v,shape){let x=(u-.5)/.36,y=(v-.5)/.38;if(shape===0)return x*x+y*y<1;if(shape===1)return Math.max(Math.abs(x),Math.abs(y))<1;if(shape===2)return Math.abs(y)<1&&Math.abs(x-.2*Math.sin(y*7))<.12+.16*(1-Math.abs(y));return Math.hypot(x,y)<.77+.16*Math.sin(Math.atan2(y,x)*5)&&Math.hypot(x-.33,y)>.17;}
+function run(){checks.length=0;const baseline=render('none');for(let shape=0;shape<4;shape++){let a=render('fbo',shape),b=render('stencil',shape);check('fbo_stencil_equivalent_'+shape,diff(a,b)===0,{changed:diff(a,b)});let outside=0,front=0,inside=0;for(let y=0;y<H;y++)for(let x=0;x<W;x++){let u=(x+.5)/W,v=(y+.5)/H,changed=diff(pixel(a,x,y),pixel(baseline,x,y));if(!within(u,v,shape))outside+=changed;else inside+=changed;if(u>.155&&u<.32&&v>.11&&v<.88)front+=changed;}check('outside_unchanged_'+shape,outside===0,{outside});check('foreground_preserved_'+shape,front===0,{front});check('independent_scene_visible_'+shape,inside>400,{inside});}
+ const n1=render('fbo',0,true),n2=render('stencil',0,true);check('nested_child_clipped_and_parent_resumed',diff(n1,n2)===0,{changed:diff(n1,n2)});
+ for(const route of ['fbo','stencil']){let a=render(route);let before=pixel(a,Math.floor(W*.55),Math.floor(H*.5));bind(main);rect(-.12,-.12,.22,.12,{z:.7,color:[1,0,1]});let b=pixels();check(route+'_late_background_blocked',JSON.stringify(before)===JSON.stringify(pixel(b,Math.floor(W*.55),Math.floor(H*.5))));rect(-.12,-.12,.22,.12,{z:.1,color:[0,1,1]});let c=pixels();check(route+'_late_foreground_visible',JSON.stringify(pixel(c,Math.floor(W*.55),Math.floor(H*.5)))===JSON.stringify([0,255,255,255]));}
+ const allocatedBefore=allocated;render('fbo',0,false,.5);render('fbo',0,false,.25);check('scaled_targets_freed',allocated===allocatedBefore,{allocated});
+ for(const fov of [40,70,110]){let base=sphere(3,fov,false),a=sphere(3,fov),outside=0,front=0,visible=0;for(let y=0;y<H;y++)for(let x=0;x<W;x++){let sx=(2*(x+.5)/W-1)*1.5*Math.tan(fov*Math.PI/360),sy=(2*(y+.5)/H-1)*Math.tan(fov*Math.PI/360),rz=-1/Math.hypot(sx,sy,1),h=9*rz*rz-8.36,changed=diff(pixel(a,x,y),pixel(base,x,y));if(h<-.0001)outside+=changed;visible+=changed;if((x+.5)/W>.325&&(x+.5)/W<.405&&(y+.5)/H>.175&&(y+.5)/H<.825)front+=changed;}check('sphere_outside_and_foreground_'+fov,outside===0&&front===0&&visible>200,{outside,front,visible});}
+ const inside=sphere(0,70),insideBase=sphere(0,70,false);check('inside_domain_replaces_primary',diff(inside,insideBase)>W*H*.99,{changed:diff(inside,insideBase),policy:'replace entire interior view including primary geometry; hand/UI not modeled'});
+ const old=p;p=program(fs);gl.deleteProgram(old);check('shader_recreation_deterministic',diff(render('fbo'),render('stencil'))===0);
+ // Scope deliberately changes only these states; it does not claim to capture all GL state.
+ bind(main);gl.viewport(3,4,370,245);gl.enable(gl.BLEND);gl.depthFunc(gl.LEQUAL);const snap={fb:gl.getParameter(gl.FRAMEBUFFER_BINDING),vp:Array.from(gl.getParameter(gl.VIEWPORT)),blend:gl.isEnabled(gl.BLEND),depth:gl.getParameter(gl.DEPTH_FUNC)};let caught=false;
+ try{try{bind(child);gl.disable(gl.BLEND);gl.depthFunc(gl.ALWAYS);throw Error('injected child failure');}finally{gl.bindFramebuffer(gl.FRAMEBUFFER,snap.fb);gl.viewport(...snap.vp);snap.blend?gl.enable(gl.BLEND):gl.disable(gl.BLEND);gl.depthFunc(snap.depth);}}catch(e){caught=true;}
+ check('declared_scope_exception_restore',caught&&gl.getParameter(gl.FRAMEBUFFER_BINDING)===snap.fb&&JSON.stringify(Array.from(gl.getParameter(gl.VIEWPORT)))===JSON.stringify(snap.vp)&&gl.isEnabled(gl.BLEND)===snap.blend&&gl.getParameter(gl.DEPTH_FUNC)===snap.depth);
+ render('fbo',0,true);const ext=gl.getExtension('WEBGL_debug_renderer_info');let error=gl.getError();check('gl_error_zero',error===0,{error});return {scope:'WebGL2 synthetic GPU pipeline; NOT Minecraft runtime',checks,renderer:ext?gl.getParameter(ext.UNMASKED_RENDERER_WEBGL):gl.getParameter(gl.RENDERER),stencilBits:8,size:[W,H],passed:checks.every(c=>c.passed)};
+}
+window.subscene={run,render,sphere,gl};render('fbo',0,true);
+</script></html>

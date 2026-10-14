@@ -1,0 +1,22 @@
+{
+  "schema": "spirit-guard-glint/1",
+  "preset": "guard-tiny-sparks",
+  "parameters": {
+    "style": 7,
+    "color": "#A2DAFF",
+    "color2": "#ECFAFF",
+    "intensity": 1.1,
+    "speed": 0.9,
+    "scale": 1.1,
+    "width": 0.09,
+    "angle": -28,
+    "secondary": 0.55
+  },
+  "scene": {
+    "shape": "chest",
+    "material": "iron",
+    "yaw": 0.32,
+    "pitch": -0.08,
+    "orbit": false
+  }
+}

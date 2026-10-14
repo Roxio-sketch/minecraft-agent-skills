@@ -1,0 +1,22 @@
+{
+  "schema": "spirit-guard-glint/1",
+  "preset": "guard-fine-filaments",
+  "parameters": {
+    "style": 2,
+    "color": "#9ED9FF",
+    "color2": "#D7F2FF",
+    "intensity": 0.95,
+    "speed": 0.8,
+    "scale": 0.85,
+    "width": 0.1,
+    "angle": 12,
+    "secondary": 0.45
+  },
+  "scene": {
+    "shape": "chest",
+    "material": "iron",
+    "yaw": 0.32,
+    "pitch": -0.08,
+    "orbit": false
+  }
+}

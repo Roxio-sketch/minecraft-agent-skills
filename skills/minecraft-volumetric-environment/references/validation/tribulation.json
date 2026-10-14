@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "checks": {
+    "zeroTimeIdentity": true,
+    "replayExact": true,
+    "formationChanges": true,
+    "timelineExport": true,
+    "importRestoresTime": true,
+    "importRestoresTimeline": true,
+    "flowChanges": true,
+    "selfTest": true,
+    "mobileNoOverflow": true
+  },
+  "scope": "Actual WebGL browser rendering, deterministic replay, export/import, no Forge certification"
+}

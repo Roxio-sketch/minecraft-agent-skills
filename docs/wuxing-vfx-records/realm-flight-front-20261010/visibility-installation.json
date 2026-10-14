@@ -1,0 +1,13 @@
+{
+  "destination": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "actualScreenshots": 12,
+  "build": "PASS",
+  "nativeRuntime": "PASS",
+  "installed": true,
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-visible-flow-20261010-122919.jar",
+  "sha256": "512D4D2157B45BE151FFED6A620CD166B7E3587537ADBC0E4B97B5BE3A005269",
+  "changes": "Local opacity .78, stronger broad flowing skin coverage, independent advanced hemisphere removed; hue/gain/Bloom preserved",
+  "glErrors": 0,
+  "backupSha256": "421E229B5906477F12851349F3457935A11CDCBBFFD0471D2812F0881A07DD6E",
+  "shaderPackRetested": false
+}

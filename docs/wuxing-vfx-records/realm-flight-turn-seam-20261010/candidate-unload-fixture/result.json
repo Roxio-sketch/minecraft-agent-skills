@@ -1,0 +1,828 @@
+{
+  "fixture": "flightSelectionCapture",
+  "result": "RUNNING",
+  "scope": "Isolated local DEV survival save; exact vanilla inventory Open event, actual production navigation/category/selection mouseClicked and mouseScrolled. Reflection only reads widget coordinates, server snapshot and actual renderer state. Real production network validates one deliberately locked selection. No remote multiplayer/FPS/shader-pack claim.",
+  "captures": [
+    {
+      "screenshot": "dixian-settings-top.png",
+      "stage": 4,
+      "actualRealm": 8,
+      "configPreference": 0,
+      "actualServer": null,
+      "actualFlightPacket": null,
+      "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "actualFlying": false,
+      "trailSegments": 0,
+      "actualProductionWidgetLabels": [
+        "界面显示",
+        "御剑视角",
+        "操控设置",
+        "HUD 布局",
+        "境界御空",
+        "飞行模式：特殊御空",
+        "高速后掠姿态",
+        "转向镜头侧倾",
+        "镜头侧倾幅度：0.35",
+        "随当前境界",
+        "元婴 Lv1",
+        "化神 Lv2",
+        "炼虚 Lv3",
+        "合体 Lv4",
+        "大乘 Lv5",
+        "地仙 Lv6"
+      ],
+      "actualScroll": 0,
+      "contentBounds": [
+        156,
+        61,
+        396,
+        258
+      ]
+    },
+    {
+      "screenshot": "dixian-settings-bottom.png",
+      "stage": 5,
+      "actualRealm": 8,
+      "configPreference": 0,
+      "actualServer": {
+        "realm": 8,
+        "visualRealm": 8,
+        "packetPreference": 0,
+        "active": false,
+        "preferredRealm": 0,
+        "flying": false,
+        "mana": 1001980.0
+      },
+      "actualFlightPacket": null,
+      "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "actualFlying": false,
+      "trailSegments": 0,
+      "actualProductionWidgetLabels": [
+        "界面显示",
+        "御剑视角",
+        "操控设置",
+        "HUD 布局",
+        "境界御空",
+        "飞行模式：特殊御空",
+        "高速后掠姿态",
+        "转向镜头侧倾",
+        "镜头侧倾幅度：0.35",
+        "随当前境界",
+        "元婴 Lv1",
+        "化神 Lv2",
+        "炼虚 Lv3",
+        "合体 Lv4",
+        "大乘 Lv5",
+        "地仙 Lv6"
+      ],
+      "actualScroll": 156,
+      "contentBounds": [
+        156,
+        61,
+        396,
+        258
+      ]
+    },
+    {
+      "screenshot": "dixian-selected-huashen.png",
+      "stage": 6,
+      "actualRealm": 8,
+      "configPreference": 4,
+      "actualServer": null,
+      "actualFlightPacket": null,
+      "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "actualFlying": false,
+      "trailSegments": 0,
+      "actualProductionWidgetLabels": [
+        "界面显示",
+        "御剑视角",
+        "操控设置",
+        "HUD 布局",
+        "境界御空",
+        "飞行模式：特殊御空",
+        "高速后掠姿态",
+        "转向镜头侧倾",
+        "镜头侧倾幅度：0.35",
+        "随当前境界",
+        "元婴 Lv1",
+        "化神 Lv2",
+        "炼虚 Lv3",
+        "合体 Lv4",
+        "大乘 Lv5",
+        "地仙 Lv6"
+      ],
+      "actualScroll": 156,
+      "contentBounds": [
+        156,
+        61,
+        396,
+        258
+      ]
+    },
+    {
+      "screenshot": "dixian-flight-huashen-selected.png",
+      "stage": 8,
+      "actualRealm": 8,
+      "configPreference": 4,
+      "actualServer": null,
+      "actualFlightPacket": {
+        "player": "380df991-f603-344c-a090-369bad2a924a",
+        "active": true,
+        "realm": 8,
+        "stage": 3,
+        "ghost": false,
+        "boost": false,
+        "visualRealm": 4
+      },
+      "screenClass": null,
+      "actualFlying": true,
+      "trailSegments": 111
+    },
+    {
+      "screenshot": "dixian-selected-dixian.png",
+      "stage": 10,
+      "actualRealm": 8,
+      "configPreference": 8,
+      "actualServer": null,
+      "actualFlightPacket": {
+        "player": "380df991-f603-344c-a090-369bad2a924a",
+        "active": true,
+        "realm": 8,
+        "stage": 3,
+        "ghost": false,
+        "boost": false,
+        "visualRealm": 4
+      },
+      "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "actualFlying": true,
+      "trailSegments": 113,
+      "actualProductionWidgetLabels": [
+        "界面显示",
+        "御剑视角",
+        "操控设置",
+        "HUD 布局",
+        "境界御空",
+        "飞行模式：特殊御空",
+        "高速后掠姿态",
+        "转向镜头侧倾",
+        "镜头侧倾幅度：0.35",
+        "随当前境界",
+        "元婴 Lv1",
+        "化神 Lv2",
+        "炼虚 Lv3",
+        "合体 Lv4",
+        "大乘 Lv5",
+        "地仙 Lv6"
+      ],
+      "actualScroll": 144,
+      "contentBounds": [
+        156,
+        61,
+        396,
+        258
+      ]
+    },
+    {
+      "screenshot": "dixian-flight-dixian-selected.png",
+      "stage": 12,
+      "actualRealm": 8,
+      "configPreference": 8,
+      "actualServer": null,
+      "actualFlightPacket": {
+        "player": "380df991-f603-344c-a090-369bad2a924a",
+        "active": true,
+        "realm": 8,
+        "stage": 3,
+        "ghost": false,
+        "boost": false,
+        "visualRealm": 8
+      },
+      "screenClass": null,
+      "actualFlying": true,
+      "trailSegments": 161
+    },
+    {
+      "screenshot": "dixian-auto-selected.png",
+      "stage": 14,
+      "actualRealm": 8,
+      "configPreference": 0,
+      "actualServer": null,
+      "actualFlightPacket": {
+        "player": "380df991-f603-344c-a090-369bad2a924a",
+        "active": true,
+        "realm": 8,
+        "stage": 3,
+        "ghost": false,
+        "boost": false,
+        "visualRealm": 8
+      },
+      "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "actualFlying": true,
+      "trailSegments": 162,
+      "actualProductionWidgetLabels": [
+        "界面显示",
+        "御剑视角",
+        "操控设置",
+        "HUD 布局",
+        "境界御空",
+        "飞行模式：特殊御空",
+        "高速后掠姿态",
+        "转向镜头侧倾",
+        "镜头侧倾幅度：0.35",
+        "随当前境界",
+        "元婴 Lv1",
+        "化神 Lv2",
+        "炼虚 Lv3",
+        "合体 Lv4",
+        "大乘 Lv5",
+        "地仙 Lv6"
+      ],
+      "actualScroll": 0,
+      "contentBounds": [
+        156,
+        61,
+        396,
+        258
+      ]
+    },
+    {
+      "screenshot": "huashen-settings-top.png",
+      "stage": 17,
+      "actualRealm": 4,
+      "configPreference": 0,
+      "actualServer": null,
+      "actualFlightPacket": {
+        "player": "380df991-f603-344c-a090-369bad2a924a",
+        "active": false,
+        "realm": 4,
+        "stage": 3,
+        "ghost": false,
+        "boost": false,
+        "visualRealm": 0
+      },
+      "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "actualFlying": false,
+      "trailSegments": 132,
+      "actualProductionWidgetLabels": [
+        "界面显示",
+        "御剑视角",
+        "操控设置",
+        "HUD 布局",
+        "境界御空",
+        "飞行模式：特殊御空",
+        "高速后掠姿态",
+        "转向镜头侧倾",
+        "镜头侧倾幅度：0.35",
+        "随当前境界",
+        "元婴 Lv1",
+        "化神 Lv2"
+      ],
+      "actualScroll": 0,
+      "contentBounds": [
+        156,
+        61,
+        396,
+        258
+      ]
+    },
+    {
+      "screenshot": "huashen-settings-bottom.png",
+      "stage": 18,
+      "actualRealm": 4,
+      "configPreference": 0,
+      "actualServer": {
+        "realm": 4,
+        "visualRealm": 4,
+        "packetPreference": 0,
+        "active": false,
+        "preferredRealm": 0,
+        "flying": false,
+        "mana": 11000.0
+      },
+      "actualFlightPacket": {
+        "player": "380df991-f603-344c-a090-369bad2a924a",
+        "active": false,
+        "realm": 4,
+        "stage": 3,
+        "ghost": false,
+        "boost": false,
+        "visualRealm": 0
+      },
+      "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "actualFlying": false,
+      "trailSegments": 102,
+      "actualProductionWidgetLabels": [
+        "界面显示",
+        "御剑视角",
+        "操控设置",
+        "HUD 布局",
+        "境界御空",
+        "飞行模式：特殊御空",
+        "高速后掠姿态",
+        "转向镜头侧倾",
+        "镜头侧倾幅度：0.35",
+        "随当前境界",
+        "元婴 Lv1",
+        "化神 Lv2"
+      ],
+      "actualScroll": 44,
+      "contentBounds": [
+        156,
+        61,
+        396,
+        258
+      ]
+    },
+    {
+      "screenshot": "huashen-selected-yuanying.png",
+      "stage": 19,
+      "actualRealm": 4,
+      "configPreference": 3,
+      "actualServer": {
+        "realm": 4,
+        "visualRealm": 4,
+        "packetPreference": 0,
+        "active": false,
+        "preferredRealm": 0,
+        "flying": false,
+        "mana": 11000.0
+      },
+      "actualFlightPacket": {
+        "player": "380df991-f603-344c-a090-369bad2a924a",
+        "active": false,
+        "realm": 4,
+        "stage": 3,
+        "ghost": false,
+        "boost": false,
+        "visualRealm": 0
+      },
+      "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "actualFlying": false,
+      "trailSegments": 27,
+      "actualProductionWidgetLabels": [
+        "界面显示",
+        "御剑视角",
+        "操控设置",
+        "HUD 布局",
+        "境界御空",
+        "飞行模式：特殊御空",
+        "高速后掠姿态",
+        "转向镜头侧倾",
+        "镜头侧倾幅度：0.35",
+        "随当前境界",
+        "元婴 Lv1",
+        "化神 Lv2"
+      ],
+      "actualScroll": 44,
+      "contentBounds": [
+        156,
+        61,
+        396,
+        258
+      ]
+    },
+    {
+      "screenshot": "huashen-auto-after-untrusted.png",
+      "stage": 21,
+      "actualRealm": 4,
+      "configPreference": 0,
+      "actualServer": null,
+      "actualFlightPacket": {
+        "player": "380df991-f603-344c-a090-369bad2a924a",
+        "active": false,
+        "realm": 4,
+        "stage": 3,
+        "ghost": false,
+        "boost": false,
+        "visualRealm": 3
+      },
+      "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "actualFlying": false,
+      "trailSegments": 43,
+      "actualProductionWidgetLabels": [
+        "界面显示",
+        "御剑视角",
+        "操控设置",
+        "HUD 布局",
+        "境界御空",
+        "飞行模式：特殊御空",
+        "高速后掠姿态",
+        "转向镜头侧倾",
+        "镜头侧倾幅度：0.35",
+        "随当前境界",
+        "元婴 Lv1",
+        "化神 Lv2"
+      ],
+      "actualScroll": 44,
+      "contentBounds": [
+        156,
+        61,
+        396,
+        258
+      ]
+    },
+    {
+      "screenshot": "huashen-reopened-auto.png",
+      "stage": 23,
+      "actualRealm": 4,
+      "configPreference": 0,
+      "actualServer": null,
+      "actualFlightPacket": {
+        "player": "380df991-f603-344c-a090-369bad2a924a",
+        "active": false,
+        "realm": 4,
+        "stage": 3,
+        "ghost": false,
+        "boost": false,
+        "visualRealm": 0
+      },
+      "screenClass": "cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "actualFlying": false,
+      "trailSegments": 20,
+      "actualProductionWidgetLabels": [
+        "界面显示",
+        "御剑视角",
+        "操控设置",
+        "HUD 布局",
+        "境界御空",
+        "飞行模式：特殊御空",
+        "高速后掠姿态",
+        "转向镜头侧倾",
+        "镜头侧倾幅度：0.35",
+        "随当前境界",
+        "元婴 Lv1",
+        "化神 Lv2"
+      ],
+      "actualScroll": 0,
+      "contentBounds": [
+        156,
+        61,
+        396,
+        258
+      ]
+    }
+  ],
+  "actualInputEvents": [
+    {
+      "label": "设置",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 116.0,
+      "y": 261.0,
+      "stage": 1
+    },
+    {
+      "label": "境界御空",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 188.5,
+      "y": 189.5,
+      "stage": 2
+    },
+    {
+      "action": "actual_mouseScrolled",
+      "stage": 4,
+      "delta": -100
+    },
+    {
+      "label": "化神 Lv2",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 385.5,
+      "y": 160.0,
+      "stage": 5
+    },
+    {
+      "label": "设置",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 116.0,
+      "y": 261.0,
+      "stage": 8
+    },
+    {
+      "label": "境界御空",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 188.5,
+      "y": 189.5,
+      "stage": 8
+    },
+    {
+      "action": "actual_mouseScrolled",
+      "stage": 9,
+      "delta": -1
+    },
+    {
+      "action": "actual_mouseScrolled",
+      "stage": 9,
+      "delta": -1
+    },
+    {
+      "action": "actual_mouseScrolled",
+      "stage": 9,
+      "delta": -1
+    },
+    {
+      "action": "actual_mouseScrolled",
+      "stage": 9,
+      "delta": -1
+    },
+    {
+      "action": "actual_mouseScrolled",
+      "stage": 9,
+      "delta": -1
+    },
+    {
+      "action": "actual_mouseScrolled",
+      "stage": 9,
+      "delta": -1
+    },
+    {
+      "label": "地仙 Lv6",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 385.5,
+      "y": 284.0,
+      "stage": 9
+    },
+    {
+      "label": "设置",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 116.0,
+      "y": 261.0,
+      "stage": 12
+    },
+    {
+      "label": "境界御空",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 188.5,
+      "y": 189.5,
+      "stage": 12
+    },
+    {
+      "label": "随当前境界",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 385.5,
+      "y": 256.0,
+      "stage": 13
+    },
+    {
+      "label": "设置",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 116.0,
+      "y": 261.0,
+      "stage": 15
+    },
+    {
+      "label": "境界御空",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 188.5,
+      "y": 189.5,
+      "stage": 15
+    },
+    {
+      "action": "actual_mouseScrolled",
+      "stage": 17,
+      "delta": -100
+    },
+    {
+      "label": "元婴 Lv1",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 385.5,
+      "y": 244.0,
+      "stage": 18
+    },
+    {
+      "requestedPreference": 8,
+      "action": "actual_untrusted_packet",
+      "actualRealm": 4
+    },
+    {
+      "label": "随当前境界",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 385.5,
+      "y": 212.0,
+      "stage": 20
+    },
+    {
+      "label": "设置",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 116.0,
+      "y": 261.0,
+      "stage": 21
+    },
+    {
+      "label": "境界御空",
+      "action": "actual_screen_mouseClicked",
+      "accepted": true,
+      "x": 188.5,
+      "y": 189.5,
+      "stage": 21
+    }
+  ],
+  "checks": [
+    {
+      "name": "production_inventory_replacement_stage_0",
+      "details": "Opened exact vanilla InventoryScreen, Forge Open event returned cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "passed": true
+    },
+    {
+      "name": "auto_choice_realm_8",
+      "details": "[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_8_3",
+      "details": "Expected available 元婴 Lv1; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_8_4",
+      "details": "Expected available 化神 Lv2; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_8_5",
+      "details": "Expected available 炼虚 Lv3; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_8_6",
+      "details": "Expected available 合体 Lv4; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_8_7",
+      "details": "Expected available 大乘 Lv5; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_8_8",
+      "details": "Expected available 地仙 Lv6; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2, 炼虚 Lv3, 合体 Lv4, 大乘 Lv5, 地仙 Lv6]",
+      "passed": true
+    },
+    {
+      "name": "actual_controls_no_overlap_realm_8",
+      "details": "Read-only production widget bounds, same page space; scrolling captures top/bottom",
+      "passed": true
+    },
+    {
+      "name": "real_click_saved_huashen",
+      "details": "After production mouseClicked config\u003d4",
+      "passed": true
+    },
+    {
+      "name": "actual_server_round_trip_stage_6",
+      "details": "Actual realm unchanged 8; config\u003d4; actual integrated-server snapshot\u003d{realm\u003d8, visualRealm\u003d4, packetPreference\u003d4, active\u003dfalse, preferredRealm\u003d4, flying\u003dfalse, mana\u003d1003080.0}",
+      "passed": true
+    },
+    {
+      "name": "actual_config_saved_stage_6",
+      "details": "Read saved production config .\\config\\wuxingxiantu-hud-client.toml; realmFlightVisualRealm\u003d4",
+      "passed": true
+    },
+    {
+      "name": "actual_render_selection_stage_7",
+      "details": "Read actual production renderer resolver\u003d4; state\u003dRealmFlightVisualPacket[player\u003d380df991-f603-344c-a090-369bad2a924a, active\u003dtrue, realm\u003d8, stage\u003d3, ghost\u003dfalse, boost\u003dfalse, visualRealm\u003d4]; flying\u003dtrue; actual trail segments\u003d110",
+      "passed": true
+    },
+    {
+      "name": "production_inventory_replacement_stage_8",
+      "details": "Opened exact vanilla InventoryScreen, Forge Open event returned cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "passed": true
+    },
+    {
+      "name": "actual_server_round_trip_stage_10",
+      "details": "Actual realm unchanged 8; config\u003d8; actual integrated-server snapshot\u003d{realm\u003d8, visualRealm\u003d8, packetPreference\u003d8, active\u003dtrue, preferredRealm\u003d8, flying\u003dtrue, mana\u003d1023760.0}",
+      "passed": true
+    },
+    {
+      "name": "received_visual_packet_stage_10",
+      "details": "Read actual FLIGHTS state after production S2C delivery\u003dRealmFlightVisualPacket[player\u003d380df991-f603-344c-a090-369bad2a924a, active\u003dtrue, realm\u003d8, stage\u003d3, ghost\u003dfalse, boost\u003dfalse, visualRealm\u003d8]",
+      "passed": true
+    },
+    {
+      "name": "actual_render_selection_stage_11",
+      "details": "Read actual production renderer resolver\u003d8; state\u003dRealmFlightVisualPacket[player\u003d380df991-f603-344c-a090-369bad2a924a, active\u003dtrue, realm\u003d8, stage\u003d3, ghost\u003dfalse, boost\u003dfalse, visualRealm\u003d8]; flying\u003dtrue; actual trail segments\u003d161",
+      "passed": true
+    },
+    {
+      "name": "production_inventory_replacement_stage_12",
+      "details": "Opened exact vanilla InventoryScreen, Forge Open event returned cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "passed": true
+    },
+    {
+      "name": "actual_server_round_trip_stage_14",
+      "details": "Actual realm unchanged 8; config\u003d0; actual integrated-server snapshot\u003d{realm\u003d8, visualRealm\u003d8, packetPreference\u003d0, active\u003dtrue, preferredRealm\u003d0, flying\u003dtrue, mana\u003d1037840.0}",
+      "passed": true
+    },
+    {
+      "name": "received_visual_packet_stage_14",
+      "details": "Read actual FLIGHTS state after production S2C delivery\u003dRealmFlightVisualPacket[player\u003d380df991-f603-344c-a090-369bad2a924a, active\u003dtrue, realm\u003d8, stage\u003d3, ghost\u003dfalse, boost\u003dfalse, visualRealm\u003d0]",
+      "passed": true
+    },
+    {
+      "name": "actual_config_saved_stage_14",
+      "details": "Read saved production config .\\config\\wuxingxiantu-hud-client.toml; realmFlightVisualRealm\u003d0",
+      "passed": true
+    },
+    {
+      "name": "production_inventory_replacement_stage_15",
+      "details": "Opened exact vanilla InventoryScreen, Forge Open event returned cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "passed": true
+    },
+    {
+      "name": "auto_choice_realm_4",
+      "details": "[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_4_3",
+      "details": "Expected available 元婴 Lv1; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_4_4",
+      "details": "Expected available 化神 Lv2; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_4_5",
+      "details": "Expected absent 炼虚 Lv3; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_4_6",
+      "details": "Expected absent 合体 Lv4; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_4_7",
+      "details": "Expected absent 大乘 Lv5; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+      "passed": true
+    },
+    {
+      "name": "unlocked_choice_4_8",
+      "details": "Expected absent 地仙 Lv6; labels\u003d[界面显示, 御剑视角, 操控设置, HUD 布局, 境界御空, 飞行模式：特殊御空, 高速后掠姿态, 转向镜头侧倾, 镜头侧倾幅度：0.35, 随当前境界, 元婴 Lv1, 化神 Lv2]",
+      "passed": true
+    },
+    {
+      "name": "actual_controls_no_overlap_realm_4",
+      "details": "Read-only production widget bounds, same page space; scrolling captures top/bottom",
+      "passed": true
+    },
+    {
+      "name": "actual_server_round_trip_stage_19",
+      "details": "Actual realm unchanged 4; config\u003d3; actual integrated-server snapshot\u003d{realm\u003d4, visualRealm\u003d3, packetPreference\u003d3, active\u003dfalse, preferredRealm\u003d3, flying\u003dfalse, mana\u003d11000.0}",
+      "passed": true
+    },
+    {
+      "name": "received_visual_packet_stage_19",
+      "details": "Read actual FLIGHTS state after production S2C delivery\u003dRealmFlightVisualPacket[player\u003d380df991-f603-344c-a090-369bad2a924a, active\u003dfalse, realm\u003d4, stage\u003d3, ghost\u003dfalse, boost\u003dfalse, visualRealm\u003d3]",
+      "passed": true
+    },
+    {
+      "name": "actual_server_rejects_locked_effect",
+      "details": "Requested 地仙 8 at actual 化神 4, server stores 4 and snapshot visual 4",
+      "passed": true
+    },
+    {
+      "name": "actual_server_round_trip_stage_21",
+      "details": "Actual realm unchanged 4; config\u003d0; actual integrated-server snapshot\u003d{realm\u003d4, visualRealm\u003d4, packetPreference\u003d0, active\u003dfalse, preferredRealm\u003d0, flying\u003dfalse, mana\u003d11000.0}",
+      "passed": true
+    },
+    {
+      "name": "received_visual_packet_stage_21",
+      "details": "Read actual FLIGHTS state after production S2C delivery\u003dRealmFlightVisualPacket[player\u003d380df991-f603-344c-a090-369bad2a924a, active\u003dfalse, realm\u003d4, stage\u003d3, ghost\u003dfalse, boost\u003dfalse, visualRealm\u003d0]",
+      "passed": true
+    },
+    {
+      "name": "actual_config_saved_stage_21",
+      "details": "Read saved production config .\\config\\wuxingxiantu-hud-client.toml; realmFlightVisualRealm\u003d0",
+      "passed": true
+    },
+    {
+      "name": "production_inventory_replacement_stage_21",
+      "details": "Opened exact vanilla InventoryScreen, Forge Open event returned cn.blockforge.generated.generatedmod.client.CultivationMainScreen",
+      "passed": true
+    },
+    {
+      "name": "preference_after_reopen",
+      "details": "Reopened production page preserves auto",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "glErrors": [],
+  "configRestored": false,
+  "ticks": 188
+}

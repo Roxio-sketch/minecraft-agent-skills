@@ -1,0 +1,4 @@
+phase=1 hit=87.0 absorption=20.0
+phase=2 hit=147.0 absorption=16.0
+phase=3 hit=204.0 absorption=9.0
+phase=4 hit=267.0 absorption=1.0

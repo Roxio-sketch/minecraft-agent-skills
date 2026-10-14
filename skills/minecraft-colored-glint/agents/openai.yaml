@@ -1,0 +1,4 @@
+interface:
+  display_name: "彩色附魔流光"
+  short_description: "辅助制作任意自定义色与多色渐变附魔流光，生成贴图和着色器并处理接入验证"
+  default_prompt: "使用 $minecraft-colored-glint，按我的色值或配色描述制作自定义单色或渐变附魔流光，生成配方与预览，并按项目版本完成接入和验证。"

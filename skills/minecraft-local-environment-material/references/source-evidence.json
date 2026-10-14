@@ -1,0 +1,1081 @@
+{
+  "date": "2026-09-29",
+  "scope": "Source identity and selected inspected symbols; raw third-party sources are not packaged",
+  "sources": [
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/CameraMatrices.java",
+      "sha256": "3d5c342b69e8b4039dddbed4bdfee4adedaa62fb099e14abe20f25496f7ba9fa",
+      "lines": 250,
+      "anchors": [
+        {
+          "line": 4,
+          "text": "import foundry.veil.api.client.registry.VeilShaderBufferRegistry;"
+        },
+        {
+          "line": 5,
+          "text": "import foundry.veil.api.client.render.shader.block.ShaderBlock;"
+        },
+        {
+          "line": 43,
+          "text": "public static VeilShaderBufferLayout<CameraMatrices> createLayout() {"
+        },
+        {
+          "line": 44,
+          "text": "return VeilShaderBufferLayout.<CameraMatrices>builder()"
+        },
+        {
+          "line": 76,
+          "text": "public void update(Matrix4fc projection, Matrix4fc modelView, double x, double y, double z) {"
+        },
+        {
+          "line": 77,
+          "text": "ShaderBlock<CameraMatrices> block = VeilRenderSystem.getBlock(VeilShaderBufferRegistry.CAMERA.get());"
+        },
+        {
+          "line": 101,
+          "text": "VeilRenderSystem.bind(VeilShaderBufferRegistry.CAMERA.get());"
+        },
+        {
+          "line": 108,
+          "text": "ShaderBlock<CameraMatrices> block = VeilRenderSystem.getBlock(VeilShaderBufferRegistry.CAMERA.get());"
+        },
+        {
+          "line": 125,
+          "text": "VeilRenderSystem.bind(VeilShaderBufferRegistry.CAMERA.get());"
+        },
+        {
+          "line": 151,
+          "text": "ShaderBlock<CameraMatrices> block = VeilRenderSystem.getBlock(VeilShaderBufferRegistry.CAMERA.get());"
+        },
+        {
+          "line": 167,
+          "text": "VeilRenderSystem.bind(VeilShaderBufferRegistry.CAMERA.get());"
+        }
+      ]
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/dynamicbuffer/DynamicBufferType.java",
+      "sha256": "dce49753bfda6c46465063852f31b32ec3917594c6f223acfe6a498e0a4e242e",
+      "lines": 181,
+      "anchors": []
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/framebuffer/AdvancedFbo.java",
+      "sha256": "d2c1a222f90661047f9c8f6bc248d9cd383a988ed98ec0e46c3f4a5b97c5b913",
+      "lines": 1088,
+      "anchors": []
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/framebuffer/FramebufferDefinition.java",
+      "sha256": "064e7b238db120d683dad7f338d759a689daf153aead92726a780e013fba9ff6",
+      "lines": 204,
+      "anchors": []
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/framebuffer/FramebufferManager.java",
+      "sha256": "5324e4984dec312aff0d9bf3b210134c02f342db474e7ec7a136e71555447643",
+      "lines": 243,
+      "anchors": [
+        {
+          "line": 98,
+          "text": "public void resizeFramebuffers(int width, int height) {"
+        },
+        {
+          "line": 213,
+          "text": "protected void apply(@NotNull Map<ResourceLocation, FramebufferDefinition> data, @NotNull ResourceManager resourceManager, @NotNull ProfilerFiller profilerFiller) {"
+        },
+        {
+          "line": 236,
+          "text": "public void free() {"
+        }
+      ]
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/post/PostProcessingManager.java",
+      "sha256": "99b15bfbf6f09e846b5324a3f31a6c3e757086c75818e81d7b5efb5369854158",
+      "lines": 495,
+      "anchors": [
+        {
+          "line": 23,
+          "text": "import foundry.veil.api.client.render.shader.program.ShaderProgram;"
+        },
+        {
+          "line": 163,
+          "text": "VeilRenderSystem.renderer().getDynamicBufferManger().setActiveBuffers(POST, this.enabledBuffers);"
+        },
+        {
+          "line": 177,
+          "text": "ShaderProgram.unbind();"
+        },
+        {
+          "line": 403,
+          "text": "protected void apply(@NotNull Map<ResourceLocation, CompositePostPipeline> data, @NotNull ResourceManager resourceManager, @NotNull ProfilerFiller profilerFiller) {"
+        },
+        {
+          "line": 410,
+          "text": "public void free() {"
+        }
+      ]
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/post/stage/BlitPostStage.java",
+      "sha256": "7c9a458506c80ec826dda8f57d871530b0c3305edf3bfcf5df6591daf362c795",
+      "lines": 158,
+      "anchors": [
+        {
+          "line": 15,
+          "text": "import foundry.veil.api.client.render.shader.program.ShaderProgram;"
+        },
+        {
+          "line": 16,
+          "text": "import foundry.veil.api.client.render.shader.uniform.ShaderUniformAccess;"
+        },
+        {
+          "line": 32,
+          "text": "ResourceLocation.CODEC.fieldOf(\"shader\").forGetter(BlitPostStage::getShaderId),"
+        },
+        {
+          "line": 65,
+          "text": "public void apply(Context context) {"
+        },
+        {
+          "line": 66,
+          "text": "ShaderProgram shader = VeilRenderSystem.renderer().getShaderManager().getShader(this.shader);"
+        },
+        {
+          "line": 94,
+          "text": "ShaderProgram shader = this.getShader();"
+        },
+        {
+          "line": 99,
+          "text": "public @Nullable ShaderUniformAccess getUniform(CharSequence name) {"
+        },
+        {
+          "line": 100,
+          "text": "ShaderProgram shader = this.getShader();"
+        },
+        {
+          "line": 105,
+          "text": "public ShaderUniformAccess getUniformSafe(CharSequence name) {"
+        },
+        {
+          "line": 106,
+          "text": "ShaderProgram shader = this.getShader();"
+        },
+        {
+          "line": 107,
+          "text": "return shader != null ? shader.getUniform(name) : ShaderUniformAccess.EMPTY;"
+        },
+        {
+          "line": 112,
+          "text": "ShaderProgram shader = this.getShader();"
+        },
+        {
+          "line": 118,
+          "text": "ShaderProgram shader = this.getShader();"
+        },
+        {
+          "line": 124,
+          "text": "ShaderProgram shader = this.getShader();"
+        },
+        {
+          "line": 132,
+          "text": "ShaderProgram shader = this.getShader();"
+        },
+        {
+          "line": 141,
+          "text": "public @Nullable ShaderProgram getShader() {"
+        },
+        {
+          "line": 142,
+          "text": "return VeilRenderSystem.renderer().getShaderManager().getShader(this.shader);"
+        },
+        {
+          "line": 148,
+          "text": "public ResourceLocation getShaderId() {"
+        }
+      ]
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/post/stage/CompositePostPipeline.java",
+      "sha256": "fa240f5954650e2a08faa6d9c76376d6382ea4ebf6099e02229774bda42c4db8",
+      "lines": 261,
+      "anchors": [
+        {
+          "line": 11,
+          "text": "import foundry.veil.api.client.render.shader.texture.ShaderTextureSource;"
+        },
+        {
+          "line": 12,
+          "text": "import foundry.veil.api.client.render.shader.uniform.ShaderUniformAccess;"
+        },
+        {
+          "line": 14,
+          "text": "import foundry.veil.impl.client.render.shader.program.ShaderProgramImpl;"
+        },
+        {
+          "line": 38,
+          "text": "Codec.unboundedMap(Codec.STRING, ShaderTextureSource.CODEC)"
+        },
+        {
+          "line": 51,
+          "text": "private final Map<String, ShaderTextureSource> textureSources;"
+        },
+        {
+          "line": 52,
+          "text": "private final Map<String, ShaderProgramImpl.ShaderTexture> samplers;"
+        },
+        {
+          "line": 56,
+          "text": "private final Map<String, ShaderUniformAccess> uniforms;"
+        },
+        {
+          "line": 65,
+          "text": "private CompositePostPipeline(PostPipeline[] stages, Map<String, ShaderTextureSource> samplers, Map<ResourceLocation, FramebufferDefinition> framebufferDefinitions, @Nullable VeilRenderLevelStageEvent"
+        },
+        {
+          "line": 70,
+          "text": "for (Map.Entry<String, ShaderTextureSource> entry : samplers.entrySet()) {"
+        },
+        {
+          "line": 71,
+          "text": "this.samplers.put(entry.getKey(), ShaderProgramImpl.ShaderTexture.create(entry.getValue()));"
+        },
+        {
+          "line": 93,
+          "text": "public CompositePostPipeline(PostPipeline[] stages, Map<String, ShaderTextureSource> samplers, Map<ResourceLocation, FramebufferDefinition> framebufferDefinitions, @Nullable VeilRenderLevelStageEvent."
+        },
+        {
+          "line": 98,
+          "text": "public void apply(Context context) {"
+        },
+        {
+          "line": 119,
+          "text": "for (Map.Entry<String, ShaderProgramImpl.ShaderTexture> entry : this.samplers.entrySet()) {"
+        },
+        {
+          "line": 120,
+          "text": "ShaderProgramImpl.ShaderTexture texture = entry.getValue();"
+        },
+        {
+          "line": 121,
+          "text": "ShaderTextureSource source = texture.textureSource();"
+        },
+        {
+          "line": 130,
+          "text": "public void free() {"
+        },
+        {
+          "line": 145,
+          "text": "ShaderUniformAccess uniform = this.uniforms.get(name.toString());"
+        },
+        {
+          "line": 158,
+          "text": "public ShaderUniformAccess getUniform(CharSequence name) {"
+        },
+        {
+          "line": 163,
+          "text": "public ShaderUniformAccess getUniformSafe(CharSequence name) {"
+        },
+        {
+          "line": 165,
+          "text": "ShaderUniformAccess[] uniforms = Arrays.stream(this.stages)"
+        },
+        {
+          "line": 166,
+          "text": ".map(pipeline -> ShaderUniformAccess.wrapped(() -> pipeline.getUniformSafe(key)))"
+        },
+        {
+          "line": 167,
+          "text": ".toArray(ShaderUniformAccess[]::new);"
+        },
+        {
+          "line": 168,
+          "text": "return ShaderUniformAccess.of(uniforms);"
+        },
+        {
+          "line": 216,
+          "text": "public Map<String, ShaderTextureSource> getTextureSources() {"
+        }
+      ]
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/api/client/render/post/stage/FramebufferPostStage.java",
+      "sha256": "09c1b64659b5b8620fd91348786ef0af0c443bde377bfb5e2acd223f566de1a3",
+      "lines": 89,
+      "anchors": [
+        {
+          "line": 5,
+          "text": "import foundry.veil.api.client.render.shader.program.ShaderProgram;"
+        },
+        {
+          "line": 6,
+          "text": "import foundry.veil.api.client.render.shader.uniform.ShaderUniform;"
+        },
+        {
+          "line": 41,
+          "text": "protected void setupFramebuffer(Context context, ShaderProgram shader) {"
+        },
+        {
+          "line": 54,
+          "text": "ShaderUniform inSize = shader.getUniform(\"InSize\");"
+        },
+        {
+          "line": 63,
+          "text": "ShaderUniform outSize = shader.getUniform(\"OutSize\");"
+        }
+      ]
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/impl/client/render/dynamicbuffer/DynamicBufferManager.java",
+      "sha256": "48594de59f8d38d71f5adf74ccc425b5146096da8ccd8898c35f7a0f1fbe2e21",
+      "lines": 370,
+      "anchors": [
+        {
+          "line": 14,
+          "text": "import foundry.veil.ext.ShaderInstanceExtension;"
+        },
+        {
+          "line": 19,
+          "text": "import net.minecraft.client.renderer.ShaderInstance;"
+        },
+        {
+          "line": 49,
+          "text": "private final Set<ShaderInstance> swapShaders;"
+        },
+        {
+          "line": 60,
+          "text": "this.swapShaders = new HashSet<>();"
+        },
+        {
+          "line": 107,
+          "text": "public boolean setActiveBuffers(ResourceLocation name, int activeBuffers) {"
+        },
+        {
+          "line": 136,
+          "text": "this.swapShaders.clear();"
+        },
+        {
+          "line": 139,
+          "text": "for (ShaderInstance shader : accessor.getShaders().values()) {"
+        },
+        {
+          "line": 140,
+          "text": "if (((ShaderInstanceExtension) shader).veil$swapBuffers(this.activeBuffers)) {"
+        },
+        {
+          "line": 141,
+          "text": "this.swapShaders.add(shader);"
+        },
+        {
+          "line": 144,
+          "text": "if (!this.swapShaders.isEmpty()) {"
+        },
+        {
+          "line": 145,
+          "text": "renderer.getVanillaShaderCompiler().reload(this.swapShaders);"
+        },
+        {
+          "line": 149,
+          "text": "renderer.getShaderManager().setActiveBuffers(activeBuffers);"
+        },
+        {
+          "line": 171,
+          "text": "public void free() {"
+        },
+        {
+          "line": 306,
+          "text": "if (this.swapShaders.isEmpty()) {"
+        },
+        {
+          "line": 316,
+          "text": "Iterator<ShaderInstance> shaderIterator = this.swapShaders.iterator();"
+        },
+        {
+          "line": 318,
+          "text": "ShaderInstanceExtension shader = (ShaderInstanceExtension) shaderIterator.next();"
+        },
+        {
+          "line": 337,
+          "text": "public void markRecompiled(ShaderInstance shaderInstance) {"
+        },
+        {
+          "line": 338,
+          "text": "this.swapShaders.add(shaderInstance);"
+        },
+        {
+          "line": 341,
+          "text": "public void resizeFramebuffers(int width, int height) {"
+        },
+        {
+          "line": 365,
+          "text": "public void resize(int width, int height) {"
+        }
+      ]
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/impl/client/render/dynamicbuffer/DynamicBufferProcessor.java",
+      "sha256": "4d5906d9ed185290c253a1e13d910af4f0f862d1fae1fad00775e876a2df5d70",
+      "lines": 377,
+      "anchors": [
+        {
+          "line": 7,
+          "text": "import foundry.veil.api.client.render.shader.processor.ShaderPreProcessor;"
+        },
+        {
+          "line": 32,
+          "text": "public class DynamicBufferProcessor implements ShaderPreProcessor {"
+        },
+        {
+          "line": 66,
+          "text": "if (ctx instanceof ShaderPreProcessor.MinecraftContext minecraftContext) {"
+        }
+      ]
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/impl/client/render/framebuffer/AdvancedFboMutableTextureAttachment.java",
+      "sha256": "fbdf05bfcdcf6dc2c84c1fa0d252c1906cb05aacf6048b2e909ee4cba7aea40b",
+      "lines": 94,
+      "anchors": []
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/impl/client/render/pipeline/VeilBloomRenderer.java",
+      "sha256": "74286d4c76cc56a78153d4dd48142d87561e1405b576014e679bbc5b4d27d320",
+      "lines": 125,
+      "anchors": [
+        {
+          "line": 47,
+          "text": "if (IrisCompat.INSTANCE != null && IrisCompat.INSTANCE.areShadersLoaded()) {"
+        },
+        {
+          "line": 76,
+          "text": "if (IrisCompat.INSTANCE != null && IrisCompat.INSTANCE.areShadersLoaded()) {"
+        },
+        {
+          "line": 118,
+          "text": "public static void free() {"
+        }
+      ]
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/java/foundry/veil/mixin/dynamicbuffer/client/DynamicBufferLevelRendererMixin.java",
+      "sha256": "09320ebbd9b2b697d292543125b2d3fc991042501bb3d0499510cf5bcaa82ab0",
+      "lines": 78,
+      "anchors": []
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "common/src/main/resources/assets/veil/pinwheel/shaders/include/space_helper.glsl",
+      "sha256": "1e41a751003f5b4fbd39b2d27f83f345ca8298154b3d58f22a9668f4070a7195",
+      "lines": 149,
+      "anchors": [
+        {
+          "line": 102,
+          "text": "vec4 screenToWorldSpace(vec3 pos) {"
+        },
+        {
+          "line": 107,
+          "text": "vec4 screenToLocalSpace(vec3 pos) {"
+        },
+        {
+          "line": 121,
+          "text": "vec4 screenToWorldSpace(vec2 uv, float depth) {"
+        },
+        {
+          "line": 126,
+          "text": "vec4 screenToLocalSpace(vec2 uv, float depth) {"
+        },
+        {
+          "line": 143,
+          "text": "return normalize(screenToLocalSpace(uv, 1.0).xyz);"
+        }
+      ]
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "gradle.properties",
+      "sha256": "50ec09ee535c311f6c1a85ca6d63403508e777f4397990df5693a11ff3bdc9f3",
+      "lines": 44,
+      "anchors": []
+    },
+    {
+      "project": "Veil-1.21",
+      "path": "LICENSE",
+      "sha256": "a5681bf9b05db14d86776930017c647ad9e6e56ff6bbcfdf21e5848288dfaf1b",
+      "lines": 165,
+      "anchors": []
+    },
+    {
+      "project": "veil-example-mod-1.21",
+      "path": "gradle.properties",
+      "sha256": "f7e1773cf06682f6b5de3a50f9e0e45f32ce21f99d4fa7f55c4dbcadcbddd128",
+      "lines": 20,
+      "anchors": []
+    },
+    {
+      "project": "veil-example-mod-1.21",
+      "path": "LICENSE",
+      "sha256": "6d489af6292662d9e36d34ce49423784984a5f6e41d7b58f49b01264df59fa03",
+      "lines": 121,
+      "anchors": []
+    },
+    {
+      "project": "veil-example-mod-1.21",
+      "path": "src/main/java/foundry/veil/example/VeilExampleModClient.java",
+      "sha256": "e88beaa668f4bc1903287b13f5f9ddd67a22eab1b5b8a8a6e7ae0093d6a9704f",
+      "lines": 102,
+      "anchors": []
+    },
+    {
+      "project": "veil-example-mod-1.21",
+      "path": "src/main/resources/resourcepacks/fog/assets/veil/pinwheel/post/height_fog.json",
+      "sha256": "8a58ce88735bf30582274addb294c2f3ca59f87761c28bcda92a5275a762b9c9",
+      "lines": 9,
+      "anchors": []
+    },
+    {
+      "project": "veil-example-mod-1.21",
+      "path": "src/main/resources/resourcepacks/fog/assets/veil/pinwheel/post/space_test.json",
+      "sha256": "5f1b777e0bf8cf0305c4eb4b3fe8bc5787b352ff12c3f91e8546bf9de3178e4d",
+      "lines": 9,
+      "anchors": []
+    },
+    {
+      "project": "veil-example-mod-1.21",
+      "path": "src/main/resources/resourcepacks/fog/assets/veil/pinwheel/shaders/program/height_fog.fsh",
+      "sha256": "6fe1b4a965837c1df615223dbbf07f5dfc504496cde9248fdd39b0c4fcbae749",
+      "lines": 74,
+      "anchors": [
+        {
+          "line": 45,
+          "text": "vec3 viewPos = screenToLocalSpace(texCoord, texture(DiffuseDepthSampler, texCoord).r).xyz;"
+        }
+      ]
+    },
+    {
+      "project": "veil-example-mod-1.21",
+      "path": "src/main/resources/resourcepacks/fog/assets/veil/pinwheel/shaders/program/height_fog.json",
+      "sha256": "88ca299a8ac72d39268f99bca0bd57bcee41375b7e1a8b2942771ff71ea32310",
+      "lines": 7,
+      "anchors": []
+    },
+    {
+      "project": "veil-example-mod-1.21",
+      "path": "src/main/resources/resourcepacks/fog/assets/veil/pinwheel/shaders/program/space_test.fsh",
+      "sha256": "3e49ce0bf2710e518867e9db2b39734b7e0aeae607c6d02c398982af21821b79",
+      "lines": 16,
+      "anchors": [
+        {
+          "line": 13,
+          "text": "vec4 pos = screenToLocalSpace(texCoord, depthSample);"
+        }
+      ]
+    },
+    {
+      "project": "veil-example-mod-1.21",
+      "path": "src/main/resources/resourcepacks/fog/assets/veil/pinwheel/shaders/program/space_test.json",
+      "sha256": "134086b24370eb42af9cbf44679c32df00950db420c22e2b847a8bff699e3627",
+      "lines": 4,
+      "anchors": []
+    },
+    {
+      "project": "Lodestone-1.21",
+      "path": "gradle.properties",
+      "sha256": "58b4fdde74739e09e899d82b400c7da2216067e1e16167628870ac747a73a9c3",
+      "lines": 31,
+      "anchors": []
+    },
+    {
+      "project": "Lodestone-1.21",
+      "path": "LICENSE.txt",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+      "lines": 165,
+      "anchors": []
+    },
+    {
+      "project": "Lodestone-1.21",
+      "path": "src/main/java/team/lodestar/lodestone/mixin/client/LevelRendererMixin.java",
+      "sha256": "6355975b6e7aa2a900e02541076d76a900b6179a6dbf1495d800376e2620494e",
+      "lines": 23,
+      "anchors": [
+        {
+          "line": 16,
+          "text": "PostProcessHandler.copyDepthBuffer();"
+        }
+      ]
+    },
+    {
+      "project": "Lodestone-1.21",
+      "path": "src/main/java/team/lodestar/lodestone/modules/rendering/postprocess/effects/PhysicallyBasedBloomPostProcessor.java",
+      "sha256": "02044224518558f3a430b1dea4423f7400793f32d37461718baf961bbbd2f682",
+      "lines": 112,
+      "anchors": [
+        {
+          "line": 58,
+          "text": "public void resize(int width, int height) {"
+        },
+        {
+          "line": 78,
+          "text": "private void resize(RenderTarget target, int width, int height, int divisor) {"
+        }
+      ]
+    },
+    {
+      "project": "Lodestone-1.21",
+      "path": "src/main/java/team/lodestar/lodestone/modules/rendering/postprocess/PostProcessHandler.java",
+      "sha256": "eeae952856ec73c86eb952dd7c1ff7577be6a43387001b5ce242df840a4facbd",
+      "lines": 68,
+      "anchors": [
+        {
+          "line": 40,
+          "text": "public static void copyDepthBuffer() {"
+        },
+        {
+          "line": 42,
+          "text": "instances.forEach(PostProcessor::copyDepthBuffer);"
+        },
+        {
+          "line": 46,
+          "text": "public static void resize(int width, int height) {"
+        },
+        {
+          "line": 56,
+          "text": "copyDepthBuffer(); // copy the depth buffer if the mixin didn't trigger"
+        }
+      ]
+    },
+    {
+      "project": "Lodestone-1.21",
+      "path": "src/main/java/team/lodestar/lodestone/modules/rendering/postprocess/PostProcessor.java",
+      "sha256": "d66a5b52fb29405b8b8dec7136fa40c30b218432a00e6d2cf893b909b77af0ac",
+      "lines": 162,
+      "anchors": [
+        {
+          "line": 25,
+          "text": "* @see <a href=\"https://github.com/LodestarMC/Lodestone/wiki/Post-Processing-Shaders\">Lodestone Post Processing Wiki</a>"
+        },
+        {
+          "line": 83,
+          "text": "public void copyDepthBuffer() {"
+        },
+        {
+          "line": 94,
+          "text": "public void resize(int width, int height) {"
+        },
+        {
+          "line": 128,
+          "text": "time += partialTicks / 20.0;"
+        }
+      ]
+    },
+    {
+      "project": "Lodestone-1.21",
+      "path": "src/main/java/team/lodestar/lodestone/systems/rendering/builder/WorldVFXBuilder.java",
+      "sha256": "674b17319a1146e9d3a8e980143a344261fb04d295bd0b5d4a615c3559ecc028",
+      "lines": 461,
+      "anchors": [
+        {
+          "line": 270,
+          "text": "public WorldVFXBuilder renderTrail(TrailPointBuilder trailPoints, float width) {"
+        },
+        {
+          "line": 271,
+          "text": "return renderTrail(trailPoints, f -> width, f -> {"
+        },
+        {
+          "line": 275,
+          "text": "public WorldVFXBuilder renderTrail(TrailPointBuilder trailPoints, Function<Float, Float> widthFunc) {"
+        },
+        {
+          "line": 276,
+          "text": "return renderTrail(trailPoints, widthFunc, f -> {"
+        },
+        {
+          "line": 280,
+          "text": "public WorldVFXBuilder renderTrail(TrailPointBuilder builder, Function<Float, Float> widthFunc, Consumer<Float> vfxOperator) {"
+        },
+        {
+          "line": 389,
+          "text": "public WorldVFXBuilder renderSphere(PoseStack stack, float radius, int longs, int lats) {"
+        }
+      ]
+    },
+    {
+      "project": "Lodestone-1.21",
+      "path": "src/main/java/team/lodestar/lodestone/systems/rendering/trail/TrailPointBuilder.java",
+      "sha256": "04d47a1057c00635fd5fea279b3034bd9a80461ad81cf31696cfde5b54a4ce6a",
+      "lines": 71,
+      "anchors": []
+    },
+    {
+      "project": "Lodestone-1.21",
+      "path": "src/main/resources/assets/lodestone/shaders/post/pb_bloom.json",
+      "sha256": "968386f3c283643d7903660e5b43b7f55bf5d9c730320d7f81f42848e88ca9ad",
+      "lines": 124,
+      "anchors": []
+    },
+    {
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "gradle.properties",
+      "sha256": "76bd5d0f4d85199dd7e22a378dbdc428d284bbc16d50fb18b4eecef4e5ac5566",
+      "lines": 34,
+      "anchors": []
+    },
+    {
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "LICENSE",
+      "sha256": "e30e5f02bad799ae014d6439f609d64e3c142472d741dcb914fb123e5007203d",
+      "lines": 201,
+      "anchors": []
+    },
+    {
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/context_management/PortalRendering.java",
+      "sha256": "cedf36eb7331323913d64c64379c2d3da4ce45100fba0309d25b27918a4c00d2",
+      "lines": 228,
+      "anchors": []
+    },
+    {
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/FrontClipping.java",
+      "sha256": "e0331e1c573eb5c338d4a572597bb69bf7df8513396838d4e600c7b89a0081f2",
+      "lines": 219,
+      "anchors": [
+        {
+          "line": 7,
+          "text": "import net.minecraft.client.renderer.ShaderInstance;"
+        },
+        {
+          "line": 16,
+          "text": "import qouteall.imm_ptl.core.ducks.IEShader;"
+        },
+        {
+          "line": 174,
+          "text": "public static void updateClippingEquationUniformForCurrentShader("
+        },
+        {
+          "line": 181,
+          "text": "ShaderInstance shader = RenderSystem.getShader();"
+        },
+        {
+          "line": 187,
+          "text": "Uniform clippingEquationUniform = ((IEShader) shader).ip_getClippingEquationUniform();"
+        },
+        {
+          "line": 208,
+          "text": "ShaderInstance shader = RenderSystem.getShader();"
+        },
+        {
+          "line": 214,
+          "text": "Uniform clippingEquationUniform = ((IEShader) shader).ip_getClippingEquationUniform();"
+        }
+      ]
+    },
+    {
+      "project": "ImmersivePortalsMod-1.21",
+      "path": "src/main/java/qouteall/imm_ptl/core/render/renderer/RendererUsingStencil.java",
+      "sha256": "387f10d533c44b25a1668514f51a2a2ba1b854fcd85a90695ea47ef549473194",
+      "lines": 317,
+      "anchors": [
+        {
+          "line": 95,
+          "text": "if (Minecraft.useShaderTransparency()) {"
+        },
+        {
+          "line": 116,
+          "text": "GL11.glStencilFunc(GL_ALWAYS, 2333, 0xFF);"
+        },
+        {
+          "line": 117,
+          "text": "GL11.glStencilOp(GL_KEEP, GL_KEEP, GL_KEEP);"
+        },
+        {
+          "line": 180,
+          "text": "//is the mask here different from the mask of glStencilMask?"
+        },
+        {
+          "line": 181,
+          "text": "GL11.glStencilFunc(GL_EQUAL, outerPortalStencilValue, 0xFF);"
+        },
+        {
+          "line": 184,
+          "text": "GL11.glStencilOp(GL_KEEP, GL_KEEP, GL_INCR);"
+        },
+        {
+          "line": 189,
+          "text": "GL11.glStencilMask(0xFF);"
+        },
+        {
+          "line": 218,
+          "text": "GL11.glDepthFunc(GL_ALWAYS);"
+        },
+        {
+          "line": 221,
+          "text": "GL11.glDepthRange(1, 1);"
+        },
+        {
+          "line": 227,
+          "text": "GL11.glDepthFunc(originalDepthFunc);"
+        },
+        {
+          "line": 228,
+          "text": "GL11.glDepthRange(0, 1);"
+        },
+        {
+          "line": 239,
+          "text": "GL11.glDepthFunc(GL_ALWAYS);"
+        },
+        {
+          "line": 250,
+          "text": "GL11.glDepthFunc(originalDepthFunc);"
+        },
+        {
+          "line": 262,
+          "text": "GL11.glStencilFunc(GL_LESS, maximumValue, 0xFF);"
+        },
+        {
+          "line": 265,
+          "text": "GL11.glStencilOp(GL_KEEP, GL_REPLACE, GL_REPLACE);"
+        },
+        {
+          "line": 268,
+          "text": "GL11.glDepthMask(false);"
+        },
+        {
+          "line": 277,
+          "text": "GL11.glDepthMask(true);"
+        },
+        {
+          "line": 292,
+          "text": "GL11.glStencilFunc(GL_EQUAL, stencilValue, 0xFF);"
+        },
+        {
+          "line": 295,
+          "text": "GL11.glStencilOp(GL_KEEP, GL_KEEP, GL_KEEP);"
+        }
+      ]
+    },
+    {
+      "project": "Forge-1.20.1-47.4.10",
+      "path": "decompiled/net/minecraft/client/renderer/LevelRenderer.java",
+      "sha256": "f8c5383a07f7d6555f0bbcefd4b283f1b7e1e6f95154312a9d1779d86f348447",
+      "lines": 2983,
+      "anchors": [
+        {
+          "line": 60,
+          "text": "*  net.minecraft.client.renderer.LevelRenderer$TransparencyShaderException"
+        },
+        {
+          "line": 70,
+          "text": "*  net.minecraft.client.renderer.ShaderInstance"
+        },
+        {
+          "line": 251,
+          "text": "import net.minecraft.client.renderer.ShaderInstance;"
+        },
+        {
+          "line": 492,
+          "text": "RenderSystem.depthMask((boolean)Minecraft.useShaderTransparency());"
+        },
+        {
+          "line": 495,
+          "text": "RenderSystem.setShader(GameRenderer::getParticleShader);"
+        },
+        {
+          "line": 528,
+          "text": "RenderSystem.setShaderTexture((int)0, (ResourceLocation)RAIN_LOCATION);"
+        },
+        {
+          "line": 551,
+          "text": "RenderSystem.setShaderTexture((int)0, (ResourceLocation)SNOW_LOCATION);"
+        },
+        {
+          "line": 635,
+          "text": "if (Minecraft.useShaderTransparency()) {"
+        },
+        {
+          "line": 683,
+          "text": "TransparencyShaderException levelrenderer$transparencyshaderexception = new TransparencyShaderException(s1, (Throwable)exception);"
+        },
+        {
+          "line": 758,
+          "text": "RenderSystem.setShader(GameRenderer::getPositionShader);"
+        },
+        {
+          "line": 770,
+          "text": "RenderSystem.setShader(GameRenderer::getPositionShader);"
+        },
+        {
+          "line": 848,
+          "text": "if (Minecraft.useShaderTransparency()) {"
+        },
+        {
+          "line": 899,
+          "text": "public void resize(int p_109488_, int p_109489_) {"
+        },
+        {
+          "line": 1184,
+          "text": "RenderSystem.setShaderGameTime((long)this.level.getGameTime(), (float)p_109601_);"
+        },
+        {
+          "line": 1218,
+          "text": "RenderSystem.setShader(GameRenderer::getPositionShader);"
+        },
+        {
+          "line": 1220,
+          "text": "ForgeHooksClient.dispatchRenderStage((RenderLevelStageEvent.Stage)RenderLevelStageEvent.Stage.AFTER_SKY, (LevelRenderer)this, (PoseStack)p_109600_, (Matrix4f)p_254120_, (int)this.ticks, (Camera)p_1096"
+        },
+        {
+          "line": 1285,
+          "text": "ForgeHooksClient.dispatchRenderStage((RenderLevelStageEvent.Stage)RenderLevelStageEvent.Stage.AFTER_ENTITIES, (LevelRenderer)this, (PoseStack)p_109600_, (Matrix4f)p_254120_, (int)this.ticks, (Camera)p"
+        },
+        {
+          "line": 1340,
+          "text": "ForgeHooksClient.dispatchRenderStage((RenderLevelStageEvent.Stage)RenderLevelStageEvent.Stage.AFTER_BLOCK_ENTITIES, (LevelRenderer)this, (PoseStack)p_109600_, (Matrix4f)p_254120_, (int)this.ticks, (Ca"
+        },
+        {
+          "line": 1401,
+          "text": "ForgeHooksClient.dispatchRenderStage((RenderLevelStageEvent.Stage)RenderLevelStageEvent.Stage.AFTER_PARTICLES, (LevelRenderer)this, (PoseStack)p_109600_, (Matrix4f)p_254120_, (int)this.ticks, (Camera)"
+        },
+        {
+          "line": 1415,
+          "text": "ForgeHooksClient.dispatchRenderStage((RenderLevelStageEvent.Stage)RenderLevelStageEvent.Stage.AFTER_PARTICLES, (LevelRenderer)this, (PoseStack)p_109600_, (Matrix4f)p_254120_, (int)this.ticks, (Camera)"
+        },
+        {
+          "line": 1429,
+          "text": "RenderSystem.setShader(GameRenderer::getPositionTexColorNormalShader);"
+        },
+        {
+          "line": 1437,
+          "text": "ForgeHooksClient.dispatchRenderStage((RenderLevelStageEvent.Stage)RenderLevelStageEvent.Stage.AFTER_WEATHER, (LevelRenderer)this, (PoseStack)p_109600_, (Matrix4f)p_254120_, (int)this.ticks, (Camera)p_"
+        },
+        {
+          "line": 1446,
+          "text": "ForgeHooksClient.dispatchRenderStage((RenderLevelStageEvent.Stage)RenderLevelStageEvent.Stage.AFTER_WEATHER, (LevelRenderer)this, (PoseStack)p_109600_, (Matrix4f)p_254120_, (int)this.ticks, (Camera)p_"
+        },
+        {
+          "line": 1501,
+          "text": "ShaderInstance shaderinstance = RenderSystem.getShader();"
+        },
+        {
+          "line": 1503,
+          "text": "int j1 = RenderSystem.getShaderTexture((int)i);"
+        },
+        {
+          "line": 1506,
+          "text": "if (shaderinstance.MODEL_VIEW_MATRIX != null) {"
+        },
+        {
+          "line": 1507,
+          "text": "shaderinstance.MODEL_VIEW_MATRIX.set(p_172995_.last().pose());"
+        },
+        {
+          "line": 1509,
+          "text": "if (shaderinstance.PROJECTION_MATRIX != null) {"
+        },
+        {
+          "line": 1510,
+          "text": "shaderinstance.PROJECTION_MATRIX.set(p_254039_);"
+        },
+        {
+          "line": 1513,
+          "text": "shaderinstance.COLOR_MODULATOR.set(RenderSystem.getShaderColor());"
+        }
+      ]
+    },
+    {
+      "project": "Forge-1.20.1-47.4.10",
+      "path": "GameRenderer.java.patch",
+      "sha256": "b99f71af985a42b4610096d7fd6856a9105e31f7261cc8a2564d5593fee886c5",
+      "lines": 121,
+      "anchors": [
+        {
+          "line": 11,
+          "text": "+         net.minecraftforge.client.ForgeHooksClient.loadEntityShader(p_109107_, this);"
+        },
+        {
+          "line": 16,
+          "text": "list1.add(Pair.of(new ShaderInstance(p_250719_, \"rendertype_gui_ghost_recipe_overlay\", DefaultVertexFormat.f_85815_), (p_286147_) -> {"
+        },
+        {
+          "line": 19,
+          "text": "+         net.minecraftforge.fml.ModLoader.get().postEvent(new net.minecraftforge.client.event.RegisterShadersEvent(p_250719_, list1));"
+        },
+        {
+          "line": 118,
+          "text": "+      net.minecraftforge.client.ForgeHooksClient.dispatchRenderStage(net.minecraftforge.client.event.RenderLevelStageEvent.Stage.AFTER_LEVEL, this.f_109059_.f_91060_, posestack, matrix4f, this.f_1090"
+        }
+      ]
+    },
+    {
+      "project": "Forge-1.20.1-47.4.10",
+      "path": "LevelRenderer.java.patch",
+      "sha256": "da566ad5bf57106b330e0d8ebbd5d390521fa4b91ed1d1417a4d42eae16ccaa9",
+      "lines": 265,
+      "anchors": [
+        {
+          "line": 27,
+          "text": "RenderSystem.setShader(GameRenderer::m_172808_);"
+        },
+        {
+          "line": 31,
+          "text": "+      net.minecraftforge.client.ForgeHooksClient.dispatchRenderStage(net.minecraftforge.client.event.RenderLevelStageEvent.Stage.AFTER_SKY, this, p_109600_, p_254120_, this.f_109477_, p_109604_, frus"
+        },
+        {
+          "line": 68,
+          "text": "+      net.minecraftforge.client.ForgeHooksClient.dispatchRenderStage(net.minecraftforge.client.event.RenderLevelStageEvent.Stage.AFTER_ENTITIES, this, p_109600_, p_254120_, this.f_109477_, p_109604_,"
+        },
+        {
+          "line": 107,
+          "text": "+      net.minecraftforge.client.ForgeHooksClient.dispatchRenderStage(net.minecraftforge.client.event.RenderLevelStageEvent.Stage.AFTER_BLOCK_ENTITIES, this, p_109600_, p_254120_, this.f_109477_, p_10"
+        },
+        {
+          "line": 141,
+          "text": "+         net.minecraftforge.client.ForgeHooksClient.dispatchRenderStage(net.minecraftforge.client.event.RenderLevelStageEvent.Stage.AFTER_PARTICLES, this, p_109600_, p_254120_, this.f_109477_, p_1096"
+        },
+        {
+          "line": 151,
+          "text": "+         net.minecraftforge.client.ForgeHooksClient.dispatchRenderStage(net.minecraftforge.client.event.RenderLevelStageEvent.Stage.AFTER_PARTICLES, this, p_109600_, p_254120_, this.f_109477_, p_1096"
+        },
+        {
+          "line": 159,
+          "text": "+         net.minecraftforge.client.ForgeHooksClient.dispatchRenderStage(net.minecraftforge.client.event.RenderLevelStageEvent.Stage.AFTER_WEATHER, this, p_109600_, p_254120_, this.f_109477_, p_109604"
+        },
+        {
+          "line": 167,
+          "text": "+         net.minecraftforge.client.ForgeHooksClient.dispatchRenderStage(net.minecraftforge.client.event.RenderLevelStageEvent.Stage.AFTER_WEATHER, this, p_109600_, p_254120_, this.f_109477_, p_109604"
+        },
+        {
+          "line": 175,
+          "text": "+      net.minecraftforge.client.ForgeHooksClient.dispatchRenderStage(p_172994_, this, p_172995_, p_254039_, this.f_109477_, this.f_109461_.f_91063_.m_109153_(), this.getFrustum());"
+        }
+      ]
+    },
+    {
+      "project": "Forge-1.20.1-47.4.10",
+      "path": "RenderLevelStageEvent.java",
+      "sha256": "76ccc7631e4f6c115657f7079a779f508bfe007b28e7ea91375af477e3e03b92",
+      "lines": 251,
+      "anchors": [
+        {
+          "line": 177,
+          "text": "public static final Stage AFTER_CUTOUT_BLOCKS = register(\"after_cutout_blocks\", RenderType.m_110463_());"
+        }
+      ]
+    }
+  ]
+}

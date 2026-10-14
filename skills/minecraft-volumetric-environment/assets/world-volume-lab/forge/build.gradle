@@ -1,0 +1,50 @@
+plugins { id 'java'; id 'net.minecraftforge.gradle' version '6.0.54' }
+group = 'dev.worldvolume'
+version = mod_version
+base { archivesName = 'world-volume-lab' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+    runs { client {
+        workingDirectory project.file('run')
+        jvmArgs '-Xms128M', '-Xmx768M', '-XX:+UseSerialGC', '-XX:ActiveProcessorCount=4'
+        property 'forge.logging.console.level', 'info'
+        property 'worldvolume.autorun', project.findProperty('labAuto') ?: 'false'
+        property 'worldvolume.exitOnComplete', project.findProperty('labExitOnComplete') ?: 'false'
+        property 'worldvolume.output', project.file(project.findProperty('labOutput') ?: '../evidence/forge/runtime').absolutePath
+        if (project.hasProperty('labNativeDir')) property 'org.lwjgl.librarypath', project.file(project.property('labNativeDir')).absolutePath
+        args '--width', '640', '--height', '360', '--username', 'WorldVolumeLab'
+        mods { worldvolume { source sourceSets.main } }
+    } }
+}
+dependencies { minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}" }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+sourceSets.main.resources.srcDir layout.buildDirectory.dir('generated/volumeResources')
+tasks.register('syncVolumeResources') {
+    inputs.files('../workbench/volume-core.glsl', '../workbench/schema.json', '../workbench/contract.json', '../workbench/presets.json', 'src/main/shader/wrapper-head.glsl', 'src/main/shader/wrapper-tail.glsl')
+    outputs.dir layout.buildDirectory.dir('generated/volumeResources')
+    doLast {
+        def out = layout.buildDirectory.dir('generated/volumeResources').get().asFile
+        def shader = new File(out, 'assets/worldvolume/shaders/core'); shader.mkdirs()
+        new File(shader, 'world_volume.fsh').setText(file('src/main/shader/wrapper-head.glsl').getText('UTF-8') + file('../workbench/volume-core.glsl').getText('UTF-8') + file('src/main/shader/wrapper-tail.glsl').getText('UTF-8'), 'UTF-8')
+        new File(shader, 'world_volume.vsh').setText('#version 150\nin vec3 Position;\nout vec2 screenUV;\nvoid main(){gl_Position=vec4(Position,1.0);screenUV=Position.xy*0.5+0.5;}\n', 'UTF-8')
+        def parser = new groovy.json.JsonSlurper()
+        def schema = parser.parse(file('../workbench/schema.json'))
+        def contract = parser.parse(file('../workbench/contract.json'))
+        def presets = parser.parse(file('../workbench/presets.json'))
+        def uniforms = [
+            [name:'InverseProjection',type:'matrix4x4',count:16,values:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]],
+            [name:'InverseViewRotation',type:'matrix3x3',count:9,values:[1,0,0,0,1,0,0,0,1]],
+            [name:'InverseViewTranslation',type:'float',count:3,values:[0,0,0]],
+            [name:'Time',type:'float',count:1,values:[0]]
+        ]
+        contract.uniforms.each { name, fields -> uniforms.add([name:name,type:(name in ['ViewSteps','LightSteps']?'int':'float'),count:fields.size(),values:fields.collect{schema.fields[it].default}]) }
+        new File(shader, 'world_volume.json').setText(groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson([vertex:'worldvolume:world_volume',fragment:'worldvolume:world_volume',samplers:[[name:'SceneSampler'],[name:'DepthSampler']],attributes:['Position'],uniforms:uniforms])), 'UTF-8')
+        def recipeDir = new File(out,'assets/worldvolume/volume');recipeDir.mkdirs()
+        new File(recipeDir,'schema.json').setText(file('../workbench/schema.json').getText('UTF-8'),'UTF-8')
+        new File(recipeDir,'contract.json').setText(file('../workbench/contract.json').getText('UTF-8'),'UTF-8')
+        new File(recipeDir,'default.json').setText(groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson([schema:schema.schema,name:presets[0].name,parameters:presets[0].parameters])),'UTF-8')
+    }
+}
+tasks.named('processResources').configure { dependsOn 'syncVolumeResources' }
+tasks.named('jar').configure { finalizedBy 'reobfJar' }

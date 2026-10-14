@@ -1,0 +1,60 @@
+{
+  "result": "PASS",
+  "images": [
+    {
+      "tier": 0,
+      "sha256": "b158510925b3f2082a9dc655c4ba2d734bc493e2c5b81c1a0ca60ab0496950a8"
+    },
+    {
+      "tier": 1,
+      "sha256": "e57778e33245654163ff9fd21463c08ff47e4bc025c880ec8e28ecc359c652ab"
+    },
+    {
+      "tier": 2,
+      "sha256": "d0f26d8d0bb81705fe5687befeb1cdefa993e2d9e561c4d5a1596de3ac5e5d41"
+    },
+    {
+      "tier": 3,
+      "sha256": "9b5b6b306b901c132f7deab03252b67bf22b99aae15942c88723590d9c436597"
+    },
+    {
+      "tier": 4,
+      "sha256": "0a77ba894de9500165594a343f51014d3dba8e809e3cd01af6d6eaa5482d0db2"
+    },
+    {
+      "tier": 5,
+      "sha256": "51e165ec2142a7cd6a831115f613c6b37283f419edbfa4c0ea3e9bbbde90c3e6"
+    }
+  ],
+  "checks": [
+    {
+      "name": "six_distinct_renderings",
+      "pass": true
+    },
+    {
+      "name": "high_tiers_differ_without_color",
+      "pass": true
+    },
+    {
+      "name": "view_changes_projection",
+      "pass": true
+    },
+    {
+      "name": "play_advances_time",
+      "pass": true
+    },
+    {
+      "name": "mobile_no_horizontal_overflow",
+      "pass": true,
+      "width": {
+        "content": 328,
+        "viewport": 328
+      }
+    },
+    {
+      "name": "no_runtime_errors",
+      "pass": true,
+      "errors": []
+    }
+  ]
+}

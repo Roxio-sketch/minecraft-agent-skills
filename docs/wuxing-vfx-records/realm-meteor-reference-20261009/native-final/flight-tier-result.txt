@@ -1,0 +1,1 @@
+PASS: 48 screenshots; 180 actual turning frames; 221 checks; failures=[];GL=[]

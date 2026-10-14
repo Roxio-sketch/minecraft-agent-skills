@@ -1,0 +1,11 @@
+{
+  "changes": "Shared head centre, orientation and speed-dependent ellipsoid; 20 hemisphere sections, corrected normals; removed leading alpha slice; smooth wake connection",
+  "backup": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-hemisphere-wrap-20261010-120903.jar",
+  "sha256": "AE1F8CBF9506137EEDF19A3E9857865172564DCB538D48F79FC6D426FBAA1FD3",
+  "shaderResources": "PASS",
+  "visualRuntimeRetested": false,
+  "geometryRegressionChecks": 62832,
+  "destination": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mods\\wuxingxiantu-0.2.jar",
+  "build": "PASS",
+  "installed": true
+}

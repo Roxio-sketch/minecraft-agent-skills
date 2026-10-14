@@ -1,0 +1,700 @@
+{
+  "date": "2026-10-11T05:51:05.807Z",
+  "iteration": 8,
+  "scope": "WebGL2 workbench; no Minecraft/Forge certification",
+  "schema": "vortex-cloud/1",
+  "coreSha256": "6024be6bf63aa9ea4e294ad996fa208b5ca6c30313ff6276d5295d24789dbed0",
+  "previewSha256": "9b9d02fd6bbbe169da7d17a62f4a111b9677caa2a75c01617d42c2df38f4ae46",
+  "noiseGeneratorSha256": "f1d3d8cf4c38c8d9b27cb27430486d5bffbf370e48ca3ce80fb3823217763512",
+  "noiseDataSha256": "776937c4f059076a37201252dd2affb00388bf37214eabf13cdd3ec3bb87d1f8",
+  "probeSetup": {
+    "renderer": "WebKit WebGL",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+  },
+  "checks": [
+    {
+      "name": "initialization",
+      "passed": true
+    },
+    {
+      "name": "3D cloud noise seamless repeat",
+      "passed": true,
+      "data": {
+        "edge0": [
+          0.503059446811676,
+          0.65297931432724,
+          0.6849469542503357,
+          0.29660487174987793
+        ],
+        "edge1": [
+          0.503059446811676,
+          0.65297931432724,
+          0.6849469542503357,
+          0.29660487174987793
+        ]
+      }
+    },
+    {
+      "name": "3D noise channels have variation",
+      "passed": true
+    },
+    {
+      "name": "near-light sampling captures narrow dense medium",
+      "passed": true,
+      "data": {
+        "legacy": 1,
+        "current": 0.16305872797966003,
+        "analytic": 0.23692775868212176,
+        "scope": "Synthetic near-density slab replaces density only; real old/new light integrators on GPU"
+      }
+    },
+    {
+      "name": "formation starts with zero density",
+      "passed": true,
+      "data": [
+        0,
+        1,
+        0,
+        10.9159517288208
+      ]
+    },
+    {
+      "name": "formation starts with identity composition",
+      "passed": true,
+      "data": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "finite domain 300,80,0",
+      "passed": true,
+      "data": [
+        0,
+        0,
+        1,
+        15.666214942932129
+      ]
+    },
+    {
+      "name": "finite domain 0,-3,0",
+      "passed": true,
+      "data": [
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "finite domain 0,300,0",
+      "passed": true,
+      "data": [
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "zero density identity",
+      "passed": true,
+      "data": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "foreground truncation excludes medium",
+      "passed": true,
+      "data": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "density reduces transmittance",
+      "passed": true,
+      "data": {
+        "low": [
+          0.0805368721485138,
+          0.07850394397974014,
+          0.07212971895933151,
+          0.6199846267700195
+        ],
+        "high": [
+          0.07353946566581726,
+          0.07621568441390991,
+          0.07690516114234924,
+          0.14774802327156067
+        ]
+      }
+    },
+    {
+      "name": "density scales raw medium",
+      "passed": true,
+      "data": {
+        "a": [
+          2.7647689029137133e-15,
+          1,
+          1,
+          15.666214942932129
+        ],
+        "b": [
+          8.29430670874114e-15,
+          1,
+          1,
+          15.666214942932129
+        ]
+      }
+    },
+    {
+      "name": "fixed time float exact replay",
+      "passed": true
+    },
+    {
+      "name": "flat water exact height and normal",
+      "passed": true,
+      "data": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "flat water ray intersection",
+      "passed": true,
+      "data": [
+        19.999500274658203,
+        1,
+        0.000499725341796875,
+        1
+      ]
+    },
+    {
+      "name": "water center depression",
+      "passed": true,
+      "data": [
+        -2.5,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "water center continuous in four directions",
+      "passed": true,
+      "data": {
+        "origin": [
+          -3.458564519882202,
+          -0.02073844149708748,
+          -0.023551780730485916,
+          1
+        ],
+        "near": [
+          [
+            -3.4585859775543213,
+            -0.0206205565482378,
+            -0.023521317169070244,
+            1
+          ],
+          [
+            -3.4585890769958496,
+            -0.020711950957775116,
+            -0.02369748055934906,
+            1
+          ],
+          [
+            -3.458544969558716,
+            -0.020864274352788925,
+            -0.023576946929097176,
+            1
+          ],
+          [
+            -3.4585418701171875,
+            -0.020772218704223633,
+            -0.02340276911854744,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "name": "waved water intersection lies on heightfield",
+      "passed": true,
+      "data": [
+        19.498233795166016,
+        0.9864458441734314,
+        -0.0006089210510253906,
+        1
+      ]
+    },
+    {
+      "name": "visible liquid column has actual finite surface hit",
+      "passed": true,
+      "data": [
+        89.63553619384766,
+        1,
+        0.05557441711425781,
+        0.0005621527670882642
+      ]
+    },
+    {
+      "name": "liquid column absent before formation",
+      "passed": true,
+      "data": [
+        10000,
+        1,
+        10000,
+        0
+      ]
+    },
+    {
+      "name": "land tornado has no liquid column",
+      "passed": true,
+      "data": [
+        10000,
+        1,
+        10000,
+        0
+      ]
+    },
+    {
+      "name": "liquid bounded away from vortex",
+      "passed": true,
+      "data": [
+        10000,
+        1,
+        9684.25,
+        0
+      ]
+    },
+    {
+      "name": "liquid respects nearer scene depth",
+      "passed": true,
+      "data": [
+        10000,
+        1,
+        9681.75,
+        0
+      ]
+    },
+    {
+      "name": "water tornado has a taller broader liquid carrier",
+      "passed": true,
+      "data": {
+        "h1": [
+          104.5,
+          10.928274154663086,
+          22.527366638183594,
+          1
+        ],
+        "h2": [
+          159.59999084472656,
+          16.327831268310547,
+          3.612001419067383,
+          1
+        ]
+      }
+    },
+    {
+      "name": "mode 1 keeps a filled liquid core across height under strong turbulence",
+      "passed": true,
+      "data": [
+        [
+          104.5,
+          10.928274154663086,
+          -3.404994010925293,
+          1
+        ],
+        [
+          104.5,
+          10.928274154663086,
+          -2.4329993724823,
+          1
+        ],
+        [
+          104.5,
+          10.928274154663086,
+          -1.9816017150878906,
+          1
+        ],
+        [
+          104.5,
+          10.928274154663086,
+          -1.3900465965270996,
+          1
+        ],
+        [
+          104.5,
+          10.928274154663086,
+          -1.0935096740722656,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "mode 2 keeps a filled liquid core across height under strong turbulence",
+      "passed": true,
+      "data": [
+        [
+          159.59999084472656,
+          16.327831268310547,
+          -5.152237892150879,
+          1
+        ],
+        [
+          159.59999084472656,
+          16.327831268310547,
+          -5.067544937133789,
+          1
+        ],
+        [
+          159.59999084472656,
+          16.327831268310547,
+          -6.633049964904785,
+          1
+        ],
+        [
+          159.59999084472656,
+          16.327831268310547,
+          -9.726489067077637,
+          1
+        ],
+        [
+          159.59999084472656,
+          16.327831268310547,
+          -11.252994537353516,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "water tornado sheets have actual surfaces from multiple sides",
+      "passed": true,
+      "data": [
+        [
+          167.796875,
+          0.9999999403953552,
+          0.05937767028808594,
+          0.0012849093182012439
+        ],
+        [
+          169.0551300048828,
+          1,
+          0.061038970947265625,
+          0.0003637553018052131
+        ],
+        [
+          147.25051879882812,
+          0.9999999403953552,
+          0.0728607177734375,
+          0.00041332453838549554
+        ],
+        [
+          151.61862182617188,
+          1,
+          0.07058906555175781,
+          0.001745181973092258
+        ]
+      ]
+    },
+    {
+      "name": "detached water drop has real surface and normal",
+      "passed": true,
+      "data": [
+        11.201050758361816,
+        1,
+        0.12911413609981537,
+        1
+      ]
+    },
+    {
+      "name": "water optical path samples actual finite carrier",
+      "passed": true,
+      "data": [
+        3.225987672805786,
+        -2.5517120361328125,
+        0.04875056445598602,
+        1
+      ]
+    },
+    {
+      "name": "water optical path is zero outside carrier",
+      "passed": true,
+      "data": [
+        0,
+        87.03938293457031,
+        0.12659546732902527,
+        1
+      ]
+    },
+    {
+      "name": "water optical path is zero before formation",
+      "passed": true,
+      "data": [
+        0,
+        10000,
+        0.0021427928004413843,
+        1
+      ]
+    },
+    {
+      "name": "sea surface flow moves with shared time",
+      "passed": true,
+      "data": {
+        "a": [
+          0.6334517002105713,
+          0.7153193950653076,
+          0.5945120453834534,
+          0.5269101858139038
+        ],
+        "b": [
+          0.626822292804718,
+          0.7876525521278381,
+          0.5769027471542358,
+          0.46942541003227234
+        ]
+      }
+    },
+    {
+      "name": "water column surface flow moves with shared time",
+      "passed": true,
+      "data": {
+        "a": [
+          0.3972838819026947,
+          0.5987182259559631,
+          0.5247577428817749,
+          0.7503623962402344
+        ],
+        "b": [
+          0.4260929226875305,
+          0.3609826862812042,
+          0.6345463991165161,
+          0.7310749888420105
+        ]
+      }
+    },
+    {
+      "name": "sea surface flow draws inward when wind and rotation are disabled",
+      "passed": true,
+      "data": [
+        -3.8692688941955566,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "water column flow freezes with zero velocity",
+      "passed": true,
+      "data": {
+        "stoppedA": [
+          0.5936064720153809,
+          0.538918137550354,
+          0.532524585723877,
+          0.4295262098312378
+        ],
+        "stoppedB": [
+          0.5936064720153809,
+          0.538918137550354,
+          0.532524585723877,
+          0.4295262098312378
+        ]
+      }
+    },
+    {
+      "name": "hollow axis density zero",
+      "passed": true,
+      "data": [
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "filled axis finite positive density",
+      "passed": true,
+      "data": [
+        0.5280961990356445,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "48 density samples finite nonnegative",
+      "passed": true
+    },
+    {
+      "name": "GPU parameter affects density: rotation",
+      "passed": true
+    },
+    {
+      "name": "GPU parameter affects density: rise",
+      "passed": true
+    },
+    {
+      "name": "GPU parameter affects density: bend",
+      "passed": true
+    },
+    {
+      "name": "GPU parameter affects density: inflow",
+      "passed": true
+    },
+    {
+      "name": "GPU parameter affects density: turbulence",
+      "passed": true
+    },
+    {
+      "name": "GPU parameter affects density: sprayDensity",
+      "passed": true
+    },
+    {
+      "name": "GPU parameter affects density: canopyDensity",
+      "passed": true
+    },
+    {
+      "name": "GPU parameter affects water: waterDepth",
+      "passed": true
+    },
+    {
+      "name": "GPU parameter affects water: waveAmp",
+      "passed": true
+    },
+    {
+      "name": "GPU parameter affects water: waveSpeed",
+      "passed": true
+    },
+    {
+      "name": "mode 0 PNG exact replay",
+      "passed": true
+    },
+    {
+      "name": "mode 1 PNG exact replay",
+      "passed": true
+    },
+    {
+      "name": "mode 2 PNG exact replay",
+      "passed": true
+    },
+    {
+      "name": "real time input survives focus transfer while playing",
+      "passed": true,
+      "data": {
+        "time": 20,
+        "paused": true
+      }
+    },
+    {
+      "name": "mode 1 liquid close view PNG exact replay",
+      "passed": true
+    },
+    {
+      "name": "mode 2 liquid close view PNG exact replay",
+      "passed": true
+    },
+    {
+      "name": "mode 2 outside replay after near camera switch",
+      "passed": true
+    },
+    {
+      "name": "detached drops deterministic finite replay",
+      "passed": true
+    },
+    {
+      "name": "detached drops move with shared time",
+      "passed": true
+    },
+    {
+      "name": "density front and side controls synchronize",
+      "passed": true
+    },
+    {
+      "name": "zero density changes rendered image",
+      "passed": true
+    },
+    {
+      "name": "real JSON download contains complete effect",
+      "passed": true
+    },
+    {
+      "name": "real import restores all parameters camera and time",
+      "passed": true
+    },
+    {
+      "name": "reject missing without mutating effect",
+      "passed": true
+    },
+    {
+      "name": "reject extra without mutating effect",
+      "passed": true
+    },
+    {
+      "name": "reject wrongMode without mutating effect",
+      "passed": true
+    },
+    {
+      "name": "reject invertedRadii without mutating effect",
+      "passed": true
+    },
+    {
+      "name": "reject invalidBase without mutating effect",
+      "passed": true
+    },
+    {
+      "name": "reject invalidCamera without mutating effect",
+      "passed": true
+    },
+    {
+      "name": "reject extraPreview without mutating effect",
+      "passed": true
+    },
+    {
+      "name": "reject missingPreview without mutating effect",
+      "passed": true
+    },
+    {
+      "name": "real PNG download",
+      "passed": true
+    },
+    {
+      "name": "real PNG download exactly matches fixed frame",
+      "passed": false
+    },
+    {
+      "name": "game resource export unavailable",
+      "passed": true
+    },
+    {
+      "name": "base workbench self test",
+      "passed": true
+    },
+    {
+      "name": "390px layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "no browser errors",
+      "passed": true,
+      "data": []
+    }
+  ],
+  "passed": false,
+  "screenshots": {
+    "mode-0-time-20.png": "3b401eeb8c181f209b7762a2aa1b134186484b4a9f8947cc9bcd095505439b57",
+    "mode-1-time-20.png": "d24080fd0de7080bc005bdb2ba067de96264f4c06b6b6b59acab6f1e37abcd20",
+    "mode-2-time-20.png": "0401ce93c0182793723c0d8a4689ee6677bb0b245bd08804aa2549bd07677e36",
+    "mode-1-liquid.png": "1ecba895a13fb18d1d2e9b141111f5339168eea017be30fb4449300747490412",
+    "mode-2-liquid.png": "379ea1f76f2957f163bb85459a9be8bcf4c6a303f095255cb7a66072e394f7d3",
+    "mobile.png": "efb85d0f248e4c3c0acd598b4a7dfa96dd40e6b6070c4332b8a205afa1aa92b3"
+  }
+}

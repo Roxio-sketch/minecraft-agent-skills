@@ -1,0 +1,10 @@
+{
+  "sha256": "9fc3ec4d5a4f246d8ab07408deead6e9d57b5ac8131b3579ff4b9f349cd6579c",
+  "turnReviewed": true,
+  "selectionReviewed": true,
+  "reviewers": ["root", "join_review", "ui_capture"],
+  "turnEvidence": "independent-visual-review/submitted-geometry-review.json",
+  "selectionEvidence": "ui-visual-review.json",
+  "observations": "Final 120 turn images reviewed: continuous body-to-wake connection during left/right turns, climb and descent; no annotated diagonal sheet, needle neck or detached join. The previous 90-degree radial phase switch is absent in the final submitted geometry and images. Final 12 inventory/flight images reviewed: six unlocked tiers for Earth Immortal, two for Spirit Transformation; auto, selected highlight, scrolling, saved preference and validated server round trip work; actual realm remains unchanged during cosmetic choices.",
+  "limits": "Native Forge rendering and isolated integrated server only; 120 sampled turn screenshots, not every rendered frame. Rear-side pictures use recorded DEV camera offsets, front pictures vanilla third-person. No shader-pack, remote multiplayer, FPS or world-unload validation is claimed in this revision. Existing flow skin can retain a faceted appearance from some angles."
+}

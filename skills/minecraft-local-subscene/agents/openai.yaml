@@ -1,0 +1,4 @@
+interface:
+  display_name: "局部异空间与二次场景渲染"
+  short_description: "设计局部独立空间、可进入视觉领域与二次世界，复用实测 Forge 工程并验证"
+  default_prompt: "使用 $minecraft-local-subscene，根据我的需求确定观看或进入能力、场景来源和合成路线，从适合的已验证工程起步并实测。"

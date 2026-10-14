@@ -1,0 +1,62 @@
+plugins { id 'java'; id 'net.minecraftforge.gradle' version '6.0.54' }
+group = 'dev.alchemyvfx'
+version = '0.2.0'
+base { archivesName = 'alchemyvfx' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+minecraft {
+ mappings channel: 'official', version: '1.20.1'
+ runs { client {
+  workingDirectory project.file('run')
+  property 'forge.logging.console.level', 'info'
+  property 'mixin.env.remapRefMap', 'true'
+  property 'mixin.env.refMapRemappingFile', project.file('build/createSrgToMcp/output.srg').absolutePath
+  property 'alchemyvfx.qa', project.findProperty('qa') ?: 'false'
+  property 'alchemyvfx.qa.output', project.file(project.findProperty('qaOutput') ?: 'evidence/game').absolutePath
+  property 'alchemyvfx.qa.suite', project.findProperty('qaSuite') ?: 'acceptance'
+  args '--width', (project.findProperty('qaWidth') ?: '1280'), '--height', (project.findProperty('qaHeight') ?: '720'), '--username', 'AlchemyVfxQA'
+  if(project.hasProperty('nativeDir')) { property 'org.lwjgl.librarypath', project.property('nativeDir') }
+  mods { alchemyvfx { source sourceSets.main } }
+ } }
+}
+dependencies { minecraft 'net.minecraftforge:forge:1.20.1-47.4.10' }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar', Jar).configure { from('LICENSE') { into 'META-INF' }; finalizedBy 'reobfJar' }
+tasks.register('syncRecipe') {
+ inputs.file('../current-recipe.json')
+ outputs.file('src/main/resources/assets/alchemyvfx/recipe.json')
+ doLast { file('src/main/resources/assets/alchemyvfx/recipe.json').bytes=file('../current-recipe.json').bytes }
+}
+tasks.register('syncVolumeShader') {
+ inputs.files('../alchemy.volume.core.glsl','src/main/resources/assets/alchemyvfx/shaders/volume.wrapper.glsl')
+ outputs.files('src/main/resources/assets/alchemyvfx/shaders/volume.fsh','src/main/resources/assets/alchemyvfx/shaders/shared-volume-core.sha256')
+ doLast {
+  def core=file('../alchemy.volume.core.glsl').getText('UTF-8')
+  def wrapper=file('src/main/resources/assets/alchemyvfx/shaders/volume.wrapper.glsl').getText('UTF-8')
+  file('src/main/resources/assets/alchemyvfx/shaders/volume.fsh').setText(wrapper.replace('__SHARED_ALCHEMY_VOLUME_CORE__',core),'UTF-8')
+  file('src/main/resources/assets/alchemyvfx/shaders/shared-volume-core.sha256').setText(java.security.MessageDigest.getInstance('SHA-256').digest(core.getBytes('UTF-8')).encodeHex().toString()+'\n','UTF-8')
+ }
+}
+tasks.named('processResources').configure { dependsOn 'syncRecipe','syncVolumeShader' }
+sourceSets { qaTools { java.srcDir 'src/qaTools/java' } }
+dependencies { qaToolsImplementation 'org.ow2.asm:asm:9.7.1' }
+tasks.register('patchQaHost',JavaExec) {
+ dependsOn 'qaToolsClasses'
+ classpath=sourceSets.qaTools.runtimeClasspath
+ mainClass='dev.alchemyvfx.qa.QaHostPatch'
+ args project.findProperty('hostJar') ?: 'E:/五行仙途/build/libs/wuxingxiantu-0.2.jar',project.file('qa-libs/wuxingxiantu-qa-0.2.jar').absolutePath
+}
+// Opt-in dev dependency only; never added to this mod's production JAR.
+if(project.hasProperty('qaHost')) {
+ repositories {
+  flatDir { dirs project.file('qa-libs') }
+  maven { url='https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/';content { includeGroup 'software.bernie.geckolib' } }
+ }
+ dependencies {
+  runtimeOnly fg.deobf('local.host:wuxingxiantu-qa:0.2')
+  runtimeOnly fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.8.4')
+ }
+}
+if(project.hasProperty('qa')) {
+ sourceSets { qaClient { java.srcDir 'src/qaClient/java';compileClasspath+=sourceSets.main.output+sourceSets.main.compileClasspath;runtimeClasspath+=sourceSets.main.output+sourceSets.main.runtimeClasspath } }
+ minecraft.runs.client.mods.alchemyvfx { source sourceSets.qaClient }
+}

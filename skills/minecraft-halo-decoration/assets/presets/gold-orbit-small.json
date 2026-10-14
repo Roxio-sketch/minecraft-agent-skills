@@ -1,0 +1,12 @@
+{
+  "schema": "halo-decoration-v1", "id": "gold-orbit-small", "size": 128,
+  "contexts": ["GUI"],
+  "layers": [
+    {"shape": "ring", "color": "#FFC65E", "radius": 0.86,
+     "width": 0.045, "softness": 0.01, "segments": 8, "duty": 0.78,
+     "scale": 1.35, "opacity": 0.95, "motion": {"speed_deg_s": 12}},
+    {"shape": "ring", "color": "#FFF0B3", "radius": 0.43,
+     "width": 0.046, "softness": 0.008, "segments": 4, "duty": 0.85,
+     "scale": 1.35, "opacity": 0.95, "motion": {"speed_deg_s": -18}}
+  ]
+}

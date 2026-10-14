@@ -57,10 +57,10 @@ node scripts/validate_regressions.cjs --url http://127.0.0.1:8771/ --browser "C:
 - 16/32 px 保留主体轮廓与盘面关系，真实物品需要用其具体 mask 再测。仅剑刃示意通过不能证明任意模型。
 - 新 shader 的桌面 OpenGL/Forge、其他 GPU、浏览器、光影环境必须分别取证。
 
-初版证据保存在 `本地开发证据（未附原始运行目录）`，当时 17 项检查通过；后续审查发现均值检查漏掉最薄盘条纹，以及端口/配方边界问题，不能将该历史结果作为修复后证据。
+初版证据保存在 `E:/着色器渲染/research/black-hole/evidence-final`，当时 17 项检查通过；后续审查发现均值检查漏掉最薄盘条纹，以及端口/配方边界问题，不能将该历史结果作为修复后证据。
 
 初轮记录在 `research/black-hole/evidence`，固定状态重复检查未通过。关闭 WebGL 默认抖色后最终全套通过；没有放宽固定状态的零差异标准。glError=0 记录覆盖三个配方和两个小图采样点，不代表全帧 GPU 调试或其他驱动认证。
 
-2026-09-29 修复证据位于 `本地开发证据（未附原始运行目录）`：服务器结果、regressions-final 图像与局部误差/交互结果、baseline-verified 原有检查和 desktop-compile 桌面 GLSL 150 编译分别保存。其他中间目录保留失败及定位过程，以各自 JSON 实际状态为准，不混用历史通过记录。薄盘增加了盘内子采样，该批记录本身不包含 Forge 游戏验收；后续实机覆盖见 [Forge 接入](forge-integration.md)，仍无 GPU 性能基准。
+2026-09-29 修复证据位于 `E:/着色器渲染/research/black-hole/fixes-20260929`：服务器结果、regressions-final 图像与局部误差/交互结果、baseline-verified 原有检查和 desktop-compile 桌面 GLSL 150 编译分别保存。其他中间目录保留失败及定位过程，以各自 JSON 实际状态为准，不混用历史通过记录。薄盘增加了盘内子采样，该批记录本身不包含 Forge 游戏验收；后续实机覆盖见 [Forge 接入](forge-integration.md)，仍无 GPU 性能基准。
 
 图像审查覆盖三个配方、斜视、剑刃示意、小图及薄盘修复前/后/高采样参考；初稿偏向高亮、柔边风格。需要更清楚的盘纹时降低曝光/密度或调整发射源函数。迁移 skill 不必携带本地绝对路径或历史截图；使用相同配方重新生成即可。

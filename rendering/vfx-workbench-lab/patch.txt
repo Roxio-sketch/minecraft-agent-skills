@@ -1,0 +1,22 @@
+*** Begin Patch
+*** Update File: src/test/java/dev/vfxworkbench/BlackHoleSchemaCheck.java
+@@
+   s.set("core",".95");s.set("inner",".55");if(BlackHoleSkillSchema.inner(s)<1.069f)throw new AssertionError("runtime guard");
++  lensInvariants();
+   System.out.println("PASS: latest black-hole forms including dust, editable parameters, default reset and geometry guards");
+  }
++
++ // Mirrors the bounded screen-space lens in bh_world.fsh main(): strength clamp,
++ // monotonic falloff and exact identity outside the projected field footprint.
++ static float lensSmoothstep(float e0,float e1,float x){float t=Math.max(0f,Math.min(1f,(x-e0)/(e1-e0)));return t*t*(3f-2f*t);}
++ static float lensStrength(float lens,float radialLen){float footprint=1f-lensSmoothstep(.72f,1f,radialLen),inner=1f-lensSmoothstep(0f,.72f,radialLen);return Math.max(0f,Math.min(.42f,lens*footprint*(.16f+.34f*inner)));}
++ static void lensInvariants(){
++  for(float lens:new float[]{.25f,.5f,1f,2f}){
++   float prev=Float.MAX_VALUE;
++   for(float t=0f;t<=1.2f;t+=.0005f){float v=lensStrength(lens,t);if(!Float.isFinite(v)||v<0f||v>.42f+1e-6f)throw new AssertionError("lens strength out of range");if(v>prev+1e-7f)throw new AssertionError("lens strength rises with radius");prev=v;}
++   if(Math.abs(lensStrength(lens,1f))>1e-6f)throw new AssertionError("lens does not vanish at footprint rim");
++   if(lensStrength(lens,0f)<=lensStrength(lens,.7f))throw new AssertionError("lens centre is not the strongest region");
++  }
++ }
+ }
+*** End Patch

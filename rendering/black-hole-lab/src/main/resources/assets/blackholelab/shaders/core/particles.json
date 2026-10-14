@@ -1,0 +1,228 @@
+{
+  "vertex": "blackholelab:particles",
+  "fragment": "blackholelab:particles",
+  "attributes": [
+    "Position",
+    "UV0"
+  ],
+  "samplers": [],
+  "uniforms": [
+    {
+      "name": "uTime",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "uCore",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.58
+      ]
+    },
+    {
+      "name": "uInner",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.94
+      ]
+    },
+    {
+      "name": "uOuter",
+      "type": "float",
+      "count": 1,
+      "values": [
+        2.9
+      ]
+    },
+    {
+      "name": "uThickness",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.105
+      ]
+    },
+    {
+      "name": "uTilt",
+      "type": "float",
+      "count": 1,
+      "values": [
+        -12
+      ]
+    },
+    {
+      "name": "uBend",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.1
+      ]
+    },
+    {
+      "name": "uDensity",
+      "type": "float",
+      "count": 1,
+      "values": [
+        6
+      ]
+    },
+    {
+      "name": "uSpeed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.55
+      ]
+    },
+    {
+      "name": "uInfall",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.22
+      ]
+    },
+    {
+      "name": "uSeed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        17
+      ]
+    },
+    {
+      "name": "uSteps",
+      "type": "int",
+      "count": 1,
+      "values": [
+        160
+      ]
+    },
+    {
+      "name": "ViewProjection",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "CenterRelative",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        0,
+        14
+      ]
+    },
+    {
+      "name": "WorldScale",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.6
+      ]
+    },
+    {
+      "name": "CameraRight",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "CameraUp",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "ParticleSpeed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1
+      ]
+    },
+    {
+      "name": "ParticleSize",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.022
+      ]
+    },
+    {
+      "name": "ParticleOuter",
+      "type": "float",
+      "count": 1,
+      "values": [
+        5.4
+      ]
+    },
+    {
+      "name": "ParticleBrightness",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.25
+      ]
+    },
+    {
+      "name": "ParticleDebug",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "ParticleCold",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1,
+        0.2,
+        0.03
+      ]
+    },
+    {
+      "name": "ParticleHot",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1,
+        0.9,
+        0.65
+      ]
+    }
+  ]
+}

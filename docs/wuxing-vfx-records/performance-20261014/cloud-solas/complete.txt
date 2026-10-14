@@ -1,0 +1,1 @@
+Actual acceleration, >16 blocks/tick travel, crossing 256-block origins, turns, teleport trail reset; no future samples or anchor error.

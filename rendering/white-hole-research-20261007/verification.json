@@ -1,0 +1,1098 @@
+{
+  "schema": "white-hole-research-verification/1",
+  "checkedOn": "2026-10-07",
+  "timezone": "Asia/Shanghai",
+  "status": "passed",
+  "scope": "Saved research catalog, notes, references and UI checks only",
+  "workPerformed": "Research files created in white-hole-research-20261007; no white-hole implementation or game launch",
+  "whiteHoleImplemented": false,
+  "whiteHoleGameValidated": false,
+  "skillOrModEditedByThisResearch": false,
+  "sourceCounts": {
+    "total": 23,
+    "local": 5,
+    "technical": 8,
+    "physics": 5,
+    "visual": 3,
+    "rights": 2
+  },
+  "catalogCategories": {
+    "现有工程": 5,
+    "算法与源码": 5,
+    "论文与算法": 3,
+    "物理依据": 5,
+    "官方视觉参考": 3,
+    "使用权说明": 2
+  },
+  "catalogMatchesSourceRecords": true,
+  "htmlMatchesCatalogAndTemplate": true,
+  "localSourceFiles": [
+    {
+      "sourceId": "local-blackhole",
+      "path": "E:/着色器渲染/vfx-workbench-lab/src/main/resources/assets/vfxworkbench/shaders/core/bh_world.fsh",
+      "bytes": 55649,
+      "sha256": "ec36079323fbcd2ae4e2e1efb61e97c4b30c9a430e5a31dee6ec0e7794fdafdf",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-blackhole",
+      "path": "E:/着色器渲染/vfx-workbench-lab/src/main/java/dev/vfxworkbench/effects/blackhole/BlackHoleWorld.java",
+      "bytes": 31446,
+      "sha256": "5eb9a2454108dbeb2353a4b7a707d04c4b8e06a0de51d344bdd2ab8979445fef",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-blackhole",
+      "path": "E:/着色器渲染/vfx-workbench-lab/src/main/resources/assets/vfxworkbench/shaders/core/bh_particles.vsh",
+      "bytes": 2857,
+      "sha256": "7e7b0c20cd340d4ea42095b07bd5756b8e4c4032858949dab61e5002579a86a1",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-energy",
+      "path": "C:/Users/MAINTAINER/.codex/skills/minecraft-energy-vfx/assets/lab/volume.glsl",
+      "bytes": 4510,
+      "sha256": "54d2d393484a11c2b7345bfbf4168e1c0f44fc46cc6457f8d8e9fa1b6105572f",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-energy",
+      "path": "C:/Users/MAINTAINER/.codex/skills/minecraft-energy-vfx/assets/lab/field.glsl",
+      "bytes": 8390,
+      "sha256": "948ad2dd55efa447a4744b448b978867e47ecd3b9ae167050918b3dc82ec1398",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-energy",
+      "path": "C:/Users/MAINTAINER/.codex/skills/minecraft-energy-vfx/LICENSE",
+      "bytes": 1347,
+      "sha256": "bd52df6bc0a358e6d05407db00f52ab61144919b79c52c2a4ab592b960514276",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-particles",
+      "path": "C:/Users/MAINTAINER/.codex/skills/minecraft-procedural-particles/assets/forge-1.20.1/src/main/java/dev/rendercraft/particlelab/ParticleEngine.java",
+      "bytes": 2817,
+      "sha256": "6b1a269caa96b94bd4eda0b664427171fd2c48e12eda018cf665a467ddc36d05",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-particles",
+      "path": "C:/Users/MAINTAINER/.codex/skills/minecraft-procedural-particles/assets/forge-1.20.1/LICENSE",
+      "bytes": 1110,
+      "sha256": "d80a889f1d4f049d00a87ebe813654d32caa89a5323781e56c14af552dfcbcc2",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-bloom",
+      "path": "C:/Users/MAINTAINER/.codex/skills/minecraft-selective-bloom/assets/forge-1.20.1/src/main/java/dev/rendercraft/bloomlab/Bloom.java",
+      "bytes": 3282,
+      "sha256": "f7758e4b1578e855a6193e744bc39ce127f275c127980ba7211218b49ceb4c01",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-bloom",
+      "path": "C:/Users/MAINTAINER/.codex/skills/minecraft-selective-bloom/assets/forge-1.20.1/src/main/java/dev/rendercraft/bloomlab/Gpu.java",
+      "bytes": 2252,
+      "sha256": "7e4383a96779a576d7bee20e1259d5a782c90679bb7500374689befd301d45fd",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-bloom",
+      "path": "C:/Users/MAINTAINER/.codex/skills/minecraft-selective-bloom/assets/forge-1.20.1/LICENSE",
+      "bytes": 1110,
+      "sha256": "d80a889f1d4f049d00a87ebe813654d32caa89a5323781e56c14af552dfcbcc2",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-lightning-color",
+      "path": "E:/着色器渲染/vfx-workbench-lab/src/main/resources/assets/vfxworkbench/shaders/core/bolt.fsh",
+      "bytes": 717,
+      "sha256": "994c95dd462794ba3e3124600d075ba7c43fb8f3f8361d55e6b56b6da83f6aad",
+      "matchesResearchBaseline": true
+    },
+    {
+      "sourceId": "local-lightning-color",
+      "path": "E:/着色器渲染/vfx-workbench-lab/evidence/gradient-clarity-20261006/gpu/runtime.json",
+      "bytes": 6394,
+      "sha256": "4e4bb2f08c4e884c6637fd272bc1e1b9f9e7e7ece3ce347d5ec1a876413fa0c0",
+      "matchesResearchBaseline": true
+    }
+  ],
+  "physicsAndVisualEvidence": [
+    {
+      "sourceId": "P1",
+      "url": "https://jila.colorado.edu/~ajsh/bh/schww.html",
+      "access": {
+        "httpStatus": 200,
+        "status": "read",
+        "readScope": "Author-page text: Schwarzschild extension, time reversal, Kruskal diagram descriptions, wormhole instability; image files not fetched."
+      },
+      "readScope": "Whole text page; diagram captions read, diagram images not inspected.",
+      "savedFile": {
+        "path": "E:/着色器渲染/white-hole-research-20261007/source-text/hamilton-wormholes.txt",
+        "bytes": 665,
+        "sha256": "71a1a343939dc501ab7a7f13807a4785d8ce07a7fbe7a4abec788cc668aa25fa"
+      },
+      "savedTextKind": "Original research paraphrase and access metadata; not the full remote response"
+    },
+    {
+      "sourceId": "P2",
+      "url": "https://ned.ipac.caltech.edu/level5/March01/Carroll3/Carroll7.html",
+      "access": {
+        "httpStatus": 200,
+        "status": "read",
+        "readScope": "Caltech/NED hosted lecture text: Schwarzschild mass interpretation, Birkhoff theorem, geodesic discussion and Kruskal regions. Math/diagram image files not fetched."
+      },
+      "readScope": "Relevant prose sections of chapter 7. Some equations are image-based in this HTML; those images were not downloaded or inspected.",
+      "savedFile": {
+        "path": "E:/着色器渲染/white-hole-research-20261007/source-text/carroll-blackholes.txt",
+        "bytes": 817,
+        "sha256": "59fba87e88fe9f0c1c7f8982228f5608760293137a047cd969e90c46d6a53bd3"
+      },
+      "savedTextKind": "Original research paraphrase and access metadata; not the full remote response"
+    },
+    {
+      "sourceId": "P3",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.33.442",
+      "access": {
+        "httpStatus": 200,
+        "status": "abstract_read_fulltext_not_read",
+        "readScope": "APS public abstract and bibliographic metadata; Crossref DOI metadata. Full article not accessed; page shows Authorization Required."
+      },
+      "readScope": "Abstract and verified metadata only; no full-text proof or figures reviewed.",
+      "savedFile": {
+        "path": "E:/着色器渲染/white-hole-research-20261007/source-text/eardley-aps.txt",
+        "bytes": 691,
+        "sha256": "4f504816988ca2d9e243654f3718ea5009df110ccc2d05944d50bc82eb8b92a8"
+      },
+      "savedTextKind": "Original research paraphrase and access metadata; not the full remote response"
+    },
+    {
+      "sourceId": "P4",
+      "url": "https://arxiv.org/abs/1407.0989",
+      "access": {
+        "httpStatus": 200,
+        "status": "abstract_read_fulltext_not_read",
+        "readScope": "arXiv abstract, author/year/version, journal reference and license-link metadata. PDF/TeX/figures not downloaded."
+      },
+      "readScope": "Abstract and bibliographic metadata only.",
+      "savedFile": {
+        "path": "E:/着色器渲染/white-hole-research-20261007/source-text/haggard-rovelli.txt",
+        "bytes": 587,
+        "sha256": "131e5b02dd2daad7811ac1f479d6026b784eba16e50825892a79cc1036e21118"
+      },
+      "savedTextKind": "Original research paraphrase and access metadata; not the full remote response"
+    },
+    {
+      "sourceId": "P5",
+      "url": "https://imagine.gsfc.nasa.gov/ask_astro/black_holes.html",
+      "access": {
+        "httpStatus": 200,
+        "status": "read",
+        "readScope": "Archived FAQ entry submitted 1 March 1997; surrounding giant FAQ index was not treated as a contemporary review."
+      },
+      "readScope": "Question 970301 answer only; historical status/AGN explanation.",
+      "savedFile": {
+        "path": "E:/着色器渲染/white-hole-research-20261007/source-text/nasa-whitehole-faq.txt",
+        "bytes": 646,
+        "sha256": "ff27381d67b6e692f39308f0f651a4af9abd7f226acb2e6c3c4a31429ce0a13a"
+      },
+      "savedTextKind": "Original research paraphrase and access metadata; not the full remote response"
+    },
+    {
+      "sourceId": "V1",
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-finds-that-a-black-hole-beam-promotes-stellar-eruptions/",
+      "access": {
+        "httpStatus": 200,
+        "status": "caption_and_article_read_no_image_fetched",
+        "readScope": "Article, observed M87 jet image caption, artist-concept caption and credits; no image/video downloaded or inspected."
+      },
+      "readScope": "Article/captions/credits only. Contains both observation and artist-concept material; preserve this distinction.",
+      "savedFile": {
+        "path": "E:/着色器渲染/white-hole-research-20261007/source-text/nasa-m87-jet.txt",
+        "bytes": 704,
+        "sha256": "034043e791b0c8f7c26bd92efee004d56cbd495e91db529f679e754e75297994"
+      },
+      "savedTextKind": "Original research paraphrase and access metadata; not the full remote response"
+    },
+    {
+      "sourceId": "V2",
+      "url": "https://esahubble.org/images/opo0020a/",
+      "access": {
+        "httpStatus": 200,
+        "status": "caption_read_no_image_fetched",
+        "readScope": "Official ESA/Hubble caption, observation type, release date, credits and listed formats; no image file downloaded or inspected."
+      },
+      "readScope": "Caption/metadata/credit only; 6 July 2000 observation image.",
+      "savedFile": {
+        "path": "E:/着色器渲染/white-hole-research-20261007/source-text/esa-m87-jet.txt",
+        "bytes": 591,
+        "sha256": "bc7ebf23af9cf9ed8506bd363c3aea4e5a6214093ec44863b5713950ce6c45d9"
+      },
+      "savedTextKind": "Original research paraphrase and access metadata; not the full remote response"
+    },
+    {
+      "sourceId": "V3",
+      "url": "https://esahubble.org/images/opo9423a/",
+      "access": {
+        "httpStatus": 200,
+        "status": "caption_read_no_image_fetched",
+        "readScope": "Official ESA/Hubble caption, credits and metadata; no image file downloaded or inspected."
+      },
+      "readScope": "Caption/metadata/credit only; 25 May 1994 observation image.",
+      "savedFile": {
+        "path": "E:/着色器渲染/white-hole-research-20261007/source-text/esa-m87-old.txt",
+        "bytes": 536,
+        "sha256": "97bd8f6d2c9f74e02ff646773a6fb0be0073a61234cc4d7f88579b203f1e8543"
+      },
+      "savedTextKind": "Original research paraphrase and access metadata; not the full remote response"
+    },
+    {
+      "sourceId": "L1",
+      "url": "https://esahubble.org/copyright/",
+      "access": {
+        "httpStatus": 200,
+        "status": "read",
+        "readScope": "Summary, detailed conditions, exclusions and rights Q&A."
+      },
+      "readScope": "Entire rights page text.",
+      "savedFile": {
+        "path": "E:/着色器渲染/white-hole-research-20261007/source-text/esa-copyright.txt",
+        "bytes": 520,
+        "sha256": "703532e32c8808b8acc03db755fe5424059b538d26fe8b91594816ccf3d15b8b"
+      },
+      "savedTextKind": "Original research paraphrase and access metadata; not the full remote response"
+    },
+    {
+      "sourceId": "L2",
+      "url": "https://jila.colorado.edu/~ajsh/bh/copyright.html",
+      "access": {
+        "httpStatus": 200,
+        "status": "read",
+        "readScope": "Whole short rights page, marked Updated 27 Jan 2018."
+      },
+      "readScope": "Entire rights page text.",
+      "savedFile": {
+        "path": "E:/着色器渲染/white-hole-research-20261007/source-text/hamilton-copyright.txt",
+        "bytes": 454,
+        "sha256": "c3f2125740535d093c93e582c945dc0eb0fab1cc6382b2ec8d4f954dd3d69593"
+      },
+      "savedTextKind": "Original research paraphrase and access metadata; not the full remote response"
+    }
+  ],
+  "technicalEvidence": {
+    "successfulReads": 27,
+    "fixedCommits": {
+      "stegu/psrdnoise": "419175a270862ce7ae692038fafafb42ec0427e9",
+      "stegu/webgl-noise": "22434e04d7753f7e949e8d724ab3da2864c17a0f",
+      "mrdoob/three.js": "f27bb5ae1ede1309841e6fc9586cce768a99f9ad",
+      "pmndrs/postprocessing": "9cf03cff26615636a564d8bfddf765edb8917441",
+      "ebruneton/black_hole_shader": "e72b3f293409893a6fa25528b29572c96fc57f57",
+      "mmp/pbrt-v4": "b4ce9687e6c695f5582997c61b0c66cf064bdb4a",
+      "keijiro/KinoBloom": "0a04c43fa47de12bb52edb325c8d3c0125d0b4ca"
+    },
+    "commitVerification": "git ls-remote <public repository> HEAD; raw.githubusercontent.com fixed-commit file retrieval. GitHub API returned HTTP 403 rate-limit; no API result is used as successful evidence.",
+    "files": [
+      {
+        "evidenceId": "psrd-readme",
+        "url": "https://raw.githubusercontent.com/stegu/psrdnoise/419175a270862ce7ae692038fafafb42ec0427e9/README.md",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "55daba2b16c716391a36bb935d1e4d2239ac3d484a9afa82c57fa3dfbc4d96ec",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-psrd-readme.txt",
+          "bytes": 1374,
+          "sha256": "6c0f3a259cbd217446ef206a64895369915d292fe1969c1c11b7876adbd42cfd"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "psrd3",
+        "url": "https://raw.githubusercontent.com/stegu/psrdnoise/419175a270862ce7ae692038fafafb42ec0427e9/src/psrdnoise3.glsl",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "766069cb5b02eb3366c82c7ec31d5d22972b7cb26e1704f29654b7010d680f33",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-psrd3.txt",
+          "bytes": 2848,
+          "sha256": "947968b85f407e4aae817e785c3a25ee8e254f105379462fbc0b73508393d412"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "noise-license",
+        "url": "https://raw.githubusercontent.com/stegu/webgl-noise/22434e04d7753f7e949e8d724ab3da2864c17a0f/LICENSE",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "bdafce1bb01517c9ae6c4f3620c01340790b5e9d039ae9e356347d1174250916",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-noise-license.txt",
+          "bytes": 1442,
+          "sha256": "c9995e862fd96c41d1379c6287ffc24c08de5bd5caa8c4f90faa56a6b57ac8f7"
+        },
+        "readScope": "complete license"
+      },
+      {
+        "evidenceId": "noise3",
+        "url": "https://raw.githubusercontent.com/stegu/webgl-noise/22434e04d7753f7e949e8d724ab3da2864c17a0f/src/noise3D.glsl",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "bf18982b8edd25218b5096cba6f7838a0508416be51acd1fd88d0ba8acb5169e",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-noise3.txt",
+          "bytes": 619,
+          "sha256": "af00e2416028cfb9022e0f64dd139b915964606fb466a8a7aa667472a6653f05"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "three-license",
+        "url": "https://raw.githubusercontent.com/mrdoob/three.js/f27bb5ae1ede1309841e6fc9586cce768a99f9ad/LICENSE",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-three-license.txt",
+          "bytes": 1377,
+          "sha256": "d9d790678feae33154840e541deb9543a49ca92ad4d6dbf3730665e2713721b2"
+        },
+        "readScope": "complete license"
+      },
+      {
+        "evidenceId": "three-lines",
+        "url": "https://raw.githubusercontent.com/mrdoob/three.js/f27bb5ae1ede1309841e6fc9586cce768a99f9ad/examples/jsm/lines/LineMaterial.js",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "6e1f9a21a784f4a06da5682feb638747261b7c54799380a937b18c7cbd4546df",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-three-lines.txt",
+          "bytes": 2923,
+          "sha256": "b997f40f99d4de92d7f503e23c94309b27d8561a3601b194f6b5a63725e5632f"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "three-bloom",
+        "url": "https://raw.githubusercontent.com/mrdoob/three.js/f27bb5ae1ede1309841e6fc9586cce768a99f9ad/examples/jsm/postprocessing/UnrealBloomPass.js",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "ba8f2fcadfa6588384c9473498f974d81d120f02f0e63a0e59c265202a006b5a",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-three-bloom.txt",
+          "bytes": 5043,
+          "sha256": "3fcf44f608e8d888cb6ec28715852b79421ed7bef1c4fd510c8b3bb8ed23f673"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "three-tonemap",
+        "url": "https://raw.githubusercontent.com/mrdoob/three.js/f27bb5ae1ede1309841e6fc9586cce768a99f9ad/src/renderers/shaders/ShaderChunk/tonemapping_pars_fragment.glsl.js",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "447958b93d07616c83d9273829ed810eb734d02ebbe60f12fc9bdda4f7928f44",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-three-tonemap.txt",
+          "bytes": 2008,
+          "sha256": "e4c0556336eaabeccf80b4c8d5ec836505733afe44e20d10cd6764709381d268"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "post-license",
+        "url": "https://raw.githubusercontent.com/pmndrs/postprocessing/9cf03cff26615636a564d8bfddf765edb8917441/LICENSE.md",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "b7650918449bd5fb011ce30ce0e5bcda27aa9639db1fb3aef8c67c32945237f2",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-post-license.txt",
+          "bytes": 1160,
+          "sha256": "5f7ecc9f9339efcb0948d53ec2c41c937fee739ab21d79666b8453806f290922"
+        },
+        "readScope": "complete license"
+      },
+      {
+        "evidenceId": "shock-wave",
+        "url": "https://raw.githubusercontent.com/pmndrs/postprocessing/9cf03cff26615636a564d8bfddf765edb8917441/src/effects/glsl/shock-wave.frag",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "fa6e3a7b16e978037cd3692ec6d35209d53e3ce33b52d358f71553a00f89ad6b",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-shock-wave.txt",
+          "bytes": 1099,
+          "sha256": "08410e602d3ede3765b09409a9d1e4f37f78abf39c7c9587f4f907f877261775"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "shock-effect",
+        "url": "https://raw.githubusercontent.com/pmndrs/postprocessing/9cf03cff26615636a564d8bfddf765edb8917441/src/effects/ShockWaveEffect.js",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "08ed9c08c86e242b459b6646a7aff08df078afbbbb97b726e8335aa1949548db",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-shock-effect.txt",
+          "bytes": 1466,
+          "sha256": "f6d7c958730060b73faa1dc6bb96b5ca308ebc5ce1b80669f7797d56ad672756"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "pbrt-license",
+        "url": "https://raw.githubusercontent.com/mmp/pbrt-v4/b4ce9687e6c695f5582997c61b0c66cf064bdb4a/LICENSE.txt",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-pbrt-license.txt",
+          "bytes": 11836,
+          "sha256": "0ecfa23e4570d72bfcd4022ea268ea61d49b04739a1205a662ec76caf2843a87"
+        },
+        "readScope": "complete license"
+      },
+      {
+        "evidenceId": "pbrt-media",
+        "url": "https://raw.githubusercontent.com/mmp/pbrt-v4/b4ce9687e6c695f5582997c61b0c66cf064bdb4a/src/pbrt/media.h",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "c3d5018d54549b3061e23de9bb2e14d7e9dca06268984cf21e670fb3a6e78d5f",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-pbrt-media.txt",
+          "bytes": 3420,
+          "sha256": "a4101b7689122177b08a835de3e415d0bb1281135f51c2ca1bd8906d05aa4173"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "black-license",
+        "url": "https://raw.githubusercontent.com/ebruneton/black_hole_shader/e72b3f293409893a6fa25528b29572c96fc57f57/LICENSE",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "e7f54c857e6bcc0bb57f77fcacaae95cf9ef785243da7f9ec243087c0931aeed",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-black-license.txt",
+          "bytes": 1797,
+          "sha256": "a895271376c31082cdb98c94a2d84feacf60fc73ce674e0a1323d7c8400cf03f"
+        },
+        "readScope": "complete license"
+      },
+      {
+        "evidenceId": "black-readme",
+        "url": "https://raw.githubusercontent.com/ebruneton/black_hole_shader/e72b3f293409893a6fa25528b29572c96fc57f57/README.md",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "bd833faad18cfe2618e42569537348d11e2ab030373392570501b1defa3bb3dc",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-black-readme.txt",
+          "bytes": 738,
+          "sha256": "48a9863f8b5849182736b35d5df0e4702d84ddf46a11e409a98718c372cd970b"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "black-functions",
+        "url": "https://raw.githubusercontent.com/ebruneton/black_hole_shader/e72b3f293409893a6fa25528b29572c96fc57f57/black_hole/functions.glsl",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "ee254594ca8461d0360bc1741c14d93d0fc80103b3f50670e677f0fd8e26df45",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-black-functions.txt",
+          "bytes": 2864,
+          "sha256": "191b45e1f5bb9aef66625bcd6692368aa95674143b2b90a8c36755700e74e8b4"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "black-model",
+        "url": "https://raw.githubusercontent.com/ebruneton/black_hole_shader/e72b3f293409893a6fa25528b29572c96fc57f57/black_hole/model.glsl",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "34f8de3599578e8573cf88582ebb9da0372f83f307da08e26a9c7c21a5a666a8",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-black-model.txt",
+          "bytes": 3997,
+          "sha256": "cc494a02e7a706f1a5f705f50e76d6a796dcaf58689407cdb10f7c9841021b0e"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "kino-license",
+        "url": "https://raw.githubusercontent.com/keijiro/KinoBloom/0a04c43fa47de12bb52edb325c8d3c0125d0b4ca/LICENSE.md",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "ee32f9c1de520eb7a690663670515125cb3b5eed716fcaaae6259e631d0c6bc6",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-kino-license.txt",
+          "bytes": 1380,
+          "sha256": "760e5ff03fee308a322ffffc36854b5520af7f51fd372ce1f4712023f7c2d3e9"
+        },
+        "readScope": "complete license"
+      },
+      {
+        "evidenceId": "kino-readme",
+        "url": "https://raw.githubusercontent.com/keijiro/KinoBloom/0a04c43fa47de12bb52edb325c8d3c0125d0b4ca/README.md",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "d887eb387eda7fcdffa23c08716962481fc248a3786f9fffb38ad991993da4af",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-kino-readme.txt",
+          "bytes": 1611,
+          "sha256": "3b54c8c75466bd19a4c448cccc8dd14e3bf7ffb2b189e81543849d91454e1b75"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "kino-cs",
+        "url": "https://raw.githubusercontent.com/keijiro/KinoBloom/0a04c43fa47de12bb52edb325c8d3c0125d0b4ca/Assets/Kino/Bloom/Bloom.cs",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "2c1de0d3fc92226895b127a2cb29f3d8ffd6301146028d886a7727256ca4559a",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-kino-cs.txt",
+          "bytes": 2190,
+          "sha256": "027f2b67f04b8922e17f3ab9e813f78d36781b898a4d36472c466edc47f23033"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "kino-shader",
+        "url": "https://raw.githubusercontent.com/keijiro/KinoBloom/0a04c43fa47de12bb52edb325c8d3c0125d0b4ca/Assets/Kino/Bloom/Shader/Bloom.shader",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "e56eee2a704d89fddfe1b9006ea14bcfafbbb3a6e9fb8b91eff0e32b7c724877",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-kino-shader.txt",
+          "bytes": 2231,
+          "sha256": "e0edd02332db009251e70a29c43078c143209ef644678ddfa82fa345fa34e4d5"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "kino-filter",
+        "url": "https://raw.githubusercontent.com/keijiro/KinoBloom/0a04c43fa47de12bb52edb325c8d3c0125d0b4ca/Assets/Kino/Bloom/Shader/Bloom.cginc",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "fbb7caf093c7e59475bb66a0a34cf08df4cbaec8e608961c300f89b9c29cea23",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-kino-filter.txt",
+          "bytes": 2469,
+          "sha256": "8c99b1b740b3036c14918be4ed94b3720c4d8017e661b268813945ebec038aab"
+        },
+        "readScope": "bounded source/readme excerpts"
+      },
+      {
+        "evidenceId": "bridson-author",
+        "url": "https://www.cs.ubc.ca/~rbridson/",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "728103d645fb23540d56c0c7d2e2a602466e6f18da77dfdda455c74698613967",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-bridson-author.txt",
+          "bytes": 898,
+          "sha256": "764d3a4c7d866f2d9bcb8137c03e503c7f13fedce971bc2376a072dd5030474d"
+        },
+        "readScope": "short author-page excerpt; page text reviewed in memory; no image/video fetched"
+      },
+      {
+        "evidenceId": "iq-warp",
+        "url": "https://iquilezles.org/articles/warp/",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "2bbf67fa57e39138a7c3871f459f471cd220686d0cc2592365910127751a7b33",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-iq-warp.txt",
+          "bytes": 521,
+          "sha256": "8c3b629f3d076c6c482bc1ca1311bf1f6db8484108f1ff544baf7633c0695d58"
+        },
+        "readScope": "short author-page excerpt; page text reviewed in memory; no image/video fetched"
+      },
+      {
+        "evidenceId": "pbrt-transmittance",
+        "url": "https://pbr-book.org/4ed/Volume_Scattering/Transmittance",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "caced3064b7427fb9f91cacefd40c327b49950eb5a44863ca8505dce0d6dc857",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-pbrt-transmittance.txt",
+          "bytes": 665,
+          "sha256": "576ceb1e18ecbd0878f79ea52ee541b6ff7658e7e697050132b2cb0a0acf8a03"
+        },
+        "readScope": "short author-page excerpt; page text reviewed in memory; no image/video fetched"
+      },
+      {
+        "evidenceId": "pbrt-scattering",
+        "url": "https://pbr-book.org/4ed/Volume_Scattering/Volume_Scattering_Processes",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "b5886e01d2059a377fd80992535cf35f06bc108e92ab23db277b2e3a7cde1a5d",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-pbrt-scattering.txt",
+          "bytes": 552,
+          "sha256": "19ad185ab5a282f2c122f1b9c1f00623819d91cc3f09b7887294eb9f8a529e27"
+        },
+        "readScope": "short author-page excerpt; page text reviewed in memory; no image/video fetched"
+      },
+      {
+        "evidenceId": "bridson-paper",
+        "url": "https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph2007-curlnoise.pdf",
+        "httpStatus": 200,
+        "fetchedResponseSha256": "ac0bb333e0cf935eeb8f85a0e37503d14f9a3d026119443d718baecb27e45b30",
+        "savedFile": {
+          "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-bridson-paper.txt",
+          "bytes": 618,
+          "sha256": "e2e6d780cf3cce4a8f0d97565aac580a410982df11ffa42c192cdc6d85945e72"
+        },
+        "readScope": "3 PDF pages text parsed; short excerpt stored, no PDF/image download artifact"
+      }
+    ]
+  },
+  "browserQA": {
+    "status": "passed",
+    "scope": "offline research UI only; no white-hole renderer/game",
+    "browser": "Edge headless",
+    "checkedOn": "2026-10-07",
+    "sourceCount": 23,
+    "checks": [
+      "23 verified resource records embedded",
+      "initial route is ring",
+      "jet plan detail and selected tab update",
+      "route keyboard navigation",
+      "route Home returns to recommended ring",
+      "local resources filter has five actual files",
+      "physics filter includes five records",
+      "text search returns PSRDNoise",
+      "all current cards satisfy priority",
+      "export is research-plan/1 with exact filtered records",
+      "empty result is readable",
+      "read scope and license detail expands",
+      "all online links are safe HTTP(S)",
+      "desktop no horizontal overflow",
+      "mobile no horizontal overflow",
+      "no external network dependency",
+      "no browser runtime errors"
+    ],
+    "errors": [],
+    "networkDependencies": 0,
+    "screenshots": [
+      "desktop.png",
+      "mobile.png",
+      "mobile-resources.png"
+    ],
+    "exportFile": "exported-research-plan.json"
+  },
+  "validLocalMarkdownLinks": [
+    {
+      "document": "研究报告.md",
+      "target": "physics-notes.md"
+    },
+    {
+      "document": "研究报告.md",
+      "target": "existing-capabilities.md"
+    },
+    {
+      "document": "研究报告.md",
+      "target": "technical-notes.md"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "<E:/着色器渲染/vfx-workbench-lab/src/main/java/dev/vfxworkbench/effects/blackhole/BlackHoleClient.java:21>"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "<E:/着色器渲染/vfx-workbench-lab/src/main/java/dev/vfxworkbench/effects/blackhole/BlackHoleWorld.java:126>"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "<E:/着色器渲染/vfx-workbench-lab/src/main/resources/assets/vfxworkbench/shaders/core/bh_world.fsh:309>"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "<E:/着色器渲染/vfx-workbench-lab/src/main/resources/assets/vfxworkbench/shaders/core/bh_world.fsh:713>"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "<E:/着色器渲染/vfx-workbench-lab/src/main/resources/assets/vfxworkbench/shaders/core/bh_world.fsh:822>"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "<E:/着色器渲染/vfx-workbench-lab/src/main/resources/assets/vfxworkbench/shaders/core/bh_particles.vsh:14>"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "<E:/着色器渲染/vfx-workbench-lab/src/main/java/dev/vfxworkbench/effects/blackhole/BlackHoleParticles.java:21>"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "<E:/着色器渲染/vfx-workbench-lab/src/main/java/dev/vfxworkbench/effects/blackhole/BlackHoleRender.java:27>"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "<E:/着色器渲染/vfx-workbench-lab/src/main/java/dev/vfxworkbench/effects/blackhole/BlackHoleSkillSchema.java:15>"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "C:/Users/MAINTAINER/.codex/skills/minecraft-black-hole/references/forge-integration.md:37"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "C:/Users/MAINTAINER/.codex/skills/minecraft-black-hole/assets/preview/postprocess.js:100"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "<E:/着色器渲染/vfx-workbench-lab/src/main/resources/assets/vfxworkbench/shaders/core/bh_world.fsh:1032>"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "<E:/着色器渲染/vfx-workbench-lab/src/main/resources/assets/vfxworkbench/shaders/core/bh_world.fsh:1005>"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "C:/Users/MAINTAINER/.codex/skills/minecraft-procedural-particles/assets/forge-1.20.1/src/main/java/dev/rendercraft/particlelab/ParticleEngine.java:21"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "C:/Users/MAINTAINER/.codex/skills/minecraft-energy-vfx/assets/lab/field.glsl:70"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "C:/Users/MAINTAINER/.codex/skills/minecraft-energy-vfx/SKILL.md:31"
+    },
+    {
+      "document": "existing-capabilities.md",
+      "target": "C:/Users/MAINTAINER/.codex/skills/minecraft-selective-bloom/assets/forge-1.20.1/src/main/java/dev/rendercraft/bloomlab/Bloom.java:15"
+    }
+  ],
+  "savedArtifactFiles": [
+    {
+      "relativePath": "研究报告.md",
+      "path": "E:/着色器渲染/white-hole-research-20261007/研究报告.md",
+      "bytes": 10264,
+      "sha256": "3bc9a4efead8db7159301d596b8bdfaf0b73aeb07b9ea1400d8b7e07cce95c0d"
+    },
+    {
+      "relativePath": "index.html",
+      "path": "E:/着色器渲染/white-hole-research-20261007/index.html",
+      "bytes": 99893,
+      "sha256": "393752dbaf26a2345239b1265dcd58bb3b64f6d3dc87165e3296b4dc2316445c"
+    },
+    {
+      "relativePath": "catalog.template.html",
+      "path": "E:/着色器渲染/white-hole-research-20261007/catalog.template.html",
+      "bytes": 16986,
+      "sha256": "4a4c8bf6e7945ee751abc4efd24b7ace278739d72fd18d73ad1bfc673ec3d6e4"
+    },
+    {
+      "relativePath": "resources.json",
+      "path": "E:/着色器渲染/white-hole-research-20261007/resources.json",
+      "bytes": 98546,
+      "sha256": "c72428f55584aa6135a1477e0a4ea6a45e6ca91ef5012d0c7fc3831305b3c3c2"
+    },
+    {
+      "relativePath": "existing-capabilities.md",
+      "path": "E:/着色器渲染/white-hole-research-20261007/existing-capabilities.md",
+      "bytes": 14481,
+      "sha256": "fd1844045a5cbe3ce3c9f9fdb6b8cf7a08e3fdfc1e6e0d9743743c46b20640e2"
+    },
+    {
+      "relativePath": "local-sources.json",
+      "path": "E:/着色器渲染/white-hole-research-20261007/local-sources.json",
+      "bytes": 9295,
+      "sha256": "71d96a4f764f012dfd7db89241d8ce3fa507de7fffefc4df7cf60b0f3e95fc4f"
+    },
+    {
+      "relativePath": "physics-notes.md",
+      "path": "E:/着色器渲染/white-hole-research-20261007/physics-notes.md",
+      "bytes": 6892,
+      "sha256": "ba549a98a8bb9fa41b8af720f919110f624962e79a011e00531e10db0c3fed52"
+    },
+    {
+      "relativePath": "physics-visual-sources.json",
+      "path": "E:/着色器渲染/white-hole-research-20261007/physics-visual-sources.json",
+      "bytes": 18817,
+      "sha256": "1bdbcd962df4ab954c503e65676ffbdd0bc286531904a82e8a268f7d5b35be56"
+    },
+    {
+      "relativePath": "technical-notes.md",
+      "path": "E:/着色器渲染/white-hole-research-20261007/technical-notes.md",
+      "bytes": 9019,
+      "sha256": "a9e4e327f3eebb3d0f594d2d65a14e44d7659cf953632a09a27eb5dc7d58ca6b"
+    },
+    {
+      "relativePath": "technical-sources.json",
+      "path": "E:/着色器渲染/white-hole-research-20261007/technical-sources.json",
+      "bytes": 33335,
+      "sha256": "7bf3b4f7340907db7ac47e6a18ce2cdfbb92781917355dfe22482d40493dde4f"
+    },
+    {
+      "relativePath": "technical-verification.json",
+      "path": "E:/着色器渲染/white-hole-research-20261007/technical-verification.json",
+      "bytes": 12373,
+      "sha256": "c0e7a54cc2b88a5d751552555a98dd7740a38a5acbdd56b042c4778b27fda45a"
+    },
+    {
+      "relativePath": "source-text/fetch-metadata.json",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/fetch-metadata.json",
+      "bytes": 9201,
+      "sha256": "7dfc851dc3820bd88343407bece4bd9ba81edfdd986c668ec244577fa4a52592"
+    },
+    {
+      "relativePath": "scripts/build_catalog.py",
+      "path": "E:/着色器渲染/white-hole-research-20261007/scripts/build_catalog.py",
+      "bytes": 4143,
+      "sha256": "a7094ecebdf024e2d708684f5ad3fc2a938fc2d6d9de253bae7c5b803047f79b"
+    },
+    {
+      "relativePath": "scripts/check_catalog.cjs",
+      "path": "E:/着色器渲染/white-hole-research-20261007/scripts/check_catalog.cjs",
+      "bytes": 4995,
+      "sha256": "be6aaaa37bbdee1a755a0ca499e5ed9dcfd6d20499d345822144e1edbd642af6"
+    },
+    {
+      "relativePath": "scripts/verify_delivery.py",
+      "path": "E:/着色器渲染/white-hole-research-20261007/scripts/verify_delivery.py",
+      "bytes": 7561,
+      "sha256": "22bd7c98d7497c5c478b180e32cb8dc7496f63c0d61776d7d133b96db493461b"
+    },
+    {
+      "relativePath": "qa/report.json",
+      "path": "E:/着色器渲染/white-hole-research-20261007/qa/report.json",
+      "bytes": 1069,
+      "sha256": "6b4e89f0d3cfa1aef7edccb5c205764d943927f376200e38c9f9dc5f68a598f2"
+    },
+    {
+      "relativePath": "qa/exported-research-plan.json",
+      "path": "E:/着色器渲染/white-hole-research-20261007/qa/exported-research-plan.json",
+      "bytes": 12206,
+      "sha256": "0c10fcf04803f87d9f63d5bed216bd3cd33c66fa416cdec84bdb36566de7a099"
+    },
+    {
+      "relativePath": "qa/desktop.png",
+      "path": "E:/着色器渲染/white-hole-research-20261007/qa/desktop.png",
+      "bytes": 491738,
+      "sha256": "770b84dac7a3a5b02d684493d0fe906a41cefb4fa32d04c51c24b102dd11eae8"
+    },
+    {
+      "relativePath": "qa/mobile.png",
+      "path": "E:/着色器渲染/white-hole-research-20261007/qa/mobile.png",
+      "bytes": 156645,
+      "sha256": "21ca3deafe8aea18192dc1b5049b4e9409b26b85db29607823076711c9a4da17"
+    },
+    {
+      "relativePath": "qa/mobile-resources.png",
+      "path": "E:/着色器渲染/white-hole-research-20261007/qa/mobile-resources.png",
+      "bytes": 68002,
+      "sha256": "df0986953f7f604cea995e8dbdf4ea28aa87f592248168083adf6f2c67a61da5"
+    },
+    {
+      "relativePath": "snapshots/technical-black-functions.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-black-functions.txt",
+      "bytes": 2864,
+      "sha256": "191b45e1f5bb9aef66625bcd6692368aa95674143b2b90a8c36755700e74e8b4"
+    },
+    {
+      "relativePath": "snapshots/technical-black-license.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-black-license.txt",
+      "bytes": 1797,
+      "sha256": "a895271376c31082cdb98c94a2d84feacf60fc73ce674e0a1323d7c8400cf03f"
+    },
+    {
+      "relativePath": "snapshots/technical-black-model.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-black-model.txt",
+      "bytes": 3997,
+      "sha256": "cc494a02e7a706f1a5f705f50e76d6a796dcaf58689407cdb10f7c9841021b0e"
+    },
+    {
+      "relativePath": "snapshots/technical-black-readme.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-black-readme.txt",
+      "bytes": 738,
+      "sha256": "48a9863f8b5849182736b35d5df0e4702d84ddf46a11e409a98718c372cd970b"
+    },
+    {
+      "relativePath": "snapshots/technical-bridson-author.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-bridson-author.txt",
+      "bytes": 898,
+      "sha256": "764d3a4c7d866f2d9bcb8137c03e503c7f13fedce971bc2376a072dd5030474d"
+    },
+    {
+      "relativePath": "snapshots/technical-bridson-paper.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-bridson-paper.txt",
+      "bytes": 618,
+      "sha256": "e2e6d780cf3cce4a8f0d97565aac580a410982df11ffa42c192cdc6d85945e72"
+    },
+    {
+      "relativePath": "snapshots/technical-iq-warp.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-iq-warp.txt",
+      "bytes": 521,
+      "sha256": "8c3b629f3d076c6c482bc1ca1311bf1f6db8484108f1ff544baf7633c0695d58"
+    },
+    {
+      "relativePath": "snapshots/technical-kino-cs.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-kino-cs.txt",
+      "bytes": 2190,
+      "sha256": "027f2b67f04b8922e17f3ab9e813f78d36781b898a4d36472c466edc47f23033"
+    },
+    {
+      "relativePath": "snapshots/technical-kino-filter.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-kino-filter.txt",
+      "bytes": 2469,
+      "sha256": "8c99b1b740b3036c14918be4ed94b3720c4d8017e661b268813945ebec038aab"
+    },
+    {
+      "relativePath": "snapshots/technical-kino-license.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-kino-license.txt",
+      "bytes": 1380,
+      "sha256": "760e5ff03fee308a322ffffc36854b5520af7f51fd372ce1f4712023f7c2d3e9"
+    },
+    {
+      "relativePath": "snapshots/technical-kino-readme.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-kino-readme.txt",
+      "bytes": 1611,
+      "sha256": "3b54c8c75466bd19a4c448cccc8dd14e3bf7ffb2b189e81543849d91454e1b75"
+    },
+    {
+      "relativePath": "snapshots/technical-kino-shader.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-kino-shader.txt",
+      "bytes": 2231,
+      "sha256": "e0edd02332db009251e70a29c43078c143209ef644678ddfa82fa345fa34e4d5"
+    },
+    {
+      "relativePath": "snapshots/technical-noise-license.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-noise-license.txt",
+      "bytes": 1442,
+      "sha256": "c9995e862fd96c41d1379c6287ffc24c08de5bd5caa8c4f90faa56a6b57ac8f7"
+    },
+    {
+      "relativePath": "snapshots/technical-noise3.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-noise3.txt",
+      "bytes": 619,
+      "sha256": "af00e2416028cfb9022e0f64dd139b915964606fb466a8a7aa667472a6653f05"
+    },
+    {
+      "relativePath": "snapshots/technical-pbrt-license.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-pbrt-license.txt",
+      "bytes": 11836,
+      "sha256": "0ecfa23e4570d72bfcd4022ea268ea61d49b04739a1205a662ec76caf2843a87"
+    },
+    {
+      "relativePath": "snapshots/technical-pbrt-media.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-pbrt-media.txt",
+      "bytes": 3420,
+      "sha256": "a4101b7689122177b08a835de3e415d0bb1281135f51c2ca1bd8906d05aa4173"
+    },
+    {
+      "relativePath": "snapshots/technical-pbrt-scattering.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-pbrt-scattering.txt",
+      "bytes": 552,
+      "sha256": "19ad185ab5a282f2c122f1b9c1f00623819d91cc3f09b7887294eb9f8a529e27"
+    },
+    {
+      "relativePath": "snapshots/technical-pbrt-transmittance.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-pbrt-transmittance.txt",
+      "bytes": 665,
+      "sha256": "576ceb1e18ecbd0878f79ea52ee541b6ff7658e7e697050132b2cb0a0acf8a03"
+    },
+    {
+      "relativePath": "snapshots/technical-post-license.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-post-license.txt",
+      "bytes": 1160,
+      "sha256": "5f7ecc9f9339efcb0948d53ec2c41c937fee739ab21d79666b8453806f290922"
+    },
+    {
+      "relativePath": "snapshots/technical-psrd-readme.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-psrd-readme.txt",
+      "bytes": 1374,
+      "sha256": "6c0f3a259cbd217446ef206a64895369915d292fe1969c1c11b7876adbd42cfd"
+    },
+    {
+      "relativePath": "snapshots/technical-psrd3.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-psrd3.txt",
+      "bytes": 2848,
+      "sha256": "947968b85f407e4aae817e785c3a25ee8e254f105379462fbc0b73508393d412"
+    },
+    {
+      "relativePath": "snapshots/technical-shock-effect.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-shock-effect.txt",
+      "bytes": 1466,
+      "sha256": "f6d7c958730060b73faa1dc6bb96b5ca308ebc5ce1b80669f7797d56ad672756"
+    },
+    {
+      "relativePath": "snapshots/technical-shock-wave.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-shock-wave.txt",
+      "bytes": 1099,
+      "sha256": "08410e602d3ede3765b09409a9d1e4f37f78abf39c7c9587f4f907f877261775"
+    },
+    {
+      "relativePath": "snapshots/technical-three-bloom.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-three-bloom.txt",
+      "bytes": 5043,
+      "sha256": "3fcf44f608e8d888cb6ec28715852b79421ed7bef1c4fd510c8b3bb8ed23f673"
+    },
+    {
+      "relativePath": "snapshots/technical-three-license.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-three-license.txt",
+      "bytes": 1377,
+      "sha256": "d9d790678feae33154840e541deb9543a49ca92ad4d6dbf3730665e2713721b2"
+    },
+    {
+      "relativePath": "snapshots/technical-three-lines.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-three-lines.txt",
+      "bytes": 2923,
+      "sha256": "b997f40f99d4de92d7f503e23c94309b27d8561a3601b194f6b5a63725e5632f"
+    },
+    {
+      "relativePath": "snapshots/technical-three-tonemap.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/snapshots/technical-three-tonemap.txt",
+      "bytes": 2008,
+      "sha256": "e4c0556336eaabeccf80b4c8d5ec836505733afe44e20d10cd6764709381d268"
+    },
+    {
+      "relativePath": "source-text/carroll-blackholes.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/carroll-blackholes.txt",
+      "bytes": 817,
+      "sha256": "59fba87e88fe9f0c1c7f8982228f5608760293137a047cd969e90c46d6a53bd3"
+    },
+    {
+      "relativePath": "source-text/eardley-aps.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/eardley-aps.txt",
+      "bytes": 691,
+      "sha256": "4f504816988ca2d9e243654f3718ea5009df110ccc2d05944d50bc82eb8b92a8"
+    },
+    {
+      "relativePath": "source-text/eardley-crossref.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/eardley-crossref.txt",
+      "bytes": 377,
+      "sha256": "26164f6196e6f5aafb374f26d910e9ec384531caeeceb65dc84e9622de107ff2"
+    },
+    {
+      "relativePath": "source-text/esa-copyright.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/esa-copyright.txt",
+      "bytes": 520,
+      "sha256": "703532e32c8808b8acc03db755fe5424059b538d26fe8b91594816ccf3d15b8b"
+    },
+    {
+      "relativePath": "source-text/esa-m87-jet.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/esa-m87-jet.txt",
+      "bytes": 591,
+      "sha256": "bc7ebf23af9cf9ed8506bd363c3aea4e5a6214093ec44863b5713950ce6c45d9"
+    },
+    {
+      "relativePath": "source-text/esa-m87-old.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/esa-m87-old.txt",
+      "bytes": 536,
+      "sha256": "97bd8f6d2c9f74e02ff646773a6fb0be0073a61234cc4d7f88579b203f1e8543"
+    },
+    {
+      "relativePath": "source-text/haggard-rovelli.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/haggard-rovelli.txt",
+      "bytes": 587,
+      "sha256": "131e5b02dd2daad7811ac1f479d6026b784eba16e50825892a79cc1036e21118"
+    },
+    {
+      "relativePath": "source-text/hamilton-copyright.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/hamilton-copyright.txt",
+      "bytes": 454,
+      "sha256": "c3f2125740535d093c93e582c945dc0eb0fab1cc6382b2ec8d4f954dd3d69593"
+    },
+    {
+      "relativePath": "source-text/hamilton-wormholes.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/hamilton-wormholes.txt",
+      "bytes": 665,
+      "sha256": "71a1a343939dc501ab7a7f13807a4785d8ce07a7fbe7a4abec788cc668aa25fa"
+    },
+    {
+      "relativePath": "source-text/nasa-m87-jet.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/nasa-m87-jet.txt",
+      "bytes": 704,
+      "sha256": "034043e791b0c8f7c26bd92efee004d56cbd495e91db529f679e754e75297994"
+    },
+    {
+      "relativePath": "source-text/nasa-whitehole-faq.txt",
+      "path": "E:/着色器渲染/white-hole-research-20261007/source-text/nasa-whitehole-faq.txt",
+      "bytes": 646,
+      "sha256": "ff27381d67b6e692f39308f0f651a4af9abd7f226acb2e6c3c4a31429ce0a13a"
+    }
+  ],
+  "hashInterpretation": "fetchedResponseSha256 hashes the original fetched response. savedFile.sha256 hashes the current bounded excerpt or paraphrased research note. They are distinct evidence objects and are not expected to match.",
+  "limitations": [
+    "No white-hole shader, GPU performance, visual result or Minecraft runtime has been tested.",
+    "Eardley and Haggard/Rovelli records are limited to abstracts/metadata; full papers were not read.",
+    "Official visual-page text and captions were read; original image/video assets were not inspected or downloaded.",
+    "Existing local-source hashes cover the cited 13 files, not an exhaustive before/after audit of all project or skill files.",
+    "HTTP status is access evidence, not proof of full-text reading, scientific confirmation or Forge compatibility.",
+    "Intermediate rejected candidate caches are not included as formal sources."
+  ]
+}

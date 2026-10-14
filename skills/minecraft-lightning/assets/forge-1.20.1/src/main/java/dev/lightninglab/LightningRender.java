@@ -80,6 +80,7 @@ public final class LightningRender extends RenderType {
         }
         double baseWidth=r.mode.equals("orbit")?r.currentWidth:r.strikeWidth;
         halos(paths.values(),r,baseWidth,pose,camera,view);
+        if(cores(paths.values(),r,pose,camera,view))return;
         material(r,false);
         for(var path:paths.values())ribbon(path,2,pose,camera,false,r,view);
         BUFFER.endBatch(type(false,r));
@@ -102,9 +103,17 @@ public final class LightningRender extends RenderType {
                 seg.alongA()+(seg.alongB()-seg.alongA())*f,power*seg.intensity()));
         }
         halos(paths.values(),r,Math.max(.004,r.strikeWidth),pose,camera,view);
+        if(cores(paths.values(),r,pose,camera,view))return;
         material(r,false);
         for(var path:paths.values())ribbon(path,2,pose,camera,false,r,view);
         BUFFER.endBatch(type(false,r));
+    }
+    private static boolean cores(java.util.Collection<List<Node>> paths,LightningRecipe r,PoseStack pose,Vec3 camera,CoverageView view){
+        // Union body and round joints before compositing so a joint cannot
+        // accumulate a second or third core contribution into a bright bead.
+        List<List<HaloGeometry.Point>> strokes=new ArrayList<>();
+        for(var path:paths)strokes.add(path.stream().map(node->new HaloGeometry.Point(node.p().subtract(camera),node.width()*2,node.along(),node.alpha())).toList());
+        return LightningHalo.drawCore(strokes,r,view.projection(),pose.last().pose(),view.width(),view.height());
     }
     private static void halos(java.util.Collection<List<Node>> paths,LightningRecipe r,double baseWidth,PoseStack pose,Vec3 camera,CoverageView view){
         if(r.glowGain<=0)return;

@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "checks": {
+    "HTTP content type": true,
+    "ZIP CRC": true,
+    "complete authored /2 recipe": true,
+    "metadata /2": true,
+    "shader exact production": true,
+    "uniform descriptor exact production": true,
+    "shared core exact": true
+  },
+  "schema": "world-volume/2",
+  "coreSha256": "55fb1baf79f11d7d87211cc2a2786b53a98b0ff8854023c51c3ce0e09fcca275",
+  "packDescription": "Original world-volume/2 Forge 1.20.1 shader integration assets",
+  "zipSha256": "4ce4de4038b276178995159a31a95c8a6555d777b2c04aef5337e4bbe593eb97",
+  "bytes": 12368,
+  "preset": "purple-light-fog",
+  "scope": "Current final HTTP export after metadata fix; previous forward-v2 report remains unchanged."
+}

@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '6.0.54'
+}
+
+group = 'dev.cosmiclab'
+version = mod_version
+base { archivesName = 'cosmic-rendering-lab' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.console.level', 'info'
+            property 'cosmiclab.autorun', project.findProperty('labAuto') ?: 'false'
+            property 'cosmiclab.output', project.file('validation').absolutePath
+            if (project.hasProperty('labNativeDir')) {
+                property 'org.lwjgl.librarypath', project.file(project.property('labNativeDir')).absolutePath
+            }
+            args '--width', '960', '--height', '540', '--username', 'CosmicLab'
+            mods { cosmiclab { source sourceSets.main } }
+        }
+    }
+}
+
+dependencies { minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}" }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar', Jar).configure { finalizedBy 'reobfJar' }

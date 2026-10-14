@@ -1,0 +1,1218 @@
+{
+  "date": "2026-10-06",
+  "timezone": "Asia/Shanghai",
+  "scope": "Five reference packages, six distinct snapshots (Bliss ZIP and commit kept separate). Static mechanisms and selected call chains only; no reference client appearance/performance certification.",
+  "redistribution": "This file contains metadata, descriptions and hashes only. Third-party source, ZIPs, textures and noise volumes are not bundled with the skill.",
+  "inputs": [
+    {
+      "path": "E:/着色器渲染/research/WORLD_VOLUME_ENVIRONMENT_REFERENCES.json",
+      "sha256": "0cd60dda81a9d0bb5d52b4d2d4b6378af0929f93011620a921735f7301bf5f2e"
+    },
+    {
+      "path": "E:/着色器渲染/research/sky-materials-20261006/shaderpacks/sources.json",
+      "sha256": "47877642e1f5445c88ee6799f69fa1e61ecc9bbf665a232ec80d7dd03fbd1337"
+    },
+    {
+      "path": "E:/着色器渲染/research/sky-materials-user-20261006/Bliss-End-clouds-manifest.json",
+      "sha256": "a1765e24305db314bce204b7478e9b1879c668b39f4fee44ac3cd5a164690836"
+    }
+  ],
+  "sources": [
+    {
+      "id": "bliss212",
+      "name": "Bliss 2.1.2 specified user ZIP",
+      "archive": "D:/MC/库/red.ghs.axolotl/profiles/测试 (1)/shaderpacks/Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip",
+      "archiveSha256": "f41db92acc585fe9ffe0cc124d6ecaea27cef9ded91129ebc2a8e60226947b2c",
+      "archiveBytes": 1791406,
+      "archiveMatchesPriorSnapshot": true,
+      "archiveCrc": true,
+      "entries": {
+        "shaders/world1/deferred.fsh": {
+          "sha256": "fd8379fdddeb058aca10b98f8338c9325bf553b8a9c9d3e6599da784df763d60",
+          "bytes": 69,
+          "lineCount": 5,
+          "matchesPreviousManifest": true
+        },
+        "shaders/world1/composite2.fsh": {
+          "sha256": "40a8aedffb68659614b32a65c58dacadb99bc77ab28214def313f3ed6d75ae20",
+          "bytes": 75,
+          "lineCount": 5,
+          "matchesPreviousManifest": true
+        },
+        "shaders/world1/composite3.fsh": {
+          "sha256": "31ef6e538e7c2a5345abf8c2fbc6e053b8e7fc1b24bc532e8160366c2613729f",
+          "bytes": 75,
+          "lineCount": 5,
+          "matchesPreviousManifest": true
+        },
+        "shaders/world1/composite4.fsh": {
+          "sha256": "7ee42e8b341d30d5ebf2dfe9958718b8501cde1218e70f6c7197b0600db2e0dd",
+          "bytes": 75,
+          "lineCount": 5,
+          "matchesPreviousManifest": true
+        },
+        "shaders/world1/gbuffers_water.fsh": {
+          "sha256": "cc14c294de03d49227bf4c487eedfe9809ee445e1888a49a29861138ae1c25ae",
+          "bytes": 76,
+          "lineCount": 5,
+          "matchesPreviousManifest": true
+        },
+        "shaders/dimensions/deferred.fsh": {
+          "sha256": "480e041a41e24d638271f7fd8390f2c28e702cc82fec06a5243dc4fe1be17d12",
+          "bytes": 13312,
+          "lineCount": 386,
+          "matchesPreviousManifest": true
+        },
+        "shaders/dimensions/composite5.fsh": {
+          "sha256": "42cd23ff9e80a67ef18c6835d0a322ec4fb56ef92b4cbec1a2e2e11c20368c42",
+          "bytes": 16497,
+          "lineCount": 438,
+          "matchesPreviousManifest": true
+        },
+        "shaders/lib/end_fog.glsl": {
+          "sha256": "4f3d270ce3e46a784dfbe1ba94cfc5649f989d657886f9bde71631c7bc22d888",
+          "bytes": 12672,
+          "lineCount": 356,
+          "matchesPreviousManifest": true
+        },
+        "shaders/dimensions/composite1.fsh": {
+          "sha256": "b0189476c1a703d8dad6a8e5d306ccfeab8b991fbb6232e6866fa0be3868cfa7",
+          "bytes": 47324,
+          "lineCount": 1372,
+          "matchesPreviousManifest": true
+        },
+        "shaders/dimensions/all_translucent.fsh": {
+          "sha256": "307610a974eca9d7ce0a37ef51093d26daf46bf16c11e4342e7f36ffd63e65be",
+          "bytes": 28339,
+          "lineCount": 870,
+          "matchesPreviousManifest": true
+        },
+        "shaders/dimensions/composite2.fsh": {
+          "sha256": "de7eb25909fb3296d59816d596ec27917d6bc353079ab977d25d2f367c6eafb3",
+          "bytes": 14420,
+          "lineCount": 449,
+          "matchesPreviousManifest": true
+        },
+        "shaders/dimensions/composite3.fsh": {
+          "sha256": "a07afd463cb83a7e92d559f8cf603f619cf7cd4a42746ff60d4a84e4bbf5e4d7",
+          "bytes": 16489,
+          "lineCount": 487,
+          "matchesPreviousManifest": true
+        },
+        "shaders/dimensions/fogBehindTranslucent_pass.fsh": {
+          "sha256": "31fac3a6bf43969057bad4d880b5e3b49b19ecbcd5f12c32d9a6894e41e390de",
+          "bytes": 13360,
+          "lineCount": 399,
+          "matchesPreviousManifest": true
+        },
+        "shaders/lib/settings.glsl": {
+          "sha256": "214782ddd37baa3f454bb78e0cc16bb83c3fa251f9bc0feeffa010f9f7d11106",
+          "bytes": 95534,
+          "lineCount": 815,
+          "matchesPreviousManifest": true
+        },
+        "shaders/shaders.properties": {
+          "sha256": "6c1b92c65d27eaf55f0723e5bb85e9c213aa6603d9eb558a3803caa7d3621e2f",
+          "bytes": 34800,
+          "lineCount": 606,
+          "matchesPreviousManifest": true
+        },
+        "LICENSE.md": {
+          "sha256": "0a0e5b77277a737002f90a7dfb5bb9b0fa9f7aff0d0f86355a198bf7a4cc3b86",
+          "bytes": 2391,
+          "lineCount": 47,
+          "matchesPreviousManifest": true
+        }
+      },
+      "reviewedRanges": [
+        {
+          "entry": "shaders/world1/deferred.fsh",
+          "startLine": 3,
+          "endLine": 5,
+          "description": "End-specific deferred entry",
+          "rangeSha256Utf8Lf": "12c679cbc4f60a81cf5eff4a7eb8981615bd1de1445b55b5eacd42fafa33b886",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/world1/composite2.fsh",
+          "startLine": 3,
+          "endLine": 5,
+          "description": "Opaque lighting entry is world1/composite2",
+          "rangeSha256Utf8Lf": "fbdf7636ec0dd756bfc6214a2952de26576530b163f699047ccd803efdda6b5c",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/world1/composite3.fsh",
+          "startLine": 3,
+          "endLine": 5,
+          "description": "Fog integration entry is world1/composite3",
+          "rangeSha256Utf8Lf": "478d72a382d54f764ce8ed643dd02b6fc31a07c1c26776dbd1822f114f77c9d4",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/world1/composite4.fsh",
+          "startLine": 3,
+          "endLine": 5,
+          "description": "Fog upscale/composition entry is world1/composite4",
+          "rangeSha256Utf8Lf": "4a7134a8ecf35453febc29bccc25b1d18a98e21b1062cc214ec170bbd51d73de",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/world1/gbuffers_water.fsh",
+          "startLine": 3,
+          "endLine": 5,
+          "description": "Transparent lighting entry",
+          "rangeSha256Utf8Lf": "e438f951bf03411cdf6d36b4aaec53ab03cf853076f011dda14805bcaf6d097c",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/deferred.fsh",
+          "startLine": 168,
+          "endLine": 179,
+          "description": "Persistent buffer target and warmup history gate",
+          "rangeSha256Utf8Lf": "5b230313b75de9b2576651b59ef3880859e8b10e6c5cb088a1718b1eac7ffc5a",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/deferred.fsh",
+          "startLine": 321,
+          "endLine": 340,
+          "description": "Random countdown and single-frame trigger",
+          "rangeSha256Utf8Lf": "9109b10e55e7f53c1067ee8f2e2e875d950dd47807e26d1aaa5cbe476c4b4ffd",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/deferred.fsh",
+          "startLine": 342,
+          "endLine": 347,
+          "description": "Flash history response",
+          "rangeSha256Utf8Lf": "f4b4fdbab331a87dc971786c2d4c4b252648b80c508dcaf3ece22eec4d521a8c",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/deferred.fsh",
+          "startLine": 350,
+          "endLine": 365,
+          "description": "Spatial state random walk",
+          "rangeSha256Utf8Lf": "0949c4cdcfe293aed6d70aaa51a6724b4589345e8cf279e2e679ebbb88a512fd",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/deferred.fsh",
+          "startLine": 373,
+          "endLine": 379,
+          "description": "Scale and temporal accumulation",
+          "rangeSha256Utf8Lf": "4df83b30b47396a2dfba40e408b022a94f7247ebb8c77739cd38cc43280ace1b",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/composite5.fsh",
+          "startLine": 23,
+          "endLine": 39,
+          "description": "State buffer persists between frames",
+          "rangeSha256Utf8Lf": "d52a8390265c47cc03e35aca1524e683470b73391dbf8efcab9b019517d27d33",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/end_fog.glsl",
+          "startLine": 66,
+          "endLine": 93,
+          "description": "World center vortex and camera-cell flash light",
+          "rangeSha256Utf8Lf": "6dc95142f454cd0410ae433576296615527b2125e5ff47a90687caa948a60ed1",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/end_fog.glsl",
+          "startLine": 95,
+          "endLine": 107,
+          "description": "Two-channel 512-square noise slice interpolation",
+          "rangeSha256Utf8Lf": "4c873f988b048327d27d8050d80270f190fa21753074432858eabbd809cd67dd",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/end_fog.glsl",
+          "startLine": 110,
+          "endLine": 119,
+          "description": "Height-dependent world swirl",
+          "rangeSha256Utf8Lf": "c11b1c16b93cf904f2db6fc7c70a19f6e4a1a689ee9a54bd77a28c8263904532",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/end_fog.glsl",
+          "startLine": 122,
+          "endLine": 141,
+          "description": "Central and annular cloud holes",
+          "rangeSha256Utf8Lf": "84b4a27570b659aae43e4aefc2e4d37df30e4055e17206b982f3f35680f60f1d",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/end_fog.glsl",
+          "startLine": 144,
+          "endLine": 167,
+          "description": "Anisotropic density, erosion and lower void",
+          "rangeSha256Utf8Lf": "0f2e711b4d7892ab0fa3f610cd6b7ed7c0d0ab629b4014c07f5ddb2f438a5f25",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/end_fog.glsl",
+          "startLine": 169,
+          "endLine": 191,
+          "description": "Finite local light falloff and flash color",
+          "rangeSha256Utf8Lf": "72d9201e05f99f9ed04da1cf5c1aad98f1dcb680a7240efba39a198443928041",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/end_fog.glsl",
+          "startLine": 194,
+          "endLine": 208,
+          "description": "Three density samples for approximate self shadow",
+          "rangeSha256Utf8Lf": "880e0aa50d08355e4f9a0a9a89398ba7a2bbd21d7cfd92a854bfb32fc2b12dfa",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/end_fog.glsl",
+          "startLine": 215,
+          "endLine": 253,
+          "description": "Finite ray with 16 exponentially spaced samples",
+          "rangeSha256Utf8Lf": "c95e7cc23e71c366aa1a37fc071ab4a16e9a71f0e55f35cfcdca2a4cedc20bf7",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/end_fog.glsl",
+          "startLine": 259,
+          "endLine": 301,
+          "description": "Camera clearing, Beer integration and additive haze",
+          "rangeSha256Utf8Lf": "d9c0875e376ef7488ab6b4dd386ef62c0f9c0083497e2817513c1a8b7b538288",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/end_fog.glsl",
+          "startLine": 345,
+          "endLine": 355,
+          "description": "Approximate cloud shadow on surfaces",
+          "rangeSha256Utf8Lf": "61b17c251b889d53cc424725e11031355be8cdd7d17304043c8497604f80c996",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/composite1.fsh",
+          "startLine": 1084,
+          "endLine": 1103,
+          "description": "Actual opaque surface flash lighting",
+          "rangeSha256Utf8Lf": "418df954d228638175b46b923f076201d3b73100b8d902f1b3ac9c4f028dce58",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/all_translucent.fsh",
+          "startLine": 642,
+          "endLine": 662,
+          "description": "Actual transparent surface flash lighting",
+          "rangeSha256Utf8Lf": "19649ce2359b39325aeaa6ff17e1ecc5049bc5f1e3347b3ea745539af5e85961",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/composite2.fsh",
+          "startLine": 374,
+          "endLine": 428,
+          "description": "Actual depth reconstruction and fog write",
+          "rangeSha256Utf8Lf": "c2957009b1851ed229995136ab363230c2cc034f8c99179ebedeb0f313b22530",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/composite3.fsh",
+          "startLine": 133,
+          "endLine": 180,
+          "description": "Five-tap depth rejection in upscale",
+          "rangeSha256Utf8Lf": "665882ed7b955e18bb640f7e8f34249449dde9649386762a5f0789f0cdbd45a6",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/composite3.fsh",
+          "startLine": 303,
+          "endLine": 315,
+          "description": "Actual low resolution fog read",
+          "rangeSha256Utf8Lf": "a97072fd39c65eef5e6f5a06925ac96cdb314e6bf047665863201c0deba0c082",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/composite3.fsh",
+          "startLine": 438,
+          "endLine": 440,
+          "description": "Scene transmittance plus fog radiance",
+          "rangeSha256Utf8Lf": "b2ba307469abeead8928e7810b3c806fbf79be3780024c51eae176a835eeaa99",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/dimensions/fogBehindTranslucent_pass.fsh",
+          "startLine": 375,
+          "endLine": 390,
+          "description": "Separate behind-translucent fog call is Overworld-only",
+          "rangeSha256Utf8Lf": "7baa6449f588f073ef67d4268ac4c85e6959584473b0e6ba7c6ed6f35d385ffd",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/settings.glsl",
+          "startLine": 638,
+          "endLine": 648,
+          "description": "Defaults for End fog and flash colors",
+          "rangeSha256Utf8Lf": "c33a84f83657069c1d0d41f586b1517833178413f461755c733a7d6f2d1bd691",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/shaders.properties",
+          "startLine": 291,
+          "endLine": 293,
+          "description": "Player controls for End fog",
+          "rangeSha256Utf8Lf": "f968f978e61608f6ca9ce46c848895b5cc19fcc9415180431e669b1a72efc77a",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "LICENSE.md",
+          "startLine": 1,
+          "endLine": 16,
+          "description": "Custom overall sharing and attribution rules",
+          "rangeSha256Utf8Lf": "c55b5ab886fe719d545ba7da14c1711033ebae3ac5d554459cf6788b00b6c7c2",
+          "matchesPreviousManifest": true
+        },
+        {
+          "entry": "shaders/lib/end_fog.glsl",
+          "startLine": 1,
+          "endLine": 35,
+          "description": "MIT header covers local hash fragment, not automatic whole-pack relicensing",
+          "rangeSha256Utf8Lf": "06928b5031c5871e393e455d929d6749c5e90eb2a6dafaa1bbd6f19c284fe0ef",
+          "matchesPreviousManifest": true
+        }
+      ],
+      "license": {
+        "entry": "LICENSE.md",
+        "sha256": "0a0e5b77277a737002f90a7dfb5bb9b0fa9f7aff0d0f86355a198bf7a4cc3b86",
+        "studyOnly": true,
+        "copyCodeOrTextures": false
+      },
+      "evidenceKind": "static ZIP source and digest study",
+      "referenceRuntimeVerified": false
+    },
+    {
+      "id": "solas",
+      "name": "Solas Shader V3.7b（用户本地改动快照，非上游认证版本）",
+      "sourceRoot": "E:/着色器渲染/research/shaderpack-atmosphere/sources/solas",
+      "snapshotKind": "user_local_modified_zip",
+      "commit": null,
+      "archive": "E:/着色器渲染/research/sky-materials-20261006/shaderpacks/Solas-local-modified-20261006.zip",
+      "archiveSha256": "b7dfe4c7353d677a92cc4c86b87bc0633f1014305d927ca6a482c303427bf825",
+      "archiveBytes": 1252311,
+      "archiveMatchesPriorSnapshot": true,
+      "selectedFilesMatchArchive": {
+        "shaders/lib/atmosphere/planarClouds.glsl": true,
+        "shaders/lib/atmosphere/volumetricClouds.glsl": true,
+        "shaders/lib/atmosphere/fog.glsl": true,
+        "shaders/programs/deferred1.glsl": true
+      },
+      "upstreamVersionCertified": false,
+      "license": {
+        "path": "E:/着色器渲染/research/shaderpack-atmosphere/sources/solas/drm/drm.readme",
+        "sha256": "141fcc55175786f57180f32edbe856c5c159a12e54aa46695986c0bedbd0fc47",
+        "studyOnly": true,
+        "copyCodeOrTextures": false
+      },
+      "files": {
+        "shaders/lib/atmosphere/planarClouds.glsl": {
+          "sha256": "a4b74ff53dad24a23686674cabd9a40ea6103dafef65ae4909cecf84f8a3c0e1",
+          "bytes": 5586,
+          "lineCount": 124,
+          "anchors": [
+            {
+              "line": 7,
+              "lineSha256Utf8": "d03a1fa6c48d406aabf9f037b8dab927e2e46822e854ab6433185a90d299210e",
+              "description": "多尺度二维噪声纹理生成平面云"
+            }
+          ]
+        },
+        "shaders/lib/atmosphere/volumetricClouds.glsl": {
+          "sha256": "18e19170e8cf7f7f40e601ca7940a0b28c8311015ae2aa82b7f8cc7b2ed3232f",
+          "bytes": 22399,
+          "lineCount": 548,
+          "anchors": [
+            {
+              "line": 8,
+              "lineSha256Utf8": "2560bd8a1dc4a05ecc1d48368611c724f277ed544a4b7f095d891ed7b1f3a32b",
+              "description": "按日龄函数改变云层参数"
+            },
+            {
+              "line": 141,
+              "lineSha256Utf8": "48ff354a8f039e606b9a217ca3ed49bd0f06edb38e2b4f8d48a1cd85cfb2a342",
+              "description": "体积云沿射线绘制入口"
+            },
+            {
+              "line": 159,
+              "lineSha256Utf8": "e225bcec468648e9c8e6ca8d6f839cde8f54e84688477558f21d6b577c54a1a9",
+              "description": "Distant Horizons 深度读取"
+            }
+          ],
+          "reviewedRanges": [
+            {
+              "startLine": 29,
+              "endLine": 83,
+              "rangeSha256Utf8Lf": "60c797c6673f6f1770cff52312390922b617d112582fee7eb113e8ff43abbcb5",
+              "description": "local modified vertical shape"
+            },
+            {
+              "startLine": 366,
+              "endLine": 407,
+              "rangeSha256Utf8Lf": "678695e43b613f6bdf2b4bc69b2fdbbd216357d2df117dc96dfa189b3a1a2708",
+              "description": "End disk shape and version gate"
+            },
+            {
+              "startLine": 409,
+              "endLine": 499,
+              "rangeSha256Utf8Lf": "f6e6de89a016faae7667fba957fde67c66c90fd53d8a04dace7f5734696d5fbd",
+              "description": "disk world ray and terrain endpoint"
+            },
+            {
+              "startLine": 509,
+              "endLine": 544,
+              "rangeSha256Utf8Lf": "350ff40e664be8d6d03950690ba579613be5fdb0efdb85bfa3dca56a846672c2",
+              "description": "disk light and cloud output"
+            }
+          ]
+        },
+        "shaders/lib/atmosphere/fog.glsl": {
+          "sha256": "b151f0cf299ee945a386c934b69fdf776aff7d6265e7d1b79cc429d0e6352a7d",
+          "bytes": 5774,
+          "lineCount": 180,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 124,
+              "endLine": 148,
+              "rangeSha256Utf8Lf": "10e23534c9e2f91c750265519324894c5d8def994449774b5ef99e71efb5bf8a",
+              "description": "ordinary End fog branch"
+            }
+          ]
+        },
+        "shaders/programs/deferred1.glsl": {
+          "sha256": "47f31d07ef3d78ca079f22ca2c635a789ab2d1c5f75a81dfc4df21f94c7a16bb",
+          "bytes": 12998,
+          "lineCount": 495,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 250,
+              "endLine": 254,
+              "rangeSha256Utf8Lf": "ece72d6e82d97bdec764d86b4693543e71ef503f26d1adec84155aeb1a83587f",
+              "description": "Overworld and End cloud invocations"
+            },
+            {
+              "startLine": 458,
+              "endLine": 469,
+              "rangeSha256Utf8Lf": "38578ddde8f617b4659918002ddf1e36e93f8742dc21584309902020af1f392c",
+              "description": "actual cloud composition"
+            }
+          ]
+        }
+      },
+      "evidenceKind": "static source and digest study",
+      "referenceRuntimeVerified": false
+    },
+    {
+      "id": "photon",
+      "name": "Photon v1.3b（用户本地快照）",
+      "sourceRoot": "E:/着色器渲染/research/shaderpack-atmosphere/sources/photon",
+      "snapshotKind": "user_zip",
+      "commit": null,
+      "archive": "D:/MC/库/red.ghs.axolotl/profiles/测试 (1)/shaderpacks/photon_v1.3b.zip",
+      "archiveSha256": "120897768eaa8cb1f14a3e98f88dff009ae3204ee3b96904a4fe8586edfc1ead",
+      "archiveBytes": 3800987,
+      "archiveMatchesPriorSnapshot": true,
+      "selectedFilesMatchArchive": {
+        "shaders/include/sky/clouds/cumulus.glsl": true,
+        "shaders/include/sky/clouds/cirrus.glsl": true,
+        "shaders/include/sky/clouds/noctilucent.glsl": true,
+        "shaders/include/sky/clouds.glsl": true,
+        "shaders/include/sky/crepuscular_rays.glsl": true,
+        "shaders/include/sky/sky.glsl": true,
+        "shaders/program/d4_deferred_shading.fsh": true,
+        "shaders/include/fog/end_fog_vl.glsl": true,
+        "shaders/program/p0_clouds_prep.fsh": true,
+        "shaders/program/d1_clouds.fsh": true,
+        "shaders/program/d2_clouds_upscaling.fsh": true,
+        "shaders/program/c0_vl.fsh": true,
+        "shaders/program/c1_blend_layers.fsh": true,
+        "shaders/shaders.properties": true
+      },
+      "upstreamVersionCertified": false,
+      "license": {
+        "path": "E:/着色器渲染/research/shaderpack-atmosphere/sources/photon/LICENSE",
+        "sha256": "514402d18eedb0afe374344ca9f0fe87b7399779518184b8fc64e31674555fc5",
+        "studyOnly": true,
+        "copyCodeOrTextures": false
+      },
+      "files": {
+        "shaders/include/sky/clouds/cumulus.glsl": {
+          "sha256": "1923542cd9ad862a6166a542dbdcb1597fd70316e4338b236deefc2ccb932ba5",
+          "bytes": 12004,
+          "lineCount": 384,
+          "anchors": [
+            {
+              "line": 10,
+              "lineSha256Utf8": "015b0137b4d54e85983c6441ff4a1de4e2d9e63e174885880086ebbcd0d8e995",
+              "description": "积云与层云高度整形"
+            },
+            {
+              "line": 80,
+              "lineSha256Utf8": "bf340a5c817e898b3f949e337a19726dd6db35450f953424d6e6c193f4873a41",
+              "description": "三维Worley纹理侵蚀云细节"
+            }
+          ]
+        },
+        "shaders/include/sky/clouds/cirrus.glsl": {
+          "sha256": "4e1f13c6ab74d616495e2d5a7a463f3502d160b8a38ef45d057be67995b8d030",
+          "bytes": 9629,
+          "lineCount": 310,
+          "anchors": [
+            {
+              "line": 8,
+              "lineSha256Utf8": "2c4901ff5d6be0f3424f8f4f52bf479d2fab1eb414500dc4409fe887be364692",
+              "description": "卷云/卷积云密度函数"
+            }
+          ]
+        },
+        "shaders/include/sky/clouds/noctilucent.glsl": {
+          "sha256": "ebff1f706a8680ef937edb570242d147b073111e3bb09b87cc6c6c1ada4dba56",
+          "bytes": 2838,
+          "lineCount": 101,
+          "anchors": [
+            {
+              "line": 51,
+              "lineSha256Utf8": "ff2bdfdaa3f8ea3bf1f7e4f28310bb9a8cc13b92b8cf0bda570f028394d220e3",
+              "description": "夜光云依赖低太阳高度窗口"
+            }
+          ]
+        },
+        "shaders/include/sky/clouds.glsl": {
+          "sha256": "07bac05a93b29cff55841d6f7425fe46d1555fe1e6b2cfc037d9fb9fee992972",
+          "bytes": 3055,
+          "lineCount": 114,
+          "anchors": [
+            {
+              "line": 57,
+              "lineSha256Utf8": "95541a39467368ddf9ae3c5a59a4d9cd357e0c73d6c4d1da3a8a51b451351d10",
+              "description": "浓积云真实组合"
+            },
+            {
+              "line": 106,
+              "lineSha256Utf8": "e78572fc950725a4212d9167396b4f6678b729b68ffdc6f49a1da420d400ddba",
+              "description": "夜光云真实组合"
+            }
+          ]
+        },
+        "shaders/include/sky/crepuscular_rays.glsl": {
+          "sha256": "924e9f08adaf24e37d6a619602da6ded226f3664f54e9db78ee770ef73fb1b93",
+          "bytes": 4828,
+          "lineCount": 141,
+          "anchors": [
+            {
+              "line": 94,
+              "lineSha256Utf8": "9e118b4ad6c7ebe452298d45094101ef5ddc60778e61a20fcc8540c946742c9a",
+              "description": "云影图采样用于曙暮光"
+            }
+          ]
+        },
+        "shaders/include/sky/sky.glsl": {
+          "sha256": "9121b52697ad724a05cf46afe0f2857c73984246604cc08df458db5a078302ff",
+          "bytes": 10625,
+          "lineCount": 367,
+          "anchors": [
+            {
+              "line": 189,
+              "lineSha256Utf8": "563540cd16874a738f9aec3e4bb1f6749245ebf91cb7dd29e14734e747c1a8bf",
+              "description": "云透射/散射合成"
+            }
+          ]
+        },
+        "shaders/program/d4_deferred_shading.fsh": {
+          "sha256": "212081e707c20c78e17cbfd3380b2f22eb696cc1aa14bdf006c07d59f53f67e0",
+          "bytes": 18836,
+          "lineCount": 682,
+          "anchors": [
+            {
+              "line": 658,
+              "lineSha256Utf8": "7287aac9b19480f0c0438280a9530338b0d9a5ca305c65bb4369c919b1bc5591",
+              "description": "云表观距离与地形比较"
+            }
+          ]
+        },
+        "shaders/include/fog/end_fog_vl.glsl": {
+          "sha256": "be0819281f7a6dfd423d23cebb35ed0107a5e2b3d943a5dffa6408d6e7c371ad",
+          "bytes": 6639,
+          "lineCount": 196,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 9,
+              "endLine": 50,
+              "rangeSha256Utf8Lf": "c71fd450256ccd0b72d31e5863144bd7046da5f041c11d444e63bdde16c24d13",
+              "description": "height density and independent emission"
+            },
+            {
+              "startLine": 53,
+              "endLine": 105,
+              "rangeSha256Utf8Lf": "7d061200fa2f52bebcda1d045cdf1772c335b973502051e80a66db91878f1f35",
+              "description": "finite altitude volume and ray interval"
+            },
+            {
+              "startLine": 129,
+              "endLine": 193,
+              "rangeSha256Utf8Lf": "002a2b643875877b1bbd3cc872dfce1dc0296d77deff33908fd9229d4ae2a70e",
+              "description": "scatter/emission/transmittance integration"
+            }
+          ]
+        },
+        "shaders/program/p0_clouds_prep.fsh": {
+          "sha256": "7d0706f51c3a23d1fc932fb862d61819747e2599d2da052b7b116fcfb658d395",
+          "bytes": 2381,
+          "lineCount": 111,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 91,
+              "endLine": 110,
+              "rangeSha256Utf8Lf": "c2c1d518f1ad8de7e8406c01dda3b33dacd12bc4a1a001f362e91ddbbdb98bb4",
+              "description": "coverage and cloud-shadow map preparation"
+            }
+          ]
+        },
+        "shaders/program/d1_clouds.fsh": {
+          "sha256": "1f0dd330b837becff393380283eb767e3a55fe48e9b04705bf825fde535d0cae",
+          "bytes": 6290,
+          "lineCount": 246,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 167,
+              "endLine": 222,
+              "rangeSha256Utf8Lf": "bbac505312bc655fd73c912e3bd078c654cb51cac5b6c0288bbfaf662c7a5fbd",
+              "description": "depth endpoint and cloud output contract"
+            }
+          ]
+        },
+        "shaders/program/d2_clouds_upscaling.fsh": {
+          "sha256": "2b026e4bf367527213264b333b267c649a1ac85ba3105155b71085878c3c204a",
+          "bytes": 12530,
+          "lineCount": 386,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 247,
+              "endLine": 306,
+              "rangeSha256Utf8Lf": "1152592095801d72c2c8a3ac19bad8328b5b904bcca9fb58d7da567565a009d4",
+              "description": "cloud distance, depth rejection and disocclusion"
+            },
+            {
+              "startLine": 352,
+              "endLine": 385,
+              "rangeSha256Utf8Lf": "120f4971bdc1f10c6450d77e760095ad24d4132a29d057e39d3beac28aedad4d",
+              "description": "history weights and distance output"
+            }
+          ]
+        },
+        "shaders/program/c0_vl.fsh": {
+          "sha256": "1a5335ee12e04e74b4f8b2ba62437f3ee27137cf9d2ccf7985f0fbf32bf48729",
+          "bytes": 5869,
+          "lineCount": 235,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 14,
+              "endLine": 19,
+              "rangeSha256Utf8Lf": "be25b7976d3b6fd595fc0cc75481d7e04176792af41e6c4cbe2177e887a14e24",
+              "description": "output locations and target mapping"
+            },
+            {
+              "startLine": 178,
+              "endLine": 200,
+              "rangeSha256Utf8Lf": "7a523aab99f564f535960bbe39c32b5e9f42ce28c85bc8e9dcfb75e9d9f7fc46",
+              "description": "End fog invocation and outputs"
+            }
+          ]
+        },
+        "shaders/program/c1_blend_layers.fsh": {
+          "sha256": "9a22e67280a57927c9dc8ca7ef194abb64b636de6a736651aa5b743035052cad",
+          "bytes": 14333,
+          "lineCount": 523,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 218,
+              "endLine": 220,
+              "rangeSha256Utf8Lf": "eb1ee4b2bf810ac55fef57ed8e9f62869f0ecc67cd2ebb0415396e81b2634e8f",
+              "description": "actual fog buffer reads"
+            },
+            {
+              "startLine": 448,
+              "endLine": 455,
+              "rangeSha256Utf8Lf": "28a8a4136f1eb386c41fc13cc8ef3acde55f77748f838fa4c6190f50d5342689",
+              "description": "scene times transmission plus radiance"
+            }
+          ]
+        },
+        "shaders/shaders.properties": {
+          "sha256": "f8cc8df60f930612e8817e4176a34886c1a9de778c15427a5468ecbc4f71ee9a",
+          "bytes": 37567,
+          "lineCount": 561,
+          "anchors": [],
+          "reviewedRanges": []
+        }
+      },
+      "evidenceKind": "static source and digest study",
+      "referenceRuntimeVerified": false
+    },
+    {
+      "id": "hysteria",
+      "name": "Hysteria Universal v1.2.2（用户本地快照）",
+      "sourceRoot": "E:/着色器渲染/research/shaderpack-atmosphere/sources/hysteria/Hysteria-main",
+      "snapshotKind": "user_zip",
+      "commit": null,
+      "archive": "D:/MC/库/red.ghs.axolotl/profiles/测试 (1)/shaderpacks/Hysteria-Shaders-Universal-v1.2.2.zip",
+      "archiveSha256": "96fd64f9058a964d7014933c54f8d5d8833fca0854b20a82f8c772c5838f76d6",
+      "archiveBytes": 1584874,
+      "archiveMatchesPriorSnapshot": true,
+      "selectedFilesMatchArchive": {
+        "shaders/include/sky/clouds.glsl": true,
+        "shaders/include/fog/end_fog_vl.glsl": true,
+        "shaders/program/composite0.glsl": true,
+        "shaders/program/composite1.glsl": true,
+        "shaders/program/deferred1.glsl": true,
+        "shaders/program/deferred2.glsl": true,
+        "shaders/include/light/cloud_shadows.glsl": true,
+        "shaders/shaders.properties": true
+      },
+      "upstreamVersionCertified": false,
+      "license": {
+        "path": "E:/着色器渲染/research/shaderpack-atmosphere/sources/hysteria/Hysteria-main/LICENSE.md",
+        "sha256": "a7aa84d2e0c563f138c739ec336f405167ae4de0dcee5e9799574dcff1b13492",
+        "studyOnly": true,
+        "copyCodeOrTextures": false
+      },
+      "files": {
+        "shaders/include/sky/clouds.glsl": {
+          "sha256": "b0dd2ba304dbd90b7cf7ec1ee8f7906a7fd5abce12c01ecc56d182989426ec06",
+          "bytes": 46733,
+          "lineCount": 1240,
+          "anchors": [
+            {
+              "line": 106,
+              "lineSha256Utf8": "9a65a56e87adb6e896c5d74167a1adb1ab894878e1f5813aeed67320a9cd8bf6",
+              "description": "三维密度积云风场"
+            },
+            {
+              "line": 136,
+              "lineSha256Utf8": "5d6d8b495e7c6fcff6a01872860086bdefeca3dce31aea5dd61064a8147e7dc4",
+              "description": "三维curl噪声域扰动"
+            },
+            {
+              "line": 260,
+              "lineSha256Utf8": "dc77b1dd685f1b189fde1b24be839e05538fe4e9d41aaeb6d8683fbe02611456",
+              "description": "云射线地形截断"
+            },
+            {
+              "line": 1178,
+              "lineSha256Utf8": "1de7dcd0c5fed272648a2a42e9493afddb2cba34c3fe2bada9c2e5aace2b7ed3",
+              "description": "浓积云组合入口"
+            },
+            {
+              "line": 1190,
+              "lineSha256Utf8": "7ab1537dc3305a4f508f3dae8819cbb6ffc00864a6944e4889dfaa06d0415a2d",
+              "description": "卷云/卷积云组合入口"
+            }
+          ]
+        },
+        "shaders/include/fog/end_fog_vl.glsl": {
+          "sha256": "19febd2f6b0f09f5c9d8a9db5e33691c3dd9a5b83777903fe43e97b869fdf496",
+          "bytes": 6036,
+          "lineCount": 166,
+          "anchors": [
+            {
+              "line": 1,
+              "lineSha256Utf8": "b5312e5226ac762c9fcea07ba9c337ce6dfcb7ea5ed737c5bf0ff06de8b11a7c",
+              "description": "末地体积发光雾独立模块"
+            }
+          ],
+          "reviewedRanges": [
+            {
+              "startLine": 9,
+              "endLine": 42,
+              "rangeSha256Utf8Lf": "1be58a3b8450e6f978cbb0ba83569b7b491c6e62abeff10ef8ea00e59ad10216",
+              "description": "density scale versus emission palette"
+            },
+            {
+              "startLine": 45,
+              "endLine": 100,
+              "rangeSha256Utf8Lf": "06ddde66e90952de86abda43da068497a72ca2b29fdaea9ab64acf940d14446d",
+              "description": "finite volume and ray interval"
+            },
+            {
+              "startLine": 117,
+              "endLine": 163,
+              "rangeSha256Utf8Lf": "5a25c43663f57221a4ef1e824189893b49b70dae526ec960f400e4a51e197964",
+              "description": "light and emission integration"
+            }
+          ]
+        },
+        "shaders/program/composite0.glsl": {
+          "sha256": "597c167a1ba0e74140dbe6876770006885439959207ff5d196c10f65eef1bd7a",
+          "bytes": 6825,
+          "lineCount": 285,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 93,
+              "endLine": 96,
+              "rangeSha256Utf8Lf": "49e64f12aaa78319990a93838dfb33d0043fe64de14e2cf8d750eb9344bcbd2d",
+              "description": "actual fog target mapping"
+            },
+            {
+              "startLine": 247,
+              "endLine": 265,
+              "rangeSha256Utf8Lf": "8bb21246b7dd0c54cebb35c5a19e6d5782b7ba8afeee6a492bdb2ce2efe65630",
+              "description": "End fog invocation and assignment"
+            }
+          ]
+        },
+        "shaders/program/composite1.glsl": {
+          "sha256": "1aa0f07795d4faa6f363b46a5056b274c1aa12285daf6c279057f4c39b7c8d38",
+          "bytes": 14374,
+          "lineCount": 526,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 219,
+              "endLine": 220,
+              "rangeSha256Utf8Lf": "90adc999190797c6f99a869d2d574742e5a3b4789ece7d0f92d1c414c9b95480",
+              "description": "actual fog buffer reads"
+            },
+            {
+              "startLine": 494,
+              "endLine": 499,
+              "rangeSha256Utf8Lf": "b2c5e727033ae2b4ea3cd32aa326b5cd81b0d432e3cf7b203c4eb68bd5eb4db7",
+              "description": "scene fog blend"
+            }
+          ]
+        },
+        "shaders/program/deferred1.glsl": {
+          "sha256": "7d116affeb9092cbd234a5088135b01122c97c64748b7d96848e5018c50e8bab",
+          "bytes": 8428,
+          "lineCount": 318,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 135,
+              "endLine": 137,
+              "rangeSha256Utf8Lf": "d121c1d3ca439a4f840f59fa872925d6bc815ebfce734cb497daa164dec167b0",
+              "description": "actual cloud target mapping"
+            }
+          ]
+        },
+        "shaders/program/deferred2.glsl": {
+          "sha256": "45155903cfe85b36aa5d938e2313b03a19a89f144c4a3c3faf49610b43b49c81",
+          "bytes": 11508,
+          "lineCount": 337,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 41,
+              "endLine": 46,
+              "rangeSha256Utf8Lf": "18bef8d18dfa834cebf2935a8e2bff022d6b195ff80c66c52b659239311602de",
+              "description": "cloud history output mapping"
+            }
+          ]
+        },
+        "shaders/include/light/cloud_shadows.glsl": {
+          "sha256": "294653d79e53572be35b0b9e2b30e5a19522c063933169fe96f406d58365341f",
+          "bytes": 1775,
+          "lineCount": 51,
+          "anchors": [],
+          "reviewedRanges": []
+        },
+        "shaders/shaders.properties": {
+          "sha256": "9fca81da7061be7864ef86d0e31d2f5065d3430fbef5e2373dca1c85f9fedc80",
+          "bytes": 42082,
+          "lineCount": 525,
+          "anchors": [],
+          "reviewedRanges": []
+        }
+      },
+      "evidenceKind": "static source and digest study",
+      "referenceRuntimeVerified": false
+    },
+    {
+      "id": "bliss",
+      "name": "Bliss Shader Stable（已有固定提交）",
+      "sourceRoot": "E:/着色器渲染/research/procedural-sky-20261005/additional-sources/bliss/Bliss-Shader-81e403ed308141039a09d792a36f8eb328898a60",
+      "snapshotKind": "git_commit",
+      "commit": "81e403ed308141039a09d792a36f8eb328898a60",
+      "archive": "E:/着色器渲染/research/procedural-sky-20261005/additional-sources/Bliss-Shader.zip",
+      "archiveSha256": "bba09ad3417bed166073e3faa94154b7a72fdf641a73824ce36455cbb4366c5f",
+      "archiveBytes": 1840573,
+      "archiveMatchesPriorSnapshot": true,
+      "selectedFilesMatchArchive": {
+        "shaders/lib/volumetricClouds.glsl": true,
+        "shaders/dimensions/deferred.fsh": true,
+        "shaders/lib/end_fog.glsl": true
+      },
+      "upstreamVersionCertified": false,
+      "license": {
+        "path": "E:/着色器渲染/research/procedural-sky-20261005/additional-sources/bliss/Bliss-Shader-81e403ed308141039a09d792a36f8eb328898a60/LICENSE.md",
+        "sha256": "c613cdf36b473cfd7409393d85a902ab8af4a33c4f4f1abe3c003c725a7b5141",
+        "studyOnly": true,
+        "copyCodeOrTextures": false
+      },
+      "files": {
+        "shaders/lib/volumetricClouds.glsl": {
+          "sha256": "b7574b7673045863b34e004336830b741cd28e1fc0be99433fa1ca31cb2b1117",
+          "bytes": 23994,
+          "lineCount": 669,
+          "anchors": [
+            {
+              "line": 19,
+              "lineSha256Utf8": "87b7fd4b3aecad926e044b518a6181c0ad78062fe0359a2af2145d0cf6eb7b92",
+              "description": "每日天气覆盖和密度varying"
+            },
+            {
+              "line": 41,
+              "lineSha256Utf8": "5605cdacbec9d6c45af51660a4b5dd028a8d70846e6bb1fee0ff12ffd13cb647",
+              "description": "雨强改变三层覆盖"
+            },
+            {
+              "line": 63,
+              "lineSha256Utf8": "9288ef98a1444b9adfa819cf6ae1470877559f460387235c456039f17c03756c",
+              "description": "二维多通道噪声插值实现3D噪声"
+            },
+            {
+              "line": 69,
+              "lineSha256Utf8": "db0ba6922fdd5022efc9741c0093b833686d9550e1f77f41224b0902095e9436",
+              "description": "高层高层云密度"
+            },
+            {
+              "line": 295,
+              "lineSha256Utf8": "7928f1377e7eabfbbc35946c7e5dbd6ad0c40f341c0dcf28d04c69519c291487",
+              "description": "地形/DH最大距离遮挡"
+            },
+            {
+              "line": 328,
+              "lineSha256Utf8": "0b65d680051169f888265770851006dac3aad136770265e0e82dd58df81a61a0",
+              "description": "散射与指数透射率合成"
+            }
+          ],
+          "reviewedRanges": [
+            {
+              "startLine": 19,
+              "endLine": 47,
+              "rangeSha256Utf8Lf": "9711f6962cc8c164fcfc193e83f4d0da7b70429af1d48b3d845c1471671d7cdf",
+              "description": "three-layer weather parameters"
+            },
+            {
+              "startLine": 539,
+              "endLine": 560,
+              "rangeSha256Utf8Lf": "7f01ca73f13373c8e108eeffd5e9739431d5c07a4936a75359ed43753808fe1b",
+              "description": "three-layer actual render calls"
+            }
+          ]
+        },
+        "shaders/dimensions/deferred.fsh": {
+          "sha256": "64f7438ecee7e98553eeb7498bd8cf45e1f716c38e3dfb5808ccd19b482ae21b",
+          "bytes": 12927,
+          "lineCount": 386,
+          "anchors": [
+            {
+              "line": 289,
+              "lineSha256Utf8": "6dc841d56872fe879723eb0bbac4c1278c808c3808a5155e8b4de493aaac5704",
+              "description": "天空环境图云真实调用"
+            }
+          ]
+        },
+        "shaders/lib/end_fog.glsl": {
+          "sha256": "9892d58d2a4487222d75a2b65b33e0b3b7178975717b604b510f6a7ae22d6b02",
+          "bytes": 12317,
+          "lineCount": 356,
+          "anchors": [],
+          "reviewedRanges": [
+            {
+              "startLine": 66,
+              "endLine": 93,
+              "rangeSha256Utf8Lf": "6dc95142f454cd0410ae433576296615527b2125e5ff47a90687caa948a60ed1",
+              "description": "independent stable-snapshot world light setup"
+            }
+          ]
+        }
+      },
+      "evidenceKind": "static source and digest study",
+      "referenceRuntimeVerified": false
+    },
+    {
+      "id": "complementary",
+      "name": "Complementary Reimagined（本轮新增固定提交）",
+      "sourceRoot": "E:/着色器渲染/research/sky-materials-20261006/shaderpacks/sources/ComplementaryReimagined-c09950df0650b27dac260c1b0f69afc11387aa6f",
+      "snapshotKind": "git_commit",
+      "commit": "c09950df0650b27dac260c1b0f69afc11387aa6f",
+      "archive": "E:/着色器渲染/research/sky-materials-20261006/shaderpacks/ComplementaryReimagined-c09950df.zip",
+      "archiveSha256": "6fb45f3b8c8eb2888675a8ac6287ac605af673756fb67c52b765c0e9e6046695",
+      "archiveBytes": 605796,
+      "archiveMatchesPriorSnapshot": true,
+      "selectedFilesMatchArchive": {
+        "shaders/lib/atmospherics/clouds/reimaginedClouds.glsl": true,
+        "shaders/lib/atmospherics/clouds/mainClouds.glsl": true,
+        "shaders/lib/atmospherics/netherStorm.glsl": true,
+        "shaders/program/deferred1.glsl": true,
+        "shaders/program/composite1.glsl": true,
+        "shaders/shaders.properties": true
+      },
+      "upstreamVersionCertified": false,
+      "license": {
+        "path": "E:/着色器渲染/research/sky-materials-20261006/shaderpacks/sources/ComplementaryReimagined-c09950df0650b27dac260c1b0f69afc11387aa6f/License.txt",
+        "sha256": "580918e9032ff0355706d33493d014db14ede5704d8f3a5911cc9b6d08b75b4e",
+        "studyOnly": true,
+        "copyCodeOrTextures": false
+      },
+      "files": {
+        "shaders/lib/atmospherics/clouds/reimaginedClouds.glsl": {
+          "sha256": "904cbdd4e849eced061d5ef4fd5647fa6af340938ffe0ed318cb10a774cdba16",
+          "bytes": 6215,
+          "lineCount": 147,
+          "anchors": [
+            {
+              "line": 12,
+              "lineSha256Utf8": "a74135f7653d2ce5a8182d9226d7e9a7e297c0f9971bdb3ed374c98f1277532b",
+              "description": "云图蓝通道采样而非纯程序hash"
+            },
+            {
+              "line": 65,
+              "lineSha256Utf8": "7c9cf0e4100215c35f5e445c9a307de3f0fa9997a2089520f05c607bfc54b35c",
+              "description": "云高度区间射线循环"
+            },
+            {
+              "line": 140,
+              "lineSha256Utf8": "4db5ea8a8ef990da0450f18c52190a62c763c398bf16a971a45977aad35a0cd1",
+              "description": "Reimagined首次命中即停止，非所有体积积分"
+            }
+          ],
+          "reviewedRanges": [
+            {
+              "startLine": 6,
+              "endLine": 18,
+              "rangeSha256Utf8Lf": "2e7fba60e2d84a63467179f3d466363d691afa3c063eb68c547da5ab4a2229a0",
+              "description": "texture-backed threshold"
+            },
+            {
+              "startLine": 65,
+              "endLine": 142,
+              "rangeSha256Utf8Lf": "8b752e075a0cd8706ce79a083add6b2a7dcdbb1ecbb10d75769ca2b713d1f3a8",
+              "description": "first-hit cloud ray search"
+            }
+          ]
+        },
+        "shaders/lib/atmospherics/clouds/mainClouds.glsl": {
+          "sha256": "a6a2d383961efef6e32329035c6e21246461278ce24b8d031d568f614547495b",
+          "bytes": 5291,
+          "lineCount": 140,
+          "anchors": [
+            {
+              "line": 32,
+              "lineSha256Utf8": "3f1d73b1b07ff5ae912fbf776d16e7d0050092dee5dfa79c6a6b7fddfd72be4c",
+              "description": "场景阴影图控制云光照"
+            },
+            {
+              "line": 69,
+              "lineSha256Utf8": "d41114eb871363df67961d2be6429a6f754b98c1a45f4ebd5659e7b58bce1edd",
+              "description": "大坐标整数+小数处理Iris分支"
+            }
+          ]
+        },
+        "shaders/lib/atmospherics/netherStorm.glsl": {
+          "sha256": "243307e59e1dedc7b7711a4b685a6944f60d2dbee542387c5801ac80ca51d6ae",
+          "bytes": 2738,
+          "lineCount": 78,
+          "anchors": [
+            {
+              "line": 31,
+              "lineSha256Utf8": "7c9cf0e4100215c35f5e445c9a307de3f0fa9997a2089520f05c607bfc54b35c",
+              "description": "下界世界体积风暴射线积分"
+            },
+            {
+              "line": 42,
+              "lineSha256Utf8": "27f770cf6c70c668bc422c845fa54bb3a8e147ae27930d9fdfb69d6eb96da0a9",
+              "description": "噪声域扰动与高度密度"
+            }
+          ],
+          "reviewedRanges": [
+            {
+              "startLine": 1,
+              "endLine": 72,
+              "rangeSha256Utf8Lf": "42071702e54235607091dd92b7d0881098ac7d9741e0b3eb7e4a4d4578ccdeb1",
+              "description": "storm domain, density sum, transparency approximation"
+            }
+          ]
+        },
+        "shaders/program/deferred1.glsl": {
+          "sha256": "7f9f4482f1d1892815098fff65541c8fafa29cc848252610d0d4ec87437d8159",
+          "bytes": 17663,
+          "lineCount": 516,
+          "anchors": [
+            {
+              "line": 401,
+              "lineSha256Utf8": "82681215d5f39d8d60cf93f5002670c6b387a8b91c3bf1d5377c93dff0be74d3",
+              "description": "云真实pass调用"
+            }
+          ]
+        },
+        "shaders/program/composite1.glsl": {
+          "sha256": "6c15aa4c5bce5709a41799b9cee598141e91c0c0a934e3d8e74d7fcb8e146365",
+          "bytes": 13710,
+          "lineCount": 390,
+          "anchors": [
+            {
+              "line": 242,
+              "lineSha256Utf8": "d51a4db7b4ac9d06b9e8af37b44dd9e138f4f42af7f803ef870a25720683ec1b",
+              "description": "下界风暴真实调用"
+            }
+          ],
+          "reviewedRanges": [
+            {
+              "startLine": 238,
+              "endLine": 253,
+              "rangeSha256Utf8Lf": "7ff6bd6b9e7dfe159cf3f1dab3dd3cc31965887365ceac79c9edb2b9bf333046",
+              "description": "storm invocation and actual blend"
+            }
+          ]
+        },
+        "shaders/shaders.properties": {
+          "sha256": "8222397b0f79d37a623872b6672625a411345fe2b6b5dbd6e6cc298c5a5c9ed3",
+          "bytes": 23979,
+          "lineCount": 279,
+          "anchors": [
+            {
+              "line": 232,
+              "lineSha256Utf8": "9096dd2ed499b9bb8f2b20b89ef16e05d9888986af089fcb9620bd1c09aa584f",
+              "description": "云图纹理资源绑定"
+            }
+          ]
+        }
+      },
+      "evidenceKind": "static source and digest study",
+      "referenceRuntimeVerified": false
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "legacyAnchorCount": 44,
+    "legacyAnchorsPassed": true,
+    "bliss212RangeCount": 32,
+    "bliss212RangesPassed": true,
+    "selectedSnapshotChecksPassed": true,
+    "referenceRuntimeVerified": false
+  },
+  "limits": [
+    "The 44 historical anchors include auxiliary AstraLex/Lux. Their anchors were rechecked, but no new runtime or full manual audit was performed for these auxiliaries.",
+    "A digest match confirms the referenced bytes, not visual quality, mathematical correctness or compatibility with Forge.",
+    "Solas is a local modified snapshot. Its MC_VERSION>=12100 End-flash branch does not establish Forge 1.20.1 support."
+  ]
+}

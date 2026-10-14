@@ -1,0 +1,27 @@
+{
+  "implementation": "One historical sword plume, narrow white spine, procedural curling veins, tapered fade, optional roll helix and sparse fragments",
+  "java17TargetedCompile": "PASS: three production classes and standalone history checks, no warnings",
+  "historyChecks": "PASS: duplicate ticks, fixed-tick cumulative arc, stopping expiry, 8-block teleport reset, finite inputs, 256-point capacity, UV continuity",
+  "glslChecks": {
+    "nativePostMaxDelta": 0,
+    "animatedPixels": 9199,
+    "visiblePixels": 8240,
+    "occludedPixels": 0,
+    "whiteSpinePixels": 168,
+    "glError": 0,
+    "scope": "Actual production GLSL in WebGL2, synthetic geometry; Minecraft/Oculus runtime pending"
+  },
+  "renderState": "Native endBatch and latepost both use MeteorBloomRenderer.State; latepost post.clear runs in finally",
+  "runtimeScope": "Root will build and capture BASIC/JIYU/DUNXU actual swords in native/Oculus enabled paths; not yet claimed passed here",
+  "productionFiles": {
+    "src/main/java/cn/blockforge/generated/generatedmod/client/FlyingSwordEffects.java": "58561ade22c4907294166fb2a1d25c1ffa4d6b50ef05d7dd644213ebde2a51ab",
+    "src/main/java/cn/blockforge/generated/generatedmod/client/SwordFlightTrailHistory.java": "1347cff4e72695046a5ca46b1b94d513aee9d100ff7c6c5f86ce73cc3fb3b2e7",
+    "src/main/java/cn/blockforge/generated/generatedmod/client/SwordFlightTrailRenderer.java": "e9ff205e5f0ef81ef47a8b515f5233ee92b11f5244b5ab2cc238e47c48b96edd",
+    "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.vsh": "483337ed6e507a95f5b43e79e6ce09c4c2e8e6c9b51a03d4f8256a3b03b9b25f",
+    "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.fsh": "81f4a933af77be6d2fc2ab4f4125197679d3f7dd45c2d935f784d37349e50b31",
+    "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.json": "b60046525225c8094680f60c864050c2b4d2423ace39e63eeae1fe1087dc054f",
+    "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.vsh": "50663f71b33d6f9f4e8eb5cdf3e42565e260b374117222d4595fbb6f010be5bc",
+    "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.fsh": "4ef1083680fd2eed2961df017a83a5ab461ba9b9934299b736ac33b56b8680eb",
+    "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.json": "a8a9a7dfccacafe7ca2df2076a4aeb909c260c957f9d09af2ecf3a91c61c742c"
+  }
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>灵力御体 · 流光工坊</title><link rel="stylesheet" href="workbench.css">
+</head><body>
+<header><div><span class="eyebrow">装备附魔 · 外观设计</span><h1>灵力御体<span>流光工坊</span></h1></div><div class="header-actions"><button id="import">导入配方</button><button id="export" class="primary">导出配方</button><input id="file" type="file" accept=".json,application/json" hidden></div></header>
+<main><aside>
+ <div class="panel-head"><h2>流光调节</h2><button id="reset" class="text-button">恢复预设</button></div>
+ <p id="description" class="description"></p><div class="color-pair"><label>主色<input id="color" type="color" value="#a3d9ff"></label><label>辅色<input id="color2" type="color" value="#e5f6ff"></label></div><div id="sliders"></div>
+ <div class="surface-note"><span class="note-dot"></span><p>原贴图保持不变。光纹只附着在装备表面，淡蓝亮纹之间留出底材。</p></div>
+</aside><div class="workspace">
+ <section class="preview-panel" aria-label="装备流光预览">
+  <div class="preview-toolbar"><label>装备<select id="shape"><option value="chest">胸甲</option><option value="suit">全身护甲</option><option value="helmet">头盔</option><option value="boots">靴子</option><option value="legs">护腿</option><option value="sword">长剑</option></select></label><label>装备贴图<select id="material"><option value="iron">铁甲</option><option value="diamond">钻石甲</option><option value="netherite" selected>下界合金甲</option><option value="gold">金甲</option></select></label><label class="check"><input id="orbit" type="checkbox">慢转观察</label><button id="front" class="small">正面</button><button id="right" class="small">右侧</button><button id="back" class="small">背面</button><button id="left" class="small">左侧</button></div>
+  <div class="stage"><div class="view-labels"><span>原装备样件</span><span id="selected-name">水光御体</span></div><canvas id="view" aria-label="左侧原装备，右侧御体流光；拖动旋转模型"></canvas><div class="stage-hint">拖动旋转 · 同一装备，原貌与附魔效果对照</div><div id="error" role="alert" hidden></div></div>
+  <div class="playback"><button id="pause" class="primary">暂停</button><button id="replay">重播</button><button id="hit">受击回放</button><div id="clock" aria-live="off">流动中 · 0.0 秒</div><button id="capture" class="small">保存对比图</button></div>
+  <label class="timeline-label" for="timeline">回放时刻<input id="timeline" type="range" min="0" max="12" step="0.05" value="0"><span>拖动暂停，可逐帧比较</span></label><div class="shot-buttons"><span>流光分镜</span><button data-shot="0">初入</button><button data-shot="0.9">掠过</button><button data-shot="1.8">退去</button></div><div class="shot-buttons"><span>受击分镜</span><button data-impact="0.15">接触</button><button data-impact="0.35">扩散</button><button data-impact="0.9">消散</button></div><p id="model-note" class="model-note"></p>
+ </section>
+ <section class="presets-panel" aria-label="灵力御体样稿"><div class="panel-head"><div><h2>灵力御体 · 设计对照</h2><p class="muted">错峰光流、游走护纹、凝光回应；保留水光原版作对照。</p></div><span class="count">4</span></div><div id="chosen-presets" class="chosen-presets"></div><details class="legacy"><summary>展开旧版效果对照</summary><div id="presets" class="preset-grid"></div></details></section>
+ <p id="message" class="message" role="status">新版为设计样稿，配方用于后续接入；尚未修改游戏里的附魔效果。</p>
+</div></main><script type="module" src="workbench.js?v=dragon-wrap-1"></script></body></html>

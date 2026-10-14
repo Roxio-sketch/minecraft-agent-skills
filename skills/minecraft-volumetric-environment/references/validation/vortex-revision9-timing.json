@@ -1,0 +1,62 @@
+{
+  "scope": "Edge headless actual render plus PNG and RGBA capture; not runtime FPS benchmark",
+  "previewSha256": "564aded79203ef477d1977373a735f14ae69be69b2044f068aced39566d6bf7f",
+  "reusedScene": true,
+  "initialMs": 24,
+  "frameTimings": [
+    {
+      "mode": 1,
+      "view": "outside",
+      "time": 0,
+      "renderCaptureMs": 117
+    },
+    {
+      "mode": 1,
+      "view": "outside",
+      "time": 8.1,
+      "renderCaptureMs": 136
+    },
+    {
+      "mode": 1,
+      "view": "outside",
+      "time": 21.599999999999998,
+      "renderCaptureMs": 146
+    },
+    {
+      "mode": 1,
+      "view": "liquid",
+      "time": 21.599999999999998,
+      "renderCaptureMs": 235
+    },
+    {
+      "mode": 2,
+      "view": "outside",
+      "time": 0,
+      "renderCaptureMs": 120
+    },
+    {
+      "mode": 2,
+      "view": "outside",
+      "time": 8.1,
+      "renderCaptureMs": 117
+    },
+    {
+      "mode": 2,
+      "view": "outside",
+      "time": 21.599999999999998,
+      "renderCaptureMs": 139
+    },
+    {
+      "mode": 2,
+      "view": "liquid",
+      "time": 21.599999999999998,
+      "renderCaptureMs": 226
+    },
+    {
+      "mode": 2,
+      "view": "mouth",
+      "time": 21.599999999999998,
+      "renderCaptureMs": 172
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "世界体积环境"
+  short_description: "世界体积云雾与 Forge 基础后端，另含渡劫黑云、龙吸水和水龙卷工作台"
+  default_prompt: "使用 $minecraft-volumetric-environment 制作可调世界体积云雾、陆地龙卷、龙吸水或水龙卷，提供实际预览与完整配方，并区分工作台效果和已验证的 Forge 后端。"

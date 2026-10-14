@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "id": "aurora",
+  "mode": "spatial",
+  "stops": [
+    {"at": 0, "color": "#32FFD2"},
+    {"at": 0.45, "color": "#4D8DFF"},
+    {"at": 1, "color": "#DA56FF"}
+  ],
+  "interpolation": "linear-rgb",
+  "wrap": "pingpong",
+  "axis": "diagonal",
+  "bands": 1,
+  "strength": 1.0,
+  "tileable": true
+}

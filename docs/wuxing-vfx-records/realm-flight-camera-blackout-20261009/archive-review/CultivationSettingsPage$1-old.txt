@@ -1,0 +1,61 @@
+Compiled from "CultivationSettingsPage.java"
+class cn.blockforge.generated.generatedmod.client.CultivationSettingsPage$1 extends cn.blockforge.generated.generatedmod.client.CultivationUi$Slider {
+  final cn.blockforge.generated.generatedmod.client.CultivationSettingsPage this$0;
+    descriptor: Lcn/blockforge/generated/generatedmod/client/CultivationSettingsPage;
+
+  cn.blockforge.generated.generatedmod.client.CultivationSettingsPage$1(cn.blockforge.generated.generatedmod.client.CultivationSettingsPage, int, int, int, java.lang.String, net.minecraftforge.common.ForgeConfigSpec$DoubleValue, double, double, double);
+    descriptor: (Lcn/blockforge/generated/generatedmod/client/CultivationSettingsPage;IIILjava/lang/String;Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;DDD)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #27                 // Field this$0:Lcn/blockforge/generated/generatedmod/client/CultivationSettingsPage;
+       5: aload_0
+       6: iload_2
+       7: iload_3
+       8: iload         4
+      10: aload         5
+      12: aload         6
+      14: dload         7
+      16: dload         9
+      18: dload         11
+      20: invokespecial #30                 // Method cn/blockforge/generated/generatedmod/client/CultivationUi$Slider."<init>":(IIILjava/lang/String;Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;DDD)V
+      23: return
+
+  protected void m_5697_();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #48                 // Method cn/blockforge/generated/generatedmod/client/CultivationUi$Slider.m_5697_:()V
+       4: getstatic     #54                 // Field cn/blockforge/generated/generatedmod/HudConfig.BOSS_AUTO:Lnet/minecraftforge/common/ForgeConfigSpec$BooleanValue;
+       7: iconst_0
+       8: invokestatic  #60                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      11: invokevirtual #64                 // Method net/minecraftforge/common/ForgeConfigSpec$BooleanValue.set:(Ljava/lang/Object;)V
+      14: return
+
+  public void m_7691_(double, double);
+    descriptor: (DD)V
+    Code:
+       0: aload_0
+       1: dload_1
+       2: dload_3
+       3: invokespecial #68                 // Method cn/blockforge/generated/generatedmod/client/CultivationUi$Slider.m_7691_:(DD)V
+       6: getstatic     #54                 // Field cn/blockforge/generated/generatedmod/HudConfig.BOSS_AUTO:Lnet/minecraftforge/common/ForgeConfigSpec$BooleanValue;
+       9: invokevirtual #71                 // Method net/minecraftforge/common/ForgeConfigSpec$BooleanValue.save:()V
+      12: return
+
+  public boolean m_7933_(int, int, int);
+    descriptor: (III)Z
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: iload_3
+       4: invokespecial #77                 // Method cn/blockforge/generated/generatedmod/client/CultivationUi$Slider.m_7933_:(III)Z
+       7: istore        4
+       9: iload         4
+      11: ifeq          20
+      14: getstatic     #54                 // Field cn/blockforge/generated/generatedmod/HudConfig.BOSS_AUTO:Lnet/minecraftforge/common/ForgeConfigSpec$BooleanValue;
+      17: invokevirtual #71                 // Method net/minecraftforge/common/ForgeConfigSpec$BooleanValue.save:()V
+      20: iload         4
+      22: ireturn
+}

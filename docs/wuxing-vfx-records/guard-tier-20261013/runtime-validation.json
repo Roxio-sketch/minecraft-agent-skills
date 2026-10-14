@@ -1,0 +1,657 @@
+{
+  "scope": "Forge 1.20.1 / Oculus buffered world / worn iron armor / isolated real client",
+  "all_required_capture_checks_passed": true,
+  "visual_review_items": [],
+  "captured_frames": 13,
+  "gl_errors": 0,
+  "world_draw_frames": 13,
+  "gui_draw_frames": 0,
+  "genuine_production_hit_packets": [
+    {
+      "tier": 1,
+      "tick": 71,
+      "hit_world_time": 6030.0
+    },
+    {
+      "tier": 2,
+      "tick": 121,
+      "hit_world_time": 92430.0
+    },
+    {
+      "tier": 3,
+      "tick": 171,
+      "hit_world_time": 178830.0
+    },
+    {
+      "tier": 4,
+      "tick": 221,
+      "hit_world_time": 265230.0
+    }
+  ],
+  "actual_equipment_levels_field": "guardLevels",
+  "mixed_slot_guard_levels": {
+    "head": 1,
+    "chest": 2,
+    "legs": 3,
+    "feet": 4
+  },
+  "mixed_slot_image_comparisons": {
+    "head": {
+      "expected_level": 1,
+      "actual_equipment_level": 1,
+      "region_xyxy": [
+        553,
+        356,
+        728,
+        444
+      ],
+      "same_rgb_pixel_fraction": 0.9965584415584415,
+      "max_rgb_delta": 2,
+      "pixels_rgb_delta_over_12": 0,
+      "cyan_pixels_rgb_delta_over_12": 0
+    },
+    "chest": {
+      "expected_level": 2,
+      "actual_equipment_level": 2,
+      "region_xyxy": [
+        573,
+        536,
+        709,
+        632
+      ],
+      "same_rgb_pixel_fraction": 0.8498008578431373,
+      "max_rgb_delta": 119,
+      "pixels_rgb_delta_over_12": 1457,
+      "cyan_pixels_rgb_delta_over_12": 295,
+      "stable_core_region_xyxy": [
+        580,
+        536,
+        690,
+        632
+      ],
+      "stable_core_cyan_pixels_rgb_delta_over_12": 0
+    },
+    "legs": {
+      "expected_level": 3,
+      "actual_equipment_level": 3,
+      "region_xyxy": [
+        573,
+        714,
+        708,
+        817
+      ],
+      "same_rgb_pixel_fraction": 0.993455591513844,
+      "max_rgb_delta": 1,
+      "pixels_rgb_delta_over_12": 0,
+      "cyan_pixels_rgb_delta_over_12": 0
+    },
+    "feet": {
+      "expected_level": 4,
+      "actual_equipment_level": 4,
+      "region_xyxy": [
+        563,
+        820,
+        718,
+        900
+      ],
+      "same_rgb_pixel_fraction": 0.9809677419354839,
+      "max_rgb_delta": 1,
+      "pixels_rgb_delta_over_12": 0,
+      "cyan_pixels_rgb_delta_over_12": 0
+    }
+  },
+  "mixed_slot_visual_diagnostics": {
+    "shader_clock_wrapped": 6020,
+    "chest_region_xyxy": [
+      573,
+      536,
+      709,
+      632
+    ],
+    "stable_chest_core_region_xyxy": [
+      580,
+      536,
+      690,
+      632
+    ],
+    "rule": "cyan in either frame and max absolute RGB delta > 12; cyan=B-R>25,B-G>5,G>130",
+    "files": [
+      "diagnostic-slot-crops.png",
+      "diagnostic-chest-II-mixed-III.png",
+      "diagnostic-chest-blue-diff.png"
+    ],
+    "mixed_vs_tier_2": {
+      "changed_cyan_pixels": 295,
+      "changed_cyan_bbox_xyxy": [
+        692,
+        544,
+        709,
+        594
+      ],
+      "mixed_only_cyan_pixels": 283,
+      "reference_only_cyan_pixels": 12,
+      "both_cyan_changed_pixels": 0,
+      "stable_chest_core_changed_cyan_pixels": 0
+    },
+    "mixed_vs_tier_3": {
+      "changed_cyan_pixels": 906,
+      "changed_cyan_bbox_xyxy": [
+        656,
+        538,
+        709,
+        632
+      ],
+      "mixed_only_cyan_pixels": 411,
+      "reference_only_cyan_pixels": 310,
+      "both_cyan_changed_pixels": 185,
+      "stable_chest_core_changed_cyan_pixels": 460
+    }
+  },
+  "tier_metrics": [
+    {
+      "tier": 1,
+      "name": "初护",
+      "mask_strokes": 8,
+      "motion_cyan_pixels_rgb_delta_over_12": 556,
+      "cyan_pixels_a_in_armor_regions": 739,
+      "cyan_pixels_b_in_armor_regions": 391,
+      "sample_tick_delta": 8,
+      "hit_age_ticks": 6.0,
+      "health_before_hit": 83.0,
+      "health_at_hit_frame": 82.06267
+    },
+    {
+      "tier": 2,
+      "name": "成纹",
+      "mask_strokes": 18,
+      "motion_cyan_pixels_rgb_delta_over_12": 410,
+      "cyan_pixels_a_in_armor_regions": 2066,
+      "cyan_pixels_b_in_armor_regions": 1947,
+      "sample_tick_delta": 8,
+      "hit_age_ticks": 6.0,
+      "health_before_hit": 82.22933,
+      "health_at_hit_frame": 81.40133
+    },
+    {
+      "tier": 3,
+      "name": "云篆",
+      "mask_strokes": 25,
+      "motion_cyan_pixels_rgb_delta_over_12": 1163,
+      "cyan_pixels_a_in_armor_regions": 1488,
+      "cyan_pixels_b_in_armor_regions": 881,
+      "sample_tick_delta": 8,
+      "hit_age_ticks": 6.0,
+      "health_before_hit": 82.40133,
+      "health_at_hit_frame": 81.84933
+    },
+    {
+      "tier": 4,
+      "name": "护篆",
+      "mask_strokes": 33,
+      "motion_cyan_pixels_rgb_delta_over_12": 694,
+      "cyan_pixels_a_in_armor_regions": 1713,
+      "cyan_pixels_b_in_armor_regions": 1536,
+      "sample_tick_delta": 8,
+      "hit_age_ticks": 6.0,
+      "health_before_hit": 81.84933,
+      "health_at_hit_frame": 81.573326
+    }
+  ],
+  "motion_regions_xyxy": [
+    [
+      574,
+      536,
+      710,
+      675
+    ],
+    [
+      580,
+      722,
+      700,
+      820
+    ],
+    [
+      574,
+      377,
+      707,
+      420
+    ]
+  ],
+  "mask_texture_size": [
+    1024,
+    512
+  ],
+  "mask_strokes_per_tier": [
+    8,
+    18,
+    25,
+    33
+  ],
+  "png_crop_xyxy": [
+    470,
+    330,
+    810,
+    900
+  ],
+  "png_preview_source_pixel_scale": 1,
+  "png_preview_rgb_crops_exact": true,
+  "png_previews": [
+    {
+      "file": "tier-1-preview.png",
+      "source_pixel_scale": 1,
+      "rgb_crop_exact": true,
+      "panels": [
+        {
+          "paste_xy": [
+            24,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            382,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            740,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        }
+      ]
+    },
+    {
+      "file": "tier-2-preview.png",
+      "source_pixel_scale": 1,
+      "rgb_crop_exact": true,
+      "panels": [
+        {
+          "paste_xy": [
+            24,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            382,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            740,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        }
+      ]
+    },
+    {
+      "file": "tier-3-preview.png",
+      "source_pixel_scale": 1,
+      "rgb_crop_exact": true,
+      "panels": [
+        {
+          "paste_xy": [
+            24,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            382,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            740,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        }
+      ]
+    },
+    {
+      "file": "tier-4-preview.png",
+      "source_pixel_scale": 1,
+      "rgb_crop_exact": true,
+      "panels": [
+        {
+          "paste_xy": [
+            24,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            382,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            740,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        }
+      ]
+    },
+    {
+      "file": "guard-tier-game-comparison.png",
+      "source_pixel_scale": 1,
+      "rgb_crop_exact": true,
+      "panels": [
+        {
+          "paste_xy": [
+            24,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            382,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            740,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            1098,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        }
+      ]
+    },
+    {
+      "file": "guard-tier-real-hits.png",
+      "source_pixel_scale": 1,
+      "rgb_crop_exact": true,
+      "panels": [
+        {
+          "paste_xy": [
+            24,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            382,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            740,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        },
+        {
+          "paste_xy": [
+            1098,
+            106
+          ],
+          "crop_xyxy": [
+            470,
+            330,
+            810,
+            900
+          ]
+        }
+      ]
+    },
+    {
+      "file": "guard-tier-mixed-slots.png",
+      "rgb_crop_exact": true,
+      "source_pixel_scale": 1,
+      "crop_xyxy": [
+        470,
+        330,
+        810,
+        900
+      ],
+      "paste_xy": [
+        24,
+        94
+      ]
+    }
+  ],
+  "gif_previews": [
+    {
+      "file": "tier-1-motion.gif",
+      "sampled_frames": 3,
+      "duration_ms_per_frame": 400,
+      "interpolated_frames": 0,
+      "dithering": false,
+      "palette_quantization": [
+        {
+          "mean_rgb_absolute_error": 0.011659786721706226,
+          "max_rgb_absolute_error": 33,
+          "unchanged_pixel_fraction": 0.9928070175438597
+        },
+        {
+          "mean_rgb_absolute_error": 0.007370141038871689,
+          "max_rgb_absolute_error": 12,
+          "unchanged_pixel_fraction": 0.995686274509804
+        },
+        {
+          "mean_rgb_absolute_error": 0.023367733058135536,
+          "max_rgb_absolute_error": 22,
+          "unchanged_pixel_fraction": 0.9845356037151702
+        }
+      ]
+    },
+    {
+      "file": "tier-2-motion.gif",
+      "sampled_frames": 3,
+      "duration_ms_per_frame": 400,
+      "interpolated_frames": 0,
+      "dithering": false,
+      "palette_quantization": [
+        {
+          "mean_rgb_absolute_error": 0.046420708634330926,
+          "max_rgb_absolute_error": 24,
+          "unchanged_pixel_fraction": 0.9645201238390093
+        },
+        {
+          "mean_rgb_absolute_error": 0.042721018231854146,
+          "max_rgb_absolute_error": 34,
+          "unchanged_pixel_fraction": 0.9647213622291022
+        },
+        {
+          "mean_rgb_absolute_error": 0.10084451324389405,
+          "max_rgb_absolute_error": 22,
+          "unchanged_pixel_fraction": 0.9242466460268318
+        }
+      ]
+    },
+    {
+      "file": "tier-3-motion.gif",
+      "sampled_frames": 3,
+      "duration_ms_per_frame": 400,
+      "interpolated_frames": 0,
+      "dithering": false,
+      "palette_quantization": [
+        {
+          "mean_rgb_absolute_error": 0.03370657034743722,
+          "max_rgb_absolute_error": 27,
+          "unchanged_pixel_fraction": 0.9751651186790505
+        },
+        {
+          "mean_rgb_absolute_error": 0.018624011007911938,
+          "max_rgb_absolute_error": 15,
+          "unchanged_pixel_fraction": 0.9867595459236326
+        },
+        {
+          "mean_rgb_absolute_error": 0.04799621603027176,
+          "max_rgb_absolute_error": 20,
+          "unchanged_pixel_fraction": 0.9570691434468525
+        }
+      ]
+    },
+    {
+      "file": "tier-4-motion.gif",
+      "sampled_frames": 3,
+      "duration_ms_per_frame": 400,
+      "interpolated_frames": 0,
+      "dithering": false,
+      "palette_quantization": [
+        {
+          "mean_rgb_absolute_error": 0.04651358789129687,
+          "max_rgb_absolute_error": 25,
+          "unchanged_pixel_fraction": 0.9675180598555212
+        },
+        {
+          "mean_rgb_absolute_error": 0.03824045407636739,
+          "max_rgb_absolute_error": 28,
+          "unchanged_pixel_fraction": 0.9701238390092879
+        },
+        {
+          "mean_rgb_absolute_error": 0.11332301341589267,
+          "max_rgb_absolute_error": 25,
+          "unchanged_pixel_fraction": 0.9124974200206398
+        }
+      ]
+    }
+  ],
+  "raw_capture_sha256": {
+    "tier-1-dynamic-a.png": "6606b42efcad4887cb3a02e1015cfe066083d4fb4528dda4926a4bc297cb5f80",
+    "tier-1-dynamic-b.png": "7386ea5b49efc3180ddfe9428edc53d8235a5deb2006ae8f1210ec329c57a91a",
+    "tier-1-hit-peak.png": "e87c34ae1348ef321e5e29f7654649e9532ea522ef5d0b0ae64e6e38569cbbfd",
+    "tier-2-dynamic-a.png": "0df5e3fda88893f37e098d5dc3e71da6b61f394906e714fa538e8a218f874de5",
+    "tier-2-dynamic-b.png": "9a13a3a1964e7e2e8cf1bf9659775d288a195fa9b80dd024d725a11d1a8e402a",
+    "tier-2-hit-peak.png": "8f98b83b742de5ba30a30f82c6bf4bac9dbcf907933b479a4bc9860e89f0c303",
+    "tier-3-dynamic-a.png": "b38d8ac5495255dd4c2afbd970cd9db2b85753eb9095d2f9a6d4ec6aa54b28b3",
+    "tier-3-dynamic-b.png": "0c7481cfc6ea2e03ad16fbdd8be2ae95ee534746d3fb75121faa53fc7a1a50ba",
+    "tier-3-hit-peak.png": "535be1cc807e3905aa4f0f298ecd9cc6f6647ed02fb14037a99badabb15484e4",
+    "tier-4-dynamic-a.png": "30eccf14ec2498663be255addb9bb93d4b41cf86785841debe074281267dab1a",
+    "tier-4-dynamic-b.png": "c0677e00f078c3e182d3601b4bdc2a90018773ad3c45ebe5452e49bb0f9412ca",
+    "tier-4-hit-peak.png": "8dccc8ff8c08b3db4b7b17a117bda11973d898d66491b64fd6178c31ca6cab49",
+    "mixed-slots-1-2-3-4.png": "779c5bffb8761dbb6e8d72349a8cf89da73550a44351e3b4f403f65857b9b175"
+  },
+  "limitations": [
+    "GIF palette quantization changes some RGB values; raw captures and PNG previews are the color evidence.",
+    "Two idle frames and one real hit frame per tier are sampled; no continuous-motion recording or synthesized interpolation.",
+    "Captures use Oculus without an external shader pack; external shader pack compatibility is not accepted here.",
+    "This 13-frame fixture does not test shader resource reload, inventory rendering, occlusion, custom armor UVs, or rear/side views.",
+    "The original camera clips the lower boots at the screen bottom; previews retain the existing view."
+  ]
+}

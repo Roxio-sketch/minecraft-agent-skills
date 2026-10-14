@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "id": "rose_gold",
+  "mode": "solid",
+  "stops": [
+    {
+      "at": 0.0,
+      "color": "#F5A7B8"
+    }
+  ],
+  "strength": 1.0,
+  "interpolation": "linear-rgb",
+  "wrap": "pingpong",
+  "axis": "u",
+  "bands": 1.0,
+  "phase": 0.0,
+  "period_seconds": 6.0,
+  "tileable": true
+}

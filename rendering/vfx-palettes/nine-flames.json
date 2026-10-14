@@ -1,0 +1,78 @@
+{
+  "schema": "flame-palettes/1",
+  "defaultId": "slot5",
+  "palettes": [
+    {
+      "id": "slot1",
+      "name": "赤炎流火",
+      "style": "red_flow · 项目原三层色阶",
+      "fireCore": "#fff0bb",
+      "fireMid": "#ff7420",
+      "fireEdge": "#b92b16"
+    },
+    {
+      "id": "slot2",
+      "name": "熔金淬火",
+      "style": "molten_gold · 项目原三层色阶",
+      "fireCore": "#fff6ac",
+      "fireMid": "#ffaa28",
+      "fireEdge": "#ad5216"
+    },
+    {
+      "id": "slot3",
+      "name": "枯骨冷火",
+      "style": "cold_ash · 项目原三层色阶",
+      "fireCore": "#e1e1d0",
+      "fireMid": "#d2d2b4",
+      "fireEdge": "#777d83"
+    },
+    {
+      "id": "slot4",
+      "name": "青木灵火",
+      "style": "azure_wood · 项目原三层色阶",
+      "fireCore": "#c2ffd8",
+      "fireMid": "#3cc882",
+      "fireEdge": "#17634d"
+    },
+    {
+      "id": "slot5",
+      "name": "碧海沧火",
+      "style": "cobalt_sea · 项目原三层色阶",
+      "fireCore": "#e8fbff",
+      "fireMid": "#32a0ff",
+      "fireEdge": "#1c477c"
+    },
+    {
+      "id": "slot6",
+      "name": "紫霄雷火",
+      "style": "violet_thunder · 项目原三层色阶",
+      "fireCore": "#eacdff",
+      "fireMid": "#aa50ff",
+      "fireEdge": "#472074"
+    },
+    {
+      "id": "slot7",
+      "name": "大日圣火",
+      "style": "sun_saint · 项目原三层色阶",
+      "fireCore": "#ffffff",
+      "fireMid": "#fffadc",
+      "fireEdge": "#b49349"
+    },
+    {
+      "id": "slot8",
+      "name": "九幽冥火",
+      "style": "nether_void · 项目原三层色阶",
+      "fireCore": "#764897",
+      "fireMid": "#280a3c",
+      "fireEdge": "#10051b"
+    },
+    {
+      "id": "slot9",
+      "name": "涅槃神火",
+      "style": "nirvana · 项目原三层色阶；此处为静态青碧起点，项目的轮转色另由宿主驱动",
+      "fireCore": "#f4ffff",
+      "fireMid": "#40e0d0",
+      "fireEdge": "#235b68"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "key.categories.vfxworkbench": "特效调试工作台",
+  "key.vfxworkbench.open": "打开特效调试工作台",
+  "key.vfxworkbench.trigger": "触发当前特效",
+  "key.vfxworkbench.stop": "停止当前特效",
+  "message.vfxworkbench.triggered": "已触发：%s",
+  "message.vfxworkbench.stopped": "已停止：%s"
+}

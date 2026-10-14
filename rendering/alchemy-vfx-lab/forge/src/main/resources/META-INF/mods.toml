@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="alchemyvfx"
+version="0.2.0"
+displayName="Alchemy Volume VFX"
+description='''Client volume rendering for Wu Xing Xian Tu formed alchemy furnaces.'''
+[[dependencies.alchemyvfx]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.alchemyvfx]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="CLIENT"

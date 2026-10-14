@@ -1,0 +1,109 @@
+{
+  "runtime": [
+    {
+      "mode": "disabled",
+      "captures": 36,
+      "checks": 152,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "oculusInstalled": true,
+      "glErrors": [],
+      "scopeTests": [
+        {
+          "tick": 80,
+          "name": "exact_scope_restore_normal",
+          "pass": true,
+          "detail": "Entry unit2 sentinel; actual shader apply; precise State boundary differences=[]"
+        },
+        {
+          "tick": 80,
+          "name": "exact_scope_restore_exception_finally",
+          "pass": true,
+          "detail": "Entry unit2 sentinel; actual shader apply; precise State boundary differences=[]"
+        }
+      ],
+      "minLuma": 141.83427109364754
+    },
+    {
+      "mode": "native",
+      "captures": 36,
+      "checks": 152,
+      "actualPackActive": false,
+      "packName": "none",
+      "oculusInstalled": false,
+      "glErrors": [],
+      "scopeTests": [
+        {
+          "tick": 80,
+          "name": "exact_scope_restore_normal",
+          "pass": true,
+          "detail": "Entry unit2 sentinel; actual shader apply; precise State boundary differences=[]"
+        },
+        {
+          "tick": 80,
+          "name": "exact_scope_restore_exception_finally",
+          "pass": true,
+          "detail": "Entry unit2 sentinel; actual shader apply; precise State boundary differences=[]"
+        }
+      ],
+      "minLuma": 141.83626546093234
+    },
+    {
+      "mode": "solas",
+      "captures": 36,
+      "checks": 152,
+      "actualPackActive": true,
+      "packName": "Solas Shader V3.7b.zip",
+      "oculusInstalled": true,
+      "glErrors": [],
+      "scopeTests": [
+        {
+          "tick": 80,
+          "name": "exact_scope_restore_normal",
+          "pass": true,
+          "detail": "Entry unit2 sentinel; actual shader apply; precise State boundary differences=[]"
+        },
+        {
+          "tick": 80,
+          "name": "exact_scope_restore_exception_finally",
+          "pass": true,
+          "detail": "Entry unit2 sentinel; actual shader apply; precise State boundary differences=[]"
+        }
+      ],
+      "minLuma": 38.63695328459031
+    }
+  ],
+  "archive": {
+    "jar": "E:\\五行仙途\\build\\libs\\wuxingxiantu-0.2.jar",
+    "sourceSha256": "47A1A03791273009A65860174BB330D473EAAA54F2EA1F78A6DCFDAC2EC92495",
+    "previousJar": "D:\\MC\\库\\red.ghs.axolotl\\profiles\\测试 (1)\\mod-backups\\wuxingxiantu-0.2-before-camera-blackout-fix-20261009-101859.jar",
+    "previousInstalledSha256": "2E61B8A7BEADC1A4505B3851F9BEE4306144B958514C32DEB592ACC48ED7641B",
+    "added": [],
+    "removed": [],
+    "changed": [
+      "META-INF/accesstransformer.cfg",
+      "cn/blockforge/generated/generatedmod/client/CultivationSettingsPage$1.class",
+      "cn/blockforge/generated/generatedmod/client/CultivationSettingsPage$2.class",
+      "cn/blockforge/generated/generatedmod/client/CultivationVisionPage$1.class",
+      "cn/blockforge/generated/generatedmod/client/TrailShaderBridge$GL14Compat.class",
+      "cn/blockforge/generated/generatedmod/client/TrailShaderBridge.class",
+      "cn/blockforge/generated/generatedmod/client/realmflight/MeteorBloomRenderer$Lifecycle.class",
+      "cn/blockforge/generated/generatedmod/client/realmflight/MeteorBloomRenderer$State.class",
+      "cn/blockforge/generated/generatedmod/client/realmflight/MeteorBloomRenderer.class",
+      "cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightEffects$Plume.class",
+      "cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightEffects.class"
+    ],
+    "compilerOnlyIdenticalCode": [
+      "cn/blockforge/generated/generatedmod/client/CultivationSettingsPage$1.class",
+      "cn/blockforge/generated/generatedmod/client/CultivationSettingsPage$2.class",
+      "cn/blockforge/generated/generatedmod/client/CultivationVisionPage$1.class"
+    ],
+    "unchangedAssets": 1485,
+    "fixtures": []
+  },
+  "movementUnchanged": {
+    "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightControl.java": "6DA3F776A279C057FA8C1AC7BAB89D4312CE1D9CF3002CBC7D828105C8871AFE",
+    "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightMovement.java": "662184185A3B4F10970693969E54A49676B920EA56D77B7C52DB4AE8BC70F8C3"
+  },
+  "gameTests": 7
+}

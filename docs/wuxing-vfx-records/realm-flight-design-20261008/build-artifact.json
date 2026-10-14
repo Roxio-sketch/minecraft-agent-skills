@@ -1,0 +1,12 @@
+{
+  "path": "E:\\五行仙途\\build\\libs\\wuxingxiantu-0.2.jar",
+  "bytes": 44992417,
+  "sha256": "61105C1369752E8BD0834A2E8722993771F9D0E8EA87E4C5D1F1686ABDFFAC81",
+  "verifiedEntries": [
+    "cn/blockforge/generated/generatedmod/realmflight/RealmFlightControl.class",
+    "cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightEffects.class",
+    "cn/blockforge/generated/generatedmod/client/DipperRitualEffects.class",
+    "assets/wuxingxiantu/textures/block/soul_healing_room_front.png",
+    "assets/wuxingxiantu/textures/effect/dipper_ritual_atlas.png"
+  ]
+}

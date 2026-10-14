@@ -1,0 +1,580 @@
+{
+  "date": "2026-10-06",
+  "audit": {
+    "ok": true,
+    "legacyAnchorCount": 44,
+    "legacyAnchorsPassed": true,
+    "bliss212RangeCount": 32,
+    "bliss212RangesPassed": true,
+    "selectedSnapshotChecksPassed": true,
+    "referenceRuntimeVerified": false
+  },
+  "historicalChecks": [
+    {
+      "source": "solas",
+      "file": "shaders/lib/atmosphere/planarClouds.glsl",
+      "line": 7,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "solas",
+      "file": "shaders/lib/atmosphere/volumetricClouds.glsl",
+      "line": 8,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "solas",
+      "file": "shaders/lib/atmosphere/volumetricClouds.glsl",
+      "line": 141,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "solas",
+      "file": "shaders/lib/atmosphere/volumetricClouds.glsl",
+      "line": 159,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "photon",
+      "file": "shaders/include/sky/clouds/cumulus.glsl",
+      "line": 10,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "photon",
+      "file": "shaders/include/sky/clouds/cumulus.glsl",
+      "line": 80,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "photon",
+      "file": "shaders/include/sky/clouds/cirrus.glsl",
+      "line": 8,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "photon",
+      "file": "shaders/include/sky/clouds/noctilucent.glsl",
+      "line": 51,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "photon",
+      "file": "shaders/include/sky/clouds.glsl",
+      "line": 57,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "photon",
+      "file": "shaders/include/sky/clouds.glsl",
+      "line": 106,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "photon",
+      "file": "shaders/include/sky/crepuscular_rays.glsl",
+      "line": 94,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "photon",
+      "file": "shaders/include/sky/sky.glsl",
+      "line": 189,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "photon",
+      "file": "shaders/program/d4_deferred_shading.fsh",
+      "line": 658,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "astralex",
+      "file": "shaders/lib/atmospherics/ovclouds.glsl",
+      "line": 69,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "astralex",
+      "file": "shaders/lib/atmospherics/ovclouds.glsl",
+      "line": 74,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "astralex",
+      "file": "shaders/program/gbuffers_skybasic.glsl",
+      "line": 271,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "astralex",
+      "file": "shaders/program/deferred.glsl",
+      "line": 366,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "hysteria",
+      "file": "shaders/include/sky/clouds.glsl",
+      "line": 106,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "hysteria",
+      "file": "shaders/include/sky/clouds.glsl",
+      "line": 136,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "hysteria",
+      "file": "shaders/include/sky/clouds.glsl",
+      "line": 260,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "hysteria",
+      "file": "shaders/include/sky/clouds.glsl",
+      "line": 1178,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "hysteria",
+      "file": "shaders/include/sky/clouds.glsl",
+      "line": 1190,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "hysteria",
+      "file": "shaders/include/fog/end_fog_vl.glsl",
+      "line": 1,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "bliss",
+      "file": "shaders/lib/volumetricClouds.glsl",
+      "line": 19,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "bliss",
+      "file": "shaders/lib/volumetricClouds.glsl",
+      "line": 41,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "bliss",
+      "file": "shaders/lib/volumetricClouds.glsl",
+      "line": 63,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "bliss",
+      "file": "shaders/lib/volumetricClouds.glsl",
+      "line": 69,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "bliss",
+      "file": "shaders/lib/volumetricClouds.glsl",
+      "line": 295,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "bliss",
+      "file": "shaders/lib/volumetricClouds.glsl",
+      "line": 328,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "bliss",
+      "file": "shaders/dimensions/deferred.fsh",
+      "line": 289,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "lux",
+      "file": "shaders/lib/atmospherics/clouds.glsl",
+      "line": 19,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "lux",
+      "file": "shaders/lib/atmospherics/clouds.glsl",
+      "line": 62,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "lux",
+      "file": "shaders/lib/atmospherics/clouds.glsl",
+      "line": 67,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "lux",
+      "file": "shaders/program/gbuffers_skybasic.glsl",
+      "line": 136,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "complementary",
+      "file": "shaders/lib/atmospherics/clouds/reimaginedClouds.glsl",
+      "line": 12,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "complementary",
+      "file": "shaders/lib/atmospherics/clouds/reimaginedClouds.glsl",
+      "line": 65,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "complementary",
+      "file": "shaders/lib/atmospherics/clouds/reimaginedClouds.glsl",
+      "line": 140,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "complementary",
+      "file": "shaders/lib/atmospherics/clouds/mainClouds.glsl",
+      "line": 32,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "complementary",
+      "file": "shaders/lib/atmospherics/clouds/mainClouds.glsl",
+      "line": 69,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "complementary",
+      "file": "shaders/lib/atmospherics/netherStorm.glsl",
+      "line": 31,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "complementary",
+      "file": "shaders/lib/atmospherics/netherStorm.glsl",
+      "line": 42,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "complementary",
+      "file": "shaders/program/deferred1.glsl",
+      "line": 401,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "complementary",
+      "file": "shaders/program/composite1.glsl",
+      "line": 242,
+      "fileHashMatches": true,
+      "lineMatches": true
+    },
+    {
+      "source": "complementary",
+      "file": "shaders/shaders.properties",
+      "line": 232,
+      "fileHashMatches": true,
+      "lineMatches": true
+    }
+  ],
+  "bliss212Checks": [
+    {
+      "entry": "shaders/world1/deferred.fsh",
+      "startLine": 3,
+      "endLine": 5,
+      "description": "End-specific deferred entry",
+      "rangeSha256Utf8Lf": "12c679cbc4f60a81cf5eff4a7eb8981615bd1de1445b55b5eacd42fafa33b886",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/world1/composite2.fsh",
+      "startLine": 3,
+      "endLine": 5,
+      "description": "Opaque lighting entry is world1/composite2",
+      "rangeSha256Utf8Lf": "fbdf7636ec0dd756bfc6214a2952de26576530b163f699047ccd803efdda6b5c",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/world1/composite3.fsh",
+      "startLine": 3,
+      "endLine": 5,
+      "description": "Fog integration entry is world1/composite3",
+      "rangeSha256Utf8Lf": "478d72a382d54f764ce8ed643dd02b6fc31a07c1c26776dbd1822f114f77c9d4",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/world1/composite4.fsh",
+      "startLine": 3,
+      "endLine": 5,
+      "description": "Fog upscale/composition entry is world1/composite4",
+      "rangeSha256Utf8Lf": "4a7134a8ecf35453febc29bccc25b1d18a98e21b1062cc214ec170bbd51d73de",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/world1/gbuffers_water.fsh",
+      "startLine": 3,
+      "endLine": 5,
+      "description": "Transparent lighting entry",
+      "rangeSha256Utf8Lf": "e438f951bf03411cdf6d36b4aaec53ab03cf853076f011dda14805bcaf6d097c",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/deferred.fsh",
+      "startLine": 168,
+      "endLine": 179,
+      "description": "Persistent buffer target and warmup history gate",
+      "rangeSha256Utf8Lf": "5b230313b75de9b2576651b59ef3880859e8b10e6c5cb088a1718b1eac7ffc5a",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/deferred.fsh",
+      "startLine": 321,
+      "endLine": 340,
+      "description": "Random countdown and single-frame trigger",
+      "rangeSha256Utf8Lf": "9109b10e55e7f53c1067ee8f2e2e875d950dd47807e26d1aaa5cbe476c4b4ffd",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/deferred.fsh",
+      "startLine": 342,
+      "endLine": 347,
+      "description": "Flash history response",
+      "rangeSha256Utf8Lf": "f4b4fdbab331a87dc971786c2d4c4b252648b80c508dcaf3ece22eec4d521a8c",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/deferred.fsh",
+      "startLine": 350,
+      "endLine": 365,
+      "description": "Spatial state random walk",
+      "rangeSha256Utf8Lf": "0949c4cdcfe293aed6d70aaa51a6724b4589345e8cf279e2e679ebbb88a512fd",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/deferred.fsh",
+      "startLine": 373,
+      "endLine": 379,
+      "description": "Scale and temporal accumulation",
+      "rangeSha256Utf8Lf": "4df83b30b47396a2dfba40e408b022a94f7247ebb8c77739cd38cc43280ace1b",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/composite5.fsh",
+      "startLine": 23,
+      "endLine": 39,
+      "description": "State buffer persists between frames",
+      "rangeSha256Utf8Lf": "d52a8390265c47cc03e35aca1524e683470b73391dbf8efcab9b019517d27d33",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/end_fog.glsl",
+      "startLine": 66,
+      "endLine": 93,
+      "description": "World center vortex and camera-cell flash light",
+      "rangeSha256Utf8Lf": "6dc95142f454cd0410ae433576296615527b2125e5ff47a90687caa948a60ed1",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/end_fog.glsl",
+      "startLine": 95,
+      "endLine": 107,
+      "description": "Two-channel 512-square noise slice interpolation",
+      "rangeSha256Utf8Lf": "4c873f988b048327d27d8050d80270f190fa21753074432858eabbd809cd67dd",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/end_fog.glsl",
+      "startLine": 110,
+      "endLine": 119,
+      "description": "Height-dependent world swirl",
+      "rangeSha256Utf8Lf": "c11b1c16b93cf904f2db6fc7c70a19f6e4a1a689ee9a54bd77a28c8263904532",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/end_fog.glsl",
+      "startLine": 122,
+      "endLine": 141,
+      "description": "Central and annular cloud holes",
+      "rangeSha256Utf8Lf": "84b4a27570b659aae43e4aefc2e4d37df30e4055e17206b982f3f35680f60f1d",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/end_fog.glsl",
+      "startLine": 144,
+      "endLine": 167,
+      "description": "Anisotropic density, erosion and lower void",
+      "rangeSha256Utf8Lf": "0f2e711b4d7892ab0fa3f610cd6b7ed7c0d0ab629b4014c07f5ddb2f438a5f25",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/end_fog.glsl",
+      "startLine": 169,
+      "endLine": 191,
+      "description": "Finite local light falloff and flash color",
+      "rangeSha256Utf8Lf": "72d9201e05f99f9ed04da1cf5c1aad98f1dcb680a7240efba39a198443928041",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/end_fog.glsl",
+      "startLine": 194,
+      "endLine": 208,
+      "description": "Three density samples for approximate self shadow",
+      "rangeSha256Utf8Lf": "880e0aa50d08355e4f9a0a9a89398ba7a2bbd21d7cfd92a854bfb32fc2b12dfa",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/end_fog.glsl",
+      "startLine": 215,
+      "endLine": 253,
+      "description": "Finite ray with 16 exponentially spaced samples",
+      "rangeSha256Utf8Lf": "c95e7cc23e71c366aa1a37fc071ab4a16e9a71f0e55f35cfcdca2a4cedc20bf7",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/end_fog.glsl",
+      "startLine": 259,
+      "endLine": 301,
+      "description": "Camera clearing, Beer integration and additive haze",
+      "rangeSha256Utf8Lf": "d9c0875e376ef7488ab6b4dd386ef62c0f9c0083497e2817513c1a8b7b538288",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/end_fog.glsl",
+      "startLine": 345,
+      "endLine": 355,
+      "description": "Approximate cloud shadow on surfaces",
+      "rangeSha256Utf8Lf": "61b17c251b889d53cc424725e11031355be8cdd7d17304043c8497604f80c996",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/composite1.fsh",
+      "startLine": 1084,
+      "endLine": 1103,
+      "description": "Actual opaque surface flash lighting",
+      "rangeSha256Utf8Lf": "418df954d228638175b46b923f076201d3b73100b8d902f1b3ac9c4f028dce58",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/all_translucent.fsh",
+      "startLine": 642,
+      "endLine": 662,
+      "description": "Actual transparent surface flash lighting",
+      "rangeSha256Utf8Lf": "19649ce2359b39325aeaa6ff17e1ecc5049bc5f1e3347b3ea745539af5e85961",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/composite2.fsh",
+      "startLine": 374,
+      "endLine": 428,
+      "description": "Actual depth reconstruction and fog write",
+      "rangeSha256Utf8Lf": "c2957009b1851ed229995136ab363230c2cc034f8c99179ebedeb0f313b22530",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/composite3.fsh",
+      "startLine": 133,
+      "endLine": 180,
+      "description": "Five-tap depth rejection in upscale",
+      "rangeSha256Utf8Lf": "665882ed7b955e18bb640f7e8f34249449dde9649386762a5f0789f0cdbd45a6",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/composite3.fsh",
+      "startLine": 303,
+      "endLine": 315,
+      "description": "Actual low resolution fog read",
+      "rangeSha256Utf8Lf": "a97072fd39c65eef5e6f5a06925ac96cdb314e6bf047665863201c0deba0c082",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/composite3.fsh",
+      "startLine": 438,
+      "endLine": 440,
+      "description": "Scene transmittance plus fog radiance",
+      "rangeSha256Utf8Lf": "b2ba307469abeead8928e7810b3c806fbf79be3780024c51eae176a835eeaa99",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/dimensions/fogBehindTranslucent_pass.fsh",
+      "startLine": 375,
+      "endLine": 390,
+      "description": "Separate behind-translucent fog call is Overworld-only",
+      "rangeSha256Utf8Lf": "7baa6449f588f073ef67d4268ac4c85e6959584473b0e6ba7c6ed6f35d385ffd",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/settings.glsl",
+      "startLine": 638,
+      "endLine": 648,
+      "description": "Defaults for End fog and flash colors",
+      "rangeSha256Utf8Lf": "c33a84f83657069c1d0d41f586b1517833178413f461755c733a7d6f2d1bd691",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/shaders.properties",
+      "startLine": 291,
+      "endLine": 293,
+      "description": "Player controls for End fog",
+      "rangeSha256Utf8Lf": "f968f978e61608f6ca9ce46c848895b5cc19fcc9415180431e669b1a72efc77a",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "LICENSE.md",
+      "startLine": 1,
+      "endLine": 16,
+      "description": "Custom overall sharing and attribution rules",
+      "rangeSha256Utf8Lf": "c55b5ab886fe719d545ba7da14c1711033ebae3ac5d554459cf6788b00b6c7c2",
+      "matchesPreviousManifest": true
+    },
+    {
+      "entry": "shaders/lib/end_fog.glsl",
+      "startLine": 1,
+      "endLine": 35,
+      "description": "MIT header covers local hash fragment, not automatic whole-pack relicensing",
+      "rangeSha256Utf8Lf": "06928b5031c5871e393e455d929d6749c5e90eb2a6dafaa1bbd6f19c284fe0ef",
+      "matchesPreviousManifest": true
+    }
+  ]
+}

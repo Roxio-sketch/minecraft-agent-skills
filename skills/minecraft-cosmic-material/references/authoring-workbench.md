@@ -16,7 +16,7 @@ python scripts/serve_authoring.py
 
 `--json` 输出启动记录；`/__cosmic__/health` 返回服务名、协议版本与当前资源 SHA-256。验证脚本使用这些信息拒绝其他制作台或不同版本，不能只用“端口有 HTTP 响应”确认目标。
 
-Python 不在 PATH 时选择已有解释器；本机曾使用 `C:/Users/Nostzephert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`，其他机器不得假定这个路径存在。界面不需要网络、模型 API 或外部图片。
+Python 不在 PATH 时选择已有解释器；本机曾使用 `C:/Users/MAINTAINER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`，其他机器不得假定这个路径存在。界面不需要网络、模型 API 或外部图片。
 
 ## 文件与真实接口
 

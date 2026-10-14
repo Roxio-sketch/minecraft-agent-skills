@@ -1,0 +1,1 @@
+Isolated cloud glyph GPU captures completed; two production hits, shader reload, no GL errors.

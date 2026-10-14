@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "id": "spirit_guard_pale_blue",
+  "mode": "solid",
+  "stops": [
+    {
+      "at": 0.0,
+      "color": "#A3D9FF"
+    }
+  ],
+  "strength": 1.0,
+  "tileable": true,
+  "interpolation": "linear-rgb",
+  "wrap": "pingpong",
+  "axis": "u",
+  "bands": 1.0,
+  "phase": 0.0,
+  "period_seconds": 6.0
+}

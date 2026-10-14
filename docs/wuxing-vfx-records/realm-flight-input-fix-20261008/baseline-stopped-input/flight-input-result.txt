@@ -1,0 +1,1 @@
+FAIL: 46 checks; 646 client/server telemetry pairs; [server_positive_speed: Server published flyingSpeed=0.0 while flying, fallback_positive_speed: After zero-speed packet + cleared controller state + client realm2, release left flyingSpeed=0, non_periodic_fallback_positive_speed: Between periodic sync ticks, no-state fallback retained zero ability speed]

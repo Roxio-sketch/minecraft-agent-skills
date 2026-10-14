@@ -1,0 +1,12 @@
+{
+  "base": {
+    "changed_pixels": 0,
+    "mean_channel_difference": 0.0,
+    "paused_changed_pixels": 0
+  },
+  "glint": {
+    "changed_pixels": 64328,
+    "mean_channel_difference": 10.303063271604938,
+    "paused_changed_pixels": 0
+  }
+}

@@ -1,0 +1,5824 @@
+{
+  "result": "FAIL",
+  "captures": [
+    {
+      "name": "01-day-moving-first.png",
+      "tick": 80,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(5.691838684082031, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(6.468, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 5.39,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": true,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 196.30650261191872,
+        "lumaStdDev": 15.79571274684537,
+        "nearBlackFractionRgbLe3": 0.0,
+        "minimumChannel": 0,
+        "maximumChannel": 255,
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 80,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 80,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 80,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 80,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 80,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "尚未捕获",
+      "diagnosticGeometryOnly": 0,
+      "fps": 59
+    },
+    {
+      "name": "02-day-moving-back.png",
+      "tick": 110,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(47.27359857940672, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(52.527999999999984, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 50.95999999999999,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": true,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 2.977321937692814,
+        "lumaStdDev": 13.103617574068362,
+        "nearBlackFractionRgbLe3": 0.8009138695987654,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 110,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 110,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 110,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 110,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 110,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 316,
+      "fps": 58
+    },
+    {
+      "name": "03-day-moving-front.png",
+      "tick": 140,
+      "cameraType": "THIRD_PERSON_FRONT",
+      "expectedCameraType": "THIRD_PERSON_FRONT",
+      "cameraPosition": "(102.03135903549187, 150.3571869702642, 0.0)",
+      "cameraLook": "(-1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(99.56799999999993, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 97.99999999999993,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": true,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 2.483955170958648,
+        "lumaStdDev": 13.072677417319005,
+        "nearBlackFractionRgbLe3": 0.8904742959104939,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 140,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 140,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 140,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 140,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 140,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 316,
+      "fps": 58
+    },
+    {
+      "name": "04-day-moving-first-return.png",
+      "tick": 170,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(145.22815925979617, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(146.60800000000003, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 145.04000000000002,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": true,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 2.1842128532502914,
+        "lumaStdDev": 13.555886789655162,
+        "nearBlackFractionRgbLe3": 0.9482060185185185,
+        "minimumChannel": 0,
+        "maximumChannel": 255,
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 170,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 170,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 170,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 170,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 170,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 59
+    },
+    {
+      "name": "05-day-hover-back.png",
+      "tick": 220,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(160.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.7384272436823138,
+        "lumaStdDev": 13.064008644697873,
+        "nearBlackFractionRgbLe3": 0.9819607204861112,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 220,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 220,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 220,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 220,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 220,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 60
+    },
+    {
+      "name": "06-day-hover-front.png",
+      "tick": 260,
+      "cameraType": "THIRD_PERSON_FRONT",
+      "expectedCameraType": "THIRD_PERSON_FRONT",
+      "cameraPosition": "(168.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "(-1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.5273607433929322,
+        "lumaStdDev": 13.071063912642089,
+        "nearBlackFractionRgbLe3": 0.9820089457947531,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 260,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 260,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 260,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 260,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 260,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 60
+    },
+    {
+      "name": "07-day-hover-first.png",
+      "tick": 290,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(164.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.4338511881508524,
+        "lumaStdDev": 13.572558025137676,
+        "nearBlackFractionRgbLe3": 0.9818401572145061,
+        "minimumChannel": 0,
+        "maximumChannel": 255,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 290,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 290,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 290,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 290,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 290,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 59
+    },
+    {
+      "name": "08-day-rapid-301.png",
+      "tick": 301,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(160.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.3467330451869268,
+        "lumaStdDev": 13.079657415299767,
+        "nearBlackFractionRgbLe3": 0.9820451147762346,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 301,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 301,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 301,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 301,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 301,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 59
+    },
+    {
+      "name": "09-day-rapid-303.png",
+      "tick": 303,
+      "cameraType": "THIRD_PERSON_FRONT",
+      "expectedCameraType": "THIRD_PERSON_FRONT",
+      "cameraPosition": "(168.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "(-1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.3409702504097292,
+        "lumaStdDev": 13.079895058875644,
+        "nearBlackFractionRgbLe3": 0.9820451147762346,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 303,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 303,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 303,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 303,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 303,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 56
+    },
+    {
+      "name": "10-day-rapid-305.png",
+      "tick": 305,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(164.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.3877803397471145,
+        "lumaStdDev": 13.574830679542323,
+        "nearBlackFractionRgbLe3": 0.9818401572145061,
+        "minimumChannel": 0,
+        "maximumChannel": 255,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 305,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 305,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 305,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 305,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 305,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 56
+    },
+    {
+      "name": "11-day-rapid-307.png",
+      "tick": 307,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(160.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.3299107120464984,
+        "lumaStdDev": 13.08042795733275,
+        "nearBlackFractionRgbLe3": 0.9820451147762346,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 307,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 307,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 307,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 307,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 307,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 56
+    },
+    {
+      "name": "12-day-rapid-309.png",
+      "tick": 309,
+      "cameraType": "THIRD_PERSON_FRONT",
+      "expectedCameraType": "THIRD_PERSON_FRONT",
+      "cameraPosition": "(168.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "(-1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.324435280429987,
+        "lumaStdDev": 13.08063974576884,
+        "nearBlackFractionRgbLe3": 0.9820451147762346,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 309,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 309,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 309,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 309,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 309,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 56
+    },
+    {
+      "name": "13-day-rapid-311.png",
+      "tick": 311,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(164.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.3712858500914464,
+        "lumaStdDev": 13.575577902698601,
+        "nearBlackFractionRgbLe3": 0.9818401572145061,
+        "minimumChannel": 0,
+        "maximumChannel": 255,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 311,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 311,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 311,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 311,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 311,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 56
+    },
+    {
+      "name": "14-day-back-effects-on.png",
+      "tick": 340,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(160.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.2425838378904748,
+        "lumaStdDev": 13.08425407283017,
+        "nearBlackFractionRgbLe3": 0.9820451147762346,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 340,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 340,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 340,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 340,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 340,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 49
+    },
+    {
+      "name": "15-day-back-cosmetic-off-24ticks.png",
+      "tick": 374,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(160.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": false,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.1938897436823517,
+        "lumaStdDev": 13.086209489390383,
+        "nearBlackFractionRgbLe3": 0.9820692274305556,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 374,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 374,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 374,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 374,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 374,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 60
+    },
+    {
+      "name": "16-day-back-effects-restored.png",
+      "tick": 414,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(160.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 414,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 414,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 414,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 414,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 414,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 60
+    },
+    {
+      "name": "17-day-back-bloom-off.png",
+      "tick": 454,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(160.6400000000001, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(164.6400000000001, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 164.6400000000001,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 6000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": true,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 454,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 454,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 454,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 454,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 454,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 60
+    },
+    {
+      "name": "18-night-moving-front.png",
+      "tick": 490,
+      "cameraType": "THIRD_PERSON_FRONT",
+      "expectedCameraType": "THIRD_PERSON_FRONT",
+      "cameraPosition": "(174.11624338746083, 150.3571869702642, 0.0)",
+      "cameraLook": "(-1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(171.10800000000012, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 170.03000000000011,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": true,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 490,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 490,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 490,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 490,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 490,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 276,
+      "fps": 59
+    },
+    {
+      "name": "19-night-moving-first.png",
+      "tick": 530,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(231.59360530853326, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(232.84800000000055, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 231.28000000000054,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": true,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.2380091272423448,
+        "lumaStdDev": 13.581109635754924,
+        "nearBlackFractionRgbLe3": 0.9818883825231481,
+        "minimumChannel": 0,
+        "maximumChannel": 255,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 530,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 530,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 530,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 530,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 530,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 60
+    },
+    {
+      "name": "20-night-moving-back.png",
+      "tick": 570,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(290.0313670730594, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(295.5680000000003, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 294.00000000000034,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": true,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 570,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 570,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 570,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 570,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 570,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 316,
+      "fps": 60
+    },
+    {
+      "name": "21-night-hover-front.png",
+      "tick": 630,
+      "cameraType": "THIRD_PERSON_FRONT",
+      "expectedCameraType": "THIRD_PERSON_FRONT",
+      "cameraPosition": "(328.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "(-1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 630,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 630,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 630,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 630,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 630,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 60
+    },
+    {
+      "name": "22-night-hover-first.png",
+      "tick": 670,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(324.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.2380091272423448,
+        "lumaStdDev": 13.581109635754924,
+        "nearBlackFractionRgbLe3": 0.9818883825231481,
+        "minimumChannel": 0,
+        "maximumChannel": 255,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 670,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 670,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 670,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 670,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 670,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 60
+    },
+    {
+      "name": "23-night-hover-back.png",
+      "tick": 710,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(320.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 710,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 710,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 710,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 710,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 710,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 60
+    },
+    {
+      "name": "24-night-rapid-721.png",
+      "tick": 721,
+      "cameraType": "THIRD_PERSON_FRONT",
+      "expectedCameraType": "THIRD_PERSON_FRONT",
+      "cameraPosition": "(328.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "(-1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 721,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 721,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 721,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 721,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 721,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 60
+    },
+    {
+      "name": "25-night-rapid-723.png",
+      "tick": 723,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(324.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.2380091272423448,
+        "lumaStdDev": 13.581109635754924,
+        "nearBlackFractionRgbLe3": 0.9818883825231481,
+        "minimumChannel": 0,
+        "maximumChannel": 255,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 723,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 723,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 723,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 723,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 723,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 55
+    },
+    {
+      "name": "26-night-rapid-725.png",
+      "tick": 725,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(320.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 725,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 725,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 725,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 725,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 725,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 55
+    },
+    {
+      "name": "27-night-rapid-727.png",
+      "tick": 727,
+      "cameraType": "THIRD_PERSON_FRONT",
+      "expectedCameraType": "THIRD_PERSON_FRONT",
+      "cameraPosition": "(328.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "(-1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 727,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 727,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 727,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 727,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 727,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 55
+    },
+    {
+      "name": "28-night-rapid-729.png",
+      "tick": 729,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(324.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.2380091272423448,
+        "lumaStdDev": 13.581109635754924,
+        "nearBlackFractionRgbLe3": 0.9818883825231481,
+        "minimumChannel": 0,
+        "maximumChannel": 255,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 729,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 729,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 729,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 729,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 729,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 55
+    },
+    {
+      "name": "29-night-rapid-731.png",
+      "tick": 731,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(320.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 731,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 731,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 731,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 731,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 731,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 55
+    },
+    {
+      "name": "30-night-back-effects-on.png",
+      "tick": 750,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(320.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 750,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 750,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 750,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 750,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 750,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 48
+    },
+    {
+      "name": "31-night-back-cosmetic-off-24ticks.png",
+      "tick": 784,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(320.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": false,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 784,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 784,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 784,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 784,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 784,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 60
+    },
+    {
+      "name": "32-night-back-effects-restored.png",
+      "tick": 824,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(320.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 824,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 824,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 824,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 824,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 824,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 60
+    },
+    {
+      "name": "33-night-back-bloom-off.png",
+      "tick": 864,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(320.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": false,
+      "specialPreference": true,
+      "bloomDisabled": true,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 1.185744949001604,
+        "lumaStdDev": 13.086093725862538,
+        "nearBlackFractionRgbLe3": 0.9820933400848766,
+        "minimumChannel": 0,
+        "maximumChannel": 241,
+        "blackScreenCandidate": true
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 864,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 864,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 864,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 864,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 864,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 59
+    },
+    {
+      "name": "34-night-no-gui-back.png",
+      "tick": 920,
+      "cameraType": "THIRD_PERSON_BACK",
+      "expectedCameraType": "THIRD_PERSON_BACK",
+      "cameraPosition": "(320.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": true,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 144.72968588324815,
+        "lumaStdDev": 22.86142262415569,
+        "nearBlackFractionRgbLe3": 0.0,
+        "minimumChannel": 6,
+        "maximumChannel": 255,
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 920,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 920,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 920,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 899,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 920,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 59
+    },
+    {
+      "name": "35-night-no-gui-front.png",
+      "tick": 950,
+      "cameraType": "THIRD_PERSON_FRONT",
+      "expectedCameraType": "THIRD_PERSON_FRONT",
+      "cameraPosition": "(328.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "(-1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": true,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": true,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 144.09520880292453,
+        "lumaStdDev": 24.059915207089368,
+        "nearBlackFractionRgbLe3": 0.0,
+        "minimumChannel": 4,
+        "maximumChannel": 255,
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 950,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 950,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 950,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 899,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 950,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 4,
+      "fps": 59
+    },
+    {
+      "name": "36-night-no-gui-first.png",
+      "tick": 980,
+      "cameraType": "FIRST_PERSON",
+      "expectedCameraType": "FIRST_PERSON",
+      "cameraPosition": "(324.57600000000014, 150.3571869702642, 0.0)",
+      "cameraLook": "( 1.000E+0  0.000E+0  0.000E+0)",
+      "cameraDetached": false,
+      "cameraFluid": "NONE",
+      "playerPosition": "(324.57600000000014, 148.7371870847051, 0.0)",
+      "actualServer": {
+        "x": 324.57600000000014,
+        "y": 148.7371870847051,
+        "z": 0.0,
+        "flying": true,
+        "mayfly": true,
+        "flyingSpeed": 0.05
+      },
+      "flying": true,
+      "mayfly": true,
+      "flyingSpeed": 0.05,
+      "onGround": false,
+      "isInWater": false,
+      "eligible": true,
+      "forwardKey": false,
+      "dayTime": 18000,
+      "hideGui": true,
+      "specialPreference": true,
+      "bloomDisabled": false,
+      "oculusInstalled": true,
+      "embeddiumInstalled": true,
+      "actualPackActive": false,
+      "packName": "(off)",
+      "pixelMetrics": {
+        "width": 1280,
+        "height": 720,
+        "roi": "central60% width/height; excludes most GUI overlays",
+        "sampledPixels": 331776,
+        "meanLuma255": 148.51614312652245,
+        "lumaStdDev": 1.4611055171680714,
+        "nearBlackFractionRgbLe3": 0.0,
+        "minimumChannel": 102,
+        "maximumChannel": 255,
+        "blackScreenCandidate": false
+      },
+      "renderStages": {
+        "particlesBeforeProduction": {
+          "tick": 980,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "particlesAfterProduction": {
+          "tick": 980,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "afterLevelBeforeDeferredComposite": {
+          "tick": 980,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": false,
+          "scissor": false
+        },
+        "guiPreAfterHighestPriorityListeners": {
+          "tick": 899,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        },
+        "renderEndAfterDeferredComposite": {
+          "tick": 980,
+          "drawFramebuffer": 1,
+          "readFramebuffer": 1,
+          "framebufferStatus": 36053,
+          "viewport": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "program": 0,
+          "activeTexture": 33984,
+          "blend": false,
+          "depthTest": true,
+          "scissor": false
+        }
+      },
+      "mainFramebuffer": 1,
+      "depthBridgeStatus": "世界深度已捕获 1280×720",
+      "diagnosticGeometryOnly": 0,
+      "fps": 57
+    }
+  ],
+  "checks": [
+    {
+      "tick": 0,
+      "name": "initial_not_flying",
+      "pass": true,
+      "detail": "No fixture flying/mayfly grant; production permission arrived"
+    },
+    {
+      "tick": 60,
+      "name": "actual_shader_pack_mode",
+      "pass": true,
+      "detail": "oculusInstalled\u003dtrue, actualPackActive\u003dfalse, expected\u003dfalse, packName\u003d(off)"
+    },
+    {
+      "tick": 60,
+      "name": "natural_double_space_entry",
+      "pass": true,
+      "detail": "Actual normal double-jump entry enabled both client/server flight"
+    },
+    {
+      "tick": 80,
+      "name": "view_01-day-moving-first.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 80,
+      "name": "visible_world_01-day-moving-first.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d196.30650261191872, lumaStdDev\u003d15.79571274684537, nearBlackFractionRgbLe3\u003d0.0, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 80,
+      "name": "flying_01-day-moving-first.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 110,
+      "name": "view_02-day-moving-back.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 110,
+      "name": "visible_world_02-day-moving-back.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d2.977321937692814, lumaStdDev\u003d13.103617574068362, nearBlackFractionRgbLe3\u003d0.8009138695987654, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 110,
+      "name": "flying_02-day-moving-back.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 140,
+      "name": "view_03-day-moving-front.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_FRONT"
+    },
+    {
+      "tick": 140,
+      "name": "visible_world_03-day-moving-front.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d2.483955170958648, lumaStdDev\u003d13.072677417319005, nearBlackFractionRgbLe3\u003d0.8904742959104939, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 140,
+      "name": "flying_03-day-moving-front.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 170,
+      "name": "view_04-day-moving-first-return.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 170,
+      "name": "visible_world_04-day-moving-first-return.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d2.1842128532502914, lumaStdDev\u003d13.555886789655162, nearBlackFractionRgbLe3\u003d0.9482060185185185, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 170,
+      "name": "flying_04-day-moving-first-return.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 178,
+      "name": "actual_W_movement_178",
+      "pass": true,
+      "detail": "Client/server actual W displacement\u003d157.58400000000012 / 157.58400000000012"
+    },
+    {
+      "tick": 220,
+      "name": "view_05-day-hover-back.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 220,
+      "name": "visible_world_05-day-hover-back.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.7384272436823138, lumaStdDev\u003d13.064008644697873, nearBlackFractionRgbLe3\u003d0.9819607204861112, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 220,
+      "name": "flying_05-day-hover-back.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 260,
+      "name": "view_06-day-hover-front.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_FRONT"
+    },
+    {
+      "tick": 260,
+      "name": "visible_world_06-day-hover-front.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.5273607433929322, lumaStdDev\u003d13.071063912642089, nearBlackFractionRgbLe3\u003d0.9820089457947531, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 260,
+      "name": "flying_06-day-hover-front.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 290,
+      "name": "view_07-day-hover-first.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 290,
+      "name": "visible_world_07-day-hover-first.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.4338511881508524, lumaStdDev\u003d13.572558025137676, nearBlackFractionRgbLe3\u003d0.9818401572145061, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 290,
+      "name": "flying_07-day-hover-first.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 301,
+      "name": "view_08-day-rapid-301.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 301,
+      "name": "visible_world_08-day-rapid-301.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.3467330451869268, lumaStdDev\u003d13.079657415299767, nearBlackFractionRgbLe3\u003d0.9820451147762346, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 301,
+      "name": "flying_08-day-rapid-301.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 303,
+      "name": "view_09-day-rapid-303.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_FRONT"
+    },
+    {
+      "tick": 303,
+      "name": "visible_world_09-day-rapid-303.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.3409702504097292, lumaStdDev\u003d13.079895058875644, nearBlackFractionRgbLe3\u003d0.9820451147762346, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 303,
+      "name": "flying_09-day-rapid-303.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 305,
+      "name": "view_10-day-rapid-305.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 305,
+      "name": "visible_world_10-day-rapid-305.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.3877803397471145, lumaStdDev\u003d13.574830679542323, nearBlackFractionRgbLe3\u003d0.9818401572145061, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 305,
+      "name": "flying_10-day-rapid-305.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 307,
+      "name": "view_11-day-rapid-307.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 307,
+      "name": "visible_world_11-day-rapid-307.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.3299107120464984, lumaStdDev\u003d13.08042795733275, nearBlackFractionRgbLe3\u003d0.9820451147762346, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 307,
+      "name": "flying_11-day-rapid-307.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 309,
+      "name": "view_12-day-rapid-309.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_FRONT"
+    },
+    {
+      "tick": 309,
+      "name": "visible_world_12-day-rapid-309.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.324435280429987, lumaStdDev\u003d13.08063974576884, nearBlackFractionRgbLe3\u003d0.9820451147762346, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 309,
+      "name": "flying_12-day-rapid-309.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 311,
+      "name": "view_13-day-rapid-311.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 311,
+      "name": "visible_world_13-day-rapid-311.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.3712858500914464, lumaStdDev\u003d13.575577902698601, nearBlackFractionRgbLe3\u003d0.9818401572145061, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 311,
+      "name": "flying_13-day-rapid-311.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 340,
+      "name": "view_14-day-back-effects-on.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 340,
+      "name": "visible_world_14-day-back-effects-on.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.2425838378904748, lumaStdDev\u003d13.08425407283017, nearBlackFractionRgbLe3\u003d0.9820451147762346, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 340,
+      "name": "flying_14-day-back-effects-on.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 374,
+      "name": "view_15-day-back-cosmetic-off-24ticks.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 374,
+      "name": "visible_world_15-day-back-cosmetic-off-24ticks.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.1938897436823517, lumaStdDev\u003d13.086209489390383, nearBlackFractionRgbLe3\u003d0.9820692274305556, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 374,
+      "name": "flying_15-day-back-cosmetic-off-24ticks.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 414,
+      "name": "view_16-day-back-effects-restored.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 414,
+      "name": "visible_world_16-day-back-effects-restored.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 414,
+      "name": "flying_16-day-back-effects-restored.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 454,
+      "name": "view_17-day-back-bloom-off.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 454,
+      "name": "visible_world_17-day-back-bloom-off.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 454,
+      "name": "flying_17-day-back-bloom-off.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 490,
+      "name": "view_18-night-moving-front.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_FRONT"
+    },
+    {
+      "tick": 490,
+      "name": "visible_world_18-night-moving-front.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 490,
+      "name": "flying_18-night-moving-front.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 530,
+      "name": "view_19-night-moving-first.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 530,
+      "name": "visible_world_19-night-moving-first.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.2380091272423448, lumaStdDev\u003d13.581109635754924, nearBlackFractionRgbLe3\u003d0.9818883825231481, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 530,
+      "name": "flying_19-night-moving-first.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 570,
+      "name": "view_20-night-moving-back.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 570,
+      "name": "visible_world_20-night-moving-back.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 570,
+      "name": "flying_20-night-moving-back.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 585,
+      "name": "actual_W_movement_585",
+      "pass": true,
+      "detail": "Client/server actual W displacement\u003d152.88 / 152.88"
+    },
+    {
+      "tick": 630,
+      "name": "view_21-night-hover-front.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_FRONT"
+    },
+    {
+      "tick": 630,
+      "name": "visible_world_21-night-hover-front.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 630,
+      "name": "flying_21-night-hover-front.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 670,
+      "name": "view_22-night-hover-first.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 670,
+      "name": "visible_world_22-night-hover-first.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.2380091272423448, lumaStdDev\u003d13.581109635754924, nearBlackFractionRgbLe3\u003d0.9818883825231481, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 670,
+      "name": "flying_22-night-hover-first.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 710,
+      "name": "view_23-night-hover-back.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 710,
+      "name": "visible_world_23-night-hover-back.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 710,
+      "name": "flying_23-night-hover-back.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 721,
+      "name": "view_24-night-rapid-721.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_FRONT"
+    },
+    {
+      "tick": 721,
+      "name": "visible_world_24-night-rapid-721.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 721,
+      "name": "flying_24-night-rapid-721.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 723,
+      "name": "view_25-night-rapid-723.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 723,
+      "name": "visible_world_25-night-rapid-723.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.2380091272423448, lumaStdDev\u003d13.581109635754924, nearBlackFractionRgbLe3\u003d0.9818883825231481, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 723,
+      "name": "flying_25-night-rapid-723.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 725,
+      "name": "view_26-night-rapid-725.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 725,
+      "name": "visible_world_26-night-rapid-725.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 725,
+      "name": "flying_26-night-rapid-725.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 727,
+      "name": "view_27-night-rapid-727.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_FRONT"
+    },
+    {
+      "tick": 727,
+      "name": "visible_world_27-night-rapid-727.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 727,
+      "name": "flying_27-night-rapid-727.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 729,
+      "name": "view_28-night-rapid-729.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 729,
+      "name": "visible_world_28-night-rapid-729.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.2380091272423448, lumaStdDev\u003d13.581109635754924, nearBlackFractionRgbLe3\u003d0.9818883825231481, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 729,
+      "name": "flying_28-night-rapid-729.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 731,
+      "name": "view_29-night-rapid-731.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 731,
+      "name": "visible_world_29-night-rapid-731.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 731,
+      "name": "flying_29-night-rapid-731.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 750,
+      "name": "view_30-night-back-effects-on.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 750,
+      "name": "visible_world_30-night-back-effects-on.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 750,
+      "name": "flying_30-night-back-effects-on.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 784,
+      "name": "view_31-night-back-cosmetic-off-24ticks.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 784,
+      "name": "visible_world_31-night-back-cosmetic-off-24ticks.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 784,
+      "name": "flying_31-night-back-cosmetic-off-24ticks.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 824,
+      "name": "view_32-night-back-effects-restored.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 824,
+      "name": "visible_world_32-night-back-effects-restored.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 824,
+      "name": "flying_32-night-back-effects-restored.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 864,
+      "name": "view_33-night-back-bloom-off.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 864,
+      "name": "visible_world_33-night-back-bloom-off.png",
+      "pass": false,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+    },
+    {
+      "tick": 864,
+      "name": "flying_33-night-back-bloom-off.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 920,
+      "name": "view_34-night-no-gui-back.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_BACK"
+    },
+    {
+      "tick": 920,
+      "name": "visible_world_34-night-no-gui-back.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d144.72968588324815, lumaStdDev\u003d22.86142262415569, nearBlackFractionRgbLe3\u003d0.0, minimumChannel\u003d6, maximumChannel\u003d255, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 920,
+      "name": "flying_34-night-no-gui-back.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 950,
+      "name": "view_35-night-no-gui-front.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dTHIRD_PERSON_FRONT"
+    },
+    {
+      "tick": 950,
+      "name": "visible_world_35-night-no-gui-front.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d144.09520880292453, lumaStdDev\u003d24.059915207089368, nearBlackFractionRgbLe3\u003d0.0, minimumChannel\u003d4, maximumChannel\u003d255, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 950,
+      "name": "flying_35-night-no-gui-front.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 980,
+      "name": "view_36-night-no-gui-first.png",
+      "pass": true,
+      "detail": "Actual vanilla F5 camera\u003dFIRST_PERSON"
+    },
+    {
+      "tick": 980,
+      "name": "visible_world_36-night-no-gui-first.png",
+      "pass": true,
+      "detail": "Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d148.51614312652245, lumaStdDev\u003d1.4611055171680714, nearBlackFractionRgbLe3\u003d0.0, minimumChannel\u003d102, maximumChannel\u003d255, blackScreenCandidate\u003dfalse}"
+    },
+    {
+      "tick": 980,
+      "name": "flying_36-night-no-gui-first.png",
+      "pass": true,
+      "detail": "Actual flight remains enabled through camera/cosmetic changes"
+    },
+    {
+      "tick": 1000,
+      "name": "complete_capture_set",
+      "pass": true,
+      "detail": "Real screenshots\u003d36, expected36"
+    }
+  ],
+  "failures": [
+    "visible_world_07-day-hover-first.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.4338511881508524, lumaStdDev\u003d13.572558025137676, nearBlackFractionRgbLe3\u003d0.9818401572145061, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}",
+    "visible_world_08-day-rapid-301.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.3467330451869268, lumaStdDev\u003d13.079657415299767, nearBlackFractionRgbLe3\u003d0.9820451147762346, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_09-day-rapid-303.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.3409702504097292, lumaStdDev\u003d13.079895058875644, nearBlackFractionRgbLe3\u003d0.9820451147762346, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_10-day-rapid-305.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.3877803397471145, lumaStdDev\u003d13.574830679542323, nearBlackFractionRgbLe3\u003d0.9818401572145061, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}",
+    "visible_world_11-day-rapid-307.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.3299107120464984, lumaStdDev\u003d13.08042795733275, nearBlackFractionRgbLe3\u003d0.9820451147762346, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_12-day-rapid-309.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.324435280429987, lumaStdDev\u003d13.08063974576884, nearBlackFractionRgbLe3\u003d0.9820451147762346, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_13-day-rapid-311.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.3712858500914464, lumaStdDev\u003d13.575577902698601, nearBlackFractionRgbLe3\u003d0.9818401572145061, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}",
+    "visible_world_14-day-back-effects-on.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.2425838378904748, lumaStdDev\u003d13.08425407283017, nearBlackFractionRgbLe3\u003d0.9820451147762346, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_15-day-back-cosmetic-off-24ticks.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.1938897436823517, lumaStdDev\u003d13.086209489390383, nearBlackFractionRgbLe3\u003d0.9820692274305556, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_16-day-back-effects-restored.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_17-day-back-bloom-off.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_18-night-moving-front.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_19-night-moving-first.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.2380091272423448, lumaStdDev\u003d13.581109635754924, nearBlackFractionRgbLe3\u003d0.9818883825231481, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}",
+    "visible_world_20-night-moving-back.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_21-night-hover-front.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_22-night-hover-first.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.2380091272423448, lumaStdDev\u003d13.581109635754924, nearBlackFractionRgbLe3\u003d0.9818883825231481, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}",
+    "visible_world_23-night-hover-back.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_24-night-rapid-721.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_25-night-rapid-723.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.2380091272423448, lumaStdDev\u003d13.581109635754924, nearBlackFractionRgbLe3\u003d0.9818883825231481, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}",
+    "visible_world_26-night-rapid-725.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_27-night-rapid-727.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_28-night-rapid-729.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.2380091272423448, lumaStdDev\u003d13.581109635754924, nearBlackFractionRgbLe3\u003d0.9818883825231481, minimumChannel\u003d0, maximumChannel\u003d255, blackScreenCandidate\u003dtrue}",
+    "visible_world_29-night-rapid-731.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_30-night-back-effects-on.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_31-night-back-cosmetic-off-24ticks.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_32-night-back-effects-restored.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}",
+    "visible_world_33-night-back-bloom-off.png: Central world pixels: {width\u003d1280, height\u003d720, roi\u003dcentral60% width/height; excludes most GUI overlays, sampledPixels\u003d331776, meanLuma255\u003d1.185744949001604, lumaStdDev\u003d13.086093725862538, nearBlackFractionRgbLe3\u003d0.9820933400848766, minimumChannel\u003d0, maximumChannel\u003d241, blackScreenCandidate\u003dtrue}"
+  ],
+  "glErrors": [],
+  "f5InputEvents": [
+    {
+      "tick": 100,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 130,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 160,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    },
+    {
+      "tick": 200,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 240,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 280,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    },
+    {
+      "tick": 300,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 302,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 304,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    },
+    {
+      "tick": 306,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 308,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 310,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    },
+    {
+      "tick": 320,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 480,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 520,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    },
+    {
+      "tick": 560,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 610,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 650,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    },
+    {
+      "tick": 690,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 720,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 722,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    },
+    {
+      "tick": 724,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 726,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 728,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    },
+    {
+      "tick": 730,
+      "before": "FIRST_PERSON",
+      "expectedAfter": "THIRD_PERSON_BACK",
+      "boundKey": 294
+    },
+    {
+      "tick": 930,
+      "before": "THIRD_PERSON_BACK",
+      "expectedAfter": "THIRD_PERSON_FRONT",
+      "boundKey": 294
+    },
+    {
+      "tick": 960,
+      "before": "THIRD_PERSON_FRONT",
+      "expectedAfter": "FIRST_PERSON",
+      "boundKey": 294
+    }
+  ],
+  "expectedPackActive": false,
+  "oculusInstalled": true,
+  "embeddiumInstalled": true,
+  "actualPackActive": false,
+  "packName": "(off)",
+  "scope": "Independent survival world; normal production mayfly grant, logical double-space entry and W motion. F5 uses vanilla KeyMapping.click/consumeClick. No forced camera position, remote avatar, forced shader route or pre-enabled ordinary flight. Pixel candidate is a diagnostic proxy backed by saved actual screenshots, not a draw-count success claim. No native GLFW physical-key certification.",
+  "glStageScope": "AFTER_PARTICLES before/after priority brackets the production geometry callback. AFTER_LEVEL and final RenderTick END cover the deferred composites plus normal intervening vanilla rendering; their FBO differences are observations, not automatically a leak. GUI-pre observation runs after higher-priority listeners. GL errors are recorded at each stage."
+}

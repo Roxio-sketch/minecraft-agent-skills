@@ -1,0 +1,47 @@
+{
+  "version": "formation-particle-library-v1",
+  "packages": [
+    {
+      "path": "E:\\五行仙途\\deliverables\\wuxingxiantu-formation-particle-library-v1.zip",
+      "bytes": 10860626,
+      "sha256": "88318a190de860d7c5b84ee3b0cc6aff2b8221b64ee1a591150666010ce92264",
+      "files": 1782,
+      "zipTest": true
+    },
+    {
+      "path": "E:\\五行仙途\\deliverables\\wuxingxiantu-formation-resourcepack-v1.zip",
+      "bytes": 5196030,
+      "sha256": "98c1a732ced052708097082607f7415abc6c92972afcd6371c27fde3b436ef71",
+      "files": 865,
+      "zipTest": true
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "formations": 36,
+    "families": 9,
+    "materials": 108,
+    "frameSamples": 144,
+    "blank": [],
+    "dynamicDuplicates": [],
+    "fileProtocolLoaded": true,
+    "grayControl": true,
+    "exportGeometry": true,
+    "mobileOverflow": false,
+    "errors": [],
+    "minecraftRendered": false
+  },
+  "structure": {
+    "families": 9,
+    "formations": 36,
+    "materials": 108,
+    "animatedMaterials": 36,
+    "formationLayerAtlases": 180,
+    "recipes": 36,
+    "nativeFx": 144,
+    "nativeProjects": 144,
+    "minecraftRendered": false,
+    "productionIntegrated": false,
+    "passed": true
+  }
+}

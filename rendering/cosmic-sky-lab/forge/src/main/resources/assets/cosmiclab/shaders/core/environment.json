@@ -1,0 +1,904 @@
+{
+  "vertex": "cosmiclab:environment",
+  "fragment": "cosmiclab:environment",
+  "attributes": [
+    "Position"
+  ],
+  "samplers": [
+    {
+      "name": "SceneSampler"
+    },
+    {
+      "name": "DepthSampler"
+    },
+    {
+      "name": "AtmosphereTransmittance"
+    },
+    {
+      "name": "AtmosphereMultipleScattering"
+    },
+    {
+      "name": "AtmosphereSkyViewSampler"
+    },
+    {
+      "name": "WeatherVolumeSampler"
+    },
+    {
+      "name": "SurfaceSampler"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "InverseProjection",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "InverseViewRotation",
+      "type": "matrix3x3",
+      "count": 9,
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Time",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "WorldWeather",
+      "type": "float",
+      "count": 2,
+      "values": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "PhysicalObserverHeight",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.07
+      ]
+    },
+    {
+      "name": "AtmosphereLutReady",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "AtmosphereSkyViewReady",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "AtmosphereLutSun",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "EnvironmentStage",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "WorldPrecipOrigin",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "WorldPrecipPresence",
+      "type": "float",
+      "count": 2,
+      "values": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "WorldPrecipGeometry",
+      "type": "float",
+      "count": 4,
+      "values": [
+        8,
+        16,
+        4,
+        0
+      ]
+    },
+    {
+      "name": "WorldSurfaceGrid",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0,
+        1,
+        128
+      ]
+    },
+    {
+      "name": "Quality",
+      "type": "int",
+      "count": 1,
+      "values": [
+        2
+      ]
+    },
+    {
+      "name": "Seed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        2718
+      ]
+    },
+    {
+      "name": "GiantBodySettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        1,
+        1.2,
+        0.65
+      ]
+    },
+    {
+      "name": "AtmosphereGeometry",
+      "type": "float",
+      "count": 4,
+      "values": [
+        6360,
+        100,
+        8,
+        1.2
+      ]
+    },
+    {
+      "name": "AtmosphereComposition",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1,
+        1,
+        1,
+        0.1
+      ]
+    },
+    {
+      "name": "AtmospherePhysical",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1,
+        0.07,
+        1,
+        64
+      ]
+    },
+    {
+      "name": "SnowSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.8,
+        0.06,
+        0.5,
+        0.9
+      ]
+    },
+    {
+      "name": "PrecipitationSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0,
+        0.6,
+        0.5
+      ]
+    },
+    {
+      "name": "PipelineSettings",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        1,
+        0.025
+      ]
+    },
+    {
+      "name": "WeatherSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0,
+        1,
+        0.65
+      ]
+    },
+    {
+      "name": "RainSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1,
+        1,
+        0.22,
+        0.6
+      ]
+    },
+    {
+      "name": "WeatherMotion",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.4363323129985824,
+        0,
+        0.7,
+        0.28
+      ]
+    },
+    {
+      "name": "FogSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0.002,
+        0.015,
+        64
+      ]
+    },
+    {
+      "name": "FogMotion",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.3,
+        0.008,
+        0.4,
+        512
+      ]
+    },
+    {
+      "name": "VolumeCloudSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0.48,
+        0.8,
+        0.004
+      ]
+    },
+    {
+      "name": "VolumeCloudGeometry",
+      "type": "float",
+      "count": 4,
+      "values": [
+        150,
+        70,
+        1000,
+        0.25
+      ]
+    },
+    {
+      "name": "VolumeCloudMotion",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.6,
+        0.4363323129985824,
+        0.15,
+        0.65
+      ]
+    },
+    {
+      "name": "CloudLighting",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.6,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "LightingDetail",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.12,
+        320,
+        1,
+        0.75
+      ]
+    },
+    {
+      "name": "RainbowSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0.017453292519943295,
+        0.55,
+        0.7
+      ]
+    },
+    {
+      "name": "HaloSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0.017453292519943295,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "SpecialSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        1,
+        1,
+        0.6
+      ]
+    },
+    {
+      "name": "SpecialShape",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.5,
+        0.25,
+        0,
+        0.7
+      ]
+    },
+    {
+      "name": "BlackHoleAppearance",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1,
+        1,
+        0.06,
+        0.9
+      ]
+    },
+    {
+      "name": "BlackHoleCinematic",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1,
+        1.1,
+        1.1,
+        1
+      ]
+    },
+    {
+      "name": "StarSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.38,
+        1.35,
+        1,
+        0.65
+      ]
+    },
+    {
+      "name": "MotionSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1.4,
+        0.4,
+        0.35,
+        1
+      ]
+    },
+    {
+      "name": "GalaxySettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.4363323129985824,
+        0.5585053606381855,
+        0.26,
+        1.2
+      ]
+    },
+    {
+      "name": "CloudSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.75,
+        3.5,
+        1.35,
+        1.15
+      ]
+    },
+    {
+      "name": "AuroraSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.65,
+        0.38,
+        0.2,
+        1.1
+      ]
+    },
+    {
+      "name": "MeteorSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1.8,
+        2.3,
+        0.16,
+        0.08
+      ]
+    },
+    {
+      "name": "BodySettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1.1,
+        0.20943951023931953,
+        0.4886921905584123,
+        0.6108652381980153
+      ]
+    },
+    {
+      "name": "BodySurface",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1,
+        0.6632251157578452,
+        4.2,
+        0.15
+      ]
+    },
+    {
+      "name": "RingSettings",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.75,
+        1.0821041362364843,
+        1.9
+      ]
+    },
+    {
+      "name": "BlackHoleSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0.10471975511965977,
+        -0.41887902047863906,
+        0.5235987755982988
+      ]
+    },
+    {
+      "name": "DiskSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1.2566370614359172,
+        6.5,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "AtmosphereSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SunSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        1.3,
+        0.4363323129985824,
+        0.2617993877991494,
+        0.007853981633974483
+      ]
+    },
+    {
+      "name": "DaySettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0.76,
+        0.04,
+        1
+      ]
+    },
+    {
+      "name": "MoonSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.8,
+        -2.2689280275926285,
+        0.5235987755982988,
+        0.020943951023931952
+      ]
+    },
+    {
+      "name": "MoonSurface",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.9599310885968813,
+        4,
+        0.35,
+        0.08
+      ]
+    },
+    {
+      "name": "ThinCloudSettings",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0,
+        0.45,
+        0.85,
+        1
+      ]
+    },
+    {
+      "name": "ThinCloudMotion",
+      "type": "float",
+      "count": 4,
+      "values": [
+        0.6,
+        0.4363323129985824,
+        0.35,
+        1
+      ]
+    },
+    {
+      "name": "SnowColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.9333333333333333,
+        0.9607843137254902,
+        1.0
+      ]
+    },
+    {
+      "name": "FogColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.5058823529411764,
+        0.6,
+        0.7058823529411765
+      ]
+    },
+    {
+      "name": "VolumeCloudColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "RainColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.7019607843137254,
+        0.7843137254901961,
+        0.8627450980392157
+      ]
+    },
+    {
+      "name": "LightningColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.8823529411764706,
+        0.9019607843137255,
+        1.0
+      ]
+    },
+    {
+      "name": "SpecialColorA",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.3568627450980392,
+        0.2196078431372549,
+        0.6039215686274509
+      ]
+    },
+    {
+      "name": "SpecialColorB",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.8745098039215686,
+        0.5843137254901961,
+        0.5215686274509804
+      ]
+    },
+    {
+      "name": "BackgroundColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.00784313725490196,
+        0.0196078431372549,
+        0.06666666666666667
+      ]
+    },
+    {
+      "name": "StarCoolColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.6039215686274509,
+        0.792156862745098,
+        1.0
+      ]
+    },
+    {
+      "name": "StarWarmColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1.0,
+        0.8470588235294118,
+        0.6509803921568628
+      ]
+    },
+    {
+      "name": "GalaxyColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.6823529411764706,
+        0.7450980392156863,
+        0.8627450980392157
+      ]
+    },
+    {
+      "name": "NebulaColorA",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.21176470588235294,
+        0.34901960784313724,
+        0.7058823529411765
+      ]
+    },
+    {
+      "name": "NebulaColorB",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.7176470588235294,
+        0.3607843137254902,
+        0.7450980392156863
+      ]
+    },
+    {
+      "name": "AuroraColorA",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.3215686274509804,
+        0.9098039215686274,
+        0.6901960784313725
+      ]
+    },
+    {
+      "name": "AuroraColorB",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.5176470588235295,
+        0.3764705882352941,
+        0.9372549019607843
+      ]
+    },
+    {
+      "name": "BodyColorA",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.32941176470588235,
+        0.4588235294117647,
+        0.7176470588235294
+      ]
+    },
+    {
+      "name": "BodyColorB",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.8784313725490196,
+        0.7372549019607844,
+        0.7254901960784313
+      ]
+    },
+    {
+      "name": "RingColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.7019607843137254,
+        0.788235294117647,
+        0.9176470588235294
+      ]
+    },
+    {
+      "name": "DiskColorA",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.8588235294117647,
+        0.2901960784313726,
+        0.07058823529411765
+      ]
+    },
+    {
+      "name": "DiskColorB",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1.0,
+        0.9450980392156862,
+        0.7176470588235294
+      ]
+    },
+    {
+      "name": "SkyTint",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SunColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1.0,
+        0.9450980392156862,
+        0.8196078431372549
+      ]
+    },
+    {
+      "name": "MoonColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.7450980392156863,
+        0.8313725490196079,
+        0.9333333333333333
+      ]
+    },
+    {
+      "name": "ThinCloudColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.9294117647058824,
+        0.9450980392156862,
+        0.9803921568627451
+      ]
+    },
+    {
+      "name": "CameraPosition",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        64,
+        0
+      ]
+    },
+    {
+      "name": "InverseViewTranslation",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "OutputDeltaEncoding",
+      "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    }
+  ]
+}

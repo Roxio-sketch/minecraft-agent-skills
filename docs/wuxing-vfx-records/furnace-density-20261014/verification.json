@@ -1,0 +1,65 @@
+{
+  "native-near": {
+    "cases": 9,
+    "totalGpuMs": [
+      11.276288000000001,
+      11.874304
+    ],
+    "minimumOpaqueBedPixelsGasDisabled": 14561,
+    "fieldMaxError": 0.0,
+    "allGlZero": true
+  },
+  "solas-near": {
+    "cases": 9,
+    "totalGpuMs": [
+      11.342336,
+      11.868160000000001
+    ],
+    "minimumOpaqueBedPixelsGasDisabled": 14547,
+    "fieldMaxError": 0.0,
+    "allGlZero": true
+  },
+  "flight": {
+    "result": "PASS",
+    "checks": [
+      {
+        "tick": 0,
+        "name": "initial_survival_not_flying",
+        "pass": true,
+        "detail": "Flight starts disabled; real permission/buff arrived from server"
+      },
+      {
+        "tick": 85,
+        "name": "realm8_special_ground_actual_displacement",
+        "pass": true,
+        "detail": "client horizontal=51.45189492640809, server horizontal=51.45189492640809, minimum=8.0"
+      },
+      {
+        "tick": 85,
+        "name": "realm8_special_ground_position_agreement",
+        "pass": true,
+        "detail": "Client/server latest-sampled position discrepancy=0.0; asynchronous sample is usually one tick old"
+      },
+      {
+        "tick": 85,
+        "name": "realm8_special_ground_abilities",
+        "pass": true,
+        "detail": "Actual client/server mayfly/flying are enabled"
+      },
+      {
+        "tick": 86,
+        "name": "first_person_flow",
+        "pass": true,
+        "detail": "Submitted vertices=16, strength=0.6499997262421264"
+      },
+      {
+        "tick": 86,
+        "name": "first_person_clear_center",
+        "pass": true,
+        "detail": "Local world-wake segments=0"
+      }
+    ]
+  },
+  "build": "PASS",
+  "installedSha256": "FE8CF122A52367603A66431FC04DF79E2F680A59B2824DF463714666B408B74F"
+}

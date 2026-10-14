@@ -1,0 +1,35 @@
+{
+  "previewSha256": "ae984116e7f582362db9e977d5d6197d3630531b87abc188791647a2845aee7e",
+  "frames": [
+    {
+      "mode": 2,
+      "view": "mouth",
+      "time": 22,
+      "file": "bowl9a-mode2-mouth.png",
+      "state": {
+        "ready": true,
+        "failed": false,
+        "rendered": true,
+        "time": 22,
+        "paused": true,
+        "fieldCount": 62,
+        "presetCount": 8,
+        "camera": {
+          "position": [
+            115,
+            224.2,
+            138
+          ],
+          "yaw": -2.44685437739309,
+          "pitch": -0.4442339147886151
+        },
+        "resolution": [
+          960,
+          599
+        ],
+        "error": null,
+        "composition": "linearScene + surfaceLight; scene * transmittance + radiance; tonemap"
+      }
+    }
+  ]
+}

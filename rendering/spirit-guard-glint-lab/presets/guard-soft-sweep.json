@@ -1,0 +1,22 @@
+{
+  "schema": "spirit-guard-glint/1",
+  "preset": "guard-soft-sweep",
+  "parameters": {
+    "style": 1,
+    "color": "#AFDFFF",
+    "color2": "#E8F8FF",
+    "intensity": 0.9,
+    "speed": 0.85,
+    "scale": 1,
+    "width": 0.15,
+    "angle": -25,
+    "secondary": 0.3
+  },
+  "scene": {
+    "shape": "chest",
+    "material": "iron",
+    "yaw": 0.32,
+    "pitch": -0.08,
+    "orbit": false
+  }
+}
