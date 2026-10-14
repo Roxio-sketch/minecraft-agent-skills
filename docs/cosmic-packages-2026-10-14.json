@@ -1,0 +1,24 @@
+{
+  "tag": "2026-10-14",
+  "skill": {
+    "file": "minecraft-cosmic-material-skill-2026-10-14.zip",
+    "sha256": "9f72084001ad93615b44d3f6574375290cac9cc67a03d6d91b25d55d73975a43",
+    "bytes": 295075,
+    "entries": 59,
+    "validated": true
+  },
+  "workbench": {
+    "file": "cosmic-shield-workbench-2026-10-14.zip",
+    "sha256": "2a99cda68b16474428f613892565fd2193c90f7708e8f6c744f68f9787a0bc87",
+    "bytes": 5371,
+    "entries": 2,
+    "html_sha256": "496f7395df505db53dfa53130b0f1786f7968032abef8f4c9c676ce7722e1e17",
+    "validated": true
+  },
+  "excluded": [
+    "__pycache__",
+    "*.pyc",
+    "skill-validation",
+    ".git"
+  ]
+}

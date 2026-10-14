@@ -1,0 +1,17 @@
+const assert=require('node:assert/strict');
+const {OceanSpectrum,inverse2,N}=require('../assets/fantasy-lab/ocean-spectrum.js');
+const r=new Float64Array(N*N),im=new Float64Array(N*N);r[0]=N*N;inverse2(r,im);
+assert(r.every(x=>Math.abs(x-1)<1e-12));assert(im.every(x=>x===0));
+const p={seed:740,waveLength:2.1,windAngle:35,depth:1.8,speed:.65},ocean=new OceanSpectrum();
+const first=ocean.get(p,1.5),before=first.cascades.map(c=>new Float32Array(c.map));
+assert(first.cascades.every(c=>c.imaginaryResidual<1e-10));
+assert.equal(ocean.get(p,1.5).version,first.version);
+const second=ocean.get(p,1.55);assert(second.cascades.every(c=>c.imaginaryResidual<1e-10));
+assert(second.cascades.every((c,i)=>c.map.some((v,k)=>Math.abs(v-before[i][k])>.001)));
+const clone=new OceanSpectrum().get(p,1.5);clone.cascades.forEach((c,i)=>assert.deepEqual(c.map,before[i]));
+const wind0=new OceanSpectrum().get({...p,windAngle:0},2),wind360=new OceanSpectrum().get({...p,windAngle:360},2);
+wind0.cascades.forEach((c,i)=>assert.deepEqual(c.map,wind360.cascades[i].map));
+const frozen=new OceanSpectrum(),a=frozen.get({...p,speed:0},0),frozenVersion=a.version;
+assert.equal(frozen.get({...p,speed:0},200).version,frozenVersion);
+assert(a.cascades.every(c=>c.map.every(Number.isFinite)));
+console.log(JSON.stringify({status:'passed',checks:9,size:N,cascades:2,imaginaryResidual:clone.cascades.map(c=>c.imaginaryResidual)}));

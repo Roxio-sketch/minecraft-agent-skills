@@ -1,0 +1,4 @@
+interface:
+  display_name: "Minecraft Cosmic 与奇幻材质"
+  short_description: "把文字描述变成星空、符文、秘银、玉脉或其他奇幻材质，制作并验证"
+  default_prompt: "使用 $minecraft-cosmic-material，把我的描述转成具有独特结构、质感和动态的物品材质，选择或创作合适算法，提供可调初稿，再按目标版本接入并验证。"

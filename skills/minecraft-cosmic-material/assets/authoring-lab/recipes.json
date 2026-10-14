@@ -1,0 +1,21 @@
+{
+  "schema": "cosmic-authoring-preview/v1",
+  "note": "Original WebGL material studies, not Minecraft NBT or a registered Forge resource format. Colors are linear RGB; time is seconds; length is virtual material units.",
+  "presets": [
+    {
+      "id": "deep-field", "name": "深空星海", "brief": "大部分区域安静而深黑；蓝青薄雾藏在深处，远星细密，近处只有少量亮星。移动视角时能读出前后层次。",
+      "seed": 73, "density": 0.72, "starSize": 1.2, "cloud": 0.32, "dust": 0.8, "depth": 4.0, "parallax": 0.8, "scale": 1.0, "speed": 0.10, "starSpeed": 0.42, "twinkle": 0.78, "twinkleRate": 1.0, "exposure": 1.2, "steps": 16,
+      "void": [0.0006,0.0013,0.0035], "cloudA": [0.012,0.043,0.14], "cloudB": [0.022,0.30,0.36], "starTint": [0.70,0.87,1.0]
+    },
+    {
+      "id": "violet-nebula", "name": "紫蓝星云", "brief": "内部是一条斜向展开的紫蓝星云，亮处偏冰蓝，边缘向紫色过渡，暗尘穿过发光气体，星点不要淹没星云。",
+      "seed": 137, "density": 0.58, "starSize": 1.5, "cloud": 1.55, "dust": 0.65, "depth": 4.0, "parallax": 0.85, "scale": 0.8, "speed": 0.09, "starSpeed": 0.36, "twinkle": 0.72, "twinkleRate": 0.9, "exposure": 1.15, "steps": 16,
+      "void": [0.0008,0.0006,0.004], "cloudA": [0.16,0.018,0.36], "cloudB": [0.06,0.44,0.75], "starTint": [0.76,0.84,1.0]
+    },
+    {
+      "id": "ember-rift", "name": "赤金裂隙", "brief": "黑暗内部透出红色气体与少量金色亮点；暗尘切断云带，保留锋利轮廓，整体像封存在物品里的遥远燃烧星域。",
+      "seed": 319, "density": 0.43, "starSize": 1.5, "cloud": 1.2, "dust": 1.5, "depth": 4.5, "parallax": 0.9, "scale": 0.95, "speed": 0.075, "starSpeed": 0.30, "twinkle": 0.82, "twinkleRate": 0.8, "exposure": 1.12, "steps": 16,
+      "void": [0.002,0.0003,0.0004], "cloudA": [0.26,0.009,0.006], "cloudB": [0.75,0.23,0.025], "starTint": [1.0,0.73,0.35]
+    }
+  ]
+}
