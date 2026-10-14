@@ -20,3 +20,5 @@ description: 为 Minecraft 动态物品、ModelPart 和骨骼载体适配程序�
 示例中改变资源 JSON 后重载，再重新 start；无效配方保留上一份有效配置并打印错误。scaffold 不部署 mod、不启动游戏、不覆盖已有工程。采用既有实例时遵循用户选择及启动器工作流；本技能不隐含选择某个存档。
 
 资产为原创 Java/GLSL/JSON；参考项目定位和许可边界见 [来源](references/sources.md)。交付时附运行结果、已实现字段、实际目标类别和剩余边界。只交参数表不构成用户要求的完整效果制作。
+
+真实装备几何捕获、世界/GUI分流或静态材质拆层时，读 [宿主几何适配](references/host-geometry-capture.md)。

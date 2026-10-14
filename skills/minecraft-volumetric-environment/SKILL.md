@@ -60,3 +60,5 @@ python "<新目录>/workbench/serve.py" --port 8774
 随附 `assets/world-volume-lab/` 包含共用 GLSL、WebGL2 工作台、严格配方工具和完整 Forge 示例。采用有限单区域与单事件的中点积分，没有历史重投影、任意透明层或多区域灯光管理；在任务需要时扩展相应生产者与验证，而非凭模板名称声明能力。
 
 涡旋与水体的验收范围见 [页面检查](references/validation/vortex.json)、[碗口专项 GPU 检查](references/validation/vortex-revision9.json)、[实际预览](references/validation/vortex-revision9-visual.json) 和 [安装版独立试作](references/validation/vortex-portable.json)。按各报告的源码指纹、原始通过项和失败项判断；顶部空腔应检查中心为空、周围有水及内外法线，旧版全高度实芯指标属于历史。历史少量像素重放差异不能改写成严格通过，资料包完整性也不表示渲染检查全部通过。
+
+接入宿主晚合成、替换原版云或与闪电/前景特效共存时，读 [宿主合成顺序](references/host-late-composite.md)。

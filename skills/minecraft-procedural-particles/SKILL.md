@@ -22,3 +22,5 @@ description: 从自然语言制作 Minecraft 代码驱动的发射器、环绕�
 资产为原创 Java/GLSL/JSON；参考项目定位和许可边界见 [来源](references/sources.md)。交付时附运行结果、已实现字段、实际目标类别和剩余边界。只交参数表不构成用户要求的完整效果制作。
 
 独立内核可在设置 `JAVA_HOME` 为 JDK 17 后执行 `python scripts/check_core.py`，无需 Minecraft 或 Gradle。
+
+地面图案、定向薄片、实体附着火焰或状态停止效果时，读 [粒子表面与生命周期](references/host-particle-surfaces.md)。

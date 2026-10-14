@@ -54,3 +54,5 @@ Simplex 噪声移植来源及许可见 [第三方声明](THIRD_PARTY_NOTICES.md)
 ## 白核心与接点亮斑
 
 核心和光晕均须使用逐路径 MAX 覆盖并集后再合成，避免独立线段与圆接点重复加法产生规律亮斑。同步迁移 LightningRender、LightningHalo 与 bolt_halo.fsh/json；只拷贝几何不会带上核心合成修复。仅光晕渐变时保留核心原加法增益。白核心、远景彩色光晕可从 [紫青参考配方](assets/presets/white-core-magenta-cyan.json) 起步；不要用降低整个效果增益替代主雷变细。用户配置为专用示例，不覆盖通用预设。
+
+闪电与云雾及前景特效共用晚合成时，读 [合成依赖与HUD隐藏](references/late-composite-order.md)。

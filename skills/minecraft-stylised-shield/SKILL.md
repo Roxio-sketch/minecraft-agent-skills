@@ -17,5 +17,4 @@ description: 将 Unity Stylised Energy Shield Shader Graph 转换为 Minecraft F
 
 从 `workbench` 目录运行 `node serve.cjs 8766`，用浏览器打开 `http://127.0.0.1:8766/`。检查四种几何形状、拖动视角、透明度/图案实时变化、中心命中、连续命中、破碎、暂停和恢复。`node --test tests/fracture.test.cjs` 验证生命周期与切割几何；安装了 Playwright 与 Edge 的环境可运行 `node tests/browser-smoke.cjs <截图目录>` 验证 WebGL 和回放。导出 JSON 后运行 Forge 工程的 `gradlew build`，再进入客户端执行 `/shieldfx demo`，修改配置后 `/shieldfx reload`。HTML 预览通过不等于游戏运行通过；分别记录浏览器、构建和游戏实测状态。
 
-
-
+接入真实受击事件、多人护盾破碎或后台切割时，读 [异步破碎接入](references/async-fracture-integration.md)。
