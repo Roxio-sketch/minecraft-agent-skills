@@ -38,3 +38,5 @@ description: 从自然语言制作 Minecraft 武器拖尾、刀光、轨迹残�
 - `assets/presets/`：三份基础配方；HTML 中另有霜蓝、棱彩、螺旋、熔火、紫电、符文和分叉雷束七种起点。第三展示槽可加载配方和路径；任意真实武器的刃根/刃尖仍由适配器提供。
 
 来源和迁移边界见 [sources.md](references/sources.md)。代码和纹理为独立实现，不打包参考 MOD 实现。构建/证据输出到工作目录，不在已安装 skill 内运行 Gradle。
+
+修复第一人称飞行拖尾或速度流时，读 [第一人称分层](references/first-person-layers.md)，分别处理边缘流、世界历史轨迹与中心主体。
