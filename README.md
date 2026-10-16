@@ -2,7 +2,7 @@
 
 Open-source Codex skills, editable rendering workbenches, and Forge 1.20.1 examples for Minecraft developers. The collection connects natural-language effect design, parameter editing, shader integration, and reproducible validation. [English overview](docs/README.en.md).
 
-面向 Minecraft 开发者的 Codex Skills、可编辑渲染工作台和 Forge 示例。当前公开 **23 个渲染相关 Skill、32 个工作台/预览/研究入口**，以及五行仙途中的特效开发与性能优化记录。原有启动器保留；Photon 自动化 Skill 已同步最新工具和版本参考。
+面向 Minecraft 开发者的 Codex Skills、可编辑渲染工作台和 Forge 示例。当前公开 **24 个渲染相关 Skill、32 个工作台/预览/研究入口**，以及五行仙途中的特效开发与性能优化记录。原有启动器保留；Photon 自动化 Skill 已同步最新工具和版本参考。
 
 - [完整功能、资源、脚本与记录目录](docs/rendering-catalog.md)
 - [安装与工作台启动](docs/getting-started.md)
@@ -44,6 +44,7 @@ Copy-Item -LiteralPath .\skills\minecraft-energy-vfx -Destination $skillsDir -Re
 | 内容 | Skill |
 |---|---|
 | [动态模型与材质挂点](skills/minecraft-animated-material-adapter/SKILL.md) | `minecraft-animated-material-adapter` |
+| [程序化空间裂缝](skills/minecraft-space-rift/SKILL.md) | `minecraft-space-rift` |
 | [黑洞与白洞](skills/minecraft-black-hole/SKILL.md) | `minecraft-black-hole` |
 | [彩色附魔流光与御体护纹](skills/minecraft-colored-glint/SKILL.md) | `minecraft-colored-glint` |
 | [物品内部星空与奇幻材质](skills/minecraft-cosmic-material/SKILL.md) | `minecraft-cosmic-material` |

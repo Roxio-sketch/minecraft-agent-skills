@@ -295,6 +295,8 @@ final class ScrollableRows extends AbstractWidget {
         if(v.offset()<scroll)scroll=v.offset();else if(v.offset()+v.height()>scroll+height)scroll=clamp(v.offset()+v.height()-height);return true;
     }
     private List<String> enumChoices(ParamSpec p){
+        if(state.schema.id.equals(BlackHoleSkillSchema.ID)&&p.key.equals("diskStyle"))
+            return p.enumValues.stream().filter(value->!value.equals("cinematic")).toList();
         return state.schema.id.equals(BlackHoleSkillSchema.ID)&&p.key.equals("form")
             ?BlackHoleSkillSchema.PRESET_FORMS:state.schema.id.equals("lightning")&&p.key.equals("preset")
             ?dev.vfxworkbench.effects.lightning.LightningSkillSchema.PRESET_CHOICES:p.enumValues;

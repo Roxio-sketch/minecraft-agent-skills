@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="See NOTICE.md; supplied kit usage grant and newly added code"
+[[mods]]
+modId="spacerift"
+version="0.2.0"
+displayName="Procedural Space Rift"
+description="Procedural world-space cuts with a separate scene-color capture pass."
+[[dependencies.spacerift]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,48)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.spacerift]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"

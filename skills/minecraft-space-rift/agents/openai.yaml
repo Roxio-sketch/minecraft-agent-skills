@@ -1,0 +1,4 @@
+interface:
+  display_name: "程序化空间裂缝"
+  short_description: "复用GLSL裂缝、动态星河、14预设和Forge 1.20.1渲染接口"
+  default_prompt: "使用 $minecraft-space-rift 制作程序化空间裂缝，复用共享Shader与参数预设，按现有工程接入。"

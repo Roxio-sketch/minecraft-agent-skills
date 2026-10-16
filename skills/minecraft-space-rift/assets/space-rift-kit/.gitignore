@@ -1,0 +1,4 @@
+evidence/
+forge/.gradle/
+forge/build/
+__pycache__/

@@ -19,7 +19,7 @@ public final class RandomSchemes {
                 put(values,"form","recipe");put(values,"seed",r.nextInt(65536));
                 double core=number(r,.3,.8),inner=core+number(r,.03,.55),outer=number(r,3.6,7.5);
                 put(values,"core",core);put(values,"inner",inner);put(values,"outer",outer);
-                put(values,"diskStyle",new String[]{"dust","cinematic","ribbons","classic","granular"}[r.nextInt(5)]);
+                put(values,"diskStyle",new String[]{"dust","ribbons","classic","granular"}[r.nextInt(4)]);
                 put(values,"thickness",number(r,.055,.22));put(values,"bend",number(r,.45,1.4));
                 put(values,"density",number(r,2,6));put(values,"exposure",number(r,.35,1.1));
                 put(values,"speed",number(r,.2,1.3));put(values,"infallSpeed",number(r,.08,.8));
