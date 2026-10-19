@@ -1,0 +1,47 @@
+{
+  "schema": "dunguang-stage-source-study/1",
+  "date": "2026-10-15",
+  "priority": "Shadertoy first, per workspace AGENTS",
+  "attempted": [
+    {
+      "url": "https://www.shadertoy.com/results?query=shockwave",
+      "result": "web tool could not read result content"
+    },
+    {
+      "url": "https://www.shadertoy.com/results?query=portal",
+      "result": "in-app browser visibly shows Cloudflare security verification; did not solve or bypass"
+    },
+    {
+      "url": "https://www.shadertoy.com/view/ldSGzR",
+      "result": "web tool could not access work code; indexed generic page shell insufficient to identify algorithm"
+    },
+    {
+      "url": "https://www.shadertoy.com/view/ddcXWl",
+      "result": "web open failed with 402; no shader code retrieved"
+    }
+  ],
+  "passesRead": {
+    "Common": false,
+    "BufferA": false,
+    "BufferB": false,
+    "BufferC": false,
+    "BufferD": false,
+    "Image": false,
+    "inputChannels": false
+  },
+  "author": null,
+  "workTitle": null,
+  "license": null,
+  "thirdPartyShaderCopied": false,
+  "implementationBasis": [
+    "existing inspected local video frames and evidence tables",
+    "independently written parametric rings, open spiral ribbons, event-age windows and smooth acceleration",
+    "existing project noise, trail and independent bloom pipeline"
+  ],
+  "notClaimed": [
+    "no Shadertoy work algorithm study completed",
+    "no verified third-party reuse license",
+    "no exact movie reconstruction",
+    "no Forge runtime validation"
+  ]
+}

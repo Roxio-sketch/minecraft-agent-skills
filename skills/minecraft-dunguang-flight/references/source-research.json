@@ -1,0 +1,462 @@
+{
+  "schema": "dunguang-source-research/1",
+  "checked_date": "2026-10-15",
+  "target": "Minecraft Forge 1.20.1 / Java 17",
+  "scope": "原始论文、作者源码及官方文档的静态阅读；未运行外部引擎或 Minecraft；不是对参考视频制作管线的逆向确认。",
+  "source_count": 14,
+  "sources": [
+    {
+      "id": "unity-trail-reference",
+      "priority": "P0",
+      "title": "Trail Renderer component reference",
+      "author": "Unity Technologies",
+      "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/class-TrailRenderer.html",
+      "kind": "官方文档",
+      "commit": null,
+      "layers": [
+        "history",
+        "sampling",
+        "uv",
+        "lifetime"
+      ],
+      "read": [
+        "Trail settings: Time / Min Vertex Distance / Alignment / Texture Mode / Width / Color"
+      ],
+      "learn": "尾迹点按世界距离生成、按年龄消失；长度平铺 UV 与整条 Stretch 的区别；相机朝向与物体朝向条带的区别。",
+      "forge_transfer": "把这些职责做成 Java 历史缓冲、距离采样器和 Shader 参数；不需要 Unity 运行库。高速移动每 tick 可以插入多个定距点，平滑曲线不能恢复未知的真实转弯轨迹。",
+      "next_experiment": "同一路径用 30/60/144 fps 回放，检查点距、纹理比例和消失时间一致；停车后旧尾迹自然消散。",
+      "license": "文档仅作阅读与链接；未查到对该页面全部文字和截图的通用复制许可。",
+      "copy_policy": "不打包文档或截图；以原创实现表达相同功能。",
+      "license_url": null,
+      "status": "已打开官方页面并阅读参数定义；未检查 Unity 引擎实现。"
+    },
+    {
+      "id": "three-curve-transport",
+      "priority": "P0",
+      "title": "three.js Curve.js：弧长映射与连续截面框架",
+      "author": "three.js authors",
+      "url": "https://github.com/mrdoob/three.js/blob/a58e9ecf225b50e4a28a934442e854878bc2a959/src/extras/core/Curve.js",
+      "kind": "作者仓库源码",
+      "commit": "a58e9ecf225b50e4a28a934442e854878bc2a959",
+      "layers": [
+        "sampling",
+        "frame",
+        "ribbon",
+        "tube"
+      ],
+      "read": [
+        "src/extras/core/Curve.js: getSpacedPoints / getLengths / getUtoTmapping / computeFrenetFrames",
+        "LICENSE"
+      ],
+      "learn": "通过累计弧长反查均匀位置；截面通过相邻切线之间的轴角旋转传播。函数名含 Frenet，但代码使用连续传递法向，避免直接依赖二阶导数构造严格 Frenet 框架。",
+      "forge_transfer": "用 JOML 向量与四元数实现连续截面，供世界空间丝带或少边数细管使用。必须额外处理重复点、极短段和近 180 度反向；原源码不应直接当作完整异常处理方案。",
+      "next_experiment": "用直线、S 形、螺旋、急转和反向折返点测试法向连续性；相机绕行观察是否出现翻面。",
+      "license": "MIT；Copyright 2010–2025 three.js authors。",
+      "copy_policy": "允许按 MIT 复用；保留版权和完整许可声明。原创概念实现也应注明学习来源。",
+      "license_url": "https://github.com/mrdoob/three.js/blob/a58e9ecf225b50e4a28a934442e854878bc2a959/LICENSE",
+      "status": "已读取固定提交源码和 LICENSE；未运行 three.js。"
+    },
+    {
+      "id": "bridson-curl-noise",
+      "priority": "P0",
+      "title": "Curl-Noise for Procedural Fluid Flow",
+      "author": "Robert Bridson / Jim Hourihan / Marcus Nordenstam",
+      "url": "https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph2007-curlnoise.pdf",
+      "kind": "原论文＋作者示例",
+      "commit": null,
+      "layers": [
+        "curl",
+        "filament",
+        "particles",
+        "advection"
+      ],
+      "read": [
+        "论文 §2：势函数旋度、空间调制与边界",
+        "curlnoise.tar.gz（23032 bytes，内存读取，未保存）：curlnoise.h / example_3dplume.cpp / main3.cpp",
+        "作者主页 Downloads 的 public domain 声明"
+      ],
+      "learn": "速度由向量势的旋度得到；若需要空间幅度遮罩，先调制势函数再取旋度。示例使用中心差分求旋度，再积分粒子路径。",
+      "forge_transfer": "用于少量离体丝与尾端碎光的扰动，在人物轨迹切线周围叠加有方向的主流。解析噪声导数可减少差分采样成本。",
+      "next_experiment": "固定 seed，在只有主流、主流＋curl 两种模式中跟踪同一批粒子；避免用每帧随机位移伪装流动。",
+      "license": "作者主页明确声明示例 public domain；论文文本和第三方依赖不自动采用同一许可。",
+      "copy_policy": "作者示例可按 public domain 声明使用；依赖逐项核对；论文只引用链接。",
+      "license_url": "https://www.cs.ubc.ca/~rbridson/",
+      "code_url": "https://www.cs.ubc.ca/~rbridson/download/curlnoise.tar.gz",
+      "status": "已读论文、作者声明及归档内 3 个关键文件；未编译示例。",
+      "caveats": [
+        "curl 无散场不会自行压缩、聚集粒子；添加吸引场后不再宣称最终场全局无散。",
+        "main3.cpp 自己注明未在半步更新时间：它对时间变化场并非完整二阶 RK2；新实现应在 t+dt/2 求中点速度。"
+      ]
+    },
+    {
+      "id": "psrdnoise-flow",
+      "priority": "P0",
+      "title": "Tiling Simplex Noise and Flow Noise / psrdnoise3.glsl",
+      "author": "Stefan Gustavson / Ian McEwan",
+      "url": "https://jcgt.org/published/0011/01/02/",
+      "kind": "论文配套作者源码",
+      "commit": "419175a270862ce7ae692038fafafb42ec0427e9",
+      "layers": [
+        "noise",
+        "flow",
+        "erosion",
+        "mesh"
+      ],
+      "read": [
+        "src/psrdnoise3.glsl: float psrdnoise / rotating gradients / analytic gradient / 文件内 MIT"
+      ],
+      "learn": "alpha 控制格点梯度旋转，返回噪声及解析空间导数；用于有连续卷动外观的侵蚀或多尺度域扭曲。",
+      "forge_transfer": "纯 GLSL 可迁移至人物周围壳层、短锥形气罩和尾迹材质。先控制层数与覆盖率；不把每个片元的多层解析噪声无条件放进几十次体积步进。",
+      "next_experiment": "对比静态噪声平移与旋转梯度；关闭 Bloom 后检查破口和细丝仍具有连贯运动。",
+      "license": "GLSL 文件内 MIT，Copyright 2021 Gustavson / McEwan；论文与代码许可分开。",
+      "copy_policy": "允许按 MIT 复用该 GLSL，保留文件头版权和许可。",
+      "license_url": "https://github.com/stegu/psrdnoise/blob/419175a270862ce7ae692038fafafb42ec0427e9/src/psrdnoise3.glsl",
+      "code_url": "https://github.com/stegu/psrdnoise/blob/419175a270862ce7ae692038fafafb42ec0427e9/src/psrdnoise3.glsl",
+      "status": "已打开论文入口并阅读全文源码；论文入口正文未被抓取，不宣称通读论文 PDF。",
+      "caveats": [
+        "旋转梯度的 flow 外观不等于物质平流或 Navier–Stokes 求解。",
+        "对 warp 后坐标返回的梯度，若当作原坐标解析导数使用，需要链式法则。"
+      ]
+    },
+    {
+      "id": "effekseer-ribbon-distortion",
+      "priority": "P1",
+      "title": "Effekseer：RibbonRenderer 与 GL 背景扭曲/软交界",
+      "author": "Effekseer Project",
+      "url": "https://github.com/effekseer/Effekseer/tree/82b37081a302b9f9eff0bf14dc6c845fca8c3c54",
+      "kind": "作者仓库源码",
+      "commit": "82b37081a302b9f9eff0bf14dc6c845fca8c3c54",
+      "layers": [
+        "ribbon",
+        "uv",
+        "distortion",
+        "soft-depth"
+      ],
+      "read": [
+        "Dev/Cpp/EffekseerRendererCommon/EffekseerRendererCommon/EffekseerRenderer.RibbonRendererBase.h: RenderSplines / ViewpointDependent / spline_left / spline_right",
+        "Dev/Cpp/EffekseerRendererGL/EffekseerRendererGL/Shader_3/model_distortion_ps.fx: SoftParticle / _main",
+        "LICENSE"
+      ],
+      "learn": "左右边界分别组织连续条带；朝向模式与几何不同；背景扭曲显式读取 backTex；软交界先重建深度再比较，另有近相机渐隐。",
+      "forge_transfer": "学习几何与 pass 分工；在 Java 中重新组织顶点。若需要热浪扭曲，必须准备稳定世界颜色副本和深度；纹理 UV 扭曲不能代替背景扭曲。",
+      "next_experiment": "给背景放棋盘方块，开关扭曲观察背景实际位移；用前景墙检验遮挡，进入气罩检验近相机渐隐。",
+      "license": "核心 MIT；第三方与示例资产独立核查。",
+      "copy_policy": "核心代码按 MIT 保留声明；不自动下载或打包样例纹理、模型。",
+      "license_url": "https://github.com/effekseer/Effekseer/blob/82b37081a302b9f9eff0bf14dc6c845fca8c3c54/LICENSE",
+      "code_url": "https://github.com/effekseer/Effekseer/blob/82b37081a302b9f9eff0bf14dc6c845fca8c3c54/Dev/Cpp/EffekseerRendererGL/EffekseerRendererGL/Shader_3/model_distortion_ps.fx",
+      "status": "已读固定提交条带和 GL shader 关键段及 LICENSE；未构建 C++ 运行库。"
+    },
+    {
+      "id": "gpu-gems-soft-particles",
+      "priority": "P0",
+      "title": "GPU Gems 3 Chapter 23: High-Speed, Off-Screen Particles",
+      "author": "Iain Cantlay / NVIDIA",
+      "url": "https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-23-high-speed-screen-particles",
+      "kind": "作者技术章节",
+      "commit": null,
+      "layers": [
+        "soft-depth",
+        "transparency",
+        "overdraw",
+        "quality"
+      ],
+      "read": [
+        "§23.2 离屏渲染",
+        "§23.3 深度降采样",
+        "§23.4 soft particles",
+        "§23.5 alpha blending",
+        "§23.6 混合分辨率"
+      ],
+      "learn": "软粒子基于片元与场景的深度差渐隐；低分辨率能减少大面积柔雾过绘，但深度降采样会产生光边或侵入；细丝应单独考虑分辨率。",
+      "forge_transfer": "对雾层可采用低分辨率颜色目标与深度约束上采样；主条带保持足够清晰。两个深度必须同一空间、同一距离单位。",
+      "next_experiment": "全分辨率与半分辨率对比靠墙、树叶、远处山体和近相机边界，统计覆盖率与 GPU 时间。",
+      "license": "网页可公开阅读；本次未核实所链接 SDK/CD 示例的独立复制授权。",
+      "copy_policy": "引用概念与链接，原创实现；不将在线章节可读等同于可整段复制代码或图。",
+      "license_url": null,
+      "status": "已读官方章节；未下载 SDK。",
+      "caveats": [
+        "网页 Listing 23-1 与 23-2 的深度差符号存在直观不一致，不直接照抄。对向前为正的线性距离定义，应使用 clamp((sceneDistance-fragmentDistance)/fadeDistance,0,1)，并用遮挡测试验证。",
+        "2007 年 GPU 实测不能外推到当前 Minecraft 性能。"
+      ]
+    },
+    {
+      "id": "clouds-local-volume",
+      "priority": "P1",
+      "title": "Sebastian Lague / Clouds：有界密度、细节侵蚀与深度裁剪",
+      "author": "Sebastian Lague",
+      "url": "https://github.com/SebLague/Clouds/tree/fcc997c40d36c7bedf95a294cd2136b8c5127009",
+      "kind": "作者仓库源码",
+      "commit": "fcc997c40d36c7bedf95a294cd2136b8c5127009",
+      "layers": [
+        "volume",
+        "density",
+        "erosion",
+        "soft-depth"
+      ],
+      "read": [
+        "Assets/Scripts/Clouds/Shaders/Clouds.shader: rayBoxDst / sampleDensity / lightmarch / frag",
+        "LICENSE"
+      ],
+      "learn": "大形状和小尺度侵蚀分离；射线与局部域相交，再以场景深度限制积分区间；透射率使用与步长相关的指数衰减。",
+      "forge_transfer": "只在需要厚雾/内部层次时做局部体积；把云高度分布换成人物气罩或尾端形状域。高速遁光不必默认使用完整云渲染或每人一套三维流体。",
+      "next_experiment": "相机从罩外进入罩内，前景墙遮挡一半；切换采样步数后平均亮度保持近似稳定。",
+      "license": "MIT，Copyright 2019 Sebastian Lague；第三方资源另查。",
+      "copy_policy": "可按 MIT 学习和移植代码，保留版权及许可；本次不复制资源。",
+      "license_url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/LICENSE",
+      "code_url": "https://github.com/SebLague/Clouds/blob/fcc997c40d36c7bedf95a294cd2136b8c5127009/Assets/Scripts/Clouds/Shaders/Clouds.shader",
+      "status": "已读固定提交核心 Shader 和 LICENSE；未运行 Unity。"
+    },
+    {
+      "id": "shimmer-selective-bloom",
+      "priority": "P0",
+      "title": "Shimmer 1.20：指定效果 Bloom 与后处理调度",
+      "author": "Low-Drag-MC / KilaBash / zomb_676",
+      "url": "https://github.com/Low-Drag-MC/Shimmer/tree/49cb20e7406de63027f8666d6dde9b73d8444f80",
+      "kind": "Minecraft 对应旧分支源码",
+      "commit": "49cb20e7406de63027f8666d6dde9b73d8444f80",
+      "layers": [
+        "bloom",
+        "integration",
+        "fbo"
+      ],
+      "read": [
+        "Common/src/main/java/com/lowdragmc/shimmer/client/postprocessing/PostProcessing.java",
+        "Common/src/main/resources/assets/shimmer/shaders/post/bloom_unreal.json",
+        "Forge/src/main/resources/META-INF/mods.toml",
+        "LICENSE"
+      ],
+      "learn": "指定几何/粒子的输入通道与世界颜色/深度复制；1/2、1/4、1/8、1/16 目标和横纵可分离模糊；发光主体与外扩 Bloom 分工。",
+      "forge_transfer": "最贴近目标的合成参考。用独立 emission 缓冲控制哪些遁光区域扩散；保留 alpha、深度与资源重载约定，不让整个天空随阈值一起泛白。",
+      "next_experiment": "同时放高亮白色方块和蓝色遁光，只让遁光 Bloom；关闭 Bloom 后人物轮廓、主尾迹仍应可读。",
+      "license": "MIT；根 LICENSE 与 Forge mods.toml 均声明 MIT。",
+      "copy_policy": "允许按 MIT 复用并保留声明；渲染 mod 组合要另做实机测试。",
+      "license_url": "https://github.com/Low-Drag-MC/Shimmer/blob/49cb20e7406de63027f8666d6dde9b73d8444f80/LICENSE",
+      "version_url": "https://github.com/Low-Drag-MC/Shimmer/blob/49cb20e7406de63027f8666d6dde9b73d8444f80/Forge/src/main/resources/META-INF/mods.toml",
+      "status": "已读固定提交 Java、后处理 JSON、MIT 与 Minecraft [1.20,1.21) 元数据；未运行 Minecraft。",
+      "caveats": [
+        "Bloom 不是地形动态照明。",
+        "元数据支持范围不等于已验证与所有光影、透明模式兼容。"
+      ]
+    },
+    {
+      "id": "photon-trail-1201",
+      "priority": "P1",
+      "title": "Photon 1.20.1：TrailParticle 的历史、年龄与材质接口",
+      "author": "Low-Drag-MC",
+      "url": "https://github.com/Low-Drag-MC/Photon/blob/507499fbe5a3fc72bb90993e059848cbb31f13ca/common/src/main/java/com/lowdragmc/photon/client/gameobject/particle/TrailParticle.java",
+      "kind": "Minecraft 对应旧分支源码",
+      "commit": "507499fbe5a3fc72bb90993e059848cbb31f13ca",
+      "layers": [
+        "history",
+        "ribbon",
+        "lifetime",
+        "integration"
+      ],
+      "read": [
+        "TrailParticle.java: updateChanges / updateTails / generateSmoothPath / generateSmoothPathFromShader",
+        "gradle.properties",
+        "LICENSE"
+      ],
+      "learn": "头部 supplier、原始历史与平滑历史分离；每 tick 消耗旧点寿命，按距离加点；compute/SSBO 路径先查询能力。",
+      "forge_transfer": "适合学习 Forge 1.20.1 实际特效对象生命周期与可选 Photon 工作流；不直接复制其细分计数公式作为性能最优方案。",
+      "next_experiment": "跟踪实体急转、暂停、移除后尾迹残留、世界切换与头部插值；计算最大历史点数及每次细分上限。",
+      "license": "该固定提交 GPLv3；根 LICENSE 与 gradle.properties 的 mod_license 相符。",
+      "copy_policy": "可阅读算法；复制、改编或转译并分发时须履行 GPLv3 条件。不要套用其他新分支条款。",
+      "license_url": "https://github.com/Low-Drag-MC/Photon/blob/507499fbe5a3fc72bb90993e059848cbb31f13ca/LICENSE",
+      "version_url": "https://github.com/Low-Drag-MC/Photon/blob/507499fbe5a3fc72bb90993e059848cbb31f13ca/gradle.properties",
+      "status": "已读固定提交 TrailParticle、GPL 与元数据；未构建运行。",
+      "caveats": [
+        "该版本 generateSmoothPath 使用 distSq/minDistanceSq 决定 steps，距离增长会二次增加细分；本任务应使用长度、最大段数与总容量预算。",
+        "仅按最小距离加原始点并不等于定距离重采样；应明确二者区别。"
+      ]
+    },
+    {
+      "id": "veil-forge-pipeline",
+      "priority": "P1",
+      "title": "Veil 1.20：Forge 渲染阶段与 FBO 架构对照",
+      "author": "FoundryMC / Veil contributors",
+      "url": "https://github.com/FoundryMC/Veil/tree/3592dddfcfcf92b298ec933c0d9fb951a69aba51",
+      "kind": "Minecraft 对应旧分支源码",
+      "commit": "3592dddfcfcf92b298ec933c0d9fb951a69aba51",
+      "layers": [
+        "integration",
+        "render-stage",
+        "fbo"
+      ],
+      "read": [
+        "forge/src/main/java/foundry/veil/forge/ForgeRenderTypeStageHandler.java",
+        "gradle.properties",
+        "forge/src/main/resources/META-INF/mods.toml",
+        "LICENSE"
+      ],
+      "learn": "按 RenderLevelStageEvent.Stage 注册和 endBatch 指定 RenderType；区块层使用相机位置；工程声明 Minecraft 1.20.1 / Forge 47.3.1。",
+      "forge_transfer": "研究每帧在哪一阶段提交尾迹、如何恢复渲染状态和安排后处理；可先用原版 ShaderInstance / RenderType / RenderTarget 做独立原型。",
+      "next_experiment": "记录提交阶段与透明层顺序；检查 resize、F3+T、世界切换及异常中止后 GL 状态恢复。",
+      "license": "声明不一致：根 LICENSE 为 LGPLv3；同提交 gradle.properties 的 license=All Rights Reserved，mods.toml 通过变量引用它。",
+      "copy_policy": "本次仅架构阅读。直接复制或作为分发依赖前核查实际版本与作者许可说明，不能只写成无条件 LGPLv3。",
+      "license_url": "https://github.com/FoundryMC/Veil/blob/3592dddfcfcf92b298ec933c0d9fb951a69aba51/LICENSE",
+      "version_url": "https://github.com/FoundryMC/Veil/blob/3592dddfcfcf92b298ec933c0d9fb951a69aba51/gradle.properties",
+      "status": "已读固定提交阶段处理、构建属性、mods.toml 与 LICENSE；许可冲突保持可见；未运行。"
+    },
+    {
+      "id": "pavel-fluid-advection",
+      "priority": "P2",
+      "title": "WebGL Fluid Simulation：平流与 ping-pong 状态",
+      "author": "Pavel Dobryakov",
+      "url": "https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/blob/a2d292931f19d9b3b9f564e23e6c32729d2121c3/script.js",
+      "kind": "作者仓库源码",
+      "commit": "a2d292931f19d9b3b9f564e23e6c32729d2121c3",
+      "layers": [
+        "advection",
+        "simulation",
+        "fbo"
+      ],
+      "read": [
+        "script.js: advectionShader / vorticityShader / pressureShader / gradientSubtractShader / step",
+        "LICENSE"
+      ],
+      "learn": "回溯采样输运密度，涡量增强、压力投影与速度/染料双缓冲；这才是有历史状态的平流，与平移噪声不同。",
+      "forge_transfer": "作为可选局部材质流动贴图；二维结果贴在人物罩上仍是二维场，不称为三维烟雾模拟。普通遁光优先程序场和少量几何。",
+      "next_experiment": "先在 2D 小网格关闭 Bloom，只显示速度、散度和染料；检查移动域重置与注入/消散。",
+      "license": "MIT，Copyright 2017 Pavel Dobryakov。",
+      "copy_policy": "允许按 MIT 复用，保留声明；所用素材或依赖独立核对。",
+      "license_url": "https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/blob/a2d292931f19d9b3b9f564e23e6c32729d2121c3/LICENSE",
+      "status": "已读固定提交核心 shader、step 顺序与 LICENSE；未运行。"
+    },
+    {
+      "id": "effekseer-procedural-material",
+      "priority": "P0",
+      "title": "Effekseer 官方：程序模型、流动 UV 与 Alpha Cutoff",
+      "author": "Effekseer Project",
+      "url": "https://effekseer.github.io/Helps/18x/Tool/en/ToolReference/proceduralModel.html",
+      "kind": "官方造型和材质教程",
+      "commit": null,
+      "layers": [
+        "mesh-shape",
+        "vertex-deform",
+        "uv-flow",
+        "erosion",
+        "dissolve",
+        "flight-ring-shell"
+      ],
+      "read": [
+        "Procedural Model: Type / Shape Type / Noise / Vertex color / UV",
+        "The Introduction of Material: Shift an area / Distort the image / Move the distortion",
+        "Material Node (Model): VertexPosition / MovingUV / ObjectScale",
+        "Basic Render Settings (Advanced): Alpha Texture / UV Distortion Texture / Alpha Cutoff / Falloff"
+      ],
+      "related_urls": [
+        "https://effekseer.github.io/Help_Tool/en/ToolTutorial/material_01.html",
+        "https://effekseer.github.io/Help_Tool/en/MaterialToolReference/material_NodeModel.html",
+        "https://effekseer.github.io/Helps/18x/Tool/en/ToolReference/rendererCommonAd.html"
+      ],
+      "learn": "用旋转截面、锥/柱/样条形状和缠绕 ribbon 设计主体，再分开控制顶点色、UV 扭曲和透明裁切；参数化形状不限于球壳。",
+      "forge_transfer": "原创 Java 网格与 GLSL 可覆盖长虹、蓝紫旋涡、蓝金环壳、金团和螺旋落地。网格几何运动与纹理流动分别更新时间；程序模型页面的静态 Noise 参数本身不证明逐帧顶点动画。",
+      "next_experiment": "同一材质换锥体、样条旋转面、环带和碎片网格；逐项开关顶点形变、UV 流动和侵蚀，检查各自作用。",
+      "license": "本次只阅读官网教程；未将核心 MIT 自动套用于教程文字、图片或下载范例。",
+      "copy_policy": "只链接学习入口，原创几何与贴图；不下载或打包教程素材。",
+      "license_url": null,
+      "status": "已打开并阅读 4 个官方页面的明确章节；未使用 Effekseer 编辑器、未运行范例。",
+      "form_mapping": [
+        "橙金/绿色长虹：锥/样条轮廓＋纵向流动",
+        "蓝紫旋涡：缠绕 ribbon＋切换期旋转",
+        "蓝金环壳：飞行主体的环面/截面环，不预设为护盾",
+        "金团：受控旋转截面＋外缘侵蚀",
+        "青绿细线螺旋落地：螺旋路径＋离散尾迹生命周期"
+      ]
+    },
+    {
+      "id": "sidefx-pyro-lookdev",
+      "priority": "P1",
+      "title": "SideFX 官方：Pyro workflow 与 Omar Zarifi 烟火造型课程",
+      "author": "SideFX / Omar Zarifi（SideFX 软件开发者）",
+      "url": "https://www.sidefx.com/docs/houdini/pyro/lookdev.html",
+      "kind": "官方工作流文档＋作者课程索引",
+      "commit": null,
+      "layers": [
+        "smoke-shape",
+        "fire-shape",
+        "source-shape",
+        "lifecycle",
+        "dissipation"
+      ],
+      "read": [
+        "Pyro workflow: Visualization / Source geometry / Flames parameters / Shape operators / Tips and troubleshooting",
+        "H18 Masterclass 网页章节索引：01:07:45 Fire sim from scratch / 01:34:26 Shaping / 01:46:04 Smoke trail"
+      ],
+      "related_urls": [
+        "https://www.sidefx.com/tutorials/pyro-omar-zarifi-h18-masterclass/"
+      ],
+      "learn": "先定源几何和整体运动，再调火焰寿命、消散及大小尺度扰动；烟密度与火焰发射分别可视化。",
+      "forge_transfer": "用于红黑烟遁、赤焰与停飞余烟的造型拆解。研究思路可指导低成本程序场或自制 Flipbook，不意味着将 Houdini 求解器移植到 Forge。",
+      "next_experiment": "固定运动路径，以同一源轮廓分别做黑烟主密度与赤焰主发射，观察启动、巡航、停飞残留；先不加 Bloom。",
+      "license": "SideFX 页面页脚 All Rights Reserved；Houdini 软件和场景示例有各自条款，本次未下载。",
+      "copy_policy": "阅读并链接，不搬运课程视频、场景、贴图；自行制作素材时另核对所用 Houdini 授权。",
+      "license_url": "https://www.sidefx.com/tutorials/pyro-omar-zarifi-h18-masterclass/",
+      "status": "已阅读官方工作流正文及课程网页时间索引；没有观看嵌入课程视频，不宣称已完成视频章节。",
+      "form_mapping": [
+        "红黑烟遁：低发射的有色烟密度＋少量红亮核",
+        "赤焰：方向性火舌＋独立火焰寿命",
+        "飞行退出：停止注入后保留尾烟消散，不硬切所有图层"
+      ]
+    },
+    {
+      "id": "unity-flipbook-mesh",
+      "priority": "P1",
+      "title": "Unity VFX Graph 14：Flipbook Player 与 Output Particle Mesh",
+      "author": "Unity Technologies",
+      "url": "https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@14.0/manual/Block-FlipbookPlayer.html",
+      "kind": "官方粒子/Flipbook 文档",
+      "commit": null,
+      "layers": [
+        "flipbook",
+        "mesh-particles",
+        "fragment-assembly",
+        "lifecycle",
+        "transition"
+      ],
+      "read": [
+        "Flipbook Player: Tex Index / Constant vs Curve frame rate / UV Mode",
+        "Output Particle Mesh: Mesh Count / meshIndex / LOD / Limitations / Performance considerations"
+      ],
+      "related_urls": [
+        "https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@14.0/manual/Context-OutputParticleMesh.html"
+      ],
+      "learn": "Flipbook 通过年龄相关帧索引推进，可做帧间混合；网格粒子为碎片、短剑等提供真实形状，并需处理多网格的提交与排序。",
+      "forge_transfer": "将自制序列用于短暂水化、烟火爆散或转换层，主飞行路径仍由真实历史尾迹负责。金色短剑/碎片可用小网格实例按相位聚拢。该重组编排是本任务推断，不是网页已提供的成品效果。",
+      "next_experiment": "做原创 4×4 小序列检验帧顺序、播放速率与预乘 alpha；另用 12 个低面数碎片试验聚拢/分散并保持确定 seed。",
+      "license": "官方文档按其网站条款阅读；未获取统一的截图、样例纹理或整个 VFX Graph 包复制授权。",
+      "copy_policy": "只引用概念与文档链接；不从参考视频截帧拼游戏序列，不打包 Unity 示例资产。",
+      "license_url": "https://docs.unity3d.com/Manual/TermsOfUse.html",
+      "status": "已打开并阅读 VFX Graph 14.0.12 的两份官方文档；未运行 Unity、未下载材质或图集。",
+      "form_mapping": [
+        "水化/重组成身：启动和退出相位的局部转换层候选",
+        "金色短剑/碎片组装：独立网格粒子按相位汇聚",
+        "蓝紫旋涡转换：旋转网格/流丝与短时序列可交叉淡化",
+        "蓝白分叉流丝及极细金线：优先真实曲线几何，Flipbook 只用于局部辅助"
+      ]
+    }
+  ],
+  "auxiliary": [
+    {
+      "title": "Computation of rotation minimizing frames",
+      "author": "Wenping Wang / Bert Jüttler / Dayue Zheng / Yang Liu",
+      "url": "https://hub.hku.hk/handle/10722/152386",
+      "status": "已读 HKU 作者机构摘要；搜索找到作者 PDF，但直接打开返回 404，未将全文核查列为完成。",
+      "use": "更高精度 RMF double reflection 的后续阅读入口；当前原型先用 three.js 中已核查的相邻切线旋转思想。",
+      "license": "论文摘要显示 ACM 2008，未确认可复制实现或配套源码。"
+    },
+    {
+      "title": "Forge 1.20.1 Events",
+      "url": "https://docs.minecraftforge.net/en/1.20.1/concepts/events/",
+      "status": "已打开官方版本文档，用于客户端事件总线与注册概念；不作为渲染结果实测。"
+    }
+  ],
+  "research_boundaries": [
+    "所有迁移建议都是工程推断，不证明原视频用了相同算法。",
+    "未获取或打包参考视频帧、商业贴图、商业成品资源。",
+    "固定提交是此次可复查快照，不代表最新版本、推荐依赖版本或已验证发行版。",
+    "本文件为研究目录，不是可直接导入 Minecraft 的效果配置。"
+  ],
+  "multi_form_addendum": "2026-10-15：补读 3 组造型、烟火和 Flipbook 原始来源。蓝金环作为飞行形态候选；水化/旋涡转换可属于启动、巡航切换或退出生命周期。"
+}

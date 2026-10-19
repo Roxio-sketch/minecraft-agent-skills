@@ -9,6 +9,7 @@
     "minecraft-cosmic-material",
     "minecraft-cosmic-rendering",
     "minecraft-crystal-refraction",
+    "minecraft-dunguang-flight",
     "minecraft-dynamic-lighting",
     "minecraft-energy-vfx",
     "minecraft-energy-vfx-research",
@@ -30,7 +31,7 @@
     "minecraft-water-ripples",
     "minecraft-xiantu-vfx-library"
   ],
-  "entry_count": 42,
+  "entry_count": 43,
   "entries": [
     {
       "number": 1,
@@ -226,60 +227,66 @@
     },
     {
       "number": 33,
+      "name": "遁光与飞行阶段",
+      "ok": true,
+      "resources": 12
+    },
+    {
+      "number": 34,
       "name": "仙途特效库",
       "ok": true,
       "resources": 1
     },
     {
-      "number": 34,
+      "number": 35,
       "name": "刀光与能量束",
       "ok": true,
       "resources": 4
     },
     {
-      "number": 35,
+      "number": 36,
       "name": "灵气与能量场",
       "ok": true,
       "resources": 4
     },
     {
-      "number": 36,
+      "number": 37,
       "name": "护盾与破碎",
       "ok": true,
       "resources": 3
     },
     {
-      "number": 37,
+      "number": 38,
       "name": "闪电与雷劫",
       "ok": true,
       "resources": 5
     },
     {
-      "number": 38,
+      "number": 39,
       "name": "空间裂隙",
       "ok": true,
       "resources": 1
     },
     {
-      "number": 39,
+      "number": 40,
       "name": "金白剑气",
       "ok": true,
       "resources": 1
     },
     {
-      "number": 40,
+      "number": 41,
       "name": "焚空裂隙 · 视频参考",
       "ok": true,
       "resources": 2
     },
     {
-      "number": 41,
+      "number": 42,
       "name": "五行气海",
       "ok": true,
       "resources": 1
     },
     {
-      "number": 42,
+      "number": 43,
       "name": "九霄剑决与万剑归宗",
       "ok": true,
       "resources": 2

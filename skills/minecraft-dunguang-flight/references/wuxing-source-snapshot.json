@@ -1,0 +1,479 @@
+{
+  "schema": "dunguang-wuxing-source-snapshot/1",
+  "checked_date": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "host_root": "E:/五行仙途",
+  "scope": "Read-only source and historical screenshot review. No host source/assets packaged; no game, build or install performed this task.",
+  "families": {
+    "realm": {
+      "sources": [
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightEffects.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightEffects.java",
+          "sha256": "68d853d25fe3a3bed5c9994d5bafe601c7b04b781bd4fd417b36123d7135cd9c",
+          "bytes": 37264,
+          "lines": 459
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightVisuals.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightVisuals.java",
+          "sha256": "2a1b80abde5caa64b1b84abeb86519a9f4d13b7a178005c46283b82544be9244",
+          "bytes": 11490,
+          "lines": 171
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightMovement.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightMovement.java",
+          "sha256": "1a512521ca85f923d52606da53fe7aacdcb7fa85e52631705e36d9a12e2ea8b1",
+          "bytes": 4660,
+          "lines": 73
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightCamera.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/RealmFlightCamera.java",
+          "sha256": "4a1be2aee89f00d0225c22f12d0e17c1c887759358434d3716c2ea30e08ed1a0",
+          "bytes": 5029,
+          "lines": 88
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/MeteorHeadRenderer.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/MeteorHeadRenderer.java",
+          "sha256": "d4b085ecfec717649ccb1fcb4316d69ed2a05c3732391f90a2801109f9aaca6c",
+          "bytes": 6769,
+          "lines": 106
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/MeteorBloomRenderer.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/MeteorBloomRenderer.java",
+          "sha256": "ffb11ff81c2475b990375cc1625f600cef38a599aff38fd67e1afc6070a71c90",
+          "bytes": 12585,
+          "lines": 172
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightAppearance.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightAppearance.java",
+          "sha256": "f1958d78686a4c71ffa14c762a64c4c972bb722ac0760bea1476c789367424e5",
+          "bytes": 2306,
+          "lines": 38
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmMeteorTuning.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmMeteorTuning.java",
+          "sha256": "9e362c644b7c1f8a1419d3319f2e1ae9a914b707d0d3ce43418536e73df88ebe",
+          "bytes": 4420,
+          "lines": 66
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmMeteorPath.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmMeteorPath.java",
+          "sha256": "f62e5450c489f7395b768e6b1f660394b8387b6bbf3cf17bddf462f9c16e42e0",
+          "bytes": 17969,
+          "lines": 277
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmMeteorFlow.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmMeteorFlow.java",
+          "sha256": "f089c8a988f27032ef02b4e0747f50cf74f09ee2ef35eb7f553d245fe2e50df1",
+          "bytes": 9383,
+          "lines": 151
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmMeteorJoin.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmMeteorJoin.java",
+          "sha256": "cfaa558607770363486f1aef0f7372f613275d3b7672cfd81cbe4ce73f27eddf",
+          "bytes": 9015,
+          "lines": 165
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmMeteorVertexRing.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmMeteorVertexRing.java",
+          "sha256": "3f7b396b0b00c3166afc94888ab2859782e917e649be1fc84fba92816080db99",
+          "bytes": 2708,
+          "lines": 40
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/FlightVisualDynamics.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/FlightVisualDynamics.java",
+          "sha256": "796791288251e9766c725358796015df64e420c4a3810d7a4b8d8ceba3f5dea4",
+          "bytes": 11706,
+          "lines": 138
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/FirstPersonRealmTrail.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/FirstPersonRealmTrail.java",
+          "sha256": "087d7623711bb1efe5fb53449d1e6d23cc0aaf7905aa26b07ab7538990f2d43f",
+          "bytes": 1214,
+          "lines": 20
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightSelection.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightSelection.java",
+          "sha256": "e16ef6400cb3c54c8d2f74965ef78e70ebecff18fbadaa3ffa2a28efadeb0faf",
+          "bytes": 1626,
+          "lines": 35
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightTracking.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightTracking.java",
+          "sha256": "29939142ef1169f17ce718c86d28aa21b30783c61d1ad9f6dd4c226895a3ffa3",
+          "bytes": 3073,
+          "lines": 52
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightVisualPacket.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightVisualPacket.java",
+          "sha256": "a3c8d36037ca8564c1bbc109159b8a6a1d3b9da59c665110f8e43276e8fb2e6a",
+          "bytes": 1616,
+          "lines": 21
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightControl.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightControl.java",
+          "sha256": "2c2f4cce933b6d84ac9b3a4fdeb6bdcf34e4d8ef7ceb831fea6a787c12878401",
+          "bytes": 5876,
+          "lines": 83
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightBalance.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightBalance.java",
+          "sha256": "b14c7f4f99a405d62de23d21c9baab11a58fb690046b712f241c202a80f14f89",
+          "bytes": 1634,
+          "lines": 20
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightLevel.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/realmflight/RealmFlightLevel.java",
+          "sha256": "fe3c9e37ae7a37aae2e4383e2ce7445257e719ead485f736948110d6163db87b",
+          "bytes": 719,
+          "lines": 21
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/TrailShaderBridge.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/TrailShaderBridge.java",
+          "sha256": "4c7df083497ce269d7f391ee3b9a17624e9acae4b85585a895666e11bcbd9161",
+          "bytes": 12098,
+          "lines": 186
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/FirstPersonFlightFlow.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/FirstPersonFlightFlow.java",
+          "sha256": "42aa75c0d714563c2b077adffc03ecc6367b43119d81a96495239c4a81ee75a9",
+          "bytes": 6322,
+          "lines": 98
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/FirstPersonFlowMaterial.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/FirstPersonFlowMaterial.java",
+          "sha256": "b53ab0ef9dea7b697fefa2ffc2b966d2fdbb9c36f83278e4c87e07a5a11e347e",
+          "bytes": 1008,
+          "lines": 20
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/FlightFlowMotion.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/FlightFlowMotion.java",
+          "sha256": "7f2ff684ea90acea26a5ce59550369bfe53658b3f4f5236394f451e5a5dcdaae",
+          "bytes": 1240,
+          "lines": 22
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor.fsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor.fsh",
+          "sha256": "a9294a978216fdc11dbe0d1de6071504d41ceb6c4c7e2d9efd6f5deef6a06ac2",
+          "bytes": 14583,
+          "lines": 292
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor.vsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor.vsh",
+          "sha256": "c22ef06d7827a2a98225c058abfaf9aff30da2ad9196c208aca3ef09c0eaebe1",
+          "bytes": 656,
+          "lines": 28
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor.json",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor.json",
+          "sha256": "1c46ffb55874e7b1bdcb1609f206fb5301f487e3fa65814174dda374ffc57f49",
+          "bytes": 1238,
+          "lines": 84
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_post.fsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_post.fsh",
+          "sha256": "31c5ff8e3b273ad9ad2725aaa8e118ae448cc0121309ec5f4a4c95570daf0c94",
+          "bytes": 14913,
+          "lines": 300
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_post.vsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_post.vsh",
+          "sha256": "d17a3881489e09aff62b238ec481a0f1b773c37734962a7439028250dd875e41",
+          "bytes": 655,
+          "lines": 27
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_post.json",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_post.json",
+          "sha256": "0b8eecaec01c5c6c0b3963ee004792b3b9f4c7f4b873b5bc9b9447c767c1d6dc",
+          "bytes": 1563,
+          "lines": 105
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_bloom.fsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_bloom.fsh",
+          "sha256": "a51c36dfcd53921c2b9391d889c08095faac6ee84172059d6e5942b0b2ab6176",
+          "bytes": 1445,
+          "lines": 33
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_bloom.vsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_bloom.vsh",
+          "sha256": "5aad28dbcd5b806c76bc214f0a01f840c72e9e6e13a8e1bb19a9c0fc7cf1d374",
+          "bytes": 140,
+          "lines": 10
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_bloom.json",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_bloom.json",
+          "sha256": "f0ee395029a053aa62e1f02486bbbff3a00570d30549042d9ded60f3d3c4b152",
+          "bytes": 507,
+          "lines": 12
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_head_energy.fsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_head_energy.fsh",
+          "sha256": "890c4af200c5ac36bf4124313f39c886185bf522c22307837f0ff0aa7e56ac37",
+          "bytes": 15812,
+          "lines": 305
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_head_energy.vsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_head_energy.vsh",
+          "sha256": "8389fcb0bdf2fd8cf73e5c489ceb24f393336c8b7938da774d0c00e0a622ebb0",
+          "bytes": 295,
+          "lines": 12
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_head_energy.json",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_head_energy.json",
+          "sha256": "f2d18a8ef1ca3b7e2e5a47d712fd10613922e6c375b1a34ca83be55e6aec6474",
+          "bytes": 934,
+          "lines": 18
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/first_person_flow.fsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/first_person_flow.fsh",
+          "sha256": "c34ef5fa02ad385ffa2460591bd143d9889fe3dee3fcfa91d75c03aaf478b25b",
+          "bytes": 1896,
+          "lines": 38
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/first_person_flow.vsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/first_person_flow.vsh",
+          "sha256": "3c0dbec1537019abb1363ad686f118f763b01c392a6785d07be362edbf972628",
+          "bytes": 242,
+          "lines": 9
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/first_person_flow.json",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/first_person_flow.json",
+          "sha256": "13495afe4b9b0b07524f3df3c5bca4010b181f6e48c77c63ef1ee96e56ee2dde",
+          "bytes": 1305,
+          "lines": 87
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/energy_blur.fsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/energy_blur.fsh",
+          "sha256": "b838ccb00b659b02f85fb59961b76aa7ee04daa19d39f0e1393aae12b1260bfb",
+          "bytes": 1994,
+          "lines": 48
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/energy_blur.vsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/energy_blur.vsh",
+          "sha256": "5aad28dbcd5b806c76bc214f0a01f840c72e9e6e13a8e1bb19a9c0fc7cf1d374",
+          "bytes": 140,
+          "lines": 10
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/energy_blur.json",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/energy_blur.json",
+          "sha256": "779ec4d04799511453cc30114abff2abffaed64c879e3393d34a17622c83c02c",
+          "bytes": 440,
+          "lines": 11
+        }
+      ],
+      "full_evidence": "E:/着色器渲染/research/dunguang-flight-20261015/wuxing-realm-evidence.json"
+    },
+    "sword": {
+      "sources": [
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/FlyingSwordEffects.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/FlyingSwordEffects.java",
+          "sha256": "344e93ac4b0f43bd4af93a834d271e371c60402e5ca9728846d9db56eef6f709",
+          "bytes": 23908,
+          "lines": 327
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/SwordFlightTrailHistory.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/SwordFlightTrailHistory.java",
+          "sha256": "47094c35c739f32c8d067c3030b667c568c1f552ae1e5fff5278b68580c34e46",
+          "bytes": 3060,
+          "lines": 56
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/SwordFlightTrailRenderer.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/SwordFlightTrailRenderer.java",
+          "sha256": "e80f75aa4036ac090f0d4beb5f3003cc7c085c7c21c35ac7817e8435edac73ef",
+          "bytes": 4010,
+          "lines": 65
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/SwordFlightAttachment.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/SwordFlightAttachment.java",
+          "sha256": "655d6c1439f7841d57af11dfad734380ae5a7c335ddcd67a88e79e67b4f89dfc",
+          "bytes": 3046,
+          "lines": 50
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/SwordTrailPhase.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/SwordTrailPhase.java",
+          "sha256": "23567771d6b72331dc29a918cf22b00e798b71dd1836620b7901aa86a26baae1",
+          "bytes": 2392,
+          "lines": 45
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/InterpolatedFlyingSwordTransform.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/InterpolatedFlyingSwordTransform.java",
+          "sha256": "f5d678c2c8d275ae3d2233391c712a092028b8622667d4ac23b5bdae5719a334",
+          "bytes": 2880,
+          "lines": 43
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/ControlledSwordRenderer.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/ControlledSwordRenderer.java",
+          "sha256": "324b1dd4b7f6a1c5601a64211bdcb3f36632158f9a045b53f5843a78ae803b67",
+          "bytes": 2670,
+          "lines": 39
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/TrailShaderBridge.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/TrailShaderBridge.java",
+          "sha256": "4c7df083497ce269d7f391ee3b9a17624e9acae4b85585a895666e11bcbd9161",
+          "bytes": 12098,
+          "lines": 186
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/FirstPersonFlightFlow.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/FirstPersonFlightFlow.java",
+          "sha256": "42aa75c0d714563c2b077adffc03ecc6367b43119d81a96495239c4a81ee75a9",
+          "bytes": 6322,
+          "lines": 98
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/FlightFlowMotion.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/FlightFlowMotion.java",
+          "sha256": "7f2ff684ea90acea26a5ce59550369bfe53658b3f4f5236394f451e5a5dcdaae",
+          "bytes": 1240,
+          "lines": 22
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/YujianClientController.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/YujianClientController.java",
+          "sha256": "c73ded0cc90d0265b9303bd47388eaa9e55947b7ba3687e0a4763effff1bbe5b",
+          "bytes": 12906,
+          "lines": 205
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/MeteorBloomRenderer.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/client/realmflight/MeteorBloomRenderer.java",
+          "sha256": "ffb11ff81c2475b990375cc1625f600cef38a599aff38fd67e1afc6070a71c90",
+          "bytes": 12585,
+          "lines": 172
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/yujian/FlightFrame.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/yujian/FlightFrame.java",
+          "sha256": "2204a1e841a7052f7de40908ef4e76d388042b72c3292b8a2aeb132b8794942c",
+          "bytes": 1281,
+          "lines": 28
+        },
+        {
+          "path": "E:/五行仙途/src/main/java/cn/blockforge/generated/generatedmod/yujian/FlyingSwordConfig.java",
+          "relative_path": "src/main/java/cn/blockforge/generated/generatedmod/yujian/FlyingSwordConfig.java",
+          "sha256": "e648f92c76cc424ad2d9289b90b5999b27c3853cefce2905b0e6d5ca60ff7902",
+          "bytes": 7445,
+          "lines": 81
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.vsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.vsh",
+          "sha256": "483337ed6e507a95f5b43e79e6ce09c4c2e8e6c9b51a03d4f8256a3b03b9b25f",
+          "bytes": 273,
+          "lines": 12
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.fsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.fsh",
+          "sha256": "52d6257ada76779c5eecdbdb298c55854ba96a2e98b1217bf955a689e1b15d6d",
+          "bytes": 3083,
+          "lines": 60
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.json",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight.json",
+          "sha256": "b60046525225c8094680f60c864050c2b4d2423ace39e63eeae1fe1087dc054f",
+          "bytes": 1041,
+          "lines": 71
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.vsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.vsh",
+          "sha256": "3a406305bd80d4cf98b0d31be0e30bab82d5850c9bd709637142584f8563e7d1",
+          "bytes": 351,
+          "lines": 14
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.fsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.fsh",
+          "sha256": "0ec781063e617376e2c10fa4c647347ee1e76a2e3dce834fcfa8158e08bd9c88",
+          "bytes": 3454,
+          "lines": 68
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.json",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/sword_flight_post.json",
+          "sha256": "6793f479fa53a9ab9dbc3d9fbf1294e5eb5622e9ab20e6c586353d12eee7f3f9",
+          "bytes": 1180,
+          "lines": 73
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/energy_blur.fsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/energy_blur.fsh",
+          "sha256": "b838ccb00b659b02f85fb59961b76aa7ee04daa19d39f0e1393aae12b1260bfb",
+          "bytes": 1994,
+          "lines": 48
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_bloom.fsh",
+          "relative_path": "src/main/resources/assets/wuxingxiantu/shaders/core/realm_meteor_bloom.fsh",
+          "sha256": "a51c36dfcd53921c2b9391d889c08095faac6ee84172059d6e5942b0b2ab6176",
+          "bytes": 1445,
+          "lines": 33
+        },
+        {
+          "path": "E:/五行仙途/src/main/resources/META-INF/mods.toml",
+          "relative_path": "src/main/resources/META-INF/mods.toml",
+          "sha256": "83ffa6fd065df9a3fa0f2d98a30267be75b0342283e130b77833023dc93f9a3e",
+          "bytes": 641,
+          "lines": 33
+        }
+      ],
+      "full_evidence": "E:/着色器渲染/research/dunguang-flight-20261015/wuxing-sword-evidence.json"
+    }
+  },
+  "limits": [
+    "Historical reports do not re-certify the current source snapshot.",
+    "Absolute paths locate this machine only; read current files before reuse.",
+    "No binary-to-source-to-runtime binding established during this task."
+  ]
+}

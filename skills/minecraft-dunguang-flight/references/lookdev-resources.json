@@ -1,0 +1,233 @@
+{
+  "schema": "dunguang-resource-study/3",
+  "checked_date": "2026-10-15",
+  "scope": "参考还原优先的纯着色器/程序特效迭代；不加入人物、坐骑、飞舟或法器模型；性能优化后置",
+  "resource_count": 8,
+  "resources": [
+    {
+      "id": "riot-clarity",
+      "title": "Riot Games · Clarity in League",
+      "author": "Riot Games / bananaband1t",
+      "priority": "P0",
+      "url": "https://www.leagueoflegends.com/en-us/news/dev/clarity-in-league/",
+      "read": [
+        "The Unbreakable Vows: gameplay / hierarchy / noise",
+        "Silhouettes: primary characteristic and facing direction",
+        "Abilities: bright/saturated attention hierarchy",
+        "Ability Considerations / Direction: projectile tail blur",
+        "Skins / Abilities and Maps"
+      ],
+      "learning": "先把效果的大轮廓、朝向与主次亮度做清楚，再加入中小细节；尖头与衰减尾端即使在静帧也应传达前进方向。高亮与高饱和集中在值得注意的区域，不把每层都推到白。",
+      "application": "白蓝羽丝：亮核最细最亮，少数主枝次亮，宽烟纱最低对比；红黑烟遁：暗烟大形与少量红色发射区分。保留彩色、灰度、无 Bloom 三种截图审阅。",
+      "license": "网页未核实开放复制许可；阅读链接与原创总结，不能把 Riot 游戏图、视频、材质当可复用资产。",
+      "code_reuse": false,
+      "asset_reuse": false,
+      "downloaded": false,
+      "limits": "2017 VFX Style Guide 的官方 Nexus 页面与原 PDF URL 本次均重定向首页；本条是已读的一手替代文章，不能标记旧 Style Guide PDF 已读。",
+      "checked_date": "2026-10-15",
+      "status": "原始来源实际请求并阅读；非运行验证"
+    },
+    {
+      "id": "catlike-flow",
+      "title": "Catlike Coding · Texture Distortion",
+      "author": "Jasper Flick / Catlike Coding",
+      "priority": "P0",
+      "url": "https://catlikecoding.com/unity/tutorials/flow/texture-distortion/",
+      "license_url": "https://catlikecoding.com/unity/tutorials/license/",
+      "read": [
+        "Flow Direction / Flow Maps",
+        "Sawtooth / Triangle Wave / Seesaw: phase A/B and complementary weights",
+        "FlowUVW final function: flowOffset / tiling / phaseOffset / jump",
+        "Flow Speed and Flow Strength",
+        "Code & Asset License and Tutorial License"
+      ],
+      "learning": "RG 流向由 0..1 解码到 -1..1；双相 UV 采样以半周期错相，并用互补三角权重相加，避免单一 frac 回绕跳变。噪声可偏移局部时间；flow strength 与周期速度分别调。",
+      "application": "在长条带的沿程 U / 横向 V 中加入小幅卷动，不让整个轮廓变形为均匀圆管。白蓝烟纱以两个相位的同一遮罩交替，烟层另外做低频扭曲和细频侵蚀。",
+      "license": "官方现行许可：代码、纹理及教程工程文件 MIT-0；教程正文、截图、图表、动画和 PDF 为 CC BY-NC-SA 4.0。",
+      "code_reuse": true,
+      "asset_reuse": true,
+      "downloaded": false,
+      "limits": "本次未下载作者 Unity 工程或纹理；已读函数与许可可指导原创 GLSL 移植。UV 扭曲不等于背景折射，也不等于三维流体平流。",
+      "checked_date": "2026-10-15",
+      "status": "原始来源实际请求并阅读；非运行验证"
+    },
+    {
+      "id": "kenney-particle",
+      "title": "Kenney · Particle Pack 1.1",
+      "author": "Kenney Vleugels；包内另列滤镜模板作者",
+      "priority": "P0",
+      "url": "https://kenney.nl/assets/particle-pack",
+      "download_url": "https://kenney.nl/media/pages/assets/particle-pack/f8fe0f8cb8-1677578741/kenney_particle-pack.zip",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "read": [
+        "官方资源页：512×512 / 80 files / CC0",
+        "下载归档 License.txt 全文",
+        "PNG (Transparent) 80 张及 Rotated 16 张的接触表",
+        "逐张原图 smoke_07.png / fire_01.png / trace_05.png"
+      ],
+      "learning": "现成的软烟密度、细节侵蚀、细长亮丝和光芒遮罩比少面多边形团块更适合气态表现；可由 Shader 改色、拉伸、扰动、分层。",
+      "application": "当前运行将 smoke_01 / smoke_07 / smoke_08 / smoke_04 合成烟图集，fire_01 用作侵蚀，trace_05 用作流丝遮罩；其余精选图保留作学习候选。主尾迹仍按真实历史曲线绘制，不能只在发射位置后面贴静态长图。",
+      "license": "官方页和归档 License.txt 均为 CC0，可用于个人及商业项目，署名非强制。本次仍保留原许可、作者与来源。",
+      "code_reuse": false,
+      "asset_reuse": true,
+      "downloaded": true,
+      "zip_sha256": "b631d4b07f7002549fdcf155f01141ad482f79f3440e4e301eed49ce5f1d8958",
+      "zip_bytes": 15001764,
+      "local": "v3-resources/kenney/particle-pack",
+      "limits": "官方页面 80 指基本形状数；归档还有黑底版、透明版、旋转变体和预览，不把副本算作新特效。单张变体不是经确认的连续 flipbook。",
+      "checked_date": "2026-10-15",
+      "status": "原始来源实际请求并阅读；非运行验证"
+    },
+    {
+      "id": "kenney-smoke",
+      "title": "Kenney · Smoke Particles",
+      "author": "Kenney Vleugels",
+      "priority": "P1",
+      "url": "https://kenney.nl/assets/smoke-particles",
+      "download_url": "https://kenney.nl/media/pages/assets/smoke-particles/23249a0d35-1677695171/kenney_smoke-particles.zip",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "read": [
+        "官方资源页 CC0",
+        "归档 license.txt 全文",
+        "PNG 下 Black smoke / White puff / Explosion / Flash / Fart 各组接触表"
+      ],
+      "learning": "黑烟、白雾与发射火光是三种不同的密度/颜色职责；烟雾保留内部灰阶和柔边，少量闪光承担亮核。",
+      "application": "本包已下载、查看并保留作后续素材候选，尚未直接接入运行；当前烟图集来自 Particle Pack。后续可用 Black smoke 做暗色低发射主层、White puff 做低 alpha 气态次层；避免将 Explosion 或 Flash 等亮铺满。",
+      "license": "官方页及归档 license.txt 均 CC0，可用于个人及商业项目；保留来源记录。",
+      "code_reuse": false,
+      "asset_reuse": true,
+      "downloaded": true,
+      "zip_sha256": "97a1d09c66e4fd6c247c8ea87f84c0cc59caaeceae19414c995afb1616a1e1c9",
+      "zip_bytes": 6019666,
+      "local": "v3-resources/kenney/smoke-particles",
+      "limits": "官方页标 70 files；当前归档 PNG 文件夹实际是 25 黑烟 + 25 白烟 + 9 爆炸 + 9 绿烟 + 9 闪光。编号及相似轮廓不能证明是连续时间帧。没有将这些静态变体宣传为真实模拟 flipbook。",
+      "checked_date": "2026-10-15",
+      "status": "原始来源实际请求并阅读；非运行验证"
+    },
+    {
+      "id": "three-hdr-bloom",
+      "title": "three.js · UnrealBloomPass 与 LuminosityHighPassShader",
+      "author": "three.js authors",
+      "priority": "P0",
+      "url": "https://github.com/mrdoob/three.js/blob/a58e9ecf225b50e4a28a934442e854878bc2a959/examples/jsm/postprocessing/UnrealBloomPass.js",
+      "snapshot": "a58e9ecf225b50e4a28a934442e854878bc2a959",
+      "license_url": "https://github.com/mrdoob/three.js/blob/a58e9ecf225b50e4a28a934442e854878bc2a959/LICENSE",
+      "related_urls": [
+        "https://github.com/mrdoob/three.js/blob/a58e9ecf225b50e4a28a934442e854878bc2a959/examples/jsm/shaders/LuminosityHighPassShader.js"
+      ],
+      "read": [
+        "UnrealBloomPass.js: HalfFloatType / nMips=5 / renderTargetsHorizontal + Vertical",
+        "kernelSizeArray=[6,10,14,18,22] / _getSeparableBlurMaterial",
+        "bloomFactors=[1,.8,.6,.4,.2] / _getCompositeMaterial / lerpBloomFactor",
+        "render: bright pass / horizontal+vertical blur / compositing",
+        "LuminosityHighPassShader: smoothstep(luminosityThreshold, luminosityThreshold+smoothWidth, luminance)",
+        "固定提交 LICENSE 全文 MIT"
+      ],
+      "learning": "窄亮核和扩散光晕由两个职责产生：HDR 发射保留大于 1 的亮度；多尺度模糊产生近场亮晕、柔和远场辉光。宽几何条带无法替代屏幕 Bloom。",
+      "application": "来源实现采用 5 级模糊；当前 V3 实际采用独立发射缓冲和三尺度横纵模糊/合成。HDR 颜色在线性空间累积，再统一 tone mapping 和输出转换。只有遁光的 emission 进入 Bloom，烟密度不无条件送入。",
+      "license": "MIT；保留 three.js 版权和完整许可。数学参考可原创实现，直接复制/改编代码时包含许可。",
+      "code_reuse": true,
+      "asset_reuse": false,
+      "downloaded": false,
+      "limits": "此为新增 Bloom 具体实现阅读；已有研究中的 three.js Curve 是不同文件和算法。WebGL 半浮点 FBO 与硬件扩展仍须检查；这不是 Minecraft Forge 已验证的接入。",
+      "checked_date": "2026-10-15",
+      "status": "原始来源实际请求并阅读；非运行验证"
+    },
+    {
+      "id": "godot-particle-atlas",
+      "title": "Godot 4.4.1 · 粒子材质、动画与透明约定源码",
+      "author": "Godot Engine contributors / Juan Linietsky / Ariel Manzur",
+      "priority": "P1",
+      "url": "https://github.com/godotengine/godot/blob/4.4.1-stable/scene/resources/material.cpp",
+      "snapshot": "4.4.1-stable tag",
+      "license_url": "https://github.com/godotengine/godot/blob/4.4.1-stable/LICENSE.txt",
+      "related_urls": [
+        "https://github.com/godotengine/godot/blob/4.4.1-stable/scene/resources/particle_process_material.cpp"
+      ],
+      "read": [
+        "BaseMaterial3D::_update_shader: BILLBOARD_PARTICLES / MAIN_CAM_INV_VIEW_MATRIX",
+        "material.cpp L1249: particle_frame = floor(INSTANCE_CUSTOM.z * particle_total_frames); clamp vs mod; atlas UV",
+        "ParticleProcessMaterial::_update_shader: CUSTOM.z = params.animation_offset + lifetime_percent * params.animation_speed",
+        "material.cpp: BLEND_MODE_PREMULT_ALPHA and particle animation properties",
+        "同 tag LICENSE.txt 与源码文件头 MIT"
+      ],
+      "learning": "发射时随机相位、寿命进度和帧速度独立；图集的行列选择与循环/终止方式显式定义；billboard 只负责烟层朝向，主历史曲线继续保留三维结构。",
+      "application": "先用 Kenney 单帧变体构建烟层，固定 seed 的出生角度、旋转和相位；将来有合法连续序列时再接年龄驱动图集。需要帧间混合时自行添加相邻两帧采样，已读这段本身是 floor 选帧，并未实现平滑帧间混合。",
+      "license": "Godot 引擎此 tag 文件头和 LICENSE 均 MIT；移植/改编代码保留许可。第三方纹理与 demo 素材不自动继承此结论。",
+      "code_reuse": true,
+      "asset_reuse": false,
+      "downloaded": false,
+      "limits": "未运行 Godot；官方 stable 文档有些路径 404 或后续 403，因此核查以可访问的固定 tag 源码为准。不引入 Godot 引擎或人物/法器模型。",
+      "checked_date": "2026-10-15",
+      "status": "原始来源实际请求并阅读；非运行验证"
+    },
+    {
+      "id": "nvidia-vulcan-fire",
+      "title": "GPU Gems Chapter 6 · Fire in the Vulcan Demo",
+      "author": "Hubert Nguyen / NVIDIA",
+      "priority": "P0",
+      "url": "https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-6-fire-vulcan-demo",
+      "read": [
+        "6.1 procedural / 2D distortion / video-textured sprites 的取舍",
+        "6.2.1 自制 smoke generator 和 rolling motion",
+        "6.2.2 体量、位置、寿命、动画起帧和透明度变化",
+        "6.2.3 volume texture 的帧间插值",
+        "6.2.4 alpha blending 与加法发白问题",
+        "6.3 age-weighted emitter binding",
+        "6.5.1 Glow / 6.5.2 Heat Shimmer / Example 6-1",
+        "页面 Copyright / All rights reserved"
+      ],
+      "learning": "火和烟不要全部加法；当每层都高强度相加时，色彩与内部层次会消失。变体、错相、尺度/消散差异能减少贴图重复。年轻粒子与发射器较紧，年老粒子脱离；该机制需与真正世界历史尾迹分工。",
+      "application": "赤焰用连续的方向性主火舌 + 较软 alpha 烟纱 + 少量高发射核；尾部有不同寿命和旋转速度。与人物绑定的局部新生层渐退，已经写入世界历史的尾迹不重新拖着走。将 Bloom 与背景 heat shimmer 分开开关。",
+      "license": "网页 Copyright © 2004 NVIDIA Corporation / All rights reserved；本次未核实配套 CD demo/素材的独立复制许可。仅概念阅读、链接和原创总结，不搬运视频火焰或示例 shader。",
+      "code_reuse": false,
+      "asset_reuse": false,
+      "downloaded": false,
+      "limits": "2004 的显卡限制和性能数字不能外推本次。章节把 3D 纹理用于时间帧，不等于三维密度体积；此区别在实现时必须保留。",
+      "checked_date": "2026-10-15",
+      "status": "原始来源实际请求并阅读；非运行验证"
+    },
+    {
+      "id": "unity-vfx-toolbox-license",
+      "title": "Unity VFX Toolbox · Image Sequencer（条件性工具参考）",
+      "author": "Unity Technologies",
+      "priority": "P2",
+      "url": "https://github.com/Unity-Technologies/VFXToolbox",
+      "related_urls": [
+        "https://raw.githubusercontent.com/Unity-Technologies/VFXToolbox/master/README.md",
+        "https://raw.githubusercontent.com/Unity-Technologies/VFXToolbox/master/LICENSE.md"
+      ],
+      "license_url": "https://unity.com/legal/licenses/unity-companion-license",
+      "read": [
+        "README: Image Sequencer / retiming / loop / assemble flipbook sheets / reusable templates",
+        "LICENSE.md: Unity Companion License for Unity-dependent projects"
+      ],
+      "learning": "序列重定时、循环拼接和图集组织是独立的制作工序；不是只把若干静态烟形按编号排列就得到自然动画。",
+      "application": "本轮只借鉴工作流程；需要序列时可用原创 Python/Pillow 重排自制或已授权帧，材质端读图集。",
+      "license": "Unity Companion License，明确面向 Unity-dependent projects；不能写成 MIT，不能当无条件可移植到 Forge 的通用库。",
+      "code_reuse": false,
+      "asset_reuse": false,
+      "downloaded": false,
+      "limits": "未下载工具、未运行 Unity、未核查完整 Companion License 的全部情形；本项目不复制该库代码。",
+      "checked_date": "2026-10-15",
+      "status": "原始来源实际请求并阅读；非运行验证"
+    }
+  ],
+  "download_manifest": "v3-resources/kenney/sources-and-hashes.json",
+  "selected_assets_manifest": "v3-resources/kenney/selected/selection-manifest.json",
+  "unavailable": [
+    {
+      "url": "https://nexus.leagueoflegends.com/en-us/2017/10/dev-leagues-vfx-style-guide/",
+      "result": "重定向到 League 首页，未读到原文章"
+    },
+    {
+      "url": "https://nexus.leagueoflegends.com/wp-content/uploads/2017/10/VFX_Styleguide_final_public_hidpjqwx7lqyx0pjj3ss.pdf",
+      "result": "重定向到 League 首页，未读到原 PDF"
+    },
+    {
+      "url": "https://api.github.com/repos/mrdoob/three.js/commits/dev",
+      "result": "共享 IP API rate limit 403；采用已验证固定提交，不声称最新"
+    }
+  ],
+  "implementation_status": "本资源文档没有把待应用建议写成已经运行的效果；实际原型变化与截图由独立迭代记录负责。"
+}
