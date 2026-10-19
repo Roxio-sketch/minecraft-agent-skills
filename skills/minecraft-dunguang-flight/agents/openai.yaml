@@ -1,0 +1,4 @@
+interface:
+  display_name: "遁光与飞行气焰"
+  short_description: "分析多种遁光参考，设计包裹气焰与历史尾迹，研究 Forge 1.20.1 接入"
+  default_prompt: "使用 $minecraft-dunguang-flight 分析参考并设计可调遁光，保留人物运动与世界历史尾迹。"

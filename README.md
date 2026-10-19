@@ -2,7 +2,7 @@
 
 Open-source Codex skills, editable rendering workbenches, and Forge 1.20.1 examples for Minecraft developers. The collection connects natural-language effect design, parameter editing, shader integration, and reproducible validation. [English overview](docs/README.en.md).
 
-面向 Minecraft 开发者的 Codex Skills、可编辑渲染工作台和 Forge 示例。当前公开 **24 个渲染相关 Skill、32 个工作台/预览/研究入口**，以及五行仙途中的特效开发与性能优化记录。原有启动器保留；Photon 自动化 Skill 已同步最新工具和版本参考。
+面向 Minecraft 开发者的 Codex Skills、可编辑渲染工作台和 Forge 示例。当前公开 **25 个渲染相关 Skill、33 个工作台/预览/研究入口**，以及五行仙途中的特效开发与性能优化记录。原有启动器保留；Photon 自动化 Skill 已同步最新工具和版本参考。
 
 - [完整功能、资源、脚本与记录目录](docs/rendering-catalog.md)
 - [安装与工作台启动](docs/getting-started.md)
@@ -27,6 +27,16 @@ $skillsDir = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME 'skills' } else { 
 Copy-Item -LiteralPath .\skills\minecraft-energy-vfx -Destination $skillsDir -Recurse
 ```
 
+## 遁光 Skill · V8
+
+新增多形式巡航、起遁与到达的纯程序几何/GLSL研究原型，含视频观察、学习来源、五行仙途两套现有实现索引。保留红黑离烟V3、羽状分叉V3、赤焰V3及后续流光版本。浏览器原型不等于已接入游戏。
+
+- [Skill 与使用说明](skills/minecraft-dunguang-flight/SKILL.md)
+- [阶段时序与验证范围](skills/minecraft-dunguang-flight/references/transition-stages-v8.md)
+- [离线工作台说明](skills/minecraft-dunguang-flight/assets/prototype/README.md)；统一启动器新增“遁光与飞行阶段”入口
+
+![遁光起遁与到达](skills/minecraft-dunguang-flight/assets/prototype/transition-stages.jpg)
+
 ## 工作台截图
 
 以下为 2026-10-14 的浏览器工作台截图，展示编辑/预览界面，不冒充游戏实机画面。
@@ -43,6 +53,7 @@ Copy-Item -LiteralPath .\skills\minecraft-energy-vfx -Destination $skillsDir -Re
 
 | 内容 | Skill |
 |---|---|
+| [多形式遁光与起遁/到达](skills/minecraft-dunguang-flight/SKILL.md) | `minecraft-dunguang-flight` |
 | [动态模型与材质挂点](skills/minecraft-animated-material-adapter/SKILL.md) | `minecraft-animated-material-adapter` |
 | [程序化空间裂缝](skills/minecraft-space-rift/SKILL.md) | `minecraft-space-rift` |
 | [黑洞与白洞](skills/minecraft-black-hole/SKILL.md) | `minecraft-black-hole` |

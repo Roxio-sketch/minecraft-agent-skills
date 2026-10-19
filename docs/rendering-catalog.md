@@ -712,3 +712,9 @@
 - [weapon-flame-0.2](wuxing-vfx-records/weapon-flame-0.2/)：1 个记录文件。
 - [weapon-flame-layered-v2](wuxing-vfx-records/weapon-flame-layered-v2/)：2 个记录文件。
 - [weapon-flame-modular-v1](wuxing-vfx-records/weapon-flame-modular-v1/)：1 个记录文件。
+
+## 多形式遁光与起遁/到达 · `minecraft-dunguang-flight`
+
+2026-10-19新增，V8研究原型。包含红黑烟、密集羽丝、赤焰、长虹、双流、液光、碎芒、扇流，以及独立起遁/到达控制。来源、许可证及浏览器/游戏边界分别记录，不新增角色或载体模型。
+
+[Skill](../skills/minecraft-dunguang-flight/SKILL.md) · [工作台](../skills/minecraft-dunguang-flight/assets/prototype/README.md) · [验证](../skills/minecraft-dunguang-flight/references/validation.md)
