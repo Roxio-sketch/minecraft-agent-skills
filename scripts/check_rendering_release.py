@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 from urllib.request import urlopen
 from urllib.parse import urljoin,urlsplit
 import ast,importlib.util,json,threading
+from datetime import date
 
 ROOT=Path(__file__).resolve().parents[1]
 class Resources(HTMLParser):
@@ -48,7 +49,7 @@ def check():
             if server:server.shutdown();server.server_close()
             if thread:thread.join()
         entries.append(record);print(f"{'PASS' if record['ok'] else 'FAIL'} {number:02d} {entry[0]}",flush=True)
-    result={'date':'2026-10-14','scope':'Skill metadata, Python syntax, loopback HTTP entry points and HTML script/CSS resources; no game or visual certification','skills':skills,'entry_count':len(entries),'entries':entries,'failures':failures,'ok':not failures}
+    result={'date':date.today().isoformat(),'scope':'Skill metadata, Python syntax, loopback HTTP entry points and HTML script/CSS resources; no game or visual certification','skills':skills,'entry_count':len(entries),'entries':entries,'failures':failures,'ok':not failures}
     return result
 
 if __name__=='__main__':

@@ -2,6 +2,12 @@
 
 快照日期：2026-10-14。23 个渲染相关 Skill、32 个工作台/预览/研究入口；原有 AXO 与 Photon 自动化 Skill 继续保留。每项说明以随包 `SKILL.md`、references 和实际资源为准。研究索引、浏览器设计稿与游戏消费者分别列明，不互相继承认证。
 
+## 2026-10-19 增量：仙途特效库
+
+新增[minecraft-xiantu-vfx-library](../skills/minecraft-xiantu-vfx-library/SKILL.md)，包含9个独立效果入口和1个总览入口；统一启动器现为42项。九组入口、必要动态资源和私有路径检查通过，另有焚空裂隙GPU验证，未声称九组都经过Minecraft验收。
+
+[效果列表](../skills/minecraft-xiantu-vfx-library/references/effects.md) · [检查报告](../skills/minecraft-xiantu-vfx-library/references/validation/library-check.json)
+
 ## 动态模型与材质挂点 · `minecraft-animated-material-adapter`
 
 为 Minecraft 动态物品、ModelPart 和骨骼载体适配程序材质与动画挂点，保留原动作、法线与显示变换，附 Forge 1.20.1 BEWLR 层级模型示例。用于 Cosmic、黑洞和碎晶的动态几何接入。

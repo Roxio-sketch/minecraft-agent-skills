@@ -2,7 +2,7 @@
 
 Open-source Codex skills, editable rendering workbenches, and Forge 1.20.1 examples for Minecraft developers. The collection connects natural-language effect design, parameter editing, shader integration, and reproducible validation. [English overview](docs/README.en.md).
 
-面向 Minecraft 开发者的 Codex Skills、可编辑渲染工作台和 Forge 示例。当前公开 **24 个渲染相关 Skill、32 个工作台/预览/研究入口**，以及五行仙途中的特效开发与性能优化记录。原有启动器保留；Photon 自动化 Skill 已同步最新工具和版本参考。
+面向 Minecraft 开发者的 Codex Skills、可编辑渲染工作台和 Forge 示例。当前公开 **25 个渲染相关 Skill、42 个工作台/预览/研究入口**，以及五行仙途中的特效开发与性能优化记录。原有启动器保留；Photon 自动化 Skill 已同步最新工具和版本参考。
 
 - [完整功能、资源、脚本与记录目录](docs/rendering-catalog.md)
 - [安装与工作台启动](docs/getting-started.md)
@@ -26,6 +26,16 @@ $skillsDir = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME 'skills' } else { 
 # 按需安装一个 Skill；目标已有同名目录时先备份。
 Copy-Item -LiteralPath .\skills\minecraft-energy-vfx -Destination $skillsDir -Recurse
 ```
+
+## 仙途特效库 · 2026-10-19
+
+新增[独立特效库技能](skills/minecraft-xiantu-vfx-library/SKILL.md)：九霄剑幕与万剑归宗、金白剑气、五行气海、焚空裂隙，以及灵气、闪电、护盾、拖尾和程序化空间裂隙，共9组。新版裂隙波动沿边缘传播，保持整体尺寸与尖角；代码、必要贴图和配方均可独立复制。
+
+```powershell
+python .\skills\minecraft-xiantu-vfx-library\scripts\serve.py
+```
+
+全部9组与总览已加入统一启动器。公开副本不包含个人皮肤、商业参考视频或Minecraft原版纹理；浏览器原型不等同游戏战斗版本。[资源与验证范围](skills/minecraft-xiantu-vfx-library/references/provenance.md)。
 
 ## 工作台截图
 

@@ -1,0 +1,555 @@
+{
+  "date": "2026-10-19",
+  "files": [
+    {
+      "path": "assets/vfx-library/cataclysm-rift/app.js",
+      "bytes": 12033,
+      "sha256": "f54d388114f61e1c065259f4fca50fbab2436d780d7d4323687f3cea0ae4d338"
+    },
+    {
+      "path": "assets/vfx-library/cataclysm-rift/index.html",
+      "bytes": 2023,
+      "sha256": "aca7d0b3aac4a2686d9b28ae7b5a03b7e6364f3f452e5e377ec7f690f4113761"
+    },
+    {
+      "path": "assets/vfx-library/cataclysm-rift/scripts/build.py",
+      "bytes": 839,
+      "sha256": "114f7eab19587be0214f2fbb4b958e7f445509ddc738b3f2bb05534f7d9a148a"
+    },
+    {
+      "path": "assets/vfx-library/cataclysm-rift/shader/rift-core.glsl",
+      "bytes": 6058,
+      "sha256": "3675546b0a81b3ecc6e6afbb93406c9eb72980af26e95871fd0049a33892888b"
+    },
+    {
+      "path": "assets/vfx-library/cataclysm-rift/shader/rift-webgl.frag",
+      "bytes": 6280,
+      "sha256": "41013ed905b6dc0beb1259c403d02694bbd28219dd4930c1a628cac68776e9d4"
+    },
+    {
+      "path": "assets/vfx-library/cataclysm-rift/shader/rift.fsh",
+      "bytes": 6217,
+      "sha256": "628f79ee8b757197cbafb149d30a36e53c0297309975d378ce0bc268ebcda8c2"
+    },
+    {
+      "path": "assets/vfx-library/cataclysm-rift/shader/rift.vsh",
+      "bytes": 107,
+      "sha256": "241650111f531116ba370c199073fa57b872a67fb27e50e2535857bc4aadedd0"
+    },
+    {
+      "path": "assets/vfx-library/cataclysm-rift/shader/webgl-header.glsl",
+      "bytes": 131,
+      "sha256": "24284b2b90085f8ac1e8ce81fb8ce6b9d7c4cc89abbb6a013a9dcbf82bcdf627"
+    },
+    {
+      "path": "assets/vfx-library/cataclysm-rift/style.css",
+      "bytes": 2802,
+      "sha256": "3b751f343d7d4dad945af70c1bee3bfdf99caaa21c280832e8e06131d775a7f1"
+    },
+    {
+      "path": "assets/vfx-library/cataclysm-rift/textures/filaments.png",
+      "bytes": 453449,
+      "sha256": "b6c3e263ced1b7b07b32d90b133f04a64be3b0086441141a8d188bdcb5f18b14"
+    },
+    {
+      "path": "assets/vfx-library/cataclysm-rift/textures/flow-noise.png",
+      "bytes": 457838,
+      "sha256": "904a032697718fca2e2e641c8a8b11f43a2478907f6977b36988982dc701077f"
+    },
+    {
+      "path": "assets/vfx-library/catalog.json",
+      "bytes": 1932,
+      "sha256": "34389ce1343569e219db48e42e18f2894e0e717240452c9d26611e12676f7417"
+    },
+    {
+      "path": "assets/vfx-library/energy/aura.js",
+      "bytes": 3618,
+      "sha256": "8e70bc2936c6f3b4c140c936eb560accd95c689f28a4eef180c8d91edeaf610e"
+    },
+    {
+      "path": "assets/vfx-library/energy/blur.glsl",
+      "bytes": 400,
+      "sha256": "661a9ab3e56ef65c7091e78bf72a217983270b58dd6612259c4d6f181365aa16"
+    },
+    {
+      "path": "assets/vfx-library/energy/composite.glsl",
+      "bytes": 463,
+      "sha256": "44e3c3c1e897149ec93ac1113a80854534b5fe55c98c3f7c3ac0066797918239"
+    },
+    {
+      "path": "assets/vfx-library/energy/editor.js",
+      "bytes": 13677,
+      "sha256": "5f97a294b13842651b52f1a8abc5e56c0f23b2084e730e979b3b3795edc0e9d3"
+    },
+    {
+      "path": "assets/vfx-library/energy/field.glsl",
+      "bytes": 8390,
+      "sha256": "948ad2dd55efa447a4744b448b978867e47ecd3b9ae167050918b3dc82ec1398"
+    },
+    {
+      "path": "assets/vfx-library/energy/flow-cache.glsl",
+      "bytes": 851,
+      "sha256": "a5d4bfb40bc1612dcbdf53fe2e2a1f0fc8623acfb530d87594a4b12930cb1a23"
+    },
+    {
+      "path": "assets/vfx-library/energy/index.html",
+      "bytes": 6005,
+      "sha256": "6d1881b92bdd3643cc9223250e7e81868a13fe9b9f47ce3c5627c1c0827bf1d7"
+    },
+    {
+      "path": "assets/vfx-library/energy/LICENSE",
+      "bytes": 1322,
+      "sha256": "ff25fb9d31e6188703c9b651e08e53b1c5929a896f28e60397440bbb879b6f1d"
+    },
+    {
+      "path": "assets/vfx-library/energy/noise.glsl",
+      "bytes": 10191,
+      "sha256": "fc73b2fafc33af3fe4453a3715d8a588e2a8b467018009065b8871912f9d9580"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/1.json",
+      "bytes": 1095,
+      "sha256": "5629ca5d3224fc421d01fe61e356f3428a6b1f7f3e9a55659a2c5a9db910612f"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/10.json",
+      "bytes": 1085,
+      "sha256": "841cc6bed9355d703c6c8abea55c8ac839cacaf06eeef296657b1b0fb907436f"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/11.json",
+      "bytes": 1078,
+      "sha256": "7d9d4e8a27f99e1555012bef8af969c431eb9096a3f7b163186d3879ff4ad469"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/12.json",
+      "bytes": 1077,
+      "sha256": "34ef29095dddcf5c149a98d4a53315f2d42841b809ea3cee3f3a48be079fe13f"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/13.json",
+      "bytes": 1087,
+      "sha256": "382d01ca1b36bfeefd0b53a963c6c53880c87235b73f15b022a58e34734926a6"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/14.json",
+      "bytes": 1085,
+      "sha256": "e26c8f6897b56c55e866c9fc1bab092695575201bf76f68652f5b445afa4a1af"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/15.json",
+      "bytes": 1076,
+      "sha256": "4ef7b8b084bff992bf0cabce6b438194e0264c0c102dbdbec377b75dffceb0f6"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/16.json",
+      "bytes": 1078,
+      "sha256": "6d493de9210e6f9e24a68598e5a03fdf2999d1181e94559d8a2022c8232c9687"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/17.json",
+      "bytes": 1086,
+      "sha256": "e79606cef6bceb49cd2146cd019f151c3e4ac3688b385706e139a5ae3ec5a546"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/18.json",
+      "bytes": 1077,
+      "sha256": "ddb06947d3898b660ba459451642b122ac296136febdfd491d211f08597e7788"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/19.json",
+      "bytes": 1073,
+      "sha256": "0084b6c8f9c03151803ab77de084558d60e641900ebbecf3e67885ad11cea81d"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/2.json",
+      "bytes": 1087,
+      "sha256": "2fbeef7ece69a18188896f4a160cca65f0cad2763b9e56085bf4cc528d9f5a2d"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/20.json",
+      "bytes": 1084,
+      "sha256": "3fb272bead008bad809b4814257246e5eb69342cbeb5e2bd030631460d85d1e3"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/3.json",
+      "bytes": 1094,
+      "sha256": "98c19e794e89fa3ebc662023f400c05f2e6180afb330899d9384782eb9053cb1"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/4.json",
+      "bytes": 1086,
+      "sha256": "65f595aeda6b571d567cb0fd9364929e0b02e9a387bd6e5e891f59a1d639097e"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/5.json",
+      "bytes": 1087,
+      "sha256": "78e397224cf84ab14316077e32e15c445cbd549303b08da2815b0531c9b453f1"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/6.json",
+      "bytes": 1086,
+      "sha256": "5661052174026094499f03ba3db55c65ee4f9d101dc064518f8590ea471f0518"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/7.json",
+      "bytes": 1091,
+      "sha256": "261cf217cdf21ec5bdf133657e124ec39b389ed042b771d5f8f360d619b3cbfd"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/8.json",
+      "bytes": 1097,
+      "sha256": "87388437102ef0311b74d8c1353aaf37ecf7b4335595a8f8aab6a16a78170fd5"
+    },
+    {
+      "path": "assets/vfx-library/energy/presets/9.json",
+      "bytes": 1085,
+      "sha256": "649d6a346936dd7fa51e05d28f775a50dbf156c9eec6b1f2a28b994f897fdc0b"
+    },
+    {
+      "path": "assets/vfx-library/energy/README.md",
+      "bytes": 307,
+      "sha256": "676e1e3c509a6f764c338cad42e21925098e7106938589279205d58304e765d5"
+    },
+    {
+      "path": "assets/vfx-library/energy/recipe-schema.json",
+      "bytes": 4877,
+      "sha256": "c0a69b31efbed1a5ef4423fd3ecc5f514bd1947e0c1deb490af6417d3e1a363a"
+    },
+    {
+      "path": "assets/vfx-library/energy/scene.glsl",
+      "bytes": 2219,
+      "sha256": "2ce388325c816496fecfc767c369f2acb71897704c49067cd8aa1de7fbbb5828"
+    },
+    {
+      "path": "assets/vfx-library/energy/schema.js",
+      "bytes": 9465,
+      "sha256": "e9a2183285feb2f5755e4fe7f2f154fa08f26265d77f6f3f3372671a7ed97635"
+    },
+    {
+      "path": "assets/vfx-library/energy/shaders.js",
+      "bytes": 26939,
+      "sha256": "5abd00ca36579cbdb868c6bfc2c7e3ad30acf05e50b3d3bf7eeb9b718ce7b0ee"
+    },
+    {
+      "path": "assets/vfx-library/energy/SKILL-LICENSE",
+      "bytes": 1322,
+      "sha256": "ff25fb9d31e6188703c9b651e08e53b1c5929a896f28e60397440bbb879b6f1d"
+    },
+    {
+      "path": "assets/vfx-library/energy/volume.glsl",
+      "bytes": 4510,
+      "sha256": "54d2d393484a11c2b7345bfbf4168e1c0f44fc46cc6457f8d8e9fa1b6105572f"
+    },
+    {
+      "path": "assets/vfx-library/energy/幽气拓展源码.md",
+      "bytes": 9047,
+      "sha256": "9bf6673c38839d31c212f32c24c37b956cbb4eee3b7ac10de09e2d862063bea0"
+    },
+    {
+      "path": "assets/vfx-library/gallery.js",
+      "bytes": 481,
+      "sha256": "77a8cb8522a8834afe743897753ba26072a5373996b1e514a9e3cbb425c24efe"
+    },
+    {
+      "path": "assets/vfx-library/index.html",
+      "bytes": 1194,
+      "sha256": "7028c485888320b68b5b26e2dc858720923617270c49174d7c854ff4d41057e0"
+    },
+    {
+      "path": "assets/vfx-library/lightning/app.js",
+      "bytes": 19203,
+      "sha256": "a4801ebe82c8a1995919ba7423060c95e1ada1d5bebb5500ef45bb6a6a415ede"
+    },
+    {
+      "path": "assets/vfx-library/lightning/core.js",
+      "bytes": 12589,
+      "sha256": "778f5b503b9a7e87894896e834206170ea23fc414f5dd5f80f4b4d7163b6684a"
+    },
+    {
+      "path": "assets/vfx-library/lightning/gpu.js",
+      "bytes": 10850,
+      "sha256": "6d4f0515db035a02fedd1cedcabc5057a7aa51560f0ff72a98b3b6a31b001893"
+    },
+    {
+      "path": "assets/vfx-library/lightning/index.html",
+      "bytes": 7750,
+      "sha256": "9d9116a9ad8c3ea2cd7026309770f126eb679ef821257fcea147d3e9ab01761f"
+    },
+    {
+      "path": "assets/vfx-library/lightning/presets/cluster.json",
+      "bytes": 1476,
+      "sha256": "620989ed4ecf9d3331a19c3c5e3db36939f2ee115db66df0a985b64a91997729"
+    },
+    {
+      "path": "assets/vfx-library/lightning/presets/dense.json",
+      "bytes": 1479,
+      "sha256": "0550be35dda3fd4b6d21f5b9f13d09c8caa3558ef2634a48419d0f71050365c3"
+    },
+    {
+      "path": "assets/vfx-library/lightning/presets/orbit.json",
+      "bytes": 1478,
+      "sha256": "096d3af63382a37039f5c2fab52d6fd1f643ad82fe556cacde0c23ecfb6a441c"
+    },
+    {
+      "path": "assets/vfx-library/lightning/presets/rain.json",
+      "bytes": 1475,
+      "sha256": "d58d37fc318582f958e813b0481c9e3acc29daa9f7fe6eec17f0b5444e547853"
+    },
+    {
+      "path": "assets/vfx-library/lightning/presets/ring.json",
+      "bytes": 1472,
+      "sha256": "7f25826cddaeb28dd76b0a49b04d6a184c6d8d36b1bc57ffb5bd2649e3150845"
+    },
+    {
+      "path": "assets/vfx-library/lightning/presets/shortSource.json",
+      "bytes": 1473,
+      "sha256": "aa494a7b3bec51ebc7463afcc78da2d5b0f31bf1e9c549dd6670fcd817390cc9"
+    },
+    {
+      "path": "assets/vfx-library/lightning/presets/source.json",
+      "bytes": 1474,
+      "sha256": "ad9f5207e208ac9c71f7d7bc8b7d433db71fca5749cfe31f0bb8adae45a794a7"
+    },
+    {
+      "path": "assets/vfx-library/lightning/presets/spektr.json",
+      "bytes": 1478,
+      "sha256": "096d3af63382a37039f5c2fab52d6fd1f643ad82fe556cacde0c23ecfb6a441c"
+    },
+    {
+      "path": "assets/vfx-library/lightning/presets/strike.json",
+      "bytes": 1480,
+      "sha256": "cc1583e668947f0c58560e92b8b3eb0cfc53defb470f319f3df22b8ea3d54d38"
+    },
+    {
+      "path": "assets/vfx-library/lightning/presets/tribulation.json",
+      "bytes": 1481,
+      "sha256": "a7f0b843c930748345953e4abb338863e7a5dbb1646f41171708fc3c27ff8cfb"
+    },
+    {
+      "path": "assets/vfx-library/lightning/presets/white-core-magenta-cyan.json",
+      "bytes": 1485,
+      "sha256": "398be15ef57e3637ad0de5c1424af09be1ee02d396c7d00f78d4cb17d58e7d4a"
+    },
+    {
+      "path": "assets/vfx-library/lightning/recipe.js",
+      "bytes": 8182,
+      "sha256": "8be1dfa239a1b5c4e91305cc178bad0b02463d94c8ada4f5c4cc6b52c68c5b5d"
+    },
+    {
+      "path": "assets/vfx-library/lightning/recipe.json",
+      "bytes": 1478,
+      "sha256": "096d3af63382a37039f5c2fab52d6fd1f643ad82fe556cacde0c23ecfb6a441c"
+    },
+    {
+      "path": "assets/vfx-library/lightning/simplex.js",
+      "bytes": 999,
+      "sha256": "77da1a1df555fcd3f8cdd790b0ef7e42942fbb3b307dd6ef3dae26bb1327fd0f"
+    },
+    {
+      "path": "assets/vfx-library/lightning/SKILL-LICENSE",
+      "bytes": 741,
+      "sha256": "eb006b876d3caf7f2810787b4cf8eada7179c967639c4f2e4bb43de6f2eaffe5"
+    },
+    {
+      "path": "assets/vfx-library/lightning/SKILL-THIRD_PARTY_NOTICES.md",
+      "bytes": 2595,
+      "sha256": "e2ba1fde02f508a887eecb6d28afe3949f419ce847fa8fc657ad87013b85bb64"
+    },
+    {
+      "path": "assets/vfx-library/lightning/THIRD_PARTY_NOTICES.md",
+      "bytes": 2595,
+      "sha256": "e2ba1fde02f508a887eecb6d28afe3949f419ce847fa8fc657ad87013b85bb64"
+    },
+    {
+      "path": "assets/vfx-library/qi-sea/index.html",
+      "bytes": 2554,
+      "sha256": "e4ecbb1afb586337df17582567e4aa342562e8a748957361939e81d0d8a4c43f"
+    },
+    {
+      "path": "assets/vfx-library/qi-sea/preview.js",
+      "bytes": 4304,
+      "sha256": "ab25dc26bd9b515b968fb64ba9556dce2cb7adebed66d7456232480edf6d2e57"
+    },
+    {
+      "path": "assets/vfx-library/qi-sea/shader/qi_sea.fsh",
+      "bytes": 3802,
+      "sha256": "4540d892246cd39fe4f862b40eeb3bfe8ac5eee4248aa64d5d51e1611643287c"
+    },
+    {
+      "path": "assets/vfx-library/qi-sea/textures/qi_sea.png",
+      "bytes": 2756662,
+      "sha256": "f08117ee6d2b268441f764163c61de480acb537d3190a0a0999a0ecdc7758d2a"
+    },
+    {
+      "path": "assets/vfx-library/qi-sea/textures/qi_sea_single.png",
+      "bytes": 2541645,
+      "sha256": "2f619e64e055e65e8dcce5a823d8cb3529d718802d975c73e425c84f3edfe81f"
+    },
+    {
+      "path": "assets/vfx-library/rift/geometry.js",
+      "bytes": 1156,
+      "sha256": "322f157c090e0aa4ca9516655887e2b94cead505cc800dfd2a8a713246668f96"
+    },
+    {
+      "path": "assets/vfx-library/rift/git-preview.js",
+      "bytes": 3540,
+      "sha256": "47fd4cfd2ed396abc458430a19e50ef474e2c2b7602765dbd165487e5297c1fd"
+    },
+    {
+      "path": "assets/vfx-library/rift/index.html",
+      "bytes": 1066,
+      "sha256": "6b319185c5629d01b30f1c28b0e46a9ac47ae2e193b3550a271c99a2b619124d"
+    },
+    {
+      "path": "assets/vfx-library/rift/NOTICE.md",
+      "bytes": 1003,
+      "sha256": "5329fdc18c66003dc98b5c2c594fba99f8d02ba21b2593a27b5171ce0b83cda8"
+    },
+    {
+      "path": "assets/vfx-library/rift/README.md",
+      "bytes": 408,
+      "sha256": "7a80323d2799db77e9210a3c94e2a1d2f503a731fc783508c96835b6b52d9e07"
+    },
+    {
+      "path": "assets/vfx-library/rift/recipe.json",
+      "bytes": 1338,
+      "sha256": "c45aad4bf4d1852f3153d51eb34c86b1634446c946a14fbc0b11a4984da3a06d"
+    },
+    {
+      "path": "assets/vfx-library/rift/rift.frag",
+      "bytes": 46925,
+      "sha256": "472cf56425684d6b9c4cde4c73769cd71daf0a199c16810917c950b750bfbca9"
+    },
+    {
+      "path": "assets/vfx-library/shield/fracture-core.js",
+      "bytes": 6268,
+      "sha256": "5eaa71f9e2cbc86171ccd59711e62fb3eb174dc8e76ddfa853e1517067583fa4"
+    },
+    {
+      "path": "assets/vfx-library/shield/index.html",
+      "bytes": 3914,
+      "sha256": "5ed372866164e7ed7d6ed2a7f836623faf1f10fd1edaa65683351724c7914ecd"
+    },
+    {
+      "path": "assets/vfx-library/shield/shader-source.js",
+      "bytes": 7158,
+      "sha256": "ea775a5d26cfd9a7b502d17d319a29872535779bb7a79ac88d3d38bc796675e1"
+    },
+    {
+      "path": "assets/vfx-library/shield/SKILL-LICENSE",
+      "bytes": 1069,
+      "sha256": "1b194d3121951857a7599de2258cffc9bf90e4dd8e11beb7a7bc9e9c0c0f0009"
+    },
+    {
+      "path": "assets/vfx-library/shield/workbench.js",
+      "bytes": 24027,
+      "sha256": "b10db6b5c23591abd65420e00aac77ec90c9aba138fae4b7e01800024c7ae1d9"
+    },
+    {
+      "path": "assets/vfx-library/sword-formations/actual-sword.json",
+      "bytes": 330344,
+      "sha256": "71b650ed180dd03dd8bfc94951fa0f112f6247da7788fbe9bce868a04f63abf3"
+    },
+    {
+      "path": "assets/vfx-library/sword-formations/actual-sword.png",
+      "bytes": 14084,
+      "sha256": "a77b386637d210fda3c7bd4c9864cbeb6b328f662975467fc61052e53ee1662e"
+    },
+    {
+      "path": "assets/vfx-library/sword-formations/app.js",
+      "bytes": 30842,
+      "sha256": "d30e017b6793af923a7f73cf29b737aebc1f064d16599f4ac2737f54b8b6bae7"
+    },
+    {
+      "path": "assets/vfx-library/sword-formations/demo_skin.png",
+      "bytes": 343,
+      "sha256": "cf327c0bb6cbd4204f0e8a6b682d1651ced76b37b70a68d418a9774f0e6e51fe"
+    },
+    {
+      "path": "assets/vfx-library/sword-formations/formation.js",
+      "bytes": 3287,
+      "sha256": "730d8a111cc5031218bba16fc3ba1f00b55bc2c5fffa850c6c31924a37b52f55"
+    },
+    {
+      "path": "assets/vfx-library/sword-formations/index.html",
+      "bytes": 3014,
+      "sha256": "eaa983a83f8682a16368fbcd47a8784fe9617fe3a99bc67f46be0cbbf95abfd0"
+    },
+    {
+      "path": "assets/vfx-library/sword-formations/style.css",
+      "bytes": 2850,
+      "sha256": "58f66d691bcab65433de01a8e60b39a855fc1cdcba2ecafff7946089f9628b5f"
+    },
+    {
+      "path": "assets/vfx-library/sword-formations/sword-distance.png",
+      "bytes": 34441,
+      "sha256": "b3175a19bfd2d69311c1b65f4ec2402e73a4bace6dbcf72fde6fe2b5aeaaa4e9"
+    },
+    {
+      "path": "assets/vfx-library/sword-qi/gold-wake-atlas.png",
+      "bytes": 561469,
+      "sha256": "f2ade4023e821053fb427aed7d913232ac4857b940cf58bf298819ac6c9e270c"
+    },
+    {
+      "path": "assets/vfx-library/sword-qi/index.html",
+      "bytes": 1103,
+      "sha256": "e31aa0a1638db8a7095018656419f3a12a1c7aa6931548976417df107a819d13"
+    },
+    {
+      "path": "assets/vfx-library/sword-qi/recipe.json",
+      "bytes": 701,
+      "sha256": "c69b12e6783b232ab86e871781326e7448bef841d44532055068cd8ac7b32671"
+    },
+    {
+      "path": "assets/vfx-library/sword-qi/renderer.js",
+      "bytes": 6158,
+      "sha256": "3eb5a58019849d56649a70ef4b8216b27aafb5c4492be20cb6679c47be46466d"
+    },
+    {
+      "path": "assets/vfx-library/sword-qi/sword-qi-atlas.png",
+      "bytes": 153795,
+      "sha256": "22b5d4cbdd10e7aa51e47843554c080b4fec0dbfc964384a896e3cf2114a0e3c"
+    },
+    {
+      "path": "assets/vfx-library/sword-qi/sword-qi-texture.png",
+      "bytes": 19360,
+      "sha256": "16a37ab3cf9e74ef34c88d41941940fc786400f8e5c3285905cbd60cd0423157"
+    },
+    {
+      "path": "assets/vfx-library/sword-qi/使用说明.md",
+      "bytes": 1645,
+      "sha256": "3abf345cc19d10b38263ea2a18cd5ad28aab962ba8648aeb283a7cc85fe5b0ac"
+    },
+    {
+      "path": "assets/vfx-library/trails/app.js",
+      "bytes": 22006,
+      "sha256": "62f0e779c4ffe0b3d4d0b8320e893bbc35a26ad1c2aaecfbf88c91d128d7b4d4"
+    },
+    {
+      "path": "assets/vfx-library/trails/core.js",
+      "bytes": 7562,
+      "sha256": "c7e5d94957c88c1b1b1277301dbd2eae0b5bfc79b067fc5e3514d3154e559a3e"
+    },
+    {
+      "path": "assets/vfx-library/trails/index.html",
+      "bytes": 3181,
+      "sha256": "7ba607dceba590d9dfa18936fde6a80c75e204567c979f39f5b5be135717b8b8"
+    },
+    {
+      "path": "assets/vfx-library/trails/preset-data.js",
+      "bytes": 7215,
+      "sha256": "2bb09a65d95e53c0f112c007c1f4c95d3db2978ec577cc39da8f958f3b6e8b85"
+    },
+    {
+      "path": "assets/vfx-library/trails/SKILL-LICENSE",
+      "bytes": 1155,
+      "sha256": "bd37224c069b55e548c77c1cd9a3eedc6c73393058483d43e6e64a4d8b3aaf9e"
+    },
+    {
+      "path": "assets/vfx-library/trails/style.css",
+      "bytes": 6267,
+      "sha256": "923c90454c6a3ce2897f1b423125836f3f33cadf03624b99f1d9e258ac96671c"
+    }
+  ]
+}

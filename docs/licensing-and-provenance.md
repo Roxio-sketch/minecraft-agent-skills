@@ -25,3 +25,7 @@
 历史记录的本机路径仅作为开发来源，不能当作其他用户需要存在的路径。完整公开文件校验清单见 [release-manifest.json](release-manifest.json)。
 
 本次发布对少量既有文件规范化行尾空白，并移除本机 Windows 账户标识；历史报告描述原实验，不声称重新取得原始全部源字节认证。
+
+## 2026-10-19 仙途特效库增量
+
+新增九组便携预览：代码、必要的项目原创模型/贴图、参数和已有许可证。人物使用新生成的通用演示皮肤，不分发个人皮肤；不含商业视频、抽帧参考、Minecraft纹理、存档和本机凭据。空间裂隙保留组合NOTICE和psrdnoise版权，不将组合整体重新标为MIT。详细来源与范围见[技能说明](../skills/minecraft-xiantu-vfx-library/references/provenance.md)。

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "trails",
+    "title": "刀光与能量束",
+    "renderer": "Canvas 近似预览",
+    "description": "刀光、轨迹残影、分叉光束",
+    "entry": "trails/index.html"
+  },
+  {
+    "id": "energy",
+    "title": "灵气与能量场",
+    "renderer": "WebGL2 三维预览",
+    "description": "冷焰、幽气、烟纱与环形能量",
+    "entry": "energy/index.html"
+  },
+  {
+    "id": "shield",
+    "title": "护盾与破碎",
+    "renderer": "WebGL 三维预览",
+    "description": "边缘光、六边形、受击波纹与碎片",
+    "entry": "shield/index.html"
+  },
+  {
+    "id": "lightning",
+    "title": "闪电与雷劫",
+    "renderer": "WebGL2 三维预览",
+    "description": "环绕电流、分形闪电与集束落雷",
+    "entry": "lightning/index.html"
+  },
+  {
+    "id": "rift",
+    "title": "空间裂隙",
+    "renderer": "WebGL2 程序化裂隙",
+    "description": "不规则裂口、异空间纵深与流动能量边缘",
+    "entry": "rift/index.html"
+  },
+  {
+    "id": "sword-qi",
+    "title": "金白剑气",
+    "renderer": "WebGL2 网格与动态贴图",
+    "description": "动画结束后向前飞出的白色锋刃、金色流纹与消散拖尾",
+    "entry": "sword-qi/index.html"
+  },
+  {
+    "id": "cataclysm-rift",
+    "title": "焚空裂隙 · 视频参考",
+    "renderer": "WebGL2 着色器 + 双贴图 + HDR",
+    "description": "炽金圆环、横向错层、锯齿裂口与空间波动",
+    "entry": "cataclysm-rift/index.html"
+  },
+  {
+    "id": "qi-sea",
+    "title": "五行气海",
+    "renderer": "GLSL150 / WebGL2",
+    "description": "五行旋涡、独立修为与灵气充盈",
+    "entry": "qi-sea/index.html"
+  },
+  {
+    "id": "sword-formations",
+    "title": "九霄剑决与万剑归宗",
+    "renderer": "WebGL2 三维剑阵",
+    "description": "四角剑流、高空剑幕、剑环及人物掐诀",
+    "entry": "sword-formations/index.html"
+  }
+]
