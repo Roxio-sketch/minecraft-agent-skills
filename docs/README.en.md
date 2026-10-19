@@ -12,6 +12,8 @@ The new [minecraft-xiantu-vfx-library](../skills/minecraft-xiantu-vfx-library/SK
 
 Run `python skills/minecraft-xiantu-vfx-library/scripts/serve.py` for this gallery only.
 
+See the [Chinese Skills usage guide](skills-usage.md) for installation, explicit `$skill-name` calls, gallery startup, recipe export, and game-integration boundaries. [Current preview captures](../README.md#仙途特效库截图) are labeled as previews, not Minecraft runtime evidence.
+
 ## Run
 
 Python 3.10+ and a modern WebGL2 browser:

@@ -5,7 +5,7 @@ description: 复用仙途九组可编辑特效预览，包括九霄剑幕与万�
 
 # 仙途特效库
 
-用 `python scripts/serve.py` 启动本地目录，或用 `python scripts/create_project.py <新目录>` 复制独立特效库。两者仅用Python标准库。入口与用途见 `references/effects.md`。
+用 `python scripts/serve.py` 启动本地目录，或用 `python scripts/create_project.py <新目录>` 复制独立特效库。两者仅用Python标准库。入口与用途见 `references/effects.md`，首次使用可先读 `references/usage.md`。
 
 - 先看目标效果已有参数和贴图，沿现有算法修改，保留单独暂停、时间与观察控制。
 - 焚空裂隙的“边缘呼吸”指沿边界弧长传播的局部波包、光带厚薄和分层流光；保持整体尺寸和尖角锚点，不能改成整片缩放。高度是独立静态参数。修改共享 `shader/rift-core.glsl` 后运行该目录 `scripts/build.py` 生成WebGL2与GLSL150。
