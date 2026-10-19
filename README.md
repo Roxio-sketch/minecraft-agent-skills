@@ -1,5 +1,15 @@
 # Minecraft Agent Skills & Rendering Workbenches
 
+## 仙途特效库截图
+
+以下为当前随包着色器/贴图的离线GPU渲染，以及已有拖尾编辑器截图，均为**效果预览，非Minecraft实机**。不包含商业参考画面。
+
+| 焚空裂隙 · 边缘波动 | 五行气海 | 刀光与能量束 · Canvas近似 |
+|---|---|---|
+| ![焚空裂隙预览](docs/media/xiantu-vfx/cataclysm-rift.png) | ![五行气海预览](docs/media/xiantu-vfx/qi-sea.png) | ![拖尾工作台截图](docs/media/xiantu-vfx/trails-workbench.png) |
+
+操作步骤见[Skills使用说明](docs/skills-usage.md)。截图是单帧，边缘波动、旋涡和拖尾的动态请在工作台中查看。
+
 Open-source Codex skills, editable rendering workbenches, and Forge 1.20.1 examples for Minecraft developers. The collection connects natural-language effect design, parameter editing, shader integration, and reproducible validation. [English overview](docs/README.en.md).
 
 面向 Minecraft 开发者的 Codex Skills、可编辑渲染工作台和 Forge 示例。当前公开 **26 个渲染相关 Skill、43 个工作台/预览/研究入口**，以及五行仙途中的特效开发与性能优化记录。原有启动器保留；Photon 自动化 Skill 已同步最新工具和版本参考。
@@ -47,16 +57,6 @@ python .\skills\minecraft-xiantu-vfx-library\scripts\serve.py
 - [离线工作台说明](skills/minecraft-dunguang-flight/assets/prototype/README.md)；统一启动器新增“遁光与飞行阶段”入口
 
 ![遁光起遁与到达](skills/minecraft-dunguang-flight/assets/prototype/transition-stages.jpg)
-
-## 仙途特效库截图
-
-以下为当前随包着色器/贴图的离线GPU渲染，以及已有拖尾编辑器截图，均为**效果预览，非Minecraft实机**。不包含商业参考画面。
-
-| 焚空裂隙 · 边缘波动 | 五行气海 | 刀光与能量束 · Canvas近似 |
-|---|---|---|
-| ![焚空裂隙预览](docs/media/xiantu-vfx/cataclysm-rift.png) | ![五行气海预览](docs/media/xiantu-vfx/qi-sea.png) | ![拖尾工作台截图](docs/media/xiantu-vfx/trails-workbench.png) |
-
-操作步骤见[Skills使用说明](docs/skills-usage.md)。截图是单帧，边缘波动、旋涡和拖尾的动态请在工作台中查看。
 
 ## 工作台截图
 
