@@ -1,0 +1,4 @@
+interface:
+  display_name: "仙途特效库"
+  short_description: "复用九组剑阵、剑气、气海与动态裂隙预览，保留共享着色器和贴图"
+  default_prompt: "使用 $minecraft-xiantu-vfx-library 修改仙途特效原型，并验证挂点、边缘波动及资源完整性。"

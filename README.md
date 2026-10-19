@@ -2,9 +2,10 @@
 
 Open-source Codex skills, editable rendering workbenches, and Forge 1.20.1 examples for Minecraft developers. The collection connects natural-language effect design, parameter editing, shader integration, and reproducible validation. [English overview](docs/README.en.md).
 
-面向 Minecraft 开发者的 Codex Skills、可编辑渲染工作台和 Forge 示例。当前公开 **25 个渲染相关 Skill、33 个工作台/预览/研究入口**，以及五行仙途中的特效开发与性能优化记录。原有启动器保留；Photon 自动化 Skill 已同步最新工具和版本参考。
+面向 Minecraft 开发者的 Codex Skills、可编辑渲染工作台和 Forge 示例。当前公开 **26 个渲染相关 Skill、43 个工作台/预览/研究入口**，以及五行仙途中的特效开发与性能优化记录。原有启动器保留；Photon 自动化 Skill 已同步最新工具和版本参考。
 
 - [完整功能、资源、脚本与记录目录](docs/rendering-catalog.md)
+- [Skills 安装、调用与特效库使用说明](docs/skills-usage.md)
 - [安装与工作台启动](docs/getting-started.md)
 - [验证证据与当前限制](docs/validation-and-evidence.md)
 - [来源、许可证与发布范围](docs/licensing-and-provenance.md)
@@ -27,6 +28,16 @@ $skillsDir = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME 'skills' } else { 
 Copy-Item -LiteralPath .\skills\minecraft-energy-vfx -Destination $skillsDir -Recurse
 ```
 
+## 仙途特效库 · 2026-10-19
+
+新增[独立特效库技能](skills/minecraft-xiantu-vfx-library/SKILL.md)：九霄剑幕与万剑归宗、金白剑气、五行气海、焚空裂隙，以及灵气、闪电、护盾、拖尾和程序化空间裂隙，共9组。新版裂隙波动沿边缘传播，保持整体尺寸与尖角；代码、必要贴图和配方均可独立复制。
+
+```powershell
+python .\skills\minecraft-xiantu-vfx-library\scripts\serve.py
+```
+
+全部9组与总览已加入统一启动器。公开副本不包含个人皮肤、商业参考视频或Minecraft原版纹理；浏览器原型不等同游戏战斗版本。[资源与验证范围](skills/minecraft-xiantu-vfx-library/references/provenance.md)。
+
 ## 遁光 Skill · V8
 
 新增多形式巡航、起遁与到达的纯程序几何/GLSL研究原型，含视频观察、学习来源、五行仙途两套现有实现索引。保留红黑离烟V3、羽状分叉V3、赤焰V3及后续流光版本。浏览器原型不等于已接入游戏。
@@ -36,6 +47,16 @@ Copy-Item -LiteralPath .\skills\minecraft-energy-vfx -Destination $skillsDir -Re
 - [离线工作台说明](skills/minecraft-dunguang-flight/assets/prototype/README.md)；统一启动器新增“遁光与飞行阶段”入口
 
 ![遁光起遁与到达](skills/minecraft-dunguang-flight/assets/prototype/transition-stages.jpg)
+
+## 仙途特效库截图
+
+以下为当前随包着色器/贴图的离线GPU渲染，以及已有拖尾编辑器截图，均为**效果预览，非Minecraft实机**。不包含商业参考画面。
+
+| 焚空裂隙 · 边缘波动 | 五行气海 | 刀光与能量束 · Canvas近似 |
+|---|---|---|
+| ![焚空裂隙预览](docs/media/xiantu-vfx/cataclysm-rift.png) | ![五行气海预览](docs/media/xiantu-vfx/qi-sea.png) | ![拖尾工作台截图](docs/media/xiantu-vfx/trails-workbench.png) |
+
+操作步骤见[Skills使用说明](docs/skills-usage.md)。截图是单帧，边缘波动、旋涡和拖尾的动态请在工作台中查看。
 
 ## 工作台截图
 

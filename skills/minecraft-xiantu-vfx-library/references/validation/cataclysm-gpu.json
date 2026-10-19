@@ -1,0 +1,15 @@
+{
+  "GLSL150_compile": true,
+  "render_size": [
+    960,
+    600
+  ],
+  "renderer": "NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2",
+  "motion_mean_channel_change_0_4s": 1.9317731481481482,
+  "frozen_time_mean_change": 0.0,
+  "wave_zero_changes_output": true,
+  "closed_on_black_max": 0,
+  "breathing_only_mean_channel_change": 5.725370949074074,
+  "GL_error": "GL_NO_ERROR",
+  "scope": "Desktop GPU shader/pipeline validation, not Minecraft runtime"
+}

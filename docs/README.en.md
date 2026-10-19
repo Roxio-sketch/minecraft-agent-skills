@@ -6,6 +6,14 @@ This release publishes **23 rendering skills, 32 workbench/research/preview entr
 
 The scope includes procedural skies and atmosphere, volumetric clouds and fog, black/white holes, lightning, cosmic item materials, colored glint, refraction, rim lighting, energy shields, trails and beams, particles, scene windows, local subscenes, selective bloom, and GPU performance.
 
+## 2026-10-19: portable Xiantu VFX library
+
+The new [minecraft-xiantu-vfx-library](../skills/minecraft-xiantu-vfx-library/SKILL.md) packages nine self-contained previews: sword formations, gold/white sword qi, five-element qi sea, edge-breathing cataclysm rift, energy, lightning, shields, trails, and procedural space rift. Ten entries (gallery plus effects) bring the shared launcher to 43. Personal player skins, commercial video references and Minecraft textures are excluded; original notices remain. The browser prototypes do not certify game integration.
+
+Run `python skills/minecraft-xiantu-vfx-library/scripts/serve.py` for this gallery only.
+
+See the [Chinese Skills usage guide](skills-usage.md) for installation, explicit `$skill-name` calls, gallery startup, recipe export, and game-integration boundaries. [Current preview captures](../README.md#仙途特效库截图) are labeled as previews, not Minecraft runtime evidence.
+
 ## Run
 
 Python 3.10+ and a modern WebGL2 browser:

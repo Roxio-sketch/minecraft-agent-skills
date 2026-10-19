@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-19",
+  "scope": "Preview captures only; not Minecraft runtime screenshots",
+  "images": [
+    {
+      "file": "cataclysm-rift.png",
+      "source": "Actual public rift GLSL150 + shared data textures + HDR composite",
+      "time_seconds": 6
+    },
+    {
+      "file": "qi-sea.png",
+      "source": "Actual public qi_sea.fsh + qi_sea.png; desktop GPU",
+      "time_seconds": 6,
+      "mana_fill": 0.85,
+      "element_progress": [
+        0.8,
+        0.5,
+        0.9,
+        0.6,
+        0.7
+      ]
+    },
+    {
+      "file": "trails-workbench.png",
+      "source": "Existing local trails editor screenshot; Canvas approximate preview"
+    }
+  ]
+}

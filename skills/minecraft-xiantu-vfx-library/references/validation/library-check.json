@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-19",
+  "effects": [
+    "trails",
+    "energy",
+    "shield",
+    "lightning",
+    "rift",
+    "sword-qi",
+    "cataclysm-rift",
+    "qi-sea",
+    "sword-formations"
+  ],
+  "javascript_syntax_files": 23,
+  "failures": [],
+  "ok": true,
+  "scope": "Portable HTTP/HTML dependencies, JSON/Python/optional JS syntax, required dynamic assets, private-path scan; not browser GPU or Minecraft certification"
+}

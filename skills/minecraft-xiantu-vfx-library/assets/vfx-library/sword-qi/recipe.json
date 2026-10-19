@@ -1,0 +1,36 @@
+{
+  "schema": "xiantu-sword-qi/1",
+  "name": "剑彻山河 · 金白剑气",
+  "duration_ticks": 60,
+  "speed_blocks_per_tick": 1.1,
+  "half_span": 9,
+  "trail_depth": 3,
+  "segments": 96,
+  "atlas_frames": 8,
+  "texture": "sword-qi-atlas.png",
+  "trigger": "cast_completed",
+  "colors": [
+    "#ffffff",
+    "#ffd35c",
+    "#ffad23"
+  ],
+  "terrain_damage": false,
+  "shape": "crescent_arc",
+  "tip_trails": {
+    "tips": 2,
+    "strands_per_tip": 3,
+    "history_ticks": 28,
+    "taper": true
+  },
+  "central_wake": {
+    "texture": "gold-wake-atlas.png",
+    "frames": 8,
+    "segments": [
+      64,
+      12
+    ],
+    "history_ticks": 24,
+    "width_fraction": 0.99,
+    "color": "#ffb41c"
+  }
+}
