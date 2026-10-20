@@ -22,3 +22,7 @@ description: 制作 Minecraft 客户端动态点光与局部场景照明，处�
 资产为原创 Java/GLSL/JSON；参考项目定位和许可边界见 [来源](references/sources.md)。交付时附运行结果、已实现字段、实际目标类别和剩余边界。只交参数表不构成用户要求的完整效果制作。
 
 接入已有方块或材质并区分自发光与场景光时，读 [宿主照明边界](references/host-limits-and-emission.md)。
+
+## 随包工作台
+
+单独安装本 Skill 也包含 `assets/workbench/index.html`。在 Skill 目录运行 `python -m http.server 8765 --bind 127.0.0.1`，浏览器打开 `http://127.0.0.1:8765/assets/workbench/index.html`。这是独立预览，不代表游戏实机验证。

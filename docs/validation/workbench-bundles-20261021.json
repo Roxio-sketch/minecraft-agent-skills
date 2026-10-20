@@ -1,0 +1,309 @@
+{
+  "date": "2026-10-21",
+  "scope": "Skill metadata, Python syntax, loopback HTTP entry points and HTML script/CSS resources; no game or visual certification",
+  "skills": [
+    "axolotl-launcher",
+    "minecraft-animated-material-adapter",
+    "minecraft-black-hole",
+    "minecraft-colored-glint",
+    "minecraft-cosmic-material",
+    "minecraft-cosmic-rendering",
+    "minecraft-crystal-refraction",
+    "minecraft-dunguang-flight",
+    "minecraft-dynamic-lighting",
+    "minecraft-energy-vfx",
+    "minecraft-energy-vfx-research",
+    "minecraft-glass-rim",
+    "minecraft-halo-decoration",
+    "minecraft-illustration-render",
+    "minecraft-item-scene-window",
+    "minecraft-lightning",
+    "minecraft-local-environment-material",
+    "minecraft-local-subscene",
+    "minecraft-procedural-particles",
+    "minecraft-selective-bloom",
+    "minecraft-space-rift",
+    "minecraft-stylised-shield",
+    "minecraft-trails-beams",
+    "minecraft-vfx-automation",
+    "minecraft-vfx-performance",
+    "minecraft-volumetric-environment",
+    "minecraft-water-ripples",
+    "minecraft-xiantu-vfx-library"
+  ],
+  "entry_count": 45,
+  "entries": [
+    {
+      "number": 1,
+      "name": "天空",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 2,
+      "name": "体积云雾",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 3,
+      "name": "闪电",
+      "ok": true,
+      "resources": 5
+    },
+    {
+      "number": 4,
+      "name": "黑洞",
+      "ok": true,
+      "resources": 3
+    },
+    {
+      "number": 5,
+      "name": "能量特效",
+      "ok": true,
+      "resources": 4
+    },
+    {
+      "number": 6,
+      "name": "水波",
+      "ok": true,
+      "resources": 3
+    },
+    {
+      "number": 7,
+      "name": "拖尾与光束",
+      "ok": true,
+      "resources": 4
+    },
+    {
+      "number": 8,
+      "name": "奇幻材质",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 9,
+      "name": "星空材质",
+      "ok": true,
+      "resources": 1
+    },
+    {
+      "number": 10,
+      "name": "描边",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 11,
+      "name": "能量护盾",
+      "ok": true,
+      "resources": 3
+    },
+    {
+      "number": 12,
+      "name": "区域材质",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 13,
+      "name": "碎晶折射",
+      "ok": true,
+      "resources": 1
+    },
+    {
+      "number": 14,
+      "name": "玻璃边光",
+      "ok": true,
+      "resources": 1
+    },
+    {
+      "number": 15,
+      "name": "原画线稿",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 16,
+      "name": "天空预设",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 17,
+      "name": "星空盾牌",
+      "ok": true,
+      "resources": 0
+    },
+    {
+      "number": 18,
+      "name": "渡劫黑云",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 19,
+      "name": "龙卷风",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 20,
+      "name": "能量研究",
+      "ok": true,
+      "resources": 0
+    },
+    {
+      "number": 21,
+      "name": "白洞研究",
+      "ok": true,
+      "resources": 0
+    },
+    {
+      "number": 22,
+      "name": "水龙卷研究",
+      "ok": true,
+      "resources": 0
+    },
+    {
+      "number": 23,
+      "name": "异空间验证",
+      "ok": true,
+      "resources": 0
+    },
+    {
+      "number": 24,
+      "name": "动态照明预览",
+      "ok": true,
+      "resources": 0
+    },
+    {
+      "number": 25,
+      "name": "Bloom 预览",
+      "ok": true,
+      "resources": 0
+    },
+    {
+      "number": 26,
+      "name": "粒子预览",
+      "ok": true,
+      "resources": 0
+    },
+    {
+      "number": 27,
+      "name": "动画适配预览",
+      "ok": true,
+      "resources": 0
+    },
+    {
+      "number": 28,
+      "name": "御体流光",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 29,
+      "name": "异火缠绕",
+      "ok": true,
+      "resources": 1
+    },
+    {
+      "number": 30,
+      "name": "炼丹炉特效",
+      "ok": true,
+      "resources": 1
+    },
+    {
+      "number": 31,
+      "name": "修仙特效参考库",
+      "ok": true,
+      "resources": 0
+    },
+    {
+      "number": 32,
+      "name": "彩色流光工作台",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 33,
+      "name": "遁光与飞行阶段",
+      "ok": true,
+      "resources": 12
+    },
+    {
+      "number": 34,
+      "name": "仙途特效库",
+      "ok": true,
+      "resources": 1
+    },
+    {
+      "number": 35,
+      "name": "刀光与能量束",
+      "ok": true,
+      "resources": 4
+    },
+    {
+      "number": 36,
+      "name": "灵气与能量场",
+      "ok": true,
+      "resources": 4
+    },
+    {
+      "number": 37,
+      "name": "护盾与破碎",
+      "ok": true,
+      "resources": 3
+    },
+    {
+      "number": 38,
+      "name": "闪电与雷劫",
+      "ok": true,
+      "resources": 5
+    },
+    {
+      "number": 39,
+      "name": "空间裂隙",
+      "ok": true,
+      "resources": 1
+    },
+    {
+      "number": 40,
+      "name": "金白剑气",
+      "ok": true,
+      "resources": 1
+    },
+    {
+      "number": 41,
+      "name": "焚空裂隙 · 视频参考",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 42,
+      "name": "五行气海",
+      "ok": true,
+      "resources": 1
+    },
+    {
+      "number": 43,
+      "name": "九霄剑决与万剑归宗",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 44,
+      "name": "程序化空间裂缝",
+      "ok": true,
+      "resources": 2
+    },
+    {
+      "number": 45,
+      "name": "闪电 fBm 研究",
+      "ok": true,
+      "resources": 0
+    }
+  ],
+  "failures": [],
+  "ok": true
+}

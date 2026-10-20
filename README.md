@@ -12,6 +12,10 @@ Open-source Codex skills, editable rendering workbenches, and Forge 1.20.1 examp
 - [项目维护与 Codex 使用计划](docs/oss-maintainer-case.md)
 - [下载完整源码与 Skills](https://github.com/Roxio-sketch/minecraft-agent-skills/releases/tag/rendering-suite-20261014)
 
+## 独立工作台补齐 · 2026-10-21
+
+[程序化空间裂缝工作台](skills/minecraft-space-rift/assets/space-rift-kit/workbench/index.html) 已随 Skill 分发，包含14个预设和JSON导入导出。动态照明、Bloom、粒子、动画适配、区域表面预览也已放入对应 Skill，闪电补齐 fBm 研究页。统一启动器共45个入口。[启动方式与预览边界](docs/getting-started.md#独立-skill-的工作台2026-10-21)。
+
 ## 快速开始
 
 ```powershell

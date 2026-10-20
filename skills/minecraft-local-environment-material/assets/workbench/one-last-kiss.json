@@ -1,0 +1,23 @@
+{
+  "schema": "olk-sketch/v1",
+  "name": "One Last Kiss · 彩色原画线稿",
+  "gradient": {
+    "angleDeg": 0,
+    "scale": 1,
+    "offset": 0,
+    "stops": [
+      {"at": 0, "color": "#f2661a"},
+      {"at": 0.24, "color": "#f73b4f"},
+      {"at": 0.49, "color": "#cf3b9e"},
+      {"at": 0.74, "color": "#6957c7"},
+      {"at": 1, "color": "#1cc4e0"}
+    ]
+  },
+  "line": {
+    "edgeSensitivity": 0.58,
+    "detailSuppression": 0.88,
+    "depthStrength": 1.0,
+    "shadeAmount": 0.08,
+    "lineWeight": 1
+  }
+}

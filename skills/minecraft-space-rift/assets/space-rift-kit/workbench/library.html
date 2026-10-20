@@ -1,0 +1,24 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>空间裂缝 · 样式与技术资源库</title><link rel="stylesheet" href="style.css"><style>
+body{padding:32px;max-width:1500px;margin:auto}.top{display:flex;justify-content:space-between;gap:20px;align-items:center}.top a,a{color:#8fc9d0}h1{font-size:30px;letter-spacing:.08em}.lead{max-width:850px;color:#9aacbe;line-height:1.8}.filters{display:flex;gap:10px;margin:24px 0}input[type=search]{background:#101d29;color:#e0e9f2;border:1px solid #375265;padding:12px;flex:1;border-radius:5px}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card,.resource{border:1px solid #2a3e4e;background:#101c28;border-radius:8px;overflow:hidden}.card img{width:100%;aspect-ratio:1.43;object-fit:contain;display:block;background:#090e16}.card .body{padding:16px}.card h2{font-size:17px;margin:0 0 7px}.card p{color:#99aebf;min-height:42px;margin:0 0 12px}.badge{font-size:10px;color:#7ca9b3;text-transform:uppercase;letter-spacing:.1em}.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}.resource{padding:18px}.resource h3{margin:5px 0 10px}.resource p{color:#9dafbd;line-height:1.7}.resource small{color:#81a49f}.resource a{overflow-wrap:anywhere}.section{margin:40px 0 10px}.card a{text-decoration:none}.note{padding:16px;border-left:3px solid #72a7aa;background:#10232d}.card:hover{border-color:#6b9fa4}@media(max-width:950px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){body{padding:16px}.gallery,.resources{grid-template-columns:1fr}.top{display:block}}
+</style></head><body>
+<div class="top"><div><div class="eyebrow">SPACE RIFT / STYLE ATLAS</div><h1>形状、材质与运动的样式库</h1></div><a href="index.html" target="_parent">返回实时预览 →</a></div>
+<p class="lead">14 个可运行预设，包含 8 种新增算法样式。下方预览均由实际 WebGL Shader 渲染；缩略图只用于选样式，运行中的裂缝轮廓与边缘不读取这些 PNG。</p>
+<div class="filters"><input id="search" type="search" aria-label="搜索样式或技术栈" placeholder="搜索：电弧、冰裂、Unity、Houdini、WGSL…"><button id="newOnly">只看新增 8 种</button></div>
+<div class="gallery" id="gallery"></div>
+<h2 class="section">跨技术栈资源索引</h2><p class="lead">每条区分实际读取范围、已核实授权与本系统落地程度。参考关联代表研究方向，不表示复制了原作或已安装对应引擎。</p><p class="note">横向预设采用无杂物开合；原有样式保留玻璃破碎演出。内部可用现有天空、异空间或外部 FBO；三维刚体破碎、Niagara Ribbon、WebGPU Compute 不属于当前实现。</p><div class="resources" id="resources"></div>
+<script type="module">
+import {presetInfo as classicInfo,presets as classicPresets,horizonInfo,horizonPresets} from './shader/parameters.js';
+const presetInfo={...horizonInfo,...classicInfo},presets={...horizonPresets,...classicPresets};
+if(window===window.parent&&!new URLSearchParams(location.search).has('embed'))location.replace('index.html#library');
+const resources=await fetch('resources.json').then(r=>r.json());
+let newOnly=false;
+const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function draw(query=''){
+ const q=query.toLowerCase();document.querySelector('#gallery').innerHTML=Object.entries(presetInfo).filter(([k,v])=>(!newOnly||presets[k].u_style>0)&&`${k} ${v.join(' ')}`.toLowerCase().includes(q)).map(([key,[name,description,ref]])=>`<article class="card"><a href="index.html?preset=${key}"><img src="previews/${key}.png" alt="${escape(name)}的实际着色器渲染"><div class="body"><span class="badge">LIVE PROCEDURAL / ${key}</span><h2>${escape(name)}</h2><p>${escape(description)}</p><b>打开样式 →</b></div></a></article>`).join('');
+ document.querySelector('#resources').innerHTML=resources.filter(r=>Object.values(r).join(' ').toLowerCase().includes(q)).map(r=>`<article class="resource" id="${r.id}"><span class="badge">${escape(r.stack)}</span><h3><a href="${escape(r.url)}" target="_blank" rel="noopener noreferrer">${escape(r.name)} ↗</a></h3><small>${escape(r.author)}</small><p>${escape(r.idea)}</p><p><b>读取证据：</b>${escape(r.evidence)}</p><p><b>许可：</b>${escape(r.license)}</p><small>${escape(r.scope)}</small></article>`).join('');
+}
+document.querySelector('#gallery').onclick=event=>{const link=event.target.closest('a');if(!link||window===window.parent)return;const key=new URL(link.href).searchParams.get('preset');if(key){event.preventDefault();parent.postMessage({type:'rift:preset',key},location.origin);}};
+document.querySelector('.top a').onclick=event=>{if(window!==window.parent){event.preventDefault();parent.postMessage({type:'rift:preview'},location.origin);}};
+document.querySelector('#search').oninput=e=>draw(e.target.value);
+document.querySelector('#newOnly').onclick=e=>{newOnly=!newOnly;e.target.textContent=newOnly?'显示全部 14 种':'只看新增 8 种';draw(document.querySelector('#search').value);};draw();
+</script></body></html>

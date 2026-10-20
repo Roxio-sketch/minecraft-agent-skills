@@ -2,7 +2,7 @@
 
 ## 工作台
 
-完整 clone 或解压完整源码 ZIP，保持 `rendering/` 与 `skills/` 同级。Python 3.10+，运行 `python rendering/启动全部工作台.py`。输入 1–32 的编号，可以连续打开多个入口。不要只下载单个 HTML：它可能需要相邻 JS、GLSL、JSON、模型或本地服务接口。
+完整 clone 或解压完整源码 ZIP，保持 `rendering/` 与 `skills/` 同级。Python 3.10+，运行 `python rendering/启动全部工作台.py`。输入启动器显示的编号，可以连续打开多个入口。不要只下载单个 HTML：它可能需要相邻 JS、GLSL、JSON、模型或本地服务接口。
 
 运行 `python rendering/启动全部工作台.py --check` 可复查所有入口的 HTTP 响应。运行 `python scripts/check_rendering_release.py` 检查 Skill 元数据、入口和 HTML 静态资源。该检查不证明 shader 视觉质量或游戏兼容。
 
@@ -36,3 +36,21 @@ python .\rendering\启动全部工作台.py
 ## 研究资料与历史路径
 
 原研究报告保留固定提交、哈希和当时本机路径，这些路径不是新用户安装配置。下载的第三方整库、商业参考视频和旧实验包未混入本次源码；外部项目从目录记录的官方/上游链接访问。对未运行上游工程的资料，仍标记为静态研究。
+
+## 独立 Skill 的工作台（2026-10-21）
+
+单独安装以下 Skill 时，工作台也在其目录内，无须另拷 `rendering/`：
+
+| Skill | 随包入口 | 范围 |
+| --- | --- | --- |
+| minecraft-space-rift | `assets/space-rift-kit/workbench/index.html` | WebGL2 裂缝、14 预设、JSON 导入导出 |
+| minecraft-dynamic-lighting | `assets/workbench/index.html` | 独立照明示意预览 |
+| minecraft-selective-bloom | `assets/workbench/index.html` | 独立 Bloom 示意预览 |
+| minecraft-procedural-particles | `assets/workbench/index.html` | 粒子预览 |
+| minecraft-animated-material-adapter | `assets/workbench/index.html` | 动画挂点示意预览 |
+| minecraft-local-environment-material | `assets/workbench/index.html` | 表面线稿/渐变预览；不模拟世界空间区域 |
+| minecraft-lightning | `assets/workbench/fbm-study.html` | 补齐 fBm 研究页，正式三维工作台仍为 index.html |
+
+裂缝运行 `python assets/space-rift-kit/workbench/serve.py`；其他页面可在 Skill 目录运行 `python -m http.server 8765 --bind 127.0.0.1`，按表中相对路径访问。统一启动器也已接入。
+
+Halo 是透明素材/动画生成器，物品场景窗口是 Forge 三维离屏工程；当前没有可补传的浏览器工作台。AXO、Photon 自动化、性能诊断类 Skill 按各自命令与运行流程使用。不能用普通示意页替代这些 Skill 的实际功能。

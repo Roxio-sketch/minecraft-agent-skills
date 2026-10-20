@@ -1,0 +1,44 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>fBm 闪电研究 · Lightning Lab</title>
+<style>body{margin:0;background:#07121e;color:#dbeeff;font:16px system-ui}main{max-width:1100px;margin:auto;padding:24px}canvas{width:100%;height:60vh;background:#030811;border:1px solid #31516c}section{display:flex;flex-wrap:wrap;gap:20px;margin:18px 0}label{display:grid;gap:6px}button,a{color:#b9e6ff}button,input{background:#17344a;color:white}p{line-height:1.65}small{color:#9cb5c9}</style>
+<main><h1>fBm 闪电研究</h1><p>固定种子的二维距离场实验：多层噪声控制弯折，距离控制核心与光晕。独立于三维雷电配方。</p><section><label>演示预设<select id="demoPreset"><option value="compare">本次更新 · 左右对照</option><option value="baseline">基线 · 无噪声直线</option><option value="fbm">多尺度 · 蓝白闪电</option></select></label><button id="applyDemo">恢复演示预设</button></section><p id="demoExplanation">左侧：无噪声基线；右侧：8 层旋转 fBm 弯折。两侧使用相同距离发光，便于观察本次新增的形状算法。</p><div style="position:relative"><canvas id="view"></canvas><div id="compareLabels" style="position:absolute;inset:12px 0 auto;display:flex;justify-content:space-around;pointer-events:none"><b>基线 · 不扭曲</b><b>更新 · 多尺度 fBm</b></div></div><p id="status"></p><section>
+<label>种子<input id="seed" type="number" min="0" max="99999" step="1" value="1337"></label>
+<label>噪声层数 <output id="octOut"></output><input id="oct" type="range" min="1" max="10" step="1" value="6"></label>
+<label>弯折幅度 <output id="warpOut"></output><input id="warp" type="range" min="0" max="1" step=".01" value=".38"></label>
+<label>形变速度 <output id="speedOut"></output><input id="speed" type="range" min="0" max="2" step=".01" value=".35"></label>
+<label>发光强度 <output id="gainOut"></output><input id="gain" type="range" min=".1" max="4" step=".05" value="1"></label>
+<button id="pause">暂停</button><button id="resetTime">从零重播</button></section>
+<p><a href="index.html">返回三维雷电工作台</a> · <small>种子和参数及时间相同可复现；暂停固定当前时间，从零重播用于比较。此页未接入 Forge，不导出三维配方。基于用户于 2026-10-15 提供的代码研究思路，原作品链接、作者与许可证未提供；此页重新编写，未直接分发该片段。</small></p></main>
+<script>
+const canvas=document.getElementById('view'),gl=canvas.getContext('webgl2'),status=document.getElementById('status');
+if(!gl){status.textContent='此研究页需要 WebGL2。';throw Error('WebGL2 unavailable')}
+const vertex=`#version 300 es
+void main(){vec2 p=vec2((gl_VertexID<<1)&2,gl_VertexID&2);gl_Position=vec4(p*2.-1.,0.,1.);}`;
+const fragment=`#version 300 es
+precision highp float;
+uniform vec2 resolution;uniform float clock,seed,warp,gain;uniform int octaves;uniform int comparison;
+out vec4 color;
+float lattice(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7))+seed*.013)*43758.5453);}
+float valueNoise(vec2 p){vec2 i=floor(p),u=fract(p);u=u*u*(3.-2.*u);return mix(mix(lattice(i),lattice(i+vec2(1,0)),u.x),mix(lattice(i+vec2(0,1)),lattice(i+vec2(1)),u.x),u.y);}
+float field(vec2 p){float sum=0.,amplitude=.5,total=0.;for(int i=0;i<10;i++){if(i>=octaves)break;sum+=amplitude*valueNoise(p);total+=amplitude;p=mat2(.900447,-.434966,.434966,.900447)*p*2.+vec2(7.3,1.9);amplitude*=.5;}return sum/max(total,.001)*2.-1.;}
+void main(){vec2 p=(2.*gl_FragCoord.xy-resolution)/resolution.y;
+// Longitudinal coordinate stays monotone; only the transverse position is warped.
+bool left=gl_FragCoord.x<resolution.x*.5;
+if(comparison==1){p.x=(gl_FragCoord.x-(left?resolution.x*.25:resolution.x*.75))*2./resolution.y;}
+float amount=(comparison==1&&left)?0.:warp;
+float center=amount*field(vec2(p.y*2.8,clock));float d=abs(p.x-center);
+float width=max(.003,1.2/resolution.y),aa=max(fwidth(p.x-center),1./resolution.y);
+float core=1.-smoothstep(width,width+aa,d);
+// A bounded reciprocal profile avoids division by zero and unbounded HDR values.
+float halo=.012/(d+.012);halo*=halo;
+vec3 radiance=gain*(vec3(.65,.83,1.)*core*2.+vec3(.16,.32,1.)*halo*.8);
+color=vec4(vec3(.008,.018,.035)+(1.-exp(-radiance)),1.);}`;
+function compile(type,source){const s=gl.createShader(type);gl.shaderSource(s,source);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s}
+const program=gl.createProgram();try{gl.attachShader(program,compile(gl.VERTEX_SHADER,vertex));gl.attachShader(program,compile(gl.FRAGMENT_SHADER,fragment));gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));}catch(e){status.textContent='着色器编译失败：'+e.message;throw e}
+gl.useProgram(program);gl.bindVertexArray(gl.createVertexArray());const loc={};for(const k of ['resolution','clock','seed','warp','gain','octaves','comparison'])loc[k]=gl.getUniformLocation(program,k);
+let time=0,last=performance.now(),paused=false;const $=id=>document.getElementById(id);
+const demoPresets={compare:{seed:18421,oct:8,warp:.7,speed:.4,gain:1.6},baseline:{seed:18421,oct:1,warp:0,speed:0,gain:1.6},fbm:{seed:18421,oct:8,warp:.7,speed:.4,gain:1.6}};
+function applyDemo(){const key=$('demoPreset').value;for(const [id,value] of Object.entries(demoPresets[key]))$(id).value=value;time=0;last=performance.now();paused=false;$('pause').textContent='暂停';$('compareLabels').style.display=key==='compare'?'flex':'none';$('demoExplanation').textContent=key==='compare'?'左侧：无噪声基线；右侧：8 层旋转 fBm 弯折。两侧使用相同距离发光。改变层数/幅度观察右侧，速度仅改变时间推进。':key==='baseline'?'无噪声基线：直线距离场，便于辨别弯折来自哪里。':'蓝白多尺度闪电：seed 18421、8 层、幅度 0.7、速度 0.4、强度 1.6。';}
+$('demoPreset').onchange=applyDemo;$('applyDemo').onclick=applyDemo;applyDemo();
+$('pause').onclick=()=>{paused=!paused;$('pause').textContent=paused?'继续':'暂停'};$('resetTime').onclick=()=>{time=0;last=performance.now()};
+function frame(now){const dt=Math.min(.05,(now-last)/1000);last=now;if(!paused)time+=dt*Number($('speed').value);const ratio=devicePixelRatio||1,w=Math.round(canvas.clientWidth*ratio),h=Math.round(canvas.clientHeight*ratio);if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}gl.viewport(0,0,w,h);gl.uniform1i(loc.comparison,$("demoPreset").value==="compare"?1:0);gl.uniform2f(loc.resolution,w,h);gl.uniform1f(loc.clock,time);const seedValue=Number($('seed').value);gl.uniform1f(loc.seed,Number.isFinite(seedValue)?Math.max(0,Math.min(99999,Math.round(seedValue))):1337);gl.uniform1i(loc.octaves,Number($('oct').value));for(const id of ['warp','gain'])gl.uniform1f(loc[id],Number($(id).value));for(const id of ['oct','warp','speed','gain'])$(id+'Out').textContent=$(id).value;gl.drawArrays(gl.TRIANGLES,0,3);status.textContent='噪声时间 '+time.toFixed(2)+' · '+(paused?'已暂停':'运行中');requestAnimationFrame(frame)}requestAnimationFrame(frame);
+</script></html>

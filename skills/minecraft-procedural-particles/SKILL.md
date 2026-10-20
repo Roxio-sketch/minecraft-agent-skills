@@ -24,3 +24,7 @@ description: 从自然语言制作 Minecraft 代码驱动的发射器、环绕�
 独立内核可在设置 `JAVA_HOME` 为 JDK 17 后执行 `python scripts/check_core.py`，无需 Minecraft 或 Gradle。
 
 地面图案、定向薄片、实体附着火焰或状态停止效果时，读 [粒子表面与生命周期](references/host-particle-surfaces.md)。
+
+## 随包工作台
+
+单独安装本 Skill 也包含 `assets/workbench/index.html`。在 Skill 目录运行 `python -m http.server 8765 --bind 127.0.0.1`，浏览器打开 `http://127.0.0.1:8765/assets/workbench/index.html`。这是独立预览，不代表游戏实机验证。
