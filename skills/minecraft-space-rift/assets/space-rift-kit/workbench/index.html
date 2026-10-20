@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>空间裂缝 · 统一工作台</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="app"><aside>
+<div class="eyebrow">SPACE RIFT / STUDIO</div><h1>空间裂缝</h1><p class="sub">连续切口 · 动态星河 · 蓝紫撕裂边缘</p>
+<div class="quick"><button data-preset="horizon-slash" class="primary">锋锐细长</button><button data-preset="horizon-tear">自然撕裂</button><button data-preset="horizon-giant">巨型开天</button></div>
+<label class="select">形态<select id="mode"><option value="0">A · 细长切口</option><option value="1">B · 宽幅撕裂</option></select></label>
+<label class="select">画质<select id="quality"><option value="0">低</option><option value="1">中</option><option value="2" selected>高</option></select></label>
+<label class="select">完整样式<select id="stylePreset"></select></label><p id="styleDescription" class="sub"></p>
+<p class="sub">14 种预设共用一个画布。横向星河与原有材质样式可直接切换。</p>
+<details><summary>样式算法</summary><div id="style"></div></details>
+<details open><summary>形状与骨架</summary><div id="geometry"></div></details>
+<details open><summary>材质与空间</summary><div id="visual"></div><label class="color">边缘颜色<input id="u_edgeColor" type="color"></label><label class="color">内部空间颜色<input id="u_insideColor" type="color"></label></details>
+<details open><summary>演出与生命周期</summary><div class="quick"><button id="sequence">▶ 划开 → 张开 → 悬停 → 收拢</button><button id="grow">从一点撕开</button><button id="close">收缩关闭</button><button id="pause">暂停</button></div><p id="phase" class="sub">独立形状调试</p><div id="animation"></div></details>
+<details><summary>观察与检查</summary><div id="view"></div><label class="select">测试背景<select id="backgroundMode"><option value="-1">纯黑</option><option value="0">暗色校验网格</option><option value="1" selected>程序化天空</option><option value="2">本地截图（需导入）</option></select></label><label class="fileLabel" for="backgroundUpload">导入 Minecraft / 场景截图</label><input id="backgroundUpload" type="file" accept="image/*" hidden><label class="select">检查通道<select id="debug"><option value="0">最终合成</option><option value="1">实际开口遮罩</option><option value="2">距离场</option><option value="3">扭曲向量</option><option value="4">仅边缘</option><option value="5">仅内部</option></select></label></details>
+<div class="quick"><button id="export">导出 JSON</button><label class="fileLabel" for="import">导入 JSON</label><input type="file" id="import" accept=".json,application/json" hidden><button id="snapshot">保存 PNG</button></div>
+<p class="hint">滚轮缩放，拖动平移。横向星河预设不带碎石烟尘；其他样式按各自参数渲染。天空和导入截图仅用于预览合成；不代表 Minecraft 实时场景折射。</p>
+</aside><main><header><div><b>RIFT / LIVE</b><span id="state">初始化…</span></div><span id="fps">—</span></header><nav class="workspaceTabs" aria-label="工作台视图"><button data-tab="preview" class="primary">实时预览</button><button data-tab="library">样式与资源</button><button data-tab="research">五案例研究</button></nav><div id="viewer" data-panel="preview"><canvas id="canvas"></canvas><div class="corner">无裂缝贴图<br><span id="viewLabel">局部坐标实时计算</span></div><div id="error" role="alert" hidden></div></div><section class="documentPanel" data-panel="library" hidden><iframe id="catalogFrame" title="样式与资源"></iframe></section><section class="documentPanel" data-panel="research" hidden><iframe title="五案例研究"></iframe></section><footer>空间撕裂轮廓 / 独立异空间接口 / 场景颜色畸变 · GLSL ES 3.00</footer></main></div><script type="module" src="shader/app.js"></script></body></html>

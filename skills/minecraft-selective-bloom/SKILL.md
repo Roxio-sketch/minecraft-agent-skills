@@ -22,3 +22,7 @@ description: 从自然语言制作 Minecraft 指定对象与材质区域的屏�
 资产为原创 Java/GLSL/JSON；参考项目定位和许可边界见 [来源](references/sources.md)。交付时附运行结果、已实现字段、实际目标类别和剩余边界。只交参数表不构成用户要求的完整效果制作。
 
 低分辨率光晕需要前景遮挡时，读 [发光深度元数据](references/depth-metadata.md)。
+
+## 随包工作台
+
+单独安装本 Skill 也包含 `assets/workbench/index.html`。在 Skill 目录运行 `python -m http.server 8765 --bind 127.0.0.1`，浏览器打开 `http://127.0.0.1:8765/assets/workbench/index.html`。这是独立预览，不代表游戏实机验证。

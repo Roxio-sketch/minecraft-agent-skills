@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>彩色原画线稿 · 渲染预设工作台</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="eyebrow">MINECRAFT · FORGE 1.20.1 · RENDER PRESET 04</div>
+    <h1>彩色原画线稿</h1>
+    <p>用多尺度结构线与深度边界提取画面，再用一条连续的屏幕空间渐变为线条着色。</p>
+  </header>
+  <main>
+    <section class="stage" aria-label="实时效果预览">
+      <div class="stage-top">
+        <div><span class="dot"></span> 实时预览 <span class="subtle">· 与 Forge 使用同一片元着色器</span></div>
+        <label class="upload">导入场景截图 <input id="sceneUpload" type="file" accept="image/*"></label>
+      </div>
+      <div class="preview-wrap"><canvas id="preview" width="1280" height="550"></canvas><div id="error" role="alert"></div></div>
+      <div class="preview-foot"><span>输入：Minecraft 场景截图</span><span>预览缺少真实深度；深度轮廓仅在游戏内生效</span></div>
+      <div class="gradient-strip" id="gradientStrip"></div>
+      <div class="stage-note">画面留白由线条强度控制。色彩只赋予线稿，不覆在原场景颜色上。</div>
+    </section>
+    <aside class="panel">
+      <div class="panel-head"><span>01 / 渐变设计</span><button id="reset" class="quiet">恢复默认</button></div>
+      <p class="hint">色标位置必须从左到右递增；首尾固定在 0 和 1。</p>
+      <div id="stops" class="stops"></div>
+      <div class="control-grid">
+        <label>方向 <output id="angleDegValue"></output><input id="angleDeg" type="range" min="-180" max="180" step="1"></label>
+        <label>渐变跨度 <output id="scaleValue"></output><input id="scale" type="range" min="0.25" max="3" step="0.01"></label>
+        <label>渐变偏移 <output id="offsetValue"></output><input id="offset" type="range" min="-0.5" max="0.5" step="0.01"></label>
+      </div>
+      <div class="panel-head secondary"><span>02 / 线稿质感</span></div>
+      <div class="control-grid">
+        <label>线条敏感度 <output id="edgeSensitivityValue"></output><input id="edgeSensitivity" type="range" min="0" max="1" step="0.01"></label>
+        <label>纹理抑制 <output id="detailSuppressionValue"></output><input id="detailSuppression" type="range" min="0" max="1" step="0.01"></label>
+        <label>深度轮廓 <output id="depthStrengthValue"></output><input id="depthStrength" type="range" min="0" max="1" step="0.01"></label>
+        <label>明暗留痕 <output id="shadeAmountValue"></output><input id="shadeAmount" type="range" min="0" max="1" step="0.01"></label>
+        <label>线条尺度 <output id="lineWeightValue"></output><input id="lineWeight" type="range" min="0.5" max="2.5" step="0.01"></label>
+      </div>
+      <div class="actions"><button id="export" class="primary">导出游戏预设 JSON</button><label class="import">导入预设<input id="presetUpload" type="file" accept=".json,application/json"></label></div>
+      <p class="hint path">放入实例的 <code>local-environment-lab/presets/one-last-kiss.json</code>，游戏里执行 <code>/localmaterial sketch reload</code>。</p>
+    </aside>
+  </main>
+  <footer>屏幕空间渐变 · 白底留白 · 原几何不变 · UI 不参与处理</footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

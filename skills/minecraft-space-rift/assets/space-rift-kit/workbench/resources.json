@@ -1,0 +1,189 @@
+[
+  {
+    "id": "shadertoy",
+    "name": "Vorocracks marble",
+    "stack": "GLSL / Shadertoy",
+    "author": "FabriceNeyret2",
+    "url": "https://www.shadertoy.com/view/Xs3fR4",
+    "evidence": "浏览器实际读取 Image 代码，第 42～92、112～145、178～211 行；界面仅见 Image，活跃主函数使用 iTime/iResolution，无纹理读取。",
+    "license": "未核实作品特定许可；仅研究，不复制分发代码。",
+    "idea": "分形域扰动与多尺度 Voronoi 边界；仅用于局部细节，不能将整屏裂纹网络替代主开口。",
+    "scope": "算法研究；本次新增样式独立编写"
+  },
+  {
+    "id": "unity-portals",
+    "name": "Shaders — Portals",
+    "stack": "Unity / C# / HLSL",
+    "author": "Daniel Ilett",
+    "url": "https://github.com/daniel-ilett/shaders-portal",
+    "evidence": "已读仓库说明与 LICENSE，未在 Unity 运行。",
+    "license": "代码 MIT；仓库说明列出的第三方美术资源需另查各自许可。",
+    "idea": "Stencil、斜近裁面、视角映射与递归场景，适合后续真实场景入口。",
+    "scope": "渲染架构研究；不是本次新增的递归传送系统"
+  },
+  {
+    "id": "unity-noise",
+    "name": "NoiseShader",
+    "stack": "Unity / HLSL",
+    "author": "Keijiro Takahashi；原算法 Ashima Arts / Stefan Gustavson",
+    "url": "https://github.com/keijiro/NoiseShader",
+    "evidence": "已下载并读取 SimplexNoise3D.hlsl、LICENSE。",
+    "license": "MIT，保留上游版权；HLSL 适配说明保留原条款。",
+    "idea": "无贴图噪声、解析梯度可用于稳定流动边缘及后续 curl 场。",
+    "scope": "源码研究；本实现仍使用已有 FBM，无噪声库替换"
+  },
+  {
+    "id": "unity-glitch",
+    "name": "KinoGlitch / AnalogGlitch",
+    "stack": "Unity / HLSL",
+    "author": "Keijiro Takahashi",
+    "url": "https://github.com/keijiro/KinoGlitch/blob/master/Assets/Kino/Glitch/Shader/AnalogGlitch.shader",
+    "evidence": "已读带完整许可头的 AnalogGlitch.shader 与 README。",
+    "license": "MIT 式许可，Copyright 2015 Keijiro Takahashi。",
+    "idea": "扫描行抖动、颜色漂移和垂直跳变；收敛到裂缝周边，避免全屏故障覆盖。",
+    "scope": "数字断层采用独立的局部阶梯轮廓与错位算法"
+  },
+  {
+    "id": "drei",
+    "name": "MeshPortalMaterial",
+    "stack": "Three.js / R3F / TypeScript / GLSL",
+    "author": "Poimandres contributors",
+    "url": "https://drei.docs.pmnd.rs/portals/mesh-portal-material",
+    "evidence": "已读官方组件文档、MeshPortalMaterial.tsx 和 LICENSE。",
+    "license": "drei MIT，Copyright 2020 react-spring。",
+    "idea": "独立 RenderTexture、屏幕坐标采样、SDF 边缘渐变、场景混合。其 SDF 资源方案不直接用来替代本系统算法轮廓。",
+    "scope": "架构参考；本工作台仍为无 Three.js 依赖的 WebGL2"
+  },
+  {
+    "id": "godot-screen",
+    "name": "Screen-reading shaders",
+    "stack": "Godot / GDShader",
+    "author": "Godot Engine documentation contributors",
+    "url": "https://docs.godotengine.org/en/stable/tutorials/shaders/screen-reading_shaders.html",
+    "evidence": "已读官方文档的 back-buffer、屏幕采样、深度与透明限制。",
+    "license": "文档研究；未复制其 shader 代码为本包实现。",
+    "idea": "先复制背景再扭曲；重叠效果可能需要重新捕获，3D 屏幕副本不包含后续透明层。",
+    "scope": "时空回声使用已有独立颜色目标，不引入 Godot runtime"
+  },
+  {
+    "id": "unreal-refraction",
+    "name": "Refraction Using Pixel Normal Offset",
+    "stack": "Unreal / Material",
+    "author": "Epic Games",
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/refraction-using-pixel-normal-offset-in-unreal-engine",
+    "evidence": "页面仅可读取标题和概要，正文未完整取得；不作为细节算法证据。",
+    "license": "引擎文档入口；非已获独立 GLSL 再分发授权的示例代码。",
+    "idea": "后续学习法线偏移与材质折射的入口。",
+    "scope": "候选资源，未完整源码研究或移植"
+  },
+  {
+    "id": "unreal-ribbons",
+    "name": "Create a Ribbon Effect in Niagara",
+    "stack": "Unreal / Niagara",
+    "author": "Epic Games",
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/how-to-create-a-ribbon-effect-in-niagara-for-unreal-engine",
+    "evidence": "已读官方 Ribbon Renderer 教程。",
+    "license": "文档研究；未下载/移植 .uasset、Niagara 系统或引擎源码。",
+    "idea": "粒子顺序和连续带状几何可用于真正三维边缘飘带；应与 Shader 开口分开。",
+    "scope": "电弧与双缝为平面程序场；真实三维 Niagara 式 ribbons 仍待开发"
+  },
+  {
+    "id": "blender-voronoi",
+    "name": "Voronoi Texture Node",
+    "stack": "Blender / Geometry Nodes",
+    "author": "Blender documentation contributors",
+    "url": "https://docs.blender.org/manual/en/5.0/modeling/geometry_nodes/texture/voronoi.html",
+    "evidence": "检索到官方节点文档；latest 的另一 URL 未成功读取，节点页需进一步完整核对。",
+    "license": "文档入口；不从 Blender GPL 实现复制代码。",
+    "idea": "Distance to Edge 适合局部晶格与棱面边界；节点叫 Texture 不代表必须使用 PNG。",
+    "scope": "棱晶样式的 F2−F1 近似独立实现，并非精确 Voronoi 到边界距离"
+  },
+  {
+    "id": "houdini-fracture",
+    "name": "RBD Material Fracture",
+    "stack": "Houdini / SOP / RBD",
+    "author": "SideFX",
+    "url": "https://www.sidefx.com/docs/houdini/nodes/sop/rbdmaterialfracture.html",
+    "evidence": "已读官方玻璃平板/曲面玻璃、径向/同心裂纹和边缘噪声说明。",
+    "license": "商业工具文档研究；不把节点算法视为开源实现。",
+    "idea": "由材质决定裂纹拓扑，破碎几何、约束与代理分别处理。",
+    "scope": "本包仍为 Shader 玻璃切面，真实刚体碎片是后续路线"
+  },
+  {
+    "id": "houdini-curl",
+    "name": "curlnoise",
+    "stack": "Houdini / VEX",
+    "author": "SideFX",
+    "url": "https://www.sidefx.com/docs/houdini/vex/functions/curlnoise.html",
+    "evidence": "已读官方函数定义与无散场说明。",
+    "license": "文档研究；未取得 Houdini 函数内部实现。",
+    "idea": "可用无散速度场驱动真实卷吸、幽火和墨丝；需要独立模拟粒子或体积场。",
+    "scope": "黑焰/流墨目前是解析流动近似，不冒称 curl 求解器"
+  },
+  {
+    "id": "webgpu-particles",
+    "name": "WebGPU particle sample",
+    "stack": "WebGPU / WGSL / Compute",
+    "author": "WebGPU Samples contributors",
+    "url": "https://github.com/webgpu/webgpu-samples/blob/main/sample/particles/particle.wgsl",
+    "evidence": "已下载并读顶点 billboards、粒子结构和 compute simulation shader 及 LICENSE.txt。",
+    "license": "BSD 3-Clause，Copyright 2019 WebGPU Samples Contributors。",
+    "idea": "GPU storage buffer 模拟大量余烬/碎片，再批量绘制；可迁移其架构，不直接用于 Forge 1.20.1 的默认 GL3.2。",
+    "scope": "研究路线；本系统没有新增 WebGPU 或计算着色器后端"
+  },
+  {
+    "id": "wgsl-noise",
+    "name": "WGSL Noise Algorithms",
+    "stack": "WebGPU / WGSL",
+    "author": "Munrocket，条目分别列出其他原作者",
+    "url": "https://gist.github.com/munrocket/236ed5ba7e409b8bdf1ff6eca5dcdc39",
+    "evidence": "已读 gist 中的函数条目和署名，不同条目来源不同。",
+    "license": "未完整核实每个条目的授权，不能以 gist 公开可读当作统一 MIT。",
+    "idea": "为未来 WGSL 后端查找数学等价函数，逐函数核对原作者、范围与精度。",
+    "scope": "候选/研究；未复制到运行时"
+  },
+  {
+    "id": "psrdnoise",
+    "name": "psrdnoise / tiling simplex flow noise",
+    "stack": "GLSL / HLSL / WGSL",
+    "author": "Stefan Gustavson / Ian McEwan",
+    "url": "https://github.com/stegu/psrdnoise",
+    "evidence": "已读仓库说明、GLSL 许可段、文档与跨语言版本说明；未下载并测试本次变体。",
+    "license": "GLSL MIT，Copyright 2021 Stefan Gustavson and Ian McEwan；各语言文件仍需核对自身通知。",
+    "idea": "带导数和可平铺流动噪声可提高连续流边的质量，可作为后续替换 FBM 的独立模块。",
+    "scope": "研究；未声称当前流墨/黑焰已采用 psrdnoise"
+  },
+  {
+    "id": "book-fbm",
+    "name": "The Book of Shaders — Fractal Brownian Motion",
+    "stack": "GLSL / Shader mathematics",
+    "author": "Patricio Gonzalez Vivo / Jen Lowe",
+    "url": "https://thebookofshaders.com/13/",
+    "evidence": "已读 FBM 的增频减幅、lacunarity/gain、多尺度噪声与图案调制说明。",
+    "license": "教学研究；未完整核实所有代码/插图授权，不打包文章或复制示例。",
+    "idea": "将形状和细节频带分开，增加 ridge、湍流和域扰动，而非单纯加高八度。",
+    "scope": "独立程序公式的学习来源"
+  },
+  {
+    "id": "unity-vfxgraph",
+    "name": "VisualEffectGraph-Samples",
+    "stack": "Unity / VFX Graph / GPU particles",
+    "author": "Unity Technologies",
+    "url": "https://github.com/Unity-Technologies/VisualEffectGraph-Samples",
+    "evidence": "已读官方样例项目说明、LICENSE.md 和 LICENSE-3rdParty.md；未加载编辑器或执行 Graph。",
+    "license": "Unity Companion License for Unity-dependent projects，Copyright 2018 Unity Technologies ApS；另有第三方资产条款。未下载或移植其 VFX 资产。",
+    "idea": "分离开口材质、GPU 粒子、丝带与爆发事件，适合建立更多演出组合。",
+    "scope": "资源目录与演出架构参考，非已移植 Graph"
+  },
+  {
+    "id": "osl-noise",
+    "name": "Open Shading Language standard library",
+    "stack": "OSL / Offline rendering",
+    "author": "Open Shading Language contributors",
+    "url": "https://open-shading-language.readthedocs.io/en/latest/stdlib.html",
+    "evidence": "已读标准库噪声条目与空间/微分相关函数目录；未在离线 renderer 运行。",
+    "license": "文档研究；未将 OSL 实现源码或 renderer 资产移植进 GLSL。",
+    "idea": "参考可控空间坐标、噪声基函数和导数语义；离线高采样外观仍需实时成本近似。",
+    "scope": "跨栈算法学习，当前不增加 OSL 后端"
+  }
+]

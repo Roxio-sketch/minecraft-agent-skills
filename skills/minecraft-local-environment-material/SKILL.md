@@ -44,3 +44,9 @@ description: 保留 Minecraft 原世界几何与位置，在球形、路径或�
 - 数值/GPU/Forge 编译与新后端实机证据于 2026-09-29 生成，详情见 validation.md。独立 GPU 合成场景与 Minecraft 实机截图分开记录；新后端实测不借用旧物品 Cosmic 的认证。
 
 收到实施请求时可从资产扩展，不能把单区域演示宣称为已完成的多区域、网络同步、任意透明 renderer、折射或全部材质引擎。已有 Cosmic/黑洞/碎晶等 skill 可提供材质函数；此 skill 负责区域与环境接入契约。
+
+## 随包工作台
+
+单独安装本 Skill 也包含 `assets/workbench/index.html`。在 Skill 目录运行 `python -m http.server 8765 --bind 127.0.0.1`，浏览器打开 `http://127.0.0.1:8765/assets/workbench/index.html`。这是独立预览，不代表游戏实机验证。
+
+随包页面为已有的表面线稿/渐变预览，使用程序示意背景或用户导入图片；不模拟世界空间区域遮罩、深度重建或区域扩散。区域效果仍需 Forge 验证。

@@ -5,7 +5,7 @@ description: 制作 Minecraft Forge 1.20.1 程序化空间裂缝、横向动态�
 
 # 程序化空间裂缝
 
-先检查目标工程已有 Shader、参数系统、天空和异空间接口，优先复用。此公开包只含算法与接入资源，不包含个人整合工作台。
+先检查目标工程已有 Shader、参数系统、天空和异空间接口，优先复用。公开包包含独立 WebGL2 工作台、算法和接入资源。
 
 1. 使用 `python scripts/create_project.py <新目录>` 复制资源。阅读生成目录的 README.md 和 NOTICE.md。
 2. `shader/geometry.js` 生成稳定种子的分形骨架；`shader/parameters.js` 管理参数、质量及预设。改变种子或几何后更新骨架 Uniform，普通视觉变化直接更新 Uniform。
@@ -17,3 +17,7 @@ description: 制作 Minecraft Forge 1.20.1 程序化空间裂缝、横向动态�
 8. 验证 `node scripts/check_geometry.mjs`、生成脚本、可选桌面 GL 测试和 Java17 Gradle 构建。游戏运行验收另行完成；浏览器或桌面 GL 通过不等于已验证 Minecraft。
 
 修改前优先研究相关 Shadertoy 算法并保留来源；无法读取时说明限制。保留 psrdnoise 作者和 MIT 通知；附件衍生代码的许可边界见 NOTICE，不将组合整体宣称为 MIT。
+
+## 随包统一工作台
+
+运行 `python assets/space-rift-kit/workbench/serve.py`，或双击工作台目录的“启动空间裂缝工作台.bat”。入口 `workbench/index.html`，14 个预设共用同一画布，支持参数编辑、JSON 导入导出和 PNG 保存。样式与研究标签保留来源与验证边界。

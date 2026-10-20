@@ -1,0 +1,40 @@
+{
+  "scope": "Headless Edge page/runtime/resource smoke checks; rift presets, export and embedded tabs. No Minecraft verification.",
+  "results": [
+    {
+      "path": "minecraft-space-rift/assets/space-rift-kit/workbench/index.html",
+      "ok": true,
+      "errors": []
+    },
+    {
+      "path": "minecraft-dynamic-lighting/assets/workbench/index.html",
+      "ok": true,
+      "errors": []
+    },
+    {
+      "path": "minecraft-selective-bloom/assets/workbench/index.html",
+      "ok": true,
+      "errors": []
+    },
+    {
+      "path": "minecraft-procedural-particles/assets/workbench/index.html",
+      "ok": true,
+      "errors": []
+    },
+    {
+      "path": "minecraft-animated-material-adapter/assets/workbench/index.html",
+      "ok": true,
+      "errors": []
+    },
+    {
+      "path": "minecraft-local-environment-material/assets/workbench/index.html",
+      "ok": true,
+      "errors": []
+    },
+    {
+      "path": "minecraft-lightning/assets/workbench/fbm-study.html",
+      "ok": true,
+      "errors": []
+    }
+  ]
+}
