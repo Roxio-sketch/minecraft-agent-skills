@@ -1,0 +1,69 @@
+{
+  "shots": [
+    {
+      "box": [
+        0,
+        0,
+        450,
+        1080
+      ],
+      "brightness": 1.2,
+      "image": [
+        -1200.0,
+        -10.0,
+        2880.0,
+        1620.0
+      ],
+      "src": "clips/lt-cover-impact.png"
+    },
+    {
+      "box": [
+        450,
+        0,
+        430,
+        1080
+      ],
+      "brightness": 1.3,
+      "image": [
+        -335,
+        -70,
+        1920,
+        1080
+      ],
+      "src": "clips/lt-ui-branch-mid.png"
+    },
+    {
+      "box": [
+        880,
+        0,
+        480,
+        1080
+      ],
+      "brightness": 1.8,
+      "image": [
+        -240.0,
+        20.0,
+        960.0,
+        540.0
+      ],
+      "src": "clips/lt-wuxing-vivid.png"
+    },
+    {
+      "box": [
+        1370,
+        116,
+        550,
+        848
+      ],
+      "image": [
+        0,
+        0,
+        550,
+        848
+      ],
+      "src": "covers/lightning-ui.png"
+    }
+  ],
+  "subtitle": "开源 Mod · Skill",
+  "title": "自定义闪电"
+}

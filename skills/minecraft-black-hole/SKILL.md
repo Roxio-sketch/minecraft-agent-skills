@@ -9,6 +9,8 @@ description: 从自然语言制作 Minecraft 黑洞、白洞双极喷流与外�
 
 制作白洞时读 [白洞外流分支](references/white-hole.md)：Forge 世界路径已有 `white-ring` 美术化白洞，包括强亮核心、核心专用 HDR 屏幕扩散与短星芒、独立体积冠层、向外盘纹、径向外散粒子、双极轴向输运喷流与重复扩张的球形光壳，使用 world/v2 配方。外喷体积独立沿直视射线按原场景深度截断，不继承主核/盘面的特殊地形深度策略。网页工作台与物品/面板仍为原黑洞路径；白洞模式不反转正质量透镜。
 
+研究 Kerr–Newman / Kerr–Schild 多 pass 时，读 [核心与多 pass 研究](references/kerr-newman-core-study.md) 和 [Image pass 研究](references/kerr-newman-image-study.md)。这些是源码审读记录，未完成完整物理或运行认证；第三方源码不随包分发。XorDev Accretion 的视觉与宿主边界见 [研究说明](references/xordev-accretion.md)，该适配因许可未核实仅保留本机，不属于公开 Skill 资源。
+
 ## 先选效果所在空间
 
 - **物品内部**：模型/mask 是窗口，射线查询虚拟黑洞和内部星域。背景方向由材质内核提供，不依赖世界颜色复制。

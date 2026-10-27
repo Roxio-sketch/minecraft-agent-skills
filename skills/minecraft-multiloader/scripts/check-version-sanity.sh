@@ -1,0 +1,152 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PASS='[PASS]'
+WARN='[WARN]'
+FAIL='[FAIL]'
+
+ROOT='.'
+STRICT=0
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --root)
+      ROOT="${2:-}"
+      shift 2
+      ;;
+    --strict)
+      STRICT=1
+      shift
+      ;;
+    --help|-h)
+      cat <<'USAGE'
+Usage: check-version-sanity.sh [--root <path>] [--strict]
+
+Performs static Architectury multiloader version-alignment preflight:
+- gradle.properties exists with required keys
+- gradle.properties declares the local mod_version convention used by this helper
+- enabled_platforms includes fabric and neoforge
+- no snapshot-only toolchain pins unless you accept warnings
+- NeoForge version family matches the Minecraft release line
+- Fabric API suffix matches the Minecraft patch line
+
+This helper does not resolve dependencies, compile the project, or prove a
+specific Architectury / Fabric API / NeoForge / Loom combination is compatible.
+USAGE
+      exit 0
+      ;;
+    *)
+      echo "$FAIL unknown arg: $1" >&2
+      exit 1
+      ;;
+  esac
+done
+
+if [[ ! -d "$ROOT" ]]; then
+  echo "$FAIL root path does not exist: $ROOT" >&2
+  exit 1
+fi
+
+PROPS="$ROOT/gradle.properties"
+if [[ ! -f "$PROPS" ]]; then
+  echo "$FAIL missing gradle.properties" >&2
+  exit 1
+fi
+
+FAILURES=0
+WARNINGS=0
+
+pass() { echo "$PASS $*"; }
+warn() { echo "$WARN $*"; WARNINGS=$((WARNINGS + 1)); }
+fail() { echo "$FAIL $*"; FAILURES=$((FAILURES + 1)); }
+
+read_prop() {
+  local key="$1"
+  local value
+  value="$(awk -v key="$key" '
+    /^[[:space:]]*[#!]/ { next }
+    {
+      line = $0
+      sub(/\r$/, "", line)
+      sub(/^[[:space:]]+/, "", line)
+      pattern = "^" key "[[:space:]]*([:=]|[[:space:]])"
+      if (line ~ pattern) {
+        sub("^" key "[[:space:]]*([:=][[:space:]]*|[[:space:]]+)", "", line)
+        sub(/[[:space:]]+$/, "", line)
+        print line
+        exit
+      }
+    }
+  ' "$PROPS")"
+  value="${value//$'\r'/}"
+  printf '%s' "$value"
+}
+
+MINECRAFT_VERSION="$(read_prop minecraft_version)"
+ENABLED_PLATFORMS="$(read_prop enabled_platforms)"
+ARCHITECTURY_VERSION="$(read_prop architectury_version)"
+FABRIC_LOADER_VERSION="$(read_prop fabric_loader_version)"
+FABRIC_API_VERSION="$(read_prop fabric_api_version)"
+NEOFORGE_VERSION="$(read_prop neoforge_version)"
+LOOM_VERSION="$(read_prop loom_version)"
+
+for key in mod_version minecraft_version enabled_platforms architectury_version fabric_loader_version fabric_api_version neoforge_version loom_version; do
+  value="$(read_prop "$key")"
+  if [[ -n "$value" ]]; then
+    pass "gradle.properties has $key"
+  else
+    fail "gradle.properties missing key: $key"
+  fi
+done
+
+NORMALIZED_PLATFORMS="${ENABLED_PLATFORMS//[[:space:]]/}"
+if [[ ",${NORMALIZED_PLATFORMS}," == *,fabric,* && ",${NORMALIZED_PLATFORMS}," == *,neoforge,* ]]; then
+  pass "enabled_platforms includes fabric and neoforge"
+else
+  fail "enabled_platforms must include fabric and neoforge"
+fi
+
+for version_name in ARCHITECTURY_VERSION FABRIC_LOADER_VERSION NEOFORGE_VERSION LOOM_VERSION; do
+  value="${!version_name:-}"
+  if [[ "$value" == *SNAPSHOT* ]]; then
+    warn "snapshot version detected: ${version_name,,}=$value"
+  fi
+done
+
+if [[ "$MINECRAFT_VERSION" =~ ^1\.21(\.([0-9]+))?$ ]]; then
+  patch="${BASH_REMATCH[2]:-1}"
+  expected_prefix="21.${patch}."
+  if [[ "$NEOFORGE_VERSION" == "$expected_prefix"* ]]; then
+    pass "neoforge_version matches Minecraft patch line ($expected_prefix*)"
+  else
+    fail "neoforge_version should start with $expected_prefix for minecraft_version=$MINECRAFT_VERSION"
+  fi
+elif [[ "$MINECRAFT_VERSION" =~ ^(26|[3-9][0-9])\.([0-9]+)(\.[0-9]+)?$ ]]; then
+  expected_prefix="${BASH_REMATCH[1]}.${BASH_REMATCH[2]}."
+  if [[ "$NEOFORGE_VERSION" == "$expected_prefix"* ]]; then
+    pass "neoforge_version matches Minecraft release line ($expected_prefix*)"
+  else
+    fail "neoforge_version should start with $expected_prefix for minecraft_version=$MINECRAFT_VERSION"
+  fi
+else
+  warn "minecraft_version is outside the documented 26.x / 1.21.x scope: $MINECRAFT_VERSION"
+fi
+
+if [[ -n "$FABRIC_API_VERSION" && "$FABRIC_API_VERSION" == *+"$MINECRAFT_VERSION" ]]; then
+  pass "fabric_api_version suffix matches minecraft_version (+$MINECRAFT_VERSION)"
+else
+  warn "fabric_api_version suffix should match minecraft_version (+$MINECRAFT_VERSION)"
+fi
+
+echo ""
+if [[ "$FAILURES" -gt 0 ]]; then
+  echo "$FAIL multiloader version sanity failed with $FAILURES error(s) and $WARNINGS warning(s)"
+  exit 1
+fi
+
+if [[ "$STRICT" -eq 1 && "$WARNINGS" -gt 0 ]]; then
+  echo "$FAIL multiloader version sanity strict mode failed on $WARNINGS warning(s)"
+  exit 1
+fi
+
+echo "$PASS multiloader version sanity passed with $WARNINGS warning(s)"

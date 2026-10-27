@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-27",
+  "base_commit": "5c27ecd009607fc276db59f26fba790b5f0c66cd",
+  "added_skills": [
+    "demo-cover-compositor",
+    "minecraft-builder",
+    "minecraft-ci-release",
+    "minecraft-commands-scripting",
+    "minecraft-datapack",
+    "minecraft-essentials-ops",
+    "minecraft-imagegen",
+    "minecraft-mcp-helper",
+    "minecraft-modding",
+    "minecraft-multiloader",
+    "minecraft-plugin-dev",
+    "minecraft-resource-pack",
+    "minecraft-server-admin",
+    "minecraft-testing",
+    "minecraft-world-generation",
+    "minecraft-worldedit-ops",
+    "mod-skill-video-producer"
+  ],
+  "updated_files": [
+    "minecraft-vfx-performance/SKILL.md",
+    "minecraft-vfx-performance/references/volume-depth-composite.md",
+    "minecraft-vfx-performance/references/coverage-budget-and-target-pool.md",
+    "minecraft-lightning/references/fbm-distance-study.md",
+    "minecraft-black-hole/references/kerr-newman-core-study.md",
+    "minecraft-black-hole/references/kerr-newman-image-study.md",
+    "minecraft-black-hole/references/xordev-accretion.md",
+    "minecraft-colored-glint/assets/workbench/NOTICE.md",
+    "minecraft-black-hole/SKILL.md",
+    "minecraft-lightning/SKILL.md"
+  ],
+  "excluded": [
+    "Accretion shader and HTML: redistribution license unverified",
+    "Jianying skills and reverse-engineer-anything: separate source and machine-specific deployment",
+    "Build caches, game logs, duplicate source archives, personal AXO configuration"
+  ],
+  "validation_scope": "metadata, syntax, local resource links and repository HTTP entry checks; no new game runtime certification",
+  "added_skill_validation": {
+    "syntax_checked": 18,
+    "failures": [],
+    "entrypoint_missing_links": [],
+    "credential_findings": []
+  },
+  "release_validation": {
+    "skills": 45,
+    "entries": 45,
+    "failures": [],
+    "scope": "Skill metadata, Python syntax, loopback HTTP entry points and HTML script/CSS resources; no game or visual certification"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "实机拼接封面"
+  short_description: "从真实截图与录像拼接演示封面，突出多形态、自定义参数及开源信息"
+  default_prompt: "使用 $demo-cover-compositor 为这个项目制作真实截图拼接封面，沿用我的封面风格。"

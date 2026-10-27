@@ -1,0 +1,13 @@
+{
+  "project": "自定义黑洞与白洞演示",
+  "capture": {"width": 1920, "height": 1080, "fps": 30, "source": "actual Minecraft framebuffer"},
+  "audio": {"voice": "用户已选音色", "retainRawNarration": true, "musicAttribution": true},
+  "shots": [
+    {"id": "hero", "feature": "主体外观", "action": "干净视角展示主体", "visibleChange": "盘面轮廓完整", "controls": ["camera", "recipe"], "status": "planned"},
+    {"id": "variants", "feature": "多形态", "action": "同一视角依次切换材质预设", "visibleChange": "光带、颗粒与尘埃不同", "controls": ["camera", "background"], "status": "planned"},
+    {"id": "lensing", "feature": "透镜范围", "action": "开关及小范围、大范围对照", "visibleChange": "背景扭曲区域变化", "controls": ["camera", "strength"], "status": "planned"},
+    {"id": "participant", "feature": "人物参与", "action": "保持范围，切换人物参与开关", "visibleChange": "人物的扭曲变化", "controls": ["camera", "radius", "playerPose"], "status": "planned"},
+    {"id": "ui", "feature": "实际调参", "action": "拖动厚度与倾角，主体旁边显示UI", "visibleChange": "轮廓跟随控件变化", "controls": ["camera", "color"], "status": "planned"},
+    {"id": "whitehole", "feature": "白洞", "action": "展示核心、双极喷流与外扩光壳", "visibleChange": "明亮核心与外向运动", "controls": ["camera"], "status": "planned"}
+  ]
+}

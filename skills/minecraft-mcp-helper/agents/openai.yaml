@@ -1,0 +1,6 @@
+interface:
+  display_name: "Minecraft MCP Helper"
+  short_description: "独立 AI 局域网入世、调试地址识别、建筑与结构选择器操作指南"
+  default_prompt: "使用 $minecraft-mcp-helper 连接我的世界，先报告实际 debug 地址，并通过独立 AI 客户端完成建筑和结构选择，保护玩家操作。"
+policy:
+  allow_implicit_invocation: true
