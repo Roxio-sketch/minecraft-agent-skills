@@ -2,7 +2,6 @@
   "date": "2026-10-27",
   "base_commit": "5c27ecd009607fc276db59f26fba790b5f0c66cd",
   "added_skills": [
-    "demo-cover-compositor",
     "minecraft-builder",
     "minecraft-ci-release",
     "minecraft-commands-scripting",
@@ -17,8 +16,7 @@
     "minecraft-server-admin",
     "minecraft-testing",
     "minecraft-world-generation",
-    "minecraft-worldedit-ops",
-    "mod-skill-video-producer"
+    "minecraft-worldedit-ops"
   ],
   "updated_files": [
     "minecraft-vfx-performance/SKILL.md",
@@ -35,19 +33,21 @@
   "excluded": [
     "Accretion shader and HTML: redistribution license unverified",
     "Jianying skills and reverse-engineer-anything: separate source and machine-specific deployment",
-    "Build caches, game logs, duplicate source archives, personal AXO configuration"
+    "Build caches, game logs, duplicate source archives, personal AXO configuration",
+    "General cover composition and video production skills: outside Minecraft-only publication scope"
   ],
   "validation_scope": "metadata, syntax, local resource links and repository HTTP entry checks; no new game runtime certification",
   "added_skill_validation": {
-    "syntax_checked": 18,
+    "syntax_checked": 15,
     "failures": [],
     "entrypoint_missing_links": [],
     "credential_findings": []
   },
   "release_validation": {
-    "skills": 45,
+    "skills": 43,
     "entries": 45,
     "failures": [],
     "scope": "Skill metadata, Python syntax, loopback HTTP entry points and HTML script/CSS resources; no game or visual certification"
-  }
+  },
+  "publication_scope": "Minecraft-specific skills only; general cover composition and video production excluded."
 }

@@ -14,9 +14,8 @@ Open-source Codex skills, editable rendering workbenches, and Forge 1.20.1 examp
 
 ## 本地 Skills 同步补齐 · 2026-10-27
 
-新增开发、服务器、建筑、资源包及演示制作技能；按提交历史和内容差异合并，保留现有工作台。性能优化补充覆盖像素预算、积分目标池与眼点/近平面裁剪边界。黑洞新增 Kerr–Newman 源码审读说明；许可未核实的 Accretion 适配源码不公开。
+新增 Minecraft 开发、服务器、建筑及资源包技能；按提交历史和内容差异合并，保留现有工作台。性能优化补充覆盖像素预算、积分目标池与眼点/近平面裁剪边界。黑洞新增 Kerr–Newman 源码审读说明；许可未核实的 Accretion 适配源码不公开。
 
-- [demo-cover-compositor](skills/demo-cover-compositor/SKILL.md)
 - [minecraft-builder](skills/minecraft-builder/SKILL.md)
 - [minecraft-ci-release](skills/minecraft-ci-release/SKILL.md)
 - [minecraft-commands-scripting](skills/minecraft-commands-scripting/SKILL.md)
@@ -32,7 +31,6 @@ Open-source Codex skills, editable rendering workbenches, and Forge 1.20.1 examp
 - [minecraft-testing](skills/minecraft-testing/SKILL.md)
 - [minecraft-world-generation](skills/minecraft-world-generation/SKILL.md)
 - [minecraft-worldedit-ops](skills/minecraft-worldedit-ops/SKILL.md)
-- [mod-skill-video-producer](skills/mod-skill-video-producer/SKILL.md)
 
 ## 独立工作台补齐 · 2026-10-21
 

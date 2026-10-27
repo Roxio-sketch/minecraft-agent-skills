@@ -1,4 +1,0 @@
-interface:
-  display_name: "Mod与Skill介绍视频"
-  short_description: "规划实机镜头与功能对照，完成自然讲解、配音配乐及清晰成片验证"
-  default_prompt: "使用 $mod-skill-video-producer 为这个开源项目制作完整演示视频，覆盖主要功能和可调参数。"
