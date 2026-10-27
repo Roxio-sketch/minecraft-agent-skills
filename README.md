@@ -12,25 +12,9 @@ Open-source Codex skills, editable rendering workbenches, and Forge 1.20.1 examp
 - [项目维护与 Codex 使用计划](docs/oss-maintainer-case.md)
 - [下载完整源码与 Skills](https://github.com/Roxio-sketch/minecraft-agent-skills/releases/tag/rendering-suite-20261014)
 
-## 本地 Skills 同步补齐 · 2026-10-27
+## 原有 Skills 更新 · 2026-10-27
 
-新增 Minecraft 开发、服务器、建筑及资源包技能；按提交历史和内容差异合并，保留现有工作台。性能优化补充覆盖像素预算、积分目标池与眼点/近平面裁剪边界。黑洞新增 Kerr–Newman 源码审读说明；许可未核实的 Accretion 适配源码不公开。
-
-- [minecraft-builder](skills/minecraft-builder/SKILL.md)
-- [minecraft-ci-release](skills/minecraft-ci-release/SKILL.md)
-- [minecraft-commands-scripting](skills/minecraft-commands-scripting/SKILL.md)
-- [minecraft-datapack](skills/minecraft-datapack/SKILL.md)
-- [minecraft-essentials-ops](skills/minecraft-essentials-ops/SKILL.md)
-- [minecraft-imagegen](skills/minecraft-imagegen/SKILL.md)
-- [minecraft-mcp-helper](skills/minecraft-mcp-helper/SKILL.md)
-- [minecraft-modding](skills/minecraft-modding/SKILL.md)
-- [minecraft-multiloader](skills/minecraft-multiloader/SKILL.md)
-- [minecraft-plugin-dev](skills/minecraft-plugin-dev/SKILL.md)
-- [minecraft-resource-pack](skills/minecraft-resource-pack/SKILL.md)
-- [minecraft-server-admin](skills/minecraft-server-admin/SKILL.md)
-- [minecraft-testing](skills/minecraft-testing/SKILL.md)
-- [minecraft-world-generation](skills/minecraft-world-generation/SKILL.md)
-- [minecraft-worldedit-ops](skills/minecraft-worldedit-ops/SKILL.md)
+本次仅补充仓库原有黑洞、闪电、彩色流光和性能优化技能的资料与修正。未确认创作者及收录授权的本地技能目录已撤下；已收录的 hbyaing 贡献完整保留。性能优化资料涵盖覆盖像素预算、积分目标池和眼点/近平面裁剪边界。黑洞研究资料明确区分算法审读与运行认证；许可未核实的第三方 shader 源码不随包公开。
 
 ## 独立工作台补齐 · 2026-10-21
 

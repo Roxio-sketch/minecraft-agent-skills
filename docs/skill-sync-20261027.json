@@ -1,23 +1,7 @@
 {
   "date": "2026-10-27",
   "base_commit": "5c27ecd009607fc276db59f26fba790b5f0c66cd",
-  "added_skills": [
-    "minecraft-builder",
-    "minecraft-ci-release",
-    "minecraft-commands-scripting",
-    "minecraft-datapack",
-    "minecraft-essentials-ops",
-    "minecraft-imagegen",
-    "minecraft-mcp-helper",
-    "minecraft-modding",
-    "minecraft-multiloader",
-    "minecraft-plugin-dev",
-    "minecraft-resource-pack",
-    "minecraft-server-admin",
-    "minecraft-testing",
-    "minecraft-world-generation",
-    "minecraft-worldedit-ops"
-  ],
+  "added_skills": [],
   "updated_files": [
     "minecraft-vfx-performance/SKILL.md",
     "minecraft-vfx-performance/references/volume-depth-composite.md",
@@ -37,17 +21,40 @@
     "General cover composition and video production skills: outside Minecraft-only publication scope"
   ],
   "validation_scope": "metadata, syntax, local resource links and repository HTTP entry checks; no new game runtime certification",
-  "added_skill_validation": {
-    "syntax_checked": 15,
-    "failures": [],
-    "entrypoint_missing_links": [],
-    "credential_findings": []
+  "publication_scope": "Updates to existing repository skills only; no new skill directories without verified authorship and maintainer approval. Preserve hbyaing contributions.",
+  "withdrawn_unverified_skill_directories": [
+    "minecraft-builder",
+    "minecraft-ci-release",
+    "minecraft-commands-scripting",
+    "minecraft-datapack",
+    "minecraft-essentials-ops",
+    "minecraft-imagegen",
+    "minecraft-mcp-helper",
+    "minecraft-modding",
+    "minecraft-multiloader",
+    "minecraft-plugin-dev",
+    "minecraft-resource-pack",
+    "minecraft-server-admin",
+    "minecraft-testing",
+    "minecraft-world-generation",
+    "minecraft-worldedit-ops"
+  ],
+  "approved_contributors": [
+    "hbyaing"
+  ],
+  "provenance_correction": {
+    "date": "2026-10-27",
+    "reason": "Local installation and Minecraft subject matter do not establish authorship or permission to republish.",
+    "retained_original_skill_count": 28,
+    "protected_skill": "minecraft-xiantu-vfx-library",
+    "protected_tree": "662ebc15c0cf094cff42d551486bc6c93a094c13"
   },
+  "validation_status": "Passed after withdrawing unverified skill directories.",
   "release_validation": {
-    "skills": 43,
-    "entries": 45,
+    "ok": true,
+    "skill_count": 28,
+    "entry_count": 45,
     "failures": [],
     "scope": "Skill metadata, Python syntax, loopback HTTP entry points and HTML script/CSS resources; no game or visual certification"
-  },
-  "publication_scope": "Minecraft-specific skills only; general cover composition and video production excluded."
+  }
 }

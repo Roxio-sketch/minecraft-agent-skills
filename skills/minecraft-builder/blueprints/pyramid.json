@@ -1,5 +1,0 @@
-{
-  "name": "Gold Pyramid",
-  "generator": "pyramid",
-  "params": { "height": 12, "material": "gold_block" }
-}
