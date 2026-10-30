@@ -1,0 +1,1197 @@
+{
+  "schema": "architecture-measured-components/1",
+  "method": "Explicit annotated boxes and material filters, continuous wood segments; no automatic semantic claims.",
+  "samples": [
+    {
+      "id": "tulou-upper-ring",
+      "label": "Tulou upper annular roof material",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "7212e474f1aeabb6b07d7191f56d2adb99cf05c6f8d91e1e00bd1d12850801d1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        46,
+        20,
+        46
+      ],
+      "roof_query_box": [
+        0,
+        19,
+        0,
+        46,
+        20,
+        46
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+        "bounds_xyz_inclusive": [
+          0,
+          19,
+          0,
+          46,
+          20,
+          46
+        ],
+        "span_xz": [
+          47,
+          47
+        ],
+        "y_range": [
+          19,
+          20
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:gray_roof_tiles": 1332,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 615,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 160,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 40
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:gray_roof_tiles": 0.620401,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 0.286446,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 0.074523,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 0.018631
+        },
+        "center_x_coordinate": 23,
+        "center_z_coordinate": 23,
+        "x_profile": [
+          [
+            0,
+            19
+          ],
+          [
+            1,
+            19
+          ],
+          [
+            2,
+            19
+          ],
+          [
+            3,
+            20
+          ],
+          [
+            4,
+            20
+          ],
+          [
+            5,
+            20
+          ],
+          [
+            6,
+            20
+          ],
+          [
+            7,
+            20
+          ],
+          [
+            8,
+            20
+          ],
+          [
+            9,
+            20
+          ],
+          [
+            10,
+            19
+          ],
+          [
+            11,
+            19
+          ],
+          [
+            12,
+            19
+          ],
+          [
+            34,
+            19
+          ],
+          [
+            35,
+            19
+          ],
+          [
+            36,
+            19
+          ],
+          [
+            37,
+            20
+          ],
+          [
+            38,
+            20
+          ],
+          [
+            39,
+            20
+          ],
+          [
+            40,
+            20
+          ],
+          [
+            41,
+            20
+          ],
+          [
+            42,
+            20
+          ],
+          [
+            43,
+            20
+          ],
+          [
+            44,
+            19
+          ],
+          [
+            45,
+            19
+          ],
+          [
+            46,
+            19
+          ]
+        ],
+        "z_profile": [
+          [
+            0,
+            19
+          ],
+          [
+            1,
+            19
+          ],
+          [
+            2,
+            19
+          ],
+          [
+            3,
+            20
+          ],
+          [
+            4,
+            20
+          ],
+          [
+            5,
+            20
+          ],
+          [
+            6,
+            20
+          ],
+          [
+            7,
+            20
+          ],
+          [
+            8,
+            20
+          ],
+          [
+            9,
+            20
+          ],
+          [
+            10,
+            19
+          ],
+          [
+            11,
+            19
+          ],
+          [
+            12,
+            19
+          ],
+          [
+            34,
+            19
+          ],
+          [
+            35,
+            19
+          ],
+          [
+            36,
+            19
+          ],
+          [
+            37,
+            20
+          ],
+          [
+            38,
+            20
+          ],
+          [
+            39,
+            20
+          ],
+          [
+            40,
+            20
+          ],
+          [
+            41,
+            20
+          ],
+          [
+            42,
+            20
+          ],
+          [
+            43,
+            20
+          ],
+          [
+            44,
+            19
+          ],
+          [
+            45,
+            19
+          ],
+          [
+            46,
+            19
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    },
+    {
+      "id": "tulou-inner-low",
+      "label": "Tulou low interior roof material",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "7212e474f1aeabb6b07d7191f56d2adb99cf05c6f8d91e1e00bd1d12850801d1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        46,
+        20,
+        46
+      ],
+      "roof_query_box": [
+        13,
+        11,
+        13,
+        33,
+        12,
+        33
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+        "bounds_xyz_inclusive": [
+          14,
+          11,
+          14,
+          32,
+          12,
+          32
+        ],
+        "span_xz": [
+          19,
+          19
+        ],
+        "y_range": [
+          11,
+          12
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:gray_roof_tiles_slab": 123,
+          "dawnoftimebuilder:gray_roof_tiles": 119,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 64,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 60
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:gray_roof_tiles_slab": 0.336066,
+          "dawnoftimebuilder:gray_roof_tiles": 0.325137,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 0.174863,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 0.163934
+        },
+        "center_x_coordinate": 23,
+        "center_z_coordinate": 23,
+        "x_profile": [
+          [
+            14,
+            11
+          ],
+          [
+            15,
+            11
+          ],
+          [
+            16,
+            12
+          ],
+          [
+            17,
+            12
+          ],
+          [
+            18,
+            12
+          ],
+          [
+            19,
+            11
+          ],
+          [
+            20,
+            11
+          ],
+          [
+            26,
+            11
+          ],
+          [
+            27,
+            11
+          ],
+          [
+            28,
+            12
+          ],
+          [
+            29,
+            12
+          ],
+          [
+            30,
+            12
+          ],
+          [
+            31,
+            11
+          ],
+          [
+            32,
+            11
+          ]
+        ],
+        "z_profile": [
+          [
+            14,
+            11
+          ],
+          [
+            15,
+            11
+          ],
+          [
+            16,
+            12
+          ],
+          [
+            17,
+            12
+          ],
+          [
+            18,
+            12
+          ],
+          [
+            19,
+            11
+          ],
+          [
+            20,
+            11
+          ],
+          [
+            26,
+            11
+          ],
+          [
+            27,
+            11
+          ],
+          [
+            28,
+            12
+          ],
+          [
+            29,
+            12
+          ],
+          [
+            30,
+            12
+          ],
+          [
+            31,
+            11
+          ],
+          [
+            32,
+            11
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    },
+    {
+      "id": "pagoda-roof-1",
+      "label": "Pagoda selected roof band 1",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_query_box": [
+        0,
+        10,
+        0,
+        31,
+        12,
+        25
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+        "bounds_xyz_inclusive": [
+          9,
+          10,
+          3,
+          27,
+          12,
+          21
+        ],
+        "span_xz": [
+          19,
+          19
+        ],
+        "y_range": [
+          10,
+          12
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:gray_roof_tiles": 124,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 88,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 84
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:gray_roof_tiles": 0.418919,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 0.297297,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 0.283784
+        },
+        "center_x_coordinate": 18,
+        "center_z_coordinate": 12,
+        "x_profile": [
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            24,
+            12
+          ],
+          [
+            25,
+            11
+          ],
+          [
+            26,
+            11
+          ],
+          [
+            27,
+            10
+          ]
+        ],
+        "z_profile": [
+          [
+            3,
+            10
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            18,
+            12
+          ],
+          [
+            19,
+            11
+          ],
+          [
+            20,
+            11
+          ],
+          [
+            21,
+            10
+          ]
+        ]
+      },
+      "column_rows": {
+        "column_row": {
+          "axis": "x",
+          "fixed_coordinate": 7,
+          "wood_segment_y_range": [
+            6,
+            9
+          ],
+          "wood_segment_height": 4,
+          "positions": [
+            13,
+            16,
+            20,
+            23
+          ],
+          "spacings": [
+            3,
+            4,
+            3
+          ],
+          "material_filter": "vertical log/wood/stem/hyphae",
+          "interpretation": "Continuous selected material over annotated height; role supplied by the annotation."
+        },
+        "depth_row": {
+          "axis": "z",
+          "fixed_coordinate": 13,
+          "wood_segment_y_range": [
+            6,
+            9
+          ],
+          "wood_segment_height": 4,
+          "positions": [
+            7,
+            10,
+            14,
+            17
+          ],
+          "spacings": [
+            3,
+            4,
+            3
+          ],
+          "material_filter": "vertical log/wood/stem/hyphae",
+          "interpretation": "Continuous selected material over annotated height; role supplied by the annotation."
+        }
+      },
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    },
+    {
+      "id": "pagoda-roof-2",
+      "label": "Pagoda selected roof band 2",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_query_box": [
+        0,
+        17,
+        0,
+        31,
+        19,
+        25
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+        "bounds_xyz_inclusive": [
+          9,
+          17,
+          3,
+          27,
+          19,
+          21
+        ],
+        "span_xz": [
+          19,
+          19
+        ],
+        "y_range": [
+          17,
+          19
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:gray_roof_tiles": 124,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 88,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 84
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:gray_roof_tiles": 0.418919,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 0.297297,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 0.283784
+        },
+        "center_x_coordinate": 18,
+        "center_z_coordinate": 12,
+        "x_profile": [
+          [
+            9,
+            17
+          ],
+          [
+            10,
+            18
+          ],
+          [
+            11,
+            18
+          ],
+          [
+            12,
+            19
+          ],
+          [
+            24,
+            19
+          ],
+          [
+            25,
+            18
+          ],
+          [
+            26,
+            18
+          ],
+          [
+            27,
+            17
+          ]
+        ],
+        "z_profile": [
+          [
+            3,
+            17
+          ],
+          [
+            4,
+            18
+          ],
+          [
+            5,
+            18
+          ],
+          [
+            6,
+            19
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            18
+          ],
+          [
+            20,
+            18
+          ],
+          [
+            21,
+            17
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    },
+    {
+      "id": "pagoda-roof-3",
+      "label": "Pagoda selected roof band 3",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_query_box": [
+        0,
+        24,
+        0,
+        31,
+        26,
+        25
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+        "bounds_xyz_inclusive": [
+          9,
+          24,
+          3,
+          27,
+          26,
+          21
+        ],
+        "span_xz": [
+          19,
+          19
+        ],
+        "y_range": [
+          24,
+          26
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:gray_roof_tiles": 124,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 88,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 84
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:gray_roof_tiles": 0.418919,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 0.297297,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 0.283784
+        },
+        "center_x_coordinate": 18,
+        "center_z_coordinate": 12,
+        "x_profile": [
+          [
+            9,
+            24
+          ],
+          [
+            10,
+            25
+          ],
+          [
+            11,
+            25
+          ],
+          [
+            12,
+            26
+          ],
+          [
+            24,
+            26
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            26,
+            25
+          ],
+          [
+            27,
+            24
+          ]
+        ],
+        "z_profile": [
+          [
+            3,
+            24
+          ],
+          [
+            4,
+            25
+          ],
+          [
+            5,
+            25
+          ],
+          [
+            6,
+            26
+          ],
+          [
+            18,
+            26
+          ],
+          [
+            19,
+            25
+          ],
+          [
+            20,
+            25
+          ],
+          [
+            21,
+            24
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    },
+    {
+      "id": "pagoda-roof-4",
+      "label": "Pagoda selected roof band 4",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_query_box": [
+        0,
+        31,
+        0,
+        31,
+        34,
+        25
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+        "bounds_xyz_inclusive": [
+          9,
+          31,
+          3,
+          27,
+          34,
+          21
+        ],
+        "span_xz": [
+          19,
+          19
+        ],
+        "y_range": [
+          31,
+          34
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 128,
+          "dawnoftimebuilder:gray_roof_tiles": 124,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 84
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 0.380952,
+          "dawnoftimebuilder:gray_roof_tiles": 0.369048,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 0.25
+        },
+        "center_x_coordinate": 18,
+        "center_z_coordinate": 12,
+        "x_profile": [
+          [
+            9,
+            31
+          ],
+          [
+            10,
+            32
+          ],
+          [
+            11,
+            32
+          ],
+          [
+            12,
+            33
+          ],
+          [
+            13,
+            34
+          ],
+          [
+            23,
+            34
+          ],
+          [
+            24,
+            33
+          ],
+          [
+            25,
+            32
+          ],
+          [
+            26,
+            32
+          ],
+          [
+            27,
+            31
+          ]
+        ],
+        "z_profile": [
+          [
+            3,
+            31
+          ],
+          [
+            4,
+            32
+          ],
+          [
+            5,
+            32
+          ],
+          [
+            6,
+            33
+          ],
+          [
+            7,
+            34
+          ],
+          [
+            17,
+            34
+          ],
+          [
+            18,
+            33
+          ],
+          [
+            19,
+            32
+          ],
+          [
+            20,
+            32
+          ],
+          [
+            21,
+            31
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    },
+    {
+      "id": "pagoda-roof-5",
+      "label": "Pagoda selected roof band 5",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_query_box": [
+        0,
+        39,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+        "bounds_xyz_inclusive": [
+          10,
+          39,
+          4,
+          26,
+          47,
+          20
+        ],
+        "span_xz": [
+          17,
+          17
+        ],
+        "y_range": [
+          39,
+          47
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 148,
+          "dawnoftimebuilder:gray_roof_tiles": 108,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 84,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 14
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 0.418079,
+          "dawnoftimebuilder:gray_roof_tiles": 0.305085,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 0.237288,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 0.039548
+        },
+        "center_x_coordinate": 18,
+        "center_z_coordinate": 12,
+        "x_profile": [
+          [
+            10,
+            39
+          ],
+          [
+            11,
+            40
+          ],
+          [
+            12,
+            40
+          ],
+          [
+            13,
+            46
+          ],
+          [
+            14,
+            46
+          ],
+          [
+            15,
+            46
+          ],
+          [
+            16,
+            46
+          ],
+          [
+            17,
+            47
+          ],
+          [
+            19,
+            47
+          ],
+          [
+            20,
+            46
+          ],
+          [
+            21,
+            46
+          ],
+          [
+            22,
+            46
+          ],
+          [
+            23,
+            46
+          ],
+          [
+            24,
+            40
+          ],
+          [
+            25,
+            40
+          ],
+          [
+            26,
+            39
+          ]
+        ],
+        "z_profile": [
+          [
+            4,
+            39
+          ],
+          [
+            5,
+            40
+          ],
+          [
+            6,
+            40
+          ],
+          [
+            7,
+            41
+          ],
+          [
+            8,
+            42
+          ],
+          [
+            9,
+            43
+          ],
+          [
+            10,
+            44
+          ],
+          [
+            11,
+            45
+          ],
+          [
+            13,
+            45
+          ],
+          [
+            14,
+            44
+          ],
+          [
+            15,
+            43
+          ],
+          [
+            16,
+            42
+          ],
+          [
+            17,
+            41
+          ],
+          [
+            18,
+            40
+          ],
+          [
+            19,
+            40
+          ],
+          [
+            20,
+            39
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    }
+  ]
+}

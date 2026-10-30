@@ -1,0 +1,562 @@
+{
+  "schema": "architecture-layout-measurements/1",
+  "samples": [
+    {
+      "id": "hui-house",
+      "source": "more-chinese-structures",
+      "source_sha256": "268c60d83522be02bf7430cf9a4d7cf53b44765df5d107d3ec5434ccf79f4749",
+      "analysis_npz_sha256": "2f8417be899bad285e6664ba161b56eae84f2df99bb1ec84da2b9b530adc992a",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        10,
+        10,
+        14
+      ],
+      "queries": {
+        "characteristic-material": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            10,
+            14
+          ],
+          "pattern": "^minecraft:deepslate_tile",
+          "query_volume": 1815,
+          "matched_cells": 163,
+          "bounds_xyz_inclusive": [
+            0,
+            5,
+            0,
+            10,
+            8,
+            14
+          ],
+          "layers_y": {
+            "5": 20,
+            "6": 92,
+            "7": 38,
+            "8": 13
+          },
+          "state_counts": {
+            "minecraft:deepslate_tile_slab[type=bottom,waterlogged=false]": 54,
+            "minecraft:deepslate_tile_slab[type=double,waterlogged=false]": 30,
+            "minecraft:deepslate_tile_slab[type=top,waterlogged=false]": 20,
+            "minecraft:deepslate_tile_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 3,
+            "minecraft:deepslate_tile_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 3,
+            "minecraft:deepslate_tiles": 53
+          }
+        }
+      },
+      "doors": {
+        "matched_pairs": 0,
+        "pairs": [],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game adaptation. Material counts and paired doors do not establish historical typology, load-bearing behavior or free volume for sparse sources.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "ganlan-house",
+      "source": "more-chinese-structures",
+      "source_sha256": "4abe35a09ee2a976e5f4c3ba039cacf481ed3fb5969debefe9e1e5f976c81cb2",
+      "analysis_npz_sha256": "08e28c95374aa91448622b2ef22e8b6b82d3439cf547e58dc7708cce9e315f68",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        17,
+        14,
+        13
+      ],
+      "queries": {
+        "characteristic-material": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            17,
+            14,
+            13
+          ],
+          "pattern": "^minecraft:oak_fence(?:\\[|$)",
+          "query_volume": 3780,
+          "matched_cells": 148,
+          "bounds_xyz_inclusive": [
+            0,
+            0,
+            1,
+            16,
+            12,
+            13
+          ],
+          "layers_y": {
+            "0": 20,
+            "1": 20,
+            "2": 96,
+            "3": 1,
+            "4": 5,
+            "5": 1,
+            "6": 1,
+            "11": 3,
+            "12": 1
+          },
+          "state_counts": {
+            "minecraft:oak_fence[east=false,north=false,south=false,waterlogged=false,west=false]": 44,
+            "minecraft:oak_fence[east=false,north=false,south=false,waterlogged=false,west=true]": 2,
+            "minecraft:oak_fence[east=false,north=false,south=true,waterlogged=false,west=true]": 2,
+            "minecraft:oak_fence[east=false,north=true,south=false,waterlogged=false,west=false]": 1,
+            "minecraft:oak_fence[east=false,north=true,south=false,waterlogged=false,west=true]": 1,
+            "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]": 39,
+            "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=true]": 1,
+            "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]": 42,
+            "minecraft:oak_fence[east=true,north=false,south=true,waterlogged=false,west=false]": 1,
+            "minecraft:oak_fence[east=true,north=false,south=true,waterlogged=false,west=true]": 4,
+            "minecraft:oak_fence[east=true,north=true,south=false,waterlogged=false,west=false]": 2,
+            "minecraft:oak_fence[east=true,north=true,south=false,waterlogged=false,west=true]": 3,
+            "minecraft:oak_fence[east=true,north=true,south=true,waterlogged=false,west=false]": 1,
+            "minecraft:oak_fence[east=true,north=true,south=true,waterlogged=false,west=true]": 5
+          }
+        },
+        "lower-fence-support-band": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            17,
+            1,
+            13
+          ],
+          "pattern": "^minecraft:oak_fence(?:\\[|$)",
+          "query_volume": 504,
+          "matched_cells": 40,
+          "bounds_xyz_inclusive": [
+            0,
+            0,
+            1,
+            16,
+            1,
+            13
+          ],
+          "layers_y": {
+            "0": 20,
+            "1": 20
+          },
+          "state_counts": {
+            "minecraft:oak_fence[east=false,north=false,south=false,waterlogged=false,west=false]": 40
+          }
+        }
+      },
+      "doors": {
+        "matched_pairs": 1,
+        "pairs": [
+          {
+            "lower_xyz": [
+              7,
+              4,
+              5
+            ],
+            "upper_xyz": [
+              7,
+              5,
+              5
+            ],
+            "lower_state": "minecraft:bamboo_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game adaptation. Material counts and paired doors do not establish historical typology, load-bearing behavior or free volume for sparse sources.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "yaodong-house",
+      "source": "more-chinese-structures",
+      "source_sha256": "2943373b2dd7337e35b6c35d315493871e1cd42253b0b2edde0da57439491fae",
+      "analysis_npz_sha256": "3b8b77e14130af3dd865bcae7deb8bd6d1f8f6bc64f1536c5614762cc050f1de",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        22,
+        16,
+        32
+      ],
+      "queries": {
+        "characteristic-material": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            22,
+            16,
+            32
+          ],
+          "pattern": "^minecraft:mud_bricks(?:\\[|$)",
+          "query_volume": 12903,
+          "matched_cells": 879,
+          "bounds_xyz_inclusive": [
+            0,
+            2,
+            0,
+            22,
+            10,
+            32
+          ],
+          "layers_y": {
+            "2": 93,
+            "3": 134,
+            "4": 123,
+            "5": 148,
+            "6": 107,
+            "7": 101,
+            "8": 132,
+            "9": 14,
+            "10": 27
+          },
+          "state_counts": {
+            "minecraft:mud_bricks": 879
+          }
+        }
+      },
+      "doors": {
+        "matched_pairs": 14,
+        "pairs": [
+          {
+            "lower_xyz": [
+              6,
+              2,
+              27
+            ],
+            "upper_xyz": [
+              6,
+              3,
+              27
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              9,
+              4,
+              7
+            ],
+            "upper_xyz": [
+              9,
+              5,
+              7
+            ],
+            "lower_state": "minecraft:jungle_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              9,
+              4,
+              27
+            ],
+            "upper_xyz": [
+              9,
+              5,
+              27
+            ],
+            "lower_state": "minecraft:jungle_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              10,
+              4,
+              7
+            ],
+            "upper_xyz": [
+              10,
+              5,
+              7
+            ],
+            "lower_state": "minecraft:jungle_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              10,
+              4,
+              27
+            ],
+            "upper_xyz": [
+              10,
+              5,
+              27
+            ],
+            "lower_state": "minecraft:jungle_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              3,
+              7
+            ],
+            "upper_xyz": [
+              11,
+              4,
+              7
+            ],
+            "lower_state": "minecraft:jungle_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              3,
+              27
+            ],
+            "upper_xyz": [
+              11,
+              4,
+              27
+            ],
+            "lower_state": "minecraft:jungle_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              12,
+              4,
+              7
+            ],
+            "upper_xyz": [
+              12,
+              5,
+              7
+            ],
+            "lower_state": "minecraft:jungle_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              12,
+              4,
+              27
+            ],
+            "upper_xyz": [
+              12,
+              5,
+              27
+            ],
+            "lower_state": "minecraft:jungle_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              13,
+              4,
+              7
+            ],
+            "upper_xyz": [
+              13,
+              5,
+              7
+            ],
+            "lower_state": "minecraft:jungle_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              13,
+              4,
+              27
+            ],
+            "upper_xyz": [
+              13,
+              5,
+              27
+            ],
+            "lower_state": "minecraft:jungle_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              16,
+              2,
+              27
+            ],
+            "upper_xyz": [
+              16,
+              3,
+              27
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              18,
+              2,
+              13
+            ],
+            "upper_xyz": [
+              18,
+              3,
+              13
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              18,
+              2,
+              20
+            ],
+            "upper_xyz": [
+              18,
+              3,
+              20
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game adaptation. Material counts and paired doors do not establish historical typology, load-bearing behavior or free volume for sparse sources.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "yurt-house",
+      "source": "more-chinese-structures",
+      "source_sha256": "eeb825d34a547b725668278183353f2eaf55fbac648b5b65c8f3e4d99acc3661",
+      "analysis_npz_sha256": "285892550daeb24d27562d7379732ae7fc8628ab4b7e30e940099a2f18d67e4c",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        28,
+        18,
+        27
+      ],
+      "queries": {
+        "characteristic-material": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            28,
+            18,
+            27
+          ],
+          "pattern": "^minecraft:.*quartz",
+          "query_volume": 15428,
+          "matched_cells": 1606,
+          "bounds_xyz_inclusive": [
+            0,
+            0,
+            1,
+            27,
+            14,
+            26
+          ],
+          "layers_y": {
+            "0": 16,
+            "1": 510,
+            "2": 67,
+            "3": 66,
+            "4": 66,
+            "5": 66,
+            "6": 60,
+            "7": 66,
+            "8": 68,
+            "9": 123,
+            "10": 144,
+            "11": 128,
+            "12": 103,
+            "13": 107,
+            "14": 16
+          },
+          "state_counts": {
+            "minecraft:quartz_block": 2,
+            "minecraft:quartz_slab[type=bottom,waterlogged=false]": 156,
+            "minecraft:quartz_slab[type=double,waterlogged=false]": 127,
+            "minecraft:quartz_slab[type=top,waterlogged=false]": 119,
+            "minecraft:smooth_quartz": 972,
+            "minecraft:smooth_quartz_slab[type=bottom,waterlogged=false]": 5,
+            "minecraft:smooth_quartz_slab[type=double,waterlogged=false]": 121,
+            "minecraft:smooth_quartz_slab[type=top,waterlogged=false]": 32,
+            "minecraft:smooth_quartz_stairs[facing=east,half=bottom,shape=outer_left,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=east,half=bottom,shape=outer_right,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 19,
+            "minecraft:smooth_quartz_stairs[facing=north,half=bottom,shape=outer_left,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=north,half=bottom,shape=outer_right,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 15,
+            "minecraft:smooth_quartz_stairs[facing=south,half=bottom,shape=outer_left,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=south,half=bottom,shape=outer_right,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 15,
+            "minecraft:smooth_quartz_stairs[facing=west,half=bottom,shape=outer_left,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=west,half=bottom,shape=outer_right,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 15
+          }
+        },
+        "upper-quartz-band": {
+          "box_xyz_inclusive": [
+            0,
+            9,
+            0,
+            28,
+            14,
+            27
+          ],
+          "pattern": "^minecraft:.*quartz",
+          "query_volume": 4872,
+          "matched_cells": 621,
+          "bounds_xyz_inclusive": [
+            2,
+            9,
+            1,
+            27,
+            14,
+            26
+          ],
+          "layers_y": {
+            "9": 123,
+            "10": 144,
+            "11": 128,
+            "12": 103,
+            "13": 107,
+            "14": 16
+          },
+          "state_counts": {
+            "minecraft:quartz_slab[type=bottom,waterlogged=false]": 156,
+            "minecraft:quartz_slab[type=double,waterlogged=false]": 127,
+            "minecraft:quartz_slab[type=top,waterlogged=false]": 119,
+            "minecraft:smooth_quartz_slab[type=bottom,waterlogged=false]": 5,
+            "minecraft:smooth_quartz_slab[type=double,waterlogged=false]": 114,
+            "minecraft:smooth_quartz_slab[type=top,waterlogged=false]": 32,
+            "minecraft:smooth_quartz_stairs[facing=east,half=bottom,shape=outer_left,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=east,half=bottom,shape=outer_right,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 15,
+            "minecraft:smooth_quartz_stairs[facing=north,half=bottom,shape=outer_left,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=north,half=bottom,shape=outer_right,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 15,
+            "minecraft:smooth_quartz_stairs[facing=south,half=bottom,shape=outer_left,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=south,half=bottom,shape=outer_right,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 15,
+            "minecraft:smooth_quartz_stairs[facing=west,half=bottom,shape=outer_left,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=west,half=bottom,shape=outer_right,waterlogged=false]": 1,
+            "minecraft:smooth_quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 15
+          }
+        }
+      },
+      "doors": {
+        "matched_pairs": 0,
+        "pairs": [],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game adaptation. Material counts and paired doors do not establish historical typology, load-bearing behavior or free volume for sparse sources.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    }
+  ],
+  "limits": "Annotated cell statistics, not automatic room or building recognition. NPZ air may include omitted source positions. No payload, collision or redstone verification."
+}

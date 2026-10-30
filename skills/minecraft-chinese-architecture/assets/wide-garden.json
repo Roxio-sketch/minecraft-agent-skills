@@ -1,0 +1,12 @@
+{
+  "schema": "chinese-garden/1",
+  "width": 120,
+  "depth": 100,
+  "bridge_rise": 4,
+  "bridge_width": 5,
+  "moon_radius": 5,
+  "tree_count": 3,
+  "plant_clusters": 32,
+  "seed": 29,
+  "evidence": [{"design_choice": "Original wider garden variant; no source geometry reuse or historical reconstruction."}]
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "chinese-building/1",
+  "kind": "pavilion",
+  "bays_x": [6, 6],
+  "bays_z": [6, 6],
+  "column_height": 7,
+  "roof": {"form": "pyramidal", "rise": 6, "curve": 1.7, "uplift": 1},
+  "rule_status": "authored_hypothesis",
+  "evidence": [{"design_choice": "Original open square pavilion with perimeter columns. No historical type, source roof, or complete dougong system is reconstructed."}]
+}

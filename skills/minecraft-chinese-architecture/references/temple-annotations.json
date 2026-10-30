@@ -1,0 +1,108 @@
+{
+  "schema": "architecture-annotations/1",
+  "status": "Single new building. Eave bands selected from offline projections; split bands are not independent samples or floor counts.",
+  "samples": [
+    {
+      "source": "mctoolbox-temple",
+      "model": "temple-schem.npz",
+      "source_sha256": "572e17872abdc598e395a99ce1f35a8c08164f211329198733043d5c99232fd4",
+      "coordinate_space": "schematic paste-relative XYZ; not original world coordinates",
+      "box": [
+        -58,
+        0,
+        -31,
+        -2,
+        50,
+        27
+      ],
+      "roof_pattern": "deepslate.*(stairs|slab|tiles|bricks)",
+      "id": "temple-lower",
+      "label": "Chinese Temple lower eave material band",
+      "roof_box": [
+        -47,
+        11,
+        -19,
+        -13,
+        17,
+        19
+      ],
+      "column_row": {
+        "axis": "x",
+        "fixed": -12,
+        "range": [
+          -37,
+          -23
+        ],
+        "y_range": [
+          3,
+          15
+        ]
+      },
+      "depth_row": {
+        "axis": "z",
+        "fixed": -37,
+        "range": [
+          -12,
+          12
+        ],
+        "y_range": [
+          3,
+          14
+        ]
+      },
+      "interpretation": "One exterior wood row has 7,7 spacing; side row is 6,12,6 with a central opening. These are not a uniform complete structural grid."
+    },
+    {
+      "source": "mctoolbox-temple",
+      "model": "temple-schem.npz",
+      "source_sha256": "572e17872abdc598e395a99ce1f35a8c08164f211329198733043d5c99232fd4",
+      "coordinate_space": "schematic paste-relative XYZ; not original world coordinates",
+      "box": [
+        -58,
+        0,
+        -31,
+        -2,
+        50,
+        27
+      ],
+      "roof_pattern": "deepslate.*(stairs|slab|tiles|bricks)",
+      "id": "temple-main-eave",
+      "label": "Chinese Temple main eave material band",
+      "roof_box": [
+        -47,
+        18,
+        -19,
+        -13,
+        23,
+        19
+      ],
+      "interpretation": "A selected horizontal band of the main roof; shares the upper pitched roof and is not a separate storey."
+    },
+    {
+      "source": "mctoolbox-temple",
+      "model": "temple-schem.npz",
+      "source_sha256": "572e17872abdc598e395a99ce1f35a8c08164f211329198733043d5c99232fd4",
+      "coordinate_space": "schematic paste-relative XYZ; not original world coordinates",
+      "box": [
+        -58,
+        0,
+        -31,
+        -2,
+        50,
+        27
+      ],
+      "roof_pattern": "deepslate.*(stairs|slab|tiles|bricks)",
+      "id": "temple-upper-roof",
+      "label": "Chinese Temple upper pitched roof material band",
+      "roof_box": [
+        -47,
+        24,
+        -19,
+        -13,
+        35,
+        19
+      ],
+      "interpretation": "Upper steep roof with gable/ridge details. Excludes non-deepslate ornament; not a pure fitted hip-roof slope."
+    }
+  ]
+}

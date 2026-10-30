@@ -1,0 +1,342 @@
+{
+  "schema": "architecture-source-collection/1",
+  "source": "ancient-structures-chinese",
+  "repository_commit": "d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+  "source_file_labels": 10,
+  "parsed_variants": 16,
+  "note": "Six shared labels across two versions are related variants, not six new independent building traditions. Inventory is not detailed architectural learning.",
+  "files": [
+    {
+      "relative_source": "apothecary_house.nbt",
+      "source_sha256": "88213626914b3754eea9eb3525852f6acda1e1d576420086e5464eccb518fe88",
+      "status": "imported",
+      "size_xyz": [
+        41,
+        21,
+        32
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 9460,
+      "nonair_namespace_counts": {
+        "minecraft": 8529,
+        "dawnoftimebuilder": 712,
+        "gardentrails": 94,
+        "dotbv": 125
+      },
+      "geometry_sha256": "405fe6d264ea54d6b8e27ae1df19a424bd444e1ce5ae7d29a03a4de22565f438",
+      "variant": "git_d7ff4571",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "chinese_camp.nbt",
+      "source_sha256": "5131b033520010b47f4e62dfdf5cac3a72362a59284aaff0663b5ded7acee9f9",
+      "status": "imported",
+      "size_xyz": [
+        48,
+        24,
+        34
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 8669,
+      "nonair_namespace_counts": {
+        "minecraft": 8253,
+        "dawnoftimebuilder": 416
+      },
+      "geometry_sha256": "3baee25a7da9bb1f2a60f11d5c7e8acecf25b4d850dc1a947e3e129a81e17d44",
+      "variant": "git_d7ff4571",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "chinese_emperor_tomb.nbt",
+      "source_sha256": "1244042f0e605bcca929f8ae41cd1a2b4516a7c7715c1ca0f3db1e0129553fa9",
+      "status": "imported",
+      "size_xyz": [
+        46,
+        25,
+        44
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 19455,
+      "nonair_namespace_counts": {
+        "minecraft": 18900,
+        "dawnoftimebuilder": 517,
+        "gardentrails": 38
+      },
+      "geometry_sha256": "928d90601636b9736dfd55a10c10427080fa58295539b14edd38fa5a0ad719ab",
+      "variant": "git_d7ff4571",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "chinese_fort.nbt",
+      "source_sha256": "f70516b01216943c0a18f00ebc0a6702f821ac0731473873f3308346f8227414",
+      "status": "imported",
+      "size_xyz": [
+        39,
+        30,
+        38
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 13233,
+      "nonair_namespace_counts": {
+        "minecraft": 11235,
+        "dawnoftimebuilder": 1971,
+        "amendments": 27
+      },
+      "geometry_sha256": "46c95b2931af0af99076e7ca68234b1978c34620a8b11ee85db7afba073707b5",
+      "variant": "git_d7ff4571",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "chinese_pagoda.nbt",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "status": "imported",
+      "size_xyz": [
+        32,
+        48,
+        26
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 8082,
+      "nonair_namespace_counts": {
+        "minecraft": 5748,
+        "dawnoftimebuilder": 2332,
+        "gardentrails": 2
+      },
+      "geometry_sha256": "2898a5a4600deacdb53362070d4a7170fa43a5e2dafba3c57d617a573bcc4cb0",
+      "variant": "git_d7ff4571",
+      "geometric_measurement_status": "selected_components_measured"
+    },
+    {
+      "relative_source": "chinese_ricefarm.nbt",
+      "source_sha256": "d945d74d030ed51f991873e2385a36a7708235fd8ec8b04611938587c1c02b91",
+      "status": "rejected",
+      "error_type": "BadGzipFile",
+      "reason": "CRC check failed 0xa3e74e8f != 0xaa1d7a16",
+      "variant": "git_d7ff4571",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "chinese_temple.nbt",
+      "source_sha256": "3f6b999368bf70346d4bcca776a834519a8d400f6bbdd64a67c2d5110c0684eb",
+      "status": "imported",
+      "size_xyz": [
+        39,
+        26,
+        34
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 11057,
+      "nonair_namespace_counts": {
+        "minecraft": 9883,
+        "dawnoftimebuilder": 1174
+      },
+      "geometry_sha256": "a89e7efed154b8d0b10a62060e383c6ca7c11518d3c5cbd3103878713cebce36",
+      "variant": "git_d7ff4571",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "desert_fort.nbt",
+      "source_sha256": "2b799e91658b2aff015e12408982d7939074e42cfc74c0869daf4b65037abf2f",
+      "status": "imported",
+      "size_xyz": [
+        48,
+        35,
+        43
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 19882,
+      "nonair_namespace_counts": {
+        "minecraft": 10148,
+        "dawnoftimebuilder": 9330,
+        "dotbv": 404
+      },
+      "geometry_sha256": "be7220f529bff365c5bef7d11eb344a9a3a3be474abbc3a110120a6bca2767ce",
+      "variant": "git_d7ff4571",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "small_house.nbt",
+      "source_sha256": "2ed1f76e4bd7be8393ae8e8b1a013ba0799e2defe0780763e7a911851d38fbbb",
+      "status": "imported",
+      "size_xyz": [
+        25,
+        14,
+        29
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 4398,
+      "nonair_namespace_counts": {
+        "minecraft": 3935,
+        "dawnoftimebuilder": 356,
+        "gardentrails": 38,
+        "dotbv": 69
+      },
+      "geometry_sha256": "abc48b8e91a21a16989ecfec9ce4f0bfa19f27c08528f4d9319342414a57ce4b",
+      "variant": "git_d7ff4571",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "tulou.nbt",
+      "source_sha256": "7212e474f1aeabb6b07d7191f56d2adb99cf05c6f8d91e1e00bd1d12850801d1",
+      "status": "imported",
+      "size_xyz": [
+        47,
+        21,
+        47
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 24893,
+      "nonair_namespace_counts": {
+        "minecraft": 18204,
+        "dawnoftimebuilder": 6672,
+        "gardentrails": 7,
+        "amendments": 10
+      },
+      "geometry_sha256": "00cbd0e822a3514e449c75f6bde8890050509c8b2da4f17cad310238c55c9aa9",
+      "variant": "git_d7ff4571",
+      "geometric_measurement_status": "selected_components_measured"
+    },
+    {
+      "relative_source": "chinese_camp.nbt",
+      "source_sha256": "ee6a3003bac111fe785b5e5860aa3b35f0bd86f8702df59ca52757857191b1d5",
+      "status": "imported",
+      "size_xyz": [
+        48,
+        24,
+        34
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 2826,
+      "nonair_namespace_counts": {
+        "minecraft": 2407,
+        "dawnoftimebuilder": 419
+      },
+      "geometry_sha256": "b93697182d57a85bbf7c936dcf50c5fc156809e8e501e2fb3fd97b8eee47bb6a",
+      "variant": "release_0.0.4",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "chinese_emperor_tomb.nbt",
+      "source_sha256": "430791380d9becf59a595a465da590bee10fb4d3ffaf66dcc5d1a37d7d8693f8",
+      "status": "imported",
+      "size_xyz": [
+        46,
+        18,
+        44
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 8463,
+      "nonair_namespace_counts": {
+        "minecraft": 7907,
+        "dawnoftimebuilder": 516,
+        "gardentrails": 38,
+        "amendments": 2
+      },
+      "geometry_sha256": "7a18882f94ffca462737c615ffb4b7b9bdc9bc16adb1fb91a05ee65640e9b562",
+      "variant": "release_0.0.4",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "chinese_fort.nbt",
+      "source_sha256": "962203894c9cb05a5a1c6386744d914c92fd840a2ecde733a8edf22ced2d80b6",
+      "status": "imported",
+      "size_xyz": [
+        39,
+        23,
+        38
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 5415,
+      "nonair_namespace_counts": {
+        "minecraft": 3417,
+        "dawnoftimebuilder": 1971,
+        "amendments": 27
+      },
+      "geometry_sha256": "c578d922cb8472049c62bf5965d5c54327ea77b42153e932eb8d65a9a5f5a597",
+      "variant": "release_0.0.4",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "chinese_pagoda.nbt",
+      "source_sha256": "b313391891089b89c06972ff32647796d10eaf4b69744cc71a3be71956c4a8d5",
+      "status": "imported",
+      "size_xyz": [
+        32,
+        48,
+        26
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 8085,
+      "nonair_namespace_counts": {
+        "minecraft": 5750,
+        "dawnoftimebuilder": 2325,
+        "gardentrails": 2,
+        "amendments": 8
+      },
+      "geometry_sha256": "65056f73a936a88480c7c540bf1288d5d52bda9688d049b97da7b6cea8002871",
+      "variant": "release_0.0.4",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "chinese_ricefarm.nbt",
+      "source_sha256": "829cab045eccc4f78452fd1c92745cbb98fe9881a7e91bf3f9a665aaf11bf4d0",
+      "status": "imported",
+      "size_xyz": [
+        39,
+        19,
+        45
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 6631,
+      "nonair_namespace_counts": {
+        "minecraft": 5755,
+        "dawnoftimebuilder": 291,
+        "gardentrails": 584,
+        "amendments": 1
+      },
+      "geometry_sha256": "dd86542e2ceed93103a58d0e132f6b81180b8957d8988ddc0b0db8d85472fc3a",
+      "variant": "release_0.0.4",
+      "geometric_measurement_status": "rice_pairs_and_materials_measured"
+    },
+    {
+      "relative_source": "chinese_temple.nbt",
+      "source_sha256": "ea929f1c01daee5c2aa63a7729841be457d244a63c19fea8853ffcdd26d73bd6",
+      "status": "imported",
+      "size_xyz": [
+        39,
+        19,
+        34
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 4839,
+      "nonair_namespace_counts": {
+        "minecraft": 3665,
+        "dawnoftimebuilder": 1174
+      },
+      "geometry_sha256": "5dd9f45f3b6dd12adaea085e0621864939543024742e4f85e57c960cb41a03ce",
+      "variant": "release_0.0.4",
+      "geometric_measurement_status": "inventory_only"
+    },
+    {
+      "relative_source": "tulou.nbt",
+      "source_sha256": "3831198a2a1f5120578efd704af9d2938586c9e75d4aabb3c18fe49dbc7e4f05",
+      "status": "imported",
+      "size_xyz": [
+        47,
+        15,
+        47
+      ],
+      "data_version": 3465,
+      "nonair_blocks": 13902,
+      "nonair_namespace_counts": {
+        "minecraft": 7217,
+        "dawnoftimebuilder": 6622,
+        "amendments": 56,
+        "gardentrails": 7
+      },
+      "geometry_sha256": "8f59bdb99fd989b44078a3ea90f5b3d9fd19ba238db061efe59dcc83585a7c12",
+      "variant": "release_0.0.4",
+      "geometric_measurement_status": "inventory_only"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "chinese-detail/1",
+  "kind": "tile_course",
+  "parameters": {
+    "radius": 3,
+    "courses": 4,
+    "length": 18
+  }
+}

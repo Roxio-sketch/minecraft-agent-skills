@@ -1,0 +1,10 @@
+{
+  "schema": "chinese-infrastructure/1",
+  "kind": "terraced_farm",
+  "parameters": {
+    "half_width": 18,
+    "levels": 3,
+    "terrace_depth": 10,
+    "level_rise": 2
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "chinese-regional/1",
+  "kind": "tianjing",
+  "parameters": {
+    "half_x": 17,
+    "half_z": 15,
+    "court_half_x": 6,
+    "court_half_z": 5,
+    "wall_height": 7,
+    "roof_rise": 4
+  },
+  "evidence": [
+    "Original spatial prototype. See regional-generation.md for observed source relationships and unmeasured design choices."
+  ]
+}

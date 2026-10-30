@@ -12,6 +12,10 @@ Open-source Codex skills, editable rendering workbenches, and Forge 1.20.1 examp
 - [项目维护与 Codex 使用计划](docs/oss-maintainer-case.md)
 - [下载完整源码与 Skills](https://github.com/Roxio-sketch/minecraft-agent-skills/releases/tag/rendering-suite-20261014)
 
+## 中式建筑 Skill · beta0.1
+
+新增 [minecraft-chinese-architecture](skills/minecraft-chinese-architecture/SKILL.md)：中式建筑生成、结构解析、院落与功能组团、楼层接口和现场修缮检查。包含可编辑参数、来源说明与验证记录，160项行为回归通过。研究原始地图及第三方模型不随包分发；离线检查与实机验证范围见 Skill 文档。
+
 ## 原有 Skills 更新 · 2026-10-27
 
 本次仅补充仓库原有黑洞、闪电、彩色流光和性能优化技能的资料与修正。未确认创作者及收录授权的本地技能目录已撤下；已收录的 hbyaing 贡献完整保留。性能优化资料涵盖覆盖像素预算、积分目标池和眼点/近平面裁剪边界。黑洞研究资料明确区分算法审读与运行认证；许可未核实的第三方 shader 源码不随包公开。

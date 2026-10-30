@@ -1,0 +1,8 @@
+{
+  "schema": "chinese-infrastructure/1",
+  "kind": "pagoda",
+  "parameters": {
+    "mode": "storeyed",
+    "levels": 3
+  }
+}

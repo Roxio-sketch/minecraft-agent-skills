@@ -1,0 +1,16 @@
+{
+  "schema": "chinese-garden/1",
+  "width": 96,
+  "depth": 88,
+  "bridge_rise": 3,
+  "bridge_width": 3,
+  "moon_radius": 4,
+  "tree_count": 3,
+  "plant_clusters": 20,
+  "seed": 17,
+  "evidence": [{
+    "source_id": "peakscape",
+    "adopted": "Study workflow: inspect enclosing spaces, vertical layers, circulation and obscured views together.",
+    "design_changes": "All site dimensions, flat pond, bridge, moon gate, architecture and planting are authored. No source voxel geometry or dimensions are copied."
+  }]
+}

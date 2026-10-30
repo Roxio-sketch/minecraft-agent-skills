@@ -1,0 +1,85 @@
+{
+  "schema": "chinese-tower/1",
+  "levels": [
+    {
+      "bays_x": [
+        6,
+        6,
+        8,
+        6,
+        6
+      ],
+      "bays_z": [
+        6,
+        8,
+        6
+      ],
+      "height": 9
+    },
+    {
+      "bays_x": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "bays_z": [
+        6,
+        6,
+        6
+      ],
+      "height": 12
+    },
+    {
+      "bays_x": [
+        4,
+        6,
+        8,
+        6,
+        4
+      ],
+      "bays_z": [
+        4,
+        8,
+        4
+      ],
+      "height": 8
+    }
+  ],
+  "platform_height": 2,
+  "platform_margin": 3,
+  "eave_overhang": 3,
+  "eave_rise": 3,
+  "eave_curve": 1.5,
+  "stair_width": 2,
+  "top_roof": {
+    "form": "hip_and_gable",
+    "rise": 6,
+    "curve": 1.5,
+    "uplift": 1,
+    "ridge_axis": "x",
+    "gable_inset": 3
+  },
+  "palette": {
+    "foundation": "minecraft:stone_bricks",
+    "floor": "minecraft:dark_oak_planks",
+    "column": "minecraft:stripped_dark_oak_log[axis=y]",
+    "beam": "minecraft:dark_oak_planks",
+    "wall": "minecraft:white_terracotta",
+    "window": "minecraft:brown_stained_glass",
+    "roof": "minecraft:deepslate_tiles",
+    "roof_stairs": "minecraft:deepslate_tile_stairs",
+    "roof_slab": "minecraft:deepslate_tile_slab",
+    "trim": "minecraft:cut_copper",
+    "access_stairs": "minecraft:stone_brick_stairs",
+    "interior_stairs": "minecraft:dark_oak_stairs",
+    "railing": "minecraft:dark_oak_fence"
+  },
+  "evidence": [
+    {
+      "kind": "original_design",
+      "note": "Mixed storey heights test circulation independently of a historical source."
+    }
+  ]
+}

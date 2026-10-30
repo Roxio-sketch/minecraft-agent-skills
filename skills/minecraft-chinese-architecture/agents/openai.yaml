@@ -1,0 +1,4 @@
+interface:
+  display_name: "中式建筑解析与生成"
+  short_description: "学习中式建筑存档，生成院落、街市、园林与地域建筑，组合地形和构件并验证通路"
+  default_prompt: "使用 $minecraft-chinese-architecture 根据我的建筑要求选择预设或学习参考，生成可编辑建筑、结构文件、预览与验证报告。"

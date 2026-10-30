@@ -1,0 +1,167 @@
+{
+  "schema": "chinese-complex/1",
+  "origin_xz": [
+    -80,
+    -100
+  ],
+  "size_xz": [
+    161,
+    205
+  ],
+  "terrain": {
+    "base": 2,
+    "grade_z": 0.065,
+    "wave": 1.2,
+    "hills": [
+      {
+        "x": 8,
+        "z": 64,
+        "radius": 38,
+        "height": 19
+      }
+    ]
+  },
+  "pad_margin": 6,
+  "path_width": 5,
+  "max_path_grading": 8,
+  "max_pad_cut_fill": 24,
+  "entrance_xz": [
+    0,
+    -94
+  ],
+  "components": [
+    {
+      "id": "gate",
+      "kind": "building",
+      "position_xz": [
+        0,
+        -62
+      ],
+      "turns": 0,
+      "through": true,
+      "config": {
+        "kind": "pavilion",
+        "bays_x": [
+          8
+        ],
+        "bays_z": [
+          4
+        ],
+        "column_height": 5,
+        "platform_height": 1,
+        "platform_margin": 2,
+        "eave_overhang": 2,
+        "stair_width": 3,
+        "roof": {
+          "form": "overhanging_gable",
+          "rise": 3,
+          "uplift": 0
+        }
+      }
+    },
+    {
+      "id": "main_hall",
+      "kind": "building",
+      "position_xz": [
+        0,
+        0
+      ],
+      "turns": 0,
+      "config": {
+        "bays_x": [
+          6,
+          8,
+          6
+        ],
+        "bays_z": [
+          6,
+          6
+        ],
+        "column_height": 10
+      }
+    },
+    {
+      "id": "west_hall",
+      "kind": "building",
+      "position_xz": [
+        -49,
+        0
+      ],
+      "turns": 1,
+      "config": {
+        "bays_x": [
+          6,
+          6,
+          6
+        ],
+        "bays_z": [
+          6
+        ],
+        "column_height": 6,
+        "roof": {
+          "form": "overhanging_gable",
+          "rise": 4,
+          "uplift": 0
+        }
+      }
+    },
+    {
+      "id": "east_hall",
+      "kind": "building",
+      "position_xz": [
+        49,
+        16
+      ],
+      "turns": 3,
+      "config": {
+        "bays_x": [
+          6,
+          6,
+          6
+        ],
+        "bays_z": [
+          6
+        ],
+        "column_height": 6,
+        "roof": {
+          "form": "overhanging_gable",
+          "rise": 4,
+          "uplift": 0
+        }
+      }
+    },
+    {
+      "id": "upper_tower",
+      "kind": "tower",
+      "position_xz": [
+        12,
+        65
+      ],
+      "turns": 0,
+      "config": {}
+    }
+  ],
+  "connections": [
+    [
+      "entrance",
+      "gate.entry"
+    ],
+    [
+      "gate.exit",
+      "main_hall.entry"
+    ],
+    [
+      "main_hall.entry",
+      "west_hall.entry"
+    ],
+    [
+      "main_hall.entry",
+      "east_hall.entry"
+    ],
+    [
+      "east_hall.entry",
+      "upper_tower.entry"
+    ]
+  ],
+  "evidence": []
+}

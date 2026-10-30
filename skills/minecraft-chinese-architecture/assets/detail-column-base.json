@@ -1,0 +1,10 @@
+{
+  "schema": "chinese-detail/1",
+  "kind": "column_base",
+  "parameters": {
+    "radius": 3,
+    "height": 16,
+    "profile": "entasis",
+    "inclination": 0
+  }
+}

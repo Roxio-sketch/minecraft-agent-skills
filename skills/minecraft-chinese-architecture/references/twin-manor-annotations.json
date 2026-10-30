@@ -1,0 +1,82 @@
+{
+  "schema": "architecture-annotations/1",
+  "status": "Pan-East-Asian comparative sample; Chinese regional/historical classification not established. Two selected upper material regions are not two independent sources.",
+  "samples": [
+    {
+      "source": "mctoolbox-twin-manor",
+      "model": "twin-manor.npz",
+      "source_sha256": "5b651a220e56059a37d4ebcadf352f2fc218f46a1aabe4df0430aefbd815fc1b",
+      "coordinate_space": "schematic paste-relative XYZ",
+      "box": [
+        0,
+        0,
+        0,
+        56,
+        37,
+        68
+      ],
+      "roof_pattern": "deepslate|blackstone",
+      "id": "twin-main-upper",
+      "label": "Twin manor taller wing selected upper roof",
+      "roof_box": [
+        23,
+        24,
+        8,
+        47,
+        37,
+        39
+      ],
+      "column_row": {
+        "axis": "z",
+        "fixed": 28,
+        "range": [
+          21,
+          31
+        ],
+        "y_range": [
+          10,
+          25
+        ]
+      },
+      "interpretation": "Three continuous vertical wood segments across 16 blocks of height; may pass through storeys and beams, not a proven single-floor column height. Upper roof crop excludes most lower eave and boundary overlap."
+    },
+    {
+      "source": "mctoolbox-twin-manor",
+      "model": "twin-manor.npz",
+      "source_sha256": "5b651a220e56059a37d4ebcadf352f2fc218f46a1aabe4df0430aefbd815fc1b",
+      "coordinate_space": "schematic paste-relative XYZ",
+      "box": [
+        0,
+        0,
+        0,
+        56,
+        37,
+        68
+      ],
+      "roof_pattern": "deepslate|blackstone",
+      "id": "twin-side-upper",
+      "label": "Twin manor perpendicular side wing selected upper roof",
+      "roof_box": [
+        7,
+        22,
+        41,
+        39,
+        33,
+        59
+      ],
+      "column_row": {
+        "axis": "x",
+        "fixed": 44,
+        "range": [
+          16,
+          31
+        ],
+        "y_range": [
+          10,
+          21
+        ]
+      },
+      "interpretation": "Selected four-column row with 5,5,5 spacing; 12-block continuous wood segments. Partial row, not the complete width bay count; selected roof joins the taller wing near its north edge."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "chinese-detail/1",
+  "kind": "bracket_panel",
+  "parameters": {
+    "half_span": 9,
+    "height": 9,
+    "drop": 4
+  }
+}

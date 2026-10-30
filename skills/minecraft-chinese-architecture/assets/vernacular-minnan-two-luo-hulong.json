@@ -1,0 +1,26 @@
+{
+  "schema": "chinese-vernacular/1",
+  "kind": "minnan_compound",
+  "palette": {
+    "wall": "minecraft:bricks",
+    "floor": "minecraft:stone_bricks",
+    "trim": "minecraft:cut_sandstone",
+    "roof": "minecraft:bricks",
+    "roof_stairs": "minecraft:brick_stairs",
+    "roof_slab": "minecraft:brick_slab"
+  },
+  "evidence": [
+    {
+      "source_id": "kinmen-house-types",
+      "relationship": "Source-informed spatial type; all block dimensions and furnishing are original choices."
+    },
+    {
+      "source_id": "huangcuo-hong-house-survey",
+      "relationship": "Comparison for independent side gate, narrow court, porch and guoshui; not a copy of the building or its later alterations."
+    }
+  ],
+  "parameters": {
+    "form": "two_luo",
+    "hulong": "east"
+  }
+}

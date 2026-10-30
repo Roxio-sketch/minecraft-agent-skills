@@ -1,0 +1,20 @@
+{
+  "schema": "chinese-regional/1",
+  "kind": "stilt",
+  "parameters": {
+    "lift": 4,
+    "bays_x": [
+      6,
+      8,
+      6
+    ],
+    "bays_z": [
+      6,
+      6
+    ],
+    "column_height": 6
+  },
+  "evidence": [
+    "Original spatial prototype. See regional-generation.md for observed source relationships and unmeasured design choices."
+  ]
+}

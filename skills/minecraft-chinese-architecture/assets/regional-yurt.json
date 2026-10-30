@@ -1,0 +1,13 @@
+{
+  "schema": "chinese-regional/1",
+  "kind": "yurt",
+  "parameters": {
+    "radius": 11,
+    "wall_height": 4,
+    "roof_rise": 5,
+    "crown_radius": 2
+  },
+  "evidence": [
+    "Original spatial prototype. See regional-generation.md for observed source relationships and unmeasured design choices."
+  ]
+}

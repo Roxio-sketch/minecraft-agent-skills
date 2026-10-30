@@ -1,0 +1,9 @@
+{
+  "schema": "chinese-detail/1",
+  "kind": "ridge_end",
+  "parameters": {
+    "half_span": 12,
+    "rise": 6,
+    "form": "swallowtail"
+  }
+}

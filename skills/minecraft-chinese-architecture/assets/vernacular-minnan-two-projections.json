@@ -1,0 +1,7 @@
+{
+  "schema": "chinese-vernacular/1",
+  "kind": "minnan_court",
+  "parameters": {"wing_rooms": 1, "ridge": "round"},
+  "palette": {"wall": "minecraft:bricks", "trim": "minecraft:smooth_sandstone", "floor": "minecraft:smooth_stone"},
+  "evidence": [{"source": "kinmen-house-types", "relation": "Three-bay main range and one room in each side range. Distinct plan from the four-projection preset; dimensions and plain ridge are authored.", "status": "source-informed original spatial prototype"}]
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "architecture-collection-import/1",
+  "source_directory": "E:\\建筑\\additional-sources\\peakscape\\extracted\\data\\peakscape\\structure\\garden_structure",
+  "files_found": 4,
+  "files_imported": 4,
+  "files_rejected": 0,
+  "distinct_geometry_count": 4,
+  "exact_geometry_duplicates": [],
+  "files": [
+    {
+      "relative_source": "wei_garden/wei_garden_part_1.nbt",
+      "source_sha256": "f8a8a6bccc659c18be469e94cb0045adb6ae5e8063a84ec389400ec8740db9f0",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\peakscape\\wei_garden\\wei_garden_part_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\peakscape\\wei_garden\\wei_garden_part_1.nbt.import.json",
+      "size_xyz": [
+        48,
+        23,
+        48
+      ],
+      "data_version": 4671,
+      "nonair_blocks": 9637,
+      "nonair_namespace_counts": {
+        "minecraft": 9637
+      },
+      "geometry_sha256": "eaf8f4199fe64adb549647822b356b68696d9b334b0a90094c81a542aec0a1a0",
+      "study_status": "measured_local"
+    },
+    {
+      "relative_source": "wei_garden/wei_garden_part_2.nbt",
+      "source_sha256": "1c9039d9d79220a3f1d1e040f905b35a0eeace487cf0196b04e0d518e6a3f412",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\peakscape\\wei_garden\\wei_garden_part_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\peakscape\\wei_garden\\wei_garden_part_2.nbt.import.json",
+      "size_xyz": [
+        48,
+        23,
+        48
+      ],
+      "data_version": 4671,
+      "nonair_blocks": 7013,
+      "nonair_namespace_counts": {
+        "minecraft": 7013
+      },
+      "geometry_sha256": "e0d460e47760ee5a58f78e3a2db00bcd2f1cf0f0951ed3419ee50a96d91ba621",
+      "study_status": "measured_local"
+    },
+    {
+      "relative_source": "wei_garden/wei_garden_part_3.nbt",
+      "source_sha256": "b7158334f3c87633b116a5cbe97ec64ee1c186130b7b458f74d74c15bc055efd",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\peakscape\\wei_garden\\wei_garden_part_3.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\peakscape\\wei_garden\\wei_garden_part_3.nbt.import.json",
+      "size_xyz": [
+        48,
+        11,
+        48
+      ],
+      "data_version": 4671,
+      "nonair_blocks": 22602,
+      "nonair_namespace_counts": {
+        "minecraft": 22602
+      },
+      "geometry_sha256": "2365c37d9cc2c032cbb40984e9fd0684b4ec483fbf8fddbd9cb0fa7d8ba30bd5",
+      "study_status": "measured_local"
+    },
+    {
+      "relative_source": "wei_garden/wei_garden_part_4.nbt",
+      "source_sha256": "d3c82447068ba3c073ae4f3f2a27b7b0bba9f1def80afecc8f0860bc1b782f8e",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\peakscape\\wei_garden\\wei_garden_part_4.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\peakscape\\wei_garden\\wei_garden_part_4.nbt.import.json",
+      "size_xyz": [
+        48,
+        11,
+        48
+      ],
+      "data_version": 4671,
+      "nonair_blocks": 19351,
+      "nonair_namespace_counts": {
+        "minecraft": 19351
+      },
+      "geometry_sha256": "2daa322e542ef24887e80843577fbd6a4d8d2dbe8b806bd6db49f85e9cd8bc9c",
+      "study_status": "measured_local"
+    }
+  ],
+  "limits": [
+    "File counts are not independent architectural styles or measured buildings.",
+    "Geometry deduplication ignores offsets, entities, block-entity payloads and unspecified-position semantics.",
+    "Attribution and permission must be registered separately; importer does not infer authorization from embedded metadata.",
+    "Multi-region or multi-palette files needing a selection are rejected here; import them explicitly with import_structure.py."
+  ]
+}

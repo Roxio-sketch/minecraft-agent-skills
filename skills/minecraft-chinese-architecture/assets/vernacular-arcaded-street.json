@@ -1,0 +1,6 @@
+{
+  "schema": "chinese-vernacular/1",
+  "kind": "arcaded_shophouse",
+  "parameters": {"shops": 3, "floors": 3, "module_width": 12, "arcade_depth": 5, "depth": 24, "floor_height": 7},
+  "evidence": [{"source": "guangzhou-qilou", "relation": "Bottom-floor shop setback, continuous sidewalk under upper dwellings. Source 2–3 metre setback is not converted into this original block scale.", "status": "source-informed original spatial prototype"}]
+}

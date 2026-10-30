@@ -1,0 +1,9 @@
+{
+  "schema": "chinese-detail/1",
+  "kind": "log_frame",
+  "parameters": {
+    "half_width": 8,
+    "half_depth": 6,
+    "height": 10
+  }
+}

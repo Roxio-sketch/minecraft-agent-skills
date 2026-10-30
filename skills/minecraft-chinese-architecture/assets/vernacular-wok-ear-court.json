@@ -1,0 +1,7 @@
+{
+  "schema": "chinese-vernacular/1",
+  "kind": "wok_ear_court",
+  "parameters": {"bay_width": 10, "main_depth": 12, "wing_depth": 6, "wing_room_width": 8, "court_extra": 8, "eave_height": 9, "roof_rise": 5, "ear_rise": 4},
+  "palette": {"wall": "minecraft:stone_bricks", "trim": "minecraft:white_concrete", "floor": "minecraft:smooth_stone"},
+  "evidence": [{"source": "guangdong-wok-ear", "relation": "Three rear bays and two front side ranges with raised end gables. Original geometry; not measured Daqitou construction or a fire-separation rating.", "status": "source-informed original spatial prototype"}]
+}

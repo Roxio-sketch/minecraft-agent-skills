@@ -1,0 +1,268 @@
+{
+  "schema": "architecture-collection-layout/1",
+  "tulou": {
+    "file_sha256": "7212e474f1aeabb6b07d7191f56d2adb99cf05c6f8d91e1e00bd1d12850801d1",
+    "materials": [
+      {
+        "base_id": "minecraft:packed_mud",
+        "voxel_count": 2996,
+        "bounds_xyz_inclusive": [
+          1,
+          7,
+          1,
+          45,
+          18,
+          45
+        ],
+        "counts_by_y": {
+          "7": 162,
+          "8": 307,
+          "9": 276,
+          "10": 250,
+          "11": 259,
+          "12": 251,
+          "13": 243,
+          "14": 247,
+          "15": 253,
+          "16": 242,
+          "17": 240,
+          "18": 266
+        }
+      },
+      {
+        "base_id": "dawnoftimebuilder:spruce_support_slab",
+        "voxel_count": 1508,
+        "bounds_xyz_inclusive": [
+          0,
+          10,
+          0,
+          46,
+          18,
+          46
+        ],
+        "counts_by_y": {
+          "10": 509,
+          "14": 432,
+          "18": 567
+        }
+      }
+    ],
+    "upper_roof_cross_section": {
+      "z": 23,
+      "query_y": [
+        19,
+        20
+      ],
+      "selected_roof_x": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "central_no_selected_roof_x": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "stair_material_26_neighbor_candidates": [
+      {
+        "box_xyz_inclusive": [
+          20,
+          7,
+          2,
+          20,
+          9,
+          6
+        ],
+        "count": 8
+      },
+      {
+        "box_xyz_inclusive": [
+          8,
+          7,
+          9,
+          11,
+          10,
+          12
+        ],
+        "count": 8
+      },
+      {
+        "box_xyz_inclusive": [
+          34,
+          7,
+          8,
+          37,
+          10,
+          11
+        ],
+        "count": 8
+      },
+      {
+        "box_xyz_inclusive": [
+          40,
+          7,
+          20,
+          44,
+          9,
+          20
+        ],
+        "count": 8
+      },
+      {
+        "box_xyz_inclusive": [
+          2,
+          7,
+          26,
+          6,
+          9,
+          26
+        ],
+        "count": 8
+      },
+      {
+        "box_xyz_inclusive": [
+          35,
+          7,
+          34,
+          38,
+          10,
+          37
+        ],
+        "count": 8
+      },
+      {
+        "box_xyz_inclusive": [
+          9,
+          7,
+          35,
+          12,
+          10,
+          38
+        ],
+        "count": 8
+      },
+      {
+        "box_xyz_inclusive": [
+          26,
+          7,
+          40,
+          26,
+          9,
+          44
+        ],
+        "count": 8
+      },
+      {
+        "box_xyz_inclusive": [
+          8,
+          11,
+          9,
+          11,
+          14,
+          12
+        ],
+        "count": 8
+      },
+      {
+        "box_xyz_inclusive": [
+          34,
+          11,
+          8,
+          37,
+          14,
+          11
+        ],
+        "count": 8
+      },
+      {
+        "box_xyz_inclusive": [
+          35,
+          11,
+          34,
+          38,
+          14,
+          37
+        ],
+        "count": 8
+      },
+      {
+        "box_xyz_inclusive": [
+          9,
+          11,
+          35,
+          12,
+          14,
+          38
+        ],
+        "count": 8
+      }
+    ],
+    "caution": "Connected stair-shaped blocks can be furniture. Only annotated repeated diagonal stair zones are treated as circulation clues, not verified player paths."
+  },
+  "ricefarm": {
+    "file_sha256": "829cab045eccc4f78452fd1c92745cbb98fe9881a7e91bf3f9a665aaf11bf4d0",
+    "variant": "release_0.0.4",
+    "rice_lower_voxels": 292,
+    "rice_upper_voxels": 292,
+    "all_bottom_top_pairs_valid": true,
+    "distinct_xz_roots": 292,
+    "base_y_counts": {
+      "2": 120,
+      "3": 93,
+      "4": 79
+    },
+    "rice_all_bounds_xyz_inclusive": [
+      2,
+      2,
+      3,
+      22,
+      5,
+      35
+    ],
+    "explicit_water_id_voxels": 85,
+    "waterlogged_rice_bottom_voxels": 292,
+    "caution": "Explicit water blocks exclude waterlogged plants and other carriers. Rice block halves must not be counted as separate plants."
+  }
+}

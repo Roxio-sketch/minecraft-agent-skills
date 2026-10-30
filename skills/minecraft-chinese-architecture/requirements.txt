@@ -1,0 +1,4 @@
+numpy==2.2.6
+Pillow==12.3.0
+scipy==1.15.3
+nbtlib==2.0.4

@@ -1,0 +1,11 @@
+{
+  "schema": "architecture-annotations/1",
+  "status": "Coordinates selected by inspecting offline front, side and top voxel projections; labels are analyst interpretations.",
+  "samples": [
+    {"id":"luoyun-main","source":"luoyun","label":"落云宗中轴北端三层长殿","box":[230,350,-1530,443,500,-1410],"roof_box":[245,458,-1520,429,495,-1430],"roof_pattern":"tuff|deepslate","column_row":{"axis":"x","fixed":-1505,"range":[258,318],"y_range":[383,397]},"interpretation":"三层檐线与连续柱距；裁剪含左右配楼边缘，不能将整体裁剪当单栋尺寸。"},
+    {"id":"luoyun-pavilion","source":"luoyun","label":"落云宗东侧多层方亭","box":[516,225,-855,592,335,-779],"roof_box":[520,297,-850,588,330,-785],"roof_pattern":"tuff|deepslate","column_row":{"axis":"x","fixed":-836,"range":[535,573],"y_range":[237,257]},"interpretation":"多层方形屋面与四向近似对称；屋面区域可能跨两层，数据不作为单坡拟合。"},
+    {"id":"huangfeng-hall","source":"huangfeng","label":"黄枫谷东侧双层楼阁","box":[1075,380,785,1147,465,845],"roof_box":[1080,438,792,1142,454,839],"roof_pattern":"blackstone|deepslate","column_row":{"axis":"x","fixed":803,"range":[1091,1131],"y_range":[427,436]},"depth_row":{"axis":"z","fixed":1091,"range":[803,827],"y_range":[427,436]},"interpretation":"上层木柱呈五开间、三进深开间；深色混合半砖屋面、红木墙身与浅色装饰。"},
+    {"id":"huangfeng-north","source":"huangfeng","label":"黄枫谷北端楼阁组合","box":[470,240,100,600,330,205],"roof_box":[470,304,100,600,325,205],"roof_pattern":"blackstone|deepslate","column_row":{"axis":"x","fixed":118,"range":[507,547],"y_range":[293,302]},"interpretation":"多个楼阁组成组合；主楼上层柱距与东侧双层楼阁重复，不能把重复模块当独立风格样本。"},
+    {"id":"xutian-module","source":"xutian","label":"虚天殿北部模块区楼阁上部","box":[150,455,-401,198,510,-361],"roof_box":[150,485,-401,198,506,-361],"roof_pattern":"bamboo|polished_granite","column_row":{"axis":"x","fixed":-394,"range":[156,192],"y_range":[472,482]},"interpretation":"暖色屋面、抬升檐角、竖向框架；这是局部上部截取，不用于推断完整建筑层数。"}
+  ]
+}

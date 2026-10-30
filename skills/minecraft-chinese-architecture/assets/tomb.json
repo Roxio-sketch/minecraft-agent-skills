@@ -1,0 +1,9 @@
+{
+  "schema": "chinese-infrastructure/1",
+  "kind": "tomb",
+  "parameters": {
+    "depth": 9,
+    "half_width": 18,
+    "chamber_depth": 12
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "architecture-layout-annotations/1",
+  "samples": [
+    {
+      "id": "hui-house",
+      "source": "more-chinese-structures",
+      "model": "village/hui/plains_mid_house_1.nbt.npz",
+      "source_sha256": "268c60d83522be02bf7430cf9a4d7cf53b44765df5d107d3ec5434ccf79f4749",
+      "queries": [
+        {
+          "id": "characteristic-material",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            10,
+            14
+          ],
+          "pattern": "^minecraft:deepslate_tile"
+        }
+      ],
+      "interpretation": "Author-labelled game adaptation. Material counts and paired doors do not establish historical typology, load-bearing behavior or free volume for sparse sources."
+    },
+    {
+      "id": "ganlan-house",
+      "source": "more-chinese-structures",
+      "model": "village/ganlan/buildings/ganlan_house_2.nbt.npz",
+      "source_sha256": "4abe35a09ee2a976e5f4c3ba039cacf481ed3fb5969debefe9e1e5f976c81cb2",
+      "queries": [
+        {
+          "id": "characteristic-material",
+          "box": [
+            0,
+            0,
+            0,
+            17,
+            14,
+            13
+          ],
+          "pattern": "^minecraft:oak_fence(?:\\[|$)"
+        },
+        {
+          "id": "lower-fence-support-band",
+          "box": [
+            0,
+            0,
+            0,
+            17,
+            1,
+            13
+          ],
+          "pattern": "^minecraft:oak_fence(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Author-labelled game adaptation. Material counts and paired doors do not establish historical typology, load-bearing behavior or free volume for sparse sources."
+    },
+    {
+      "id": "yaodong-house",
+      "source": "more-chinese-structures",
+      "model": "village/grotto/buildings/yaodong_4.nbt.npz",
+      "source_sha256": "2943373b2dd7337e35b6c35d315493871e1cd42253b0b2edde0da57439491fae",
+      "queries": [
+        {
+          "id": "characteristic-material",
+          "box": [
+            0,
+            0,
+            0,
+            22,
+            16,
+            32
+          ],
+          "pattern": "^minecraft:mud_bricks(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Author-labelled game adaptation. Material counts and paired doors do not establish historical typology, load-bearing behavior or free volume for sparse sources."
+    },
+    {
+      "id": "yurt-house",
+      "source": "more-chinese-structures",
+      "model": "village/yurt/buildings/yurt_01.nbt.npz",
+      "source_sha256": "eeb825d34a547b725668278183353f2eaf55fbac648b5b65c8f3e4d99acc3661",
+      "queries": [
+        {
+          "id": "characteristic-material",
+          "box": [
+            0,
+            0,
+            0,
+            28,
+            18,
+            27
+          ],
+          "pattern": "^minecraft:.*quartz"
+        },
+        {
+          "id": "upper-quartz-band",
+          "box": [
+            0,
+            9,
+            0,
+            28,
+            14,
+            27
+          ],
+          "pattern": "^minecraft:.*quartz"
+        }
+      ],
+      "interpretation": "Author-labelled game adaptation. Material counts and paired doors do not establish historical typology, load-bearing behavior or free volume for sparse sources."
+    }
+  ]
+}

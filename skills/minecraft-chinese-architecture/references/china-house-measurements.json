@@ -1,0 +1,320 @@
+{
+  "schema": "architecture-measured-components/1",
+  "method": "Explicit annotated boxes and material filters, continuous wood segments; no automatic semantic claims.",
+  "samples": [
+    {
+      "id": "china-house-lower",
+      "label": "Cherry house lower roof material band",
+      "source": "createmod-china-house",
+      "source_sha256": "c458bde3e2175659ba22cd8861e6a5e1ff1d7e488ab157ac76e70c3949f50420",
+      "coordinate_space": "Java structure local XYZ, sparse omitted positions represented as air for geometry only",
+      "sample_box": [
+        0,
+        0,
+        0,
+        28,
+        21,
+        22
+      ],
+      "roof_query_box": [
+        0,
+        5,
+        0,
+        28,
+        8,
+        22
+      ],
+      "roof_material_envelope": {
+        "material_filter": "minecraft:cherry_(stairs|slab|planks)",
+        "bounds_xyz_inclusive": [
+          1,
+          6,
+          1,
+          27,
+          7,
+          21
+        ],
+        "span_xz": [
+          27,
+          21
+        ],
+        "y_range": [
+          6,
+          7
+        ],
+        "material_counts": {
+          "minecraft:cherry_stairs": 152,
+          "minecraft:cherry_planks": 88,
+          "minecraft:cherry_slab": 84
+        },
+        "material_fraction": {
+          "minecraft:cherry_stairs": 0.469136,
+          "minecraft:cherry_planks": 0.271605,
+          "minecraft:cherry_slab": 0.259259
+        },
+        "center_x_coordinate": 14,
+        "center_z_coordinate": 11,
+        "x_profile": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            24,
+            7
+          ],
+          [
+            25,
+            6
+          ],
+          [
+            26,
+            6
+          ],
+          [
+            27,
+            6
+          ]
+        ],
+        "z_profile": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            18,
+            7
+          ],
+          [
+            19,
+            6
+          ],
+          [
+            20,
+            6
+          ],
+          [
+            21,
+            6
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Lower cherry material band. Dark oak trim and beams are excluded; this is not the full roof assembly."
+    },
+    {
+      "id": "china-house-upper",
+      "label": "Cherry house upper roof material band",
+      "source": "createmod-china-house",
+      "source_sha256": "c458bde3e2175659ba22cd8861e6a5e1ff1d7e488ab157ac76e70c3949f50420",
+      "coordinate_space": "Java structure local XYZ, sparse omitted positions represented as air for geometry only",
+      "sample_box": [
+        0,
+        0,
+        0,
+        28,
+        21,
+        22
+      ],
+      "roof_query_box": [
+        0,
+        13,
+        0,
+        28,
+        21,
+        22
+      ],
+      "roof_material_envelope": {
+        "material_filter": "minecraft:cherry_(stairs|slab|planks)",
+        "bounds_xyz_inclusive": [
+          3,
+          14,
+          3,
+          25,
+          19,
+          19
+        ],
+        "span_xz": [
+          23,
+          17
+        ],
+        "y_range": [
+          14,
+          19
+        ],
+        "material_counts": {
+          "minecraft:cherry_stairs": 282,
+          "minecraft:cherry_slab": 106,
+          "minecraft:cherry_planks": 42
+        },
+        "material_fraction": {
+          "minecraft:cherry_stairs": 0.655814,
+          "minecraft:cherry_slab": 0.246512,
+          "minecraft:cherry_planks": 0.097674
+        },
+        "center_x_coordinate": 14,
+        "center_z_coordinate": 11,
+        "x_profile": [
+          [
+            3,
+            14
+          ],
+          [
+            4,
+            14
+          ],
+          [
+            5,
+            14
+          ],
+          [
+            6,
+            15
+          ],
+          [
+            7,
+            19
+          ],
+          [
+            8,
+            17
+          ],
+          [
+            20,
+            17
+          ],
+          [
+            21,
+            19
+          ],
+          [
+            22,
+            15
+          ],
+          [
+            23,
+            14
+          ],
+          [
+            24,
+            14
+          ],
+          [
+            25,
+            14
+          ]
+        ],
+        "z_profile": [
+          [
+            3,
+            14
+          ],
+          [
+            4,
+            14
+          ],
+          [
+            5,
+            14
+          ],
+          [
+            6,
+            15
+          ],
+          [
+            7,
+            16
+          ],
+          [
+            8,
+            17
+          ],
+          [
+            9,
+            18
+          ],
+          [
+            10,
+            19
+          ],
+          [
+            12,
+            19
+          ],
+          [
+            13,
+            18
+          ],
+          [
+            14,
+            17
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            15
+          ],
+          [
+            17,
+            14
+          ],
+          [
+            18,
+            14
+          ],
+          [
+            19,
+            14
+          ]
+        ]
+      },
+      "column_rows": {
+        "column_row": {
+          "axis": "z",
+          "fixed_coordinate": 13,
+          "wood_segment_y_range": [
+            9,
+            13
+          ],
+          "wood_segment_height": 5,
+          "positions": [
+            11,
+            15
+          ],
+          "spacings": [
+            4
+          ],
+          "interpretation": "Continuous vertical wood over annotated height, manually selected as a column row."
+        }
+      },
+      "interpretation": "Upper cherry material band. The dark oak ridge and trim are absent from this filter, so gaps in the material profile are not roof holes. The selected interior wood segments are only two points, not a full exterior bay grid."
+    }
+  ]
+}

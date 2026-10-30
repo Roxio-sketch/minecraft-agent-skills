@@ -1,0 +1,19 @@
+{
+  "schema": "chinese-building/1",
+  "kind": "hall",
+  "bays_x": [6, 8, 6],
+  "bays_z": [6, 6],
+  "roof": {"form": "hip_and_gable", "rise": 6, "curve": 1.5, "uplift": 1, "gable_inset": 3},
+  "palette": {
+    "roof": "minecraft:cherry_planks",
+    "roof_stairs": "minecraft:cherry_stairs",
+    "roof_slab": "minecraft:cherry_slab",
+    "trim": "minecraft:dark_oak_planks",
+    "wall": "minecraft:white_terracotta"
+  },
+  "rule_status": "material_relationship_informed_original_geometry",
+  "evidence": [
+    {"source": "createmod-china-house", "observation": "Cherry roof materials, dark wood trim and pale walls contrast across layered rooflines."},
+    {"design_choice": "This new vanilla single-storey hall uses authored column spacing, height, roof and wall geometry. It neither copies the two-level source nor converts its modded components."}
+  ]
+}

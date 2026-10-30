@@ -1,0 +1,1521 @@
+{
+  "schema": "chinese-architecture-coverage/1",
+  "updated": "2026-10-29",
+  "status": "verified_local_checkpoint_with_explicit_limits",
+  "not_exhaustive": true,
+  "counts_are_not_completion_percentages": true,
+  "source_registry": "sources.json",
+  "entries": [
+    {
+      "id": "hip",
+      "group": "roof",
+      "label": "庑殿形态",
+      "sample_evidence": "missing",
+      "implementation": "authored_prototype",
+      "verification": "offline",
+      "evidence": [
+        "component-generation.md",
+        "../scripts/roof_kernel.py",
+        "../scripts/test_components.py"
+      ],
+      "next_action": "Add source roof annotations and shape-aware/game validation; do not infer historical reconstruction from generator name."
+    },
+    {
+      "id": "hip_and_gable",
+      "group": "roof",
+      "label": "歇山形态",
+      "sample_evidence": "missing",
+      "implementation": "authored_prototype",
+      "verification": "offline",
+      "evidence": [
+        "component-generation.md",
+        "../scripts/roof_kernel.py",
+        "../scripts/test_components.py"
+      ],
+      "next_action": "Add source roof annotations and shape-aware/game validation; do not infer historical reconstruction from generator name."
+    },
+    {
+      "id": "overhanging_gable",
+      "group": "roof",
+      "label": "悬山形态",
+      "sample_evidence": "missing",
+      "implementation": "authored_prototype",
+      "verification": "offline",
+      "evidence": [
+        "component-generation.md",
+        "../scripts/roof_kernel.py",
+        "../scripts/test_components.py"
+      ],
+      "next_action": "Add source roof annotations and shape-aware/game validation; do not infer historical reconstruction from generator name."
+    },
+    {
+      "id": "flush_gable",
+      "group": "roof",
+      "label": "硬山形态",
+      "sample_evidence": "missing",
+      "implementation": "authored_prototype",
+      "verification": "offline",
+      "evidence": [
+        "component-generation.md",
+        "../scripts/roof_kernel.py",
+        "../scripts/test_components.py"
+      ],
+      "next_action": "Add source roof annotations and shape-aware/game validation; do not infer historical reconstruction from generator name."
+    },
+    {
+      "id": "pyramidal",
+      "group": "roof",
+      "label": "方攒尖形态",
+      "sample_evidence": "missing",
+      "implementation": "authored_prototype",
+      "verification": "offline",
+      "evidence": [
+        "component-generation.md",
+        "../scripts/roof_kernel.py",
+        "../scripts/test_components.py"
+      ],
+      "next_action": "Add source roof annotations and shape-aware/game validation; do not infer historical reconstruction from generator name."
+    },
+    {
+      "id": "barrel_gable",
+      "group": "roof",
+      "label": "卷棚形态",
+      "sample_evidence": "missing",
+      "implementation": "authored_prototype",
+      "verification": "offline",
+      "evidence": [
+        "component-generation.md",
+        "../scripts/roof_kernel.py",
+        "../scripts/test_components.py"
+      ],
+      "next_action": "Add source roof annotations and shape-aware/game validation; do not infer historical reconstruction from generator name."
+    },
+    {
+      "id": "polygonal_pyramidal",
+      "group": "roof",
+      "label": "六角/八角/圆攒尖",
+      "sample_evidence": "missing",
+      "implementation": "authored_landmark_or_roof_component",
+      "verification": "offline",
+      "evidence": [
+        "landmarks-and-details.md"
+      ],
+      "next_action": "Extend measured source framing and target-game checks; geometric prototypes are not historic construction."
+    },
+    {
+      "id": "double_eaves",
+      "group": "roof",
+      "label": "重檐与层檐组合",
+      "sample_evidence": "partial_visual_or_measured",
+      "implementation": "authored_single_storey_double_eaves_and_multistorey_eaves",
+      "verification": "offline",
+      "evidence": [
+        "circulation-generation.md",
+        "china-house-study.md",
+        "detail-generation.md",
+        "../scripts/generate_detail.py",
+        "../scripts/test_expanded_pipeline.py"
+      ],
+      "next_action": "具体历史重檐体系需测绘、节点和目标游戏验证。",
+      "implementation_scope": "实际单层双檐与多层层檐分别生成、分别计数。"
+    },
+    {
+      "id": "cross_roof",
+      "group": "roof",
+      "label": "十字/丁字交接屋顶",
+      "sample_evidence": "missing",
+      "implementation": "authored_landmark_or_roof_component",
+      "verification": "offline",
+      "evidence": [
+        "landmarks-and-details.md"
+      ],
+      "next_action": "Extend measured source framing and target-game checks; geometric prototypes are not historic construction."
+    },
+    {
+      "id": "lu_ding",
+      "group": "roof",
+      "label": "盝顶",
+      "sample_evidence": "missing",
+      "implementation": "authored_landmark_or_roof_component",
+      "verification": "offline",
+      "evidence": [
+        "landmarks-and-details.md"
+      ],
+      "next_action": "Extend measured source framing and target-game checks; geometric prototypes are not historic construction."
+    },
+    {
+      "id": "fan_roof",
+      "group": "roof",
+      "label": "扇面屋顶",
+      "sample_evidence": "missing",
+      "implementation": "authored_landmark_or_roof_component",
+      "verification": "offline",
+      "evidence": [
+        "landmarks-and-details.md"
+      ],
+      "next_action": "Extend measured source framing and target-game checks; geometric prototypes are not historic construction."
+    },
+    {
+      "id": "hard_gable_firewall",
+      "group": "roof",
+      "label": "封火山墙与马头墙",
+      "sample_evidence": "missing",
+      "implementation": "authored_distinct_regional_spatial_prototype",
+      "verification": "offline",
+      "evidence": [
+        "regional-generation.md"
+      ],
+      "next_action": "Expand regional subtypes and measured carpentry; verify target-game collision and historical cases separately."
+    },
+    {
+      "id": "regional_roof_end",
+      "group": "roof",
+      "label": "地方屋脊与山墙端部",
+      "sample_evidence": "missing",
+      "implementation": "authored_abstract_ridge_end_not_ranked_ornaments",
+      "verification": "offline",
+      "evidence": [
+        "detail-generation.md",
+        "../assets/detail-ridge-end.json"
+      ],
+      "next_action": "指定地域或正吻/垂兽/戗兽时，补具体位置、时代和构件图。",
+      "implementation_scope": "放大的原创分叉上扬与抽象端饰，未实现完整历史脊兽谱。"
+    },
+    {
+      "id": "uniform_bays",
+      "group": "structure",
+      "label": "等距柱网",
+      "sample_evidence": "measured_local",
+      "implementation": "tested_component",
+      "verification": "offline",
+      "evidence": [
+        "measured-components.json",
+        "temple-measurements.json",
+        "component-generation.md"
+      ],
+      "next_action": "Acquire a clearly classified source and measure the relevant component before deriving rules."
+    },
+    {
+      "id": "nonuniform_bays",
+      "group": "structure",
+      "label": "异距与中央加宽柱网",
+      "sample_evidence": "measured_local",
+      "implementation": "tested_component",
+      "verification": "offline",
+      "evidence": [
+        "measured-components.json",
+        "temple-measurements.json",
+        "component-generation.md"
+      ],
+      "next_action": "Acquire a clearly classified source and measure the relevant component before deriving rules."
+    },
+    {
+      "id": "wood_height",
+      "group": "structure",
+      "label": "连续柱材高度",
+      "sample_evidence": "measured_local",
+      "implementation": "tested_component",
+      "verification": "offline",
+      "evidence": [
+        "measured-components.json",
+        "temple-measurements.json",
+        "component-generation.md"
+      ],
+      "next_action": "Acquire a clearly classified source and measure the relevant component before deriving rules."
+    },
+    {
+      "id": "eave_overhang",
+      "group": "structure",
+      "label": "出檐与柱线关系",
+      "sample_evidence": "measured_local",
+      "implementation": "tested_component",
+      "verification": "offline",
+      "evidence": [
+        "measured-components.json",
+        "temple-measurements.json",
+        "component-generation.md"
+      ],
+      "next_action": "Acquire a clearly classified source and measure the relevant component before deriving rules."
+    },
+    {
+      "id": "platform",
+      "group": "structure",
+      "label": "台基与入门台阶",
+      "sample_evidence": "missing",
+      "implementation": "authored_prototype",
+      "verification": "offline",
+      "evidence": [
+        "../scripts/generate_building.py"
+      ],
+      "next_action": "Acquire a clearly classified source and measure the relevant component before deriving rules."
+    },
+    {
+      "id": "perimeter_columns",
+      "group": "structure",
+      "label": "开敞亭周边柱",
+      "sample_evidence": "missing",
+      "implementation": "authored_prototype",
+      "verification": "offline",
+      "evidence": [
+        "../scripts/generate_building.py"
+      ],
+      "next_action": "Acquire a clearly classified source and measure the relevant component before deriving rules."
+    },
+    {
+      "id": "simple_lattice",
+      "group": "structure",
+      "label": "基础横竖窗格",
+      "sample_evidence": "missing",
+      "implementation": "authored_four_infill_patterns_for_compact_bays",
+      "verification": "offline",
+      "evidence": [
+        "component-generation.md",
+        "../scripts/test_compact_facades.py"
+      ],
+      "next_action": "Historical window typologies and real texture/interaction remain separate validation work."
+    },
+    {
+      "id": "dougong",
+      "group": "structure",
+      "label": "斗拱与铺作/斗科体系",
+      "sample_evidence": "missing",
+      "implementation": "authored_teaching_diagram_not_historic_joinery",
+      "verification": "offline",
+      "evidence": [
+        "landmarks-and-details.md",
+        "carpentry-and-roof-evidence.md"
+      ],
+      "next_action": "Select a measured historic example with dates and joints; do not interpret program tiers as historic modular counts."
+    },
+    {
+      "id": "beam_frames",
+      "group": "structure",
+      "label": "抬梁/穿斗/井干构架",
+      "sample_evidence": "missing",
+      "implementation": "authored_beam_post_tie_and_log_frame_diagrams",
+      "verification": "offline",
+      "evidence": [
+        "landmarks-and-details.md",
+        "carpentry-and-roof-evidence.md",
+        "detail-generation.md",
+        "../assets/detail-log-frame.json"
+      ],
+      "next_action": "按特定实例补横架测绘、榫卯和模数关系。",
+      "implementation_scope": "抬梁、穿斗和井干关系示意可生成；不包含历史节点受力计算。"
+    },
+    {
+      "id": "column_special",
+      "group": "structure",
+      "label": "梭柱/侧脚/生起等具体做法",
+      "sample_evidence": "missing",
+      "implementation": "authored_enlarged_column_profile_and_plinth",
+      "verification": "offline",
+      "evidence": [
+        "detail-generation.md",
+        "../assets/detail-column-base.json"
+      ],
+      "next_action": "根据柱位和测绘复核侧脚方向、生起规律及柱础尺寸。",
+      "implementation_scope": "直柱、收分、鼓形、可调倾移及独立柱础；不是侧脚生起法式或真实地栿复原。"
+    },
+    {
+      "id": "roof_purlins",
+      "group": "structure",
+      "label": "檩椽、望板与屋面分层",
+      "sample_evidence": "missing",
+      "implementation": "authored_teaching_diagram_not_historic_joinery",
+      "verification": "offline",
+      "evidence": [
+        "landmarks-and-details.md",
+        "carpentry-and-roof-evidence.md"
+      ],
+      "next_action": "Select a measured historic example with dates and joints; do not interpret program tiers as historic modular counts."
+    },
+    {
+      "id": "column_base",
+      "group": "structure",
+      "label": "柱础/础石与地栿",
+      "sample_evidence": "missing",
+      "implementation": "authored_enlarged_column_profile_and_plinth",
+      "verification": "offline",
+      "evidence": [
+        "detail-generation.md",
+        "../assets/detail-column-base.json"
+      ],
+      "next_action": "根据柱位和测绘复核侧脚方向、生起规律及柱础尺寸。",
+      "implementation_scope": "直柱、收分、鼓形、可调倾移及独立柱础；不是侧脚生起法式或真实地栿复原。"
+    },
+    {
+      "id": "bracket_panels",
+      "group": "structure",
+      "label": "雀替、挂落、垂花等",
+      "sample_evidence": "missing",
+      "implementation": "authored_abstract_opening_and_hanging_panels",
+      "verification": "offline",
+      "evidence": [
+        "detail-generation.md",
+        "../assets/detail-bracket-panel.json"
+      ],
+      "next_action": "需要雀替、垂花或特定雕刻题材时补实例和放大构件图。",
+      "implementation_scope": "梁端三角托饰与局部挂落几何，保留中间开口。"
+    },
+    {
+      "id": "doors_windows",
+      "group": "structure",
+      "label": "隔扇、槛窗、支摘窗、漏窗",
+      "sample_evidence": "missing",
+      "implementation": "authored_four_infill_patterns_for_compact_bays",
+      "verification": "offline",
+      "evidence": [
+        "component-generation.md",
+        "../scripts/test_compact_facades.py"
+      ],
+      "next_action": "Historical window typologies and real texture/interaction remain separate validation work."
+    },
+    {
+      "id": "balustrades",
+      "group": "structure",
+      "label": "栏杆、坐凳与临水防护",
+      "sample_evidence": "missing",
+      "implementation": "authored_corridor_and_stair_guards",
+      "verification": "offline",
+      "evidence": [
+        "circulation-generation.md"
+      ],
+      "next_action": "Add source-derived railing styles, water-edge supports and live fall checks."
+    },
+    {
+      "id": "ridge_ornaments",
+      "group": "structure",
+      "label": "正吻、垂兽、戗兽及脊饰",
+      "sample_evidence": "missing",
+      "implementation": "authored_abstract_ridge_end_not_ranked_ornaments",
+      "verification": "offline",
+      "evidence": [
+        "detail-generation.md",
+        "../assets/detail-ridge-end.json"
+      ],
+      "next_action": "指定地域或正吻/垂兽/戗兽时，补具体位置、时代和构件图。",
+      "implementation_scope": "放大的原创分叉上扬与抽象端饰，未实现完整历史脊兽谱。"
+    },
+    {
+      "id": "tile_course",
+      "group": "structure",
+      "label": "筒瓦板瓦、滴水与瓦当",
+      "sample_evidence": "missing",
+      "implementation": "authored_enlarged_curved_tile_courses",
+      "verification": "offline",
+      "evidence": [
+        "detail-generation.md",
+        "../assets/detail-tile-course.json"
+      ],
+      "next_action": "真实筒瓦板瓦、瓦当和滴水形制须按特定建筑补证。",
+      "implementation_scope": "放大弧面瓦列、通道和抽象端部；小尺度屋面继续用半砖/楼梯。"
+    },
+    {
+      "id": "wall_join",
+      "group": "structure",
+      "label": "砖石墙体、转角与墙顶",
+      "sample_evidence": "missing",
+      "implementation": "authored_wall_corner_bond_color_and_coping",
+      "verification": "offline",
+      "evidence": [
+        "detail-generation.md",
+        "../assets/detail-wall-corner.json"
+      ],
+      "next_action": "真实砌法、墙体收分和局部雕饰需有实例。",
+      "implementation_scope": "L形厚墙、转角、压顶与错列配色；未模拟砖石砌筑受力。"
+    },
+    {
+      "id": "ceiling",
+      "group": "structure",
+      "label": "藻井、天花与室内顶棚",
+      "sample_evidence": "missing",
+      "implementation": "authored_teaching_diagram_not_historic_joinery",
+      "verification": "offline",
+      "evidence": [
+        "landmarks-and-details.md",
+        "carpentry-and-roof-evidence.md"
+      ],
+      "next_action": "Select a measured historic example with dates and joints; do not interpret program tiers as historic modular counts."
+    },
+    {
+      "id": "single_hall",
+      "group": "building",
+      "label": "单层厅堂/大殿",
+      "sample_evidence": "partial_visual_or_measured",
+      "implementation": "authored_prototype",
+      "verification": "offline",
+      "evidence": [
+        "design-rules.md",
+        "component-generation.md"
+      ],
+      "next_action": "Acquire a clearly classified source and measure the relevant component before deriving rules."
+    },
+    {
+      "id": "square_pavilion",
+      "group": "building",
+      "label": "开放方亭",
+      "sample_evidence": "partial_visual_or_measured",
+      "implementation": "authored_prototype",
+      "verification": "offline",
+      "evidence": [
+        "design-rules.md",
+        "component-generation.md"
+      ],
+      "next_action": "Acquire a clearly classified source and measure the relevant component before deriving rules."
+    },
+    {
+      "id": "multistorey_hall",
+      "group": "building",
+      "label": "多层楼阁",
+      "sample_evidence": "partial_visual_or_measured",
+      "implementation": "authored_prototype",
+      "verification": "offline",
+      "evidence": [
+        "circulation-generation.md",
+        "../scripts/test_circulation.py"
+      ],
+      "next_action": "Add measured historic/regional floor circulation and in-game walking verification."
+    },
+    {
+      "id": "sect_complex",
+      "group": "building",
+      "label": "仙侠宗门组合",
+      "sample_evidence": "partial_visual_or_measured",
+      "implementation": "authored_graded_terrain_and_building_composition",
+      "verification": "offline",
+      "evidence": [
+        "design-rules.md",
+        "sources.json",
+        "terrain-complex-generation.md"
+      ],
+      "next_action": "Add target-world preservation, drainage and railings; verify player collisions and historical site layout separately."
+    },
+    {
+      "id": "palace",
+      "group": "building",
+      "label": "宫殿与配殿",
+      "sample_evidence": "missing",
+      "implementation": "authored_distinct_furnished_functional_compounds",
+      "verification": "offline",
+      "evidence": [
+        "functional-generation.md",
+        "historical-evidence.md",
+        "../scripts/generate_functional.py",
+        "../scripts/test_functional.py"
+      ],
+      "next_action": "按具体年代、机构与建筑资料调整仪式、门序和房间功能；通用预设不是历史复原。",
+      "implementation_scope": "不同轴线、侧翼、工作、居住和服务角色，内部使用区和设施目标均检查通路。",
+      "historical_reference_ids": [
+        "imperial-palaces"
+      ]
+    },
+    {
+      "id": "ancestral_hall",
+      "group": "building",
+      "label": "祠堂与祭祀空间",
+      "sample_evidence": "missing",
+      "implementation": "authored_distinct_furnished_functional_compounds",
+      "verification": "offline",
+      "evidence": [
+        "functional-generation.md",
+        "historical-evidence.md",
+        "../scripts/generate_functional.py",
+        "../scripts/test_functional.py"
+      ],
+      "next_action": "按具体年代、机构与建筑资料调整仪式、门序和房间功能；通用预设不是历史复原。",
+      "implementation_scope": "不同轴线、侧翼、工作、居住和服务角色，内部使用区和设施目标均检查通路。"
+    },
+    {
+      "id": "temple_complex",
+      "group": "building",
+      "label": "佛寺院落及功能空间",
+      "sample_evidence": "missing",
+      "implementation": "authored_distinct_furnished_functional_compounds",
+      "verification": "offline",
+      "evidence": [
+        "functional-generation.md",
+        "historical-evidence.md",
+        "../scripts/generate_functional.py",
+        "../scripts/test_functional.py"
+      ],
+      "next_action": "按具体年代、机构与建筑资料调整仪式、门序和房间功能；通用预设不是历史复原。",
+      "implementation_scope": "不同轴线、侧翼、工作、居住和服务角色，内部使用区和设施目标均检查通路。",
+      "historical_reference_ids": [
+        "dengfeng"
+      ]
+    },
+    {
+      "id": "daoist_complex",
+      "group": "building",
+      "label": "道观与宫观",
+      "sample_evidence": "missing",
+      "implementation": "authored_distinct_furnished_functional_compounds",
+      "verification": "offline",
+      "evidence": [
+        "functional-generation.md",
+        "historical-evidence.md",
+        "../scripts/generate_functional.py",
+        "../scripts/test_functional.py"
+      ],
+      "next_action": "按具体年代、机构与建筑资料调整仪式、门序和房间功能；通用预设不是历史复原。",
+      "implementation_scope": "不同轴线、侧翼、工作、居住和服务角色，内部使用区和设施目标均检查通路。",
+      "historical_reference_ids": [
+        "wudang"
+      ]
+    },
+    {
+      "id": "gate_hall",
+      "group": "building",
+      "label": "山门、仪门与垂花门",
+      "sample_evidence": "missing",
+      "implementation": "authored_through_gate_pavilion_in_enclosure",
+      "verification": "offline",
+      "evidence": [
+        "functional-generation.md",
+        "multi-court-generation.md"
+      ],
+      "next_action": "按所需门类补柱架、门扇、围墙接口与具体装饰。",
+      "implementation_scope": "通行门亭、偏置外门与封门阻断；未自动构成特定山门、仪门或垂花门制度。"
+    },
+    {
+      "id": "paifang",
+      "group": "building",
+      "label": "牌坊与牌楼",
+      "sample_evidence": "missing",
+      "implementation": "authored_landmark_or_roof_component",
+      "verification": "offline",
+      "evidence": [
+        "landmarks-and-details.md"
+      ],
+      "next_action": "Extend measured source framing and target-game checks; geometric prototypes are not historic construction."
+    },
+    {
+      "id": "pagoda",
+      "group": "building",
+      "label": "楼阁式/密檐式/其他佛塔",
+      "sample_evidence": "author_labelled_source_measured",
+      "implementation": "authored_storeyed_and_dense_eave_prototypes",
+      "verification": "offline",
+      "evidence": [
+        "ancient-structures-study.md",
+        "ancient-structures-measurements.json",
+        "infrastructure-generation.md",
+        "../assets/pagoda.json",
+        "../assets/dense-eaves-pagoda.json",
+        "../scripts/test_infrastructure.py"
+      ],
+      "next_action": "覆钵式、金刚宝座式等其他体系及具体寺塔需单独资料和实现。",
+      "implementation_scope": "2～5个可达使用层的层塔，或2～7道檐带的单室密檐原型；区分檐带与楼层。"
+    },
+    {
+      "id": "bell_drum",
+      "group": "building",
+      "label": "钟鼓楼",
+      "sample_evidence": "missing",
+      "implementation": "authored_furnished_accessible_towers",
+      "verification": "offline",
+      "evidence": [
+        "functional-generation.md",
+        "../scripts/generate_inhabited.py"
+      ],
+      "next_action": "具体楼形、梁上悬挂和游戏交互需针对项目核验。",
+      "implementation_scope": "有楼梯的钟/音符盒空间，未模拟历史声学或仪式。"
+    },
+    {
+      "id": "academy",
+      "group": "building",
+      "label": "书院与学宫",
+      "sample_evidence": "missing",
+      "implementation": "authored_distinct_furnished_functional_compounds",
+      "verification": "offline",
+      "evidence": [
+        "functional-generation.md",
+        "historical-evidence.md",
+        "../scripts/generate_functional.py",
+        "../scripts/test_functional.py"
+      ],
+      "next_action": "按具体年代、机构与建筑资料调整仪式、门序和房间功能；通用预设不是历史复原。",
+      "implementation_scope": "不同轴线、侧翼、工作、居住和服务角色，内部使用区和设施目标均检查通路。"
+    },
+    {
+      "id": "government",
+      "group": "building",
+      "label": "衙署与会馆",
+      "sample_evidence": "missing",
+      "implementation": "authored_distinct_furnished_functional_compounds",
+      "verification": "offline",
+      "evidence": [
+        "functional-generation.md",
+        "historical-evidence.md",
+        "../scripts/generate_functional.py",
+        "../scripts/test_functional.py"
+      ],
+      "next_action": "按具体年代、机构与建筑资料调整仪式、门序和房间功能；通用预设不是历史复原。",
+      "implementation_scope": "不同轴线、侧翼、工作、居住和服务角色，内部使用区和设施目标均检查通路。"
+    },
+    {
+      "id": "city_gate",
+      "group": "building",
+      "label": "城门、城楼与瓮城",
+      "sample_evidence": "missing",
+      "implementation": "authored_landmark_or_roof_component",
+      "verification": "offline",
+      "evidence": [
+        "landmarks-and-details.md"
+      ],
+      "next_action": "Extend measured source framing and target-game checks; geometric prototypes are not historic construction."
+    },
+    {
+      "id": "walls",
+      "group": "building",
+      "label": "城墙与角楼",
+      "sample_evidence": "measured_local",
+      "implementation": "authored_fort_wall_walks_and_corner_lookouts",
+      "verification": "offline",
+      "evidence": [
+        "functional-buildings-study.md",
+        "functional-layout-measurements.json",
+        "landmarks-and-details.md",
+        "infrastructure-generation.md",
+        "expanded-functional-study.md",
+        "../assets/fort.json"
+      ],
+      "next_action": "城市尺度、瓮城和真实军事工程构造另按资料设计。",
+      "implementation_scope": "围墙、入口、登城梯、墙顶通路、四角望亭与内部工作空间。"
+    },
+    {
+      "id": "shops",
+      "group": "building",
+      "label": "街巷店铺与市镇",
+      "sample_evidence": "measured_local",
+      "implementation": "authored_accessible_furniture_and_market_programs",
+      "verification": "offline",
+      "evidence": [
+        "functional-buildings-study.md",
+        "functional-layout-measurements.json",
+        "functional-generation.md",
+        "expanded-functional-study.md",
+        "../scripts/generate_inhabited.py",
+        "../scripts/test_functional.py"
+      ],
+      "next_action": "箱桶库存、NPC活动、经营或游戏交互行为需项目单独配置与实测。",
+      "implementation_scope": "14种用途、真实游戏家具、两区/层、前后隔断、操作位和楼梯交通保护。"
+    },
+    {
+      "id": "tombs",
+      "group": "building",
+      "label": "陵寝与墓园",
+      "sample_evidence": "measured_local",
+      "implementation": "authored_buried_chambers_with_verified_descent",
+      "verification": "offline",
+      "evidence": [
+        "functional-buildings-study.md",
+        "functional-layout-measurements.json",
+        "infrastructure-generation.md",
+        "../assets/tomb.json",
+        "../scripts/test_infrastructure.py"
+      ],
+      "next_action": "地表墓园、具体历史墓制和陪葬图像需独立资料。",
+      "implementation_scope": "覆土、下行梯、前室、主室、两侧室和抽象石台；封口可阻断访问。"
+    },
+    {
+      "id": "bridges",
+      "group": "building",
+      "label": "石拱桥、木桥、廊桥",
+      "sample_evidence": "missing",
+      "implementation": "authored_roofed_bridges_flat_and_sloped_galleries",
+      "verification": "offline",
+      "evidence": [
+        "garden-generation.md",
+        "garden-source-study.md",
+        "../scripts/test_garden.py",
+        "infrastructure-generation.md",
+        "../assets/covered-bridge.json",
+        "../assets/hillside-gallery.json",
+        "../scripts/test_infrastructure.py"
+      ],
+      "next_action": "真实木拱编梁、承载、栏杆碰撞和景观效果需要项目检查。",
+      "implementation_scope": "池桥、直/L/U廊、带顶桥与3/5/7格宽升降折廊；验证整条路带坡差与净空。"
+    },
+    {
+      "id": "water_pavilion",
+      "group": "building",
+      "label": "水榭与临水楼台",
+      "sample_evidence": "missing",
+      "implementation": "authored_garden_components_and_composition",
+      "verification": "offline",
+      "evidence": [
+        "garden-generation.md",
+        "garden-source-study.md",
+        "../scripts/test_garden.py"
+      ],
+      "next_action": "Extend free site composition, regional garden evidence, shape visibility and live game checks."
+    },
+    {
+      "id": "corridor",
+      "group": "building",
+      "label": "游廊、抄手游廊与爬山廊",
+      "sample_evidence": "measured_local",
+      "implementation": "authored_roofed_bridges_flat_and_sloped_galleries",
+      "verification": "offline",
+      "evidence": [
+        "circulation-generation.md",
+        "siheyuan-study.md",
+        "infrastructure-generation.md",
+        "../assets/covered-bridge.json",
+        "../assets/hillside-gallery.json",
+        "../scripts/test_infrastructure.py"
+      ],
+      "next_action": "真实木拱编梁、承载、栏杆碰撞和景观效果需要项目检查。",
+      "implementation_scope": "池桥、直/L/U廊、带顶桥与3/5/7格宽升降折廊；验证整条路带坡差与净空。"
+    },
+    {
+      "id": "garden_wall",
+      "group": "building",
+      "label": "园墙、月洞门和漏窗",
+      "sample_evidence": "missing",
+      "implementation": "authored_garden_components_and_composition",
+      "verification": "offline",
+      "evidence": [
+        "garden-generation.md",
+        "garden-source-study.md",
+        "../scripts/test_garden.py"
+      ],
+      "next_action": "Extend free site composition, regional garden evidence, shape visibility and live game checks."
+    },
+    {
+      "id": "northern_courtyard",
+      "group": "region",
+      "label": "北方四合院与多进院落",
+      "sample_evidence": "author_labelled_diagram_measured",
+      "implementation": "authored_one_to_four_serial_courts",
+      "verification": "offline",
+      "evidence": [
+        "siheyuan-study.md",
+        "courtyard-generation.md",
+        "multi-court-generation.md",
+        "../scripts/test_multi_court.py"
+      ],
+      "next_action": "具体四合院的倒座、耳房、跨院与生活秩序需测绘。",
+      "implementation_scope": "1～4进内向院落、偏门和串联门序，保持与作者示意样本的区别。"
+    },
+    {
+      "id": "jin_merchant",
+      "group": "region",
+      "label": "晋地大院与砖雕",
+      "sample_evidence": "missing",
+      "implementation": "missing",
+      "verification": "workflow_documented_only",
+      "evidence": [
+        "regional-design-atlas.md"
+      ],
+      "next_action": "具体项目涉及此类时，选定建筑/时代，取可核验资料后专门设计；不要把通用组件改名当成已实现。",
+      "available_generic_workflow": "多进院、街市与营堡可组合；缺晋商大院和砖雕专属实测/生成。",
+      "historical_reference_ids": [
+        "pingyao"
+      ]
+    },
+    {
+      "id": "huizhou",
+      "group": "region",
+      "label": "徽州天井民居",
+      "sample_evidence": "author_labelled_sample_with_local_measurements",
+      "implementation": "authored_distinct_regional_spatial_prototype",
+      "verification": "offline",
+      "evidence": [
+        "regional-collection-study.md",
+        "regional-layout-measurements.json",
+        "regional-generation.md"
+      ],
+      "next_action": "Expand regional subtypes and measured carpentry; verify target-game collision and historical cases separately."
+    },
+    {
+      "id": "jiangnan",
+      "group": "region",
+      "label": "江南水乡与园宅",
+      "sample_evidence": "missing",
+      "implementation": "authored_waterfront_and_garden_composition_not_site_reconstruction",
+      "verification": "offline",
+      "evidence": [
+        "settlement-generation.md",
+        "regional-design-atlas.md",
+        "historical-evidence.md",
+        "../assets/settlement-waterfront.json"
+      ],
+      "next_action": "真实街河关系、码头、巷道与院宅剖面需另取样。",
+      "implementation_scope": "沿河双岸住宅、桥与干路可与池庭园林组合；未复原某古镇。",
+      "historical_reference_ids": [
+        "classical-gardens"
+      ]
+    },
+    {
+      "id": "lingnan",
+      "group": "region",
+      "label": "岭南民居与祠堂",
+      "sample_evidence": "institutional_description_read_not_measured_plan",
+      "implementation": "authored_arcade_and_wok_ear_spatial_prototypes_partial",
+      "verification": "offline_routes_stairs_room_seals_and_schematic_roundtrip",
+      "evidence": [
+        "vernacular-generation.md",
+        "vernacular-evidence.md",
+        "../scripts/generate_vernacular.py",
+        "../scripts/test_vernacular.py"
+      ],
+      "next_action": "取得具体骑楼、镬耳院落或碉楼的平剖面；完善侨乡类型、通风和灰塑工艺，不泛称全岭南复原。",
+      "available_generic_workflow": "专属骑楼通廊/商住/楼梯与三间两廊镬耳小院已实现；功能祠堂和雕饰可另组合。",
+      "historical_reference_ids": [
+        "kaiping",
+        "guangzhou-qilou",
+        "guangdong-wok-ear"
+      ]
+    },
+    {
+      "id": "minnan",
+      "group": "region",
+      "label": "闽南红砖与燕尾脊",
+      "sample_evidence": "institutional_type_descriptions_and_selected_survey_plan_read",
+      "implementation": "authored_projection_multi_luo_hulong_spatial_prototypes_partial",
+      "verification": "offline_room_routes_gate_seals_roof_hierarchy_and_open_lanes",
+      "evidence": [
+        "vernacular-generation.md",
+        "minnan-compounds.md",
+        "hong-house-study.md",
+        "hong-house-measurements.json",
+        "../scripts/generate_vernacular.py",
+        "../scripts/minnan_compounds.py",
+        "../scripts/test_minnan_compounds.py"
+      ],
+      "next_action": "今后若用户继续此方向，可核对具体建筑的叠楼、半楼、木构、砖石作与剪黏；当前不冒充历史原址复原。",
+      "available_generic_workflow": "二/四攑头、三盖廊、二/三落、祖厅位置、单/双护龙、独立外门与过水；原始来源和原创尺寸分开。",
+      "historical_reference_ids": [
+        "kinmen-house-types",
+        "huangcuo-hong-house-survey"
+      ]
+    },
+    {
+      "id": "hakka",
+      "group": "region",
+      "label": "客家土楼与围屋",
+      "sample_evidence": "author_labelled_source_measured",
+      "implementation": "authored_distinct_regional_spatial_prototype",
+      "verification": "offline",
+      "evidence": [
+        "ancient-structures-study.md",
+        "ancient-structures-measurements.json",
+        "regional-generation.md"
+      ],
+      "next_action": "Expand regional subtypes and measured carpentry; verify target-game collision and historical cases separately."
+    },
+    {
+      "id": "gan",
+      "group": "region",
+      "label": "赣地民居",
+      "sample_evidence": "missing",
+      "implementation": "missing",
+      "verification": "workflow_documented_only",
+      "evidence": [
+        "regional-design-atlas.md"
+      ],
+      "next_action": "具体项目涉及此类时，选定建筑/时代，取可核验资料后专门设计；不要把通用组件改名当成已实现。",
+      "available_generic_workflow": "有天井、串院与自由组合；缺赣地具体建筑独立资料。"
+    },
+    {
+      "id": "chuan_shu",
+      "group": "region",
+      "label": "川蜀穿斗民居",
+      "sample_evidence": "missing",
+      "implementation": "missing",
+      "verification": "workflow_documented_only",
+      "evidence": [
+        "regional-design-atlas.md"
+      ],
+      "next_action": "具体项目涉及此类时，选定建筑/时代，取可核验资料后专门设计；不要把通用组件改名当成已实现。",
+      "available_generic_workflow": "有穿斗教学横架和通用院落；缺川蜀具体户型及节点实测。"
+    },
+    {
+      "id": "southwest_stilt",
+      "group": "region",
+      "label": "西南干栏/吊脚楼地域分支",
+      "sample_evidence": "author_labelled_sample_with_local_measurements",
+      "implementation": "authored_distinct_regional_spatial_prototype",
+      "verification": "offline",
+      "evidence": [
+        "regional-collection-study.md",
+        "regional-layout-measurements.json",
+        "regional-generation.md"
+      ],
+      "next_action": "Expand regional subtypes and measured carpentry; verify target-game collision and historical cases separately."
+    },
+    {
+      "id": "bai_naxi",
+      "group": "region",
+      "label": "白族与纳西族民居分支",
+      "sample_evidence": "missing",
+      "implementation": "missing",
+      "verification": "workflow_documented_only",
+      "evidence": [
+        "regional-design-atlas.md"
+      ],
+      "next_action": "具体项目涉及此类时，选定建筑/时代，取可核验资料后专门设计；不要把通用组件改名当成已实现。",
+      "available_generic_workflow": "有偏门三面院与照壁式围合，未证明白族或纳西族具体分支复原。",
+      "historical_reference_ids": [
+        "lijiang"
+      ]
+    },
+    {
+      "id": "dai",
+      "group": "region",
+      "label": "傣族竹楼与寺院",
+      "sample_evidence": "missing",
+      "implementation": "missing",
+      "verification": "workflow_documented_only",
+      "evidence": [
+        "regional-design-atlas.md"
+      ],
+      "next_action": "具体项目涉及此类时，选定建筑/时代，取可核验资料后专门设计；不要把通用组件改名当成已实现。",
+      "available_generic_workflow": "有架空空间与功能寺院工具；缺傣族具体竹楼、寺院和使用传统的专属资料。"
+    },
+    {
+      "id": "tibetan",
+      "group": "region",
+      "label": "藏式碉房与寺院",
+      "sample_evidence": "missing",
+      "implementation": "missing",
+      "verification": "workflow_documented_only",
+      "evidence": [
+        "regional-design-atlas.md"
+      ],
+      "next_action": "具体项目涉及此类时，选定建筑/时代，取可核验资料后专门设计；不要把通用组件改名当成已实现。",
+      "available_generic_workflow": "有可达平顶露台体量；缺藏区具体收分墙、户型、构架及寺院测绘。",
+      "historical_reference_ids": [
+        "potala"
+      ]
+    },
+    {
+      "id": "northwest_cave",
+      "group": "region",
+      "label": "窑洞与黄土地区院落",
+      "sample_evidence": "author_labelled_sample_with_local_measurements",
+      "implementation": "authored_distinct_regional_spatial_prototype",
+      "verification": "offline",
+      "evidence": [
+        "regional-collection-study.md",
+        "regional-layout-measurements.json",
+        "regional-generation.md"
+      ],
+      "next_action": "Expand regional subtypes and measured carpentry; verify target-game collision and historical cases separately."
+    },
+    {
+      "id": "mongol",
+      "group": "region",
+      "label": "蒙古族居住与寺院",
+      "sample_evidence": "author_labelled_sample_with_local_measurements",
+      "implementation": "authored_distinct_regional_spatial_prototype",
+      "verification": "offline",
+      "evidence": [
+        "regional-collection-study.md",
+        "regional-layout-measurements.json",
+        "regional-generation.md"
+      ],
+      "next_action": "Expand regional subtypes and measured carpentry; verify target-game collision and historical cases separately."
+    },
+    {
+      "id": "xinjiang",
+      "group": "region",
+      "label": "新疆地域土木砖作建筑",
+      "sample_evidence": "missing",
+      "implementation": "missing",
+      "verification": "workflow_documented_only",
+      "evidence": [
+        "regional-design-atlas.md"
+      ],
+      "next_action": "具体项目涉及此类时，选定建筑/时代，取可核验资料后专门设计；不要把通用组件改名当成已实现。",
+      "available_generic_workflow": "有平顶与带廊院落机制；缺新疆各地具体土木砖作和装饰样本。"
+    },
+    {
+      "id": "northeast",
+      "group": "region",
+      "label": "东北地域民居",
+      "sample_evidence": "missing",
+      "implementation": "missing",
+      "verification": "workflow_documented_only",
+      "evidence": [
+        "regional-design-atlas.md"
+      ],
+      "next_action": "具体项目涉及此类时，选定建筑/时代，取可核验资料后专门设计；不要把通用组件改名当成已实现。",
+      "available_generic_workflow": "有井干示意、院落和屋面工具；缺东北具体热工、户型及地方构造资料。"
+    },
+    {
+      "id": "islamic_chinese",
+      "group": "region",
+      "label": "中国伊斯兰建筑的地域表达",
+      "sample_evidence": "missing",
+      "implementation": "missing",
+      "verification": "workflow_documented_only",
+      "evidence": [
+        "regional-design-atlas.md"
+      ],
+      "next_action": "具体项目涉及此类时，选定建筑/时代，取可核验资料后专门设计；不要把通用组件改名当成已实现。",
+      "available_generic_workflow": "可依具体建筑组合厅堂院落；未实现通用宗教建筑模板，也不虚构礼拜方向。"
+    },
+    {
+      "id": "modern_new_chinese",
+      "group": "region",
+      "label": "近现代及新中式设计",
+      "sample_evidence": "missing",
+      "implementation": "authored_free_xyz_composition_and_material_roles",
+      "verification": "offline",
+      "evidence": [
+        "composition-and-materials.md",
+        "regional-design-atlas.md",
+        "../assets/free-composition.json"
+      ],
+      "next_action": "依据当代项目的使用需求、美学和实际场地继续设计。",
+      "implementation_scope": "明确XYZ与方向的自由组合、材料角色和新体量可编辑；以原创设计命名。"
+    },
+    {
+      "id": "axis_nodes",
+      "group": "layout",
+      "label": "轴线与广场节点",
+      "sample_evidence": "visual_observation",
+      "implementation": "authored_graded_terrain_and_building_composition",
+      "verification": "offline",
+      "evidence": [
+        "design-rules.md",
+        "terrain-complex-generation.md"
+      ],
+      "next_action": "Add target-world preservation, drainage and railings; verify player collisions and historical site layout separately."
+    },
+    {
+      "id": "mountain_clusters",
+      "group": "layout",
+      "label": "山地平台与组团",
+      "sample_evidence": "visual_observation",
+      "implementation": "authored_graded_terrain_and_building_composition",
+      "verification": "offline",
+      "evidence": [
+        "design-rules.md",
+        "terrain-complex-generation.md"
+      ],
+      "next_action": "Add target-world preservation, drainage and railings; verify player collisions and historical site layout separately."
+    },
+    {
+      "id": "courtyard_layout",
+      "group": "layout",
+      "label": "单进、多进、跨院布局",
+      "sample_evidence": "measured_local",
+      "implementation": "authored_one_to_four_serial_courts",
+      "verification": "offline",
+      "evidence": [
+        "courtyard-generation.md",
+        "multi-court-generation.md",
+        "siheyuan-study.md"
+      ],
+      "next_action": "Add cross-courts, screen walls, galleries, interior functions and site-specific evidence."
+    },
+    {
+      "id": "garden_sequence",
+      "group": "layout",
+      "label": "园林空间与游览序列",
+      "sample_evidence": "measured_local",
+      "implementation": "authored_garden_components_and_composition",
+      "verification": "offline",
+      "evidence": [
+        "garden-generation.md",
+        "garden-source-study.md",
+        "../scripts/test_garden.py"
+      ],
+      "next_action": "Extend free site composition, regional garden evidence, shape visibility and live game checks."
+    },
+    {
+      "id": "borrowed_views",
+      "group": "layout",
+      "label": "借景、障景、框景和对景",
+      "sample_evidence": "missing",
+      "implementation": "authored_garden_components_and_composition",
+      "verification": "offline",
+      "evidence": [
+        "garden-generation.md",
+        "garden-source-study.md",
+        "../scripts/test_garden.py"
+      ],
+      "next_action": "Extend free site composition, regional garden evidence, shape visibility and live game checks."
+    },
+    {
+      "id": "garden_water_rock",
+      "group": "layout",
+      "label": "理水、叠山与岸线",
+      "sample_evidence": "measured_local",
+      "implementation": "authored_garden_components_and_composition",
+      "verification": "offline",
+      "evidence": [
+        "garden-generation.md",
+        "garden-source-study.md",
+        "../scripts/test_garden.py"
+      ],
+      "next_action": "Extend free site composition, regional garden evidence, shape visibility and live game checks."
+    },
+    {
+      "id": "planting",
+      "group": "layout",
+      "label": "植物层次与季相",
+      "sample_evidence": "measured_local",
+      "implementation": "authored_garden_components_and_composition",
+      "verification": "offline",
+      "evidence": [
+        "garden-generation.md",
+        "garden-source-study.md",
+        "../scripts/test_garden.py"
+      ],
+      "next_action": "Extend free site composition, regional garden evidence, shape visibility and live game checks."
+    },
+    {
+      "id": "terrain_foundation",
+      "group": "layout",
+      "label": "接地、挡土、坡道和排水",
+      "sample_evidence": "missing",
+      "implementation": "authored_graded_terrain_foundations_and_dry_drains",
+      "verification": "offline",
+      "evidence": [
+        "terrain-complex-generation.md",
+        "detail-generation.md",
+        "../assets/detail-drainage-strip.json"
+      ],
+      "next_action": "流体、降雨汇流、抗滑与工程容量不由体素检查证明。",
+      "implementation_scope": "削填平台、挡土、宽坡路及向出口下降的干排水槽。"
+    },
+    {
+      "id": "circulation",
+      "group": "layout",
+      "label": "建筑群动线与无障碍变体",
+      "sample_evidence": "partial_visual_or_measured",
+      "implementation": "tested_room_facility_floor_and_complex_dry_paths",
+      "verification": "offline",
+      "evidence": [
+        "circulation-generation.md",
+        "courtyard-generation.md",
+        "multi-court-generation.md",
+        "functional-generation.md",
+        "infrastructure-generation.md",
+        "composition-and-materials.md"
+      ],
+      "next_action": "真实玩家边界、跳跃、楼梯形状、无障碍使用情景需实机检查。",
+      "implementation_scope": "跨组件、所有声明楼层与设施站立位通路，封门、断桥/梯反例检查。"
+    },
+    {
+      "id": "interior_use",
+      "group": "layout",
+      "label": "家具、工作区、储物与生活功能",
+      "sample_evidence": "measured_local",
+      "implementation": "authored_accessible_furniture_and_market_programs",
+      "verification": "offline",
+      "evidence": [
+        "functional-buildings-study.md",
+        "functional-layout-measurements.json",
+        "functional-generation.md",
+        "expanded-functional-study.md",
+        "../scripts/generate_inhabited.py",
+        "../scripts/test_functional.py"
+      ],
+      "next_action": "箱桶库存、NPC活动、经营或游戏交互行为需项目单独配置与实测。",
+      "implementation_scope": "14种用途、真实游戏家具、两区/层、前后隔断、操作位和楼梯交通保护。"
+    },
+    {
+      "id": "dark_roof_mix",
+      "group": "material",
+      "label": "深色近色屋面混搭",
+      "sample_evidence": "measured_local",
+      "implementation": "tested_component",
+      "verification": "offline",
+      "evidence": [
+        "design-rules.md",
+        "../scripts/generate_hall.py"
+      ],
+      "next_action": "具体新样本/新输出复核适用范围；保留实测、原创参数与实际验证环境的区分。"
+    },
+    {
+      "id": "warm_roof_mix",
+      "group": "material",
+      "label": "暖色屋面观察",
+      "sample_evidence": "measured_local",
+      "implementation": "tested_component",
+      "verification": "offline",
+      "evidence": [
+        "design-rules.md",
+        "../scripts/generate_hall.py"
+      ],
+      "next_action": "具体新样本/新输出复核适用范围；保留实测、原创参数与实际验证环境的区分。"
+    },
+    {
+      "id": "paint_systems",
+      "group": "material",
+      "label": "彩画与色彩部位系统",
+      "sample_evidence": "missing",
+      "implementation": "authored_material_roles_and_surface_finish_rules",
+      "verification": "offline",
+      "evidence": [
+        "composition-and-materials.md",
+        "../scripts/apply_finish.py",
+        "../scripts/test_expanded_pipeline.py"
+      ],
+      "next_action": "彩画制度、题材、历史颜料与真实修补部位应按来源核对。",
+      "implementation_scope": "柱梁瓦墙等材质角色，以及按原状态、表面、Y区间的确定性换材质/旧化；没有历史彩画纹样识别。"
+    },
+    {
+      "id": "brick_stone_detail",
+      "group": "material",
+      "label": "砖雕石雕与灰塑",
+      "sample_evidence": "historic_craft_measurement_missing",
+      "implementation": "authored_raised_and_incised_depth_geometry_partial",
+      "verification": "offline_preserved_backing_surface_depth_connectivity_and_roundtrip",
+      "evidence": [
+        "ornament-generation.md",
+        "../scripts/ornament_kernel.py",
+        "../scripts/generate_ornament.py",
+        "../scripts/test_vernacular.py"
+      ],
+      "next_action": "获取可核对的具体砖石雕/灰塑图案、部位与剖面，验证尺度和层次；当前图案不是历史工艺复原。",
+      "available_generic_workflow": "莲瓣/回纹/卷线原创凸雕和阴刻；可调深度与砖石材质，保留实体背板。"
+    },
+    {
+      "id": "wood_carving",
+      "group": "material",
+      "label": "木雕及构件纹样",
+      "sample_evidence": "historic_craft_measurement_missing",
+      "implementation": "authored_wood_relief_and_openwork_geometry_partial",
+      "verification": "offline_through_holes_frame_connection_seed_and_roundtrip",
+      "evidence": [
+        "ornament-generation.md",
+        "../scripts/ornament_kernel.py",
+        "../scripts/generate_ornament.py",
+        "../scripts/test_vernacular.py"
+      ],
+      "next_action": "研究具体木雕构件、题材、纹样和工艺尺度；把放大花板适配到实际窗门接口，避免等同匠作复原。",
+      "available_generic_workflow": "木质凹凸花板和正交/斜交/冰裂式镂空屏，有真实深度或贯通孔，种子可重现。"
+    },
+    {
+      "id": "weathering",
+      "group": "material",
+      "label": "有部位依据的旧化与修补",
+      "sample_evidence": "missing",
+      "implementation": "authored_material_roles_and_surface_finish_rules",
+      "verification": "offline",
+      "evidence": [
+        "composition-and-materials.md",
+        "../scripts/apply_finish.py",
+        "../scripts/test_expanded_pipeline.py"
+      ],
+      "next_action": "彩画制度、题材、历史颜料与真实修补部位应按来源核对。",
+      "implementation_scope": "柱梁瓦墙等材质角色，以及按原状态、表面、Y区间的确定性换材质/旧化；没有历史彩画纹样识别。"
+    },
+    {
+      "id": "world_import",
+      "group": "pipeline",
+      "label": "新旧调色板Anvil世界与定制高度",
+      "sample_evidence": "verified_files",
+      "implementation": "tested_component",
+      "verification": "offline",
+      "evidence": [
+        "formats.md",
+        "../scripts/test_archive_scan.py"
+      ],
+      "next_action": "Add more actual versions and reject unsupported numeric legacy data explicitly."
+    },
+    {
+      "id": "structure_import",
+      "group": "pipeline",
+      "label": "Sponge/Litematica与Java/Create NBT",
+      "sample_evidence": "verified_files",
+      "implementation": "tested_component",
+      "verification": "offline",
+      "evidence": [
+        "formats.md",
+        "collection-learning.md",
+        "../scripts/test_collection.py"
+      ],
+      "next_action": "Continue file-level provenance and failure/duplicate accounting; full structure payloads are not restored."
+    },
+    {
+      "id": "coordinate_measure",
+      "group": "pipeline",
+      "label": "带来源哈希的局部测量",
+      "sample_evidence": "verified_files",
+      "implementation": "tested_component",
+      "verification": "offline",
+      "evidence": [
+        "siheyuan-study.md",
+        "../scripts/test_measure_components.py"
+      ],
+      "next_action": "具体新样本/新输出复核适用范围；保留实测、原创参数与实际验证环境的区分。"
+    },
+    {
+      "id": "rotation_composition",
+      "group": "pipeline",
+      "label": "有界组件组合和方向状态旋转",
+      "sample_evidence": "verified_files",
+      "implementation": "tested_free_xyz_composition_and_direction_rotation",
+      "verification": "offline",
+      "evidence": [
+        "formats.md",
+        "validation.md",
+        "component-generation.md",
+        "composition-and-materials.md",
+        "../scripts/compose_scene.py",
+        "../scripts/model_provenance.py"
+      ],
+      "next_action": "导入模组的自定义方向、显示模型及未指定位置语义需独立处理。",
+      "implementation_scope": "显式组件、任意XYZ/四方向、冲突策略、可选通路和旁车来源传递；禁止误覆盖显式输入。"
+    },
+    {
+      "id": "offline_qa",
+      "group": "pipeline",
+      "label": "离线连通、入口及文件往返",
+      "sample_evidence": "verified_files",
+      "implementation": "tested_component",
+      "verification": "offline",
+      "evidence": [
+        "formats.md",
+        "validation.md",
+        "component-generation.md"
+      ],
+      "next_action": "具体新样本/新输出复核适用范围；保留实测、原创参数与实际验证环境的区分。"
+    },
+    {
+      "id": "legacy_import",
+      "group": "pipeline",
+      "label": "旧数字ID schematic/世界",
+      "sample_evidence": "independent_constructed_nbt_fixtures",
+      "implementation": "tested_explicit_map_numeric_schematic_only",
+      "verification": "offline",
+      "evidence": [
+        "version-and-import-workflows.md",
+        "../scripts/import_legacy_schematic.py",
+        "../scripts/test_expanded_pipeline.py"
+      ],
+      "next_action": "添加实际来源时核验完整映射、模组ID与原文件版本；不要猜测未映射状态。",
+      "implementation_scope": "Alpha Blocks/Data/AddBlocks投影与明确ID:data映射；数字ID Anvil世界仍不支持。"
+    },
+    {
+      "id": "multiregion",
+      "group": "pipeline",
+      "label": "多region关系与明确合并",
+      "sample_evidence": "independent_constructed_nbt_fixtures",
+      "implementation": "tested_ordered_litematic_region_merge",
+      "verification": "offline",
+      "evidence": [
+        "version-and-import-workflows.md",
+        "../scripts/merge_litematic.py",
+        "../scripts/test_expanded_pipeline.py"
+      ],
+      "next_action": "来源未给的区域连接或地形适配不得自动补猜。",
+      "implementation_scope": "明确区域列表、负尺寸坐标、有界体积及冲突/空气策略，源文件只读。"
+    },
+    {
+      "id": "partial_shapes",
+      "group": "pipeline",
+      "label": "楼梯/半砖/栏杆形状预览",
+      "sample_evidence": "official_model_geometry",
+      "implementation": "tested_component",
+      "verification": "offline",
+      "evidence": [
+        "shape-preview.md",
+        "../scripts/verify_vanilla_shapes.py"
+      ],
+      "next_action": "Add unsupported partial blocks, textures and live game comparison."
+    },
+    {
+      "id": "game_validation",
+      "group": "pipeline",
+      "label": "真实游戏导入、方块更新及通行验收",
+      "sample_evidence": "missing",
+      "implementation": "not_executed",
+      "verification": "none",
+      "evidence": [
+        "validation.md",
+        "version-and-import-workflows.md"
+      ],
+      "next_action": "任务要求实际施工时，选择正确实例和有备份的范围，检查导入、邻接更新、流体、作物、照明与真实玩家通行。",
+      "implementation_scope": "已做状态注册表和离线几何检查，本Skill开发任务未启动或修改游戏。"
+    },
+    {
+      "id": "reference_reconstruction",
+      "group": "pipeline",
+      "label": "带尺度对应的历史建筑复原",
+      "sample_evidence": "measured_minecraft_components_and_synthetic_calibration",
+      "implementation": "tested_scale_alignment_workflow_not_historic_site_reconstruction",
+      "verification": "offline",
+      "evidence": [
+        "reference-reconstruction.md",
+        "historical-evidence.md",
+        "../scripts/calibrate_reference.py",
+        "../scripts/test_expanded_pipeline.py"
+      ],
+      "next_action": "精确历史任务需可核对的测绘图、独立检查点和时代/构件证据。",
+      "implementation_scope": "控制点统一比例、四方向与平移拟合，残差及舍入报告；未完成真实遗址全面测绘复原。"
+    },
+    {
+      "id": "agricultural_landscape",
+      "group": "landscape",
+      "label": "稻田、台地与乡土生产景观",
+      "sample_evidence": "measured_local",
+      "implementation": "authored_irrigated_wheat_terraces_and_dry_paths",
+      "verification": "offline",
+      "evidence": [
+        "ancient-structures-study.md",
+        "ancient-structures-layout-measurements.json",
+        "infrastructure-generation.md",
+        "../assets/terraced-farm.json",
+        "../scripts/test_infrastructure.py"
+      ],
+      "next_action": "实际作物生长、水流更新和地域耕作体系另按项目核验。",
+      "implementation_scope": "分层田块、挡土、水渠、原版小麦和相连干路，灌溉距离受限；没有新增水稻品种。"
+    }
+  ],
+  "release": "B15",
+  "task_delivery": "Current B15 part prepared for verified local installation, then stop at the user request.",
+  "historical_source_registry": "historical-sources.json",
+  "counts": {
+    "authored_prototype": 11,
+    "authored_landmark_or_roof_component": 6,
+    "authored_single_storey_double_eaves_and_multistorey_eaves": 1,
+    "authored_distinct_regional_spatial_prototype": 6,
+    "authored_abstract_ridge_end_not_ranked_ornaments": 2,
+    "tested_component": 11,
+    "authored_four_infill_patterns_for_compact_bays": 2,
+    "authored_teaching_diagram_not_historic_joinery": 3,
+    "authored_beam_post_tie_and_log_frame_diagrams": 1,
+    "authored_enlarged_column_profile_and_plinth": 2,
+    "authored_abstract_opening_and_hanging_panels": 1,
+    "authored_corridor_and_stair_guards": 1,
+    "authored_enlarged_curved_tile_courses": 1,
+    "authored_wall_corner_bond_color_and_coping": 1,
+    "authored_graded_terrain_and_building_composition": 3,
+    "authored_distinct_furnished_functional_compounds": 6,
+    "authored_through_gate_pavilion_in_enclosure": 1,
+    "authored_storeyed_and_dense_eave_prototypes": 1,
+    "authored_furnished_accessible_towers": 1,
+    "authored_fort_wall_walks_and_corner_lookouts": 1,
+    "authored_accessible_furniture_and_market_programs": 2,
+    "authored_buried_chambers_with_verified_descent": 1,
+    "authored_roofed_bridges_flat_and_sloped_galleries": 2,
+    "authored_garden_components_and_composition": 6,
+    "authored_one_to_four_serial_courts": 2,
+    "missing": 9,
+    "authored_waterfront_and_garden_composition_not_site_reconstruction": 1,
+    "authored_arcade_and_wok_ear_spatial_prototypes_partial": 1,
+    "authored_projection_multi_luo_hulong_spatial_prototypes_partial": 1,
+    "authored_free_xyz_composition_and_material_roles": 1,
+    "authored_graded_terrain_foundations_and_dry_drains": 1,
+    "tested_room_facility_floor_and_complex_dry_paths": 1,
+    "authored_material_roles_and_surface_finish_rules": 2,
+    "authored_raised_and_incised_depth_geometry_partial": 1,
+    "authored_wood_relief_and_openwork_geometry_partial": 1,
+    "tested_free_xyz_composition_and_direction_rotation": 1,
+    "tested_explicit_map_numeric_schematic_only": 1,
+    "tested_ordered_litematic_region_merge": 1,
+    "not_executed": 1,
+    "tested_scale_alignment_workflow_not_historic_site_reconstruction": 1,
+    "authored_irrigated_wheat_terraces_and_dry_paths": 1
+  }
+}

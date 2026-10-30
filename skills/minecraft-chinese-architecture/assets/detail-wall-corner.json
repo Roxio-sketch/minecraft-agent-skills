@@ -1,0 +1,9 @@
+{
+  "schema": "chinese-detail/1",
+  "kind": "wall_corner",
+  "parameters": {
+    "length": 20,
+    "height": 8,
+    "thickness": 2
+  }
+}

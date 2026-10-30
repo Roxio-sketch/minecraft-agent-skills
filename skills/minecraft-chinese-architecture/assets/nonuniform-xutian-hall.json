@@ -1,0 +1,14 @@
+{
+  "schema": "chinese-building/1",
+  "kind": "hall",
+  "bays_x": [6, 6, 12, 6, 6],
+  "bays_z": [6, 6],
+  "column_height": 11,
+  "roof": {"form": "hip_and_gable", "rise": 7, "curve": 1.5, "uplift": 1, "gable_inset": 3},
+  "palette": {"roof": "minecraft:bamboo_planks", "roof_stairs": "minecraft:bamboo_stairs", "roof_slab": "minecraft:bamboo_slab", "trim": "minecraft:polished_granite"},
+  "rule_status": "partly_measured_new_composition",
+  "evidence": [
+    {"source": "xutian", "measurement": "measured-components.json: xutian-module", "adopted": "Selected row spacings 6,6,12,6,6 and uninterrupted column wood height 11"},
+    {"design_choice": "Depth bays, hip-and-gable roof, rise, corner uplift, platform, walls and doorway are newly designed. Bamboo roof family follows a material observation, not a copy of source geometry."}
+  ]
+}

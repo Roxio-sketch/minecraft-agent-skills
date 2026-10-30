@@ -1,0 +1,18 @@
+{
+  "schema": "chinese-multi-court/1",
+  "court_width": 40,
+  "court_depths": [
+    32,
+    36
+  ],
+  "outer_gate_offset_x": 8,
+  "row_gap": 2,
+  "evidence": [
+    {
+      "source_id": "pmc-siheyuan-mineman",
+      "observed": "The diagrammatic source entrance is at X=-87, eight blocks east of its geometric midline X=-95.",
+      "adopted": "Offset the outer entrance by +8 blocks and return inner gates to the centerline.",
+      "design_changes": "Court dimensions, separate inward wings, main hall, gate pavilions and partition construction are original. This is not a reconstruction of that source or a historical siheyuan."
+    }
+  ]
+}

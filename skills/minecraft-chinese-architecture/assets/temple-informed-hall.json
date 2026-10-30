@@ -1,0 +1,74 @@
+{
+  "schema": "chinese-hall/1",
+  "rule_status": "measured_wood_height_and_slab_frequencies_with_authored_plan",
+  "source_structure_reuse": false,
+  "width_bays": 3,
+  "depth_bays": 3,
+  "bay_spacing": 6,
+  "column_height": 13,
+  "platform_height": 3,
+  "platform_margin": 4,
+  "eave_overhang": 4,
+  "roof_rise": 9,
+  "roof_curve": 1.65,
+  "corner_uplift": 2,
+  "stair_width": 7,
+  "palette": {
+    "foundation": "minecraft:polished_andesite",
+    "floor": "minecraft:smooth_stone",
+    "column": "minecraft:stripped_spruce_wood[axis=y]",
+    "beam": "minecraft:mangrove_planks",
+    "wall": "minecraft:red_terracotta",
+    "window": "minecraft:white_stained_glass",
+    "roof": "minecraft:deepslate_bricks",
+    "roof_stairs": "minecraft:deepslate_brick_stairs",
+    "roof_slab": "minecraft:deepslate_brick_slab",
+    "trim": "minecraft:polished_tuff",
+    "access_stairs": "minecraft:stone_brick_stairs"
+  },
+  "evidence": [
+    {
+      "source_id": "mctoolbox-temple",
+      "source_sha256": "572e17872abdc598e395a99ce1f35a8c08164f211329198733043d5c99232fd4",
+      "reference": "references/temple-measurements.json",
+      "applied": [
+        "column_height=13 matches selected exterior wood segments y=3..15",
+        "roof_mix weights 132/112/106/100 from selected lower eave slabs; not entire-source proportions"
+      ],
+      "design_changes": [
+        "Original single-storey square hall with three bays each way and uniform spacing=6; source selected rows are 7,7 and 6,12,6",
+        "Single hip roof rise=9, curve=1.65, overhang=4 and corner_uplift=2 are authored; source has multiple eave bands and a steep upper pitched roof",
+        "Platform, entry, windows and material roles are new arrangements, not copied source voxels"
+      ],
+      "attribution": "Original builder not identified; source geometry and source screenshots excluded from skill package."
+    }
+  ],
+  "notes": "A new original design, not a reconstruction of the downloaded temple. Target palette uses Java 1.21.4 blocks. The source is 1.21.8.",
+  "seed": 20261028,
+  "roof_mix": [
+    {
+      "block": "minecraft:polished_deepslate",
+      "stairs": "minecraft:polished_deepslate_stairs",
+      "slab": "minecraft:polished_deepslate_slab",
+      "weight": 132
+    },
+    {
+      "block": "minecraft:deepslate_bricks",
+      "stairs": "minecraft:deepslate_brick_stairs",
+      "slab": "minecraft:deepslate_brick_slab",
+      "weight": 112
+    },
+    {
+      "block": "minecraft:deepslate_tiles",
+      "stairs": "minecraft:deepslate_tile_stairs",
+      "slab": "minecraft:deepslate_tile_slab",
+      "weight": 106
+    },
+    {
+      "block": "minecraft:cobbled_deepslate",
+      "stairs": "minecraft:cobbled_deepslate_stairs",
+      "slab": "minecraft:cobbled_deepslate_slab",
+      "weight": 100
+    }
+  ]
+}

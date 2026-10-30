@@ -1,0 +1,8 @@
+{
+  "schema": "chinese-settlement/1",
+  "kind": "three_sided_court",
+  "parameters": {
+    "gate_offset": -14,
+    "wall_height": 5
+  }
+}

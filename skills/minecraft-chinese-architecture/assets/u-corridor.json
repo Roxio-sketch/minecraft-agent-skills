@@ -1,0 +1,44 @@
+{
+  "schema": "chinese-corridor/1",
+  "path_xz": [
+    [
+      -24,
+      -12
+    ],
+    [
+      -24,
+      24
+    ],
+    [
+      24,
+      24
+    ],
+    [
+      24,
+      -12
+    ]
+  ],
+  "clear_width": 5,
+  "column_height": 6,
+  "column_spacing": 6,
+  "eave_overhang": 2,
+  "roof_rise": 3,
+  "roof_curve": 1.5,
+  "railings": true,
+  "palette": {
+    "floor": "minecraft:stone_bricks",
+    "column": "minecraft:stripped_dark_oak_log[axis=y]",
+    "beam": "minecraft:dark_oak_planks",
+    "railing": "minecraft:dark_oak_fence",
+    "roof": "minecraft:deepslate_tiles",
+    "roof_stairs": "minecraft:deepslate_tile_stairs",
+    "roof_slab": "minecraft:deepslate_tile_slab",
+    "trim": "minecraft:cut_copper"
+  },
+  "evidence": [
+    {
+      "kind": "original_design",
+      "note": "U-shaped circulation prototype; not a copied courtyard corridor."
+    }
+  ]
+}

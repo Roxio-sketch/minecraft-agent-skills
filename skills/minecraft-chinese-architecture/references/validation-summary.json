@@ -1,0 +1,337 @@
+{
+  "schema": "architecture-release-validation/1",
+  "release": "B15",
+  "created_local": "2026-10-29T06:04:13.375461+08:00",
+  "scope": "Local checkpoint of continuous work. No remote publication or Minecraft world placement.",
+  "environment": {
+    "python": "3.10.11",
+    "platform": "win32",
+    "packages": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "nbtlib": "2.0.4",
+      "Pillow": "12.3.0"
+    }
+  },
+  "unit_tests": {
+    "passed": 118,
+    "failed": 0,
+    "log": "E:\\建筑\\analysis\\qa\\final-B15\\regression.log",
+    "log_sha256": "2c8ddae255ca356a3cd8d2b28f8f8e555fe51b37a694ae696a2094b6bcb17c3e"
+  },
+  "additional_checks": [
+    {
+      "name": "hall-self-test",
+      "command": [
+        "E:\\建筑\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "E:\\建筑\\minecraft-chinese-architecture\\scripts\\generate_hall.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 0.547,
+      "log": "E:\\建筑\\analysis\\qa\\final-B15\\hall-self-test.log",
+      "log_sha256": "90a8652a6c2cb7beec2f229272ec82586234d9e7346e8536c5549e2d02f8c088"
+    },
+    {
+      "name": "skill-validation",
+      "command": [
+        "E:\\建筑\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\Nostzephert\\.codex\\skills\\.system\\skill-creator\\scripts\\quick_validate.py",
+        "E:\\建筑\\minecraft-chinese-architecture"
+      ],
+      "exit_code": 0,
+      "seconds": 0.078,
+      "log": "E:\\建筑\\analysis\\qa\\final-B15\\skill-validation.log",
+      "log_sha256": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4"
+    }
+  ],
+  "tested_python_files": {
+    "analyze_architecture.py": "60291cd9fb4a1c05aafc8a41835f5283a4639660b84c89e5eff90f83b0ff043e",
+    "apply_finish.py": "734174a7ac0a7a25db2cc06fd83f2bb13d76cde0996939f29b1544aa5acbd3c9",
+    "architecture.py": "5edde55781be186451262d28883a27f4bab85e63b5a0c979a17ad94fb1beb65b",
+    "archive_scan.py": "ab9339420e8a975b0ebbee68f28ed4abe0a637b60a26836955dbcda85197deae",
+    "block_shapes.py": "82086930a78ec4fbe015f7a9e1ef0bd1f74f208107264f63d6eace785fe2b6eb",
+    "calibrate_reference.py": "9374141577e0a399f6df2925d19e07f00611e4be512107cde7426d578e15580f",
+    "compose_scene.py": "228103d16980ebedc6d6beaefdebf5b9fed60c8eeedb1866087360ed3f722526",
+    "facade_kernel.py": "4682bee08fa6a1ca2acd7385e91d4e0fcc2f621f4fa48db0b9762f162b52265d",
+    "garden_components.py": "85b31dccf4942e4ada0e4ab585b026178b87192c294c41fc7312bb433dc5e5ac",
+    "generate_building.py": "cfa8852b43e3d3c811915a03a5d48e14d5a78c8d6a3718e815f4bc15e80956a5",
+    "generate_complex.py": "e198a6b1422f4bdf7781c84970c5f1baffc0f3e768da4e863baa78644db43945",
+    "generate_corridor.py": "72e8b13bfc33e8a49b5860af1a059bded11ae0a927d3777bdbc4c5d16c47f606",
+    "generate_courtyard.py": "9d2611c9923423c47431c7ddb7a3736f15039893f99b475209154cf97274f445",
+    "generate_detail.py": "df078d3bf6aa602271d480a937caecd6c1081c2e7ee335e28ae87f9189b6f335",
+    "generate_functional.py": "0d93933b5fea5ff49587c366d2b4397a3d505f13b3e8f7379cc36ce412ef25da",
+    "generate_garden.py": "080146f900bac95e877a9a13419cc06ab320e0ea23d3f268b993f9df8245c658",
+    "generate_hall.py": "63a806a3212d9f0816739f7eb3c49fef7b88295453057a5845e610e17b27b698",
+    "generate_infrastructure.py": "ed2b8eb1877c109a7d0a79e1f4908bf54207bcdf8d3a0028085df8d0548f93b3",
+    "generate_inhabited.py": "a32031abf41cae35215f8ecdba08770c49d31b00d9c2f46ae6bf222dc8426577",
+    "generate_landmark.py": "93b0bee3e494cec8f7b284679d33fe036cc8c77c83b342bef7633d937cc1ce7c",
+    "generate_multi_court.py": "49b9f9f06335b778c5045679f8d4a71e1cade8d1357a95a43b6723b9d356ecb3",
+    "generate_ornament.py": "6853d65afb9f380551778ebc72b42a61586a85df0d224d2766bb9c2962d8d59a",
+    "generate_regional.py": "12a6c888b6e519281f130c07e838b7ca230905146a778cdb8f71ad8a3f385a9d",
+    "generate_settlement.py": "52f8a7654620fbd9cc5086b6c342998f488c65f64974b3c38e35e729617b7588",
+    "generate_tower.py": "a7ed70e162d359c52d5f9ff363055f6ef654fdf9240c4871556fb8b676be3da6",
+    "generate_vernacular.py": "5b2cafa7ccf569205d0a2f5f2183bc89be444e0a992afd5a28dd7d1cb8a3ae56",
+    "import_collection.py": "3f19946a04ddf81afaa087bfe2a2d93aaf1ce5987b78955eefaf3d0783bcd3f1",
+    "import_legacy_schematic.py": "095847d6b7046b2f649e798548f7662a7054102a18754e35ccb65c190a29ca62",
+    "import_structure.py": "ddc4f07b3addf0b2a7ba52765fc90fd9dbc4da0e5b9ae517252fea22b3ef71f0",
+    "measure_components.py": "cbfdddc54151df012c9a28628477d9c9205b6a7d7d119c5de8ca95de5574f23e",
+    "measure_layout.py": "89834f182b314afc8950be00e7c9a880701a2dbfed48387782b33b3bdbdabc50",
+    "merge_litematic.py": "5b6627dbbb8dfde846b7a1294d3e13f983cd42213f9a232272d0f25c025de4e3",
+    "minnan_compounds.py": "0d0d4d9033af5127266a817b50fd3562242e4d22340c5eccf387c03f9a424fe5",
+    "model_provenance.py": "ffc695cc4a3b95fba78bc9061f9a3187e20bf40054bbe05a1b95d88dd927ea12",
+    "nbt_io.py": "d4e2b91c45565498c8a2175fa8d5e6b17814da3b50d2431430579e83473837ac",
+    "ornament_kernel.py": "b1181cf2dec95e54835f823142b23fff3133f0cd78eed3afed7db639ef15e69d",
+    "render_model.py": "ff3c0e1a63177cc6edca4456b1673926491b6840dcf819ada3e256874ed74bcc",
+    "render_sections.py": "dafb9876d532f40820f416878d6611fa671cd011f5ecb5207dbcb67057bba0bd",
+    "render_shapes.py": "b7130af16b9a72a15e99b1e12c99f1f2e942b83bc3050007f616482980c28d6f",
+    "roof_kernel.py": "a7123bb9abf63ce46fed98d1cfb2ec4aad1c0723157f2b99d1787c58040fdb4e",
+    "scene_output.py": "af93841ab3728b684e7fa0093680d533ea9c285b48b023dd624c38d3cc79de91",
+    "terrain_planning.py": "32571c20e43d74c61f0b3c1b0fb7fd27f6086e34da7a03f4c0160cf206e30887",
+    "test_archive_scan.py": "65113d18646dda605250211cffa458b7a0fa7f54088a133b51e2837cdfdc839c",
+    "test_circulation.py": "f984d69aafac4df992edc949b93204df4186ebd8a1bbfe779311fa108c967723",
+    "test_collection.py": "01e876797fa14f8d071054b527ead98200d513a2bc230f34a58182cc14408a3d",
+    "test_compact_facades.py": "f36673277c579e3000e8eafde6bb2d3da76e001a1dd0855003925aebc819c0d4",
+    "test_components.py": "a99441ae1a261160506631dc94f9516271e625967ebb9902e8a3e8950010cf56",
+    "test_courtyard.py": "eca5ebf88c8277aa3dc27416b2e280a74511089b99a8afe1f1d02c1eb67f060e",
+    "test_expanded_pipeline.py": "692b11405007b563c3d4f89152a2360eee5f8ee1ca6e86e2bb1d6f63f3896b63",
+    "test_functional.py": "b1ca8caef66ea55b3a6cd9fe001cb6a8772f221ad2ee7fbe652e58f7249d1bcd",
+    "test_garden.py": "9fc171c709ad546edfe9f4ce3d1f671dbac17aa12966325091b0318de2e5c49c",
+    "test_import_structure.py": "34816c58f4c7cb1e92d5b4af17bb78fc6b3891a900ed5b84786c6e59c29e92d4",
+    "test_infrastructure.py": "a41e576b37f179ee52329e006cfc689662d83375e3a38b689d345ac55e10d915",
+    "test_landmarks.py": "69126cf4deec22cf0390bb9b2cfa2ed0886c373a836810715e3ed246a8d8e5ba",
+    "test_layout_measurements.py": "4ddbf48ecbfd1e17def7a2e01d8446692efcf5f0d1cd2077ac93628400bcd57e",
+    "test_measure_components.py": "60e20db63936e2990c83e57181580ab313e7331e99a64981365d11fdc23f37e4",
+    "test_minnan_compounds.py": "7ef3a5ce57a3dd7f022ef4c2d0e40aaf3051db9b1f6964e8a55926aac2663e05",
+    "test_multi_court.py": "a17fa627a98262c5c1a792172db485da7eff058ae6cf0f67d72b53444639b95b",
+    "test_regional.py": "65dcc551efc811b0cfac50149de20c3cde46779f674c37d7602c73a87489ed2a",
+    "test_shapes.py": "3efeec82b5ece096c983b101bc041079ed0568fef74d33198efa0f74f5063759",
+    "test_terrain.py": "0089b5e486ba01d127f19261e6fddc5babc3bd016c783f2651b60f7f99f30eea",
+    "test_vernacular.py": "01b3bd2ada2e8e192e80941c1e6c0faa7fceb73401c31c2ccf84176cc7efd561",
+    "validate_registry.py": "66a06b858041af875a72b3ae32527fa29235a6156df114c4d20b273b0d6e9328",
+    "verify_vanilla_shapes.py": "523fd0f652173ab8dbd9a690243e419f94a5d58e6c4e46f60e86ad064648ee58",
+    "voxel_model.py": "7b386dbbf58c1c24cca89c73d0d88cb7adb9a82097d356ec2a6bd3087ecf7661"
+  },
+  "unified_entry": {
+    "schemas": 19,
+    "editable_presets": 79,
+    "cli_generated_and_state_roundtripped": 79,
+    "config_snapshots_written": 79,
+    "manifest": "E:\\建筑\\generated\\verified-presets-B15\\manifest.json",
+    "manifest_sha256": "656656d9599e1e46996b7f606324e8cbc2d9e8787c159289e7f725e346ca04cf"
+  },
+  "target_registry_checks": {
+    "1.21.4": {
+      "valid_unmodified_presets": 79,
+      "registry": {
+        "sources": [
+          {
+            "url": "https://raw.githubusercontent.com/misode/mcmeta/1.21.4-summary/blocks/data.json",
+            "sha256": "660409b3f6899ff3547b731972fa7df2f2c108245e396540a1f86b9108ee5d87",
+            "bytes": 238893
+          },
+          {
+            "url": "https://raw.githubusercontent.com/misode/mcmeta/1.21.4-summary/registries/data.json",
+            "sha256": "4403442a3fe17d37d60815480b463016cc2a9817b5cfd5afb6965c202294e236",
+            "bytes": 796522
+          }
+        ],
+        "version": "1.21.4",
+        "data_version": 4189,
+        "sha256": "8e05f7a63bfd77e64c1265575baf3a7335d6de2219ba1965b535a700b5f476b7",
+        "block_ids": 1095,
+        "stateful_table_entries": 1095,
+        "normalization": "Complete block ID registry joined with properties; omitted propertyless entries use empty properties/defaults.",
+        "provenance": "misode/mcmeta version-tagged summary of Minecraft game data, not a live game test"
+      },
+      "incompatible_original_presets": []
+    },
+    "1.20.1": {
+      "valid_unmodified_presets": 78,
+      "registry": {
+        "sources": [
+          {
+            "url": "https://raw.githubusercontent.com/misode/mcmeta/1.20.1-summary/blocks/data.json",
+            "sha256": "06e99cc190051e09462691db3a0ce4b034f8e78d09279258978a92b98cc74c54",
+            "bytes": 196037
+          },
+          {
+            "url": "https://raw.githubusercontent.com/misode/mcmeta/1.20.1-summary/registries/data.json",
+            "sha256": "2b7eecf4b2827dea0a5732a440a38004ee911494269fbe7c59e42e9572b125b7",
+            "bytes": 551371
+          }
+        ],
+        "version": "1.20.1",
+        "data_version": 3465,
+        "sha256": "f24e69992dc4c7482f085112d5025642250ab6e02831b8a3d12363098b98181d",
+        "block_ids": 1003,
+        "stateful_table_entries": 642,
+        "normalization": "Complete block ID registry joined with properties; omitted propertyless entries use empty properties/defaults.",
+        "provenance": "misode/mcmeta version-tagged summary of Minecraft game data, not a live game test"
+      },
+      "incompatible_original_presets": [
+        "temple-informed-hall"
+      ]
+    }
+  },
+  "representative_1_20_1_exports": {
+    "checkpoint": "B15",
+    "target": "1.20.1",
+    "exports": [
+      {
+        "preset": "vernacular-minnan-san-gai-lang",
+        "source": "E:\\建筑\\generated\\verified-presets-B15\\vernacular-minnan-san-gai-lang\\vernacular-minnan-san-gai-lang.npz",
+        "source_sha256": "2359596ccb62ddc7996e1cb8c9b1f1ea7814957b36e8e7d7f34b35c5aea389a0",
+        "source_unchanged": true,
+        "changed_voxels": 0,
+        "explicit_replacement": {},
+        "output": "E:\\建筑\\generated\\target-1.20.1-B15\\vernacular-minnan-san-gai-lang-1.20.1.schem",
+        "output_sha256": "99e09bbf2060c1095612ef7706133aa4079716743f853035a4cca99a3df532f8",
+        "data_version": 3465,
+        "valid": true,
+        "state_roundtrip": true
+      },
+      {
+        "preset": "vernacular-minnan-three-luo-middle",
+        "source": "E:\\建筑\\generated\\verified-presets-B15\\vernacular-minnan-three-luo-middle\\vernacular-minnan-three-luo-middle.npz",
+        "source_sha256": "353063df48338a9294424b3ff4e3814c9d29b7d73f18c10bc458c293c7fde0f2",
+        "source_unchanged": true,
+        "changed_voxels": 0,
+        "explicit_replacement": {},
+        "output": "E:\\建筑\\generated\\target-1.20.1-B15\\vernacular-minnan-three-luo-middle-1.20.1.schem",
+        "output_sha256": "e6e63cbae648d1e4f72e45ab6ddebd5dc3a1ee9bc0752af2fc80bcbc2d56d60f",
+        "data_version": 3465,
+        "valid": true,
+        "state_roundtrip": true
+      },
+      {
+        "preset": "vernacular-minnan-two-luo-hulong",
+        "source": "E:\\建筑\\generated\\verified-presets-B15\\vernacular-minnan-two-luo-hulong\\vernacular-minnan-two-luo-hulong.npz",
+        "source_sha256": "2bac6a278ee8d7f4a988a5b771ea86e88c2b340d27781684843e63032fe8ac0e",
+        "source_unchanged": true,
+        "changed_voxels": 0,
+        "explicit_replacement": {},
+        "output": "E:\\建筑\\generated\\target-1.20.1-B15\\vernacular-minnan-two-luo-hulong-1.20.1.schem",
+        "output_sha256": "1f8ff84e770a1bf3489bfaa5f74c0521e578347e3d7979de8cfede2e6f574ac5",
+        "data_version": 3465,
+        "valid": true,
+        "state_roundtrip": true
+      },
+      {
+        "preset": "vernacular-minnan-three-luo-double-hulong",
+        "source": "E:\\建筑\\generated\\verified-presets-B15\\vernacular-minnan-three-luo-double-hulong\\vernacular-minnan-three-luo-double-hulong.npz",
+        "source_sha256": "c7fa2d326a3381e4917282e20858ca74862d6fe58b7a0a589559fb026ebfc5c4",
+        "source_unchanged": true,
+        "changed_voxels": 0,
+        "explicit_replacement": {},
+        "output": "E:\\建筑\\generated\\target-1.20.1-B15\\vernacular-minnan-three-luo-double-hulong-1.20.1.schem",
+        "output_sha256": "dccf794f8757eccd3b99bec8cf836557d138a0eb73763786dc9744af03ccf5ce",
+        "data_version": 3465,
+        "valid": true,
+        "state_roundtrip": true
+      },
+      {
+        "preset": "temple-informed-hall",
+        "source": "E:\\建筑\\generated\\verified-presets-B15\\temple-informed-hall\\temple-informed-hall.npz",
+        "source_sha256": "54ff9a6c566ef2d4aa1edd8da1213d6d373dc0d8dc487ab1508f2f678fcaf2de",
+        "source_unchanged": true,
+        "changed_voxels": 105,
+        "explicit_replacement": {
+          "minecraft:polished_tuff": "minecraft:polished_andesite"
+        },
+        "output": "E:\\建筑\\generated\\target-1.20.1-B15\\temple-informed-hall-1.20.1.schem",
+        "output_sha256": "a57af63847c61f8d7a7a8349d597f5a8f769437b614d8301b0db2a9c19fc629b",
+        "data_version": 3465,
+        "valid": true,
+        "state_roundtrip": true
+      }
+    ],
+    "limits": "Registry and file roundtrip only; no live Minecraft runtime test."
+  },
+  "visual_outputs": {
+    "presets_with_three_views": 79,
+    "images": 237,
+    "manifest": "E:\\建筑\\generated\\verified-presets-B15\\render-manifest.json",
+    "manifest_sha256": "12611381847a58dff0fd4fac0e11d02799fbcf8fbc5a98a1af5fceddab6beb84",
+    "overview": "E:\\建筑\\generated\\verified-presets-B15\\overview.png",
+    "review": {
+      "reviewer": "assistant visual inspection",
+      "date": "2026-10-29",
+      "artifacts": [
+        {
+          "path": "E:\\建筑\\generated\\verified-presets-B15\\overview.png",
+          "sha256": "0e31257440cb8589eecf87274dbc10cc6494d4b6df02ae50ad12a3d657505ea7",
+          "observation": "Representative overview inspected, including all five new compound presets and their distinct roof arrangements."
+        },
+        {
+          "path": "E:\\建筑\\generated\\verified-presets-B15\\vernacular-minnan-san-gai-lang\\vernacular-minnan-san-gai-lang_isometric.png",
+          "sha256": "f083ef988db013187f8ab15b6d5394c68fdd778a22946d9532b3edc0322b88bd",
+          "observation": "Three separate roof volumes at the front are visible, with the rear main range and upper side ranges enclosing the court."
+        },
+        {
+          "path": "E:\\建筑\\generated\\verified-presets-B15\\vernacular-minnan-three-luo-middle\\vernacular-minnan-three-luo-middle_isometric.png",
+          "sha256": "5347ee7d0b6315f3ad6e64a5eb1cfda87540650786647d9305da4fa95c5e8863",
+          "observation": "The middle ancestral-hall range is higher than the other ranges; two separate open courts are visible."
+        },
+        {
+          "path": "E:\\建筑\\generated\\verified-presets-B15\\vernacular-minnan-three-luo-double-hulong\\vernacular-minnan-three-luo-double-hulong_top.png",
+          "sha256": "a1c7b31fd5a311c574e5e9e2313c247873f8397e2951519fec48a01f54ebbb9e",
+          "observation": "Two main courts and both side lanes are visible, with covered cross-links at the front and rear."
+        },
+        {
+          "path": "E:\\建筑\\analysis\\qa\\final-B15\\vernacular-minnan-two-luo-hulong-y-sections.png",
+          "sha256": "a04136069417742392c6010275dc4b715d520a9d0826e1783cc9adf0df5f0165",
+          "observation": "Plan slices show the side range, narrow court, inward porch, independent exterior entrance and connecting passages."
+        },
+        {
+          "path": "E:\\建筑\\analysis\\qa\\final-B15\\vernacular-minnan-three-luo-middle-x-sections.png",
+          "sha256": "f2289d1e587e07905200c8eab8bb3be1eebbc50d14d7564a995e65bdd5c5f68e",
+          "observation": "Longitudinal sections show three main ranges, two courts and the higher middle hall."
+        },
+        {
+          "path": "E:\\建筑\\analysis\\qa\\final-B15\\vernacular-minnan-san-gai-lang-z-sections.png",
+          "sha256": "62f1cf7d6c734f0d33e58081ebb861bb586ea421e4555ba04696ef11c0f8ff2b",
+          "observation": "Cross sections show the three separate front roof volumes and distinct rear range."
+        },
+        {
+          "path": "E:\\建筑\\analysis\\qa\\final-B15\\vernacular-minnan-three-luo-double-hulong-y-sections.png",
+          "sha256": "ce1a6bea80075e6b024348363a206fc3fd15f1947817945ad95855ca0474e837",
+          "observation": "Floor and roof slices show both side lanes, end cross-links and the two separate internal courts."
+        }
+      ],
+      "limits": [
+        "Approximate colors and partial block shapes, not Minecraft screenshots.",
+        "No historical artisan authenticity, player collision or mechanical safety conclusion."
+      ]
+    },
+    "rendering_is_not_live_game_capture": true
+  },
+  "source_research": {
+    "minecraft_source_records": 10,
+    "historical_source_records": 16,
+    "historical_web_pages_read": 15,
+    "historical_pdf_documents_read": 1,
+    "historical_pdf_pages_read": 6,
+    "source_registry_sha256": "2601cfc2e9defe62468d169528d1013465d9b11d2fd8e891b39bfadf41fc1664",
+    "raw_source_geometry_or_client_assets_packaged": false
+  },
+  "remaining_dedicated_implementation_gaps": [
+    "jin_merchant",
+    "gan",
+    "chuan_shu",
+    "bai_naxi",
+    "dai",
+    "tibetan",
+    "xinjiang",
+    "northeast",
+    "islamic_chinese"
+  ],
+  "not_claimed": [
+    "Exhaustive Chinese architectural history, model weight training or historical craft reconstruction.",
+    "Live game import, player collision, block updates, fluid, crop, light or structural safety validation."
+  ]
+}

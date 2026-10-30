@@ -1,0 +1,19 @@
+{
+  "schema": "chinese-multi-court/1",
+  "court_width": 40,
+  "court_depths": [
+    32,
+    40,
+    32
+  ],
+  "outer_gate_offset_x": -8,
+  "wall_height": 3,
+  "evidence": [
+    {
+      "source_id": "pmc-siheyuan-mineman",
+      "observed": "The source's outer entrance lies eight blocks east of its geometric midline.",
+      "adopted": "An offset outer entrance followed by a centered interior route.",
+      "design_changes": "The offset is deliberately mirrored to the west. Three courts, dimensions, partitions and all building geometry are original choices."
+    }
+  ]
+}

@@ -1,0 +1,1362 @@
+{
+  "schema": "architecture-measured-components/1",
+  "method": "Explicit annotated boxes and material filters, continuous wood segments; no automatic semantic claims.",
+  "samples": [
+    {
+      "id": "siheyuan-rear-house",
+      "label": "North rear house roof",
+      "source": "pmc-siheyuan-mineman",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "sample_box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_query_box": [
+        -110,
+        8,
+        -152,
+        -80,
+        11,
+        -142
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^minecraft:(stone|smooth_quartz)_slab\\[",
+        "bounds_xyz_inclusive": [
+          -110,
+          8,
+          -152,
+          -80,
+          11,
+          -142
+        ],
+        "span_xz": [
+          31,
+          11
+        ],
+        "y_range": [
+          8,
+          11
+        ],
+        "material_counts": {
+          "minecraft:stone_slab": 375,
+          "minecraft:smooth_quartz_slab": 51
+        },
+        "material_fraction": {
+          "minecraft:stone_slab": 0.880282,
+          "minecraft:smooth_quartz_slab": 0.119718
+        },
+        "center_x_coordinate": -95,
+        "center_z_coordinate": -147,
+        "x_profile": [
+          [
+            -110,
+            11
+          ],
+          [
+            -109,
+            11
+          ],
+          [
+            -108,
+            11
+          ],
+          [
+            -107,
+            11
+          ],
+          [
+            -106,
+            11
+          ],
+          [
+            -105,
+            11
+          ],
+          [
+            -104,
+            11
+          ],
+          [
+            -103,
+            11
+          ],
+          [
+            -102,
+            11
+          ],
+          [
+            -101,
+            11
+          ],
+          [
+            -100,
+            11
+          ],
+          [
+            -99,
+            11
+          ],
+          [
+            -98,
+            11
+          ],
+          [
+            -97,
+            11
+          ],
+          [
+            -96,
+            11
+          ],
+          [
+            -95,
+            11
+          ],
+          [
+            -94,
+            11
+          ],
+          [
+            -93,
+            11
+          ],
+          [
+            -92,
+            11
+          ],
+          [
+            -91,
+            11
+          ],
+          [
+            -90,
+            11
+          ],
+          [
+            -89,
+            11
+          ],
+          [
+            -88,
+            11
+          ],
+          [
+            -87,
+            11
+          ],
+          [
+            -86,
+            11
+          ],
+          [
+            -85,
+            11
+          ],
+          [
+            -84,
+            11
+          ],
+          [
+            -83,
+            11
+          ],
+          [
+            -82,
+            11
+          ],
+          [
+            -81,
+            11
+          ],
+          [
+            -80,
+            11
+          ]
+        ],
+        "z_profile": [
+          [
+            -152,
+            8
+          ],
+          [
+            -151,
+            8
+          ],
+          [
+            -150,
+            9
+          ],
+          [
+            -149,
+            9
+          ],
+          [
+            -148,
+            10
+          ],
+          [
+            -147,
+            11
+          ],
+          [
+            -146,
+            10
+          ],
+          [
+            -145,
+            9
+          ],
+          [
+            -144,
+            9
+          ],
+          [
+            -143,
+            8
+          ],
+          [
+            -142,
+            8
+          ]
+        ],
+        "shape_surface_profiles": [
+          {
+            "axis": "x",
+            "fixed_coordinate_1_16": -2344,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -1760,
+                -1264,
+                184
+              ]
+            ],
+            "approximate_shape_states": []
+          },
+          {
+            "axis": "z",
+            "fixed_coordinate_1_16": -1512,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -2432,
+                -2416,
+                136
+              ],
+              [
+                -2416,
+                -2400,
+                144
+              ],
+              [
+                -2400,
+                -2384,
+                152
+              ],
+              [
+                -2384,
+                -2368,
+                160
+              ],
+              [
+                -2368,
+                -2352,
+                168
+              ],
+              [
+                -2352,
+                -2336,
+                184
+              ],
+              [
+                -2336,
+                -2320,
+                168
+              ],
+              [
+                -2320,
+                -2304,
+                160
+              ],
+              [
+                -2304,
+                -2288,
+                152
+              ],
+              [
+                -2288,
+                -2272,
+                144
+              ],
+              [
+                -2272,
+                -2256,
+                136
+              ]
+            ],
+            "approximate_shape_states": []
+          }
+        ]
+      },
+      "column_rows": {
+        "column_row": {
+          "axis": "x",
+          "fixed_coordinate": -145,
+          "positions": [
+            -105,
+            -101,
+            -97,
+            -93,
+            -89,
+            -85
+          ],
+          "spacings": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "material_filter": "^minecraft:acacia_fence\\[",
+          "interpretation": "Continuous selected material over annotated height; role supplied by the annotation.",
+          "material_segment_y_range": [
+            5,
+            7
+          ],
+          "material_segment_height": 3
+        }
+      },
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded."
+    },
+    {
+      "id": "siheyuan-main-house",
+      "label": "Central main house roof",
+      "source": "pmc-siheyuan-mineman",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "sample_box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_query_box": [
+        -102,
+        8,
+        -138,
+        -88,
+        11,
+        -128
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^minecraft:(stone|smooth_quartz)_slab\\[",
+        "bounds_xyz_inclusive": [
+          -102,
+          8,
+          -138,
+          -88,
+          11,
+          -128
+        ],
+        "span_xz": [
+          15,
+          11
+        ],
+        "y_range": [
+          8,
+          11
+        ],
+        "material_counts": {
+          "minecraft:stone_slab": 167,
+          "minecraft:smooth_quartz_slab": 43
+        },
+        "material_fraction": {
+          "minecraft:stone_slab": 0.795238,
+          "minecraft:smooth_quartz_slab": 0.204762
+        },
+        "center_x_coordinate": -95,
+        "center_z_coordinate": -133,
+        "x_profile": [
+          [
+            -102,
+            11
+          ],
+          [
+            -101,
+            11
+          ],
+          [
+            -100,
+            11
+          ],
+          [
+            -99,
+            11
+          ],
+          [
+            -98,
+            11
+          ],
+          [
+            -97,
+            11
+          ],
+          [
+            -96,
+            11
+          ],
+          [
+            -95,
+            11
+          ],
+          [
+            -94,
+            11
+          ],
+          [
+            -93,
+            11
+          ],
+          [
+            -92,
+            11
+          ],
+          [
+            -91,
+            11
+          ],
+          [
+            -90,
+            11
+          ],
+          [
+            -89,
+            11
+          ],
+          [
+            -88,
+            11
+          ]
+        ],
+        "z_profile": [
+          [
+            -138,
+            8
+          ],
+          [
+            -137,
+            8
+          ],
+          [
+            -136,
+            9
+          ],
+          [
+            -135,
+            9
+          ],
+          [
+            -134,
+            10
+          ],
+          [
+            -133,
+            11
+          ],
+          [
+            -132,
+            10
+          ],
+          [
+            -131,
+            9
+          ],
+          [
+            -130,
+            9
+          ],
+          [
+            -129,
+            8
+          ],
+          [
+            -128,
+            8
+          ]
+        ],
+        "shape_surface_profiles": [
+          {
+            "axis": "x",
+            "fixed_coordinate_1_16": -2120,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -1632,
+                -1392,
+                184
+              ]
+            ],
+            "approximate_shape_states": []
+          },
+          {
+            "axis": "z",
+            "fixed_coordinate_1_16": -1512,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -2208,
+                -2192,
+                136
+              ],
+              [
+                -2192,
+                -2176,
+                144
+              ],
+              [
+                -2176,
+                -2160,
+                152
+              ],
+              [
+                -2160,
+                -2144,
+                160
+              ],
+              [
+                -2144,
+                -2128,
+                168
+              ],
+              [
+                -2128,
+                -2112,
+                184
+              ],
+              [
+                -2112,
+                -2096,
+                168
+              ],
+              [
+                -2096,
+                -2080,
+                160
+              ],
+              [
+                -2080,
+                -2064,
+                152
+              ],
+              [
+                -2064,
+                -2048,
+                144
+              ],
+              [
+                -2048,
+                -2032,
+                136
+              ]
+            ],
+            "approximate_shape_states": []
+          }
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded."
+    },
+    {
+      "id": "siheyuan-west-wing",
+      "label": "West wing roof",
+      "source": "pmc-siheyuan-mineman",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "sample_box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_query_box": [
+        -110,
+        8,
+        -124,
+        -102,
+        11,
+        -112
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^minecraft:(stone|smooth_quartz)_slab\\[",
+        "bounds_xyz_inclusive": [
+          -110,
+          8,
+          -124,
+          -102,
+          10,
+          -112
+        ],
+        "span_xz": [
+          9,
+          13
+        ],
+        "y_range": [
+          8,
+          10
+        ],
+        "material_counts": {
+          "minecraft:stone_slab": 128,
+          "minecraft:smooth_quartz_slab": 13
+        },
+        "material_fraction": {
+          "minecraft:stone_slab": 0.907801,
+          "minecraft:smooth_quartz_slab": 0.092199
+        },
+        "center_x_coordinate": -106,
+        "center_z_coordinate": -118,
+        "x_profile": [
+          [
+            -110,
+            8
+          ],
+          [
+            -109,
+            8
+          ],
+          [
+            -108,
+            9
+          ],
+          [
+            -107,
+            9
+          ],
+          [
+            -106,
+            10
+          ],
+          [
+            -105,
+            9
+          ],
+          [
+            -104,
+            9
+          ],
+          [
+            -103,
+            8
+          ],
+          [
+            -102,
+            8
+          ]
+        ],
+        "z_profile": [
+          [
+            -124,
+            10
+          ],
+          [
+            -123,
+            10
+          ],
+          [
+            -122,
+            10
+          ],
+          [
+            -121,
+            10
+          ],
+          [
+            -120,
+            10
+          ],
+          [
+            -119,
+            10
+          ],
+          [
+            -118,
+            10
+          ],
+          [
+            -117,
+            10
+          ],
+          [
+            -116,
+            10
+          ],
+          [
+            -115,
+            10
+          ],
+          [
+            -114,
+            10
+          ],
+          [
+            -113,
+            10
+          ],
+          [
+            -112,
+            10
+          ]
+        ],
+        "shape_surface_profiles": [
+          {
+            "axis": "x",
+            "fixed_coordinate_1_16": -1880,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -1760,
+                -1744,
+                136
+              ],
+              [
+                -1744,
+                -1728,
+                144
+              ],
+              [
+                -1728,
+                -1712,
+                152
+              ],
+              [
+                -1712,
+                -1696,
+                160
+              ],
+              [
+                -1696,
+                -1680,
+                176
+              ],
+              [
+                -1680,
+                -1664,
+                160
+              ],
+              [
+                -1664,
+                -1648,
+                152
+              ],
+              [
+                -1648,
+                -1632,
+                144
+              ],
+              [
+                -1632,
+                -1616,
+                136
+              ]
+            ],
+            "approximate_shape_states": []
+          },
+          {
+            "axis": "z",
+            "fixed_coordinate_1_16": -1688,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -1984,
+                -1776,
+                176
+              ]
+            ],
+            "approximate_shape_states": []
+          }
+        ]
+      },
+      "column_rows": {
+        "column_row": {
+          "axis": "z",
+          "fixed_coordinate": -105,
+          "positions": [
+            -120,
+            -116
+          ],
+          "spacings": [
+            4
+          ],
+          "material_filter": "^minecraft:acacia_fence\\[",
+          "interpretation": "Continuous selected material over annotated height; role supplied by the annotation.",
+          "material_segment_y_range": [
+            5,
+            7
+          ],
+          "material_segment_height": 3
+        }
+      },
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded."
+    },
+    {
+      "id": "siheyuan-outer-gate",
+      "label": "Offset south entrance roof",
+      "source": "pmc-siheyuan-mineman",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "sample_box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_query_box": [
+        -90,
+        8,
+        -101,
+        -84,
+        11,
+        -89
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^minecraft:(stone|smooth_quartz)_slab\\[",
+        "bounds_xyz_inclusive": [
+          -90,
+          8,
+          -101,
+          -84,
+          11,
+          -89
+        ],
+        "span_xz": [
+          7,
+          13
+        ],
+        "y_range": [
+          8,
+          11
+        ],
+        "material_counts": {
+          "minecraft:stone_slab": 72,
+          "minecraft:smooth_quartz_slab": 51
+        },
+        "material_fraction": {
+          "minecraft:stone_slab": 0.585366,
+          "minecraft:smooth_quartz_slab": 0.414634
+        },
+        "center_x_coordinate": -87,
+        "center_z_coordinate": -95,
+        "x_profile": [
+          [
+            -90,
+            11
+          ],
+          [
+            -89,
+            11
+          ],
+          [
+            -88,
+            11
+          ],
+          [
+            -87,
+            11
+          ],
+          [
+            -86,
+            11
+          ],
+          [
+            -85,
+            11
+          ],
+          [
+            -84,
+            11
+          ]
+        ],
+        "z_profile": [
+          [
+            -101,
+            8
+          ],
+          [
+            -100,
+            8
+          ],
+          [
+            -99,
+            9
+          ],
+          [
+            -98,
+            9
+          ],
+          [
+            -97,
+            10
+          ],
+          [
+            -96,
+            10
+          ],
+          [
+            -95,
+            11
+          ],
+          [
+            -94,
+            10
+          ],
+          [
+            -93,
+            10
+          ],
+          [
+            -92,
+            9
+          ],
+          [
+            -91,
+            9
+          ],
+          [
+            -90,
+            8
+          ],
+          [
+            -89,
+            8
+          ]
+        ],
+        "shape_surface_profiles": [
+          {
+            "axis": "x",
+            "fixed_coordinate_1_16": -1512,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -1440,
+                -1328,
+                192
+              ]
+            ],
+            "approximate_shape_states": []
+          },
+          {
+            "axis": "z",
+            "fixed_coordinate_1_16": -1384,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -1616,
+                -1600,
+                136
+              ],
+              [
+                -1600,
+                -1584,
+                144
+              ],
+              [
+                -1584,
+                -1568,
+                152
+              ],
+              [
+                -1568,
+                -1552,
+                160
+              ],
+              [
+                -1552,
+                -1536,
+                168
+              ],
+              [
+                -1536,
+                -1520,
+                176
+              ],
+              [
+                -1520,
+                -1504,
+                192
+              ],
+              [
+                -1504,
+                -1488,
+                176
+              ],
+              [
+                -1488,
+                -1472,
+                168
+              ],
+              [
+                -1472,
+                -1456,
+                160
+              ],
+              [
+                -1456,
+                -1440,
+                152
+              ],
+              [
+                -1440,
+                -1424,
+                144
+              ],
+              [
+                -1424,
+                -1408,
+                136
+              ]
+            ],
+            "approximate_shape_states": []
+          }
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded."
+    },
+    {
+      "id": "siheyuan-inner-gate",
+      "label": "Central inner gate roof",
+      "source": "pmc-siheyuan-mineman",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "sample_box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_query_box": [
+        -98,
+        8,
+        -109,
+        -92,
+        11,
+        -103
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^minecraft:(stone|smooth_quartz)_slab\\[",
+        "bounds_xyz_inclusive": [
+          -98,
+          8,
+          -109,
+          -92,
+          10,
+          -103
+        ],
+        "span_xz": [
+          7,
+          7
+        ],
+        "y_range": [
+          8,
+          10
+        ],
+        "material_counts": {
+          "minecraft:stone_slab": 39,
+          "minecraft:smooth_quartz_slab": 19
+        },
+        "material_fraction": {
+          "minecraft:stone_slab": 0.672414,
+          "minecraft:smooth_quartz_slab": 0.327586
+        },
+        "center_x_coordinate": -95,
+        "center_z_coordinate": -106,
+        "x_profile": [
+          [
+            -98,
+            10
+          ],
+          [
+            -97,
+            10
+          ],
+          [
+            -96,
+            10
+          ],
+          [
+            -95,
+            10
+          ],
+          [
+            -94,
+            10
+          ],
+          [
+            -93,
+            10
+          ],
+          [
+            -92,
+            10
+          ]
+        ],
+        "z_profile": [
+          [
+            -109,
+            8
+          ],
+          [
+            -108,
+            8
+          ],
+          [
+            -107,
+            9
+          ],
+          [
+            -106,
+            10
+          ],
+          [
+            -105,
+            9
+          ],
+          [
+            -104,
+            8
+          ],
+          [
+            -103,
+            8
+          ]
+        ],
+        "shape_surface_profiles": [
+          {
+            "axis": "x",
+            "fixed_coordinate_1_16": -1688,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -1568,
+                -1456,
+                168
+              ]
+            ],
+            "approximate_shape_states": []
+          },
+          {
+            "axis": "z",
+            "fixed_coordinate_1_16": -1512,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -1744,
+                -1728,
+                136
+              ],
+              [
+                -1728,
+                -1712,
+                144
+              ],
+              [
+                -1712,
+                -1696,
+                152
+              ],
+              [
+                -1696,
+                -1680,
+                168
+              ],
+              [
+                -1680,
+                -1664,
+                152
+              ],
+              [
+                -1664,
+                -1648,
+                144
+              ],
+              [
+                -1648,
+                -1632,
+                136
+              ]
+            ],
+            "approximate_shape_states": []
+          }
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded."
+    },
+    {
+      "id": "siheyuan-west-corridor",
+      "label": "West north connecting canopy",
+      "source": "pmc-siheyuan-mineman",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "sample_box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_query_box": [
+        -106,
+        7,
+        -131,
+        -104,
+        9,
+        -125
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^minecraft:(stone|smooth_quartz)_slab\\[",
+        "bounds_xyz_inclusive": [
+          -106,
+          7,
+          -131,
+          -104,
+          9,
+          -125
+        ],
+        "span_xz": [
+          3,
+          7
+        ],
+        "y_range": [
+          7,
+          9
+        ],
+        "material_counts": {
+          "minecraft:stone_slab": 31,
+          "minecraft:smooth_quartz_slab": 2
+        },
+        "material_fraction": {
+          "minecraft:stone_slab": 0.939394,
+          "minecraft:smooth_quartz_slab": 0.060606
+        },
+        "center_x_coordinate": -105,
+        "center_z_coordinate": -128,
+        "x_profile": [
+          [
+            -106,
+            7
+          ],
+          [
+            -105,
+            8
+          ],
+          [
+            -104,
+            7
+          ]
+        ],
+        "z_profile": [
+          [
+            -131,
+            8
+          ],
+          [
+            -130,
+            8
+          ],
+          [
+            -129,
+            7
+          ],
+          [
+            -128,
+            8
+          ],
+          [
+            -127,
+            7
+          ],
+          [
+            -126,
+            8
+          ],
+          [
+            -125,
+            7
+          ]
+        ],
+        "shape_surface_profiles": [
+          {
+            "axis": "x",
+            "fixed_coordinate_1_16": -2040,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -1696,
+                -1680,
+                128
+              ],
+              [
+                -1680,
+                -1664,
+                136
+              ],
+              [
+                -1664,
+                -1648,
+                128
+              ]
+            ],
+            "approximate_shape_states": []
+          },
+          {
+            "axis": "z",
+            "fixed_coordinate_1_16": -1672,
+            "runs_start_end_exclusive_surface_y_1_16": [
+              [
+                -2096,
+                -2080,
+                144
+              ],
+              [
+                -2080,
+                -2064,
+                136
+              ],
+              [
+                -2064,
+                -2048,
+                128
+              ],
+              [
+                -2048,
+                -2032,
+                136
+              ],
+              [
+                -2032,
+                -2016,
+                128
+              ],
+              [
+                -2016,
+                -2000,
+                136
+              ],
+              [
+                -2000,
+                -1984,
+                128
+              ]
+            ],
+            "approximate_shape_states": []
+          }
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded."
+    }
+  ]
+}

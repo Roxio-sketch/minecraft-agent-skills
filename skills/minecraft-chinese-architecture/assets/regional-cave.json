@@ -1,0 +1,14 @@
+{
+  "schema": "chinese-regional/1",
+  "kind": "cave",
+  "parameters": {
+    "chambers": 3,
+    "chamber_width": 7,
+    "pier_width": 3,
+    "depth": 14,
+    "vault_height": 7
+  },
+  "evidence": [
+    "Original spatial prototype. See regional-generation.md for observed source relationships and unmeasured design choices."
+  ]
+}

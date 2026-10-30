@@ -1,0 +1,211 @@
+{
+  "schema": "architecture-annotations/1",
+  "samples": [
+    {
+      "id": "tulou-upper-ring",
+      "source": "ancient-structures-chinese",
+      "label": "Tulou upper annular roof material",
+      "model": "tulou.npz",
+      "source_sha256": "7212e474f1aeabb6b07d7191f56d2adb99cf05c6f8d91e1e00bd1d12850801d1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "box": [
+        0,
+        0,
+        0,
+        46,
+        20,
+        46
+      ],
+      "roof_box": [
+        0,
+        19,
+        0,
+        46,
+        20,
+        46
+      ],
+      "roof_pattern": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    },
+    {
+      "id": "tulou-inner-low",
+      "source": "ancient-structures-chinese",
+      "label": "Tulou low interior roof material",
+      "model": "tulou.npz",
+      "source_sha256": "7212e474f1aeabb6b07d7191f56d2adb99cf05c6f8d91e1e00bd1d12850801d1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "box": [
+        0,
+        0,
+        0,
+        46,
+        20,
+        46
+      ],
+      "roof_box": [
+        13,
+        11,
+        13,
+        33,
+        12,
+        33
+      ],
+      "roof_pattern": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    },
+    {
+      "id": "pagoda-roof-1",
+      "source": "ancient-structures-chinese",
+      "label": "Pagoda selected roof band 1",
+      "model": "chinese_pagoda.npz",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "box": [
+        0,
+        0,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_box": [
+        0,
+        10,
+        0,
+        31,
+        12,
+        25
+      ],
+      "roof_pattern": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim.",
+      "column_row": {
+        "axis": "x",
+        "fixed": 7,
+        "range": [
+          12,
+          24
+        ],
+        "y_range": [
+          6,
+          9
+        ]
+      },
+      "depth_row": {
+        "axis": "z",
+        "fixed": 13,
+        "range": [
+          6,
+          18
+        ],
+        "y_range": [
+          6,
+          9
+        ]
+      }
+    },
+    {
+      "id": "pagoda-roof-2",
+      "source": "ancient-structures-chinese",
+      "label": "Pagoda selected roof band 2",
+      "model": "chinese_pagoda.npz",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "box": [
+        0,
+        0,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_box": [
+        0,
+        17,
+        0,
+        31,
+        19,
+        25
+      ],
+      "roof_pattern": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    },
+    {
+      "id": "pagoda-roof-3",
+      "source": "ancient-structures-chinese",
+      "label": "Pagoda selected roof band 3",
+      "model": "chinese_pagoda.npz",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "box": [
+        0,
+        0,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_box": [
+        0,
+        24,
+        0,
+        31,
+        26,
+        25
+      ],
+      "roof_pattern": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    },
+    {
+      "id": "pagoda-roof-4",
+      "source": "ancient-structures-chinese",
+      "label": "Pagoda selected roof band 4",
+      "model": "chinese_pagoda.npz",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "box": [
+        0,
+        0,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_box": [
+        0,
+        31,
+        0,
+        31,
+        34,
+        25
+      ],
+      "roof_pattern": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    },
+    {
+      "id": "pagoda-roof-5",
+      "source": "ancient-structures-chinese",
+      "label": "Pagoda selected roof band 5",
+      "model": "chinese_pagoda.npz",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "coordinate_space": "Local structure XYZ; repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "box": [
+        0,
+        0,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_box": [
+        0,
+        39,
+        0,
+        31,
+        47,
+        25
+      ],
+      "roof_pattern": "^dawnoftimebuilder:gray_roof_tiles(?:_|\\[|$)",
+      "interpretation": "Selected mod roofing block-state envelope only. Actual mod models are unknown here, so no exact surface or historic carpentry claim."
+    }
+  ]
+}

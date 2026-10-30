@@ -1,0 +1,10 @@
+{
+  "schema": "chinese-infrastructure/1",
+  "kind": "covered_bridge",
+  "parameters": {
+    "half_span": 14,
+    "clear_width": 3,
+    "rise": 3,
+    "clear_height": 6
+  }
+}

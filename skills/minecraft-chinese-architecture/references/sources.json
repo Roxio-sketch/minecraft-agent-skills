@@ -1,0 +1,272 @@
+{
+  "schema": "architecture-sources/1",
+  "sources": [
+    {
+      "id": "luoyun",
+      "archive_path": "D:\\QQ\\存储\\凡人修仙传：落云宗.zip",
+      "sha256": "987f7e1212303d069dfce26d715f22a8388bfc9f3c7a62d73e1200fac488f824",
+      "world_name": "凡人修仙传：落云宗",
+      "data_version": 4189,
+      "minecraft_version": "1.21.4",
+      "chunk_count": 47771,
+      "block_state_count": 1283,
+      "nonair_voxels": 410594679,
+      "height": {
+        "min_y": -64,
+        "height": 1024
+      },
+      "scan_errors": [],
+      "declared_author": null,
+      "source_context": "User supplied local archive",
+      "redistribution_authorization": "not established",
+      "local_evidence_dir": "E:\\建筑\\analysis\\luoyun"
+    },
+    {
+      "id": "xutian",
+      "archive_path": "D:\\QQ\\存储\\凡人修仙传：虚天殿.zip",
+      "sha256": "68308f5294c2ca029e9a3a50a32ec7fc7a8aab096e7afdf8bb4feb3b8911c077",
+      "world_name": "凡人修仙传：虚天殿",
+      "data_version": 4189,
+      "minecraft_version": "1.21.4",
+      "chunk_count": 95400,
+      "block_state_count": 683,
+      "nonair_voxels": 161881973,
+      "height": {
+        "min_y": -64,
+        "height": 1024
+      },
+      "scan_errors": [],
+      "declared_author": null,
+      "source_context": "User supplied local archive",
+      "redistribution_authorization": "not established",
+      "local_evidence_dir": "E:\\建筑\\analysis\\xutian"
+    },
+    {
+      "id": "huangfeng",
+      "archive_path": "D:\\QQ\\存储\\黄枫谷存档+投影.zip",
+      "sha256": "aca8fec05ab67545b08b279ca451c789e06f585938f9defa0bde4d24474343d3",
+      "world_name": "凡人修仙传：黄枫谷",
+      "data_version": 4189,
+      "minecraft_version": "1.21.4",
+      "chunk_count": 27975,
+      "block_state_count": 452,
+      "nonair_voxels": 220921143,
+      "height": {
+        "min_y": -64,
+        "height": 1024
+      },
+      "scan_errors": [],
+      "declared_author": "jiuge (schem metadata only)",
+      "source_context": "User supplied local archive",
+      "redistribution_authorization": "not established",
+      "local_evidence_dir": "E:\\建筑\\analysis\\huangfeng"
+    },
+    {
+      "id": "mctoolbox-temple",
+      "title": "Chinese Temple",
+      "source_url": "https://mctoolbox.net/schematics/chinese-temple",
+      "download_url": "https://mctoolbox.net/get/chinese-temple?format=schem",
+      "retrieved_date": "2026-10-28",
+      "archive_path": "E:\\建筑\\additional-sources\\chinese-temple.schem",
+      "sha256": "572e17872abdc598e395a99ce1f35a8c08164f211329198733043d5c99232fd4",
+      "format": "Sponge Schematic v3",
+      "data_version": 4440,
+      "minecraft_version": "1.21.8",
+      "file_dimensions_xyz": [
+        57,
+        51,
+        59
+      ],
+      "occupied_bounds_paste_relative": [
+        -47,
+        0,
+        -19,
+        -13,
+        38,
+        19
+      ],
+      "nonair_voxels": 8187,
+      "block_state_count": 157,
+      "nonair_material_count": 61,
+      "declared_author": null,
+      "original_creator_status": "Not identified on page or original schem metadata. Website-converted litematic says MC Toolbox; this does not verify the original builder.",
+      "redistribution_authorization": "not established; local analysis only",
+      "source_context": "Public download through website normal browser flow; original user authorized local reference downloads",
+      "alternate_format": {
+        "path": "E:\\建筑\\additional-sources\\chinese-temple.litematic",
+        "sha256": "8f4dd1b7c62f6efbc4ebf73d4f78e10c252f4dbfc997f0969f17bf509ba7be47",
+        "format": "Litematica v6",
+        "declared_author": "MC Toolbox (website conversion metadata)",
+        "all_171513_block_states_equal": true,
+        "distinct_sample": false
+      },
+      "local_evidence_dir": "E:\\建筑\\analysis\\additional\\temple"
+    },
+    {
+      "id": "mctoolbox-twin-manor",
+      "title": "Traditional Asian Twin Pavilion Manor",
+      "declared_author": "Spaleforce (website attribution; not present in file metadata)",
+      "source_url": "https://mctoolbox.net/schematics/traditional-asian-twin-pavilion-manor",
+      "download_url": "https://mctoolbox.net/get/traditional-asian-twin-pavilion-manor?format=schem",
+      "retrieved_date": "2026-10-28",
+      "archive_path": "E:\\建筑\\additional-sources\\traditional-asian-twin-pavilion-manor.schem",
+      "sha256": "5b651a220e56059a37d4ebcadf352f2fc218f46a1aabe4df0430aefbd815fc1b",
+      "format": "Sponge Schematic v2",
+      "data_version": 4790,
+      "website_version_label": "26.1.2",
+      "version_mapping_verified": false,
+      "file_dimensions_xyz": [
+        57,
+        38,
+        69
+      ],
+      "nonair_voxels": 50735,
+      "block_state_count": 393,
+      "nonair_material_count": 122,
+      "website_material_count": 122,
+      "material_count_note": "Website count and distinct base identifiers differ; use parsed counts for this analysis.",
+      "classification": "Comparative pan-East-Asian fantasy estate; Chinese regional/historical classification not established.",
+      "source_context": "Normal public browser download under user authorization; used for perpendicular wing/roof composition comparison.",
+      "redistribution_authorization": "not established; local analysis only",
+      "omitted_block_entities": 0,
+      "omitted_entities": 0,
+      "local_evidence_dir": "E:\\建筑\\analysis\\additional\\twin-manor"
+    },
+    {
+      "id": "createmod-china-house",
+      "title": "China House",
+      "declared_author": "Spitfires07 (website attribution; file has no author field)",
+      "source_url": "https://createmod.com/schematics/china-house",
+      "download_url": "https://createmod.com/get/china-house",
+      "retrieved_date": "2026-10-28",
+      "archive_path": "E:\\建筑\\additional-sources\\china-house.nbt",
+      "sha256": "c458bde3e2175659ba22cd8861e6a5e1ff1d7e488ab157ac76e70c3949f50420",
+      "format": "Java/Create structure NBT",
+      "data_version": 3465,
+      "website_version_label": "1.20.X / Create 0.5.1(a-f)",
+      "file_dimensions_xyz": [
+        29,
+        22,
+        23
+      ],
+      "nonair_voxels": 3676,
+      "source_palette_count": 157,
+      "block_state_count": 158,
+      "omitted_positions": 10998,
+      "omitted_block_entities": 58,
+      "nonair_namespace_counts": {
+        "minecraft": 3277,
+        "chisel": 325,
+        "terrestria": 10,
+        "mcwfences": 44,
+        "mcwlights": 10,
+        "mcwdoors": 10
+      },
+      "classification": "Author-labelled Chinese-inspired fantasy residence; historical/regional classification not established.",
+      "redistribution_authorization": "not established; local analysis only",
+      "local_evidence_dir": "E:\\建筑\\analysis\\additional\\china-house"
+    },
+    {
+      "id": "pmc-siheyuan-mineman",
+      "title": "Chinese Siheyuan (1:1 Scale)",
+      "declared_author": "Mineman_is_King (project page attribution)",
+      "source_url": "https://www.planetminecraft.com/project/chinese-siheyuan-1-1-scale/",
+      "download_url": "https://www.mediafire.com/file/tyoh0pl2rutzzif/Siheyuan.zip/file",
+      "retrieved_date": "2026-10-28",
+      "archive_path": "E:\\建筑\\additional-sources\\Siheyuan.zip",
+      "sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "format": "Java world ZIP / legacy palette-based Anvil",
+      "data_version": 1976,
+      "minecraft_version": "1.14.4",
+      "chunk_count": 3514,
+      "manufactured_material_bounds_xyz_inclusive": [
+        -110,
+        3,
+        -152,
+        -80,
+        11,
+        -89
+      ],
+      "author_statement": "Diagrammatic design; not based on one specific real siheyuan. Approximately 1:1 is the author claim, not a verified site survey.",
+      "classification": "Author-labelled siheyuan diagram, local geometry measured; regional/historical attribution not independently established.",
+      "redistribution_authorization": "not established; local analysis only",
+      "local_evidence_dir": "E:\\建筑\\analysis\\additional\\siheyuan"
+    },
+    {
+      "id": "ancient-structures-chinese",
+      "title": "Ancient Structures: Chinese",
+      "declared_author": "Jackie — building design; TheGoldenWorld — code maintainer (repository README). Jackiefr — CurseForge publisher.",
+      "source_url": "https://github.com/Dawn-of-Time-Project/aschinese",
+      "repository_commit": "d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "repository_commit_date": "2026-10-23T17:54:54+02:00",
+      "retrieved_date": "2026-10-28",
+      "archive_path": "E:\\建筑\\additional-sources\\aschinese-d7ff4571.zip",
+      "sha256": "166bba96ffaebddf4351fcf8b567f0ec80f52319906f299a9e5ca264c9aa3bfb",
+      "declared_license": "GPL-3.0 (repository LICENSE and CurseForge project label; retained in original source cache)",
+      "format": "Repository containing Java structure NBT; original code is not executed",
+      "classification": "Author-labelled Chinese-inspired structures. Tulou label has regional subject matter; exact historic-site reconstruction is not claimed.",
+      "redistribution_authorization": "No user authorization to publish third-party source content. Only locally retained; skill carries measurements and attribution.",
+      "file_catalog": "ancient-structures-catalog.json",
+      "local_evidence_dir": "E:\\建筑\\analysis\\additional\\aschinese",
+      "older_release": {
+        "archive_path": "E:\\建筑\\additional-sources\\Chinese-v0.0.4.zip",
+        "sha256": "f3604f34852650af2d6094693510d073d2e746adb0796bea067027935a188bed",
+        "version": "0.0.4",
+        "published": "2025-10-16",
+        "source_url": "https://www.curseforge.com/minecraft/data-packs/ancient-structures-chinese-dp/files/7113703",
+        "file_count": 7,
+        "note": "Separate older variant; all seven Gzip members parse. Ricefarm used from this release because repo version fails CRC; originals not overwritten."
+      }
+    },
+    {
+      "id": "peakscape",
+      "title": "叠山 peakscape",
+      "declared_author": "RinO233 (Owner)",
+      "source_url": "https://modrinth.com/datapack/peakscape",
+      "retrieved_date": "2026-10-29",
+      "version": "0.1.1",
+      "version_id": "9ozEUNyp",
+      "archive_path": "E:\\建筑\\additional-sources\\peakscape\\叠山_peakscape_0.1.1.zip",
+      "sha256": "3d03f9c58ecaefde001bbbaa6b0c561c41d949712f9f48990be49cf8e18495f2",
+      "upstream_hashes_verified": {
+        "sha512": "cc92e9b8a692d16d6cd641483b51088469e4bc8d6779641cfa6916613e0c408ac36a9cfc6ed8d9ec98d88578ae387ede368e61d7ec4ea8b7e3f730df8ffa4f0d",
+        "sha1": "7f849b5d9cda970b25e21ce0e529db80e279e095"
+      },
+      "declared_license": {
+        "id": "CC-BY-NC-ND-4.0",
+        "name": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
+        "url": "https://github.com/santisoler/cc-licenses/blob/main/LICENSE-CC-BY-NC-ND"
+      },
+      "format": "Java structure NBT inside author-published datapack ZIP",
+      "classification": "Author-labelled Minecraft interpretation; not independent historical or ethnic attribution.",
+      "redistribution_authorization": "Local source research only. Original source geometry and media excluded from Skill and remote publication.",
+      "local_evidence_dir": "E:\\建筑\\analysis\\additional\\peakscape"
+    },
+    {
+      "id": "more-chinese-structures",
+      "title": "More Chinese Structures",
+      "declared_author": "shaoxiongduan (Owner); Silicon23 (Member)",
+      "source_url": "https://modrinth.com/datapack/more-chinese-structures",
+      "retrieved_date": "2026-10-29",
+      "version": "1.1.1",
+      "version_id": "AQb5QWz2",
+      "archive_path": "E:\\建筑\\additional-sources\\more-chinese-structures\\mcs-v1.1.1.zip",
+      "sha256": "c994a6b4f1eced7d0564165be8840bc736b2d96cac6387f8baa7c636f210b564",
+      "upstream_hashes_verified": {
+        "sha512": "66cc21b3ed19a6851d1346b21f4d8c71fa7d3756dfbe5103c3a65ea0727bab6d9a4f4d86de6d9a5be2d4152c78df2128049bfa297a0413f2024b072647db120a",
+        "sha1": "fb10889308d333c2911829d2e69911ee74fe6418"
+      },
+      "declared_license": {
+        "id": "MIT",
+        "name": "MIT License",
+        "url": null
+      },
+      "format": "Java structure NBT inside author-published datapack ZIP",
+      "classification": "Author-labelled Minecraft interpretation; not independent historical or ethnic attribution.",
+      "redistribution_authorization": "Local source research only. Original source geometry and media excluded from Skill and remote publication.",
+      "local_evidence_dir": "E:\\建筑\\analysis\\additional\\mcs"
+    }
+  ],
+  "source_geometry_in_skill": false,
+  "local_samples_directory": "E:/建筑/analysis/samples"
+}

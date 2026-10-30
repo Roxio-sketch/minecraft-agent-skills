@@ -1,0 +1,9 @@
+{
+  "schema": "chinese-detail/1",
+  "kind": "double_eave_hall",
+  "parameters": {
+    "column_height": 12,
+    "lower_eave_height": 8,
+    "overhang": 5
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "chinese-hall/1",
+  "rule_status": "measured_column_grid_and_material_weights_with_authored_geometry",
+  "source_structure_reuse": false,
+  "width_bays": 5,
+  "depth_bays": 3,
+  "bay_spacing": 8,
+  "column_height": 10,
+  "platform_height": 3,
+  "platform_margin": 4,
+  "eave_overhang": 4,
+  "roof_rise": 7,
+  "roof_curve": 1.65,
+  "corner_uplift": 2,
+  "stair_width": 7,
+  "palette": {
+    "foundation": "minecraft:stone_bricks",
+    "floor": "minecraft:smooth_stone",
+    "column": "minecraft:stripped_mangrove_log[axis=y]",
+    "beam": "minecraft:mangrove_planks",
+    "wall": "minecraft:mangrove_planks",
+    "window": "minecraft:white_stained_glass",
+    "roof": "minecraft:blackstone",
+    "roof_stairs": "minecraft:blackstone_stairs",
+    "roof_slab": "minecraft:blackstone_slab",
+    "trim": "minecraft:calcite",
+    "access_stairs": "minecraft:stone_brick_stairs"
+  },
+  "evidence": [
+    {
+      "source_id": "huangfeng",
+      "source_sha256": "aca8fec05ab67545b08b279ca451c789e06f585938f9defa0bde4d24474343d3",
+      "sample_id": "huangfeng-hall",
+      "reference": "references/measured-components.json",
+      "applied": [
+        "width_bays=5 and depth_bays=3 inferred from two manually selected continuous column rows",
+        "bay_spacing=8",
+        "column_height=10 from upper-story continuous wood segments",
+        "eave_overhang=4 from selected roof-material extent beyond column lines",
+        "roof_rise=7 from center profile edge y441 to ridge y448",
+        "roof_mix weights use selected slab counts; output frequencies approximate"
+      ],
+      "adaptation": "Original single-story geometry, platform, doorway/window arrangement, roof exponent and ornament are authored choices; source sample is a two-story building."
+    }
+  ],
+  "notes": "Uses measured upper-story proportions and roof material frequencies from Huangfeng sample; not a reproduction, not a fitted full roof surface. Platform height, roof_curve=1.65, corner_uplift=2 and window design remain authored hypotheses.",
+  "seed": 20261028,
+  "roof_mix": [
+    {
+      "weight": 525,
+      "block": "minecraft:blackstone",
+      "stairs": "minecraft:blackstone_stairs",
+      "slab": "minecraft:blackstone_slab"
+    },
+    {
+      "weight": 508,
+      "block": "minecraft:polished_blackstone_bricks",
+      "stairs": "minecraft:polished_blackstone_brick_stairs",
+      "slab": "minecraft:polished_blackstone_brick_slab"
+    },
+    {
+      "weight": 483,
+      "block": "minecraft:deepslate_tiles",
+      "stairs": "minecraft:deepslate_tile_stairs",
+      "slab": "minecraft:deepslate_tile_slab"
+    },
+    {
+      "weight": 471,
+      "block": "minecraft:polished_blackstone",
+      "stairs": "minecraft:polished_blackstone_stairs",
+      "slab": "minecraft:polished_blackstone_slab"
+    }
+  ]
+}

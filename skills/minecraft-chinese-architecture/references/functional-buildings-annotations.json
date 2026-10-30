@@ -1,0 +1,209 @@
+{
+  "schema": "architecture-annotations/1",
+  "samples": [
+    {
+      "source": "ancient-structures-chinese",
+      "model": "apothecary_house.npz",
+      "source_sha256": "88213626914b3754eea9eb3525852f6acda1e1d576420086e5464eccb518fe88",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "id": "apothecary_house-roof-1",
+      "label": "apothecary_house selected roof band 1",
+      "box": [
+        0,
+        0,
+        0,
+        40,
+        20,
+        31
+      ],
+      "roof_box": [
+        25,
+        10,
+        4,
+        39,
+        12,
+        23
+      ],
+      "roof_pattern": "^dawnoftimebuilder:.*roof",
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred.",
+      "column_row": {
+        "axis": "x",
+        "fixed": 8,
+        "range": [
+          29,
+          35
+        ],
+        "y_range": [
+          7,
+          9
+        ]
+      },
+      "depth_row": {
+        "axis": "z",
+        "fixed": 35,
+        "range": [
+          8,
+          19
+        ],
+        "y_range": [
+          7,
+          9
+        ]
+      }
+    },
+    {
+      "source": "ancient-structures-chinese",
+      "model": "apothecary_house.npz",
+      "source_sha256": "88213626914b3754eea9eb3525852f6acda1e1d576420086e5464eccb518fe88",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "id": "apothecary_house-roof-2",
+      "label": "apothecary_house selected roof band 2",
+      "box": [
+        0,
+        0,
+        0,
+        40,
+        20,
+        31
+      ],
+      "roof_box": [
+        25,
+        15,
+        4,
+        39,
+        19,
+        23
+      ],
+      "roof_pattern": "^dawnoftimebuilder:.*roof",
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred."
+    },
+    {
+      "source": "ancient-structures-chinese",
+      "model": "chinese_fort.npz",
+      "source_sha256": "f70516b01216943c0a18f00ebc0a6702f821ac0731473873f3308346f8227414",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "id": "chinese_fort-roof-1",
+      "label": "chinese_fort selected roof band 1",
+      "box": [
+        0,
+        0,
+        0,
+        38,
+        29,
+        37
+      ],
+      "roof_box": [
+        0,
+        20,
+        0,
+        38,
+        23,
+        37
+      ],
+      "roof_pattern": "^dawnoftimebuilder:.*roof",
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred."
+    },
+    {
+      "source": "ancient-structures-chinese",
+      "model": "chinese_fort.npz",
+      "source_sha256": "f70516b01216943c0a18f00ebc0a6702f821ac0731473873f3308346f8227414",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "id": "chinese_fort-roof-2",
+      "label": "chinese_fort selected roof band 2",
+      "box": [
+        0,
+        0,
+        0,
+        38,
+        29,
+        37
+      ],
+      "roof_box": [
+        0,
+        25,
+        0,
+        38,
+        27,
+        37
+      ],
+      "roof_pattern": "^dawnoftimebuilder:.*roof",
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred."
+    },
+    {
+      "source": "ancient-structures-chinese",
+      "model": "chinese_emperor_tomb.npz",
+      "source_sha256": "1244042f0e605bcca929f8ae41cd1a2b4516a7c7715c1ca0f3db1e0129553fa9",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "id": "chinese_emperor_tomb-roof-1",
+      "label": "chinese_emperor_tomb selected roof band 1",
+      "box": [
+        0,
+        0,
+        0,
+        45,
+        24,
+        43
+      ],
+      "roof_box": [
+        14,
+        16,
+        16,
+        26,
+        22,
+        28
+      ],
+      "roof_pattern": "^dawnoftimebuilder:.*roof",
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred.",
+      "column_row": {
+        "axis": "x",
+        "fixed": 19,
+        "range": [
+          17,
+          23
+        ],
+        "y_range": [
+          13,
+          15
+        ]
+      },
+      "depth_row": {
+        "axis": "z",
+        "fixed": 17,
+        "range": [
+          19,
+          25
+        ],
+        "y_range": [
+          13,
+          15
+        ]
+      }
+    },
+    {
+      "source": "ancient-structures-chinese",
+      "model": "small_house.npz",
+      "source_sha256": "2ed1f76e4bd7be8393ae8e8b1a013ba0799e2defe0780763e7a911851d38fbbb",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "id": "small_house-roof-1",
+      "label": "small_house selected roof band 1",
+      "box": [
+        0,
+        0,
+        0,
+        24,
+        13,
+        28
+      ],
+      "roof_box": [
+        5,
+        10,
+        8,
+        20,
+        13,
+        24
+      ],
+      "roof_pattern": "^dawnoftimebuilder:.*roof",
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred."
+    }
+  ]
+}

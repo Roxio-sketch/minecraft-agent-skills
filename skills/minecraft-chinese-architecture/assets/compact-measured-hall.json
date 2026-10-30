@@ -1,0 +1,22 @@
+{
+  "schema": "chinese-building/1",
+  "bays_x": [3, 4, 3],
+  "bays_z": [3, 4, 3],
+  "column_height": 4,
+  "platform_height": 1,
+  "platform_margin": 2,
+  "eave_overhang": 2,
+  "stair_width": 3,
+  "facade_pattern": "cross",
+  "roof": {"form": "hip_and_gable", "rise": 3, "uplift": 0, "gable_inset": 2},
+  "evidence": [
+    {
+      "source_id": "ancient-structures-chinese",
+      "component_id": "pagoda-roof-1",
+      "source_sha256": "3f79632ef93416a5b6b81c20e3ec890a8dbdab62e38221e304519c4b3437a0c1",
+      "measured": "The source bottom frame has 3/4/3 spacing on two measured perimeter rows and four continuous log blocks at Y=6..9.",
+      "adopted": "Both perimeter row rhythms and the four-block wood length.",
+      "design_changes": "Single-storey enclosed hall; complete interior grid, lower plinth, vanilla materials, windows and roof are authored. The original sample does not establish a post at every internal intersection."
+    }
+  ]
+}

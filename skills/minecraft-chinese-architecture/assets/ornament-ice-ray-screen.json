@@ -1,0 +1,7 @@
+{
+  "schema": "chinese-ornament/1",
+  "kind": "lattice_screen",
+  "parameters": {"width": 31, "height": 23, "pattern": "ice_ray", "spacing": 7, "depth": 2, "seed": 23},
+  "palette": {"body": "minecraft:dark_oak_planks", "frame": "minecraft:dark_oak_wood[axis=y]", "carving": "minecraft:stripped_oak_wood[axis=y]"},
+  "evidence": [{"relation": "Seeded Voronoi divider network with real through-holes. Geometric analogy only; not a reconstructed historic ice-ray construction grammar."}]
+}

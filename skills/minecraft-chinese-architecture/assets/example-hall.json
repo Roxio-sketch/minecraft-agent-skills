@@ -1,0 +1,31 @@
+{
+  "schema": "chinese-hall/1",
+  "rule_status": "authored_hypothesis",
+  "source_structure_reuse": false,
+  "width_bays": 5,
+  "depth_bays": 3,
+  "bay_spacing": 6,
+  "column_height": 8,
+  "platform_height": 3,
+  "platform_margin": 4,
+  "eave_overhang": 4,
+  "roof_rise": 7,
+  "roof_curve": 1.65,
+  "corner_uplift": 2,
+  "stair_width": 7,
+  "palette": {
+    "foundation": "minecraft:stone_bricks",
+    "floor": "minecraft:smooth_stone",
+    "column": "minecraft:stripped_dark_oak_log[axis=y]",
+    "beam": "minecraft:dark_oak_planks",
+    "wall": "minecraft:white_terracotta",
+    "window": "minecraft:brown_stained_glass",
+    "roof": "minecraft:deepslate_tiles",
+    "roof_stairs": "minecraft:deepslate_tile_stairs",
+    "roof_slab": "minecraft:deepslate_tile_slab",
+    "trim": "minecraft:cut_copper",
+    "access_stairs": "minecraft:stone_brick_stairs"
+  },
+  "evidence": [],
+  "notes": "Original baseline hypothesis for a single hipped-roof hall. Dimensions are editable and are not presented as measured source-map statistics."
+}

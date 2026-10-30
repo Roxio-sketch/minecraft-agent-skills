@@ -1,0 +1,12 @@
+{
+  "schema": "chinese-courtyard/1",
+  "court_width": 32,
+  "court_depth": 34,
+  "main": {"palette": {"roof": "minecraft:cherry_planks", "roof_stairs": "minecraft:cherry_stairs", "roof_slab": "minecraft:cherry_slab", "trim": "minecraft:dark_oak_planks"}},
+  "wing": {"palette": {"roof": "minecraft:cherry_planks", "roof_stairs": "minecraft:cherry_stairs", "roof_slab": "minecraft:cherry_slab", "trim": "minecraft:dark_oak_planks"}},
+  "gate": {"palette": {"roof": "minecraft:cherry_planks", "roof_stairs": "minecraft:cherry_stairs", "roof_slab": "minecraft:cherry_slab", "trim": "minecraft:dark_oak_planks"}},
+  "evidence": [
+    {"source": "createmod-china-house", "adopted": "Cherry roof and dark wood trim color relationship only."},
+    {"design_choice": "Courtyard sizes, building plans, single-storey halls, entry pavilion and paths are original. No source geometry copied; no historical courtyard reconstruction claimed."}
+  ]
+}

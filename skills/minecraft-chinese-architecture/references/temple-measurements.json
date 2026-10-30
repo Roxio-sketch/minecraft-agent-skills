@@ -1,0 +1,515 @@
+{
+  "schema": "architecture-measured-components/1",
+  "method": "Explicit annotated boxes and material filters, continuous wood segments; no automatic semantic claims.",
+  "samples": [
+    {
+      "id": "temple-lower",
+      "label": "Chinese Temple lower eave material band",
+      "source": "mctoolbox-temple",
+      "source_sha256": "572e17872abdc598e395a99ce1f35a8c08164f211329198733043d5c99232fd4",
+      "coordinate_space": "schematic paste-relative XYZ; not original world coordinates",
+      "sample_box": [
+        -58,
+        0,
+        -31,
+        -2,
+        50,
+        27
+      ],
+      "roof_query_box": [
+        -47,
+        11,
+        -19,
+        -13,
+        17,
+        19
+      ],
+      "roof_material_envelope": {
+        "material_filter": "deepslate.*(stairs|slab|tiles|bricks)",
+        "bounds_xyz_inclusive": [
+          -44,
+          13,
+          -17,
+          -16,
+          17,
+          17
+        ],
+        "span_xz": [
+          29,
+          35
+        ],
+        "y_range": [
+          13,
+          17
+        ],
+        "material_counts": {
+          "minecraft:polished_deepslate_slab": 132,
+          "minecraft:deepslate_brick_slab": 112,
+          "minecraft:deepslate_tile_slab": 106,
+          "minecraft:cobbled_deepslate_slab": 100
+        },
+        "material_fraction": {
+          "minecraft:polished_deepslate_slab": 0.293333,
+          "minecraft:deepslate_brick_slab": 0.248889,
+          "minecraft:deepslate_tile_slab": 0.235556,
+          "minecraft:cobbled_deepslate_slab": 0.222222
+        },
+        "center_x_coordinate": -30,
+        "center_z_coordinate": 0,
+        "x_profile": [
+          [
+            -44,
+            15
+          ],
+          [
+            -43,
+            16
+          ],
+          [
+            -42,
+            16
+          ],
+          [
+            -41,
+            17
+          ],
+          [
+            -19,
+            17
+          ],
+          [
+            -18,
+            16
+          ],
+          [
+            -17,
+            16
+          ],
+          [
+            -16,
+            15
+          ]
+        ],
+        "z_profile": [
+          [
+            -17,
+            14
+          ],
+          [
+            -16,
+            14
+          ],
+          [
+            -15,
+            15
+          ],
+          [
+            -14,
+            15
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            14
+          ],
+          [
+            17,
+            14
+          ]
+        ]
+      },
+      "column_rows": {
+        "column_row": {
+          "axis": "x",
+          "fixed_coordinate": -12,
+          "wood_segment_y_range": [
+            3,
+            15
+          ],
+          "wood_segment_height": 13,
+          "positions": [
+            -37,
+            -30,
+            -23
+          ],
+          "spacings": [
+            7,
+            7
+          ],
+          "interpretation": "Continuous vertical wood over annotated height, manually selected as a column row."
+        },
+        "depth_row": {
+          "axis": "z",
+          "fixed_coordinate": -37,
+          "wood_segment_y_range": [
+            3,
+            14
+          ],
+          "wood_segment_height": 12,
+          "positions": [
+            -12,
+            -6,
+            6,
+            12
+          ],
+          "spacings": [
+            6,
+            12,
+            6
+          ],
+          "interpretation": "Continuous vertical wood over annotated height, manually selected as a column row."
+        }
+      },
+      "interpretation": "One exterior wood row has 7,7 spacing; side row is 6,12,6 with a central opening. These are not a uniform complete structural grid."
+    },
+    {
+      "id": "temple-main-eave",
+      "label": "Chinese Temple main eave material band",
+      "source": "mctoolbox-temple",
+      "source_sha256": "572e17872abdc598e395a99ce1f35a8c08164f211329198733043d5c99232fd4",
+      "coordinate_space": "schematic paste-relative XYZ; not original world coordinates",
+      "sample_box": [
+        -58,
+        0,
+        -31,
+        -2,
+        50,
+        27
+      ],
+      "roof_query_box": [
+        -47,
+        18,
+        -19,
+        -13,
+        23,
+        19
+      ],
+      "roof_material_envelope": {
+        "material_filter": "deepslate.*(stairs|slab|tiles|bricks)",
+        "bounds_xyz_inclusive": [
+          -44,
+          19,
+          -17,
+          -16,
+          23,
+          17
+        ],
+        "span_xz": [
+          29,
+          35
+        ],
+        "y_range": [
+          19,
+          23
+        ],
+        "material_counts": {
+          "minecraft:deepslate_brick_slab": 168,
+          "minecraft:cobbled_deepslate_slab": 150,
+          "minecraft:polished_deepslate_slab": 120,
+          "minecraft:deepslate_tile_slab": 86,
+          "minecraft:deepslate_tile_stairs": 73,
+          "minecraft:deepslate_brick_stairs": 17
+        },
+        "material_fraction": {
+          "minecraft:deepslate_brick_slab": 0.273616,
+          "minecraft:cobbled_deepslate_slab": 0.2443,
+          "minecraft:polished_deepslate_slab": 0.19544,
+          "minecraft:deepslate_tile_slab": 0.140065,
+          "minecraft:deepslate_tile_stairs": 0.118893,
+          "minecraft:deepslate_brick_stairs": 0.027687
+        },
+        "center_x_coordinate": -30,
+        "center_z_coordinate": 0,
+        "x_profile": [
+          [
+            -42,
+            20
+          ],
+          [
+            -41,
+            21
+          ],
+          [
+            -40,
+            21
+          ],
+          [
+            -39,
+            22
+          ],
+          [
+            -21,
+            22
+          ],
+          [
+            -20,
+            21
+          ],
+          [
+            -19,
+            21
+          ],
+          [
+            -18,
+            20
+          ]
+        ],
+        "z_profile": [
+          [
+            -17,
+            19
+          ],
+          [
+            -16,
+            20
+          ],
+          [
+            -15,
+            20
+          ],
+          [
+            -14,
+            21
+          ],
+          [
+            -13,
+            21
+          ],
+          [
+            -12,
+            22
+          ],
+          [
+            -11,
+            23
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            12,
+            22
+          ],
+          [
+            13,
+            21
+          ],
+          [
+            14,
+            21
+          ],
+          [
+            15,
+            20
+          ],
+          [
+            16,
+            20
+          ],
+          [
+            17,
+            19
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "A selected horizontal band of the main roof; shares the upper pitched roof and is not a separate storey."
+    },
+    {
+      "id": "temple-upper-roof",
+      "label": "Chinese Temple upper pitched roof material band",
+      "source": "mctoolbox-temple",
+      "source_sha256": "572e17872abdc598e395a99ce1f35a8c08164f211329198733043d5c99232fd4",
+      "coordinate_space": "schematic paste-relative XYZ; not original world coordinates",
+      "sample_box": [
+        -58,
+        0,
+        -31,
+        -2,
+        50,
+        27
+      ],
+      "roof_query_box": [
+        -47,
+        24,
+        -19,
+        -13,
+        35,
+        19
+      ],
+      "roof_material_envelope": {
+        "material_filter": "deepslate.*(stairs|slab|tiles|bricks)",
+        "bounds_xyz_inclusive": [
+          -40,
+          24,
+          -9,
+          -20,
+          32,
+          9
+        ],
+        "span_xz": [
+          21,
+          19
+        ],
+        "y_range": [
+          24,
+          32
+        ],
+        "material_counts": {
+          "minecraft:deepslate_brick_stairs": 74,
+          "minecraft:cobbled_deepslate_slab": 68,
+          "minecraft:cobbled_deepslate_stairs": 52,
+          "minecraft:deepslate_tile_stairs": 46,
+          "minecraft:deepslate_brick_slab": 40,
+          "minecraft:deepslate_tile_slab": 16,
+          "minecraft:polished_deepslate_slab": 14,
+          "minecraft:deepslate_tiles": 7,
+          "minecraft:deepslate_bricks": 3
+        },
+        "material_fraction": {
+          "minecraft:deepslate_brick_stairs": 0.23125,
+          "minecraft:cobbled_deepslate_slab": 0.2125,
+          "minecraft:cobbled_deepslate_stairs": 0.1625,
+          "minecraft:deepslate_tile_stairs": 0.14375,
+          "minecraft:deepslate_brick_slab": 0.125,
+          "minecraft:deepslate_tile_slab": 0.05,
+          "minecraft:polished_deepslate_slab": 0.04375,
+          "minecraft:deepslate_tiles": 0.021875,
+          "minecraft:deepslate_bricks": 0.009375
+        },
+        "center_x_coordinate": -30,
+        "center_z_coordinate": 0,
+        "x_profile": [
+          [
+            -40,
+            24
+          ],
+          [
+            -39,
+            24
+          ],
+          [
+            -38,
+            25
+          ],
+          [
+            -37,
+            25
+          ],
+          [
+            -36,
+            26
+          ],
+          [
+            -35,
+            27
+          ],
+          [
+            -33,
+            30
+          ],
+          [
+            -32,
+            30
+          ],
+          [
+            -31,
+            31
+          ],
+          [
+            -30,
+            32
+          ],
+          [
+            -29,
+            31
+          ],
+          [
+            -28,
+            30
+          ],
+          [
+            -27,
+            30
+          ],
+          [
+            -25,
+            27
+          ],
+          [
+            -24,
+            26
+          ],
+          [
+            -23,
+            25
+          ],
+          [
+            -22,
+            25
+          ],
+          [
+            -21,
+            24
+          ],
+          [
+            -20,
+            24
+          ]
+        ],
+        "z_profile": [
+          [
+            -9,
+            31
+          ],
+          [
+            -8,
+            31
+          ],
+          [
+            -7,
+            31
+          ],
+          [
+            -1,
+            32
+          ],
+          [
+            0,
+            32
+          ],
+          [
+            1,
+            32
+          ],
+          [
+            2,
+            32
+          ],
+          [
+            7,
+            31
+          ],
+          [
+            8,
+            31
+          ],
+          [
+            9,
+            31
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Upper steep roof with gable/ridge details. Excludes non-deepslate ornament; not a pure fitted hip-roof slope."
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "schema": "architecture-historical-sources/1",
+  "updated": "2026-10-29",
+  "sources": [
+    {
+      "id": "imperial-palaces",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/439/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "8ce9ea30f91d0459851ca9263d2287946fa76d3cd7807011ef765b3dd0faf014",
+      "html_bytes": 154262,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\imperial-palaces.html",
+      "authored_notes": [
+        "Axial hierarchy and distinct reception, administrative, residential and garden roles.",
+        "Two palace sites do not define every historic palace."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "classical-gardens",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Classical Gardens of Suzhou - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/813/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "135ec9f7883f0cfeb5218a54726e68f1271800399569b64464b12622aaef70c2",
+      "html_bytes": 151019,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\classical-gardens.html",
+      "authored_notes": [
+        "Buildings, water, rocks and planting jointly form miniature landscapes."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "pingyao",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Ancient City of Ping Yao - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/812/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "048311db282f2d5847bd17d60d773b56617651d08b214fb84e877be1d3a36ec0",
+      "html_bytes": 146790,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\pingyao.html",
+      "authored_notes": [
+        "Walls, streets, dwellings, shops and public functions form an urban fabric."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "lijiang",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Old Town of Lijiang - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/811/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "e4ca5915e18299d7020ffc42d77ba627151b656492d611a0f5a3d4dcc777e255",
+      "html_bytes": 147188,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\lijiang.html",
+      "authored_notes": [
+        "Terrain-adapted urban layout, water systems and locally situated timber/courtyard housing."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "anhui-villages",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Ancient Villages in Southern Anhui – Xidi and Hongcun - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1002/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "a73333fb8450743e23d880860561cd1b4648e86a88c3a71f5c5f9d6879167531",
+      "html_bytes": 147543,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\anhui-villages.html",
+      "authored_notes": [
+        "Village streets, water systems, gables and interior organization require attention together."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "kaiping",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Kaiping Diaolou and Villages - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1112/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "70142118f7103dcf75589cb2384ae52e40980a7dcb6155e8071e4b0b5775bd41",
+      "html_bytes": 148215,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\kaiping.html",
+      "authored_notes": [
+        "Defensive multistorey village houses combine varied influences in a specific emigrant history."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "potala",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Historic Ensemble of the Potala Palace, Lhasa - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/707/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "2757c29cd33533e54571960acadfa87220939ad8e1fdb2aab6a63a171c2203bb",
+      "html_bytes": 151842,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\potala.html",
+      "authored_notes": [
+        "Specific hill setting, earth/stone fabric and administrative, residential and religious functions."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "fujian-tulou",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Fujian Tulou - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1113/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "59390472c0d9dd782c18aa2179d2c2b48059d6ac2bdd8f3db973ff7bf7beec71",
+      "html_bytes": 152521,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\fujian-tulou.html",
+      "authored_notes": [
+        "Communal inward-facing residences, defensive envelopes and surrounding agriculture."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "temple-of-heaven",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Temple of Heaven: an Imperial Sacrificial Altar in Beijing - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/881/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "1683a8c1a73ad4f5f2d6f9190567f2b90012bd76d07ce073eb5fd1456c897559",
+      "html_bytes": 147007,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\temple-of-heaven.html",
+      "authored_notes": [
+        "Specific axial sacrificial precinct, circular ritual buildings and separate support functions."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "summer-palace",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Summer Palace, an Imperial Garden in Beijing - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/880/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "28bf8bc43407f2e8a7af7f2dcc60974fa6dc44ef54a1c67a476a599757f4f901",
+      "html_bytes": 147734,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\summer-palace.html",
+      "authored_notes": [
+        "Lake and hill framework integrates administration, dwelling, religious and recreational spaces through corridors, bridges and shorelines."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "wudang",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Ancient Building Complex in the Wudang Mountains - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/705/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "28f7932df0ce5eeba334cce0585bd964f49a9c99dbaba14054e2f49aab3e882f",
+      "html_bytes": 146912,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\wudang.html",
+      "authored_notes": [
+        "Palaces and temples relate to mountain terrain and more than one historical period."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "dengfeng",
+      "institution": "UNESCO World Heritage Centre",
+      "title": "Historic Monuments of Dengfeng in “The Centre of Heaven and Earth” - UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1305/",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "9e4c7f3f3a5c476012c0143bc7f19015ba0661d5b3d23d0dc260b6df8c8cd503",
+      "html_bytes": 149420,
+      "reading_scope": "English description and Brief synthesis; not all linked nomination dossiers or conservation documents.",
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\dengfeng.html",
+      "authored_notes": [
+        "A group of religious, secular and astronomical monuments rather than one repeatable temple plan."
+      ],
+      "limits": "Site overview, not a measured construction drawing or proof of generator authenticity."
+    },
+    {
+      "id": "guangzhou-qilou",
+      "institution": "广州市人民政府；来源广州市地方志",
+      "title": "建筑",
+      "url": "https://www.gz.gov.cn/zlgz/whgz/jz/",
+      "published_date": "2022-03-07",
+      "authored_notes": [
+        "Ground-floor shop fronts recede to create a continuous sheltered sidewalk under upper dwellings.",
+        "The article mentions 2–3 metres; generator block dimensions are not a measured conversion of an individual property."
+      ],
+      "reading_scope": "Visible article text on Guangzhou architecture and arcaded shophouses; no linked measured plans.",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "e169ec1f00f81a7d988816f738161511c109938731eb3883751dd83913c07273",
+      "html_bytes": 62814,
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\B14\\guangzhou-qilou.html",
+      "limits": "Spatial descriptions, not measured construction drawings or proof of generator authenticity.",
+      "authored_interpretation": "vernacular-evidence.md",
+      "http_capture_is_article_body": true,
+      "rendered_article_read": true
+    },
+    {
+      "id": "guangdong-wok-ear",
+      "institution": "广东省人民政府地方志办公室内容，南方网转载",
+      "title": "文化中国行｜遇见镬耳屋 打卡有惊喜",
+      "published_date": "2024-08-14",
+      "url": "https://news.southcn.com/node_4c426468fe/eb61d73a51.shtml",
+      "authored_notes": [
+        "Daqitou examples are described with three bays, two side ranges, a flush-gable roof and raised wok-ear end walls.",
+        "Shangyue is discussed as a different gallery/room variant; its dimensions are not transferred to the Daqitou-inspired generator."
+      ],
+      "reading_scope": "Article body with Daqitou, Shangyue and other variants; image download did not succeed.",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "9383bf42be830cd347c673db78a6f0cffa38b90ed2d7d6921c632398e290c18b",
+      "html_bytes": 62623,
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\B14\\guangdong-wok-ear.html",
+      "limits": "Spatial descriptions, not measured construction drawings or proof of generator authenticity.",
+      "authored_interpretation": "vernacular-evidence.md",
+      "http_capture_is_article_body": true,
+      "rendered_article_read": true
+    },
+    {
+      "id": "kinmen-house-types",
+      "institution": "金門國家公園管理處",
+      "title": "傳統建築的類型",
+      "url": "https://www.kmnp.gov.tw/ch/specialreport/tradarch/152",
+      "authored_notes": [
+        "A three-bay main range and one or two projecting rooms on each side define two- and four-projection compounds.",
+        "San-gai-lang, two/three luo, tu-gui, hu-long, guo-shui, hui-xiang and tower additions have distinct spatial conditions."
+      ],
+      "reading_scope": "Full visible article body read in the browser: basic forms, derived forms and other site-specific variants. HTTP HTML is a SPA shell only.",
+      "retrieved_date": "2026-10-29",
+      "html_sha256": "7d6f411b8efcdf4dce4309b72c0ffed8c3f4edddc45b733e86ae7ad0844deb08",
+      "html_bytes": 3145,
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\B14\\kinmen-house-types.html",
+      "limits": "Spatial descriptions, not measured construction drawings or proof of generator authenticity.",
+      "authored_interpretation": "vernacular-evidence.md",
+      "http_capture_is_article_body": false,
+      "rendered_article_read": true,
+      "local_reading_record": "E:\\建筑\\analysis\\historical-sources\\B14\\kinmen-house-types.browser-reading.json",
+      "reading_record_sha256": "203d0d9ea9699ccf0f8698aead9476525000688245b0742a9ab7c544a575b3fe",
+      "reading_record_is_authored_paraphrase": true,
+      "diagram_measured": false
+    },
+    {
+      "id": "huangcuo-hong-house-survey",
+      "document_kind": "pdf_report",
+      "institution": "金門縣文化局",
+      "authoring_institution": "國立金門大學戰地史蹟與閩南建築研究中心",
+      "principal_investigator": "曾逸仁",
+      "title": "金門縣縣定古蹟黃厝洪氏古厝修復及再利用計畫",
+      "url": "https://cabkc.kinmen.gov.tw/uploads/files/202201/1685e719-99db-40d4-9166-e51e6291d32f.pdf",
+      "published_date": "2021-04",
+      "retrieved_date": "2026-10-29",
+      "pdf_sha256": "39e0452614ca1fa8d290d562f826d88bf90346bd59846ff75a17706cfd7774c9",
+      "pdf_bytes": 47398701,
+      "pdf_pages": 294,
+      "actually_read_pdf_pages": [
+        1,
+        106,
+        107,
+        117,
+        122,
+        123
+      ],
+      "local_source_file": "E:\\建筑\\analysis\\historical-sources\\B15\\huangcuo-hong-house-survey.pdf",
+      "reading_scope": "Cover, spatial form text, first/second-floor plans, guoshui/side court table and photos, porch/stair construction table and photos.",
+      "authored_interpretation": "hong-house-study.md",
+      "measurement_record": "hong-house-measurements.json",
+      "limits": "Selected pages actually read, not the entire indexed report. New generators are spatial originals, not a historic site reconstruction."
+    }
+  ],
+  "source_pages_or_media_packaged": false,
+  "notes_are_authored_paraphrases": true
+}

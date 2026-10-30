@@ -1,0 +1,13 @@
+{
+  "schema": "chinese-staircase/1",
+  "start_floor_xyz": [0, 0, 0],
+  "facing": "north",
+  "width": 17,
+  "rises": [6, 6, 6],
+  "tread_depth": 3,
+  "landing_depth": 6,
+  "bottom_landing": 4,
+  "top_landing": 4,
+  "headroom": 3,
+  "evidence": [{"design_choice": "Editable ceremonial stair; flat deep treads between single risers, no fixed city footprint."}]
+}

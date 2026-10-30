@@ -1,0 +1,177 @@
+{
+  "schema": "architecture-layout-annotations/1",
+  "samples": [
+    {
+      "source": "ancient-structures-chinese",
+      "model": "apothecary_house.npz",
+      "source_sha256": "88213626914b3754eea9eb3525852f6acda1e1d576420086e5464eccb518fe88",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "id": "apothecary_house",
+      "queries": [
+        {
+          "id": "containers-by-layer",
+          "box": [
+            0,
+            0,
+            0,
+            40,
+            20,
+            31
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "ladder-by-layer",
+          "box": [
+            0,
+            0,
+            0,
+            40,
+            20,
+            31
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Function is author-supplied. Counts describe source cells, not independent rooms, circulation or archaeological evidence."
+    },
+    {
+      "source": "ancient-structures-chinese",
+      "model": "chinese_fort.npz",
+      "source_sha256": "f70516b01216943c0a18f00ebc0a6702f821ac0731473873f3308346f8227414",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "id": "chinese_fort",
+      "queries": [
+        {
+          "id": "containers-by-layer",
+          "box": [
+            0,
+            0,
+            0,
+            38,
+            29,
+            37
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "ladder-by-layer",
+          "box": [
+            0,
+            0,
+            0,
+            38,
+            29,
+            37
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Function is author-supplied. Counts describe source cells, not independent rooms, circulation or archaeological evidence."
+    },
+    {
+      "source": "ancient-structures-chinese",
+      "model": "chinese_emperor_tomb.npz",
+      "source_sha256": "1244042f0e605bcca929f8ae41cd1a2b4516a7c7715c1ca0f3db1e0129553fa9",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "id": "chinese_emperor_tomb",
+      "queries": [
+        {
+          "id": "containers-by-layer",
+          "box": [
+            0,
+            0,
+            0,
+            45,
+            24,
+            43
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "ladder-by-layer",
+          "box": [
+            0,
+            0,
+            0,
+            45,
+            24,
+            43
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        },
+        {
+          "id": "underground-lower-cross-passage",
+          "box": [
+            6,
+            2,
+            8,
+            28,
+            4,
+            9
+          ],
+          "pattern": "^minecraft:air$"
+        },
+        {
+          "id": "underground-lower-containers",
+          "box": [
+            0,
+            0,
+            0,
+            45,
+            5,
+            43
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "underground-upper-containers",
+          "box": [
+            0,
+            6,
+            0,
+            45,
+            11,
+            43
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Function is author-supplied. Counts describe source cells, not independent rooms, circulation or archaeological evidence."
+    },
+    {
+      "source": "ancient-structures-chinese",
+      "model": "small_house.npz",
+      "source_sha256": "2ed1f76e4bd7be8393ae8e8b1a013ba0799e2defe0780763e7a911851d38fbbb",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "id": "small_house",
+      "queries": [
+        {
+          "id": "containers-by-layer",
+          "box": [
+            0,
+            0,
+            0,
+            24,
+            13,
+            28
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "ladder-by-layer",
+          "box": [
+            0,
+            0,
+            0,
+            24,
+            13,
+            28
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Function is author-supplied. Counts describe source cells, not independent rooms, circulation or archaeological evidence."
+    }
+  ]
+}

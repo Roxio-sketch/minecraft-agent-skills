@@ -1,0 +1,7 @@
+{
+  "schema": "chinese-ornament/1",
+  "kind": "relief_panel",
+  "parameters": {"width": 41, "height": 23, "motif": "meander", "mode": "incised", "depth": 3, "backing": 1, "repeats": 3},
+  "palette": {"body": "minecraft:stone_bricks", "frame": "minecraft:polished_andesite", "carving": "minecraft:andesite"},
+  "evidence": [{"relation": "Original repeating geometric incisions with surviving rear backing; not a measured historic pattern."}]
+}

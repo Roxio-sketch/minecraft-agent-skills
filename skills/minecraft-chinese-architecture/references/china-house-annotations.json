@@ -1,0 +1,70 @@
+{
+  "schema": "architecture-annotations/1",
+  "status": "Chinese-inspired fantasy residential build, not regionally/historically classified; retains modded wall materials.",
+  "samples": [
+    {
+      "source": "createmod-china-house",
+      "model": "china-house.npz",
+      "source_sha256": "c458bde3e2175659ba22cd8861e6a5e1ff1d7e488ab157ac76e70c3949f50420",
+      "coordinate_space": "Java structure local XYZ, sparse omitted positions represented as air for geometry only",
+      "box": [
+        0,
+        0,
+        0,
+        28,
+        21,
+        22
+      ],
+      "roof_pattern": "minecraft:cherry_(stairs|slab|planks)",
+      "id": "china-house-lower",
+      "label": "Cherry house lower roof material band",
+      "roof_box": [
+        0,
+        5,
+        0,
+        28,
+        8,
+        22
+      ],
+      "interpretation": "Lower cherry material band. Dark oak trim and beams are excluded; this is not the full roof assembly."
+    },
+    {
+      "source": "createmod-china-house",
+      "model": "china-house.npz",
+      "source_sha256": "c458bde3e2175659ba22cd8861e6a5e1ff1d7e488ab157ac76e70c3949f50420",
+      "coordinate_space": "Java structure local XYZ, sparse omitted positions represented as air for geometry only",
+      "box": [
+        0,
+        0,
+        0,
+        28,
+        21,
+        22
+      ],
+      "roof_pattern": "minecraft:cherry_(stairs|slab|planks)",
+      "id": "china-house-upper",
+      "label": "Cherry house upper roof material band",
+      "roof_box": [
+        0,
+        13,
+        0,
+        28,
+        21,
+        22
+      ],
+      "column_row": {
+        "axis": "z",
+        "fixed": 13,
+        "range": [
+          11,
+          15
+        ],
+        "y_range": [
+          9,
+          13
+        ]
+      },
+      "interpretation": "Upper cherry material band. The dark oak ridge and trim are absent from this filter, so gaps in the material profile are not roof holes. The selected interior wood segments are only two points, not a full exterior bay grid."
+    }
+  ]
+}

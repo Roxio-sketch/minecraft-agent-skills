@@ -1,0 +1,97 @@
+{
+  "checked_date": "2026-10-28",
+  "downloaded_files": [
+    {
+      "source": "mctoolbox-temple",
+      "title": "Chinese Temple",
+      "files": [
+        "chinese-temple.schem",
+        "chinese-temple.litematic"
+      ],
+      "distinct_architecture_samples": 1,
+      "status": "Downloaded, imported, independently verified and measured",
+      "source_registry": "sources.json",
+      "measurement_reference": "temple-measurements.json"
+    },
+    {
+      "source": "mctoolbox-twin-manor",
+      "title": "Traditional Asian Twin Pavilion Manor",
+      "files": [
+        "traditional-asian-twin-pavilion-manor.schem"
+      ],
+      "distinct_architecture_samples": 1,
+      "confirmed_chinese_regional_samples": 0,
+      "status": "Downloaded, imported and measured; comparative pan-East-Asian sample",
+      "source_registry": "sources.json",
+      "measurement_reference": "twin-manor-measurements.json"
+    },
+    {
+      "source": "createmod-china-house",
+      "title": "China House",
+      "files": [
+        "china-house.nbt"
+      ],
+      "distinct_architecture_samples": 1,
+      "status": "Downloaded, imported, independently checked and measured; modded walls retained",
+      "source_registry": "sources.json",
+      "measurement_reference": "china-house-measurements.json"
+    }
+  ],
+  "blocked_reason": "Earlier Planet Minecraft candidates remain blocked by 403/Cloudflare. A separate MC Toolbox source was successfully downloaded through its normal website flow.",
+  "candidates": [
+    {
+      "title": "Siheyuan (四合院) Chinese house",
+      "author": "MrBaggyPants",
+      "source_url": "https://www.planetminecraft.com/project/siheyuan-chinese-house/",
+      "download_entrypoint": "https://www.planetminecraft.com/project/siheyuan-chinese-house/download/worldmap/",
+      "published": "2014-05-25",
+      "usage_note": "Author explicitly permits whole/partial use in builds and servers with creator attribution. No formal SPDX license identified. Source notes two-storey inner buildings are a stylistic departure from historical siheyuan.",
+      "desired_contrast": "Courtyard residential layout; older limited palette",
+      "version": "Not established without file; 2014 release likely legacy format, do not treat as modern parser compatible.",
+      "status": "Download unverified; no local file"
+    },
+    {
+      "title": "CHINESE PAVILLON",
+      "author": "SMIRKLP",
+      "source_url": "https://www.planetminecraft.com/project/chinese-pavillon/",
+      "download_entrypoint": "https://www.planetminecraft.com/project/chinese-pavillon/download/worldmap/",
+      "published": "2025-01-17",
+      "usage_note": "Creator makes schematic and world publicly downloadable. No explicit republication/license grant observed. Local inspection only; do not package original geometry into public skill.",
+      "desired_contrast": "Standalone garden pavilion",
+      "version": "Not established without file",
+      "status": "Normal Edge download navigation blocked by persistent Cloudflare security verification"
+    },
+    {
+      "title": "Siheyuan [四合院]",
+      "author": "Lightning0065",
+      "source_url": "https://www.planetminecraft.com/project/large-and-medium-sized-siheyuan/",
+      "download_entrypoint": "https://www.planetminecraft.com/project/large-and-medium-sized-siheyuan/download/mirror/736630/",
+      "published": "2025-05-28",
+      "updated": "2025-06-08",
+      "usage_note": "Creator public link; no explicit redistribution license observed. Description credits Oort and Mine7craft for other traces/builds on the map; isolate provenance by structure.",
+      "desired_contrast": "Multiple courtyard scales and residential variants",
+      "version": "Not established without file",
+      "status": "Creator link not resolved to actual archive"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Chinese Pagoda 1.19.2+",
+      "author": "SasakaBone",
+      "source_url": "https://www.planetminecraft.com/project/chinese-pagoda-5631424/",
+      "reason": "Creator explicitly says exterior reconstructed from Pinterest and is not own design; original exterior source unidentified, so not chosen as independently authored reference."
+    },
+    {
+      "title": "Chinese Tower",
+      "author": "Nyxkai (uploader)",
+      "source_url": "https://www.minecraft-schematics.com/schematic/27479/",
+      "reason": "Multiple public comments report a mismatched totem-farm file; not used as tower evidence."
+    },
+    {
+      "title": "Chinese Castle | WITH Interior",
+      "author": "OddTelly (uploader)",
+      "source_url": "https://www.minecraft-schematics.com/schematic/23075/",
+      "reason": "Download redirects to login; no public file obtained during this task."
+    }
+  ]
+}

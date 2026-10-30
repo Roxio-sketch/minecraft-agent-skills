@@ -1,0 +1,679 @@
+{
+  "schema": "architecture-layout-measurements/1",
+  "samples": [
+    {
+      "id": "apothecary_house",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "88213626914b3754eea9eb3525852f6acda1e1d576420086e5464eccb518fe88",
+      "analysis_npz_sha256": "40c7888c6fdbbc6e90d5bccde0d1eaceae2d972c8147e5ff3685bfb4be61ace2",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        40,
+        20,
+        31
+      ],
+      "queries": {
+        "containers-by-layer": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            40,
+            20,
+            31
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 27552,
+          "matched_cells": 7,
+          "bounds_xyz_inclusive": [
+            30,
+            7,
+            9,
+            34,
+            12,
+            18
+          ],
+          "layers_y": {
+            "7": 3,
+            "8": 1,
+            "9": 1,
+            "12": 2
+          },
+          "state_counts": {
+            "minecraft:barrel[facing=west,open=false]": 4,
+            "minecraft:chest[facing=east,type=single,waterlogged=false]": 1,
+            "minecraft:chest[facing=south,type=single,waterlogged=false]": 1,
+            "minecraft:chest[facing=west,type=single,waterlogged=false]": 1
+          }
+        },
+        "ladder-by-layer": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            40,
+            20,
+            31
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 27552,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        }
+      },
+      "doors": {
+        "matched_pairs": 2,
+        "pairs": [
+          {
+            "lower_xyz": [
+              29,
+              7,
+              13
+            ],
+            "upper_xyz": [
+              29,
+              8,
+              13
+            ],
+            "lower_state": "dawnoftimebuilder:waxed_acacia_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              29,
+              7,
+              14
+            ],
+            "upper_xyz": [
+              29,
+              8,
+              14
+            ],
+            "lower_state": "dawnoftimebuilder:waxed_acacia_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Function is author-supplied. Counts describe source cells, not independent rooms, circulation or archaeological evidence.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "chinese_fort",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "f70516b01216943c0a18f00ebc0a6702f821ac0731473873f3308346f8227414",
+      "analysis_npz_sha256": "179e4e3156fe69bab1fb7f7c7e4e4487a560cf38dee7f0aae659f8ea35d60190",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        38,
+        29,
+        37
+      ],
+      "queries": {
+        "containers-by-layer": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            38,
+            29,
+            37
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 44460,
+          "matched_cells": 27,
+          "bounds_xyz_inclusive": [
+            7,
+            8,
+            5,
+            35,
+            21,
+            33
+          ],
+          "layers_y": {
+            "8": 11,
+            "12": 3,
+            "16": 8,
+            "21": 5
+          },
+          "state_counts": {
+            "minecraft:barrel[facing=east,open=false]": 2,
+            "minecraft:barrel[facing=up,open=false]": 9,
+            "minecraft:barrel[facing=west,open=false]": 1,
+            "minecraft:chest[facing=east,type=single,waterlogged=false]": 1,
+            "minecraft:chest[facing=north,type=single,waterlogged=false]": 5,
+            "minecraft:chest[facing=south,type=single,waterlogged=false]": 7,
+            "minecraft:chest[facing=west,type=left,waterlogged=false]": 1,
+            "minecraft:chest[facing=west,type=right,waterlogged=false]": 1
+          }
+        },
+        "ladder-by-layer": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            38,
+            29,
+            37
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 44460,
+          "matched_cells": 16,
+          "bounds_xyz_inclusive": [
+            8,
+            12,
+            5,
+            32,
+            20,
+            30
+          ],
+          "layers_y": {
+            "12": 4,
+            "17": 3,
+            "18": 3,
+            "19": 3,
+            "20": 3
+          },
+          "state_counts": {
+            "minecraft:ladder[facing=east,waterlogged=false]": 4,
+            "minecraft:ladder[facing=north,waterlogged=false]": 4,
+            "minecraft:ladder[facing=west,waterlogged=false]": 8
+          }
+        }
+      },
+      "doors": {
+        "matched_pairs": 13,
+        "pairs": [
+          {
+            "lower_xyz": [
+              7,
+              8,
+              18
+            ],
+            "upper_xyz": [
+              7,
+              9,
+              18
+            ],
+            "lower_state": "minecraft:spruce_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              7,
+              8,
+              19
+            ],
+            "upper_xyz": [
+              7,
+              9,
+              19
+            ],
+            "lower_state": "minecraft:spruce_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              12,
+              8,
+              7
+            ],
+            "upper_xyz": [
+              12,
+              9,
+              7
+            ],
+            "lower_state": "minecraft:spruce_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              12,
+              8,
+              30
+            ],
+            "upper_xyz": [
+              12,
+              9,
+              30
+            ],
+            "lower_state": "minecraft:spruce_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              27,
+              8,
+              23
+            ],
+            "upper_xyz": [
+              27,
+              9,
+              23
+            ],
+            "lower_state": "minecraft:spruce_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              29,
+              8,
+              20
+            ],
+            "upper_xyz": [
+              29,
+              9,
+              20
+            ],
+            "lower_state": "minecraft:spruce_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              29,
+              8,
+              29
+            ],
+            "upper_xyz": [
+              29,
+              9,
+              29
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              29,
+              12,
+              29
+            ],
+            "upper_xyz": [
+              29,
+              13,
+              29
+            ],
+            "lower_state": "minecraft:spruce_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              31,
+              8,
+              24
+            ],
+            "upper_xyz": [
+              31,
+              9,
+              24
+            ],
+            "lower_state": "minecraft:spruce_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              31,
+              16,
+              27
+            ],
+            "upper_xyz": [
+              31,
+              17,
+              27
+            ],
+            "lower_state": "minecraft:spruce_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              32,
+              8,
+              9
+            ],
+            "upper_xyz": [
+              32,
+              9,
+              9
+            ],
+            "lower_state": "minecraft:spruce_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              32,
+              12,
+              19
+            ],
+            "upper_xyz": [
+              32,
+              13,
+              19
+            ],
+            "lower_state": "minecraft:spruce_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              32,
+              12,
+              23
+            ],
+            "upper_xyz": [
+              32,
+              13,
+              23
+            ],
+            "lower_state": "minecraft:spruce_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Function is author-supplied. Counts describe source cells, not independent rooms, circulation or archaeological evidence.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "chinese_emperor_tomb",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "1244042f0e605bcca929f8ae41cd1a2b4516a7c7715c1ca0f3db1e0129553fa9",
+      "analysis_npz_sha256": "cdcf4b474d67878cf50e4d6ba862345c07ca07032328b4634ec39b5c528417bc",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        45,
+        24,
+        43
+      ],
+      "queries": {
+        "containers-by-layer": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            45,
+            24,
+            43
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 50600,
+          "matched_cells": 47,
+          "bounds_xyz_inclusive": [
+            4,
+            2,
+            6,
+            36,
+            8,
+            36
+          ],
+          "layers_y": {
+            "2": 11,
+            "3": 2,
+            "8": 34
+          },
+          "state_counts": {
+            "minecraft:barrel[facing=up,open=false]": 12,
+            "minecraft:chest[facing=east,type=left,waterlogged=false]": 2,
+            "minecraft:chest[facing=east,type=right,waterlogged=false]": 2,
+            "minecraft:chest[facing=east,type=single,waterlogged=false]": 3,
+            "minecraft:chest[facing=north,type=left,waterlogged=false]": 1,
+            "minecraft:chest[facing=north,type=right,waterlogged=false]": 1,
+            "minecraft:chest[facing=south,type=left,waterlogged=false]": 2,
+            "minecraft:chest[facing=south,type=right,waterlogged=false]": 2,
+            "minecraft:chest[facing=south,type=single,waterlogged=false]": 4,
+            "minecraft:chest[facing=west,type=left,waterlogged=false]": 9,
+            "minecraft:chest[facing=west,type=right,waterlogged=false]": 9
+          }
+        },
+        "ladder-by-layer": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            45,
+            24,
+            43
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 50600,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "underground-lower-cross-passage": {
+          "box_xyz_inclusive": [
+            6,
+            2,
+            8,
+            28,
+            4,
+            9
+          ],
+          "pattern": "^minecraft:air$",
+          "query_volume": 138,
+          "matched_cells": 129,
+          "bounds_xyz_inclusive": [
+            6,
+            2,
+            8,
+            28,
+            4,
+            9
+          ],
+          "layers_y": {
+            "2": 45,
+            "3": 46,
+            "4": 38
+          },
+          "state_counts": {
+            "minecraft:air": 129
+          }
+        },
+        "underground-lower-containers": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            45,
+            5,
+            43
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 12144,
+          "matched_cells": 13,
+          "bounds_xyz_inclusive": [
+            4,
+            2,
+            11,
+            30,
+            3,
+            31
+          ],
+          "layers_y": {
+            "2": 11,
+            "3": 2
+          },
+          "state_counts": {
+            "minecraft:barrel[facing=up,open=false]": 4,
+            "minecraft:chest[facing=east,type=left,waterlogged=false]": 1,
+            "minecraft:chest[facing=east,type=right,waterlogged=false]": 1,
+            "minecraft:chest[facing=east,type=single,waterlogged=false]": 1,
+            "minecraft:chest[facing=west,type=left,waterlogged=false]": 3,
+            "minecraft:chest[facing=west,type=right,waterlogged=false]": 3
+          }
+        },
+        "underground-upper-containers": {
+          "box_xyz_inclusive": [
+            0,
+            6,
+            0,
+            45,
+            11,
+            43
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 12144,
+          "matched_cells": 34,
+          "bounds_xyz_inclusive": [
+            5,
+            8,
+            6,
+            36,
+            8,
+            36
+          ],
+          "layers_y": {
+            "8": 34
+          },
+          "state_counts": {
+            "minecraft:barrel[facing=up,open=false]": 8,
+            "minecraft:chest[facing=east,type=left,waterlogged=false]": 1,
+            "minecraft:chest[facing=east,type=right,waterlogged=false]": 1,
+            "minecraft:chest[facing=east,type=single,waterlogged=false]": 2,
+            "minecraft:chest[facing=north,type=left,waterlogged=false]": 1,
+            "minecraft:chest[facing=north,type=right,waterlogged=false]": 1,
+            "minecraft:chest[facing=south,type=left,waterlogged=false]": 2,
+            "minecraft:chest[facing=south,type=right,waterlogged=false]": 2,
+            "minecraft:chest[facing=south,type=single,waterlogged=false]": 4,
+            "minecraft:chest[facing=west,type=left,waterlogged=false]": 6,
+            "minecraft:chest[facing=west,type=right,waterlogged=false]": 6
+          }
+        }
+      },
+      "doors": {
+        "matched_pairs": 2,
+        "pairs": [
+          {
+            "lower_xyz": [
+              17,
+              13,
+              22
+            ],
+            "upper_xyz": [
+              17,
+              14,
+              22
+            ],
+            "lower_state": "minecraft:mangrove_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              20,
+              8,
+              16
+            ],
+            "upper_xyz": [
+              20,
+              9,
+              16
+            ],
+            "lower_state": "minecraft:iron_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Function is author-supplied. Counts describe source cells, not independent rooms, circulation or archaeological evidence.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "small_house",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "2ed1f76e4bd7be8393ae8e8b1a013ba0799e2defe0780763e7a911851d38fbbb",
+      "analysis_npz_sha256": "a094d7797857110edd648288c2c00a2b2e1955911dfda5e36bf5bca310e4a106",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        24,
+        13,
+        28
+      ],
+      "queries": {
+        "containers-by-layer": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            24,
+            13,
+            28
+          ],
+          "pattern": "(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 10150,
+          "matched_cells": 6,
+          "bounds_xyz_inclusive": [
+            10,
+            7,
+            11,
+            17,
+            7,
+            22
+          ],
+          "layers_y": {
+            "7": 6
+          },
+          "state_counts": {
+            "minecraft:barrel[facing=up,open=false]": 4,
+            "minecraft:chest[facing=south,type=left,waterlogged=false]": 1,
+            "minecraft:chest[facing=south,type=right,waterlogged=false]": 1
+          }
+        },
+        "ladder-by-layer": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            24,
+            13,
+            28
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 10150,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        }
+      },
+      "doors": {
+        "matched_pairs": 2,
+        "pairs": [
+          {
+            "lower_xyz": [
+              12,
+              7,
+              15
+            ],
+            "upper_xyz": [
+              12,
+              8,
+              15
+            ],
+            "lower_state": "dawnoftimebuilder:waxed_acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              13,
+              7,
+              15
+            ],
+            "upper_xyz": [
+              13,
+              8,
+              15
+            ],
+            "lower_state": "dawnoftimebuilder:waxed_acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Function is author-supplied. Counts describe source cells, not independent rooms, circulation or archaeological evidence.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    }
+  ],
+  "limits": "Annotated cell statistics, not automatic room or building recognition. NPZ air may include omitted source positions. No payload, collision or redstone verification."
+}

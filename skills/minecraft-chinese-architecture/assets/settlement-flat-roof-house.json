@@ -1,0 +1,7 @@
+{
+  "schema": "chinese-settlement/1",
+  "kind": "flat_roof_house",
+  "parameters": {
+    "enclosed_floors": 2
+  }
+}

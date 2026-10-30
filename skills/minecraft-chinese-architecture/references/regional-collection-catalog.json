@@ -1,0 +1,2747 @@
+{
+  "schema": "architecture-collection-import/1",
+  "source_directory": "E:\\建筑\\additional-sources\\more-chinese-structures\\extracted\\data\\mcs\\structure",
+  "files_found": 143,
+  "files_imported": 143,
+  "files_rejected": 0,
+  "distinct_geometry_count": 134,
+  "exact_geometry_duplicates": [
+    [
+      "village/ganlan/villagers/nitwit.nbt",
+      "village/ganlan/villagers/unemployed.nbt",
+      "village/yurt/horses/horse_01.nbt",
+      "village/yurt/horses/horse_02.nbt",
+      "village/yurt/horses/horse_03.nbt",
+      "village/yurt/horses/horse_04.nbt",
+      "village/yurt/horses/horse_05.nbt",
+      "village/yurt/horses/horse_06.nbt",
+      "village/yurt/horses/horse_07.nbt",
+      "village/yurt/horses/horse_08.nbt"
+    ]
+  ],
+  "files": [
+    {
+      "relative_source": "buddha/desert/desert_buddha_1.nbt",
+      "source_sha256": "caf0af3141bace587aaa942e054ce5eba215cb291af6cdf49d98e6b20e02b74d",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_1.nbt.import.json",
+      "size_xyz": [
+        47,
+        48,
+        48
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 68782,
+      "nonair_namespace_counts": {
+        "minecraft": 68782
+      },
+      "geometry_sha256": "da0c785627020ffb0d5bdaea397d877e16edf677bdfcd9f1a762e9dd2523e298",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/desert/desert_buddha_2.nbt",
+      "source_sha256": "f6c8915794b90303029d467b27acced163ccce0bc9aba2d6f7c3d4bd883535ce",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_2.nbt.import.json",
+      "size_xyz": [
+        48,
+        48,
+        48
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 69286,
+      "nonair_namespace_counts": {
+        "minecraft": 69286
+      },
+      "geometry_sha256": "d744aa8c0e5b8cbe52bf574bba7bceb9b74aabc1e94d09b788468d3e442213e8",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/desert/desert_buddha_3.nbt",
+      "source_sha256": "03dc109ccb11910e40621d79befec6ed086a9b62650e13d75df47b84828691db",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_3.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_3.nbt.import.json",
+      "size_xyz": [
+        48,
+        30,
+        30
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 16457,
+      "nonair_namespace_counts": {
+        "minecraft": 16457
+      },
+      "geometry_sha256": "0a4e8e3af7466e537ab53b4babfefd14fb070581b090695808b729634e5a6601",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/desert/desert_buddha_4.nbt",
+      "source_sha256": "6573957b9aad0caeab285dc3e99ccebfe31dc521dbeb85ef5fd205b16fdb303a",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_4.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_4.nbt.import.json",
+      "size_xyz": [
+        48,
+        30,
+        33
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 16617,
+      "nonair_namespace_counts": {
+        "minecraft": 16617
+      },
+      "geometry_sha256": "ce736c78434a73e44229f4ccceb5565b173efb3b4f6ced2b4f92550066bbab60",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/desert/desert_buddha_5.nbt",
+      "source_sha256": "c4fe12ac037b8f2eb086405c20fa47373578fdc8fee4f68d0911775429f1e136",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_5.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_5.nbt.import.json",
+      "size_xyz": [
+        13,
+        48,
+        38
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 10492,
+      "nonair_namespace_counts": {
+        "minecraft": 10492
+      },
+      "geometry_sha256": "9c120766c6d99e291789636e6e831a8c6a4784f3d0eb650f63cfd30d5396f2de",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/desert/desert_buddha_6.nbt",
+      "source_sha256": "81f6e318c4d1ba4de8784a17b29c1a5f32979e38d1f99ee67250fcf64427e240",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_6.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_6.nbt.import.json",
+      "size_xyz": [
+        11,
+        48,
+        48
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 8764,
+      "nonair_namespace_counts": {
+        "minecraft": 8764
+      },
+      "geometry_sha256": "c8eca6677fbcf0d5eb8aebcfa59a33b31880ccb0f117e105f1eca7863500d78b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/desert/desert_buddha_7.nbt",
+      "source_sha256": "298f5f9e0983064ede488f900c1d09b7d0f0e275aa4f7c9f5b3e8a44c82c360d",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_7.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\desert\\desert_buddha_7.nbt.import.json",
+      "size_xyz": [
+        6,
+        11,
+        38
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 759,
+      "nonair_namespace_counts": {
+        "minecraft": 759
+      },
+      "geometry_sha256": "e12d7489807310daf1a387a622f9d6fac88462a90b0bc2a447a021d238cf28f0",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/jungle/jungle_buddha_1.nbt",
+      "source_sha256": "f77f2567b62f69e296bf498fac462f9e655f018d91f8a9681740f2e1cff367bf",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_1.nbt.import.json",
+      "size_xyz": [
+        48,
+        48,
+        48
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 66284,
+      "nonair_namespace_counts": {
+        "minecraft": 66284
+      },
+      "geometry_sha256": "239e87c573b0164f2a9b53a791f2eaf6d1494d40da717066acc0fc9f040e1d2a",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/jungle/jungle_buddha_2.nbt",
+      "source_sha256": "53fc5d790f0f0eb50dd7a82045f9ee1e15ea5eeb0bcf73f21933c2a21c3c193a",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_2.nbt.import.json",
+      "size_xyz": [
+        48,
+        48,
+        48
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 66574,
+      "nonair_namespace_counts": {
+        "minecraft": 66574
+      },
+      "geometry_sha256": "bc669161f97ddb994424b5591357699c4f33203e3f79f974d08d5c90555bc56e",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/jungle/jungle_buddha_3.nbt",
+      "source_sha256": "cce8032ed7cacf056323335726f97e5ad5c7bf84575775d3b850f4b54565bb97",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_3.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_3.nbt.import.json",
+      "size_xyz": [
+        48,
+        31,
+        48
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 13888,
+      "nonair_namespace_counts": {
+        "minecraft": 13888
+      },
+      "geometry_sha256": "35b70a46e7882771c6346a46b1a6bada68d6811ed68c74369aff0e1b203606ba",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/jungle/jungle_buddha_4.nbt",
+      "source_sha256": "caeff94668b2bad84fe683346a08b57098b392bdfa0ee9302b1623874e50cecd",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_4.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_4.nbt.import.json",
+      "size_xyz": [
+        48,
+        31,
+        48
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 13581,
+      "nonair_namespace_counts": {
+        "minecraft": 13581
+      },
+      "geometry_sha256": "8461617ee8494f12fb6e07078b7ad21829930b14d8ae8be664cc4f6c14f29896",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/jungle/jungle_buddha_5.nbt",
+      "source_sha256": "2da386bb982143f4672d6ff09e946a916db4397775c72c5ff18488b4767507c3",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_5.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_5.nbt.import.json",
+      "size_xyz": [
+        11,
+        48,
+        48
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 8634,
+      "nonair_namespace_counts": {
+        "minecraft": 8634
+      },
+      "geometry_sha256": "199126d5f91e6059f580e17cfa781b9f2c2f48cbdd55e69b306844488896184d",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "buddha/jungle/jungle_buddha_6.nbt",
+      "source_sha256": "9ea70abed570ca08c0cce7f99577a6d906f2bd8d1f8bd891a991627dcf59e891",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_6.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\buddha\\jungle\\jungle_buddha_6.nbt.import.json",
+      "size_xyz": [
+        13,
+        48,
+        48
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 9463,
+      "nonair_namespace_counts": {
+        "minecraft": 9463
+      },
+      "geometry_sha256": "33b3e1eb0589d0f0c3383b985c334143b3b452c53859c73dd2d8b4833144c9f3",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "castle/castle_base.nbt",
+      "source_sha256": "0e93024c07c2368347c374221b3ce2900a2787b12b71ddd07eafab598ba5d8c1",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\castle\\castle_base.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\castle\\castle_base.nbt.import.json",
+      "size_xyz": [
+        31,
+        37,
+        31
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 13026,
+      "nonair_namespace_counts": {
+        "minecraft": 13026
+      },
+      "geometry_sha256": "9e999cd5d3432eee0d6f41837bdc4a1bd460df28c5cc2600166f10a1e859c353",
+      "study_status": "measured_material_bands_fixtures_and_slices_B13"
+    },
+    {
+      "relative_source": "castle/castle_top.nbt",
+      "source_sha256": "58f131bf3832fe04d32ee41070ae197e8d9d9c7b670eee38ed1588d092ee2666",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\castle\\castle_top.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\castle\\castle_top.nbt.import.json",
+      "size_xyz": [
+        31,
+        18,
+        31
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 1945,
+      "nonair_namespace_counts": {
+        "minecraft": 1945
+      },
+      "geometry_sha256": "27e010e522a27fd6b98a6859d5e0a4c452cd468f0a8945b604e839e0a5835e6f",
+      "study_status": "measured_material_bands_fixtures_and_slices_B13"
+    },
+    {
+      "relative_source": "fleet/connectors/left_down.nbt",
+      "source_sha256": "b3437bdf47527ae6512a1519c7b35b58862e4595f59a4e6f02d619174efaf399",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\connectors\\left_down.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\connectors\\left_down.nbt.import.json",
+      "size_xyz": [
+        24,
+        1,
+        1
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 2,
+      "nonair_namespace_counts": {
+        "minecraft": 2
+      },
+      "geometry_sha256": "c4b34da2a422b18d9e8574789c3497e42b96ef843348aced409e9f3d82127247",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "fleet/connectors/left_up.nbt",
+      "source_sha256": "72261bc24a8eabca84b091ac8ed56f0c2971409b5aa6043b3df4e1b0faf58a08",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\connectors\\left_up.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\connectors\\left_up.nbt.import.json",
+      "size_xyz": [
+        24,
+        1,
+        4
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 2,
+      "nonair_namespace_counts": {
+        "minecraft": 2
+      },
+      "geometry_sha256": "60b3944f0e8a8baf7aea4acdad5931b5ba42c5b1dc42120f87b5e740ed4b1f5f",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "fleet/connectors/right_down.nbt",
+      "source_sha256": "3e7339e074a81f7bd57c98180eb7497d9c1db305f1689cd42f0890a841d4b237",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\connectors\\right_down.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\connectors\\right_down.nbt.import.json",
+      "size_xyz": [
+        24,
+        1,
+        1
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 2,
+      "nonair_namespace_counts": {
+        "minecraft": 2
+      },
+      "geometry_sha256": "6c4f0b17ccfda90c4c5bd5cf669e66b8b6e4c78b5961045db83f88b2ca4f9145",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "fleet/connectors/right_up.nbt",
+      "source_sha256": "185cb0190ab57d5d9f376ca65723a49592906c6101cbe65b03b72eb2404d4110",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\connectors\\right_up.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\connectors\\right_up.nbt.import.json",
+      "size_xyz": [
+        24,
+        1,
+        4
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 2,
+      "nonair_namespace_counts": {
+        "minecraft": 2
+      },
+      "geometry_sha256": "7161ef209829a1281feec9931727a38626354cb6ef3935b48ef1f3c8cafd27ec",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "fleet/fleet_center.nbt",
+      "source_sha256": "df08ab304cd1b67b6e846377152678d1fff1d4e2bf43c7f319ade209a7bca0ac",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\fleet_center.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\fleet_center.nbt.import.json",
+      "size_xyz": [
+        3,
+        1,
+        8
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 3,
+      "nonair_namespace_counts": {
+        "minecraft": 3
+      },
+      "geometry_sha256": "db7a9d799b73f200e86cead88aa49ac6fa5ee7db15f56c3480376ec8a2c02fc5",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "fleet/ship_1_bulk.nbt",
+      "source_sha256": "9054e025dd4b81d3acf26445352135aff74f95bcf94edf0f145556aaca58d294",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\ship_1_bulk.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\ship_1_bulk.nbt.import.json",
+      "size_xyz": [
+        19,
+        48,
+        48
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 5345,
+      "nonair_namespace_counts": {
+        "minecraft": 5345
+      },
+      "geometry_sha256": "86e6953d190f19acac670748ab316662046e8fbbd5b3b10f49e93db77a0748ad",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "fleet/ship_1_front.nbt",
+      "source_sha256": "2b6e01e10c14b76264f0de89d41ff65959810d3926ea6bbf30e7ad64e80c55d2",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\ship_1_front.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\ship_1_front.nbt.import.json",
+      "size_xyz": [
+        19,
+        48,
+        11
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 459,
+      "nonair_namespace_counts": {
+        "minecraft": 459
+      },
+      "geometry_sha256": "1eb0e2c46bdca00c52d7deb0b354ffb345beb022c88fd768e6c6ebfcfb46e0a6",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "fleet/ship_2_bulk.nbt",
+      "source_sha256": "715b35391da3f2a791b83a2d9f153a49506bd1b2b9501cb735f9507c1120939a",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\ship_2_bulk.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\ship_2_bulk.nbt.import.json",
+      "size_xyz": [
+        18,
+        47,
+        48
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 4832,
+      "nonair_namespace_counts": {
+        "minecraft": 4832
+      },
+      "geometry_sha256": "671b0881696d570dce1979d1e12877c29d55cff795b51ae9a1e37fc88567e821",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "fleet/ship_2_front.nbt",
+      "source_sha256": "fb2c34915aa2d4ccbbff868c531ecd856129e8f9c3897d625b4d903592ac2545",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\ship_2_front.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\ship_2_front.nbt.import.json",
+      "size_xyz": [
+        18,
+        47,
+        12
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 569,
+      "nonair_namespace_counts": {
+        "minecraft": 569
+      },
+      "geometry_sha256": "fc7b1e4c2c77f2b708995db30af49561e588647b01dfb7d2a7dc4dfcc99383b2",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "fleet/ship_3.nbt",
+      "source_sha256": "c692bc7d5534047a39f6930441a46472fe8e022cb9a1c7db8bf85873501a539e",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\ship_3.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\fleet\\ship_3.nbt.import.json",
+      "size_xyz": [
+        14,
+        48,
+        45
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 3784,
+      "nonair_namespace_counts": {
+        "minecraft": 3784
+      },
+      "geometry_sha256": "bafd9f698c8e16e0b1c5f47650fc583d32ac4f56cfb57d3151f8f9e0c36615b7",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "sky_palace/sky_palace_1.nbt",
+      "source_sha256": "766f52e70be09c29664a58cefe9c120f9868d0cc7d8df111c67498724e3ddd65",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\sky_palace\\sky_palace_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\sky_palace\\sky_palace_1.nbt.import.json",
+      "size_xyz": [
+        25,
+        48,
+        23
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 6691,
+      "nonair_namespace_counts": {
+        "minecraft": 6691
+      },
+      "geometry_sha256": "c8337ae13404eaff31f8300d042e29b541f5f7b0fd06c01527e0021bcf81a4a9",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "sky_palace/sky_palace_2.nbt",
+      "source_sha256": "85b6e5e96fead41e80cc154c909f2c17f212f6c8129c7a9c0d5aef281ebdd1b6",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\sky_palace\\sky_palace_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\sky_palace\\sky_palace_2.nbt.import.json",
+      "size_xyz": [
+        17,
+        22,
+        33
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 1992,
+      "nonair_namespace_counts": {
+        "minecraft": 1992
+      },
+      "geometry_sha256": "f9fc5ce5fef76afd9181d254d6600ffcc15b790b4bc7a77f4df059622a0837cc",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "sky_palace/sky_palace_3.nbt",
+      "source_sha256": "47daa74d94001df97038c564fee301fb51582aae91c6d99806b9b8ed167bed82",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\sky_palace\\sky_palace_3.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\sky_palace\\sky_palace_3.nbt.import.json",
+      "size_xyz": [
+        17,
+        20,
+        32
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 1794,
+      "nonair_namespace_counts": {
+        "minecraft": 1794
+      },
+      "geometry_sha256": "4b8865897a5af84ba9a7ec5a22a4c44229ee5c12f43377e6a61053a59fc81362",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "sky_palace/sky_palace_4.nbt",
+      "source_sha256": "14943de5e5510a7646cbbf0635c8002c6c553d5ecfd8d0ffe78d9df81edbc1d2",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\sky_palace\\sky_palace_4.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\sky_palace\\sky_palace_4.nbt.import.json",
+      "size_xyz": [
+        22,
+        46,
+        23
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 6120,
+      "nonair_namespace_counts": {
+        "minecraft": 6120
+      },
+      "geometry_sha256": "54c771532eb6f3b78ac4de2ab0e945199525b969f9fae63d454bbb99e913969c",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "temple/shrine.nbt",
+      "source_sha256": "baef57043c9e0ad4429778bf91f62cba9f913204f88075310a9f1ad489ee5c2e",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\temple\\shrine.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\temple\\shrine.nbt.import.json",
+      "size_xyz": [
+        7,
+        13,
+        7
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 331,
+      "nonair_namespace_counts": {
+        "minecraft": 331
+      },
+      "geometry_sha256": "8d60c519e3f8f8163768358a3c1d97b472d869f9c9d45e132cd53c002a6076df",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "temple/temple_cherry.nbt",
+      "source_sha256": "6ac1cedab2f149398f27a5047aa3d3bd19ce2e4dcc37e18078dba0dfb489a747",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_cherry.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_cherry.nbt.import.json",
+      "size_xyz": [
+        26,
+        11,
+        15
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 816,
+      "nonair_namespace_counts": {
+        "minecraft": 816
+      },
+      "geometry_sha256": "d3a4aac85b73a0f8ee90618b5ef53cc5a6d0cb60302ae1c2982f0c4958e15c0c",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "temple/temple_desert/base.nbt",
+      "source_sha256": "e36af14c07a7828fbe379f0204efed1bffbcaa8836ea4798cb932923d760bdb2",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_desert\\base.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_desert\\base.nbt.import.json",
+      "size_xyz": [
+        33,
+        14,
+        37
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 4001,
+      "nonair_namespace_counts": {
+        "minecraft": 4001
+      },
+      "geometry_sha256": "9833cc1640dc3efc3884b9882de522caf5cd8442f7ea3c05f9ad52e2befc61c5",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "temple/temple_desert/well.nbt",
+      "source_sha256": "6440844e334ac65a154ccfc3dbc7efdb2d219081db2d25ce6aa71056e419a369",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_desert\\well.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_desert\\well.nbt.import.json",
+      "size_xyz": [
+        3,
+        3,
+        3
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 27,
+      "nonair_namespace_counts": {
+        "minecraft": 27
+      },
+      "geometry_sha256": "44beb7b6e263ec5961ad1f6cb56c599509a307c72418c2291409451f3fceeed8",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "temple/temple_forest.nbt",
+      "source_sha256": "2d6229ecbc8ab838246837c03a0648a289ff024e39ecff8039cfc30fca425663",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_forest.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_forest.nbt.import.json",
+      "size_xyz": [
+        17,
+        12,
+        19
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 1287,
+      "nonair_namespace_counts": {
+        "minecraft": 1287
+      },
+      "geometry_sha256": "e3443ca1c17b200ac3f2a5bf0c8b269a7ec5700e8b9f2b296c56c68223221f42",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "temple/temple_hills.nbt",
+      "source_sha256": "7fccf2d8d422c275790b4727ada5a716da01eabbdd8e704a141d411b46288290",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_hills.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_hills.nbt.import.json",
+      "size_xyz": [
+        21,
+        32,
+        21
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 2413,
+      "nonair_namespace_counts": {
+        "minecraft": 2413
+      },
+      "geometry_sha256": "679a2bbd72960a415afdb26c7dd6ded9f9f01339ee1e4aa6d5559f38a2dec040",
+      "study_status": "measured_material_bands_fixtures_and_slices_B13"
+    },
+    {
+      "relative_source": "temple/temple_plains.nbt",
+      "source_sha256": "a8b74919ed90d6b99beaf9ffcc28a014c746350f461162a3debb5524d1f013c3",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_plains.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_plains.nbt.import.json",
+      "size_xyz": [
+        17,
+        14,
+        21
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 1542,
+      "nonair_namespace_counts": {
+        "minecraft": 1542
+      },
+      "geometry_sha256": "bf9d0471bba6196f443b35e6f9b3eadb16229273cfd6d8e4579550dce0247c6a",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "temple/temple_savanna.nbt",
+      "source_sha256": "808295e63915bebbf487be0a82ecf9e1926f8681524260d32b1e8bb5bdeb9d12",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_savanna.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_savanna.nbt.import.json",
+      "size_xyz": [
+        19,
+        14,
+        21
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 1436,
+      "nonair_namespace_counts": {
+        "minecraft": 1436
+      },
+      "geometry_sha256": "bfa06a14903f54236b59724673d26fa240c83f062110820c3f28f789a944346d",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "temple/temple_snow.nbt",
+      "source_sha256": "eb5aca881a293262cc99d86be50241c186757bae279e4c5b3485a9d35aff5fe1",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_snow.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_snow.nbt.import.json",
+      "size_xyz": [
+        13,
+        13,
+        17
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 1184,
+      "nonair_namespace_counts": {
+        "minecraft": 1184
+      },
+      "geometry_sha256": "f68b00267965c08bde315f9f0a44a1bb99ad2dc04103ff7248257ffda3d8e9ed",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "temple/temple_snowyplains.nbt",
+      "source_sha256": "2ff5c72d7a13a697d24bc4686e14500b3bca3ddeaa15570e00b863d575b3b421",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_snowyplains.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_snowyplains.nbt.import.json",
+      "size_xyz": [
+        9,
+        8,
+        10
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 446,
+      "nonair_namespace_counts": {
+        "minecraft": 446
+      },
+      "geometry_sha256": "f1d2e051cfc5271ceb521592d90725438d56a7d0612c2555b23bc75f9a9a5c2f",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "temple/temple_sunflower.nbt",
+      "source_sha256": "2007d34e3f656e43c889a46148869b150f9441b1fc453bac90ee6d363bebfd96",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_sunflower.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\temple\\temple_sunflower.nbt.import.json",
+      "size_xyz": [
+        21,
+        20,
+        19
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 2726,
+      "nonair_namespace_counts": {
+        "minecraft": 2726
+      },
+      "geometry_sha256": "b629f029b557b6aab5bfc5dcc138dbc8276d5ae59656c24bbd61d70243256fab",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "tower/tower_1.nbt",
+      "source_sha256": "638f9934612ce689d0c2df5cdd70d103b20634426d8dd3235fcb1f5494261ebf",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\tower\\tower_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\tower\\tower_1.nbt.import.json",
+      "size_xyz": [
+        47,
+        44,
+        47
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 28057,
+      "nonair_namespace_counts": {
+        "minecraft": 28057
+      },
+      "geometry_sha256": "a0b54e790a61eb0877dd9ffa34e7a0aabea70113de353dacb1728c497f8563d7",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "tower/tower_2.nbt",
+      "source_sha256": "513df45be74198512bd287a8ce73958b89c9656b42fbde156c1833d6cf802caa",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\tower\\tower_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\tower\\tower_2.nbt.import.json",
+      "size_xyz": [
+        47,
+        36,
+        47
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 15975,
+      "nonair_namespace_counts": {
+        "minecraft": 15975
+      },
+      "geometry_sha256": "227b123bb9ae7283cf148ea3cd443507da9551963a31dcd2e4590ff3d078d192",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "tower/tower_3.nbt",
+      "source_sha256": "0c5085a76770bd6b1760cfa29d24701a52ab2f788068fd25fea240213e25f2a8",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\tower\\tower_3.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\tower\\tower_3.nbt.import.json",
+      "size_xyz": [
+        47,
+        36,
+        47
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 6347,
+      "nonair_namespace_counts": {
+        "minecraft": 6347
+      },
+      "geometry_sha256": "6e51945dea3165d0a95233df2cce0e113eeba64d4fb761b0912fdb124d86099a",
+      "study_status": "measured_material_bands_fixtures_and_slices_B13"
+    },
+    {
+      "relative_source": "village/ganlan/buildings/ganlan_house_1.nbt",
+      "source_sha256": "2c1991deffe227756c52162f115928c5856b0d7b35732296e0e67a086d8f449c",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_1.nbt.import.json",
+      "size_xyz": [
+        11,
+        12,
+        14
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 467,
+      "nonair_namespace_counts": {
+        "minecraft": 467
+      },
+      "geometry_sha256": "88442196c1e26d38bd06ac0dd562c656f5a680fe11650cc6c129532e04a45186",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/buildings/ganlan_house_2.nbt",
+      "source_sha256": "4abe35a09ee2a976e5f4c3ba039cacf481ed3fb5969debefe9e1e5f976c81cb2",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_2.nbt.import.json",
+      "size_xyz": [
+        18,
+        15,
+        14
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 951,
+      "nonair_namespace_counts": {
+        "minecraft": 951
+      },
+      "geometry_sha256": "dc6dbf8204fdf1d214e9ee8f4f77810209c15781029846ba2da1d81f03771d2d",
+      "study_status": "measured_local"
+    },
+    {
+      "relative_source": "village/ganlan/buildings/ganlan_house_3.nbt",
+      "source_sha256": "4681d68457d9146054de0dd57553ed87ea6fafe727da27862c164a35901ce918",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_3.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_3.nbt.import.json",
+      "size_xyz": [
+        18,
+        15,
+        15
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 934,
+      "nonair_namespace_counts": {
+        "minecraft": 934
+      },
+      "geometry_sha256": "31648d7aa63c8467cb6a4c9390273c4632f0b441b26d1b5977fdfcdf95107443",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/buildings/ganlan_house_4.nbt",
+      "source_sha256": "fe3bc324180efddc1f3f758929bbfad3293fe6cb8c753670a88fbcda96995306",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_4.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_4.nbt.import.json",
+      "size_xyz": [
+        9,
+        8,
+        10
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 299,
+      "nonair_namespace_counts": {
+        "minecraft": 299
+      },
+      "geometry_sha256": "987b47a9f4ca519ca22bbae4b2947a40b81b73f2a61806d90095756923455e63",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/buildings/ganlan_house_5.nbt",
+      "source_sha256": "7b58c9307c82884fbda3eb7f4f732c681546068f3c1c17423938b74fd7bdcf1c",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_5.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_5.nbt.import.json",
+      "size_xyz": [
+        9,
+        8,
+        10
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 305,
+      "nonair_namespace_counts": {
+        "minecraft": 305
+      },
+      "geometry_sha256": "ff409feda942916a691d05a3237ad00bfd44b9871aaf08727431df2d05270356",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/buildings/ganlan_house_6.nbt",
+      "source_sha256": "7d247f54ea6279ff625f4d2fcb5c2eb65bd94bafb9ad49670b7ee7c1f6b10fb3",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_6.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_house_6.nbt.import.json",
+      "size_xyz": [
+        7,
+        11,
+        7
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 208,
+      "nonair_namespace_counts": {
+        "minecraft": 208
+      },
+      "geometry_sha256": "f778efc110cdef0af65480bebdb58920b46619c2dea8907041ab482d6d79cb1d",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/buildings/ganlan_shrine.nbt",
+      "source_sha256": "c37c0d135bedd3baa56414f52a6a1395ebb744da3e2926170b8fa7414e3e1fc3",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_shrine.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_shrine.nbt.import.json",
+      "size_xyz": [
+        7,
+        13,
+        7
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 161,
+      "nonair_namespace_counts": {
+        "minecraft": 161
+      },
+      "geometry_sha256": "abf087059e0adf17d0aca8e177f6b2d846d5e31fc99dfd0b8925ce522a7984ad",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/buildings/ganlan_temple.nbt",
+      "source_sha256": "6615e07676085b5c0d80fa487c2b735babd384a2cea7336a69c8b6657bdd15ab",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_temple.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\buildings\\ganlan_temple.nbt.import.json",
+      "size_xyz": [
+        19,
+        19,
+        20
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 1859,
+      "nonair_namespace_counts": {
+        "minecraft": 1859
+      },
+      "geometry_sha256": "86c28a0c9d23174562c11d694f81b07a808fcd99c2476a3a2074a351ba655345",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/decor/ganlan_lantern.nbt",
+      "source_sha256": "7ebcf87f40cec69935c4a2a50db00c4775668e2a4dbe3c6e9d2dcdfdcd23254a",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\decor\\ganlan_lantern.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\decor\\ganlan_lantern.nbt.import.json",
+      "size_xyz": [
+        1,
+        2,
+        1
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 2,
+      "nonair_namespace_counts": {
+        "minecraft": 2
+      },
+      "geometry_sha256": "7ebec29b4bb0ed019c39299ed9d97e8eb0303ec77ffadb979de00e26d3c5fa15",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/decor/ganlan_leaves.nbt",
+      "source_sha256": "489c29e9b4e29a9c28eaf999e60b10e0dd28175be4c16bfb8d6b8a7d0f94c1fc",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\decor\\ganlan_leaves.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\decor\\ganlan_leaves.nbt.import.json",
+      "size_xyz": [
+        1,
+        3,
+        1
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 3,
+      "nonair_namespace_counts": {
+        "minecraft": 3
+      },
+      "geometry_sha256": "f25579bf125ab8446d5634680e89fa53e28cdce1718206ccebf337bbc21b914f",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/decor/ganlan_pile.nbt",
+      "source_sha256": "067ebb9d6de7c7254020898a7ea5d91e13d1aa187acde0749c1b460ec94d90eb",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\decor\\ganlan_pile.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\decor\\ganlan_pile.nbt.import.json",
+      "size_xyz": [
+        3,
+        5,
+        4
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 18,
+      "nonair_namespace_counts": {
+        "minecraft": 18
+      },
+      "geometry_sha256": "835a1a4824753d06c2fb230d3c0d19a26392d98b5fb5b5d8c1a08d51181e39ca",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/decor/ganlan_pond.nbt",
+      "source_sha256": "8d48cd038d31a2347815ef92e58a2253a6280ae2ed0528756e2d5594f0438413",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\decor\\ganlan_pond.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\decor\\ganlan_pond.nbt.import.json",
+      "size_xyz": [
+        6,
+        3,
+        6
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 41,
+      "nonair_namespace_counts": {
+        "minecraft": 41
+      },
+      "geometry_sha256": "4ffed35379cd4802f507fca97c93f64d9a42d5eb505774d8f63803f3418847bb",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/decor/ganlan_pond_top.nbt",
+      "source_sha256": "219b86c0e5fd397ce6ede2cdb093f496fbaa4679aff759e73b2332d313b952e6",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\decor\\ganlan_pond_top.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\decor\\ganlan_pond_top.nbt.import.json",
+      "size_xyz": [
+        6,
+        3,
+        6
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 33,
+      "nonair_namespace_counts": {
+        "minecraft": 33
+      },
+      "geometry_sha256": "f93d2bcea19dd411c61c00f69ea1aef5ffd9a6b5c43423ef07e28b2614071bd5",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/streets/ganlan_street_corner.nbt",
+      "source_sha256": "aa6d8d02ac3aa849ed320c5200946365ec97ccd3827d6ebcd362622c71b4db5a",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\streets\\ganlan_street_corner.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\streets\\ganlan_street_corner.nbt.import.json",
+      "size_xyz": [
+        14,
+        2,
+        13
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 102,
+      "nonair_namespace_counts": {
+        "minecraft": 102
+      },
+      "geometry_sha256": "8340110f381a11082d015f3fc234197ab9021705f4c7b8fc36ba1b4276050912",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/streets/ganlan_street_crossroad.nbt",
+      "source_sha256": "f518ca70225bfc506096244c8e98d23a3d071abee68d66b7dcf0afbfd77fb954",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\streets\\ganlan_street_crossroad.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\streets\\ganlan_street_crossroad.nbt.import.json",
+      "size_xyz": [
+        16,
+        2,
+        17
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 113,
+      "nonair_namespace_counts": {
+        "minecraft": 113
+      },
+      "geometry_sha256": "e2aa5316be856cad7688d71f2232697a06574b0cbb1f58d430ff5bfc0c78342f",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/streets/ganlan_street_long.nbt",
+      "source_sha256": "5639fc6c029a28ae5bbb268fe8d583074a0574244a75f0195c9659ea90c2a61b",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\streets\\ganlan_street_long.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\streets\\ganlan_street_long.nbt.import.json",
+      "size_xyz": [
+        26,
+        6,
+        7
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 130,
+      "nonair_namespace_counts": {
+        "minecraft": 130
+      },
+      "geometry_sha256": "8e20055d8bfedb2ffca53e41ae57c063677edc813d941d1dff282c1d96e77b50",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/streets/ganlan_street_short.nbt",
+      "source_sha256": "12cda14448cc371cb2796e1ad78399922205f21e29735541c9b82c0fcc9e9221",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\streets\\ganlan_street_short.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\streets\\ganlan_street_short.nbt.import.json",
+      "size_xyz": [
+        13,
+        5,
+        6
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 73,
+      "nonair_namespace_counts": {
+        "minecraft": 73
+      },
+      "geometry_sha256": "34b5ff2752fda06bfe5b17c4dd584d596377f2a0b95d77a6e7bb9da528f83db5",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/streets/ganlan_street_t_cross.nbt",
+      "source_sha256": "457ec9f1f6252a3b6e19dc0ad3cfe92c402507c6b4a1a22f862cc8873b5ea5a8",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\streets\\ganlan_street_t_cross.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\streets\\ganlan_street_t_cross.nbt.import.json",
+      "size_xyz": [
+        15,
+        2,
+        11
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 87,
+      "nonair_namespace_counts": {
+        "minecraft": 87
+      },
+      "geometry_sha256": "5558ce6c2d4d88d4fa819eb41718eb265f23017dee55941cb20918dd14e6fff0",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/villagers/baby.nbt",
+      "source_sha256": "659b502c769d19f3a01549eb6b7950504857fc224258fa1ba0e7720dbe3252eb",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\villagers\\baby.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\villagers\\baby.nbt.import.json",
+      "size_xyz": [
+        1,
+        2,
+        1
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 1,
+      "nonair_namespace_counts": {
+        "minecraft": 1
+      },
+      "geometry_sha256": "eab521747c94000825e83c1bd00ce77a54a80d3794ec423c5d0c44f8228976e3",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/villagers/nitwit.nbt",
+      "source_sha256": "be9005f8d948e5903a9a6af6bc80d01ab18e529c0f14c0c1d13b37307f1bd821",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\villagers\\nitwit.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\villagers\\nitwit.nbt.import.json",
+      "size_xyz": [
+        1,
+        3,
+        1
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 1,
+      "nonair_namespace_counts": {
+        "minecraft": 1
+      },
+      "geometry_sha256": "a62bb8e91404cbff9472cd7d523daada1fd4d3eac0c19e68bca92205e185452b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/ganlan/villagers/unemployed.nbt",
+      "source_sha256": "248a0102c4f488556bf81290204af8e92d40ad186c283c46aef6bf7eb0f2bb92",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\villagers\\unemployed.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\ganlan\\villagers\\unemployed.nbt.import.json",
+      "size_xyz": [
+        1,
+        3,
+        1
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 1,
+      "nonair_namespace_counts": {
+        "minecraft": 1
+      },
+      "geometry_sha256": "a62bb8e91404cbff9472cd7d523daada1fd4d3eac0c19e68bca92205e185452b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/buildings/yaodong_1.nbt",
+      "source_sha256": "02c9211678dd530c9f8e068a18b448a77816b26ec6e960e68077be64b10925e2",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\buildings\\yaodong_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\buildings\\yaodong_1.nbt.import.json",
+      "size_xyz": [
+        24,
+        17,
+        23
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 1332,
+      "nonair_namespace_counts": {
+        "minecraft": 1332
+      },
+      "geometry_sha256": "4d7954a2eb21756bc8b2df4d5c8ef3ba01c7af1c3e2fc71d82802bb182252db4",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/buildings/yaodong_2.nbt",
+      "source_sha256": "4a9d76e86fea5b5ccb03203a1dcc8075d0037d6ebc9a4bca52203a21d99c6853",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\buildings\\yaodong_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\buildings\\yaodong_2.nbt.import.json",
+      "size_xyz": [
+        20,
+        17,
+        20
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 1044,
+      "nonair_namespace_counts": {
+        "minecraft": 1044
+      },
+      "geometry_sha256": "3503ac162a51db1b8a28835eb7b06348eb8f773df34d6adcc60575657cb02993",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/buildings/yaodong_3.nbt",
+      "source_sha256": "db85fc63f56d8e40b57e2914fb3cd34e01c9264edf53355ceb25dc735719a8d8",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\buildings\\yaodong_3.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\buildings\\yaodong_3.nbt.import.json",
+      "size_xyz": [
+        20,
+        17,
+        21
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 1130,
+      "nonair_namespace_counts": {
+        "minecraft": 1130
+      },
+      "geometry_sha256": "55facb75aeadd69bcbf87fd2d8df42ba957174f638431ef786943f4cd7565273",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/buildings/yaodong_4.nbt",
+      "source_sha256": "2943373b2dd7337e35b6c35d315493871e1cd42253b0b2edde0da57439491fae",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\buildings\\yaodong_4.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\buildings\\yaodong_4.nbt.import.json",
+      "size_xyz": [
+        23,
+        17,
+        33
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 2186,
+      "nonair_namespace_counts": {
+        "minecraft": 2186
+      },
+      "geometry_sha256": "c1c4d2b20ab24f665476af07086afe134cba18b1cfe417931e0a08a0e93c26c0",
+      "study_status": "measured_local"
+    },
+    {
+      "relative_source": "village/grotto/buildings/yaodong_5.nbt",
+      "source_sha256": "f44022ebb4c03c912839caf3165c8e373ebe44a943689ed450ff3649e405987a",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\buildings\\yaodong_5.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\buildings\\yaodong_5.nbt.import.json",
+      "size_xyz": [
+        23,
+        17,
+        23
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 1151,
+      "nonair_namespace_counts": {
+        "minecraft": 1151
+      },
+      "geometry_sha256": "8741c16f8ab3ca15d4aa4ff27955c075d50d90251b4dd74d6a1367324283b491",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/center/grotto_well.nbt",
+      "source_sha256": "9ded1186d84d33f60790ad4fcd042d69a226a33d85571f5fb1131f6b2221fdf3",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\center\\grotto_well.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\center\\grotto_well.nbt.import.json",
+      "size_xyz": [
+        9,
+        16,
+        9
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 190,
+      "nonair_namespace_counts": {
+        "minecraft": 190
+      },
+      "geometry_sha256": "4919f76f19918a21b3f1c0cc1f7ddcfd4bbc6d96b355a379f43d4c95701e9c6c",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/decor/grotto_decor_1.nbt",
+      "source_sha256": "61c22afe8f1f0fb78aff8cbe42b9fc4a470b3b3ea8a4eefca178ac3f87c9f87c",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_decor_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_decor_1.nbt.import.json",
+      "size_xyz": [
+        7,
+        7,
+        7
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 73,
+      "nonair_namespace_counts": {
+        "minecraft": 73
+      },
+      "geometry_sha256": "c5e4da52e2f30ade7be76b6718477a22b24358544b5df958e6621abc11937d03",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/decor/grotto_decor_2.nbt",
+      "source_sha256": "4f841ed1fb105f33d0cbc40a4bda13f033f48daad9bee53257fef0df6f934850",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_decor_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_decor_2.nbt.import.json",
+      "size_xyz": [
+        7,
+        9,
+        8
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 72,
+      "nonair_namespace_counts": {
+        "minecraft": 72
+      },
+      "geometry_sha256": "16df20c7b1ebad39177fcda3004f1dfa89c6af96cff48665413f8d1cf3c3d0bc",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/decor/grotto_lamp.nbt",
+      "source_sha256": "50cf93cdcbc3587111750822a1621e250e049b91df1f2f0b226b77be220de005",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_lamp.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_lamp.nbt.import.json",
+      "size_xyz": [
+        1,
+        5,
+        3
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 9,
+      "nonair_namespace_counts": {
+        "minecraft": 9
+      },
+      "geometry_sha256": "40e5738a616718a2fc7cc0f286c7ba8a15dfb09bbff897d97cdb2336a5b5f118",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/decor/grotto_lantern.nbt",
+      "source_sha256": "743915d5c76c3dbfd9f7dd63d94d3a18d0d6508012f473955f8a4dce313f5153",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_lantern.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_lantern.nbt.import.json",
+      "size_xyz": [
+        1,
+        2,
+        1
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 2,
+      "nonair_namespace_counts": {
+        "minecraft": 2
+      },
+      "geometry_sha256": "f7b806662ee68d2ddeb6519c2833c7a0476f70d72d1424a3267e718a2ffbdc1c",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/decor/grotto_well.nbt",
+      "source_sha256": "621068f8d31f856276c616d675332609f86be2103f1fd5f962d9a8ebeb68fbcf",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_well.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_well.nbt.import.json",
+      "size_xyz": [
+        5,
+        11,
+        5
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 162,
+      "nonair_namespace_counts": {
+        "minecraft": 162
+      },
+      "geometry_sha256": "089f9b5e7cbc3b89591aeebac3c236d28cfa6ef9ed409bade0c42a31c64aeda7",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/decor/grotto_well_bottom.nbt",
+      "source_sha256": "6a87905803b1281d04034d268c0968fc0747cf7be9071863ddb13c7fcbbf392a",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_well_bottom.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_well_bottom.nbt.import.json",
+      "size_xyz": [
+        5,
+        6,
+        5
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 118,
+      "nonair_namespace_counts": {
+        "minecraft": 118
+      },
+      "geometry_sha256": "5033f829e9be29fc619834cd63dad379b8fff59bc9b44cb796881f2b0b9549e2",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/decor/grotto_well_top.nbt",
+      "source_sha256": "09e2886922b4bbaa7d7b59d240abe7f7e0d2b9a6b7a95fcf6c1e434d36990a96",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_well_top.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\decor\\grotto_well_top.nbt.import.json",
+      "size_xyz": [
+        5,
+        5,
+        5
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 44,
+      "nonair_namespace_counts": {
+        "minecraft": 44
+      },
+      "geometry_sha256": "3d52ee31cdd6b3b16124a23c9f8767baafc6878d83957d51e898f62631796d93",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/streets/grotto_street_corner.nbt",
+      "source_sha256": "d95114506c440bcceb826a651abc125eb5dfbbad4abef95c75e00a946a161fe8",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\streets\\grotto_street_corner.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\streets\\grotto_street_corner.nbt.import.json",
+      "size_xyz": [
+        21,
+        2,
+        21
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 139,
+      "nonair_namespace_counts": {
+        "minecraft": 139
+      },
+      "geometry_sha256": "efd00d6a214b711a30885d40ff8c6a3733662c61c359033ab2a913a26350d127",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/streets/grotto_street_crossroad.nbt",
+      "source_sha256": "1dfb6ed4e932913fcdcd5d54c63e538d09f26a52b677620e88f028699463e4c8",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\streets\\grotto_street_crossroad.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\streets\\grotto_street_crossroad.nbt.import.json",
+      "size_xyz": [
+        14,
+        2,
+        15
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 98,
+      "nonair_namespace_counts": {
+        "minecraft": 98
+      },
+      "geometry_sha256": "c398da75d53000c6b6442d8c7941265acd1a0fef129a16abc1c091e866de401d",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/streets/grotto_street_diagonal.nbt",
+      "source_sha256": "c64f0f530eb68eb3c615176429e5f90fe3adb4bb7f9423cfc3a63289594de3bb",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\streets\\grotto_street_diagonal.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\streets\\grotto_street_diagonal.nbt.import.json",
+      "size_xyz": [
+        24,
+        2,
+        5
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 89,
+      "nonair_namespace_counts": {
+        "minecraft": 89
+      },
+      "geometry_sha256": "eda4bbab7b0f005d8e24a20c10858f1956f6df74e929093072decbb4e0e56372",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/grotto/streets/grotto_street_straight.nbt",
+      "source_sha256": "a2dc00877462f12088501eb8a43eb56c04cb5dbb8ba27eabeeab7f1bb14b530f",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\streets\\grotto_street_straight.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\grotto\\streets\\grotto_street_straight.nbt.import.json",
+      "size_xyz": [
+        29,
+        2,
+        5
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 117,
+      "nonair_namespace_counts": {
+        "minecraft": 117
+      },
+      "geometry_sha256": "2d5ac1156a541cc92f08a5913753ccf76a64726cce4e2f6e350c9c6e5a936d00",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/hui_flower_1.nbt",
+      "source_sha256": "2ceaf7a6f725c462065f28de8a3d297f88b40be8a0819c8aa8f4341cf661f040",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_flower_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_flower_1.nbt.import.json",
+      "size_xyz": [
+        5,
+        2,
+        3
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 14,
+      "nonair_namespace_counts": {
+        "minecraft": 14
+      },
+      "geometry_sha256": "7ad4a3cd1116cb3039f7b1dea99e7509ad2d377ab1c8bd5034c2904bd34f7e73",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/hui_flower_2.nbt",
+      "source_sha256": "a04570395eff01fd0e8f9c6564369de604121f307da2e3444ad55f761afcf51b",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_flower_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_flower_2.nbt.import.json",
+      "size_xyz": [
+        5,
+        2,
+        3
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 14,
+      "nonair_namespace_counts": {
+        "minecraft": 14
+      },
+      "geometry_sha256": "974c30ec64909e24fe1515ca09c016d66de668fe59f801936c2ebd64c25b079e",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/hui_flower_3.nbt",
+      "source_sha256": "1f721833b0bc42aa5fca27fe62c0cf8bdff445dce2b47cada7c70da119c2f3f4",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_flower_3.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_flower_3.nbt.import.json",
+      "size_xyz": [
+        5,
+        2,
+        3
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 14,
+      "nonair_namespace_counts": {
+        "minecraft": 14
+      },
+      "geometry_sha256": "535f6bd0b5d4bf9b6cc67a375c06f7cf7345394ab930fb4388357560c8b1ec91",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/hui_flower_4.nbt",
+      "source_sha256": "aa981f7873be387e71e0197d1554973c23382412a14dda3afdea497853876015",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_flower_4.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_flower_4.nbt.import.json",
+      "size_xyz": [
+        5,
+        2,
+        3
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 14,
+      "nonair_namespace_counts": {
+        "minecraft": 14
+      },
+      "geometry_sha256": "de4de70babe77e18dd7f2fc6d5eab7677e6cac55f99f35a0fbcce67bd19ce3c0",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/hui_pond_1.nbt",
+      "source_sha256": "3046d06928ef5a66ed43a1cd7366327141952bb2998d66ccf0b9c2970cf4a9af",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_pond_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_pond_1.nbt.import.json",
+      "size_xyz": [
+        9,
+        4,
+        10
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 225,
+      "nonair_namespace_counts": {
+        "minecraft": 225
+      },
+      "geometry_sha256": "0f09739554361be115c0149fbf8c0f1a9ee68f3394266f0a35cf39ba8ed038d2",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/hui_pond_2.nbt",
+      "source_sha256": "0a975b9fcc68bc73f10b7fee29431fcb5e9381c7b5238fbb25c7be15b28664f0",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_pond_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\hui_pond_2.nbt.import.json",
+      "size_xyz": [
+        7,
+        4,
+        7
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 118,
+      "nonair_namespace_counts": {
+        "minecraft": 118
+      },
+      "geometry_sha256": "4ca3ff7e3cd78932b30531e89b03046b8679c716ade7142f0f69447bf82a10e2",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_armorer_house_1.nbt",
+      "source_sha256": "93662280309fc94edb9aa795773b3974f04e0a99b6e58d8b020abcbd7b9374ff",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_armorer_house_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_armorer_house_1.nbt.import.json",
+      "size_xyz": [
+        11,
+        8,
+        8
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 359,
+      "nonair_namespace_counts": {
+        "minecraft": 359
+      },
+      "geometry_sha256": "06f72f114dcd678aa77a26276f37c140239b866fc34ba16fbbbfe2b747df0cf0",
+      "study_status": "measured_material_bands_fixtures_and_slices_B13"
+    },
+    {
+      "relative_source": "village/hui/plains_bathroom_1.nbt",
+      "source_sha256": "1ae1c3679aa54dde90b2780b97fa78ee6ce55fb0bc7030a8f53550f2cbb9d562",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_bathroom_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_bathroom_1.nbt.import.json",
+      "size_xyz": [
+        15,
+        9,
+        17
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 780,
+      "nonair_namespace_counts": {
+        "minecraft": 780
+      },
+      "geometry_sha256": "cb95ca3fe9149f4474d0f1a11349ba2b4a83a35ffa181a85f729176e8bda0368",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_blacksmith_1.nbt",
+      "source_sha256": "a1ea5d15623f15c46390e6280e5d899d0ecc817535b60e26b21f9fabeecd65db",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_blacksmith_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_blacksmith_1.nbt.import.json",
+      "size_xyz": [
+        9,
+        8,
+        10
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 338,
+      "nonair_namespace_counts": {
+        "minecraft": 338
+      },
+      "geometry_sha256": "b40ff5796f8f5fa2122c5be52c52164680023277eac5e81d3fe58b0f449031b7",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_butcher_1.nbt",
+      "source_sha256": "a038a858065b0e3e7333f85fef5ff695e15ba51c6a836dac36470d92168a2eac",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_butcher_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_butcher_1.nbt.import.json",
+      "size_xyz": [
+        11,
+        9,
+        12
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 534,
+      "nonair_namespace_counts": {
+        "minecraft": 534
+      },
+      "geometry_sha256": "b470a884a47cf838a11f0ab357680fedb20cca90023fad24b3ff2376fe1c7e8a",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_butcher_2.nbt",
+      "source_sha256": "138fff4ca1ee3def39cae2c39189e51e4ba5283d48015639b58e7687d6513398",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_butcher_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_butcher_2.nbt.import.json",
+      "size_xyz": [
+        10,
+        16,
+        15
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 648,
+      "nonair_namespace_counts": {
+        "minecraft": 648
+      },
+      "geometry_sha256": "c3e66c2e49a92de58bfada78fbf25936affd5870cae592de07b6953052c09c27",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_butcher_shop_1.nbt",
+      "source_sha256": "ecc4f04e117d965b3b1390fe17ff037232b68645940155a2ea3e52923d0f1529",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_butcher_shop_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_butcher_shop_1.nbt.import.json",
+      "size_xyz": [
+        11,
+        8,
+        12
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 346,
+      "nonair_namespace_counts": {
+        "minecraft": 346
+      },
+      "geometry_sha256": "1ce627bc617b24f6fec7e81f4fd905939e74fdefaa006fef2f757241d59a57c0",
+      "study_status": "measured_material_bands_fixtures_and_slices_B13"
+    },
+    {
+      "relative_source": "village/hui/plains_cartographer_1.nbt",
+      "source_sha256": "e31ee44c34007e25acda00b849696a827b2c49e0ed8b4d98d6110ff2c343c400",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_cartographer_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_cartographer_1.nbt.import.json",
+      "size_xyz": [
+        11,
+        8,
+        9
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 352,
+      "nonair_namespace_counts": {
+        "minecraft": 352
+      },
+      "geometry_sha256": "865a07b6ec6893a5f50bfd61d4fe19a24cf6530946b209fade8bf3572990a531",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_farm_1.nbt",
+      "source_sha256": "4614b13861ad42eae0bab4ba613d3d019a06c85dcd52af810a3ac3aea3cb667f",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_farm_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_farm_1.nbt.import.json",
+      "size_xyz": [
+        13,
+        7,
+        9
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 219,
+      "nonair_namespace_counts": {
+        "minecraft": 219
+      },
+      "geometry_sha256": "541dd78bbd17d831f4d8824b378cc6e4f935b5431252575b1f672f9403cc84b6",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_farm_2.nbt",
+      "source_sha256": "a3642ab1e836d7d40b90149ee15a2636180e1d04208351b382e83c19da5506b9",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_farm_2.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_farm_2.nbt.import.json",
+      "size_xyz": [
+        10,
+        7,
+        10
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 173,
+      "nonair_namespace_counts": {
+        "minecraft": 173
+      },
+      "geometry_sha256": "e7008ad3a2d79cbf324d32889684a9762acda0282f596228dcf260ad7d284c22",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_fisher_cottage_1.nbt",
+      "source_sha256": "10af1470ac8062de51d569bb09d55b70297402c242f9d9c55609886a36adbf2d",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_fisher_cottage_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_fisher_cottage_1.nbt.import.json",
+      "size_xyz": [
+        15,
+        12,
+        10
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 495,
+      "nonair_namespace_counts": {
+        "minecraft": 495
+      },
+      "geometry_sha256": "8ea7ab947b6399588a6c8f4e4a9418afe7763d64d33cc0950b44de0ea9c1e092",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_hotel_1.nbt",
+      "source_sha256": "537bc0ae1ef089b81c40840a87b7d170c43b1fb136b150a3d0e766f87b90ebef",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_hotel_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_hotel_1.nbt.import.json",
+      "size_xyz": [
+        13,
+        13,
+        13
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 823,
+      "nonair_namespace_counts": {
+        "minecraft": 823
+      },
+      "geometry_sha256": "91d9b9687ca2680149076dc46cf92e1e0e49928adcc4a07d37ad163100bf7bd6",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_lamp_1.nbt",
+      "source_sha256": "f55b6102e460e23f5065a76e994dd9f859166aa0cdf7312c1f51afeedbc400df",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_lamp_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_lamp_1.nbt.import.json",
+      "size_xyz": [
+        3,
+        6,
+        1
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 12,
+      "nonair_namespace_counts": {
+        "minecraft": 12
+      },
+      "geometry_sha256": "7c6ce7eef0a078ee5a3886aa4fb7c697fa1283ad19643b685f9a381beee41b80",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_library_1.nbt",
+      "source_sha256": "8501ea4f926b214655a190b8b4f6907b4f37f6b623d1882930d70eadfb9c0f52",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_library_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_library_1.nbt.import.json",
+      "size_xyz": [
+        15,
+        15,
+        17
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 1176,
+      "nonair_namespace_counts": {
+        "minecraft": 1176
+      },
+      "geometry_sha256": "abe01e47aff691a7be905ded1a033e804f7e57229ddf179c0200f41a500ca809",
+      "study_status": "measured_material_bands_fixtures_and_slices_B13"
+    },
+    {
+      "relative_source": "village/hui/plains_mason_house_1.nbt",
+      "source_sha256": "663b3dc1504e248328b936a94969abec7c410d2b92d68037e59e19048831fc95",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_mason_house_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_mason_house_1.nbt.import.json",
+      "size_xyz": [
+        8,
+        7,
+        7
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 186,
+      "nonair_namespace_counts": {
+        "minecraft": 186
+      },
+      "geometry_sha256": "36c7af16a013bd1aa441dcf0c179ca7bde211f911383bd17d4e822a52631d1c5",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_mid_house_1.nbt",
+      "source_sha256": "268c60d83522be02bf7430cf9a4d7cf53b44765df5d107d3ec5434ccf79f4749",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_mid_house_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_mid_house_1.nbt.import.json",
+      "size_xyz": [
+        11,
+        11,
+        15
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 637,
+      "nonair_namespace_counts": {
+        "minecraft": 637
+      },
+      "geometry_sha256": "ee79720afbb3db8c5cb006ca673194b56cdba92a0b6cc367886cefb37f97a7a6",
+      "study_status": "measured_local"
+    },
+    {
+      "relative_source": "village/hui/plains_shepherd_1.nbt",
+      "source_sha256": "8fdad1975cc00176e32ab4f1be642135c17b27f15b2be30e42fc288238aa6687",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_shepherd_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_shepherd_1.nbt.import.json",
+      "size_xyz": [
+        11,
+        8,
+        12
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 438,
+      "nonair_namespace_counts": {
+        "minecraft": 438
+      },
+      "geometry_sha256": "99885b7f8b9cf6ab23b52643a4cec8b3a276ab0858502db027da05655dcc20ac",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_small_house_1.nbt",
+      "source_sha256": "40b59d400652ff07aa8ee91ab207bc85af799eb4c6ad166e1efd5bba213732cb",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_small_house_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_small_house_1.nbt.import.json",
+      "size_xyz": [
+        7,
+        7,
+        7
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 168,
+      "nonair_namespace_counts": {
+        "minecraft": 168
+      },
+      "geometry_sha256": "e2bc561dad2e10125974d19867a55a05545acff5feb942397ace288aaa11feb4",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_stable_1.nbt",
+      "source_sha256": "6d10fddb5c562153bc417fb7f09eb4c24b0f9932b4952e66f0c55f8d2a098822",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_stable_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_stable_1.nbt.import.json",
+      "size_xyz": [
+        7,
+        7,
+        17
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 427,
+      "nonair_namespace_counts": {
+        "minecraft": 427
+      },
+      "geometry_sha256": "55dfc256495a47ca8d06c9cdd929823d82a97d37d834f10277e8e42f1e79492b",
+      "study_status": "measured_material_bands_fixtures_and_slices_B13"
+    },
+    {
+      "relative_source": "village/hui/plains_tannery_1.nbt",
+      "source_sha256": "0eb224beb2c5c53220dd7a259f6d34e6f33da9db257cb474f01daf43bb9f64c1",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_tannery_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_tannery_1.nbt.import.json",
+      "size_xyz": [
+        10,
+        9,
+        15
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 482,
+      "nonair_namespace_counts": {
+        "minecraft": 482
+      },
+      "geometry_sha256": "b74d45c1a0d61b151f86da794f4abe415da753e28e0286c832300f569e74f30c",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_temple_1.nbt",
+      "source_sha256": "505bb765f3b29f0920a5740fd8837cf3413b26c865024a8838ae277ce8a160c2",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_temple_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_temple_1.nbt.import.json",
+      "size_xyz": [
+        13,
+        13,
+        17
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 921,
+      "nonair_namespace_counts": {
+        "minecraft": 921
+      },
+      "geometry_sha256": "044967f36fa293786e3846f702e256963afc5bc16898e14ceb03f154f17226f2",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_terminator_01.nbt",
+      "source_sha256": "93b10a31e55064534caee73e6ae7e5c4985a27aefce51bb607549b6ae8330632",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_terminator_01.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_terminator_01.nbt.import.json",
+      "size_xyz": [
+        21,
+        14,
+        15
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 368,
+      "nonair_namespace_counts": {
+        "minecraft": 368
+      },
+      "geometry_sha256": "45055031da58c85e45a25b2e8a866e67b0f9fab0629c1b329bac2cc74385e65c",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_toolsmith_1.nbt",
+      "source_sha256": "7842242c72402add7bf85ca889a059a260ef9a411b744de846760ba359bfbbda",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_toolsmith_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_toolsmith_1.nbt.import.json",
+      "size_xyz": [
+        10,
+        9,
+        15
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 557,
+      "nonair_namespace_counts": {
+        "minecraft": 557
+      },
+      "geometry_sha256": "ed8b1dd92e9e126657e2e2578e48356f1f447009f978c04bc2b3b0d85f0d4387",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_town_center_1.nbt",
+      "source_sha256": "91657bb4941e00c17322a607234377fc43491f7c271c0d3aedc2e78a963610e0",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_town_center_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_town_center_1.nbt.import.json",
+      "size_xyz": [
+        19,
+        18,
+        19
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 1595,
+      "nonair_namespace_counts": {
+        "minecraft": 1595
+      },
+      "geometry_sha256": "e0aa0424421f25ee76546f6b58c254f20acdafe5785c710636b0f795a8bc94d1",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_tree_1.nbt",
+      "source_sha256": "b95183358e7d77519fd8b8bfd53c8b926180f8a5a29cdf9a6960c0b9a217402e",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_tree_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_tree_1.nbt.import.json",
+      "size_xyz": [
+        7,
+        7,
+        7
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 70,
+      "nonair_namespace_counts": {
+        "minecraft": 70
+      },
+      "geometry_sha256": "2277766a7845fcdc46ca95a5a83e5f3f116a7a86a74d19d4c0e1d622cb2c4a8a",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_weaponsmith_1.nbt",
+      "source_sha256": "bd45b1969d5414fdadc163282a6cecb180680fe67d0b7e21910cd67814499299",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_weaponsmith_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_weaponsmith_1.nbt.import.json",
+      "size_xyz": [
+        9,
+        8,
+        11
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 332,
+      "nonair_namespace_counts": {
+        "minecraft": 332
+      },
+      "geometry_sha256": "eb7fc1abfc248e5dd912c6ddf7050a51b7e92b3f941ce02d892b8f828cfe36d7",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/plains_well_1.nbt",
+      "source_sha256": "53c48a26cb633e924f1e05cf4e8cfc663d05125d51b03add40883b74117ba130",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_well_1.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\plains_well_1.nbt.import.json",
+      "size_xyz": [
+        11,
+        12,
+        11
+      ],
+      "data_version": 3953,
+      "nonair_blocks": 496,
+      "nonair_namespace_counts": {
+        "minecraft": 496
+      },
+      "geometry_sha256": "077548f0a04b967151159389695ebf5ff78849d7aa0d84689a3ce8bb2b6a9f40",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/streets_corner_01.nbt",
+      "source_sha256": "b2d29e2dc30f6f69e4ac538a15dbfed541d60a7ae50b3660ee794e404b79d0ce",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_corner_01.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_corner_01.nbt.import.json",
+      "size_xyz": [
+        15,
+        8,
+        16
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 110,
+      "nonair_namespace_counts": {
+        "minecraft": 110
+      },
+      "geometry_sha256": "adbe76013a335eaee3d2b38a2b33613527eea1432ce53a7d536223b128910d53",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/streets_corner_02.nbt",
+      "source_sha256": "228a3e34f8efbb7b8db05b779691d2bca39fb79f9ebfc80bedf6b7b9445daf78",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_corner_02.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_corner_02.nbt.import.json",
+      "size_xyz": [
+        25,
+        8,
+        28
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 225,
+      "nonair_namespace_counts": {
+        "minecraft": 225
+      },
+      "geometry_sha256": "bd84d58a52ddfb571a6c136ae58101a92af03cd001ae7903919e4274dfa90fd2",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/streets_corner_03.nbt",
+      "source_sha256": "d24bd33593c732e67aee993785f6052a4ad3a29318b4e8f08069c9d727bb2244",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_corner_03.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_corner_03.nbt.import.json",
+      "size_xyz": [
+        5,
+        2,
+        5
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 20,
+      "nonair_namespace_counts": {
+        "minecraft": 20
+      },
+      "geometry_sha256": "4e19d842b0bbe981504f35bcd0cabc93849a1e1b85a260581cd5a99a168de5ce",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/streets_crossroad_01.nbt",
+      "source_sha256": "810e722c191378f0f6e314c1a417da791ee1352a66c951eeecc9ea30e4ec87c1",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_01.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_01.nbt.import.json",
+      "size_xyz": [
+        13,
+        8,
+        24
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 143,
+      "nonair_namespace_counts": {
+        "minecraft": 143
+      },
+      "geometry_sha256": "afa23265bb6d6ebfcb38d46950944de10bab68e4c0e71c879695e3caa648f329",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/streets_crossroad_02.nbt",
+      "source_sha256": "d01b2a952b289172f1d3a344448dc8b0c8c320adf1f5960a385e07a4a7988cdd",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_02.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_02.nbt.import.json",
+      "size_xyz": [
+        23,
+        2,
+        23
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 167,
+      "nonair_namespace_counts": {
+        "minecraft": 167
+      },
+      "geometry_sha256": "924b9c4afd0589da11907d64d1de4e9433fd60dc7104d6e090cc1f7f754d7753",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/streets_crossroad_03.nbt",
+      "source_sha256": "dc3d5f6c6070c5453a1ea33208182346cb4a71dc2ccba0bac2deee6b5bf2ea7d",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_03.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_03.nbt.import.json",
+      "size_xyz": [
+        20,
+        2,
+        24
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 165,
+      "nonair_namespace_counts": {
+        "minecraft": 165
+      },
+      "geometry_sha256": "75ad560651dcdb84e382180896c6da776690a3a14bbd159403d86e74945888ab",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/streets_crossroad_04.nbt",
+      "source_sha256": "eaafe91425a7b0b8dbac99e6086727e7d8ab29b0bb45b58f45e6a33cec31261a",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_04.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_04.nbt.import.json",
+      "size_xyz": [
+        5,
+        2,
+        7
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 37,
+      "nonair_namespace_counts": {
+        "minecraft": 37
+      },
+      "geometry_sha256": "13b95434d94470497c7549a54c5778353270ccf4e98d9e874c3f54b44aa12f0a",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/streets_crossroad_05.nbt",
+      "source_sha256": "b990a5b61177a51eb1e2d59c792f614a53f180e7a983105c97b35e61efac9a38",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_05.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_05.nbt.import.json",
+      "size_xyz": [
+        5,
+        2,
+        5
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 25,
+      "nonair_namespace_counts": {
+        "minecraft": 25
+      },
+      "geometry_sha256": "76046bfaebe412456eb3027de50b2ae9587a47930d32c722a938a85f309569f2",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/streets_crossroad_06.nbt",
+      "source_sha256": "a3d4f781d9302bf710a1bb05f82827422f84a54edbf8b255339ca0e68bf53e2d",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_06.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_crossroad_06.nbt.import.json",
+      "size_xyz": [
+        5,
+        2,
+        5
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 25,
+      "nonair_namespace_counts": {
+        "minecraft": 25
+      },
+      "geometry_sha256": "6072a90e38b334da12a06b11af44ab68a9cd966062cce4811fc1225620655797",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/hui/streets_test_version.nbt",
+      "source_sha256": "6a0548d3d10cb8e56c73eca1f06b4d75b1561bd95d25e6b36c7552b84d348e0d",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_test_version.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\hui\\streets_test_version.nbt.import.json",
+      "size_xyz": [
+        19,
+        2,
+        3
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 97,
+      "nonair_namespace_counts": {
+        "minecraft": 97
+      },
+      "geometry_sha256": "bba61c2ec2ad4e8c1b175a10bcd9f55c77db85f2079bf8e763234a19cfb448a6",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/buildings/yurt_01.nbt",
+      "source_sha256": "eeb825d34a547b725668278183353f2eaf55fbac648b5b65c8f3e4d99acc3661",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_01.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_01.nbt.import.json",
+      "size_xyz": [
+        29,
+        19,
+        28
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 2243,
+      "nonair_namespace_counts": {
+        "minecraft": 2243
+      },
+      "geometry_sha256": "6386788dc053498fdd7f0d1f248d35cef0601f049c12dec71c6d0b5f8bc1dcbd",
+      "study_status": "measured_local"
+    },
+    {
+      "relative_source": "village/yurt/buildings/yurt_02.nbt",
+      "source_sha256": "764fb07f36ec6148cf4dfae21a15b613f1f3cf5be9c3bf9fe36176fdc695ea97",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_02.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_02.nbt.import.json",
+      "size_xyz": [
+        29,
+        19,
+        28
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 2207,
+      "nonair_namespace_counts": {
+        "minecraft": 2207
+      },
+      "geometry_sha256": "1294ba0c868dabad738f695abe42375fb670d48c1847e566c9d0d08fb50f2b8b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/buildings/yurt_03.nbt",
+      "source_sha256": "99e5373c9eed1800dafe4cfd5c73632934777b0cee45c38c3bf6ad5b0bb0e908",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_03.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_03.nbt.import.json",
+      "size_xyz": [
+        17,
+        9,
+        17
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 596,
+      "nonair_namespace_counts": {
+        "minecraft": 596
+      },
+      "geometry_sha256": "dd40e7f7c928a1ccfe0932166b0811dca2d1814dcf68bd3680b13c383c494f09",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/buildings/yurt_04.nbt",
+      "source_sha256": "f2b6a6db9dec1d4bb703010f2d3a6f2aad162f02dbda0fcaec72f6719041a4df",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_04.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_04.nbt.import.json",
+      "size_xyz": [
+        17,
+        9,
+        17
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 620,
+      "nonair_namespace_counts": {
+        "minecraft": 620
+      },
+      "geometry_sha256": "b721e766e0ad939788babcb0ca87ca35a0b49926c67d51411d0c1024b5f4a3de",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/buildings/yurt_05.nbt",
+      "source_sha256": "eb3d18cc1155f5c713e5623cfa35a7999227db8df4954f9c038d2d566e4e8c35",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_05.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_05.nbt.import.json",
+      "size_xyz": [
+        13,
+        8,
+        13
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 377,
+      "nonair_namespace_counts": {
+        "minecraft": 377
+      },
+      "geometry_sha256": "08b9c74d5f8c035302f76dc347b4a908b778c03e9814ce1a01ccd865e3c93bde",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/buildings/yurt_stable_01.nbt",
+      "source_sha256": "c4e8afb75877e190fd199f203a2f5c75f7c26ea13ee1d4edbe8f2c54aae3b8dc",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_stable_01.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_stable_01.nbt.import.json",
+      "size_xyz": [
+        11,
+        9,
+        11
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 378,
+      "nonair_namespace_counts": {
+        "minecraft": 378
+      },
+      "geometry_sha256": "9e1857d6f4bc218eb15d8fc7a4ff73d28dd2be3701600d248e3c541f39a7f139",
+      "study_status": "measured_material_bands_fixtures_and_slices_B13"
+    },
+    {
+      "relative_source": "village/yurt/buildings/yurt_stable_02.nbt",
+      "source_sha256": "90607ac5881b89579bb5d0896f2ee6f42bbeb10393107a87cbb75c688764216c",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_stable_02.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_stable_02.nbt.import.json",
+      "size_xyz": [
+        12,
+        9,
+        11
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 389,
+      "nonair_namespace_counts": {
+        "minecraft": 389
+      },
+      "geometry_sha256": "d98e09751c8abb1b5f7073f68a145048c98d12c604fa36d127d2963f8e625b3f",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/buildings/yurt_stable_03.nbt",
+      "source_sha256": "163f58211b8c3f6c4d74536bed7eee4fdd8ee6df962e5de828b7454619541302",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_stable_03.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\buildings\\yurt_stable_03.nbt.import.json",
+      "size_xyz": [
+        11,
+        9,
+        11
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 386,
+      "nonair_namespace_counts": {
+        "minecraft": 386
+      },
+      "geometry_sha256": "13e4dfed3e5915e287105b3f28388abc0ef3557f5a7134a731d9d4e54d916ad3",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/horses/horse_01.nbt",
+      "source_sha256": "c6d8803293df1d58caf44f2d6be242af377745c1b2eb1289c1ed530b9ce2a57c",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_01.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_01.nbt.import.json",
+      "size_xyz": [
+        1,
+        3,
+        1
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 1,
+      "nonair_namespace_counts": {
+        "minecraft": 1
+      },
+      "geometry_sha256": "a62bb8e91404cbff9472cd7d523daada1fd4d3eac0c19e68bca92205e185452b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/horses/horse_02.nbt",
+      "source_sha256": "3601d526d03bcaaf649877b81fc5d33379dd40401a7c5339776999b61bea8c3d",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_02.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_02.nbt.import.json",
+      "size_xyz": [
+        1,
+        3,
+        1
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 1,
+      "nonair_namespace_counts": {
+        "minecraft": 1
+      },
+      "geometry_sha256": "a62bb8e91404cbff9472cd7d523daada1fd4d3eac0c19e68bca92205e185452b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/horses/horse_03.nbt",
+      "source_sha256": "5d959086bb3edeb7b33ce6751c06c57d4a1821aeb2645afe56dee129093a43a9",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_03.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_03.nbt.import.json",
+      "size_xyz": [
+        1,
+        3,
+        1
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 1,
+      "nonair_namespace_counts": {
+        "minecraft": 1
+      },
+      "geometry_sha256": "a62bb8e91404cbff9472cd7d523daada1fd4d3eac0c19e68bca92205e185452b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/horses/horse_04.nbt",
+      "source_sha256": "dcf840b5f36dcae37470b00bc7b33ec2abb1be77a5dddde9310635b0a2678b00",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_04.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_04.nbt.import.json",
+      "size_xyz": [
+        1,
+        3,
+        1
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 1,
+      "nonair_namespace_counts": {
+        "minecraft": 1
+      },
+      "geometry_sha256": "a62bb8e91404cbff9472cd7d523daada1fd4d3eac0c19e68bca92205e185452b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/horses/horse_05.nbt",
+      "source_sha256": "10f9e1b2e2cfd71656635d83b7ec347e16b411f239e7d1d7afa914ad409e63d8",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_05.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_05.nbt.import.json",
+      "size_xyz": [
+        1,
+        3,
+        1
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 1,
+      "nonair_namespace_counts": {
+        "minecraft": 1
+      },
+      "geometry_sha256": "a62bb8e91404cbff9472cd7d523daada1fd4d3eac0c19e68bca92205e185452b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/horses/horse_06.nbt",
+      "source_sha256": "45b02bfcf2bd372b62204ecb56170e556b75726d5b722e3df0606ef8124d22e4",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_06.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_06.nbt.import.json",
+      "size_xyz": [
+        1,
+        3,
+        1
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 1,
+      "nonair_namespace_counts": {
+        "minecraft": 1
+      },
+      "geometry_sha256": "a62bb8e91404cbff9472cd7d523daada1fd4d3eac0c19e68bca92205e185452b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/horses/horse_07.nbt",
+      "source_sha256": "4bf30cad334ed992090cae9856ad70ef18b80db40140a33080bde5325c79ac92",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_07.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_07.nbt.import.json",
+      "size_xyz": [
+        1,
+        3,
+        1
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 1,
+      "nonair_namespace_counts": {
+        "minecraft": 1
+      },
+      "geometry_sha256": "a62bb8e91404cbff9472cd7d523daada1fd4d3eac0c19e68bca92205e185452b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/horses/horse_08.nbt",
+      "source_sha256": "6049e8bd13ff03703573e7e044a4dd69007677ffc6c139c32c5d0c26f888c67e",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_08.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\horses\\horse_08.nbt.import.json",
+      "size_xyz": [
+        1,
+        3,
+        1
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 1,
+      "nonair_namespace_counts": {
+        "minecraft": 1
+      },
+      "geometry_sha256": "a62bb8e91404cbff9472cd7d523daada1fd4d3eac0c19e68bca92205e185452b",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/streets/corner.nbt",
+      "source_sha256": "e51be1974fad1df8f521915c094d23fcd8d727851f9cfb62fef65a711aa33008",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\streets\\corner.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\streets\\corner.nbt.import.json",
+      "size_xyz": [
+        11,
+        3,
+        11
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 125,
+      "nonair_namespace_counts": {
+        "minecraft": 125
+      },
+      "geometry_sha256": "8e53e267b7c30614956e15d917c4a3f85011d8d987e60bdf61bca621184ea826",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/streets/crossroad.nbt",
+      "source_sha256": "99ec78572630359c9d3dc36c483df41f45367b9f26aaf35060571f65ece97fff",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\streets\\crossroad.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\streets\\crossroad.nbt.import.json",
+      "size_xyz": [
+        7,
+        3,
+        7
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 53,
+      "nonair_namespace_counts": {
+        "minecraft": 53
+      },
+      "geometry_sha256": "8d7e06417d1700239fc89781fbfe38e3d3f4fcbffff0e83d2d17b2583c5b6d23",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/streets/main.nbt",
+      "source_sha256": "ee3ab9b45c401283c987f20e0df98a8495e2d7dde894c7911e6a64368df93d77",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\streets\\main.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\streets\\main.nbt.import.json",
+      "size_xyz": [
+        7,
+        3,
+        28
+      ],
+      "data_version": 3839,
+      "nonair_blocks": 203,
+      "nonair_namespace_counts": {
+        "minecraft": 203
+      },
+      "geometry_sha256": "4ccb07b85cc170414843814c72359d4a5c8fcd31d1baa3ea9b836286d322e688",
+      "study_status": "imported_only"
+    },
+    {
+      "relative_source": "village/yurt/streets/short.nbt",
+      "source_sha256": "21ef2ac645d47e711e81fc016b9b462994dad6bb5cc04e3dd1f244571f6e48e1",
+      "status": "imported",
+      "model": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\streets\\short.nbt.npz",
+      "import_report": "E:\\建筑\\analysis\\additional\\mcs\\village\\yurt\\streets\\short.nbt.import.json",
+      "size_xyz": [
+        18,
+        1,
+        7
+      ],
+      "data_version": 3700,
+      "nonair_blocks": 6,
+      "nonair_namespace_counts": {
+        "minecraft": 6
+      },
+      "geometry_sha256": "9b6c60e1ae8e34b177bf9182028f2bf334009468a9e773a4f9486a956ed82d0f",
+      "study_status": "imported_only"
+    }
+  ],
+  "limits": [
+    "File counts are not independent architectural styles or measured buildings.",
+    "Geometry deduplication ignores offsets, entities, block-entity payloads and unspecified-position semantics.",
+    "Attribution and permission must be registered separately; importer does not infer authorization from embedded metadata.",
+    "Multi-region or multi-palette files needing a selection are rejected here; import them explicitly with import_structure.py."
+  ]
+}

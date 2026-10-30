@@ -1,0 +1,15 @@
+{
+  "schema": "chinese-regional/1",
+  "kind": "tulou",
+  "parameters": {
+    "shape": "round",
+    "radius": 28,
+    "court_radius": 14,
+    "storeys": 3,
+    "storey_height": 6,
+    "roof_rise": 4
+  },
+  "evidence": [
+    "Original spatial prototype. See regional-generation.md for observed source relationships and unmeasured design choices."
+  ]
+}

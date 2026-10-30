@@ -1,0 +1,194 @@
+{
+  "schema": "architecture-annotations/1",
+  "status": "Author-labelled diagrammatic courtyard; not a real historic site survey",
+  "samples": [
+    {
+      "id": "siheyuan-rear-house",
+      "label": "North rear house roof",
+      "source": "pmc-siheyuan-mineman",
+      "model": "siheyuan.npz",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_box": [
+        -110,
+        8,
+        -152,
+        -80,
+        11,
+        -142
+      ],
+      "roof_pattern": "^minecraft:(stone|smooth_quartz)_slab\\[",
+      "shape_profiles": true,
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded.",
+      "column_row": {
+        "axis": "x",
+        "fixed": -145,
+        "range": [
+          -106,
+          -84
+        ],
+        "y_range": [
+          5,
+          7
+        ],
+        "material_pattern": "^minecraft:acacia_fence\\["
+      }
+    },
+    {
+      "id": "siheyuan-main-house",
+      "label": "Central main house roof",
+      "source": "pmc-siheyuan-mineman",
+      "model": "siheyuan.npz",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_box": [
+        -102,
+        8,
+        -138,
+        -88,
+        11,
+        -128
+      ],
+      "roof_pattern": "^minecraft:(stone|smooth_quartz)_slab\\[",
+      "shape_profiles": true,
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded."
+    },
+    {
+      "id": "siheyuan-west-wing",
+      "label": "West wing roof",
+      "source": "pmc-siheyuan-mineman",
+      "model": "siheyuan.npz",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_box": [
+        -110,
+        8,
+        -124,
+        -102,
+        11,
+        -112
+      ],
+      "roof_pattern": "^minecraft:(stone|smooth_quartz)_slab\\[",
+      "shape_profiles": true,
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded.",
+      "column_row": {
+        "axis": "z",
+        "fixed": -105,
+        "range": [
+          -121,
+          -115
+        ],
+        "y_range": [
+          5,
+          7
+        ],
+        "material_pattern": "^minecraft:acacia_fence\\["
+      }
+    },
+    {
+      "id": "siheyuan-outer-gate",
+      "label": "Offset south entrance roof",
+      "source": "pmc-siheyuan-mineman",
+      "model": "siheyuan.npz",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_box": [
+        -90,
+        8,
+        -101,
+        -84,
+        11,
+        -89
+      ],
+      "roof_pattern": "^minecraft:(stone|smooth_quartz)_slab\\[",
+      "shape_profiles": true,
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded."
+    },
+    {
+      "id": "siheyuan-inner-gate",
+      "label": "Central inner gate roof",
+      "source": "pmc-siheyuan-mineman",
+      "model": "siheyuan.npz",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_box": [
+        -98,
+        8,
+        -109,
+        -92,
+        11,
+        -103
+      ],
+      "roof_pattern": "^minecraft:(stone|smooth_quartz)_slab\\[",
+      "shape_profiles": true,
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded."
+    },
+    {
+      "id": "siheyuan-west-corridor",
+      "label": "West north connecting canopy",
+      "source": "pmc-siheyuan-mineman",
+      "model": "siheyuan.npz",
+      "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+      "coordinate_space": "Source world XYZ; +Z south convention, not a geolocated site",
+      "box": [
+        -112,
+        3,
+        -154,
+        -78,
+        13,
+        -87
+      ],
+      "roof_box": [
+        -106,
+        7,
+        -131,
+        -104,
+        9,
+        -125
+      ],
+      "roof_pattern": "^minecraft:(stone|smooth_quartz)_slab\\[",
+      "shape_profiles": true,
+      "interpretation": "Manually selected roof material band. Does not imply historical timber structure or room use; unselected wall/underside blocks are excluded."
+    }
+  ]
+}

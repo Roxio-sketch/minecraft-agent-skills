@@ -1,0 +1,109 @@
+{
+  "schema": "architecture-source-study/1",
+  "source_id": "huangcuo-hong-house-survey",
+  "report_title": "金門縣縣定古蹟黃厝洪氏古厝修復及再利用計畫",
+  "source_url": "https://cabkc.kinmen.gov.tw/uploads/files/202201/1685e719-99db-40d4-9166-e51e6291d32f.pdf",
+  "commissioning_institution": "金門縣文化局",
+  "executing_institution": "國立金門大學戰地史蹟與閩南建築研究中心",
+  "principal_investigator": "曾逸仁",
+  "publication_date": "2021-04",
+  "source_pdf_sha256": "39e0452614ca1fa8d290d562f826d88bf90346bd59846ff75a17706cfd7774c9",
+  "source_pdf_pages": 294,
+  "actually_read_pdf_pages": [
+    1,
+    106,
+    107,
+    117,
+    122,
+    123
+  ],
+  "printed_content_pages": [
+    89,
+    90,
+    100,
+    105,
+    106
+  ],
+  "reading_scope": "Cover, spatial form text, first/second-floor plans, guoshui/side court table and photos, porch/stair construction table and photos.",
+  "text_measurements": [
+    {
+      "id": "overall_width",
+      "value": 18.54,
+      "unit": "m",
+      "pdf_page": 106,
+      "printed_page": 89
+    },
+    {
+      "id": "overall_depth",
+      "value": 15.28,
+      "unit": "m",
+      "pdf_page": 106,
+      "printed_page": 89
+    },
+    {
+      "id": "footprint",
+      "value": 283.3,
+      "unit": "m2",
+      "approximate": true,
+      "pdf_page": 106,
+      "printed_page": 89
+    },
+    {
+      "id": "porch_clear_width",
+      "value": 1,
+      "unit": "m",
+      "approximate": true,
+      "pdf_page": 106,
+      "printed_page": 89
+    },
+    {
+      "id": "front_room_later_widening",
+      "value": 0.53,
+      "unit": "m",
+      "approximate": true,
+      "pdf_page": 106,
+      "printed_page": 89
+    },
+    {
+      "id": "stair_steps_in_text",
+      "value": 13,
+      "unit": "steps",
+      "pdf_page": 122,
+      "printed_page": 105,
+      "note": "Text says 13 and notes unequal rises/depths; not used as a generated stair count or reconciled with plan numbering."
+    }
+  ],
+  "plan_outline_check": {
+    "image_sha256": "41534ab7105c3f4d8b042ad07926cfe07c131434630737219312a48860b8c949",
+    "image_size_px": [
+      1126,
+      784
+    ],
+    "exterior_bbox_px": [
+      211,
+      46,
+      949,
+      653
+    ],
+    "edge_pick_uncertainty_pixels": 2,
+    "pixels_per_metre_x": 39.80582524271845,
+    "pixels_per_metre_z": 39.725130890052355,
+    "comparison_rms_blocks_at_two_blocks_per_metre": 0.023923169611776367,
+    "scope": "Overall plan proportions only; the original drawing scale bar and local room dimensions have not been independently measured."
+  },
+  "phase_distinctions": [
+    "The original core is a one-luo four-projection compound; the right-side hulong tower was added around the 1920s.",
+    "The front hulong rooms were joined and widened in the 1970s and their terrace roof was replaced.",
+    "The main core was altered for modern use in 2013. Current partitions are not silently treated as original fabric."
+  ],
+  "implemented_relationships": [
+    "Independent side entrance, narrow court, inward-facing porch, covered cross passage.",
+    "Lower and upper court floor levels remain distinct editable geometry."
+  ],
+  "not_reconstructed": [
+    "Actual Hong-house geometry, room names/orientation, later tower, lofts and staircase.",
+    "Surveyed masonry, timber joints, ornaments, closed modern doors and structural performance."
+  ],
+  "third_party_geometry_or_images_in_skill_package": false,
+  "new_generator_block_dimensions_are_original_choices": true
+}

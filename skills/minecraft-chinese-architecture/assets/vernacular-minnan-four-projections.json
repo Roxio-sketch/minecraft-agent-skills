@@ -1,0 +1,7 @@
+{
+  "schema": "chinese-vernacular/1",
+  "kind": "minnan_court",
+  "parameters": {"bay_width": 10, "main_depth": 12, "wing_depth": 6, "wing_room_width": 8, "wing_rooms": 2, "court_extra": 8, "eave_height": 9, "roof_rise": 5, "ridge": "swallowtail"},
+  "palette": {"wall": "minecraft:bricks", "trim": "minecraft:smooth_sandstone", "floor": "minecraft:smooth_stone", "roof": "minecraft:bricks", "roof_stairs": "minecraft:brick_stairs", "roof_slab": "minecraft:brick_slab"},
+  "evidence": [{"source": "kinmen-house-types", "relation": "Three-bay main range and two rooms in each projecting side range around a court. Swallowtail ridge is an explicit original choice, not universal to every Kinmen house.", "status": "source-informed original spatial prototype"}]
+}

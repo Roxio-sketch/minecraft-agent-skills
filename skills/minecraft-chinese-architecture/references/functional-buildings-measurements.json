@@ -1,0 +1,878 @@
+{
+  "schema": "architecture-measured-components/1",
+  "method": "Explicit boxes, material filters, continuous selected segments and optional shape surfaces; no automatic semantic claims.",
+  "samples": [
+    {
+      "id": "apothecary_house-roof-1",
+      "label": "apothecary_house selected roof band 1",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "88213626914b3754eea9eb3525852f6acda1e1d576420086e5464eccb518fe88",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        40,
+        20,
+        31
+      ],
+      "roof_query_box": [
+        25,
+        10,
+        4,
+        39,
+        12,
+        23
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:.*roof",
+        "bounds_xyz_inclusive": [
+          25,
+          10,
+          4,
+          39,
+          12,
+          23
+        ],
+        "span_xz": [
+          15,
+          20
+        ],
+        "y_range": [
+          10,
+          12
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:green_roof_tiles_slab": 96,
+          "dawnoftimebuilder:green_roof_tiles": 54,
+          "dawnoftimebuilder:green_roof_tiles_edge": 47,
+          "dawnoftimebuilder:green_roof_tiles_stairs": 8
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:green_roof_tiles_slab": 0.468293,
+          "dawnoftimebuilder:green_roof_tiles": 0.263415,
+          "dawnoftimebuilder:green_roof_tiles_edge": 0.229268,
+          "dawnoftimebuilder:green_roof_tiles_stairs": 0.039024
+        },
+        "center_x_coordinate": 32,
+        "center_z_coordinate": 13,
+        "x_profile": [
+          [
+            26,
+            10
+          ],
+          [
+            27,
+            11
+          ],
+          [
+            28,
+            12
+          ],
+          [
+            36,
+            12
+          ],
+          [
+            37,
+            11
+          ],
+          [
+            38,
+            10
+          ]
+        ],
+        "z_profile": [
+          [
+            5,
+            10
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            20,
+            12
+          ],
+          [
+            21,
+            11
+          ],
+          [
+            22,
+            10
+          ]
+        ]
+      },
+      "column_rows": {
+        "column_row": {
+          "axis": "x",
+          "fixed_coordinate": 8,
+          "wood_segment_y_range": [
+            7,
+            9
+          ],
+          "wood_segment_height": 3,
+          "positions": [
+            29,
+            32,
+            35
+          ],
+          "spacings": [
+            3,
+            3
+          ],
+          "material_filter": "vertical log/wood/stem/hyphae",
+          "interpretation": "Continuous selected material over annotated height; role supplied by the annotation."
+        },
+        "depth_row": {
+          "axis": "z",
+          "fixed_coordinate": 35,
+          "wood_segment_y_range": [
+            7,
+            9
+          ],
+          "wood_segment_height": 3,
+          "positions": [
+            8,
+            12,
+            15,
+            19
+          ],
+          "spacings": [
+            4,
+            3,
+            4
+          ],
+          "material_filter": "vertical log/wood/stem/hyphae",
+          "interpretation": "Continuous selected material over annotated height; role supplied by the annotation."
+        }
+      },
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred."
+    },
+    {
+      "id": "apothecary_house-roof-2",
+      "label": "apothecary_house selected roof band 2",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "88213626914b3754eea9eb3525852f6acda1e1d576420086e5464eccb518fe88",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        40,
+        20,
+        31
+      ],
+      "roof_query_box": [
+        25,
+        15,
+        4,
+        39,
+        19,
+        23
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:.*roof",
+        "bounds_xyz_inclusive": [
+          27,
+          15,
+          6,
+          37,
+          19,
+          21
+        ],
+        "span_xz": [
+          11,
+          16
+        ],
+        "y_range": [
+          15,
+          19
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:green_roof_tiles": 84,
+          "dawnoftimebuilder:green_roof_tiles_slab": 76,
+          "dawnoftimebuilder:green_roof_tiles_edge": 54
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:green_roof_tiles": 0.392523,
+          "dawnoftimebuilder:green_roof_tiles_slab": 0.35514,
+          "dawnoftimebuilder:green_roof_tiles_edge": 0.252336
+        },
+        "center_x_coordinate": 32,
+        "center_z_coordinate": 13,
+        "x_profile": [
+          [
+            28,
+            15
+          ],
+          [
+            29,
+            16
+          ],
+          [
+            30,
+            17
+          ],
+          [
+            31,
+            18
+          ],
+          [
+            32,
+            18
+          ],
+          [
+            33,
+            18
+          ],
+          [
+            34,
+            17
+          ],
+          [
+            35,
+            16
+          ],
+          [
+            36,
+            15
+          ]
+        ],
+        "z_profile": [
+          [
+            7,
+            15
+          ],
+          [
+            8,
+            16
+          ],
+          [
+            9,
+            17
+          ],
+          [
+            10,
+            18
+          ],
+          [
+            11,
+            19
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            13,
+            18
+          ],
+          [
+            14,
+            18
+          ],
+          [
+            15,
+            18
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            17
+          ],
+          [
+            19,
+            16
+          ],
+          [
+            20,
+            15
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred."
+    },
+    {
+      "id": "chinese_fort-roof-1",
+      "label": "chinese_fort selected roof band 1",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "f70516b01216943c0a18f00ebc0a6702f821ac0731473873f3308346f8227414",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        38,
+        29,
+        37
+      ],
+      "roof_query_box": [
+        0,
+        20,
+        0,
+        38,
+        23,
+        37
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:.*roof",
+        "bounds_xyz_inclusive": [
+          28,
+          20,
+          26,
+          36,
+          23,
+          34
+        ],
+        "span_xz": [
+          9,
+          9
+        ],
+        "y_range": [
+          20,
+          23
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:gray_roof_tiles_slab": 33,
+          "dawnoftimebuilder:gray_roof_tiles": 30,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 30,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 4
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:gray_roof_tiles_slab": 0.340206,
+          "dawnoftimebuilder:gray_roof_tiles": 0.309278,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 0.309278,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 0.041237
+        },
+        "center_x_coordinate": 32,
+        "center_z_coordinate": 30,
+        "x_profile": [
+          [
+            28,
+            20
+          ],
+          [
+            29,
+            20
+          ],
+          [
+            30,
+            23
+          ],
+          [
+            31,
+            23
+          ],
+          [
+            32,
+            23
+          ],
+          [
+            33,
+            23
+          ],
+          [
+            34,
+            23
+          ],
+          [
+            35,
+            20
+          ],
+          [
+            36,
+            20
+          ]
+        ],
+        "z_profile": [
+          [
+            26,
+            20
+          ],
+          [
+            27,
+            20
+          ],
+          [
+            28,
+            21
+          ],
+          [
+            29,
+            22
+          ],
+          [
+            30,
+            23
+          ],
+          [
+            31,
+            22
+          ],
+          [
+            32,
+            21
+          ],
+          [
+            33,
+            20
+          ],
+          [
+            34,
+            20
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred."
+    },
+    {
+      "id": "chinese_fort-roof-2",
+      "label": "chinese_fort selected roof band 2",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "f70516b01216943c0a18f00ebc0a6702f821ac0731473873f3308346f8227414",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        38,
+        29,
+        37
+      ],
+      "roof_query_box": [
+        0,
+        25,
+        0,
+        38,
+        27,
+        37
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:.*roof",
+        "bounds_xyz_inclusive": [
+          5,
+          25,
+          2,
+          36,
+          27,
+          34
+        ],
+        "span_xz": [
+          32,
+          33
+        ],
+        "y_range": [
+          25,
+          27
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:gray_roof_tiles": 135,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 108,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 60,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 24
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:gray_roof_tiles": 0.412844,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 0.330275,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 0.183486,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 0.073394
+        },
+        "center_x_coordinate": 20,
+        "center_z_coordinate": 18,
+        "x_profile": [],
+        "z_profile": []
+      },
+      "column_rows": {},
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred."
+    },
+    {
+      "id": "chinese_emperor_tomb-roof-1",
+      "label": "chinese_emperor_tomb selected roof band 1",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "1244042f0e605bcca929f8ae41cd1a2b4516a7c7715c1ca0f3db1e0129553fa9",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        45,
+        24,
+        43
+      ],
+      "roof_query_box": [
+        14,
+        16,
+        16,
+        26,
+        22,
+        28
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:.*roof",
+        "bounds_xyz_inclusive": [
+          14,
+          16,
+          16,
+          26,
+          22,
+          28
+        ],
+        "span_xz": [
+          13,
+          13
+        ],
+        "y_range": [
+          16,
+          22
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 114,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 80,
+          "dawnoftimebuilder:gray_roof_tiles": 36,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 10
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 0.475,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 0.333333,
+          "dawnoftimebuilder:gray_roof_tiles": 0.15,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 0.041667
+        },
+        "center_x_coordinate": 20,
+        "center_z_coordinate": 22,
+        "x_profile": [
+          [
+            14,
+            16
+          ],
+          [
+            15,
+            17
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            17,
+            19
+          ],
+          [
+            18,
+            20
+          ],
+          [
+            19,
+            21
+          ],
+          [
+            20,
+            22
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            22,
+            20
+          ],
+          [
+            23,
+            19
+          ],
+          [
+            24,
+            18
+          ],
+          [
+            25,
+            17
+          ],
+          [
+            26,
+            16
+          ]
+        ],
+        "z_profile": [
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            22
+          ],
+          [
+            18,
+            22
+          ],
+          [
+            19,
+            22
+          ],
+          [
+            20,
+            22
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            23,
+            22
+          ],
+          [
+            24,
+            22
+          ],
+          [
+            25,
+            22
+          ],
+          [
+            26,
+            22
+          ],
+          [
+            27,
+            22
+          ],
+          [
+            28,
+            16
+          ]
+        ]
+      },
+      "column_rows": {
+        "column_row": {
+          "axis": "x",
+          "fixed_coordinate": 19,
+          "wood_segment_y_range": [
+            13,
+            15
+          ],
+          "wood_segment_height": 3,
+          "positions": [
+            17,
+            23
+          ],
+          "spacings": [
+            6
+          ],
+          "material_filter": "vertical log/wood/stem/hyphae",
+          "interpretation": "Continuous selected material over annotated height; role supplied by the annotation."
+        },
+        "depth_row": {
+          "axis": "z",
+          "fixed_coordinate": 17,
+          "wood_segment_y_range": [
+            13,
+            15
+          ],
+          "wood_segment_height": 3,
+          "positions": [
+            19,
+            25
+          ],
+          "spacings": [
+            6
+          ],
+          "material_filter": "vertical log/wood/stem/hyphae",
+          "interpretation": "Continuous selected material over annotated height; role supplied by the annotation."
+        }
+      },
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred."
+    },
+    {
+      "id": "small_house-roof-1",
+      "label": "small_house selected roof band 1",
+      "source": "ancient-structures-chinese",
+      "source_sha256": "2ed1f76e4bd7be8393ae8e8b1a013ba0799e2defe0780763e7a911851d38fbbb",
+      "coordinate_space": "Structure local XYZ at repository d7ff4571fc09142d69bd29c99ee2a33bb08b89c4",
+      "sample_box": [
+        0,
+        0,
+        0,
+        24,
+        13,
+        28
+      ],
+      "roof_query_box": [
+        5,
+        10,
+        8,
+        20,
+        13,
+        24
+      ],
+      "roof_material_envelope": {
+        "material_filter": "^dawnoftimebuilder:.*roof",
+        "bounds_xyz_inclusive": [
+          5,
+          10,
+          8,
+          20,
+          13,
+          24
+        ],
+        "span_xz": [
+          16,
+          17
+        ],
+        "y_range": [
+          10,
+          13
+        ],
+        "material_counts": {
+          "dawnoftimebuilder:gray_roof_tiles": 82,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 65,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 57,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 10
+        },
+        "material_fraction": {
+          "dawnoftimebuilder:gray_roof_tiles": 0.383178,
+          "dawnoftimebuilder:gray_roof_tiles_edge": 0.303738,
+          "dawnoftimebuilder:gray_roof_tiles_slab": 0.266355,
+          "dawnoftimebuilder:gray_roof_tiles_stairs": 0.046729
+        },
+        "center_x_coordinate": 12,
+        "center_z_coordinate": 16,
+        "x_profile": [
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            11
+          ],
+          [
+            13,
+            11
+          ],
+          [
+            14,
+            11
+          ],
+          [
+            15,
+            11
+          ],
+          [
+            16,
+            11
+          ],
+          [
+            17,
+            11
+          ],
+          [
+            18,
+            11
+          ],
+          [
+            19,
+            11
+          ]
+        ],
+        "z_profile": [
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            14,
+            10
+          ],
+          [
+            15,
+            10
+          ],
+          [
+            16,
+            11
+          ],
+          [
+            17,
+            11
+          ],
+          [
+            18,
+            12
+          ],
+          [
+            19,
+            12
+          ],
+          [
+            20,
+            12
+          ],
+          [
+            21,
+            11
+          ],
+          [
+            22,
+            11
+          ],
+          [
+            23,
+            10
+          ],
+          [
+            24,
+            10
+          ]
+        ]
+      },
+      "column_rows": {},
+      "interpretation": "Selected roof material in an explicitly bounded band; mod surfaces and historical type not inferred."
+    }
+  ]
+}

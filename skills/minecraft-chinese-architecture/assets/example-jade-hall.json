@@ -1,0 +1,27 @@
+{
+  "schema": "chinese-hall/1",
+  "rule_status": "authored_hypothesis",
+  "source_structure_reuse": false,
+  "width_bays": 3,
+  "depth_bays": 2,
+  "bay_spacing": 6,
+  "column_height": 9,
+  "platform_height": 2,
+  "platform_margin": 4,
+  "eave_overhang": 3,
+  "roof_rise": 5,
+  "roof_curve": 1.45,
+  "corner_uplift": 2,
+  "stair_width": 5,
+  "palette": {
+    "column": "minecraft:stripped_spruce_log[axis=y]",
+    "beam": "minecraft:spruce_planks",
+    "wall": "minecraft:white_terracotta",
+    "roof": "minecraft:prismarine_bricks",
+    "roof_stairs": "minecraft:prismarine_brick_stairs",
+    "roof_slab": "minecraft:prismarine_brick_slab",
+    "trim": "minecraft:oxidized_cut_copper"
+  },
+  "evidence": [],
+  "notes": "Second original authored variant: three bays, a taller open central bay and turquoise roof. This is not a reproduction of any provided map."
+}

@@ -1,0 +1,10 @@
+{
+  "kind": "roof_study",
+  "parameters": {
+    "form": "fan"
+  },
+  "schema": "chinese-landmark/1",
+  "evidence": [
+    "Original Minecraft prototype; see landmarks-and-details.md and carpentry-and-roof-evidence.md."
+  ]
+}

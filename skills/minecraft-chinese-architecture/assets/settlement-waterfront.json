@@ -1,0 +1,9 @@
+{
+  "schema": "chinese-settlement/1",
+  "kind": "waterfront",
+  "parameters": {
+    "houses_per_bank": 2,
+    "spacing": 42,
+    "bridge_rise": 2
+  }
+}

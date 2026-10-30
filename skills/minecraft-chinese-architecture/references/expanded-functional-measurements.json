@@ -1,0 +1,3155 @@
+{
+  "schema": "architecture-layout-measurements/1",
+  "samples": [
+    {
+      "id": "castle_base",
+      "source": "more-chinese-structures",
+      "source_sha256": "0e93024c07c2368347c374221b3ce2900a2787b12b71ddd07eafab598ba5d8c1",
+      "analysis_npz_sha256": "282fd0da5d6ef19a3c3302989e7105782cc74793f9d8de5f7f38f44f99a40618",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        30,
+        36,
+        30
+      ],
+      "queries": {
+        "workstations": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            30,
+            36,
+            30
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)",
+          "query_volume": 35557,
+          "matched_cells": 47,
+          "bounds_xyz_inclusive": [
+            8,
+            2,
+            9,
+            23,
+            24,
+            25
+          ],
+          "layers_y": {
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "8": 1,
+            "9": 6,
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "22": 8,
+            "23": 6,
+            "24": 5
+          },
+          "state_counts": {
+            "minecraft:anvil[facing=west]": 1,
+            "minecraft:blast_furnace[facing=north,lit=false]": 2,
+            "minecraft:bookshelf": 39,
+            "minecraft:furnace[facing=north,lit=false]": 1,
+            "minecraft:grindstone[face=floor,facing=south]": 1,
+            "minecraft:lectern[facing=south,has_book=false,powered=false]": 2,
+            "minecraft:smithing_table": 1
+          }
+        },
+        "storage": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            30,
+            36,
+            30
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 35557,
+          "matched_cells": 133,
+          "bounds_xyz_inclusive": [
+            5,
+            1,
+            5,
+            25,
+            35,
+            25
+          ],
+          "layers_y": {
+            "1": 4,
+            "2": 1,
+            "4": 3,
+            "6": 1,
+            "8": 9,
+            "9": 18,
+            "10": 4,
+            "11": 21,
+            "12": 3,
+            "15": 9,
+            "16": 3,
+            "17": 4,
+            "18": 1,
+            "19": 3,
+            "22": 5,
+            "24": 16,
+            "28": 4,
+            "34": 21,
+            "35": 3
+          },
+          "state_counts": {
+            "minecraft:barrel[facing=down,open=false]": 2,
+            "minecraft:barrel[facing=east,open=false]": 31,
+            "minecraft:barrel[facing=north,open=false]": 6,
+            "minecraft:barrel[facing=south,open=false]": 7,
+            "minecraft:barrel[facing=up,open=false]": 7,
+            "minecraft:barrel[facing=west,open=false]": 17,
+            "minecraft:chest[facing=east,type=left,waterlogged=false]": 1,
+            "minecraft:chest[facing=east,type=right,waterlogged=false]": 1,
+            "minecraft:chest[facing=east,type=single,waterlogged=false]": 3,
+            "minecraft:chest[facing=north,type=left,waterlogged=false]": 7,
+            "minecraft:chest[facing=north,type=right,waterlogged=false]": 7,
+            "minecraft:chest[facing=north,type=single,waterlogged=false]": 5,
+            "minecraft:chest[facing=south,type=left,waterlogged=false]": 7,
+            "minecraft:chest[facing=south,type=right,waterlogged=false]": 7,
+            "minecraft:chest[facing=south,type=single,waterlogged=false]": 6,
+            "minecraft:chest[facing=west,type=left,waterlogged=false]": 4,
+            "minecraft:chest[facing=west,type=right,waterlogged=false]": 4,
+            "minecraft:chest[facing=west,type=single,waterlogged=false]": 11
+          }
+        },
+        "beds": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            30,
+            36,
+            30
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)",
+          "query_volume": 35557,
+          "matched_cells": 36,
+          "bounds_xyz_inclusive": [
+            10,
+            8,
+            5,
+            25,
+            22,
+            25
+          ],
+          "layers_y": {
+            "8": 6,
+            "10": 6,
+            "15": 10,
+            "17": 10,
+            "22": 4
+          },
+          "state_counts": {
+            "minecraft:brown_bed[facing=south,occupied=false,part=foot]": 10,
+            "minecraft:brown_bed[facing=south,occupied=false,part=head]": 10,
+            "minecraft:light_blue_bed[facing=south,occupied=false,part=foot]": 1,
+            "minecraft:light_blue_bed[facing=south,occupied=false,part=head]": 1,
+            "minecraft:light_blue_bed[facing=west,occupied=false,part=foot]": 1,
+            "minecraft:light_blue_bed[facing=west,occupied=false,part=head]": 1,
+            "minecraft:light_gray_bed[facing=east,occupied=false,part=foot]": 6,
+            "minecraft:light_gray_bed[facing=east,occupied=false,part=head]": 6
+          }
+        },
+        "upper-roof-material-band": {
+          "box_xyz_inclusive": [
+            0,
+            18,
+            0,
+            30,
+            36,
+            30
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)",
+          "query_volume": 18259,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "ladder-positions": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            30,
+            36,
+            30
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 35557,
+          "matched_cells": 24,
+          "bounds_xyz_inclusive": [
+            8,
+            8,
+            5,
+            16,
+            17,
+            22
+          ],
+          "layers_y": {
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "15": 5,
+            "16": 5,
+            "17": 5
+          },
+          "state_counts": {
+            "minecraft:ladder[facing=east,waterlogged=false]": 6,
+            "minecraft:ladder[facing=west,waterlogged=false]": 18
+          }
+        }
+      },
+      "doors": {
+        "matched_pairs": 32,
+        "pairs": [
+          {
+            "lower_xyz": [
+              5,
+              1,
+              8
+            ],
+            "upper_xyz": [
+              5,
+              2,
+              8
+            ],
+            "lower_state": "minecraft:spruce_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              5,
+              1,
+              15
+            ],
+            "upper_xyz": [
+              5,
+              2,
+              15
+            ],
+            "lower_state": "minecraft:spruce_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              5,
+              1,
+              22
+            ],
+            "upper_xyz": [
+              5,
+              2,
+              22
+            ],
+            "lower_state": "minecraft:spruce_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              7,
+              8,
+              12
+            ],
+            "upper_xyz": [
+              7,
+              9,
+              12
+            ],
+            "lower_state": "minecraft:birch_door[facing=north,half=lower,hinge=left,open=true,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              8,
+              2,
+              23
+            ],
+            "upper_xyz": [
+              8,
+              3,
+              23
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              9,
+              2,
+              23
+            ],
+            "upper_xyz": [
+              9,
+              3,
+              23
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              10,
+              1,
+              7
+            ],
+            "upper_xyz": [
+              10,
+              2,
+              7
+            ],
+            "lower_state": "minecraft:spruce_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              10,
+              1,
+              13
+            ],
+            "upper_xyz": [
+              10,
+              2,
+              13
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              12,
+              1,
+              7
+            ],
+            "upper_xyz": [
+              12,
+              2,
+              7
+            ],
+            "lower_state": "minecraft:spruce_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              12,
+              1,
+              13
+            ],
+            "upper_xyz": [
+              12,
+              2,
+              13
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              14,
+              1,
+              7
+            ],
+            "upper_xyz": [
+              14,
+              2,
+              7
+            ],
+            "lower_state": "minecraft:spruce_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              14,
+              1,
+              13
+            ],
+            "upper_xyz": [
+              14,
+              2,
+              13
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              14,
+              16,
+              11
+            ],
+            "upper_xyz": [
+              14,
+              17,
+              11
+            ],
+            "lower_state": "minecraft:dark_oak_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              15,
+              16,
+              11
+            ],
+            "upper_xyz": [
+              15,
+              17,
+              11
+            ],
+            "lower_state": "minecraft:dark_oak_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              15,
+              28,
+              5
+            ],
+            "upper_xyz": [
+              15,
+              29,
+              5
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              15,
+              28,
+              25
+            ],
+            "upper_xyz": [
+              15,
+              29,
+              25
+            ],
+            "lower_state": "minecraft:spruce_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              16,
+              16,
+              11
+            ],
+            "upper_xyz": [
+              16,
+              17,
+              11
+            ],
+            "lower_state": "minecraft:dark_oak_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              17,
+              16,
+              6
+            ],
+            "upper_xyz": [
+              17,
+              17,
+              6
+            ],
+            "lower_state": "minecraft:dark_oak_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              17,
+              16,
+              7
+            ],
+            "upper_xyz": [
+              17,
+              17,
+              7
+            ],
+            "lower_state": "minecraft:dark_oak_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              17,
+              16,
+              8
+            ],
+            "upper_xyz": [
+              17,
+              17,
+              8
+            ],
+            "lower_state": "minecraft:dark_oak_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              17,
+              16,
+              9
+            ],
+            "upper_xyz": [
+              17,
+              17,
+              9
+            ],
+            "lower_state": "minecraft:dark_oak_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              17,
+              16,
+              10
+            ],
+            "upper_xyz": [
+              17,
+              17,
+              10
+            ],
+            "lower_state": "minecraft:dark_oak_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              18,
+              15,
+              20
+            ],
+            "upper_xyz": [
+              18,
+              16,
+              20
+            ],
+            "lower_state": "minecraft:birch_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              18,
+              22,
+              19
+            ],
+            "upper_xyz": [
+              18,
+              23,
+              19
+            ],
+            "lower_state": "minecraft:birch_door[facing=east,half=lower,hinge=right,open=true,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              19,
+              2,
+              7
+            ],
+            "upper_xyz": [
+              19,
+              3,
+              7
+            ],
+            "lower_state": "minecraft:spruce_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              19,
+              8,
+              25
+            ],
+            "upper_xyz": [
+              19,
+              9,
+              25
+            ],
+            "lower_state": "minecraft:spruce_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              19,
+              22,
+              12
+            ],
+            "upper_xyz": [
+              19,
+              23,
+              12
+            ],
+            "lower_state": "minecraft:birch_door[facing=north,half=lower,hinge=left,open=true,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              20,
+              2,
+              7
+            ],
+            "upper_xyz": [
+              20,
+              3,
+              7
+            ],
+            "lower_state": "minecraft:spruce_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              21,
+              22,
+              25
+            ],
+            "upper_xyz": [
+              21,
+              23,
+              25
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              23,
+              23,
+              11
+            ],
+            "upper_xyz": [
+              23,
+              24,
+              11
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              24,
+              23,
+              11
+            ],
+            "upper_xyz": [
+              24,
+              24,
+              11
+            ],
+            "lower_state": "minecraft:spruce_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              25,
+              8,
+              25
+            ],
+            "upper_xyz": [
+              25,
+              9,
+              25
+            ],
+            "lower_state": "minecraft:spruce_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "castle_top",
+      "source": "more-chinese-structures",
+      "source_sha256": "58f131bf3832fe04d32ee41070ae197e8d9d9c7b670eee38ed1588d092ee2666",
+      "analysis_npz_sha256": "88d969c36f0a2d20bfff1236094cce8f283c4360e36aa2b685102c72a7d2dc72",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        30,
+        17,
+        30
+      ],
+      "queries": {
+        "workstations": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            30,
+            17,
+            30
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)",
+          "query_volume": 17298,
+          "matched_cells": 8,
+          "bounds_xyz_inclusive": [
+            1,
+            3,
+            4,
+            26,
+            17,
+            26
+          ],
+          "layers_y": {
+            "3": 2,
+            "6": 1,
+            "11": 4,
+            "17": 1
+          },
+          "state_counts": {
+            "minecraft:anvil[facing=east]": 3,
+            "minecraft:anvil[facing=south]": 1,
+            "minecraft:anvil[facing=west]": 1,
+            "minecraft:grindstone[face=floor,facing=south]": 3
+          }
+        },
+        "storage": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            30,
+            17,
+            30
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 17298,
+          "matched_cells": 1,
+          "bounds_xyz_inclusive": [
+            15,
+            8,
+            15,
+            15,
+            8,
+            15
+          ],
+          "layers_y": {
+            "8": 1
+          },
+          "state_counts": {
+            "minecraft:chest[facing=west,type=single,waterlogged=false]": 1
+          }
+        },
+        "beds": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            30,
+            17,
+            30
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)",
+          "query_volume": 17298,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "upper-roof-material-band": {
+          "box_xyz_inclusive": [
+            0,
+            8,
+            0,
+            30,
+            17,
+            30
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)",
+          "query_volume": 9610,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "ladder-positions": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            30,
+            17,
+            30
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 17298,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        }
+      },
+      "doors": {
+        "matched_pairs": 0,
+        "pairs": [],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "temple_hills",
+      "source": "more-chinese-structures",
+      "source_sha256": "7fccf2d8d422c275790b4727ada5a716da01eabbdd8e704a141d411b46288290",
+      "analysis_npz_sha256": "5ba123bba0cdf09629de6d7607d4ac75a7a97f7420446cc4821f30bcc9d2ec1d",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        20,
+        31,
+        20
+      ],
+      "queries": {
+        "workstations": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            20,
+            31,
+            20
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)",
+          "query_volume": 14112,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "storage": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            20,
+            31,
+            20
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 14112,
+          "matched_cells": 3,
+          "bounds_xyz_inclusive": [
+            10,
+            14,
+            9,
+            13,
+            22,
+            13
+          ],
+          "layers_y": {
+            "14": 2,
+            "22": 1
+          },
+          "state_counts": {
+            "minecraft:barrel[facing=west,open=false]": 2,
+            "minecraft:chest[facing=north,type=single,waterlogged=false]": 1
+          }
+        },
+        "beds": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            20,
+            31,
+            20
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)",
+          "query_volume": 14112,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "upper-roof-material-band": {
+          "box_xyz_inclusive": [
+            0,
+            15,
+            0,
+            20,
+            31,
+            20
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)",
+          "query_volume": 7497,
+          "matched_cells": 384,
+          "bounds_xyz_inclusive": [
+            2,
+            15,
+            2,
+            18,
+            30,
+            18
+          ],
+          "layers_y": {
+            "15": 60,
+            "21": 156,
+            "22": 84,
+            "23": 48,
+            "24": 21,
+            "25": 8,
+            "26": 5,
+            "27": 1,
+            "30": 1
+          },
+          "state_counts": {
+            "minecraft:blackstone_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]": 1,
+            "minecraft:deepslate_tile_slab[type=bottom,waterlogged=false]": 121,
+            "minecraft:deepslate_tile_slab[type=double,waterlogged=false]": 164,
+            "minecraft:deepslate_tile_slab[type=top,waterlogged=false]": 48,
+            "minecraft:polished_blackstone_brick_slab[type=bottom,waterlogged=false]": 20,
+            "minecraft:polished_blackstone_brick_slab[type=double,waterlogged=false]": 22,
+            "minecraft:polished_blackstone_pressure_plate[powered=false]": 4,
+            "minecraft:polished_blackstone_wall[east=low,north=none,south=none,up=true,waterlogged=false,west=none]": 1,
+            "minecraft:polished_blackstone_wall[east=none,north=low,south=none,up=true,waterlogged=false,west=none]": 1,
+            "minecraft:polished_blackstone_wall[east=none,north=none,south=low,up=true,waterlogged=false,west=none]": 1,
+            "minecraft:polished_blackstone_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=low]": 1
+          }
+        },
+        "ladder-positions": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            20,
+            31,
+            20
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 14112,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        }
+      },
+      "doors": {
+        "matched_pairs": 0,
+        "pairs": [],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "tower_3",
+      "source": "more-chinese-structures",
+      "source_sha256": "0c5085a76770bd6b1760cfa29d24701a52ab2f788068fd25fea240213e25f2a8",
+      "analysis_npz_sha256": "55bd01aecaa040a3df140c921a28e37f8cf2d0c52bbea2eec251cfc7aa05115c",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        46,
+        35,
+        46
+      ],
+      "queries": {
+        "workstations": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            46,
+            35,
+            46
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)",
+          "query_volume": 79524,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "storage": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            46,
+            35,
+            46
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 79524,
+          "matched_cells": 14,
+          "bounds_xyz_inclusive": [
+            12,
+            0,
+            12,
+            34,
+            1,
+            26
+          ],
+          "layers_y": {
+            "0": 12,
+            "1": 2
+          },
+          "state_counts": {
+            "minecraft:barrel[facing=east,open=false]": 2,
+            "minecraft:barrel[facing=south,open=false]": 4,
+            "minecraft:barrel[facing=up,open=false]": 3,
+            "minecraft:barrel[facing=west,open=false]": 1,
+            "minecraft:chest[facing=east,type=left,waterlogged=false]": 2,
+            "minecraft:chest[facing=east,type=right,waterlogged=false]": 2
+          }
+        },
+        "beds": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            46,
+            35,
+            46
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)",
+          "query_volume": 79524,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "upper-roof-material-band": {
+          "box_xyz_inclusive": [
+            0,
+            17,
+            0,
+            46,
+            35,
+            46
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)",
+          "query_volume": 41971,
+          "matched_cells": 108,
+          "bounds_xyz_inclusive": [
+            17,
+            17,
+            17,
+            29,
+            19,
+            29
+          ],
+          "layers_y": {
+            "17": 88,
+            "18": 16,
+            "19": 4
+          },
+          "state_counts": {
+            "minecraft:deepslate_brick_slab[type=bottom,waterlogged=false]": 64,
+            "minecraft:deepslate_brick_slab[type=double,waterlogged=false]": 28,
+            "minecraft:deepslate_brick_slab[type=top,waterlogged=false]": 16
+          }
+        },
+        "ladder-positions": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            46,
+            35,
+            46
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 79524,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        }
+      },
+      "doors": {
+        "matched_pairs": 72,
+        "pairs": [
+          {
+            "lower_xyz": [
+              11,
+              1,
+              12
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              12
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              13
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              13
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              14
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              14
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              16
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              16
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              17
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              17
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              18
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              18
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              20
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              20
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              21
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              21
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              22
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              22
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              24
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              24
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              25
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              25
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              26
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              26
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              28
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              28
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              29
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              29
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              30
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              30
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              32
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              32
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              33
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              33
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              11,
+              1,
+              34
+            ],
+            "upper_xyz": [
+              11,
+              2,
+              34
+            ],
+            "lower_state": "minecraft:acacia_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              12,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              12,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              12,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              12,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              13,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              13,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              13,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              13,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              14,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              14,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              14,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              14,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              16,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              16,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              16,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              16,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              17,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              17,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              17,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              17,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              18,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              18,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              18,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              18,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              20,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              20,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              20,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              20,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              21,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              21,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              21,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              21,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              22,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              22,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              22,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              22,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              24,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              24,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              24,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              24,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              25,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              25,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              25,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              25,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              26,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              26,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              26,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              26,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              28,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              28,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              28,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              28,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              29,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              29,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              29,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              29,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              30,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              30,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              30,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              30,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              32,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              32,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              32,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              32,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              33,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              33,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              33,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              33,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              34,
+              1,
+              11
+            ],
+            "upper_xyz": [
+              34,
+              2,
+              11
+            ],
+            "lower_state": "minecraft:acacia_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              34,
+              1,
+              35
+            ],
+            "upper_xyz": [
+              34,
+              2,
+              35
+            ],
+            "lower_state": "minecraft:acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              12
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              12
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              13
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              13
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              14
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              14
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              16
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              16
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              17
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              17
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              18
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              18
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              20
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              20
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              21
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              21
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              22
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              22
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              24
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              24
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              25
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              25
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              26
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              26
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              28
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              28
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              29
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              29
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              30
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              30
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              32
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              32
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              33
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              33
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              35,
+              1,
+              34
+            ],
+            "upper_xyz": [
+              35,
+              2,
+              34
+            ],
+            "lower_state": "minecraft:acacia_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "plains_armorer_house_1",
+      "source": "more-chinese-structures",
+      "source_sha256": "93662280309fc94edb9aa795773b3974f04e0a99b6e58d8b020abcbd7b9374ff",
+      "analysis_npz_sha256": "7cfdbfdfa1ce9040ef32c0aceccea7d49802b2bfc241eefa589a8967edec18d9",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        10,
+        7,
+        7
+      ],
+      "queries": {
+        "workstations": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            7
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)",
+          "query_volume": 704,
+          "matched_cells": 1,
+          "bounds_xyz_inclusive": [
+            7,
+            1,
+            2,
+            7,
+            1,
+            2
+          ],
+          "layers_y": {
+            "1": 1
+          },
+          "state_counts": {
+            "minecraft:furnace[facing=south,lit=false]": 1
+          }
+        },
+        "storage": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            7
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 704,
+          "matched_cells": 1,
+          "bounds_xyz_inclusive": [
+            8,
+            1,
+            6,
+            8,
+            1,
+            6
+          ],
+          "layers_y": {
+            "1": 1
+          },
+          "state_counts": {
+            "minecraft:barrel[facing=up,open=false]": 1
+          }
+        },
+        "beds": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            7
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)",
+          "query_volume": 704,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "upper-roof-material-band": {
+          "box_xyz_inclusive": [
+            0,
+            3,
+            0,
+            10,
+            7,
+            7
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)",
+          "query_volume": 440,
+          "matched_cells": 106,
+          "bounds_xyz_inclusive": [
+            1,
+            4,
+            0,
+            9,
+            7,
+            7
+          ],
+          "layers_y": {
+            "4": 27,
+            "5": 43,
+            "6": 27,
+            "7": 9
+          },
+          "state_counts": {
+            "minecraft:deepslate_tile_slab[type=bottom,waterlogged=false]": 37,
+            "minecraft:deepslate_tile_slab[type=double,waterlogged=false]": 44,
+            "minecraft:deepslate_tile_slab[type=top,waterlogged=false]": 25
+          }
+        },
+        "ladder-positions": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            7
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 704,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        }
+      },
+      "doors": {
+        "matched_pairs": 1,
+        "pairs": [
+          {
+            "lower_xyz": [
+              1,
+              1,
+              4
+            ],
+            "upper_xyz": [
+              1,
+              2,
+              4
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "plains_butcher_shop_1",
+      "source": "more-chinese-structures",
+      "source_sha256": "ecc4f04e117d965b3b1390fe17ff037232b68645940155a2ea3e52923d0f1529",
+      "analysis_npz_sha256": "df690d40dbca882b73b4433234ec1942f4ef6d8a028ac86fb7b75fc7894a91b8",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        10,
+        7,
+        11
+      ],
+      "queries": {
+        "workstations": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            11
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)",
+          "query_volume": 1056,
+          "matched_cells": 1,
+          "bounds_xyz_inclusive": [
+            8,
+            1,
+            5,
+            8,
+            1,
+            5
+          ],
+          "layers_y": {
+            "1": 1
+          },
+          "state_counts": {
+            "minecraft:smoker[facing=west,lit=false]": 1
+          }
+        },
+        "storage": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            11
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 1056,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "beds": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            11
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)",
+          "query_volume": 1056,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "upper-roof-material-band": {
+          "box_xyz_inclusive": [
+            0,
+            3,
+            0,
+            10,
+            7,
+            11
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)",
+          "query_volume": 660,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "ladder-positions": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            11
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 1056,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        }
+      },
+      "doors": {
+        "matched_pairs": 3,
+        "pairs": [
+          {
+            "lower_xyz": [
+              1,
+              1,
+              3
+            ],
+            "upper_xyz": [
+              1,
+              2,
+              3
+            ],
+            "lower_state": "minecraft:oak_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              1,
+              1,
+              4
+            ],
+            "upper_xyz": [
+              1,
+              2,
+              4
+            ],
+            "lower_state": "minecraft:oak_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              7,
+              1,
+              6
+            ],
+            "upper_xyz": [
+              7,
+              2,
+              6
+            ],
+            "lower_state": "minecraft:oak_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "plains_library_1",
+      "source": "more-chinese-structures",
+      "source_sha256": "8501ea4f926b214655a190b8b4f6907b4f37f6b623d1882930d70eadfb9c0f52",
+      "analysis_npz_sha256": "7aa1e067a4711b6cbba883dd5c02b20e5f8abdc8db8919f581c65ef5181d0850",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        14,
+        14,
+        16
+      ],
+      "queries": {
+        "workstations": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            14,
+            14,
+            16
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)",
+          "query_volume": 3825,
+          "matched_cells": 42,
+          "bounds_xyz_inclusive": [
+            7,
+            1,
+            2,
+            11,
+            10,
+            14
+          ],
+          "layers_y": {
+            "1": 8,
+            "2": 10,
+            "3": 6,
+            "8": 6,
+            "9": 6,
+            "10": 6
+          },
+          "state_counts": {
+            "minecraft:bookshelf": 40,
+            "minecraft:lectern[facing=north,has_book=false,powered=false]": 1,
+            "minecraft:lectern[facing=south,has_book=false,powered=false]": 1
+          }
+        },
+        "storage": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            14,
+            14,
+            16
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 3825,
+          "matched_cells": 6,
+          "bounds_xyz_inclusive": [
+            8,
+            1,
+            2,
+            10,
+            8,
+            14
+          ],
+          "layers_y": {
+            "1": 3,
+            "8": 3
+          },
+          "state_counts": {
+            "minecraft:barrel[facing=north,open=false]": 1,
+            "minecraft:barrel[facing=south,open=false]": 1,
+            "minecraft:barrel[facing=up,open=false]": 2,
+            "minecraft:barrel[facing=west,open=false]": 2
+          }
+        },
+        "beds": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            14,
+            14,
+            16
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)",
+          "query_volume": 3825,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "upper-roof-material-band": {
+          "box_xyz_inclusive": [
+            0,
+            7,
+            0,
+            14,
+            14,
+            16
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)",
+          "query_volume": 2040,
+          "matched_cells": 200,
+          "bounds_xyz_inclusive": [
+            2,
+            7,
+            2,
+            12,
+            14,
+            14
+          ],
+          "layers_y": {
+            "7": 44,
+            "10": 44,
+            "11": 32,
+            "12": 54,
+            "13": 21,
+            "14": 5
+          },
+          "state_counts": {
+            "minecraft:deepslate_tile_slab[type=bottom,waterlogged=false]": 75,
+            "minecraft:deepslate_tile_slab[type=double,waterlogged=false]": 75,
+            "minecraft:deepslate_tile_slab[type=top,waterlogged=false]": 50
+          }
+        },
+        "ladder-positions": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            14,
+            14,
+            16
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 3825,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        }
+      },
+      "doors": {
+        "matched_pairs": 34,
+        "pairs": [
+          {
+            "lower_xyz": [
+              2,
+              1,
+              6
+            ],
+            "upper_xyz": [
+              2,
+              2,
+              6
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              2,
+              1,
+              7
+            ],
+            "upper_xyz": [
+              2,
+              2,
+              7
+            ],
+            "lower_state": "minecraft:jungle_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              2,
+              1,
+              9
+            ],
+            "upper_xyz": [
+              2,
+              2,
+              9
+            ],
+            "lower_state": "minecraft:jungle_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              2,
+              1,
+              10
+            ],
+            "upper_xyz": [
+              2,
+              2,
+              10
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              2,
+              2,
+              2
+            ],
+            "upper_xyz": [
+              2,
+              3,
+              2
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              2,
+              2,
+              3
+            ],
+            "upper_xyz": [
+              2,
+              3,
+              3
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              2,
+              2,
+              4
+            ],
+            "upper_xyz": [
+              2,
+              3,
+              4
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              2,
+              2,
+              12
+            ],
+            "upper_xyz": [
+              2,
+              3,
+              12
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              2,
+              2,
+              13
+            ],
+            "upper_xyz": [
+              2,
+              3,
+              13
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              2,
+              2,
+              14
+            ],
+            "upper_xyz": [
+              2,
+              3,
+              14
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              4,
+              8,
+              4
+            ],
+            "upper_xyz": [
+              4,
+              9,
+              4
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              4,
+              8,
+              5
+            ],
+            "upper_xyz": [
+              4,
+              9,
+              5
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              4,
+              8,
+              7
+            ],
+            "upper_xyz": [
+              4,
+              9,
+              7
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              4,
+              8,
+              8
+            ],
+            "upper_xyz": [
+              4,
+              9,
+              8
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              4,
+              8,
+              9
+            ],
+            "upper_xyz": [
+              4,
+              9,
+              9
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              4,
+              8,
+              11
+            ],
+            "upper_xyz": [
+              4,
+              9,
+              11
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              4,
+              8,
+              12
+            ],
+            "upper_xyz": [
+              4,
+              9,
+              12
+            ],
+            "lower_state": "minecraft:jungle_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              5,
+              8,
+              3
+            ],
+            "upper_xyz": [
+              5,
+              9,
+              3
+            ],
+            "lower_state": "minecraft:jungle_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              5,
+              8,
+              13
+            ],
+            "upper_xyz": [
+              5,
+              9,
+              13
+            ],
+            "lower_state": "minecraft:jungle_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              6,
+              8,
+              3
+            ],
+            "upper_xyz": [
+              6,
+              9,
+              3
+            ],
+            "lower_state": "minecraft:jungle_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              6,
+              8,
+              13
+            ],
+            "upper_xyz": [
+              6,
+              9,
+              13
+            ],
+            "lower_state": "minecraft:jungle_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              7,
+              8,
+              3
+            ],
+            "upper_xyz": [
+              7,
+              9,
+              3
+            ],
+            "lower_state": "minecraft:jungle_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              7,
+              8,
+              13
+            ],
+            "upper_xyz": [
+              7,
+              9,
+              13
+            ],
+            "lower_state": "minecraft:jungle_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              8,
+              8,
+              3
+            ],
+            "upper_xyz": [
+              8,
+              9,
+              3
+            ],
+            "lower_state": "minecraft:jungle_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              8,
+              8,
+              13
+            ],
+            "upper_xyz": [
+              8,
+              9,
+              13
+            ],
+            "lower_state": "minecraft:jungle_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              9,
+              8,
+              3
+            ],
+            "upper_xyz": [
+              9,
+              9,
+              3
+            ],
+            "lower_state": "minecraft:jungle_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              9,
+              8,
+              13
+            ],
+            "upper_xyz": [
+              9,
+              9,
+              13
+            ],
+            "lower_state": "minecraft:jungle_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              10,
+              8,
+              4
+            ],
+            "upper_xyz": [
+              10,
+              9,
+              4
+            ],
+            "lower_state": "minecraft:jungle_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              10,
+              8,
+              5
+            ],
+            "upper_xyz": [
+              10,
+              9,
+              5
+            ],
+            "lower_state": "minecraft:jungle_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              10,
+              8,
+              7
+            ],
+            "upper_xyz": [
+              10,
+              9,
+              7
+            ],
+            "lower_state": "minecraft:jungle_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              10,
+              8,
+              8
+            ],
+            "upper_xyz": [
+              10,
+              9,
+              8
+            ],
+            "lower_state": "minecraft:jungle_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              10,
+              8,
+              9
+            ],
+            "upper_xyz": [
+              10,
+              9,
+              9
+            ],
+            "lower_state": "minecraft:jungle_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              10,
+              8,
+              11
+            ],
+            "upper_xyz": [
+              10,
+              9,
+              11
+            ],
+            "lower_state": "minecraft:jungle_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+          },
+          {
+            "lower_xyz": [
+              10,
+              8,
+              12
+            ],
+            "upper_xyz": [
+              10,
+              9,
+              12
+            ],
+            "lower_state": "minecraft:jungle_door[facing=west,half=lower,hinge=left,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "plains_stable_1",
+      "source": "more-chinese-structures",
+      "source_sha256": "6d10fddb5c562153bc417fb7f09eb4c24b0f9932b4952e66f0c55f8d2a098822",
+      "analysis_npz_sha256": "87682bfcf4f01b91c590fafe737cb1d106688453c1232f2467e8a76d116bc2bf",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        6,
+        6,
+        16
+      ],
+      "queries": {
+        "workstations": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            6,
+            6,
+            16
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)",
+          "query_volume": 833,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "storage": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            6,
+            6,
+            16
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 833,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "beds": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            6,
+            6,
+            16
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)",
+          "query_volume": 833,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "upper-roof-material-band": {
+          "box_xyz_inclusive": [
+            0,
+            3,
+            0,
+            6,
+            6,
+            16
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)",
+          "query_volume": 476,
+          "matched_cells": 119,
+          "bounds_xyz_inclusive": [
+            0,
+            4,
+            0,
+            6,
+            6,
+            16
+          ],
+          "layers_y": {
+            "4": 34,
+            "5": 68,
+            "6": 17
+          },
+          "state_counts": {
+            "minecraft:deepslate_tile_slab[type=bottom,waterlogged=false]": 51,
+            "minecraft:deepslate_tile_slab[type=double,waterlogged=false]": 4,
+            "minecraft:deepslate_tile_slab[type=top,waterlogged=false]": 64
+          }
+        },
+        "ladder-positions": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            6,
+            6,
+            16
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 833,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        }
+      },
+      "doors": {
+        "matched_pairs": 1,
+        "pairs": [
+          {
+            "lower_xyz": [
+              1,
+              1,
+              14
+            ],
+            "upper_xyz": [
+              1,
+              2,
+              14
+            ],
+            "lower_state": "minecraft:spruce_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+          }
+        ],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    },
+    {
+      "id": "yurt_stable_01",
+      "source": "more-chinese-structures",
+      "source_sha256": "c4e8afb75877e190fd199f203a2f5c75f7c26ea13ee1d4edbe8f2c54aae3b8dc",
+      "analysis_npz_sha256": "65299f82c663a41107888d74f2d33294d0d0c63e8773be6dad19b4b9c589def6",
+      "origin_xyz": [
+        0,
+        0,
+        0
+      ],
+      "maximum_xyz": [
+        10,
+        8,
+        10
+      ],
+      "queries": {
+        "workstations": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            8,
+            10
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)",
+          "query_volume": 1089,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "storage": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            8,
+            10
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)",
+          "query_volume": 1089,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "beds": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            8,
+            10
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)",
+          "query_volume": 1089,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "upper-roof-material-band": {
+          "box_xyz_inclusive": [
+            0,
+            4,
+            0,
+            10,
+            8,
+            10
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)",
+          "query_volume": 605,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        },
+        "ladder-positions": {
+          "box_xyz_inclusive": [
+            0,
+            0,
+            0,
+            10,
+            8,
+            10
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)",
+          "query_volume": 1089,
+          "matched_cells": 0,
+          "bounds_xyz_inclusive": null,
+          "layers_y": {},
+          "state_counts": {}
+        }
+      },
+      "doors": {
+        "matched_pairs": 0,
+        "pairs": [],
+        "unpaired_cells": [],
+        "limits": "State pairing only; two adjacent doors are two pairs, not two separate entrances. Mod shape and interaction are unverified."
+      },
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles.",
+      "coordinate_space": "Imported structure coordinates; not source world coordinates"
+    }
+  ],
+  "limits": "Annotated cell statistics, not automatic room or building recognition. NPZ air may include omitted source positions. No payload, collision or redstone verification."
+}

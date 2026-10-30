@@ -1,0 +1,592 @@
+{
+  "schema": "architecture-measured-components/1",
+  "method": "Explicit annotated boxes and material filters, continuous wood segments; no automatic semantic claims.",
+  "samples": [
+    {
+      "id": "twin-main-upper",
+      "label": "Twin manor taller wing selected upper roof",
+      "source": "mctoolbox-twin-manor",
+      "source_sha256": "5b651a220e56059a37d4ebcadf352f2fc218f46a1aabe4df0430aefbd815fc1b",
+      "coordinate_space": "schematic paste-relative XYZ",
+      "sample_box": [
+        0,
+        0,
+        0,
+        56,
+        37,
+        68
+      ],
+      "roof_query_box": [
+        23,
+        24,
+        8,
+        47,
+        37,
+        39
+      ],
+      "roof_material_envelope": {
+        "material_filter": "deepslate|blackstone",
+        "bounds_xyz_inclusive": [
+          23,
+          24,
+          8,
+          47,
+          35,
+          39
+        ],
+        "span_xz": [
+          25,
+          32
+        ],
+        "y_range": [
+          24,
+          35
+        ],
+        "material_counts": {
+          "minecraft:cobbled_deepslate": 617,
+          "minecraft:polished_blackstone_slab": 246,
+          "minecraft:cobbled_deepslate_slab": 146
+        },
+        "material_fraction": {
+          "minecraft:cobbled_deepslate": 0.611497,
+          "minecraft:polished_blackstone_slab": 0.243806,
+          "minecraft:cobbled_deepslate_slab": 0.144698
+        },
+        "center_x_coordinate": 35,
+        "center_z_coordinate": 23,
+        "x_profile": [
+          [
+            23,
+            25
+          ],
+          [
+            24,
+            26
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            26,
+            29
+          ],
+          [
+            27,
+            30
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            29,
+            30
+          ],
+          [
+            30,
+            29
+          ],
+          [
+            31,
+            30
+          ],
+          [
+            32,
+            31
+          ],
+          [
+            33,
+            32
+          ],
+          [
+            34,
+            33
+          ],
+          [
+            35,
+            35
+          ],
+          [
+            36,
+            33
+          ],
+          [
+            37,
+            32
+          ],
+          [
+            38,
+            31
+          ],
+          [
+            39,
+            30
+          ],
+          [
+            40,
+            29
+          ],
+          [
+            41,
+            30
+          ],
+          [
+            42,
+            29
+          ],
+          [
+            43,
+            30
+          ],
+          [
+            44,
+            29
+          ],
+          [
+            45,
+            26
+          ],
+          [
+            46,
+            26
+          ],
+          [
+            47,
+            25
+          ]
+        ],
+        "z_profile": [
+          [
+            11,
+            35
+          ],
+          [
+            12,
+            35
+          ],
+          [
+            13,
+            35
+          ],
+          [
+            14,
+            35
+          ],
+          [
+            15,
+            35
+          ],
+          [
+            16,
+            35
+          ],
+          [
+            17,
+            35
+          ],
+          [
+            18,
+            35
+          ],
+          [
+            19,
+            35
+          ],
+          [
+            20,
+            35
+          ],
+          [
+            21,
+            35
+          ],
+          [
+            22,
+            35
+          ],
+          [
+            23,
+            35
+          ],
+          [
+            24,
+            35
+          ],
+          [
+            25,
+            35
+          ],
+          [
+            26,
+            35
+          ],
+          [
+            27,
+            35
+          ],
+          [
+            28,
+            35
+          ],
+          [
+            29,
+            35
+          ],
+          [
+            30,
+            35
+          ],
+          [
+            31,
+            35
+          ],
+          [
+            32,
+            35
+          ],
+          [
+            33,
+            35
+          ],
+          [
+            34,
+            35
+          ],
+          [
+            35,
+            35
+          ],
+          [
+            36,
+            35
+          ],
+          [
+            37,
+            35
+          ],
+          [
+            38,
+            35
+          ],
+          [
+            39,
+            35
+          ]
+        ]
+      },
+      "column_rows": {
+        "column_row": {
+          "axis": "z",
+          "fixed_coordinate": 28,
+          "wood_segment_y_range": [
+            10,
+            25
+          ],
+          "wood_segment_height": 16,
+          "positions": [
+            21,
+            26,
+            31
+          ],
+          "spacings": [
+            5,
+            5
+          ],
+          "interpretation": "Continuous vertical wood over annotated height, manually selected as a column row."
+        }
+      },
+      "interpretation": "Three continuous vertical wood segments across 16 blocks of height; may pass through storeys and beams, not a proven single-floor column height. Upper roof crop excludes most lower eave and boundary overlap."
+    },
+    {
+      "id": "twin-side-upper",
+      "label": "Twin manor perpendicular side wing selected upper roof",
+      "source": "mctoolbox-twin-manor",
+      "source_sha256": "5b651a220e56059a37d4ebcadf352f2fc218f46a1aabe4df0430aefbd815fc1b",
+      "coordinate_space": "schematic paste-relative XYZ",
+      "sample_box": [
+        0,
+        0,
+        0,
+        56,
+        37,
+        68
+      ],
+      "roof_query_box": [
+        7,
+        22,
+        41,
+        39,
+        33,
+        59
+      ],
+      "roof_material_envelope": {
+        "material_filter": "deepslate|blackstone",
+        "bounds_xyz_inclusive": [
+          7,
+          22,
+          41,
+          39,
+          31,
+          59
+        ],
+        "span_xz": [
+          33,
+          19
+        ],
+        "y_range": [
+          22,
+          31
+        ],
+        "material_counts": {
+          "minecraft:cobbled_deepslate": 707,
+          "minecraft:polished_blackstone_slab": 151,
+          "minecraft:cobbled_deepslate_slab": 126
+        },
+        "material_fraction": {
+          "minecraft:cobbled_deepslate": 0.718496,
+          "minecraft:polished_blackstone_slab": 0.153455,
+          "minecraft:cobbled_deepslate_slab": 0.128049
+        },
+        "center_x_coordinate": 23,
+        "center_z_coordinate": 50,
+        "x_profile": [
+          [
+            7,
+            22
+          ],
+          [
+            8,
+            23
+          ],
+          [
+            9,
+            23
+          ],
+          [
+            10,
+            24
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            12,
+            29
+          ],
+          [
+            13,
+            30
+          ],
+          [
+            14,
+            29
+          ],
+          [
+            15,
+            30
+          ],
+          [
+            16,
+            29
+          ],
+          [
+            17,
+            30
+          ],
+          [
+            18,
+            29
+          ],
+          [
+            19,
+            30
+          ],
+          [
+            20,
+            29
+          ],
+          [
+            21,
+            30
+          ],
+          [
+            22,
+            29
+          ],
+          [
+            23,
+            30
+          ],
+          [
+            24,
+            30
+          ],
+          [
+            25,
+            29
+          ],
+          [
+            26,
+            30
+          ],
+          [
+            27,
+            29
+          ],
+          [
+            28,
+            30
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            31,
+            29
+          ],
+          [
+            32,
+            30
+          ],
+          [
+            33,
+            29
+          ],
+          [
+            34,
+            30
+          ],
+          [
+            35,
+            29
+          ],
+          [
+            36,
+            24
+          ],
+          [
+            37,
+            24
+          ],
+          [
+            38,
+            23
+          ],
+          [
+            39,
+            23
+          ]
+        ],
+        "z_profile": [
+          [
+            41,
+            24
+          ],
+          [
+            42,
+            24
+          ],
+          [
+            43,
+            25
+          ],
+          [
+            44,
+            26
+          ],
+          [
+            45,
+            27
+          ],
+          [
+            46,
+            28
+          ],
+          [
+            47,
+            29
+          ],
+          [
+            48,
+            30
+          ],
+          [
+            49,
+            31
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            51,
+            29
+          ],
+          [
+            52,
+            28
+          ],
+          [
+            53,
+            27
+          ],
+          [
+            54,
+            26
+          ],
+          [
+            55,
+            25
+          ],
+          [
+            56,
+            24
+          ],
+          [
+            57,
+            24
+          ],
+          [
+            58,
+            23
+          ],
+          [
+            59,
+            23
+          ]
+        ]
+      },
+      "column_rows": {
+        "column_row": {
+          "axis": "x",
+          "fixed_coordinate": 44,
+          "wood_segment_y_range": [
+            10,
+            21
+          ],
+          "wood_segment_height": 12,
+          "positions": [
+            16,
+            21,
+            26,
+            31
+          ],
+          "spacings": [
+            5,
+            5,
+            5
+          ],
+          "interpretation": "Continuous vertical wood over annotated height, manually selected as a column row."
+        }
+      },
+      "interpretation": "Selected four-column row with 5,5,5 spacing; 12-block continuous wood segments. Partial row, not the complete width bay count; selected roof joins the taller wing near its north edge."
+    }
+  ]
+}

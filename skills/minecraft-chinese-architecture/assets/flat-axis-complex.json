@@ -1,0 +1,12 @@
+{
+  "schema": "chinese-complex/1",
+  "terrain": {
+    "base": 2,
+    "grade_z": 0,
+    "wave": 0
+  },
+  "path_width": 5,
+  "evidence": [
+    "Original flat layout variant of mountain-sect; not a historic palace or monastery reconstruction."
+  ]
+}

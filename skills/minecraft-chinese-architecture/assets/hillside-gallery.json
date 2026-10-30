@@ -1,0 +1,25 @@
+{
+  "schema": "chinese-infrastructure/1",
+  "kind": "hillside_gallery",
+  "parameters": {
+    "path_xyz": [
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        7,
+        30
+      ],
+      [
+        30,
+        12,
+        30
+      ]
+    ],
+    "clear_width": 3,
+    "clear_height": 6
+  }
+}

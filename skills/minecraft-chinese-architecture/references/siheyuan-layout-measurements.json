@@ -1,0 +1,160 @@
+{
+  "schema": "architecture-layout-measurements/1",
+  "source": "pmc-siheyuan-mineman",
+  "source_sha256": "da524ddb2fc0da480ec620b09af07d3f6dd46677d477ccba7c72c8d35ef25dd2",
+  "model_box_xyz_inclusive": [
+    -112,
+    3,
+    -154,
+    -78,
+    13,
+    -87
+  ],
+  "manual_geometric_axis_x": -95,
+  "axis_basis": "Midpoint of manufactured-material envelope X=-110..-80; not a historical-site axis survey",
+  "outer_entry_lower_door_xyz": [
+    -87,
+    5,
+    -92
+  ],
+  "inner_entry_lower_door_xyz": [
+    -87,
+    5,
+    -98
+  ],
+  "entry_offset_x_from_axis": 8,
+  "all_lower_door_states": [
+    {
+      "xyz": [
+        -95,
+        5,
+        -144
+      ],
+      "state": "minecraft:acacia_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+    },
+    {
+      "xyz": [
+        -99,
+        5,
+        -136
+      ],
+      "state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+    },
+    {
+      "xyz": [
+        -91,
+        5,
+        -136
+      ],
+      "state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+    },
+    {
+      "xyz": [
+        -107,
+        5,
+        -132
+      ],
+      "state": "minecraft:acacia_door[facing=south,half=lower,hinge=left,open=false,powered=false]"
+    },
+    {
+      "xyz": [
+        -83,
+        5,
+        -132
+      ],
+      "state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+    },
+    {
+      "xyz": [
+        -95,
+        5,
+        -130
+      ],
+      "state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+    },
+    {
+      "xyz": [
+        -104,
+        5,
+        -118
+      ],
+      "state": "minecraft:acacia_door[facing=east,half=lower,hinge=right,open=false,powered=false]"
+    },
+    {
+      "xyz": [
+        -86,
+        5,
+        -118
+      ],
+      "state": "minecraft:acacia_door[facing=west,half=lower,hinge=right,open=false,powered=false]"
+    },
+    {
+      "xyz": [
+        -107,
+        4,
+        -106
+      ],
+      "state": "minecraft:acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+    },
+    {
+      "xyz": [
+        -83,
+        4,
+        -106
+      ],
+      "state": "minecraft:acacia_door[facing=north,half=lower,hinge=right,open=false,powered=false]"
+    },
+    {
+      "xyz": [
+        -87,
+        5,
+        -98
+      ],
+      "state": "minecraft:acacia_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+    },
+    {
+      "xyz": [
+        -87,
+        5,
+        -92
+      ],
+      "state": "minecraft:acacia_door[facing=south,half=lower,hinge=right,open=false,powered=false]"
+    }
+  ],
+  "selected_clear_air_volumes": [
+    {
+      "box_xyz_inclusive": [
+        -101,
+        5,
+        -127,
+        -89,
+        13,
+        -110
+      ],
+      "clear_horizontal_span_xz": [
+        13,
+        18
+      ],
+      "all_air": true,
+      "nonair_voxels": 0
+    },
+    {
+      "box_xyz_inclusive": [
+        -103,
+        5,
+        -141,
+        -87,
+        13,
+        -139
+      ],
+      "clear_horizontal_span_xz": [
+        17,
+        3
+      ],
+      "all_air": true,
+      "nonair_voxels": 0
+    }
+  ],
+  "door_states_are_closed": true,
+  "interpretation": "Selected sky-open rectangles and door offsets, not complete courtyard areas or original playable-route verification."
+}

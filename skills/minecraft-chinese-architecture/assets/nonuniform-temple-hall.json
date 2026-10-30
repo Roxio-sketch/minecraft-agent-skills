@@ -1,0 +1,13 @@
+{
+  "schema": "chinese-building/1",
+  "kind": "hall",
+  "bays_x": [7, 7],
+  "bays_z": [6, 12, 6],
+  "column_height": 13,
+  "roof": {"form": "hip_and_gable", "ridge_axis": "z", "rise": 7, "curve": 1.5, "uplift": 1, "gable_inset": 3},
+  "rule_status": "partly_measured_new_composition",
+  "evidence": [
+    {"source": "mctoolbox-temple", "measurement": "temple-measurements.json: temple-lower", "adopted": "One selected exterior row has 7,7 spacing and 13 blocks of wood; side row has 6,12,6 spacing and 12 blocks of wood."},
+    {"design_choice": "New rectangular plan combines these two observed row rhythms and uses 13-block columns throughout. The source does not establish columns at every grid intersection. Roof, walls, off-center doorway, materials and platform are original choices."}
+  ]
+}

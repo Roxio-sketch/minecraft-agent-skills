@@ -1,0 +1,626 @@
+{
+  "schema": "architecture-layout-annotations/1",
+  "samples": [
+    {
+      "id": "castle_base",
+      "source": "more-chinese-structures",
+      "model": "castle/castle_base.nbt.npz",
+      "source_sha256": "0e93024c07c2368347c374221b3ce2900a2787b12b71ddd07eafab598ba5d8c1",
+      "queries": [
+        {
+          "id": "workstations",
+          "box": [
+            0,
+            0,
+            0,
+            30,
+            36,
+            30
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)"
+        },
+        {
+          "id": "storage",
+          "box": [
+            0,
+            0,
+            0,
+            30,
+            36,
+            30
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "beds",
+          "box": [
+            0,
+            0,
+            0,
+            30,
+            36,
+            30
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)"
+        },
+        {
+          "id": "upper-roof-material-band",
+          "box": [
+            0,
+            18,
+            0,
+            30,
+            36,
+            30
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)"
+        },
+        {
+          "id": "ladder-positions",
+          "box": [
+            0,
+            0,
+            0,
+            30,
+            36,
+            30
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles."
+    },
+    {
+      "id": "castle_top",
+      "source": "more-chinese-structures",
+      "model": "castle/castle_top.nbt.npz",
+      "source_sha256": "58f131bf3832fe04d32ee41070ae197e8d9d9c7b670eee38ed1588d092ee2666",
+      "queries": [
+        {
+          "id": "workstations",
+          "box": [
+            0,
+            0,
+            0,
+            30,
+            17,
+            30
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)"
+        },
+        {
+          "id": "storage",
+          "box": [
+            0,
+            0,
+            0,
+            30,
+            17,
+            30
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "beds",
+          "box": [
+            0,
+            0,
+            0,
+            30,
+            17,
+            30
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)"
+        },
+        {
+          "id": "upper-roof-material-band",
+          "box": [
+            0,
+            8,
+            0,
+            30,
+            17,
+            30
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)"
+        },
+        {
+          "id": "ladder-positions",
+          "box": [
+            0,
+            0,
+            0,
+            30,
+            17,
+            30
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles."
+    },
+    {
+      "id": "temple_hills",
+      "source": "more-chinese-structures",
+      "model": "temple/temple_hills.nbt.npz",
+      "source_sha256": "7fccf2d8d422c275790b4727ada5a716da01eabbdd8e704a141d411b46288290",
+      "queries": [
+        {
+          "id": "workstations",
+          "box": [
+            0,
+            0,
+            0,
+            20,
+            31,
+            20
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)"
+        },
+        {
+          "id": "storage",
+          "box": [
+            0,
+            0,
+            0,
+            20,
+            31,
+            20
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "beds",
+          "box": [
+            0,
+            0,
+            0,
+            20,
+            31,
+            20
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)"
+        },
+        {
+          "id": "upper-roof-material-band",
+          "box": [
+            0,
+            15,
+            0,
+            20,
+            31,
+            20
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)"
+        },
+        {
+          "id": "ladder-positions",
+          "box": [
+            0,
+            0,
+            0,
+            20,
+            31,
+            20
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles."
+    },
+    {
+      "id": "tower_3",
+      "source": "more-chinese-structures",
+      "model": "tower/tower_3.nbt.npz",
+      "source_sha256": "0c5085a76770bd6b1760cfa29d24701a52ab2f788068fd25fea240213e25f2a8",
+      "queries": [
+        {
+          "id": "workstations",
+          "box": [
+            0,
+            0,
+            0,
+            46,
+            35,
+            46
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)"
+        },
+        {
+          "id": "storage",
+          "box": [
+            0,
+            0,
+            0,
+            46,
+            35,
+            46
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "beds",
+          "box": [
+            0,
+            0,
+            0,
+            46,
+            35,
+            46
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)"
+        },
+        {
+          "id": "upper-roof-material-band",
+          "box": [
+            0,
+            17,
+            0,
+            46,
+            35,
+            46
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)"
+        },
+        {
+          "id": "ladder-positions",
+          "box": [
+            0,
+            0,
+            0,
+            46,
+            35,
+            46
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles."
+    },
+    {
+      "id": "plains_armorer_house_1",
+      "source": "more-chinese-structures",
+      "model": "village/hui/plains_armorer_house_1.nbt.npz",
+      "source_sha256": "93662280309fc94edb9aa795773b3974f04e0a99b6e58d8b020abcbd7b9374ff",
+      "queries": [
+        {
+          "id": "workstations",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            7
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)"
+        },
+        {
+          "id": "storage",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            7
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "beds",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            7
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)"
+        },
+        {
+          "id": "upper-roof-material-band",
+          "box": [
+            0,
+            3,
+            0,
+            10,
+            7,
+            7
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)"
+        },
+        {
+          "id": "ladder-positions",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            7
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles."
+    },
+    {
+      "id": "plains_butcher_shop_1",
+      "source": "more-chinese-structures",
+      "model": "village/hui/plains_butcher_shop_1.nbt.npz",
+      "source_sha256": "ecc4f04e117d965b3b1390fe17ff037232b68645940155a2ea3e52923d0f1529",
+      "queries": [
+        {
+          "id": "workstations",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            11
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)"
+        },
+        {
+          "id": "storage",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            11
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "beds",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            11
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)"
+        },
+        {
+          "id": "upper-roof-material-band",
+          "box": [
+            0,
+            3,
+            0,
+            10,
+            7,
+            11
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)"
+        },
+        {
+          "id": "ladder-positions",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            7,
+            11
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles."
+    },
+    {
+      "id": "plains_library_1",
+      "source": "more-chinese-structures",
+      "model": "village/hui/plains_library_1.nbt.npz",
+      "source_sha256": "8501ea4f926b214655a190b8b4f6907b4f37f6b623d1882930d70eadfb9c0f52",
+      "queries": [
+        {
+          "id": "workstations",
+          "box": [
+            0,
+            0,
+            0,
+            14,
+            14,
+            16
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)"
+        },
+        {
+          "id": "storage",
+          "box": [
+            0,
+            0,
+            0,
+            14,
+            14,
+            16
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "beds",
+          "box": [
+            0,
+            0,
+            0,
+            14,
+            14,
+            16
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)"
+        },
+        {
+          "id": "upper-roof-material-band",
+          "box": [
+            0,
+            7,
+            0,
+            14,
+            14,
+            16
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)"
+        },
+        {
+          "id": "ladder-positions",
+          "box": [
+            0,
+            0,
+            0,
+            14,
+            14,
+            16
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles."
+    },
+    {
+      "id": "plains_stable_1",
+      "source": "more-chinese-structures",
+      "model": "village/hui/plains_stable_1.nbt.npz",
+      "source_sha256": "6d10fddb5c562153bc417fb7f09eb4c24b0f9932b4952e66f0c55f8d2a098822",
+      "queries": [
+        {
+          "id": "workstations",
+          "box": [
+            0,
+            0,
+            0,
+            6,
+            6,
+            16
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)"
+        },
+        {
+          "id": "storage",
+          "box": [
+            0,
+            0,
+            0,
+            6,
+            6,
+            16
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "beds",
+          "box": [
+            0,
+            0,
+            0,
+            6,
+            6,
+            16
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)"
+        },
+        {
+          "id": "upper-roof-material-band",
+          "box": [
+            0,
+            3,
+            0,
+            6,
+            6,
+            16
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)"
+        },
+        {
+          "id": "ladder-positions",
+          "box": [
+            0,
+            0,
+            0,
+            6,
+            6,
+            16
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles."
+    },
+    {
+      "id": "yurt_stable_01",
+      "source": "more-chinese-structures",
+      "model": "village/yurt/buildings/yurt_stable_01.nbt.npz",
+      "source_sha256": "c4e8afb75877e190fd199f203a2f5c75f7c26ea13ee1d4edbe8f2c54aae3b8dc",
+      "queries": [
+        {
+          "id": "workstations",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            8,
+            10
+          ],
+          "pattern": "^minecraft:(?:lectern|bookshelf|crafting_table|furnace|blast_furnace|smoker|anvil|grindstone|smithing_table)(?:\\[|$)"
+        },
+        {
+          "id": "storage",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            8,
+            10
+          ],
+          "pattern": "^minecraft:(?:chest|barrel)(?:\\[|$)"
+        },
+        {
+          "id": "beds",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            8,
+            10
+          ],
+          "pattern": "^minecraft:[a-z_]+_bed(?:\\[|$)"
+        },
+        {
+          "id": "upper-roof-material-band",
+          "box": [
+            0,
+            4,
+            0,
+            10,
+            8,
+            10
+          ],
+          "pattern": "^minecraft:(?:deepslate|blackstone|polished_blackstone|dark_prismarine)"
+        },
+        {
+          "id": "ladder-positions",
+          "box": [
+            0,
+            0,
+            0,
+            10,
+            8,
+            10
+          ],
+          "pattern": "^minecraft:ladder(?:\\[|$)"
+        }
+      ],
+      "interpretation": "Author-labelled game model. Defined material boxes and Y levels only; fixtures do not prove room semantics, collision or historical typology. Castle segments are not counted as separate castles."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "chinese-infrastructure/1",
+  "kind": "fort",
+  "parameters": {
+    "half_width": 30,
+    "half_depth": 26,
+    "wall_height": 10
+  }
+}
