@@ -29,7 +29,7 @@
    const f=c.norm(c.sub(rows[Math.min(i+1,rows.length-1)].p,rows[Math.max(i-1,0)].p));
    let side=oriented&&r.side?r.side:c.cross(f,c.sub(c.eye,r.p));if(Math.hypot(...side)<1e-5)side=axes(c,f)[1];side=oriented?c.sub(side,c.mul(f,c.dot(side,f))):side;if(Math.hypot(...side)<1e-5)side=prev?c.sub(prev,c.mul(f,c.dot(prev,f))):axes(c,f)[1];side=c.norm(side);
    if(prev&&c.dot(prev,side)<0)side=c.mul(side,-1);prev=side;
-   const normal=c.norm(c.cross(f,side)),alpha=opacity*(r.a??1)*smooth(0,cap,lengths[i])*smooth(0,cap,total-lengths[i]);
+   const normal=c.norm(c.cross(f,side)),alpha=opacity*(r.a??1)*(rows[0].luminousTip?1:smooth(0,cap,lengths[i]))*smooth(0,cap,total-lengths[i]);
    return Array.from({length:9},(_,j)=>{const u=j/4-1;return {p:c.add(c.add(r.p,c.mul(side,width*(r.w??1)*u)),c.mul(normal,oriented?width*(r.w??1)*.25*(1-u*u):0)),n:normal,uv:[u,r.s??lengths[i]],col:[...(r.color||color),alpha]};});
   });
   for(let i=1;i<mesh.length;i++)for(let j=0;j<8;j++){
@@ -94,7 +94,7 @@
   // Local head: compact white nucleus, asymmetric flame tongues, no closed shell.
   if(fade>1e-5){
    const len=.6+p.shellLength*(warm?1.25:.65),head=[];
-   for(let i=0;i<=68;i++){const q=i/68;head.push({p:headPoint(.26-q*len,0,0),s:-q*len,w:Math.pow(Math.sin(Math.PI*q),.65)*Math.exp(-q*2.7),a:fade*(1-q)});}
+   for(let i=0;i<=68;i++){const q=i/68;head.push({p:headPoint(.26-q*len,0,0),s:-q*len,luminousTip:!warm&&i===0,w:Math.max(warm?0:.012,Math.pow(Math.sin(Math.PI*q),.65)*Math.exp(-q*2.7)),a:fade*(1-q)});}
    ribbon(c,soft,head,p.width*2.1,c.edge,p.glow*.12);
    ribbon(c,hot,head,p.width*.19,mix(c.core,[1,1,1],.55,2.1),.68);
    for(let j=0;j<count;j++){
