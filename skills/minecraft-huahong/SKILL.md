@@ -5,7 +5,7 @@ description: 从参考研究和设计 Minecraft Forge 1.20.1 化虹、流星亮�
 
 # 化虹与流星飞行特效
 
-本 Skill 原名 `minecraft-dunguang-flight`，现更名为 `minecraft-huahong`。研究流星亮核、虹流、燃尾与脱落碎芒时先读 [流星扩展 V9](references/meteor-study-v9.md)。新选项独立保留，旧烟、赤焰与羽状 V3 默认不变；不包含极光、雪山或环境演示。
+本 Skill 原名 `minecraft-dunguang-flight`，现更名为 `minecraft-huahong`。流星参考《Meteor Test111》纠偏与蓝白展开宽尾 V10 见同一研究记录；保留 V9 细核与燃尾。研究流星亮核、虹流、燃尾与脱落碎芒时先读 [流星扩展 V9](references/meteor-study-v9.md)。新选项独立保留，旧烟、赤焰与羽状 V3 默认不变；不包含极光、雪山或环境演示。
 
 默认目标 Forge 1.20.1 / Java 17。把遁光拆为人物局部包裹层、世界历史尾迹、离体烟粒、启动/停止过渡与独立合成层，按用户参考自由组合。还原与观感优先；用户允许先堆层、材质和高质量合成再优化。用户已否定旧版同梭壳换色和结构草模，不能只增加预设或引用技术检查证明“好看”。先读 [烟火退化与默认恢复](references/regression-correction.md)、[V4形体与密度实验](references/lookdev-v4.md)、[材质迭代与新学习资料](references/lookdev-resources.md) 和 [多形式设计](references/form-families.md)：同一个梭壳/螺旋丝/长尾只换色或参数仍是同一构型，不能按预设数量宣称多种遁光。形态族也不是设计白名单。
 
