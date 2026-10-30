@@ -29,7 +29,7 @@
    const f=c.norm(c.sub(rows[Math.min(i+1,rows.length-1)].p,rows[Math.max(i-1,0)].p));
    let side=oriented&&r.side?r.side:c.cross(f,c.sub(c.eye,r.p));if(Math.hypot(...side)<1e-5)side=axes(c,f)[1];side=oriented?c.sub(side,c.mul(f,c.dot(side,f))):side;if(Math.hypot(...side)<1e-5)side=prev?c.sub(prev,c.mul(f,c.dot(prev,f))):axes(c,f)[1];side=c.norm(side);
    if(prev&&c.dot(prev,side)<0)side=c.mul(side,-1);prev=side;
-   const normal=c.norm(c.cross(f,side)),alpha=opacity*(r.a??1)*(rows[0].luminousTip?1:smooth(0,cap,lengths[i]))*smooth(0,cap,total-lengths[i]);
+   const normal=c.norm(c.cross(f,side)),alpha=opacity*(r.a??1)*(rows[0].luminousTip?1:smooth(0,cap,lengths[i]))*(rows.at(-1).luminousTip?1:smooth(0,cap,total-lengths[i]));
    return Array.from({length:9},(_,j)=>{const u=j/4-1;return {p:c.add(c.add(r.p,c.mul(side,width*(r.w??1)*u)),c.mul(normal,oriented?width*(r.w??1)*.25*(1-u*u):0)),n:normal,uv:[u,r.s??lengths[i]],col:[...(r.color||color),alpha]};});
   });
   for(let i=1;i<mesh.length;i++)for(let j=0;j<8;j++){
@@ -62,8 +62,10 @@
   for(const g of history){
    if(g.length<3)continue;groupsCount++;
    if(!warm){
-    const rows=g.map(h=>{const age=c.time-h.t,left=clamp(1-age/p.life);return {p:h.p,s:h.arc,w:Math.pow(left,1.3)*(.22+.78*Math.exp(-age*.35)),a:Math.pow(left,1.7),color:mix(c.edge,c.core,Math.exp(-age*2),1.3)};});
-    ribbon(c,soft,rows,p.width*1.4,c.edge,p.glow*.10);
+    const rows=g.map(h=>{const age=c.time-h.t,left=clamp(1-age/p.life);return {p:h.p,s:h.arc,w:Math.pow(left,1.3)*(.22+.78*smooth(0,.32,age)),a:Math.pow(left,1.7),color:mix(c.edge,c.core,Math.exp(-age*2),1.3)};});
+    // Extend the same continuous spine to the nose; no separate glowing bulb.
+    if(g===history.at(-1)&&fade>1e-5&&Math.hypot(...c.sub(c.pos,g.at(-1).p))<.8)rows.push({p:point(c,c.pos,a,.26,0,0),s:g.at(-1).arc+.26,w:.12,a:1.5*fade,color:mix(c.core,[1,1,1],.55,2.1),luminousTip:true});
+    ribbon(c,soft,rows,p.width*1.4,c.edge,p.glow*.065);
     ribbon(c,body,rows,p.width*.42,c.edge,.35);
     ribbon(c,hot,rows,.008+p.width*.045,mix(c.edge,c.core,.92,2.2),.48);
    }
@@ -73,7 +75,7 @@
      const curl=Math.sin(h.arc*.65+j*1.7)*.24+Math.sin(h.arc*1.73+j)*.11;
      const spread=open*p.spread*(warm?.10:.035)*(1+age*.24),taper=Math.pow(left,1.2);
      const b=point(c,h.p,ax,0,Math.cos(phase+curl)*spread,Math.sin(phase+curl)*spread);
-     return {p:b,side:c.add(c.mul(ax[1],Math.cos(phase)),c.mul(ax[2],Math.sin(phase))),s:h.arc+j*.93,w:(.15+.85*taper)*(warm?.8:1),a:Math.pow(left,warm?2.1:1.5),color:mix(c.edge,c.core,Math.exp(-age*2)*.5,1.15)};
+     return {p:b,side:c.add(c.mul(ax[1],Math.cos(phase)),c.mul(ax[2],Math.sin(phase))),s:h.arc+j*.93,w:(.15+.85*taper)*(warm?.8:1),a:Math.pow(left,warm?2.1:1.5)*(warm?1:smooth(0,.12,age)),color:mix(c.edge,c.core,Math.exp(-age*2)*.5,1.15)};
     });
     ribbon(c,body,rows,p.width*(warm?.75:.16),c.edge,warm?.24:.24,warm);
    }
@@ -92,18 +94,18 @@
    return point(c,from,frame,-remaining,y,z);
   }
   // Local head: compact white nucleus, asymmetric flame tongues, no closed shell.
-  if(fade>1e-5){
+  if(fade>1e-5&&warm){
    const len=.6+p.shellLength*(warm?1.25:.65),head=[];
-   for(let i=0;i<=68;i++){const q=i/68;head.push({p:headPoint(.26-q*len,0,0),s:-q*len,luminousTip:!warm&&i===0,w:Math.max(warm?0:.012,Math.pow(Math.sin(Math.PI*q),.65)*Math.exp(-q*2.7)),a:fade*(1-q)});}
-   ribbon(c,soft,head,p.width*2.1,c.edge,p.glow*.12);
-   ribbon(c,hot,head,p.width*.19,mix(c.core,[1,1,1],.55,2.1),.68);
+   for(let i=0;i<=68;i++){const q=i/68;head.push({p:headPoint(.26-q*len,0,0),s:-q*len,luminousTip:!warm&&i===0,w:warm?Math.pow(Math.sin(Math.PI*q),.65)*Math.exp(-q*2.7):(.15+.25*smooth(0,.025,q))*Math.exp(-q*4.0),a:fade*(1-q)*(warm?1:.4+2.6*Math.exp(-q*35.))});}
+   ribbon(c,soft,head,p.width*(warm?2.1:.85),c.edge,p.glow*(warm?.12:.045));
+   ribbon(c,hot,head,p.width*(warm?.19:.16),mix(c.core,[1,1,1],.55,warm?2.1:2.5),warm?.68:.78);
    for(let j=0;j<count;j++){
     const rows=[],phase=j*2.399;
     for(let i=0;i<=60;i++){
      const q=i/60,reach=Math.sin(Math.PI*q)*p.spread*(warm?.21:.075),angle=phase+q*(warm?2.6:.5)+Math.sin(q*7-c.time*1.3+j)*q*.22;
      rows.push({p:headPoint(.17-q*len*(.55+rnd(j+7)*.45),Math.cos(angle)*reach,Math.sin(angle)*reach),side:c.add(c.mul(a[1],Math.cos(angle)),c.mul(a[2],Math.sin(angle))),s:-q*len+j*.83,w:Math.pow(Math.sin(Math.PI*q),.65)*(1-q*.65)*(warm?.85+.15*Math.sin(q*11-c.time*.7+j):1),a:fade*(1-q),color:mix(c.edge,c.core,Math.pow(1-q,4)*.8,1.25)});
     }
-    ribbon(c,body,rows,p.width*(warm?.75:.3),c.edge,warm?.34:.22,warm);
+    ribbon(c,body,rows,p.width*(warm?.75:.15),c.edge,warm?.34:.06,warm);
    }
   }
   const sparks=fragments(c,embers,history,warm);
