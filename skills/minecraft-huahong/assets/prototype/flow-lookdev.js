@@ -87,51 +87,9 @@
   }
   return finish([[veil,13],[body,13],[threads,14],[core,14],[ashes,14]],{topology:'single-concentrated-long-comet-with-age-separated-companion-streams',historyLineCount:1,auxiliaryFilaments:companions,historyGroups:history.length,historyLength:arcLength,localMotionFade:local,flowRevision:5,continuousRearwardTransport:true});
  }
- function vessel(ctx){
-  const p=ctx.params,veil=[],flow=[],ridges=[],hot=[],history=groups(ctx);const count=clamp(Math.round(p.strands*.7),3,10);
-  let centerRows=0;
-  function lane(h,sign,j=0){
-   const age=ctx.time-h.t,life=clamp(1-age/p.life),open=smooth(.02,.60+p.shellLength*.045,age);
-   const asym=sign>0?1:.76,phase=h.t*.73+(sign>0?.4:2.3),wander=ctx.noise1(h.arc*.21+sign*6,96)*.16;
-   const angle=.20+Math.sin(h.t*.41)*.25+wander;
-   const sep=(.26+h.spread*.42)*open*asym*(.88+.12*Math.sin(phase));
-   const curl=ctx.noise1(h.arc*.65+sign*3.1+j*.3,97)*open*(.13+age*.024),f=(j-(count-1)*.5)*.022*open;
-   return {p:W(ctx,h.p,h.A,0,sign*sep*(.45+angle)+curl+f,sign*sep*.86+Math.sin(h.arc*.43+sign)*open*.07+f*.6),s:h.arc+(sign>0?0:1.3)+j*.37,
-    a:Math.pow(life,1.6),w:(.27+.73*Math.pow(life,.9))*(.16+.84*open)*asym*(.87+.13*ctx.noise1(h.arc*.53+sign*4,98)),life,age};
-  }
-  for(const g of history){if(g.length<3)continue;centerRows+=g.length;
-   for(const sign of [-1,1]){
-    const rows=g.map(h=>{const r=lane(h,sign);return {...r,color:tint(ctx.edge,ctx.core,.10+.22*r.life*r.life,1.4)};});
-    const width=p.width*(sign>0?.95:.72);
-    strip(ctx,veil,rows,width*2.4,ctx.edge.map(v=>Math.pow(v,1.7)*1.25),p.glow*.10,false);
-    strip(ctx,flow,rows,width,ctx.edge,.46);
-    strip(ctx,ridges,rows,width*.18,tint(ctx.edge,ctx.core,.64,2.2),.36,false);
-    strip(ctx,hot,rows,width*.027,tint(ctx.edge,ctx.core,.92,3.2),.38,false);
-    for(let j=0;j<count;j++){
-     const fine=g.map(h=>{const r=lane(h,sign,j),phase=h.arc*.37+j*1.9;
-      const offset=(j-(count-1)*.5)*width*.24*(.2+.8*smooth(.1,.8,r.age));
-      return {...r,p:W(ctx,r.p,h.A,0,offset*.3,offset+Math.sin(phase)*width*.05),a:r.a*(.50+.50*smooth(-.4,.7,Math.sin(h.arc*.8+j*1.2))),w:r.w};});
-     strip(ctx,ridges,fine,.004+p.width*.013,tint(ctx.edge,ctx.core,.25,1.8),.30);
-    }
-   }
-  }
-  const local=Math.pow(ctx.motionFade,2.2),A=axes(ctx,ctx.dir);
-  if(local>.00001){
-   // Only a compact, pinched birth flow precedes the two historical streams.
-   // There are no detached pressure arcs or repeated vertical sheets.
-   for(const sign of [-1,1]){
-    const rows=[];
-    for(let i=0;i<=48;i++){const q=i/48,shape=Math.pow(Math.sin(Math.PI*q),.9),x=.70-q*1.05;
-     rows.push({p:W(ctx,ctx.pos,A,x,sign*q*q*.024,sign*q*q*.042),s:x,w:shape*(sign>0?1:.72),a:local*(1-q*.7)});}
-    strip(ctx,veil,rows,p.width*.60,tint(ctx.edge,ctx.core,.22,1.6),p.glow*.15);
-    strip(ctx,flow,rows,p.width*.25,tint(ctx.edge,ctx.core,.35,1.8),.35);
-    strip(ctx,hot,rows,.010+p.width*.025,tint(ctx.edge,ctx.core,.95,3.7),.48);
-   }
-  }
-  return finish([[veil,13],[flow,15],[ridges,13],[hot,14]],{topology:'two-asymmetric-continuous-world-shear-streams',historyTrails:2,historyAnchorPoses:centerRows,streamFilaments:count*2,independentPhases:true,repeatedPressureArcs:0,continuousRearwardTransport:true,localMotionFade:local,flowRevision:5});
- }
- window.DunguangV4FlowBaseline={needle:window.DunguangPrimaryForms.needle,vessel:window.DunguangCarrierForms.vessel};
- window.DunguangPrimaryForms.needle=needle;window.DunguangCarrierForms.vessel=vessel;
+
+ window.DunguangV4FlowBaseline={needle:window.DunguangPrimaryForms.needle};
+ window.DunguangPrimaryForms.needle=needle;
  window.DunguangFlowV5={shaderBranch:`
  if(uMode==13){
   float axis=vUV.y+uTime*(.8+uFlowSpeed*.20);

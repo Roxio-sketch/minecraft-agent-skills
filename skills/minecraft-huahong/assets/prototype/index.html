@@ -21,7 +21,7 @@
 <div class="presets"><button id="playSequence">完整演示</button><button id="launchStage">重播起遁</button><button id="arrivalStage">演示到达</button><button id="cruiseOnly">仅巡航</button></div>
 <label class="switch"><input type="checkbox" id="loopSequence">循环完整演示</label><p class="note" id="phaseLabel">仅巡航 · 阶段效果未启用</p>
 <p class="note">选下方巡航形式后可播放阶段；阶段会先蓄光、加速，最终减速、停发并消散。拖动相机可观察，空格可暂停。</p></div>
-<div class="section"><h2>01 / 可编辑算法起点</h2><div class="presets"><button data-preset="meteor_plume">蓝白流星 V10</button><button data-preset="meteor_prism">虹核流星 V9</button><button data-preset="meteor_flame">燃尾流星 V9</button><button data-preset="needle">贯空长虹 V5</button><button data-preset="feather">开放流羽 V4</button><button data-preset="feather_v3">羽状分叉 V3</button><button data-preset="rings">空心旋带</button><button data-preset="smoke">红黑离烟</button><button data-preset="swords">碎芒汇流 V6</button><button data-preset="flame">赤焰撕裂</button><button data-preset="water">液光流绸 V6</button><button data-preset="vortex">旋涡通道</button><button data-preset="bird">扇形流霞 V7</button><button data-preset="vessel">双流交剪 V5</button></div><p class="note">已有八项巡航效果保留；起遁与到达由上方独立控制。空心旋带和旋涡通道旧版仍可作历史对照。</p><p class="note" id="presetNote"></p><div class="note" id="formMeta" style="padding:9px 11px;border-left:2px solid #65bca2;background:#11272a"></div></div>
+<div class="section"><h2>01 / 可编辑算法起点</h2><div class="presets"><button data-preset="meteor_plume">蓝白流星 V10</button><button data-preset="meteor_prism">虹核流星 V9</button><button data-preset="meteor_flame">燃尾流星 V9</button><button data-preset="needle">贯空长虹 V5</button><button data-preset="feather">开放流羽 V4</button><button data-preset="feather_v3">羽状分叉 V3</button><button data-preset="smoke">红黑离烟</button><button data-preset="flame">赤焰撕裂</button><button data-preset="bird">扇形流霞 V7</button></div><p class="note">起遁与到达由上方独立控制。</p><p class="note" id="presetNote"></p><div class="note" id="formMeta" style="padding:9px 11px;border-left:2px solid #65bca2;background:#11272a"></div></div>
 <div class="section"><h2>02 / 可编辑参数</h2>
 <label class="control"><span>飞行速度 <output id="speedValue"></output></span><input id="speed" type="range" min="0" max="14" step="0.2" value="8.4"></label>
 <label class="control"><span>历史寿命 <output id="lifeValue"></output></span><input id="life" type="range" min="0.5" max="8" step="0.1" value="5.6"></label>
@@ -36,7 +36,7 @@
 <div class="section"><button class="export" id="export">导出研究原型参数 JSON</button><p class="note">dunguang-study/1 · 研究原型参数，非 MOD 配方</p></div>
 <div class="footer"><strong id="status">初始化 WebGL 2…</strong><br>算法演示：固定 60 Hz、距离重采样、转向 / 传送断带。流羽模式为贝塞尔平滑 + 双次几何绘制。<br>只渲染程序特效，无人物、武器或载体模型。亮边来自 shader 与光带；现有独立发光缓冲、多尺度 Bloom 和曝光；2× 超采样；烟默认为纹理烟团，V4 实验为程序密度积分；未做流体求解或 Minecraft 游戏运行。</div>
 </aside></div>
-<!-- FINAL_ASSEMBLY_V2 --><script src="texture-assets.js"></script><script src="render-pipeline.js"></script><script src="primary-forms.js"></script><script src="extra-forms.js"></script><script src="carrier-forms.js"></script><script>window.DunguangV3Baseline={feather:window.DunguangPrimaryForms.feather,flame:window.DunguangPrimaryForms.flame,smoke:window.DunguangExtraForms.smoke};window.DunguangPrimaryForms.feather_v3=window.DunguangPrimaryForms.feather;</script><script src="feather-lookdev.js"></script><script src="smoke-lookdev.js"></script><script src="flame-lookdev.js"></script><script src="flow-lookdev.js"></script><script src="liquid-shards-lookdev.js"></script><script src="fan-lookdev.js"></script><script src="transition-stages.js"></script><script src="meteor-huahong.js"></script>
+<!-- FINAL_ASSEMBLY_V2 --><script src="texture-assets.js"></script><script src="render-pipeline.js"></script><script src="primary-forms.js"></script><script src="extra-forms.js"></script><script src="carrier-forms.js"></script><script>window.DunguangV3Baseline={feather:window.DunguangPrimaryForms.feather,flame:window.DunguangPrimaryForms.flame,smoke:window.DunguangExtraForms.smoke};window.DunguangPrimaryForms.feather_v3=window.DunguangPrimaryForms.feather;</script><script src="feather-lookdev.js"></script><script src="smoke-lookdev.js"></script><script src="flame-lookdev.js"></script><script src="flow-lookdev.js"></script><script src="fan-lookdev.js"></script><script src="transition-stages.js"></script><script src="meteor-huahong.js"></script>
 <script>
 'use strict';
 (() => {
@@ -85,7 +85,7 @@ void main(){vec3 c=vColor.rgb;float a=vColor.a;float edge=max(0.,1.-abs(vUV.x));
  ${window.DunguangSmokeV4?.shaderBranch||''}
  ${window.DunguangFlameV4?.shaderBranch||''}
  ${window.DunguangFlowV5?.shaderBranch||''}
- ${window.DunguangLiquidShardsV6?.shaderBranch||''}
+
  ${window.DunguangFanV7?.shaderBranch||''}
  ${window.DunguangTransitionsV8.shaderBranch}
  ${window.HuahongMeteor.shaderBranch}
@@ -115,47 +115,30 @@ const presets={};
 const FORM_META={
  needle:{topology:'单根细针尾迹＋集中尖核',space:'世界历史单线，少量碎光出生后留在原地',lifecycle:'停飞后旧线按历史年龄消散',boundary:'带状几何；不是体积光柱'},
  feather:{topology:'二次 Bézier 主脊＋分叉羽枝',space:'羽枝随身体；主尾保留世界历史',lifecycle:'局部分羽停飞收弱，旧历史按寿命消失',boundary:'CPU 曲线 / 两次几何绘制＋独立 Bloom'},
- rings:{topology:'中空旋转环带，中心留空',space:'一对局部光环＋世界历史脱落环',lifecycle:'停飞后环继续扩散并老化',boundary:'环带网格；没有填满的梭壳'},
  smoke:{topology:'离体软烟密度＋局部暗红热斑',space:'烟包出生后留在世界并漂移',lifecycle:'停止注入后独立膨胀、淡出',boundary:'有界程序密度积分与深度截断；不是流体求解'},
- swords:{topology:'离散半透明折角光片阵列',space:'无实体武器，光片错相编队',lifecycle:'停飞后光片聚拢或散逸、淡出',boundary:'程序发光薄片；没有剑刃、护手或握柄'},
  flame:{topology:'多条破裂火舌与脱落火片',space:'前端撕裂火舌＋世界后抛残焰',lifecycle:'停飞后局部火舌快速熄灭，残焰继续消散',boundary:'噪声侵蚀面片；不是体积火焰'},
- water:{topology:'透明水膜片、液滴与聚散细流',space:'局部弯膜与世界脱落水滴',lifecycle:'停止后薄膜松开、水滴独立坠散',boundary:'透明表面近似；没有背景真实折射'},
- vortex:{topology:'有纵深的空心螺旋通道',space:'方向基底里的多圈通道与旋转截面',lifecycle:'停止后旋涡缓慢扩散、衰减',boundary:'分层螺旋几何；不生成第二世界'}
 };
-Object.assign(FORM_META,{bird:{topology:'中心留白的扇状流片',space:'多扇光膜错相弯摆，余光留在世界',lifecycle:'停飞局部羽流收弱，历史余光继续老化',boundary:'纯程序流片；没有鸟体、头颈或实体羽翼'},vessel:{topology:'分离双股剪切波与冲压弧片',space:'双流局部剪切，双尾保留世界历史',lifecycle:'局部流片淡出，双尾按年龄消失',boundary:'纯能量波；没有船体、翼帆或硬灯肋'}});
+Object.assign(FORM_META,{bird:{topology:'中心留白的扇状流片',space:'多扇光膜错相弯摆，余光留在世界',lifecycle:'停飞局部羽流收弱，历史余光继续老化',boundary:'纯程序流片；没有鸟体、头颈或实体羽翼'}});
 Object.assign(presets,{
  needle:{title:'细针长虹 / 单线历史',note:'一根细长金白剑气，前核集中；不把许多宽带堆成一团。',speed:9.6,life:5.8,width:.10,strands:4,spread:.25,shellLength:1.8,glow:.5,coreColor:'#fff5cf',edgeColor:'#ffc45c'},
  feather:{title:'青霄流羽 / 宽膜与分叉',note:'不等长宽膜向后展开，稀疏羽筋分叉；白青与淡紫薄纱保留空隙。',speed:8.4,life:4.2,width:.14,strands:9,spread:1.1,shellLength:3.8,glow:.65,coreColor:'#ecffff',edgeColor:'#6ec9ff'},
- rings:{title:'空心旋带 / 脱落光环',note:'中心留空的旋转开口环，脱落环留在旧世界位置并缓慢扩张。',speed:6.2,life:3.8,width:.18,strands:7,spread:1.2,shellLength:3,glow:.7,coreColor:'#e7dfff',edgeColor:'#ad81ff'},
  smoke:{title:'红黑烟披 / 三维密度积分',note:'宽短暗烟包裹，玫红卷动藏在烟体内部；停止后旧烟独立消散。',speed:6.8,life:4.8,width:.28,strands:8,spread:1.1,shellLength:3.2,glow:.4,coreColor:'#ff8b6c',edgeColor:'#b82045'},
- swords:{title:'碎光片阵 / 离散编队',note:'分离的折角光片错相伴行、聚散，只呈现光片与侵蚀，不绘制实体武器。',speed:7.6,life:3.4,width:.16,strands:7,spread:1.25,shellLength:3.3,glow:.5,coreColor:'#ecf6ff',edgeColor:'#61c7df'},
  flame:{title:'赤焰卷流 / 燃烧与脱落',note:'扁平撕裂火舌向后拉出尖角，残焰脱落后漂升；不生成封闭梭形外壳。',speed:8.4,life:2.8,width:.27,strands:9,spread:.95,shellLength:4.2,glow:.72,coreColor:'#fff3bd',edgeColor:'#ff502e'},
- water:{title:'水膜聚散 / 弯膜与液滴',note:'透明弯膜形成分离的流片，液滴沿世界轨迹脱落；没有屏幕背景折射。',speed:6.8,life:3.7,width:.24,strands:7,spread:1.1,shellLength:3.2,glow:.36,coreColor:'#dcffff',edgeColor:'#4aabd8'},
- vortex:{title:'旋涡通道 / 中空纵深',note:'多圈连续螺旋形成有纵深的通道，开口保留负形，不是普通环形光壳。',speed:7.2,life:4.2,width:.18,strands:7,spread:1.1,shellLength:4.3,glow:.66,coreColor:'#dfdbff',edgeColor:'#756eff'},
  bird:{title:'扇状羽流 / 留白与弯摆',note:'多扇透明流片在空间错相弯摆，中心留白；只抽取羽流，不创建鸟形模型。',speed:7.8,life:3.9,width:.20,strands:8,spread:1.5,shellLength:3.4,glow:.65,coreColor:'#fff5ca',edgeColor:'#ffbd49'},
- vessel:{title:'双股剪尾 / 分离气流',note:'两股非对称剪切波、冲压弧片与双条世界尾流；不创建船体、翼帆或乘员。',speed:7.8,life:4.7,width:.32,strands:7,spread:1.5,shellLength:4.5,glow:.65,coreColor:'#e4f5ff',edgeColor:'#4ea5ff'}
 });
 
 presets.feather_v3={...presets.feather,title:'羽状分叉 V3 / 保留版本',note:'保留 V3 原始密集 Bézier 分羽与多筋历史长尾；可与开放流羽 V4 分别选择。'};
 FORM_META.feather_v3={...FORM_META.feather,topology:'V3 密集分羽、二级羽筋与多筋长尾',boundary:'保留 V3 原始几何与材质消费者'};
 // DUNGUANG_REGRESSION_FIX: user rejected smoke/fire V4 as visual regressions.
-const FLOW_V4_COPY={needle:{...presets.needle},vessel:{...presets.vessel}};
-const FLOW_V4_META={needle:{...FORM_META.needle},vessel:{...FORM_META.vessel}};
+const FLOW_V4_COPY={needle:{...presets.needle}};
+const FLOW_V4_META={needle:{...FORM_META.needle}};
 presets.needle={...presets.needle,title:'贯空长虹 / V5',note:'集中尖核、单根连续长迹、稀疏伴流与逐龄散光。',width:.14,spread:.60,shellLength:3.4};
-presets.vessel={...presets.vessel,title:'双流交剪 / V5',note:'两股不等宽的柔流从前端分开，旧流留在世界并舒展、淡去。',width:.29,spread:1.20,shellLength:3.6};
 FORM_META.needle={...FORM_META.needle,topology:'集中长光梭、主长迹与稀疏伴流',boundary:'连续曲线载体与方向性 GLSL 流动，无实体模型'};
-FORM_META.vessel={...FORM_META.vessel,topology:'不对称双股连续流带与剪切细纹',space:'新生流收束，旧流按出生方向留在世界并向外舒展',boundary:'柔流几何与程序材质，无重复竖片、无实体载体'};
-const BATCH_V5_COPY={water:{...presets.water},swords:{...presets.swords}};
-const BATCH_V5_META={water:{...FORM_META.water},swords:{...FORM_META.swords}};
-presets.water={...presets.water,title:'液光流绸 / V6',note:'不等宽透明流绸沿世界路径扭卷，水丝连接，老尾脱落水滴。',width:.36,spread:1.0,shellLength:4.0,life:3.8,glow:.55,coreColor:'#dcffff',edgeColor:'#329fb8'};
-presets.swords={...presets.swords,title:'碎芒汇流 / V6',note:'大小错落的碎芒各有短余迹，沿飞行路径持续汇流与散去。',width:.18,spread:1.0,shellLength:3.4,life:3.4,glow:.57,coreColor:'#efffff',edgeColor:'#64c9b7'};
-FORM_META.water={...FORM_META.water,topology:'不对称扭卷流绸、水丝与脱落光滴',space:'新生流收束，老流留在世界并舒展；水滴独立下落',lifecycle:'停飞后旧流逐龄变薄、散丝散滴',boundary:'连续透明表面与程序高光；未实现背景真实折射'};
-FORM_META.swords={...FORM_META.swords,topology:'有独立短历史余迹的离散碎芒流',space:'碎芒从历史出生点前移、侧漂，尾迹跟随各自过去位置',lifecycle:'停止注入后已有碎芒继续运动并衰减',boundary:'程序发光碎片，无武器或其他实体模型'};
 const FAN_OLD_COPY={...presets.bird};
 const FAN_OLD_META={...FORM_META.bird};
 presets.bird={...presets.bird,title:'扇形流霞 / V7',note:'集中根部向后错位展开，长短不同的暖金薄纱留在飞行历史中，末端散成细流。',life:2.4,width:.36,strands:7,spread:1.60,shellLength:3.8,glow:.68,coreColor:'#fff5d9',edgeColor:'#efb75e'};
 FORM_META.bird={...FORM_META.bird,topology:'开放的宽扇薄纱、疏密流纹与散丝',space:'根部收束；出生框架中的后展流霞连接世界历史',lifecycle:'停飞后已有纱流继续舒展、变薄并消散',boundary:'程序透明曲面，无实体翅膀、鸟体或流体求解'};
-const formVersions={smoke:3,flame:3,needle:5,vessel:5,water:6,swords:6,bird:7};
+const formVersions={smoke:3,flame:3,needle:5,bird:7};
 const V3_META={
  smoke:{...FORM_META.smoke,topology:'纹理烟团、细碎烟边与局部红裂光',space:'烟包出生后留在世界并漂移',boundary:'V3 排序透明烟卡片；非体积积分或流体'},
  flame:{...FORM_META.flame,topology:'多条长撕裂火舌、亮核与世界残焰',boundary:'V3 噪声侵蚀面片；不是体积火焰'}
@@ -176,18 +159,12 @@ function activeForm(){
    generator:old?window.DunguangFanBaseline:window.DunguangCarrierForms.bird};
  }
 
- if(preset==='water'||preset==='swords'){
-  const version=formVersions[preset],old=version===5;
-  return {managed:true,useV3:false,version,versions:[5,6],meta:old?BATCH_V5_META[preset]:FORM_META[preset],
-   copy:old?{title:BATCH_V5_COPY[preset].title+' / V5 对照',note:BATCH_V5_COPY[preset].note}:presets[preset],
-   generator:old?window.DunguangV5SecondBaseline[preset]:window.DunguangExtraForms[preset]};
- }
 
- if(preset==='needle'||preset==='vessel'){
+ if(preset==='needle'){
   const version=formVersions[preset],old=version===4;
   return {managed:true,useV3:false,version,versions:[4,5],meta:old?FLOW_V4_META[preset]:FORM_META[preset],
    copy:old?{title:FLOW_V4_COPY[preset].title+' / V4 对照',note:FLOW_V4_COPY[preset].note}:presets[preset],
-   generator:old?window.DunguangV4FlowBaseline[preset]:(preset==='needle'?window.DunguangPrimaryForms.needle:window.DunguangCarrierForms.vessel)};
+   generator:old?window.DunguangV4FlowBaseline[preset]:window.DunguangPrimaryForms.needle};
  }
 
  const managed=Object.hasOwn(formVersions,preset);
@@ -202,7 +179,7 @@ let lightBackground=false,backgroundMode=0;
 let preset='meteor_prism',cam='side',paused=false,moving=true,timeScale=1,simT=0,acc=0,heading=Math.PI/2,pos=[7,3,0],dir=[0,0,1],history=[],segment=0,sinceSample=0,viewYaw=.65,viewPitch=.4,viewDist=8.7,eye=[0,0,0],target=[0,0,0],fps=60,lastStamp=0,drag=null;
 const DT=1/60,SPACING=.14,SEED=173;const lifecycle=new window.DunguangTransitionsV8.Controller();let lastTrail=null,arcTotal=0,stoppedAt=null,formStates={};
 const rgb=hex=>[parseInt(hex.slice(1,3),16)/255,parseInt(hex.slice(3,5),16)/255,parseInt(hex.slice(5,7),16)/255];
-const FORM_LABELS={meteor_plume:['虹筋数量','尾部展开','核后燃流'],meteor_prism:['伴流与碎芒','虹流侧展','亮核长度'],meteor_flame:['火舌与碎芒','燃流侧展','燃尾长度'],needle:['伴流数量','伴流侧展','尖核长度'],feather:['分羽数量','分羽展开','分羽长度'],rings:['光环数量','光环半径','环组纵深'],smoke:['烟包密度','烟包侧展','烟体长度'],swords:['碎芒密度','汇流侧展','碎芒长度'],flame:['火舌数量','火舌展开','火舌长度'],water:['流绸/滴量','水流侧展','舒展长度'],vortex:['旋涡圈数','开口半径','轴向深度'],bird:['纱流数量','扇面展开','舒展长度'],vessel:['流丝数量','双流间距','分流长度']};
+const FORM_LABELS={meteor_plume:['虹筋数量','尾部展开','核后燃流'],meteor_prism:['伴流与碎芒','虹流侧展','亮核长度'],meteor_flame:['火舌与碎芒','燃流侧展','燃尾长度'],needle:['伴流数量','伴流侧展','尖核长度'],feather:['分羽数量','分羽展开','分羽长度'],smoke:['烟包密度','烟包侧展','烟体长度'],flame:['火舌数量','火舌展开','火舌长度'],bird:['纱流数量','扇面展开','舒展长度'],};
 FORM_LABELS.feather_v3=FORM_LABELS.feather;
 function syncLabels(){const labels=FORM_LABELS[preset];['strands','spread','shellLength'].forEach((k,i)=>{$(k).closest('label').querySelector('span').firstChild.nodeValue=labels[i]+' ';});$('width').closest('label').querySelector('span').firstChild.nodeValue='几何厚度 ';$('glow').closest('label').querySelector('span').firstChild.nodeValue='发光强度 ';}
 function sync(){Object.keys(params).forEach(k=>{$(k).value=params[k];const out=$(k+'Value');if(out)out.textContent=k==='speed'?params[k].toFixed(1)+' m/s':k==='life'?params[k].toFixed(1)+' s':k==='strands'?String(params[k]):params[k].toFixed(2)+(k==='glow'?'':' m');});document.querySelectorAll('[data-preset]').forEach(b=>b.classList.toggle('active',b.dataset.preset===preset));const active=activeForm();$('effectVersionControl').hidden=!active.managed;$('baselineControl').style.display=active.managed||preset==='feather_v3'||window.HuahongMeteor.presets[preset]?'none':'';if(active.managed){const versions=active.versions||[3,4],labels={3:'V3 保留基线',4:'V4 对照 / 实验',5:'V5 流动版本',6:'V6 液光 / 碎芒',7:'V7 扇形流霞'};$('effectVersion').innerHTML=versions.slice().reverse().map(v=>'<option value='+v+'>'+labels[v]+'</option>').join('');$('effectVersion').value=String(formVersions[preset]);}$('presetTitle').textContent=active.copy.title;$('presetNote').textContent=active.copy.note;syncLabels();const m=active.meta;$('formMeta').innerHTML='形态：'+m.topology+'<br>空间：'+m.space+'<br>停止：'+m.lifecycle+'<br>边界：'+m.boundary;}
@@ -291,7 +268,7 @@ function exportData(){return {schema:'dunguang-study/1',label:'研究原型参�
 $('export').onclick=()=>{const blob=new Blob([JSON.stringify(exportData(),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='huahong-study-'+preset+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);};
 ['bloom','exposure'].forEach(id=>$(id).oninput=()=>$(id+'Value').textContent=Number($(id).value).toFixed(2));
 function setBackground(mode){backgroundMode=mode;lightBackground=mode===1;$('background').textContent='背景：'+['灰蓝','浅灰','暗夜'][mode];} $('background').onclick=()=>setBackground((backgroundMode+1)%3);
-window.dunguangStudy={selectForm:(key)=>{const button=document.querySelector('[data-preset="'+key+'"]');if(!button)throw Error('Unknown form');button.click();},setCamera:setCam,setBaseline:(v)=>{if(preset==='bird')formVersions.bird=v?4:7;else if(['water','swords'].includes(preset))formVersions[preset]=v?5:6;else if(['needle','vessel'].includes(preset))formVersions[preset]=v?4:5;else if(Object.hasOwn(formVersions,preset))formVersions[preset]=v?3:4;else $('baseline').checked=!!v;sync();},setLookdevVersion:(version)=>{if(!Object.hasOwn(formVersions,preset)||!(activeForm().versions||[3,4]).includes(version))throw Error('Version unavailable for this form');formVersions[preset]=version;sync();},setLightBackground:(v)=>setBackground(v?1:0),setBackground:(mode)=>setBackground(mode),setMonochrome:(v)=>$('gray').checked=!!v,exportParameters:exportData,playLifecycle:(style,mode='sequence')=>{if(!['rings','vortex'].includes(style))throw Error('Unknown stage style');$('transitionStyle').value=style;playLifecycle(mode);},clearLifecycle:()=>{$('loopSequence').checked=false;reset();},getDiagnostics:()=>JSON.parse(JSON.stringify(diag)),setView:(v)=>{if(v.distance!==undefined)viewDist=clamp(v.distance,4,65);if(v.yaw!==undefined)viewYaw=v.yaw;if(v.pitch!==undefined)viewPitch=v.pitch;setCam('orbit');},reset,step:(n=1)=>{for(let i=0;i<n;i++)step();render();renderDirty=false;}};
+window.dunguangStudy={selectForm:(key)=>{const button=document.querySelector('[data-preset="'+key+'"]');if(!button)throw Error('Unknown form');button.click();},setCamera:setCam,setBaseline:(v)=>{if(preset==='bird')formVersions.bird=v?4:7;else if(preset==='needle')formVersions[preset]=v?4:5;else if(Object.hasOwn(formVersions,preset))formVersions[preset]=v?3:4;else $('baseline').checked=!!v;sync();},setLookdevVersion:(version)=>{if(!Object.hasOwn(formVersions,preset)||!(activeForm().versions||[3,4]).includes(version))throw Error('Version unavailable for this form');formVersions[preset]=version;sync();},setLightBackground:(v)=>setBackground(v?1:0),setBackground:(mode)=>setBackground(mode),setMonochrome:(v)=>$('gray').checked=!!v,exportParameters:exportData,playLifecycle:(style,mode='sequence')=>{if(!['rings','vortex'].includes(style))throw Error('Unknown stage style');$('transitionStyle').value=style;playLifecycle(mode);},clearLifecycle:()=>{$('loopSequence').checked=false;reset();},getDiagnostics:()=>JSON.parse(JSON.stringify(diag)),setView:(v)=>{if(v.distance!==undefined)viewDist=clamp(v.distance,4,65);if(v.yaw!==undefined)viewYaw=v.yaw;if(v.pitch!==undefined)viewPitch=v.pitch;setCam('orbit');},reset,step:(n=1)=>{for(let i=0;i<n;i++)step();render();renderDirty=false;}};
 preset='meteor_plume';Object.keys(params).forEach(k=>params[k]=presets.meteor_plume[k]);sync();reset();diag.formKeys=Object.keys(FORM_META);diag.ready=true;diag.checks.shaderLinked=true;diag.checks.depthTest=true;diag.checks.fixedSeed=SEED;$('status').textContent='化虹 V10 · 流星与保留巡航 · HDR Bloom';const requestedForm=new URLSearchParams(location.search).get('form');if(requestedForm&&presets[requestedForm])window.dunguangStudy.selectForm(requestedForm);const requestedStage=new URLSearchParams(location.search).get('sequence');if(['rings','vortex'].includes(requestedStage)){$('transitionStyle').value=requestedStage;$('loopSequence').checked=true;playLifecycle('sequence');}requestAnimationFrame(frame);
 })();
 </script>

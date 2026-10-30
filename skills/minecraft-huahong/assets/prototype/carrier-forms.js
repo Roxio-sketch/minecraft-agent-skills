@@ -110,33 +110,6 @@
       centralGap:true, historyTrails:2, historyAnchorPoses:poses, animation:'counterphase-continuous-fan-flow'});
   }
   // API key retained for saved study parameters. Two open shear fronts, no vessel.
-  function vessel(ctx) {
-    const p = ctx.params, speed = p.speed ?? 8, fade = clamp(ctx.motionFade), alpha = [], emission = [], trail = [];
-    const pulses = Math.max(2, Math.round(1 + p.strands * .35));
-    const length = .8 + p.shellLength * .7, separation = .42 + p.spread * .68;
-    if (fade > .0001) for (const sign of [-1,1]) for (let k = 0; k < pulses; k++) {
-      const phase = ctx.time * (.50 + speed * .055) + k / pulses + (sign < 0 ? .31 : 0);
-      const travel = phase - Math.floor(phase), pulseAlpha = Math.pow(Math.sin(Math.PI * travel), .7);
-      const asymmetry = sign > 0 ? 1 : .79, radius = (.42 + p.spread * .52) * asymmetry;
-      const sheet = [];
-      const flow = (u,v) => {
-        // Each curved front spans less than half a revolution. They are offset in
-        // x/z and never complete an enclosing tube, hull, sail or rigid frame.
-        const angle = (u - .5) * Math.PI * .94;
-        const r = radius * (.65 + travel * .70) + (v - .5) * (.13 + p.width * .48);
-        const x = length * (.52 - travel) - v * (.34 + p.width * .9) - Math.cos(angle) * .24 + (sign < 0 ? -.48 : .15);
-        const y = sign * (separation + Math.cos(angle) * r);
-        const z = Math.sin(angle) * r + sign * (.21 + Math.sin(phase * TAU) * .12) + Math.sin(v * Math.PI) * .09;
-        return localPoint(ctx, x, y, z);
-      };
-      surface(ctx, sheet, flow, 30, 7, fade * pulseAlpha * .30 / Math.sqrt(pulses), color(ctx, .12));
-      alpha.push({data:sheet, mode:6, center:flow(.5,.5)});
-      surface(ctx, emission, flow, 30, 7, fade * pulseAlpha * p.glow * .55 / Math.sqrt(pulses), color(ctx, .68));
-    }
-    const poses = exhaust(ctx, trail, separation, .02, length * .25, .70);
-    return finish(alpha, emission, trail, {topology:'separated-asymmetric-open-shear-arcs', shearLobes:2,
-      independentlyDelayedPulses:pulses*2, negativeSpace:true, historyTrails:2, historyAnchorPoses:poses,
-      animation:'countershifted-pressure-pulses'});
-  }
-  window.DunguangCarrierForms = {bird, vessel};
+
+  window.DunguangCarrierForms = {bird};
 })();

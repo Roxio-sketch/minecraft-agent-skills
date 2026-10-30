@@ -334,46 +334,7 @@
     }
   }
 
-  function rings(ctx) {
-    const {params:p,edge,core}=ctx,haze=[],bands=[],threads=[],hot=[],axes=frame(ctx,ctx.dir);
-    const count=clamp(Math.round(p.strands*.64),3,8),baseRadius=.48+p.spread*.50,localFade=Math.pow(ctx.motionFade,1.35);
-    const width=.045+p.width*.55,rotation=.62+p.speed*.045;
-    if(localFade>.0001)for(let j=0;j<count;j++) {
-      const f=j/Math.max(1,count-1),phase=ctx.time*rotation*(j%2?-.74:1)+j*2.38;
-      const center=pointAt(ctx,ctx.pos,axes,.42-f*p.shellLength*.65,0,.02);
-      const radius=baseRadius*(.82+.19*Math.sin(ctx.time*.47+j*1.37));
-      const sweep=Math.PI*(1.08+.48*hash(j+17)),twist=.12+p.shellLength*.062;
-      openRing(ctx,haze,center,axes,radius,width*3.5,phase,sweep,twist,energy(edge,1.25),localFade*p.glow*.12,j*1.1);
-      // Two broad interleaving crescent surfaces, each kept visibly open.
-      openRing(ctx,bands,center,axes,radius,width,phase,sweep,twist,energy(mix(edge,core,.22),1.4),localFade*.28,j*1.1);
-      openRing(ctx,bands,center,axes,radius*.93,width*.42,phase+.22,sweep*.83,twist*1.5,energy(edge,1.5),localFade*.22,j*1.7);
-      for(let k=0;k<4;k++) {
-        const r=radius+width*(k-1.5)*.56;
-        openRing(ctx,threads,center,axes,r,width*(.026+.017*hash(j+k+9)),phase+k*.047,sweep*(.85+.045*k),twist,
-          energy(mix(edge,core,.55),2.3),localFade*(.26+.06*k),j*1.1+k*.3);
-      }
-      openRing(ctx,hot,center,axes,radius-width*.32,width*.055,phase+.08,sweep*.66,twist,energy(core,3.7),localFade*.49,j*1.1);
-      // Small moving highlights sit on the rotating bands instead of filling the aperture.
-      for(let k=0;k<3;k++) {
-        const angle=phase+(k+.6)*sweep/3,point=pointAt(ctx,center,axes,Math.sin(angle*1.7+phase)*twist,Math.cos(angle)*radius,Math.sin(angle)*radius);
-        glare(ctx,hot,point,axes,.13+width,.010,energy(core,4.0),localFade*.35,k);
-      }
-    }
-    const detached=births(ctx,'released-open-rings',.38);let visibleRings=0;
-    for(const b of detached) {
-      const age=ctx.time-b.t,fade=ageFade(ctx,b.t,1.9);if(age<.17)continue;
-      const radius=baseRadius*(.78+age*.15),center=pointAt(ctx,b.p,b.axes,-.28-age*b.speed*.025,0,age*.035);
-      const phase=b.phase+age*.28,sweep=Math.PI*(1.16+.27*Math.sin(b.phase));
-      openRing(ctx,haze,center,b.axes,radius,width*(2.1+age*.25),phase,sweep,.07,energy(edge,1.1),fade*p.glow*.075,b.t);
-      openRing(ctx,bands,center,b.axes,radius,width*(.68+age*.10),phase,sweep,.07,energy(edge,1.6),fade*.10,b.t);
-      openRing(ctx,threads,center,b.axes,radius,width*.045,phase+.04,sweep*.92,.07,energy(mix(edge,core,.7),2.5),fade*.25,b.t);
-      visibleRings++;
-    }
-    return {opaque:[],alpha:[],additive:[{data:haze,mode:1},{data:bands,mode:4},{data:threads,mode:1},{data:hot,mode:1}],
-      diagnostics:diagnostics({topology:'layered-open-crescent-films-and-fine-orbiting-ribs',localOpenBands:count,
-        detachedOpenBands:visibleRings,localMotionFade:localFade,minimumLocalAperture:baseRadius*.63-width*3.5,
-        centralFanTriangles:0,birthOrientationCached:true,hdrEmission:true,modelsIncluded:false})};
-  }
+
 
   function flame(ctx) {
     const {params:p,edge,core}=ctx,red=[],fire=[],gold=[],hot=[],embers=[],axes=frame(ctx,ctx.dir);
@@ -444,5 +405,5 @@
         localSpace:'fast-turbulent asymmetric fire tongues',detachedSpace:'cached birth frame plus age-driven rise',hdrEmission:true,modelsIncluded:false})};
   }
 
-  window.DunguangPrimaryForms = {needle, feather, rings, flame};
+  window.DunguangPrimaryForms = {needle, feather, flame};
 })();
