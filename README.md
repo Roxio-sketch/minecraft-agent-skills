@@ -60,15 +60,17 @@ python .\skills\minecraft-xiantu-vfx-library\scripts\serve.py
 
 操作步骤见[Skills使用说明](docs/skills-usage.md)。截图是单帧，边缘波动、旋涡和拖尾的动态请在工作台中查看。
 
-## 遁光 Skill · V8
+## 化虹 Skill · V9
+
+原 `minecraft-dunguang-flight` 更名为 `minecraft-huahong`。新增虹核流星与燃尾流星，保留既有版本。见 [流星研究与边界](skills/minecraft-huahong/references/meteor-study-v9.md)。
 
 新增多形式巡航、起遁与到达的纯程序几何/GLSL研究原型，含视频观察、学习来源、五行仙途两套现有实现索引。保留红黑离烟V3、羽状分叉V3、赤焰V3及后续流光版本。浏览器原型不等于已接入游戏。
 
-- [Skill 与使用说明](skills/minecraft-dunguang-flight/SKILL.md)
-- [阶段时序与验证范围](skills/minecraft-dunguang-flight/references/transition-stages-v8.md)
-- [离线工作台说明](skills/minecraft-dunguang-flight/assets/prototype/README.md)；统一启动器新增“遁光与飞行阶段”入口
+- [Skill 与使用说明](skills/minecraft-huahong/SKILL.md)
+- [阶段时序与验证范围](skills/minecraft-huahong/references/transition-stages-v8.md)
+- [离线工作台说明](skills/minecraft-huahong/assets/prototype/README.md)；统一启动器新增“化虹与流星阶段”入口
 
-![遁光起遁与到达](skills/minecraft-dunguang-flight/assets/prototype/transition-stages.jpg)
+![遁光起遁与到达](skills/minecraft-huahong/assets/prototype/transition-stages.jpg)
 
 ## 工作台截图
 
@@ -86,7 +88,7 @@ python .\skills\minecraft-xiantu-vfx-library\scripts\serve.py
 
 | 内容 | Skill |
 |---|---|
-| [多形式遁光与起遁/到达](skills/minecraft-dunguang-flight/SKILL.md) | `minecraft-dunguang-flight` |
+| [化虹、流星与起遁/到达](skills/minecraft-huahong/SKILL.md) | `minecraft-huahong` |
 | [动态模型与材质挂点](skills/minecraft-animated-material-adapter/SKILL.md) | `minecraft-animated-material-adapter` |
 | [程序化空间裂缝](skills/minecraft-space-rift/SKILL.md) | `minecraft-space-rift` |
 | [黑洞与白洞](skills/minecraft-black-hole/SKILL.md) | `minecraft-black-hole` |

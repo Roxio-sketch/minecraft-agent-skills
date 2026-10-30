@@ -6,7 +6,7 @@
 
 ```powershell
 & 'E:/JianyingAI/venvs/editor/Scripts/python.exe' `
-  'C:/Users/USER/.codex/skills/minecraft-dunguang-flight/scripts/sample_video.py' `
+  'C:/Users/USER/.codex/skills/minecraft-huahong/scripts/sample_video.py' `
   --input 'C:/Users/USER/Downloads/元婴遁光一个比一个帅啊.mp4' `
   --out 'E:/着色器渲染/research/new-flight-samples' `
   --ffmpeg 'E:/JianyingAI/tools/ffmpeg.exe' `

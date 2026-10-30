@@ -33,3 +33,8 @@
 ## 2026-10-19 遁光补充
 
 新增 `minecraft-dunguang-flight` V8研究Skill及浏览器原型。原创代码遵循仓库MIT，Kenney纹理保留CC0原许可与来源。商业参考视频、抽帧和五行仙途宿主源码不随包发布；历史本机证据路径仅供追溯，不是便携依赖。本次发布副本隐去Windows账户名，未改本机已安装Skill。Shadertoy访问受限的记录保留，未读取或复制作品源码，未确认作品许可。
+
+
+## 2026-10-31 化虹流星扩展
+
+遁光 Skill 更名为 minecraft-huahong，新增独立流星消费者。用户粘贴参考源码作者和许可未完整提供，原文不公开、不归入 MIT；仅发布独立实现和分析。极光已被用户排除，nimitz 的 Auroras（CC BY-NC-SA 3.0）源码没有进入本轮消费者。详见 Skill 的 meteor-study-v9.md。
