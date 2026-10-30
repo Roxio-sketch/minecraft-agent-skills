@@ -223,98 +223,7 @@
     return rows;
   }
 
-  function feather(ctx) {
-    const {params:p,edge,core}=ctx,haze=[],film=[],ribs=[],hot=[],flecks=[];
-    const blue=saturated(edge,2.8),cyan=mix(blue,core,.13);
-    const axes=frame(ctx,ctx.dir),W=(x,y,z)=>pointAt(ctx,ctx.pos,axes,x,y,z),groups=historyGroups(ctx);
-    const localFade=ctx.motionFade*ctx.motionFade,count=clamp(Math.round(p.strands*4.6),22,72);
-    const shoulder=.30+p.spread*.20,span=.75+p.shellLength*.95;
-    let localCurves=0,maxBranchLength=0;
-    // A many-stranded world tail with broad diffuse blue support but a sharp white spine.
-    // It uses each history point's own frame and birth-time noise, never current head pose.
-    for(const group of groups) {
-      const base=smoothedHistory(ctx,group),origin=group[0]?.arc||0;
-      ribbon(ctx,haze,base,p.width*3.2,energy(blue,1.3),p.glow*.10,origin,false);
-      ribbon(ctx,ribs,base,p.width*.24,energy(cyan,1.7),.28,origin,false);
-      ribbon(ctx,hot,base,p.width*.038,energy(core,2.6),.30,origin,false);
-      const tailStrands=6+Math.round(p.strands*.85);
-      for(let k=0;k<tailStrands;k++) {
-        const phase=k*2.399+ctx.seed,amp=(.025+.15*hash(k+67))*p.spread,rows=[];
-        for(const h of group) {
-          const a=frame(ctx,h.dir),age=ctx.time-h.t,fade=ageFade(ctx,h.t,.90);
-          const spread=amp*(.35+Math.min(1,age)*.95),n=ctx.noise1(h.t*2.2+k*.37,70);
-          rows.push({p:pointAt(ctx,h.p,a,0,Math.cos(phase)*spread+n*.045,Math.sin(phase)*spread+n*.025),
-            a:fade*(.22+.55*hash(k+21)),w:.15+.85*fade});
-        }
-        ribbon(ctx,ribs,rows,p.width*(.033+.036*hash(k+4)),energy(mix(blue,core,.03+.08*hash(k)),1.7),.38,origin+phase,false);
-      }
-    }
-    if(localFade>.0001) {
-      // Arrow-shaped concentration: the broadest shoulder sits BEHIND the sharp nose.
-      const spine=[];
-      for(let i=0;i<=72;i++) {
-        const q=i/72,x=-span*1.14+(span*1.14+.84)*q;
-        const profile=Math.pow(Math.sin(Math.PI*q),.65)*Math.pow(q,1.6);
-        spine.push({p:W(x,0,.055+Math.sin(q*Math.PI)*.055),w:profile,
-          a:localFade*(.12+.88*Math.pow(q,.9)),color:mix(edge,core,q*.78)});
-      }
-      ribbon(ctx,haze,spine,p.width*4.3,energy(blue,1.35),p.glow*.10,0,false);
-      ribbon(ctx,film,spine,p.width*1.7,energy(blue,1.5),p.glow*.18,0,false);
-      ribbon(ctx,ribs,spine,p.width*.28,energy(cyan,1.8),.36,0,false);
-      // Layered swept blades follow quadratic curves; uneven length and broken symmetry
-      // matter more than a uniformly spaced radial bundle.
-      for(let j=0;j<count;j++) {
-        const f=(j+.5)/count,phase=j*2.399+ctx.seed,side=j%2?1:-1;
-        const layer=Math.floor(j/2)%3,variation=.68+.46*hash(j+118);
-        const length=(span*(.38+.80*f)+.25)*variation;
-        maxBranchLength=Math.max(maxBranchLength,length);
-        const spread=p.spread*(.15+.76*f)*(.66+.48*hash(j+45));
-        const root=W(.64-.30*f,side*(.012+.045*f),.065+Math.sin(phase)*.025);
-        const low=ctx.noise1(ctx.time*.32+j*.83,73);
-        const c=pointAt(ctx,root,axes,-length*.45,side*spread*(.08+low*.045),Math.sin(phase)*spread*.12);
-        const tip=pointAt(ctx,root,axes,-length,side*spread,Math.sin(phase)*spread*(.22+.20*hash(j+10)));
-        const rows=[];
-        for(let i=0;i<=48;i++) {
-          const q=i/48,window=Math.sin(Math.PI*q),middle=ctx.noise1(q*8.2-ctx.time*.58+j*1.27,74);
-          const turbulence=(ctx.noise1(q*2+j*.37,75)*.055+middle*.026)*spread*window;
-          const center=ctx.add(quadratic(ctx,root,c,tip,q),ctx.mul(axes[2],turbulence));
-          const profile=Math.pow(1-q,.88)*(.64+.36*Math.sin(q*Math.PI))*(.88+.12*middle);
-          rows.push({p:center,w:profile,a:localFade*Math.min(1,q*17)*(.95-.73*q),color:mix(core,edge,.08+q*.84)});
-        }
-        const bladeWidth=p.width*(.28+.82*f)*(.66+.60*hash(j+31));
-        ribbon(ctx,haze,rows,bladeWidth*3.1,energy(blue,1.35),p.glow*(.065+.02*layer),phase,false);
-        ribbon(ctx,film,rows,bladeWidth*1.25,energy(blue,1.50),p.glow*.21,phase,false);
-        ribbon(ctx,ribs,rows,bladeWidth*.16,energy(cyan,1.9),.34,phase,false);
-        if(j%6===0)ribbon(ctx,hot,rows.slice(0,24),bladeWidth*.035,energy(core,2.8),.24,phase,false);
-        // Fine barbs split OFF the middle of major feather ribs, not just from one origin.
-        if(j%2===0)for(let n=0;n<2;n++) {
-          const startQ=.28+n*.19,index=Math.round(startQ*48),origin=rows[index].p;
-          const barbEnd=pointAt(ctx,origin,axes,-length*(.22+.12*n),side*spread*(.12+.05*n),Math.sin(phase+n)*spread*.10);
-          const barb=[];
-          for(let i=0;i<=16;i++) {
-            const q=i/16;
-            barb.push({p:ctx.lerp(origin,barbEnd,q),w:Math.pow(1-q,1.2),a:localFade*(1-q)*(.54-.12*n)});
-          }
-          ribbon(ctx,ribs,barb,p.width*.045,energy(cyan,1.65),.32,phase+n,false);
-        }
-        localCurves++;
-      }
-      const head=W(.69,0,.072);
-      glare(ctx,haze,head,axes,.48,p.width*.82,energy(blue,2.4),.14*p.glow*localFade);
-      glare(ctx,hot,head,axes,.35,p.width*.16,energy(core,5.0),.45*localFade);
-      // A handful of floating points carry the rear feather halo without a solid envelope.
-      for(let j=0;j<32;j++) {
-        const phase=j*2.399+ctx.time*.15,f=hash(j+7),x=-span*(.25+.9*f),spread=p.spread*(.2+.75*f);
-        const center=W(x,Math.cos(phase)*spread*.68,Math.sin(phase)*spread*.32);
-        glare(ctx,flecks,center,axes,.025+hash(j+3)*.055,.004,energy(cyan,1.8),localFade*.13,j);
-      }
-    }
-    return {opaque:[],alpha:[],additive:[{data:haze,mode:1},{data:film,mode:4},{data:ribs,mode:1},{data:hot,mode:1},{data:flecks,mode:1}],
-      diagnostics:diagnostics({topology:'dense-quadratic-swept-feathers-with-branched-barbs-and-world-filament-tail',featherBranches:count,
-        localCurves,historyGroups:groups.length,maximumBranchLength:maxBranchLength,localMotionFade:localFade,
-        noiseLayers:{silhouette:'low-frequency control motion',waviness:'medium-frequency curve distortion',erosion:'high-frequency film erosion'},
-        hdrEmission:true,modelsIncluded:false,closedShell:false})};
-  }
+
 
   // A genuinely open annular ribbon. No fan triangles or cap span the central aperture.
   function openRing(ctx,out,center,axes,radius,halfWidth,phase,sweep,twist,color,alpha,origin=0) {
@@ -405,5 +314,5 @@
         localSpace:'fast-turbulent asymmetric fire tongues',detachedSpace:'cached birth frame plus age-driven rise',hdrEmission:true,modelsIncluded:false})};
   }
 
-  window.DunguangPrimaryForms = {needle, feather, flame};
+  window.DunguangPrimaryForms = {needle, flame};
 })();

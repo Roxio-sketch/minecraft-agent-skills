@@ -27,10 +27,10 @@
   const cap=Math.min(total*.12,Math.max(.025,width*.9));let prev;
   const mesh=rows.map((r,i)=>{
    const f=c.norm(c.sub(rows[Math.min(i+1,rows.length-1)].p,rows[Math.max(i-1,0)].p));
-   let side=oriented&&r.side?r.side:c.cross(f,c.sub(c.eye,r.p));if(Math.hypot(...side)<1e-5)side=axes(c,f)[1];side=c.norm(side);
+   let side=oriented&&r.side?r.side:c.cross(f,c.sub(c.eye,r.p));if(Math.hypot(...side)<1e-5)side=axes(c,f)[1];side=oriented?c.sub(side,c.mul(f,c.dot(side,f))):side;if(Math.hypot(...side)<1e-5)side=prev?c.sub(prev,c.mul(f,c.dot(prev,f))):axes(c,f)[1];side=c.norm(side);
    if(prev&&c.dot(prev,side)<0)side=c.mul(side,-1);prev=side;
    const normal=c.norm(c.cross(f,side)),alpha=opacity*(r.a??1)*smooth(0,cap,lengths[i])*smooth(0,cap,total-lengths[i]);
-   return Array.from({length:9},(_,j)=>{const u=j/4-1;return {p:c.add(r.p,c.mul(side,width*(r.w??1)*u)),n:normal,uv:[u,r.s??lengths[i]],col:[...(r.color||color),alpha]};});
+   return Array.from({length:9},(_,j)=>{const u=j/4-1;return {p:c.add(c.add(r.p,c.mul(side,width*(r.w??1)*u)),c.mul(normal,oriented?width*(r.w??1)*.25*(1-u*u):0)),n:normal,uv:[u,r.s??lengths[i]],col:[...(r.color||color),alpha]};});
   });
   for(let i=1;i<mesh.length;i++)for(let j=0;j<8;j++){
    const q=[mesh[i-1][j],mesh[i-1][j+1],mesh[i][j+1],mesh[i][j]];
@@ -78,79 +78,44 @@
     ribbon(c,body,rows,p.width*(warm?.75:.16),c.edge,warm?.24:.24,warm);
    }
   }
+  // Curve local flame roots onto the actual latest world path.
+  const newest=history.at(-1)||[];
+  function headPoint(x,y,z){
+   if(!warm||x>=0||newest.length<2)return point(c,c.pos,a,x,y,z);
+   let remaining=-x,from=c.pos,frame=a;
+   for(let k=newest.length-1;k>=0;k--){
+    const h=newest[k],length=Math.hypot(...c.sub(from,h.p));
+    if(length<1e-7)continue;
+    if(remaining<=length){const t=remaining/length,center=c.add(from,c.mul(c.sub(h.p,from),t));const F=c.norm(c.sub(from,h.p));frame=axes(c,F);return point(c,center,frame,0,y,z);}
+    remaining-=length;from=h.p;frame=axes(c,h.dir);
+   }
+   return point(c,from,frame,-remaining,y,z);
+  }
   // Local head: compact white nucleus, asymmetric flame tongues, no closed shell.
   if(fade>1e-5){
    const len=.6+p.shellLength*(warm?1.25:.65),head=[];
-   for(let i=0;i<=68;i++){const q=i/68;head.push({p:point(c,c.pos,a,.26-q*len,0,0),s:-q*len,w:Math.pow(Math.sin(Math.PI*q),.65)*Math.exp(-q*2.7),a:fade*(1-q)});}
+   for(let i=0;i<=68;i++){const q=i/68;head.push({p:headPoint(.26-q*len,0,0),s:-q*len,w:Math.pow(Math.sin(Math.PI*q),.65)*Math.exp(-q*2.7),a:fade*(1-q)});}
    ribbon(c,soft,head,p.width*2.1,c.edge,p.glow*.12);
    ribbon(c,hot,head,p.width*.19,mix(c.core,[1,1,1],.55,2.1),.68);
    for(let j=0;j<count;j++){
     const rows=[],phase=j*2.399;
     for(let i=0;i<=60;i++){
      const q=i/60,reach=Math.sin(Math.PI*q)*p.spread*(warm?.21:.075),angle=phase+q*(warm?2.6:.5)+Math.sin(q*7-c.time*1.3+j)*q*.22;
-     rows.push({p:point(c,c.pos,a,.17-q*len*(.55+rnd(j+7)*.45),Math.cos(angle)*reach,Math.sin(angle)*reach),side:c.add(c.mul(a[1],Math.cos(angle)),c.mul(a[2],Math.sin(angle))),s:-q*len+j*.83,w:Math.pow(Math.sin(Math.PI*q),.65)*(1-q*.65),a:fade*(1-q),color:mix(c.edge,c.core,Math.pow(1-q,4)*.8,1.25)});
+     rows.push({p:headPoint(.17-q*len*(.55+rnd(j+7)*.45),Math.cos(angle)*reach,Math.sin(angle)*reach),side:c.add(c.mul(a[1],Math.cos(angle)),c.mul(a[2],Math.sin(angle))),s:-q*len+j*.83,w:Math.pow(Math.sin(Math.PI*q),.65)*(1-q*.65)*(warm?.85+.15*Math.sin(q*11-c.time*.7+j):1),a:fade*(1-q),color:mix(c.edge,c.core,Math.pow(1-q,4)*.8,1.25)});
     }
     ribbon(c,body,rows,p.width*(warm?.75:.3),c.edge,warm?.34:.22,warm);
    }
   }
   const sparks=fragments(c,embers,history,warm);
-  return {opaque:[],alpha:[],additive:[{data:soft,mode:1},{data:body,mode:warm?31:30},{data:hot,mode:14},{data:embers,mode:1}],diagnostics:{revision:9,topology:warm?'open-turbulent-combustion-tongues-with-birth-anchored-fragments':'concentrated-rainbow-meteor-core-and-sparse-world-filaments',worldAnchored:true,modelsIncluded:false,historyGroups:groupsCount,sparks,localMotionFade:fade,noExternalChannels:true,parameterConsumers:{speed:'path length and material transport',life:'history lifetime',width:'ribbon width',strands:'flame or filament count and spark density',spread:'lateral flow and birth drift',shellLength:'local flame reach',glow:'soft layer',coreColor:'head and hot ridges',edgeColor:'tail and aged sparks'}}};
+  return {opaque:[],alpha:[],additive:[{data:soft,mode:1},{data:body,mode:warm?31:30},{data:hot,mode:14},{data:embers,mode:1}],diagnostics:{revision:9,topology:warm?'open-turbulent-combustion-tongues-with-birth-anchored-fragments':'concentrated-rainbow-meteor-core-and-sparse-world-filaments',worldAnchored:true,modelsIncluded:false,historyGroups:groupsCount,sparks,localMotionFade:fade,noExternalChannels:true,curvedFlameRoot:warm,camberedStrips:warm,parameterConsumers:{speed:'path length and material transport',life:'history lifetime',width:'ribbon width',strands:'flame or filament count and spark density',spread:'lateral flow and birth drift',shellLength:'local flame reach',glow:'soft layer',coreColor:'head and hot ridges',edgeColor:'tail and aged sparks'}}};
  }
 
  // Reference-driven V10: a point nucleus opens into broad cyan layered wake.
  // This is world-path geometry; it does not reproduce the reference's polar screen warp.
- function plume(c){
-  const p=c.params,veil=[],sheets=[],filaments=[],core=[],sparks=[],history=groups(c);
-  let n=0;
-  for(const g of history){
-   if(g.length<3)continue;n++;
-   for(let j=0;j<7;j++){
-    const phase=j*2.399,rows=g.map(h=>{
-     const age=c.time-h.t,left=clamp(1-age/p.life),ax=axes(c,h.dir);
-     const expand=Math.pow(Math.max(0,age),.85)*p.spread*1.15;
-     const wave=Math.sin(h.arc*.47+j*1.8)*.22+Math.sin(h.arc*1.21+j)*.09;
-     const offset=(j-3)/3;
-     return {p:point(c,h.p,ax,0,offset*expand*(.86+wave),Math.sin(phase+wave)*expand*.44),
-      side:c.add(c.mul(ax[1],Math.cos(phase*.23)),c.mul(ax[2],Math.sin(phase*.23))),
-      s:h.arc+j*.41,w:(.018+expand*(.55+.18*Math.sin(j)))*Math.pow(left,.7),
-      a:Math.pow(left,1.1)*smooth(0,.055,age),color:mix([.08,.30,.65],[.18,.70,1],.5+.4*Math.sin(j),1)};
-    });
-    ribbon(c,sheets,rows,p.width*1.6,[.1,.45,1],.46,true);
-    if(j%2===0)ribbon(c,veil,rows,p.width*2.8,[.05,.19,.44],p.glow*.07,true);
-   }
-   for(let j=0;j<Math.round(p.strands*1.8);j++){
-    const offset=(j/(Math.max(1,Math.round(p.strands*1.8)-1))-.5)*2,phase=j*2.399;
-    const rows=g.map(h=>{
-     const age=c.time-h.t,left=clamp(1-age/p.life),ax=axes(c,h.dir),open=Math.pow(Math.max(age,0),.86)*p.spread*.95;
-     const curl=(Math.sin(h.arc*.78+phase)+Math.sin(h.arc*1.53+j)*.28)*open*.16;
-     const spectral=j%5===0?[.75,.12,1]:j%3===0?[.15,.65,1]:[.5,.86,1];
-     return {p:point(c,h.p,ax,0,offset*open+curl,Math.sin(phase+h.arc*.35)*open*.35),s:h.arc+j*.7,w:(.2+.8*left)*(.25+smooth(0,.32,age)),a:Math.pow(left,1.25)*(.7+.3*Math.sin(h.arc*.6+j)),color:mix(spectral,c.core,Math.exp(-age*2)*.7,1.5)};
-    });
-    ribbon(c,filaments,rows,.006+p.width*.022,[.3,.7,1],.52);
-   }
-   const spine=g.map(h=>{const age=c.time-h.t,left=clamp(1-age/p.life);return {p:h.p,s:h.arc,w:(.3+.7*Math.exp(-age*3))*left,a:Math.exp(-age*.9)*left};});
-   ribbon(c,core,spine,.01+p.width*.023,[.65,.9,1],.65);
-  }
-  const fade=Math.pow(c.motionFade,1.5),ax=axes(c,c.dir);
-  if(fade>1e-5){
-   const rows=[];
-   for(let i=0;i<=64;i++){const q=i/64,open=Math.pow(q,.8);rows.push({p:point(c,c.pos,ax,.12-q*(.6+p.shellLength),Math.sin(q*8-c.time*2)*q*q*.10,0),s:-q*5,w:open*Math.pow(1-q,.65),a:fade*(1-q*.5)});}
-   ribbon(c,sheets,rows,p.width*.85,[.12,.48,1],.3);
-   // Small camera-facing star, its rays are luminous geometry rather than a model.
-   const eye=c.norm(c.sub(c.eye,c.pos)),right=c.norm(c.cross(eye,Math.abs(eye[1])>.96?[0,0,1]:[0,1,0])),up=c.norm(c.cross(right,eye));
-   for(const [side,length] of [[right,.24],[up,.18]]){
-    const cross=[];
-    for(let i=0;i<=24;i++){const t=i/24*2-1;cross.push({p:c.add(c.pos,c.mul(side,t*length)),s:i/24,w:Math.pow(1-Math.abs(t),2),a:fade});}
-    ribbon(c,core,cross,.014+p.width*.03,[.48,.86,1],.8);
-   }
-  }
-  const count=fragments(c,sparks,history,false);
-  return {opaque:[],alpha:[],additive:[{data:veil,mode:1},{data:sheets,mode:32},{data:filaments,mode:33},{data:core,mode:1},{data:sparks,mode:1}],diagnostics:{revision:10,topology:'point-nucleus-broad-cyan-wake-chromatic-ridges',historyGroups:n,worldAnchored:true,sparks:count,modelsIncluded:false,localMotionFade:fade}};
- }
 
- window.HuahongMeteor={build:(c,key)=>key==='meteor_plume'?plume(c):meteor(c,key==='meteor_flame'),
+
+ window.HuahongMeteor={build:(c,key)=>meteor(c,key==='meteor_flame'),
  presets:{
-  meteor_plume:{title:'蓝白流星 / V10 参考迭代',note:'尖端星核向后展开为蓝白宽尾，虹色细筋与噪声流纹分层；旧尾留在世界并逐龄淡去。',speed:8.6,life:2.6,width:.45,strands:10,spread:1.55,shellLength:3.5,glow:.60,coreColor:'#d7f4ff',edgeColor:'#348bff'},
   meteor_prism:{title:'虹核流星 / V9',note:'集中白核与细长虹流，沿弧长向后输运；碎芒留在出生位置，转弯不拖动旧尾。',speed:11.6,life:3.8,width:.19,strands:6,spread:.65,shellLength:2.5,glow:.45,coreColor:'#e8faff',edgeColor:'#8274ff'},
   meteor_flame:{title:'燃尾流星 / V9',note:'错长开放火舌、轴向噪声侵蚀和脱落短芒；没有天幕、地形或实体陨石模型。',speed:10.8,life:2.9,width:.32,strands:8,spread:1.25,shellLength:3.8,glow:.50,coreColor:'#fff1c8',edgeColor:'#ff6535'}
  },shaderBranch:`
